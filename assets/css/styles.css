@@ -311,3 +311,103 @@ ul, ol { list-style: none; padding: 0; }
   .footer-cols { grid-template-columns: 1fr 1fr; }
   .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
 }
+
+/* ==========================================================================
+   Product detail pages
+   ========================================================================== */
+
+/* Make homepage product cards linkable without losing card styling */
+.product-card .card-link {
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 4px;
+  font-weight: 600; font-size: 0.92rem; color: var(--card-accent, var(--indigo));
+  transition: gap .2s var(--ease);
+}
+.product-card .card-link:hover { gap: 11px; }
+.product-card .card-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+/* Breadcrumb */
+.breadcrumb { padding: 20px 0 0; font-size: 0.86rem; color: var(--text-dim); }
+.breadcrumb a { color: var(--text-muted); transition: color .2s var(--ease); }
+.breadcrumb a:hover { color: var(--text); }
+.breadcrumb span { margin: 0 8px; opacity: 0.5; }
+.breadcrumb .current { color: var(--text); }
+
+/* Product hero */
+.product-hero { position: relative; overflow: hidden; padding: 52px 0 64px; }
+.product-hero::before {
+  content: ''; position: absolute; inset: -30% 0 auto 0; height: 560px; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(620px 300px at 22% 0%, color-mix(in srgb, var(--p-accent, var(--indigo)) 22%, transparent), transparent 70%),
+    radial-gradient(680px 320px at 84% 10%, rgba(99, 102, 241, 0.18), transparent 70%);
+}
+.product-hero .container { position: relative; z-index: 1; }
+.product-hero-inner { max-width: 760px; }
+.product-eyebrow {
+  display: inline-flex; align-items: center; gap: 9px; font-family: var(--font-display); font-weight: 600;
+  font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--p-accent, var(--accent-2));
+  padding: 6px 14px; border: 1px solid var(--border); border-radius: 999px;
+  background: color-mix(in srgb, var(--p-accent, var(--indigo)) 8%, transparent); margin-bottom: 22px;
+}
+.product-hero-icon {
+  width: 60px; height: 60px; border-radius: 16px; display: grid; place-items: center; margin-bottom: 22px;
+  color: var(--p-accent, var(--indigo)); background: color-mix(in srgb, var(--p-accent, var(--indigo)) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--p-accent, var(--indigo)) 32%, transparent);
+}
+.product-hero h1 {
+  font-family: var(--font-display); font-weight: 700; letter-spacing: -0.03em; line-height: 1.06;
+  font-size: clamp(2.3rem, 5.2vw, 3.6rem); margin-bottom: 18px;
+}
+.product-hero h1 .p-grad {
+  background: linear-gradient(100deg, var(--p-accent, var(--teal)), var(--violet));
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;
+}
+.product-hero .lead { font-size: clamp(1.05rem, 2vw, 1.22rem); color: var(--text-muted); max-width: 620px; }
+.product-hero-actions { display: flex; gap: 13px; flex-wrap: wrap; margin-top: 30px; }
+
+/* Section headers left-aligned variant for subpages */
+.sub-head { max-width: 680px; margin: 0 0 40px; }
+.sub-head .eyebrow { color: var(--p-accent, var(--accent-2)); }
+.sub-head h2 { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em; font-size: clamp(1.7rem, 3.4vw, 2.4rem); margin: 14px 0 12px; }
+.sub-head p { color: var(--text-muted); font-size: 1.05rem; }
+
+/* Capabilities reuse .feature-grid; tint icon by product accent */
+.product-page .feature-icon { color: var(--p-accent, var(--accent-2)); background: color-mix(in srgb, var(--p-accent, var(--indigo)) 10%, transparent); border-color: color-mix(in srgb, var(--p-accent, var(--indigo)) 22%, transparent); }
+
+/* Use-case rows */
+.usecases { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+.usecase { display: flex; gap: 15px; padding: 22px; border: 1px solid var(--border); border-radius: var(--radius); background: rgba(255,255,255,0.015); }
+.usecase-mark {
+  flex: 0 0 auto; width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center;
+  font-family: var(--font-display); font-weight: 700; color: var(--p-accent, var(--indigo));
+  background: color-mix(in srgb, var(--p-accent, var(--indigo)) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--p-accent, var(--indigo)) 26%, transparent);
+}
+.usecase h3 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; margin-bottom: 5px; }
+.usecase p { color: var(--text-muted); font-size: 0.93rem; }
+
+/* Highlight list (two-column checklist) */
+.checklist { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px 28px; }
+.checklist li { position: relative; padding-left: 30px; color: var(--text); font-size: 0.98rem; }
+.checklist li::before {
+  content: ''; position: absolute; left: 2px; top: 3px; width: 18px; height: 18px; border-radius: 50%;
+  background: color-mix(in srgb, var(--p-accent, var(--indigo)) 18%, transparent);
+  border: 1px solid color-mix(in srgb, var(--p-accent, var(--indigo)) 40%, transparent);
+}
+.checklist li::after {
+  content: ''; position: absolute; left: 8px; top: 8px; width: 5px; height: 9px;
+  border: solid var(--p-accent, var(--indigo)); border-width: 0 2px 2px 0; transform: rotate(45deg);
+}
+
+/* Cross-sell: other apps on the grid */
+.cross-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.cross-card {
+  display: flex; align-items: center; gap: 14px; padding: 18px 20px; border: 1px solid var(--border);
+  border-radius: var(--radius); background: linear-gradient(180deg, var(--bg-elev), var(--bg-2));
+  transition: transform .25s var(--ease), border-color .25s var(--ease);
+}
+.cross-card:hover { transform: translateY(-3px); border-color: var(--border-strong); }
+.cross-card .ci { flex: 0 0 auto; width: 40px; height: 40px; border-radius: 11px; display: grid; place-items: center; color: var(--cc, var(--indigo)); background: color-mix(in srgb, var(--cc, var(--indigo)) 13%, transparent); border: 1px solid color-mix(in srgb, var(--cc, var(--indigo)) 28%, transparent); }
+.cross-card h3 { font-family: var(--font-display); font-size: 1.02rem; font-weight: 600; margin-bottom: 2px; }
+.cross-card p { color: var(--text-dim); font-size: 0.85rem; }
+.cross-card .arrow { margin-left: auto; color: var(--text-dim); transition: transform .2s var(--ease); }
+.cross-card:hover .arrow { transform: translateX(3px); color: var(--text-muted); }
