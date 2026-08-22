@@ -61,6 +61,20 @@
     var emailInput = document.getElementById('email');
     var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+    /* Localize messages by page language (English default, Arabic on /ar/) */
+    var isAr = (document.documentElement.lang || '').toLowerCase().indexOf('ar') === 0;
+    var t = isAr ? {
+      invalid: 'يرجى إدخال اسمك وبريد مهني صحيح.',
+      thanks: function (n) { return 'شكرًا ' + n + '! يتم فتح برنامج البريد لديك…'; },
+      subject: 'طلب عرض توضيحي — FulcrumGrid',
+      body: function (name, email) { return 'الاسم: ' + name + '\nالبريد: ' + email + '\n\nأودّ مشاهدة عرض توضيحي لـ FulcrumGrid.'; }
+    } : {
+      invalid: 'Please enter your name and a valid work email.',
+      thanks: function (n) { return 'Thanks, ' + n + '! Opening your email client…'; },
+      subject: 'Demo request — FulcrumGrid',
+      body: function (name, email) { return 'Name: ' + name + '\nEmail: ' + email + '\n\nI\'d like to see a demo of FulcrumGrid.'; }
+    };
+
     var setNote = function (msg, isError) {
       if (!note) return;
       note.textContent = msg;
@@ -80,15 +94,15 @@
       if (!emailRe.test(email)) { emailInput.classList.add('invalid'); ok = false; }
 
       if (!ok) {
-        setNote('Please enter your name and a valid work email.', true);
+        setNote(t.invalid, true);
         return;
       }
 
       /* No backend connected yet — surface a friendly confirmation and
          fall back to a mailto so the lead is never lost. */
-      setNote('Thanks, ' + name.split(' ')[0] + '! Opening your email client…', false);
-      var subject = encodeURIComponent('Demo request — FulcrumGrid');
-      var body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nI\'d like to see a demo of FulcrumGrid.');
+      setNote(t.thanks(name.split(' ')[0]), false);
+      var subject = encodeURIComponent(t.subject);
+      var body = encodeURIComponent(t.body(name, email));
       window.location.href = 'mailto:hello@fulcrumgrid.com?subject=' + subject + '&body=' + body;
       form.reset();
     });
