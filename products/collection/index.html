@@ -3,6 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src 'none'" />
+
+  <!-- Google tag (gtag.js) — REPLACE G-XXXXXXXXXX WITH YOUR FULCRUMGRID GA4 MEASUREMENT ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
   <title>Collection — FulcrumGrid</title>
   <meta name="description" content="Collection is FulcrumGrid's receivables app — invoice tracking, automated reminders, payment plans, and reconciliation to recover revenue predictably." />
   <meta name="theme-color" content="#0b1020" />
@@ -18,6 +31,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <style>:root { --p-accent: var(--indigo); }</style>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://fulcrumgrid.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Products", "item": "https://fulcrumgrid.com/#products"},
+      {"@type": "ListItem", "position": 3, "name": "Collection", "item": "https://fulcrumgrid.com/products/collection/"}
+    ]
+  }
+  </script>
 </head>
 <body class="product-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -190,7 +213,7 @@
       <div class="footer-cols">
         <div class="footer-col"><h4>Products</h4><a href="/products/command-center/">Command Center</a><a href="/products/collection/">Collection</a><a href="/products/hr-suite/">HR Suite</a><a href="/#products">Coming soon</a></div>
         <div class="footer-col"><h4>Platform</h4><a href="/#features">Overview</a><a href="/#how">How it works</a><a href="/#features">Security</a></div>
-        <div class="footer-col"><h4>Company</h4><a href="/#contact">Contact</a><a href="mailto:hello@fulcrumgrid.com">Email us</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="/#contact">Contact</a><a href="mailto:hello@fulcrumgrid.com">Email us</a><a href="/privacy/">Privacy</a><a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a></div>
       </div>
     </div>
     <div class="container footer-bottom">
@@ -200,5 +223,6 @@
   </footer>
 
   <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/consent.js" defer></script>
 </body>
 </html>

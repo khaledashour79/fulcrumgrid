@@ -3,6 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src 'none'" />
+
+  <!-- Google tag (gtag.js) — REPLACE G-XXXXXXXXXX WITH YOUR FULCRUMGRID GA4 MEASUREMENT ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
   <title>FulcrumGrid — One platform for every operation</title>
   <meta name="description" content="FulcrumGrid is the operational backbone for modern businesses. Command Center, Collection, HR Suite, and more — unified apps on a single, connected grid." />
   <meta name="theme-color" content="#0b1020" />
@@ -25,6 +38,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://fulcrumgrid.com/#organization",
+    "name": "FulcrumGrid",
+    "url": "https://fulcrumgrid.com/",
+    "logo": "https://fulcrumgrid.com/assets/favicon.svg",
+    "description": "FulcrumGrid is the operational backbone for modern teams — Command Center, Collection, HR Suite, and a growing grid of connected apps.",
+    "email": "hello@fulcrumgrid.com"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://fulcrumgrid.com/#website",
+    "url": "https://fulcrumgrid.com/",
+    "name": "FulcrumGrid",
+    "publisher": { "@id": "https://fulcrumgrid.com/#organization" }
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -349,6 +385,8 @@
           <h4>Company</h4>
           <a href="#contact">Contact</a>
           <a href="mailto:hello@fulcrumgrid.com">Email us</a>
+          <a href="privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
         </div>
       </div>
     </div>
@@ -359,5 +397,6 @@
   </footer>
 
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/consent.js" defer></script>
 </body>
 </html>
