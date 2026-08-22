@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src 'none'" />
+
+  <!-- Google tag (gtag.js) — REPLACE G-XXXXXXXXXX WITH YOUR FULCRUMGRID GA4 MEASUREMENT ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <title>الخصوصية وملفات تعريف الارتباط — FulcrumGrid</title>
+  <meta name="description" content="كيف تستخدم FulcrumGrid ملفات تعريف الارتباط والتحليلات، وما الذي نجمعه، والخيارات المتاحة لك." />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://fulcrumgrid.com/ar/privacy/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/privacy/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/privacy/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/privacy/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="الخصوصية وملفات تعريف الارتباط — FulcrumGrid" />
+  <meta property="og:description" content="كيف تستخدم FulcrumGrid ملفات تعريف الارتباط والتحليلات، والخيارات المتاحة لك." />
+  <meta property="og:url" content="https://fulcrumgrid.com/ar/privacy/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="ar_AR" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <style>
+    :root { --font-sans: 'Cairo', system-ui, sans-serif; --font-display: 'Cairo', system-ui, sans-serif; }
+    .legal { max-width: 720px; margin: 0 auto; padding: 64px 0 40px; }
+    .legal .eyebrow { margin-bottom: 14px; }
+    .legal h1 { font-family: 'Cairo', sans-serif; font-size: clamp(28px,4.5vw,42px); font-weight: 700; margin-bottom: 8px; }
+    .legal .updated { color: var(--text-dim); font-size: 12.5px; margin-bottom: 36px; }
+    .legal .body { color: var(--text-muted); font-size: 16.5px; line-height: 1.95; }
+    .legal .body p { margin-bottom: 20px; }
+    .legal .body h2 { color: var(--text); font-family: 'Cairo', sans-serif; font-size: 20px; font-weight: 700; margin: 36px 0 14px; line-height: 1.4; }
+    .legal .body ul { margin: 0 22px 20px 0; }
+    .legal .body li { margin-bottom: 8px; }
+    .legal .body strong { color: var(--text); }
+    .legal .body a { color: var(--teal); }
+    .cookie-actions { display: flex; gap: 12px; flex-wrap: wrap; margin: 22px 0 4px; }
+    .cookie-actions button { font-family: inherit; cursor: pointer; border: none; padding: 12px 22px; border-radius: 8px; font-weight: 600; font-size: 13.5px; }
+    .cookie-actions .accept { background: linear-gradient(135deg, var(--indigo), #4f46e5); color: #fff; }
+    .cookie-actions .decline { background: transparent; color: var(--text-muted); border: 1px solid var(--border-strong); }
+    .cc-status { font-size: 13px; color: var(--text-dim); margin-top: 14px; }
+    .cc-status b { color: var(--teal); }
+    .legal .disclaimer { font-size: 13px; color: var(--text-dim); border-top: 1px solid var(--border); padding-top: 20px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/>
+            <path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/>
+            <defs>
+              <linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5eead4"/>
+                <stop offset="1" stop-color="#6366f1"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="brand-name" dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span>
+      </a>
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <a href="/ar/#products">المنتجات</a>
+        <a href="/ar/#features">المنصّة</a>
+        <a href="/ar/#how">كيف تعمل</a>
+        <a href="/ar/#contact">اتصل بنا</a>
+      </nav>
+      <div class="header-cta">
+        <div class="lang-switch" role="group" aria-label="اللغة">
+          <a href="/privacy/" hreflang="en" lang="en">EN</a>
+          <a href="/ar/privacy/" class="active" aria-current="page" hreflang="ar" lang="ar">ع</a>
+        </div>
+        <a class="btn btn-ghost" href="/ar/#contact">تسجيل الدخول</a>
+        <a class="btn btn-primary" href="/ar/#contact">اطلب عرضًا توضيحيًا</a>
+      </div>
+      <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="/ar/#products">المنتجات</a>
+      <a href="/ar/#features">المنصّة</a>
+      <a href="/ar/#how">كيف تعمل</a>
+      <a href="/ar/#contact">اتصل بنا</a>
+      <a class="btn btn-primary" href="/ar/#contact">اطلب عرضًا توضيحيًا</a>
+      <div class="lang-switch" role="group" aria-label="اللغة">
+        <a href="/privacy/" hreflang="en" lang="en">EN</a>
+        <a href="/ar/privacy/" class="active" aria-current="page" hreflang="ar" lang="ar">ع</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <article class="legal">
+          <p class="eyebrow">قانوني</p>
+          <h1>الخصوصية وملفات تعريف الارتباط</h1>
+          <p class="updated">آخر تحديث: أغسطس 2026</p>
+
+          <div class="body">
+            <p>يوضّح هذا الإشعار كيفية تعامل FulcrumGrid ("نحن") مع المعلومات على هذا الموقع، وملفات تعريف الارتباط التي نستخدمها، والخيارات المتاحة لك. وينطبق على <a href="https://fulcrumgrid.com" dir="ltr">fulcrumgrid.com</a> وصفحاته الفرعية.</p>
+
+            <h2>المعلومات التي نجمعها</h2>
+            <p>هذا موقع تعريفي وليس تسجيل دخول لأحد التطبيقات. لا نطلب منك إنشاء حساب هنا، ولا نجمع عمداً أي بيانات شخصية حسّاسة. وهناك أمران يستحقان التوضيح:</p>
+            <ul>
+              <li><strong>بيانات التحليلات</strong> — في حال موافقتك، نستخدم Google Analytics لفهم كيفية استخدام الموقع (الصفحات المعروضة، الموقع التقريبي، نوع الجهاز والمتصفح، وكيفية وصول الزوّار). يساعدنا ذلك على تحسين الموقع، وتُجمع هذه البيانات بشكل إجمالي ولا تُستخدم للتعرّف عليك شخصياً.</li>
+              <li><strong>نموذج طلب العرض التوضيحي</strong> — إذا أرسلت النموذج أو راسلتنا، يصلنا الاسم والبريد الإلكتروني اللذان تقدّمهما لنتمكن من الرد على طلبك. ونستخدمهما فقط لهذا الغرض.</li>
+            </ul>
+
+            <h2>ملفات تعريف الارتباط والتحليلات</h2>
+            <p>ملفات تعريف الارتباط ملفات صغيرة يخزّنها الموقع في متصفحك. نستخدمها لغرض واحد فقط: <strong>التحليلات</strong>. لا نستخدم ملفات إعلانية، ولا نبيع البيانات.</p>
+            <p>تبقى التحليلات <strong>معطّلة حتى توافق</strong>. عند زيارتك الأولى، يظهر شريط يسألك عن اختيارك، ونطبّق وضع الموافقة من Google (Consent Mode) بحيث لا تُضبط أي ملفات تحليلات ما لم توافق. فإن وافقت، يضبط Google Analytics (المقدَّم من Google) ملفات لقياس استخدام الموقع؛ وإن رفضت، فلن تُضبط هذه الملفات.</p>
+
+            <h2>الأطراف الثالثة</h2>
+            <p>الخدمة الوحيدة من طرف ثالث التي قد تعالج البيانات عبر هذا الموقع هي <strong>Google Analytics</strong>، وذلك فقط بعد موافقتك. تعمل Google كمزوّد للتحليلات، ويخضع تعاملها مع البيانات لشروط الخصوصية الخاصة بها. ولا نشارك معلوماتك مع أي طرف ثالث آخر لأغراضه التسويقية.</p>
+
+            <h2>خياراتك</h2>
+            <ul>
+              <li><strong>القبول أو الرفض</strong> للتحليلات عبر الأزرار أدناه — يُحفظ اختيارك على هذا الجهاز ويمكنك تغييره من هنا في أي وقت.</li>
+              <li><strong>إعدادات المتصفح</strong> — يمكنك أيضاً حظر ملفات تعريف الارتباط أو حذفها من إعدادات متصفحك، ولن يؤثّر ذلك على قدرتك على تصفّح الموقع.</li>
+            </ul>
+
+            <div class="cookie-actions">
+              <button class="accept" data-cc="grant">قبول التحليلات</button>
+              <button class="decline" data-cc="deny">رفض التحليلات</button>
+            </div>
+            <p class="cc-status" id="cc-status"></p>
+
+            <h2>الاحتفاظ بالبيانات وأمنها</h2>
+            <p>يحتفظ مزوّد التحليلات ببيانات التحليلات الإجمالية لفترة محدودة ثم تُحذف أو تُجهَّل هويتها. أما تفاصيل طلبات العرض التوضيحي فنحتفظ بها فقط بالقدر اللازم للرد والمتابعة.</p>
+
+            <h2>تعديلات هذا الإشعار</h2>
+            <p>قد نحدّث هذا الإشعار مع تغيّر ممارساتنا أو الأنظمة المعمول بها. ويوضّح تاريخ "آخر تحديث" أعلاه موعد آخر مراجعة له.</p>
+
+            <p class="disclaimer">يُقدَّم هذا الإشعار بغرض الشفافية والمعلومات العامة، ولا يُعدّ استشارة قانونية. للاستفسارات حول معلوماتك، تواصل مع <a href="mailto:hello@fulcrumgrid.com" dir="ltr">hello@fulcrumgrid.com</a>.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bgf)" stroke-width="1.5"/>
+              <path d="M9 23V9h9M9 16h7" stroke="url(#bgf)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/>
+              <defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+            </svg>
+          </span>
+          <span class="brand-name" dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span>
+        </a>
+        <p class="footer-tag">العمود الفقري التشغيلي للأنشطة الحديثة.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>المنتجات</h4>
+          <a href="/ar/products/command-center/">مركز القيادة</a>
+          <a href="/ar/products/collection/">التحصيل</a>
+          <a href="/ar/products/hr-suite/">منظومة الموارد البشرية</a>
+          <a href="/ar/#products">قريباً</a>
+        </div>
+        <div class="footer-col">
+          <h4>المنصّة</h4>
+          <a href="/ar/#features">نظرة عامة</a>
+          <a href="/ar/#how">كيف تعمل</a>
+          <a href="/ar/#features">الأمان</a>
+        </div>
+        <div class="footer-col">
+          <h4>الشركة</h4>
+          <a href="/ar/#contact">اتصل بنا</a>
+          <a href="mailto:hello@fulcrumgrid.com">راسلنا</a>
+          <a href="/ar/privacy/">الخصوصية</a>
+          <a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</p>
+      <p class="footer-domain" dir="ltr">fulcrumgrid.com</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+  <script>
+  (function(){
+    var KEY='fg_consent';
+    function label(v){ return v==='granted' ? 'التحليلات مُفعّلة على هذا الجهاز.' : (v==='denied' ? 'التحليلات معطّلة على هذا الجهاز.' : 'لم تختر بعد — التحليلات معطّلة افتراضياً.'); }
+    function refresh(){
+      var v; try{v=localStorage.getItem(KEY);}catch(e){}
+      var el=document.getElementById('cc-status');
+      if(el) el.innerHTML='الإعداد الحالي: <b>'+label(v)+'</b>';
+    }
+    function apply(grant){
+      try{localStorage.setItem(KEY,grant?'granted':'denied');}catch(e){}
+      try{if(window.gtag){gtag('consent','update',{'analytics_storage':grant?'granted':'denied','ad_storage':grant?'granted':'denied'});}}catch(e){}
+      var b=document.getElementById('fg-cc'); if(b) b.remove();
+      refresh();
+    }
+    document.querySelectorAll('[data-cc]').forEach(function(btn){
+      btn.addEventListener('click', function(){ apply(btn.getAttribute('data-cc')==='grant'); });
+    });
+    refresh();
+  })();
+  </script>
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
