@@ -1,4 +1,13 @@
+# robots.txt for fulcrumgrid.com
 User-agent: *
+Allow: /
+Disallow: /404.html
+
+# Explicitly welcome major crawlers (default behavior, stated for clarity)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
 Allow: /
 
 Sitemap: https://fulcrumgrid.com/sitemap.xml
