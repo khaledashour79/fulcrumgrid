@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src 'none'" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>ماذا تتابع في لوحة العمليات — FulcrumGrid</title>
+  <meta name="description" content="لوحة مليئة بالأرقام ليست الهدف. إليك مقاييس العمليات التي تقود القرارات فعلًا — وكيف تصمّم لوحة يستخدمها الناس." />
+  <meta name="theme-color" content="#0b1020" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="ماذا تتابع في لوحة العمليات (وما الذي تتجاهله)" />
+  <meta property="og:description" content="مقاييس العمليات التي تقود القرارات فعلًا — وكيف تصمّم لوحة يستخدمها الناس." />
+  <meta property="og:url" content="https://fulcrumgrid.com/ar/blog/operations-dashboard-metrics/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="article:published_time" content="2026-08-24" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="مركز القيادة من FulcrumGrid — لوحة العمليات الفورية" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/ar/blog/operations-dashboard-metrics/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/operations-dashboard-metrics/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/operations-dashboard-metrics/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/operations-dashboard-metrics/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <style>:root { --font-sans: 'Cairo', system-ui, sans-serif; --font-display: 'Cairo', system-ui, sans-serif; }</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "ماذا تتابع في لوحة العمليات (وما الذي تتجاهله)",
+    "description": "مقاييس العمليات التي تقود القرارات فعلًا — وكيف تصمّم لوحة يستخدمها الناس.",
+    "datePublished": "2026-08-24",
+    "dateModified": "2026-08-24",
+    "author": { "@type": "Organization", "name": "FulcrumGrid", "@id": "https://fulcrumgrid.com/#organization" },
+    "publisher": { "@id": "https://fulcrumgrid.com/#organization" },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://fulcrumgrid.com/ar/blog/operations-dashboard-metrics/" },
+    "inLanguage": "ar"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://fulcrumgrid.com/ar/"},
+      {"@type": "ListItem", "position": 2, "name": "المدوّنة", "item": "https://fulcrumgrid.com/ar/blog/"},
+      {"@type": "ListItem", "position": 3, "name": "مقاييس لوحة العمليات", "item": "https://fulcrumgrid.com/ar/blog/operations-dashboard-metrics/"}
+    ]
+  }
+  </script>
+</head>
+<body class="product-page">
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/>
+            <path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/>
+            <defs><linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+          </svg>
+        </span>
+        <span class="brand-name" dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span>
+      </a>
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <a href="/ar/#products">المنتجات</a>
+        <a href="/ar/pricing/">الأسعار</a>
+        <a href="/ar/blog/">المدوّنة</a>
+        <a href="/ar/about/">من نحن</a>
+        <a href="/ar/#contact">اتصل بنا</a>
+      </nav>
+      <div class="header-cta">
+        <div class="lang-switch" role="group" aria-label="اللغة">
+          <a href="/blog/operations-dashboard-metrics/" hreflang="en" lang="en">EN</a>
+          <a href="/ar/blog/operations-dashboard-metrics/" class="active" aria-current="page" hreflang="ar" lang="ar">ع</a>
+        </div>
+        <a class="btn btn-primary" href="/ar/#contact">اطلب عرضًا توضيحيًا</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="مسار التنقّل">
+        <a href="/ar/">الرئيسية</a><span>/</span><a href="/ar/blog/">المدوّنة</a><span>/</span><span class="current">مقاييس لوحة العمليات</span>
+      </nav>
+    </div>
+
+    <article class="section" style="padding-top:22px">
+      <div class="container">
+        <div class="article article-header">
+          <span class="post-cat" style="color:var(--teal)">العمليات</span>
+          <h1>ماذا تتابع في لوحة العمليات (وما الذي تتجاهله)</h1>
+          <div class="post-meta"><time datetime="2026-08-24">٢٤ أغسطس ٢٠٢٦</time><span class="read">٥ دقائق قراءة</span></div>
+        </div>
+
+        <div class="article article-body">
+          <p>تفشل معظم لوحات العمليات بالطريقة نفسها: تعرض كل شيء، فلا تُبرز شيئًا. حين يأخذ كل رقم الوزن نفسه، يُدفن الرقم الذي يحتاج انتباهك اليوم بين أربعين رقمًا لا تحتاجها. اللوحة الجيّدة ليست تفريغًا للبيانات — بل أداة قرار. إليك كيف تقرّر ما ينتمي إليها.</p>
+
+          <h2>اختبار كل مقياس</h2>
+          <p>قبل أن يكسب رقمٌ مكانه على اللوحة، عليه اجتياز سؤال واحد:</p>
+          <blockquote>لو تغيّر هذا الرقم، هل سيفعل أحدهم شيئًا مختلفًا اليوم؟</blockquote>
+          <p>إن كانت الإجابة الصادقة لا، فهو تقرير لا مقياس لوحة. التقارير للمراجعة الدورية؛ واللوحات للمقاييس التي تقود الفعل فوريًا. إبقاء هذا الخطّ واضحًا هو أكبر تحسين يمكن لمعظم الفرق إجراؤه.</p>
+
+          <h2>الفئات الأربع الجديرة بالمتابعة</h2>
+          <p>تميل لوحات العمليات القوية إلى تغطية أربعة أنواع من المقاييس:</p>
+          <ul>
+            <li><strong>التدفّق</strong> — كم يمرّ عبر عمليتك الأساسية: الطلبات، والتذاكر، والشحنات، والطلبات المقدَّمة يوميًا. هذا نبضك.</li>
+            <li><strong>الاختناقات</strong> — أين يتراكم العمل: طول الطابور، وعمر المتأخّرات، والوقت في كل مرحلة. هذه إنذاراتك المبكرة.</li>
+            <li><strong>الجودة واتفاقيات الخدمة</strong> — هل تفي بالوعود المهمّة: معدّل الالتزام بالمواعيد، ومعدّل الأخطاء، وزمن الاستجابة مقابل الهدف.</li>
+            <li><strong>النقد والالتزامات</strong> — الحالة المالية للعمليات: الذمم المستحقّة، والإنفاق مقابل الموازنة، والالتزامات القادمة.</li>
+          </ul>
+          <p>مقياسان أو ثلاثة في كل فئة تكفي عادةً. لوحة مركّزة من عشرة أرقام حيّة تتفوّق على جدار من خمسين في كل مرة.</p>
+
+          <h2>ما الذي تتركه خارجًا</h2>
+          <p>مقاييس المظهر التي لا تفعل سوى الارتفاع (المجاميع التراكمية)، والأرقام التي لا يملكها أحد، وأي شيء لا يمكنك التصرّف بشأنه هذا الأسبوع. إن كان المقياس مثيرًا للاهتمام لكنه غير قابل للفعل، انقله إلى تقرير شهري حيث ينتمي.</p>
+
+          <h2>صمّم للنظرة السريعة، لا للدراسة</h2>
+          <ol>
+            <li><strong>ابدأ بالاستثناءات.</strong> ضَع ما هو خارج الهدف في الأعلى. ينبغي أن يرى الناظر ما يحتاج الانتباه خلال ثانيتين.</li>
+            <li><strong>رمّز الحالة في الشكل.</strong> استخدم لونًا أو شارة أو شريطًا ليُقرأ «يحتاج انتباهًا» بنظرة — لا مجرّد رقم على أحدهم تفسيره.</li>
+            <li><strong>أظهِر الاتجاه لا القيمة فقط.</strong> الرقم المفرد لقطة؛ وخطّ اتجاه صغير يخبرك أيتحسّن أم يسوء.</li>
+            <li><strong>اجعلها حيّة.</strong> اللوحة التي يثق بها الناس هي التي يعرفون أنها محدّثة. البيانات القديمة تدرّب الجميع على تجاهلها.</li>
+          </ol>
+
+          <p>أتقِن ذلك، وتتوقّف اللوحة عن كونها زينة على الجدار وتصبح أول ما يتحقّق منه فريقك كل صباح — وما يخبرهم أين يتصرّفون.</p>
+
+          <div class="article-cta" style="--cta-acc:var(--teal)">
+            <span class="k">مركز القيادة من FulcrumGrid</span>
+            <h3>عملياتك على شاشة حيّة واحدة</h3>
+            <p>يجمع مركز القيادة مقاييسك وتنبيهاتك وسير عملك الرئيسي في عرض فوري واحد — بحدود تخبرك لحظة احتياج شيء ما إلى الانتباه.</p>
+            <a class="btn btn-primary" href="/ar/products/command-center/">استكشف مركز القيادة</a>
+          </div>
+        </div>
+
+        <div class="article-foot">
+          <a class="back-link" href="/ar/blog/"><span aria-hidden="true">→</span> العودة إلى المدوّنة</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bgf)" stroke-width="1.5"/>
+              <path d="M9 23V9h9M9 16h7" stroke="url(#bgf)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/>
+              <defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+            </svg>
+          </span>
+          <span class="brand-name" dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span>
+        </a>
+        <p class="footer-tag">العمود الفقري التشغيلي للفرق الحديثة.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>المنتجات</h4><a href="/ar/products/command-center/">مركز القيادة</a><a href="/ar/products/collection/">التحصيل</a><a href="/ar/products/hr-suite/">الموارد البشرية</a><a href="/ar/products/coming-soon/">قريبًا</a></div>
+        <div class="footer-col"><h4>المنصّة</h4><a href="/ar/#features">نظرة عامة</a><a href="/ar/pricing/">الأسعار</a><a href="/ar/blog/">المدوّنة</a></div>
+        <div class="footer-col"><h4>الشركة</h4><a href="/ar/about/">من نحن</a><a href="/ar/#contact">اتصل بنا</a><a href="mailto:hello@fulcrumgrid.com">راسلنا</a></div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</p>
+      <p class="footer-domain" dir="ltr">fulcrumgrid.com</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
