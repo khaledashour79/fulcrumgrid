@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src 'none'" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>What to Track in an Operations Dashboard — FulcrumGrid</title>
+  <meta name="description" content="A dashboard full of numbers isn't the goal. Here are the operational metrics that actually drive decisions — and how to design a dashboard people use." />
+  <meta name="theme-color" content="#0b1020" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What to Track in an Operations Dashboard (and What to Ignore)" />
+  <meta property="og:description" content="The operational metrics that actually drive decisions — and how to design a dashboard people use." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/operations-dashboard-metrics/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="article:published_time" content="2026-08-24" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — real-time operations dashboard" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/operations-dashboard-metrics/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/operations-dashboard-metrics/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/operations-dashboard-metrics/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/operations-dashboard-metrics/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What to Track in an Operations Dashboard (and What to Ignore)",
+    "description": "The operational metrics that actually drive decisions — and how to design a dashboard people use.",
+    "datePublished": "2026-08-24",
+    "dateModified": "2026-08-24",
+    "author": { "@type": "Organization", "name": "FulcrumGrid", "@id": "https://fulcrumgrid.com/#organization" },
+    "publisher": { "@id": "https://fulcrumgrid.com/#organization" },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://fulcrumgrid.com/blog/operations-dashboard-metrics/" },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://fulcrumgrid.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fulcrumgrid.com/blog/"},
+      {"@type": "ListItem", "position": 3, "name": "Operations Dashboard Metrics", "item": "https://fulcrumgrid.com/blog/operations-dashboard-metrics/"}
+    ]
+  }
+  </script>
+</head>
+<body class="product-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/>
+            <path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/>
+            <defs><linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+          </svg>
+        </span>
+        <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/#products">Products</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/blog/">Blog</a>
+        <a href="/about/">About</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <a href="/blog/operations-dashboard-metrics/" class="active" aria-current="page" hreflang="en" lang="en">EN</a>
+          <a href="/ar/blog/operations-dashboard-metrics/" hreflang="ar" lang="ar">ع</a>
+        </div>
+        <a class="btn btn-primary" href="/#contact">Request a demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span>/</span><a href="/blog/">Blog</a><span>/</span><span class="current">Operations dashboard metrics</span>
+      </nav>
+    </div>
+
+    <article class="section" style="padding-top:22px">
+      <div class="container">
+        <div class="article article-header">
+          <span class="post-cat" style="color:var(--teal)">Operations</span>
+          <h1>What to Track in an Operations Dashboard (and What to Ignore)</h1>
+          <div class="post-meta"><time datetime="2026-08-24">August 24, 2026</time><span class="read">5 min read</span></div>
+        </div>
+
+        <div class="article article-body">
+          <p>Most operations dashboards fail the same way: they show everything, so they surface nothing. When every number gets equal weight, the one that needs attention today is buried among forty that don't. A good dashboard isn't a data dump — it's a decision tool. Here's how to decide what belongs on it.</p>
+
+          <h2>The test for every metric</h2>
+          <p>Before a number earns a place on the dashboard, it has to pass one question:</p>
+          <blockquote>If this number changed, would someone do something differently today?</blockquote>
+          <p>If the honest answer is no, it's a report, not a dashboard metric. Reports are for periodic review; dashboards are for the metrics that drive action in real time. Keeping that line clear is the single biggest improvement most teams can make.</p>
+
+          <h2>The four categories worth tracking</h2>
+          <p>Strong operational dashboards tend to cover four kinds of metric:</p>
+          <ul>
+            <li><strong>Flow</strong> — how much is moving through your core process: orders, tickets, shipments, applications per day. This is your heartbeat.</li>
+            <li><strong>Bottlenecks</strong> — where work is piling up: queue length, backlog age, time-in-stage. These are your early warnings.</li>
+            <li><strong>Quality &amp; SLAs</strong> — whether you're meeting the promises that matter: on-time rate, error rate, response time against target.</li>
+            <li><strong>Cash &amp; commitments</strong> — the financial state of operations: outstanding receivables, spend against budget, upcoming obligations.</li>
+          </ul>
+          <p>Two or three metrics in each category is usually plenty. A focused dashboard of ten live numbers beats a wall of fifty every time.</p>
+
+          <h2>What to leave off</h2>
+          <p>Vanity metrics that only ever go up (cumulative totals), numbers no one owns, and anything you can't act on this week. If a metric is interesting but not actionable, move it to a monthly report where it belongs.</p>
+
+          <h2>Design for the glance, not the study</h2>
+          <ol>
+            <li><strong>Lead with exceptions.</strong> Put what's off-target at the top. A viewer should see what needs attention within two seconds.</li>
+            <li><strong>Encode state in form.</strong> Use a colour, a chip, or a stripe so "needs attention" reads at a glance — not just a number someone has to interpret.</li>
+            <li><strong>Show trend, not just value.</strong> A single number is a snapshot; a small trend line tells you whether it's getting better or worse.</li>
+            <li><strong>Make it live.</strong> A dashboard people trust is one they know is current. Stale data trains everyone to ignore it.</li>
+          </ol>
+
+          <p>Get those right and the dashboard stops being decoration on a wall and starts being the first thing your team checks each morning — and the thing that tells them where to act.</p>
+
+          <div class="article-cta" style="--cta-acc:var(--teal)">
+            <span class="k">FulcrumGrid Command Center</span>
+            <h3>Your operations, on one live screen</h3>
+            <p>Command Center brings your key metrics, alerts, and workflows into one real-time view — with thresholds that tell you the moment something needs attention.</p>
+            <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          </div>
+        </div>
+
+        <div class="article-foot">
+          <a class="back-link" href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="FulcrumGrid home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bgf)" stroke-width="1.5"/>
+              <path d="M9 23V9h9M9 16h7" stroke="url(#bgf)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/>
+              <defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+            </svg>
+          </span>
+          <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
+        </a>
+        <p class="footer-tag">The operational backbone for modern teams.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h3>Products</h3><a href="/products/command-center/">Command Center</a><a href="/products/collection/">Collection</a><a href="/products/hr-suite/">HR Suite</a><a href="/products/coming-soon/">Coming soon</a></div>
+        <div class="footer-col"><h3>Platform</h3><a href="/#features">Overview</a><a href="/pricing/">Pricing</a><a href="/blog/">Blog</a></div>
+        <div class="footer-col"><h3>Company</h3><a href="/about/">About</a><a href="/#contact">Contact</a><a href="mailto:hello@fulcrumgrid.com">Email us</a></div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> FulcrumGrid. All rights reserved.</p>
+      <p class="footer-domain">fulcrumgrid.com</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

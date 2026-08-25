@@ -5,30 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src 'none'" />
 
-  <!-- Google tag (gtag.js) — REPLACE G-XXXXXXXXXX WITH YOUR FULCRUMGRID GA4 MEASUREMENT ID -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('consent','default',{'ad_storage':'denied','analytics_storage':'denied','wait_for_update':500});
     try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','analytics_storage':'granted'});}}catch(e){}
-    gtag('config', 'G-XXXXXXXXXX');
+    gtag('config', 'G-YJDJ643CY3');
   </script>
 
   <title>FulcrumGrid — One platform for every operation</title>
-  <meta name="description" content="FulcrumGrid is the operational backbone for modern businesses. Command Center, Collection, HR Suite, and more — unified apps on a single, connected grid." />
+  <meta name="description" content="FulcrumGrid is the operational backbone for modern businesses — Command Center, Collection, HR Suite, and more: purpose-built business apps from one team." />
   <meta name="theme-color" content="#0b1020" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="FulcrumGrid — One platform for every operation" />
-  <meta property="og:description" content="Command Center, Collection, HR Suite, and more — unified apps on a single, connected grid." />
+  <meta property="og:description" content="Command Center, Collection, HR Suite, and more — purpose-built business apps from one team." />
   <meta property="og:url" content="https://fulcrumgrid.com" />
   <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid — purpose-built business apps for every operation" />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="FulcrumGrid — One platform for every operation" />
-  <meta name="twitter:description" content="Command Center, Collection, HR Suite, and more — unified apps on a single, connected grid." />
+  <meta name="twitter:description" content="Command Center, Collection, HR Suite, and more — purpose-built business apps from one team." />
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="https://fulcrumgrid.com/" />
@@ -51,9 +64,22 @@
     "@id": "https://fulcrumgrid.com/#organization",
     "name": "FulcrumGrid",
     "url": "https://fulcrumgrid.com/",
-    "logo": "https://fulcrumgrid.com/assets/favicon.svg",
-    "description": "FulcrumGrid is the operational backbone for modern teams — Command Center, Collection, HR Suite, and a growing grid of connected apps.",
-    "email": "hello@fulcrumgrid.com"
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://fulcrumgrid.com/assets/icons/icon-512.png",
+      "width": 512,
+      "height": 512
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-default.png",
+    "description": "FulcrumGrid is the operational backbone for modern teams — Command Center, Collection, HR Suite, and a growing family of purpose-built business apps.",
+    "slogan": "Purpose-built business apps for every operation",
+    "email": "hello@fulcrumgrid.com",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@fulcrumgrid.com",
+      "contactType": "sales",
+      "availableLanguage": ["English", "Arabic"]
+    }
   }
   </script>
   <script type="application/ld+json">
@@ -93,7 +119,9 @@
       <nav class="site-nav" aria-label="Primary">
         <a href="#products">Products</a>
         <a href="#features">Platform</a>
-        <a href="#how">How it works</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/blog/">Blog</a>
+        <a href="/about/">About</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -114,7 +142,9 @@
     <div class="mobile-menu" id="mobile-menu" hidden>
       <a href="#products">Products</a>
       <a href="#features">Platform</a>
-      <a href="#how">How it works</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
       <a href="#contact">Contact</a>
       <a class="btn btn-primary" href="#contact">Request a demo</a>
       <div class="lang-switch" role="group" aria-label="Language">
@@ -135,17 +165,18 @@
           <span class="gradient-text">Every operation.</span>
         </h1>
         <p class="hero-sub">
-          FulcrumGrid unifies the tools your business runs on. Command Center, Collection,
-          HR Suite, and a growing grid of apps — one login, one data layer, one place to work.
+          FulcrumGrid is a growing family of business apps — Command Center, Collection,
+          HR Suite, and more. Each one is purpose-built for the job, with the same clean,
+          consistent experience across the grid.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary btn-lg" href="#products">Explore the apps</a>
           <a class="btn btn-outline btn-lg" href="#contact">Request a demo</a>
         </div>
         <ul class="hero-badges">
-          <li><span class="dot"></span> Single sign-on</li>
-          <li><span class="dot"></span> Shared data layer</li>
-          <li><span class="dot"></span> Role-based access</li>
+          <li><span class="dot"></span> Purpose-built apps</li>
+          <li><span class="dot"></span> Consistent experience</li>
+          <li><span class="dot"></span> Deploy what you need</li>
         </ul>
       </div>
     </section>
@@ -155,10 +186,10 @@
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">The grid of apps</p>
-          <h2>Purpose-built apps, one connected system</h2>
+          <h2>Purpose-built apps for every operation</h2>
           <p class="section-lead">
-            Each app solves a real problem on its own — and works better together. Deploy
-            one today, add the rest when you're ready.
+            Each app solves a real problem on its own. Start with one today, and add more
+            as you grow.
           </p>
         </div>
 
@@ -177,7 +208,7 @@
             <ul class="feature-list">
               <li>Live KPIs &amp; custom dashboards</li>
               <li>Alerts &amp; automated workflows</li>
-              <li>Cross-app reporting</li>
+              <li>Reporting &amp; exports</li>
             </ul>
             <div class="card-foot">
               <span class="tag tag-live">Available now</span>
@@ -243,7 +274,10 @@
               <li>CRM &amp; Sales</li>
               <li>Analytics &amp; Procurement</li>
             </ul>
-            <span class="tag tag-soon">Coming soon</span>
+            <div class="card-foot">
+              <span class="tag tag-soon">Coming soon</span>
+              <a class="card-link" href="products/coming-soon/">Explore <span aria-hidden="true">→</span></a>
+            </div>
           </article>
         </div>
       </div>
@@ -253,11 +287,11 @@
     <section class="section section-alt" id="features">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Why one platform</p>
-          <h2>The grid holds it all together</h2>
+          <p class="eyebrow">Why FulcrumGrid</p>
+          <h2>Built to the same high standard</h2>
           <p class="section-lead">
-            Separate tools create silos, double entry, and blind spots. FulcrumGrid gives every
-            app a shared foundation — so your data, identity, and access stay in sync.
+            One team builds every FulcrumGrid app to the same standard — so each one is focused,
+            familiar, and ready for real work from day one.
           </p>
         </div>
 
@@ -266,36 +300,36 @@
             <div class="feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
             </div>
-            <h3>One secure identity</h3>
-            <p>Single sign-on and role-based permissions across every app. Grant the right access once, everywhere.</p>
+            <h3>Secure by design</h3>
+            <p>Role-based access and a full audit trail within each app. Grant the right people the right access.</p>
           </div>
           <div class="feature">
             <div class="feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
             </div>
-            <h3>Shared data layer</h3>
-            <p>Customers, employees, and transactions live once. Update in one app and it's current everywhere.</p>
+            <h3>Your data, exportable</h3>
+            <p>Every app keeps clean, structured records you can export anytime. Your data stays yours.</p>
           </div>
           <div class="feature">
             <div class="feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v4H4z"/><path d="M4 10h10v10H4z"/><path d="M17 10h3v10h-3z"/></svg>
             </div>
             <h3>Consistent experience</h3>
-            <p>One design language, one navigation. Teams learn the platform once and move fast in every app.</p>
+            <p>One design language and navigation across every app. Learn it once and move fast in all of them.</p>
           </div>
           <div class="feature">
             <div class="feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.5 2.5M16.5 16.5 19 19M19 5l-2.5 2.5M7.5 16.5 5 19"/><circle cx="12" cy="12" r="3.5"/></svg>
             </div>
-            <h3>Automations that span apps</h3>
-            <p>Trigger a collection task from a Command Center alert, or onboard from HR in a click. Connect the flow.</p>
+            <h3>Built for real operations</h3>
+            <p>Made for the teams who keep businesses running every day — clarity and reliability over hype.</p>
           </div>
           <div class="feature">
             <div class="feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-4 3 3 4-6"/></svg>
             </div>
-            <h3>Analytics across the board</h3>
-            <p>Report on the whole business, not one tool at a time. Every app feeds the same source of truth.</p>
+            <h3>Insight where it counts</h3>
+            <p>Each app reports on its own domain in real time, so you always know where things stand.</p>
           </div>
           <div class="feature">
             <div class="feature-icon" aria-hidden="true">
@@ -323,13 +357,13 @@
           </li>
           <li class="step">
             <span class="step-num">2</span>
-            <h3>Connect your data</h3>
-            <p>Import your records and invite your team. Roles and permissions apply across the grid instantly.</p>
+            <h3>Set up your app</h3>
+            <p>Import your records and invite your team. Configure roles and permissions in minutes.</p>
           </li>
           <li class="step">
             <span class="step-num">3</span>
             <h3>Run your operations</h3>
-            <p>Work in one place. Add more apps as you grow — everything stays connected on the same platform.</p>
+            <p>Get to work. Add more FulcrumGrid apps whenever you're ready — at your pace.</p>
           </li>
         </ol>
       </div>
@@ -386,17 +420,18 @@
           <a href="products/command-center/">Command Center</a>
           <a href="products/collection/">Collection</a>
           <a href="products/hr-suite/">HR Suite</a>
-          <a href="#products">Coming soon</a>
+          <a href="products/coming-soon/">Coming soon</a>
         </div>
         <div class="footer-col">
           <h3>Platform</h3>
           <a href="#features">Overview</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/blog/">Blog</a>
           <a href="#how">How it works</a>
-          <a href="#features">Security</a>
         </div>
         <div class="footer-col">
           <h3>Company</h3>
-          <a href="#contact">Contact</a>
+          <a href="/about/">About</a>          <a href="#contact">Contact</a>
           <a href="mailto:hello@fulcrumgrid.com">Email us</a>
           <a href="privacy/">Privacy</a>
           <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
