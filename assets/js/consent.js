@@ -26,7 +26,7 @@
       +'#fg-cc button{font:inherit;cursor:pointer;border:none;padding:9px 18px;border-radius:8px;font-weight:600;font-size:12.5px;}'
       +'#fg-cc .ok{background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;}'
       +'#fg-cc .no{background:transparent;color:#9aa6c6;border:1px solid rgba(148,163,214,.28);}'
-      +'#fg-cc .more{margin-inline-start:auto;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:#6b779c;}';
+      +'#fg-cc .more{margin-inline-start:auto;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:#7c87ab;}';
     document.head.appendChild(s);
     var d=document.createElement('div');
     d.id='fg-cc'; if(rtl) d.className='rtl';

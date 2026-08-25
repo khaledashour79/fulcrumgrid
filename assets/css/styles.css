@@ -13,7 +13,7 @@
 
   --text:          #e7ecf6;
   --text-muted:    #9aa6c6;
-  --text-dim:      #6b779c;
+  --text-dim:      #7c87ab;
 
   --teal:          #5eead4;
   --indigo:        #6366f1;
@@ -286,7 +286,7 @@ ul, ol { list-style: none; padding: 0; }
 .footer-inner { display: grid; grid-template-columns: 1.4fr 2fr; gap: 40px; padding-bottom: 40px; }
 .footer-tag { color: var(--text-muted); margin-top: 14px; max-width: 320px; font-size: 0.95rem; }
 .footer-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.footer-col h4 { font-family: var(--font-display); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-dim); margin-bottom: 14px; }
+.footer-col h3 { font-family: var(--font-display); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-dim); margin-bottom: 14px; }
 .footer-col a { display: block; color: var(--text-muted); font-size: 0.95rem; padding: 5px 0; transition: color .2s var(--ease); }
 .footer-col a:hover { color: var(--text); }
 .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding: 22px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.88rem; }
@@ -328,7 +328,8 @@ ul, ol { list-style: none; padding: 0; }
 
 /* Breadcrumb */
 .breadcrumb { padding: 20px 0 0; font-size: 0.86rem; color: var(--text-dim); }
-.breadcrumb a { color: var(--text-muted); transition: color .2s var(--ease); }
+.breadcrumb a { color: var(--text-muted); text-decoration: underline; text-decoration-color: var(--border-strong); text-underline-offset: 3px; transition: color .2s var(--ease), text-decoration-color .2s var(--ease); }
+.breadcrumb a:hover { text-decoration-color: currentColor; }
 .breadcrumb a:hover { color: var(--text); }
 .breadcrumb span { margin: 0 8px; opacity: 0.5; }
 .breadcrumb .current { color: var(--text); }
