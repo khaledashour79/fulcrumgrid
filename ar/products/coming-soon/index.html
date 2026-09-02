@@ -158,6 +158,17 @@
             <h2>كن أول من يعرف</h2>
             <p>اترك بياناتك وسنُعلمك لحظة إطلاق هذه التطبيقات.</p>
             <form class="cta-form" id="lead-form" novalidate>
+              <div class="field field-full">
+                <label for="product" class="sr-only">أي تطبيق يهمّك؟</label>
+                <select id="product" name="product">
+                  <option value="">أي تطبيق يهمّك؟ (اختياري)</option>
+                  <option value="مركز القيادة">مركز القيادة</option>
+                  <option value="التحصيل">التحصيل</option>
+                  <option value="الموارد البشرية">الموارد البشرية</option>
+                  <option value="تطبيق مخصّص">تطبيق مخصّص</option>
+                  <option value="غير متأكّد — أوصوا لي">غير متأكّد — ساعدوني في الاختيار</option>
+                </select>
+              </div>
               <div class="field">
                 <label for="name" class="sr-only">اسمك</label>
                 <input type="text" id="name" name="name" placeholder="اسمك" autocomplete="name" required />

@@ -69,14 +69,24 @@
       thanks: function (n) { return 'شكرًا ' + n + '! تم استلام طلبك وسنتواصل معك قريبًا.'; },
       fallback: 'تعذّر الإرسال تلقائيًا — يتم فتح تطبيق البريد كخيار بديل…',
       subject: 'طلب عرض توضيحي — FulcrumGrid',
-      body: function (name, email) { return 'الاسم: ' + name + '\nالبريد: ' + email + '\n\nأودّ مشاهدة عرض توضيحي لـ FulcrumGrid.'; }
+      productLabel: 'التطبيق المطلوب',
+      body: function (name, email, product) {
+        return 'الاسم: ' + name + '\nالبريد: ' + email +
+               (product ? '\nالتطبيق المطلوب: ' + product : '') +
+               '\n\nأودّ مشاهدة عرض توضيحي لـ FulcrumGrid.';
+      }
     } : {
       invalid: 'Please enter your name and a valid work email.',
       sending: 'Sending…',
       thanks: function (n) { return 'Thanks, ' + n + '! We\'ve got your request and will be in touch shortly.'; },
       fallback: 'Couldn\'t send automatically — opening your email app as a fallback…',
       subject: 'Demo request — FulcrumGrid',
-      body: function (name, email) { return 'Name: ' + name + '\nEmail: ' + email + '\n\nI\'d like to see a demo of FulcrumGrid.'; }
+      productLabel: 'Interested in',
+      body: function (name, email, product) {
+        return 'Name: ' + name + '\nEmail: ' + email +
+               (product ? '\nInterested in: ' + product : '') +
+               '\n\nI\'d like to see a demo of FulcrumGrid.';
+      }
     };
 
     var setNote = function (msg, isError) {
@@ -89,6 +99,8 @@
       e.preventDefault();
       var name = nameInput.value.trim();
       var email = emailInput.value.trim();
+      var productInput = document.getElementById('product');
+      var product = productInput ? productInput.value.trim() : '';
       var ok = true;
 
       nameInput.classList.remove('invalid');
@@ -102,14 +114,16 @@
         return;
       }
 
+      var subjectLine = t.subject + ' — ' + name + (product ? ' (' + product + ')' : '');
+
       var btn = form.querySelector('button[type="submit"]');
       if (btn) { btn.disabled = true; }
       setNote(t.sending, false);
 
       var mailtoFallback = function () {
         setNote(t.fallback, false);
-        var subject = encodeURIComponent(t.subject);
-        var body = encodeURIComponent(t.body(name, email));
+        var subject = encodeURIComponent(subjectLine);
+        var body = encodeURIComponent(t.body(name, email, product));
         window.location.href = 'mailto:contact@avenlorconsulting.com?subject=' + subject + '&body=' + body;
       };
 
@@ -120,13 +134,14 @@
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({
           access_key: '51242534-fc79-4ef7-a99b-f767f1765d90',
-          subject: t.subject + ' — ' + name,
+          subject: subjectLine,
+          product: product || 'Not specified',
           from_name: 'FulcrumGrid website',
           name: name,
           email: email,
           replyto: email,
           botcheck: false,
-          message: t.body(name, email)
+          message: t.body(name, email, product)
         })
       })
         .then(function (r) { return r.json(); })

@@ -403,6 +403,17 @@
             <h2>Ready to run on one grid?</h2>
             <p>Tell us what your team needs and we'll show you FulcrumGrid in action.</p>
             <form class="cta-form" id="lead-form" novalidate>
+              <div class="field field-full">
+                <label for="product" class="sr-only">Which app are you interested in?</label>
+                <select id="product" name="product">
+                  <option value="">Which app are you interested in? (optional)</option>
+                  <option value="Command Center">Command Center</option>
+                  <option value="Collection">Collection</option>
+                  <option value="HR Suite">HR Suite</option>
+                  <option value="A custom app">A custom app</option>
+                  <option value="Not sure — please recommend">Not sure — please recommend one for me</option>
+                </select>
+              </div>
               <div class="field">
                 <label for="name" class="sr-only">Your name</label>
                 <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
