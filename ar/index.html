@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src 'none'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src 'none'" />
 
   <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
@@ -364,6 +364,7 @@
             <h2>جاهز للعمل على شبكة واحدة؟</h2>
             <p>أخبرنا بما يحتاجه فريقك وسنعرض لك FulcrumGrid وهي تعمل.</p>
             <form class="cta-form" id="lead-form" novalidate>
+              <input type="text" name="botcheck_hp" id="lead-hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0" />
               <div class="field">
                 <label for="name" class="sr-only">اسمك</label>
                 <input type="text" id="name" name="name" placeholder="اسمك" autocomplete="name" required />
