@@ -102,10 +102,6 @@
         return;
       }
 
-      /* Honeypot: if a bot filled the hidden field, silently drop. */
-      var hp = document.getElementById('lead-hp');
-      if (hp && hp.value) { return; }
-
       var btn = form.querySelector('button[type="submit"]');
       if (btn) { btn.disabled = true; }
       setNote(t.sending, false);
