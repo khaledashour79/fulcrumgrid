@@ -148,6 +148,14 @@
         .then(function (data) {
           if (data && data.success) {
             setNote(t.thanks(name.split(' ')[0]), false);
+            /* Conversion tracking: GA4 lead event (import into Google Ads),
+               plus the native Google Ads conversion when configured. */
+            try {
+              if (window.gtag) {
+                gtag('event', 'generate_lead', { product: product || 'unspecified', method: 'web3forms' });
+              }
+              if (typeof window.fgAdsConversion === 'function') { window.fgAdsConversion(product); }
+            } catch (e) {}
             form.reset();
           } else {
             mailtoFallback();

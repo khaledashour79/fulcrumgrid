@@ -7,7 +7,7 @@
     en:{msg:'We use cookies for analytics to understand how this site is used. Analytics stay off until you accept.',accept:'Accept',decline:'Decline',more:'Privacy',href:'/privacy/'},
     ar:{msg:'نستخدم ملفات تعريف الارتباط لأغراض التحليلات لفهم كيفية استخدام هذا الموقع. تبقى التحليلات معطّلة حتى توافق.',accept:'قبول',decline:'رفض',more:'الخصوصية',href:'/ar/privacy/'}
   }[lang];
-  function upd(g){ try{ if(window.gtag){ gtag('consent','update',{'analytics_storage':g?'granted':'denied','ad_storage':g?'granted':'denied'}); } }catch(e){} }
+  function upd(g){ try{ if(window.gtag){ gtag('consent','update',{'analytics_storage':g?'granted':'denied','ad_storage':g?'granted':'denied','ad_user_data':g?'granted':'denied','ad_personalization':g?'granted':'denied'}); } }catch(e){} }
   var stored; try{ stored=localStorage.getItem(KEY); }catch(e){}
   if(stored==='granted'){ upd(true); return; }
   if(stored==='denied'){ upd(false); return; }
