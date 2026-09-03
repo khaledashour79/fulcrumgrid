@@ -294,6 +294,9 @@ ul, ol { list-style: none; padding: 0; }
 .cta-alt a { color: var(--accent-2); border-bottom: 1px solid transparent; transition: border-color .2s var(--ease); }
 .cta-alt a:hover { border-bottom-color: var(--accent-2); }
 
+.pref-source { display: inline-flex; align-items: center; gap: 9px; margin-top: 22px; }
+.pref-source svg { color: var(--accent-2); flex: 0 0 auto; }
+
 .custom-tags { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 4px 0 30px; padding: 0; }
 .custom-tags li {
   font-size: 0.9rem; color: var(--text-muted); font-weight: 500;
