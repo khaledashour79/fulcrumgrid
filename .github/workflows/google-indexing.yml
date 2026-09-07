@@ -1,0 +1,39 @@
+name: Google Indexing API
+
+# Manually submit URLs to the Google Indexing API from the GitHub UI —
+# no local setup needed. Requires the repo secret GOOGLE_INDEXING_SA_KEY
+# (the full service-account JSON). See scripts/google-indexing/README.md.
+
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "Space-separated URLs (leave blank to use scripts/google-indexing/urls.txt)"
+        required: false
+        default: ""
+      type:
+        description: "Notification type"
+        required: true
+        default: "URL_UPDATED"
+        type: choice
+        options:
+          - URL_UPDATED
+          - URL_DELETED
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Submit URLs to the Google Indexing API
+        env:
+          GOOGLE_INDEXING_SA_KEY: ${{ secrets.GOOGLE_INDEXING_SA_KEY }}
+        run: |
+          if [ -z "$GOOGLE_INDEXING_SA_KEY" ]; then
+            echo "::error::Repo secret GOOGLE_INDEXING_SA_KEY is not set. See scripts/google-indexing/README.md."
+            exit 1
+          fi
+          python3 scripts/google-indexing/submit.py --type "${{ inputs.type }}" ${{ inputs.urls }}
