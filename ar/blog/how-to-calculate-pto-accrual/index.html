@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>كيف تحسب استحقاق الإجازات (PTO): المعادلة والمعدّلات وأمثلة — FulcrumGrid</title>
+  <meta name="description" content="كيف تحسب استحقاق الإجازات مدفوعة الأجر خطوة بخطوة — المعادلة، ومعدّلات الاستحقاق حسب فترة الدفع، والموظف بالساعة مقابل الراتب، وأمثلة جاهزة، مع أسئلة شائعة." />
+  <meta name="theme-color" content="#0b1020" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="كيف تحسب استحقاق الإجازات (PTO): المعادلة والمعدّلات وأمثلة" />
+  <meta property="og:description" content="معادلة استحقاق الإجازات، والمعدّلات حسب فترة الدفع، والموظف بالساعة مقابل الراتب، وأمثلة جاهزة للنسخ." />
+  <meta property="og:url" content="https://fulcrumgrid.com/ar/blog/how-to-calculate-pto-accrual/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="article:published_time" content="2026-09-09" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid منظومة الموارد البشرية — عمليات الأفراد" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-pto-accrual/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-pto-accrual/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-pto-accrual/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-pto-accrual/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <style>:root { --font-sans: 'Cairo', system-ui, sans-serif; --font-display: 'Cairo', system-ui, sans-serif; }</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "كيف تحسب استحقاق الإجازات (PTO): المعادلة والمعدّلات وأمثلة",
+    "description": "معادلة استحقاق الإجازات، والمعدّلات حسب فترة الدفع، والموظف بالساعة مقابل الراتب، وأمثلة جاهزة للنسخ.",
+    "datePublished": "2026-09-09",
+    "dateModified": "2026-09-09",
+    "author": { "@type": "Organization", "name": "FulcrumGrid", "@id": "https://fulcrumgrid.com/#organization" },
+    "publisher": { "@id": "https://fulcrumgrid.com/#organization" },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://fulcrumgrid.com/ar/blog/how-to-calculate-pto-accrual/" },
+    "inLanguage": "ar"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://fulcrumgrid.com/ar/"},
+      {"@type": "ListItem", "position": 2, "name": "المدوّنة", "item": "https://fulcrumgrid.com/ar/blog/"},
+      {"@type": "ListItem", "position": 3, "name": "كيف تحسب استحقاق الإجازات", "item": "https://fulcrumgrid.com/ar/blog/how-to-calculate-pto-accrual/"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "كم يوم إجازة يعادل أسبوعين؟", "acceptedAnswer": {"@type": "Answer", "text": "لموظف بدوام كامل يعمل 8 ساعات يوميًا، يعادل أسبوعا الإجازة 10 أيام عمل، أي 80 ساعة. تتبّع معظم الشركات الإجازات بالساعات لا بالأيام حتى تنطبق بدقة على الموظفين بدوام جزئي وبالساعة."}},
+      {"@type": "Question", "name": "كيف تحسب معدّل استحقاق الإجازة لكل ساعة عمل؟", "acceptedAnswer": {"@type": "Answer", "text": "اقسم ساعات الإجازة السنوية على عدد ساعات العمل في السنة. لـ 80 ساعة (10 أيام) إجازة وسنة عمل من 2,080 ساعة يكون الناتج 80 ÷ 2,080 = 0.0385 ساعة إجازة عن كل ساعة عمل."}},
+      {"@type": "Question", "name": "ما معدّل استحقاق الإجازة المعتاد؟", "acceptedAnswer": {"@type": "Answer", "text": "يمنح كثير من أصحاب العمل من 10 إلى 20 يومًا (80 إلى 160 ساعة) إجازة سنويًا، وغالبًا تزيد مع سنوات الخدمة. على جدول كل أسبوعين يعادل ذلك نحو 3.08 إلى 6.15 ساعة تُستحق كل فترة دفع."}},
+      {"@type": "Question", "name": "هل تُستحق الإجازة على ساعات العمل الإضافي؟", "acceptedAnswer": {"@type": "Answer", "text": "هذا قرار سياسة. يحسب كثير من أصحاب العمل الاستحقاق على الساعات النظامية فقط حتى حدّ معيّن ويستثنون العمل الإضافي — لكن ينبغي أن تحدّد ذلك بوضوح في سياستك وتطبّقه على الجميع بالطريقة نفسها."}}
+    ]
+  }
+  </script>
+</head>
+<body class="product-page">
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/>
+            <path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/>
+            <defs><linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+          </svg>
+        </span>
+        <span class="brand-name" dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span>
+      </a>
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <a href="/ar/products/">المنتجات</a>
+        <a href="/ar/pricing/">الأسعار</a>
+        <a href="/ar/blog/">المدوّنة</a>
+        <a href="/ar/about/">من نحن</a>
+        <a href="/ar/contact/">اتصل بنا</a>
+      </nav>
+      <div class="header-cta">
+        <div class="lang-switch" role="group" aria-label="اللغة">
+          <a href="/blog/how-to-calculate-pto-accrual/" hreflang="en" lang="en">EN</a>
+          <a href="/ar/blog/how-to-calculate-pto-accrual/" class="active" aria-current="page" hreflang="ar" lang="ar">ع</a>
+        </div>
+        <a class="btn btn-primary" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="مسار التنقّل">
+        <a href="/ar/">الرئيسية</a><span>/</span><a href="/ar/blog/">المدوّنة</a><span>/</span><span class="current">كيف تحسب استحقاق الإجازات</span>
+      </nav>
+    </div>
+
+    <article class="section" style="padding-top:22px">
+      <div class="container">
+        <div class="article article-header">
+          <span class="post-cat" style="color:var(--rose)">الموارد البشرية</span>
+          <h1>كيف تحسب استحقاق الإجازات (PTO): المعادلة والمعدّلات وأمثلة</h1>
+          <div class="post-meta"><time datetime="2026-09-09">٩ سبتمبر ٢٠٢٦</time><span class="read">٦ دقائق قراءة</span></div>
+        </div>
+
+        <div class="article article-body">
+          <p><strong>الإجابة المختصرة:</strong> لحساب استحقاق الإجازات، اقسم الإجازة مدفوعة الأجر التي يكتسبها الموظف في السنة على وقت عمله في السنة. لكل ساعة عمل: <strong>ساعات الإجازة السنوية ÷ ساعات العمل السنوية</strong>. لكل فترة دفع: <strong>ساعات الإجازة السنوية ÷ عدد فترات الدفع</strong>. وكل ما يلي مجرّد تطبيق لذلك بأرقام حقيقية.</p>
+
+          <h2>ما هو استحقاق الإجازة؟</h2>
+          <p>استحقاق الإجازة يعني أن الموظفين يكتسبون إجازتهم مدفوعة الأجر تدريجيًا مع عملهم، بدلًا من الحصول على رصيد السنة كاملًا مقدّمًا. قد يكتسب الموظف بضع ساعات كل راتب، فيبلغ بحلول منتصف العام نحو نصف مخصّصه السنوي. وهو البديل الأعدل والأكثر شيوعًا للمنح المقطوع — خصوصًا للموظفين بالساعة والجدد.</p>
+
+          <h2>معادلة استحقاق الإجازة</h2>
+          <p>ابدأ برقمين: كم إجازة يحصل عليها الموظف سنويًا، والفترة التي تحسب الاستحقاق عليها. ثم:</p>
+          <ul>
+            <li><strong>لكل ساعة عمل:</strong> ساعات الإجازة السنوية ÷ ساعات العمل السنوية</li>
+            <li><strong>لكل فترة دفع:</strong> ساعات الإجازة السنوية ÷ عدد فترات الدفع في السنة</li>
+          </ul>
+          <p>سنة العمل القياسية بدوام كامل هي <strong>2,080 ساعة</strong> (40 ساعة × 52 أسبوعًا). وتعتمد فترات الدفع على جدولك: 52 أسبوعيًا، أو 26 كل أسبوعين، أو 24 نصف شهري، أو 12 شهريًا.</p>
+
+          <h2>كيف تحسب معدّل الاستحقاق لكل ساعة عمل</h2>
+          <p>استخدم هذا حين يجب أن تتبع الإجازة ساعات العمل الفعلية — وهو الأسلوب المعتاد للموظفين بالساعة وبدوام جزئي.</p>
+          <p><strong>مثال:</strong> موظف بدوام كامل يحصل على 10 أيام (80 ساعة) إجازة سنويًا.</p>
+          <ul>
+            <li>80 ساعة إجازة ÷ 2,080 ساعة عمل = <strong>0.0385 ساعة إجازة عن كل ساعة عمل</strong></li>
+            <li>إذًا راتب كل أسبوعين بـ 80 ساعة يكتسب 80 × 0.0385 = <strong>~3.08 ساعة</strong> إجازة</li>
+            <li>وموظف بدوام جزئي عمل 50 ساعة في تلك الفترة يكتسب 50 × 0.0385 = <strong>~1.92 ساعة</strong></li>
+          </ul>
+
+          <h2>كيف تحسب الاستحقاق لكل فترة دفع</h2>
+          <p>استخدم هذا للموظفين براتب، حيث يضيف كل راتب مبلغًا ثابتًا.</p>
+          <p><strong>مثال:</strong> نفس الـ 80 ساعة إجازة سنويًا، بجدول كل أسبوعين (26 فترة):</p>
+          <ul>
+            <li>80 ÷ 26 = <strong>~3.08 ساعة لكل راتب</strong></li>
+            <li>أسبوعيًا (52): 80 ÷ 52 = ~1.54 ساعة</li>
+            <li>نصف شهري (24): 80 ÷ 24 = ~3.33 ساعة</li>
+            <li>شهريًا (12): 80 ÷ 12 = ~6.67 ساعة</li>
+          </ul>
+          <p>ولسياسة أكثر سخاءً بـ 15 يومًا (120 ساعة)، بدّل البسط فقط: 120 ÷ 26 = ~4.62 ساعة كل أسبوعين؛ و20 يومًا (160 ساعة) = 160 ÷ 26 = ~6.15 ساعة.</p>
+
+          <h2>ثلاث قواعد تُبقي الاستحقاق نظيفًا</h2>
+          <ul>
+            <li><strong>حدّد سقفًا أو قاعدة ترحيل.</strong> قرّر أقصى رصيد يمكن للموظف تجميعه، وهل يُرحّل غير المستخدم أم يُدفع نقدًا أم يسقط بنهاية العام. بلا سقف، تتضخّم الأرصدة إلى التزام حقيقي.</li>
+            <li><strong>قرّر أي الساعات تُحتسب.</strong> هل تُستحق الإجازة على العمل الإضافي؟ على الإجازات المدفوعة الأخرى؟ تحسب معظم السياسات الساعات النظامية فقط — دوّن ذلك وطبّقه باتساق.</li>
+            <li><strong>قرّب الأرقام بالطريقة نفسها للجميع.</strong> اختر قاعدة تقريب (خانتين عشريتين مثلًا أو أقرب ربع ساعة) واستخدمها للكل حتى لا ينحرف رصيد أحد.</li>
+          </ul>
+
+          <h2>أسئلة شائعة</h2>
+          <details class="faq-item"><summary>كم يوم إجازة يعادل أسبوعين؟</summary><p>لموظف بدوام كامل يعمل 8 ساعات يوميًا، يعادل أسبوعا الإجازة 10 أيام عمل، أي 80 ساعة. تتبّع معظم الشركات الإجازات بالساعات لا بالأيام حتى تنطبق بدقة على الموظفين بدوام جزئي وبالساعة.</p></details>
+          <details class="faq-item"><summary>كيف تحسب معدّل استحقاق الإجازة لكل ساعة عمل؟</summary><p>اقسم ساعات الإجازة السنوية على عدد ساعات العمل في السنة. لـ 80 ساعة (10 أيام) إجازة وسنة عمل من 2,080 ساعة يكون الناتج 80 ÷ 2,080 = 0.0385 ساعة إجازة عن كل ساعة عمل.</p></details>
+          <details class="faq-item"><summary>ما معدّل استحقاق الإجازة المعتاد؟</summary><p>يمنح كثير من أصحاب العمل من 10 إلى 20 يومًا (80 إلى 160 ساعة) إجازة سنويًا، وغالبًا تزيد مع سنوات الخدمة. على جدول كل أسبوعين يعادل ذلك نحو 3.08 إلى 6.15 ساعة تُستحق كل فترة دفع.</p></details>
+          <details class="faq-item"><summary>هل تُستحق الإجازة على ساعات العمل الإضافي؟</summary><p>هذا قرار سياسة. يحسب كثير من أصحاب العمل الاستحقاق على الساعات النظامية فقط حتى حدّ معيّن ويستثنون العمل الإضافي — لكن ينبغي أن تحدّد ذلك بوضوح في سياستك وتطبّقه على الجميع بالطريقة نفسها.</p></details>
+
+          <hr />
+          <p>الحساب بسيط؛ لكن إبقاء كل رصيد صحيحًا عبر فريق كامل، كل فترة دفع، هو ما يصبح مُرهِقًا. وهنا يأتي دور النظام — يحسب الاستحقاق تلقائيًا، ويطبّق سقوفك وقواعد الترحيل، ويعرض لكل شخص رصيده الحيّ. لقرارات السياسة خلف الأرقام، راجِع دليلنا إلى <a href="/ar/blog/pto-policy/">بناء سياسة إجازات</a>، وإن كنت تؤسّس عمليات الأفراد من الصفر فإن <a href="/ar/blog/employee-onboarding-checklist/">قائمة تحقّق تأهيل الموظّفين</a> ودليل <a href="/ar/blog/hr-software-small-business/">برامج الموارد البشرية للشركات الصغيرة</a> يغطّيان البقية.</p>
+
+          <div class="article-cta" style="--cta-acc:var(--rose)">
+            <span class="k">FulcrumGrid منظومة الموارد البشرية</span>
+            <h3>دع الاستحقاقات تعمل من تلقاء نفسها</h3>
+            <p>تحسب منظومة الموارد البشرية استحقاق الإجازات تلقائيًا على جدولك، وتطبّق سقوفك وقواعد الترحيل، وتعرض لكل موظف رصيده الحيّ — بلا جداول بيانات ولا تسويات آخر الشهر.</p>
+            <a class="btn btn-primary" href="/ar/products/hr-suite/">استكشف منظومة الموارد البشرية</a>
+          </div>
+        </div>
+
+        <div class="article-foot">
+          <a class="back-link" href="/ar/blog/"><span aria-hidden="true">→</span> العودة إلى المدوّنة</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bgf)" stroke-width="1.5"/>
+              <path d="M9 23V9h9M9 16h7" stroke="url(#bgf)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/>
+              <defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+            </svg>
+          </span>
+          <span class="brand-name" dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span>
+        </a>
+        <p class="footer-tag">العمود الفقري التشغيلي للفرق الحديثة.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h3>المنتجات</h3><a href="/ar/products/">كل المنتجات</a><a href="/ar/products/command-center/">مركز القيادة</a><a href="/ar/products/collection/">التحصيل</a><a href="/ar/products/hr-suite/">الموارد البشرية</a><a href="/ar/custom-apps/">تطبيقات مخصّصة</a><a href="/ar/products/coming-soon/">قريبًا</a></div>
+        <div class="footer-col"><h3>المنصّة</h3><a href="/ar/features/">الميزات</a><a href="/ar/how-it-works/">كيف تعمل</a><a href="/ar/pricing/">الأسعار</a><a href="/ar/blog/">المدوّنة</a></div>
+        <div class="footer-col"><h3>الشركة</h3><a href="/ar/about/">من نحن</a><a href="/ar/faq/">الأسئلة الشائعة</a><a href="/ar/contact/">اتصل بنا</a><a href="mailto:contact@avenlorconsulting.com">راسلنا</a><a href="/ar/privacy/">الخصوصية</a><a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a></div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</p>
+      <p class="footer-domain" dir="ltr">fulcrumgrid.com</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

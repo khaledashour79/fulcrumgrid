@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>How to Calculate PTO Accrual: Formulas, Rates &amp; Examples — FulcrumGrid</title>
+  <meta name="description" content="How to calculate PTO accrual step by step — the formula, accrual rates by pay period, hourly vs salaried, and worked examples you can copy. Plus a quick FAQ." />
+  <meta name="theme-color" content="#0b1020" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How to Calculate PTO Accrual: Formulas, Rates &amp; Examples" />
+  <meta property="og:description" content="The PTO accrual formula, rates by pay period, hourly vs salaried, and worked examples you can copy." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/how-to-calculate-pto-accrual/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="article:published_time" content="2026-09-09" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid HR Suite — people operations" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/how-to-calculate-pto-accrual/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-pto-accrual/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-pto-accrual/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-pto-accrual/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How to Calculate PTO Accrual: Formulas, Rates & Examples",
+    "description": "The PTO accrual formula, rates by pay period, hourly vs salaried, and worked examples you can copy.",
+    "datePublished": "2026-09-09",
+    "dateModified": "2026-09-09",
+    "author": { "@type": "Organization", "name": "FulcrumGrid", "@id": "https://fulcrumgrid.com/#organization" },
+    "publisher": { "@id": "https://fulcrumgrid.com/#organization" },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://fulcrumgrid.com/blog/how-to-calculate-pto-accrual/" },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://fulcrumgrid.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fulcrumgrid.com/blog/"},
+      {"@type": "ListItem", "position": 3, "name": "How to Calculate PTO Accrual", "item": "https://fulcrumgrid.com/blog/how-to-calculate-pto-accrual/"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "How many PTO days is two weeks?", "acceptedAnswer": {"@type": "Answer", "text": "For a full-time employee working 8-hour days, two weeks of PTO is 10 working days, or 80 hours. Most companies track PTO in hours rather than days so it works cleanly for part-time and hourly staff too."}},
+      {"@type": "Question", "name": "How do you calculate a PTO accrual rate per hour worked?", "acceptedAnswer": {"@type": "Answer", "text": "Divide the annual PTO hours by the number of hours worked in a year. For 80 hours (10 days) of PTO and a 2,080-hour work year, that is 80 / 2,080 = 0.0385 hours of PTO earned per hour worked."}},
+      {"@type": "Question", "name": "What is a typical PTO accrual rate?", "acceptedAnswer": {"@type": "Answer", "text": "Many employers offer 10 to 20 days (80 to 160 hours) of PTO per year, often rising with tenure. On a biweekly schedule that works out to roughly 3.08 to 6.15 hours accrued each pay period."}},
+      {"@type": "Question", "name": "Does PTO accrue on overtime hours?", "acceptedAnswer": {"@type": "Answer", "text": "That is a policy choice. Many employers accrue PTO only on regular hours up to a set cap and exclude overtime, but you should define this clearly in your policy and apply it the same way for everyone."}}
+    ]
+  }
+  </script>
+</head>
+<body class="product-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/>
+            <path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/>
+            <defs><linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+          </svg>
+        </span>
+        <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/blog/">Blog</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <a href="/blog/how-to-calculate-pto-accrual/" class="active" aria-current="page" hreflang="en" lang="en">EN</a>
+          <a href="/ar/blog/how-to-calculate-pto-accrual/" hreflang="ar" lang="ar">ع</a>
+        </div>
+        <a class="btn btn-primary" href="/contact/">Request a demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span>/</span><a href="/blog/">Blog</a><span>/</span><span class="current">How to calculate PTO accrual</span>
+      </nav>
+    </div>
+
+    <article class="section" style="padding-top:22px">
+      <div class="container">
+        <div class="article article-header">
+          <span class="post-cat" style="color:var(--rose)">HR</span>
+          <h1>How to Calculate PTO Accrual: Formulas, Rates &amp; Examples</h1>
+          <div class="post-meta"><time datetime="2026-09-09">September 9, 2026</time><span class="read">6 min read</span></div>
+        </div>
+
+        <div class="article article-body">
+          <p><strong>The short answer:</strong> to calculate PTO accrual, divide the paid time off an employee earns in a year by the time they work in a year. Per hour worked, that's <strong>annual PTO hours &divide; annual work hours</strong>. Per paycheck, it's <strong>annual PTO hours &divide; number of pay periods</strong>. Everything below is just applying that with real numbers.</p>
+
+          <h2>What is PTO accrual?</h2>
+          <p>PTO accrual means employees earn their paid time off gradually as they work, rather than receiving the whole year's balance up front. Someone might earn a few hours every paycheck, so by mid-year they've banked roughly half their annual allowance. It's the fairer, more common alternative to a lump-sum grant — especially for hourly staff and new hires.</p>
+
+          <h2>The PTO accrual formula</h2>
+          <p>Start with two numbers: how much PTO the employee gets per year, and the period you're accruing over. Then:</p>
+          <ul>
+            <li><strong>Per hour worked:</strong> annual PTO hours &divide; annual work hours</li>
+            <li><strong>Per pay period:</strong> annual PTO hours &divide; number of pay periods in the year</li>
+          </ul>
+          <p>A standard full-time year is <strong>2,080 hours</strong> (40 hours &times; 52 weeks). Pay periods depend on your schedule: 52 weekly, 26 biweekly, 24 semi-monthly, or 12 monthly.</p>
+
+          <h2>How to calculate the accrual rate per hour worked</h2>
+          <p>Use this when PTO should track actual hours — the standard approach for hourly and part-time staff.</p>
+          <p><strong>Example:</strong> a full-time employee gets 10 days (80 hours) of PTO a year.</p>
+          <ul>
+            <li>80 PTO hours &divide; 2,080 work hours = <strong>0.0385 hours of PTO per hour worked</strong></li>
+            <li>So an 80-hour biweekly paycheck earns 80 &times; 0.0385 = <strong>~3.08 hours</strong> of PTO</li>
+            <li>A part-timer who worked 50 hours that period earns 50 &times; 0.0385 = <strong>~1.92 hours</strong></li>
+          </ul>
+
+          <h2>How to calculate accrual per pay period</h2>
+          <p>Use this for salaried staff, where each paycheck simply adds a fixed amount.</p>
+          <p><strong>Example:</strong> the same 80 hours of annual PTO, paid biweekly (26 periods):</p>
+          <ul>
+            <li>80 &divide; 26 = <strong>~3.08 hours per paycheck</strong></li>
+            <li>Weekly (52): 80 &divide; 52 = ~1.54 hours</li>
+            <li>Semi-monthly (24): 80 &divide; 24 = ~3.33 hours</li>
+            <li>Monthly (12): 80 &divide; 12 = ~6.67 hours</li>
+          </ul>
+          <p>For a more generous 15-day (120-hour) policy, just swap the numerator: 120 &divide; 26 = ~4.62 hours biweekly; 20 days (160 hours) = 160 &divide; 26 = ~6.15 hours.</p>
+
+          <h2>Three rules that keep accrual clean</h2>
+          <ul>
+            <li><strong>Set a cap or carryover rule.</strong> Decide the maximum balance an employee can bank, and whether unused time rolls over, is paid out, or is lost at year-end. Without a cap, balances grow into a real liability.</li>
+            <li><strong>Decide what hours count.</strong> Does PTO accrue on overtime? On other paid leave? Most policies accrue on regular hours only — write it down and apply it consistently.</li>
+            <li><strong>Round the same way for everyone.</strong> Pick a rounding rule (say, to two decimals or the nearest quarter-hour) and use it across the board so no one's balance drifts.</li>
+          </ul>
+
+          <h2>Frequently asked questions</h2>
+          <details class="faq-item"><summary>How many PTO days is two weeks?</summary><p>For a full-time employee working 8-hour days, two weeks of PTO is 10 working days, or 80 hours. Most companies track PTO in hours rather than days so it works cleanly for part-time and hourly staff too.</p></details>
+          <details class="faq-item"><summary>How do you calculate a PTO accrual rate per hour worked?</summary><p>Divide the annual PTO hours by the number of hours worked in a year. For 80 hours (10 days) of PTO and a 2,080-hour work year, that's 80 &divide; 2,080 = 0.0385 hours of PTO earned per hour worked.</p></details>
+          <details class="faq-item"><summary>What is a typical PTO accrual rate?</summary><p>Many employers offer 10 to 20 days (80 to 160 hours) of PTO per year, often rising with tenure. On a biweekly schedule that works out to roughly 3.08 to 6.15 hours accrued each pay period.</p></details>
+          <details class="faq-item"><summary>Does PTO accrue on overtime hours?</summary><p>That's a policy choice. Many employers accrue PTO only on regular hours up to a set cap and exclude overtime — but you should define it clearly in your policy and apply it the same way for everyone.</p></details>
+
+          <hr />
+          <p>The math is simple; keeping every balance right across a whole team, every pay period, is where it gets fiddly. That's what a system is for — accruing automatically, applying your caps and carryover rules, and showing each person their live balance. For the policy decisions behind the numbers, see our guide to <a href="/blog/pto-policy/">building a PTO policy</a>, and if you're setting up people operations from scratch, our <a href="/blog/employee-onboarding-checklist/">employee onboarding checklist</a> and guide to <a href="/blog/hr-software-small-business/">HR software for small businesses</a> cover the rest.</p>
+
+          <div class="article-cta" style="--cta-acc:var(--rose)">
+            <span class="k">FulcrumGrid HR Suite</span>
+            <h3>Let accruals run themselves</h3>
+            <p>HR Suite accrues PTO automatically on your schedule, applies your caps and carryover rules, and shows every employee their live balance — no spreadsheets, no month-end reconciling.</p>
+            <a class="btn btn-primary" href="/products/hr-suite/">Explore HR Suite</a>
+          </div>
+        </div>
+
+        <div class="article-foot">
+          <a class="back-link" href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="FulcrumGrid home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bgf)" stroke-width="1.5"/>
+              <path d="M9 23V9h9M9 16h7" stroke="url(#bgf)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/>
+              <defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+            </svg>
+          </span>
+          <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
+        </a>
+        <p class="footer-tag">The operational backbone for modern teams.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h3>Products</h3><a href="/products/">All products</a><a href="/products/command-center/">Command Center</a><a href="/products/collection/">Collection</a><a href="/products/hr-suite/">HR Suite</a><a href="/custom-apps/">Custom apps</a><a href="/products/coming-soon/">Coming soon</a></div>
+        <div class="footer-col"><h3>Platform</h3><a href="/features/">Features</a><a href="/how-it-works/">How it works</a><a href="/pricing/">Pricing</a><a href="/blog/">Blog</a></div>
+        <div class="footer-col"><h3>Company</h3><a href="/about/">About</a><a href="/faq/">FAQ</a><a href="/contact/">Contact</a><a href="mailto:contact@avenlorconsulting.com">Email us</a><a href="/privacy/">Privacy</a><a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a></div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> FulcrumGrid. All rights reserved.</p>
+      <p class="footer-domain">fulcrumgrid.com</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
