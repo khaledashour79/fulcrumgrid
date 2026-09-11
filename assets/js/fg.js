@@ -153,3 +153,85 @@
     start();
   })();
 })();
+
+/* Currency switcher — SAR base, indicative conversion, IP pre-select (pricing pages only) */
+(function () {
+  var priced = document.querySelectorAll('.num[data-amt]');
+  if (!priced.length) return;
+
+  var RTL = document.documentElement.dir === 'rtl';
+  var RATES = { SAR: 3.75, USD: 1, AED: 3.6725, EUR: 0.92, GBP: 0.79 }; // units per 1 USD
+  var SYM = { SAR: 'SAR', USD: '$', AED: 'AED', EUR: '€', GBP: '£' };
+  var ORDER = ['SAR', 'USD', 'AED', 'EUR', 'GBP'];
+  var C2CUR = { SA: 'SAR', AE: 'AED', GB: 'GBP', US: 'USD', CA: 'USD', AU: 'USD',
+    DE:'EUR',FR:'EUR',ES:'EUR',IT:'EUR',NL:'EUR',IE:'EUR',BE:'EUR',AT:'EUR',PT:'EUR',FI:'EUR',GR:'EUR',LU:'EUR',SK:'EUR',SI:'EUR',EE:'EUR',LV:'EUR',LT:'EUR',CY:'EUR',MT:'EUR',HR:'EUR' };
+  var LSKEY = 'fg_currency';
+
+  function fmt(cur, amt, base) {
+    var usd = amt / RATES[base];
+    var v = Math.round(usd * RATES[cur]);
+    var num = v.toLocaleString('en-US');
+    var sym = SYM[cur];
+    var body = /^[A-Z]/.test(sym) ? sym + ' ' + num : sym + num; // letters get a thin space
+    return (cur === base ? '' : '≈ ') + body;
+  }
+  function apply(cur) {
+    Array.prototype.forEach.call(priced, function (el) {
+      var amt = parseFloat(el.getAttribute('data-amt'));
+      var base = el.getAttribute('data-base') || 'SAR';
+      if (isNaN(amt)) return;
+      el.textContent = fmt(cur, amt, base);
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('.fg-cur button'), function (b) {
+      b.classList.toggle('active', b.getAttribute('data-cur') === cur);
+      b.setAttribute('aria-pressed', b.getAttribute('data-cur') === cur ? 'true' : 'false');
+    });
+    try { localStorage.setItem(LSKEY, cur); } catch (e) {}
+  }
+
+  // Build switcher
+  var anchor = document.querySelector('.pricing-grid') || document.querySelector('.fg-priceblock');
+  if (!anchor) return;
+  var wrap = document.createElement('div');
+  wrap.className = 'fg-cur';
+  wrap.setAttribute('role', 'group');
+  wrap.setAttribute('aria-label', RTL ? 'العملة' : 'Currency');
+  var label = document.createElement('span');
+  label.className = 'fg-cur-label';
+  label.textContent = RTL ? 'العملة' : 'Currency';
+  wrap.appendChild(label);
+  ORDER.forEach(function (c) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.setAttribute('data-cur', c);
+    btn.textContent = c;
+    btn.addEventListener('click', function () { apply(c); });
+    wrap.appendChild(btn);
+  });
+  var note = document.createElement('span');
+  note.className = 'fg-cur-note';
+  note.textContent = RTL ? 'تحويلات تقديرية — الفوترة بالريال السعودي' : 'Indicative — billed in SAR';
+  wrap.appendChild(note);
+  anchor.parentNode.insertBefore(wrap, anchor);
+
+  // Initial currency: stored → geo-IP → SAR
+  var stored = null;
+  try { stored = localStorage.getItem(LSKEY); } catch (e) {}
+  if (stored && RATES[stored]) { apply(stored); return; }
+  apply('SAR');
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-data: reduce)').matches) return;
+  try {
+    var ctrl = ('AbortController' in window) ? new AbortController() : null;
+    if (ctrl) setTimeout(function () { ctrl.abort(); }, 2500);
+    fetch('https://ipapi.co/json/', ctrl ? { signal: ctrl.signal } : undefined)
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (!d) return;
+        var cur = C2CUR[(d.country_code || '').toUpperCase()];
+        var chosen = null; try { chosen = localStorage.getItem(LSKEY); } catch (e) {}
+        // only auto-apply if the visitor hasn't clicked since load
+        if (cur && RATES[cur] && (!chosen || chosen === 'SAR')) apply(cur);
+      })
+      .catch(function () {});
+  } catch (e) {}
+})();
