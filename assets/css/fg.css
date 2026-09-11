@@ -549,3 +549,13 @@ ul, ol { list-style: none; padding: 0; margin: 0; }
   .fg-priceblock-main { border-inline-end: 0; border-bottom: 1px solid var(--border); }
   .fg-priceblock .price-features { padding: 28px 40px 40px; }
 }
+
+/* Module matrix (per-app pricing) */
+.compare-table .yes { color: var(--cobalt); font-weight: 700; }
+.compare-table .no { color: var(--muted); opacity: .6; }
+.compare-table thead th.col-hi { color: var(--cobalt-ink); }
+.compare-table td, .compare-table th { text-align: start; }
+.compare-table td.cell, .compare-table th.cell { text-align: center; }
+.tier-note { color: var(--muted); font-size: .82rem; }
+.pricing-grid.tiers { grid-template-columns: repeat(auto-fit, minmax(232px, 1fr)); }
+.price-best { color: var(--muted); font-size: .82rem; }
