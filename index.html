@@ -18,7 +18,7 @@
 
   <title>FulcrumGrid — One platform for every operation</title>
   <meta name="description" content="FulcrumGrid is the operational backbone for modern businesses — Command Center, Collection, HR Suite, and more: purpose-built business apps from one team." />
-  <meta name="theme-color" content="#0b1020" />
+  <meta name="theme-color" content="#f0f2ed" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -51,11 +51,11 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" /></noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
 
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/fg.css" />
 
   <script type="application/ld+json">
   {
@@ -93,22 +93,22 @@
   }
   </script>
 </head>
-<body>
+<body class="fg">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- ===== Header ===== -->
   <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="FulcrumGrid home">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
         <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 32 32" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/>
             <path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
             <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/>
             <defs>
               <linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#5eead4"/>
-                <stop offset="1" stop-color="#6366f1"/>
+                <stop stop-color="#2156df"/>
+                <stop offset="1" stop-color="#1d47ba"/>
               </linearGradient>
             </defs>
           </svg>
@@ -130,7 +130,6 @@
           <a href="/" class="active" aria-current="page" hreflang="en" lang="en">EN</a>
           <a href="/ar/" hreflang="ar" lang="ar">ع</a>
         </div>
-        <a class="btn btn-ghost" href="/contact/">Sign in</a>
         <a class="btn btn-primary" href="/contact/">Request a demo</a>
       </div>
 
@@ -155,222 +154,191 @@
   </header>
 
   <main id="main">
-    <!-- ===== Hero ===== -->
-    <section class="hero">
-      <div class="grid-bg" aria-hidden="true"></div>
-      <div class="container hero-inner">
-        <p class="eyebrow">The operational backbone for modern teams</p>
-        <h1 class="hero-title">
-          One platform.<br />
-          <span class="gradient-text">Every operation.</span>
-        </h1>
-        <p class="hero-sub">
-          FulcrumGrid is a growing family of business apps — Command Center, Collection,
-          HR Suite, and more. Each one is purpose-built for the job, with the same clean,
-          consistent experience across the grid.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary btn-lg" href="/products/">Explore the apps</a>
-          <a class="btn btn-outline btn-lg" href="/contact/">Request a demo</a>
+    <!-- ===== Big cinematic hero ===== -->
+    <section class="fg-herobig" id="hero">
+      <div class="fg-scene" id="heroScene">
+        <div class="fg-herobig-media">
+          <img src="/assets/img/hero-field.webp" alt="A luminous cobalt grid held within pale architectural planes" width="1500" height="842" />
         </div>
-        <ul class="hero-badges">
-          <li><span class="dot"></span> Purpose-built apps</li>
-          <li><span class="dot"></span> Consistent experience</li>
-          <li><span class="dot"></span> Deploy what you need</li>
-        </ul>
+        <canvas id="fgParticles" class="fg-dots" aria-hidden="true"></canvas>
+        <span class="fg-bloom" aria-hidden="true"></span>
+        <span class="fg-sweep" aria-hidden="true"></span>
       </div>
+      <div class="fg-herobig-inner" id="heroContent">
+        <p class="eyebrow">The operational backbone for modern teams</p>
+        <h1>One platform.<br />Every <em>operation.</em></h1>
+        <p class="fg-intro">FulcrumGrid is a growing family of business apps — Command Center, Collection, HR Suite, and more. Each one is purpose-built for the job, with the same clean, consistent experience across the grid.</p>
+        <div class="fg-actions">
+          <a class="btn btn-primary" href="/products/">Explore the apps <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-outline" href="/contact/">Request a demo</a>
+        </div>
+      </div>
+      <span class="fg-field-tag" aria-hidden="true">FIELD / 01</span>
+      <span class="fg-scroll-cue" aria-hidden="true">Scroll<span></span></span>
+    </section>
+
+    <!-- ===== Proof row ===== -->
+    <section class="fg-proof-row" aria-label="At a glance">
+      <div class="fg-proof">
+        <span>FulcrumGrid / in brief</span>
+        <p class="fg-proof-lede">A growing family of purpose-built business apps, unified on one grid.</p>
+      </div>
+      <div class="fg-proof"><span>Apps live today</span><strong>Three</strong></div>
+      <div class="fg-proof"><span>Experience</span><strong>One grid</strong></div>
+      <div class="fg-proof"><span>Deploy</span><strong>What you need</strong></div>
     </section>
 
     <!-- ===== Products ===== -->
-    <section class="section" id="products">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">The grid of apps</p>
-          <h2>Purpose-built apps for every operation</h2>
-          <p class="section-lead">
-            Each app solves a real problem on its own. Start with one today, and add more
-            as you grow.
-          </p>
+    <section class="fg-section" id="products">
+      <div class="fg-section-title">
+        <p class="eyebrow">The grid of apps</p>
+        <div>
+          <h2>Purpose-built apps for every operation.</h2>
+          <p>Each app solves a real problem on its own. Start with one today, and add more as you grow.</p>
         </div>
-
-        <div class="product-grid">
-          <!-- Command Center -->
-          <article class="product-card" data-accent="teal">
-            <div class="product-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/>
-                <rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/>
-              </svg>
-            </div>
-            <h3>Command Center</h3>
-            <p>Real-time operations dashboard. Monitor every metric, workflow, and alert across
-              your business from a single control room.</p>
-            <ul class="feature-list">
-              <li>Live KPIs &amp; custom dashboards</li>
-              <li>Alerts &amp; automated workflows</li>
-              <li>Reporting &amp; exports</li>
-            </ul>
-            <div class="card-foot">
-              <span class="tag tag-live">Available now</span>
-              <a class="card-link" href="products/command-center/">Explore <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-
-          <!-- Collection -->
-          <article class="product-card" data-accent="indigo">
-            <div class="product-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2v20"/><path d="M17 5.5c0-1.9-2.2-3-5-3s-5 1.1-5 3 2.2 3 5 3 5 1.1 5 3-2.2 3-5 3-5-1.1-5-3"/>
-              </svg>
-            </div>
-            <h3>Collection</h3>
-            <p>Receivables and payments, handled. Track invoices, automate reminders, and
-              recover revenue with clear, auditable collection workflows.</p>
-            <ul class="feature-list">
-              <li>Invoice &amp; ledger tracking</li>
-              <li>Automated reminders &amp; plans</li>
-              <li>Payment reconciliation</li>
-            </ul>
-            <div class="card-foot">
-              <span class="tag tag-live">Available now</span>
-              <a class="card-link" href="products/collection/">Explore <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-
-          <!-- HR Suite -->
-          <article class="product-card" data-accent="rose">
-            <div class="product-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/>
-                <path d="M17 4.5a3 3 0 0 1 0 6"/><path d="M18.5 14.5a5.5 5.5 0 0 1 3 5.5"/>
-              </svg>
-            </div>
-            <h3>HR Suite</h3>
-            <p>People operations from hire to retire. Manage employees, payroll, time off, and
-              performance in one compliant, easy-to-run suite.</p>
-            <ul class="feature-list">
-              <li>Employee records &amp; onboarding</li>
-              <li>Payroll &amp; time tracking</li>
-              <li>Performance &amp; reviews</li>
-            </ul>
-            <div class="card-foot">
-              <span class="tag tag-live">Available now</span>
-              <a class="card-link" href="products/hr-suite/">Explore <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-
-          <!-- More / Coming soon -->
-          <article class="product-card product-card-soon" data-accent="slate">
-            <div class="product-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/>
-              </svg>
-            </div>
-            <h3>More on the grid</h3>
-            <p>Inventory, CRM, Analytics, and Procurement are in the works. Built on the same
-              platform, so they plug straight in.</p>
-            <ul class="feature-list">
-              <li>Inventory &amp; Assets</li>
-              <li>CRM &amp; Sales</li>
-              <li>Analytics &amp; Procurement</li>
-            </ul>
-            <div class="card-foot">
-              <span class="tag tag-soon">Coming soon</span>
-              <a class="card-link" href="products/coming-soon/">Explore <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-        </div>
-        <div class="hero-actions" style="justify-content:center;margin-top:36px">
-          <a class="btn btn-outline btn-lg" href="/products/">View all products</a>
-        </div>
+      </div>
+      <div class="fg-apps">
+        <article class="fg-app">
+          <span class="fg-app-tag"><i></i> App / Command Center</span>
+          <h3>Command Center</h3>
+          <p>Real-time operations dashboard. Monitor every metric, workflow, and alert across your business from one screen.</p>
+          <a class="fg-app-link" href="/products/command-center/">Explore Command Center ↗</a>
+          <div class="fg-orbit" aria-hidden="true"></div>
+          <span class="fg-app-glare" aria-hidden="true"></span>
+        </article>
+        <article class="fg-app">
+          <span class="fg-app-tag"><i></i> App / Collection</span>
+          <h3>Collection</h3>
+          <p>Receivables and payments, handled. Track invoices, automate reminders, and get paid faster without the chase.</p>
+          <a class="fg-app-link" href="/products/collection/">Explore Collection ↗</a>
+          <div class="fg-orbit" aria-hidden="true"></div>
+          <span class="fg-app-glare" aria-hidden="true"></span>
+        </article>
+        <article class="fg-app">
+          <span class="fg-app-tag"><i></i> App / HR Suite</span>
+          <h3>HR Suite</h3>
+          <p>People operations from hire to retire. Manage employees, payroll, time off, and everything in between.</p>
+          <a class="fg-app-link" href="/products/hr-suite/">Explore HR Suite ↗</a>
+          <div class="fg-orbit" aria-hidden="true"></div>
+          <span class="fg-app-glare" aria-hidden="true"></span>
+        </article>
+      </div>
+      <div class="fg-actions" style="margin-top:34px">
+        <a class="btn btn-outline" href="/products/">View all products ↗</a>
       </div>
     </section>
 
-    <!-- ===== Custom apps ===== -->
-    <section class="section" id="custom" style="padding-top:0">
-      <div class="container">
-        <div class="cta-panel">
-          <div class="grid-bg grid-bg-soft" aria-hidden="true"></div>
-          <div class="cta-content">
-            <p class="eyebrow">Built for you</p>
-            <h2>Need an app for your exact workflow?</h2>
-            <p>Beyond our ready-made apps, we build customized business apps tailored to
-              your specific use case — on the same secure, auditable platform as the rest of the grid.</p>
-            <a class="btn btn-primary btn-lg" href="/custom-apps/">Explore custom apps</a>
+    <!-- ===== System / consistency panel ===== -->
+    <section class="fg-feature">
+      <div class="fg-panel">
+        <div class="fg-panel-media">
+          <img class="fg-parallax" src="/assets/img/system-signal.webp" alt="Translucent cobalt filaments converging at a single fulcrum point" width="1400" height="1050" />
+          <span class="fg-tagmark" aria-hidden="true">SIGNAL / 02</span>
+        </div>
+        <div class="fg-panel-copy dark">
+          <p class="eyebrow">One standard</p>
+          <h2>Built to the same high standard.</h2>
+          <p>Every app on the grid shares one interface, one login, and one way of working — so moving between them feels like using a single product, not a bundle of tools.</p>
+          <div class="fg-feature-list">
+            <div><b>01</b><span>Shared sign-in across every app</span></div>
+            <div><b>02</b><span>Consistent layout, shortcuts, and controls</span></div>
+            <div><b>03</b><span>Data that connects instead of scattering</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== Features / Platform ===== -->
-    <section class="section section-alt" id="features">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Why FulcrumGrid</p>
-          <h2>Built to the same high standard</h2>
-          <p class="section-lead">
-            One team builds every FulcrumGrid app to the same standard — so each one is focused,
-            familiar, and ready for real work from day one.
-          </p>
+    <!-- ===== Platform panel + roadmap ===== -->
+    <section class="fg-feature" id="platform">
+      <div class="fg-panel">
+        <div class="fg-panel-copy">
+          <p class="eyebrow">The platform</p>
+          <h2>One platform beneath every app.</h2>
+          <p>Command Center, Collection, and HR Suite all run on the same foundation — the same security, the same reliability, the same team. Add an app and it simply belongs.</p>
+          <div class="fg-feature-list">
+            <div><b>↗</b><span>Composable — run one app or the whole grid</span></div>
+            <div><b>↗</b><span>Secure by default, maintained by one team</span></div>
+            <div><b>↗</b><span>Human-readable, built for real operating pressure</span></div>
+          </div>
         </div>
-
-        <ul class="custom-tags" aria-label="Platform highlights" style="justify-content:center">
-          <li>Secure by design</li>
-          <li>Your data, exportable</li>
-          <li>Consistent experience</li>
-          <li>Built for real operations</li>
-          <li>Insight where it counts</li>
-          <li>Grows with you</li>
-        </ul>
-        <div class="hero-actions" style="justify-content:center;margin-top:24px">
-          <a class="btn btn-primary btn-lg" href="/features/">Explore the platform</a>
+        <div class="fg-panel-media">
+          <img class="fg-parallax" src="/assets/img/architecture-field.webp" alt="A modular field of pale platforms linked by graphite paths" width="1400" height="1050" />
+          <span class="fg-tagmark" aria-hidden="true">FIELD / 03</span>
+        </div>
+      </div>
+      <div class="fg-roadmap">
+        <div><p class="eyebrow">On the roadmap</p></div>
+        <div>
+          <p>More apps are joining the grid, each built to the same standard.</p>
+          <div class="fg-tags">
+            <span class="fg-tag">Inventory</span>
+            <span class="fg-tag">CRM</span>
+            <span class="fg-tag">Analytics</span>
+            <span class="fg-tag">Procurement</span>
+            <span class="fg-tag">TMS</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ===== How it works ===== -->
-    <section class="section" id="how">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">How it works</p>
-          <h2>Live in three steps</h2>
-          <p class="section-lead">Choose your apps, set them up in minutes, and run your operations — adding more apps at your own pace.</p>
+    <section class="fg-section" id="how">
+      <div class="fg-steps">
+        <div class="fg-steps-copy">
+          <p class="eyebrow">Get running</p>
+          <h2>Live in three steps.</h2>
+          <p>Choose your apps, set them up in minutes, and run your operations — adding more apps at your own pace.</p>
         </div>
-        <div class="hero-actions" style="justify-content:center">
-          <a class="btn btn-outline btn-lg" href="/how-it-works/">See how it works</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== CTA ===== -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="cta-panel">
-          <div class="grid-bg grid-bg-soft" aria-hidden="true"></div>
-          <div class="cta-content">
-            <h2>Ready to run on one grid?</h2>
-            <p>Tell us what your team needs and we'll show you FulcrumGrid in action.</p>
-            <div class="hero-actions" style="justify-content:center">
-              <a class="btn btn-primary btn-lg" href="/contact/">Request a demo</a>
-              <a class="btn btn-outline btn-lg" href="mailto:contact@avenlorconsulting.com">Email us</a>
-            </div>
+        <div class="fg-step-list">
+          <div class="fg-step">
+            <span class="fg-step-no">01</span>
+            <div><h3>Choose your apps</h3><p>Pick the app that solves your most pressing problem first. No all-or-nothing rollout.</p></div>
+            <span class="fg-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="fg-step">
+            <span class="fg-step-no">02</span>
+            <div><h3>Set up in minutes</h3><p>Sensible defaults and a consistent interface mean your team is productive the same day.</p></div>
+            <span class="fg-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="fg-step">
+            <span class="fg-step-no">03</span>
+            <div><h3>Run your operations</h3><p>Work in one clean experience, and add more apps from the grid whenever you’re ready.</p></div>
+            <span class="fg-arrow" aria-hidden="true">↗</span>
           </div>
         </div>
       </div>
+      <div class="fg-actions" style="margin-top:34px">
+        <a class="btn btn-outline" href="/how-it-works/">See how it works ↗</a>
+      </div>
+    </section>
+
+    <!-- ===== Quote ===== -->
+    <section class="fg-quote">
+      <span class="fg-caption">Why one grid</span>
+      <p>When every team runs on a different tool, alignment is just a polite word for overhead. <span>One grid changes that.</span></p>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="fg-callout" id="contact">
+      <div>
+        <h2>Ready to run on one grid?</h2>
+        <p>Tell us what your team needs and we’ll show you FulcrumGrid in action.</p>
+      </div>
+      <a class="btn btn-primary" href="/contact/">Request a demo ↗</a>
     </section>
   </main>
 
   <!-- ===== Footer ===== -->
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="footer-inner">
       <div class="footer-brand">
-        <a class="brand" href="#top" aria-label="FulcrumGrid home">
+        <a class="brand" href="/" aria-label="FulcrumGrid home">
           <span class="brand-mark" aria-hidden="true">
             <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bgf)" stroke-width="1.5"/>
               <path d="M9 23V9h9M9 16h7" stroke="url(#bgf)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
               <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/>
-              <defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+              <defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#2156df"/><stop offset="1" stop-color="#1d47ba"/></linearGradient></defs>
             </svg>
           </span>
           <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
@@ -384,13 +352,14 @@
         <div class="footer-col"><h3>Company</h3><a href="/about/">About</a><a href="/faq/">FAQ</a><a href="/contact/">Contact</a><a href="mailto:contact@avenlorconsulting.com">Email us</a><a href="/privacy/">Privacy</a><a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a></div>
       </div>
     </div>
-    <div class="container footer-bottom">
+    <div class="footer-bottom">
       <p>&copy; <span id="year">2026</span> FulcrumGrid. All rights reserved.</p>
       <p class="footer-domain">fulcrumgrid.com</p>
     </div>
   </footer>
 
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/fg.js" defer></script>
   <script src="assets/js/consent.js" defer></script>
 </body>
 </html>
