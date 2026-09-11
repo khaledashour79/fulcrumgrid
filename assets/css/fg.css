@@ -537,3 +537,15 @@ ul, ol { list-style: none; padding: 0; margin: 0; }
 .fg-imghero .fg-field-tag { position: absolute; inset-inline-end: 24px; bottom: 18px; z-index: 2; }
 @media (max-width: 540px) { .fg-imghero { min-height: 360px; } }
 @media (prefers-reduced-motion: no-preference) { .fg-imghero > img { transform: scale(1.06); animation: fg-kenburns 26s ease-in-out infinite alternate; } }
+
+/* Inline price block (product pages) */
+.fg-priceblock { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--border); background: var(--panel); }
+.fg-priceblock-main { padding: 40px; display: flex; flex-direction: column; gap: 14px; border-inline-end: 1px solid var(--border); }
+.fg-priceblock-main .price-amount { margin-top: 4px; }
+.fg-priceblock-main .product-hero-actions { margin-top: 6px; }
+.fg-priceblock .price-features { padding: 40px; margin: 0; }
+@media (max-width: 640px) {
+  .fg-priceblock { grid-template-columns: 1fr; }
+  .fg-priceblock-main { border-inline-end: 0; border-bottom: 1px solid var(--border); }
+  .fg-priceblock .price-features { padding: 28px 40px 40px; }
+}
