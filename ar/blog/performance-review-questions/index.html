@@ -79,23 +79,17 @@
 <body class="fg product-page">
   <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
 
-  <header class="site-header" id="top">
-    <div class="container header-inner">
+    <header class="site-header" id="top">
+    <div class="header-inner">
       <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/>
-            <path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/>
-            <defs><linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
-          </svg>
-        </span>
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/><path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/><defs><linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#2156df"/><stop offset="1" stop-color="#1d47ba"/></linearGradient></defs></svg></span>
         <span class="brand-name" dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span>
       </a>
       <nav class="site-nav" aria-label="التنقّل الرئيسي">
         <a href="/ar/products/">المنتجات</a>
+        <a href="/ar/features/">المنصّة</a>
         <a href="/ar/pricing/">الأسعار</a>
-        <a href="/ar/blog/">المدوّنة</a>
+        <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
         <a href="/ar/about/">من نحن</a>
         <a href="/ar/contact/">اتصل بنا</a>
       </nav>
@@ -105,6 +99,22 @@
           <a href="/ar/blog/performance-review-questions/" class="active" aria-current="page" hreflang="ar" lang="ar">ع</a>
         </div>
         <a class="btn btn-primary" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      </div>
+      <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="/ar/products/">المنتجات</a>
+      <a href="/ar/features/">المنصّة</a>
+      <a href="/ar/pricing/">الأسعار</a>
+      <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
+      <a href="/ar/about/">من نحن</a>
+      <a href="/ar/contact/">اتصل بنا</a>
+      <a class="btn btn-primary" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      <div class="lang-switch" role="group" aria-label="اللغة">
+        <a href="/blog/performance-review-questions/" hreflang="en" lang="en">EN</a>
+        <a href="/ar/blog/performance-review-questions/" class="active" aria-current="page" hreflang="ar" lang="ar">ع</a>
       </div>
     </div>
   </header>
