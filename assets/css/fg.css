@@ -94,7 +94,9 @@ body.fg::before {
 .nav-toggle { display: none; flex-direction: column; gap: 4px; width: 42px; height: 38px; align-items: center; justify-content: center; border: 1px solid var(--border); background: var(--panel); }
 .nav-toggle span { width: 18px; height: 2px; background: var(--ink); }
 .mobile-menu { display: none; }
-.mobile-menu.open { display: grid; gap: 4px; width: 100vw; margin-left: calc(50% - 50vw); background: var(--panel); border-bottom: 1px solid var(--border); padding: 14px var(--wrap); box-sizing: border-box; }
+.mobile-menu.open { display: grid; gap: 4px; width: 100vw; margin-left: calc(50% - 50vw); background: var(--panel); border-bottom: 1px solid var(--border); padding: 14px max(16px, calc((100vw - var(--wrap)) / 2)) 22px; box-sizing: border-box; }
+.mobile-menu.open .btn { margin-top: 8px; }
+.mobile-menu.open .lang-switch { width: max-content; margin-top: 8px; }
 .mobile-menu a { padding: 12px 0; color: var(--muted); border-bottom: 1px solid var(--border); }
 .mobile-menu a:last-of-type { border-bottom: 0; }
 
