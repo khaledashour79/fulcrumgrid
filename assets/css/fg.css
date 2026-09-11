@@ -565,3 +565,13 @@ ul, ol { list-style: none; padding: 0; margin: 0; }
 [dir="rtl"] .compare-table tr.grp th { letter-spacing: 0; }
 .compare-table .addon { color: var(--cobalt-ink); opacity: .82; font-weight: 700; }
 .compare-table .ksa { display: inline-block; margin-inline-start: 6px; font-size: 9.5px; font-weight: 700; letter-spacing: .05em; color: var(--cobalt-ink); background: var(--tint); border: 1px solid var(--tint-border); border-radius: 4px; padding: 1px 5px; vertical-align: middle; }
+
+/* Currency switcher (pricing pages) */
+.fg-cur { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin: 0 0 26px; }
+.fg-cur-label { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted-2); font-weight: 700; margin-inline-end: 4px; }
+.fg-cur button { font: inherit; font-size: 12.5px; font-weight: 600; color: var(--muted); background: var(--panel); border: 1px solid var(--border); border-radius: 999px; padding: 6px 13px; cursor: pointer; transition: color .2s, background .2s, border-color .2s; }
+.fg-cur button:hover { color: var(--ink); border-color: var(--ink); }
+.fg-cur button.active { color: #fff; background: var(--cobalt); border-color: var(--cobalt); }
+.fg-cur button:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 2px; }
+.fg-cur-note { font-size: 12px; color: var(--muted); margin-inline-start: 6px; }
+@media (max-width: 540px) { .fg-cur-note { flex-basis: 100%; margin: 2px 0 0; } }
