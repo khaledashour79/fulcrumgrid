@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>مؤشّرات الأداء مقابل الأهداف والنتائج: ما الفرق ومتى تستخدم كلًّا؟ — FulcrumGrid</title>
+  <meta name="description" content="شرح مؤشّرات الأداء مقابل الأهداف والنتائج — ما كلٌّ منهما، وكيف يختلفان، ومتى تستخدم المقاييس لمراقبة الصحّة مقابل الأهداف لدفع التغيير." />
+  <meta name="theme-color" content="#0b1020" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="مؤشّرات الأداء مقابل الأهداف والنتائج: ما الفرق ومتى تستخدم كلًّا؟" />
+  <meta property="og:description" content="تقيس مؤشّرات الأداء الصحّة المستمرّة؛ وتدفع الأهداف والنتائج تغييرًا طموحًا. إليك الفرق ومتى تستخدم كلًّا." />
+  <meta property="og:url" content="https://fulcrumgrid.com/ar/blog/kpis-vs-okrs/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="article:published_time" content="2026-09-12" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="مركز القيادة من FulcrumGrid — العمليات في لمحة" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://fulcrumgrid.com/ar/blog/kpis-vs-okrs/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/kpis-vs-okrs/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/kpis-vs-okrs/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/kpis-vs-okrs/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="/assets/css/fg.css" />
+  <style>:root { --font-sans: 'Cairo', system-ui, sans-serif; --font-display: 'Cairo', system-ui, sans-serif; }</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "مؤشّرات الأداء مقابل الأهداف والنتائج: ما الفرق ومتى تستخدم كلًّا؟",
+    "description": "تقيس مؤشّرات الأداء الصحّة المستمرّة؛ وتدفع الأهداف والنتائج تغييرًا طموحًا. إليك الفرق ومتى تستخدم كلًّا.",
+    "datePublished": "2026-09-12",
+    "dateModified": "2026-09-12",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/ar/blog/kpis-vs-okrs/"
+    },
+    "inLanguage": "ar"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "الرئيسية",
+        "item": "https://fulcrumgrid.com/ar/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "المدوّنة",
+        "item": "https://fulcrumgrid.com/ar/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "مؤشّرات الأداء مقابل الأهداف والنتائج",
+        "item": "https://fulcrumgrid.com/ar/blog/kpis-vs-okrs/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "هل يمكن أن تكون النتيجة الرئيسية مؤشّر أداء؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "نعم — وكثيرًا ما تكون كذلك. النتيجة الرئيسية عادةً هدف على مقياس، وقد يكون ذلك المقياس مؤشّرًا تتتبّعه أصلًا. الفرق أن المؤشّر يعمل باستمرار بينما النتيجة الرئيسية هدف محدّد لدورة الأهداف والنتائج."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "هل الأهداف والنتائج أفضل من مؤشّرات الأداء؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "لا أحدهما أفضل؛ فلكلٍّ عمل مختلف. المؤشّرات تراقب الصحّة المستمرّة، والأهداف والنتائج تدفع تغييرًا مركّزًا. ومعظم الفرق تحتاج الاثنين."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كم مؤشّرًا وهدفًا ينبغي أن يكون لديك؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "أبقِ الاثنين قليلين. حفنة مؤشّرات لكل فريق تُبقي اللوحة مقروءة، ومن هدف إلى ثلاثة مع نتيجتين إلى خمس لكلٍّ في الربع تُبقي التركيز. الإكثار من أيّهما يُميّع الانتباه."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="fg product-page">
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+    <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/><path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/><defs><linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#2156df"/><stop offset="1" stop-color="#1d47ba"/></linearGradient></defs></svg></span>
+        <span class="brand-name"><span dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span></span>
+      </a>
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <a href="/ar/products/">المنتجات</a>
+        <a href="/ar/features/">المنصّة</a>
+        <a href="/ar/pricing/">الأسعار</a>
+        <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
+        <a href="/ar/about/">من نحن</a>
+        <a href="/ar/contact/">اتصل بنا</a>
+      </nav>
+      <div class="header-cta">
+        <div class="lang-switch" role="group" aria-label="اللغة">
+        <a href="/blog/kpis-vs-okrs/" hreflang="en" lang="en">EN</a>
+        <a href="/ar/blog/kpis-vs-okrs/" class="active" aria-current="page" hreflang="ar" lang="ar">ع</a>
+        </div>
+        <a class="btn btn-primary" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      </div>
+      <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+        <a href="/ar/products/">المنتجات</a>
+        <a href="/ar/features/">المنصّة</a>
+        <a href="/ar/pricing/">الأسعار</a>
+        <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
+        <a href="/ar/about/">من نحن</a>
+        <a href="/ar/contact/">اتصل بنا</a>
+      <a class="btn btn-primary" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      <div class="lang-switch" role="group" aria-label="اللغة">
+        <a href="/blog/kpis-vs-okrs/" hreflang="en" lang="en">EN</a>
+        <a href="/ar/blog/kpis-vs-okrs/" class="active" aria-current="page" hreflang="ar" lang="ar">ع</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="مسار التنقّل">
+        <a href="/ar/">الرئيسية</a><span>/</span><a href="/ar/blog/">المدوّنة</a><span>/</span><span class="current">مؤشّرات الأداء مقابل الأهداف والنتائج</span>
+      </nav>
+    </div>
+
+    <article class="section" style="padding-top:22px">
+      <div class="container">
+        <div class="article article-header">
+          <span class="post-cat" style="color:var(--teal)">العمليات</span>
+          <h1>مؤشّرات الأداء مقابل الأهداف والنتائج: ما الفرق ومتى تستخدم كلًّا؟</h1>
+          <div class="post-meta"><time datetime="2026-09-12">١٢ سبتمبر ٢٠٢٦</time><span class="read">٦ دقائق قراءة</span></div>
+        </div>
+
+        <div class="article article-body">
+<p>مؤشّرات الأداء والأهداف والنتائج من أكثر المختصرات استخدامًا — وأكثرها التباسًا — في الأعمال. وهما ليسا خصمين؛ بل يجيبان عن سؤالين مختلفين. مؤشّرات الأداء تخبرك إن كان العمل سليمًا الآن. والأهداف والنتائج تخبرك بما تحاول تغييره تاليًا. استخدم الخطأ منهما فإمّا تنجرف بلا اتّجاه أو تلاحق الأهداف بينما تنزلق الأساسيات.</p>
+
+          <h2>ما مؤشّر الأداء؟</h2>
+          <p>مؤشّر الأداء الرئيسي مقياس يتتبّع الصحّة المستمرّة لشيء مهمّ: الإيراد الشهري، ومعدّل الفقد، والتسليم في الوقت، ومتوسّط زمن الاستجابة. مؤشّرات الأداء عادةً مقاييس ثابتة تراقبها باستمرار مقابل هدف أو حدّ. المؤشّر الجيّد يجيب: «هل يؤدّي هذا الجزء من العمل كما ينبغي؟»</p>
+
+          <h2>ما الهدف والنتائج؟</h2>
+          <p>الهدف والنتائج الرئيسية إطار لتحديد الأهداف. <strong>الهدف</strong> غاية نوعية طموحة («اجعل التأهيل بلا جهد»)؛ و<strong>النتائج الرئيسية</strong> من اثنتين إلى خمس مخرجات قابلة للقياس تثبت أنك حقّقته («اخفض زمن أوّل قيمة إلى أقلّ من يوم»، «ارفع التفعيل إلى ٦٠٪»). تُحدَّد لفترة — عادةً ربع سنة — ويُقصد بها أن تمطّك.</p>
+
+          <h2>الفروق الجوهرية</h2>
+          <ul>
+            <li><strong>الغرض:</strong> المؤشّرات تراقب الصحّة؛ والأهداف والنتائج تدفع التغيير.</li>
+            <li><strong>المدّة:</strong> المؤشّرات تعمل باستمرار؛ والأهداف والنتائج تُحدَّد لكل دورة.</li>
+            <li><strong>الطموح:</strong> ينبغي أن تبقى المؤشّرات في نطاق صحّي؛ ويُقصد بالأهداف والنتائج أن تكون مطّةً.</li>
+            <li><strong>الطبيعة:</strong> المؤشّر مقياس مفرد؛ والهدف والنتائج غاية زائد المقاييس التي تثبتها.</li>
+          </ul>
+
+          <h2>كيف يعملان معًا</h2>
+          <p>أفضل المشغّلين يستخدمون الاثنين. المؤشّرات هي اللوحة التي تراقبها لإبقاء العمل يجري؛ والأهداف والنتائج هي المشاريع التي تتبنّاها لدفعه قدمًا. وكثيرًا ما يصبح مؤشّر منجرف سببًا لهدف («الفقد يتسلّل صعودًا — هدف هذا الربع إصلاح الاحتفاظ»)، وكثيرًا ما تكون النتيجة الرئيسية مجرّد هدف على مؤشّر قائم. راقب بالمؤشّرات؛ وحسّن بالأهداف والنتائج.</p>
+
+          <h2>متى تستخدم كلًّا</h2>
+          <p>الجأ للمؤشّرات حين تحتاج مراقبة ثابتة للأداء والتقاط المشكلات مبكرًا. والجأ للأهداف والنتائج حين تريد حشد الفريق حول عدد صغير من الأهداف الطموحة للربع. إن كان كل شيء مؤشّرًا فلا شيء يتغيّر؛ وإن كان كل شيء هدفًا ونتائج فينزلق اليومي. وازِن الاثنين.</p>
+
+          <h2>الأسئلة الشائعة</h2>
+          <details class="faq-item"><summary>هل يمكن أن تكون النتيجة الرئيسية مؤشّر أداء؟</summary><p>نعم — وكثيرًا ما تكون كذلك. النتيجة الرئيسية عادةً هدف على مقياس، وقد يكون ذلك المقياس مؤشّرًا تتتبّعه أصلًا. الفرق أن المؤشّر يعمل باستمرار بينما النتيجة الرئيسية هدف محدّد لدورة الأهداف والنتائج.</p></details>
+          <details class="faq-item"><summary>هل الأهداف والنتائج أفضل من مؤشّرات الأداء؟</summary><p>لا أحدهما أفضل؛ فلكلٍّ عمل مختلف. المؤشّرات تراقب الصحّة المستمرّة، والأهداف والنتائج تدفع تغييرًا مركّزًا. ومعظم الفرق تحتاج الاثنين.</p></details>
+          <details class="faq-item"><summary>كم مؤشّرًا وهدفًا ينبغي أن يكون لديك؟</summary><p>أبقِ الاثنين قليلين. حفنة مؤشّرات لكل فريق تُبقي اللوحة مقروءة، ومن هدف إلى ثلاثة مع نتيجتين إلى خمس لكلٍّ في الربع تُبقي التركيز. الإكثار من أيّهما يُميّع الانتباه.</p></details>
+
+          <hr />
+          <p>يحيا الاثنان أو يموتان بالأرقام التي تختار مراقبتها — طالع أدلّتنا حول <a href="/ar/blog/operations-dashboard-metrics/">ما تتتبّعه في لوحة العمليات</a> و<a href="/ar/blog/weekly-operations-review/">إدارة مراجعة عمليات أسبوعية</a>.</p>
+
+          <div class="article-cta" style="--cta-acc:var(--teal)">
+            <span class="k">مركز القيادة من FulcrumGrid</span>
+            <h3>شاهد مؤشّراتك وأهدافك في مكان واحد</h3>
+            <p>يضع مركز القيادة مؤشّراتك الحيّة وأهداف الربع في لوحة واحدة — فتراقب صحّة العمل وتتتبّع الأهداف التي تدفعه قدمًا، جنبًا إلى جنب.</p>
+            <a class="btn btn-primary" href="/ar/products/command-center/">استكشف مركز القيادة</a>
+          </div>
+        </div>
+
+        <div class="article-foot">
+          <a class="back-link" href="/ar/blog/"><span aria-hidden="true">→</span> العودة إلى المدوّنة</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bgf)" stroke-width="1.5"/>
+              <path d="M9 23V9h9M9 16h7" stroke="url(#bgf)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/>
+              <defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+            </svg>
+          </span>
+          <span class="brand-name" dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span>
+        </a>
+        <p class="footer-tag">العمود الفقري التشغيلي للفرق الحديثة.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h3>المنتجات</h3><a href="/ar/products/">كل المنتجات</a><a href="/ar/products/command-center/">مركز القيادة</a><a href="/ar/products/collection/">التحصيل</a><a href="/ar/products/hr-suite/">الموارد البشرية</a><a href="/ar/custom-apps/">تطبيقات مخصّصة</a><a href="/ar/products/coming-soon/">قريبًا</a></div>
+        <div class="footer-col"><h3>المنصّة</h3><a href="/ar/features/">الميزات</a><a href="/ar/how-it-works/">كيف تعمل</a><a href="/ar/pricing/">الأسعار</a><a href="/ar/blog/">المدوّنة</a></div>
+        <div class="footer-col"><h3>الشركة</h3><a href="/ar/about/">من نحن</a><a href="/ar/faq/">الأسئلة الشائعة</a><a href="/ar/contact/">اتصل بنا</a><a href="mailto:contact@avenlorconsulting.com">راسلنا</a><a href="/ar/privacy/">الخصوصية</a><a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a></div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</p>
+      <p class="footer-domain" dir="ltr">fulcrumgrid.com</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/fg.js" defer></script>
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
