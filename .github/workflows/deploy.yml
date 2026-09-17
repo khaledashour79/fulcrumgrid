@@ -26,13 +26,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Build pages from content
+        # Regenerates the generator-owned pages (pricing + blog) from
+        # /content/. Idempotent, so with content unchanged the output equals
+        # the committed HTML. A build error fails the deploy (fail-safe).
+        run: python3 scripts/build/build.py
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # The site is static at the repo root
+          # The site is static at the repo root (built above from /content/)
           path: '.'
 
       - name: Deploy to GitHub Pages

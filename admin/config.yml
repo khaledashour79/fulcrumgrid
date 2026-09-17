@@ -1,0 +1,83 @@
+# FulcrumGrid content admin (Decap CMS) — edits commit to the repo, and the
+# deploy GitHub Action rebuilds the static pages from /content/.
+#
+# SETUP (one time, see scripts/oauth-worker/README.md):
+#   1. Register a GitHub OAuth App.
+#   2. Deploy scripts/oauth-worker to Cloudflare Workers with the client id/secret.
+#   3. Put the Worker URL in `base_url` below and commit.
+
+backend:
+  name: github
+  repo: khaledashour79/-fulcrumgrid
+  branch: main
+  base_url: https://REPLACE-WITH-YOUR-OAUTH-WORKER.workers.dev
+  commit_messages:
+    create: 'content: create {{collection}} "{{slug}}" (via admin)'
+    update: 'content: update {{collection}} "{{slug}}" (via admin)'
+    delete: 'content: delete {{collection}} "{{slug}}" (via admin)'
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: https://fulcrumgrid.com
+display_url: https://fulcrumgrid.com
+locale: en
+
+collections:
+  - name: blog
+    label: "Blog posts"
+    label_singular: "Blog post"
+    description: "Bilingual Q&A guides. Saving rebuilds and deploys the post, the blog index, sitemap and llms.txt automatically."
+    folder: "content/blog"
+    extension: json
+    format: json
+    create: true
+    slug: "{{fields.slug}}"
+    identifier_field: title_en
+    summary: "{{title_en}} — {{date}}"
+    fields:
+      - { name: slug, label: "Slug (URL)", widget: string, pattern: ['^[a-z0-9-]+$', "lowercase letters, numbers and dashes only"], hint: "Becomes /blog/<slug>/ — do not change after publishing." }
+      - { name: cat, label: Category, widget: select, options: ["collection", "hr", "operations"] }
+      - { name: date, label: "Publish date", widget: date, format: "YYYY-MM-DD" }
+
+      - { name: title_en, label: "Title (EN)", widget: string }
+      - { name: title_ar, label: "Title (AR)", widget: string, required: false }
+      - { name: desc_en, label: "Meta description (EN)", widget: text }
+      - { name: desc_ar, label: "Meta description (AR)", widget: text, required: false }
+      - { name: ogdesc_en, label: "Social description (EN)", widget: text }
+      - { name: ogdesc_ar, label: "Social description (AR)", widget: text, required: false }
+      - { name: bc_en, label: "Breadcrumb label (EN)", widget: string }
+      - { name: bc_ar, label: "Breadcrumb label (AR)", widget: string, required: false }
+      - { name: card_en, label: "Index-card blurb (EN)", widget: text }
+      - { name: card_ar, label: "Index-card blurb (AR)", widget: text, required: false }
+      - { name: read_en, label: "Read time (EN)", widget: string, default: "6 min read" }
+      - { name: read_ar, label: "Read time (AR)", widget: string, required: false, default: "٦ دقائق قراءة" }
+      - { name: metadate_en, label: "Display date (EN)", widget: string, hint: "e.g. September 15, 2026" }
+      - { name: metadate_ar, label: "Display date (AR)", widget: string, required: false, hint: "e.g. ١٥ سبتمبر ٢٠٢٦" }
+      - { name: cardtime_en, label: "Card date (EN)", widget: string, hint: "e.g. Sep 15, 2026" }
+      - { name: cardtime_ar, label: "Card date (AR)", widget: string, required: false }
+
+      - { name: body_en, label: "Body HTML (EN)", widget: text, hint: "Article HTML — <h2>…</h2><p>…</p><ul>…</ul>. The template adds the FAQ block, related links and CTA automatically." }
+      - { name: body_ar, label: "Body HTML (AR)", widget: text, required: false }
+      - { name: related_en, label: "Related links HTML (EN)", widget: text, hint: "One <p> with internal links to related guides." }
+      - { name: related_ar, label: "Related links HTML (AR)", widget: text, required: false }
+      - { name: cta_h_en, label: "CTA heading (EN)", widget: string }
+      - { name: cta_h_ar, label: "CTA heading (AR)", widget: string, required: false }
+      - { name: cta_p_en, label: "CTA text (EN)", widget: text }
+      - { name: cta_p_ar, label: "CTA text (AR)", widget: text, required: false }
+
+      - name: faqs_en
+        label: "FAQs (EN)"
+        widget: list
+        summary: "{{fields.q}}"
+        fields:
+          - { name: q, label: Question, widget: string }
+          - { name: a, label: Answer, widget: text }
+      - name: faqs_ar
+        label: "FAQs (AR)"
+        widget: list
+        required: false
+        summary: "{{fields.q}}"
+        fields:
+          - { name: q, label: Question, widget: string }
+          - { name: a, label: Answer, widget: text }
