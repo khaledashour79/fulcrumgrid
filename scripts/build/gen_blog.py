@@ -140,7 +140,9 @@ def render(post, lang):
     en_url = 'https://fulcrumgrid.com/blog/%s/'%slug
     ar_url = 'https://fulcrumgrid.com/ar/blog/%s/'%slug
     title = post['title_'+lang]; desc = post['desc_'+lang]; ogdesc = post['ogdesc_'+lang]
-    faqs = post['faqs_'+lang]
+    # Optional shorter <title> tag (h1/og/schema still use the full title).
+    title_tag = post.get('title_short_'+lang) or title
+    faqs = post.get('faqs_'+lang) or []
     # schema blocks
     blogposting = {"@context":"https://schema.org","@type":"BlogPosting","headline":title,
       "description":ogdesc,"datePublished":post['date'],"dateModified":post['date'],
@@ -152,7 +154,8 @@ def render(post, lang):
       {"@type":"ListItem","position":1,"name":("Home" if en else "الرئيسية"),"item":"https://fulcrumgrid.com"+home},
       {"@type":"ListItem","position":2,"name":("Blog" if en else "المدوّنة"),"item":"https://fulcrumgrid.com"+blog},
       {"@type":"ListItem","position":3,"name":post['bc_'+lang],"item":canon}]}
-    ld = '\n'.join('  <script type="application/ld+json">\n  %s\n  </script>'%json.dumps(o,ensure_ascii=False,indent=2).replace('\n','\n  ') for o in [blogposting,bc,faq_schema(faqs)])
+    ld_objs = [blogposting, bc] + ([faq_schema(faqs)] if faqs else [])
+    ld = '\n'.join('  <script type="application/ld+json">\n  %s\n  </script>'%json.dumps(o,ensure_ascii=False,indent=2).replace('\n','\n  ') for o in ld_objs)
 
     htmlopen = '<html lang="en">' if en else '<html lang="ar" dir="rtl">'
     fonts = 'Inter:wght@400;500;600;700;800' if en else 'Cairo:wght@400;500;600;700;800'
@@ -181,7 +184,9 @@ def render(post, lang):
         % ('', slug, (' class="active" aria-current="page"' if en else ''), '', slug, ('' if en else ' class="active" aria-current="page"')))
 
     body_inner = post['body_'+lang].strip()
-    related = post['related_'+lang].strip()
+    faq_block = ('\n          <h2>%s</h2>\n%s\n' % (faq_h, faq_details(faqs))) if faqs else ''
+    related = (post.get('related_'+lang) or '').strip()
+    rel_block = ('\n          <hr />\n          %s\n' % related) if related else ''
     cta = '''          <div class="article-cta" style="--cta-acc:%s">
             <span class="k">%s</span>
             <h3>%s</h3>
@@ -199,7 +204,7 @@ def render(post, lang):
 
   %(ga)s
 
-  <title>%(title)s — FulcrumGrid</title>
+  <title>%(title_tag)s — FulcrumGrid</title>
   <meta name="description" content="%(desc)s" />
   <meta name="theme-color" content="#0b1020" />
   <meta property="og:type" content="article" />
@@ -281,13 +286,7 @@ def render(post, lang):
 
         <div class="article article-body">
 %(body)s
-
-          <h2>%(faq_h)s</h2>
-%(faq_details)s
-
-          <hr />
-          %(related)s
-
+%(faq_block)s%(rel_block)s
 %(cta)s
         </div>
 
@@ -306,7 +305,7 @@ def render(post, lang):
 </body>
 </html>
 ''' % dict(
-      htmlopen=htmlopen, csp=CSP, ga=GA, title=esc(title), desc=esc(desc), ogdesc=esc(ogdesc),
+      htmlopen=htmlopen, csp=CSP, ga=GA, title=esc(title), title_tag=esc(title_tag), desc=esc(desc), ogdesc=esc(ogdesc),
       canon=canon, en_url=en_url, ar_url=ar_url, oglocale=oglocale, date=post['date'],
       og=c['og'], ogalt=(c['ogalt_'+lang]), fonts=fonts, arstyle=arstyle, ld=ld,
       skip=skip, home=home, aria_home=aria_home, mark=MARK, brandname=brandname,
@@ -317,7 +316,7 @@ def render(post, lang):
       blog_label=('Blog' if en else 'المدوّنة'),
       bc_current=post['bc_'+lang], catcolor=c['color'], catlabel=(c['label_'+lang]),
       title_html=esc(title), metadate=post['metadate_'+lang], read=post['read_'+lang],
-      body=body_inner, faq_h=faq_h, faq_details=faq_details(faqs), related=related, cta=cta,
+      body=body_inner, faq_block=faq_block, rel_block=rel_block, cta=cta,
       back=back, footer=(FOOTER_EN if en else FOOTER_AR))
     return html
 
