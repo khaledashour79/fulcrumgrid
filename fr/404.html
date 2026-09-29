@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Page introuvable — FulcrumGrid</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" /></noscript>
+  <style>
+    :root { --bg:#0b1020; --text:#e7ecf6; --muted:#9aa6c6; --teal:#5eead4; --indigo:#6366f1; }
+    * { margin:0; box-sizing:border-box; }
+    body {
+      min-height:100vh; display:grid; place-items:center; text-align:center; padding:24px;
+      background:
+        radial-gradient(600px 300px at 30% 10%, rgba(94,234,212,0.14), transparent 70%),
+        radial-gradient(700px 340px at 80% 20%, rgba(99,102,241,0.2), transparent 70%),
+        var(--bg);
+      color:var(--text); font-family:'Inter',system-ui,sans-serif;
+    }
+    .code { font-family:'Space Grotesk',sans-serif; font-size:clamp(4rem,16vw,8rem); font-weight:700; letter-spacing:-0.04em;
+      background:linear-gradient(100deg,var(--teal),var(--indigo)); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+    h1 { font-family:'Space Grotesk',sans-serif; font-size:1.6rem; margin:8px 0 12px; }
+    p { color:var(--muted); max-width:420px; margin:0 auto 26px; }
+    a { display:inline-flex; align-items:center; gap:8px; padding:13px 24px; border-radius:11px; font-weight:600;
+      color:#fff; text-decoration:none; background:linear-gradient(135deg,var(--indigo),#4f46e5); box-shadow:0 12px 30px -12px rgba(99,102,241,0.8); }
+  </style>
+</head>
+<body class="fg">
+  <main>
+    <div class="code">404</div>
+    <h1>Cette page n'est pas sur la grille</h1>
+    <p>La page que vous recherchez a peut-être été déplacée ou n'a jamais existé. Remettons-vous sur les rails.</p>
+    <a href="/fr/">Retour à FulcrumGrid</a>
+  </main>
+  <script src="assets/js/fg.js" defer></script>
+  <script src="assets/js/consent.js" defer></script>
+</body>
+</html>
