@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
 
   <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
@@ -17,38 +17,111 @@
   </script>
 
   <title>Page not found — FulcrumGrid</title>
+  <meta name="description" content="The page you're looking for may have moved or never existed. Head back to FulcrumGrid or explore the apps." />
+  <meta name="theme-color" content="#f2f2f3" />
   <meta name="robots" content="noindex" />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" /></noscript>
-  <style>
-    :root { --bg:#0b1020; --text:#e7ecf6; --muted:#9aa6c6; --teal:#5eead4; --indigo:#6366f1; }
-    * { margin:0; box-sizing:border-box; }
-    body {
-      min-height:100vh; display:grid; place-items:center; text-align:center; padding:24px;
-      background:
-        radial-gradient(600px 300px at 30% 10%, rgba(94,234,212,0.14), transparent 70%),
-        radial-gradient(700px 340px at 80% 20%, rgba(99,102,241,0.2), transparent 70%),
-        var(--bg);
-      color:var(--text); font-family:'Inter',system-ui,sans-serif;
-    }
-    .code { font-family:'Space Grotesk',sans-serif; font-size:clamp(4rem,16vw,8rem); font-weight:700; letter-spacing:-0.04em;
-      background:linear-gradient(100deg,var(--teal),var(--indigo)); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
-    h1 { font-family:'Space Grotesk',sans-serif; font-size:1.6rem; margin:8px 0 12px; }
-    p { color:var(--muted); max-width:420px; margin:0 auto 26px; }
-    a { display:inline-flex; align-items:center; gap:8px; padding:13px 24px; border-radius:11px; font-weight:600;
-      color:#fff; text-decoration:none; background:linear-gradient(135deg,var(--indigo),#4f46e5); box-shadow:0 12px 30px -12px rgba(99,102,241,0.8); }
-  </style>
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
 </head>
-<body class="fg">
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Platform</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
   <main>
-    <div class="code">404</div>
-    <h1>This page isn't on the grid</h1>
-    <p>The page you're looking for may have moved or never existed. Let's get you back on track.</p>
-    <a href="/">Back to FulcrumGrid</a>
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">Error 404</p>
+        <h1 style="font-size:clamp(60px,12vw,120px)">404</h1>
+        <h2 style="margin-bottom:18px">This page isn't on the grid.</h2>
+        <p class="section-lead" style="margin:0 auto 26px">The page you're looking for may have moved or never existed. Let's get you back on track.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/">Back to FulcrumGrid</a>
+          <a class="btn btn-secondary" href="/products/">Explore the apps</a>
+        </div>
+      </div>
+    </section>
   </main>
-  <script src="assets/js/fg.js" defer></script>
-  <script src="assets/js/consent.js" defer></script>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Platform</h5>
+          <a href="/features/">Features</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
 </body>
 </html>

@@ -283,6 +283,26 @@ img { display: block; max-width: 100%; }
 .cta h2 { font-size: clamp(40px, 6vw, 78px); margin-bottom: 18px; }
 .cta .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
+/* ── Tables (comparison, module matrix) ── */
+.table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.table caption { text-align: left; }
+.table th { text-align: left; font-family: var(--font-body); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 60%, transparent); padding: 10px 12px; border-bottom: 1px solid var(--color-divider); }
+.table td { padding: 11px 12px; border-bottom: 1px solid color-mix(in srgb, var(--color-text) 9%, transparent); vertical-align: top; }
+.table tbody tr:hover { background: color-mix(in srgb, var(--color-text) 4%, transparent); }
+.table td.yes { color: var(--color-accent-700); font-weight: 600; }
+.table td.no { color: color-mix(in srgb, var(--color-text) 45%, transparent); }
+
+/* ── Prose (blog articles, privacy) ── */
+.prose { max-width: 760px; }
+.prose h2 { font-size: 30px; text-transform: uppercase; margin: 40px 0 12px; }
+.prose h3 { font-size: 21px; margin: 28px 0 8px; }
+.prose p, .prose li { font-size: 16px; line-height: 1.7; color: color-mix(in srgb, var(--color-text) 82%, transparent); }
+.prose ul, .prose ol { padding-inline-start: 22px; margin: 0 0 var(--space-4); }
+.prose li { margin-bottom: 6px; }
+.prose blockquote { margin: 22px 0; padding: 14px 20px; border-inline-start: 2px solid var(--color-accent); background: color-mix(in srgb, var(--color-accent) 5%, transparent); font-size: 17px; }
+.prose a { color: var(--color-accent-700); text-decoration: underline; }
+
 /* ── Footer ── */
 .site-foot { border-top: 1px solid var(--color-divider); padding-block: 44px 30px; }
 .foot-grid { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 28px; }
