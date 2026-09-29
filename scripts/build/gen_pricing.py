@@ -135,158 +135,236 @@ GA = '''<!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
     gtag('config', 'G-YJDJ643CY3');
   </script>'''
 
+# ── New design (fg2) HTML emission ──────────────────────────────────────────
+# English pricing pages are rendered in the new "Industry" design system
+# (assets/css/fg2.css), matching the homepage index.html reference.
+# Arabic (and the other locales) are intentionally NOT written here — they are
+# handled in the later re-localization phase. The Arabic DATA above is kept
+# untouched for that phase; only the AR page writes are guarded (see bottom).
+
+# 7-language hreflang cluster (matches the homepage index.html).
+LANGS = [('en', ''), ('ar', '/ar'), ('fr', '/fr'), ('de', '/de'),
+         ('es', '/es'), ('it', '/it'), ('nl', '/nl')]
+LANG_LABELS = {'en': 'English', 'ar': 'العربية', 'fr': 'Français',
+               'de': 'Deutsch', 'es': 'Español', 'it': 'Italiano', 'nl': 'Nederlands'}
+
+# Scoped styles for the module matrix table (fg2 has no .table rule, so the
+# blueprint styling is expressed here with fg2 design tokens). Kept minimal.
+MATRIX_STYLE = '''<style>
+    .pxmatrix{width:100%;border-collapse:collapse;border-top:1px solid var(--color-divider);border-left:1px solid var(--color-divider);font-size:13px}
+    .pxmatrix th,.pxmatrix td{border-right:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider);padding:10px 12px;text-align:start;vertical-align:top}
+    .pxmatrix thead th{font-family:var(--font-heading);font-weight:600;text-transform:uppercase;letter-spacing:-0.01em;font-size:15px}
+    .pxmatrix thead th.val{text-align:center}
+    .pxmatrix tbody th{font-weight:500;color:color-mix(in srgb, var(--color-text) 82%, transparent)}
+    .pxmatrix td.val{text-align:center;white-space:nowrap}
+    .pxmatrix .col-hi{background:var(--color-accent-100)}
+    .pxmatrix tr.grp th{background:var(--color-surface);font-family:var(--font-heading);font-weight:600;text-transform:uppercase;letter-spacing:0.06em;font-size:12px;color:var(--color-accent)}
+    .pxmatrix .yes{color:var(--color-accent);font-weight:600}
+    .pxmatrix .no{color:color-mix(in srgb, var(--color-text) 32%, transparent)}
+    .pxmatrix .add{color:var(--color-accent-700);font-weight:600}
+    .pxmatrix .ksa{display:inline-block;font-size:10px;letter-spacing:0.08em;background:var(--color-accent-100);color:var(--color-accent-800);padding:1px 6px;margin-inline-start:6px;vertical-align:middle}
+    .price-col.popular{outline:2px solid var(--color-accent);outline-offset:-1px}
+    .price-col .amt{font-family:var(--font-heading);font-weight:600;font-size:42px;line-height:1}
+    .price-col .price-amount{display:flex;align-items:baseline;gap:8px;margin:2px 0 2px}
+    .price-col .tiers .tier span{font-size:13px}
+    .price-col .btn{margin-top:auto}
+  </style>'''
+
+
 def cell(v, lang):
-    if v == 'y': return '<td class="cell"><span class="yes">✓</span></td>'
-    if v == 'n': return '<td class="cell"><span class="no">—</span></td>'
-    if v == '+': return '<td class="cell"><span class="addon" title="Available as add-on">＋</span></td>'
-    return '<td class="cell">%s</td>' % (v[0] if lang=='en' else v[1])
+    """Return a matrix table <td> for the given value (English rendering)."""
+    if v == 'y':
+        return '<td class="val"><span class="yes">✓</span></td>'
+    if v == 'n':
+        return '<td class="val"><span class="no">—</span></td>'
+    if v == '+':
+        return '<td class="val"><span class="add" title="Available as add-on">＋</span></td>'
+    txt = v[0] if lang == 'en' else v[1]
+    return '<td class="val">%s</td>' % txt
 
-def nav(lang, slug):
-    base = '/ar' if lang=='ar' else ''
-    N = [('/products/','Products','المنتجات'),('/features/','Platform','المنصّة'),
-         ('/pricing/','Pricing','الأسعار'),('/regions/','Regions','المناطق'),('/blog/','Blog','المدوّنة'),
-         ('/about/','About','من نحن'),('/contact/','Contact','اتصل بنا')]
-    out=[]
-    for href,en,ar in N:
-        act = ' class="active" aria-current="page"' if href=='/pricing/' else ''
-        out.append('        <a href="%s%s"%s>%s</a>'%(base,href,act,en if lang=='en' else ar))
-    return '\n'.join(out)
 
-# Region callout injected on the HR Suite pricing page only (keeps the matrix
-# region-generic while pointing Saudi buyers to the dedicated /regions/ page).
-_FAQ_ANCHOR = '    <section class="section">\n      <div class="container">\n        <div class="section-head">'
-
-def _region_cta(en):
-    if en:
-        return ('    <section class="section" style="padding-top:0">\n'
-                '      <div class="container">\n'
-                '        <div style="text-align:center;max-width:680px;margin:0 auto">\n'
-                '          <p class="price-note" style="margin-bottom:14px"><strong>Operating in Saudi Arabia?</strong> WPS wage files, GOSI, end-of-service &amp; Nitaqat are built in.</p>\n'
-                '          <a class="btn btn-outline" href="/regions/saudi-arabia/">See Saudi compliance →</a>\n'
-                '        </div>\n      </div>\n    </section>\n\n')
-    return ('    <section class="section" style="padding-top:0">\n'
-            '      <div class="container">\n'
-            '        <div style="text-align:center;max-width:680px;margin:0 auto">\n'
-            '          <p class="price-note" style="margin-bottom:14px"><strong>تعمل في السعودية؟</strong> ملفات حماية الأجور (WPS) والتأمينات ونهاية الخدمة ونطاقات مضمّنة.</p>\n'
-            '          <a class="btn btn-outline" href="/ar/regions/saudi-arabia/">اطّلع على الامتثال السعودي ←</a>\n'
-            '        </div>\n      </div>\n    </section>\n\n')
-
-def page(slug, d, lang):
-    en = lang=='en'
-    name = d['en_name'] if en else d['ar_name']
-    base = '' if en else '/ar'
-    other_base = '/ar' if en else ''
-    home = '/' if en else '/ar/'
-    contact = '/contact/' if en else '/ar/contact/'
-    pricing = '/pricing/' if en else '/ar/pricing/'
-    product = '%s/products/%s/'%(base,slug)
-    canon = 'https://fulcrumgrid.com%s/pricing/%s/'%(base,slug)
-    en_url = 'https://fulcrumgrid.com/pricing/%s/'%slug
-    ar_url = 'https://fulcrumgrid.com/ar/pricing/%s/'%slug
-    ogimg = 'https://fulcrumgrid.com/assets/og/og-pricing-%s%s.png' % (slug, '' if en else '-ar')
-    ogalt = ('%s pricing — plans and modules | FulcrumGrid'%name) if en else ('أسعار %s — الخطط والوحدات | FulcrumGrid'%name)
-    title = ('%s pricing — plans &amp; modules | FulcrumGrid'%name) if en else ('أسعار %s — الخطط والوحدات | FulcrumGrid'%name)
-    desc = d['en_desc'] if en else d['ar_desc']
-    lead = d['en_lead'] if en else d['ar_lead']
-    tnames = d.get('tier_names_'+lang, TIER_NAMES[lang])
-    tags = d['taglines_en'] if en else d['taglines_ar']
-    tiers = d['tiers_en'] if en else d['tiers_ar']
-    N = len(tnames)
-    popi = d.get('popular_index', 2 if N==4 else (1 if N==3 else 0))
-    per = d.get('per_'+lang, PER[lang])
-    raw = d.get('prices', PRICES)
-    prices = [(tuple(p) if isinstance(p,(list,tuple)) else (p,p)) for p in raw]
-    avail = 'Available now' if en else 'متوفّر الآن'
-    brandname = '<span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>' if en else '<span class="brand-name" dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span>'
-    aria_home = 'FulcrumGrid home' if en else 'FulcrumGrid الصفحة الرئيسية'
-    demo = 'Request a demo' if en else 'اطلب عرضًا توضيحيًا'
-    # tier cards
-    cards=[]
-    for i in range(N):
-        popular = (i==popi)
-        pen,par = prices[i]
-        pnum = pen if en else par
-        is_custom = pen.strip().lower()=='custom'
-        is_free = pen.strip().lower()=='free'
-        numdir = '' if (is_custom or is_free) else ' dir="ltr"'
-        peruser = '' if (is_custom or is_free) else '<span class="per">%s</span>'%per
-        dataattr = ''
-        pm = re.match(r'^(SAR|\$)\s?([\d,]+)$', pen.strip())
-        if pm and not is_custom:
-            dataattr = ' data-amt="%s" data-base="%s"'%(pm.group(2).replace(',',''), 'SAR' if pm.group(1)=='SAR' else 'USD')
-        blab = d.get('badge_labels', {}).get(i)
-        btext = (blab[0] if en else blab[1]) if blab else (('Most popular' if en else 'الأكثر شيوعًا') if popular else None)
-        badge = ('<span class="price-badge">%s</span>'%btext) if btext else ''
-        feats='\n'.join('              <li>%s</li>'%f for f in tiers[i])
-        if is_custom:
-            btn = '<a class="btn btn-outline btn-lg" href="mailto:contact@avenlorconsulting.com">%s</a>'%('Contact sales' if en else 'تواصل مع المبيعات')
-        else:
-            cls = 'btn-primary' if popular else 'btn-outline'
-            btn = '<a class="btn %s btn-lg" href="%s">%s</a>'%(cls,contact,'Start free trial' if en else 'ابدأ تجربة مجانية')
-        cards.append('''          <div class="price-card%s">
-            %s<div>
-              <div class="price-name">%s</div>
-              <p class="price-tagline">%s</p>
-            </div>
-            <div class="price-amount"><span class="num"%s%s>%s</span>%s</div>
-            <ul class="price-features">
+def site_head(slug):
+    """The new-design fg2 <header class="site-head"> with Pricing active and the
+    language dropdown pointing at each locale's pricing page for this app."""
+    nav_items = [('/products/', 'Products'), ('/features/', 'Platform'),
+                 ('/pricing/', 'Pricing'), ('/regions/', 'Regions'),
+                 ('/blog/', 'Blog'), ('/contact/', 'Contact')]
+    nav = []
+    for href, label in nav_items:
+        act = ' class="active" aria-current="page"' if href == '/pricing/' else ''
+        nav.append('        <a href="%s"%s>%s</a>' % (href, act, label))
+    langs = []
+    for code, base in LANGS:
+        href = '%s/pricing/%s/' % (base, slug)
+        active = ' class="active"' if code == 'en' else ''
+        langs.append('            <a href="%s"%s hreflang="%s" lang="%s">%s</a>'
+                     % (href, active, code, code, LANG_LABELS[code]))
+    return '''  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
 %s
-            </ul>
-            %s
-          </div>'''%(' popular' if popular else '', badge, tnames[i], tags[i],
-                     numdir, dataattr, pnum, peruser, feats, btn))
-    cards='\n\n'.join(cards)
-    # matrix
-    modhdr = 'Module' if en else 'الوحدة'
-    rows=[]
-    for r in d['matrix']:
-        if r[0]=='__grp__':
-            rows.append('              <tr class="grp"><th colspan="%d">%s</th></tr>'%(N+1, r[1][0] if en else r[1][1]))
-            continue
-        label = r[0][0] if en else r[0][1]
-        cells=''.join(cell(r[1+j],lang) for j in range(N))
-        rows.append('              <tr><th scope="row">%s</th>%s</tr>'%(label,cells))
-    rows='\n'.join(rows)
-    colnames=''.join('<th scope="col" class="cell%s">%s</th>'%(' col-hi' if k==popi else '', tnames[k]) for k in range(N))
-    # strings
-    S = {
-     'whatsin': "What's included" if en else 'ما المشمول',
-     'modbyplan': 'Modules by plan' if en else 'الوحدات حسب الخطة',
-     'modsub': d.get('modsub_'+lang, ('Every %s module, and where it unlocks across the four plans.'%name) if en else ('كل وحدة في %s، وأين تتوفّر عبر الخطط الأربع.'%name)),
-     'pricenote': d.get('pricenote_'+lang, ('Per user, per month. Annual billing saves 20%. Every plan includes a 14-day free trial.' if en else 'لكل مستخدم شهريًا. الدفع السنوي يوفّر ٢٠٪. كل خطة تشمل تجربة مجانية ١٤ يومًا.')),
-     'faq': 'FAQ' if en else 'الأسئلة الشائعة',
-     'faqh': ('%s pricing, answered'%name) if en else ('أسئلة أسعار %s، مُجابة'%name),
-     'cta_h': ('See %s on your data'%name) if en else ('شاهد %s على بياناتك'%name),
-     'cta_p': "Tell us how your team runs today and we'll show you the right plan in action." if en else 'أخبرنا كيف يعمل فريقك اليوم وسنعرض لك الخطة المناسبة أثناء العمل.',
-     'about': ('About %s'%name) if en else ('عن %s'%name),
-     'back': '← Back to all pricing' if en else 'العودة إلى كل الأسعار →',
-     'bc_home':'Home' if en else 'الرئيسية','bc_pricing':'Pricing' if en else 'الأسعار',
-    }
-    faqs_en = [
-      ("Can I change plans later?","Yes — move up or down between Starter, Pro, Business, and Enterprise at any time. Changes take effect on your next billing cycle."),
-      ("How are users counted?","A user is anyone with a login to %s. You're billed per active user, per month."%name),
-      ("Do I need other FulcrumGrid apps?","No. %s works on its own. If you run several apps, the <a href=\"%s\">whole-grid bundle</a> is cheaper than subscribing to each."%(name,pricing)),
-      ("Is there a free trial?","Every plan includes a 14-day free trial with full features. No credit card required to start."),
-    ]
-    faqs_ar = [
-      ("هل يمكنني تغيير الخطة لاحقًا؟","نعم — انتقل صعودًا أو نزولًا بين المبتدئة والمتقدّمة والأعمال والمؤسسات في أي وقت، ويسري التغيير في دورة الفوترة التالية."),
-      ("كيف يُحتسب المستخدمون؟","المستخدم هو كل من له تسجيل دخول إلى %s. تُحتسب الفوترة لكل مستخدم نشط شهريًا."%name),
-      ("هل أحتاج تطبيقات FulcrumGrid الأخرى؟","لا. %s يعمل بمفرده. وإن كنت تشغّل عدّة تطبيقات، فإن <a href=\"%s\">باقة الشبكة كاملة</a> أوفر من الاشتراك في كلٍّ على حدة."%(name,pricing)),
-      ("هل توجد تجربة مجانية؟","كل خطة تشمل تجربة مجانية ١٤ يومًا بكامل الميزات، دون بطاقة ائتمان للبدء."),
-    ]
-    faqs = faqs_en if en else faqs_ar
-    faq_html='\n'.join('          <details class="faq-item"><summary>%s</summary><p>%s</p></details>'%(q,a) for q,a in faqs)
-    htmlopen = '<html lang="en">' if en else '<html lang="ar" dir="rtl">'
-    fonts = ('Inter:wght@400;500;600;700' if en else 'Cairo:wght@400;500;600;700;800')
-    skip = 'Skip to content' if en else 'تخطَّ إلى المحتوى'
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+%s
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>''' % ('\n'.join(nav), '\n'.join(langs))
 
-    # ---- structured data: SoftwareApplication + AggregateOffer + BreadcrumbList ----
-    nums=[]; sd_cur=None
-    for pen,par in prices:
+
+def site_foot():
+    """The new-design fg2 <footer class="site-foot"> (matches the homepage).
+    App order in the Products column: HR Suite -> Command Center -> Collection."""
+    return '''  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Platform</h5>
+          <a href="/features/">Features</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>'''
+
+
+def page(slug, d, lang='en'):
+    """Render the English new-design (fg2) pricing page for one app.
+
+    Only English is emitted in this phase; Arabic + other locales are produced
+    later during re-localization. The lang argument is retained for signature
+    compatibility but this function always renders English.
+    """
+    en = True  # English-only in this phase.
+    name = d['en_name']
+    canon = 'https://fulcrumgrid.com/pricing/%s/' % slug
+    ogimg = 'https://fulcrumgrid.com/assets/og/og-pricing-%s.png' % slug
+    ogalt = '%s pricing — plans and modules | FulcrumGrid' % name
+    title = '%s pricing &amp; plans | FulcrumGrid' % name
+    desc = d['en_desc']
+    lead = d['en_lead']
+    tnames = d.get('tier_names_en', TIER_NAMES['en'])
+    tags = d['taglines_en']
+    tiers = d['tiers_en']
+    N = len(tnames)
+    popi = d.get('popular_index', 2 if N == 4 else (1 if N == 3 else 0))
+    per = d.get('per_en', PER['en'])
+    raw = d.get('prices', PRICES)
+    prices = [(tuple(p) if isinstance(p, (list, tuple)) else (p, p)) for p in raw]
+    product = '/products/%s/' % slug
+
+    # ── Plan cards (fg2 .pricing / .price-col / .tier) ──
+    cards = []
+    for i in range(N):
+        popular = (i == popi)
+        pen = prices[i][0]
+        is_custom = pen.strip().lower() == 'custom'
+        is_free = pen.strip().lower() == 'free'
+        numdir = '' if (is_custom or is_free) else ' dir="ltr"'
+        per_html = '' if (is_custom or is_free) else '<span class="unit">%s</span>' % per
+        blab = d.get('badge_labels', {}).get(i)
+        btext = (blab[0] if blab else ('Most popular' if popular else None))
+        badge = ('<p class="mono mono-accent">%s</p>' % btext) if btext else ''
+        feats = '\n'.join('            <div class="tier"><span>%s</span></div>' % f for f in tiers[i])
+        if is_custom:
+            btn = '<a class="btn btn-secondary" href="mailto:contact@avenlorconsulting.com">Contact sales</a>'
+        else:
+            cls = 'btn-primary' if popular else 'btn-secondary'
+            btn = '<a class="btn %s" href="/contact/">Start free trial</a>' % cls
+        cards.append('''          <div class="price-col%s">
+            %s<h4>%s</h4>
+            <div class="price-amount"><span class="amt"%s>%s</span>%s</div>
+            <span class="unit">%s</span>
+            <div class="tiers">
+%s
+            </div>
+            %s
+          </div>''' % (' popular' if popular else '', badge, tnames[i],
+                       numdir, pen, per_html, tags[i], feats, btn))
+    cards = '\n\n'.join(cards)
+
+    # ── Module matrix (real HTML table styled with fg2 tokens) ──
+    colnames = ''.join('<th scope="col" class="val%s">%s</th>'
+                       % (' col-hi' if k == popi else '', tnames[k]) for k in range(N))
+    rows = []
+    for r in d['matrix']:
+        if r[0] == '__grp__':
+            rows.append('              <tr class="grp"><th colspan="%d">%s</th></tr>'
+                        % (N + 1, r[1][0]))
+            continue
+        label = r[0][0]
+        cells = ''.join(cell(r[1 + j], 'en') for j in range(N))
+        rows.append('              <tr><th scope="row">%s</th>%s</tr>' % (label, cells))
+    rows = '\n'.join(rows)
+
+    # ── Page strings ──
+    pricenote = d.get('pricenote_en', 'Per user, per month. Annual billing saves 20%. Every plan includes a 14-day free trial.')
+    modsub = d.get('modsub_en', 'Every %s module, and where it unlocks across the plans.' % name)
+    cta_h = 'See %s on your data' % name
+    cta_p = "Tell us how your team runs today and we'll show you the right plan in action."
+
+    faqs = [
+        ("Can I change plans later?", "Yes — move up or down between the plans at any time. Changes take effect on your next billing cycle."),
+        ("How are users counted?", "A user is anyone with a login to %s. You're billed per active user, per month." % name),
+        ("Do I need other FulcrumGrid apps?", "No. %s works on its own. If you run several apps, the <a href=\"/pricing/\">whole-grid bundle</a> is cheaper than subscribing to each." % name),
+        ("Is there a free trial?", "Every plan includes a 14-day free trial with full features. No credit card required to start."),
+    ]
+    faq_html = '\n'.join(
+        '          <div class="cell"><h4>%s</h4><p>%s</p></div>' % (q, a) for q, a in faqs)
+
+    # ── hreflang cluster (7 languages + x-default) ──
+    hreflang = []
+    for code, base in LANGS:
+        hreflang.append('  <link rel="alternate" hreflang="%s" href="https://fulcrumgrid.com%s/pricing/%s/" />'
+                        % (code, base, slug))
+    hreflang.append('  <link rel="alternate" hreflang="x-default" href="%s" />' % canon)
+    hreflang = '\n'.join(hreflang)
+
+    # ── structured data: SoftwareApplication + AggregateOffer + BreadcrumbList ──
+    nums = []
+    sd_cur = None
+    for pen, par in prices:
         m = re.match(r'^(SAR|\$)\s?([\d,]+)$', pen.strip())
         if m:
-            nums.append(int(m.group(2).replace(',','')))
-            sd_cur = 'SAR' if m.group(1)=='SAR' else 'USD'
+            nums.append(int(m.group(2).replace(',', '')))
+            sd_cur = 'SAR' if m.group(1) == 'SAR' else 'USD'
     app_ld = {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
@@ -295,7 +373,7 @@ def page(slug, d, lang):
         "operatingSystem": "Web",
         "url": canon,
         "description": html.unescape(desc),
-        "inLanguage": "en" if en else "ar",
+        "inLanguage": "en",
         "provider": {"@type": "Organization", "name": "FulcrumGrid", "url": "https://fulcrumgrid.com/"},
     }
     if nums:
@@ -312,16 +390,121 @@ def page(slug, d, lang):
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": S['bc_home'], "item": "https://fulcrumgrid.com%s" % home},
-            {"@type": "ListItem", "position": 2, "name": S['bc_pricing'], "item": "https://fulcrumgrid.com%s" % pricing},
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://fulcrumgrid.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://fulcrumgrid.com/pricing/"},
             {"@type": "ListItem", "position": 3, "name": name, "item": canon},
         ],
     }
     ld_json = '<script type="application/ld+json">%s</script>\n  <script type="application/ld+json">%s</script>' % (
         json.dumps(app_ld, ensure_ascii=False), json.dumps(bc_ld, ensure_ascii=False))
 
-    html_out = '''<!DOCTYPE html>
+    # ── Optional Saudi region callout (HR Suite only) ──
+    region_section = ''
+    if slug == 'hr-suite':
+        region_section = '''
+    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">Operating in Saudi Arabia?</p>
+            <h2>Built for KSA compliance.</h2>
+          </div>
+          <p class="section-lead">WPS wage files, GOSI, end-of-service &amp; Nitaqat are built in. <a href="/regions/saudi-arabia/">See Saudi compliance →</a></p>
+        </div>
+      </div>
+    </section>
+'''
+
+    body = '''  <main>
+    <!-- ===== Hero ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <p class="hero-eyebrow">Pricing</p>
+        <h1>%s <em>pricing.</em></h1>
+        <p class="hero-intro">%s</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/contact/">Request a demo</a>
+          <a class="btn btn-secondary" href="%s">Explore %s</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 01 · Plans ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">01 · Plans</p>
+            <h2>Priced per plan.</h2>
+          </div>
+          <p class="section-lead">%s</p>
+        </div>
+        <div class="pricing">
 %s
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 02 · Modules by plan ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">02 · Modules by plan</p>
+            <h2>What's included.</h2>
+          </div>
+          <p class="section-lead">%s</p>
+        </div>
+        <div style="overflow-x:auto">
+          <table class="pxmatrix">
+            <thead>
+              <tr><th scope="col">Module</th>%s</tr>
+            </thead>
+            <tbody>
+%s
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+%s
+    <!-- ===== 03 · FAQ ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">03 · FAQ</p>
+            <h2>%s pricing, answered.</h2>
+          </div>
+        </div>
+        <div class="grid-2">
+%s
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 04 · CTA ===== -->
+    <section class="section cta" id="contact">
+      <div class="wrap">
+        <p class="mono mono-accent">04 · Get started</p>
+        <h2>%s</h2>
+        <p class="section-lead" style="margin:0 auto 26px">%s</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/contact/">Request a demo</a>
+          <a class="btn btn-secondary" href="%s">About %s</a>
+        </div>
+      </div>
+    </section>
+  </main>''' % (
+        name, lead, product, name,
+        pricenote, cards,
+        modsub, colnames, rows,
+        region_section,
+        name, faq_html,
+        cta_h, cta_p, product, name)
+
+    html_out = '''<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -331,210 +514,70 @@ def page(slug, d, lang):
 
   <title>%s</title>
   <meta name="description" content="%s" />
-  <meta name="theme-color" content="#f0f2ed" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#f2f2f3" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="%s" />
   <meta property="og:description" content="%s" />
   <meta property="og:url" content="%s" />
   <meta property="og:site_name" content="FulcrumGrid" />
-  <meta property="og:locale" content="%s" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:image" content="%s" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:alt" content="%s" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="%s" />
+  <meta name="twitter:description" content="%s" />
   <meta name="twitter:image" content="%s" />
 
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="%s" />
-  <link rel="alternate" hreflang="en" href="%s" />
-  <link rel="alternate" hreflang="ar" href="%s" />
-  <link rel="alternate" hreflang="x-default" href="%s" />
-
-  %s
+%s
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=%s&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=%s&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=%s&display=swap" rel="stylesheet" /></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  %s
 
-  <link rel="stylesheet" href="/assets/css/fg.css" />
+  %s
 </head>
-<body class="fg">
-  <a class="skip-link" href="#main">%s</a>
-
-  <header class="site-header" id="top">
-    <div class="header-inner">
-      <a class="brand" href="%s" aria-label="%s">
-        %s
-        %s
-      </a>
-      <nav class="site-nav" aria-label="Primary">
+<body>
 %s
-      </nav>
-      <div class="header-cta">
-        <div class="lang-switch" role="group" aria-label="Language">
-          <a href="/pricing/%s/"%s hreflang="en" lang="en">EN</a>
-          <a href="/ar/pricing/%s/"%s hreflang="ar" lang="ar">ع</a>
-        </div>
-        <a class="btn btn-primary" href="%s">%s</a>
-      </div>
-      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobile-menu" hidden>
+
 %s
-      <a class="btn btn-primary" href="%s">%s</a>
-    </div>
-  </header>
 
-  <main id="main">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="%s">%s</a><span>/</span><a href="%s">%s</a><span>/</span><span class="current">%s</span>
-      </nav>
-    </div>
-
-    <section class="product-hero" style="padding-bottom:24px">
-      <div class="container">
-        <div class="product-hero-inner" style="max-width:760px">
-          <p class="product-eyebrow"><span class="tag tag-live" style="padding:3px 10px">%s</span> %s</p>
-          <h1>%s <span class="p-grad">%s</span></h1>
-          <p class="lead">%s</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" style="padding-top:8px">
-      <div class="container">
-        <div class="pricing-grid tiers">
 %s
-        </div>
-        <p class="price-note">%s</p>
-      </div>
-    </section>
 
-    <section class="section section-alt">
-      <div class="container">
-        <div class="sub-head" style="max-width:680px">
-          <p class="eyebrow">%s</p>
-          <h2>%s</h2>
-          <p>%s</p>
-        </div>
-        <div class="compare-wrap">
-          <table class="compare-table">
-            <thead>
-              <tr><th scope="col">%s</th>%s</tr>
-            </thead>
-            <tbody>
-%s
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">%s</p>
-          <h2>%s</h2>
-        </div>
-        <div class="faq">
-%s
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="contact">
-      <div class="container">
-        <div class="cta-panel">
-          <div class="cta-content">
-            <h2>%s</h2>
-            <p>%s</p>
-            <div class="hero-actions" style="justify-content:center">
-              <a class="btn btn-primary btn-lg" href="%s">%s</a>
-              <a class="btn btn-outline btn-lg" href="%s">%s</a>
-            </div>
-            <p class="cta-alt"><a href="%s">%s</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a class="brand" href="%s" aria-label="%s">
-          %s
-          %s
-        </a>
-        <p class="footer-tag">%s</p>
-      </div>
-      <div class="footer-cols">%s</div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; <span id="year">2026</span> FulcrumGrid. %s</p>
-      <p class="footer-domain" dir="ltr">fulcrumgrid.com</p>
-    </div>
-  </footer>
-
-  <script src="/assets/js/main.js" defer></script>
-  <script src="/assets/js/fg.js" defer></script>
   <script src="/assets/js/consent.js" defer></script>
 </body>
 </html>
 ''' % (
-      htmlopen, CSP, GA, title, desc, title, desc, canon,
-      ('en_US' if en else 'ar_AR'), ogimg, ogalt, ogimg, canon, en_url, ar_url, en_url,
-      ld_json,
-      fonts, fonts, fonts, skip,
-      home, aria_home, MARK, brandname, nav(lang,slug),
-      slug, (' class="active" aria-current="page"' if en else ''), slug, ('' if en else ' class="active" aria-current="page"'),
-      contact, demo,
-      nav(lang,slug), contact, demo,
-      home, S['bc_home'], pricing, S['bc_pricing'], name,
-      avail, name, name, ('pricing' if en else 'الأسعار'), lead,
-      cards, S['pricenote'],
-      S['whatsin'], S['modbyplan'], S['modsub'], modhdr, colnames, rows,
-      S['faq'], S['faqh'], faq_html,
-      S['cta_h'], S['cta_p'], contact, demo, product, S['about'], pricing, S['back'],
-      home, aria_home, MARKF, brandname, ('The operational backbone for modern teams.' if en else 'العمود الفقري التشغيلي للفرق الحديثة.'),
-      footer_cols(lang), ('All rights reserved.' if en else 'جميع الحقوق محفوظة.')
-    )
-    if slug == 'hr-suite':
-        html_out = html_out.replace(_FAQ_ANCHOR, _region_cta(en) + _FAQ_ANCHOR, 1)
+        CSP, GA, title, desc, title, desc, canon, ogimg, ogalt, title, desc, ogimg,
+        canon, hreflang, MATRIX_STYLE, ld_json,
+        site_head(slug), body, site_foot())
     return html_out
 
-def footer_cols(lang):
-    en = lang=='en'
-    b = '' if en else '/ar'
-    if en:
-        return ('<div class="footer-col"><h3>Products</h3><a href="/products/">All products</a><a href="/products/command-center/">Command Center</a><a href="/products/collection/">Collection</a><a href="/products/hr-suite/">HR Suite</a><a href="/custom-apps/">Custom apps</a><a href="/products/coming-soon/">Coming soon</a></div>'
-                '<div class="footer-col"><h3>Platform</h3><a href="/features/">Features</a><a href="/how-it-works/">How it works</a><a href="/pricing/">Pricing</a><a href="/regions/">Regions</a><a href="/blog/">Blog</a></div>'
-                '<div class="footer-col"><h3>Company</h3><a href="/about/">About</a><a href="/faq/">FAQ</a><a href="/contact/">Contact</a><a href="mailto:contact@avenlorconsulting.com">Email us</a><a href="/privacy/">Privacy</a><a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a></div>')
-    return ('<div class="footer-col"><h3>المنتجات</h3><a href="/ar/products/">كل المنتجات</a><a href="/ar/products/command-center/">مركز القيادة</a><a href="/ar/products/collection/">التحصيل</a><a href="/ar/products/hr-suite/">الموارد البشرية</a><a href="/ar/custom-apps/">تطبيقات مخصّصة</a><a href="/ar/products/coming-soon/">قريبًا</a></div>'
-            '<div class="footer-col"><h3>المنصّة</h3><a href="/ar/features/">الميزات</a><a href="/ar/how-it-works/">كيف تعمل</a><a href="/ar/pricing/">الأسعار</a><a href="/ar/regions/">المناطق</a><a href="/ar/blog/">المدوّنة</a></div>'
-            '<div class="footer-col"><h3>الشركة</h3><a href="/ar/about/">من نحن</a><a href="/ar/faq/">الأسئلة الشائعة</a><a href="/ar/contact/">اتصل بنا</a><a href="mailto:contact@avenlorconsulting.com">راسلنا</a><a href="/ar/privacy/">الخصوصية</a><a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a></div>')
 
-for slug,d in APPS.items():
-    for lang in ('en','ar'):
-        p = os.path.join(ROOT, ('' if lang=='en' else 'ar/')+('pricing/%s/index.html'%slug))
-        os.makedirs(os.path.dirname(p), exist_ok=True)
-        open(p,'w',encoding='utf-8').write(page(slug,d,lang))
-        print("wrote", p)
+# ── Generate the four English pricing pages ─────────────────────────────────
+# Arabic (/ar/pricing/...) and the other locales are handled in the later
+# re-localization phase, so their writes are guarded off here. The Arabic DATA
+# in APPS above is intentionally preserved for that phase.
+def write_en(slug, d):
+    p = os.path.join(ROOT, 'pricing/%s/index.html' % slug)
+    os.makedirs(os.path.dirname(p), exist_ok=True)
+    open(p, 'w', encoding='utf-8').write(page(slug, d, 'en'))
+    print('wrote', p)
 
-# ---- Real Collection data (from product owner) ----
+
+# Real Collection data (from product owner)
 APPS['collection'] = {
   'en_name':'Collection','ar_name':'التحصيل',
   'tier_names_en':['Starter','Professional','Business','Enterprise / Agency'],
@@ -573,12 +616,8 @@ APPS['collection'] = {
   ],
 }
 APPS['collection'] = load_app('collection', APPS['collection'])
-for lang in ('en','ar'):
-    p = os.path.join(ROOT, ('' if lang=='en' else 'ar/')+'pricing/collection/index.html')
-    open(p,'w',encoding='utf-8').write(page('collection', APPS['collection'], lang))
-    print('regenerated', p)
 
-# ---- Real Command Center data (from product owner) ----
+# Real Command Center data (from product owner)
 APPS['command-center'] = {
   'en_name':'Command Center','ar_name':'مركز القيادة',
   'tier_names_en':['Pilot','Growth','Enterprise'],
@@ -618,12 +657,8 @@ APPS['command-center'] = {
   ],
 }
 APPS['command-center'] = load_app('command-center', APPS['command-center'])
-for lang in ('en','ar'):
-    p = os.path.join(ROOT, ('' if lang=='en' else 'ar/')+'pricing/command-center/index.html')
-    open(p,'w',encoding='utf-8').write(page('command-center', APPS['command-center'], lang))
-    print('regenerated', p)
 
-# ---- Real HR Suite data (from product owner) ----
+# Real HR Suite data (from product owner)
 K = '<span class="ksa">KSA</span>'
 APPS['hr-suite'] = {
   'en_name':'HR Suite','ar_name':'منظومة الموارد البشرية',
@@ -696,7 +731,17 @@ APPS['hr-suite'] = {
   ],
 }
 APPS['hr-suite'] = load_app('hr-suite', APPS['hr-suite'])
-for lang in ('en','ar'):
-    p = os.path.join(ROOT, ('' if lang=='en' else 'ar/')+'pricing/hr-suite/index.html')
-    open(p,'w',encoding='utf-8').write(page('hr-suite', APPS['hr-suite'], lang))
-    print('regenerated', p)
+
+# ── English page writes (routes preserved) ──
+for _slug in ('command-center', 'collection', 'hr-suite'):
+    write_en(_slug, APPS[_slug])
+
+# ── Arabic (+ other locale) writes are DISABLED for this phase. ──
+# Arabic and the remaining languages are produced in the later re-localization
+# phase; the Arabic DATA in APPS above is preserved for it. Do not remove.
+if False:
+    for _slug in ('command-center', 'collection', 'hr-suite'):
+        _p = os.path.join(ROOT, 'ar/pricing/%s/index.html' % _slug)
+        os.makedirs(os.path.dirname(_p), exist_ok=True)
+        open(_p, 'w', encoding='utf-8').write(page(_slug, APPS[_slug], 'ar'))
+        print('wrote', _p)
