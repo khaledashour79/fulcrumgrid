@@ -38,7 +38,19 @@ PAGE = {
     '/privacy/': {
         'src': 'privacy/index.html',
         't': {
-            # ---- Meta (title/h1/og:title carry "Privacy" -> handled by COMMON) ----
+            # ---- Meta (title/h1/og:title now read "Privacy & Cookies") ----
+            'Privacy &amp; Cookies — FulcrumGrid': _t(
+                'Confidentialité et cookies — FulcrumGrid',
+                'Datenschutz und Cookies — FulcrumGrid',
+                'Privacidad y cookies — FulcrumGrid',
+                'Privacy e cookie — FulcrumGrid',
+                'Privacy en cookies — FulcrumGrid'),
+            'Privacy &amp; Cookies': _t(
+                'Confidentialité et cookies',
+                'Datenschutz und Cookies',
+                'Privacidad y cookies',
+                'Privacy e cookie',
+                'Privacy en cookies'),
             'How FulcrumGrid uses cookies and analytics, what we collect, and the choices available to you.': _t(
                 "Comment FulcrumGrid utilise les cookies et l'analyse, ce que nous collectons et les choix qui s'offrent à vous.",
                 'Wie FulcrumGrid Cookies und Analyse verwendet, was wir erfassen und welche Wahlmöglichkeiten Sie haben.',
@@ -51,9 +63,10 @@ PAGE = {
                 'Cómo utiliza FulcrumGrid las cookies y la analítica, y las opciones a su disposición.',
                 "Come FulcrumGrid utilizza i cookie e l'analisi e le scelte a tua disposizione.",
                 'Hoe FulcrumGrid cookies en analyse gebruikt en welke keuzes u hebt.'),
-            'FulcrumGrid — purpose-built business apps for every operation': _OG_ALT,
             # ---- Header of the article ----
             'Legal': _t('Juridique', 'Rechtliches', 'Legal', 'Legale', 'Juridisch'),
+            # Product name — stays English; keeps the checker from flagging the bare link node.
+            'Google Analytics': _t('Google Analytics', 'Google Analytics', 'Google Analytics', 'Google Analytics', 'Google Analytics'),
             'Last updated: August 2026': _t(
                 'Dernière mise à jour : août 2026',
                 'Zuletzt aktualisiert: August 2026',
@@ -172,23 +185,23 @@ PAGE = {
                 'Cómo se compara FulcrumGrid con gestionar tu negocio en hojas de cálculo — dónde las hojas de cálculo siguen funcionando, dónde fallan (control de versiones, acceso, registro de auditoría, automatización) y qué ganas al pasar a aplicaciones a medida.',
                 'Come si confronta FulcrumGrid con la gestione della tua azienda sui fogli di calcolo — dove i fogli di calcolo funzionano ancora, dove mostrano i loro limiti (versionamento, accessi, audit trail, automazione) e cosa guadagni passando ad applicazioni su misura.',
                 'Hoe FulcrumGrid zich verhoudt tot het runnen van uw bedrijf op spreadsheets — waar spreadsheets nog werken, waar ze vastlopen (versiebeheer, toegang, audittrail, automatisering) en wat u wint door over te stappen op doelgerichte apps.'),
-            'FulcrumGrid — purpose-built business apps for every operation': _OG_ALT,
             # ---- Breadcrumb / hero ----
             'Home': _t('Accueil', 'Startseite', 'Inicio', 'Home', 'Home'),
             'vs. spreadsheets': _t('vs. tableurs', 'vs. Tabellenkalkulationen', 'vs. hojas de cálculo', 'vs. fogli di calcolo', 'vs. spreadsheets'),
             'Comparison': _t('Comparaison', 'Vergleich', 'Comparación', 'Confronto', 'Vergelijking'),
-            'FulcrumGrid vs. <span class="p-grad">spreadsheets</span>': _t(
-                'FulcrumGrid vs. <span class="p-grad">tableurs</span>',
-                'FulcrumGrid vs. <span class="p-grad">Tabellenkalkulationen</span>',
-                'FulcrumGrid vs. <span class="p-grad">hojas de cálculo</span>',
-                'FulcrumGrid vs. <span class="p-grad">fogli di calcolo</span>',
-                'FulcrumGrid vs. <span class="p-grad">spreadsheets</span>'),
+            'FulcrumGrid vs. <em>spreadsheets</em>': _t(
+                'FulcrumGrid vs. <em>tableurs</em>',
+                'FulcrumGrid vs. <em>Tabellenkalkulationen</em>',
+                'FulcrumGrid vs. <em>hojas de cálculo</em>',
+                'FulcrumGrid vs. <em>fogli di calcolo</em>',
+                'FulcrumGrid vs. <em>rekenbladen</em>'),
             "Almost every business starts in a spreadsheet. Here's an honest look at where spreadsheets still work, where they break down, and what a purpose-built app gives you instead.": _t(
                 "Presque toutes les entreprises commencent sur un tableur. Voici un regard honnête sur les cas où les tableurs fonctionnent encore, ceux où ils atteignent leurs limites, et ce qu'une application sur mesure vous apporte à la place.",
                 'Fast jedes Unternehmen beginnt in einer Tabellenkalkulation. Hier ein ehrlicher Blick darauf, wo Tabellenkalkulationen noch funktionieren, wo sie an ihre Grenzen stoßen und was Ihnen eine zweckgebaute App stattdessen bietet.',
                 'Casi todos los negocios empiezan en una hoja de cálculo. Aquí tiene una mirada honesta a dónde las hojas de cálculo siguen funcionando, dónde fallan y qué le ofrece a cambio una aplicación a medida.',
                 "Quasi tutte le aziende iniziano in un foglio di calcolo. Ecco uno sguardo onesto su dove i fogli di calcolo funzionano ancora, dove mostrano i loro limiti e cosa ti offre invece un'applicazione su misura.",
                 'Bijna elk bedrijf begint in een spreadsheet. Hier is een eerlijke blik op waar spreadsheets nog werken, waar ze vastlopen en wat een doelgerichte app u in plaats daarvan biedt.'),
+            'Honest take': _t('Avis honnête', 'Ehrliche Einschätzung', 'Opinión honesta', 'Valutazione onesta', 'Eerlijke kijk'),
             # ---- Comparison table ----
             'Side by side': _t('Côte à côte', 'Direkter Vergleich', 'Cara a cara', 'Fianco a fianco', 'Naast elkaar'),
             'Spreadsheets': _t('Tableurs', 'Tabellenkalkulationen', 'Hojas de cálculo', 'Fogli di calcolo', 'Spreadsheets'),
@@ -273,10 +286,12 @@ PAGE = {
                 "Per un modello rapido, un calcolo usa e getta o un'analisi occasionale in autonomia, un foglio di calcolo è veloce e flessibile. Nel momento in cui più persone lo condividono, diventa un sistema di riferimento o gli errori iniziano a costare denaro, un'app su misura ripaga.",
                 'Voor een snel model, een wegwerpberekening of een eenmalige solo-analyse is een spreadsheet snel en flexibel. Zodra meerdere mensen hem delen, hij een administratiesysteem wordt of fouten geld gaan kosten, betaalt een doelgerichte app zich terug.'),
             # ---- CTA ----
-            'Outgrown your spreadsheets?': _t(
-                'Vos tableurs sont dépassés ?', 'Ihren Tabellenkalkulationen entwachsen?',
-                '¿Ha superado sus hojas de cálculo?', 'Hai superato i tuoi fogli di calcolo?',
-                'Uw spreadsheets ontgroeid?'),
+            'Outgrown your<br />spreadsheets?': _t(
+                'Vos tableurs<br />sont dépassés ?',
+                'Ihren Tabellenkalkulationen<br />entwachsen?',
+                '¿Ha superado sus<br />hojas de cálculo?',
+                'Hai superato i tuoi<br />fogli di calcolo?',
+                'Uw spreadsheets<br />ontgroeid?'),
             "Tell us what you're running today and we'll show you the FulcrumGrid app that replaces it.": _t(
                 "Dites-nous ce que vous utilisez aujourd'hui et nous vous montrerons l'application FulcrumGrid qui le remplace.",
                 'Sagen Sie uns, was Sie heute nutzen, und wir zeigen Ihnen die FulcrumGrid-App, die es ersetzt.',
@@ -297,6 +312,7 @@ PAGE = {
                 'Página no encontrada — FulcrumGrid',
                 'Pagina non trovata — FulcrumGrid',
                 'Pagina niet gevonden — FulcrumGrid'),
+            'Error 404': _t('Erreur 404', 'Fehler 404', 'Error 404', 'Errore 404', 'Fout 404'),
             "This page isn't on the grid": _t(
                 "Cette page n'est pas sur la grille",
                 'Diese Seite ist nicht im Grid',

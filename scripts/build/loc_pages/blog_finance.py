@@ -138,21 +138,13 @@ PAGE = {
             'The FulcrumGrid blog': _t(
                 'Le blog FulcrumGrid', 'Der FulcrumGrid-Blog', 'El blog de FulcrumGrid',
                 'Il blog di FulcrumGrid', 'De FulcrumGrid-blog'),
-            '<a href="/">Home</a>': _HOME,
-            'Resources': _t('Ressources', 'Ressourcen', 'Recursos', 'Risorse', 'Bronnen'),
-            'Follow FulcrumGrid on Google — add us to your Preferred Sources': _t(
-                'Suivez FulcrumGrid sur Google — ajoutez-nous à vos sources préférées',
-                'Folgen Sie FulcrumGrid auf Google — fügen Sie uns zu Ihren bevorzugten Quellen hinzu',
-                'Siga a FulcrumGrid en Google — añádanos a sus fuentes preferidas',
-                'Segui FulcrumGrid su Google — aggiungici alle tue fonti preferite',
-                'Volg FulcrumGrid op Google — voeg ons toe aan uw voorkeursbronnen'),
             # ---- Category tag (Operations only; Collection/HR kept) ----
-            '<span class="post-cat">Operations</span>': _t(
-                '<span class="post-cat">Opérations</span>',
-                '<span class="post-cat">Betrieb</span>',
-                '<span class="post-cat">Operaciones</span>',
-                '<span class="post-cat">Operazioni</span>',
-                '<span class="post-cat">Bedrijfsvoering</span>'),
+            '<span class="tag tag-outline">Operations</span>': _t(
+                '<span class="tag tag-outline">Opérations</span>',
+                '<span class="tag tag-outline">Betrieb</span>',
+                '<span class="tag tag-outline">Operaciones</span>',
+                '<span class="tag tag-outline">Operazioni</span>',
+                '<span class="tag tag-outline">Bedrijfsvoering</span>'),
             # ---- Card titles ----
             "Accounts Receivable vs Accounts Payable: What's the Difference?": _T_VS_PAYABLE,
             "Gross Pay vs Net Pay: What's the Difference?": _t(
@@ -174,7 +166,7 @@ PAGE = {
                 'KPI e OKR: qual è la differenza e quando usare ciascuno',
                 'KPI\'s versus OKR\'s: wat is het verschil en wanneer gebruikt u welke'),
             'What Is Dunning? How the Dunning Process Works': _T_DUNNING,
-            'How to Calculate PTO Accrual: Formulas, Rates &amp; Examples': _t(
+            'How to Calculate PTO Accrual: Formulas, Rates &amp;amp; Examples': _t(
                 'Comment calculer le cumul des congés (PTO) : formules, taux &amp; exemples',
                 'So berechnen Sie die PTO-Ansammlung: Formeln, Sätze &amp; Beispiele',
                 'Cómo calcular la acumulación de PTO: fórmulas, tasas &amp; ejemplos',
@@ -686,6 +678,8 @@ PAGE = {
             **_ARTICLE_SHARED,
             'September 15, 2026': _t('15 septembre 2026', '15. September 2026', '15 de septiembre de 2026', '15 settembre 2026', '15 september 2026'),
             '6 min read': _MIN_READ_6,
+            # Kept acronym (stays English; entry keeps the checker from flagging the bare node)
+            'DPO': _t('DPO', 'DPO', 'DPO', 'DPO', 'DPO'),
             # ---- Title / meta / breadcrumb ----
             "Accounts Receivable vs Accounts Payable: What's the Difference?": _T_VS_PAYABLE,
             'A plain-English guide to accounts receivable vs accounts payable — what each means, how they hit your balance sheet and cash flow, and how to manage both.': _t(
@@ -816,6 +810,12 @@ PAGE = {
             **_ARTICLE_SHARED,
             'September 1, 2026': _t('1 septembre 2026', '1. September 2026', '1 de septiembre de 2026', '1 settembre 2026', '1 september 2026'),
             '7 min read': _MIN_READ_7,
+            # Kept term-names: these appear as bare <strong> nodes; they stay English
+            # (translated in context by the surrounding <li>/heading entries below).
+            'Net 7 / Net 15 / Net 30 / Net 60': _t('Net 7 / Net 15 / Net 30 / Net 60', 'Net 7 / Net 15 / Net 30 / Net 60', 'Net 7 / Net 15 / Net 30 / Net 60', 'Net 7 / Net 15 / Net 30 / Net 60', 'Net 7 / Net 15 / Net 30 / Net 60'),
+            'Net 30': _t('Net 30', 'Net 30', 'Net 30', 'Net 30', 'Net 30'),
+            'CIA / PIA': _t('CIA / PIA', 'CIA / PIA', 'CIA / PIA', 'CIA / PIA', 'CIA / PIA'),
+            '2/10 Net 30': _t('2/10 Net 30', '2/10 Net 30', '2/10 Net 30', '2/10 Net 30', '2/10 Net 30'),
             # ---- Title / meta / breadcrumb ----
             'Invoice Payment Terms Explained (Net 30, 2/10 Net 30 &amp; More)': _T_INVOICE_TERMS,
             'A plain-English guide to invoice payment terms — Net 30, Net 15, due on receipt, EOM, 2/10 Net 30 early-payment discounts, and deposits — and how to choose the right ones.': _t(
@@ -889,10 +889,10 @@ PAGE = {
                 '<strong>Facturering per mijlpaal</strong> — de betaling is gekoppeld aan leverfasen, zodat geld binnenkomt naarmate het werk vordert.'),
             '<strong>Retainer</strong> — a recurring fixed amount, billed ahead, for ongoing work.': _t(
                 '<strong>Forfait récurrent (retainer)</strong> — un montant fixe récurrent, facturé d\'avance, pour un travail continu.',
-                '<strong>Retainer</strong> — ein wiederkehrender Festbetrag, im Voraus abgerechnet, für laufende Arbeit.',
+                '<strong>Pauschalhonorar (Retainer)</strong> — ein wiederkehrender Festbetrag, im Voraus abgerechnet, für laufende Arbeit.',
                 '<strong>Iguala (retainer)</strong> — un importe fijo recurrente, facturado por adelantado, para trabajo continuo.',
-                '<strong>Retainer</strong> — un importo fisso ricorrente, fatturato in anticipo, per lavoro continuativo.',
-                '<strong>Retainer</strong> — een terugkerend vast bedrag, vooraf gefactureerd, voor doorlopend werk.'),
+                '<strong>Compenso ricorrente (retainer)</strong> — un importo fisso ricorrente, fatturato in anticipo, per lavoro continuativo.',
+                '<strong>Vast honorarium (retainer)</strong> — een terugkerend vast bedrag, vooraf gefactureerd, voor doorlopend werk.'),
             'Early-payment discounts: "2/10 Net 30"': _t('Escomptes pour paiement anticipé : « 2/10 Net 30 »', 'Skonti für frühe Zahlung: „2/10 Net 30"', 'Descuentos por pronto pago: «2/10 Net 30»', 'Sconti per pagamento anticipato: «2/10 Net 30»', 'Kortingen voor vroeg betalen: «2/10 Net 30»'),
             'This is the one that confuses people. <strong>2/10 Net 30</strong> means: the full amount is due in 30 days, but if the customer pays within 10 days, they take a 2% discount. It\'s a tool to pull cash in sooner. Just weigh the cost — offering 2% to be paid 20 days early is a real discount, so use it where faster cash is worth more than the margin.': _t(
                 'C\'est celle qui embrouille les gens. <strong>2/10 Net 30</strong> signifie : le montant total est dû sous 30 jours, mais si le client paie dans les 10 jours, il bénéficie d\'un escompte de 2 %. C\'est un outil pour faire rentrer la trésorerie plus tôt. Pesez simplement le coût — offrir 2 % pour être payé 20 jours plus tôt est un vrai escompte, alors utilisez-le là où une trésorerie plus rapide vaut plus que la marge.',

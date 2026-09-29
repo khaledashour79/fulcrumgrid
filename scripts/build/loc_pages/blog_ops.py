@@ -49,12 +49,12 @@ PAGE = {
                 "FulcrumGrid Command Center — de operatie in één oogopslag"),
             # ---- Breadcrumb / header ----
             '<a href="/">Home</a>': _t('<a href="/">Accueil</a>', '<a href="/">Startseite</a>', '<a href="/">Inicio</a>', '<a href="/">Home</a>', '<a href="/">Home</a>'),
-            '<span class="post-cat" style="color:var(--teal)">Operations</span>': _t(
-                '<span class="post-cat" style="color:var(--teal)">Opérations</span>',
-                '<span class="post-cat" style="color:var(--teal)">Betrieb</span>',
-                '<span class="post-cat" style="color:var(--teal)">Operaciones</span>',
-                '<span class="post-cat" style="color:var(--teal)">Operazioni</span>',
-                '<span class="post-cat" style="color:var(--teal)">Operations</span>'),
+            '<span class="tag tag-accent">Operations</span>': _t(
+                '<span class="tag tag-accent">Opérations</span>',
+                '<span class="tag tag-accent">Betrieb</span>',
+                '<span class="tag tag-accent">Operaciones</span>',
+                '<span class="tag tag-accent">Operazioni</span>',
+                '<span class="tag tag-accent">Operations</span>'),
             "September 12, 2026": _t("12 septembre 2026", "12. September 2026", "12 de septiembre de 2026", "12 settembre 2026", "12 september 2026"),
             "6 min read": _t("6 min de lecture", "6 Min. Lesezeit", "6 min de lectura", "6 min di lettura", "6 min leestijd"),
             # ---- Body ----
@@ -74,10 +74,10 @@ PAGE = {
             "What is an OKR?": _t("Qu'est-ce qu'un OKR ?", "Was ist ein OKR?", "¿Qué es un OKR?", "Che cos'è un OKR?", "Wat is een OKR?"),
             "An OKR — objective and key results — is a goal-setting framework. The <strong>Objective</strong> is a qualitative, ambitious goal (\"make onboarding effortless\"); the <strong>Key Results</strong> are two to five measurable outcomes that prove you hit it (\"cut time-to-first-value to under a day,\" \"raise activation to 60%\"). OKRs are set for a period — usually a quarter — and are meant to stretch you.": _t(
                 "Un OKR — objectif et résultats clés — est un cadre de définition d'objectifs. L'<strong>Objectif</strong> est un but qualitatif et ambitieux (« rendre l'intégration sans effort ») ; les <strong>Résultats clés</strong> sont deux à cinq résultats mesurables qui prouvent que vous l'avez atteint (« réduire le délai avant la première valeur à moins d'un jour », « porter l'activation à 60 % »). Les OKRs sont fixés pour une période — généralement un trimestre — et sont censés vous pousser.",
-                "Ein OKR — Objective and Key Results — ist ein Rahmen zur Zielsetzung. Das <strong>Objective</strong> ist ein qualitatives, ehrgeiziges Ziel („das Onboarding mühelos machen“); die <strong>Key Results</strong> sind zwei bis fünf messbare Ergebnisse, die belegen, dass Sie es erreicht haben („die Zeit bis zum ersten Nutzen auf unter einen Tag senken“, „die Aktivierung auf 60 % steigern“). OKRs werden für einen Zeitraum festgelegt — meist ein Quartal — und sollen Sie fordern.",
+                "Ein OKR — Objective and Key Results — ist ein Rahmen zur Zielsetzung. Das <strong>Ziel (Objective)</strong> ist ein qualitatives, ehrgeiziges Ziel („das Onboarding mühelos machen“); die <strong>Schlüsselergebnisse (Key Results)</strong> sind zwei bis fünf messbare Ergebnisse, die belegen, dass Sie es erreicht haben („die Zeit bis zum ersten Nutzen auf unter einen Tag senken“, „die Aktivierung auf 60 % steigern“). OKRs werden für einen Zeitraum festgelegt — meist ein Quartal — und sollen Sie fordern.",
                 "Un OKR — objetivo y resultados clave — es un marco para fijar metas. El <strong>Objetivo</strong> es una meta cualitativa y ambiciosa («hacer que la incorporación sea sencilla»); los <strong>Resultados clave</strong> son de dos a cinco resultados medibles que demuestran que lo logró («reducir el tiempo hasta el primer valor a menos de un día», «elevar la activación al 60 %»). Los OKRs se fijan para un periodo — normalmente un trimestre — y están pensados para exigirle.",
                 "Un OKR — objective and key results — è un quadro per la definizione degli obiettivi. L'<strong>Obiettivo</strong> è una meta qualitativa e ambiziosa («rendere l'onboarding senza sforzo»); i <strong>Risultati chiave</strong> sono da due a cinque risultati misurabili che dimostrano di averlo raggiunto («ridurre il tempo al primo valore a meno di un giorno», «portare l'attivazione al 60 %»). Gli OKR si fissano per un periodo — di solito un trimestre — e sono pensati per metterti alla prova.",
-                "Een OKR — objective and key results — is een kader om doelen te stellen. Het <strong>Objective</strong> is een kwalitatief, ambitieus doel („onboarding moeiteloos maken”); de <strong>Key Results</strong> zijn twee tot vijf meetbare uitkomsten die bewijzen dat u het haalde („de tijd tot eerste waarde terugbrengen tot minder dan een dag”, „de activatie naar 60 % tillen”). OKR's worden voor een periode vastgesteld — meestal een kwartaal — en zijn bedoeld om u uit te dagen."),
+                "Een OKR — objective and key results — is een kader om doelen te stellen. Het <strong>doel (Objective)</strong> is een kwalitatief, ambitieus doel („onboarding moeiteloos maken”); de <strong>kernresultaten (Key Results)</strong> zijn twee tot vijf meetbare uitkomsten die bewijzen dat u het haalde („de tijd tot eerste waarde terugbrengen tot minder dan een dag”, „de activatie naar 60 % tillen”). OKR's worden voor een periode vastgesteld — meestal een kwartaal — en zijn bedoeld om u uit te dagen."),
             "The key differences": _t("Les différences essentielles", "Die wichtigsten Unterschiede", "Las diferencias clave", "Le differenze fondamentali", "De belangrijkste verschillen"),
             "<strong>Purpose:</strong> KPIs monitor health; OKRs drive change.": _t(
                 "<strong>Objet :</strong> les KPIs surveillent la santé ; les OKRs conduisent le changement.",
@@ -193,12 +193,18 @@ PAGE = {
                 "FulcrumGrid Command Center — realtime operationeel dashboard"),
             # ---- Breadcrumb / header ----
             '<a href="/">Home</a>': _t('<a href="/">Accueil</a>', '<a href="/">Startseite</a>', '<a href="/">Inicio</a>', '<a href="/">Home</a>', '<a href="/">Home</a>'),
-            '<span class="post-cat" style="color:var(--teal)">Operations</span>': _t(
-                '<span class="post-cat" style="color:var(--teal)">Opérations</span>',
-                '<span class="post-cat" style="color:var(--teal)">Betrieb</span>',
-                '<span class="post-cat" style="color:var(--teal)">Operaciones</span>',
-                '<span class="post-cat" style="color:var(--teal)">Operazioni</span>',
-                '<span class="post-cat" style="color:var(--teal)">Operations</span>'),
+            'Operations dashboard metrics': _t(
+                'Indicateurs du tableau de bord des opérations',
+                'Kennzahlen für das Betriebs-Dashboard',
+                'Métricas del panel de operaciones',
+                'Metriche della dashboard operativa',
+                'Metrieken voor het operationele dashboard'),
+            '<span class="tag tag-accent">Operations</span>': _t(
+                '<span class="tag tag-accent">Opérations</span>',
+                '<span class="tag tag-accent">Betrieb</span>',
+                '<span class="tag tag-accent">Operaciones</span>',
+                '<span class="tag tag-accent">Operazioni</span>',
+                '<span class="tag tag-accent">Operations</span>'),
             "August 24, 2026": _t("24 août 2026", "24. August 2026", "24 de agosto de 2026", "24 agosto 2026", "24 augustus 2026"),
             "5 min read": _t("5 min de lecture", "5 Min. Lesezeit", "5 min de lectura", "5 min di lettura", "5 min leestijd"),
             # ---- Body ----
@@ -356,12 +362,12 @@ PAGE = {
                 "FulcrumGrid HR Suite — personeelsbeheer"),
             # ---- Breadcrumb / header ----
             '<a href="/">Home</a>': _t('<a href="/">Accueil</a>', '<a href="/">Startseite</a>', '<a href="/">Inicio</a>', '<a href="/">Home</a>', '<a href="/">Home</a>'),
-            '<span class="current">How to build a PTO policy</span>': _t(
-                '<span class="current">Comment bâtir une politique de PTO</span>',
-                '<span class="current">Eine PTO-Regelung aufbauen</span>',
-                '<span class="current">Cómo crear una política de PTO</span>',
-                '<span class="current">Come costruire una politica di PTO</span>',
-                '<span class="current">Een PTO-beleid opbouwen</span>'),
+            'How to build a PTO policy': _t(
+                'Comment bâtir une politique de PTO',
+                'Eine PTO-Regelung aufbauen',
+                'Cómo crear una política de PTO',
+                'Come costruire una politica di PTO',
+                'Een PTO-beleid opbouwen'),
             "August 30, 2026": _t("30 août 2026", "30. August 2026", "30 de agosto de 2026", "30 agosto 2026", "30 augustus 2026"),
             "7 min read": _t("7 min de lecture", "7 Min. Lesezeit", "7 min de lectura", "7 min di lettura", "7 min leestijd"),
             # ---- Body ----
@@ -512,18 +518,18 @@ PAGE = {
                 "FulcrumGrid Command Center — de operatie in één oogopslag"),
             # ---- Breadcrumb / header ----
             '<a href="/">Home</a>': _t('<a href="/">Accueil</a>', '<a href="/">Startseite</a>', '<a href="/">Inicio</a>', '<a href="/">Home</a>', '<a href="/">Home</a>'),
-            '<span class="current">How to write SOPs your team follows</span>': _t(
-                '<span class="current">Rédiger des SOP que votre équipe suit</span>',
-                '<span class="current">SOPs schreiben, die Ihr Team befolgt</span>',
-                '<span class="current">Escribir SOP que su equipo sigue</span>',
-                '<span class="current">Scrivere SOP che il tuo team segue</span>',
-                "<span class=\"current\">SOP's schrijven die uw team volgt</span>"),
-            '<span class="post-cat" style="color:var(--teal)">Operations</span>': _t(
-                '<span class="post-cat" style="color:var(--teal)">Opérations</span>',
-                '<span class="post-cat" style="color:var(--teal)">Betrieb</span>',
-                '<span class="post-cat" style="color:var(--teal)">Operaciones</span>',
-                '<span class="post-cat" style="color:var(--teal)">Operazioni</span>',
-                '<span class="post-cat" style="color:var(--teal)">Operations</span>'),
+            'How to write SOPs your team follows': _t(
+                'Rédiger des SOP que votre équipe suit',
+                'SOPs schreiben, die Ihr Team befolgt',
+                'Escribir SOP que su equipo sigue',
+                'Scrivere SOP che il tuo team segue',
+                "SOP's schrijven die uw team volgt"),
+            '<span class="tag tag-accent">Operations</span>': _t(
+                '<span class="tag tag-accent">Opérations</span>',
+                '<span class="tag tag-accent">Betrieb</span>',
+                '<span class="tag tag-accent">Operaciones</span>',
+                '<span class="tag tag-accent">Operazioni</span>',
+                '<span class="tag tag-accent">Operations</span>'),
             "September 1, 2026": _t("1 septembre 2026", "1. September 2026", "1 de septiembre de 2026", "1 settembre 2026", "1 september 2026"),
             "6 min read": _t("6 min de lecture", "6 Min. Lesezeit", "6 min de lectura", "6 min di lettura", "6 min leestijd"),
             # ---- Body ----
@@ -652,18 +658,18 @@ PAGE = {
                 "FulcrumGrid — doelgerichte bedrijfsapps voor elke operatie"),
             # ---- Breadcrumb / header ----
             '<a href="/">Home</a>': _t('<a href="/">Accueil</a>', '<a href="/">Startseite</a>', '<a href="/">Inicio</a>', '<a href="/">Home</a>', '<a href="/">Home</a>'),
-            '<span class="current">Spreadsheets vs. business software</span>': _t(
-                '<span class="current">Tableurs vs. logiciels métier</span>',
-                '<span class="current">Tabellenkalkulationen vs. Business-Software</span>',
-                '<span class="current">Hojas de cálculo vs. software de negocio</span>',
-                '<span class="current">Fogli di calcolo vs. software aziendale</span>',
-                '<span class="current">Spreadsheets vs. bedrijfssoftware</span>'),
-            '<span class="post-cat" style="color:var(--teal)">Operations</span>': _t(
-                '<span class="post-cat" style="color:var(--teal)">Opérations</span>',
-                '<span class="post-cat" style="color:var(--teal)">Betrieb</span>',
-                '<span class="post-cat" style="color:var(--teal)">Operaciones</span>',
-                '<span class="post-cat" style="color:var(--teal)">Operazioni</span>',
-                '<span class="post-cat" style="color:var(--teal)">Operations</span>'),
+            'Spreadsheets vs. business software': _t(
+                'Tableurs vs. logiciels métier',
+                'Tabellenkalkulationen vs. Business-Software',
+                'Hojas de cálculo vs. software de negocio',
+                'Fogli di calcolo vs. software aziendale',
+                'Spreadsheets vs. bedrijfssoftware'),
+            '<span class="tag tag-accent">Operations</span>': _t(
+                '<span class="tag tag-accent">Opérations</span>',
+                '<span class="tag tag-accent">Betrieb</span>',
+                '<span class="tag tag-accent">Operaciones</span>',
+                '<span class="tag tag-accent">Operazioni</span>',
+                '<span class="tag tag-accent">Operations</span>'),
             "August 25, 2026": _t("25 août 2026", "25. August 2026", "25 de agosto de 2026", "25 agosto 2026", "25 augustus 2026"),
             "6 min read": _t("6 min de lecture", "6 Min. Lesezeit", "6 min de lectura", "6 min di lettura", "6 min leestijd"),
             # ---- Body ----
@@ -825,18 +831,18 @@ PAGE = {
                 "FulcrumGrid Command Center — de operatie in één oogopslag"),
             # ---- Breadcrumb / header ----
             '<a href="/">Home</a>': _t('<a href="/">Accueil</a>', '<a href="/">Startseite</a>', '<a href="/">Inicio</a>', '<a href="/">Home</a>', '<a href="/">Home</a>'),
-            '<span class="current">How to run a weekly operations review</span>': _t(
-                '<span class="current">Animer une revue hebdomadaire des opérations</span>',
-                '<span class="current">Einen wöchentlichen Betriebsreview durchführen</span>',
-                '<span class="current">Llevar una revisión semanal de operaciones</span>',
-                '<span class="current">Condurre una revisione operativa settimanale</span>',
-                '<span class="current">Een wekelijkse operationele review houden</span>'),
-            '<span class="post-cat" style="color:var(--teal)">Operations</span>': _t(
-                '<span class="post-cat" style="color:var(--teal)">Opérations</span>',
-                '<span class="post-cat" style="color:var(--teal)">Betrieb</span>',
-                '<span class="post-cat" style="color:var(--teal)">Operaciones</span>',
-                '<span class="post-cat" style="color:var(--teal)">Operazioni</span>',
-                '<span class="post-cat" style="color:var(--teal)">Operations</span>'),
+            'How to run a weekly operations review': _t(
+                'Animer une revue hebdomadaire des opérations',
+                'Einen wöchentlichen Betriebsreview durchführen',
+                'Llevar una revisión semanal de operaciones',
+                'Condurre una revisione operativa settimanale',
+                'Een wekelijkse operationele review houden'),
+            '<span class="tag tag-accent">Operations</span>': _t(
+                '<span class="tag tag-accent">Opérations</span>',
+                '<span class="tag tag-accent">Betrieb</span>',
+                '<span class="tag tag-accent">Operaciones</span>',
+                '<span class="tag tag-accent">Operazioni</span>',
+                '<span class="tag tag-accent">Operations</span>'),
             "August 31, 2026": _t("31 août 2026", "31. August 2026", "31 de agosto de 2026", "31 agosto 2026", "31 augustus 2026"),
             "6 min read": _t("6 min de lecture", "6 Min. Lesezeit", "6 min de lectura", "6 min di lettura", "6 min leestijd"),
             # ---- Body ----
