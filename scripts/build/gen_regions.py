@@ -324,6 +324,8 @@ REGIONS = {
     'desc_ar': "منظومة الموارد البشرية لأوروبا — ملفات دفع SEPA، وحقوق أصحاب البيانات وفق GDPR (التصدير والمحو)، واستقطاعات محلية قابلة للتهيئة، وموارد بشرية كاملة على منصة واحدة.",
     'hub_sub_en': 'UK · SEPA · GDPR', 'hub_sub_ar': 'UK · SEPA · GDPR',
     'members': ['uk'],
+    'served_en': 'Germany · France · Netherlands · Ireland · Belgium · Spain · Portugal · Italy · Poland · and the rest of the EU / EEA',
+    'served_ar': 'ألمانيا · فرنسا · هولندا · أيرلندا · بلجيكا · إسبانيا · البرتغال · إيطاليا · بولندا · وبقية الاتحاد الأوروبي والمنطقة الاقتصادية',
     'features': [
       ("SEPA payments", "مدفوعات SEPA",
        "Export a SEPA credit-transfer file from a finalized pay run for upload to your bank, with IBANs validated on entry.",
@@ -346,7 +348,7 @@ REGIONS = {
     'cta_p_ar': "شاهد منظومة الموارد البشرية تدير مدفوعات SEPA و GDPR والرواتب لفريقك.",
   },
   'gcc': {
-    'en_name': 'the GCC', 'ar_name': 'دول الخليج',
+    'en_name': 'GCC', 'ar_name': 'دول الخليج',
     'tag_en': 'Gulf Cooperation Council · GCC', 'tag_ar': 'مجلس التعاون الخليجي · GCC',
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'the Gulf',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للخليج',
@@ -361,7 +363,7 @@ REGIONS = {
     'cta_p_ar': "شاهد منظومة الموارد البشرية تدير رواتب الخليج و WPS ونهاية الخدمة لفريقك.",
   },
   'middle-east': {
-    'en_name': 'the Middle East', 'ar_name': 'الشرق الأوسط',
+    'en_name': 'Middle East', 'ar_name': 'الشرق الأوسط',
     'tag_en': 'Middle East · MENA', 'tag_ar': 'الشرق الأوسط · MENA',
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'the Middle East',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للشرق الأوسط',
@@ -371,6 +373,8 @@ REGIONS = {
     'desc_ar': "منظومة الموارد البشرية عبر الشرق الأوسط — مصر والأردن وبلاد الشام — مع رواتب محلية قابلة للتهيئة، ونهاية خدمة قائمة على القواعد، ودفع متعدّد العملات، وموارد بشرية بالعربية أولًا.",
     'hub_sub_en': 'Egypt · Jordan · Levant', 'hub_sub_ar': 'مصر · الأردن · بلاد الشام',
     'members': ['egypt', 'jordan'],
+    'served_en': 'Lebanon · Iraq · Palestine · Syria · Yemen · Morocco · Tunisia · Algeria · Libya · Sudan',
+    'served_ar': 'لبنان · العراق · فلسطين · سوريا · اليمن · المغرب · تونس · الجزائر · ليبيا · السودان',
     'features': [
       ("Configurable local payroll", "رواتب محلية قابلة للتهيئة",
        "Model each country's income tax and social contributions as configurable, classified deduction types — no country hard-coding required.",
@@ -644,8 +648,19 @@ def region_page(slug, lang):
             mc.append(f'''          <a class="cross-card" href="{b}/regions/{m}/" style="--cc: var(--teal)"><span class="ci" aria-hidden="true">{GLOBE}</span><div><h3>{mname}</h3><p>{msub}</p></div><span class="arrow" aria-hidden="true">{arrow}</span></a>''')
         c_eye = 'Countries' if en else 'الدول'
         c_h = 'Countries in this region' if en else 'الدول في هذه المنطقة'
-        c_p = ('Pick a country for its statutory payroll and compliance detail.' if en
-               else 'اختر دولة لعرض تفاصيل الرواتب والامتثال النظامي فيها.')
+        c_p = ('Pick a country for its statutory payroll and compliance detail — and it runs across the wider region too.' if en
+               else 'اختر دولة لعرض تفاصيل الرواتب والامتثال النظامي فيها — وتعمل كذلك عبر المنطقة الأوسع.')
+        served_html = ''
+        if d.get('served_en'):
+            served = d['served_en'] if en else d['served_ar']
+            if en:
+                served_html = (f'\n        <p class="price-note" style="margin-top:18px">'
+                               f'<strong>Also runs across the region:</strong> {served} — with configurable local payroll, '
+                               f'end-of-service and multi-currency pay. <a href="{b}/contact/">Ask about your market →</a></p>')
+            else:
+                served_html = (f'\n        <p class="price-note" style="margin-top:18px">'
+                               f'<strong>وتعمل أيضًا عبر المنطقة:</strong> {served} — مع رواتب محلية ونهاية خدمة قابلة للتهيئة '
+                               f'ودفع متعدّد العملات. <a href="{b}/contact/">اسأل عن سوقك ←</a></p>')
         inners.append(f'''        <div class="sub-head">
           <p class="eyebrow">{c_eye}</p>
           <h2>{c_h}</h2>
@@ -653,7 +668,7 @@ def region_page(slug, lang):
         </div>
         <div class="cross-grid">
 {chr(10).join(mc)}
-        </div>''')
+        </div>{served_html}''')
     sec_html = ''
     for i, inner in enumerate(inners):
         cls = 'section section-alt' if i % 2 == 0 else 'section'
