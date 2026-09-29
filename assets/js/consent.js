@@ -1,26 +1,63 @@
-/* FulcrumGrid — Arabic language toggle geo-gate.
-   The Arabic entry in the language switcher is shown only to visitors in
-   Arabic-speaking (MENA / Arab League) countries; everyone else has it hidden.
-   Fails open: if the geo lookup is unavailable, Arabic stays visible, so Arabic
-   speakers are never wrongly cut off. The hreflang <link> tags are left intact,
-   so SEO and the /ar/ pages' indexability are unaffected. The result is cached
-   for the session to avoid repeated lookups. */
+/* FulcrumGrid — IP-based language defaulting + Arabic toggle geo-gate.
+   On a first visit that lands on the English (root) tree, redirect the visitor
+   to the language version matching their country, preserving the page path;
+   English is the fallback for any unmapped country. Guardrails:
+     • only from the root tree — never within /fr/, /de/, …, /ar/ (no loops);
+     • only for real browsers — bots are skipped so every tree stays crawlable;
+     • never once the visitor has used the switcher — that choice is remembered
+       (localStorage 'fg_lang') and honored on later visits;
+     • fails open to English if the lookup is unavailable.
+   Arabic auto-defaults only in the GCC, but the Arabic switcher entry is shown
+   across the wider Arabic-speaking (MENA) region and hidden elsewhere. One geo
+   lookup per session, cached; the hreflang <link> tags are never touched. */
 (function(){
   try{
-    // Keep Arabic visible for anyone already viewing an Arabic page.
-    if(((document.documentElement.lang||'').toLowerCase().indexOf('ar'))===0) return;
-    var ARABIC=/^(SA|AE|QA|KW|BH|OM|YE|IQ|SY|JO|LB|PS|EG|SD|LY|TN|DZ|MA|MR|SO|DJ|KM|EH)$/;
-    var GKEY='fg_geo_cc';
-    function hideArabic(){
+    var path=location.pathname;
+    var seg=(path.split('/')[1]||'').toLowerCase();
+    var TREES={fr:1,de:1,es:1,it:1,nl:1,ar:1};   // language subdirectories
+    var inLangTree=TREES[seg]===1;
+    var onArabic=(seg==='ar')||(((document.documentElement.lang||'').toLowerCase().indexOf('ar'))===0);
+
+    // Remember the visitor's explicit language choice when they use the switcher.
+    document.addEventListener('click', function(ev){
+      var t=ev.target, a=(t&&t.closest)?t.closest('.lang-dd-menu a[hreflang]'):null;
+      if(a){ try{ localStorage.setItem('fg_lang',(a.getAttribute('hreflang')||'').toLowerCase()); }catch(e){} }
+    }, true);
+
+    // Country → language. Arabic only in the GCC; everything unmapped → English.
+    var LANG_BY_CC={FR:'fr',BE:'fr',LU:'fr',MC:'fr',DE:'de',AT:'de',CH:'de',LI:'de',
+      ES:'es',IT:'it',SM:'it',VA:'it',NL:'nl',SA:'ar',AE:'ar',QA:'ar',KW:'ar',BH:'ar',OM:'ar'};
+    // Countries where the Arabic switcher entry stays visible (Arab League / MENA).
+    var MENA=/^(SA|AE|QA|KW|BH|OM|YE|IQ|SY|JO|LB|PS|EG|SD|LY|TN|DZ|MA|MR|SO|DJ|KM|EH)$/;
+    var BOT=/bot|crawl|spider|slurp|mediapartners|bingpreview|facebookexternalhit|embedly|quora|pinterest|slackbot|vkshare|w3c_validator|whatsapp|telegram|discord|applebot|yandex|baidu|duckduck|semrush|ahrefs|petal|lighthouse|headless/i;
+
+    function hideArabicToggle(){
       var a=document.querySelectorAll('.lang-dd-menu a[hreflang="ar"]');
       for(var i=0;i<a.length;i++){ a[i].style.display='none'; }
     }
-    function apply(cc){ if(cc && !ARABIC.test(cc)) hideArabic(); }
-    var cached; try{ cached=sessionStorage.getItem(GKEY); }catch(e){}
-    if(cached){ apply(cached); return; }
+    function gate(cc){ if(!onArabic && cc && !MENA.test(cc)) hideArabicToggle(); }
+    function go(lang){
+      if(!lang || TREES[lang]!==1) return false;
+      var here=path+location.search+location.hash;
+      location.replace('/'+lang+here); return true;
+    }
+
+    var canRedirect=!inLangTree && !BOT.test(navigator.userAgent||'');
+    var choice; try{ choice=(localStorage.getItem('fg_lang')||'').toLowerCase(); }catch(e){}
+
+    // Returning visitor with a remembered non-English choice → send them there.
+    if(canRedirect && choice && choice!=='en'){ if(go(choice)) return; }
+
+    function handle(cc){
+      if(canRedirect && !choice && go(LANG_BY_CC[cc])) return;  // first-visit default
+      gate(cc);                                                 // stayed → gate toggle
+    }
+
+    var cc; try{ cc=sessionStorage.getItem('fg_geo_cc'); }catch(e){}
+    if(cc){ handle(cc); return; }
     fetch('https://ipapi.co/json/').then(function(r){ return r.json(); }).then(function(d){
-      var cc=((d&&d.country_code)||'').toUpperCase();
-      if(/^[A-Z]{2}$/.test(cc)){ try{ sessionStorage.setItem(GKEY,cc); }catch(e){} apply(cc); }
+      var c=((d&&d.country_code)||'').toUpperCase();
+      if(/^[A-Z]{2}$/.test(c)){ try{ sessionStorage.setItem('fg_geo_cc',c); }catch(e){} handle(c); }
     }).catch(function(){});
   }catch(e){}
 })();
