@@ -27,8 +27,13 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 # and loc_static generates the European-language trees (fr/de/es/it/nl) from
 # the English source. Only pages registered in loc_catalog are localized, so
 # this is safe to run while translation catalogs are still being filled in.
-STEPS = ['gen_pricing.py', 'gen_blog.py', 'gen_regions.py',
-         'upgrade_switcher.py', 'loc_static.py', 'gen_sitemap.py']
+# NOTE: localization (upgrade_switcher.py + loc_static.py) is paused during the
+# design-system rollout. The site is being re-skinned into the new design in
+# English first; the committed /<lang>/ trees stay in the previous design until
+# the rollout is complete, after which localization is re-enabled and the whole
+# site is re-localized in one pass. Re-add 'upgrade_switcher.py' and
+# 'loc_static.py' before 'gen_sitemap.py' at that point.
+STEPS = ['gen_pricing.py', 'gen_blog.py', 'gen_regions.py', 'gen_sitemap.py']
 
 def main():
     env = dict(os.environ, FG_ROOT=ROOT)
