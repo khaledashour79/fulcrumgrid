@@ -18,7 +18,8 @@
 
   <title>ما دليل الموظّف؟ (وماذا تضع فيه) — FulcrumGrid</title>
   <meta name="description" content="ما دليل الموظّف، ولماذا يحتاجه كل عمل، وقائمة قسمًا بقسم لما يجب تضمينه — من السياسات إلى الثقافة." />
-  <meta name="theme-color" content="#0b1020" />
+  <meta name="theme-color" content="#f2f2f3" />
+
   <meta property="og:type" content="article" />
   <meta property="og:title" content="ما دليل الموظّف؟ (وماذا تضع فيه)" />
   <meta property="og:description" content="يحدّد دليل الموظّف القواعد والنبرة. إليك ما هو وماذا تضع فيه بالضبط." />
@@ -32,13 +33,16 @@
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:alt" content="الموارد البشرية من FulcrumGrid — عمليات الأفراد" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ما دليل الموظّف؟ (وماذا تضع فيه)" />
+  <meta name="twitter:description" content="يحدّد دليل الموظّف القواعد والنبرة. إليك ما هو وماذا تضع فيه بالضبط." />
   <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="https://fulcrumgrid.com/ar/blog/employee-handbook/" />
   <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/employee-handbook/" />
   <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/employee-handbook/" />
@@ -48,13 +52,12 @@
   <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/employee-handbook/" />
   <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/employee-handbook/" />
   <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/employee-handbook/" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" /></noscript>
-  <link rel="stylesheet" href="/assets/css/fg.css" />
-  <style>:root { --font-sans: 'Cairo', system-ui, sans-serif; --font-display: 'Cairo', system-ui, sans-serif; }</style>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -138,14 +141,12 @@
   }
   </script>
 </head>
-<body class="fg product-page">
-  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
-
-    <header class="site-header" id="top">
-    <div class="header-inner">
+<body>
+  <header class="site-head">
+    <div class="wrap row">
       <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
-        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/><path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/><defs><linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#2156df"/><stop offset="1" stop-color="#1d47ba"/></linearGradient></defs></svg></span>
-        <span class="brand-name"><span dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span></span>
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
       </a>
       <nav class="site-nav" aria-label="التنقّل الرئيسي">
         <a href="/ar/products/">المنتجات</a>
@@ -153,148 +154,131 @@
         <a href="/ar/pricing/">الأسعار</a>
         <a href="/ar/regions/">المناطق</a>
         <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
-        <a href="/ar/about/">من نحن</a>
         <a href="/ar/contact/">اتصل بنا</a>
       </nav>
-      <div class="header-cta">
-                <details class="lang-menu">
-          <summary aria-label="اللغة"><svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg><span>ع</span><svg class="lang-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-          <div class="lang-menu-list">
-            <a href="/blog/employee-handbook/" hreflang="en" lang="en">English</a>
-            <a href="/ar/blog/employee-handbook/" hreflang="ar" lang="ar" class="active" aria-current="true">العربية</a>
-            <a href="/fr/blog/employee-handbook/" hreflang="fr" lang="fr">Français</a>
-            <a href="/de/blog/employee-handbook/" hreflang="de" lang="de">Deutsch</a>
-            <a href="/es/blog/employee-handbook/" hreflang="es" lang="es">Español</a>
-            <a href="/it/blog/employee-handbook/" hreflang="it" lang="it">Italiano</a>
-            <a href="/nl/blog/employee-handbook/" hreflang="nl" lang="nl">Nederlands</a>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="اللغة">ع ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" class="active" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
           </div>
         </details>
-        <a class="btn btn-primary" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+        <a class="btn btn-primary btn-sm" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
       </div>
-      <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobile-menu" hidden>
-        <a href="/ar/products/">المنتجات</a>
-        <a href="/ar/features/">المنصّة</a>
-        <a href="/ar/pricing/">الأسعار</a>
-        <a href="/ar/regions/">المناطق</a>
-        <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
-        <a href="/ar/about/">من نحن</a>
-        <a href="/ar/contact/">اتصل بنا</a>
-      <a class="btn btn-primary" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
-              <details class="lang-menu">
-          <summary aria-label="اللغة"><svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg><span>ع</span><svg class="lang-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-          <div class="lang-menu-list">
-            <a href="/blog/employee-handbook/" hreflang="en" lang="en">English</a>
-            <a href="/ar/blog/employee-handbook/" hreflang="ar" lang="ar" class="active" aria-current="true">العربية</a>
-            <a href="/fr/blog/employee-handbook/" hreflang="fr" lang="fr">Français</a>
-            <a href="/de/blog/employee-handbook/" hreflang="de" lang="de">Deutsch</a>
-            <a href="/es/blog/employee-handbook/" hreflang="es" lang="es">Español</a>
-            <a href="/it/blog/employee-handbook/" hreflang="it" lang="it">Italiano</a>
-            <a href="/nl/blog/employee-handbook/" hreflang="nl" lang="nl">Nederlands</a>
-          </div>
-        </details>
+      <button class="nav-toggle" aria-label="القائمة"><span>≡</span></button>
     </div>
   </header>
 
-  <main id="main">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="مسار التنقّل">
-        <a href="/ar/">الرئيسية</a><span>/</span><a href="/ar/blog/">المدوّنة</a><span>/</span><span class="current">ما دليل الموظّف؟</span>
-      </nav>
-    </div>
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/ar/">الرئيسية</a> / <a href="/ar/blog/">المدوّنة</a> / ما دليل الموظّف؟</p>
+        <span class="tag tag-accent">الموارد البشرية</span>
+        <h1>ما دليل الموظّف؟ (وماذا تضع فيه)</h1>
+        <p class="hero-intro">ما دليل الموظّف، ولماذا يحتاجه كل عمل، وقائمة قسمًا بقسم لما يجب تضمينه — من السياسات إلى الثقافة.</p>
+        <p class="mono"><time datetime="2026-09-13">١٣ سبتمبر ٢٠٢٦</time> · ٦ دقائق قراءة</p>
+      </div>
+    </section>
 
-    <article class="section" style="padding-top:22px">
-      <div class="container">
-        <div class="article article-header">
-          <span class="post-cat" style="color:var(--rose)">الموارد البشرية</span>
-          <h1>ما دليل الموظّف؟ (وماذا تضع فيه)</h1>
-          <div class="post-meta"><time datetime="2026-09-13">١٣ سبتمبر ٢٠٢٦</time><span class="read">٦ دقائق قراءة</span></div>
-        </div>
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+        <p>دليل الموظّف هو المكان الواحد الذي يذهب إليه فريقك ليعرف كيف تعمل شركتك — القواعد، والمزايا، والتوقّعات، والنبرة. حين يُحسَن، يمنع ألف سؤال صغير ويحمي العمل وأفراده معًا. وحين يُساء، أو يغيب، يترك الجميع يخمّنون. إليك ما هو الدليل وماذا ينتمي إليه.</p>
 
-        <div class="article article-body">
-<p>دليل الموظّف هو المكان الواحد الذي يذهب إليه فريقك ليعرف كيف تعمل شركتك — القواعد، والمزايا، والتوقّعات، والنبرة. حين يُحسَن، يمنع ألف سؤال صغير ويحمي العمل وأفراده معًا. وحين يُساء، أو يغيب، يترك الجميع يخمّنون. إليك ما هو الدليل وماذا ينتمي إليه.</p>
+        <h2>ما دليل الموظّف؟</h2>
+        <p>دليل الموظّف وثيقة تبيّن سياسات شركتك وإجراءاتها ومزاياها وتوقّعاتها من الموظّفين. هو نصفه دليل مرجعي ونصفه بيان ثقافة: يخبر الناس بما يجب فعله (القواعد والامتثال) وكيف تفعلون الأشياء (القيم والأعراف). يُسلَّم عادةً عند التأهيل ويُحدَّث مع نموّ الشركة.</p>
 
-          <h2>ما دليل الموظّف؟</h2>
-          <p>دليل الموظّف وثيقة تبيّن سياسات شركتك وإجراءاتها ومزاياها وتوقّعاتها من الموظّفين. هو نصفه دليل مرجعي ونصفه بيان ثقافة: يخبر الناس بما يجب فعله (القواعد والامتثال) وكيف تفعلون الأشياء (القيم والأعراف). يُسلَّم عادةً عند التأهيل ويُحدَّث مع نموّ الشركة.</p>
+        <h2>لماذا يحتاجه كل عمل</h2>
+        <p>يخلق الدليل اتّساقًا — القواعد نفسها للجميع — وسجلًّا مكتوبًا للسياسات التي أبلغتها، وهو ما يهمّ إن نشأ نزاع يومًا. يسرّع التأهيل، ويقلّل الأسئلة المتكرّرة للموارد البشرية، ويضبط التوقّعات بوضوح كي لا يخترع المديرون الإجابات في اللحظة. حتى الفريق الصغير يستفيد من تدوينه.</p>
 
-          <h2>لماذا يحتاجه كل عمل</h2>
-          <p>يخلق الدليل اتّساقًا — القواعد نفسها للجميع — وسجلًّا مكتوبًا للسياسات التي أبلغتها، وهو ما يهمّ إن نشأ نزاع يومًا. يسرّع التأهيل، ويقلّل الأسئلة المتكرّرة للموارد البشرية، ويضبط التوقّعات بوضوح كي لا يخترع المديرون الإجابات في اللحظة. حتى الفريق الصغير يستفيد من تدوينه.</p>
+        <h2>ماذا تُضمِّن</h2>
+        <p>يغطّي الدليل العملي عادةً:</p>
+        <ul>
+          <li><strong>الترحيب والثقافة</strong> — الرسالة والقيم وكيف تعملون.</li>
+          <li><strong>أساسيات التوظيف</strong> — العقود، والتجربة، وساعات العمل، والحضور.</li>
+          <li><strong>الأجر والمزايا</strong> — جدول الرواتب، والإجازات، والتغطية الصحّية، وأي بدلات.</li>
+          <li><strong>الإجازات</strong> — السنوية والمرضية وكيف تُطلب.</li>
+          <li><strong>السلوك والتوقّعات</strong> — مدوّنة السلوك، والتواصل، والإجراء التأديبي.</li>
+          <li><strong>الصحّة والسلامة والأمن</strong> — سلامة مكان العمل وسياسات البيانات وتقنية المعلومات.</li>
+          <li><strong>مناهضة التمييز والتظلّمات</strong> — كيف تُرفع المسائل وتُعالَج.</li>
+          <li><strong>إنهاء الخدمة</strong> — مُدد الإشعار وإجراءات المغادرة.</li>
+        </ul>
 
-          <h2>ماذا تُضمِّن</h2>
-          <p>يغطّي الدليل العملي عادةً:</p>
-          <ul>
-            <li><strong>الترحيب والثقافة</strong> — الرسالة والقيم وكيف تعملون.</li>
-            <li><strong>أساسيات التوظيف</strong> — العقود، والتجربة، وساعات العمل، والحضور.</li>
-            <li><strong>الأجر والمزايا</strong> — جدول الرواتب، والإجازات، والتغطية الصحّية، وأي بدلات.</li>
-            <li><strong>الإجازات</strong> — السنوية والمرضية وكيف تُطلب.</li>
-            <li><strong>السلوك والتوقّعات</strong> — مدوّنة السلوك، والتواصل، والإجراء التأديبي.</li>
-            <li><strong>الصحّة والسلامة والأمن</strong> — سلامة مكان العمل وسياسات البيانات وتقنية المعلومات.</li>
-            <li><strong>مناهضة التمييز والتظلّمات</strong> — كيف تُرفع المسائل وتُعالَج.</li>
-            <li><strong>إنهاء الخدمة</strong> — مُدد الإشعار وإجراءات المغادرة.</li>
-          </ul>
+        <h2>ماذا تستبعد</h2>
+        <p>أبقِ شروط العقود الفردية (الرواتب المحدّدة)، والتفاصيل التشغيلية سريعة التغيّر، وكل ما يُعالَج حالةً بحالة خارج الدليل — فهي تتقادم سريعًا وتثقله بلا داعٍ. اربط بالوثائق الحيّة بدل لصقها.</p>
 
-          <h2>ماذا تستبعد</h2>
-          <p>أبقِ شروط العقود الفردية (الرواتب المحدّدة)، والتفاصيل التشغيلية سريعة التغيّر، وكل ما يُعالَج حالةً بحالة خارج الدليل — فهي تتقادم سريعًا وتثقله بلا داعٍ. اربط بالوثائق الحيّة بدل لصقها.</p>
+        <h2>إبقاؤه محدّثًا</h2>
+        <p>لا ينفع الدليل إلا إن كان دقيقًا. راجعه مرّة سنويًا على الأقل وكلّما تغيّر القانون أو سياسة كبرى، وأصدر نسخًا كي يعرف الناس ما هو الحالي، وسجّل أن كل موظّف قرأه وأقرّ به. الدليل المتقادم الذي يناقض الممارسة أسوأ من عدمه.</p>
 
-          <h2>إبقاؤه محدّثًا</h2>
-          <p>لا ينفع الدليل إلا إن كان دقيقًا. راجعه مرّة سنويًا على الأقل وكلّما تغيّر القانون أو سياسة كبرى، وأصدر نسخًا كي يعرف الناس ما هو الحالي، وسجّل أن كل موظّف قرأه وأقرّ به. الدليل المتقادم الذي يناقض الممارسة أسوأ من عدمه.</p>
+        <h2>الأسئلة الشائعة</h2>
+        <details class="faq-item"><summary>هل دليل الموظّف مطلوب قانونًا؟</summary><p>في معظم الأماكن ليس الدليل نفسه مطلوبًا قانونًا، لكن كثيرًا من السياسات الفردية التي يحويها قد تكون كذلك — وتدوينها يساعدك على البقاء متوافقًا ومتّسقًا. تحقّق من القواعد حيث تعمل.</p></details>
+        <details class="faq-item"><summary>ما الفرق بين دليل الموظّف وعقد العمل؟</summary><p>العقد اتّفاق مُلزِم مع موظّف واحد يغطّي شروطه المحدّدة. والدليل مرجع عامّ لسياسات الشركة وثقافتها يسري على الجميع، ولا يكون عادةً عقدًا بذاته.</p></details>
+        <details class="faq-item"><summary>كم مرّة ينبغي تحديث دليل الموظّف؟</summary><p>مرّة سنويًا على الأقل، وفورًا كلّما تغيّر قانون أو أدخلت أو عدّلت سياسة كبرى. أصدر نسخة لكل تحديث واجعل الموظّفين يقرّون بالنسخة الحالية.</p></details>
 
-          <h2>الأسئلة الشائعة</h2>
-          <details class="faq-item"><summary>هل دليل الموظّف مطلوب قانونًا؟</summary><p>في معظم الأماكن ليس الدليل نفسه مطلوبًا قانونًا، لكن كثيرًا من السياسات الفردية التي يحويها قد تكون كذلك — وتدوينها يساعدك على البقاء متوافقًا ومتّسقًا. تحقّق من القواعد حيث تعمل.</p></details>
-          <details class="faq-item"><summary>ما الفرق بين دليل الموظّف وعقد العمل؟</summary><p>العقد اتّفاق مُلزِم مع موظّف واحد يغطّي شروطه المحدّدة. والدليل مرجع عامّ لسياسات الشركة وثقافتها يسري على الجميع، ولا يكون عادةً عقدًا بذاته.</p></details>
-          <details class="faq-item"><summary>كم مرّة ينبغي تحديث دليل الموظّف؟</summary><p>مرّة سنويًا على الأقل، وفورًا كلّما تغيّر قانون أو أدخلت أو عدّلت سياسة كبرى. أصدر نسخة لكل تحديث واجعل الموظّفين يقرّون بالنسخة الحالية.</p></details>
+        <hr />
+        <p>يقترن الدليل طبيعيًا ببداية قويّة — طالع <a href="/ar/blog/employee-onboarding-checklist/">قائمة تأهيل الموظّفين</a>، و<a href="/ar/blog/pto-policy/">بناء سياسة إجازات</a>، و<a href="/ar/blog/sop-guide-small-business/">كتابة إجراءات يتّبعها فريقك</a>.</p>
 
-          <hr />
-          <p>يقترن الدليل طبيعيًا ببداية قويّة — طالع <a href="/ar/blog/employee-onboarding-checklist/">قائمة تأهيل الموظّفين</a>، و<a href="/ar/blog/pto-policy/">بناء سياسة إجازات</a>، و<a href="/ar/blog/sop-guide-small-business/">كتابة إجراءات يتّبعها فريقك</a>.</p>
+        <p style="margin-top:32px"><a href="/ar/blog/"><span aria-hidden="true">→</span> العودة إلى المدوّنة</a></p>
+      </div>
+    </section>
 
-          <div class="article-cta" style="--cta-acc:var(--rose)">
-            <span class="k">الموارد البشرية من FulcrumGrid</span>
-            <h3>امنح كل موظّف مصدرًا واحدًا للحقيقة</h3>
-            <p>تخزّن منظومة الموارد البشرية سياساتك، وترسلها عند التأهيل، وتسجّل من أقرّ بماذا — فيكون دليلك مقروءًا وحديثًا وسهل المزامنة.</p>
-            <a class="btn btn-primary" href="/ar/products/hr-suite/">استكشف الموارد البشرية</a>
-          </div>
-        </div>
-
-        <div class="article-foot">
-          <a class="back-link" href="/ar/blog/"><span aria-hidden="true">→</span> العودة إلى المدوّنة</a>
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid HR Suite</p>
+        <h2>امنح كل موظّف مصدرًا واحدًا للحقيقة</h2>
+        <p class="section-lead" style="margin:0 auto 26px">تخزّن HR Suite سياساتك، وترسلها عند التأهيل، وتسجّل من أقرّ بماذا — فيكون دليلك مقروءًا وحديثًا وسهل المزامنة.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/ar/products/hr-suite/">استكشف HR Suite</a>
+          <a class="btn btn-secondary" href="/ar/blog/">العودة إلى المدوّنة</a>
         </div>
       </div>
-    </article>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bgf)" stroke-width="1.5"/>
-              <path d="M9 23V9h9M9 16h7" stroke="url(#bgf)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/>
-              <defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
-            </svg>
-          </span>
-          <span class="brand-name" dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span>
-        </a>
-        <p class="footer-tag">العمود الفقري التشغيلي للفرق الحديثة.</p>
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>العمود الفقري التشغيلي للفرق الحديثة.</p>
+        </div>
+        <div class="foot-col">
+          <h5>المنتجات</h5>
+          <a href="/ar/products/">كل المنتجات</a>
+          <a href="/ar/products/hr-suite/">HR Suite</a>
+          <a href="/ar/products/command-center/">Command Center</a>
+          <a href="/ar/products/collection/">Collection</a>
+          <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
+        </div>
+        <div class="foot-col">
+          <h5>المنصّة</h5>
+          <a href="/ar/features/">الميزات</a>
+          <a href="/ar/how-it-works/">كيف تعمل</a>
+          <a href="/ar/pricing/">الأسعار</a>
+          <a href="/ar/regions/">المناطق</a>
+          <a href="/ar/blog/">المدوّنة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشركة</h5>
+          <a href="/ar/about/">من نحن</a>
+          <a href="/ar/faq/">الأسئلة الشائعة</a>
+          <a href="/ar/contact/">اتصل بنا</a>
+          <a href="/ar/privacy/">الخصوصية</a>
+          <a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a>
+        </div>
       </div>
-      <div class="footer-cols">
-        <div class="footer-col"><h3>المنتجات</h3><a href="/ar/products/">كل المنتجات</a><a href="/ar/products/command-center/">مركز القيادة</a><a href="/ar/products/collection/">التحصيل</a><a href="/ar/products/hr-suite/">الموارد البشرية</a><a href="/ar/custom-apps/">تطبيقات مخصّصة</a><a href="/ar/products/coming-soon/">قريبًا</a></div>
-        <div class="footer-col"><h3>المنصّة</h3><a href="/ar/features/">الميزات</a><a href="/ar/how-it-works/">كيف تعمل</a><a href="/ar/pricing/">الأسعار</a><a href="/ar/regions/">المناطق</a><a href="/ar/blog/">المدوّنة</a></div>
-        <div class="footer-col"><h3>الشركة</h3><a href="/ar/about/">من نحن</a><a href="/ar/faq/">الأسئلة الشائعة</a><a href="/ar/contact/">اتصل بنا</a><a href="mailto:contact@avenlorconsulting.com">راسلنا</a><a href="/ar/privacy/">الخصوصية</a><a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a></div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</span>
+        <span class="mono">fulcrumgrid.com</span>
       </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>&copy; <span id="year">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</p>
-      <p class="footer-domain" dir="ltr">fulcrumgrid.com</p>
     </div>
   </footer>
 
-  <script src="/assets/js/main.js" defer></script>
-  <script src="/assets/js/fg.js" defer></script>
   <script src="/assets/js/consent.js" defer></script>
 </body>
 </html>
