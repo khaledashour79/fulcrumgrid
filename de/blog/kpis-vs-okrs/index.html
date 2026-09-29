@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>KPIs vs. OKRs: Worin sie sich unterscheiden und wann man welche nutzt — FulcrumGrid</title>
+  <meta name="description" content="KPIs vs. OKRs erklärt — was jeder ist, wie sie sich unterscheiden und wann man Kennzahlen zur Überwachung der Gesundheit statt Ziele zur Veränderung nutzt." />
+  <meta name="theme-color" content="#0b1020" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="KPIs vs. OKRs: Worin sie sich unterscheiden und wann man welche nutzt" />
+  <meta property="og:description" content="KPIs messen die laufende Gesundheit; OKRs treiben ehrgeizigen Wandel voran. So unterscheiden sie sich und wann man welche nutzt." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/kpis-vs-okrs/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="article:published_time" content="2026-09-12" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — der Betrieb auf einen Blick" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/kpis-vs-okrs/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/kpis-vs-okrs/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/kpis-vs-okrs/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/kpis-vs-okrs/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/kpis-vs-okrs/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/kpis-vs-okrs/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/kpis-vs-okrs/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/kpis-vs-okrs/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/kpis-vs-okrs/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="/assets/css/fg.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "KPIs vs. OKRs: Worin sie sich unterscheiden und wann man welche nutzt",
+    "description": "KPIs messen die laufende Gesundheit; OKRs treiben ehrgeizigen Wandel voran. So unterscheiden sie sich und wann man welche nutzt.",
+    "datePublished": "2026-09-12",
+    "dateModified": "2026-09-12",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/kpis-vs-okrs/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "KPIs vs OKRs",
+        "item": "https://fulcrumgrid.com/blog/kpis-vs-okrs/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Kann ein Key Result ein KPI sein?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja — sehr oft ist es das. Ein Key Result ist meist eine Zielvorgabe auf einer Kennzahl, und diese Kennzahl kann bereits ein KPI sein, den Sie verfolgen. Der Unterschied ist, dass der KPI fortlaufend läuft, während das Key Result eine konkrete Zielvorgabe für den OKR-Zyklus ist."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sind OKRs besser als KPIs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Keiner ist besser; sie erfüllen unterschiedliche Aufgaben. KPIs überwachen die laufende Gesundheit, OKRs treiben gezielten Wandel voran. Die meisten Teams brauchen beides."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie viele KPIs und OKRs sollte man haben?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Halten Sie beides gering. Eine Handvoll KPIs pro Team hält das Dashboard lesbar, und ein bis drei Objectives mit je zwei bis fünf Key Results pro Quartal wahren den Fokus. Zu viele von beidem verwässern die Aufmerksamkeit."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="fg product-page">
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+    <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/><path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/><defs><linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#2156df"/><stop offset="1" stop-color="#1d47ba"/></linearGradient></defs></svg></span>
+        <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Plattform</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/about/">Über uns</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="header-cta">
+                <details class="lang-menu">
+          <summary aria-label="Sprache"><svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg><span>DE</span><svg class="lang-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <div class="lang-menu-list">
+            <a href="/blog/kpis-vs-okrs/" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/kpis-vs-okrs/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/kpis-vs-okrs/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/kpis-vs-okrs/" hreflang="de" lang="de" class="active" aria-current="true">Deutsch</a>
+            <a href="/es/blog/kpis-vs-okrs/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/kpis-vs-okrs/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/kpis-vs-okrs/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menü umschalten" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Plattform</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/about/">Über uns</a>
+        <a href="/de/contact/">Kontakt</a>
+      <a class="btn btn-primary" href="/de/contact/">Demo anfragen</a>
+              <details class="lang-menu">
+          <summary aria-label="Sprache"><svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg><span>DE</span><svg class="lang-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <div class="lang-menu-list">
+            <a href="/blog/kpis-vs-okrs/" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/kpis-vs-okrs/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/kpis-vs-okrs/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/kpis-vs-okrs/" hreflang="de" lang="de" class="active" aria-current="true">Deutsch</a>
+            <a href="/es/blog/kpis-vs-okrs/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/kpis-vs-okrs/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/kpis-vs-okrs/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/de/">Startseite</a><span>/</span><a href="/de/blog/">Blog</a><span>/</span><span class="current">KPIs vs OKRs</span>
+      </nav>
+    </div>
+
+    <article class="section" style="padding-top:22px">
+      <div class="container">
+        <div class="article article-header">
+          <span class="post-cat" style="color:var(--teal)">Betrieb</span>
+          <h1>KPIs vs. OKRs: Worin sie sich unterscheiden und wann man welche nutzt</h1>
+          <div class="post-meta"><time datetime="2026-09-12">12. September 2026</time><span class="read">6 Min. Lesezeit</span></div>
+        </div>
+
+        <div class="article article-body">
+<p>KPIs und OKRs sind zwei der meistgenutzten — und meistverwechselten — Abkürzungen in der Geschäftswelt. Sie sind keine Rivalen; sie beantworten unterschiedliche Fragen. KPIs sagen Ihnen, ob das Unternehmen gerade gesund ist. OKRs sagen Ihnen, was Sie als Nächstes verändern wollen. Nutzen Sie das falsche für die Aufgabe, driften Sie entweder richtungslos oder jagen Zielen hinterher, während das Grundlegende ins Rutschen gerät.</p>
+
+          <h2>Was ist ein KPI?</h2>
+          <p>Ein KPI — Key Performance Indicator — ist eine Kennzahl, die die laufende Gesundheit von etwas Wichtigem verfolgt: monatlicher Umsatz, Abwanderungsrate, pünktliche Lieferung, durchschnittliche Reaktionszeit. KPIs sind meist stabile Größen, die Sie fortlaufend gegen eine Zielvorgabe oder einen Schwellenwert überwachen. Ein guter KPI beantwortet die Frage: „Läuft dieser Teil des Unternehmens so, wie er sollte?“</p>
+
+          <h2>Was ist ein OKR?</h2>
+          <p>Ein OKR — Objective and Key Results — ist ein Rahmen zur Zielsetzung. Das <strong>Objective</strong> ist ein qualitatives, ehrgeiziges Ziel („das Onboarding mühelos machen“); die <strong>Key Results</strong> sind zwei bis fünf messbare Ergebnisse, die belegen, dass Sie es erreicht haben („die Zeit bis zum ersten Nutzen auf unter einen Tag senken“, „die Aktivierung auf 60 % steigern“). OKRs werden für einen Zeitraum festgelegt — meist ein Quartal — und sollen Sie fordern.</p>
+
+          <h2>Die wichtigsten Unterschiede</h2>
+          <ul>
+            <li><strong>Zweck:</strong> KPIs überwachen die Gesundheit; OKRs treiben den Wandel voran.</li>
+            <li><strong>Zeitrahmen:</strong> KPIs laufen fortlaufend; OKRs werden pro Zyklus festgelegt.</li>
+            <li><strong>Anspruch:</strong> KPIs sollten in einem gesunden Bereich bleiben; OKRs sollen anspruchsvoll sein.</li>
+            <li><strong>Wesen:</strong> ein KPI ist eine einzelne Kennzahl; ein OKR ist ein Ziel plus die Kennzahlen, die es belegen.</li>
+          </ul>
+
+          <h2>Wie sie zusammenwirken</h2>
+          <p>Die besten Betreiber nutzen beides. KPIs sind das Dashboard, das Sie beobachten, um das Geschäft am Laufen zu halten; OKRs sind die Projekte, die Sie angehen, um es voranzubringen. Oft wird ein abdriftender KPI zum Grund für ein OKR („die Abwanderung steigt — das Ziel dieses Quartals ist es, die Bindung zu verbessern“), und ein Key Result ist häufig nur eine Zielvorgabe auf einem bestehenden KPI. Überwachen mit KPIs; verbessern mit OKRs.</p>
+
+          <h2>Wann man welche nutzt</h2>
+          <p>Greifen Sie zu KPIs, wenn Sie die Leistung stetig im Blick behalten und Probleme früh erkennen müssen. Greifen Sie zu OKRs, wenn Sie das Team um eine kleine Zahl ehrgeiziger Ziele für das Quartal scharen wollen. Ist alles ein KPI, ändert sich nichts; ist alles ein OKR, gerät das Tagesgeschäft ins Rutschen. Halten Sie beides im Gleichgewicht.</p>
+
+          <h2>Häufig gestellte Fragen</h2>
+          <details class="faq-item"><summary>Kann ein Key Result ein KPI sein?</summary><p>Ja — sehr oft ist es das. Ein Key Result ist meist eine Zielvorgabe auf einer Kennzahl, und diese Kennzahl kann bereits ein KPI sein, den Sie verfolgen. Der Unterschied ist, dass der KPI fortlaufend läuft, während das Key Result eine konkrete Zielvorgabe für den OKR-Zyklus ist.</p></details>
+          <details class="faq-item"><summary>Sind OKRs besser als KPIs?</summary><p>Keiner ist besser; sie erfüllen unterschiedliche Aufgaben. KPIs überwachen die laufende Gesundheit, OKRs treiben gezielten Wandel voran. Die meisten Teams brauchen beides.</p></details>
+          <details class="faq-item"><summary>Wie viele KPIs und OKRs sollte man haben?</summary><p>Halten Sie beides gering. Eine Handvoll KPIs pro Team hält das Dashboard lesbar, und ein bis drei Objectives mit je zwei bis fünf Key Results pro Quartal wahren den Fokus. Zu viele von beidem verwässern die Aufmerksamkeit.</p></details>
+
+          <hr />
+          <p>Beide stehen und fallen mit den Zahlen, die Sie beobachten — siehe unsere Leitfäden dazu, <a href="/de/blog/operations-dashboard-metrics/">was man in einem Betriebs-Dashboard verfolgen sollte</a> und <a href="/de/blog/weekly-operations-review/">wie man einen wöchentlichen Betriebsreview durchführt</a>.</p>
+
+          <div class="article-cta" style="--cta-acc:var(--teal)">
+            <span class="k">FulcrumGrid Command Center</span>
+            <h3>Ihre KPIs und OKRs an einem Ort</h3>
+            <p>Command Center bringt Ihre Live-KPIs und Quartals-OKRs auf ein Dashboard — so überwachen Sie die Gesundheit des Unternehmens und verfolgen die Ziele, die es voranbringen, Seite an Seite.</p>
+            <a class="btn btn-primary" href="/de/products/command-center/">Command Center entdecken</a>
+          </div>
+        </div>
+
+        <div class="article-foot">
+          <a class="back-link" href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bgf)" stroke-width="1.5"/>
+              <path d="M9 23V9h9M9 16h7" stroke="url(#bgf)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/>
+              <defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+            </svg>
+          </span>
+          <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
+        </a>
+        <p class="footer-tag">Das operative Rückgrat für moderne Teams.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h3>Produkte</h3><a href="/de/products/">Alle Produkte</a><a href="/de/products/command-center/">Command Center</a><a href="/de/products/collection/">Collection</a><a href="/de/products/hr-suite/">HR Suite</a><a href="/de/custom-apps/">Individuelle Apps</a><a href="/de/products/coming-soon/">Demnächst</a></div>
+        <div class="footer-col"><h3>Plattform</h3><a href="/de/features/">Funktionen</a><a href="/de/how-it-works/">So funktioniert's</a><a href="/de/pricing/">Preise</a><a href="/de/regions/">Regionen</a><a href="/de/blog/">Blog</a></div>
+        <div class="footer-col"><h3>Unternehmen</h3><a href="/de/about/">Über uns</a><a href="/de/faq/">FAQ</a><a href="/de/contact/">Kontakt</a><a href="mailto:contact@avenlorconsulting.com">Schreiben Sie uns</a><a href="/de/privacy/">Datenschutz</a><a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a></div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</p>
+      <p class="footer-domain">fulcrumgrid.com</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/fg.js" defer></script>
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
