@@ -28,33 +28,25 @@ PAGE['/pricing/'] = {
     'src': 'pricing/index.html',
     't': {
         # ---- Meta (title/og:title use COMMON "Pricing") ----
-        "Simple, scalable pricing for FulcrumGrid. Start with one app or run the whole grid — Starter, Business, and Enterprise plans.": _t(
-            "Une tarification simple et évolutive pour FulcrumGrid. Commencez avec une seule application ou pilotez toute la grille — forfaits Starter, Business et Enterprise.",
-            "Einfache, skalierbare Preise für FulcrumGrid. Starten Sie mit einer App oder betreiben Sie das ganze Grid — Tarife Starter, Business und Enterprise.",
-            "Precios sencillos y escalables para FulcrumGrid. Empiece con una app o gestione toda la cuadrícula — planes Starter, Business y Enterprise.",
-            "Prezzi semplici e scalabili per FulcrumGrid. Inizia con una sola app o gestisci l'intera griglia — piani Starter, Business ed Enterprise.",
-            "Eenvoudige, schaalbare prijzen voor FulcrumGrid. Begin met één app of run het hele grid — Starter-, Business- en Enterprise-abonnementen."),
-        "Start with one app or run the whole grid — Starter, Business, and Enterprise plans.": _t(
-            "Commencez avec une seule application ou pilotez toute la grille — forfaits Starter, Business et Enterprise.",
-            "Starten Sie mit einer App oder betreiben Sie das ganze Grid — Tarife Starter, Business und Enterprise.",
-            "Empiece con una app o gestione toda la cuadrícula — planes Starter, Business y Enterprise.",
-            "Inizia con una sola app o gestisci l'intera griglia — piani Starter, Business ed Enterprise.",
-            "Begin met één app of run het hele grid — Starter-, Business- en Enterprise-abonnementen."),
-        "FulcrumGrid — purpose-built business apps for every operation": _t(
-            "FulcrumGrid — des applications métier sur mesure pour chaque opération",
-            "FulcrumGrid — zweckgebaute Business-Apps für jeden Betrieb",
-            "FulcrumGrid — aplicaciones de negocio a medida para cada operación",
-            "FulcrumGrid — applicazioni aziendali su misura per ogni operazione",
-            "FulcrumGrid — doelgerichte bedrijfsapps voor elke operatie"),
-        # ---- Breadcrumb ----
-        "Home": _t("Accueil", "Startseite", "Inicio", "Home", "Home"),
+        "Simple, scalable pricing for FulcrumGrid. Pay per app — HR Suite, Command Center, Collection — or bundle the whole grid. Every app includes a 14-day free trial.": _t(
+            "Une tarification simple et évolutive pour FulcrumGrid. Payez par application — HR Suite, Command Center, Collection — ou regroupez toute la grille. Chaque application inclut un essai gratuit de 14 jours.",
+            "Einfache, skalierbare Preise für FulcrumGrid. Zahlen Sie pro App — HR Suite, Command Center, Collection — oder bündeln Sie das ganze Grid. Jede App enthält eine 14-tägige kostenlose Testphase.",
+            "Precios sencillos y escalables para FulcrumGrid. Pague por app — HR Suite, Command Center, Collection — o agrupe toda la cuadrícula. Cada app incluye una prueba gratuita de 14 días.",
+            "Prezzi semplici e scalabili per FulcrumGrid. Paga per app — HR Suite, Command Center, Collection — o metti insieme tutta la griglia. Ogni app include una prova gratuita di 14 giorni.",
+            "Eenvoudige, schaalbare prijzen voor FulcrumGrid. Betaal per app — HR Suite, Command Center, Collection — of bundel het hele grid. Elke app bevat een gratis proefperiode van 14 dagen."),
+        "Pay per app, or bundle the whole grid. Every app includes a 14-day free trial.": _t(
+            "Payez par application, ou regroupez toute la grille. Chaque application inclut un essai gratuit de 14 jours.",
+            "Zahlen Sie pro App oder bündeln Sie das ganze Grid. Jede App enthält eine 14-tägige kostenlose Testphase.",
+            "Pague por app o agrupe toda la cuadrícula. Cada app incluye una prueba gratuita de 14 días.",
+            "Paga per app o metti insieme tutta la griglia. Ogni app include una prova gratuita di 14 giorni.",
+            "Betaal per app of bundel het hele grid. Elke app bevat een gratis proefperiode van 14 dagen."),
         # ---- Hero ----
-        "Priced <span class=\"p-grad\">per app</span>": _t(
-            "Un prix <span class=\"p-grad\">par application</span>",
-            "Preise <span class=\"p-grad\">pro App</span>",
-            "Un precio <span class=\"p-grad\">por app</span>",
-            "Un prezzo <span class=\"p-grad\">per app</span>",
-            "Een prijs <span class=\"p-grad\">per app</span>"),
+        "Priced <em>per app.</em>": _t(
+            "Un prix <em>par application.</em>",
+            "Preise <em>pro App.</em>",
+            "Un precio <em>por app.</em>",
+            "Un prezzo <em>per applicazione.</em>",
+            "Een prijs <em>per applicatie.</em>"),
         "Pay only for the apps you use. Each FulcrumGrid app is priced on its own — start with one, add the rest as you grow, all on the same platform.": _t(
             "Ne payez que pour les applications que vous utilisez. Chaque application FulcrumGrid est tarifée séparément — commencez avec une, ajoutez les autres à mesure que vous grandissez, le tout sur la même plateforme.",
             "Zahlen Sie nur für die Apps, die Sie nutzen. Jede FulcrumGrid-App wird eigenständig bepreist — starten Sie mit einer und fügen Sie weitere hinzu, während Sie wachsen, alles auf derselben Plattform.",
@@ -76,24 +68,41 @@ PAGE['/pricing/'] = {
             "Ogni app è indipendente, con il proprio piano. Tutte includono dashboard essenziali, esportazioni e una prova gratuita di 14 giorni.",
             "Elke app staat op zichzelf, met een eigen abonnement. Elk bevat kern-dashboards, exports en een gratis proefperiode van 14 dagen."),
         # ---- Price cards ----
-        "Real-time operations dashboard.": _t(
-            "Tableau de bord des opérations en temps réel.",
-            "Echtzeit-Dashboard für den Betrieb.",
-            "Panel de operaciones en tiempo real.",
-            "Dashboard operativa in tempo reale.",
-            "Realtime operationeel dashboard."),
-        "Receivables and payments, handled.": _t(
-            "Créances et paiements, maîtrisés.",
-            "Forderungen und Zahlungen, im Griff.",
-            "Cobros y pagos, resueltos.",
-            "Crediti e pagamenti, gestiti.",
-            "Vorderingen en betalingen, geregeld."),
-        "People operations, hire to retire.": _t(
-            "Gestion des personnes, de l'embauche au départ.",
-            "Personalmanagement, von der Einstellung bis zum Ruhestand.",
-            "Gestión de personas, de la contratación a la jubilación.",
-            "Gestione del personale, dall'assunzione alla pensione.",
-            "Personeelsbeheer, van aanwerving tot pensioen."),
+        "Real-time operations dashboard": _t(
+            "Tableau de bord des opérations en temps réel",
+            "Echtzeit-Dashboard für den Betrieb",
+            "Panel de operaciones en tiempo real",
+            "Dashboard operativa in tempo reale",
+            "Realtime operationeel dashboard"),
+        "Receivables and payments, handled": _t(
+            "Créances et paiements, maîtrisés",
+            "Forderungen und Zahlungen, im Griff",
+            "Cobros y pagos, resueltos",
+            "Crediti e pagamenti, gestiti",
+            "Vorderingen en betalingen, geregeld"),
+        "People operations, hire to retire": _t(
+            "Gestion des personnes, de l'embauche au départ",
+            "Personalmanagement, von der Einstellung bis zum Ruhestand",
+            "Gestión de personas, de la contratación a la jubilación",
+            "Gestione del personale, dall'assunzione alla pensione",
+            "Personeelsbeheer, van aanwerving tot pensioen"),
+        # ---- Price / tier labels ----
+        "<div class=\"pl-price\">Free</div>": _t(
+            "<div class=\"pl-price\">Gratuit</div>",
+            "<div class=\"pl-price\">Kostenlos</div>",
+            "<div class=\"pl-price\">Gratis</div>",
+            "<div class=\"pl-price\">Gratis</div>",
+            "<div class=\"pl-price\">Gratis</div>"),
+        "<div class=\"pl-price\">Custom</div>": _t(
+            "<div class=\"pl-price\">Sur mesure</div>",
+            "<div class=\"pl-price\">Individuell</div>",
+            "<div class=\"pl-price\">Personalizado</div>",
+            "<div class=\"pl-price\">Personalizzato</div>",
+            "<div class=\"pl-price\">Op maat</div>"),
+        # Tier proper-name stays English (consistent with FAQ usage).
+        "<h4>Enterprise</h4>": _t(
+            "<h4>Enterprise</h4>", "<h4>Enterprise</h4>", "<h4>Enterprise</h4>",
+            "<h4>Enterprise</h4>", "<h4>Enterprise</h4>"),
         "from ": _t("à partir de ", "ab ", "desde ", "da ", "vanaf "),
         "/ month": _t("/ mois", "/ Monat", "/ mes", "/ mese", "/ maand"),
         "/ seat / month": _t("/ siège / mois", "/ Platz / Monat", "/ asiento / mes", "/ postazione / mese", "/ zitplaats / maand"),
@@ -156,7 +165,7 @@ PAGE['/pricing/'] = {
             "Wanneer u meerdere apps nodig hebt, dekt één abonnement ze allemaal — goedkoper dan ze bij elkaar op te tellen, met app-overschrijdende data en één factuur."),
         "Best value": _t("Meilleur rapport qualité-prix", "Bestes Preis-Leistungs-Verhältnis", "Mejor valor", "Miglior rapporto qualità-prezzo", "Beste waarde"),
         "Whole grid": _t("Grille complète", "Ganzes Grid", "Cuadrícula completa", "Griglia completa", "Hele grid"),
-        "Every app, one plan.": _t("Toutes les applications, un seul forfait.", "Alle Apps, ein Tarif.", "Todas las apps, un solo plan.", "Tutte le app, un unico piano.", "Elke app, één abonnement."),
+        "Every app, one plan": _t("Toutes les applications, un seul forfait", "Alle Apps, ein Tarif", "Todas las apps, un solo plan", "Tutte le app, un unico piano", "Elke app, één abonnement"),
         "All apps included": _t("Toutes les applications incluses", "Alle Apps enthalten", "Todas las apps incluidas", "Tutte le app incluse", "Alle apps inbegrepen"),
         "Unlimited users": _t("Utilisateurs illimités", "Unbegrenzte Nutzer", "Usuarios ilimitados", "Utenti illimitati", "Onbeperkt aantal gebruikers"),
         "Cross-app data &amp; automations": _t(
@@ -169,12 +178,12 @@ PAGE['/pricing/'] = {
             "Contrôle d'accès basé sur les rôles", "Rollenbasierte Zugriffssteuerung", "Control de acceso basado en roles",
             "Controllo degli accessi basato sui ruoli", "Rolgebaseerde toegangscontrole"),
         "Priority support": _t("Assistance prioritaire", "Priorisierter Support", "Soporte prioritario", "Supporto prioritario", "Prioriteitsondersteuning"),
-        "For large or regulated organizations.": _t(
-            "Pour les grandes organisations ou les secteurs réglementés.",
-            "Für große oder regulierte Organisationen.",
-            "Para organizaciones grandes o reguladas.",
-            "Per organizzazioni grandi o regolamentate.",
-            "Voor grote of gereguleerde organisaties."),
+        "For large or regulated organizations": _t(
+            "Pour les grandes organisations ou les secteurs réglementés",
+            "Für große oder regulierte Organisationen",
+            "Para organizaciones grandes o reguladas",
+            "Per organizzazioni grandi o regolamentate",
+            "Voor grote of gereguleerde organisaties"),
         "Everything in Whole grid": _t(
             "Tout ce que contient Grille complète", "Alles aus Ganzes Grid", "Todo lo de Cuadrícula completa",
             "Tutto ciò che c'è in Griglia completa", "Alles uit Hele grid"),
@@ -197,18 +206,12 @@ PAGE['/pricing/'] = {
         "Can I start with just one app?": _t(
             "Puis-je commencer avec une seule application ?", "Kann ich mit nur einer App starten?",
             "¿Puedo empezar con una sola app?", "Posso iniziare con una sola app?", "Kan ik met slechts één app beginnen?"),
-        "Yes. Every app is priced on its own, so you can subscribe to just Command Center, Collection, or HR Suite and add the rest whenever you're ready.": _t(
-            "Oui. Chaque application est tarifée séparément : vous pouvez vous abonner uniquement à Command Center, Collection ou HR Suite et ajouter le reste quand vous êtes prêt.",
-            "Ja. Jede App wird eigenständig bepreist, sodass Sie nur Command Center, Collection oder HR Suite abonnieren und den Rest hinzufügen können, wann immer Sie bereit sind.",
-            "Sí. Cada app tiene su propio precio, así que puede suscribirse solo a Command Center, Collection o HR Suite y añadir el resto cuando esté listo.",
-            "Sì. Ogni app ha un prezzo a sé, quindi puoi abbonarti solo a Command Center, Collection o HR Suite e aggiungere il resto quando sei pronto.",
-            "Ja. Elke app heeft een eigen prijs, dus u kunt zich abonneren op alleen Command Center, Collection of HR Suite en de rest toevoegen wanneer u er klaar voor bent."),
-        "Yes. The Starter plan is designed for a single app — pick Command Center, Collection, or HR Suite and add the rest whenever you're ready.": _t(
-            "Oui. Le forfait Starter est conçu pour une seule application — choisissez Command Center, Collection ou HR Suite et ajoutez le reste quand vous êtes prêt.",
-            "Ja. Der Starter-Tarif ist für eine einzige App gedacht — wählen Sie Command Center, Collection oder HR Suite und fügen Sie den Rest hinzu, wann immer Sie bereit sind.",
-            "Sí. El plan Starter está pensado para una sola app — elija Command Center, Collection o HR Suite y añada el resto cuando esté listo.",
-            "Sì. Il piano Starter è pensato per una singola app — scegli Command Center, Collection o HR Suite e aggiungi il resto quando sei pronto.",
-            "Ja. Het Starter-abonnement is bedoeld voor één app — kies Command Center, Collection of HR Suite en voeg de rest toe wanneer u er klaar voor bent."),
+        "Yes. Every app is priced on its own, so you can subscribe to just HR Suite, Command Center, or Collection and add the rest whenever you're ready.": _t(
+            "Oui. Chaque application est tarifée séparément : vous pouvez vous abonner uniquement à HR Suite, Command Center ou Collection et ajouter le reste quand vous êtes prêt.",
+            "Ja. Jede App wird eigenständig bepreist, sodass Sie nur HR Suite, Command Center oder Collection abonnieren und den Rest hinzufügen können, wann immer Sie bereit sind.",
+            "Sí. Cada app tiene su propio precio, así que puede suscribirse solo a HR Suite, Command Center o Collection y añadir el resto cuando esté listo.",
+            "Sì. Ogni app ha un prezzo a sé, quindi puoi abbonarti solo a HR Suite, Command Center o Collection e aggiungere il resto quando sei pronto.",
+            "Ja. Elke app heeft een eigen prijs, dus u kunt zich abonneren op alleen HR Suite, Command Center of Collection en de rest toevoegen wanneer u er klaar voor bent."),
         "Can I add apps later?": _t(
             "Puis-je ajouter des applications plus tard ?", "Kann ich später Apps hinzufügen?",
             "¿Puedo añadir apps más tarde?", "Posso aggiungere app in seguito?", "Kan ik later apps toevoegen?"),
@@ -266,12 +269,12 @@ PAGE['/pricing/command-center/'] = {
     'src': 'pricing/command-center/index.html',
     't': {
         # ---- Meta (title/og:title/og:description/JSON-LD description) ----
-        "Command Center pricing — plans &amp; modules | FulcrumGrid": _t(
-            "Tarifs de Command Center — forfaits &amp; modules | FulcrumGrid",
-            "Command Center Preise — Tarife &amp; Module | FulcrumGrid",
-            "Precios de Command Center — planes &amp; módulos | FulcrumGrid",
-            "Prezzi di Command Center — piani &amp; moduli | FulcrumGrid",
-            "Command Center-prijzen — abonnementen &amp; modules | FulcrumGrid"),
+        "Command Center pricing &amp; plans | FulcrumGrid": _t(
+            "Tarifs &amp; forfaits Command Center | FulcrumGrid",
+            "Command Center Preise &amp; Tarife | FulcrumGrid",
+            "Precios &amp; planes de Command Center | FulcrumGrid",
+            "Prezzi &amp; piani di Command Center | FulcrumGrid",
+            "Command Center-prijzen &amp; abonnementen | FulcrumGrid"),
         "Command Center pricing — Pilot, Growth, and Enterprise plans — with a module-by-module breakdown of what's included at each tier.": _t(
             "Tarifs de Command Center — forfaits Pilot, Growth et Enterprise — avec un détail module par module de ce qui est inclus à chaque niveau.",
             "Command Center Preise — Tarife Pilot, Growth und Enterprise — mit einer modulweisen Aufschlüsselung dessen, was in jeder Stufe enthalten ist.",
@@ -284,16 +287,36 @@ PAGE['/pricing/command-center/'] = {
             "Precios de Command Center — planes y módulos | FulcrumGrid",
             "Prezzi di Command Center — piani e moduli | FulcrumGrid",
             "Command Center-prijzen — abonnementen en modules | FulcrumGrid"),
-        # ---- Breadcrumb ----
+        # ---- Breadcrumb (JSON-LD only; not a visible node) ----
         "Home": _t("Accueil", "Startseite", "Inicio", "Home", "Home"),
         # ---- Hero ----
-        "Available now": _t("Disponible", "Jetzt verfügbar", "Disponible ahora", "Disponibile ora", "Nu beschikbaar"),
-        "Command Center <span class=\"p-grad\">pricing</span>": _t(
-            "Command Center <span class=\"p-grad\">tarifs</span>",
-            "Command Center <span class=\"p-grad\">Preise</span>",
-            "Command Center <span class=\"p-grad\">precios</span>",
-            "Command Center <span class=\"p-grad\">prezzi</span>",
-            "Command Center <span class=\"p-grad\">prijzen</span>"),
+        "Command Center <em>pricing.</em>": _t(
+            "Command Center <em>tarifs.</em>",
+            "Command Center <em>Preise.</em>",
+            "Command Center <em>precios.</em>",
+            "Command Center <em>prezzi.</em>",
+            "Command Center <em>prijzen.</em>"),
+        # ---- Section eyebrow + heading ----
+        "01 · Plans": _t("01 · Forfaits", "01 · Tarife", "01 · Planes", "01 · Piani", "01 · Abonnementen"),
+        "Priced per plan.": _t(
+            "Un prix par forfait.", "Preise pro Tarif.", "Un precio por plan.",
+            "Un prezzo per piano.", "Een prijs per abonnement."),
+        # ---- Plan cards: tier proper-names stay English; price label translated ----
+        "<h4>Pilot</h4>": _t("<h4>Pilot</h4>", "<h4>Pilot</h4>", "<h4>Pilot</h4>", "<h4>Pilot</h4>", "<h4>Pilot</h4>"),
+        "<h4>Growth</h4>": _t("<h4>Growth</h4>", "<h4>Growth</h4>", "<h4>Growth</h4>", "<h4>Growth</h4>", "<h4>Growth</h4>"),
+        "<h4>Enterprise</h4>": _t("<h4>Enterprise</h4>", "<h4>Enterprise</h4>", "<h4>Enterprise</h4>", "<h4>Enterprise</h4>", "<h4>Enterprise</h4>"),
+        "<th scope=\"col\" class=\"val\">Pilot</th>": _t(
+            "<th scope=\"col\" class=\"val\">Pilot</th>", "<th scope=\"col\" class=\"val\">Pilot</th>", "<th scope=\"col\" class=\"val\">Pilot</th>",
+            "<th scope=\"col\" class=\"val\">Pilot</th>", "<th scope=\"col\" class=\"val\">Pilot</th>"),
+        "<th scope=\"col\" class=\"val col-hi\">Growth</th>": _t(
+            "<th scope=\"col\" class=\"val col-hi\">Growth</th>", "<th scope=\"col\" class=\"val col-hi\">Growth</th>", "<th scope=\"col\" class=\"val col-hi\">Growth</th>",
+            "<th scope=\"col\" class=\"val col-hi\">Growth</th>", "<th scope=\"col\" class=\"val col-hi\">Growth</th>"),
+        "<th scope=\"col\" class=\"val\">Enterprise</th>": _t(
+            "<th scope=\"col\" class=\"val\">Enterprise</th>", "<th scope=\"col\" class=\"val\">Enterprise</th>", "<th scope=\"col\" class=\"val\">Enterprise</th>",
+            "<th scope=\"col\" class=\"val\">Enterprise</th>", "<th scope=\"col\" class=\"val\">Enterprise</th>"),
+        "<span class=\"amt\">Custom</span>": _t(
+            "<span class=\"amt\">Sur mesure</span>", "<span class=\"amt\">Individuell</span>", "<span class=\"amt\">Personalizado</span>",
+            "<span class=\"amt\">Personalizzato</span>", "<span class=\"amt\">Op maat</span>"),
         "Run strategy, finance, and governance from one command center — priced by plan, from a piloting team to a multi-department, regulated organization.": _t(
             "Pilotez stratégie, finance et gouvernance depuis un seul centre de commande — tarifé par forfait, de l'équipe pilote à l'organisation multi-services et réglementée.",
             "Steuern Sie Strategie, Finanzen und Governance von einer einzigen Kommandozentrale aus — nach Tarif bepreist, vom pilotierenden Team bis zur abteilungsübergreifenden, regulierten Organisation.",
@@ -360,12 +383,12 @@ PAGE['/pricing/command-center/'] = {
         # ---- Modules table ----
         "What's included": _t("Ce qui est inclus", "Was enthalten ist", "Qué incluye", "Cosa è incluso", "Wat is inbegrepen"),
         "Modules by plan": _t("Modules par forfait", "Module nach Tarif", "Módulos por plan", "Moduli per piano", "Modules per abonnement"),
-        "Every Command Center module, and where it unlocks across the four plans.": _t(
-            "Chaque module de Command Center, et où il se débloque à travers les quatre forfaits.",
-            "Jedes Command Center-Modul und wo es über die vier Tarife hinweg freigeschaltet wird.",
-            "Cada módulo de Command Center y dónde se desbloquea en los cuatro planes.",
-            "Ogni modulo di Command Center e dove si sblocca nei quattro piani.",
-            "Elke Command Center-module en waar deze binnen de vier abonnementen wordt ontgrendeld."),
+        "Every Command Center module, and where it unlocks across the plans.": _t(
+            "Chaque module de Command Center, et où il se débloque à travers les forfaits.",
+            "Jedes Command Center-Modul und wo es über die Tarife hinweg freigeschaltet wird.",
+            "Cada módulo de Command Center y dónde se desbloquea en los planes.",
+            "Ogni modulo di Command Center e dove si sblocca nei piani.",
+            "Elke Command Center-module en waar deze binnen de abonnementen wordt ontgrendeld."),
         "<th scope=\"col\">Module</th>": _t(
             "<th scope=\"col\">Module</th>", "<th scope=\"col\">Modul</th>", "<th scope=\"col\">Módulo</th>",
             "<th scope=\"col\">Modulo</th>", "<th scope=\"col\">Module</th>"),
@@ -450,12 +473,12 @@ PAGE['/pricing/command-center/'] = {
         "Can I change plans later?": _t(
             "Puis-je changer de forfait plus tard ?", "Kann ich den Tarif später wechseln?", "¿Puedo cambiar de plan más tarde?",
             "Posso cambiare piano in seguito?", "Kan ik later van abonnement wisselen?"),
-        "Yes — move up or down between Starter, Pro, Business, and Enterprise at any time. Changes take effect on your next billing cycle.": _t(
-            "Oui — passez à un niveau supérieur ou inférieur entre Starter, Pro, Business et Enterprise à tout moment. Les changements prennent effet au cycle de facturation suivant.",
-            "Ja — wechseln Sie jederzeit zwischen Starter, Pro, Business und Enterprise nach oben oder unten. Änderungen werden zum nächsten Abrechnungszyklus wirksam.",
-            "Sí — suba o baje entre Starter, Pro, Business y Enterprise en cualquier momento. Los cambios se aplican en su próximo ciclo de facturación.",
-            "Sì — passa a un livello superiore o inferiore tra Starter, Pro, Business ed Enterprise in qualsiasi momento. Le modifiche hanno effetto dal ciclo di fatturazione successivo.",
-            "Ja — schakel op elk moment omhoog of omlaag tussen Starter, Pro, Business en Enterprise. Wijzigingen gaan in bij uw volgende factureringscyclus."),
+        "Yes — move up or down between the plans at any time. Changes take effect on your next billing cycle.": _t(
+            "Oui — passez à un niveau supérieur ou inférieur entre les forfaits à tout moment. Les changements prennent effet au cycle de facturation suivant.",
+            "Ja — wechseln Sie jederzeit zwischen den Tarifen nach oben oder unten. Änderungen werden zum nächsten Abrechnungszyklus wirksam.",
+            "Sí — suba o baje entre los planes en cualquier momento. Los cambios se aplican en su próximo ciclo de facturación.",
+            "Sì — passa a un livello superiore o inferiore tra i piani in qualsiasi momento. Le modifiche hanno effetto dal ciclo di fatturazione successivo.",
+            "Ja — schakel op elk moment omhoog of omlaag tussen de abonnementen. Wijzigingen gaan in bij uw volgende factureringscyclus."),
         "How are users counted?": _t(
             "Comment les utilisateurs sont-ils comptés ?", "Wie werden Nutzer gezählt?", "¿Cómo se cuentan los usuarios?",
             "Come vengono conteggiati gli utenti?", "Hoe worden gebruikers geteld?"),
@@ -493,9 +516,6 @@ PAGE['/pricing/command-center/'] = {
             "Cuéntenos cómo trabaja su equipo hoy y le mostraremos el plan adecuado en acción.",
             "Dicci come lavora oggi il tuo team e ti mostreremo il piano giusto in azione.",
             "Vertel ons hoe uw team vandaag werkt en we tonen u het juiste abonnement in actie."),
-        "← Back to all pricing": _t(
-            "← Retour à tous les tarifs", "← Zurück zu allen Preisen", "← Volver a todos los precios",
-            "← Torna a tutti i prezzi", "← Terug naar alle prijzen"),
     },
 }
 
@@ -506,12 +526,12 @@ PAGE['/pricing/collection/'] = {
     'src': 'pricing/collection/index.html',
     't': {
         # ---- Meta ----
-        "Collection pricing — plans &amp; modules | FulcrumGrid": _t(
-            "Tarifs de Collection — forfaits &amp; modules | FulcrumGrid",
-            "Collection Preise — Tarife &amp; Module | FulcrumGrid",
-            "Precios de Collection — planes &amp; módulos | FulcrumGrid",
-            "Prezzi di Collection — piani &amp; moduli | FulcrumGrid",
-            "Collection-prijzen — abonnementen &amp; modules | FulcrumGrid"),
+        "Collection pricing &amp; plans | FulcrumGrid": _t(
+            "Tarifs &amp; forfaits Collection | FulcrumGrid",
+            "Collection Preise &amp; Tarife | FulcrumGrid",
+            "Precios &amp; planes de Collection | FulcrumGrid",
+            "Prezzi &amp; piani di Collection | FulcrumGrid",
+            "Collection-prijzen &amp; abonnementen | FulcrumGrid"),
         "Collection pricing plans — Starter, Professional, Business, and Enterprise / Agency — with a module-by-module breakdown of what's included at each tier.": _t(
             "Forfaits de Collection — Starter, Professional, Business et Enterprise / Agency — avec un détail module par module de ce qui est inclus à chaque niveau.",
             "Collection Preistarife — Starter, Professional, Business und Enterprise / Agency — mit einer modulweisen Aufschlüsselung dessen, was in jeder Stufe enthalten ist.",
@@ -524,15 +544,30 @@ PAGE['/pricing/collection/'] = {
             "Precios de Collection — planes y módulos | FulcrumGrid",
             "Prezzi di Collection — piani e moduli | FulcrumGrid",
             "Collection-prijzen — abonnementen en modules | FulcrumGrid"),
-        # ---- Breadcrumb / hero ----
+        # ---- Breadcrumb (JSON-LD only) / hero ----
         "Home": _t("Accueil", "Startseite", "Inicio", "Home", "Home"),
-        "Available now": _t("Disponible", "Jetzt verfügbar", "Disponible ahora", "Disponibile ora", "Nu beschikbaar"),
-        "Collection <span class=\"p-grad\">pricing</span>": _t(
-            "Collection <span class=\"p-grad\">tarifs</span>",
-            "Collection <span class=\"p-grad\">Preise</span>",
-            "Collection <span class=\"p-grad\">precios</span>",
-            "Collection <span class=\"p-grad\">prezzi</span>",
-            "Collection <span class=\"p-grad\">prijzen</span>"),
+        "Collection <em>pricing.</em>": _t(
+            "Collection <em>tarifs.</em>",
+            "Collection <em>Preise.</em>",
+            "Collection <em>precios.</em>",
+            "Collection <em>prezzi.</em>",
+            "Collection <em>prijzen.</em>"),
+        # ---- Section eyebrow + heading ----
+        "01 · Plans": _t("01 · Forfaits", "01 · Tarife", "01 · Planes", "01 · Piani", "01 · Abonnementen"),
+        "Priced per plan.": _t(
+            "Un prix par forfait.", "Preise pro Tarif.", "Un precio por plan.",
+            "Un prezzo per piano.", "Een prijs per abonnement."),
+        # ---- Plan cards: tier proper-names stay English; price labels translated ----
+        "Starter": _t("Starter", "Starter", "Starter", "Starter", "Starter"),
+        "Professional": _t("Professional", "Professional", "Professional", "Professional", "Professional"),
+        "Business": _t("Business", "Business", "Business", "Business", "Business"),
+        "Enterprise / Agency": _t("Enterprise / Agency", "Enterprise / Agency", "Enterprise / Agency", "Enterprise / Agency", "Enterprise / Agency"),
+        "<span class=\"amt\">Free</span>": _t(
+            "<span class=\"amt\">Gratuit</span>", "<span class=\"amt\">Kostenlos</span>", "<span class=\"amt\">Gratis</span>",
+            "<span class=\"amt\">Gratis</span>", "<span class=\"amt\">Gratis</span>"),
+        "<span class=\"amt\">Custom</span>": _t(
+            "<span class=\"amt\">Sur mesure</span>", "<span class=\"amt\">Individuell</span>", "<span class=\"amt\">Personalizado</span>",
+            "<span class=\"amt\">Personalizzato</span>", "<span class=\"amt\">Op maat</span>"),
         "Receivables and collections, priced by plan — from a small in-house AR team to a multi-client agency. Every plan runs on the same secure platform.": _t(
             "Créances et recouvrement, tarifés par forfait — d'une petite équipe de recouvrement interne à une agence multi-clients. Chaque forfait s'exécute sur la même plateforme sécurisée.",
             "Forderungen und Inkasso, nach Tarif bepreist — vom kleinen internen Forderungsteam bis zur Agentur mit mehreren Mandanten. Jeder Tarif läuft auf derselben sicheren Plattform.",
@@ -601,12 +636,12 @@ PAGE['/pricing/collection/'] = {
         # ---- Modules table ----
         "What's included": _t("Ce qui est inclus", "Was enthalten ist", "Qué incluye", "Cosa è incluso", "Wat is inbegrepen"),
         "Modules by plan": _t("Modules par forfait", "Module nach Tarif", "Módulos por plan", "Moduli per piano", "Modules per abonnement"),
-        "Every Collection module, and where it unlocks across the four plans.": _t(
-            "Chaque module de Collection, et où il se débloque à travers les quatre forfaits.",
-            "Jedes Collection-Modul und wo es über die vier Tarife hinweg freigeschaltet wird.",
-            "Cada módulo de Collection y dónde se desbloquea en los cuatro planes.",
-            "Ogni modulo di Collection e dove si sblocca nei quattro piani.",
-            "Elke Collection-module en waar deze binnen de vier abonnementen wordt ontgrendeld."),
+        "Every Collection module, and where it unlocks across the plans.": _t(
+            "Chaque module de Collection, et où il se débloque à travers les forfaits.",
+            "Jedes Collection-Modul und wo es über die Tarife hinweg freigeschaltet wird.",
+            "Cada módulo de Collection y dónde se desbloquea en los planes.",
+            "Ogni modulo di Collection e dove si sblocca nei piani.",
+            "Elke Collection-module en waar deze binnen de abonnementen wordt ontgrendeld."),
         "<th scope=\"col\">Module</th>": _t(
             "<th scope=\"col\">Module</th>", "<th scope=\"col\">Modul</th>", "<th scope=\"col\">Módulo</th>",
             "<th scope=\"col\">Modulo</th>", "<th scope=\"col\">Module</th>"),
@@ -670,12 +705,12 @@ PAGE['/pricing/collection/'] = {
         "Can I change plans later?": _t(
             "Puis-je changer de forfait plus tard ?", "Kann ich den Tarif später wechseln?", "¿Puedo cambiar de plan más tarde?",
             "Posso cambiare piano in seguito?", "Kan ik later van abonnement wisselen?"),
-        "Yes — move up or down between Starter, Pro, Business, and Enterprise at any time. Changes take effect on your next billing cycle.": _t(
-            "Oui — passez à un niveau supérieur ou inférieur entre Starter, Pro, Business et Enterprise à tout moment. Les changements prennent effet au cycle de facturation suivant.",
-            "Ja — wechseln Sie jederzeit zwischen Starter, Pro, Business und Enterprise nach oben oder unten. Änderungen werden zum nächsten Abrechnungszyklus wirksam.",
-            "Sí — suba o baje entre Starter, Pro, Business y Enterprise en cualquier momento. Los cambios se aplican en su próximo ciclo de facturación.",
-            "Sì — passa a un livello superiore o inferiore tra Starter, Pro, Business ed Enterprise in qualsiasi momento. Le modifiche hanno effetto dal ciclo di fatturazione successivo.",
-            "Ja — schakel op elk moment omhoog of omlaag tussen Starter, Pro, Business en Enterprise. Wijzigingen gaan in bij uw volgende factureringscyclus."),
+        "Yes — move up or down between the plans at any time. Changes take effect on your next billing cycle.": _t(
+            "Oui — passez à un niveau supérieur ou inférieur entre les forfaits à tout moment. Les changements prennent effet au cycle de facturation suivant.",
+            "Ja — wechseln Sie jederzeit zwischen den Tarifen nach oben oder unten. Änderungen werden zum nächsten Abrechnungszyklus wirksam.",
+            "Sí — suba o baje entre los planes en cualquier momento. Los cambios se aplican en su próximo ciclo de facturación.",
+            "Sì — passa a un livello superiore o inferiore tra i piani in qualsiasi momento. Le modifiche hanno effetto dal ciclo di fatturazione successivo.",
+            "Ja — schakel op elk moment omhoog of omlaag tussen de abonnementen. Wijzigingen gaan in bij uw volgende factureringscyclus."),
         "How are users counted?": _t(
             "Comment les utilisateurs sont-ils comptés ?", "Wie werden Nutzer gezählt?", "¿Cómo se cuentan los usuarios?",
             "Come vengono conteggiati gli utenti?", "Hoe worden gebruikers geteld?"),
@@ -713,9 +748,6 @@ PAGE['/pricing/collection/'] = {
             "Cuéntenos cómo trabaja su equipo hoy y le mostraremos el plan adecuado en acción.",
             "Dicci come lavora oggi il tuo team e ti mostreremo il piano giusto in azione.",
             "Vertel ons hoe uw team vandaag werkt en we tonen u het juiste abonnement in actie."),
-        "← Back to all pricing": _t(
-            "← Retour à tous les tarifs", "← Zurück zu allen Preisen", "← Volver a todos los precios",
-            "← Torna a tutti i prezzi", "← Terug naar alle prijzen"),
     },
 }
 
@@ -726,12 +758,12 @@ PAGE['/pricing/hr-suite/'] = {
     'src': 'pricing/hr-suite/index.html',
     't': {
         # ---- Meta ----
-        "HR Suite pricing — plans &amp; modules | FulcrumGrid": _t(
-            "Tarifs de HR Suite — forfaits &amp; modules | FulcrumGrid",
-            "HR Suite Preise — Tarife &amp; Module | FulcrumGrid",
-            "Precios de HR Suite — planes &amp; módulos | FulcrumGrid",
-            "Prezzi di HR Suite — piani &amp; moduli | FulcrumGrid",
-            "HR Suite-prijzen — abonnementen &amp; modules | FulcrumGrid"),
+        "HR Suite pricing &amp; plans | FulcrumGrid": _t(
+            "Tarifs &amp; forfaits HR Suite | FulcrumGrid",
+            "HR Suite Preise &amp; Tarife | FulcrumGrid",
+            "Precios &amp; planes de HR Suite | FulcrumGrid",
+            "Prezzi &amp; piani di HR Suite | FulcrumGrid",
+            "HR Suite-prijzen &amp; abonnementen | FulcrumGrid"),
         "HR Suite pricing — Starter, Growth, and Enterprise — with a module-by-module breakdown, including payroll and compliance.": _t(
             "Tarifs de HR Suite — Starter, Growth et Enterprise — avec un détail module par module, y compris la paie et la conformité.",
             "HR Suite Preise — Starter, Growth und Enterprise — mit einer modulweisen Aufschlüsselung, einschließlich Gehaltsabrechnung und Compliance.",
@@ -744,15 +776,25 @@ PAGE['/pricing/hr-suite/'] = {
             "Precios de HR Suite — planes y módulos | FulcrumGrid",
             "Prezzi di HR Suite — piani e moduli | FulcrumGrid",
             "HR Suite-prijzen — abonnementen en modules | FulcrumGrid"),
-        # ---- Breadcrumb / hero ----
+        # ---- Breadcrumb (JSON-LD only) / hero ----
         "Home": _t("Accueil", "Startseite", "Inicio", "Home", "Home"),
-        "Available now": _t("Disponible", "Jetzt verfügbar", "Disponible ahora", "Disponibile ora", "Nu beschikbaar"),
-        "HR Suite <span class=\"p-grad\">pricing</span>": _t(
-            "HR Suite <span class=\"p-grad\">tarifs</span>",
-            "HR Suite <span class=\"p-grad\">Preise</span>",
-            "HR Suite <span class=\"p-grad\">precios</span>",
-            "HR Suite <span class=\"p-grad\">prezzi</span>",
-            "HR Suite <span class=\"p-grad\">prijzen</span>"),
+        "HR Suite <em>pricing.</em>": _t(
+            "HR Suite <em>tarifs.</em>",
+            "HR Suite <em>Preise.</em>",
+            "HR Suite <em>precios.</em>",
+            "HR Suite <em>prezzi.</em>",
+            "HR Suite <em>prijzen.</em>"),
+        # ---- Section eyebrow + heading ----
+        "01 · Plans": _t("01 · Forfaits", "01 · Tarife", "01 · Planes", "01 · Piani", "01 · Abonnementen"),
+        "Priced per plan.": _t(
+            "Un prix par forfait.", "Preise pro Tarif.", "Un precio por plan.",
+            "Un prezzo per piano.", "Een prijs per abonnement."),
+        # ---- Tier proper-names + product names stay English ----
+        "Starter": _t("Starter", "Starter", "Starter", "Starter", "Starter"),
+        "Growth": _t("Growth", "Growth", "Growth", "Growth", "Growth"),
+        "Enterprise": _t("Enterprise", "Enterprise", "Enterprise", "Enterprise", "Enterprise"),
+        "GOSI": _t("GOSI", "GOSI", "GOSI", "GOSI", "GOSI"),
+        "SAP Business One": _t("SAP Business One", "SAP Business One", "SAP Business One", "SAP Business One", "SAP Business One"),
         "HR from hire to retire — 35 modules on one platform, with Core HR always on. Priced per seat, packaged into three plans plus à-la-carte add-ons.": _t(
             "Les RH de l'embauche au départ — 35 modules sur une seule plateforme, avec les RH de base toujours activées. Tarifé par siège, réparti en trois forfaits plus des options à la carte.",
             "HR von der Einstellung bis zum Ruhestand — 35 Module auf einer Plattform, mit stets aktivem Kern-HR. Bepreist pro Platz, gebündelt in drei Tarife plus à-la-carte-Add-ons.",
@@ -940,12 +982,24 @@ PAGE['/pricing/hr-suite/'] = {
             "<th scope=\"row\">SSO &amp; SCIM</th>", "<th scope=\"row\">SSO &amp; SCIM</th>", "<th scope=\"row\">SSO &amp; SCIM</th>",
             "<th scope=\"row\">SSO &amp; SCIM</th>", "<th scope=\"row\">SSO &amp; SCIM</th>"),
         # ---- Saudi note ----
-        "<strong>Operating in Saudi Arabia?</strong> WPS wage files, GOSI, end-of-service &amp; Nitaqat are built in.": _t(
-            "<strong>Vous opérez en Arabie saoudite ?</strong> Les fichiers de paie WPS, la GOSI, l'indemnité de fin de service &amp; Nitaqat sont intégrés.",
-            "<strong>Sie sind in Saudi-Arabien tätig?</strong> WPS-Lohndateien, GOSI, Abfindung &amp; Nitaqat sind integriert.",
-            "<strong>¿Opera en Arabia Saudí?</strong> Los archivos salariales WPS, GOSI, fin de servicio &amp; Nitaqat están integrados.",
-            "<strong>Operi in Arabia Saudita?</strong> I file salariali WPS, GOSI, fine servizio &amp; Nitaqat sono integrati.",
-            "<strong>Actief in Saoedi-Arabië?</strong> WPS-loonbestanden, GOSI, einde dienstverband &amp; Nitaqat zijn ingebouwd."),
+        "Operating in Saudi Arabia?": _t(
+            "Vous opérez en Arabie saoudite ?",
+            "Sie sind in Saudi-Arabien tätig?",
+            "¿Opera en Arabia Saudí?",
+            "Operi in Arabia Saudita?",
+            "Actief in Saoedi-Arabië?"),
+        "Built for KSA compliance.": _t(
+            "Conçu pour la conformité KSA.",
+            "Für die KSA-Compliance gebaut.",
+            "Diseñado para el cumplimiento en KSA.",
+            "Progettato per la conformità KSA.",
+            "Gebouwd voor KSA-compliance."),
+        "WPS wage files, GOSI, end-of-service &amp; Nitaqat are built in.": _t(
+            "Les fichiers de paie WPS, la GOSI, l'indemnité de fin de service &amp; Nitaqat sont intégrés.",
+            "WPS-Lohndateien, GOSI, Abfindung &amp; Nitaqat sind integriert.",
+            "Los archivos salariales WPS, GOSI, fin de servicio &amp; Nitaqat están integrados.",
+            "I file salariali WPS, GOSI, fine servizio &amp; Nitaqat sono integrati.",
+            "WPS-loonbestanden, GOSI, einde dienstverband &amp; Nitaqat zijn ingebouwd."),
         "See Saudi compliance →": _t(
             "Voir la conformité saoudienne →", "Saudi-Compliance ansehen →", "Ver el cumplimiento saudí →",
             "Vedi la conformità saudita →", "Bekijk Saoedische compliance →"),
@@ -956,12 +1010,12 @@ PAGE['/pricing/hr-suite/'] = {
         "Can I change plans later?": _t(
             "Puis-je changer de forfait plus tard ?", "Kann ich den Tarif später wechseln?", "¿Puedo cambiar de plan más tarde?",
             "Posso cambiare piano in seguito?", "Kan ik later van abonnement wisselen?"),
-        "Yes — move up or down between Starter, Pro, Business, and Enterprise at any time. Changes take effect on your next billing cycle.": _t(
-            "Oui — passez à un niveau supérieur ou inférieur entre Starter, Pro, Business et Enterprise à tout moment. Les changements prennent effet au cycle de facturation suivant.",
-            "Ja — wechseln Sie jederzeit zwischen Starter, Pro, Business und Enterprise nach oben oder unten. Änderungen werden zum nächsten Abrechnungszyklus wirksam.",
-            "Sí — suba o baje entre Starter, Pro, Business y Enterprise en cualquier momento. Los cambios se aplican en su próximo ciclo de facturación.",
-            "Sì — passa a un livello superiore o inferiore tra Starter, Pro, Business ed Enterprise in qualsiasi momento. Le modifiche hanno effetto dal ciclo di fatturazione successivo.",
-            "Ja — schakel op elk moment omhoog of omlaag tussen Starter, Pro, Business en Enterprise. Wijzigingen gaan in bij uw volgende factureringscyclus."),
+        "Yes — move up or down between the plans at any time. Changes take effect on your next billing cycle.": _t(
+            "Oui — passez à un niveau supérieur ou inférieur entre les forfaits à tout moment. Les changements prennent effet au cycle de facturation suivant.",
+            "Ja — wechseln Sie jederzeit zwischen den Tarifen nach oben oder unten. Änderungen werden zum nächsten Abrechnungszyklus wirksam.",
+            "Sí — suba o baje entre los planes en cualquier momento. Los cambios se aplican en su próximo ciclo de facturación.",
+            "Sì — passa a un livello superiore o inferiore tra i piani in qualsiasi momento. Le modifiche hanno effetto dal ciclo di fatturazione successivo.",
+            "Ja — schakel op elk moment omhoog of omlaag tussen de abonnementen. Wijzigingen gaan in bij uw volgende factureringscyclus."),
         "How are users counted?": _t(
             "Comment les utilisateurs sont-ils comptés ?", "Wie werden Nutzer gezählt?", "¿Cómo se cuentan los usuarios?",
             "Come vengono conteggiati gli utenti?", "Hoe worden gebruikers geteld?"),
@@ -999,8 +1053,5 @@ PAGE['/pricing/hr-suite/'] = {
             "Cuéntenos cómo trabaja su equipo hoy y le mostraremos el plan adecuado en acción.",
             "Dicci come lavora oggi il tuo team e ti mostreremo il piano giusto in azione.",
             "Vertel ons hoe uw team vandaag werkt en we tonen u het juiste abonnement in actie."),
-        "← Back to all pricing": _t(
-            "← Retour à tous les tarifs", "← Zurück zu allen Preisen", "← Volver a todos los precios",
-            "← Torna a tutti i prezzi", "← Terug naar alle prijzen"),
     },
 }
