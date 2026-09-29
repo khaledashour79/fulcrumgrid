@@ -64,27 +64,29 @@ PAGE = {
                 'Una sola plataforma conectada de apps en lugar de una docena de herramientas desconectadas.',
                 "Un'unica piattaforma connessa di app invece di una dozzina di strumenti scollegati.",
                 'Eén verbonden platform van apps in plaats van een dozijn losse tools.'),
-            'FulcrumGrid — purpose-built business apps for every operation': _OG_ALT,
             # ---- Breadcrumb ----
             'Home': _HOME,
             # ---- Hero ----
-            'Building the <span class="p-grad">operational backbone</span>': _t(
-                'Construire l\'<span class="p-grad">épine dorsale opérationnelle</span>',
-                'Wir bauen das <span class="p-grad">operative Rückgrat</span>',
-                'Construimos la <span class="p-grad">columna vertebral operativa</span>',
-                'Costruiamo la <span class="p-grad">spina dorsale operativa</span>',
-                'De <span class="p-grad">operationele ruggengraat</span> bouwen'),
-            'FulcrumGrid exists to give businesses <span class="em">genuinely good operational apps</span> — each one focused and dependable — instead of bloated all-in-ones or scattered, half-built tools.': _t(
-                'FulcrumGrid existe pour offrir aux entreprises des <span class="em">applications opérationnelles vraiment bonnes</span> — chacune ciblée et fiable — plutôt que des solutions tout-en-un pléthoriques ou des outils dispersés et à moitié aboutis.',
-                'FulcrumGrid gibt es, um Unternehmen <span class="em">wirklich gute operative Apps</span> zu bieten — jede fokussiert und zuverlässig — statt überladener All-in-one-Lösungen oder verstreuter, halbfertiger Tools.',
-                'FulcrumGrid existe para dar a las empresas <span class="em">apps operativas realmente buenas</span> — cada una enfocada y fiable — en lugar de soluciones todo en uno recargadas o herramientas dispersas y a medio hacer.',
-                'FulcrumGrid esiste per offrire alle aziende <span class="em">app operative davvero valide</span> — ognuna mirata e affidabile — invece di soluzioni all-in-one sovraccariche o strumenti sparsi e incompleti.',
-                'FulcrumGrid bestaat om bedrijven <span class="em">echt goede operationele apps</span> te geven — elk gericht en betrouwbaar — in plaats van opgeblazen alles-in-één-oplossingen of versnipperde, half af gebouwde tools.'),
+            'Building the operational backbone': _t(
+                "Construire l'épine dorsale opérationnelle",
+                'Wir bauen das operative Rückgrat',
+                'Construimos la columna vertebral operativa',
+                'Costruiamo la spina dorsale operativa',
+                'De operationele ruggengraat bouwen'),
+            'FulcrumGrid exists to give businesses genuinely good operational apps — each one focused and dependable — instead of bloated all-in-ones or scattered, half-built tools.': _t(
+                'FulcrumGrid existe pour offrir aux entreprises des applications opérationnelles vraiment bonnes — chacune ciblée et fiable — plutôt que des solutions tout-en-un pléthoriques ou des outils dispersés et à moitié aboutis.',
+                'FulcrumGrid gibt es, um Unternehmen wirklich gute operative Apps zu bieten — jede fokussiert und zuverlässig — statt überladener All-in-one-Lösungen oder verstreuter, halbfertiger Tools.',
+                'FulcrumGrid existe para dar a las empresas apps operativas realmente buenas — cada una enfocada y fiable — en lugar de soluciones todo en uno recargadas o herramientas dispersas y a medio hacer.',
+                'FulcrumGrid esiste per offrire alle aziende app operative davvero valide — ognuna mirata e affidabile — invece di soluzioni all-in-one sovraccariche o strumenti sparsi e incompleti.',
+                'FulcrumGrid bestaat om bedrijven echt goede operationele apps te geven — elk gericht en betrouwbaar — in plaats van opgeblazen alles-in-één-oplossingen of versnipperde, half af gebouwde tools.'),
+            # ---- At a glance (eyebrow + heading) ----
+            '01 · FulcrumGrid today': _t("01 · FulcrumGrid aujourd'hui", '01 · FulcrumGrid heute', '01 · FulcrumGrid hoy', '01 · FulcrumGrid oggi', '01 · FulcrumGrid vandaag'),
+            'At a glance.': _t("En un coup d'œil.", 'Auf einen Blick.', 'De un vistazo.', "A colpo d'occhio.", 'In één oogopslag.'),
             # ---- Stat row (numbers are not translated) ----
-            'apps live today': _t("apps disponibles aujourd'hui", 'Apps heute verfügbar', 'apps disponibles hoy', 'app disponibili oggi', 'apps nu beschikbaar'),
-            'design language': _t('langage de conception', 'Designsprache', 'lenguaje de diseño', 'linguaggio di design', 'ontwerptaal'),
-            'more on the roadmap': _t('autres sur la feuille de route', 'weitere auf der Roadmap', 'más en la hoja de ruta', 'altre nella roadmap', 'meer op de roadmap'),
-            'team behind them all': _t('équipe derrière toutes', 'Team hinter allen', 'equipo detrás de todas', 'team dietro tutte', 'team achter ze allemaal'),
+            'Apps live today': _t("Apps disponibles aujourd'hui", 'Apps heute verfügbar', 'Apps disponibles hoy', 'App disponibili oggi', 'Apps nu beschikbaar'),
+            'Design language': _t('Langage de conception', 'Designsprache', 'Lenguaje de diseño', 'Linguaggio di design', 'Ontwerptaal'),
+            'More on the roadmap': _t('Autres sur la feuille de route', 'Weitere auf der Roadmap', 'Más en la hoja de ruta', 'Altre nella roadmap', 'Meer op de roadmap'),
+            'Team behind them all': _t('Équipe derrière toutes', 'Team hinter allen', 'Equipo detrás de todas', 'Team dietro tutte', 'Team achter ze allemaal'),
             # ---- Principles ----
             'What we believe': _t('Ce en quoi nous croyons', 'Woran wir glauben', 'En qué creemos', 'In cosa crediamo', 'Waar wij in geloven'),
             'Principles behind the platform': _t('Les principes derrière la plateforme', 'Prinzipien hinter der Plattform', 'Principios detrás de la plataforma', 'I principi dietro la piattaforma', 'Principes achter het platform'),
@@ -131,7 +133,7 @@ PAGE = {
                 'Accesso basato sui ruoli e un registro di controllo completo in ogni app — la sicurezza fa parte delle fondamenta, non è un componente aggiuntivo.',
                 'Rolgebaseerde toegang en een volledig auditspoor in elke app — beveiliging is onderdeel van het fundament, geen toevoeging.'),
             # ---- CTA ----
-            'Run your business on one grid': _t('Gérez votre entreprise sur une seule grille', 'Führen Sie Ihr Unternehmen auf einem Grid', 'Gestione su negocio en una sola cuadrícula', "Gestisci la tua azienda su un'unica griglia", 'Run uw bedrijf op één grid'),
+            'Run your business<br />on one grid': _t('Gérez votre entreprise<br />sur une seule grille', 'Führen Sie Ihr Unternehmen<br />auf einem Grid', 'Gestione su negocio<br />en una sola cuadrícula', "Gestisci la tua azienda<br />su un'unica griglia", 'Run uw bedrijf<br />op één grid'),
             'See what a single, connected platform can do for your team.': _t(
                 "Découvrez ce qu'une plateforme unique et connectée peut faire pour votre équipe.",
                 'Sehen Sie, was eine einzige, vernetzte Plattform für Ihr Team leisten kann.',
@@ -158,16 +160,15 @@ PAGE = {
                 'Solicite una demo de FulcrumGrid o hable con nuestro equipo. Cuéntenos qué necesita su empresa y le mostraremos las apps adecuadas — o escriba a contact@avenlorconsulting.com.',
                 'Richiedi una demo di FulcrumGrid o parla con il nostro team. Dicci di cosa ha bisogno la tua azienda e ti mostreremo le app giuste — oppure scrivi a contact@avenlorconsulting.com.',
                 'Vraag een FulcrumGrid-demo aan of praat met ons team. Vertel ons wat uw bedrijf nodig heeft en we tonen u de juiste apps — of mail naar contact@avenlorconsulting.com.'),
-            'FulcrumGrid — purpose-built business apps for every operation': _OG_ALT,
             # ---- Breadcrumb ----
             'Home': _HOME,
             # ---- Hero (h1: "Request a demo" -> COMMON; tail keyed) ----
-            '&amp; <span class="p-grad">talk to us</span>': _t(
-                '&amp; <span class="p-grad">discutons</span>',
-                '&amp; <span class="p-grad">sprechen wir</span>',
-                '&amp; <span class="p-grad">hablemos</span>',
-                '&amp; <span class="p-grad">parliamone</span>',
-                '&amp; <span class="p-grad">praat met ons</span>'),
+            '&amp; talk to us': _t(
+                '&amp; discutons',
+                '&amp; sprechen wir',
+                '&amp; hablemos',
+                '&amp; parliamone',
+                '&amp; praat met ons'),
             "Tell us what your team needs and we'll show you FulcrumGrid in action. Prefer email? Reach us directly and we'll get right back to you.": _t(
                 "Dites-nous ce dont votre équipe a besoin et nous vous montrerons FulcrumGrid en action. Vous préférez l'e-mail ? Écrivez-nous directement et nous vous répondrons très vite.",
                 'Sagen Sie uns, was Ihr Team braucht, und wir zeigen Ihnen FulcrumGrid in Aktion. Lieber per E-Mail? Schreiben Sie uns direkt und wir melden uns umgehend.',
@@ -229,16 +230,23 @@ PAGE = {
                 'Respuestas a preguntas comunes sobre FulcrumGrid: qué es, qué apps incluye, precios y prueba gratuita, soporte de árabe, exportación de datos, seguridad, apps a medida y cómo empezar.',
                 "Risposte alle domande comuni su FulcrumGrid: cos'è, quali app include, prezzi e prova gratuita, supporto per l'arabo, esportazione dei dati, sicurezza, app su misura e come iniziare.",
                 'Antwoorden op veelgestelde vragen over FulcrumGrid: wat het is, welke apps het omvat, prijzen en gratis proefperiode, Arabisch-ondersteuning, gegevensexport, beveiliging, apps op maat en hoe u begint.'),
-            'FulcrumGrid — purpose-built business apps for every operation': _OG_ALT,
             # ---- Breadcrumb ----
             'Home': _HOME,
             # ---- Hero ----
-            'Frequently asked <span class="p-grad">questions</span>': _t(
-                'Foire aux <span class="p-grad">questions</span>',
-                'Häufig gestellte <span class="p-grad">Fragen</span>',
-                'Preguntas <span class="p-grad">frecuentes</span>',
-                'Domande <span class="p-grad">frequenti</span>',
-                'Veelgestelde <span class="p-grad">vragen</span>'),
+            'Frequently asked questions': _t(
+                'Foire aux questions',
+                'Häufig gestellte Fragen',
+                'Preguntas frecuentes',
+                'Domande frequenti',
+                'Veelgestelde vragen'),
+            # ---- Section head ----
+            'Questions &amp; answers.': _t('Questions &amp; réponses.', 'Fragen &amp; Antworten.', 'Preguntas y respuestas.', 'Domande e risposte.', 'Vragen &amp; antwoorden.'),
+            'Everything teams ask before they start — the apps, pricing, Arabic support, data and security.': _t(
+                "Tout ce que les équipes demandent avant de se lancer — les apps, les tarifs, la prise en charge de l'arabe, les données et la sécurité.",
+                'Alles, was Teams vor dem Start fragen — die Apps, Preise, Arabisch-Unterstützung, Daten und Sicherheit.',
+                'Todo lo que los equipos preguntan antes de empezar — las apps, los precios, el soporte de árabe, los datos y la seguridad.',
+                "Tutto ciò che i team chiedono prima di iniziare — le app, i prezzi, il supporto per l'arabo, i dati e la sicurezza.",
+                'Alles wat teams vragen voordat ze beginnen — de apps, prijzen, Arabisch-ondersteuning, gegevens en beveiliging.'),
             'Straight answers about what FulcrumGrid is, what it includes, and how it works. Still have a question? Just ask.': _t(
                 "Des réponses claires sur ce qu'est FulcrumGrid, ce qu'il comprend et comment il fonctionne. Vous avez encore une question ? Il suffit de nous la poser.",
                 'Klare Antworten darauf, was FulcrumGrid ist, was es umfasst und wie es funktioniert. Noch eine Frage? Fragen Sie einfach.',
@@ -269,8 +277,8 @@ PAGE = {
                 'Disponibles dès maintenant : Command Center (tableau de bord des opérations), Collection (créances et paiements) et HR Suite (gestion des personnes). Inventaire, CRM, Analytique et Achats sont sur la <a href="/products/coming-soon/">feuille de route</a>, et nous créons aussi des applications sur mesure sur la même plateforme.',
                 'Ab sofort verfügbar: Command Center (Betriebsdashboard), Collection (Forderungen und Zahlungen) und HR Suite (Personalmanagement). Lagerverwaltung, CRM, Analysen und Beschaffung sind auf der <a href="/products/coming-soon/">Roadmap</a>, und wir entwickeln auch individuelle Apps auf derselben Plattform.',
                 'Disponibles ahora: Command Center (panel de operaciones), Collection (cobros y pagos) y HR Suite (gestión de personas). Inventario, CRM, Analítica y Compras están en la <a href="/products/coming-soon/">hoja de ruta</a>, y también creamos apps a medida en la misma plataforma.',
-                'Disponibili ora: Command Center (dashboard operativa), Collection (crediti e pagamenti) e HR Suite (gestione del personale). Inventario, CRM, Analisi e Approvvigionamento sono nella <a href="/products/coming-soon/">roadmap</a>, e sviluppiamo anche app su misura sulla stessa piattaforma.',
-                'Nu beschikbaar: Command Center (operationeel dashboard), Collection (debiteuren en betalingen) en HR Suite (personeelsbeheer). Voorraad, CRM, Analytics en Inkoop staan op de <a href="/products/coming-soon/">roadmap</a>, en we bouwen ook apps op maat op hetzelfde platform.'),
+                'Disponibili ora: Command Center (dashboard operativa), Collection (crediti e pagamenti) e HR Suite (gestione del personale). Inventario, CRM, Analisi e Approvvigionamento sono nella <a href="/products/coming-soon/">tabella di marcia</a>, e sviluppiamo anche app su misura sulla stessa piattaforma.',
+                'Nu beschikbaar: Command Center (operationeel dashboard), Collection (debiteuren en betalingen) en HR Suite (personeelsbeheer). Voorraad, CRM, Analytics en Inkoop staan op de <a href="/products/coming-soon/">planning</a>, en we bouwen ook apps op maat op hetzelfde platform.'),
             'FulcrumGrid is built for small and mid-sized businesses and the operations, finance, and people teams that keep them running day to day.': _t(
                 'FulcrumGrid est conçu pour les petites et moyennes entreprises et pour les équipes opérations, finance et ressources humaines qui les font tourner au quotidien.',
                 'FulcrumGrid ist für kleine und mittlere Unternehmen und für die Betriebs-, Finanz- und Personalteams gemacht, die sie Tag für Tag am Laufen halten.',
@@ -381,7 +389,7 @@ PAGE = {
                 'FulcrumGrid è sviluppato e supportato da Avenlor Consulting.',
                 'FulcrumGrid wordt ontwikkeld en ondersteund door Avenlor Consulting.'),
             # ---- CTA panel ----
-            'Still have a question?': _t('Vous avez encore une question ?', 'Noch eine Frage?', '¿Aún tiene una pregunta?', 'Hai ancora una domanda?', 'Nog een vraag?'),
+            'Still have<br />a question?': _t('Vous avez encore<br />une question ?', 'Noch<br />eine Frage?', '¿Aún tiene<br />una pregunta?', 'Hai ancora<br />una domanda?', 'Nog<br />een vraag?'),
             "Tell us what your team needs and we'll walk you through FulcrumGrid.": _t(
                 'Dites-nous ce dont votre équipe a besoin et nous vous guiderons dans FulcrumGrid.',
                 'Sagen Sie uns, was Ihr Team braucht, und wir führen Sie durch FulcrumGrid.',

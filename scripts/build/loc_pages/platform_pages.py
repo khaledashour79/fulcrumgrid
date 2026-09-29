@@ -57,17 +57,23 @@ PAGE = {
                 'Cada app de FulcrumGrid es segura por diseño, mantiene sus datos exportables y comparte una experiencia coherente — creada para operaciones reales y hecha para crecer con usted.',
                 "Ogni app FulcrumGrid è sicura per progettazione, mantiene i tuoi dati esportabili e condivide un'esperienza coerente — costruita per operazioni reali e pensata per crescere con te.",
                 'Elke FulcrumGrid-app is veilig van opzet, houdt uw gegevens exporteerbaar en deelt één consistente ervaring — gebouwd voor echte operaties en gemaakt om met u mee te groeien.'),
-            'FulcrumGrid — purpose-built business apps for every operation': _OG_IMAGE_ALT,
-            # ---- Breadcrumb ----
-            'Home': _HOME,
             # ---- Hero ----
             'Why FulcrumGrid': _t('Pourquoi FulcrumGrid', 'Warum FulcrumGrid', 'Por qué FulcrumGrid', 'Perché FulcrumGrid', 'Waarom FulcrumGrid'),
-            'Built to the <span class="p-grad">same high standard</span>': _t(
-                'Conçue selon le <span class="p-grad">même haut standard</span>',
-                'Nach dem <span class="p-grad">gleichen hohen Standard</span> gebaut',
-                'Creada con el <span class="p-grad">mismo alto estándar</span>',
-                'Costruita secondo lo <span class="p-grad">stesso alto standard</span>',
-                'Gebouwd volgens dezelfde <span class="p-grad">hoge standaard</span>'),
+            'Built to the same high standard': _t(
+                'Conçue selon le même haut standard',
+                'Nach dem gleichen hohen Standard gebaut',
+                'Creada con el mismo alto estándar',
+                'Costruita secondo lo stesso alto standard',
+                'Gebouwd volgens dezelfde hoge standaard'),
+            # ---- Section head ----
+            '01 · What every app shares': _t('01 · Ce que partage chaque app', '01 · Was jede App teilt', '01 · Lo que comparte cada app', '01 · Cosa condivide ogni app', '01 · Wat elke app deelt'),
+            'The same foundation, every app.': _t('Le même socle, pour chaque app.', 'Dasselbe Fundament, jede App.', 'La misma base, cada app.', 'Le stesse fondamenta, ogni app.', 'Hetzelfde fundament, elke app.'),
+            'Built for the teams who keep businesses running — clarity and reliability over hype.': _t(
+                'Conçu pour les équipes qui font tourner les entreprises — clarté et fiabilité plutôt que battage.',
+                'Gebaut für die Teams, die Unternehmen am Laufen halten — Klarheit und Zuverlässigkeit statt Hype.',
+                'Creado para los equipos que mantienen los negocios en marcha — claridad y fiabilidad antes que el bombo.',
+                'Costruito per i team che mandano avanti le aziende — chiarezza e affidabilità invece del clamore.',
+                'Gebouwd voor de teams die bedrijven draaiende houden — helderheid en betrouwbaarheid boven hype.'),
             "One team builds every FulcrumGrid app to the same standard — so each one is focused, familiar, and ready for real work from day one. Here's what every app on the grid shares.": _t(
                 "Une seule équipe conçoit chaque application FulcrumGrid selon le même standard — chacune est ainsi ciblée, familière et prête pour le travail réel dès le premier jour. Voici ce que partage chaque application de la grille.",
                 'Ein Team baut jede FulcrumGrid-App nach demselben Standard — so ist jede fokussiert, vertraut und vom ersten Tag an bereit für echte Arbeit. Das teilt jede App im Grid.',
@@ -146,16 +152,26 @@ PAGE = {
                 'Empiece con FulcrumGrid en tres pasos: elija sus apps, configúrelas en minutos y gestione sus operaciones — añadiendo más apps a su propio ritmo.',
                 'Inizia con FulcrumGrid in tre passi: scegli le tue app, configurale in pochi minuti e gestisci le tue operazioni — aggiungendo altre app al tuo ritmo.',
                 'Begin met FulcrumGrid in drie stappen: kies uw apps, stel ze in binnen minuten en run uw operatie — voeg meer apps toe in uw eigen tempo.'),
-            'FulcrumGrid — purpose-built business apps for every operation': _OG_IMAGE_ALT,
-            # ---- Breadcrumb ----
-            'Home': _HOME,
             # ---- Hero ----
-            'Live in <span class="p-grad">three steps</span>': _t(
-                'Opérationnel en <span class="p-grad">trois étapes</span>',
-                'In <span class="p-grad">drei Schritten</span> startklar',
-                'En marcha en <span class="p-grad">tres pasos</span>',
-                'Operativo in <span class="p-grad">tre passi</span>',
-                'Live in <span class="p-grad">drie stappen</span>'),
+            'Live in three steps': _t(
+                'Opérationnel en trois étapes',
+                'In drei Schritten startklar',
+                'En marcha en tres pasos',
+                'Operativo in tre passi',
+                'Live in drie stappen'),
+            # ---- Section head ----
+            '01 · Getting started': _t('01 · Pour commencer', '01 · Erste Schritte', '01 · Para empezar', '01 · Per iniziare', '01 · Aan de slag'),
+            'From sign-up to live.': _t("De l'inscription à la mise en service.", 'Von der Anmeldung bis zum Start.', 'Del registro a la puesta en marcha.', "Dall'iscrizione all'operatività.", 'Van aanmelding tot live.'),
+            'Three steps, at your pace — no migration project, no re-platforming.': _t(
+                'Trois étapes, à votre rythme — pas de projet de migration, pas de changement de plateforme.',
+                'Drei Schritte, in Ihrem Tempo — kein Migrationsprojekt, kein Plattformwechsel.',
+                'Tres pasos, a su ritmo — sin proyecto de migración, sin cambio de plataforma.',
+                'Tre passi, al tuo ritmo — nessun progetto di migrazione, nessun cambio di piattaforma.',
+                'Drie stappen, in uw eigen tempo — geen migratieproject, geen overstap van platform.'),
+            # ---- Step eyebrows ----
+            'STEP 01': _t('ÉTAPE 01', 'SCHRITT 01', 'PASO 01', 'PASSO 01', 'STAP 01'),
+            'STEP 02': _t('ÉTAPE 02', 'SCHRITT 02', 'PASO 02', 'PASSO 02', 'STAP 02'),
+            'STEP 03': _t('ÉTAPE 03', 'SCHRITT 03', 'PASO 03', 'PASSO 03', 'STAP 03'),
             'Getting started with FulcrumGrid is straightforward. Choose what you need, set it up in minutes, and add more apps at your own pace.': _t(
                 "Démarrer avec FulcrumGrid est simple. Choisissez ce dont vous avez besoin, configurez-le en quelques minutes et ajoutez d'autres applications à votre rythme.",
                 'Der Einstieg in FulcrumGrid ist unkompliziert. Wählen Sie, was Sie brauchen, richten Sie es in Minuten ein und fügen Sie weitere Apps in Ihrem eigenen Tempo hinzu.',
@@ -164,12 +180,12 @@ PAGE = {
                 'Beginnen met FulcrumGrid is eenvoudig. Kies wat u nodig hebt, stel het in binnen minuten en voeg meer apps toe in uw eigen tempo.'),
             # ---- Steps ----
             'Choose your apps': _t('Choisissez vos applications', 'Wählen Sie Ihre Apps', 'Elija sus apps', 'Scegli le tue app', 'Kies uw apps'),
-            'Pick the apps your team needs today. Command Center, Collection, HR Suite — or all three.': _t(
-                "Choisissez les applications dont votre équipe a besoin aujourd'hui. Command Center, Collection, HR Suite — ou les trois.",
-                'Wählen Sie die Apps, die Ihr Team heute braucht. Command Center, Collection, HR Suite — oder alle drei.',
-                'Elija las apps que su equipo necesita hoy. Command Center, Collection, HR Suite — o las tres.',
-                'Scegli le app di cui il tuo team ha bisogno oggi. Command Center, Collection, HR Suite — o tutte e tre.',
-                'Kies de apps die uw team vandaag nodig heeft. Command Center, Collection, HR Suite — of alle drie.'),
+            'Pick the apps your team needs today. HR Suite, Command Center, Collection — or all three.': _t(
+                "Choisissez les applications dont votre équipe a besoin aujourd'hui. HR Suite, Command Center, Collection — ou les trois.",
+                'Wählen Sie die Apps, die Ihr Team heute braucht. HR Suite, Command Center, Collection — oder alle drei.',
+                'Elija las apps que su equipo necesita hoy. HR Suite, Command Center, Collection — o las tres.',
+                'Scegli le app di cui il tuo team ha bisogno oggi. HR Suite, Command Center, Collection — o tutte e tre.',
+                'Kies de apps die uw team vandaag nodig heeft. HR Suite, Command Center, Collection — of alle drie.'),
             'Set up your app': _t('Configurez votre application', 'Richten Sie Ihre App ein', 'Configure su app', 'Configura la tua app', 'Stel uw app in'),
             'Import your records and invite your team. Configure roles and permissions in minutes.': _t(
                 'Importez vos données et invitez votre équipe. Configurez les rôles et les autorisations en quelques minutes.',
@@ -193,17 +209,6 @@ PAGE = {
                 'Dicci di cosa ha bisogno il tuo team e ti mostreremo FulcrumGrid in azione.',
                 'Vertel ons wat uw team nodig heeft en we tonen u FulcrumGrid in actie.'),
             'Explore the apps': _EXPLORE_THE_APPS,
-            # ---- JSON-LD (HowTo) ----
-            'How to get started with FulcrumGrid': _t(
-                'Comment démarrer avec FulcrumGrid', 'So starten Sie mit FulcrumGrid',
-                'Cómo empezar con FulcrumGrid', 'Come iniziare con FulcrumGrid',
-                'Hoe u begint met FulcrumGrid'),
-            'Get to work. Add more FulcrumGrid apps whenever you are ready.': _t(
-                "Mettez-vous au travail. Ajoutez d'autres applications FulcrumGrid quand vous êtes prêt.",
-                'Legen Sie los. Fügen Sie weitere FulcrumGrid-Apps hinzu, wann immer Sie bereit sind.',
-                'Manos a la obra. Añada más apps de FulcrumGrid cuando esté listo.',
-                'Mettiti al lavoro. Aggiungi altre app FulcrumGrid quando sei pronto.',
-                'Ga aan de slag. Voeg meer FulcrumGrid-apps toe wanneer u er klaar voor bent.'),
         },
     },
 
@@ -224,17 +229,14 @@ PAGE = {
                 'FulcrumGrid crea apps de negocio personalizadas, adaptadas a su caso de uso concreto — en la misma plataforma segura y auditable que nuestras apps listas para usar.',
                 "FulcrumGrid crea app aziendali personalizzate, adattate al tuo caso d'uso specifico — sulla stessa piattaforma sicura e verificabile delle nostre app pronte all'uso.",
                 'FulcrumGrid bouwt aangepaste bedrijfsapps, afgestemd op uw specifieke gebruikssituatie — op hetzelfde veilige, controleerbare platform als onze kant-en-klare apps.'),
-            'FulcrumGrid — purpose-built business apps for every operation': _OG_IMAGE_ALT,
-            # ---- Breadcrumb ----
-            'Home': _HOME,
             # ---- Hero ----
             'Built for you': _t('Conçu pour vous', 'Für Sie gebaut', 'Creado para usted', 'Costruito per te', 'Voor u gebouwd'),
-            'Custom business apps for <span class="p-grad">your exact workflow</span>': _t(
-                'Des applications métier sur mesure pour <span class="p-grad">votre flux de travail exact</span>',
-                'Individuelle Business-Apps für <span class="p-grad">genau Ihren Workflow</span>',
-                'Apps de negocio a medida para <span class="p-grad">su flujo de trabajo exacto</span>',
-                'App aziendali su misura per <span class="p-grad">il tuo flusso di lavoro preciso</span>',
-                'Zakelijke apps op maat voor <span class="p-grad">precies uw workflow</span>'),
+            'Custom business apps for your exact workflow': _t(
+                'Des applications métier sur mesure pour votre flux de travail exact',
+                'Individuelle Business-Apps für genau Ihren Workflow',
+                'Apps de negocio a medida para su flujo de trabajo exacto',
+                'App aziendali su misura per il tuo flusso di lavoro preciso',
+                'Zakelijke apps op maat voor precies uw workflow'),
             'Beyond our ready-made apps, we build customized business apps tailored to your specific use case — designed around how your team actually works, on the same secure, auditable platform as the rest of the grid.': _t(
                 "Au-delà de nos applications prêtes à l'emploi, nous concevons des applications métier personnalisées, adaptées à votre cas d'usage précis — pensées autour de la façon dont votre équipe travaille réellement, sur la même plateforme sécurisée et auditable que le reste de la grille.",
                 'Über unsere fertigen Apps hinaus entwickeln wir maßgeschneiderte Business-Apps, zugeschnitten auf Ihren konkreten Anwendungsfall — gestaltet rund um die tatsächliche Arbeitsweise Ihres Teams, auf derselben sicheren, prüfbaren Plattform wie der Rest des Grids.',
@@ -244,6 +246,7 @@ PAGE = {
             'Discuss a custom app': _t("Discuter d'une application sur mesure", 'Eine individuelle App besprechen', 'Hablar de una app a medida', "Parla di un'app su misura", 'Bespreek een app op maat'),
             'See ready-made apps': _t("Voir les applications prêtes à l'emploi", 'Fertige Apps ansehen', 'Ver apps listas para usar', "Vedi le app pronte all'uso", 'Bekijk kant-en-klare apps'),
             # ---- Where custom fits ----
+            'Example use cases': _t("Exemples de cas d'usage", 'Beispielhafte Anwendungsfälle', 'Casos de uso de ejemplo', "Esempi di casi d'uso", 'Voorbeelden van gebruikssituaties'),
             'Where custom fits': _t('Où le sur-mesure trouve sa place', 'Wo Individuelles passt', 'Dónde encaja lo personalizado', 'Dove si inserisce il su misura', 'Waar maatwerk past'),
             "When an off-the-shelf app isn't quite it": _t(
                 'Quand une application clé en main ne suffit pas tout à fait',
@@ -266,6 +269,15 @@ PAGE = {
             'Agencies': _t('Agences', 'Agenturen', 'Agencias', 'Agenzie', 'Bureaus'),
             # ---- How we build ----
             'How we build': _t('Comment nous construisons', 'Wie wir bauen', 'Cómo construimos', 'Come costruiamo', 'Hoe we bouwen'),
+            'On the same secure, auditable FulcrumGrid platform as every ready-made app.': _t(
+                "Sur la même plateforme FulcrumGrid sécurisée et auditable que chaque application prête à l'emploi.",
+                'Auf derselben sicheren, prüfbaren FulcrumGrid-Plattform wie jede fertige App.',
+                'En la misma plataforma FulcrumGrid segura y auditable que cada app lista para usar.',
+                "Sulla stessa piattaforma FulcrumGrid sicura e verificabile di ogni app pronta all'uso.",
+                'Op hetzelfde veilige, controleerbare FulcrumGrid-platform als elke kant-en-klare app.'),
+            'STEP 01': _t('ÉTAPE 01', 'SCHRITT 01', 'PASO 01', 'PASSO 01', 'STAP 01'),
+            'STEP 02': _t('ÉTAPE 02', 'SCHRITT 02', 'PASO 02', 'PASSO 02', 'STAP 02'),
+            'STEP 03': _t('ÉTAPE 03', 'SCHRITT 03', 'PASO 03', 'PASSO 03', 'STAP 03'),
             'From your workflow to a working app': _t(
                 'De votre flux de travail à une application opérationnelle',
                 'Von Ihrem Workflow zur funktionierenden App',
@@ -301,22 +313,6 @@ PAGE = {
                 'Cuéntenos qué necesita su equipo y definiremos una app a medida con usted.',
                 "Dicci di cosa ha bisogno il tuo team e definiremo insieme un'app su misura.",
                 'Vertel ons wat uw team nodig heeft en we bepalen samen met u een app op maat.'),
-            # ---- JSON-LD (Service) ----
-            'Custom business app development': _t(
-                "Développement d'applications métier sur mesure", 'Entwicklung individueller Business-Apps',
-                'Desarrollo de apps de negocio a medida', 'Sviluppo di app aziendali su misura',
-                'Ontwikkeling van zakelijke apps op maat'),
-            'FulcrumGrid builds customized business apps tailored to your specific use case, on the same secure, auditable platform as its ready-made apps.': _t(
-                "FulcrumGrid conçoit des applications métier personnalisées, adaptées à votre cas d'usage précis, sur la même plateforme sécurisée et auditable que ses applications prêtes à l'emploi.",
-                'FulcrumGrid entwickelt maßgeschneiderte Business-Apps, zugeschnitten auf Ihren konkreten Anwendungsfall, auf derselben sicheren, prüfbaren Plattform wie seine fertigen Apps.',
-                'FulcrumGrid crea apps de negocio personalizadas, adaptadas a su caso de uso concreto, en la misma plataforma segura y auditable que sus apps listas para usar.',
-                "FulcrumGrid crea app aziendali personalizzate, adattate al tuo caso d'uso specifico, sulla stessa piattaforma sicura e verificabile delle sue app pronte all'uso.",
-                'FulcrumGrid bouwt aangepaste bedrijfsapps, afgestemd op uw specifieke gebruikssituatie, op hetzelfde veilige, controleerbare platform als zijn kant-en-klare apps.'),
-            'Custom software development': _t(
-                'Développement de logiciels sur mesure', 'Individuelle Softwareentwicklung',
-                'Desarrollo de software a medida', 'Sviluppo software su misura',
-                'Softwareontwikkeling op maat'),
-            'Worldwide': _t('Dans le monde entier', 'Weltweit', 'En todo el mundo', 'In tutto il mondo', 'Wereldwijd'),
         },
     },
 }
