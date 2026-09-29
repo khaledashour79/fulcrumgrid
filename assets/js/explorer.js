@@ -55,5 +55,5 @@
       render(t.getAttribute('data-exp'));
     });
   });
-  render('cc');
+  render('hr');
 })();

@@ -7,14 +7,23 @@
   var stage = document.querySelector('[data-stage="grid"]');
   if (!stage) return;
 
-  // [name, status] — real apps live; the rest roadmap / built-to-order.
+  // [name, status] — HR Suite leads. Live apps, then a "Coming soon" tier
+  // (TMS, Voice, CRM) that sits taller and floats slightly above the plain
+  // roadmap placeholders, then roadmap / built-to-order / your-next-app.
   var GRID = [
-    ['Command Center', 'Live'], ['Collection', 'Live'], ['HR Suite', 'Live'], ['Inventory', 'Roadmap'],
-    ['CRM', 'Roadmap'], ['Analytics', 'Roadmap'], ['Procurement', 'Roadmap'], ['TMS', 'Roadmap'],
-    ['Custom apps', 'Built to order'], ['Your next app', '']
+    ['HR Suite', 'Live'], ['Command Center', 'Live'], ['Collection', 'Live'], ['TMS', 'Coming soon'],
+    ['Voice', 'Coming soon'], ['CRM', 'Coming soon'], ['Inventory', 'Roadmap'], ['Analytics', 'Roadmap'],
+    ['Procurement', 'Roadmap'], ['Custom apps', 'Built to order'], ['Your next app', '']
   ];
   var COLS = 4, W = 148, GAP = 174;
-  var Hs = { 'Live': 50, 'Built to order': 36, 'Roadmap': 22, '': 36 };
+  // per-status: h = extrusion height, cls, border style, lift = float above floor
+  var META = {
+    'Live':           { h: 50, cls: 'live',  bs: 'solid',  lift: 0 },
+    'Coming soon':    { h: 40, cls: 'soon',  bs: 'solid',  lift: 20 },
+    'Roadmap':        { h: 22, cls: 'road',  bs: 'dashed', lift: 0 },
+    'Built to order': { h: 34, cls: 'built', bs: 'dashed', lift: 0 },
+    '':               { h: 34, cls: 'empty', bs: 'dashed', lift: 0 }
+  };
 
   var clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.max(a, Math.min(b, v)); };
   var ease = function (t) { return 1 - Math.pow(1 - t, 3); };
@@ -28,26 +37,31 @@
   floor.style.marginLeft = (-floorW / 2) + 'px';
   floor.style.marginTop = (-floorH / 2) + 'px';
 
-  var tiles = [];
+  var tiles = [], lifts = [];
   GRID.forEach(function (g, i) {
     var name = g[0], status = g[1];
-    var h = Hs[status] != null ? Hs[status] : 20;
-    var cls = status === 'Live' ? 'live' : (status === 'Roadmap' ? 'road' : (status === '' ? 'empty' : 'built'));
+    var m = META[status] || META[''];
+    var h = m.h, cls = m.cls;
     var col = i % COLS, row = Math.floor(i / COLS);
     var t = document.createElement('div');
     t.className = 'gtile ' + cls;
     t.style.left = (col * GAP) + 'px'; t.style.top = (row * GAP) + 'px';
     t.style.width = W + 'px'; t.style.height = W + 'px';
-    // Extruded tile — exact recipe: top face raised to z=H, plus a front wall
-    // (at the front edge, folded up) and a left wall (folded in).
-    var bc = 'color-mix(in srgb, var(--color-text) 40%, transparent)';
-    var bs = cls === 'live' ? 'solid' : 'dashed';
-    var nameCol = cls === 'live' ? 'var(--color-text)' : 'color-mix(in srgb, var(--color-text) 62%, transparent)';
-    var stCol = cls === 'live' ? 'var(--color-accent-700)' : 'color-mix(in srgb, var(--color-text) 45%, transparent)';
+    lifts.push(m.lift);
+    // Extruded tile — top face raised to z=H, plus a front wall (folded up at
+    // the front edge) and a left wall (folded in). Coming-soon tiles get an
+    // accent tint so they read as distinct from the grey roadmap placeholders.
+    var soon = cls === 'soon';
+    var bc = soon ? 'var(--color-accent-500)' : 'color-mix(in srgb, var(--color-text) 40%, transparent)';
+    var topBg = soon ? 'color-mix(in srgb, var(--color-accent) 9%, var(--color-bg))' : 'var(--color-bg)';
+    var frontBg = soon ? 'color-mix(in srgb, var(--color-accent) 16%, var(--color-neutral-200))' : 'var(--color-neutral-200)';
+    var leftBg = soon ? 'color-mix(in srgb, var(--color-accent) 24%, var(--color-neutral-300))' : 'var(--color-neutral-300)';
+    var nameCol = (cls === 'live' || soon) ? 'var(--color-text)' : 'color-mix(in srgb, var(--color-text) 62%, transparent)';
+    var stCol = cls === 'live' ? 'var(--color-accent-700)' : (soon ? 'var(--color-accent-600)' : 'color-mix(in srgb, var(--color-text) 45%, transparent)');
     t.innerHTML =
-      '<div style="position:absolute;left:0;top:' + W + 'px;width:' + W + 'px;height:' + h + 'px;transform-origin:center top;transform:rotateX(90deg);background:var(--color-neutral-200);border:1px solid ' + bc + ';box-sizing:border-box"></div>' +
-      '<div style="position:absolute;left:-' + h + 'px;top:0;width:' + h + 'px;height:' + W + 'px;transform-origin:right center;transform:rotateY(90deg);background:var(--color-neutral-300);border:1px solid ' + bc + ';box-sizing:border-box"></div>' +
-      '<div style="position:absolute;inset:0;transform:translateZ(' + h + 'px);background:var(--color-bg);border:1px ' + bs + ' ' + bc + ';box-sizing:border-box">' +
+      '<div style="position:absolute;left:0;top:' + W + 'px;width:' + W + 'px;height:' + h + 'px;transform-origin:center top;transform:rotateX(90deg);background:' + frontBg + ';border:1px solid ' + bc + ';box-sizing:border-box"></div>' +
+      '<div style="position:absolute;left:-' + h + 'px;top:0;width:' + h + 'px;height:' + W + 'px;transform-origin:right center;transform:rotateY(90deg);background:' + leftBg + ';border:1px solid ' + bc + ';box-sizing:border-box"></div>' +
+      '<div style="position:absolute;inset:0;transform:translateZ(' + h + 'px);background:' + topBg + ';border:1px ' + m.bs + ' ' + bc + ';box-sizing:border-box">' +
         '<span style="position:absolute;left:12px;top:11px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:' + stCol + '">' + (status || 'Planned') + '</span>' +
         '<span style="position:absolute;left:12px;right:12px;bottom:12px;font-family:var(--font-heading);font-weight:600;font-size:20px;line-height:1.02;letter-spacing:.02em;text-transform:uppercase;color:' + nameCol + '">' + name + '</span>' +
       '</div>';
@@ -77,7 +91,7 @@
       var col = i % COLS, row = Math.floor(i / COLS);
       var a = reduce ? 1 : ease(clamp((now - 0.2 - (col + row) * 0.12) / 0.9));
       var hov = el.matches(':hover');
-      var z = (1 - a) * 340 + p * (col + row) * 26 + (hov ? 18 : 0) - drag * (col + row) * 20;
+      var z = (1 - a) * 340 + p * (col + row) * 26 + (hov ? 18 : 0) - drag * (col + row) * 20 + lifts[i] * a;
       el.style.transform = 'translateZ(' + z.toFixed(1) + 'px)';
       el.style.opacity = a.toFixed(3);
     });
