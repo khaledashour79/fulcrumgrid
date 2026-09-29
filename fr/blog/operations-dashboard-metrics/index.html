@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
 
   <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
@@ -18,12 +18,20 @@
 
   <title>Que suivre dans un tableau de bord des opérations — FulcrumGrid</title>
   <meta name="description" content="Un tableau de bord rempli de chiffres n'est pas le but. Voici les indicateurs opérationnels qui orientent réellement les décisions — et comment concevoir un tableau de bord que les gens utilisent." />
-  <meta name="theme-color" content="#0b1020" />
+  <meta name="theme-color" content="#f2f2f3" />
+
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Que suivre dans un tableau de bord des opérations (et que ignorer)" />
   <meta property="og:description" content="Les indicateurs opérationnels qui orientent réellement les décisions — et comment concevoir un tableau de bord que les gens utilisent." />
   <meta property="og:url" content="https://fulcrumgrid.com/fr/blog/operations-dashboard-metrics/" />
   <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
   <meta property="article:published_time" content="2026-08-24" />
   <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
   <meta property="og:image:width" content="1200" />
@@ -31,8 +39,11 @@
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:alt" content="FulcrumGrid Command Center — tableau de bord des opérations en temps réel" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Que suivre dans un tableau de bord des opérations (et que ignorer)" />
+  <meta name="twitter:description" content="Les indicateurs opérationnels qui orientent réellement les décisions — et comment concevoir un tableau de bord que les gens utilisent." />
   <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
@@ -47,12 +58,11 @@
   <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/operations-dashboard-metrics/" />
   <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/operations-dashboard-metrics/" />
   <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/operations-dashboard-metrics/" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" /></noscript>
-  <link rel="stylesheet" href="/assets/css/fg.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -79,157 +89,140 @@
   }
   </script>
 </head>
-<body class="fg product-page">
-  <a class="skip-link" href="#main">Aller au contenu</a>
-
-    <header class="site-header" id="top">
-    <div class="header-inner">
+<body>
+  <header class="site-head">
+    <div class="wrap row">
       <a class="brand" href="/fr/" aria-label="Accueil FulcrumGrid">
-        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/><path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/><defs><linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#2156df"/><stop offset="1" stop-color="#1d47ba"/></linearGradient></defs></svg></span>
-        <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
       </a>
       <nav class="site-nav" aria-label="Primary">
         <a href="/fr/products/">Produits</a>
         <a href="/fr/features/">Plateforme</a>
         <a href="/fr/pricing/">Tarifs</a>
+        <a href="/fr/regions/">Régions</a>
         <a href="/fr/blog/" class="active" aria-current="page">Blog</a>
-        <a href="/fr/about/">À propos</a>
         <a href="/fr/contact/">Contact</a>
       </nav>
-      <div class="header-cta">
-                        <details class="lang-menu">
-          <summary aria-label="Langue"><svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg><span>FR</span><svg class="lang-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-          <div class="lang-menu-list">
-            <a href="/blog/operations-dashboard-metrics/" hreflang="en" lang="en">English</a>
-            <a href="/ar/blog/operations-dashboard-metrics/" hreflang="ar" lang="ar">العربية</a>
-            <a href="/fr/blog/operations-dashboard-metrics/" hreflang="fr" lang="fr" class="active" aria-current="true">Français</a>
-            <a href="/de/blog/operations-dashboard-metrics/" hreflang="de" lang="de">Deutsch</a>
-            <a href="/es/blog/operations-dashboard-metrics/" hreflang="es" lang="es">Español</a>
-            <a href="/it/blog/operations-dashboard-metrics/" hreflang="it" lang="it">Italiano</a>
-            <a href="/nl/blog/operations-dashboard-metrics/" hreflang="nl" lang="nl">Nederlands</a>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Langue">FR ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" class="active" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
           </div>
         </details>
-        <a class="btn btn-primary" href="/fr/contact/">Demander une démo</a>
+        <a class="btn btn-primary btn-sm" href="/fr/contact/">Demander une démo</a>
       </div>
-      <button class="nav-toggle" aria-label="Basculer le menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobile-menu" hidden>
-      <a href="/fr/products/">Produits</a>
-      <a href="/fr/features/">Plateforme</a>
-      <a href="/fr/pricing/">Tarifs</a>
-      <a href="/fr/blog/" class="active" aria-current="page">Blog</a>
-      <a href="/fr/about/">À propos</a>
-      <a href="/fr/contact/">Contact</a>
-      <a class="btn btn-primary" href="/fr/contact/">Demander une démo</a>
-                      <details class="lang-menu">
-          <summary aria-label="Langue"><svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg><span>FR</span><svg class="lang-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-          <div class="lang-menu-list">
-            <a href="/blog/operations-dashboard-metrics/" hreflang="en" lang="en">English</a>
-            <a href="/ar/blog/operations-dashboard-metrics/" hreflang="ar" lang="ar">العربية</a>
-            <a href="/fr/blog/operations-dashboard-metrics/" hreflang="fr" lang="fr" class="active" aria-current="true">Français</a>
-            <a href="/de/blog/operations-dashboard-metrics/" hreflang="de" lang="de">Deutsch</a>
-            <a href="/es/blog/operations-dashboard-metrics/" hreflang="es" lang="es">Español</a>
-            <a href="/it/blog/operations-dashboard-metrics/" hreflang="it" lang="it">Italiano</a>
-            <a href="/nl/blog/operations-dashboard-metrics/" hreflang="nl" lang="nl">Nederlands</a>
-          </div>
-        </details>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
     </div>
   </header>
 
-  <main id="main">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/fr/">Accueil</a><span>/</span><a href="/fr/blog/">Blog</a><span>/</span><span class="current">Operations dashboard metrics</span>
-      </nav>
-    </div>
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/fr/">Accueil</a> / <a href="/fr/blog/">Blog</a> / Indicateurs du tableau de bord des opérations</p>
+        <span class="tag tag-accent">Opérations</span>
+        <h1>Que suivre dans un tableau de bord des opérations (et que ignorer)</h1>
+        <p class="hero-intro">Un tableau de bord rempli de chiffres n'est pas le but. Voici les indicateurs opérationnels qui orientent réellement les décisions — et comment concevoir un tableau de bord que les gens utilisent.</p>
+        <p class="mono"><time datetime="2026-08-24">24 août 2026</time> · 5 min de lecture</p>
+      </div>
+    </section>
 
-    <article class="section" style="padding-top:22px">
-      <div class="container">
-        <div class="article article-header">
-          <span class="post-cat" style="color:var(--teal)">Opérations</span>
-          <h1>Que suivre dans un tableau de bord des opérations (et que ignorer)</h1>
-          <div class="post-meta"><time datetime="2026-08-24">24 août 2026</time><span class="read">5 min de lecture</span></div>
-        </div>
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+        <p>La plupart des tableaux de bord des opérations échouent de la même façon : ils montrent tout, donc ils ne font ressortir rien. Quand chaque chiffre a le même poids, celui qui mérite l'attention aujourd'hui se noie parmi quarante autres qui ne la méritent pas. Un bon tableau de bord n'est pas un déversoir de données — c'est un outil de décision. Voici comment décider ce qui y a sa place.</p>
 
-        <div class="article article-body">
-          <p>La plupart des tableaux de bord des opérations échouent de la même façon : ils montrent tout, donc ils ne font ressortir rien. Quand chaque chiffre a le même poids, celui qui mérite l'attention aujourd'hui se noie parmi quarante autres qui ne la méritent pas. Un bon tableau de bord n'est pas un déversoir de données — c'est un outil de décision. Voici comment décider ce qui y a sa place.</p>
+        <h2>Le test pour chaque indicateur</h2>
+        <p>Avant qu'un chiffre gagne sa place sur le tableau de bord, il doit passer une question :</p>
+        <blockquote>Si ce chiffre changeait, quelqu'un ferait-il quelque chose différemment aujourd'hui ?</blockquote>
+        <p>Si la réponse honnête est non, c'est un rapport, pas un indicateur de tableau de bord. Les rapports servent à la revue périodique ; les tableaux de bord servent aux indicateurs qui déclenchent l'action en temps réel. Garder cette frontière claire est la plus grande amélioration que la plupart des équipes puissent apporter.</p>
 
-          <h2>Le test pour chaque indicateur</h2>
-          <p>Avant qu'un chiffre gagne sa place sur le tableau de bord, il doit passer une question :</p>
-          <blockquote>Si ce chiffre changeait, quelqu'un ferait-il quelque chose différemment aujourd'hui ?</blockquote>
-          <p>Si la réponse honnête est non, c'est un rapport, pas un indicateur de tableau de bord. Les rapports servent à la revue périodique ; les tableaux de bord servent aux indicateurs qui déclenchent l'action en temps réel. Garder cette frontière claire est la plus grande amélioration que la plupart des équipes puissent apporter.</p>
+        <h2>Les quatre catégories à suivre</h2>
+        <p>Les bons tableaux de bord opérationnels couvrent généralement quatre types d'indicateurs :</p>
+        <ul>
+          <li><strong>Flux</strong> — combien passe par votre processus central : commandes, tickets, expéditions, demandes par jour. C'est votre pouls.</li>
+          <li><strong>Goulets d'étranglement</strong> — où le travail s'accumule : longueur de file, ancienneté du backlog, temps par étape. Ce sont vos alertes précoces.</li>
+          <li><strong>Qualité &amp; SLAs</strong> — si vous tenez les promesses qui comptent : taux de ponctualité, taux d'erreur, temps de réponse par rapport à la cible.</li>
+          <li><strong>Trésorerie &amp; engagements</strong> — l'état financier des opérations : créances en cours, dépenses par rapport au budget, obligations à venir.</li>
+        </ul>
+        <p>Deux ou trois indicateurs par catégorie suffisent généralement. Un tableau de bord ciblé de dix chiffres en direct l'emporte à chaque fois sur un mur de cinquante.</p>
 
-          <h2>Les quatre catégories à suivre</h2>
-          <p>Les bons tableaux de bord opérationnels couvrent généralement quatre types d'indicateurs :</p>
-          <ul>
-            <li><strong>Flux</strong> — combien passe par votre processus central : commandes, tickets, expéditions, demandes par jour. C'est votre pouls.</li>
-            <li><strong>Goulets d'étranglement</strong> — où le travail s'accumule : longueur de file, ancienneté du backlog, temps par étape. Ce sont vos alertes précoces.</li>
-            <li><strong>Qualité &amp; SLAs</strong> — si vous tenez les promesses qui comptent : taux de ponctualité, taux d'erreur, temps de réponse par rapport à la cible.</li>
-            <li><strong>Trésorerie &amp; engagements</strong> — l'état financier des opérations : créances en cours, dépenses par rapport au budget, obligations à venir.</li>
-          </ul>
-          <p>Deux ou trois indicateurs par catégorie suffisent généralement. Un tableau de bord ciblé de dix chiffres en direct l'emporte à chaque fois sur un mur de cinquante.</p>
+        <h2>Ce qu'il faut laisser de côté</h2>
+        <p>Les indicateurs de vanité qui ne font que monter (totaux cumulés), les chiffres dont personne n'est responsable, et tout ce sur quoi vous ne pouvez pas agir cette semaine. Si un indicateur est intéressant mais pas actionnable, déplacez-le vers un rapport mensuel, à sa place.</p>
 
-          <h2>Ce qu'il faut laisser de côté</h2>
-          <p>Les indicateurs de vanité qui ne font que monter (totaux cumulés), les chiffres dont personne n'est responsable, et tout ce sur quoi vous ne pouvez pas agir cette semaine. Si un indicateur est intéressant mais pas actionnable, déplacez-le vers un rapport mensuel, à sa place.</p>
+        <h2>Concevez pour le coup d'œil, pas pour l'étude</h2>
+        <ol>
+          <li><strong>Commencez par les exceptions.</strong> Placez ce qui est hors cible en haut. Un lecteur devrait voir ce qui demande de l'attention en deux secondes.</li>
+          <li><strong>Codez l'état dans la forme.</strong> Utilisez une couleur, une pastille ou une bande pour que « demande attention » se lise d'un coup d'œil — pas seulement un chiffre à interpréter.</li>
+          <li><strong>Montrez la tendance, pas seulement la valeur.</strong> Un chiffre isolé est un instantané ; une petite courbe de tendance vous dit si cela s'améliore ou empire.</li>
+          <li><strong>Faites-le en direct.</strong> Un tableau de bord auquel les gens font confiance est un tableau qu'ils savent à jour. Des données périmées apprennent à tous à l'ignorer.</li>
+        </ol>
 
-          <h2>Concevez pour le coup d'œil, pas pour l'étude</h2>
-          <ol>
-            <li><strong>Commencez par les exceptions.</strong> Placez ce qui est hors cible en haut. Un lecteur devrait voir ce qui demande de l'attention en deux secondes.</li>
-            <li><strong>Codez l'état dans la forme.</strong> Utilisez une couleur, une pastille ou une bande pour que « demande attention » se lise d'un coup d'œil — pas seulement un chiffre à interpréter.</li>
-            <li><strong>Montrez la tendance, pas seulement la valeur.</strong> Un chiffre isolé est un instantané ; une petite courbe de tendance vous dit si cela s'améliore ou empire.</li>
-            <li><strong>Faites-le en direct.</strong> Un tableau de bord auquel les gens font confiance est un tableau qu'ils savent à jour. Des données périmées apprennent à tous à l'ignorer.</li>
-          </ol>
+        <p>Réussissez cela et le tableau de bord cesse d'être une décoration murale pour devenir la première chose que votre équipe consulte chaque matin — et ce qui lui indique où agir.</p>
+        <p>Les indicateurs disent à votre équipe ce qui se passe ; une bonne <a href="/fr/blog/sop-guide-small-business/">procédure opératoire normalisée</a> lui dit quoi faire. Les deux fonctionnent mieux conçus ensemble.</p>
 
-          <p>Réussissez cela et le tableau de bord cesse d'être une décoration murale pour devenir la première chose que votre équipe consulte chaque matin — et ce qui lui indique où agir.</p>
-          <p>Les indicateurs disent à votre équipe ce qui se passe ; une bonne <a href="/fr/blog/sop-guide-small-business/">procédure opératoire normalisée</a> lui dit quoi faire. Les deux fonctionnent mieux conçus ensemble.</p>
+        <p style="margin-top:32px"><a href="/fr/blog/"><span aria-hidden="true">←</span> Retour au blog</a></p>
+      </div>
+    </section>
 
-          <div class="article-cta" style="--cta-acc:var(--teal)">
-            <span class="k">FulcrumGrid Command Center</span>
-            <h3>Vos opérations, sur un seul écran en direct</h3>
-            <p>Command Center réunit vos indicateurs clés, alertes et flux de travail dans une vue unique en temps réel — avec des seuils qui vous préviennent dès qu'un point demande attention.</p>
-            <a class="btn btn-primary" href="/fr/products/command-center/">Découvrir Command Center</a>
-          </div>
-        </div>
-
-        <div class="article-foot">
-          <a class="back-link" href="/fr/blog/"><span aria-hidden="true">←</span> Retour au blog</a>
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Vos opérations, sur un seul écran en direct</h2>
+        <p class="section-lead" style="margin:0 auto 26px">Command Center réunit vos indicateurs clés, alertes et flux de travail dans une vue unique en temps réel — avec des seuils qui vous préviennent dès qu'un point demande attention.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/fr/products/command-center/">Découvrir Command Center</a>
+          <a class="btn btn-secondary" href="/fr/blog/">Retour au blog</a>
         </div>
       </div>
-    </article>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a class="brand" href="/fr/" aria-label="Accueil FulcrumGrid">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bgf)" stroke-width="1.5"/>
-              <path d="M9 23V9h9M9 16h7" stroke="url(#bgf)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/>
-              <defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
-            </svg>
-          </span>
-          <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
-        </a>
-        <p class="footer-tag">L'épine dorsale opérationnelle des équipes modernes.</p>
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>L'épine dorsale opérationnelle des équipes modernes.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produits</h5>
+          <a href="/fr/products/">Tous les produits</a>
+          <a href="/fr/products/hr-suite/">HR Suite</a>
+          <a href="/fr/products/command-center/">Command Center</a>
+          <a href="/fr/products/collection/">Collection</a>
+          <a href="/fr/custom-apps/">Applications sur mesure</a>
+        </div>
+        <div class="foot-col">
+          <h5>Plateforme</h5>
+          <a href="/fr/features/">Fonctionnalités</a>
+          <a href="/fr/how-it-works/">Comment ça marche</a>
+          <a href="/fr/pricing/">Tarifs</a>
+          <a href="/fr/regions/">Régions</a>
+          <a href="/fr/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Entreprise</h5>
+          <a href="/fr/about/">À propos</a>
+          <a href="/fr/faq/">FAQ</a>
+          <a href="/fr/contact/">Contact</a>
+          <a href="/fr/privacy/">Confidentialité</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
       </div>
-      <div class="footer-cols">
-        <div class="footer-col"><h3>Produits</h3><a href="/fr/products/">Tous les produits</a><a href="/fr/products/command-center/">Command Center</a><a href="/fr/products/collection/">Collection</a><a href="/fr/products/hr-suite/">HR Suite</a><a href="/fr/custom-apps/">Applications sur mesure</a><a href="/fr/products/coming-soon/">Bientôt disponible</a></div>
-        <div class="footer-col"><h3>Plateforme</h3><a href="/fr/features/">Fonctionnalités</a><a href="/fr/how-it-works/">Comment ça marche</a><a href="/fr/pricing/">Tarifs</a><a href="/fr/regions/">Régions</a><a href="/fr/blog/">Blog</a></div>
-        <div class="footer-col"><h3>Entreprise</h3><a href="/fr/about/">À propos</a><a href="/fr/faq/">FAQ</a><a href="/fr/contact/">Contact</a><a href="mailto:contact@avenlorconsulting.com">Écrivez-nous</a><a href="/fr/privacy/">Confidentialité</a><a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a></div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tous droits réservés.</span>
+        <span class="mono">fulcrumgrid.com</span>
       </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>&copy; <span id="year">2026</span> FulcrumGrid. Tous droits réservés.</p>
-      <p class="footer-domain">fulcrumgrid.com</p>
     </div>
   </footer>
 
-  <script src="/assets/js/main.js" defer></script>
-  <script src="/assets/js/fg.js" defer></script>
   <script src="/assets/js/consent.js" defer></script>
 </body>
 </html>

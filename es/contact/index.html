@@ -18,7 +18,8 @@
 
   <title>Contacto &amp; Solicitar una demo | FulcrumGrid</title>
   <meta name="description" content="Solicite una demo de FulcrumGrid o hable con nuestro equipo. Cuéntenos qué necesita su empresa y le mostraremos las apps adecuadas — o escriba a contact@avenlorconsulting.com." />
-  <meta name="theme-color" content="#0b1020" />
+  <meta name="theme-color" content="#f2f2f3" />
+
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Contacto &amp; Solicitar una demo | FulcrumGrid" />
   <meta property="og:description" content="Solicite una demo de FulcrumGrid o hable con nuestro equipo. Cuéntenos qué necesita su empresa y le mostraremos las apps adecuadas — o escriba a contact@avenlorconsulting.com." />
@@ -34,18 +35,17 @@
   <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:alt" content="FulcrumGrid — aplicaciones de negocio a medida para cada operación" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Contacto &amp; Solicitar una demo | FulcrumGrid" />
   <meta name="twitter:description" content="Solicite una demo de FulcrumGrid o hable con nuestro equipo. Cuéntenos qué necesita su empresa y le mostraremos las apps adecuadas — o escriba a contact@avenlorconsulting.com." />
   <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="https://fulcrumgrid.com/es/contact/" />
   <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/contact/" />
   <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/contact/" />
@@ -55,12 +55,27 @@
   <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/contact/" />
   <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/contact/" />
   <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/contact/" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" /></noscript>
-  <link rel="stylesheet" href="/assets/css/fg.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+
+  <style>
+    .field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; text-align: left; }
+    .field label { font-family: var(--font-body); font-size: 11px; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 58%, transparent); }
+    .input { font-family: var(--font-body); font-size: 15px; color: var(--color-text); background: var(--color-bg);
+      border: 1px solid var(--color-divider); border-radius: 0; padding: 12px 14px; width: 100%; }
+    .input:focus { outline: 2px solid var(--color-accent); outline-offset: 1px; border-color: var(--color-accent); }
+    .input.invalid { border-color: #b3261e; }
+    select.input { appearance: none; -webkit-appearance: none; }
+    .form-note { font-size: 13px; margin: 6px 0 0; min-height: 1.2em;
+      color: color-mix(in srgb, var(--color-text) 62%, transparent); }
+    .form-note.error { color: #b3261e; }
+    .cta-alt { font-size: 14px; margin-top: 18px; color: color-mix(in srgb, var(--color-text) 62%, transparent); }
+  </style>
+
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://fulcrumgrid.com/"},{"@type":"ListItem","position":2,"name":"Contacto","item":"https://fulcrumgrid.com/contact/"}]}
   </script>
@@ -68,14 +83,13 @@
   {"@context":"https://schema.org","@type":"ContactPage","name":"Contacto FulcrumGrid","url":"https://fulcrumgrid.com/contact/","about":{"@id":"https://fulcrumgrid.com/#organization"}}
   </script>
 </head>
-<body class="fg product-page">
-  <a class="skip-link" href="#main">Ir al contenido</a>
-
-    <header class="site-header" id="top">
-    <div class="header-inner">
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-head">
+    <div class="wrap row">
       <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
-        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/><path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/><defs><linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#2156df"/><stop offset="1" stop-color="#1d47ba"/></linearGradient></defs></svg></span>
-        <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
       </a>
       <nav class="site-nav" aria-label="Primary">
         <a href="/es/products/">Productos</a>
@@ -83,136 +97,228 @@
         <a href="/es/pricing/">Precios</a>
         <a href="/es/regions/">Regiones</a>
         <a href="/es/blog/">Blog</a>
-        <a href="/es/about/">Acerca de</a>
-        <a href="/es/contact/" class="active" aria-current="page">Contacto</a>
+        <a href="/es/contact/" aria-current="page">Contacto</a>
       </nav>
-      <div class="header-cta">
-                        <details class="lang-menu">
-          <summary aria-label="Idioma"><svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg><span>ES</span><svg class="lang-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-          <div class="lang-menu-list">
-            <a href="/contact/" hreflang="en" lang="en">English</a>
-            <a href="/ar/contact/" hreflang="ar" lang="ar">العربية</a>
-            <a href="/fr/contact/" hreflang="fr" lang="fr">Français</a>
-            <a href="/de/contact/" hreflang="de" lang="de">Deutsch</a>
-            <a href="/es/contact/" hreflang="es" lang="es" class="active" aria-current="true">Español</a>
-            <a href="/it/contact/" hreflang="it" lang="it">Italiano</a>
-            <a href="/nl/contact/" hreflang="nl" lang="nl">Nederlands</a>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Idioma">ES ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" class="active" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
           </div>
         </details>
-        <a class="btn btn-primary" href="/es/contact/">Solicitar una demo</a>
+        <a class="btn btn-primary btn-sm" href="/es/contact/">Solicitar una demo</a>
       </div>
-      <button class="nav-toggle" aria-label="Alternar menú" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobile-menu" hidden>
-      <a href="/es/products/">Productos</a>
-      <a href="/es/features/">Plataforma</a>
-      <a href="/es/pricing/">Precios</a>
-      <a href="/es/regions/">Regiones</a>
-      <a href="/es/blog/">Blog</a>
-      <a href="/es/about/">Acerca de</a>
-      <a href="/es/contact/" class="active" aria-current="page">Contacto</a>
-      <a class="btn btn-primary" href="/es/contact/">Solicitar una demo</a>
-                      <details class="lang-menu">
-          <summary aria-label="Idioma"><svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg><span>ES</span><svg class="lang-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-          <div class="lang-menu-list">
-            <a href="/contact/" hreflang="en" lang="en">English</a>
-            <a href="/ar/contact/" hreflang="ar" lang="ar">العربية</a>
-            <a href="/fr/contact/" hreflang="fr" lang="fr">Français</a>
-            <a href="/de/contact/" hreflang="de" lang="de">Deutsch</a>
-            <a href="/es/contact/" hreflang="es" lang="es" class="active" aria-current="true">Español</a>
-            <a href="/it/contact/" hreflang="it" lang="it">Italiano</a>
-            <a href="/nl/contact/" hreflang="nl" lang="nl">Nederlands</a>
-          </div>
-        </details>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
     </div>
   </header>
 
-  <main id="main">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/es/">Inicio</a><span>/</span><span class="current">Contacto</span>
-      </nav>
-    </div>
-
-    <section class="product-hero" style="padding-bottom:16px">
-      <div class="container">
-        <div class="product-hero-inner" style="max-width:720px">
-          <p class="product-eyebrow">Contacto</p>
-          <h1>Solicitar una demo &amp; <span class="p-grad">hablemos</span></h1>
-          <p class="lead">Cuéntenos qué necesita su equipo y le mostraremos FulcrumGrid en acción. ¿Prefiere el correo? Escríbanos directamente y le responderemos enseguida.</p>
-        </div>
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <p class="hero-eyebrow">Contacto</p>
+        <h1 style="max-width:15ch">Solicitar una demo &amp; hablemos</h1>
+        <p class="hero-intro">Cuéntenos qué necesita su equipo y le mostraremos FulcrumGrid en acción. ¿Prefiere el correo? Escríbanos directamente y le responderemos enseguida.</p>
       </div>
     </section>
 
-    <section class="section" style="padding-top:8px" id="contact">
-      <div class="container">
-        <div class="cta-panel">
-          <div class="grid-bg grid-bg-soft" aria-hidden="true"></div>
-          <div class="cta-content">
+    <!-- ===== 01 · Empezar ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">01 · Empezar</p>
             <h2>¿Listo para operar en una sola cuadrícula?</h2>
-            <p>Cuéntenos qué necesita su equipo y le mostraremos FulcrumGrid en acción.</p>
-            <form class="cta-form" id="lead-form" novalidate>
-              <div class="field field-full">
-                <label for="product" class="sr-only">¿Qué app le interesa?</label>
-                <select id="product" name="product">
-                  <option value="">¿Qué app le interesa? (opcional)</option>
-                  <option value="Command Center">Command Center</option>
-                  <option value="Collection">Collection</option>
-                  <option value="HR Suite">HR Suite</option>
-                  <option value="A custom app">Una app a medida</option>
-                  <option value="Not sure — please recommend">No estoy seguro — recomiéndeme una</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="name" class="sr-only">Su nombre</label>
-                <input type="text" id="name" name="name" placeholder="Su nombre" autocomplete="name" required />
-              </div>
-              <div class="field">
-                <label for="email" class="sr-only">Correo de trabajo</label>
-                <input type="email" id="email" name="email" placeholder="Correo de trabajo" autocomplete="email" required />
-              </div>
-              <button type="submit" class="btn btn-primary btn-lg">Solicitar una demo</button>
-              <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
-            </form>
-            <p class="cta-alt">O escríbanos a <a href="mailto:contact@avenlorconsulting.com">contact@avenlorconsulting.com</a></p>
           </div>
+          <p class="section-lead">Cuéntenos qué necesita su equipo y le mostraremos FulcrumGrid en acción.</p>
+        </div>
+        <div class="wrap" style="max-width:640px">
+          <form id="lead-form" novalidate>
+            <div class="field">
+              <label for="product">¿Qué app le interesa?</label>
+              <select id="product" name="product" class="input">
+                <option value="">¿Qué app le interesa? (opcional)</option>
+                <option value="HR Suite">HR Suite</option>
+                <option value="Command Center">Command Center</option>
+                <option value="Collection">Collection</option>
+                <option value="A custom app">Una app a medida</option>
+                <option value="Not sure — please recommend">No estoy seguro — recomiéndeme una</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="name">Su nombre</label>
+              <input type="text" id="name" name="name" class="input" placeholder="Su nombre" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="email">Correo de trabajo</label>
+              <input type="email" id="email" name="email" class="input" placeholder="Correo de trabajo" autocomplete="email" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Solicitar una demo</button>
+            <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+          </form>
+          <p class="cta-alt">O escríbanos a <a href="mailto:contact@avenlorconsulting.com">contact@avenlorconsulting.com</a></p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bgf)" stroke-width="1.5"/>
-              <path d="M9 23V9h9M9 16h7" stroke="url(#bgf)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/>
-              <defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
-            </svg>
-          </span>
-          <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
-        </a>
-        <p class="footer-tag">La columna vertebral operativa de los equipos modernos.</p>
+  <!-- ===== Footer ===== -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La columna vertebral operativa de los equipos modernos.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Productos</h5>
+          <a href="/es/products/">Todos los productos</a>
+          <a href="/es/products/hr-suite/">HR Suite</a>
+          <a href="/es/products/command-center/">Command Center</a>
+          <a href="/es/products/collection/">Collection</a>
+          <a href="/es/custom-apps/">Apps a medida</a>
+        </div>
+        <div class="foot-col">
+          <h5>Plataforma</h5>
+          <a href="/es/features/">Funciones</a>
+          <a href="/es/how-it-works/">Cómo funciona</a>
+          <a href="/es/pricing/">Precios</a>
+          <a href="/es/regions/">Regiones</a>
+          <a href="/es/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Empresa</h5>
+          <a href="/es/about/">Acerca de</a>
+          <a href="/es/faq/">FAQ</a>
+          <a href="/es/contact/">Contacto</a>
+          <a href="/es/privacy/">Privacidad</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
       </div>
-      <div class="footer-cols">
-        <div class="footer-col"><h3>Productos</h3><a href="/es/products/">Todos los productos</a><a href="/es/products/command-center/">Command Center</a><a href="/es/products/collection/">Collection</a><a href="/es/products/hr-suite/">HR Suite</a><a href="/es/custom-apps/">Apps a medida</a><a href="/es/products/coming-soon/">Próximamente</a></div>
-        <div class="footer-col"><h3>Plataforma</h3><a href="/es/features/">Funciones</a><a href="/es/how-it-works/">Cómo funciona</a><a href="/es/pricing/">Precios</a><a href="/es/regions/">Regiones</a><a href="/es/blog/">Blog</a></div>
-        <div class="footer-col"><h3>Empresa</h3><a href="/es/about/">Acerca de</a><a href="/es/faq/">FAQ</a><a href="/es/contact/">Contacto</a><a href="mailto:contact@avenlorconsulting.com">Escríbenos</a><a href="/es/privacy/">Privacidad</a><a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a></div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Todos los derechos reservados.</span>
+        <span class="mono">fulcrumgrid.com</span>
       </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>&copy; <span id="year">2026</span> FulcrumGrid. Todos los derechos reservados.</p>
-      <p class="footer-domain">fulcrumgrid.com</p>
     </div>
   </footer>
 
-  <script src="/assets/js/main.js" defer></script>
-  <script src="/assets/js/fg.js" defer></script>
+  <!-- Lead form handler — submits to Web3Forms (endpoint & fields unchanged from the original) -->
+  <script>
+  (function () {
+    var form = document.getElementById('lead-form');
+    if (!form) return;
+    var note = document.getElementById('form-note');
+    var nameInput = document.getElementById('name');
+    var emailInput = document.getElementById('email');
+    var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    var isAr = (document.documentElement.lang || '').toLowerCase().indexOf('ar') === 0;
+    var t = isAr ? {
+      invalid: 'يرجى إدخال اسمك وبريد مهني صحيح.',
+      sending: 'جارٍ الإرسال…',
+      thanks: function (n) { return 'شكرًا ' + n + '! تم استلام طلبك وسنتواصل معك قريبًا.'; },
+      fallback: 'تعذّر الإرسال تلقائيًا — يتم فتح تطبيق البريد كخيار بديل…',
+      subject: 'طلب عرض توضيحي — FulcrumGrid',
+      productLabel: 'التطبيق المطلوب',
+      body: function (name, email, product) {
+        return 'الاسم: ' + name + '\nالبريد: ' + email +
+               (product ? '\nالتطبيق المطلوب: ' + product : '') +
+               '\n\nأودّ مشاهدة عرض توضيحي لـ FulcrumGrid.';
+      }
+    } : {
+      invalid: 'Please enter your name and a valid work email.',
+      sending: 'Sending…',
+      thanks: function (n) { return 'Thanks, ' + n + '! We\'ve got your request and will be in touch shortly.'; },
+      fallback: 'Couldn\'t send automatically — opening your email app as a fallback…',
+      subject: 'Demo request — FulcrumGrid',
+      productLabel: 'Interested in',
+      body: function (name, email, product) {
+        return 'Name: ' + name + '\nEmail: ' + email +
+               (product ? '\nInterested in: ' + product : '') +
+               '\n\nI\'d like to see a demo of FulcrumGrid.';
+      }
+    };
+
+    var setNote = function (msg, isError) {
+      if (!note) return;
+      note.textContent = msg;
+      note.classList.toggle('error', !!isError);
+    };
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = nameInput.value.trim();
+      var email = emailInput.value.trim();
+      var productInput = document.getElementById('product');
+      var product = productInput ? productInput.value.trim() : '';
+      var ok = true;
+
+      nameInput.classList.remove('invalid');
+      emailInput.classList.remove('invalid');
+
+      if (!name) { nameInput.classList.add('invalid'); ok = false; }
+      if (!emailRe.test(email)) { emailInput.classList.add('invalid'); ok = false; }
+
+      if (!ok) {
+        setNote(t.invalid, true);
+        return;
+      }
+
+      var subjectLine = t.subject + ' — ' + name + (product ? ' (' + product + ')' : '');
+
+      var btn = form.querySelector('button[type="submit"]');
+      if (btn) { btn.disabled = true; }
+      setNote(t.sending, false);
+
+      var mailtoFallback = function () {
+        setNote(t.fallback, false);
+        var subject = encodeURIComponent(subjectLine);
+        var body = encodeURIComponent(t.body(name, email, product));
+        window.location.href = 'mailto:contact@avenlorconsulting.com?subject=' + subject + '&body=' + body;
+      };
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          access_key: '51242534-fc79-4ef7-a99b-f767f1765d90',
+          subject: subjectLine,
+          product: product || 'Not specified',
+          from_name: 'FulcrumGrid website',
+          name: name,
+          email: email,
+          replyto: email,
+          botcheck: false,
+          message: t.body(name, email, product)
+        })
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          if (data && data.success) {
+            setNote(t.thanks(name.split(' ')[0]), false);
+            try {
+              if (window.gtag) {
+                gtag('event', 'generate_lead', { product: product || 'unspecified', method: 'web3forms' });
+              }
+              if (typeof window.fgAdsConversion === 'function') { window.fgAdsConversion(product); }
+            } catch (e) {}
+            form.reset();
+          } else {
+            mailtoFallback();
+          }
+        })
+        .catch(mailtoFallback)
+        .then(function () { if (btn) { btn.disabled = false; } });
+    });
+  })();
+  </script>
+
   <script src="/assets/js/consent.js" defer></script>
 </body>
 </html>

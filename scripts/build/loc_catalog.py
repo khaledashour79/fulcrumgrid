@@ -36,6 +36,11 @@ COMMON = {
     'Privacy':       _t('Confidentialité', 'Datenschutz', 'Privacidad', 'Privacy', 'Privacy'),
     # Buttons / a11y
     'Request a demo': _t('Demander une démo', 'Demo anfragen', 'Solicitar una demo', 'Richiedi una demo', 'Vraag een demo aan'),
+    'Start free trial': _t('Démarrer l’essai gratuit', 'Kostenlos testen', 'Prueba gratuita', 'Prova gratuita', 'Gratis proberen'),
+    'Get started': _t('Commencer', 'Loslegen', 'Empezar', 'Inizia', 'Aan de slag'),
+    'Get in touch': _t('Nous contacter', 'Kontakt aufnehmen', 'Ponte en contacto', 'Contattaci', 'Neem contact op'),
+    'Read more': _t('Lire la suite', 'Mehr lesen', 'Leer más', 'Leggi di più', 'Lees meer'),
+    'Back to the blog': _t('Retour au blog', 'Zurück zum Blog', 'Volver al blog', 'Torna al blog', 'Terug naar de blog'),
     'Skip to content': _t('Aller au contenu', 'Zum Inhalt springen', 'Ir al contenido', 'Vai al contenuto', 'Naar de inhoud'),
     'Toggle menu':   _t('Basculer le menu', 'Menü umschalten', 'Alternar menú', 'Attiva/disattiva menu', 'Menu wisselen'),
     'FulcrumGrid home': _t('Accueil FulcrumGrid', 'FulcrumGrid Startseite', 'Inicio de FulcrumGrid', 'Home di FulcrumGrid', 'FulcrumGrid home'),
@@ -292,10 +297,7 @@ PAGES.update({
     },
 })
 
+# The inline '/' entry above is the previous-design home catalog; it is
+# overwritten by loc_pages/home.py (loaded below), which carries the new-design
+# homepage translations.
 _load_page_modules()
-
-# The homepage is being migrated to the new design system. Its old translation
-# catalog (above) no longer matches index.html, so pause home localization until
-# the redesign is rolled out and the home is re-localized. The existing
-# /<lang>/index.html files stay as committed until then.
-PAGES.pop('/', None)

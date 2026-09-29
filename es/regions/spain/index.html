@@ -18,8 +18,8 @@
 
   <title>HR Suite — RR. HH. &amp; nóminas para España | FulcrumGrid</title>
   <meta name="description" content="HR Suite para España — horas extra del Estatuto de los Trabajadores, archivos de pago SEPA, derechos GDPR, nóminas locales configurables en EUR y RR. HH. completos." />
-  <meta name="theme-color" content="#f0f2ed" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#f2f2f3" />
+
   <meta property="og:type" content="website" />
   <meta property="og:title" content="HR Suite — RR. HH. &amp; nóminas para España | FulcrumGrid" />
   <meta property="og:description" content="HR Suite para España — horas extra del Estatuto de los Trabajadores, archivos de pago SEPA, derechos GDPR, nóminas locales configurables en EUR y RR. HH. completos." />
@@ -36,12 +36,16 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="HR Suite — RR. HH. &amp; nóminas para España | FulcrumGrid" />
+  <meta name="twitter:description" content="HR Suite para España — horas extra del Estatuto de los Trabajadores, archivos de pago SEPA, derechos GDPR, nóminas locales configurables en EUR y RR. HH. completos." />
   <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="https://fulcrumgrid.com/es/regions/spain/" />
   <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/regions/spain/" />
   <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/regions/spain/" />
@@ -51,22 +55,19 @@
   <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/regions/spain/" />
   <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/regions/spain/" />
   <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/regions/spain/" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" /></noscript>
-  <link rel="stylesheet" href="/assets/css/fg.css" />
-  <style>:root { --p-accent: var(--teal); }</style>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
 </head>
-<body class="fg product-page">
-  <a class="skip-link" href="#main">Ir al contenido</a>
-
-  <header class="site-header" id="top">
-    <div class="header-inner">
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-head">
+    <div class="wrap row">
       <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
-        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/><path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/><defs><linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#2156df"/><stop offset="1" stop-color="#1d47ba"/></linearGradient></defs></svg></span>
-        <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
       </a>
       <nav class="site-nav" aria-label="Primary">
         <a href="/es/products/">Productos</a>
@@ -74,132 +75,113 @@
         <a href="/es/pricing/">Precios</a>
         <a href="/es/regions/" class="active" aria-current="page">Regiones</a>
         <a href="/es/blog/">Blog</a>
-        <a href="/es/about/">Acerca de</a>
         <a href="/es/contact/">Contacto</a>
       </nav>
-      <div class="header-cta">
-                        <details class="lang-menu">
-          <summary aria-label="Idioma"><svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg><span>ES</span><svg class="lang-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-          <div class="lang-menu-list">
-            <a href="/regions/spain/" hreflang="en" lang="en">English</a>
-            <a href="/ar/regions/spain/" hreflang="ar" lang="ar">العربية</a>
-            <a href="/fr/regions/spain/" hreflang="fr" lang="fr">Français</a>
-            <a href="/de/regions/spain/" hreflang="de" lang="de">Deutsch</a>
-            <a href="/es/regions/spain/" hreflang="es" lang="es" class="active" aria-current="true">Español</a>
-            <a href="/it/regions/spain/" hreflang="it" lang="it">Italiano</a>
-            <a href="/nl/regions/spain/" hreflang="nl" lang="nl">Nederlands</a>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Idioma">ES ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" class="active" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
           </div>
         </details>
-        <a class="btn btn-primary" href="/es/contact/">Solicitar una demo</a>
+        <a class="btn btn-primary btn-sm" href="/es/contact/">Solicitar una demo</a>
       </div>
-      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobile-menu" hidden>
-        <a href="/es/products/">Productos</a>
-        <a href="/es/features/">Plataforma</a>
-        <a href="/es/pricing/">Precios</a>
-        <a href="/es/regions/" class="active" aria-current="page">Regiones</a>
-        <a href="/es/blog/">Blog</a>
-        <a href="/es/about/">Acerca de</a>
-        <a href="/es/contact/">Contacto</a>
-      <a class="btn btn-primary" href="/es/contact/">Solicitar una demo</a>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
     </div>
   </header>
 
-  <main id="main">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/es/">Inicio</a><span>/</span><a href="/es/regions/">Regiones</a><span>/</span><span class="current">España</span>
-      </nav>
-    </div>
-
-    <section class="product-hero">
-      <div class="container">
-        <div class="product-hero-inner">
-          <span class="product-hero-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span>
-          <p class="product-eyebrow"><span class="tag tag-live" style="padding:3px 10px">España · ES</span></p>
-          <h1>RR. HH. &amp; nóminas, diseñado para <span class="p-grad">España</span></h1>
-          <p class="lead">HR Suite gestiona su plantilla en España — horas extra del Estatuto de los Trabajadores, archivos de pago SEPA, derechos del interesado del GDPR, nóminas locales configurables en EUR y expedientes de empleados completos.</p>
-          <div class="product-hero-actions">
-            <a class="btn btn-primary btn-lg" href="/es/contact/">Solicitar una demo</a>
-            <a class="btn btn-outline btn-lg" href="/es/products/hr-suite/">Explorar HR Suite</a>
-            <a class="btn btn-outline btn-lg" href="/es/pricing/hr-suite/">Ver precios de HR Suite</a>
-          </div>
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="hero-eyebrow">España · ES</p>
+        <h1>RR. HH. &amp; nóminas, diseñado para <em style="font-style:normal;color:var(--color-accent)">España</em></h1>
+        <p class="hero-intro">HR Suite gestiona su plantilla en España — horas extra del Estatuto de los Trabajadores, archivos de pago SEPA, derechos del interesado del GDPR, nóminas locales configurables en EUR y expedientes de empleados completos.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/es/contact/">Solicitar una demo</a>
+          <a class="btn btn-secondary" href="/es/products/hr-suite/">Explorar HR Suite</a>
+          <a class="btn btn-secondary" href="/es/pricing/hr-suite/">Ver precios de HR Suite</a>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt">
-      <div class="container">
-        <div class="sub-head">
-          <p class="eyebrow">Integrado</p>
-          <h2>Cumplimiento para España, listo para usar</h2>
-          <p>Los módulos que hacen que HR Suite funcione como lo hace España — cada uno forma parte de la misma plataforma, sin herramientas separadas.</p>
+    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">01 · Integrado</p>
+            <h2>Cumplimiento para España, listo para usar</h2>
+          </div>
+          <p class="section-lead">Los módulos que hacen que HR Suite funcione como lo hace España — cada uno forma parte de la misma plataforma, sin herramientas separadas.</p>
         </div>
-        <div class="feature-grid">
-          <div class="feature">
-            <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
-            <h3>Horas extra — Estatuto de los Trabajadores</h3>
-            <p>Horas extra con el recargo de su convenio colectivo (habitualmente en torno al +75%), con un mínimo del valor de la hora ordinaria y un tope de 80 horas al año.</p>
-          </div>
-          <div class="feature">
-            <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
-            <h3>Pagos SEPA</h3>
-            <p>Exporte un archivo de transferencia SEPA a partir de un proceso de nómina finalizado, con los IBAN validados al introducirlos.</p>
-          </div>
-          <div class="feature">
-            <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
-            <h3>Derechos del interesado (GDPR)</h3>
-            <p>Exportación por derecho de acceso y borrado selectivo con conservación, con contacto del DPO y políticas de conservación integrados.</p>
-          </div>
-          <div class="feature">
-            <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
-            <h3>Nóminas locales &amp; RR. HH. básicos</h3>
-            <p>Modele el impuesto sobre la renta y las cotizaciones sociales españoles como deducciones configurables y clasificadas — con expedientes de empleados, incorporación, ausencias y autoservicio, en EUR.</p>
-          </div>
+        <div class="grid-2">
+          <div class="cell"><h4>Horas extra — Estatuto de los Trabajadores</h4><p>Horas extra con el recargo de su convenio colectivo (habitualmente en torno al +75%), con un mínimo del valor de la hora ordinaria y un tope de 80 horas al año.</p></div>
+          <div class="cell"><h4>Pagos SEPA</h4><p>Exporte un archivo de transferencia SEPA a partir de un proceso de nómina finalizado, con los IBAN validados al introducirlos.</p></div>
+          <div class="cell"><h4>Derechos del interesado (GDPR)</h4><p>Exportación por derecho de acceso y borrado selectivo con conservación, con contacto del DPO y políticas de conservación integrados.</p></div>
+          <div class="cell"><h4>Nóminas locales &amp; RR. HH. básicos</h4><p>Modele el impuesto sobre la renta y las cotizaciones sociales españoles como deducciones configurables y clasificadas — con expedientes de empleados, incorporación, ausencias y autoservicio, en EUR.</p></div>
         </div>
-        <p class="price-note" style="margin-top:28px">Cada módulo aquí forma parte de HR Suite — nóminas avanzadas, cierre de año y cumplimiento en el plan Enterprise, o añadido a cualquier plan como complemento por usuario. <a href="/es/pricing/hr-suite/">Ver precios de HR Suite →</a></p>
+        <p class="text-muted" style="margin-top:26px;max-width:74ch">Cada módulo aquí forma parte de HR Suite — nóminas avanzadas, cierre de año y cumplimiento en el plan Enterprise, o añadido a cualquier plan como complemento por usuario. <a href="/es/pricing/hr-suite/">Ver precios de HR Suite →</a></p>
       </div>
     </section>
 
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="cta-panel">
-          <div class="grid-bg grid-bg-soft" aria-hidden="true"></div>
-          <div class="cta-content">
-            <h2>Gestione RR. HH. &amp; nóminas en España como es debido</h2>
-            <p>Vea cómo HR Suite gestiona las horas extra españolas, SEPA y GDPR para su equipo.</p>
-            <div class="hero-actions" style="justify-content:center">
-              <a class="btn btn-primary btn-lg" href="/es/contact/">Solicitar una demo</a>
-              <a class="btn btn-outline btn-lg" href="mailto:contact@avenlorconsulting.com">Escríbenos</a>
-            </div>
-          </div>
+    <section class="section cta" id="contact">
+      <div class="wrap">
+        <p class="mono mono-accent">02 · Empezar</p>
+        <h2>Gestione RR. HH. &amp; nóminas en España como es debido</h2>
+        <p class="section-lead" style="margin:0 auto 26px">Vea cómo HR Suite gestiona las horas extra españolas, SEPA y GDPR para su equipo.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/es/contact/">Solicitar una demo</a>
+          <a class="btn btn-secondary" href="mailto:contact@avenlorconsulting.com">Escríbenos</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
-          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bgf)" stroke-width="1.5"/><path d="M9 23V9h9M9 16h7" stroke="url(#bgf)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/><defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs></svg></span>
-          <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
-        </a>
-        <p class="footer-tag">La columna vertebral operativa de los equipos modernos.</p>
+  <!-- ===== Footer ===== -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La columna vertebral operativa de los equipos modernos.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Productos</h5>
+          <a href="/es/products/">Todos los productos</a>
+          <a href="/es/products/hr-suite/">HR Suite</a>
+          <a href="/es/products/command-center/">Command Center</a>
+          <a href="/es/products/collection/">Collection</a>
+          <a href="/es/custom-apps/">Apps a medida</a>
+        </div>
+        <div class="foot-col">
+          <h5>Plataforma</h5>
+          <a href="/es/features/">Funciones</a>
+          <a href="/es/how-it-works/">Cómo funciona</a>
+          <a href="/es/pricing/">Precios</a>
+          <a href="/es/regions/">Regiones</a>
+          <a href="/es/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Empresa</h5>
+          <a href="/es/about/">Acerca de</a>
+          <a href="/es/faq/">FAQ</a>
+          <a href="/es/contact/">Contacto</a>
+          <a href="/es/privacy/">Privacidad</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
       </div>
-      <div class="footer-cols"><div class="footer-col"><h3>Productos</h3><a href="/es/products/">Todos los productos</a><a href="/es/products/command-center/">Command Center</a><a href="/es/products/collection/">Collection</a><a href="/es/products/hr-suite/">HR Suite</a><a href="/es/custom-apps/">Apps a medida</a><a href="/es/products/coming-soon/">Próximamente</a></div><div class="footer-col"><h3>Plataforma</h3><a href="/es/features/">Funciones</a><a href="/es/how-it-works/">Cómo funciona</a><a href="/es/pricing/">Precios</a><a href="/es/regions/">Regiones</a><a href="/es/blog/">Blog</a></div><div class="footer-col"><h3>Empresa</h3><a href="/es/about/">Acerca de</a><a href="/es/faq/">FAQ</a><a href="/es/contact/">Contacto</a><a href="mailto:contact@avenlorconsulting.com">Escríbenos</a><a href="/es/privacy/">Privacidad</a><a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a></div></div>
-    </div>
-    <div class="container footer-bottom">
-      <p>&copy; <span id="year">2026</span> FulcrumGrid. Todos los derechos reservados.</p>
-      <p class="footer-domain" dir="ltr">fulcrumgrid.com</p>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Todos los derechos reservados.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
     </div>
   </footer>
 
-  <script src="/assets/js/main.js" defer></script>
-  <script src="/assets/js/fg.js" defer></script>
   <script src="/assets/js/consent.js" defer></script>
 </body>
 </html>

@@ -18,7 +18,8 @@
 
   <title>FulcrumGrid vs. spreadsheets: wanneer stap je over van Excel &amp; Google Sheets | FulcrumGrid</title>
   <meta name="description" content="Hoe FulcrumGrid zich verhoudt tot het runnen van uw bedrijf op spreadsheets — waar spreadsheets nog werken, waar ze vastlopen (versiebeheer, toegang, audittrail, automatisering) en wat u wint door over te stappen op doelgerichte apps." />
-  <meta name="theme-color" content="#0b1020" />
+  <meta name="theme-color" content="#f2f2f3" />
+
   <meta property="og:type" content="website" />
   <meta property="og:title" content="FulcrumGrid vs. spreadsheets: wanneer stap je over van Excel &amp; Google Sheets | FulcrumGrid" />
   <meta property="og:description" content="Hoe FulcrumGrid zich verhoudt tot het runnen van uw bedrijf op spreadsheets — waar spreadsheets nog werken, waar ze vastlopen (versiebeheer, toegang, audittrail, automatisering) en wat u wint door over te stappen op doelgerichte apps." />
@@ -34,18 +35,17 @@
   <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:alt" content="FulcrumGrid — doelgerichte bedrijfsapps voor elke operatie" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="FulcrumGrid vs. spreadsheets: wanneer stap je over van Excel &amp; Google Sheets | FulcrumGrid" />
   <meta name="twitter:description" content="Hoe FulcrumGrid zich verhoudt tot het runnen van uw bedrijf op spreadsheets — waar spreadsheets nog werken, waar ze vastlopen (versiebeheer, toegang, audittrail, automatisering) en wat u wint door over te stappen op doelgerichte apps." />
   <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="https://fulcrumgrid.com/nl/compare/spreadsheets/" />
   <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/compare/spreadsheets/" />
   <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/compare/spreadsheets/" />
@@ -55,12 +55,20 @@
   <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/compare/spreadsheets/" />
   <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/compare/spreadsheets/" />
   <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/compare/spreadsheets/" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" /></noscript>
-  <link rel="stylesheet" href="/assets/css/fg.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <style>
+    .table { width: 100%; border-collapse: collapse; border-top: 1px solid var(--color-divider); border-left: 1px solid var(--color-divider); }
+    .table th, .table td { border-right: 1px solid var(--color-divider); border-bottom: 1px solid var(--color-divider); padding: 13px 16px; text-align: left; vertical-align: top; font-size: 14px; }
+    .table thead th { font-family: var(--font-heading); font-weight: 600; text-transform: uppercase; letter-spacing: 0.02em; font-size: 15px; background: var(--color-surface); }
+    .table tbody th { font-weight: 600; color: var(--color-text); }
+    .table tbody td { color: color-mix(in srgb, var(--color-text) 72%, transparent); }
+    .table thead th:last-child, .table tbody td:last-child { color: var(--color-accent-800); background: var(--color-accent-100); }
+  </style>
+
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://fulcrumgrid.com/"},{"@type":"ListItem","position":2,"name":"FulcrumGrid vs. spreadsheets","item":"https://fulcrumgrid.com/compare/spreadsheets/"}]}
   </script>
@@ -68,14 +76,13 @@
   {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is FulcrumGrid een vervanging voor spreadsheets?", "acceptedAnswer": {"@type": "Answer", "text": "Voor het draaien van een bedrijfsproces — facturatie, HR-gegevens, operationele tracking — ja. FulcrumGrid vervangt de kwetsbare spreadsheets die teams ontgroeien door gestructureerde, multi-user apps. Voor een snelle eenmalige analyse is een spreadsheet nog steeds een prima hulpmiddel."}}, {"@type": "Question", "name": "Kan ik mijn bestaande spreadsheets importeren?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can bring your records in when you set up an app. Tell us what you have on the contact page and we'll help you move."}}, {"@type": "Question", "name": "Wanneer is een spreadsheet nog de betere keuze?", "acceptedAnswer": {"@type": "Answer", "text": "Voor een snel model, een wegwerpberekening of een eenmalige solo-analyse is een spreadsheet snel en flexibel. Zodra meerdere mensen hem delen, hij een administratiesysteem wordt of fouten geld gaan kosten, betaalt een doelgerichte app zich terug."}}]}
   </script>
 </head>
-<body class="fg product-page">
-  <a class="skip-link" href="#main">Naar de inhoud</a>
-
-    <header class="site-header" id="top">
-    <div class="header-inner">
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-head">
+    <div class="wrap row">
       <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
-        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/><path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/><defs><linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#2156df"/><stop offset="1" stop-color="#1d47ba"/></linearGradient></defs></svg></span>
-        <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
       </a>
       <nav class="site-nav" aria-label="Primary">
         <a href="/nl/products/">Producten</a>
@@ -83,157 +90,157 @@
         <a href="/nl/pricing/">Prijzen</a>
         <a href="/nl/regions/">Regio's</a>
         <a href="/nl/blog/">Blog</a>
-        <a href="/nl/about/">Over ons</a>
         <a href="/nl/contact/">Contact</a>
       </nav>
-      <div class="header-cta">
-                        <details class="lang-menu">
-          <summary aria-label="Taal"><svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg><span>NL</span><svg class="lang-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-          <div class="lang-menu-list">
-            <a href="/compare/spreadsheets/" hreflang="en" lang="en">English</a>
-            <a href="/ar/compare/spreadsheets/" hreflang="ar" lang="ar">العربية</a>
-            <a href="/fr/compare/spreadsheets/" hreflang="fr" lang="fr">Français</a>
-            <a href="/de/compare/spreadsheets/" hreflang="de" lang="de">Deutsch</a>
-            <a href="/es/compare/spreadsheets/" hreflang="es" lang="es">Español</a>
-            <a href="/it/compare/spreadsheets/" hreflang="it" lang="it">Italiano</a>
-            <a href="/nl/compare/spreadsheets/" hreflang="nl" lang="nl" class="active" aria-current="true">Nederlands</a>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
           </div>
         </details>
-        <a class="btn btn-primary" href="/nl/contact/">Vraag een demo aan</a>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
       </div>
-      <button class="nav-toggle" aria-label="Menu wisselen" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobile-menu" hidden>
-      <a href="/nl/products/">Producten</a>
-      <a href="/nl/features/">Platform</a>
-      <a href="/nl/pricing/">Prijzen</a>
-      <a href="/nl/regions/">Regio's</a>
-      <a href="/nl/blog/">Blog</a>
-      <a href="/nl/about/">Over ons</a>
-      <a href="/nl/contact/">Contact</a>
-      <a class="btn btn-primary" href="/nl/contact/">Vraag een demo aan</a>
-                      <details class="lang-menu">
-          <summary aria-label="Taal"><svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg><span>NL</span><svg class="lang-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-          <div class="lang-menu-list">
-            <a href="/compare/spreadsheets/" hreflang="en" lang="en">English</a>
-            <a href="/ar/compare/spreadsheets/" hreflang="ar" lang="ar">العربية</a>
-            <a href="/fr/compare/spreadsheets/" hreflang="fr" lang="fr">Français</a>
-            <a href="/de/compare/spreadsheets/" hreflang="de" lang="de">Deutsch</a>
-            <a href="/es/compare/spreadsheets/" hreflang="es" lang="es">Español</a>
-            <a href="/it/compare/spreadsheets/" hreflang="it" lang="it">Italiano</a>
-            <a href="/nl/compare/spreadsheets/" hreflang="nl" lang="nl" class="active" aria-current="true">Nederlands</a>
-          </div>
-        </details>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
     </div>
   </header>
 
-  <main id="main">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/nl/">Home</a><span>/</span><a href="/nl/products/">Producten</a><span>/</span><span class="current">vs. spreadsheets</span>
-      </nav>
-    </div>
-
-    <section class="product-hero" style="padding-bottom:16px">
-      <div class="container">
-        <div class="product-hero-inner" style="max-width:760px">
-          <p class="product-eyebrow">Vergelijking</p>
-          <h1>FulcrumGrid vs. <span class="p-grad">spreadsheets</span></h1>
-          <p class="lead">Bijna elk bedrijf begint in een spreadsheet. Hier is een eerlijke blik op waar spreadsheets nog werken, waar ze vastlopen en wat een doelgerichte app u in plaats daarvan biedt.</p>
-        </div>
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <p class="hero-eyebrow">Vergelijking</p>
+        <h1 style="max-width:16ch">FulcrumGrid vs. <em>rekenbladen</em></h1>
+        <p class="hero-intro">Bijna elk bedrijf begint in een spreadsheet. Hier is een eerlijke blik op waar spreadsheets nog werken, waar ze vastlopen en wat een doelgerichte app u in plaats daarvan biedt.</p>
       </div>
     </section>
 
-    <section class="section" style="padding-top:16px">
-      <div class="container">
-        <div class="section-head" style="margin-bottom:22px"><h2>Naast elkaar</h2></div>
-      <div class="compare-wrap">
-        <table class="compare-table">
-          <thead><tr><th class=""></th><th class="">Spreadsheets</th><th class="col-fg">FulcrumGrid</th></tr></thead>
+    <!-- ===== 01 · Naast elkaar ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">01 · Naast elkaar</p>
+            <h2>Naast elkaar.</h2>
+          </div>
+        </div>
+        <table class="table">
+          <thead>
+            <tr><th></th><th>Spreadsheets</th><th>FulcrumGrid</th></tr>
+          </thead>
           <tbody>
-          <tr><th scope="row">Meerdere mensen tegelijk</th><td class="col-alt">Versieconflicten en “final_v3”-chaos</td><td class="col-fg">Realtime, multi-user vanuit het ontwerp</td></tr>
-          <tr><th scope="row">Toegangsbeheer</th><td class="col-alt">Alles-of-niets-bestandsdeling</td><td class="col-fg">Toegang op rol per persoon</td></tr>
-          <tr><th scope="row">Audittrail</th><td class="col-alt">Geen — bewerkingen zijn onzichtbaar</td><td class="col-fg">Volledige geschiedenis van wie wat wijzigde</td></tr>
-          <tr><th scope="row">Automatisering</th><td class="col-alt">Handmatige formules en kopiëren-plakken</td><td class="col-fg">Geautomatiseerde herinneringen en workflows</td></tr>
-          <tr><th scope="row">Rapportage</th><td class="col-alt">Elke keer handmatig opnieuw opgebouwd</td><td class="col-fg">Realtime dashboards en rapporten</td></tr>
-          <tr><th scope="row">Gegevensintegriteit</th><td class="col-alt">Eén verkeerde cel breekt een formule</td><td class="col-fg">Gestructureerde, gevalideerde records</td></tr>
-          <tr><th scope="row">Schaalbaarheid</th><td class="col-alt">Wordt traag en breekt naarmate de data groeit</td><td class="col-fg">Gebouwd om met u mee te groeien</td></tr>
-          <tr><th scope="row">Uw gegevens</th><td class="col-alt">Van u, maar opgesloten in bestanden</td><td class="col-fg">Van u, en altijd exporteerbaar</td></tr>
+            <tr><th scope="row">Meerdere mensen tegelijk</th><td>Versieconflicten en “final_v3”-chaos</td><td>Realtime, multi-user vanuit het ontwerp</td></tr>
+            <tr><th scope="row">Toegangsbeheer</th><td>Alles-of-niets-bestandsdeling</td><td>Toegang op rol per persoon</td></tr>
+            <tr><th scope="row">Audittrail</th><td>Geen — bewerkingen zijn onzichtbaar</td><td>Volledige geschiedenis van wie wat wijzigde</td></tr>
+            <tr><th scope="row">Automatisering</th><td>Handmatige formules en kopiëren-plakken</td><td>Geautomatiseerde herinneringen en workflows</td></tr>
+            <tr><th scope="row">Rapportage</th><td>Elke keer handmatig opnieuw opgebouwd</td><td>Realtime dashboards en rapporten</td></tr>
+            <tr><th scope="row">Gegevensintegriteit</th><td>Eén verkeerde cel breekt een formule</td><td>Gestructureerde, gevalideerde records</td></tr>
+            <tr><th scope="row">Schaalbaarheid</th><td>Wordt traag en breekt naarmate de data groeit</td><td>Gebouwd om met u mee te groeien</td></tr>
+            <tr><th scope="row">Uw gegevens</th><td>Van u, maar opgesloten in bestanden</td><td>Van u, en altijd exporteerbaar</td></tr>
           </tbody>
         </table>
       </div>
-      </div>
     </section>
 
-    <section class="section section-alt">
-      <div class="container">
-        <div class="product-hero-inner" style="max-width:760px">
-          <h2>Wanneer een spreadsheet nog het juiste hulpmiddel is</h2>
-          <p class="lead" style="margin-top:12px">Spreadsheets zijn uitstekend voor snelle modellen, wegwerpberekeningen en eenmalige solo-analyses — snel, flexibel en vertrouwd. FulcrumGrid probeert dat niet te vervangen. De overstap loont zodra meerdere mensen het bestand delen, het het administratiesysteem voor een proces wordt, of één verkeerde cel echt geld begint te kosten.</p>
-        </div>
-      </div>
-    </section>
-
+    <!-- ===== 02 · Wanneer een spreadsheet nog het juiste hulpmiddel is ===== -->
     <section class="section">
-      <div class="container">
-        <div class="section-head" style="margin-bottom:22px"><h2>Veelgestelde vragen</h2></div>
-        <div class="faq">
-          <details class="faq-item"><summary>Is FulcrumGrid een vervanging voor spreadsheets?</summary><p>Voor het draaien van een bedrijfsproces — facturatie, HR-gegevens, operationele tracking — ja. FulcrumGrid vervangt de kwetsbare spreadsheets die teams ontgroeien door gestructureerde, multi-user apps. Voor een snelle eenmalige analyse is een spreadsheet nog steeds een prima hulpmiddel.</p></details>
-          <details class="faq-item"><summary>Kan ik mijn bestaande spreadsheets importeren?</summary><p>Ja. U kunt uw records meenemen wanneer u een app instelt. Vertel ons wat u hebt op de <a href="/nl/contact/">contactpagina</a> en we helpen u met de overstap.</p></details>
-          <details class="faq-item"><summary>Wanneer is een spreadsheet nog de betere keuze?</summary><p>Voor een snel model, een wegwerpberekening of een eenmalige solo-analyse is een spreadsheet snel en flexibel. Zodra meerdere mensen hem delen, hij een administratiesysteem wordt of fouten geld gaan kosten, betaalt een doelgerichte app zich terug.</p></details>
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">02 · Eerlijke kijk</p>
+            <h2>Wanneer een spreadsheet nog het juiste hulpmiddel is.</h2>
+          </div>
+        </div>
+        <p class="section-lead" style="max-width:72ch">Spreadsheets zijn uitstekend voor snelle modellen, wegwerpberekeningen en eenmalige solo-analyses — snel, flexibel en vertrouwd. FulcrumGrid probeert dat niet te vervangen. De overstap loont zodra meerdere mensen het bestand delen, het het administratiesysteem voor een proces wordt, of één verkeerde cel echt geld begint te kosten.</p>
+      </div>
+    </section>
+
+    <!-- ===== 03 · Veelgestelde vragen ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">03 · FAQ</p>
+            <h2>Veelgestelde vragen.</h2>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="cell">
+            <h4>Is FulcrumGrid een vervanging voor spreadsheets?</h4>
+            <p>Voor het draaien van een bedrijfsproces — facturatie, HR-gegevens, operationele tracking — ja. FulcrumGrid vervangt de kwetsbare spreadsheets die teams ontgroeien door gestructureerde, multi-user apps. Voor een snelle eenmalige analyse is een spreadsheet nog steeds een prima hulpmiddel.</p>
+          </div>
+          <div class="cell">
+            <h4>Kan ik mijn bestaande spreadsheets importeren?</h4>
+            <p>Ja. U kunt uw records meenemen wanneer u een app instelt. Vertel ons wat u hebt op de <a href="/nl/contact/">contactpagina</a> en we helpen u met de overstap.</p>
+          </div>
+          <div class="cell">
+            <h4>Wanneer is een spreadsheet nog de betere keuze?</h4>
+            <p>Voor een snel model, een wegwerpberekening of een eenmalige solo-analyse is een spreadsheet snel en flexibel. Zodra meerdere mensen hem delen, hij een administratiesysteem wordt of fouten geld gaan kosten, betaalt een doelgerichte app zich terug.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" style="padding-top:0">
-      <div class="container">
-        <div class="cta-panel">
-          <div class="grid-bg grid-bg-soft" aria-hidden="true"></div>
-          <div class="cta-content">
-            <h2>Uw spreadsheets ontgroeid?</h2>
-            <p>Vertel ons wat u vandaag gebruikt en we tonen u de FulcrumGrid-app die het vervangt.</p>
-            <div class="hero-actions" style="justify-content:center">
-              <a class="btn btn-primary btn-lg" href="/nl/contact/">Vraag een demo aan</a>
-              <a class="btn btn-outline btn-lg" href="/nl/products/">Bekijk alle producten</a>
-            </div>
-          </div>
+    <!-- ===== CTA ===== -->
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">Aan de slag</p>
+        <h2>Uw spreadsheets<br />ontgroeid?</h2>
+        <p class="section-lead" style="margin:0 auto 26px">Vertel ons wat u vandaag gebruikt en we tonen u de FulcrumGrid-app die het vervangt.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/contact/">Vraag een demo aan</a>
+          <a class="btn btn-secondary" href="/nl/products/">Bekijk alle producten</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bgf)" stroke-width="1.5"/>
-              <path d="M9 23V9h9M9 16h7" stroke="url(#bgf)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/>
-              <defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
-            </svg>
-          </span>
-          <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
-        </a>
-        <p class="footer-tag">De operationele ruggengraat voor moderne teams.</p>
+  <!-- ===== Footer ===== -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Platform</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
       </div>
-      <div class="footer-cols">
-        <div class="footer-col"><h3>Producten</h3><a href="/nl/products/">Alle producten</a><a href="/nl/products/command-center/">Command Center</a><a href="/nl/products/collection/">Collection</a><a href="/nl/products/hr-suite/">HR Suite</a><a href="/nl/custom-apps/">Apps op maat</a><a href="/nl/products/coming-soon/">Binnenkort</a></div>
-        <div class="footer-col"><h3>Platform</h3><a href="/nl/features/">Functies</a><a href="/nl/how-it-works/">Hoe het werkt</a><a href="/nl/pricing/">Prijzen</a><a href="/nl/regions/">Regio's</a><a href="/nl/blog/">Blog</a></div>
-        <div class="footer-col"><h3>Bedrijf</h3><a href="/nl/about/">Over ons</a><a href="/nl/faq/">FAQ</a><a href="/nl/contact/">Contact</a><a href="mailto:contact@avenlorconsulting.com">Mail ons</a><a href="/nl/privacy/">Privacy</a><a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a></div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
       </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>&copy; <span id="year">2026</span> FulcrumGrid. Alle rechten voorbehouden.</p>
-      <p class="footer-domain">fulcrumgrid.com</p>
     </div>
   </footer>
 
-  <script src="/assets/js/main.js" defer></script>
-  <script src="/assets/js/fg.js" defer></script>
   <script src="/assets/js/consent.js" defer></script>
 </body>
 </html>

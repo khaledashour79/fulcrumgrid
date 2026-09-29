@@ -18,7 +18,8 @@
 
   <title>FulcrumGrid FAQ — Apps, Preise, Arabisch-Support &amp; Einrichtung | FulcrumGrid</title>
   <meta name="description" content="Antworten auf häufige Fragen zu FulcrumGrid: was es ist, welche Apps es umfasst, Preise und kostenlose Testversion, Arabisch-Unterstützung, Datenexport, Sicherheit, individuelle Apps und wie man loslegt." />
-  <meta name="theme-color" content="#0b1020" />
+  <meta name="theme-color" content="#f2f2f3" />
+
   <meta property="og:type" content="website" />
   <meta property="og:title" content="FulcrumGrid FAQ — Apps, Preise, Arabisch-Support &amp; Einrichtung | FulcrumGrid" />
   <meta property="og:description" content="Antworten auf häufige Fragen zu FulcrumGrid: was es ist, welche Apps es umfasst, Preise und kostenlose Testversion, Arabisch-Unterstützung, Datenexport, Sicherheit, individuelle Apps und wie man loslegt." />
@@ -34,18 +35,17 @@
   <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:alt" content="FulcrumGrid — zweckgebaute Business-Apps für jeden Betrieb" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="FulcrumGrid FAQ — Apps, Preise, Arabisch-Support &amp; Einrichtung | FulcrumGrid" />
   <meta name="twitter:description" content="Antworten auf häufige Fragen zu FulcrumGrid: was es ist, welche Apps es umfasst, Preise und kostenlose Testversion, Arabisch-Unterstützung, Datenexport, Sicherheit, individuelle Apps und wie man loslegt." />
   <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="https://fulcrumgrid.com/de/faq/" />
   <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/faq/" />
   <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/faq/" />
@@ -55,12 +55,25 @@
   <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/faq/" />
   <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/faq/" />
   <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/faq/" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" /></noscript>
-  <link rel="stylesheet" href="/assets/css/fg.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+
+  <style>
+    .faq-list { border-top: 1px solid var(--color-divider); }
+    .faq-list details { border-bottom: 1px solid var(--color-divider); }
+    .faq-list summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between;
+      gap: 18px; align-items: baseline; padding: 18px 0;
+      font-family: var(--font-heading); font-weight: 600; font-size: 21px; text-transform: uppercase; letter-spacing: -0.01em; }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after { content: "+"; color: var(--color-accent); font-family: var(--font-heading); font-size: 26px; line-height: 1; }
+    .faq-list details[open] summary::after { content: "–"; }
+    .faq-list details > p { margin: 0 0 20px; max-width: 78ch; font-size: 15px;
+      color: color-mix(in srgb, var(--color-text) 74%, transparent); }
+  </style>
+
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://fulcrumgrid.com/"},{"@type":"ListItem","position":2,"name":"FAQ","item":"https://fulcrumgrid.com/faq/"}]}
   </script>
@@ -68,14 +81,13 @@
   {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Was ist FulcrumGrid?", "acceptedAnswer": {"@type": "Answer", "text": "FulcrumGrid ist eine Familie zweckgebauter Business-Apps, die auf einer Plattform laufen — Command Center (ein Echtzeit-Betriebsdashboard), Collection (Forderungen und Zahlungen) und HR Suite (Personalmanagement) — sowie individuelle Apps für einen bestimmten Workflow. Sie wird von Avenlor Consulting entwickelt."}}, {"@type": "Question", "name": "Welche Apps umfasst FulcrumGrid?", "acceptedAnswer": {"@type": "Answer", "text": "Ab sofort verfügbar: Command Center (Betriebsdashboard), Collection (Forderungen und Zahlungen) und HR Suite (Personalmanagement). Lagerverwaltung, CRM, Analysen und Beschaffung sind auf der Roadmap, und wir entwickeln auch individuelle Apps auf derselben Plattform."}}, {"@type": "Question", "name": "Für wen ist FulcrumGrid?", "acceptedAnswer": {"@type": "Answer", "text": "FulcrumGrid ist für kleine und mittlere Unternehmen und für die Betriebs-, Finanz- und Personalteams gemacht, die sie Tag für Tag am Laufen halten."}}, {"@type": "Question", "name": "Kann ich mit nur einer App beginnen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Sie können mit einer einzigen App beginnen und den Rest hinzufügen, wann immer Sie bereit sind — alles läuft auf derselben Plattform, es gibt also keine Migration und kein Re-Platforming."}}, {"@type": "Question", "name": "Unterstützt FulcrumGrid Arabisch?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. FulcrumGrid ist vollständig zweisprachig, mit kompletten englischen und arabischen (rechts-nach-links) Versionen von Produkt und Website."}}, {"@type": "Question", "name": "Wie viel kostet FulcrumGrid?", "acceptedAnswer": {"@type": "Answer", "text": "FulcrumGrid nutzt einfache Tarife pro Nutzer und Monat — Starter, Business und Enterprise — und jeder Tarif enthält eine kostenlose Testversion. Details finden Sie auf der Preisseite."}}, {"@type": "Question", "name": "Gibt es eine kostenlose Testversion?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Jeder Tarif enthält eine 14-tägige kostenlose Testversion mit vollem Funktionsumfang, und für den Start ist keine Kreditkarte erforderlich."}}, {"@type": "Question", "name": "Kann ich meine Daten exportieren?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Jede App führt saubere, strukturierte Datensätze, die Sie jederzeit exportieren können. Ihre Daten bleiben Ihre."}}, {"@type": "Question", "name": "Wie handhabt FulcrumGrid Zugriff und Sicherheit?", "acceptedAnswer": {"@type": "Answer", "text": "Jede App verfügt über rollenbasierten Zugriff und ein vollständiges Audit-Protokoll, sodass Sie den richtigen Personen den richtigen Zugriff gewähren und den Änderungsverlauf einsehen können."}}, {"@type": "Question", "name": "Kann FulcrumGrid eine individuelle App für meinen Workflow entwickeln?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Über die fertigen Apps hinaus entwickeln wir maßgeschneiderte Business-Apps, die auf Ihren konkreten Anwendungsfall zugeschnitten sind — auf derselben sicheren, prüfbaren Plattform wie der Rest des Grids."}}, {"@type": "Question", "name": "Wie lege ich los oder fordere eine Demo an?", "acceptedAnswer": {"@type": "Answer", "text": "Sagen Sie uns auf der Kontaktseite, was Ihr Team braucht, oder schreiben Sie an contact@avenlorconsulting.com, und wir zeigen Ihnen FulcrumGrid in Aktion."}}, {"@type": "Question", "name": "Wer entwickelt FulcrumGrid?", "acceptedAnswer": {"@type": "Answer", "text": "FulcrumGrid wird von Avenlor Consulting entwickelt und betreut."}}]}
   </script>
 </head>
-<body class="fg product-page">
-  <a class="skip-link" href="#main">Zum Inhalt springen</a>
-
-    <header class="site-header" id="top">
-    <div class="header-inner">
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-head">
+    <div class="wrap row">
       <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
-        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/><path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/><defs><linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#2156df"/><stop offset="1" stop-color="#1d47ba"/></linearGradient></defs></svg></span>
-        <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
       </a>
       <nav class="site-nav" aria-label="Primary">
         <a href="/de/products/">Produkte</a>
@@ -83,135 +95,118 @@
         <a href="/de/pricing/">Preise</a>
         <a href="/de/regions/">Regionen</a>
         <a href="/de/blog/">Blog</a>
-        <a href="/de/about/">Über uns</a>
         <a href="/de/contact/">Kontakt</a>
       </nav>
-      <div class="header-cta">
-                        <details class="lang-menu">
-          <summary aria-label="Sprache"><svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg><span>DE</span><svg class="lang-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-          <div class="lang-menu-list">
-            <a href="/faq/" hreflang="en" lang="en">English</a>
-            <a href="/ar/faq/" hreflang="ar" lang="ar">العربية</a>
-            <a href="/fr/faq/" hreflang="fr" lang="fr">Français</a>
-            <a href="/de/faq/" hreflang="de" lang="de" class="active" aria-current="true">Deutsch</a>
-            <a href="/es/faq/" hreflang="es" lang="es">Español</a>
-            <a href="/it/faq/" hreflang="it" lang="it">Italiano</a>
-            <a href="/nl/faq/" hreflang="nl" lang="nl">Nederlands</a>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
           </div>
         </details>
-        <a class="btn btn-primary" href="/de/contact/">Demo anfragen</a>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
       </div>
-      <button class="nav-toggle" aria-label="Menü umschalten" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobile-menu" hidden>
-      <a href="/de/products/">Produkte</a>
-      <a href="/de/features/">Plattform</a>
-      <a href="/de/pricing/">Preise</a>
-      <a href="/de/regions/">Regionen</a>
-      <a href="/de/blog/">Blog</a>
-      <a href="/de/about/">Über uns</a>
-      <a href="/de/contact/">Kontakt</a>
-      <a class="btn btn-primary" href="/de/contact/">Demo anfragen</a>
-                      <details class="lang-menu">
-          <summary aria-label="Sprache"><svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg><span>DE</span><svg class="lang-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-          <div class="lang-menu-list">
-            <a href="/faq/" hreflang="en" lang="en">English</a>
-            <a href="/ar/faq/" hreflang="ar" lang="ar">العربية</a>
-            <a href="/fr/faq/" hreflang="fr" lang="fr">Français</a>
-            <a href="/de/faq/" hreflang="de" lang="de" class="active" aria-current="true">Deutsch</a>
-            <a href="/es/faq/" hreflang="es" lang="es">Español</a>
-            <a href="/it/faq/" hreflang="it" lang="it">Italiano</a>
-            <a href="/nl/faq/" hreflang="nl" lang="nl">Nederlands</a>
-          </div>
-        </details>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
     </div>
   </header>
 
-  <main id="main">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/de/">Startseite</a><span>/</span><span class="current">FAQ</span>
-      </nav>
-    </div>
-
-    <section class="product-hero" style="padding-bottom:16px">
-      <div class="container">
-        <div class="product-hero-inner" style="max-width:760px">
-          <p class="product-eyebrow">FAQ</p>
-          <h1>Häufig gestellte <span class="p-grad">Fragen</span></h1>
-          <p class="lead">Klare Antworten darauf, was FulcrumGrid ist, was es umfasst und wie es funktioniert. Noch eine Frage? Fragen Sie einfach.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" style="padding-top:24px">
-      <div class="container">
-        <div class="faq">
-          <details class="faq-item"><summary>Was ist FulcrumGrid?</summary><p>FulcrumGrid ist eine Familie zweckgebauter Business-Apps, die auf einer Plattform laufen — <a href="/de/products/command-center/">Command Center</a> (ein Echtzeit-Betriebsdashboard), <a href="/de/products/collection/">Collection</a> (Forderungen und Zahlungen) und <a href="/de/products/hr-suite/">HR Suite</a> (Personalmanagement) — sowie <a href="/de/custom-apps/">individuelle Apps</a> für einen bestimmten Workflow. Sie wird von Avenlor Consulting entwickelt.</p></details>
-          <details class="faq-item"><summary>Welche Apps umfasst FulcrumGrid?</summary><p>Ab sofort verfügbar: Command Center (Betriebsdashboard), Collection (Forderungen und Zahlungen) und HR Suite (Personalmanagement). Lagerverwaltung, CRM, Analysen und Beschaffung sind auf der <a href="/de/products/coming-soon/">Roadmap</a>, und wir entwickeln auch individuelle Apps auf derselben Plattform.</p></details>
-          <details class="faq-item"><summary>Für wen ist FulcrumGrid?</summary><p>FulcrumGrid ist für kleine und mittlere Unternehmen und für die Betriebs-, Finanz- und Personalteams gemacht, die sie Tag für Tag am Laufen halten.</p></details>
-          <details class="faq-item"><summary>Kann ich mit nur einer App beginnen?</summary><p>Ja. Sie können mit einer einzigen App beginnen und den Rest hinzufügen, wann immer Sie bereit sind — alles läuft auf derselben Plattform, es gibt also keine Migration und kein Re-Platforming. Siehe <a href="/de/pricing/">Preise</a>.</p></details>
-          <details class="faq-item"><summary>Unterstützt FulcrumGrid Arabisch?</summary><p>Ja. FulcrumGrid ist vollständig zweisprachig, mit kompletten englischen und arabischen (rechts-nach-links) Versionen von Produkt und Website. Siehe die <a href="/ar/">arabische Website</a>.</p></details>
-          <details class="faq-item"><summary>Wie viel kostet FulcrumGrid?</summary><p>FulcrumGrid nutzt einfache Tarife pro Nutzer und Monat — Starter, Business und Enterprise — und jeder Tarif enthält eine kostenlose Testversion. Details finden Sie auf der <a href="/de/pricing/">Preisseite</a>.</p></details>
-          <details class="faq-item"><summary>Gibt es eine kostenlose Testversion?</summary><p>Ja. Jeder Tarif enthält eine 14-tägige kostenlose Testversion mit vollem Funktionsumfang, und für den Start ist keine Kreditkarte erforderlich.</p></details>
-          <details class="faq-item"><summary>Kann ich meine Daten exportieren?</summary><p>Ja. Jede App führt saubere, strukturierte Datensätze, die Sie jederzeit exportieren können. Ihre Daten bleiben Ihre.</p></details>
-          <details class="faq-item"><summary>Wie handhabt FulcrumGrid Zugriff und Sicherheit?</summary><p>Jede App verfügt über rollenbasierten Zugriff und ein vollständiges Audit-Protokoll, sodass Sie den richtigen Personen den richtigen Zugriff gewähren und den Änderungsverlauf einsehen können.</p></details>
-          <details class="faq-item"><summary>Kann FulcrumGrid eine individuelle App für meinen Workflow entwickeln?</summary><p>Ja. Über die fertigen Apps hinaus entwickeln wir <a href="/de/custom-apps/">maßgeschneiderte Business-Apps</a>, die auf Ihren konkreten Anwendungsfall zugeschnitten sind — auf derselben sicheren, prüfbaren Plattform wie der Rest des Grids.</p></details>
-          <details class="faq-item"><summary>Wie lege ich los oder fordere eine Demo an?</summary><p>Sagen Sie uns auf der <a href="/de/contact/">Kontaktseite</a>, was Ihr Team braucht, oder schreiben Sie an <a href="mailto:contact@avenlorconsulting.com">contact@avenlorconsulting.com</a>, und wir zeigen Ihnen FulcrumGrid in Aktion.</p></details>
-          <details class="faq-item"><summary>Wer entwickelt FulcrumGrid?</summary><p>FulcrumGrid wird von <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting</a> entwickelt und betreut.</p></details>
-        </div>
-      </div>
-    </section>
-
+  <main>
+    <!-- ===== Hero ===== -->
     <section class="section">
-      <div class="container">
-        <div class="cta-panel">
-          <div class="grid-bg grid-bg-soft" aria-hidden="true"></div>
-          <div class="cta-content">
-            <h2>Noch eine Frage?</h2>
-            <p>Sagen Sie uns, was Ihr Team braucht, und wir führen Sie durch FulcrumGrid.</p>
-            <div class="hero-actions" style="justify-content:center">
-              <a class="btn btn-primary btn-lg" href="/de/contact/">Demo anfragen</a>
-              <a class="btn btn-outline btn-lg" href="/de/pricing/">Preise ansehen</a>
-            </div>
+      <div class="wrap pad">
+        <p class="hero-eyebrow">FAQ</p>
+        <h1 style="max-width:15ch">Häufig gestellte Fragen</h1>
+        <p class="hero-intro">Klare Antworten darauf, was FulcrumGrid ist, was es umfasst und wie es funktioniert. Noch eine Frage? Fragen Sie einfach.</p>
+      </div>
+    </section>
+
+    <!-- ===== 01 · Questions ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">01 · FAQ</p>
+            <h2>Fragen &amp; Antworten.</h2>
           </div>
+          <p class="section-lead">Alles, was Teams vor dem Start fragen — die Apps, Preise, Arabisch-Unterstützung, Daten und Sicherheit.</p>
+        </div>
+        <div class="faq-list">
+          <details><summary>Was ist FulcrumGrid?</summary><p>FulcrumGrid ist eine Familie zweckgebauter Business-Apps, die auf einer Plattform laufen — <a href="/de/products/command-center/">Command Center</a> (ein Echtzeit-Betriebsdashboard), <a href="/de/products/collection/">Collection</a> (Forderungen und Zahlungen) und <a href="/de/products/hr-suite/">HR Suite</a> (Personalmanagement) — sowie <a href="/de/custom-apps/">individuelle Apps</a> für einen bestimmten Workflow. Sie wird von Avenlor Consulting entwickelt.</p></details>
+          <details><summary>Welche Apps umfasst FulcrumGrid?</summary><p>Ab sofort verfügbar: Command Center (Betriebsdashboard), Collection (Forderungen und Zahlungen) und HR Suite (Personalmanagement). Lagerverwaltung, CRM, Analysen und Beschaffung sind auf der <a href="/de/products/coming-soon/">Roadmap</a>, und wir entwickeln auch individuelle Apps auf derselben Plattform.</p></details>
+          <details><summary>Für wen ist FulcrumGrid?</summary><p>FulcrumGrid ist für kleine und mittlere Unternehmen und für die Betriebs-, Finanz- und Personalteams gemacht, die sie Tag für Tag am Laufen halten.</p></details>
+          <details><summary>Kann ich mit nur einer App beginnen?</summary><p>Ja. Sie können mit einer einzigen App beginnen und den Rest hinzufügen, wann immer Sie bereit sind — alles läuft auf derselben Plattform, es gibt also keine Migration und kein Re-Platforming. Siehe <a href="/de/pricing/">Preise</a>.</p></details>
+          <details><summary>Unterstützt FulcrumGrid Arabisch?</summary><p>Ja. FulcrumGrid ist vollständig zweisprachig, mit kompletten englischen und arabischen (rechts-nach-links) Versionen von Produkt und Website. Siehe die <a href="/ar/">arabische Website</a>.</p></details>
+          <details><summary>Wie viel kostet FulcrumGrid?</summary><p>FulcrumGrid nutzt einfache Tarife pro Nutzer und Monat — Starter, Business und Enterprise — und jeder Tarif enthält eine kostenlose Testversion. Details finden Sie auf der <a href="/de/pricing/">Preisseite</a>.</p></details>
+          <details><summary>Gibt es eine kostenlose Testversion?</summary><p>Ja. Jeder Tarif enthält eine 14-tägige kostenlose Testversion mit vollem Funktionsumfang, und für den Start ist keine Kreditkarte erforderlich.</p></details>
+          <details><summary>Kann ich meine Daten exportieren?</summary><p>Ja. Jede App führt saubere, strukturierte Datensätze, die Sie jederzeit exportieren können. Ihre Daten bleiben Ihre.</p></details>
+          <details><summary>Wie handhabt FulcrumGrid Zugriff und Sicherheit?</summary><p>Jede App verfügt über rollenbasierten Zugriff und ein vollständiges Audit-Protokoll, sodass Sie den richtigen Personen den richtigen Zugriff gewähren und den Änderungsverlauf einsehen können.</p></details>
+          <details><summary>Kann FulcrumGrid eine individuelle App für meinen Workflow entwickeln?</summary><p>Ja. Über die fertigen Apps hinaus entwickeln wir <a href="/de/custom-apps/">maßgeschneiderte Business-Apps</a>, die auf Ihren konkreten Anwendungsfall zugeschnitten sind — auf derselben sicheren, prüfbaren Plattform wie der Rest des Grids.</p></details>
+          <details><summary>Wie lege ich los oder fordere eine Demo an?</summary><p>Sagen Sie uns auf der <a href="/de/contact/">Kontaktseite</a>, was Ihr Team braucht, oder schreiben Sie an <a href="mailto:contact@avenlorconsulting.com">contact@avenlorconsulting.com</a>, und wir zeigen Ihnen FulcrumGrid in Aktion.</p></details>
+          <details><summary>Wer entwickelt FulcrumGrid?</summary><p>FulcrumGrid wird von <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting</a> entwickelt und betreut.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">Loslegen</p>
+        <h2>Noch<br />eine Frage?</h2>
+        <p class="section-lead" style="margin:0 auto 26px">Sagen Sie uns, was Ihr Team braucht, und wir führen Sie durch FulcrumGrid.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/contact/">Demo anfragen</a>
+          <a class="btn btn-secondary" href="/de/pricing/">Preise ansehen</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bgf)" stroke-width="1.5"/>
-              <path d="M9 23V9h9M9 16h7" stroke="url(#bgf)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/>
-              <defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
-            </svg>
-          </span>
-          <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
-        </a>
-        <p class="footer-tag">Das operative Rückgrat für moderne Teams.</p>
+  <!-- ===== Footer ===== -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Plattform</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
       </div>
-      <div class="footer-cols">
-        <div class="footer-col"><h3>Produkte</h3><a href="/de/products/">Alle Produkte</a><a href="/de/products/command-center/">Command Center</a><a href="/de/products/collection/">Collection</a><a href="/de/products/hr-suite/">HR Suite</a><a href="/de/custom-apps/">Individuelle Apps</a><a href="/de/products/coming-soon/">Demnächst</a></div>
-        <div class="footer-col"><h3>Plattform</h3><a href="/de/features/">Funktionen</a><a href="/de/how-it-works/">So funktioniert's</a><a href="/de/pricing/">Preise</a><a href="/de/regions/">Regionen</a><a href="/de/blog/">Blog</a></div>
-        <div class="footer-col"><h3>Unternehmen</h3><a href="/de/about/">Über uns</a><a href="/de/faq/">FAQ</a><a href="/de/contact/">Kontakt</a><a href="mailto:contact@avenlorconsulting.com">Schreiben Sie uns</a><a href="/de/privacy/">Datenschutz</a><a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a></div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
       </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>&copy; <span id="year">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</p>
-      <p class="footer-domain">fulcrumgrid.com</p>
     </div>
   </footer>
 
-  <script src="/assets/js/main.js" defer></script>
-  <script src="/assets/js/fg.js" defer></script>
   <script src="/assets/js/consent.js" defer></script>
 </body>
 </html>
