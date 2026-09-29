@@ -36,12 +36,16 @@ OGLOCALE_RE = re.compile(r'[ \t]*<meta property="og:locale" content="[^"]*" />'
 MISSING = []
 
 
-def apply_catalog(html, catalog, lang, strict, canon=None):
+def apply_catalog(html, catalog, lang, strict, canon=None, word_boundary=False):
     """Replace EN text segments with their `lang` translation, longest first.
 
     strict=True (per-page catalogs) records any declared segment missing from
     the EN source into MISSING, to catch drift. strict=False (the shared COMMON
     catalog) silently skips segments a given page doesn't contain.
+
+    word_boundary=True (COMMON chrome) only replaces a segment when it is not
+    flanked by ASCII letters, so a chrome word like "Contact" never rewrites a
+    larger token such as the JSON-LD `"@type":"ContactPage"`.
     """
     for en in sorted(catalog, key=len, reverse=True):
         tr = catalog[en].get(lang)
@@ -51,7 +55,10 @@ def apply_catalog(html, catalog, lang, strict, canon=None):
             if strict and (canon, en) not in MISSING:
                 MISSING.append((canon, en))
             continue
-        html = html.replace(en, tr)
+        if word_boundary:
+            html = re.sub(r'(?<![A-Za-z])' + re.escape(en) + r'(?![A-Za-z])', lambda m: tr, html)
+        else:
+            html = html.replace(en, tr)
     return html
 
 
@@ -75,7 +82,7 @@ def localize(canon, src_rel, lang):
 
     # 4. Translate chrome + page copy (before link-prefixing, so catalog keys
     #    match the original English text; translations carry no hrefs).
-    html = apply_catalog(html, COMMON, lang, strict=False)
+    html = apply_catalog(html, COMMON, lang, strict=False, word_boundary=True)
     html = apply_catalog(html, PAGES.get(canon, {}).get('t', {}), lang, strict=True, canon=canon)
 
     # 5. Prefix internal links (skips assets, external, anchors, mailto).
