@@ -20,7 +20,7 @@ def _t(fr, de, es, it, nl):
 # ---- Segments shared verbatim by both pages ------------------------------
 _SHARED = {
     'Available now': _t('Disponible maintenant', 'Jetzt verfügbar', 'Disponible ahora', 'Disponibile ora', 'Nu beschikbaar'),
-    'Home': _t('Accueil', 'Startseite', 'Inicio', 'Home', 'Home'),
+    'Included': _t('Inclus', 'Enthalten', 'Incluido', 'Incluso', 'Inbegrepen'),
     'Start free trial': _t("Démarrer l'essai gratuit", 'Kostenlos testen', 'Iniciar prueba gratuita', 'Inizia la prova gratuita', 'Start gratis proefperiode'),
     'See full pricing ↗': _t('Voir tous les tarifs ↗', 'Alle Preise ansehen ↗', 'Ver todos los precios ↗', 'Vedi tutti i prezzi ↗', 'Bekijk alle prijzen ↗'),
     'Email support': _t('Assistance par e-mail', 'E-Mail-Support', 'Soporte por correo', 'Assistenza via e-mail', 'E-mailondersteuning'),
@@ -52,20 +52,14 @@ _CC = {
         'Panel de operaciones en tiempo real: KPI en directo, alertas, automatización e informes.',
         'Dashboard operativa in tempo reale: KPI in tempo reale, avvisi, automazione e reporting.',
         "Realtime operationeel dashboard: live KPI's, meldingen, automatisering en rapportage."),
-    'FulcrumGrid Command Center — real-time operations dashboard': _t(
-        'FulcrumGrid Command Center — tableau de bord des opérations en temps réel',
-        'FulcrumGrid Command Center — Echtzeit-Betriebs-Dashboard',
-        'FulcrumGrid Command Center — panel de operaciones en tiempo real',
-        'FulcrumGrid Command Center — dashboard operativa in tempo reale',
-        'FulcrumGrid Command Center — realtime operationeel dashboard'),
     # Hero
-    'Operations</p>': _t('Opérations</p>', 'Betrieb</p>', 'Operaciones</p>', 'Operazioni</p>', 'Operaties</p>'),
-    'See everything.<br /><span class="p-grad">Control anything.</span>': _t(
-        'Voir tout.<br /><span class="p-grad">Tout contrôler.</span>',
-        'Alles sehen.<br /><span class="p-grad">Alles steuern.</span>',
-        'Véalo todo.<br /><span class="p-grad">Contrólelo todo.</span>',
-        'Vedi tutto.<br /><span class="p-grad">Controlla tutto.</span>',
-        'Zie alles.<br /><span class="p-grad">Beheer alles.</span>'),
+    '>Operations ·': _t('>Opérations ·', '>Betrieb ·', '>Operaciones ·', '>Operazioni ·', '>Operaties ·'),
+    'See everything. Control anything.': _t(
+        'Voir tout. Tout contrôler.',
+        'Alles sehen. Alles steuern.',
+        'Véalo todo. Contrólelo todo.',
+        'Vedi tutto. Controlla tutto.',
+        'Zie alles. Beheer alles.'),
     "Command Center is your business's control room — a real-time dashboard that brings your key metrics, workflows, and alerts into one view, so nothing slips and every decision is made on live data.": _t(
         "Command Center est la salle de contrôle de votre entreprise — un tableau de bord en temps réel qui réunit vos indicateurs clés, vos flux de travail et vos alertes en une seule vue, pour que rien ne vous échappe et que chaque décision repose sur des données en direct.",
         'Command Center ist der Kontrollraum Ihres Unternehmens — ein Echtzeit-Dashboard, das Ihre wichtigsten Kennzahlen, Workflows und Warnungen in einer Ansicht zusammenführt, damit nichts durchrutscht und jede Entscheidung auf Live-Daten beruht.',
@@ -75,7 +69,15 @@ _CC = {
     'Open Command Center': _t('Ouvrir Command Center', 'Command Center öffnen', 'Abrir Command Center', 'Apri Command Center', 'Command Center openen'),
     # Pricing
     'Command Center pricing': _t('Tarifs Command Center', 'Command Center Preise', 'Precios de Command Center', 'Prezzi di Command Center', 'Command Center prijzen'),
-    '/ month': _t('/ mois', '/ Monat', '/ mes', '/ mese', '/ maand'),
+    'Per organization / month': _t('Par organisation / mois', 'Pro Organisation / Monat', 'Por organización / mes', 'Per organizzazione / mese', 'Per organisatie / maand'),
+    '<span>Pilot</span>': _t('<span>Pilot</span>', '<span>Pilot</span>', '<span>Pilot</span>', '<span>Pilot</span>', '<span>Pilot</span>'),
+    'On the Pilot plan': _t('Sur le forfait Pilot', 'Im Pilot-Tarif', 'En el plan Pilot', 'Nel piano Pilot', 'Op het Pilot-abonnement'),
+    'Flat monthly price per organization. 14-day free trial, no card required.': _t(
+        'Prix mensuel forfaitaire par organisation. Essai gratuit de 14 jours, sans carte.',
+        'Pauschaler Monatspreis pro Organisation. 14 Tage kostenlos testen, keine Karte erforderlich.',
+        'Precio mensual fijo por organización. Prueba gratuita de 14 días, sin tarjeta.',
+        'Prezzo mensile fisso per organizzazione. Prova gratuita di 14 giorni, senza carta.',
+        'Vast maandbedrag per organisatie. Gratis proefperiode van 14 dagen, geen kaart nodig.'),
     'Flat monthly price per organization (Pilot plan). 14-day free trial, no card required.': _t(
         "Prix mensuel forfaitaire par organisation (offre Pilot). Essai gratuit de 14 jours, sans carte.",
         'Pauschaler Monatspreis pro Organisation (Pilot-Tarif). 14 Tage kostenlos testen, keine Karte erforderlich.',
@@ -210,12 +212,12 @@ _CC = {
         'Command Center is een van de vele FulcrumGrid-apps, elk gebouwd volgens dezelfde standaard. Ontdek de andere, gebouwd voor uw operatie.'),
     'Receivables &amp; payments': _t('Créances &amp; paiements', 'Forderungen &amp; Zahlungen', 'Cobros &amp; pagos', 'Crediti &amp; pagamenti', 'Vorderingen &amp; betalingen'),
     # CTA
-    'Put your operations on one screen': _t(
-        'Réunissez vos opérations sur un seul écran',
-        'Bringen Sie Ihren Betrieb auf einen Bildschirm',
-        'Ponga sus operaciones en una sola pantalla',
-        "Metti le tue operazioni su un'unica schermata",
-        'Zet uw operatie op één scherm'),
+    'Put your operations<br />on one screen.': _t(
+        'Réunissez vos opérations<br />sur un seul écran.',
+        'Bringen Sie Ihren Betrieb<br />auf einen Bildschirm.',
+        'Ponga sus operaciones<br />en una sola pantalla.',
+        "Metti le tue operazioni<br />su un'unica schermata.",
+        'Zet uw operatie<br />op één scherm.'),
     "See Command Center running on your data. We'll walk you through it.": _t(
         'Voyez Command Center fonctionner sur vos données. Nous vous accompagnons pas à pas.',
         'Sehen Sie Command Center mit Ihren Daten in Aktion. Wir führen Sie Schritt für Schritt durch.',
@@ -241,19 +243,13 @@ _COL = {
         'Cobros y pagos: seguimiento de facturas, recordatorios automatizados, planes de pago y conciliación.',
         'Crediti e pagamenti: monitoraggio delle fatture, solleciti automatizzati, piani di pagamento e riconciliazione.',
         'Vorderingen en betalingen: factuuropvolging, geautomatiseerde herinneringen, betalingsplannen en reconciliatie.'),
-    'FulcrumGrid Collection — receivables and payments': _t(
-        'FulcrumGrid Collection — créances et paiements',
-        'FulcrumGrid Collection — Forderungen und Zahlungen',
-        'FulcrumGrid Collection — cobros y pagos',
-        'FulcrumGrid Collection — crediti e pagamenti',
-        'FulcrumGrid Collection — vorderingen en betalingen'),
     # Hero
-    'Get paid,<br /><span class="p-grad">predictably.</span>': _t(
-        'Soyez payé,<br /><span class="p-grad">de façon prévisible.</span>',
-        'Werden Sie bezahlt,<br /><span class="p-grad">planbar.</span>',
-        'Cobre,<br /><span class="p-grad">de forma previsible.</span>',
-        'Fatti pagare,<br /><span class="p-grad">in modo prevedibile.</span>',
-        'Word betaald,<br /><span class="p-grad">voorspelbaar.</span>'),
+    'Get paid, predictably.': _t(
+        'Soyez payé, de façon prévisible.',
+        'Werden Sie bezahlt, planbar.',
+        'Cobre, de forma previsible.',
+        'Fatti pagare, in modo prevedibile.',
+        'Word betaald, voorspelbaar.'),
     'Collection turns messy receivables into a clear, auditable process. Track every invoice, automate the follow-ups, offer payment plans, and reconcile the money coming in — so revenue lands on time and nothing falls through the cracks.': _t(
         "Collection transforme des créances désordonnées en un processus clair et auditable. Suivez chaque facture, automatisez les relances, proposez des plans de paiement et rapprochez l'argent qui rentre — pour que les revenus arrivent à temps et que rien ne passe entre les mailles du filet.",
         'Collection macht aus unübersichtlichen Forderungen einen klaren, prüfbaren Prozess. Verfolgen Sie jede Rechnung, automatisieren Sie die Nachfassaktionen, bieten Sie Zahlungspläne an und gleichen Sie eingehende Zahlungen ab — damit Umsätze pünktlich eingehen und nichts durchs Raster fällt.',
@@ -263,7 +259,10 @@ _COL = {
     'Open Collection': _t('Ouvrir Collection', 'Collection öffnen', 'Abrir Collection', 'Apri Collection', 'Collection openen'),
     # Pricing
     'Collection pricing': _t('Tarifs Collection', 'Collection Preise', 'Precios de Collection', 'Prezzi di Collection', 'Collection prijzen'),
-    '>Free</span>': _t('>Gratuit</span>', '>Kostenlos</span>', '>Gratis</span>', '>Gratis</span>', '>Gratis</span>'),
+    'Per workspace / month': _t('Par espace de travail / mois', 'Pro Workspace / Monat', 'Por espacio de trabajo / mes', 'Per spazio di lavoro / mese', 'Per werkruimte / maand'),
+    '<span>Starter</span>': _t('<span>Starter</span>', '<span>Starter</span>', '<span>Starter</span>', '<span>Starter</span>', '<span>Starter</span>'),
+    '<b>Free</b>': _t('<b>Gratuit</b>', '<b>Kostenlos</b>', '<b>Gratis</b>', '<b>Gratis</b>', '<b>Gratis</b>'),
+    'On the Starter plan': _t('Sur le forfait Starter', 'Im Starter-Tarif', 'En el plan Starter', 'Nel piano Starter', 'Op het Starter-abonnement'),
     'Starter is free — paid plans from SAR 370 / month.': _t(
         'Starter est gratuit — offres payantes à partir de SAR 370 / mois.',
         'Starter ist kostenlos — kostenpflichtige Tarife ab SAR 370 / Monat.',
@@ -403,12 +402,12 @@ _COL = {
         'Collection is een van de vele FulcrumGrid-apps, elk gebouwd volgens dezelfde standaard. Ontdek de andere, gebouwd voor uw operatie.'),
     'Operations dashboard': _t('Tableau de bord des opérations', 'Betriebs-Dashboard', 'Panel de operaciones', 'Dashboard operativa', 'Operationeel dashboard'),
     # CTA
-    'Recover revenue, on autopilot': _t(
-        'Recouvrez vos revenus, en pilote automatique',
-        'Holen Sie Umsätze zurück, im Autopilot',
-        'Recupere ingresos, en piloto automático',
-        'Recupera i ricavi, con il pilota automatico',
-        'Haal omzet terug, op de automatische piloot'),
+    'Recover revenue,<br />on autopilot.': _t(
+        'Recouvrez vos revenus,<br />en pilote automatique.',
+        'Holen Sie Umsätze zurück,<br />im Autopilot.',
+        'Recupere ingresos,<br />en piloto automático.',
+        'Recupera i ricavi,<br />con il pilota automatico.',
+        'Haal omzet terug,<br />op de automatische piloot.'),
     'See how Collection shortens the path from invoice to paid.': _t(
         'Découvrez comment Collection raccourcit le chemin de la facture au paiement.',
         'Sehen Sie, wie Collection den Weg von der Rechnung zur Zahlung verkürzt.',
