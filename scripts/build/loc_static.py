@@ -75,6 +75,11 @@ def localize(canon, src_rel, lang):
     # 2. <html lang="en"> -> localized (all new langs are LTR).
     html = html.replace('<html lang="en">', f'<html lang="{lang}">', 1)
 
+    # 2b. Some source pages reference assets with root-relative paths
+    #     (href="assets/...") which only resolve at the site root; under a
+    #     language subdirectory (/fr/...) they 404. Make them absolute.
+    html = re.sub(r'(href|src)="assets/', r'\1="/assets/', html)
+
     # 3. canonical + og:url -> localized absolute URL.
     url = i18n.BASE + i18n.alt_href(lang, canon)
     html = re.sub(r'(<link rel="canonical" href=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), html, count=1)
