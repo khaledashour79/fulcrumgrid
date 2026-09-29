@@ -84,6 +84,28 @@ body.fg::before {
 .lang-switch a { padding: 5px 11px; font-size: 12px; color: var(--muted); }
 .lang-switch a.active { background: var(--ink); color: var(--paper); }
 
+/* Language dropdown — scales past two languages (no JS, uses <details>) */
+.lang-menu { position: relative; }
+.lang-menu > summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;
+  border: 1px solid var(--border); border-radius: 999px; padding: 5px 10px; font-size: 12px; color: var(--muted);
+  transition: color .2s ease, border-color .2s ease; }
+.lang-menu > summary::-webkit-details-marker { display: none; }
+.lang-menu > summary:hover { color: var(--ink); border-color: var(--ink); }
+.lang-menu > summary:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 2px; }
+.lang-menu .lang-globe { flex: none; }
+.lang-menu .lang-caret { flex: none; transition: transform .2s ease; }
+.lang-menu[open] > summary .lang-caret { transform: rotate(180deg); }
+.lang-menu-list { position: absolute; top: calc(100% + 8px); inset-inline-end: 0; min-width: 156px; z-index: 60;
+  background: var(--paper); border: 1px solid var(--border); border-radius: 12px; padding: 6px;
+  box-shadow: 0 14px 38px rgba(0, 0, 0, .13); display: grid; gap: 2px; }
+.lang-menu-list a { padding: 8px 12px; border-radius: 8px; font-size: 13px; color: var(--muted); white-space: nowrap; }
+.lang-menu-list a:hover { background: var(--panel); color: var(--ink); }
+.lang-menu-list a.active { color: var(--ink); font-weight: 600; }
+/* Mobile menu: render inline rather than as a floating popover */
+.mobile-menu .lang-menu { margin-top: 8px; }
+.mobile-menu .lang-menu-list { position: static; box-shadow: none; margin-top: 6px; min-width: 0; }
+.mobile-menu .lang-menu-list a { border-bottom: 0; }
+
 .btn { display: inline-flex; justify-content: center; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid var(--ink); background: var(--ink); color: var(--paper); font-size: 13px; font-weight: 600; transition: transform .2s, background .2s, color .2s, border-color .2s; }
 .btn:hover { transform: translateY(-2px); background: var(--cobalt); border-color: var(--cobalt); color: #fff; }
 .btn:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 3px; }
