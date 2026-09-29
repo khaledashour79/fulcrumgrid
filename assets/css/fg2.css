@@ -166,6 +166,35 @@ img { display: block; max-width: 100%; }
   transition: opacity .2s; will-change: transform; }
 .iso-label b { font-weight: 600; } .iso-label .lt { color: var(--color-accent); letter-spacing: 0.08em; text-transform: uppercase; font-size: 10px; }
 
+/* ── Hero, grid variant (centered copy + isometric app floor) ── */
+.hero.grid { display: block; min-height: calc(100vh - 62px); position: relative;
+  background-image: linear-gradient(var(--grid-line) 1px, transparent 1px), linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 40px 40px; border-bottom: 1px solid var(--color-divider); overflow: hidden; }
+.hero.grid .hero-copy { text-align: center; max-width: 1000px; margin: 0 auto; padding: 64px 20px 8px; position: relative; z-index: 3; }
+.hero.grid .hero-eyebrow { margin-bottom: 18px; }
+.hero.grid h1 { margin: 0 auto 20px; }
+.hero.grid .hero-intro { margin: 0 auto 26px; }
+.hero.grid .hero-actions { justify-content: center; }
+.hero-floor { position: absolute; inset: 0; top: 0; }
+.hero-floor .fig { position: absolute; top: 18px; left: 22px; z-index: 3; }
+.hero-floor .readout { position: absolute; top: 18px; right: 22px; z-index: 3; }
+.hero-floor .cue { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); z-index: 3; }
+.gstage { position: absolute; left: 0; right: 0; top: 45%; bottom: 2%; display: grid; place-items: center;
+  perspective: 1500px; touch-action: none; cursor: grab; z-index: 1; }
+.gstage:active { cursor: grabbing; }
+.gfloor { position: relative; transform-style: preserve-3d; will-change: transform; }
+.gtile { position: absolute; transform-style: preserve-3d; will-change: transform, opacity; }
+.gt-face { position: absolute; }
+.gt-top { inset: 0; border: 1px solid var(--color-divider); background: var(--color-bg);
+  display: flex; flex-direction: column; justify-content: space-between; padding: 9px; }
+.gt-top .st { font-family: var(--font-body); font-weight: 600; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent); }
+.gt-top .st.road { color: color-mix(in srgb, var(--color-text) 45%, transparent); }
+.gt-top .nm { font-family: var(--font-heading); font-weight: 600; font-size: 15px; line-height: 0.98; text-transform: uppercase; letter-spacing: -0.01em; }
+.gtile.road .gt-top { background: color-mix(in srgb, var(--color-bg) 55%, transparent); border-style: dashed; }
+.gtile.live .gt-top { background: var(--color-accent-100); border-color: var(--color-accent-600); }
+.gt-side { background: color-mix(in srgb, var(--color-neutral-300) 60%, var(--color-surface)); border: 1px solid var(--color-divider); }
+.gtile.live .gt-side { background: color-mix(in srgb, var(--color-accent) 22%, var(--color-surface)); border-color: var(--color-accent-600); }
+
 /* ── Apps grid ── */
 .apps-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 0;
   border-top: 1px solid var(--color-divider); border-left: 1px solid var(--color-divider); }
