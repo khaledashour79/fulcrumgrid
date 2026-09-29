@@ -45,19 +45,25 @@ def alt_href(code, canonical):
 
 
 def lang_switch(current, canonical, indent='        '):
-    """The <details> language dropdown, current language marked active.
+    """The <details class="lang-dd"> language dropdown, current language active.
 
-    `canonical` is the language-independent path ('/', '/products/', ...); each
-    entry links to the same page in its own language.
+    Matches the new design-system markup byte-for-byte, so a localized page's
+    switcher is identical to the English source except for which entry carries
+    class="active", the summary's short code, and the summary's aria-label.
+
+    Each entry links to that language's home ('/', '/ar/', '/fr/', ...), the
+    same behavior the hand-authored English pages ship. `canonical` is accepted
+    for signature compatibility but not used for the entry hrefs; the hreflang
+    cluster (hreflang_block) is what maps same-page equivalents for SEO.
     """
     cur = BY_CODE[current]
-    lines = [f'{indent}<details class="lang-menu">',
-             f'{indent}  <summary aria-label="{cur["word"]}">{GLOBE}<span>{cur["short"]}</span>{CARET}</summary>',
-             f'{indent}  <div class="lang-menu-list">']
+    lines = [f'{indent}<details class="lang-dd">',
+             f'{indent}  <summary aria-label="{cur["word"]}">{cur["short"]} ▾</summary>',
+             f'{indent}  <div class="lang-dd-menu">']
     for l in LANGS:
-        href = alt_href(l['code'], canonical)
-        active = ' class="active" aria-current="true"' if l['code'] == current else ''
-        lines.append(f'{indent}    <a href="{href}" hreflang="{l["code"]}" lang="{l["code"]}"{active}>{l["native"]}</a>')
+        href = alt_href(l['code'], '/')
+        active = ' class="active"' if l['code'] == current else ''
+        lines.append(f'{indent}    <a href="{href}"{active} hreflang="{l["code"]}" lang="{l["code"]}">{l["native"]}</a>')
     lines.append(f'{indent}  </div>')
     lines.append(f'{indent}</details>')
     return '\n'.join(lines)

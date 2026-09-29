@@ -24,7 +24,8 @@ from loc_catalog import COMMON, PAGES
 
 ROOT = os.environ.get('FG_ROOT') or os.path.abspath(os.path.join(HERE, '..', '..'))
 
-SW_RE = re.compile(r'<div class="lang-switch"[^>]*>.*?</div>'
+SW_RE = re.compile(r'<details class="lang-dd">.*?</details>'
+                   r'|<div class="lang-switch"[^>]*>.*?</div>'
                    r'|<details class="lang-menu">.*?</details>', re.S)
 HREFLANG_RE = re.compile(r'[ \t]*<link rel="alternate" hreflang="en"[^>]*>\s*'
                          r'<link rel="alternate" hreflang="ar"[^>]*>\s*'
@@ -85,10 +86,14 @@ def localize(canon, src_rel, lang):
     html = re.sub(r'(<link rel="canonical" href=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), html, count=1)
     html = re.sub(r'(<meta property="og:url" content=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), html, count=1)
 
-    # 4. Translate chrome + page copy (before link-prefixing, so catalog keys
+    # 4. Translate page copy + chrome (before link-prefixing, so catalog keys
     #    match the original English text; translations carry no hrefs).
-    html = apply_catalog(html, COMMON, lang, strict=False, word_boundary=True)
+    #    Per-page copy is applied FIRST (strict, longest-first) so a long page
+    #    phrase like "Get started with FulcrumGrid in three steps" is translated
+    #    whole before the shorter COMMON chrome key "Get started" could rewrite
+    #    a fragment of it. COMMON then mops up standalone chrome occurrences.
     html = apply_catalog(html, PAGES.get(canon, {}).get('t', {}), lang, strict=True, canon=canon)
+    html = apply_catalog(html, COMMON, lang, strict=False, word_boundary=True)
 
     # 5. Prefix internal links (skips assets, external, anchors, mailto).
     html = i18n.prefix_links(html, lang)
