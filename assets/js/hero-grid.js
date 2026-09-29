@@ -70,6 +70,8 @@
   stage.appendChild(floor);
 
   var readout = document.querySelector('[data-readout]');
+  var isAr = (document.documentElement.lang || '').slice(0, 2) === 'ar';
+  var readoutLabel = isAr ? 'التجميع ' : 'Assembly ';
   var hero = stage.closest('.hero') || stage.parentElement;
   var mx = 0, my = 0, tx = 0, ty = 0, drag = 0, down = null, t0 = performance.now();
 
@@ -97,7 +99,7 @@
     });
     if (readout) {
       var prog = reduce ? 1 : ease(clamp((now - 0.2) / 1.7)) * (1 - p);
-      readout.textContent = 'Assembly ' + String(Math.round(prog * 100)).padStart(3, '0') + '%';
+      readout.textContent = readoutLabel + String(Math.round(prog * 100)).padStart(3, '0') + '%';
     }
     requestAnimationFrame(tick);
   }
