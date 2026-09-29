@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Come ridurre i Days Sales Outstanding (DSO) — FulcrumGrid</title>
+  <meta name="description" content="Una guida pratica per abbassare il DSO: come calcolarlo, le sette leve che lo muovono e come farsi pagare le fatture più in fretta senza assumere un team più grande." />
+  <meta name="theme-color" content="#0b1020" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Come ridurre i Days Sales Outstanding (DSO): 7 passi pratici" />
+  <meta property="og:description" content="Come calcolare il DSO e le sette leve che lo riducono — fatti pagare le fatture più in fretta." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/reduce-days-sales-outstanding/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="article:published_time" content="2026-08-24" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — crediti e pagamenti" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/reduce-days-sales-outstanding/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/reduce-days-sales-outstanding/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/reduce-days-sales-outstanding/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/reduce-days-sales-outstanding/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/reduce-days-sales-outstanding/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/reduce-days-sales-outstanding/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/reduce-days-sales-outstanding/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/reduce-days-sales-outstanding/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/reduce-days-sales-outstanding/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="/assets/css/fg.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Come ridurre i Days Sales Outstanding (DSO): 7 passi pratici",
+    "description": "Come calcolare il DSO and the seven levers that bring it down — get invoices paid faster without hiring a bigger team.",
+    "datePublished": "2026-08-24",
+    "dateModified": "2026-08-24",
+    "author": { "@type": "Organization", "name": "FulcrumGrid", "@id": "https://fulcrumgrid.com/#organization" },
+    "publisher": { "@id": "https://fulcrumgrid.com/#organization" },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://fulcrumgrid.com/blog/reduce-days-sales-outstanding/" },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://fulcrumgrid.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fulcrumgrid.com/blog/"},
+      {"@type": "ListItem", "position": 3, "name": "Reduce Days Sales Outstanding", "item": "https://fulcrumgrid.com/blog/reduce-days-sales-outstanding/"}
+    ]
+  }
+  </script>
+</head>
+<body class="fg product-page">
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+
+    <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/><path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/><defs><linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#2156df"/><stop offset="1" stop-color="#1d47ba"/></linearGradient></defs></svg></span>
+        <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Piattaforma</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/about/">Chi siamo</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="header-cta">
+                <details class="lang-menu">
+          <summary aria-label="Lingua"><svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg><span>IT</span><svg class="lang-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <div class="lang-menu-list">
+            <a href="/blog/reduce-days-sales-outstanding/" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/reduce-days-sales-outstanding/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/reduce-days-sales-outstanding/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/reduce-days-sales-outstanding/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/reduce-days-sales-outstanding/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/reduce-days-sales-outstanding/" hreflang="it" lang="it" class="active" aria-current="true">Italiano</a>
+            <a href="/nl/blog/reduce-days-sales-outstanding/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Attiva/disattiva menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="/it/products/">Prodotti</a>
+      <a href="/it/features/">Piattaforma</a>
+      <a href="/it/pricing/">Prezzi</a>
+      <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+      <a href="/it/about/">Chi siamo</a>
+      <a href="/it/contact/">Contatti</a>
+      <a class="btn btn-primary" href="/it/contact/">Richiedi una demo</a>
+              <details class="lang-menu">
+          <summary aria-label="Lingua"><svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg><span>IT</span><svg class="lang-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <div class="lang-menu-list">
+            <a href="/blog/reduce-days-sales-outstanding/" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/reduce-days-sales-outstanding/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/reduce-days-sales-outstanding/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/reduce-days-sales-outstanding/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/reduce-days-sales-outstanding/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/reduce-days-sales-outstanding/" hreflang="it" lang="it" class="active" aria-current="true">Italiano</a>
+            <a href="/nl/blog/reduce-days-sales-outstanding/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/it/">Home</a><span>/</span><a href="/it/blog/">Blog</a><span>/</span><span class="current">Ridurre il DSO</span>
+      </nav>
+    </div>
+
+    <article class="section" style="padding-top:22px">
+      <div class="container">
+        <div class="article article-header">
+          <span class="post-cat" style="color:var(--indigo-text)">Collection</span>
+          <h1>Come ridurre i Days Sales Outstanding (DSO): 7 passi pratici</h1>
+          <div class="post-meta"><time datetime="2026-08-24">24 agosto 2026</time><span class="read">6 min di lettura</span></div>
+        </div>
+
+        <div class="article article-body">
+          <p>I Days Sales Outstanding (DSO) sono il numero medio di giorni necessari a incassare il pagamento dopo una vendita. È uno dei segnali più chiari della salute finanziaria di qualsiasi azienda che fattura ai clienti: un DSO basso significa che la liquidità entra in fretta, un DSO alto o in crescita significa che denaro già guadagnato è bloccato nel bilancio di qualcun altro.</p>
+          <p>La buona notizia è che il DSO è molto controllabile. La maggior parte di ciò che lo determina non sono i tuoi clienti — è il tuo stesso processo. Ecco come misurarlo, e poi sette leve che lo abbassano in modo costante.</p>
+
+          <h2>Come calcolare il DSO</h2>
+          <p>La formula standard, misurata su un periodo (di solito un mese o un trimestre):</p>
+          <blockquote>DSO = (Crediti verso clienti ÷ Totale vendite a credito) × Numero di giorni</blockquote>
+          <p>Se hai $120,000 di crediti e $600,000 di vendite a credito su 90 giorni, il tuo DSO è (120,000 ÷ 600,000) × 90 = <strong>18 giorni</strong>. Monitoralo ogni mese. La tendenza conta più del numero assoluto — un DSO che sale mese dopo mese è un segnale d'allarme precoce, molto prima che diventi un problema di flusso di cassa.</p>
+
+          <h2>Sette modi per abbassare il DSO</h2>
+          <ol>
+            <li><strong>Fattura subito e con precisione.</strong> Il conteggio parte quando la fattura viene inviata, non quando il lavoro è concluso. Ogni giorno di ritardo nell'emissione, e ogni errore che scatena una contestazione, è un giorno aggiunto al DSO. Automatizza la generazione delle fatture così che avvenga nel momento in cui un lavoro si chiude.</li>
+            <li><strong>Stabilisci condizioni chiare — e metti la scadenza bene in vista.</strong> Un «Net 30» nascosto nel piè di pagina viene ignorato. Indica la data di scadenza esatta in modo evidente, insieme ai metodi di pagamento accettati e a cosa succede se non viene rispettata.</li>
+            <li><strong>Automatizza i promemoria prima e dopo la scadenza.</strong> Una spinta cortese tre giorni prima della scadenza previene molti più ritardi che inseguire a posteriori. Programma una sequenza — prima della scadenza, alla scadenza e in escalation dopo — così nulla dipende dal fatto che qualcuno si ricordi di dare seguito.</li>
+            <li><strong>Rendi il pagamento senza sforzo.</strong> Ogni passaggio in più fa perdere pagamenti. Offri più metodi e includi un link di pagamento diretto sulla fattura stessa.</li>
+            <li><strong>Offri incentivi al pagamento anticipato dove il margine lo consente.</strong> Un piccolo sconto per il pagamento entro dieci giorni (ad es. «2/10 net 30») può anticipare la liquidità in modo significativo con clienti che stanno solo ottimizzando i propri tempi.</li>
+            <li><strong>Segmenta i tuoi crediti per rischio e anzianità.</strong> Non ogni conto scaduto merita lo stesso trattamento. Uno scadenzario che raggruppa i saldi in 0–30, 31–60, 61–90 e oltre 90 giorni ti permette di concentrare lo sforzo dove il recupero è più a rischio.</li>
+            <li><strong>Registra le promesse di pagamento e le contestazioni in un unico posto.</strong> Quando un cliente dice «pago venerdì» o segnala una voce, va annotato sul conto — non perso in una casella. Una cronologia chiara per conto è ciò che trasforma il recupero da indovinello in processo.</li>
+          </ol>
+
+          <h2>Lo schema dietro tutte e sette</h2>
+          <p>Nota che nessuna di queste richiede un team più grande — richiedono un <em>processo coerente e verificabile</em>. Il recupero manuale crolla perché dipende dal fatto che le persone si ricordino di agire. Le aziende con il DSO più basso sono quelle che hanno automatizzato i solleciti di routine e riservato l'attenzione umana ai conti che ne hanno davvero bisogno.</p>
+          <p>È esattamente a questo che serve uno strumento dedicato ai crediti: monitorare ogni fattura, automatizzare la sequenza di promemoria e offrirti una vista per anzianità così sai sempre dov'è la liquidità.</p>
+
+          <div class="article-cta" style="--cta-acc:var(--indigo)">
+            <span class="k">FulcrumGrid Collection</span>
+            <h3>Metti i tuoi crediti in pilota automatico</h3>
+            <p>Collection monitora ogni fattura, automatizza promemoria e piani di pagamento e riconcilia i pagamenti — così il DSO scende e nulla sfugge.</p>
+            <a class="btn btn-primary" href="/it/products/collection/">Esplora Collection</a>
+          </div>
+        </div>
+
+        <div class="article-foot">
+          <a class="back-link" href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bgf)" stroke-width="1.5"/>
+              <path d="M9 23V9h9M9 16h7" stroke="url(#bgf)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/>
+              <defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+            </svg>
+          </span>
+          <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
+        </a>
+        <p class="footer-tag">La spina dorsale operativa dei team moderni.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h3>Prodotti</h3><a href="/it/products/">Tutti i prodotti</a><a href="/it/products/command-center/">Command Center</a><a href="/it/products/collection/">Collection</a><a href="/it/products/hr-suite/">HR Suite</a><a href="/it/custom-apps/">App su misura</a><a href="/it/products/coming-soon/">In arrivo</a></div>
+        <div class="footer-col"><h3>Piattaforma</h3><a href="/it/features/">Funzionalità</a><a href="/it/how-it-works/">Come funziona</a><a href="/it/pricing/">Prezzi</a><a href="/it/regions/">Regioni</a><a href="/it/blog/">Blog</a></div>
+        <div class="footer-col"><h3>Azienda</h3><a href="/it/about/">Chi siamo</a><a href="/it/faq/">FAQ</a><a href="/it/contact/">Contatti</a><a href="mailto:contact@avenlorconsulting.com">Scrivici</a><a href="/it/privacy/">Privacy</a><a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a></div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> FulcrumGrid. Tutti i diritti riservati.</p>
+      <p class="footer-domain">fulcrumgrid.com</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/fg.js" defer></script>
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
