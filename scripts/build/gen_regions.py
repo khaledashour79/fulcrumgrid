@@ -819,7 +819,7 @@ REGION_ORDER = ['saudi-arabia', 'uae', 'qatar', 'kuwait', 'bahrain', 'oman', 'uk
                 'north-america', 'europe', 'france', 'germany', 'spain', 'italy', 'netherlands', 'ireland',
                 'egypt', 'jordan', 'lebanon', 'iraq', 'palestine', 'syria', 'yemen', 'gcc', 'middle-east']
 # The top-level regions shown on the /regions/ hub, in order.
-HUB_ORDER = ['gcc', 'europe', 'north-america', 'middle-east']
+HUB_ORDER = ['north-america', 'europe', 'gcc', 'middle-east']
 
 def head(lang, path, title, desc):
     en = lang == 'en'
