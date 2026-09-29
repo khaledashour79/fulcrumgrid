@@ -58,6 +58,8 @@ PRODSLUG = {'collection': 'collection', 'hr': 'hr-suite', 'operations': 'command
 
 MARK_A, MARK_B = '<!-- daily:start -->', '<!-- daily:end -->'
 SITE = 'https://fulcrumgrid.com'
+INDEX_CARDS = 18  # how many recent daily posts to surface on the blog index
+                  # (every post still gets its pages and a sitemap entry)
 
 
 def _t(s):
@@ -272,16 +274,15 @@ def main():
     n = 0
     for lang in LANGS:
         hdr, ftr = chrome(lang)
-        cards = []
-        for p in posts:
+        for p in posts:                       # every post gets its page in every language
             tr = p['lang'][lang]
             out = os.path.join(ROOT, PREFIX[lang] + 'blog/%s/index.html' % p['slug'])
             os.makedirs(os.path.dirname(out), exist_ok=True)
             open(out, 'w', encoding='utf-8').write(page(lang, p, tr, hdr, ftr))
-            cards.append(card(lang, p, tr))
             n += 1
-        # Always reconcile the index region (empty when no daily posts), so a
-        # removed post's card disappears on the next build.
+        # Surface only the most recent INDEX_CARDS on the index (posts are
+        # newest-first); always reconcile the region so removals disappear too.
+        cards = [card(lang, p, p['lang'][lang]) for p in posts[:INDEX_CARDS]]
         splice_index(lang, '\n'.join(cards))
     splice_sitemap([sitemap_url(p) for p in posts])
     print('gen_daily: wrote %d pages for %d daily post(s)' % (n, len(posts)))
