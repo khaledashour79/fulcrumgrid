@@ -265,6 +265,14 @@ def site_foot():
   </footer>'''
 
 
+# The live application each app's "Start free trial" CTA opens.
+APP_URL = {
+    'hr-suite': 'https://fulcrumgrid-hr.com',
+    'command-center': 'https://fulcrumgrid-command.com',
+    'collection': 'https://fulcrumgrid-collect.com',
+}
+
+
 def page(slug, d, lang='en'):
     """Render the English new-design (fg2) pricing page for one app.
 
@@ -307,7 +315,7 @@ def page(slug, d, lang='en'):
             btn = '<a class="btn btn-secondary" href="mailto:contact@avenlorconsulting.com">Contact sales</a>'
         else:
             cls = 'btn-primary' if popular else 'btn-secondary'
-            btn = '<a class="btn %s" href="/contact/">Start free trial</a>' % cls
+            btn = '<a class="btn %s" href="%s">Start free trial</a>' % (cls, APP_URL[slug])
         cards.append('''          <div class="price-col%s">
             %s<h4>%s</h4>
             <div class="price-amount"><span class="amt"%s>%s</span>%s</div>
