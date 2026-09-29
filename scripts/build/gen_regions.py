@@ -822,16 +822,21 @@ REGION_ORDER = ['saudi-arabia', 'uae', 'qatar', 'kuwait', 'bahrain', 'oman', 'uk
 HUB_ORDER = ['north-america', 'europe', 'gcc', 'middle-east']
 
 def head(lang, path, title, desc):
-    en = lang == 'en'
-    base = '' if en else '/ar'
-    canon = 'https://fulcrumgrid.com%s%s' % (base, path)
+    # New fg2 ("industry" redesign) <head>, modelled on the homepage index.html:
+    # CSP + GA, Barlow / Barlow Condensed fonts, /assets/css/fg2.css, icons and
+    # manifest, per-page title/description/OG/Twitter, canonical + og:url on
+    # https://fulcrumgrid.com<path>, and the full 7-language hreflang cluster
+    # plus x-default. English only for now — Arabic emission is guarded off in
+    # the write loop below, so `lang` currently only ever arrives as 'en'.
+    canon = 'https://fulcrumgrid.com%s' % path
     en_url = 'https://fulcrumgrid.com%s' % path
-    ar_url = 'https://fulcrumgrid.com/ar%s' % path
-    fonts = ('Inter:wght@400;500;600;700;800' if en else 'Cairo:wght@400;500;600;700;800') + '&family=Space+Grotesk:wght@500;600;700'
-    og = 'https://fulcrumgrid.com/assets/og/og-hr-suite%s.png' % ('' if en else '-ar')
-    htmlopen = '<html lang="en">' if en else '<html lang="ar" dir="rtl">'
+    og = 'https://fulcrumgrid.com/assets/og/og-hr-suite.png'
+    hreflang = '\n'.join(
+        '  <link rel="alternate" hreflang="%s" href="https://fulcrumgrid.com%s%s" />' % (code, pre, path)
+        for code, pre in (('en', ''), ('ar', '/ar'), ('fr', '/fr'), ('de', '/de'),
+                          ('es', '/es'), ('it', '/it'), ('nl', '/nl')))
     return f'''<!DOCTYPE html>
-{htmlopen}
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -841,119 +846,131 @@ def head(lang, path, title, desc):
 
   <title>{title}</title>
   <meta name="description" content="{desc}" />
-  <meta name="theme-color" content="#f0f2ed" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#f2f2f3" />
+
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{title}" />
   <meta property="og:description" content="{desc}" />
   <meta property="og:url" content="{canon}" />
   <meta property="og:site_name" content="FulcrumGrid" />
-  <meta property="og:locale" content="{'en_US' if en else 'ar_AR'}" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:image" content="{og}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{title}" />
+  <meta name="twitter:description" content="{desc}" />
   <meta name="twitter:image" content="{og}" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="{canon}" />
-  <link rel="alternate" hreflang="en" href="{en_url}" />
-  <link rel="alternate" hreflang="ar" href="{ar_url}" />
+{hreflang}
   <link rel="alternate" hreflang="x-default" href="{en_url}" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family={fonts}&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family={fonts}&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family={fonts}&display=swap" rel="stylesheet" /></noscript>
-  <link rel="stylesheet" href="/assets/css/fg.css" />
-  <style>:root {{ --p-accent: var(--teal); }}</style>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
 </head>'''
 
 def header(lang, path):
-    en = lang == 'en'
-    home = '/' if en else '/ar/'
-    aria = 'FulcrumGrid home' if en else 'FulcrumGrid الصفحة الرئيسية'
-    brand = '<span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>' if en else '<span class="brand-name" dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span>'
-    demo = 'Request a demo' if en else 'اطلب عرضًا توضيحيًا'
-    b = '' if en else '/ar'
-    items = '\n'.join('        <a href="%s%s"%s>%s</a>' % (b, href, (' class="active" aria-current="page"' if href == '/regions/' else ''), (e if en else a)) for href, e, a in NAV)
-    en_href = path
-    ar_href = '/ar' + path
-    return f'''<body class="fg product-page">
-  <a class="skip-link" href="#main">{'Skip to content' if en else 'تخطَّ إلى المحتوى'}</a>
-
-  <header class="site-header" id="top">
-    <div class="header-inner">
-      <a class="brand" href="{home}" aria-label="{aria}">
-        {MARK}
-        {brand}
+    # New fg2 header (site-head), modelled on index.html, with Regions active.
+    # English only for now (Arabic chrome deferred with Arabic emission).
+    return '''<body>
+  <!-- ===== Header ===== -->
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
       </a>
       <nav class="site-nav" aria-label="Primary">
-{items}
+        <a href="/products/">Products</a>
+        <a href="/features/">Platform</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/" class="active" aria-current="page">Regions</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact/">Contact</a>
       </nav>
-      <div class="header-cta">
-        <div class="lang-switch" role="group" aria-label="Language">
-          <a href="{en_href}"{' class="active" aria-current="page"' if en else ''} hreflang="en" lang="en">EN</a>
-          <a href="{ar_href}"{'' if en else ' class="active" aria-current="page"'} hreflang="ar" lang="ar">ع</a>
-        </div>
-        <a class="btn btn-primary" href="{b}/contact/">{demo}</a>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
       </div>
-      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobile-menu" hidden>
-{items}
-      <a class="btn btn-primary" href="{b}/contact/">{demo}</a>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
     </div>
   </header>'''
 
 def footer(lang):
-    en = lang == 'en'
-    home = '/' if en else '/ar/'
-    aria = 'FulcrumGrid home' if en else 'FulcrumGrid الصفحة الرئيسية'
-    brand = '<span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>' if en else '<span class="brand-name" dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span>'
-    tag = 'The operational backbone for modern teams.' if en else 'العمود الفقري التشغيلي للفرق الحديثة.'
-    rights = 'All rights reserved.' if en else 'جميع الحقوق محفوظة.'
-    cols = FOOTER_COLS_EN if en else FOOTER_COLS_AR
-    return f'''  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a class="brand" href="{home}" aria-label="{aria}">
-          {MARKF}
-          {brand}
-        </a>
-        <p class="footer-tag">{tag}</p>
+    # New fg2 footer (site-foot), modelled on index.html. HR Suite listed first
+    # among the apps. English only for now (Arabic chrome deferred).
+    return '''  <!-- ===== Footer ===== -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Platform</h5>
+          <a href="/features/">Features</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
       </div>
-      <div class="footer-cols">{cols}</div>
-    </div>
-    <div class="container footer-bottom">
-      <p>&copy; <span id="year">2026</span> FulcrumGrid. {rights}</p>
-      <p class="footer-domain" dir="ltr">fulcrumgrid.com</p>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
     </div>
   </footer>
 
-  <script src="/assets/js/main.js" defer></script>
-  <script src="/assets/js/fg.js" defer></script>
   <script src="/assets/js/consent.js" defer></script>
 </body>
 </html>'''
 
-def breadcrumb(lang, trail):
-    # trail: list of (label, href|None); last item is current
-    en = lang == 'en'
-    sep = '<span>/</span>'
-    parts = []
-    for i, (label, href) in enumerate(trail):
-        if href:
-            parts.append('<a href="%s">%s</a>' % (href, label))
-        else:
-            parts.append('<span class="current">%s</span>' % label)
-    return ('    <div class="container">\n      <nav class="breadcrumb" aria-label="Breadcrumb">\n        '
-            + sep.join(parts) + '\n      </nav>\n    </div>')
+def region_code(slug):
+    """Short code shown on a region/country card (KSA, UAE, NA, ...).
+    Hub-level regions get an explicit two/three-letter code (matching the
+    homepage); country cards derive it from the tag suffix (e.g. 'Qatar · QA')."""
+    override = {'north-america': 'NA', 'europe': 'EU', 'gcc': 'GCC', 'middle-east': 'ME'}
+    if slug in override:
+        return override[slug]
+    return REGIONS[slug]['tag_en'].split('·')[-1].strip()
 
 def region_page(slug, lang):
     d = REGIONS[slug]
@@ -970,7 +987,6 @@ def region_page(slug, lang):
     demo = 'Request a demo' if en else 'اطلب عرضًا توضيحيًا'
     see_hr = 'Explore HR Suite' if en else 'استكشف الموارد البشرية'
     see_price = 'See HR Suite pricing' if en else 'أسعار الموارد البشرية'
-    whatsin_eye = 'Built in' if en else 'مضمّن'
     whatsin_h = ('%s compliance, out of the box' % name) if en else ('امتثال %s جاهز' % name)
     whatsin_p = ("The modules that make HR Suite work the way %s does — each part of the same platform, no separate tools." % name if en
                  else "الوحدات التي تجعل منظومة الموارد البشرية تعمل بالطريقة المحلية في %s — كلّها جزء من المنصة نفسها، دون أدوات منفصلة." % name)
@@ -979,38 +995,42 @@ def region_page(slug, lang):
             f'كل وحدة هنا جزء من منظومة الموارد البشرية — الرواتب المتقدّمة ونهاية السنة والامتثال في خطة المؤسسات، أو تُضاف إلى أي خطة كإضافة لكل مقعد. <a href="{b}/pricing/hr-suite/">أسعار الموارد البشرية ←</a>')
     cta_h = d['cta_h_en'] if en else d['cta_h_ar']
     cta_p = d['cta_p_en'] if en else d['cta_p_ar']
-    bc = breadcrumb(lang, [('Home' if en else 'الرئيسية', b + '/'),
-                           ('Regions' if en else 'المناطق', b + '/regions/'),
-                           (name, None)])
-    arrow = '→' if en else '←'
-    # Build the middle sections: a feature grid (country detail) and/or a
-    # member-country grid (region group). Backgrounds alternate automatically.
-    inners = []
+    email = 'Email us' if en else 'راسلنا'
+    # Build the middle fg2 sections: a feature grid (.grid-2/.cell, country
+    # detail) and/or a member-country cross-grid (.regions/.region, region
+    # group). Technical eyebrows are numbered monospace labels.
+    sections = []
+    n = 1
     if d.get('features'):
-        feats = []
+        cells = []
         for te, ta, be, ba in d['features']:
-            feats.append(f'''          <div class="feature">
-            <div class="feature-icon" aria-hidden="true">{SHIELD}</div>
-            <h3>{te if en else ta}</h3>
-            <p>{be if en else ba}</p>
-          </div>''')
-        inners.append(f'''        <div class="sub-head">
-          <p class="eyebrow">{whatsin_eye}</p>
-          <h2>{whatsin_h}</h2>
-          <p>{whatsin_p}</p>
+            cells.append(f'          <div class="cell"><h4>{te if en else ta}</h4><p>{be if en else ba}</p></div>')
+        eye = ('%02d · Built in' % n) if en else 'مضمّن'
+        n += 1
+        sections.append(f'''    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">{eye}</p>
+            <h2>{whatsin_h}</h2>
+          </div>
+          <p class="section-lead">{whatsin_p}</p>
         </div>
-        <div class="feature-grid">
-{chr(10).join(feats)}
+        <div class="grid-2">
+{chr(10).join(cells)}
         </div>
-        <p class="price-note" style="margin-top:28px">{note}</p>''')
+        <p class="text-muted" style="margin-top:26px;max-width:74ch">{note}</p>
+      </div>
+    </section>''')
     if d.get('members'):
         mc = []
         for m in d['members']:
             md = REGIONS[m]
             mname = md['en_name'] if en else md['ar_name']
             msub = md['hub_sub_en'] if en else md['hub_sub_ar']
-            mc.append(f'''          <a class="cross-card" href="{b}/regions/{m}/" style="--cc: var(--teal)"><span class="ci" aria-hidden="true">{GLOBE}</span><div><h3>{mname}</h3><p>{msub}</p></div><span class="arrow" aria-hidden="true">{arrow}</span></a>''')
-        c_eye = 'Countries' if en else 'الدول'
+            mc.append(f'          <a class="region" href="{b}/regions/{m}/" style="text-decoration:none;color:inherit"><div class="code">{region_code(m)}</div><h4>{mname}</h4><p class="cs">{msub}</p></a>')
+        c_eye = ('%02d · Countries' % n) if en else 'الدول'
+        n += 1
         c_h = 'Countries in this region' if en else 'الدول في هذه المنطقة'
         c_p = ('Pick a country for its statutory payroll and compliance detail — and it runs across the wider region too.' if en
                else 'اختر دولة لعرض تفاصيل الرواتب والامتثال النظامي فيها — وتعمل كذلك عبر المنطقة الأوسع.')
@@ -1018,65 +1038,53 @@ def region_page(slug, lang):
         if d.get('served_en'):
             served = d['served_en'] if en else d['served_ar']
             if en:
-                served_html = (f'\n        <p class="price-note" style="margin-top:18px">'
+                served_html = (f'\n        <p class="text-muted" style="margin-top:20px;max-width:74ch">'
                                f'<strong>Also runs across the region:</strong> {served} — with configurable local payroll, '
                                f'end-of-service and multi-currency pay. <a href="{b}/contact/">Ask about your market →</a></p>')
             else:
-                served_html = (f'\n        <p class="price-note" style="margin-top:18px">'
+                served_html = (f'\n        <p class="text-muted" style="margin-top:20px;max-width:74ch">'
                                f'<strong>وتعمل أيضًا عبر المنطقة:</strong> {served} — مع رواتب محلية ونهاية خدمة قابلة للتهيئة '
                                f'ودفع متعدّد العملات. <a href="{b}/contact/">اسأل عن سوقك ←</a></p>')
-        inners.append(f'''        <div class="sub-head">
-          <p class="eyebrow">{c_eye}</p>
-          <h2>{c_h}</h2>
-          <p>{c_p}</p>
+        sections.append(f'''    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">{c_eye}</p>
+            <h2>{c_h}</h2>
+          </div>
+          <p class="section-lead">{c_p}</p>
         </div>
-        <div class="cross-grid">
+        <div class="regions">
 {chr(10).join(mc)}
-        </div>{served_html}''')
-    sec_html = ''
-    for i, inner in enumerate(inners):
-        cls = 'section section-alt' if i % 2 == 0 else 'section'
-        sec_html += f'''    <section class="{cls}">
-      <div class="container">
-{inner}
+        </div>{served_html}
       </div>
-    </section>
-
-'''
-    cta_cls = 'section section-alt' if len(inners) % 2 == 0 else 'section'
+    </section>''')
+    cta_eye = ('%02d · Get started' % n) if en else 'ابدأ الآن'
+    sec_html = ('\n' + '\n\n'.join(sections) + '\n') if sections else ''
     body = f'''{header(lang, path)}
 
-  <main id="main">
-{bc}
-
-    <section class="product-hero">
-      <div class="container">
-        <div class="product-hero-inner">
-          <span class="product-hero-icon" aria-hidden="true">{SHIELD}</span>
-          <p class="product-eyebrow"><span class="tag tag-live" style="padding:3px 10px">{tag}</span></p>
-          <h1>{h1} <span class="p-grad">{h1g}</span></h1>
-          <p class="lead">{lead}</p>
-          <div class="product-hero-actions">
-            <a class="btn btn-primary btn-lg" href="{b}/contact/">{demo}</a>
-            <a class="btn btn-outline btn-lg" href="{b}/products/hr-suite/">{see_hr}</a>
-            <a class="btn btn-outline btn-lg" href="{b}/pricing/hr-suite/">{see_price}</a>
-          </div>
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="hero-eyebrow">{tag}</p>
+        <h1>{h1} <em style="font-style:normal;color:var(--color-accent)">{h1g}</em></h1>
+        <p class="hero-intro">{lead}</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="{b}/contact/">{demo}</a>
+          <a class="btn btn-secondary" href="{b}/products/hr-suite/">{see_hr}</a>
+          <a class="btn btn-secondary" href="{b}/pricing/hr-suite/">{see_price}</a>
         </div>
       </div>
     </section>
-
-{sec_html}    <section class="{cta_cls}" id="contact">
-      <div class="container">
-        <div class="cta-panel">
-          <div class="grid-bg grid-bg-soft" aria-hidden="true"></div>
-          <div class="cta-content">
-            <h2>{cta_h}</h2>
-            <p>{cta_p}</p>
-            <div class="hero-actions" style="justify-content:center">
-              <a class="btn btn-primary btn-lg" href="{b}/contact/">{demo}</a>
-              <a class="btn btn-outline btn-lg" href="mailto:contact@avenlorconsulting.com">{'Email us' if en else 'راسلنا'}</a>
-            </div>
-          </div>
+{sec_html}
+    <section class="section cta" id="contact">
+      <div class="wrap">
+        <p class="mono mono-accent">{cta_eye}</p>
+        <h2>{cta_h}</h2>
+        <p class="section-lead" style="margin:0 auto 26px">{cta_p}</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="{b}/contact/">{demo}</a>
+          <a class="btn btn-secondary" href="mailto:contact@avenlorconsulting.com">{email}</a>
         </div>
       </div>
     </section>
@@ -1097,64 +1105,64 @@ def hub_page(lang):
     h1g = 'region runs' if en else 'عمل منطقتك'
     lead = ("HR Suite adapts to local payroll and compliance — statutory contributions, wage-protection files, end-of-service rules, and language. Choose your region."
             if en else "تتكيّف منظومة الموارد البشرية مع الرواتب والامتثال المحلي — الاشتراكات النظامية وملفات حماية الأجور وقواعد نهاية الخدمة واللغة. اختر منطقتك.")
-    # region cards — one per top-level region, in display order
-    arrow = '→' if en else '←'
+    demo = 'Request a demo' if en else 'اطلب عرضًا توضيحيًا'
+    see_hr = 'Explore HR Suite' if en else 'استكشف الموارد البشرية'
+    # Region cards — one .region card per top-level region (code + name + served
+    # list), like the homepage "06 · Regions" grid, plus a "More markets" tile.
     cards_list = []
     for rslug in HUB_ORDER:
         rd = REGIONS[rslug]
         rname = rd['en_name'] if en else rd['ar_name']
         rsub = rd['hub_sub_en'] if en else rd['hub_sub_ar']
-        cards_list.append(f'''          <a class="cross-card" href="{b}/regions/{rslug}/" style="--cc: var(--teal)">
-            <span class="ci" aria-hidden="true">{GLOBE}</span>
-            <div><h3>{rname}</h3><p>{rsub}</p></div><span class="arrow" aria-hidden="true">{arrow}</span>
-          </a>''')
+        cards_list.append(f'          <a class="region" href="{b}/regions/{rslug}/" style="text-decoration:none;color:inherit"><div class="code">{region_code(rslug)}</div><h4>{rname}</h4><p class="cs">{rsub}</p></a>')
     more_t = 'More markets' if en else 'أسواق أخرى'
     more_s = 'Elsewhere — on request' if en else 'أماكن أخرى — عند الطلب'
-    cards_list.append(f'''          <div class="cross-card" style="--cc: var(--text-dim); opacity:.72; cursor:default">
-            <span class="ci" aria-hidden="true">{GLOBE}</span>
-            <div><h3>{more_t}</h3><p>{more_s}</p></div>
-          </div>''')
+    cards_list.append(f'          <div class="region" style="opacity:.72"><div class="code">+</div><h4>{more_t}</h4><p class="cs">{more_s}</p></div>')
     cards = '\n'.join(cards_list)
-    demo = 'Request a demo' if en else 'اطلب عرضًا توضيحيًا'
-    bc = breadcrumb(lang, [('Home' if en else 'الرئيسية', b + '/'), (eye, None)])
+    reg_eye = '01 · Regions' if en else 'المناطق'
+    reg_h = 'Built for how your region runs.' if en else 'مصمّمة لطريقة عمل منطقتك.'
+    reg_lead = 'Choose your region.' if en else 'اختر منطقتك.'
+    cta_eye = '02 · Get started' if en else 'ابدأ الآن'
     cta_h = 'Not sure your region is covered?' if en else 'لست متأكدًا من تغطية منطقتك؟'
     cta_p = "Tell us where you operate and we'll show you how HR Suite fits." if en else 'أخبرنا أين تعمل وسنعرض لك كيف تناسبك منظومة الموارد البشرية.'
     body = f'''{header(lang, path)}
 
-  <main id="main">
-{bc}
-
-    <section class="product-hero">
-      <div class="container">
-        <div class="product-hero-inner">
-          <span class="product-hero-icon" aria-hidden="true">{GLOBE}</span>
-          <p class="product-eyebrow"><span class="tag tag-live" style="padding:3px 10px">{eye}</span></p>
-          <h1>{h1} <span class="p-grad">{h1g}</span></h1>
-          <p class="lead">{lead}</p>
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="hero-eyebrow">{eye}</p>
+        <h1>{h1} <em style="font-style:normal;color:var(--color-accent)">{h1g}</em></h1>
+        <p class="hero-intro">{lead}</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="{b}/contact/">{demo}</a>
+          <a class="btn btn-secondary" href="{b}/products/hr-suite/">{see_hr}</a>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt">
-      <div class="container">
-        <div class="cross-grid">
+    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">{reg_eye}</p>
+            <h2>{reg_h}</h2>
+          </div>
+          <p class="section-lead">{reg_lead}</p>
+        </div>
+        <div class="regions">
 {cards}
         </div>
       </div>
     </section>
 
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="cta-panel">
-          <div class="grid-bg grid-bg-soft" aria-hidden="true"></div>
-          <div class="cta-content">
-            <h2>{cta_h}</h2>
-            <p>{cta_p}</p>
-            <div class="hero-actions" style="justify-content:center">
-              <a class="btn btn-primary btn-lg" href="{b}/contact/">{demo}</a>
-              <a class="btn btn-outline btn-lg" href="{b}/products/hr-suite/">{'Explore HR Suite' if en else 'استكشف الموارد البشرية'}</a>
-            </div>
-          </div>
+    <section class="section cta" id="contact">
+      <div class="wrap">
+        <p class="mono mono-accent">{cta_eye}</p>
+        <h2>{cta_h}</h2>
+        <p class="section-lead" style="margin:0 auto 26px">{cta_p}</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="{b}/contact/">{demo}</a>
+          <a class="btn btn-secondary" href="{b}/products/hr-suite/">{see_hr}</a>
         </div>
       </div>
     </section>
@@ -1169,7 +1177,18 @@ def write(relpath, content):
     open(p, 'w', encoding='utf-8').write(content)
     print('wrote', relpath)
 
-for lang in ('en', 'ar'):
+# ── Page emission ──────────────────────────────────────────────────────────
+# English pages use the new fg2 ("industry") design. Arabic emission is
+# intentionally GUARDED OFF for now — the /ar/regions/… pages are handled in a
+# later pass once the Arabic new-design chrome (head/header/footer) lands.
+# All Arabic DATA above (ar_name, lead_ar, feature[...][1|3], cta_*_ar, served_ar,
+# FOOTER_COLS_AR, NAV Arabic labels) is kept intact for that work — do NOT
+# remove it. To re-enable Arabic, add 'ar' back to LANGS below.
+# REGION_ORDER (the full set of generated pages) is unchanged, so the sitemap
+# (gen_sitemap via loc_catalog) still sees the same English page set.
+LANGS = ('en',)  # Arabic ('ar') deferred — see note above.
+
+for lang in LANGS:
     pref = '' if lang == 'en' else 'ar/'
     write(pref + 'regions/index.html', hub_page(lang))
     for slug in REGION_ORDER:
