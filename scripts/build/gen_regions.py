@@ -322,7 +322,8 @@ REGIONS = {
     'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في أوروبا مع مدفوعات SEPA، وخصوصية بيانات بمستوى GDPR، واستقطاعات محلية قابلة للتهيئة، وسجلّات موظفين كاملة — منصة واحدة عبر كياناتك.",
     'desc_en': "HR Suite for Europe — SEPA credit-transfer pay files, GDPR data-subject rights (export and erasure), configurable local deductions, and full HR on one platform.",
     'desc_ar': "منظومة الموارد البشرية لأوروبا — ملفات دفع SEPA، وحقوق أصحاب البيانات وفق GDPR (التصدير والمحو)، واستقطاعات محلية قابلة للتهيئة، وموارد بشرية كاملة على منصة واحدة.",
-    'hub_sub_en': 'SEPA · GDPR · payroll', 'hub_sub_ar': 'SEPA · GDPR · الرواتب',
+    'hub_sub_en': 'UK · SEPA · GDPR', 'hub_sub_ar': 'UK · SEPA · GDPR',
+    'members': ['uk'],
     'features': [
       ("SEPA payments", "مدفوعات SEPA",
        "Export a SEPA credit-transfer file from a finalized pay run for upload to your bank, with IBANs validated on entry.",
@@ -344,10 +345,113 @@ REGIONS = {
     'cta_p_en': "See HR Suite handle SEPA payments, GDPR, and payroll for your team.",
     'cta_p_ar': "شاهد منظومة الموارد البشرية تدير مدفوعات SEPA و GDPR والرواتب لفريقك.",
   },
+  'gcc': {
+    'en_name': 'the GCC', 'ar_name': 'دول الخليج',
+    'tag_en': 'Gulf Cooperation Council · GCC', 'tag_ar': 'مجلس التعاون الخليجي · GCC',
+    'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'the Gulf',
+    'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للخليج',
+    'lead_en': "Six Gulf states, one platform — WPS payroll, statutory end-of-service by each country's labour law, social insurance, and nationalization tracking, with Arabic throughout. Pick a country for the detail.",
+    'lead_ar': "ست دول خليجية على منصة واحدة — رواتب WPS، ونهاية خدمة نظامية وفق قانون العمل في كل دولة، وتأمينات اجتماعية، ومتابعة التوطين، مع دعم العربية بالكامل. اختر دولة لعرض التفاصيل.",
+    'desc_en': "HR Suite across the GCC — Saudi Arabia, UAE, Qatar, Kuwait, Bahrain and Oman — with WPS payroll, statutory end-of-service, social insurance and nationalization tracking per country.",
+    'desc_ar': "منظومة الموارد البشرية عبر دول الخليج — السعودية والإمارات وقطر والكويت والبحرين وعُمان — مع رواتب WPS، ونهاية خدمة نظامية، وتأمينات، ومتابعة توطين لكل دولة.",
+    'hub_sub_en': 'Saudi · UAE · Qatar · Kuwait · Bahrain · Oman', 'hub_sub_ar': 'السعودية · الإمارات · قطر · الكويت · البحرين · عُمان',
+    'members': ['saudi-arabia', 'uae', 'qatar', 'kuwait', 'bahrain', 'oman'],
+    'cta_h_en': 'Run Gulf HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في الخليج كما ينبغي',
+    'cta_p_en': "See HR Suite handle Gulf payroll, WPS, and end-of-service for your team.",
+    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير رواتب الخليج و WPS ونهاية الخدمة لفريقك.",
+  },
+  'middle-east': {
+    'en_name': 'the Middle East', 'ar_name': 'الشرق الأوسط',
+    'tag_en': 'Middle East · MENA', 'tag_ar': 'الشرق الأوسط · MENA',
+    'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'the Middle East',
+    'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للشرق الأوسط',
+    'lead_en': "Arabic-first HR and payroll across the wider Middle East — configurable local deductions and end-of-service, multi-currency pay, and full employee records. Deepest in the Gulf, ready beyond it.",
+    'lead_ar': "موارد بشرية ورواتب بالعربية أولًا عبر الشرق الأوسط الأوسع — استقطاعات محلية ونهاية خدمة قابلة للتهيئة، ودفع متعدّد العملات، وسجلّات موظفين كاملة. الأعمق في الخليج، وجاهزة لما بعده.",
+    'desc_en': "HR Suite across the Middle East — Egypt, Jordan and the Levant — with configurable local payroll, rule-based end-of-service, multi-currency pay and Arabic-first HR.",
+    'desc_ar': "منظومة الموارد البشرية عبر الشرق الأوسط — مصر والأردن وبلاد الشام — مع رواتب محلية قابلة للتهيئة، ونهاية خدمة قائمة على القواعد، ودفع متعدّد العملات، وموارد بشرية بالعربية أولًا.",
+    'hub_sub_en': 'Egypt · Jordan · Levant', 'hub_sub_ar': 'مصر · الأردن · بلاد الشام',
+    'members': ['egypt', 'jordan'],
+    'features': [
+      ("Configurable local payroll", "رواتب محلية قابلة للتهيئة",
+       "Model each country's income tax and social contributions as configurable, classified deduction types — no country hard-coding required.",
+       "أنشئ ضريبة الدخل والمساهمات الاجتماعية لكل دولة كأنواع استقطاعات قابلة للتهيئة ومصنّفة — دون ترميز خاص بكل دولة."),
+      ("End-of-service, your rules", "نهاية الخدمة بقواعدك",
+       "The end-of-service engine is rule-based — days of wage per year, banded by service — so you configure local gratuity even without a built-in preset.",
+       "محرّك نهاية الخدمة قائم على القواعد — أيام أجر عن كل سنة، مقسّمة حسب مدة الخدمة — فتُهيّئ المكافأة المحلية حتى دون إعداد جاهز."),
+      ("Arabic-first &amp; multi-currency", "العربية أولًا وتعدّد العملات",
+       "Arabic, right-to-left throughout, bilingual documents, and pay in local currency.",
+       "العربية ومن اليمين إلى اليسار بالكامل، ومستندات ثنائية اللغة، والدفع بالعملة المحلية."),
+      ("Core HR &amp; self-service", "الموارد البشرية الأساسية والخدمة الذاتية",
+       "Employee records, onboarding, time off and self-service — the whole lifecycle on one platform.",
+       "سجلّات الموظفين والتأهيل والإجازات والخدمة الذاتية — دورة الحياة كاملة على منصة واحدة."),
+    ],
+    'cta_h_en': 'Run Middle East HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في الشرق الأوسط كما ينبغي',
+    'cta_p_en': "Tell us where you operate and we'll show you how HR Suite fits.",
+    'cta_p_ar': "أخبرنا أين تعمل وسنعرض لك كيف تناسبك منظومة الموارد البشرية.",
+  },
+  'egypt': {
+    'en_name': 'Egypt', 'ar_name': 'مصر',
+    'tag_en': 'Egypt · EG', 'tag_ar': 'مصر · EG',
+    'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Egypt',
+    'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة لمصر',
+    'lead_en': "HR Suite runs your Egypt workforce — configurable payroll with local income tax and social-insurance deductions, end-of-service on a rule-based engine, EGP pay, Arabic throughout, and full employee records.",
+    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في مصر — رواتب قابلة للتهيئة مع ضريبة الدخل المحلية واستقطاعات التأمينات، ونهاية خدمة على محرّك قائم على القواعد، ودفع بالجنيه المصري، ودعم العربية بالكامل، وسجلّات موظفين كاملة.",
+    'desc_en': "HR Suite for Egypt — configurable payroll with local income tax and social insurance, rule-based end-of-service, EGP pay, and Arabic-first HR.",
+    'desc_ar': "منظومة الموارد البشرية لمصر — رواتب قابلة للتهيئة مع ضريبة الدخل المحلية والتأمينات، ونهاية خدمة قائمة على القواعد، ودفع بالجنيه المصري، وموارد بشرية بالعربية أولًا.",
+    'hub_sub_en': 'Payroll · EOSB · Arabic', 'hub_sub_ar': 'الرواتب · نهاية الخدمة · العربية',
+    'features': [
+      ("Configurable payroll", "رواتب قابلة للتهيئة",
+       "Model Egyptian income tax and social-insurance contributions as configurable, classified deduction types, applied in every pay run.",
+       "أنشئ ضريبة الدخل المصرية واستقطاعات التأمينات كأنواع استقطاعات قابلة للتهيئة ومصنّفة، تُطبَّق في كل دورة رواتب."),
+      ("End-of-service, your rules", "نهاية الخدمة بقواعدك",
+       "Configure end-of-service on the same rule-based engine — days of wage per year — so local gratuity fits without a hard-coded preset.",
+       "هيّئ نهاية الخدمة على المحرّك نفسه القائم على القواعد — أيام أجر عن كل سنة — لتناسب المكافأة المحلية دون إعداد جاهز."),
+      ("EGP pay &amp; documents", "الدفع بالجنيه والمستندات",
+       "Pay in Egyptian pounds, with bilingual contracts and letters and document-expiry tracking.",
+       "الدفع بالجنيه المصري، مع عقود وخطابات ثنائية اللغة وتتبّع انتهاء المستندات."),
+      ("Arabic-first &amp; core HR", "العربية أولًا والموارد البشرية الأساسية",
+       "Arabic, right-to-left throughout, plus employee records, onboarding, time off and self-service.",
+       "العربية ومن اليمين إلى اليسار بالكامل، مع سجلّات الموظفين والتأهيل والإجازات والخدمة الذاتية."),
+    ],
+    'cta_h_en': 'Run Egypt HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في مصر كما ينبغي',
+    'cta_p_en': "See HR Suite handle Egypt payroll and end-of-service for your team.",
+    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الرواتب ونهاية الخدمة في مصر لفريقك.",
+  },
+  'jordan': {
+    'en_name': 'Jordan', 'ar_name': 'الأردن',
+    'tag_en': 'Jordan · JO', 'tag_ar': 'الأردن · JO',
+    'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Jordan',
+    'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للأردن',
+    'lead_en': "HR Suite runs your Jordan workforce — configurable payroll with local income tax and Social Security Corporation deductions, end-of-service on a rule-based engine, JOD pay, Arabic throughout, and full employee records.",
+    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في الأردن — رواتب قابلة للتهيئة مع ضريبة الدخل المحلية واستقطاعات الضمان الاجتماعي، ونهاية خدمة على محرّك قائم على القواعد، ودفع بالدينار الأردني، ودعم العربية بالكامل، وسجلّات موظفين كاملة.",
+    'desc_en': "HR Suite for Jordan — configurable payroll with local income tax and Social Security Corporation (SSC), rule-based end-of-service, JOD pay, and Arabic-first HR.",
+    'desc_ar': "منظومة الموارد البشرية للأردن — رواتب قابلة للتهيئة مع ضريبة الدخل المحلية والضمان الاجتماعي (SSC)، ونهاية خدمة قائمة على القواعد، ودفع بالدينار الأردني، وموارد بشرية بالعربية أولًا.",
+    'hub_sub_en': 'Payroll · SSC · Arabic', 'hub_sub_ar': 'الرواتب · الضمان · العربية',
+    'features': [
+      ("Configurable payroll", "رواتب قابلة للتهيئة",
+       "Model Jordanian income tax and Social Security Corporation (SSC) contributions as configurable, classified deduction types, applied in every pay run.",
+       "أنشئ ضريبة الدخل الأردنية واستقطاعات الضمان الاجتماعي (SSC) كأنواع استقطاعات قابلة للتهيئة ومصنّفة، تُطبَّق في كل دورة رواتب."),
+      ("End-of-service, your rules", "نهاية الخدمة بقواعدك",
+       "Configure end-of-service on the same rule-based engine — days of wage per year — so local gratuity fits without a hard-coded preset.",
+       "هيّئ نهاية الخدمة على المحرّك نفسه القائم على القواعد — أيام أجر عن كل سنة — لتناسب المكافأة المحلية دون إعداد جاهز."),
+      ("JOD pay &amp; documents", "الدفع بالدينار والمستندات",
+       "Pay in Jordanian dinars, with bilingual contracts and letters and document-expiry tracking.",
+       "الدفع بالدينار الأردني، مع عقود وخطابات ثنائية اللغة وتتبّع انتهاء المستندات."),
+      ("Arabic-first &amp; core HR", "العربية أولًا والموارد البشرية الأساسية",
+       "Arabic, right-to-left throughout, plus employee records, onboarding, time off and self-service.",
+       "العربية ومن اليمين إلى اليسار بالكامل، مع سجلّات الموظفين والتأهيل والإجازات والخدمة الذاتية."),
+    ],
+    'cta_h_en': 'Run Jordan HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في الأردن كما ينبغي',
+    'cta_p_en': "See HR Suite handle Jordan payroll and end-of-service for your team.",
+    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الرواتب ونهاية الخدمة في الأردن لفريقك.",
+  },
 }
 
-# Display order on the hub and in the sitemap (GCC first, then wider markets).
-REGION_ORDER = ['saudi-arabia', 'uae', 'qatar', 'kuwait', 'bahrain', 'oman', 'uk', 'usa', 'europe']
+# Every page generated (country detail + region group), used by the sitemap too.
+REGION_ORDER = ['saudi-arabia', 'uae', 'qatar', 'kuwait', 'bahrain', 'oman', 'uk', 'usa',
+                'europe', 'egypt', 'jordan', 'gcc', 'middle-east']
+# The top-level regions shown on the /regions/ hub, in order.
+HUB_ORDER = ['gcc', 'europe', 'usa', 'middle-east']
 
 def head(lang, path, title, desc):
     en = lang == 'en'
@@ -502,14 +606,6 @@ def region_page(slug, lang):
     whatsin_h = ('%s compliance, out of the box' % name) if en else ('امتثال %s جاهز' % name)
     whatsin_p = ("The modules that make HR Suite work the way %s does — each part of the same platform, no separate tools." % name if en
                  else "الوحدات التي تجعل منظومة الموارد البشرية تعمل بالطريقة المحلية في %s — كلّها جزء من المنصة نفسها، دون أدوات منفصلة." % name)
-    feats = []
-    for te, ta, be, ba in d['features']:
-        feats.append(f'''          <div class="feature">
-            <div class="feature-icon" aria-hidden="true">{SHIELD}</div>
-            <h3>{te if en else ta}</h3>
-            <p>{be if en else ba}</p>
-          </div>''')
-    feats_html = '\n'.join(feats)
     note = (f'Every module here is part of HR Suite — advanced payroll, year-end and compliance on the Enterprise plan, or added to any plan as a per-seat add-on. <a href="{b}/pricing/hr-suite/">See HR Suite pricing →</a>'
             if en else
             f'كل وحدة هنا جزء من منظومة الموارد البشرية — الرواتب المتقدّمة ونهاية السنة والامتثال في خطة المؤسسات، أو تُضاف إلى أي خطة كإضافة لكل مقعد. <a href="{b}/pricing/hr-suite/">أسعار الموارد البشرية ←</a>')
@@ -518,11 +614,57 @@ def region_page(slug, lang):
     bc = breadcrumb(lang, [('Home' if en else 'الرئيسية', b + '/'),
                            ('Regions' if en else 'المناطق', b + '/regions/'),
                            (name, None)])
-    ld = ('<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":['
-          '{"@type":"ListItem","position":1,"name":"%s","item":"https://fulcrumgrid.com%s/"},'
-          '{"@type":"ListItem","position":2,"name":"%s","item":"https://fulcrumgrid.com%s/regions/"},'
-          '{"@type":"ListItem","position":3,"name":"%s","item":"https://fulcrumgrid.com%s%s"}]}</script>'
-          % (('Home' if en else 'الرئيسية'), b, ('Regions' if en else 'المناطق'), b, name, b, path))
+    arrow = '→' if en else '←'
+    # Build the middle sections: a feature grid (country detail) and/or a
+    # member-country grid (region group). Backgrounds alternate automatically.
+    inners = []
+    if d.get('features'):
+        feats = []
+        for te, ta, be, ba in d['features']:
+            feats.append(f'''          <div class="feature">
+            <div class="feature-icon" aria-hidden="true">{SHIELD}</div>
+            <h3>{te if en else ta}</h3>
+            <p>{be if en else ba}</p>
+          </div>''')
+        inners.append(f'''        <div class="sub-head">
+          <p class="eyebrow">{whatsin_eye}</p>
+          <h2>{whatsin_h}</h2>
+          <p>{whatsin_p}</p>
+        </div>
+        <div class="feature-grid">
+{chr(10).join(feats)}
+        </div>
+        <p class="price-note" style="margin-top:28px">{note}</p>''')
+    if d.get('members'):
+        mc = []
+        for m in d['members']:
+            md = REGIONS[m]
+            mname = md['en_name'] if en else md['ar_name']
+            msub = md['hub_sub_en'] if en else md['hub_sub_ar']
+            mc.append(f'''          <a class="cross-card" href="{b}/regions/{m}/" style="--cc: var(--teal)"><span class="ci" aria-hidden="true">{GLOBE}</span><div><h3>{mname}</h3><p>{msub}</p></div><span class="arrow" aria-hidden="true">{arrow}</span></a>''')
+        c_eye = 'Countries' if en else 'الدول'
+        c_h = 'Countries in this region' if en else 'الدول في هذه المنطقة'
+        c_p = ('Pick a country for its statutory payroll and compliance detail.' if en
+               else 'اختر دولة لعرض تفاصيل الرواتب والامتثال النظامي فيها.')
+        inners.append(f'''        <div class="sub-head">
+          <p class="eyebrow">{c_eye}</p>
+          <h2>{c_h}</h2>
+          <p>{c_p}</p>
+        </div>
+        <div class="cross-grid">
+{chr(10).join(mc)}
+        </div>''')
+    sec_html = ''
+    for i, inner in enumerate(inners):
+        cls = 'section section-alt' if i % 2 == 0 else 'section'
+        sec_html += f'''    <section class="{cls}">
+      <div class="container">
+{inner}
+      </div>
+    </section>
+
+'''
+    cta_cls = 'section section-alt' if len(inners) % 2 == 0 else 'section'
     body = f'''{header(lang, path)}
 
   <main id="main">
@@ -544,21 +686,7 @@ def region_page(slug, lang):
       </div>
     </section>
 
-    <section class="section section-alt">
-      <div class="container">
-        <div class="sub-head">
-          <p class="eyebrow">{whatsin_eye}</p>
-          <h2>{whatsin_h}</h2>
-          <p>{whatsin_p}</p>
-        </div>
-        <div class="feature-grid">
-{feats_html}
-        </div>
-        <p class="price-note" style="margin-top:28px">{note}</p>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
+{sec_html}    <section class="{cta_cls}" id="contact">
       <div class="container">
         <div class="cta-panel">
           <div class="grid-bg grid-bg-soft" aria-hidden="true"></div>
@@ -590,10 +718,10 @@ def hub_page(lang):
     h1g = 'region runs' if en else 'عمل منطقتك'
     lead = ("HR Suite adapts to local payroll and compliance — statutory contributions, wage-protection files, end-of-service rules, and language. Choose your region."
             if en else "تتكيّف منظومة الموارد البشرية مع الرواتب والامتثال المحلي — الاشتراكات النظامية وملفات حماية الأجور وقواعد نهاية الخدمة واللغة. اختر منطقتك.")
-    # region cards — one per region, in display order
+    # region cards — one per top-level region, in display order
     arrow = '→' if en else '←'
     cards_list = []
-    for rslug in REGION_ORDER:
+    for rslug in HUB_ORDER:
         rd = REGIONS[rslug]
         rname = rd['en_name'] if en else rd['ar_name']
         rsub = rd['hub_sub_en'] if en else rd['hub_sub_ar']
@@ -602,7 +730,7 @@ def hub_page(lang):
             <div><h3>{rname}</h3><p>{rsub}</p></div><span class="arrow" aria-hidden="true">{arrow}</span>
           </a>''')
     more_t = 'More markets' if en else 'أسواق أخرى'
-    more_s = 'Beyond the GCC — on request' if en else 'خارج الخليج — عند الطلب'
+    more_s = 'Elsewhere — on request' if en else 'أماكن أخرى — عند الطلب'
     cards_list.append(f'''          <div class="cross-card" style="--cc: var(--text-dim); opacity:.72; cursor:default">
             <span class="ci" aria-hidden="true">{GLOBE}</span>
             <div><h3>{more_t}</h3><p>{more_s}</p></div>
