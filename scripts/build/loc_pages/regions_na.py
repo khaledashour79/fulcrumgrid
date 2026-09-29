@@ -20,8 +20,7 @@ def _t(fr, de, es, it, nl):
 
 # ---- Fragments shared across several pages in this group -------------------
 
-T_HOME = _t('Accueil', 'Startseite', 'Inicio', 'Home', 'Home')
-T_EXPLORE = _t('Découvrir HR Suite', 'HR Suite entdecken', 'Explorar HR Suite',
+T_EXPLORE =_t('Découvrir HR Suite', 'HR Suite entdecken', 'Explorar HR Suite',
                'Esplora HR Suite', 'Ontdek HR Suite')
 T_SEE_PRICING = _t('Voir les tarifs HR Suite', 'HR Suite Preise ansehen',
                    'Ver los precios de HR Suite', 'Vedi i prezzi di HR Suite',
@@ -43,8 +42,7 @@ T_PRICE_NOTE = _t(
 
 
 def _hero(t):
-    """Hero buttons + breadcrumb Home — identical on every page in the group."""
-    t['<a href="/">Home</a>'] = {k: '<a href="/">%s</a>' % v for k, v in T_HOME.items()}
+    """Hero buttons — identical on every page in the group."""
     t['Explore HR Suite'] = T_EXPLORE
     t['See HR Suite pricing'] = T_SEE_PRICING
     return t
@@ -70,16 +68,12 @@ PAGE['/regions/north-america/'] = {'src': 'regions/north-america/index.html', 't
         'Amérique du Nord · États-Unis &amp; Canada', 'Nordamerika · USA &amp; Kanada',
         'América del Norte · EE. UU. &amp; Canadá', 'Nord America · USA &amp; Canada',
         'Noord-Amerika · VS &amp; Canada'),
-    '<span class="current">North America</span>': _t(
-        '<span class="current">Amérique du Nord</span>', '<span class="current">Nordamerika</span>',
-        '<span class="current">América del Norte</span>', '<span class="current">Nord America</span>',
-        '<span class="current">Noord-Amerika</span>'),
-    'HR &amp; payroll, built for <span class="p-grad">North America</span>': _t(
-        'RH &amp; paie, conçu pour <span class="p-grad">l\'Amérique du Nord</span>',
-        'HR &amp; Gehaltsabrechnung, gebaut für <span class="p-grad">Nordamerika</span>',
-        'RR. HH. &amp; nómina, creado para <span class="p-grad">América del Norte</span>',
-        'HR &amp; buste paga, costruito per <span class="p-grad">il Nord America</span>',
-        'HR &amp; loonadministratie, gebouwd voor <span class="p-grad">Noord-Amerika</span>'),
+    'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">North America</em>': _t(
+        'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">l\'Amérique du Nord</em>',
+        'HR &amp; Gehaltsabrechnung, gebaut für <em style="font-style:normal;color:var(--color-accent)">Nordamerika</em>',
+        'RR. HH. &amp; nómina, creado para <em style="font-style:normal;color:var(--color-accent)">América del Norte</em>',
+        'HR &amp; buste paga, costruito per <em style="font-style:normal;color:var(--color-accent)">il Nord America</em>',
+        'HR &amp; loonadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Noord-Amerika</em>'),
     'HR Suite runs your North American workforce — configurable payroll, statutory leave and holidays, and overtime by federal, state and provincial rule, across the US and Canada. Pick a country for the detail.': _t(
         'HR Suite gère vos effectifs nord-américains — paie configurable, congés et jours fériés légaux, et heures supplémentaires selon les règles fédérales, des États et provinciales, aux États-Unis comme au Canada. Choisissez un pays pour le détail.',
         'HR Suite steuert Ihre nordamerikanische Belegschaft — konfigurierbare Gehaltsabrechnung, gesetzlicher Urlaub und Feiertage sowie Überstunden nach Bundes-, Bundesstaats- und Provinzregelung, in den USA und Kanada. Wählen Sie ein Land für die Details.',
@@ -95,12 +89,12 @@ PAGE['/regions/north-america/'] = {'src': 'regions/north-america/index.html', 't
         'Elija un país para ver el detalle de su nómina legal y su cumplimiento — y también funciona en toda la región ampliada.',
         'Scegli un paese per il dettaglio della sua busta paga di legge e della conformità — e funziona anche in tutta la regione allargata.',
         'Kies een land voor de details van de wettelijke loonadministratie en compliance — en het werkt ook in de hele bredere regio.'),
-    '<h3>United States</h3>': _t('<h3>États-Unis</h3>', '<h3>USA</h3>', '<h3>Estados Unidos</h3>',
-        '<h3>Stati Uniti</h3>', '<h3>Verenigde Staten</h3>'),
+    '<h4>United States</h4>': _t('<h4>États-Unis</h4>', '<h4>USA</h4>', '<h4>Estados Unidos</h4>',
+        '<h4>Stati Uniti</h4>', '<h4>Verenigde Staten</h4>'),
     'Payroll · W-2 · ACH': _t('Paie · W-2 · ACH', 'Gehaltsabrechnung · W-2 · ACH',
         'Nómina · W-2 · ACH', 'Buste paga · W-2 · ACH', 'Loon · W-2 · ACH'),
-    '<h3>Canada</h3>': _t('<h3>Canada</h3>', '<h3>Kanada</h3>', '<h3>Canadá</h3>',
-        '<h3>Canada</h3>', '<h3>Canada</h3>'),
+    '<h4>Canada</h4>': _t('<h4>Canada</h4>', '<h4>Kanada</h4>', '<h4>Canadá</h4>',
+        '<h4>Canada</h4>', '<h4>Canada</h4>'),
     'Leave · Payroll · CPP/EI': _t('Congés · Paie · CPP/EI', 'Urlaub · Gehaltsabrechnung · CPP/EI',
         'Permisos · Nómina · CPP/EI', 'Ferie · Buste paga · CPP/EI', 'Verlof · Loon · CPP/EI'),
     'Run North America HR &amp; payroll the right way': _t(
@@ -133,16 +127,12 @@ PAGE['/regions/usa/'] = {'src': 'regions/usa/index.html', 't': _hero({
         'HR Suite voor de Verenigde Staten — configureerbare loonadministratie met federale/staatsinkomstenbelasting, Social Security en Medicare, W-2-jaaropgaven, ACH-(NACHA-)betaalbestanden en volledige HR.'),
     'United States · US': _t('États-Unis · US', 'USA · US', 'Estados Unidos · US',
         'Stati Uniti · US', 'Verenigde Staten · US'),
-    '<span class="current">United States</span>': _t(
-        '<span class="current">États-Unis</span>', '<span class="current">USA</span>',
-        '<span class="current">Estados Unidos</span>', '<span class="current">Stati Uniti</span>',
-        '<span class="current">Verenigde Staten</span>'),
-    'HR &amp; payroll, built for <span class="p-grad">the US</span>': _t(
-        'RH &amp; paie, conçu pour <span class="p-grad">les États-Unis</span>',
-        'HR &amp; Gehaltsabrechnung, gebaut für <span class="p-grad">die USA</span>',
-        'RR. HH. &amp; nómina, creado para <span class="p-grad">Estados Unidos</span>',
-        'HR &amp; buste paga, costruito per <span class="p-grad">gli Stati Uniti</span>',
-        'HR &amp; loonadministratie, gebouwd voor <span class="p-grad">de VS</span>'),
+    'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">the US</em>': _t(
+        'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">les États-Unis</em>',
+        'HR &amp; Gehaltsabrechnung, gebaut für <em style="font-style:normal;color:var(--color-accent)">die USA</em>',
+        'RR. HH. &amp; nómina, creado para <em style="font-style:normal;color:var(--color-accent)">Estados Unidos</em>',
+        'HR &amp; buste paga, costruito per <em style="font-style:normal;color:var(--color-accent)">gli Stati Uniti</em>',
+        'HR &amp; loonadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">de VS</em>'),
     'HR Suite runs your US workforce end to end — configurable payroll with federal and state income tax, Social Security and Medicare, W-2 year-end statements, ACH pay files, and full employee records.': _t(
         "HR Suite gère vos effectifs américains de bout en bout — paie configurable avec impôt fédéral et des États sur le revenu, Social Security et Medicare, relevés de fin d'année W-2, fichiers de paie ACH et dossiers complets des employés.",
         'HR Suite steuert Ihre US-Belegschaft durchgängig — konfigurierbare Gehaltsabrechnung mit föderaler und einzelstaatlicher Einkommensteuer, Social Security und Medicare, W-2-Jahresendbescheinigungen, ACH-Zahldateien und vollständigen Mitarbeiterakten.',
@@ -246,16 +236,12 @@ PAGE['/regions/canada/'] = {'src': 'regions/canada/index.html', 't': _hero({
         'HR Suite per il Canada — ferie e festività di legge, buste paga configurabili con imposta federale/provinciale, CPP ed EI, e HR completa in CAD.',
         'HR Suite voor Canada — wettelijk verlof en feestdagen, configureerbare loonadministratie met federale/provinciale belasting, CPP en EI, en volledige HR in CAD.'),
     'Canada · CA': _t('Canada · CA', 'Kanada · CA', 'Canadá · CA', 'Canada · CA', 'Canada · CA'),
-    '<span class="current">Canada</span>': _t(
-        '<span class="current">Canada</span>', '<span class="current">Kanada</span>',
-        '<span class="current">Canadá</span>', '<span class="current">Canada</span>',
-        '<span class="current">Canada</span>'),
-    'HR &amp; payroll, built for <span class="p-grad">Canada</span>': _t(
-        'RH &amp; paie, conçu pour <span class="p-grad">le Canada</span>',
-        'HR &amp; Gehaltsabrechnung, gebaut für <span class="p-grad">Kanada</span>',
-        'RR. HH. &amp; nómina, creado para <span class="p-grad">Canadá</span>',
-        'HR &amp; buste paga, costruito per <span class="p-grad">il Canada</span>',
-        'HR &amp; loonadministratie, gebouwd voor <span class="p-grad">Canada</span>'),
+    'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Canada</em>': _t(
+        'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">le Canada</em>',
+        'HR &amp; Gehaltsabrechnung, gebaut für <em style="font-style:normal;color:var(--color-accent)">Kanada</em>',
+        'RR. HH. &amp; nómina, creado para <em style="font-style:normal;color:var(--color-accent)">Canadá</em>',
+        'HR &amp; buste paga, costruito per <em style="font-style:normal;color:var(--color-accent)">il Canada</em>',
+        'HR &amp; loonadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Canada</em>'),
     'HR Suite runs your Canada workforce — statutory leave and the local holiday calendar, configurable payroll with federal and provincial tax, CPP and EI, and full employee records in CAD.': _t(
         'HR Suite gère vos effectifs au Canada — congés légaux et calendrier des jours fériés locaux, paie configurable avec impôt fédéral et provincial, CPP et EI, et dossiers complets des employés en CAD.',
         'HR Suite steuert Ihre Belegschaft in Kanada — gesetzlicher Urlaub und der lokale Feiertagskalender, konfigurierbare Gehaltsabrechnung mit Bundes- und Provinzsteuer, CPP und EI, und vollständige Mitarbeiterakten in CAD.',

@@ -30,22 +30,14 @@ PAGE['/regions/europe/'] = {
             'HR Suite para Europa — archivos de pago por transferencia SEPA, derechos del interesado según el GDPR (exportación y supresión), deducciones locales configurables y RR. HH. completos en una sola plataforma.',
             "HR Suite per l'Europa — file di pagamento con bonifico SEPA, diritti dell'interessato ai sensi del GDPR (esportazione e cancellazione), trattenute locali configurabili e HR completo su un'unica piattaforma.",
             'HR Suite voor Europa — SEPA-overschrijvingsbestanden voor betaling, rechten van betrokkenen onder het GDPR (export en wissing), configureerbare lokale inhoudingen en volledige HR op één platform.'),
-        # ---- Breadcrumb ----
-        '<a href="/">Home</a>': _t(
-            '<a href="/">Accueil</a>', '<a href="/">Startseite</a>',
-            '<a href="/">Inicio</a>', '<a href="/">Home</a>', '<a href="/">Home</a>'),
-        '<span class="current">Europe</span>': _t(
-            '<span class="current">Europe</span>', '<span class="current">Europa</span>',
-            '<span class="current">Europa</span>', '<span class="current">Europa</span>',
-            '<span class="current">Europa</span>'),
         # ---- Hero ----
         'Europe · EU': _t('Europe · UE', 'Europa · EU', 'Europa · UE', 'Europa · UE', 'Europa · EU'),
-        'HR &amp; payroll, built for <span class="p-grad">Europe</span>': _t(
-            'RH &amp; paie, conçues pour <span class="p-grad">l\'Europe</span>',
-            'HR &amp; Gehaltsabrechnung, entwickelt für <span class="p-grad">Europa</span>',
-            'RR. HH. &amp; nóminas, diseñados para <span class="p-grad">Europa</span>',
-            'HR &amp; buste paga, creati per <span class="p-grad">l\'Europa</span>',
-            'HR &amp; salaris, gebouwd voor <span class="p-grad">Europa</span>'),
+        'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Europe</em>': _t(
+            'RH &amp; paie, conçues pour <em style="font-style:normal;color:var(--color-accent)">l\'Europe</em>',
+            'HR &amp; Gehaltsabrechnung, entwickelt für <em style="font-style:normal;color:var(--color-accent)">Europa</em>',
+            'RR. HH. &amp; nóminas, diseñados para <em style="font-style:normal;color:var(--color-accent)">Europa</em>',
+            'HR &amp; buste paga, creati per <em style="font-style:normal;color:var(--color-accent)">l\'Europa</em>',
+            'HR &amp; salaris, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Europa</em>'),
         'HR Suite runs your European workforce with SEPA payments, GDPR-grade data privacy, configurable local deductions, and full employee records — one platform across your entities.': _t(
             "HR Suite gère vos effectifs européens avec des paiements SEPA, une confidentialité des données au niveau du GDPR, des retenues locales configurables et des dossiers salariés complets — une seule plateforme pour toutes vos entités.",
             'HR Suite steuert Ihre europäische Belegschaft mit SEPA-Zahlungen, Datenschutz auf GDPR-Niveau, konfigurierbaren lokalen Abzügen und vollständigen Personalakten — eine Plattform über alle Ihre Gesellschaften hinweg.',
@@ -137,14 +129,15 @@ PAGE['/regions/europe/'] = {
             'Scegli un paese per il dettaglio della sua busta paga di legge e della conformità — e funziona anche in tutta la regione.',
             'Kies een land voor de details van de wettelijke salarisverwerking en compliance — en het werkt ook in de bredere regio.'),
         # Cross-grid country names (tag-wrapped to avoid short-name collisions)
-        '<h3>United Kingdom</h3>': _t('<h3>Royaume-Uni</h3>', '<h3>Vereinigtes Königreich</h3>', '<h3>Reino Unido</h3>', '<h3>Regno Unito</h3>', '<h3>Verenigd Koninkrijk</h3>'),
-        '<h3>Ireland</h3>': _t('<h3>Irlande</h3>', '<h3>Irland</h3>', '<h3>Irlanda</h3>', '<h3>Irlanda</h3>', '<h3>Ierland</h3>'),
-        '<h3>France</h3>': _t('<h3>France</h3>', '<h3>Frankreich</h3>', '<h3>Francia</h3>', '<h3>Francia</h3>', '<h3>Frankrijk</h3>'),
-        '<h3>Germany</h3>': _t('<h3>Allemagne</h3>', '<h3>Deutschland</h3>', '<h3>Alemania</h3>', '<h3>Germania</h3>', '<h3>Duitsland</h3>'),
-        '<h3>Spain</h3>': _t('<h3>Espagne</h3>', '<h3>Spanien</h3>', '<h3>España</h3>', '<h3>Spagna</h3>', '<h3>Spanje</h3>'),
-        '<h3>Italy</h3>': _t('<h3>Italie</h3>', '<h3>Italien</h3>', '<h3>Italia</h3>', '<h3>Italia</h3>', '<h3>Italië</h3>'),
-        '<h3>Netherlands</h3>': _t('<h3>Pays-Bas</h3>', '<h3>Niederlande</h3>', '<h3>Países Bajos</h3>', '<h3>Paesi Bassi</h3>', '<h3>Nederland</h3>'),
+        '<h4>United Kingdom</h4>': _t('<h4>Royaume-Uni</h4>', '<h4>Vereinigtes Königreich</h4>', '<h4>Reino Unido</h4>', '<h4>Regno Unito</h4>', '<h4>Verenigd Koninkrijk</h4>'),
+        '<h4>Ireland</h4>': _t('<h4>Irlande</h4>', '<h4>Irland</h4>', '<h4>Irlanda</h4>', '<h4>Irlanda</h4>', '<h4>Ierland</h4>'),
+        '<h4>France</h4>': _t('<h4>France</h4>', '<h4>Frankreich</h4>', '<h4>Francia</h4>', '<h4>Francia</h4>', '<h4>Frankrijk</h4>'),
+        '<h4>Germany</h4>': _t('<h4>Allemagne</h4>', '<h4>Deutschland</h4>', '<h4>Alemania</h4>', '<h4>Germania</h4>', '<h4>Duitsland</h4>'),
+        '<h4>Spain</h4>': _t('<h4>Espagne</h4>', '<h4>Spanien</h4>', '<h4>España</h4>', '<h4>Spagna</h4>', '<h4>Spanje</h4>'),
+        '<h4>Italy</h4>': _t('<h4>Italie</h4>', '<h4>Italien</h4>', '<h4>Italia</h4>', '<h4>Italia</h4>', '<h4>Italië</h4>'),
+        '<h4>Netherlands</h4>': _t('<h4>Pays-Bas</h4>', '<h4>Niederlande</h4>', '<h4>Países Bajos</h4>', '<h4>Paesi Bassi</h4>', '<h4>Nederland</h4>'),
         # Cross-grid "served" labels (acronyms kept per rules)
+        'PAYE · NI · P60/P45': _t('PAYE · NI · P60/P45', 'PAYE · NI · P60/P45', 'PAYE · NI · P60/P45', 'PAYE · NI · P60/P45', 'PAYE · NI · P60/P45'),
         'Leave · SEPA · GDPR': _t('Congés · SEPA · GDPR', 'Urlaub · SEPA · GDPR', 'Permisos · SEPA · GDPR', 'Ferie · SEPA · GDPR', 'Verlof · SEPA · GDPR'),
         '35h week · SEPA · GDPR': _t('Semaine 35h · SEPA · GDPR', '35-Std.-Woche · SEPA · GDPR', 'Semana de 35h · SEPA · GDPR', 'Settimana di 35h · SEPA · GDPR', '35-urige week · SEPA · GDPR'),
         'Overtime · SEPA · GDPR': _t('Heures supplémentaires · SEPA · GDPR', 'Überstunden · SEPA · GDPR', 'Horas extra · SEPA · GDPR', 'Straordinari · SEPA · GDPR', 'Overwerk · SEPA · GDPR'),
@@ -195,22 +188,14 @@ PAGE['/regions/uk/'] = {
             'HR Suite para el Reino Unido — deducciones de PAYE y National Insurance, certificados P60 y P45, validación de NINO, pensiones de empresa y RR. HH. completos en una sola plataforma.',
             "HR Suite per il Regno Unito — trattenute PAYE e National Insurance, attestazioni P60 e P45, validazione NINO, pensioni aziendali e HR completo su un'unica piattaforma.",
             'HR Suite voor het Verenigd Koninkrijk — PAYE- en National Insurance-inhoudingen, P60- en P45-overzichten, NINO-validatie, bedrijfspensioenen en volledige HR op één platform.'),
-        # ---- Breadcrumb ----
-        '<a href="/">Home</a>': _t(
-            '<a href="/">Accueil</a>', '<a href="/">Startseite</a>',
-            '<a href="/">Inicio</a>', '<a href="/">Home</a>', '<a href="/">Home</a>'),
-        '<span class="current">United Kingdom</span>': _t(
-            '<span class="current">Royaume-Uni</span>', '<span class="current">Vereinigtes Königreich</span>',
-            '<span class="current">Reino Unido</span>', '<span class="current">Regno Unito</span>',
-            '<span class="current">Verenigd Koninkrijk</span>'),
         # ---- Hero ----
         'United Kingdom · UK': _t('Royaume-Uni · UK', 'Vereinigtes Königreich · UK', 'Reino Unido · UK', 'Regno Unito · UK', 'Verenigd Koninkrijk · UK'),
-        'HR &amp; payroll, built for <span class="p-grad">the UK</span>': _t(
-            'RH &amp; paie, conçues pour <span class="p-grad">le Royaume-Uni</span>',
-            'HR &amp; Gehaltsabrechnung, entwickelt für <span class="p-grad">das Vereinigte Königreich</span>',
-            'RR. HH. &amp; nóminas, diseñados para <span class="p-grad">el Reino Unido</span>',
-            'HR &amp; buste paga, creati per <span class="p-grad">il Regno Unito</span>',
-            'HR &amp; salaris, gebouwd voor <span class="p-grad">het Verenigd Koninkrijk</span>'),
+        'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">the UK</em>': _t(
+            'RH &amp; paie, conçues pour <em style="font-style:normal;color:var(--color-accent)">le Royaume-Uni</em>',
+            'HR &amp; Gehaltsabrechnung, entwickelt für <em style="font-style:normal;color:var(--color-accent)">das Vereinigte Königreich</em>',
+            'RR. HH. &amp; nóminas, diseñados para <em style="font-style:normal;color:var(--color-accent)">el Reino Unido</em>',
+            'HR &amp; buste paga, creati per <em style="font-style:normal;color:var(--color-accent)">il Regno Unito</em>',
+            'HR &amp; salaris, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">het Verenigd Koninkrijk</em>'),
         'HR Suite runs your UK workforce end to end — PAYE and National Insurance on a configurable payroll, P60 and P45 statements, NINO validation, pensions, and full employee records.': _t(
             'HR Suite gère vos effectifs britanniques de bout en bout — PAYE et National Insurance sur une paie configurable, attestations P60 et P45, validation NINO, retraites et dossiers salariés complets.',
             'HR Suite steuert Ihre britische Belegschaft durchgängig — PAYE und National Insurance auf einer konfigurierbaren Abrechnung, P60- und P45-Bescheinigungen, NINO-Validierung, Renten und vollständige Personalakten.',
@@ -232,6 +217,10 @@ PAGE['/regions/uk/'] = {
             'I moduli che fanno funzionare HR Suite come fa il Regno Unito — ognuno parte della stessa piattaforma, senza strumenti separati.',
             'De modules die HR Suite laten werken zoals het Verenigd Koninkrijk dat doet — elk onderdeel van hetzelfde platform, zonder losse tools.'),
         # ---- Features ----
+        'PAYE &amp; National Insurance': _t(
+            'PAYE &amp; National Insurance', 'PAYE &amp; National Insurance',
+            'PAYE &amp; National Insurance', 'PAYE &amp; National Insurance',
+            'PAYE &amp; National Insurance'),
         'Pay runs with deductions classified as PAYE income tax (rest-of-UK and Scottish rates) and National Insurance, on a configurable engine that keeps payslips and reports aligned.': _t(
             'Des paies avec retenues classées en impôt sur le revenu PAYE (taux du reste du Royaume-Uni et taux écossais) et National Insurance, sur un moteur configurable qui garde bulletins de paie et rapports alignés.',
             'Abrechnungsläufe mit Abzügen, klassifiziert als PAYE-Einkommensteuer (Sätze des übrigen Vereinigten Königreichs und schottische Sätze) und National Insurance, auf einer konfigurierbaren Engine, die Gehaltsabrechnungen und Berichte im Einklang hält.',
@@ -316,22 +305,14 @@ PAGE['/regions/ireland/'] = {
             'HR Suite para Irlanda — permisos y festivos legales, archivos de pago SEPA, derechos del GDPR, nómina local configurable (PAYE/PRSI/USC) en EUR y RR. HH. completos.',
             "HR Suite per l'Irlanda — ferie e festività di legge, file di pagamento SEPA, diritti GDPR, busta paga locale configurabile (PAYE/PRSI/USC) in EUR e HR completo.",
             'HR Suite voor Ierland — wettelijk verlof en feestdagen, SEPA-betaalbestanden, GDPR-rechten, configureerbare lokale salarisverwerking (PAYE/PRSI/USC) in EUR en volledige HR.'),
-        # ---- Breadcrumb ----
-        '<a href="/">Home</a>': _t(
-            '<a href="/">Accueil</a>', '<a href="/">Startseite</a>',
-            '<a href="/">Inicio</a>', '<a href="/">Home</a>', '<a href="/">Home</a>'),
-        '<span class="current">Ireland</span>': _t(
-            '<span class="current">Irlande</span>', '<span class="current">Irland</span>',
-            '<span class="current">Irlanda</span>', '<span class="current">Irlanda</span>',
-            '<span class="current">Ierland</span>'),
         # ---- Hero ----
         'Ireland · IE': _t('Irlande · IE', 'Irland · IE', 'Irlanda · IE', 'Irlanda · IE', 'Ierland · IE'),
-        'HR &amp; payroll, built for <span class="p-grad">Ireland</span>': _t(
-            'RH &amp; paie, conçues pour <span class="p-grad">l\'Irlande</span>',
-            'HR &amp; Gehaltsabrechnung, entwickelt für <span class="p-grad">Irland</span>',
-            'RR. HH. &amp; nóminas, diseñados para <span class="p-grad">Irlanda</span>',
-            'HR &amp; buste paga, creati per <span class="p-grad">l\'Irlanda</span>',
-            'HR &amp; salaris, gebouwd voor <span class="p-grad">Ierland</span>'),
+        'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Ireland</em>': _t(
+            'RH &amp; paie, conçues pour <em style="font-style:normal;color:var(--color-accent)">l\'Irlande</em>',
+            'HR &amp; Gehaltsabrechnung, entwickelt für <em style="font-style:normal;color:var(--color-accent)">Irland</em>',
+            'RR. HH. &amp; nóminas, diseñados para <em style="font-style:normal;color:var(--color-accent)">Irlanda</em>',
+            'HR &amp; buste paga, creati per <em style="font-style:normal;color:var(--color-accent)">l\'Irlanda</em>',
+            'HR &amp; salaris, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Ierland</em>'),
         'HR Suite runs your Ireland workforce — statutory leave and the local holiday calendar, SEPA pay files, GDPR data-subject rights, configurable local payroll in EUR, and full employee records.': _t(
             "HR Suite gère vos effectifs en Irlande — congés légaux et calendrier des jours fériés locaux, fichiers de paiement SEPA, droits des personnes concernées au titre du GDPR, paie locale configurable en EUR, et dossiers salariés complets.",
             'HR Suite steuert Ihre Belegschaft in Irland — gesetzlicher Urlaub und lokaler Feiertagskalender, SEPA-Zahlungsdateien, GDPR-Betroffenenrechte, konfigurierbare lokale Abrechnung in EUR und vollständige Personalakten.',
@@ -433,22 +414,14 @@ PAGE['/regions/france/'] = {
             'HR Suite para Francia — horas extra según la semana legal de 35 horas, archivos de pago SEPA, derechos del GDPR, nómina local configurable en EUR y RR. HH. completos.',
             'HR Suite per la Francia — straordinari sulla base della settimana legale di 35 ore, file di pagamento SEPA, diritti GDPR, busta paga locale configurabile in EUR e HR completo.',
             'HR Suite voor Frankrijk — overwerk op basis van de wettelijke 35-urige werkweek, SEPA-betaalbestanden, GDPR-rechten, configureerbare lokale salarisverwerking in EUR en volledige HR.'),
-        # ---- Breadcrumb ----
-        '<a href="/">Home</a>': _t(
-            '<a href="/">Accueil</a>', '<a href="/">Startseite</a>',
-            '<a href="/">Inicio</a>', '<a href="/">Home</a>', '<a href="/">Home</a>'),
-        '<span class="current">France</span>': _t(
-            '<span class="current">France</span>', '<span class="current">Frankreich</span>',
-            '<span class="current">Francia</span>', '<span class="current">Francia</span>',
-            '<span class="current">Frankrijk</span>'),
         # ---- Hero ----
         'France · FR': _t('France · FR', 'Frankreich · FR', 'Francia · FR', 'Francia · FR', 'Frankrijk · FR'),
-        'HR &amp; payroll, built for <span class="p-grad">France</span>': _t(
-            'RH &amp; paie, conçues pour <span class="p-grad">la France</span>',
-            'HR &amp; Gehaltsabrechnung, entwickelt für <span class="p-grad">Frankreich</span>',
-            'RR. HH. &amp; nóminas, diseñados para <span class="p-grad">Francia</span>',
-            'HR &amp; buste paga, creati per <span class="p-grad">la Francia</span>',
-            'HR &amp; salaris, gebouwd voor <span class="p-grad">Frankrijk</span>'),
+        'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">France</em>': _t(
+            'RH &amp; paie, conçues pour <em style="font-style:normal;color:var(--color-accent)">la France</em>',
+            'HR &amp; Gehaltsabrechnung, entwickelt für <em style="font-style:normal;color:var(--color-accent)">Frankreich</em>',
+            'RR. HH. &amp; nóminas, diseñados para <em style="font-style:normal;color:var(--color-accent)">Francia</em>',
+            'HR &amp; buste paga, creati per <em style="font-style:normal;color:var(--color-accent)">la Francia</em>',
+            'HR &amp; salaris, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Frankrijk</em>'),
         'HR Suite runs your France workforce — overtime priced to the statutory 35-hour week, SEPA pay files, GDPR data-subject rights, configurable local payroll in EUR, and full employee records.': _t(
             "HR Suite gère vos effectifs en France — heures supplémentaires valorisées selon la semaine légale de 35 heures, fichiers de paiement SEPA, droits des personnes concernées au titre du GDPR, paie locale configurable en EUR, et dossiers salariés complets.",
             'HR Suite steuert Ihre Belegschaft in Frankreich — Überstunden bewertet nach der gesetzlichen 35-Stunden-Woche, SEPA-Zahlungsdateien, GDPR-Betroffenenrechte, konfigurierbare lokale Abrechnung in EUR und vollständige Personalakten.',

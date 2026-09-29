@@ -30,9 +30,7 @@ def _merge(*dicts):
 # Segments shared across all four pages (defined once, reused below).
 # ---------------------------------------------------------------------------
 
-_HOME = {'Home': _t('Accueil', 'Startseite', 'Inicio', 'Home', 'Home')}
-
-_BUILT_IN = {'Built in': _t('Intégré', 'Integriert', 'Integrado', 'Integrato', 'Ingebouwd')}
+_BUILT_IN ={'Built in': _t('Intégré', 'Integriert', 'Integrado', 'Integrato', 'Ingebouwd')}
 
 _EXPLORE = {'Explore HR Suite': _t(
     'Découvrir HR Suite', 'HR Suite entdecken', 'Explorar HR Suite',
@@ -93,7 +91,7 @@ PAGE = {}
 
 PAGE['/regions/germany/'] = {
     'src': 'regions/germany/index.html',
-    't': _merge(_HOME, _BUILT_IN, _EXPLORE, _SEE_PRICING, _PRICE_NOTE, _SEPA, _GDPR, _LOCAL_HR_TITLE, {
+    't': _merge(_BUILT_IN, _EXPLORE, _SEE_PRICING, _PRICE_NOTE, _SEPA, _GDPR, _LOCAL_HR_TITLE, {
         # ---- Meta (title == og:title; description == og:description) ----
         'HR Suite — HR &amp; payroll for Germany | FulcrumGrid': _t(
             "HR Suite — RH &amp; paie pour l'Allemagne | FulcrumGrid",
@@ -107,19 +105,14 @@ PAGE['/regions/germany/'] = {
             'HR Suite para Alemania — horas extra según CBA con los límites del Working Time Act, archivos de pago SEPA, derechos GDPR, nóminas locales configurables en EUR y RR. HH. completos.',
             'HR Suite per la Germania — straordinari CBA con i limiti del Working Time Act, file di pagamento SEPA, diritti GDPR, buste paga locali configurabili in EUR e HR completa.',
             'HR Suite voor Duitsland — CBA-overwerk met de limieten van de Working Time Act, SEPA-betaalbestanden, GDPR-rechten, configureerbare lokale salarisadministratie in EUR, en volledige HR.'),
-        # ---- Breadcrumb ----
-        '<span class="current">Germany</span>': _t(
-            '<span class="current">Allemagne</span>', '<span class="current">Deutschland</span>',
-            '<span class="current">Alemania</span>', '<span class="current">Germania</span>',
-            '<span class="current">Duitsland</span>'),
         # ---- Hero ----
         'Germany · DE': _t('Allemagne · DE', 'Deutschland · DE', 'Alemania · DE', 'Germania · DE', 'Duitsland · DE'),
-        'HR &amp; payroll, built for <span class="p-grad">Germany</span>': _t(
-            "RH &amp; paie, conçu pour <span class=\"p-grad\">l'Allemagne</span>",
-            'HR &amp; Gehaltsabrechnung, entwickelt für <span class="p-grad">Deutschland</span>',
-            'RR. HH. &amp; nóminas, diseñado para <span class="p-grad">Alemania</span>',
-            'HR &amp; buste paga, pensato per <span class="p-grad">la Germania</span>',
-            'HR &amp; salarisadministratie, gebouwd voor <span class="p-grad">Duitsland</span>'),
+        'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Germany</em>': _t(
+            "RH &amp; paie, conçu pour <em style=\"font-style:normal;color:var(--color-accent)\">l'Allemagne</em>",
+            'HR &amp; Gehaltsabrechnung, entwickelt für <em style="font-style:normal;color:var(--color-accent)">Deutschland</em>',
+            'RR. HH. &amp; nóminas, diseñado para <em style="font-style:normal;color:var(--color-accent)">Alemania</em>',
+            'HR &amp; buste paga, pensato per <em style="font-style:normal;color:var(--color-accent)">la Germania</em>',
+            'HR &amp; salarisadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Duitsland</em>'),
         "HR Suite runs your Germany workforce — collective-agreement overtime with Working Time Act caps, SEPA pay files, GDPR data-subject rights, configurable local payroll in EUR, and full employee records.": _t(
             "HR Suite pilote vos effectifs en Allemagne — heures supplémentaires prévues par la convention collective avec les plafonds du Working Time Act, fichiers de paie SEPA, droits des personnes concernées au titre du GDPR, paie locale configurable en EUR, et dossiers employés complets.",
             'HR Suite steuert Ihre Belegschaft in Deutschland — tarifvertragliche Überstunden mit den Grenzen des Working Time Act, SEPA-Zahlungsdateien, GDPR-Betroffenenrechte, konfigurierbare lokale Gehaltsabrechnung in EUR und vollständige Mitarbeiterakten.',
@@ -177,7 +170,7 @@ PAGE['/regions/germany/'] = {
 
 PAGE['/regions/spain/'] = {
     'src': 'regions/spain/index.html',
-    't': _merge(_HOME, _BUILT_IN, _EXPLORE, _SEE_PRICING, _PRICE_NOTE, _SEPA, _GDPR, _LOCAL_HR_TITLE, {
+    't': _merge(_BUILT_IN, _EXPLORE, _SEE_PRICING, _PRICE_NOTE, _SEPA, _GDPR, _LOCAL_HR_TITLE, {
         # ---- Meta (title == og:title; description == og:description) ----
         'HR Suite — HR &amp; payroll for Spain | FulcrumGrid': _t(
             "HR Suite — RH &amp; paie pour l'Espagne | FulcrumGrid",
@@ -191,19 +184,14 @@ PAGE['/regions/spain/'] = {
             'HR Suite para España — horas extra del Estatuto de los Trabajadores, archivos de pago SEPA, derechos GDPR, nóminas locales configurables en EUR y RR. HH. completos.',
             'HR Suite per la Spagna — straordinari da Statuto dei lavoratori, file di pagamento SEPA, diritti GDPR, buste paga locali configurabili in EUR e HR completa.',
             'HR Suite voor Spanje — overwerk volgens het Werknemersstatuut, SEPA-betaalbestanden, GDPR-rechten, configureerbare lokale salarisadministratie in EUR, en volledige HR.'),
-        # ---- Breadcrumb ----
-        '<span class="current">Spain</span>': _t(
-            '<span class="current">Espagne</span>', '<span class="current">Spanien</span>',
-            '<span class="current">España</span>', '<span class="current">Spagna</span>',
-            '<span class="current">Spanje</span>'),
         # ---- Hero ----
         'Spain · ES': _t('Espagne · ES', 'Spanien · ES', 'España · ES', 'Spagna · ES', 'Spanje · ES'),
-        'HR &amp; payroll, built for <span class="p-grad">Spain</span>': _t(
-            "RH &amp; paie, conçu pour <span class=\"p-grad\">l'Espagne</span>",
-            'HR &amp; Gehaltsabrechnung, entwickelt für <span class="p-grad">Spanien</span>',
-            'RR. HH. &amp; nóminas, diseñado para <span class="p-grad">España</span>',
-            'HR &amp; buste paga, pensato per <span class="p-grad">la Spagna</span>',
-            'HR &amp; salarisadministratie, gebouwd voor <span class="p-grad">Spanje</span>'),
+        'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Spain</em>': _t(
+            "RH &amp; paie, conçu pour <em style=\"font-style:normal;color:var(--color-accent)\">l'Espagne</em>",
+            'HR &amp; Gehaltsabrechnung, entwickelt für <em style="font-style:normal;color:var(--color-accent)">Spanien</em>',
+            'RR. HH. &amp; nóminas, diseñado para <em style="font-style:normal;color:var(--color-accent)">España</em>',
+            'HR &amp; buste paga, pensato per <em style="font-style:normal;color:var(--color-accent)">la Spagna</em>',
+            'HR &amp; salarisadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Spanje</em>'),
         "HR Suite runs your Spain workforce — Workers' Statute overtime, SEPA pay files, GDPR data-subject rights, configurable local payroll in EUR, and full employee records.": _t(
             "HR Suite pilote vos effectifs en Espagne — heures supplémentaires du Statut des travailleurs, fichiers de paie SEPA, droits des personnes concernées au titre du GDPR, paie locale configurable en EUR, et dossiers employés complets.",
             'HR Suite steuert Ihre Belegschaft in Spanien — Überstunden nach dem Arbeitnehmerstatut, SEPA-Zahlungsdateien, GDPR-Betroffenenrechte, konfigurierbare lokale Gehaltsabrechnung in EUR und vollständige Mitarbeiterakten.',
@@ -261,7 +249,7 @@ PAGE['/regions/spain/'] = {
 
 PAGE['/regions/italy/'] = {
     'src': 'regions/italy/index.html',
-    't': _merge(_HOME, _BUILT_IN, _EXPLORE, _SEE_PRICING, _PRICE_NOTE, _SEPA, _GDPR, _LOCAL_HR_TITLE, {
+    't': _merge(_BUILT_IN, _EXPLORE, _SEE_PRICING, _PRICE_NOTE, _SEPA, _GDPR, _LOCAL_HR_TITLE, {
         # ---- Meta (title == og:title; description == og:description) ----
         'HR Suite — HR &amp; payroll for Italy | FulcrumGrid': _t(
             "HR Suite — RH &amp; paie pour l'Italie | FulcrumGrid",
@@ -275,19 +263,14 @@ PAGE['/regions/italy/'] = {
             'HR Suite para Italia — horas extra según CCNL, archivos de pago SEPA, derechos GDPR, nóminas locales configurables en EUR y RR. HH. completos.',
             "HR Suite per l'Italia — straordinari CCNL, file di pagamento SEPA, diritti GDPR, buste paga locali configurabili in EUR e HR completa.",
             'HR Suite voor Italië — CCNL-overwerk, SEPA-betaalbestanden, GDPR-rechten, configureerbare lokale salarisadministratie in EUR, en volledige HR.'),
-        # ---- Breadcrumb ----
-        '<span class="current">Italy</span>': _t(
-            '<span class="current">Italie</span>', '<span class="current">Italien</span>',
-            '<span class="current">Italia</span>', '<span class="current">Italia</span>',
-            '<span class="current">Italië</span>'),
         # ---- Hero ----
         'Italy · IT': _t('Italie · IT', 'Italien · IT', 'Italia · IT', 'Italia · IT', 'Italië · IT'),
-        'HR &amp; payroll, built for <span class="p-grad">Italy</span>': _t(
-            "RH &amp; paie, conçu pour <span class=\"p-grad\">l'Italie</span>",
-            'HR &amp; Gehaltsabrechnung, entwickelt für <span class="p-grad">Italien</span>',
-            'RR. HH. &amp; nóminas, diseñado para <span class="p-grad">Italia</span>',
-            "HR &amp; buste paga, pensato per <span class=\"p-grad\">l'Italia</span>",
-            'HR &amp; salarisadministratie, gebouwd voor <span class="p-grad">Italië</span>'),
+        'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Italy</em>': _t(
+            "RH &amp; paie, conçu pour <em style=\"font-style:normal;color:var(--color-accent)\">l'Italie</em>",
+            'HR &amp; Gehaltsabrechnung, entwickelt für <em style="font-style:normal;color:var(--color-accent)">Italien</em>',
+            'RR. HH. &amp; nóminas, diseñado para <em style="font-style:normal;color:var(--color-accent)">Italia</em>',
+            "HR &amp; buste paga, pensato per <em style=\"font-style:normal;color:var(--color-accent)\">l'Italia</em>",
+            'HR &amp; salarisadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Italië</em>'),
         "HR Suite runs your Italy workforce — CCNL overtime, SEPA pay files, GDPR data-subject rights, configurable local payroll in EUR, and full employee records.": _t(
             "HR Suite pilote vos effectifs en Italie — heures supplémentaires CCNL, fichiers de paie SEPA, droits des personnes concernées au titre du GDPR, paie locale configurable en EUR, et dossiers employés complets.",
             'HR Suite steuert Ihre Belegschaft in Italien — CCNL-Überstunden, SEPA-Zahlungsdateien, GDPR-Betroffenenrechte, konfigurierbare lokale Gehaltsabrechnung in EUR und vollständige Mitarbeiterakten.',
@@ -343,7 +326,7 @@ PAGE['/regions/italy/'] = {
 
 PAGE['/regions/netherlands/'] = {
     'src': 'regions/netherlands/index.html',
-    't': _merge(_HOME, _BUILT_IN, _EXPLORE, _SEE_PRICING, _PRICE_NOTE, _SEPA, _GDPR, _LOCAL_HR_TITLE, {
+    't': _merge(_BUILT_IN, _EXPLORE, _SEE_PRICING, _PRICE_NOTE, _SEPA, _GDPR, _LOCAL_HR_TITLE, {
         # ---- Meta (title == og:title; description == og:description) ----
         'HR Suite — HR &amp; payroll for Netherlands | FulcrumGrid': _t(
             'HR Suite — RH &amp; paie pour les Pays-Bas | FulcrumGrid',
@@ -357,19 +340,14 @@ PAGE['/regions/netherlands/'] = {
             'HR Suite para los Países Bajos — horas extra según CBA, archivos de pago SEPA, derechos GDPR, nóminas locales configurables en EUR y RR. HH. completos.',
             'HR Suite per i Paesi Bassi — straordinari CBA, file di pagamento SEPA, diritti GDPR, buste paga locali configurabili in EUR e HR completa.',
             'HR Suite voor Nederland — CBA-overwerk, SEPA-betaalbestanden, GDPR-rechten, configureerbare lokale salarisadministratie in EUR, en volledige HR.'),
-        # ---- Breadcrumb ----
-        '<span class="current">Netherlands</span>': _t(
-            '<span class="current">Pays-Bas</span>', '<span class="current">Niederlande</span>',
-            '<span class="current">Países Bajos</span>', '<span class="current">Paesi Bassi</span>',
-            '<span class="current">Nederland</span>'),
         # ---- Hero ----
         'Netherlands · NL': _t('Pays-Bas · NL', 'Niederlande · NL', 'Países Bajos · NL', 'Paesi Bassi · NL', 'Nederland · NL'),
-        'HR &amp; payroll, built for <span class="p-grad">the Netherlands</span>': _t(
-            'RH &amp; paie, conçu pour <span class="p-grad">les Pays-Bas</span>',
-            'HR &amp; Gehaltsabrechnung, entwickelt für <span class="p-grad">die Niederlande</span>',
-            'RR. HH. &amp; nóminas, diseñado para <span class="p-grad">los Países Bajos</span>',
-            'HR &amp; buste paga, pensato per <span class="p-grad">i Paesi Bassi</span>',
-            'HR &amp; salarisadministratie, gebouwd voor <span class="p-grad">Nederland</span>'),
+        'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">the Netherlands</em>': _t(
+            'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">les Pays-Bas</em>',
+            'HR &amp; Gehaltsabrechnung, entwickelt für <em style="font-style:normal;color:var(--color-accent)">die Niederlande</em>',
+            'RR. HH. &amp; nóminas, diseñado para <em style="font-style:normal;color:var(--color-accent)">los Países Bajos</em>',
+            'HR &amp; buste paga, pensato per <em style="font-style:normal;color:var(--color-accent)">i Paesi Bassi</em>',
+            'HR &amp; salarisadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Nederland</em>'),
         "HR Suite runs your Netherlands workforce — collective-agreement overtime, SEPA pay files, GDPR data-subject rights, configurable local payroll in EUR, and full employee records.": _t(
             "HR Suite pilote vos effectifs aux Pays-Bas — heures supplémentaires prévues par la convention collective, fichiers de paie SEPA, droits des personnes concernées au titre du GDPR, paie locale configurable en EUR, et dossiers employés complets.",
             'HR Suite steuert Ihre Belegschaft in den Niederlanden — tarifvertragliche Überstunden, SEPA-Zahlungsdateien, GDPR-Betroffenenrechte, konfigurierbare lokale Gehaltsabrechnung in EUR und vollständige Mitarbeiterakten.',
