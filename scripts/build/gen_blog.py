@@ -3,7 +3,7 @@ import os, re, json, glob, html
 ROOT = os.environ.get('FG_ROOT') or os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 CONTENT = os.path.join(ROOT, 'content', 'blog')
 
-CSP = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net"
+CSP = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net"
 
 GA = '''<!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
@@ -16,81 +16,28 @@ GA = '''<!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
     gtag('config', 'G-YJDJ643CY3');
   </script>'''
 
-MARK = '<span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bg)" stroke-width="1.5"/><path d="M9 23V9h9M9 16h7" stroke="url(#bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22.5" cy="22.5" r="2.6" fill="url(#bg)"/><defs><linearGradient id="bg" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#2156df"/><stop offset="1" stop-color="#1d47ba"/></linearGradient></defs></svg></span>'
-
-FOOTER_EN = '''  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a class="brand" href="/" aria-label="FulcrumGrid home">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bgf)" stroke-width="1.5"/>
-              <path d="M9 23V9h9M9 16h7" stroke="url(#bgf)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/>
-              <defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
-            </svg>
-          </span>
-          <span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>
-        </a>
-        <p class="footer-tag">The operational backbone for modern teams.</p>
-      </div>
-      <div class="footer-cols">
-        <div class="footer-col"><h3>Products</h3><a href="/products/">All products</a><a href="/products/command-center/">Command Center</a><a href="/products/collection/">Collection</a><a href="/products/hr-suite/">HR Suite</a><a href="/custom-apps/">Custom apps</a><a href="/products/coming-soon/">Coming soon</a></div>
-        <div class="footer-col"><h3>Platform</h3><a href="/features/">Features</a><a href="/how-it-works/">How it works</a><a href="/pricing/">Pricing</a><a href="/regions/">Regions</a><a href="/blog/">Blog</a></div>
-        <div class="footer-col"><h3>Company</h3><a href="/about/">About</a><a href="/faq/">FAQ</a><a href="/contact/">Contact</a><a href="mailto:contact@avenlorconsulting.com">Email us</a><a href="/privacy/">Privacy</a><a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a></div>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>&copy; <span id="year">2026</span> FulcrumGrid. All rights reserved.</p>
-      <p class="footer-domain">fulcrumgrid.com</p>
-    </div>
-  </footer>'''
-
-FOOTER_AR = '''  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#bgf)" stroke-width="1.5"/>
-              <path d="M9 23V9h9M9 16h7" stroke="url(#bgf)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/>
-              <defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
-            </svg>
-          </span>
-          <span class="brand-name" dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span>
-        </a>
-        <p class="footer-tag">العمود الفقري التشغيلي للفرق الحديثة.</p>
-      </div>
-      <div class="footer-cols">
-        <div class="footer-col"><h3>المنتجات</h3><a href="/ar/products/">كل المنتجات</a><a href="/ar/products/command-center/">مركز القيادة</a><a href="/ar/products/collection/">التحصيل</a><a href="/ar/products/hr-suite/">الموارد البشرية</a><a href="/ar/custom-apps/">تطبيقات مخصّصة</a><a href="/ar/products/coming-soon/">قريبًا</a></div>
-        <div class="footer-col"><h3>المنصّة</h3><a href="/ar/features/">الميزات</a><a href="/ar/how-it-works/">كيف تعمل</a><a href="/ar/pricing/">الأسعار</a><a href="/ar/regions/">المناطق</a><a href="/ar/blog/">المدوّنة</a></div>
-        <div class="footer-col"><h3>الشركة</h3><a href="/ar/about/">من نحن</a><a href="/ar/faq/">الأسئلة الشائعة</a><a href="/ar/contact/">اتصل بنا</a><a href="mailto:contact@avenlorconsulting.com">راسلنا</a><a href="/ar/privacy/">الخصوصية</a><a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a></div>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>&copy; <span id="year">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</p>
-      <p class="footer-domain" dir="ltr">fulcrumgrid.com</p>
-    </div>
-  </footer>'''
+# 7-language cluster used across the site (en lives at the root).
+LANGS = [('en', '', 'English'), ('ar', 'ar/', 'العربية'), ('fr', 'fr/', 'Français'),
+         ('de', 'de/', 'Deutsch'), ('es', 'es/', 'Español'), ('it', 'it/', 'Italiano'),
+         ('nl', 'nl/', 'Nederlands')]
 
 CAT = {
- 'collection': dict(label_en='Collection', label_ar='التحصيل',
-    color='var(--indigo-text)', acc='var(--indigo)', og='og-collection.png',
+ 'collection': dict(label_en='Collection', label_ar='التحصيل', og='og-collection.png',
+    acc='var(--color-accent)',
     ogalt_en='FulcrumGrid Collection — receivables and payments',
     ogalt_ar='التحصيل من FulcrumGrid — الذمم والمدفوعات',
     prod_en='/products/collection/', prod_ar='/ar/products/collection/',
     k_en='FulcrumGrid Collection', k_ar='التحصيل من FulcrumGrid',
     explore_en='Explore Collection', explore_ar='استكشف التحصيل'),
- 'hr': dict(label_en='HR', label_ar='الموارد البشرية',
-    color='var(--rose)', acc='var(--rose)', og='og-hr-suite.png',
+ 'hr': dict(label_en='HR', label_ar='الموارد البشرية', og='og-hr-suite.png',
+    acc='var(--color-accent)',
     ogalt_en='FulcrumGrid HR Suite — people operations',
     ogalt_ar='الموارد البشرية من FulcrumGrid — عمليات الأفراد',
     prod_en='/products/hr-suite/', prod_ar='/ar/products/hr-suite/',
     k_en='FulcrumGrid HR Suite', k_ar='الموارد البشرية من FulcrumGrid',
     explore_en='Explore HR Suite', explore_ar='استكشف الموارد البشرية'),
- 'operations': dict(label_en='Operations', label_ar='العمليات',
-    color='var(--teal)', acc='var(--teal)', og='og-command-center.png',
+ 'operations': dict(label_en='Operations', label_ar='العمليات', og='og-command-center.png',
+    acc='var(--color-accent)',
     ogalt_en='FulcrumGrid Command Center — operations at a glance',
     ogalt_ar='مركز القيادة من FulcrumGrid — العمليات في لمحة',
     prod_en='/products/command-center/', prod_ar='/ar/products/command-center/',
@@ -123,95 +70,167 @@ def esc(s):
     return s.replace('&','&amp;')
 
 def faq_details(faqs):
-    return '\n'.join('          <details class="faq-item"><summary>%s</summary><p>%s</p></details>'%(q,a) for q,a in faqs)
+    return '\n'.join('        <details class="faq-item"><summary>%s</summary><p>%s</p></details>'%(q,a) for q,a in faqs)
 
 def faq_schema(faqs):
     return {"@context":"https://schema.org","@type":"FAQPage",
       "mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in faqs]}
 
-def render(post, lang):
-    en = lang=='en'
-    c = CAT[post['cat']]
-    slug = post['slug']
-    base = '' if en else '/ar'
-    home = '/' if en else '/ar/'
-    blog = '/blog/' if en else '/ar/blog/'
-    canon = 'https://fulcrumgrid.com%s/blog/%s/'%(base,slug)
-    en_url = 'https://fulcrumgrid.com/blog/%s/'%slug
-    ar_url = 'https://fulcrumgrid.com/ar/blog/%s/'%slug
-    title = post['title_'+lang]; desc = post['desc_'+lang]; ogdesc = post['ogdesc_'+lang]
-    # Optional shorter <title> tag (h1/og/schema still use the full title).
-    title_tag = post.get('title_short_'+lang) or title
-    faqs = post.get('faqs_'+lang) or []
-    # schema blocks
-    blogposting = {"@context":"https://schema.org","@type":"BlogPosting","headline":title,
-      "description":ogdesc,"datePublished":post['date'],"dateModified":post['date'],
-      "author":{"@type":"Organization","name":"FulcrumGrid","@id":"https://fulcrumgrid.com/#organization"},
-      "publisher":{"@id":"https://fulcrumgrid.com/#organization"},
-      "image":"https://fulcrumgrid.com/assets/og/"+c['og'],
-      "mainEntityOfPage":{"@type":"WebPage","@id":canon},"inLanguage":lang}
-    bc = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
-      {"@type":"ListItem","position":1,"name":("Home" if en else "الرئيسية"),"item":"https://fulcrumgrid.com"+home},
-      {"@type":"ListItem","position":2,"name":("Blog" if en else "المدوّنة"),"item":"https://fulcrumgrid.com"+blog},
-      {"@type":"ListItem","position":3,"name":post['bc_'+lang],"item":canon}]}
-    ld_objs = [blogposting, bc] + ([faq_schema(faqs)] if faqs else [])
-    ld = '\n'.join('  <script type="application/ld+json">\n  %s\n  </script>'%json.dumps(o,ensure_ascii=False,indent=2).replace('\n','\n  ') for o in ld_objs)
+# ── New-design (fg2) shared chrome ─────────────────────────────────────────
 
-    htmlopen = '<html lang="en">' if en else '<html lang="ar" dir="rtl">'
-    fonts = 'Inter:wght@400;500;600;700;800' if en else 'Cairo:wght@400;500;600;700;800'
-    fonts += '&family=Space+Grotesk:wght@500;600;700'
-    arstyle = '' if en else '\n  <style>:root { --font-sans: \'Cairo\', system-ui, sans-serif; --font-display: \'Cairo\', system-ui, sans-serif; }</style>'
-    oglocale = '' if en else '\n  <meta property="og:locale" content="ar_AR" />'
-    skip = 'Skip to content' if en else 'تخطَّ إلى المحتوى'
-    brandname = 'Fulcrum<span class="brand-accent">Grid</span>' if en else '<span dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span>'
-    aria_home = 'FulcrumGrid home' if en else 'FulcrumGrid الصفحة الرئيسية'
-    navlabels = [('Products','/products/'),('Platform','/features/'),('Pricing','/pricing/'),('Regions','/regions/'),('Blog','/blog/'),('About','/about/'),('Contact','/contact/')] if en else \
-                [('المنتجات','/ar/products/'),('المنصّة','/ar/features/'),('الأسعار','/ar/pricing/'),('المناطق','/ar/regions/'),('المدوّنة','/ar/blog/'),('من نحن','/ar/about/'),('اتصل بنا','/ar/contact/')]
-    def nav(mobile=False):
-        out=[]
-        for lbl,href in navlabels:
-            active=' class="active" aria-current="page"' if lbl in ('Blog','المدوّنة') else ''
-            out.append('        <a href="%s"%s>%s</a>'%(href,active,lbl))
-        return '\n'.join(out)
-    demo = 'Request a demo' if en else 'اطلب عرضًا توضيحيًا'
-    primary_label = 'Primary' if en else 'التنقّل الرئيسي'
-    lang_label = 'Language' if en else 'اللغة'
-    menu_label = 'Toggle menu' if en else 'فتح القائمة'
-    bc_label = 'Breadcrumb' if en else 'مسار التنقّل'
-    faq_h = 'Frequently asked questions' if en else 'الأسئلة الشائعة'
-    back = ('<span aria-hidden="true">←</span> Back to the blog' if en else '<span aria-hidden="true">→</span> العودة إلى المدوّنة')
-    langswitch = ('        <a href="%s/blog/%s/"%s hreflang="en" lang="en">EN</a>\n        <a href="%s/ar/blog/%s/"%s hreflang="ar" lang="ar">ع</a>'
-        % ('', slug, (' class="active" aria-current="page"' if en else ''), '', slug, ('' if en else ' class="active" aria-current="page"')))
+def hreflang_cluster(suffix):
+    """Full 7-language hreflang cluster + x-default for a path suffix such as
+    'blog/' or 'blog/<slug>/'. English lives at the site root."""
+    lines = ['  <link rel="alternate" hreflang="%s" href="https://fulcrumgrid.com/%s%s" />' % (code, pre, suffix)
+             for code, pre, _ in LANGS]
+    lines.append('  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/%s" />' % suffix)
+    return '\n'.join(lines)
 
-    body_inner = post['body_'+lang].strip()
-    faq_block = ('\n          <h2>%s</h2>\n%s\n' % (faq_h, faq_details(faqs))) if faqs else ''
-    related = (post.get('related_'+lang) or '').strip()
-    rel_block = ('\n          <hr />\n          %s\n' % related) if related else ''
-    cta = '''          <div class="article-cta" style="--cta-acc:%s">
-            <span class="k">%s</span>
-            <h3>%s</h3>
-            <p>%s</p>
-            <a class="btn btn-primary" href="%s">%s</a>
-          </div>''' % (c['acc'], (c['k_'+lang]), post['cta_h_'+lang], post['cta_p_'+lang],
-                       (c['prod_'+lang]), (c['explore_'+lang]))
-
-    html = '''<!DOCTYPE html>
-%(htmlopen)s
-<head>
+def page_head(title_tag, desc, canon, suffix, meta_block, ld=''):
+    """New-design <head>: CSP, GA, Barlow fonts, /assets/css/fg2.css, icons,
+    manifest, canonical + full hreflang cluster, and the page-specific
+    og/twitter meta_block (+ optional JSON-LD)."""
+    ld_part = ('\n' + ld) if ld else ''
+    return '''<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Security-Policy" content="%(csp)s" />
 
   %(ga)s
 
-  <title>%(title_tag)s — FulcrumGrid</title>
+  <title>%(title)s</title>
   <meta name="description" content="%(desc)s" />
-  <meta name="theme-color" content="#0b1020" />
-  <meta property="og:type" content="article" />
+  <meta name="theme-color" content="#f2f2f3" />
+
+%(meta)s
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="%(canon)s" />
+%(hreflang)s
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />%(ld)s
+</head>''' % dict(csp=CSP, ga=GA, title=esc(title_tag), desc=esc(desc), meta=meta_block,
+                  canon=canon, hreflang=hreflang_cluster(suffix), ld=ld_part)
+
+def site_header(suffix):
+    """New-design sticky header (site-head) with the Blog nav item active.
+    Language menu links point at the per-language equivalent of this page."""
+    menu = []
+    for code, pre, name in LANGS:
+        active = ' class="active"' if code == 'en' else ''
+        menu.append('            <a href="/%s%s"%s hreflang="%s" lang="%s">%s</a>' % (pre, suffix, active, code, code, name))
+    return '''  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Platform</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+%(menu)s
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>''' % dict(menu='\n'.join(menu))
+
+# New-design footer (site-foot). HR Suite is listed first among the apps.
+FOOTER_EN = '''  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Platform</h5>
+          <a href="/features/">Features</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>'''
+
+END_SCRIPT = '  <script src="/assets/js/consent.js" defer></script>'
+
+# ── Article pages (English, new design) ────────────────────────────────────
+
+def render(post, lang):
+    # Arabic emission is guarded for now — handled in a later pass. Only the
+    # English article pages are rendered in the new (fg2) design.
+    assert lang == 'en', 'render() only emits English in the new design'
+    c = CAT[post['cat']]
+    slug = post['slug']
+    canon = 'https://fulcrumgrid.com/blog/%s/' % slug
+    title = post['title_en']; desc = post['desc_en']; ogdesc = post['ogdesc_en']
+    # Optional shorter <title> tag (h1/og/schema still use the full title).
+    title_tag = (post.get('title_short_en') or title) + ' — FulcrumGrid'
+    faqs = post.get('faqs_en') or []
+
+    # JSON-LD (preserved from the previous build).
+    blogposting = {"@context":"https://schema.org","@type":"BlogPosting","headline":title,
+      "description":ogdesc,"datePublished":post['date'],"dateModified":post['date'],
+      "author":{"@type":"Organization","name":"FulcrumGrid","@id":"https://fulcrumgrid.com/#organization"},
+      "publisher":{"@id":"https://fulcrumgrid.com/#organization"},
+      "image":"https://fulcrumgrid.com/assets/og/"+c['og'],
+      "mainEntityOfPage":{"@type":"WebPage","@id":canon},"inLanguage":"en"}
+    bc = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://fulcrumgrid.com/"},
+      {"@type":"ListItem","position":2,"name":"Blog","item":"https://fulcrumgrid.com/blog/"},
+      {"@type":"ListItem","position":3,"name":post['bc_en'],"item":canon}]}
+    ld_objs = [blogposting, bc] + ([faq_schema(faqs)] if faqs else [])
+    ld = '\n'.join('  <script type="application/ld+json">\n  %s\n  </script>'
+                   % json.dumps(o, ensure_ascii=False, indent=2).replace('\n', '\n  ') for o in ld_objs)
+
+    meta_block = '''  <meta property="og:type" content="article" />
   <meta property="og:title" content="%(title)s" />
   <meta property="og:description" content="%(ogdesc)s" />
   <meta property="og:url" content="%(canon)s" />
-  <meta property="og:site_name" content="FulcrumGrid" />%(oglocale)s
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
   <meta property="article:published_time" content="%(date)s" />
   <meta property="og:image" content="https://fulcrumgrid.com/assets/og/%(og)s" />
   <meta property="og:image:width" content="1200" />
@@ -219,160 +238,176 @@ def render(post, lang):
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:alt" content="%(ogalt)s" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/%(og)s" />
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-  <link rel="canonical" href="%(canon)s" />
-  <link rel="alternate" hreflang="en" href="%(en_url)s" />
-  <link rel="alternate" hreflang="ar" href="%(ar_url)s" />
-  <link rel="alternate" hreflang="x-default" href="%(en_url)s" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=%(fonts)s&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=%(fonts)s&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=%(fonts)s&display=swap" rel="stylesheet" /></noscript>
-  <link rel="stylesheet" href="/assets/css/fg.css" />%(arstyle)s
-%(ld)s
-</head>
-<body class="fg product-page">
-  <a class="skip-link" href="#main">%(skip)s</a>
+  <meta name="twitter:title" content="%(title)s" />
+  <meta name="twitter:description" content="%(ogdesc)s" />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/%(og)s" />''' % dict(
+        title=esc(title), ogdesc=esc(ogdesc), canon=canon, date=post['date'],
+        og=c['og'], ogalt=esc(c['ogalt_en']))
 
-    <header class="site-header" id="top">
-    <div class="header-inner">
-      <a class="brand" href="%(home)s" aria-label="%(aria_home)s">
-        %(mark)s
-        <span class="brand-name">%(brandname)s</span>
-      </a>
-      <nav class="site-nav" aria-label="%(primary_label)s">
-%(nav)s
-      </nav>
-      <div class="header-cta">
-        <div class="lang-switch" role="group" aria-label="%(lang_label)s">
-%(langswitch)s
-        </div>
-        <a class="btn btn-primary" href="%(contact)s">%(demo)s</a>
+    body_inner = post['body_en'].strip()
+    faq_block = ('\n        <h2>Frequently asked questions</h2>\n%s\n' % faq_details(faqs)) if faqs else ''
+    related = (post.get('related_en') or '').strip()
+    rel_block = ('\n        <hr />\n        %s\n' % related) if related else ''
+
+    return '''<!DOCTYPE html>
+<html lang="en">
+%(head)s
+<body>
+%(header)s
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / %(bc)s</p>
+        <span class="tag tag-accent">%(catlabel)s</span>
+        <h1>%(title_html)s</h1>
+        <p class="hero-intro">%(dek)s</p>
+        <p class="mono"><time datetime="%(date)s">%(metadate)s</time> · %(read)s</p>
       </div>
-      <button class="nav-toggle" aria-label="%(menu_label)s" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobile-menu" hidden>
-%(nav)s
-      <a class="btn btn-primary" href="%(contact)s">%(demo)s</a>
-      <div class="lang-switch" role="group" aria-label="%(lang_label)s">
-%(langswitch)s
-      </div>
-    </div>
-  </header>
+    </section>
 
-  <main id="main">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="%(bc_label)s">
-        <a href="%(home)s">%(home_label)s</a><span>/</span><a href="%(blog)s">%(blog_label)s</a><span>/</span><span class="current">%(bc_current)s</span>
-      </nav>
-    </div>
-
-    <article class="section" style="padding-top:22px">
-      <div class="container">
-        <div class="article article-header">
-          <span class="post-cat" style="color:%(catcolor)s">%(catlabel)s</span>
-          <h1>%(title_html)s</h1>
-          <div class="post-meta"><time datetime="%(date)s">%(metadate)s</time><span class="read">%(read)s</span></div>
-        </div>
-
-        <div class="article article-body">
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
 %(body)s
 %(faq_block)s%(rel_block)s
-%(cta)s
-        </div>
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
 
-        <div class="article-foot">
-          <a class="back-link" href="%(blog)s">%(back)s</a>
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">%(k)s</p>
+        <h2>%(cta_h)s</h2>
+        <p class="section-lead" style="margin:0 auto 26px">%(cta_p)s</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="%(prod)s">%(explore)s</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
         </div>
       </div>
-    </article>
+    </section>
   </main>
 
 %(footer)s
 
-  <script src="/assets/js/main.js" defer></script>
-  <script src="/assets/js/fg.js" defer></script>
-  <script src="/assets/js/consent.js" defer></script>
+%(end_script)s
 </body>
 </html>
 ''' % dict(
-      htmlopen=htmlopen, csp=CSP, ga=GA, title=esc(title), title_tag=esc(title_tag), desc=esc(desc), ogdesc=esc(ogdesc),
-      canon=canon, en_url=en_url, ar_url=ar_url, oglocale=oglocale, date=post['date'],
-      og=c['og'], ogalt=(c['ogalt_'+lang]), fonts=fonts, arstyle=arstyle, ld=ld,
-      skip=skip, home=home, aria_home=aria_home, mark=MARK, brandname=brandname,
-      primary_label=primary_label, nav=nav(), langswitch=langswitch,
-      contact=('/contact/' if en else '/ar/contact/'), demo=demo, lang_label=lang_label,
-      menu_label=menu_label, bc_label=bc_label, blog=blog,
-      home_label=('Home' if en else 'الرئيسية'),
-      blog_label=('Blog' if en else 'المدوّنة'),
-      bc_current=post['bc_'+lang], catcolor=c['color'], catlabel=(c['label_'+lang]),
-      title_html=esc(title), metadate=post['metadate_'+lang], read=post['read_'+lang],
-      body=body_inner, faq_block=faq_block, rel_block=rel_block, cta=cta,
-      back=back, footer=(FOOTER_EN if en else FOOTER_AR))
-    return html
+        head=page_head(title_tag, desc, canon, 'blog/%s/' % slug, meta_block, ld),
+        header=site_header('blog/%s/' % slug), footer=FOOTER_EN, end_script=END_SCRIPT,
+        bc=esc(post['bc_en']), catlabel=esc(c['label_en']), title_html=esc(title),
+        dek=esc(desc), date=post['date'], metadate=post['metadate_en'], read=post['read_en'],
+        body=body_inner, faq_block=faq_block, rel_block=rel_block,
+        k=esc(c['k_en']), cta_h=esc(post['cta_h_en']), cta_p=esc(post['cta_p_en']),
+        prod=c['prod_en'], explore=esc(c['explore_en']))
 
 def is_legacy(p):
     return bool(p.get('legacy'))
 
 def write_posts():
     # Only render pages the build owns (non-legacy). Legacy posts are
-    # catalogued for the index/sitemap but their HTML is left untouched.
+    # catalogued for the index but their HTML is left untouched.
+    # Arabic (/ar/blog/...) is intentionally NOT written for now — the AR
+    # migration is a later pass; AR data in the JSON is preserved untouched.
     for p in POSTS:
         if is_legacy(p):
             continue
-        for lang in ('en','ar'):
-            d = os.path.join(ROOT, ('' if lang=='en' else 'ar/')+'blog/%s'%p['slug'])
+        for lang in ('en',):  # AR guarded — do not write /ar/blog/<slug>/
+            d = os.path.join(ROOT, 'blog/%s' % p['slug'])
             os.makedirs(d, exist_ok=True)
-            open(os.path.join(d,'index.html'),'w',encoding='utf-8').write(render(p,lang))
-            print('wrote', d+'/index.html')
+            open(os.path.join(d, 'index.html'), 'w', encoding='utf-8').write(render(p, lang))
+            print('wrote', d + '/index.html')
 
-def card(p, lang):
+# ── Blog index (English, new design) ───────────────────────────────────────
+
+def card(p):
     c = CAT[p['cat']]
-    base = '/blog/' if lang=='en' else '/ar/blog/'
-    return '''          <article class="post-card" data-cat="%s">
-            <span class="post-cat">%s</span>
-            <h2><a href="%s%s/">%s</a></h2>
-            <p>%s</p>
-            <div class="post-meta"><time datetime="%s">%s</time><span class="read">%s</span></div>
-          </article>''' % (p['cat'], c['label_'+lang], base, p['slug'], esc(p['title_'+lang]),
-                           esc(p['card_'+lang]), p['date'], p['cardtime_'+lang], p['read_'+lang])
+    return '''          <article class="app-card">
+            <div class="head"><span class="tag tag-outline">%s</span></div>
+            <h3><a href="/blog/%s/" style="text-decoration:none;color:inherit">%s</a></h3>
+            <p class="line">%s</p>
+            <p class="mono"><time datetime="%s">%s</time> · %s</p>
+          </article>''' % (esc(c['label_en']), p['slug'], esc(p['title_en']),
+                           esc(p['card_en']), p['date'], p['cardtime_en'], p['read_en'])
 
-def schema_entry(p, lang):
-    url = 'https://fulcrumgrid.com/%sblog/%s/' % ('' if lang=='en' else 'ar/', p['slug'])
-    return '      {"@type": "BlogPosting", "headline": %s, "url": "%s", "datePublished": "%s"}' % (
-        json.dumps(p['title_'+lang], ensure_ascii=False), url, p['date'])
+def index_html():
+    cards = '\n'.join(card(p) for p in POSTS)
+    blog_ld = {"@context":"https://schema.org","@type":"Blog","@id":"https://fulcrumgrid.com/blog/#blog",
+      "name":"The FulcrumGrid blog",
+      "description":"Practical guides on operations, receivables, and people operations.",
+      "url":"https://fulcrumgrid.com/blog/","inLanguage":"en",
+      "publisher":{"@id":"https://fulcrumgrid.com/#organization"},
+      "blogPost":[{"@type":"BlogPosting","headline":p['title_en'],
+                   "url":"https://fulcrumgrid.com/blog/%s/"%p['slug'],"datePublished":p['date']}
+                  for p in POSTS]}
+    ld = '  <script type="application/ld+json">\n  %s\n  </script>' % json.dumps(
+        blog_ld, ensure_ascii=False, indent=2).replace('\n', '\n  ')
+
+    meta_block = '''  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The FulcrumGrid blog" />
+  <meta property="og:description" content="Practical guides on operations, receivables, and people operations." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-blog.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="The FulcrumGrid blog — practical guides for operators" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The FulcrumGrid blog" />
+  <meta name="twitter:description" content="Practical guides on operations, receivables, and people operations." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-blog.png" />'''
+
+    return '''<!DOCTYPE html>
+<html lang="en">
+%(head)s
+<body>
+%(header)s
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="hero-eyebrow">Blog</p>
+        <h1>The FulcrumGrid blog</h1>
+        <p class="hero-intro">Practical guides on operations, receivables, and people operations — from the team building FulcrumGrid.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad">
+        <div class="apps-grid">
+%(cards)s
+        </div>
+      </div>
+    </section>
+  </main>
+
+%(footer)s
+
+%(end_script)s
+</body>
+</html>
+''' % dict(
+        head=page_head('Blog — FulcrumGrid',
+                       "Practical guides on operations, receivables, and people operations — from the team building FulcrumGrid's business apps.",
+                       'https://fulcrumgrid.com/blog/', 'blog/', meta_block, ld),
+        header=site_header('blog/'), footer=FOOTER_EN, end_script=END_SCRIPT, cards=cards)
 
 def ensure_index(lang):
-    """Idempotently make sure every catalogued post has a card + schema entry
-    in the blog index. Posts already present are left exactly as-is, so a
-    fully-catalogued index produces no diff; a new post is inserted newest-first."""
-    f = os.path.join(ROOT, ('' if lang=='en' else 'ar/')+'blog/index.html')
-    s = open(f,encoding='utf-8').read()
-    changed = False
-    base = '/blog/' if lang=='en' else '/ar/blog/'
-    # iterate oldest-first so successive top-inserts leave newest on top
-    for p in reversed(POSTS):
-        marker = '<a href="%s%s/">' % (base, p['slug'])
-        if marker in s:
-            continue
-        s = s.replace('        <div class="post-grid">\n',
-                      '        <div class="post-grid">\n'+card(p,lang)+'\n', 1)
-        s = s.replace('    "blogPost": [\n',
-                      '    "blogPost": [\n'+schema_entry(p,lang)+',\n', 1)
-        changed = True
-    if changed:
-        open(f,'w',encoding='utf-8').write(s)
-        print('updated index', f)
-    return changed
+    """Rewrite the blog index in the new (fg2) design with a card for every
+    catalogued post (legacy + owned), newest-first. Regenerated wholesale each
+    run, so output is deterministic and idempotent. Arabic is guarded for now."""
+    if lang != 'en':
+        return False  # AR index guarded — handled in a later pass.
+    f = os.path.join(ROOT, 'blog/index.html')
+    new = index_html()
+    old = open(f, encoding='utf-8').read() if os.path.exists(f) else None
+    if old == new:
+        return False
+    open(f, 'w', encoding='utf-8').write(new)
+    print('wrote index', f)
+    return True
 
 def ensure_sitemap():
     f = os.path.join(ROOT, 'sitemap.xml')
@@ -430,8 +465,9 @@ def ensure_llms():
 
 def build_blog():
     write_posts()
-    ensure_index('en'); ensure_index('ar')
-    # sitemap.xml is now regenerated wholesale (all languages) by gen_sitemap.py,
+    ensure_index('en')
+    # ensure_index('ar')  # AR blog index guarded for now — later migration pass.
+    # sitemap.xml is regenerated wholesale (all languages) by gen_sitemap.py,
     # which build.py runs after localization; the old incremental EN/AR-only
     # appender is intentionally no longer called here.
     ensure_llms()
