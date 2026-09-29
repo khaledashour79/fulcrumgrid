@@ -113,9 +113,16 @@ img { display: block; max-width: 100%; }
 .site-nav a { color: inherit; text-decoration: none; font-size: 14px; }
 .site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--color-accent); }
 .head-cta { display: flex; align-items: center; gap: 14px; }
-.lang-mini { font-family: var(--font-body); font-size: 13px; color: color-mix(in srgb, var(--color-text) 60%, transparent);
-  text-decoration: none; letter-spacing: 0.04em; }
-.lang-mini:hover { color: var(--color-accent); }
+.lang-dd { position: relative; }
+.lang-dd > summary { list-style: none; cursor: pointer; font-family: var(--font-body); font-size: 13px;
+  color: color-mix(in srgb, var(--color-text) 62%, transparent); letter-spacing: 0.04em; padding: 4px 2px; }
+.lang-dd > summary::-webkit-details-marker { display: none; }
+.lang-dd > summary:hover { color: var(--color-accent); }
+.lang-dd-menu { position: absolute; top: calc(100% + 8px); inset-inline-end: 0; min-width: 150px; z-index: 70;
+  background: var(--color-bg); border: 1px solid var(--color-divider); box-shadow: var(--shadow-md); padding: 5px; display: grid; gap: 1px; }
+.lang-dd-menu a { padding: 7px 11px; font-size: 13px; color: var(--color-text); text-decoration: none; }
+.lang-dd-menu a:hover { background: color-mix(in srgb, var(--color-accent) 10%, transparent); color: var(--color-accent); }
+.lang-dd-menu a.active { color: var(--color-accent); font-weight: 600; }
 .nav-toggle { display: none; }
 
 /* ── Section scaffolding ── */

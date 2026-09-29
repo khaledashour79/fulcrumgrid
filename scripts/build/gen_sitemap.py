@@ -51,6 +51,8 @@ def file_for(canon, code):
 
 def main():
     canons = [c for c in PAGES if c != '/404.html']
+    if '/' not in canons:
+        canons.append('/')  # home is always in the sitemap even when its localization is paused
     # Stable, readable order: home first, then alphabetical.
     canons.sort(key=lambda c: (c != '/', c))
     urls = []

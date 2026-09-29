@@ -293,3 +293,9 @@ PAGES.update({
 })
 
 _load_page_modules()
+
+# The homepage is being migrated to the new design system. Its old translation
+# catalog (above) no longer matches index.html, so pause home localization until
+# the redesign is rolled out and the home is re-localized. The existing
+# /<lang>/index.html files stay as committed until then.
+PAGES.pop('/', None)

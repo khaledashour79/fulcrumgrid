@@ -11,7 +11,7 @@
   var GRID = [
     ['Command Center', 'Live'], ['Collection', 'Live'], ['HR Suite', 'Live'], ['Inventory', 'Roadmap'],
     ['CRM', 'Roadmap'], ['Analytics', 'Roadmap'], ['Procurement', 'Roadmap'], ['TMS', 'Roadmap'],
-    ['ERP', 'Roadmap'], ['Voice', 'Roadmap'], ['Custom apps', 'Built to order'], ['Your next app', '']
+    ['Custom apps', 'Built to order'], ['Your next app', '']
   ];
   var COLS = 4, W = 118, GAP = 150;
   var Hs = { 'Live': 42, 'Built to order': 30, 'Roadmap': 16, '': 12 };
