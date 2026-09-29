@@ -152,6 +152,25 @@ def nav(lang, slug):
         out.append('        <a href="%s%s"%s>%s</a>'%(base,href,act,en if lang=='en' else ar))
     return '\n'.join(out)
 
+# Region callout injected on the HR Suite pricing page only (keeps the matrix
+# region-generic while pointing Saudi buyers to the dedicated /regions/ page).
+_FAQ_ANCHOR = '    <section class="section">\n      <div class="container">\n        <div class="section-head">'
+
+def _region_cta(en):
+    if en:
+        return ('    <section class="section" style="padding-top:0">\n'
+                '      <div class="container">\n'
+                '        <div style="text-align:center;max-width:680px;margin:0 auto">\n'
+                '          <p class="price-note" style="margin-bottom:14px"><strong>Operating in Saudi Arabia?</strong> WPS wage files, GOSI, end-of-service &amp; Nitaqat are built in.</p>\n'
+                '          <a class="btn btn-outline" href="/regions/saudi-arabia/">See Saudi compliance →</a>\n'
+                '        </div>\n      </div>\n    </section>\n\n')
+    return ('    <section class="section" style="padding-top:0">\n'
+            '      <div class="container">\n'
+            '        <div style="text-align:center;max-width:680px;margin:0 auto">\n'
+            '          <p class="price-note" style="margin-bottom:14px"><strong>تعمل في السعودية؟</strong> ملفات حماية الأجور (WPS) والتأمينات ونهاية الخدمة ونطاقات مضمّنة.</p>\n'
+            '          <a class="btn btn-outline" href="/ar/regions/saudi-arabia/">اطّلع على الامتثال السعودي ←</a>\n'
+            '        </div>\n      </div>\n    </section>\n\n')
+
 def page(slug, d, lang):
     en = lang=='en'
     name = d['en_name'] if en else d['ar_name']
@@ -301,7 +320,7 @@ def page(slug, d, lang):
     ld_json = '<script type="application/ld+json">%s</script>\n  <script type="application/ld+json">%s</script>' % (
         json.dumps(app_ld, ensure_ascii=False), json.dumps(bc_ld, ensure_ascii=False))
 
-    return '''<!DOCTYPE html>
+    html_out = '''<!DOCTYPE html>
 %s
 <head>
   <meta charset="UTF-8" />
@@ -493,16 +512,19 @@ def page(slug, d, lang):
       home, aria_home, MARKF, brandname, ('The operational backbone for modern teams.' if en else 'العمود الفقري التشغيلي للفرق الحديثة.'),
       footer_cols(lang), ('All rights reserved.' if en else 'جميع الحقوق محفوظة.')
     )
+    if slug == 'hr-suite':
+        html_out = html_out.replace(_FAQ_ANCHOR, _region_cta(en) + _FAQ_ANCHOR, 1)
+    return html_out
 
 def footer_cols(lang):
     en = lang=='en'
     b = '' if en else '/ar'
     if en:
         return ('<div class="footer-col"><h3>Products</h3><a href="/products/">All products</a><a href="/products/command-center/">Command Center</a><a href="/products/collection/">Collection</a><a href="/products/hr-suite/">HR Suite</a><a href="/custom-apps/">Custom apps</a><a href="/products/coming-soon/">Coming soon</a></div>'
-                '<div class="footer-col"><h3>Platform</h3><a href="/features/">Features</a><a href="/how-it-works/">How it works</a><a href="/pricing/">Pricing</a><a href="/blog/">Blog</a></div>'
+                '<div class="footer-col"><h3>Platform</h3><a href="/features/">Features</a><a href="/how-it-works/">How it works</a><a href="/pricing/">Pricing</a><a href="/regions/">Regions</a><a href="/blog/">Blog</a></div>'
                 '<div class="footer-col"><h3>Company</h3><a href="/about/">About</a><a href="/faq/">FAQ</a><a href="/contact/">Contact</a><a href="mailto:contact@avenlorconsulting.com">Email us</a><a href="/privacy/">Privacy</a><a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a></div>')
     return ('<div class="footer-col"><h3>المنتجات</h3><a href="/ar/products/">كل المنتجات</a><a href="/ar/products/command-center/">مركز القيادة</a><a href="/ar/products/collection/">التحصيل</a><a href="/ar/products/hr-suite/">الموارد البشرية</a><a href="/ar/custom-apps/">تطبيقات مخصّصة</a><a href="/ar/products/coming-soon/">قريبًا</a></div>'
-            '<div class="footer-col"><h3>المنصّة</h3><a href="/ar/features/">الميزات</a><a href="/ar/how-it-works/">كيف تعمل</a><a href="/ar/pricing/">الأسعار</a><a href="/ar/blog/">المدوّنة</a></div>'
+            '<div class="footer-col"><h3>المنصّة</h3><a href="/ar/features/">الميزات</a><a href="/ar/how-it-works/">كيف تعمل</a><a href="/ar/pricing/">الأسعار</a><a href="/ar/regions/">المناطق</a><a href="/ar/blog/">المدوّنة</a></div>'
             '<div class="footer-col"><h3>الشركة</h3><a href="/ar/about/">من نحن</a><a href="/ar/faq/">الأسئلة الشائعة</a><a href="/ar/contact/">اتصل بنا</a><a href="mailto:contact@avenlorconsulting.com">راسلنا</a><a href="/ar/privacy/">الخصوصية</a><a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a></div>')
 
 for slug,d in APPS.items():

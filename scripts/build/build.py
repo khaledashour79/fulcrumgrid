@@ -22,7 +22,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 
 # gen_pricing runs its work at import/module scope; gen_blog under __main__.
-STEPS = ['gen_pricing.py', 'gen_blog.py']
+STEPS = ['gen_pricing.py', 'gen_blog.py', 'gen_regions.py']
 
 def main():
     env = dict(os.environ, FG_ROOT=ROOT)
