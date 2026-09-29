@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading); font-weight: var(--font-heading-weight);
   line-height: 1.08; letter-spacing: -0.015em; margin: 0 0 var(--space-2);
 }
-h1 { font-size: clamp(52px, 8vw, 104px); line-height: 0.94; letter-spacing: -0.03em; text-transform: uppercase; }
+h1 { font-size: clamp(46px, 6.6vw, 88px); line-height: 0.95; letter-spacing: -0.03em; text-transform: uppercase; }
 h2 { font-size: clamp(30px, 4vw, 46px); text-transform: uppercase; letter-spacing: -0.02em; }
 h3 { font-size: 25px; }
 p { margin: 0 0 var(--space-3); }
@@ -177,7 +177,8 @@ img { display: block; max-width: 100%; }
 .hero.grid { display: block; min-height: calc(100vh - 62px); position: relative;
   background-image: linear-gradient(var(--grid-line) 1px, transparent 1px), linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
   background-size: 40px 40px; border-bottom: 1px solid var(--color-divider); overflow: hidden; }
-.hero.grid .hero-copy { text-align: center; max-width: 1000px; margin: 0 auto; padding: 64px 20px 8px; position: relative; z-index: 3; }
+.hero.grid .hero-copy { text-align: center; max-width: 1000px; margin: 0 auto; padding: 44px 20px 8px; position: relative; z-index: 3; pointer-events: none; }
+.hero.grid .hero-copy a, .hero.grid .hero-copy .hero-actions { pointer-events: auto; }
 .hero.grid .hero-eyebrow { margin-bottom: 18px; }
 .hero.grid h1 { margin: 0 auto 20px; }
 .hero.grid .hero-intro { margin: 0 auto 26px; }
@@ -186,8 +187,8 @@ img { display: block; max-width: 100%; }
 .hero-floor .fig { position: absolute; top: 18px; left: 22px; z-index: 3; }
 .hero-floor .readout { position: absolute; top: 18px; right: 22px; z-index: 3; }
 .hero-floor .cue { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); z-index: 3; }
-.gstage { position: absolute; left: 0; right: 0; top: 44%; bottom: 2%;
-  perspective: 2400px; touch-action: none; cursor: grab; z-index: 1; }
+.gstage { position: absolute; left: 0; right: 0; top: 48%; bottom: 0;
+  perspective: 2600px; touch-action: none; cursor: grab; z-index: 1; }
 .gstage:active { cursor: grabbing; }
 .gfloor { position: absolute; left: 50%; top: 50%; transform-style: preserve-3d; }
 .gtile { position: absolute; transform-style: preserve-3d; }

@@ -13,8 +13,8 @@
     ['CRM', 'Roadmap'], ['Analytics', 'Roadmap'], ['Procurement', 'Roadmap'], ['TMS', 'Roadmap'],
     ['Custom apps', 'Built to order'], ['Your next app', '']
   ];
-  var COLS = 4, W = 130, GAP = 150;
-  var Hs = { 'Live': 44, 'Built to order': 30, 'Roadmap': 18, '': 30 };
+  var COLS = 4, W = 148, GAP = 174;
+  var Hs = { 'Live': 50, 'Built to order': 36, 'Roadmap': 22, '': 36 };
 
   var clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.max(a, Math.min(b, v)); };
   var ease = function (t) { return 1 - Math.pow(1 - t, 3); };
@@ -48,8 +48,8 @@
       '<div style="position:absolute;left:0;top:' + W + 'px;width:' + W + 'px;height:' + h + 'px;transform-origin:center top;transform:rotateX(90deg);background:var(--color-neutral-200);border:1px solid ' + bc + ';box-sizing:border-box"></div>' +
       '<div style="position:absolute;left:-' + h + 'px;top:0;width:' + h + 'px;height:' + W + 'px;transform-origin:right center;transform:rotateY(90deg);background:var(--color-neutral-300);border:1px solid ' + bc + ';box-sizing:border-box"></div>' +
       '<div style="position:absolute;inset:0;transform:translateZ(' + h + 'px);background:var(--color-bg);border:1px ' + bs + ' ' + bc + ';box-sizing:border-box">' +
-        '<span style="position:absolute;left:10px;top:9px;font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:' + stCol + '">' + (status || 'Planned') + '</span>' +
-        '<span style="position:absolute;left:10px;right:10px;bottom:10px;font-family:var(--font-heading);font-weight:600;font-size:15px;line-height:1.05;letter-spacing:.03em;text-transform:uppercase;color:' + nameCol + '">' + name + '</span>' +
+        '<span style="position:absolute;left:12px;top:11px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:' + stCol + '">' + (status || 'Planned') + '</span>' +
+        '<span style="position:absolute;left:12px;right:12px;bottom:12px;font-family:var(--font-heading);font-weight:600;font-size:20px;line-height:1.02;letter-spacing:.02em;text-transform:uppercase;color:' + nameCol + '">' + name + '</span>' +
       '</div>';
     floor.appendChild(t); tiles.push(t);
   });
@@ -69,7 +69,7 @@
     var now = (performance.now() - t0) / 1000;
     tx += (mx - tx) * 0.05; ty += (my - ty) * 0.05;
     var r = stage.getBoundingClientRect();
-    var sc = clamp(Math.min(r.width / 980, r.height / 560), 0.45, 1.15);
+    var sc = clamp(Math.min(r.width / 840, r.height / 500), 0.5, 1.25);
     floor.style.transform = 'scale3d(' + sc + ',' + sc + ',' + sc + ') rotateX(' + (56 - ty * 4) + 'deg) rotateZ(' + (-36 + tx * 6) + 'deg)';
     var p = reduce ? 0 : clamp(window.scrollY / (hero.offsetHeight * 0.7));
 
