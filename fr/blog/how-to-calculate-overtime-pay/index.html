@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Comment calculer les heures supplémentaires ? Guide pratique — FulcrumGrid</title>
+  <meta name="description" content="Guide pratique pour calculer les heures supplémentaires : la formule standard, comment trouver le taux de référence, des exemples chiffrés, les coefficients et les pièges." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Comment calculer les heures supplémentaires ? Guide pratique" />
+  <meta property="og:description" content="Guide pratique pour calculer les heures supplémentaires : la formule standard, comment trouver le taux de référence, des exemples chiffrés, les coefficients et les pièges." />
+  <meta property="og:url" content="https://fulcrumgrid.com/fr/blog/how-to-calculate-overtime-pay/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-09-29" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid HR Suite — people operations" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Comment calculer les heures supplémentaires ? Guide pratique" />
+  <meta name="twitter:description" content="Guide pratique pour calculer les heures supplémentaires : la formule standard, comment trouver le taux de référence, des exemples chiffrés, les coefficients et les pièges." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-overtime-pay/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-overtime-pay/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-overtime-pay/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-overtime-pay/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-calculate-overtime-pay/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-calculate-overtime-pay/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-calculate-overtime-pay/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-overtime-pay/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-overtime-pay/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Comment calculer les heures supplémentaires ? Guide pratique",
+    "description": "Guide pratique pour calculer les heures supplémentaires : la formule standard, comment trouver le taux de référence, des exemples chiffrés, les coefficients et les pièges.",
+    "datePublished": "2026-09-29",
+    "dateModified": "2026-09-29",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/fr/blog/how-to-calculate-overtime-pay/"
+    },
+    "inLanguage": "fr"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://fulcrumgrid.com/fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/fr/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Calcul des heures supplémentaires",
+        "item": "https://fulcrumgrid.com/fr/blog/how-to-calculate-overtime-pay/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quelle est la formule standard des heures supplémentaires ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Majoration = taux horaire de référence × coefficient de majoration × heures supplémentaires effectuées. Le coefficient est souvent 1,5× pour les heures ordinaires et 2× pour les jours de repos ou fériés, mais les valeurs exactes sont fixées par la loi locale et le contrat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qu’est-ce que le « taux de référence » et pourquoi est-il important ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le taux de référence est le montant horaire auquel s’applique le coefficient. Ce n’est pas toujours le seul salaire de base : de nombreuses juridictions imposent d’y inclure les primes fixes et bonus non discrétionnaires, donc s’en tenir au salaire de base peut sous- ou surpayer les heures supplémentaires."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment calculer les heures supplémentaires d’un salarié mensualisé ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Convertissez d’abord le salaire en équivalent horaire, par exemple le salaire mensuel divisé par les jours ouvrés normaux puis par les heures journalières, puis appliquez la formule. Restez cohérent sur le diviseur, car il modifie chaque montant."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Les règles des heures supplémentaires sont-elles identiques partout ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non. Seuils, coefficients et majorations des jours de repos varient beaucoup selon le pays et la juridiction, et certains postes en sont exclus. Dans le CCG et en Arabie saoudite, par exemple, la réglementation pose ses propres règles, alors travaillez toujours à partir de la loi et du contrat qui régissent le salarié."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/fr/" aria-label="Accueil FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/fr/products/">Produits</a>
+        <a href="/fr/features/">Plateforme</a>
+        <a href="/fr/pricing/">Tarifs</a>
+        <a href="/fr/regions/">Régions</a>
+        <a href="/fr/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/fr/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Langue">FR ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" class="active" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/fr/contact/">Demander une démo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/fr/">Accueil</a> / <a href="/fr/blog/">Blog</a> / Calcul des heures supplémentaires</p>
+        <span class="tag tag-accent">RH</span>
+        <h1>Comment calculer les heures supplémentaires ? Guide pratique</h1>
+        <p class="hero-intro">Guide pratique pour calculer les heures supplémentaires : la formule standard, comment trouver le taux de référence, des exemples chiffrés, les coefficients et les pièges.</p>
+        <p class="mono"><time datetime="2026-09-29">29 septembre 2026</time> · 6 min de lecture</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>La majoration des heures supplémentaires est le taux plus élevé qu&rsquo;un employeur verse pour les heures effectuées au-delà d&rsquo;un seuil défini &mdash; généralement une journée ou une semaine de travail normale. Elle récompense l&rsquo;effort supplémentaire et, dans la plupart des pays, constitue une obligation légale et non une faveur. Un calcul juste protège l&rsquo;entreprise des réclamations et rend la paie équitable. La difficulté tient rarement à la multiplication ; elle réside dans la définition du <strong>taux de référence</strong> auquel s&rsquo;applique le coefficient.</p>
+
+          <h2>Qu&rsquo;est-ce qui compte comme heure supplémentaire ?</h2>
+          <p>L&rsquo;heure supplémentaire est le temps travaillé au-delà d&rsquo;une limite légale ou contractuelle. Cette limite se définit différemment selon les pays : certaines juridictions comptent les heures au-delà d&rsquo;un plafond journalier, d&rsquo;autres d&rsquo;un plafond hebdomadaire, et beaucoup utilisent les deux. Les jours de repos et les jours fériés sont souvent majorés davantage. Comme le seuil et la majoration sont fixés par le droit du travail local et par le contrat, la première étape est toujours de vérifier quelles règles s&rsquo;appliquent au salarié concerné.</p>
+
+          <h2>La formule standard</h2>
+          <p>Une fois le seuil connu, le calcul suit un seul schéma :</p>
+          <p><strong>Majoration = taux horaire de référence &times; coefficient de majoration &times; heures supplémentaires effectuées.</strong></p>
+          <p>Le coefficient, c&rsquo;est la majoration. Une valeur courante est 1,5&times; pour les heures supplémentaires ordinaires, et 2&times; pour les jours de repos ou fériés dans de nombreux systèmes. Les coefficients exacts, et les cas où chacun s&rsquo;applique, dépendent de la juridiction &mdash; considérez ces chiffres comme des exemples typiques, non comme une règle universelle.</p>
+
+          <h2>Comment trouver le &laquo;&nbsp;taux de référence&nbsp;&raquo;</h2>
+          <p>C&rsquo;est là que naissent la plupart des erreurs. Le taux de référence n&rsquo;est pas toujours le seul salaire de base. Pour un salarié horaire, c&rsquo;est généralement le taux horaire lui-même. Pour un salarié mensualisé, il faut en dériver un équivalent horaire, et dans de nombreuses juridictions le taux de référence doit aussi inclure certaines primes fixes et bonus non discrétionnaires, pas seulement le salaire de base.</p>
+          <ul>
+            <li><strong>Personnel horaire :</strong> le taux de référence est le taux horaire contractuel.</li>
+            <li><strong>Personnel mensualisé :</strong> divisez la rémunération de la période par les heures normales de cette période &mdash; par exemple, salaire mensuel &divide; jours ouvrés normaux &divide; heures journalières normales.</li>
+            <li><strong>Éléments annexes :</strong> vérifiez si les règles locales imposent d&rsquo;intégrer les primes régulières ou les bonus garantis dans le taux avant d&rsquo;appliquer le coefficient.</li>
+          </ul>
+
+          <h2>Un exemple chiffré</h2>
+          <p>Supposons qu&rsquo;un salarié gagne 20 de l&rsquo;heure et effectue 5 heures supplémentaires au coefficient 1,5&times; :</p>
+          <ul>
+            <li>Taux de référence : 20</li>
+            <li>Taux majoré : 20 &times; 1,5 = 30 de l&rsquo;heure</li>
+            <li>Majoration : 30 &times; 5 = 150 pour ces cinq heures</li>
+          </ul>
+          <p>Pour un salarié mensualisé, convertissez d&rsquo;abord en taux horaire. S&rsquo;il gagne 8 000 par mois et travaille normalement 22 jours de 8 heures (176 heures), son taux de référence est 8 000 &divide; 176 &asymp; 45,45. Cinq heures supplémentaires à 1,5&times; donneraient 45,45 &times; 1,5 &times; 5 &asymp; 341. La méthode est identique &mdash; seul le taux de départ change.</p>
+
+          <h2>Mensualisé ou horaire</h2>
+          <p>Les salariés horaires sont le cas simple : le taux est déjà connu. Les mensualisés exigent l&rsquo;étape de conversion, et il faut rester cohérent sur le diviseur retenu, car une hypothèse différente sur les &laquo;&nbsp;heures normales&nbsp;&raquo; change chaque montant. Certains postes peuvent être totalement exclus des heures supplémentaires selon la loi locale &mdash; les cadres dirigeants, par exemple &mdash; alors vérifiez l&rsquo;éligibilité avant tout calcul.</p>
+
+          <h2>Pièges fréquents</h2>
+          <ul>
+            <li><strong>Utiliser le salaire de base au lieu du taux de référence complet</strong> lorsque les règles locales imposent d&rsquo;inclure les primes.</li>
+            <li><strong>Mélanger seuils journalier et hebdomadaire</strong>, ou appliquer le mauvais coefficient aux jours de repos et fériés.</li>
+            <li><strong>Diviseurs d&rsquo;heures incohérents</strong> d&rsquo;un mois à l&rsquo;autre pour les mensualisés.</li>
+            <li><strong>Oublier les exclusions</strong> et payer &mdash; ou non &mdash; des heures supplémentaires à la mauvaise catégorie de personnel.</li>
+            <li><strong>Des tableurs manuels</strong> qui se désynchronisent de la loi en vigueur.</li>
+          </ul>
+
+          <h2>Une remarque sur les règles locales</h2>
+          <p>Les seuils, les coefficients et les majorations des jours de repos sont fixés par le droit du travail de chaque pays et varient beaucoup. Dans le CCG et en Arabie saoudite, par exemple, la réglementation du travail pose des règles précises d&rsquo;heures supplémentaires et de repos qui diffèrent d&rsquo;ailleurs &mdash; travaillez donc toujours à partir du texte et du contrat qui régissent réellement le salarié, et non d&rsquo;un chiffre lu en ligne. En cas de doute, consultez la réglementation locale ou un professionnel.</p>
+
+          <p>Comme les définitions de taux, les seuils et les majorations changent selon la juridiction et le contrat, les heures supplémentaires sont l&rsquo;une des parties de la paie les plus sujettes à erreur en calcul manuel. FulcrumGrid HR Suite enregistre les heures travaillées et calcule ensemble heures supplémentaires et paie selon les règles que vous configurez, pour appliquer la majoration de façon cohérente et rendre chaque bulletin facile à expliquer.</p>
+
+        <h2>Questions fréquentes</h2>
+        <details class="faq-item"><summary>Quelle est la formule standard des heures supplémentaires ?</summary><p>Majoration = taux horaire de référence × coefficient de majoration × heures supplémentaires effectuées. Le coefficient est souvent 1,5× pour les heures ordinaires et 2× pour les jours de repos ou fériés, mais les valeurs exactes sont fixées par la loi locale et le contrat.</p></details>
+        <details class="faq-item"><summary>Qu’est-ce que le « taux de référence » et pourquoi est-il important ?</summary><p>Le taux de référence est le montant horaire auquel s’applique le coefficient. Ce n’est pas toujours le seul salaire de base : de nombreuses juridictions imposent d’y inclure les primes fixes et bonus non discrétionnaires, donc s’en tenir au salaire de base peut sous- ou surpayer les heures supplémentaires.</p></details>
+        <details class="faq-item"><summary>Comment calculer les heures supplémentaires d’un salarié mensualisé ?</summary><p>Convertissez d’abord le salaire en équivalent horaire, par exemple le salaire mensuel divisé par les jours ouvrés normaux puis par les heures journalières, puis appliquez la formule. Restez cohérent sur le diviseur, car il modifie chaque montant.</p></details>
+        <details class="faq-item"><summary>Les règles des heures supplémentaires sont-elles identiques partout ?</summary><p>Non. Seuils, coefficients et majorations des jours de repos varient beaucoup selon le pays et la juridiction, et certains postes en sont exclus. Dans le CCG et en Arabie saoudite, par exemple, la réglementation pose ses propres règles, alors travaillez toujours à partir de la loi et du contrat qui régissent le salarié.</p></details>
+
+        <p style="margin-top:32px"><a href="/fr/blog/"><span aria-hidden="true">←</span> Retour au blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid HR Suite</p>
+        <h2>Laissez la paie calculer les heures supplémentaires</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid HR Suite enregistre les heures travaillées et calcule ensemble heures supplémentaires et paie selon vos règles, pour appliquer chaque majoration de façon cohérente et rendre chaque bulletin facile à expliquer.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/fr/products/hr-suite/">Découvrir HR Suite</a>
+          <a class="btn btn-secondary" href="/fr/blog/">Retour au blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>L'épine dorsale opérationnelle des équipes modernes.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produits</h5>
+          <a href="/fr/products/">Tous les produits</a>
+          <a href="/fr/products/hr-suite/">HR Suite</a>
+          <a href="/fr/products/command-center/">Command Center</a>
+          <a href="/fr/products/collection/">Collection</a>
+          <a href="/fr/custom-apps/">Applications sur mesure</a>
+        </div>
+        <div class="foot-col">
+          <h5>Plateforme</h5>
+          <a href="/fr/features/">Fonctionnalités</a>
+          <a href="/fr/how-it-works/">Comment ça marche</a>
+          <a href="/fr/pricing/">Tarifs</a>
+          <a href="/fr/regions/">Régions</a>
+          <a href="/fr/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Entreprise</h5>
+          <a href="/fr/about/">À propos</a>
+          <a href="/fr/faq/">FAQ</a>
+          <a href="/fr/contact/">Contact</a>
+          <a href="/fr/privacy/">Confidentialité</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tous droits réservés.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

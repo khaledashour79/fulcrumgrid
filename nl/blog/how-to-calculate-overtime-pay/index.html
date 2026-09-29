@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Hoe bereken je overwerkvergoeding? Een praktische gids — FulcrumGrid</title>
+  <meta name="description" content="Een praktische gids voor het berekenen van overwerk: de standaardformule, hoe je het reguliere tarief vindt, uitgewerkte voorbeelden, de factoren en de valkuilen." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Hoe bereken je overwerkvergoeding? Een praktische gids" />
+  <meta property="og:description" content="Een praktische gids voor het berekenen van overwerk: de standaardformule, hoe je het reguliere tarief vindt, uitgewerkte voorbeelden, de factoren en de valkuilen." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/how-to-calculate-overtime-pay/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-09-29" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid HR Suite — people operations" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hoe bereken je overwerkvergoeding? Een praktische gids" />
+  <meta name="twitter:description" content="Een praktische gids voor het berekenen van overwerk: de standaardformule, hoe je het reguliere tarief vindt, uitgewerkte voorbeelden, de factoren en de valkuilen." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-overtime-pay/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-overtime-pay/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-overtime-pay/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-overtime-pay/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-calculate-overtime-pay/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-calculate-overtime-pay/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-calculate-overtime-pay/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-overtime-pay/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-overtime-pay/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hoe bereken je overwerkvergoeding? Een praktische gids",
+    "description": "Een praktische gids voor het berekenen van overwerk: de standaardformule, hoe je het reguliere tarief vindt, uitgewerkte voorbeelden, de factoren en de valkuilen.",
+    "datePublished": "2026-09-29",
+    "dateModified": "2026-09-29",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/how-to-calculate-overtime-pay/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Overwerk berekenen",
+        "item": "https://fulcrumgrid.com/nl/blog/how-to-calculate-overtime-pay/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is de standaardformule voor overwerk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Overwerkvergoeding = regulier uurtarief × overwerkfactor × gewerkte overuren. De factor is vaak 1,5× voor gewoon overwerk en vaak 2× voor rustdagen of feestdagen, maar de precieze waarden worden bepaald door de lokale wet en het contract."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is het „reguliere tarief” en waarom is het belangrijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Het reguliere tarief is het uurbedrag waarop de factor wordt toegepast. Dat is niet altijd alleen het basisloon: veel rechtsgebieden vereisen dat vaste toelagen en niet-discretionaire bonussen worden meegenomen, dus alleen het basisloon kan overwerk te laag of te hoog uitbetalen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe bereken je overwerk voor iemand met een vast salaris?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reken het salaris eerst om naar een uurequivalent, bijvoorbeeld maandsalaris gedeeld door de normale werkdagen en vervolgens door de uren per dag, en pas dan de formule toe. Wees consistent in de deler, want die verandert elk bedrag."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Zijn de overwerkregels in elk land hetzelfde?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. Grenzen, factoren en rustdagtoeslagen lopen sterk uiteen per land en rechtsgebied, en sommige functies zijn volledig uitgezonderd. In de GCC en Saudi-Arabië stelt de wetgeving bijvoorbeeld eigen regels, dus werk altijd vanuit de wet en het contract die voor de medewerker gelden."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Platform</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / Overwerk berekenen</p>
+        <span class="tag tag-accent">HR</span>
+        <h1>Hoe bereken je overwerkvergoeding? Een praktische gids</h1>
+        <p class="hero-intro">Een praktische gids voor het berekenen van overwerk: de standaardformule, hoe je het reguliere tarief vindt, uitgewerkte voorbeelden, de factoren en de valkuilen.</p>
+        <p class="mono"><time datetime="2026-09-29">29 september 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Overwerkvergoeding is het hogere tarief dat een werkgever betaalt voor uren die worden gewerkt boven een vastgestelde grens &mdash; meestal een normale werkdag of werkweek. Het beloont extra inzet en is in de meeste landen een wettelijke verplichting, geen gunst. Een juiste berekening beschermt het bedrijf tegen claims en houdt de loonadministratie eerlijk. Het lastige is zelden de vermenigvuldiging; het is het bepalen van het <strong>reguliere tarief</strong> waarop de factor wordt toegepast.</p>
+
+          <h2>Wat telt als overwerk?</h2>
+          <p>Overwerk is tijd die wordt gewerkt boven een wettelijke of contractuele grens. Die grens wordt wereldwijd verschillend gedefinieerd: sommige rechtsgebieden tellen uren boven een daggrens, andere boven een weekgrens, en veel gebruiken beide. Rustdagen en feestdagen worden vaak tegen een nog hoger tarief vergoed. Omdat grens en toeslag worden bepaald door het lokale arbeidsrecht en het contract, is de eerste stap altijd te bevestigen welke regels gelden voor de betrokken medewerker.</p>
+
+          <h2>De standaardformule</h2>
+          <p>Zodra de grens bekend is, volgt de berekening één patroon:</p>
+          <p><strong>Overwerkvergoeding = regulier uurtarief &times; overwerkfactor &times; gewerkte overuren.</strong></p>
+          <p>De factor is de toeslag. Een gangbare waarde is 1,5&times; voor gewoon overwerk en 2&times; voor rustdagen of feestdagen in veel stelsels. De precieze factoren, en wanneer elk geldt, worden door het rechtsgebied bepaald &mdash; beschouw de getallen hier als typische voorbeelden, niet als universele regel.</p>
+
+          <h2>Hoe vind je het &bdquo;reguliere tarief&rdquo;?</h2>
+          <p>Hier ontstaan de meeste fouten. Het reguliere tarief is niet altijd alleen het basisloon. Voor een uurkracht is het meestal het uurtarief zelf. Voor iemand met een vast salaris moet je een uurequivalent afleiden, en in veel rechtsgebieden moet het reguliere tarief ook bepaalde vaste toelagen en niet-discretionaire bonussen omvatten, niet alleen het basisloon.</p>
+          <ul>
+            <li><strong>Uurkrachten:</strong> het reguliere tarief is het contractuele uurloon.</li>
+            <li><strong>Personeel met vast salaris:</strong> deel het loon van de periode door de normale uren in die periode &mdash; bijvoorbeeld maandsalaris &divide; normale werkdagen &divide; normale uren per dag.</li>
+            <li><strong>Extra&rsquo;s:</strong> ga na of lokale regels vereisen dat vaste toelagen of gegarandeerde bonussen in het tarief worden verwerkt voordat de factor wordt toegepast.</li>
+          </ul>
+
+          <h2>Een uitgewerkt voorbeeld</h2>
+          <p>Stel dat een medewerker 20 per uur verdient en 5 overuren maakt tegen een factor van 1,5&times;:</p>
+          <ul>
+            <li>Regulier tarief: 20</li>
+            <li>Overwerktarief: 20 &times; 1,5 = 30 per uur</li>
+            <li>Overwerkvergoeding: 30 &times; 5 = 150 voor die vijf uren</li>
+          </ul>
+          <p>Reken bij een vast salaris eerst om naar een uurtarief. Verdient iemand 8.000 per maand en werkt hij normaal 22 dagen van 8 uur (176 uur), dan is het reguliere tarief 8.000 &divide; 176 &asymp; 45,45. Vijf overuren tegen 1,5&times; zouden 45,45 &times; 1,5 &times; 5 &asymp; 341 zijn. De methode is identiek &mdash; alleen het begintarief verandert.</p>
+
+          <h2>Vast salaris versus uurloon</h2>
+          <p>Uurkrachten zijn het eenvoudige geval: het tarief is al bekend. Medewerkers met een vast salaris vergen de omrekenstap, en je moet consistent zijn in de deler die je gebruikt, want een andere aanname over de &bdquo;normale uren&rdquo; verandert elk overwerkbedrag. Sommige functies kunnen volgens de lokale wet volledig zijn uitgezonderd van overwerk &mdash; hoger management bijvoorbeeld &mdash; bevestig dus de aanspraak voordat je iets berekent.</p>
+
+          <h2>Veelgemaakte fouten</h2>
+          <ul>
+            <li><strong>Het basisloon gebruiken in plaats van het volledige reguliere tarief</strong> wanneer lokale regels vereisen dat toelagen worden meegenomen.</li>
+            <li><strong>Dag- en weekgrenzen door elkaar halen</strong>, of de verkeerde factor toepassen op rustdagen en feestdagen.</li>
+            <li><strong>Inconsistente urendelers</strong> voor personeel met vast salaris van maand tot maand.</li>
+            <li><strong>Uitzonderingen vergeten</strong> en overwerk uitbetalen &mdash; of juist niet &mdash; aan de verkeerde categorie werknemers.</li>
+            <li><strong>Handmatige spreadsheets</strong> die uit de pas lopen met de geldende wet.</li>
+          </ul>
+
+          <h2>Een opmerking over lokale regels</h2>
+          <p>Overwerkgrenzen, factoren en rustdagtoeslagen worden bepaald door het arbeidsrecht van elk land en lopen sterk uiteen. In de GCC en Saudi-Arabië stelt de arbeidswetgeving bijvoorbeeld specifieke regels voor overwerk en rustdagen die afwijken van die elders &mdash; werk dus altijd vanuit de wet en het contract die de medewerker daadwerkelijk beheersen, niet vanuit een online gelezen getal. Raadpleeg bij twijfel de lokale regelgeving of een professional.</p>
+
+          <p>Omdat tariefdefinities, grenzen en toeslagen per rechtsgebied en per contract veranderen, is overwerk een van de meest foutgevoelige onderdelen van de loonadministratie om met de hand te doen. FulcrumGrid HR Suite legt de gewerkte uren vast en berekent overwerk en loon samen volgens de regels die jij instelt, zodat de toeslag consistent wordt toegepast en elke loonstrook makkelijk uit te leggen is.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wat is de standaardformule voor overwerk?</summary><p>Overwerkvergoeding = regulier uurtarief × overwerkfactor × gewerkte overuren. De factor is vaak 1,5× voor gewoon overwerk en vaak 2× voor rustdagen of feestdagen, maar de precieze waarden worden bepaald door de lokale wet en het contract.</p></details>
+        <details class="faq-item"><summary>Wat is het „reguliere tarief” en waarom is het belangrijk?</summary><p>Het reguliere tarief is het uurbedrag waarop de factor wordt toegepast. Dat is niet altijd alleen het basisloon: veel rechtsgebieden vereisen dat vaste toelagen en niet-discretionaire bonussen worden meegenomen, dus alleen het basisloon kan overwerk te laag of te hoog uitbetalen.</p></details>
+        <details class="faq-item"><summary>Hoe bereken je overwerk voor iemand met een vast salaris?</summary><p>Reken het salaris eerst om naar een uurequivalent, bijvoorbeeld maandsalaris gedeeld door de normale werkdagen en vervolgens door de uren per dag, en pas dan de formule toe. Wees consistent in de deler, want die verandert elk bedrag.</p></details>
+        <details class="faq-item"><summary>Zijn de overwerkregels in elk land hetzelfde?</summary><p>Nee. Grenzen, factoren en rustdagtoeslagen lopen sterk uiteen per land en rechtsgebied, en sommige functies zijn volledig uitgezonderd. In de GCC en Saudi-Arabië stelt de wetgeving bijvoorbeeld eigen regels, dus werk altijd vanuit de wet en het contract die voor de medewerker gelden.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid HR Suite</p>
+        <h2>Laat de loonadministratie het overwerk berekenen</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid HR Suite legt de gewerkte uren vast en berekent overwerk en loon samen volgens jouw regels, zodat elke toeslag consistent wordt toegepast en elke loonstrook makkelijk uit te leggen is.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/hr-suite/">Ontdek HR Suite</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Platform</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

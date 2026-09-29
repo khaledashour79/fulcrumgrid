@@ -46,16 +46,25 @@ def _text_nodes(h):
 
 
 def _english_leftover(t):
-    """Does this node contain English prose (>=3-letter Latin words) not allowlisted?"""
+    """Does this node contain untranslated English prose (not just proper nouns)?"""
     core = t.strip(_STRIP)
     if not core or core.lower() in ALLOW:
         return False
-    scrub = core.lower()
+    has_ar = bool(re.search(r'[؀-ۿ]', core))
+    # Remove allowlisted terms (case-insensitively), preserving case elsewhere.
+    scrub = core
     for a in sorted(ALLOW, key=len, reverse=True):
-        scrub = re.sub(r'(?<![a-z])' + re.escape(a) + r'(?![a-z])', ' ', scrub)
-    words = re.findall(r'[a-z]{3,}', scrub)
-    # ignore a lone stray word; two+ Latin words = real English prose
-    return len(words) >= 2 or (len(words) == 1 and len(core) <= 40 and re.search(r'[A-Za-z]{4,}', core) and not re.search(r'[؀-ۿ]', core))
+        scrub = re.sub(r'(?<![A-Za-z])' + re.escape(a) + r'(?![A-Za-z])', ' ', scrub, flags=re.I)
+    lat = re.findall(r'[A-Za-z]{3,}', scrub)
+    if has_ar:
+        # Inside an Arabic node, Capitalized/ALL-CAPS Latin tokens are proper
+        # nouns (brands, product names, example companies like Airbnb) and are
+        # fine. Only a cluster of lowercase English words signals untranslated
+        # English prose.
+        lower = [w for w in lat if w[:1].islower()]
+        return len(lower) >= 2
+    # Pure-Latin node: any two+ English words (of any case) is untranslated.
+    return len(lat) >= 2
 
 
 def check(path):
