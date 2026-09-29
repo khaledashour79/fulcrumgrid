@@ -354,9 +354,13 @@ img { display: block; max-width: 100%; }
   .site-nav, .head-cta .btn { display: none; }
   .nav-toggle { display: inline-grid; place-items: center; width: 40px; height: 38px; border: 1px solid var(--color-divider); background: transparent; }
   .foot-grid { grid-template-columns: 1fr; }
-  /* The isometric app-grid floor overlays the lower hero and would otherwise
-     capture touch, making it impossible to scroll past it on phones. Hide it on
-     mobile and let the hero collapse to its copy. */
+}
+
+/* The isometric app-grid floor overlays the lower hero and captures touch, so
+   the page can't be scrolled past it. Hide it and collapse the hero to its copy
+   on ANY touch device (phones + tablets, regardless of width) and on narrow
+   viewports. Desktop (mouse) keeps the interactive floor. */
+@media (hover: none) and (pointer: coarse), (max-width: 900px) {
   .hero.grid { min-height: auto; }
   .hero.grid .hero-floor { display: none; }
   .hero.grid .hero-copy { padding: 52px 20px 60px; }
