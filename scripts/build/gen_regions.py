@@ -43,7 +43,7 @@ MARKF = ('<span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" w
          '<defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs></svg></span>')
 
 NAV = [('/products/', 'Products', 'المنتجات'), ('/features/', 'Platform', 'المنصّة'),
-       ('/pricing/', 'Pricing', 'الأسعار'), ('/blog/', 'Blog', 'المدوّنة'),
+       ('/pricing/', 'Pricing', 'الأسعار'), ('/regions/', 'Regions', 'المناطق'), ('/blog/', 'Blog', 'المدوّنة'),
        ('/about/', 'About', 'من نحن'), ('/contact/', 'Contact', 'اتصل بنا')]
 
 # A neutral shield-check icon used for every compliance feature.
@@ -879,7 +879,7 @@ def header(lang, path):
     brand = '<span class="brand-name">Fulcrum<span class="brand-accent">Grid</span></span>' if en else '<span class="brand-name" dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span>'
     demo = 'Request a demo' if en else 'اطلب عرضًا توضيحيًا'
     b = '' if en else '/ar'
-    items = '\n'.join('        <a href="%s%s">%s</a>' % (b, href, (e if en else a)) for href, e, a in NAV)
+    items = '\n'.join('        <a href="%s%s"%s>%s</a>' % (b, href, (' class="active" aria-current="page"' if href == '/regions/' else ''), (e if en else a)) for href, e, a in NAV)
     en_href = path
     ar_href = '/ar' + path
     return f'''<body class="fg product-page">

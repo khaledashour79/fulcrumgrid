@@ -165,8 +165,8 @@ def render(post, lang):
     skip = 'Skip to content' if en else 'تخطَّ إلى المحتوى'
     brandname = 'Fulcrum<span class="brand-accent">Grid</span>' if en else '<span dir="ltr">Fulcrum<span class="brand-accent">Grid</span></span>'
     aria_home = 'FulcrumGrid home' if en else 'FulcrumGrid الصفحة الرئيسية'
-    navlabels = [('Products','/products/'),('Platform','/features/'),('Pricing','/pricing/'),('Blog','/blog/'),('About','/about/'),('Contact','/contact/')] if en else \
-                [('المنتجات','/ar/products/'),('المنصّة','/ar/features/'),('الأسعار','/ar/pricing/'),('المدوّنة','/ar/blog/'),('من نحن','/ar/about/'),('اتصل بنا','/ar/contact/')]
+    navlabels = [('Products','/products/'),('Platform','/features/'),('Pricing','/pricing/'),('Regions','/regions/'),('Blog','/blog/'),('About','/about/'),('Contact','/contact/')] if en else \
+                [('المنتجات','/ar/products/'),('المنصّة','/ar/features/'),('الأسعار','/ar/pricing/'),('المناطق','/ar/regions/'),('المدوّنة','/ar/blog/'),('من نحن','/ar/about/'),('اتصل بنا','/ar/contact/')]
     def nav(mobile=False):
         out=[]
         for lbl,href in navlabels:

@@ -144,7 +144,7 @@ def cell(v, lang):
 def nav(lang, slug):
     base = '/ar' if lang=='ar' else ''
     N = [('/products/','Products','المنتجات'),('/features/','Platform','المنصّة'),
-         ('/pricing/','Pricing','الأسعار'),('/blog/','Blog','المدوّنة'),
+         ('/pricing/','Pricing','الأسعار'),('/regions/','Regions','المناطق'),('/blog/','Blog','المدوّنة'),
          ('/about/','About','من نحن'),('/contact/','Contact','اتصل بنا')]
     out=[]
     for href,en,ar in N:
