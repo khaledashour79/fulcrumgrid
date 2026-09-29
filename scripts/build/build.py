@@ -28,7 +28,7 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 # the English source. Only pages registered in loc_catalog are localized, so
 # this is safe to run while translation catalogs are still being filled in.
 STEPS = ['gen_pricing.py', 'gen_blog.py', 'gen_regions.py',
-         'upgrade_switcher.py', 'loc_static.py']
+         'upgrade_switcher.py', 'loc_static.py', 'gen_sitemap.py']
 
 def main():
     env = dict(os.environ, FG_ROOT=ROOT)

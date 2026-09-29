@@ -431,7 +431,10 @@ def ensure_llms():
 def build_blog():
     write_posts()
     ensure_index('en'); ensure_index('ar')
-    ensure_sitemap(); ensure_llms()
+    # sitemap.xml is now regenerated wholesale (all languages) by gen_sitemap.py,
+    # which build.py runs after localization; the old incremental EN/AR-only
+    # appender is intentionally no longer called here.
+    ensure_llms()
 
 if __name__ == '__main__':
     build_blog()
