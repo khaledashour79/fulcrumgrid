@@ -13,8 +13,8 @@
     ['CRM', 'Roadmap'], ['Analytics', 'Roadmap'], ['Procurement', 'Roadmap'], ['TMS', 'Roadmap'],
     ['Custom apps', 'Built to order'], ['Your next app', '']
   ];
-  var COLS = 4, W = 118, GAP = 150;
-  var Hs = { 'Live': 42, 'Built to order': 30, 'Roadmap': 16, '': 12 };
+  var COLS = 4, W = 130, GAP = 150;
+  var Hs = { 'Live': 44, 'Built to order': 30, 'Roadmap': 18, '': 30 };
 
   var clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.max(a, Math.min(b, v)); };
   var ease = function (t) { return 1 - Math.pow(1 - t, 3); };
@@ -22,8 +22,11 @@
 
   var floor = document.createElement('div'); floor.className = 'gfloor';
   var rows = Math.ceil(GRID.length / COLS);
-  floor.style.width = ((COLS - 1) * GAP + W) + 'px';
-  floor.style.height = ((rows - 1) * GAP + W) + 'px';
+  var floorW = (COLS - 1) * GAP + W, floorH = (rows - 1) * GAP + W;
+  floor.style.width = floorW + 'px';
+  floor.style.height = floorH + 'px';
+  floor.style.marginLeft = (-floorW / 2) + 'px';
+  floor.style.marginTop = (-floorH / 2) + 'px';
 
   var tiles = [];
   GRID.forEach(function (g, i) {
@@ -35,12 +38,19 @@
     t.className = 'gtile ' + cls;
     t.style.left = (col * GAP) + 'px'; t.style.top = (row * GAP) + 'px';
     t.style.width = W + 'px'; t.style.height = W + 'px';
-    var stText = status ? '<span class="st ' + (cls === 'live' ? '' : 'road') + '">' + status + '</span>' : '<span class="st road">Planned</span>';
+    // Extruded tile — exact recipe: top face raised to z=H, plus a front wall
+    // (at the front edge, folded up) and a left wall (folded in).
+    var bc = 'color-mix(in srgb, var(--color-text) 40%, transparent)';
+    var bs = cls === 'live' ? 'solid' : 'dashed';
+    var nameCol = cls === 'live' ? 'var(--color-text)' : 'color-mix(in srgb, var(--color-text) 62%, transparent)';
+    var stCol = cls === 'live' ? 'var(--color-accent-700)' : 'color-mix(in srgb, var(--color-text) 45%, transparent)';
     t.innerHTML =
-      '<div class="gt-face gt-side" style="width:' + h + 'px;height:' + W + 'px;transform-origin:0 0;transform:translateX(' + W + 'px) rotateY(90deg)"></div>' +
-      '<div class="gt-face gt-side" style="width:' + W + 'px;height:' + h + 'px;transform-origin:0 0;transform:translateY(' + W + 'px) rotateX(-90deg)"></div>' +
-      '<div class="gt-face gt-top" style="transform:translateZ(' + h + 'px)">' + stText +
-        '<span class="nm">' + name + '</span></div>';
+      '<div style="position:absolute;left:0;top:' + W + 'px;width:' + W + 'px;height:' + h + 'px;transform-origin:center top;transform:rotateX(90deg);background:var(--color-neutral-200);border:1px solid ' + bc + ';box-sizing:border-box"></div>' +
+      '<div style="position:absolute;left:-' + h + 'px;top:0;width:' + h + 'px;height:' + W + 'px;transform-origin:right center;transform:rotateY(90deg);background:var(--color-neutral-300);border:1px solid ' + bc + ';box-sizing:border-box"></div>' +
+      '<div style="position:absolute;inset:0;transform:translateZ(' + h + 'px);background:var(--color-bg);border:1px ' + bs + ' ' + bc + ';box-sizing:border-box">' +
+        '<span style="position:absolute;left:10px;top:9px;font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:' + stCol + '">' + (status || 'Planned') + '</span>' +
+        '<span style="position:absolute;left:10px;right:10px;bottom:10px;font-family:var(--font-heading);font-weight:600;font-size:15px;line-height:1.05;letter-spacing:.03em;text-transform:uppercase;color:' + nameCol + '">' + name + '</span>' +
+      '</div>';
     floor.appendChild(t); tiles.push(t);
   });
   stage.appendChild(floor);

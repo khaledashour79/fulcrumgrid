@@ -186,12 +186,12 @@ img { display: block; max-width: 100%; }
 .hero-floor .fig { position: absolute; top: 18px; left: 22px; z-index: 3; }
 .hero-floor .readout { position: absolute; top: 18px; right: 22px; z-index: 3; }
 .hero-floor .cue { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); z-index: 3; }
-.gstage { position: absolute; left: 0; right: 0; top: 45%; bottom: 2%; display: grid; place-items: center;
-  perspective: 1500px; touch-action: none; cursor: grab; z-index: 1; }
+.gstage { position: absolute; left: 0; right: 0; top: 44%; bottom: 2%;
+  perspective: 2400px; touch-action: none; cursor: grab; z-index: 1; }
 .gstage:active { cursor: grabbing; }
-.gfloor { position: relative; transform-style: preserve-3d; will-change: transform; }
-.gtile { position: absolute; transform-style: preserve-3d; will-change: transform, opacity; }
-.gt-face { position: absolute; }
+.gfloor { position: absolute; left: 50%; top: 50%; transform-style: preserve-3d; }
+.gtile { position: absolute; transform-style: preserve-3d; }
+.gt-face { position: absolute; top: 0; left: 0; backface-visibility: visible; -webkit-backface-visibility: visible; }
 .gt-top { inset: 0; border: 1px solid var(--color-divider); background: var(--color-bg);
   display: flex; flex-direction: column; justify-content: space-between; padding: 9px; }
 .gt-top .st { font-family: var(--font-body); font-weight: 600; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent); }
@@ -199,8 +199,10 @@ img { display: block; max-width: 100%; }
 .gt-top .nm { font-family: var(--font-heading); font-weight: 600; font-size: 15px; line-height: 0.98; text-transform: uppercase; letter-spacing: -0.01em; }
 .gtile.road .gt-top { background: color-mix(in srgb, var(--color-bg) 55%, transparent); border-style: dashed; }
 .gtile.live .gt-top { background: var(--color-accent-100); border-color: var(--color-accent-600); }
-.gt-side { background: color-mix(in srgb, var(--color-neutral-300) 60%, var(--color-surface)); border: 1px solid var(--color-divider); }
-.gtile.live .gt-side { background: color-mix(in srgb, var(--color-accent) 22%, var(--color-surface)); border-color: var(--color-accent-600); }
+.gt-side { background: color-mix(in srgb, var(--color-neutral-400) 42%, var(--color-surface)); border: 1px solid var(--color-divider); }
+.gtile.live .gt-side { background: color-mix(in srgb, var(--color-accent) 30%, var(--color-surface)); border-color: var(--color-accent-600); }
+.gtile.road .gt-side { background: color-mix(in srgb, var(--color-neutral-300) 45%, var(--color-surface)); }
+.gt-top .nm { font-size: 16px; }
 
 /* ── Apps grid ── */
 .apps-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 0;
