@@ -24,28 +24,32 @@ from loc_catalog import COMMON, PAGES
 
 ROOT = os.environ.get('FG_ROOT') or os.path.abspath(os.path.join(HERE, '..', '..'))
 
-SW_RE = re.compile(r'<div class="lang-switch"[^>]*>.*?</div>', re.S)
+SW_RE = re.compile(r'<div class="lang-switch"[^>]*>.*?</div>'
+                   r'|<details class="lang-menu">.*?</details>', re.S)
 HREFLANG_RE = re.compile(r'[ \t]*<link rel="alternate" hreflang="en"[^>]*>\s*'
                          r'<link rel="alternate" hreflang="ar"[^>]*>\s*'
                          r'<link rel="alternate" hreflang="x-default"[^>]*>')
-OGLOCALE_RE = re.compile(r'[ \t]*<meta property="og:locale" content="en_US" />\s*'
-                         r'<meta property="og:locale:alternate" content="ar_AR" />')
+OGLOCALE_RE = re.compile(r'[ \t]*<meta property="og:locale" content="[^"]*" />'
+                         r'(?:\s*<meta property="og:locale:alternate" content="[^"]*" />)*')
 
 
-def apply_catalog(html, catalog, lang, strict):
+MISSING = []
+
+
+def apply_catalog(html, catalog, lang, strict, canon=None):
     """Replace EN text segments with their `lang` translation, longest first.
 
-    strict=True (per-page catalogs) errors if a declared segment is missing, to
-    catch drift between the catalog and the EN source. strict=False (the shared
-    COMMON catalog) silently skips segments a given page doesn't contain.
+    strict=True (per-page catalogs) records any declared segment missing from
+    the EN source into MISSING, to catch drift. strict=False (the shared COMMON
+    catalog) silently skips segments a given page doesn't contain.
     """
     for en in sorted(catalog, key=len, reverse=True):
         tr = catalog[en].get(lang)
         if tr is None:
             continue
         if en not in html:
-            if strict:
-                raise SystemExit(f'  ! segment not found in source: {en[:70]!r}')
+            if strict and (canon, en) not in MISSING:
+                MISSING.append((canon, en))
             continue
         html = html.replace(en, tr)
     return html
@@ -72,7 +76,7 @@ def localize(canon, src_rel, lang):
     # 4. Translate chrome + page copy (before link-prefixing, so catalog keys
     #    match the original English text; translations carry no hrefs).
     html = apply_catalog(html, COMMON, lang, strict=False)
-    html = apply_catalog(html, PAGES.get(canon, {}).get('t', {}), lang, strict=True)
+    html = apply_catalog(html, PAGES.get(canon, {}).get('t', {}), lang, strict=True, canon=canon)
 
     # 5. Prefix internal links (skips assets, external, anchors, mailto).
     html = i18n.prefix_links(html, lang)
@@ -103,6 +107,11 @@ def main():
             n += 1
             print(f'  {lang}  {out.replace(ROOT + "/", "")}')
     print(f'loc_static: wrote {n} pages')
+    if MISSING:
+        print(f'\n  {len(MISSING)} declared segment(s) not found in source:')
+        for canon, en in MISSING:
+            print(f'    [{canon}] {en[:90]!r}')
+        sys.exit(1)
 
 
 if __name__ == '__main__':

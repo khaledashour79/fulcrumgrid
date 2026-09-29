@@ -58,7 +58,35 @@ COMMON = {
 }
 
 
-PAGES = {
+PAGES = {}
+
+
+def _load_page_modules():
+    """Merge per-page catalogs from scripts/build/loc_pages/*.py.
+
+    Each module exposes PAGE = { '<canon>': {'src': ..., 't': {...}} }. Import
+    is defensive so a half-written module (e.g. while several are authored in
+    parallel) never breaks the whole build.
+    """
+    import importlib, os, pkgutil
+    here = os.path.dirname(os.path.abspath(__file__))
+    pkg_dir = os.path.join(here, 'loc_pages')
+    if not os.path.isdir(pkg_dir):
+        return
+    import sys
+    if here not in sys.path:
+        sys.path.insert(0, here)
+    for mod in pkgutil.iter_modules([pkg_dir]):
+        if mod.name.startswith('_'):
+            continue
+        try:
+            m = importlib.import_module(f'loc_pages.{mod.name}')
+            PAGES.update(getattr(m, 'PAGE', {}))
+        except Exception as e:  # noqa: BLE001
+            print(f'  ! loc_pages.{mod.name} skipped: {e}')
+
+
+PAGES.update({
     '/': {
         'src': 'index.html',
         't': {
@@ -262,4 +290,6 @@ PAGES = {
                 'Een modulair veld van bleke platforms verbonden door grafietpaden'),
         },
     },
-}
+})
+
+_load_page_modules()

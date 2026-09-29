@@ -22,7 +22,13 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 
 # gen_pricing runs its work at import/module scope; gen_blog under __main__.
-STEPS = ['gen_pricing.py', 'gen_blog.py', 'gen_regions.py']
+# The generators emit English + Arabic; upgrade_switcher then rewrites every
+# page's language switcher / hreflang / og:locale to advertise all languages,
+# and loc_static generates the European-language trees (fr/de/es/it/nl) from
+# the English source. Only pages registered in loc_catalog are localized, so
+# this is safe to run while translation catalogs are still being filled in.
+STEPS = ['gen_pricing.py', 'gen_blog.py', 'gen_regions.py',
+         'upgrade_switcher.py', 'loc_static.py']
 
 def main():
     env = dict(os.environ, FG_ROOT=ROOT)

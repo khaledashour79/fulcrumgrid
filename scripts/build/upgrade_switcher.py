@@ -62,7 +62,10 @@ def upgrade(canon, code):
 
 
 def main():
-    canons = sys.argv[1:] or ['/']
+    canons = sys.argv[1:]
+    if not canons:
+        from loc_catalog import PAGES  # all registered pages (static + generated)
+        canons = sorted(PAGES)
     for canon in canons:
         for code in ('en', 'ar'):
             upgrade(canon, code)
