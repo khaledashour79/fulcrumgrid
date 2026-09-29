@@ -1,3 +1,30 @@
+/* FulcrumGrid — Arabic language toggle geo-gate.
+   The Arabic entry in the language switcher is shown only to visitors in
+   Arabic-speaking (MENA / Arab League) countries; everyone else has it hidden.
+   Fails open: if the geo lookup is unavailable, Arabic stays visible, so Arabic
+   speakers are never wrongly cut off. The hreflang <link> tags are left intact,
+   so SEO and the /ar/ pages' indexability are unaffected. The result is cached
+   for the session to avoid repeated lookups. */
+(function(){
+  try{
+    // Keep Arabic visible for anyone already viewing an Arabic page.
+    if(((document.documentElement.lang||'').toLowerCase().indexOf('ar'))===0) return;
+    var ARABIC=/^(SA|AE|QA|KW|BH|OM|YE|IQ|SY|JO|LB|PS|EG|SD|LY|TN|DZ|MA|MR|SO|DJ|KM|EH)$/;
+    var GKEY='fg_geo_cc';
+    function hideArabic(){
+      var a=document.querySelectorAll('.lang-dd-menu a[hreflang="ar"]');
+      for(var i=0;i<a.length;i++){ a[i].style.display='none'; }
+    }
+    function apply(cc){ if(cc && !ARABIC.test(cc)) hideArabic(); }
+    var cached; try{ cached=sessionStorage.getItem(GKEY); }catch(e){}
+    if(cached){ apply(cached); return; }
+    fetch('https://ipapi.co/json/').then(function(r){ return r.json(); }).then(function(d){
+      var cc=((d&&d.country_code)||'').toUpperCase();
+      if(/^[A-Z]{2}$/.test(cc)){ try{ sessionStorage.setItem(GKEY,cc); }catch(e){} apply(cc); }
+    }).catch(function(){});
+  }catch(e){}
+})();
+
 /* FulcrumGrid — cookie consent banner (Google Consent Mode) */
 (function(){
   var KEY='fg_consent';
