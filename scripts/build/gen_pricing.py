@@ -188,8 +188,9 @@ def page(slug, d, lang):
         pen,par = prices[i]
         pnum = pen if en else par
         is_custom = pen.strip().lower()=='custom'
-        numdir = '' if is_custom else ' dir="ltr"'
-        peruser = '' if is_custom else '<span class="per">%s</span>'%per
+        is_free = pen.strip().lower()=='free'
+        numdir = '' if (is_custom or is_free) else ' dir="ltr"'
+        peruser = '' if (is_custom or is_free) else '<span class="per">%s</span>'%per
         dataattr = ''
         pm = re.match(r'^(SAR|\$)\s?([\d,]+)$', pen.strip())
         if pm and not is_custom:
