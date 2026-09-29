@@ -89,7 +89,6 @@ PRICE_NOTE_EN = ('Every module here is part of HR Suite — advanced payroll, ye
 
 def _common(t):
     """Segments that appear (identically) on every page in the group."""
-    t['<a href="/">Home</a>'] = {k: '<a href="/">%s</a>' % v for k, v in T_HOME.items()}
     t['Built in'] = T_BUILT_IN
     t['Explore HR Suite'] = T_EXPLORE
     t['See HR Suite pricing'] = T_SEE_PRICING
@@ -114,16 +113,12 @@ PAGE['/regions/egypt/'] = {'src': 'regions/egypt/index.html', 't': _common({
         "HR Suite per l'Egitto — buste paga configurabili con imposta sul reddito locale e assicurazione sociale, fine servizio basata su regole, retribuzione in EGP e HR in arabo prima di tutto.",
         'HR Suite voor Egypte — configureerbare loonadministratie met lokale inkomstenbelasting en sociale verzekering, op regels gebaseerd einde dienstverband, uitbetaling in EGP en Arabisch-eerst-HR.'),
     'Egypt · EG': _t('Égypte · EG', 'Ägypten · EG', 'Egipto · EG', 'Egitto · EG', 'Egypte · EG'),
-    '<span class="current">Egypt</span>': _t(
-        '<span class="current">Égypte</span>', '<span class="current">Ägypten</span>',
-        '<span class="current">Egipto</span>', '<span class="current">Egitto</span>',
-        '<span class="current">Egypte</span>'),
-    'HR &amp; payroll, built for <span class="p-grad">Egypt</span>': _t(
-        'RH &amp; paie, conçu pour <span class="p-grad">l\'Égypte</span>',
-        'HR &amp; Gehaltsabrechnung, gebaut für <span class="p-grad">Ägypten</span>',
-        'RR. HH. &amp; nómina, creado para <span class="p-grad">Egipto</span>',
-        'HR &amp; buste paga, costruito per <span class="p-grad">l\'Egitto</span>',
-        'HR &amp; loonadministratie, gebouwd voor <span class="p-grad">Egypte</span>'),
+    'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Egypt</em>': _t(
+        'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">l\'Égypte</em>',
+        'HR &amp; Gehaltsabrechnung, gebaut für <em style="font-style:normal;color:var(--color-accent)">Ägypten</em>',
+        'RR. HH. &amp; nómina, creado para <em style="font-style:normal;color:var(--color-accent)">Egipto</em>',
+        'HR &amp; buste paga, costruito per <em style="font-style:normal;color:var(--color-accent)">l\'Egitto</em>',
+        'HR &amp; loonadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Egypte</em>'),
     'HR Suite runs your Egypt workforce — configurable payroll with local income tax and social-insurance deductions, end-of-service on a rule-based engine, EGP pay, Arabic throughout, and full employee records.': _t(
         "HR Suite gère vos effectifs en Égypte — paie configurable avec impôt sur le revenu local et retenues d'assurance sociale, fin de service sur un moteur basé sur des règles, paie en EGP, arabe partout et dossiers complets des employés.",
         'HR Suite steuert Ihre Belegschaft in Ägypten — konfigurierbare Gehaltsabrechnung mit lokaler Einkommensteuer und Sozialversicherungsabzügen, Dienstende auf einer regelbasierten Engine, Bezahlung in EGP, durchgehend Arabisch und vollständige Mitarbeiterakten.',
@@ -195,16 +190,12 @@ PAGE['/regions/jordan/'] = {'src': 'regions/jordan/index.html', 't': _common({
         'HR Suite per la Giordania — buste paga configurabili con imposta sul reddito locale e Social Security Corporation (SSC), fine servizio basata su regole, retribuzione in JOD e HR in arabo prima di tutto.',
         'HR Suite voor Jordanië — configureerbare loonadministratie met lokale inkomstenbelasting en Social Security Corporation (SSC), op regels gebaseerd einde dienstverband, uitbetaling in JOD en Arabisch-eerst-HR.'),
     'Jordan · JO': _t('Jordanie · JO', 'Jordanien · JO', 'Jordania · JO', 'Giordania · JO', 'Jordanië · JO'),
-    '<span class="current">Jordan</span>': _t(
-        '<span class="current">Jordanie</span>', '<span class="current">Jordanien</span>',
-        '<span class="current">Jordania</span>', '<span class="current">Giordania</span>',
-        '<span class="current">Jordanië</span>'),
-    'HR &amp; payroll, built for <span class="p-grad">Jordan</span>': _t(
-        'RH &amp; paie, conçu pour <span class="p-grad">la Jordanie</span>',
-        'HR &amp; Gehaltsabrechnung, gebaut für <span class="p-grad">Jordanien</span>',
-        'RR. HH. &amp; nómina, creado para <span class="p-grad">Jordania</span>',
-        'HR &amp; buste paga, costruito per <span class="p-grad">la Giordania</span>',
-        'HR &amp; loonadministratie, gebouwd voor <span class="p-grad">Jordanië</span>'),
+    'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Jordan</em>': _t(
+        'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">la Jordanie</em>',
+        'HR &amp; Gehaltsabrechnung, gebaut für <em style="font-style:normal;color:var(--color-accent)">Jordanien</em>',
+        'RR. HH. &amp; nómina, creado para <em style="font-style:normal;color:var(--color-accent)">Jordania</em>',
+        'HR &amp; buste paga, costruito per <em style="font-style:normal;color:var(--color-accent)">la Giordania</em>',
+        'HR &amp; loonadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Jordanië</em>'),
     'HR Suite runs your Jordan workforce — configurable payroll with local income tax and Social Security Corporation deductions, end-of-service on a rule-based engine, JOD pay, Arabic throughout, and full employee records.': _t(
         'HR Suite gère vos effectifs en Jordanie — paie configurable avec impôt sur le revenu local et retenues de la Social Security Corporation, fin de service sur un moteur basé sur des règles, paie en JOD, arabe partout et dossiers complets des employés.',
         'HR Suite steuert Ihre Belegschaft in Jordanien — konfigurierbare Gehaltsabrechnung mit lokaler Einkommensteuer und Abzügen der Social Security Corporation, Dienstende auf einer regelbasierten Engine, Bezahlung in JOD, durchgehend Arabisch und vollständige Mitarbeiterakten.',
@@ -276,16 +267,12 @@ PAGE['/regions/lebanon/'] = {'src': 'regions/lebanon/index.html', 't': _common({
         'HR Suite per il Libano — ferie e festività di legge, buste paga configurabili con imposta sul reddito e NSSF, fine servizio basata su regole, e HR in arabo prima di tutto.',
         'HR Suite voor Libanon — wettelijk verlof en feestdagen, configureerbare loonadministratie met inkomstenbelasting en NSSF, op regels gebaseerd einde dienstverband, en Arabisch-eerst-HR.'),
     'Lebanon · LB': _t('Liban · LB', 'Libanon · LB', 'Líbano · LB', 'Libano · LB', 'Libanon · LB'),
-    '<span class="current">Lebanon</span>': _t(
-        '<span class="current">Liban</span>', '<span class="current">Libanon</span>',
-        '<span class="current">Líbano</span>', '<span class="current">Libano</span>',
-        '<span class="current">Libanon</span>'),
-    'HR &amp; payroll, built for <span class="p-grad">Lebanon</span>': _t(
-        'RH &amp; paie, conçu pour <span class="p-grad">le Liban</span>',
-        'HR &amp; Gehaltsabrechnung, gebaut für <span class="p-grad">den Libanon</span>',
-        'RR. HH. &amp; nómina, creado para <span class="p-grad">el Líbano</span>',
-        'HR &amp; buste paga, costruito per <span class="p-grad">il Libano</span>',
-        'HR &amp; loonadministratie, gebouwd voor <span class="p-grad">Libanon</span>'),
+    'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Lebanon</em>': _t(
+        'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">le Liban</em>',
+        'HR &amp; Gehaltsabrechnung, gebaut für <em style="font-style:normal;color:var(--color-accent)">den Libanon</em>',
+        'RR. HH. &amp; nómina, creado para <em style="font-style:normal;color:var(--color-accent)">el Líbano</em>',
+        'HR &amp; buste paga, costruito per <em style="font-style:normal;color:var(--color-accent)">il Libano</em>',
+        'HR &amp; loonadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Libanon</em>'),
     'HR Suite runs your Lebanon workforce — statutory leave and the local holiday calendar, configurable payroll with income tax and NSSF, rule-based end-of-service, Arabic throughout, and full employee records.': _t(
         'HR Suite gère vos effectifs au Liban — congés légaux et le calendrier des jours fériés locaux, paie configurable avec impôt sur le revenu et NSSF, fin de service basée sur des règles, arabe partout et dossiers complets des employés.',
         'HR Suite steuert Ihre Belegschaft im Libanon — gesetzlicher Urlaub und der lokale Feiertagskalender, konfigurierbare Gehaltsabrechnung mit Einkommensteuer und NSSF, regelbasiertes Dienstende, durchgehend Arabisch und vollständige Mitarbeiterakten.',
@@ -349,16 +336,12 @@ PAGE['/regions/iraq/'] = {'src': 'regions/iraq/index.html', 't': _common({
         'HR Suite per l\'Iraq — ferie e festività di legge, buste paga configurabili con imposta sul reddito e previdenza sociale, fine servizio basata su regole, e HR in arabo prima di tutto.',
         'HR Suite voor Irak — wettelijk verlof en feestdagen, configureerbare loonadministratie met inkomstenbelasting en sociale zekerheid, op regels gebaseerd einde dienstverband, en Arabisch-eerst-HR.'),
     'Iraq · IQ': _t('Irak · IQ', 'Irak · IQ', 'Irak · IQ', 'Iraq · IQ', 'Irak · IQ'),
-    '<span class="current">Iraq</span>': _t(
-        '<span class="current">Irak</span>', '<span class="current">Irak</span>',
-        '<span class="current">Irak</span>', '<span class="current">Iraq</span>',
-        '<span class="current">Irak</span>'),
-    'HR &amp; payroll, built for <span class="p-grad">Iraq</span>': _t(
-        'RH &amp; paie, conçu pour <span class="p-grad">l\'Irak</span>',
-        'HR &amp; Gehaltsabrechnung, gebaut für <span class="p-grad">den Irak</span>',
-        'RR. HH. &amp; nómina, creado para <span class="p-grad">Irak</span>',
-        'HR &amp; buste paga, costruito per <span class="p-grad">l\'Iraq</span>',
-        'HR &amp; loonadministratie, gebouwd voor <span class="p-grad">Irak</span>'),
+    'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Iraq</em>': _t(
+        'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">l\'Irak</em>',
+        'HR &amp; Gehaltsabrechnung, gebaut für <em style="font-style:normal;color:var(--color-accent)">den Irak</em>',
+        'RR. HH. &amp; nómina, creado para <em style="font-style:normal;color:var(--color-accent)">Irak</em>',
+        'HR &amp; buste paga, costruito per <em style="font-style:normal;color:var(--color-accent)">l\'Iraq</em>',
+        'HR &amp; loonadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Irak</em>'),
     'HR Suite runs your Iraq workforce — statutory leave and the local holiday calendar, configurable payroll with income tax and social security, rule-based end-of-service, Arabic throughout, and full employee records.': _t(
         "HR Suite gère vos effectifs en Irak — congés légaux et le calendrier des jours fériés locaux, paie configurable avec impôt sur le revenu et sécurité sociale, fin de service basée sur des règles, arabe partout et dossiers complets des employés.",
         'HR Suite steuert Ihre Belegschaft im Irak — gesetzlicher Urlaub und der lokale Feiertagskalender, konfigurierbare Gehaltsabrechnung mit Einkommensteuer und Sozialversicherung, regelbasiertes Dienstende, durchgehend Arabisch und vollständige Mitarbeiterakten.',
@@ -422,16 +405,12 @@ PAGE['/regions/palestine/'] = {'src': 'regions/palestine/index.html', 't': _comm
         'HR Suite per la Palestina — ferie e festività di legge, buste paga configurabili con imposta sul reddito e contributi sociali, fine servizio basata su regole, e HR in arabo prima di tutto.',
         'HR Suite voor Palestina — wettelijk verlof en feestdagen, configureerbare loonadministratie met inkomstenbelasting en sociale bijdragen, op regels gebaseerd einde dienstverband, en Arabisch-eerst-HR.'),
     'Palestine · PS': _t('Palestine · PS', 'Palästina · PS', 'Palestina · PS', 'Palestina · PS', 'Palestina · PS'),
-    '<span class="current">Palestine</span>': _t(
-        '<span class="current">Palestine</span>', '<span class="current">Palästina</span>',
-        '<span class="current">Palestina</span>', '<span class="current">Palestina</span>',
-        '<span class="current">Palestina</span>'),
-    'HR &amp; payroll, built for <span class="p-grad">Palestine</span>': _t(
-        'RH &amp; paie, conçu pour <span class="p-grad">la Palestine</span>',
-        'HR &amp; Gehaltsabrechnung, gebaut für <span class="p-grad">Palästina</span>',
-        'RR. HH. &amp; nómina, creado para <span class="p-grad">Palestina</span>',
-        'HR &amp; buste paga, costruito per <span class="p-grad">la Palestina</span>',
-        'HR &amp; loonadministratie, gebouwd voor <span class="p-grad">Palestina</span>'),
+    'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Palestine</em>': _t(
+        'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">la Palestine</em>',
+        'HR &amp; Gehaltsabrechnung, gebaut für <em style="font-style:normal;color:var(--color-accent)">Palästina</em>',
+        'RR. HH. &amp; nómina, creado para <em style="font-style:normal;color:var(--color-accent)">Palestina</em>',
+        'HR &amp; buste paga, costruito per <em style="font-style:normal;color:var(--color-accent)">la Palestina</em>',
+        'HR &amp; loonadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Palestina</em>'),
     'HR Suite runs your Palestine workforce — statutory leave and the local holiday calendar, configurable payroll with income tax and social contributions, rule-based end-of-service, Arabic throughout, and full employee records.': _t(
         'HR Suite gère vos effectifs en Palestine — congés légaux et le calendrier des jours fériés locaux, paie configurable avec impôt sur le revenu et cotisations sociales, fin de service basée sur des règles, arabe partout et dossiers complets des employés.',
         'HR Suite steuert Ihre Belegschaft in Palästina — gesetzlicher Urlaub und der lokale Feiertagskalender, konfigurierbare Gehaltsabrechnung mit Einkommensteuer und Sozialbeiträgen, regelbasiertes Dienstende, durchgehend Arabisch und vollständige Mitarbeiterakten.',
@@ -495,16 +474,12 @@ PAGE['/regions/syria/'] = {'src': 'regions/syria/index.html', 't': _common({
         'HR Suite per la Siria — ferie e festività di legge, buste paga configurabili con imposta sul reddito e assicurazione sociale, fine servizio basata su regole, e HR in arabo prima di tutto.',
         'HR Suite voor Syrië — wettelijk verlof en feestdagen, configureerbare loonadministratie met inkomstenbelasting en sociale verzekering, op regels gebaseerd einde dienstverband, en Arabisch-eerst-HR.'),
     'Syria · SY': _t('Syrie · SY', 'Syrien · SY', 'Siria · SY', 'Siria · SY', 'Syrië · SY'),
-    '<span class="current">Syria</span>': _t(
-        '<span class="current">Syrie</span>', '<span class="current">Syrien</span>',
-        '<span class="current">Siria</span>', '<span class="current">Siria</span>',
-        '<span class="current">Syrië</span>'),
-    'HR &amp; payroll, built for <span class="p-grad">Syria</span>': _t(
-        'RH &amp; paie, conçu pour <span class="p-grad">la Syrie</span>',
-        'HR &amp; Gehaltsabrechnung, gebaut für <span class="p-grad">Syrien</span>',
-        'RR. HH. &amp; nómina, creado para <span class="p-grad">Siria</span>',
-        'HR &amp; buste paga, costruito per <span class="p-grad">la Siria</span>',
-        'HR &amp; loonadministratie, gebouwd voor <span class="p-grad">Syrië</span>'),
+    'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Syria</em>': _t(
+        'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">la Syrie</em>',
+        'HR &amp; Gehaltsabrechnung, gebaut für <em style="font-style:normal;color:var(--color-accent)">Syrien</em>',
+        'RR. HH. &amp; nómina, creado para <em style="font-style:normal;color:var(--color-accent)">Siria</em>',
+        'HR &amp; buste paga, costruito per <em style="font-style:normal;color:var(--color-accent)">la Siria</em>',
+        'HR &amp; loonadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Syrië</em>'),
     'HR Suite runs your Syria workforce — statutory leave and the local holiday calendar, configurable payroll with income tax and social insurance, rule-based end-of-service, Arabic throughout, and full employee records.': _t(
         'HR Suite gère vos effectifs en Syrie — congés légaux et le calendrier des jours fériés locaux, paie configurable avec impôt sur le revenu et assurance sociale, fin de service basée sur des règles, arabe partout et dossiers complets des employés.',
         'HR Suite steuert Ihre Belegschaft in Syrien — gesetzlicher Urlaub und der lokale Feiertagskalender, konfigurierbare Gehaltsabrechnung mit Einkommensteuer und Sozialversicherung, regelbasiertes Dienstende, durchgehend Arabisch und vollständige Mitarbeiterakten.',
@@ -568,16 +543,12 @@ PAGE['/regions/yemen/'] = {'src': 'regions/yemen/index.html', 't': _common({
         'HR Suite per lo Yemen — ferie e festività di legge, buste paga configurabili con imposta sul reddito e assicurazione sociale, fine servizio basata su regole, e HR in arabo prima di tutto.',
         'HR Suite voor Jemen — wettelijk verlof en feestdagen, configureerbare loonadministratie met inkomstenbelasting en sociale verzekering, op regels gebaseerd einde dienstverband, en Arabisch-eerst-HR.'),
     'Yemen · YE': _t('Yémen · YE', 'Jemen · YE', 'Yemen · YE', 'Yemen · YE', 'Jemen · YE'),
-    '<span class="current">Yemen</span>': _t(
-        '<span class="current">Yémen</span>', '<span class="current">Jemen</span>',
-        '<span class="current">Yemen</span>', '<span class="current">Yemen</span>',
-        '<span class="current">Jemen</span>'),
-    'HR &amp; payroll, built for <span class="p-grad">Yemen</span>': _t(
-        'RH &amp; paie, conçu pour <span class="p-grad">le Yémen</span>',
-        'HR &amp; Gehaltsabrechnung, gebaut für <span class="p-grad">den Jemen</span>',
-        'RR. HH. &amp; nómina, creado para <span class="p-grad">Yemen</span>',
-        'HR &amp; buste paga, costruito per <span class="p-grad">lo Yemen</span>',
-        'HR &amp; loonadministratie, gebouwd voor <span class="p-grad">Jemen</span>'),
+    'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Yemen</em>': _t(
+        'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">le Yémen</em>',
+        'HR &amp; Gehaltsabrechnung, gebaut für <em style="font-style:normal;color:var(--color-accent)">den Jemen</em>',
+        'RR. HH. &amp; nómina, creado para <em style="font-style:normal;color:var(--color-accent)">Yemen</em>',
+        'HR &amp; buste paga, costruito per <em style="font-style:normal;color:var(--color-accent)">lo Yemen</em>',
+        'HR &amp; loonadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Jemen</em>'),
     'HR Suite runs your Yemen workforce — statutory leave and the local holiday calendar, configurable payroll with income tax and social insurance, rule-based end-of-service, Arabic throughout, and full employee records.': _t(
         'HR Suite gère vos effectifs au Yémen — congés légaux et le calendrier des jours fériés locaux, paie configurable avec impôt sur le revenu et assurance sociale, fin de service basée sur des règles, arabe partout et dossiers complets des employés.',
         'HR Suite steuert Ihre Belegschaft im Jemen — gesetzlicher Urlaub und der lokale Feiertagskalender, konfigurierbare Gehaltsabrechnung mit Einkommensteuer und Sozialversicherung, regelbasiertes Dienstende, durchgehend Arabisch und vollständige Mitarbeiterakten.',
@@ -642,16 +613,12 @@ PAGE['/regions/middle-east/'] = {'src': 'regions/middle-east/index.html', 't': _
         "HR Suite in het hele Midden-Oosten — Egypte, Jordanië en de Levant — met configureerbare lokale loonadministratie, op regels gebaseerd einde dienstverband, uitbetaling in meerdere valuta's en Arabisch-eerst-HR."),
     'Middle East · MENA': _t('Moyen-Orient · MENA', 'Naher Osten · MENA', 'Oriente Medio · MENA',
         'Medio Oriente · MENA', 'Midden-Oosten · MENA'),
-    '<span class="current">Middle East</span>': _t(
-        '<span class="current">Moyen-Orient</span>', '<span class="current">Naher Osten</span>',
-        '<span class="current">Oriente Medio</span>', '<span class="current">Medio Oriente</span>',
-        '<span class="current">Midden-Oosten</span>'),
-    'HR &amp; payroll, built for <span class="p-grad">the Middle East</span>': _t(
-        'RH &amp; paie, conçu pour <span class="p-grad">le Moyen-Orient</span>',
-        'HR &amp; Gehaltsabrechnung, gebaut für <span class="p-grad">den Nahen Osten</span>',
-        'RR. HH. &amp; nómina, creado para <span class="p-grad">Oriente Medio</span>',
-        'HR &amp; buste paga, costruito per <span class="p-grad">il Medio Oriente</span>',
-        'HR &amp; loonadministratie, gebouwd voor <span class="p-grad">het Midden-Oosten</span>'),
+    'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">the Middle East</em>': _t(
+        'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">le Moyen-Orient</em>',
+        'HR &amp; Gehaltsabrechnung, gebaut für <em style="font-style:normal;color:var(--color-accent)">den Nahen Osten</em>',
+        'RR. HH. &amp; nómina, creado para <em style="font-style:normal;color:var(--color-accent)">Oriente Medio</em>',
+        'HR &amp; buste paga, costruito per <em style="font-style:normal;color:var(--color-accent)">il Medio Oriente</em>',
+        'HR &amp; loonadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">het Midden-Oosten</em>'),
     'Arabic-first HR and payroll across the wider Middle East — configurable local deductions and end-of-service, multi-currency pay, and full employee records. Deepest in the Gulf, ready beyond it.': _t(
         "RH et paie en arabe d'abord dans tout le Moyen-Orient élargi — retenues locales et fin de service configurables, paie multidevise et dossiers complets des employés. Le plus abouti dans le Golfe, prêt au-delà.",
         'Arabisch-zuerst-HR und -Gehaltsabrechnung im gesamten erweiterten Nahen Osten — konfigurierbare lokale Abzüge und Dienstende, Mehrwährungs-Bezahlung und vollständige Mitarbeiterakten. Am umfassendsten am Golf, bereit auch darüber hinaus.',
@@ -708,13 +675,13 @@ PAGE['/regions/middle-east/'] = {'src': 'regions/middle-east/index.html', 't': _
         'Elija un país para ver el detalle de su nómina legal y su cumplimiento — y también funciona en toda la región ampliada.',
         'Scegli un paese per il dettaglio della sua busta paga di legge e della conformità — e funziona anche in tutta la regione allargata.',
         'Kies een land voor de details van de wettelijke loonadministratie en compliance — en het werkt ook in de hele bredere regio.'),
-    '<h3>Egypt</h3>': _t('<h3>Égypte</h3>', '<h3>Ägypten</h3>', '<h3>Egipto</h3>', '<h3>Egitto</h3>', '<h3>Egypte</h3>'),
-    '<h3>Jordan</h3>': _t('<h3>Jordanie</h3>', '<h3>Jordanien</h3>', '<h3>Jordania</h3>', '<h3>Giordania</h3>', '<h3>Jordanië</h3>'),
-    '<h3>Lebanon</h3>': _t('<h3>Liban</h3>', '<h3>Libanon</h3>', '<h3>Líbano</h3>', '<h3>Libano</h3>', '<h3>Libanon</h3>'),
-    '<h3>Iraq</h3>': _t('<h3>Irak</h3>', '<h3>Irak</h3>', '<h3>Irak</h3>', '<h3>Iraq</h3>', '<h3>Irak</h3>'),
-    '<h3>Palestine</h3>': _t('<h3>Palestine</h3>', '<h3>Palästina</h3>', '<h3>Palestina</h3>', '<h3>Palestina</h3>', '<h3>Palestina</h3>'),
-    '<h3>Syria</h3>': _t('<h3>Syrie</h3>', '<h3>Syrien</h3>', '<h3>Siria</h3>', '<h3>Siria</h3>', '<h3>Syrië</h3>'),
-    '<h3>Yemen</h3>': _t('<h3>Yémen</h3>', '<h3>Jemen</h3>', '<h3>Yemen</h3>', '<h3>Yemen</h3>', '<h3>Jemen</h3>'),
+    '<h4>Egypt</h4>': _t('<h4>Égypte</h4>', '<h4>Ägypten</h4>', '<h4>Egipto</h4>', '<h4>Egitto</h4>', '<h4>Egypte</h4>'),
+    '<h4>Jordan</h4>': _t('<h4>Jordanie</h4>', '<h4>Jordanien</h4>', '<h4>Jordania</h4>', '<h4>Giordania</h4>', '<h4>Jordanië</h4>'),
+    '<h4>Lebanon</h4>': _t('<h4>Liban</h4>', '<h4>Libanon</h4>', '<h4>Líbano</h4>', '<h4>Libano</h4>', '<h4>Libanon</h4>'),
+    '<h4>Iraq</h4>': _t('<h4>Irak</h4>', '<h4>Irak</h4>', '<h4>Irak</h4>', '<h4>Iraq</h4>', '<h4>Irak</h4>'),
+    '<h4>Palestine</h4>': _t('<h4>Palestine</h4>', '<h4>Palästina</h4>', '<h4>Palestina</h4>', '<h4>Palestina</h4>', '<h4>Palestina</h4>'),
+    '<h4>Syria</h4>': _t('<h4>Syrie</h4>', '<h4>Syrien</h4>', '<h4>Siria</h4>', '<h4>Siria</h4>', '<h4>Syrië</h4>'),
+    '<h4>Yemen</h4>': _t('<h4>Yémen</h4>', '<h4>Jemen</h4>', '<h4>Yemen</h4>', '<h4>Yemen</h4>', '<h4>Jemen</h4>'),
     'Payroll · EOSB · Arabic': _t('Paie · EOSB · Arabe', 'Gehaltsabrechnung · EOSB · Arabisch',
         'Nómina · EOSB · Árabe', 'Buste paga · EOSB · Arabo', 'Loon · EOSB · Arabisch'),
     'Payroll · SSC · Arabic': _t('Paie · SSC · Arabe', 'Gehaltsabrechnung · SSC · Arabisch',

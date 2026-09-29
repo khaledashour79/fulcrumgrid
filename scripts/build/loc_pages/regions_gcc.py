@@ -40,7 +40,7 @@ _SEE_PRICING = {
         'Bekijk de prijzen van HR Suite →'),
 }
 
-_HOME = {'Home': _t('Accueil', 'Startseite', 'Inicio', 'Home', 'Home')}
+_HOME = {}
 
 _BUILT_IN = {'Built in': _t('Intégré', 'Integriert', 'Integrado', 'Integrato', 'Ingebouwd')}
 
@@ -112,23 +112,29 @@ PAGE['/regions/'] = {
             'HR Suite di FulcrumGrid si adatta a buste paga e conformità locali — contributi di legge, file di protezione salariale, fine servizio e lingua, per regione.',
             'HR Suite van FulcrumGrid past zich aan lokale salarisadministratie en compliance aan — wettelijke bijdragen, loonbeschermingsbestanden, einde dienstverband en taal, per regio.'),
         # ---- Hero ----
-        'Built for how your <span class="p-grad">region runs</span>': _t(
-            'Conçu pour le fonctionnement de <span class="p-grad">votre région</span>',
-            'Gebaut für die Arbeitsweise <span class="p-grad">Ihrer Region</span>',
-            'Diseñado para cómo opera <span class="p-grad">su región</span>',
-            'Pensato per come lavora <span class="p-grad">la tua regione</span>',
-            'Gebouwd voor hoe <span class="p-grad">uw regio</span> werkt'),
+        'Built for how your <em style="font-style:normal;color:var(--color-accent)">region runs</em>': _t(
+            'Conçu pour le fonctionnement de <em style="font-style:normal;color:var(--color-accent)">votre région</em>',
+            'Gebaut für die Arbeitsweise <em style="font-style:normal;color:var(--color-accent)">Ihrer Region</em>',
+            'Diseñado para cómo opera <em style="font-style:normal;color:var(--color-accent)">su región</em>',
+            'Pensato per come lavora <em style="font-style:normal;color:var(--color-accent)">la tua regione</em>',
+            'Gebouwd voor hoe <em style="font-style:normal;color:var(--color-accent)">uw regio</em> werkt'),
         'HR Suite adapts to local payroll and compliance — statutory contributions, wage-protection files, end-of-service rules, and language. Choose your region.': _t(
             "HR Suite s'adapte à la paie et à la conformité locales — cotisations légales, fichiers de protection des salaires, règles de fin de service et langue. Choisissez votre région.",
             'HR Suite passt sich an lokale Gehaltsabrechnung und Compliance an — gesetzliche Beiträge, Lohnschutzdateien, Regeln zum Dienstende und Sprache. Wählen Sie Ihre Region.',
             'HR Suite se adapta a la nómina y el cumplimiento locales — cotizaciones obligatorias, archivos de protección salarial, reglas de fin de servicio e idioma. Elija su región.',
             'HR Suite si adatta a buste paga e conformità locali — contributi di legge, file di protezione salariale, regole di fine servizio e lingua. Scegli la tua regione.',
             'HR Suite past zich aan lokale salarisadministratie en compliance aan — wettelijke bijdragen, loonbeschermingsbestanden, regels voor einde dienstverband en taal. Kies uw regio.'),
+        'Choose your region.': _t(
+            'Choisissez votre région.',
+            'Wählen Sie Ihre Region.',
+            'Elija su región.',
+            'Scegli la tua regione.',
+            'Kies uw regio.'),
         # ---- Cross-grid: region names ----
-        '<h3>North America</h3>': _t('<h3>Amérique du Nord</h3>', '<h3>Nordamerika</h3>', '<h3>América del Norte</h3>', '<h3>Nord America</h3>', '<h3>Noord-Amerika</h3>'),
-        '<h3>Europe</h3>': _t('<h3>Europe</h3>', '<h3>Europa</h3>', '<h3>Europa</h3>', '<h3>Europa</h3>', '<h3>Europa</h3>'),
-        '<h3>Middle East</h3>': _t('<h3>Moyen-Orient</h3>', '<h3>Naher Osten</h3>', '<h3>Oriente Medio</h3>', '<h3>Medio Oriente</h3>', '<h3>Midden-Oosten</h3>'),
-        '<h3>More markets</h3>': _t('<h3>Autres marchés</h3>', '<h3>Weitere Märkte</h3>', '<h3>Más mercados</h3>', '<h3>Altri mercati</h3>', '<h3>Meer markten</h3>'),
+        '<h4>North America</h4>': _t('<h4>Amérique du Nord</h4>', '<h4>Nordamerika</h4>', '<h4>América del Norte</h4>', '<h4>Nord America</h4>', '<h4>Noord-Amerika</h4>'),
+        '<h4>Europe</h4>': _t('<h4>Europe</h4>', '<h4>Europa</h4>', '<h4>Europa</h4>', '<h4>Europa</h4>', '<h4>Europa</h4>'),
+        '<h4>Middle East</h4>': _t('<h4>Moyen-Orient</h4>', '<h4>Naher Osten</h4>', '<h4>Oriente Medio</h4>', '<h4>Medio Oriente</h4>', '<h4>Midden-Oosten</h4>'),
+        '<h4>More markets</h4>': _t('<h4>Autres marchés</h4>', '<h4>Weitere Märkte</h4>', '<h4>Más mercados</h4>', '<h4>Altri mercati</h4>', '<h4>Meer markten</h4>'),
         # ---- Cross-grid: served lists ----
         'United States · Canada': _t('États-Unis · Canada', 'Vereinigte Staaten · Kanada', 'Estados Unidos · Canadá', 'Stati Uniti · Canada', 'Verenigde Staten · Canada'),
         'UK · Ireland · France · Germany · Spain · Italy · NL': _t(
@@ -188,12 +194,13 @@ PAGE['/regions/gcc/'] = {
             'Conseil de coopération du Golfe · GCC', 'Golf-Kooperationsrat · GCC',
             'Consejo de Cooperación del Golfo · GCC', 'Consiglio di cooperazione del Golfo · GCC',
             'Samenwerkingsraad van de Golf · GCC'),
-        'HR &amp; payroll, built for <span class="p-grad">the Gulf</span>': _t(
-            'RH &amp; paie, conçu pour <span class="p-grad">le Golfe</span>',
-            'HR &amp; Gehaltsabrechnung, entwickelt für <span class="p-grad">den Golf</span>',
-            'RR. HH. &amp; nóminas, diseñado para <span class="p-grad">el Golfo</span>',
-            'HR &amp; buste paga, pensato per <span class="p-grad">il Golfo</span>',
-            'HR &amp; salarisadministratie, gebouwd voor <span class="p-grad">de Golf</span>'),
+        'KSA': _t('KSA', 'KSA', 'KSA', 'KSA', 'KSA'),
+        'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">the Gulf</em>': _t(
+            'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">le Golfe</em>',
+            'HR &amp; Gehaltsabrechnung, entwickelt für <em style="font-style:normal;color:var(--color-accent)">den Golf</em>',
+            'RR. HH. &amp; nóminas, diseñado para <em style="font-style:normal;color:var(--color-accent)">el Golfo</em>',
+            'HR &amp; buste paga, pensato per <em style="font-style:normal;color:var(--color-accent)">il Golfo</em>',
+            'HR &amp; salarisadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">de Golf</em>'),
         "Six Gulf states, one platform — WPS payroll, statutory end-of-service by each country's labour law, social insurance, and nationalization tracking, with Arabic throughout. Pick a country for the detail.": _t(
             "Six États du Golfe, une seule plateforme — paie WPS, fin de service légale selon le droit du travail de chaque pays, assurance sociale et suivi de la nationalisation, avec l'arabe partout. Choisissez un pays pour le détail.",
             'Sechs Golfstaaten, eine Plattform — WPS-Gehaltsabrechnung, gesetzliches Dienstende nach dem Arbeitsrecht des jeweiligen Landes, Sozialversicherung und Nachverfolgung der Nationalisierung, durchgehend auf Arabisch. Wählen Sie ein Land für die Details.',
@@ -210,12 +217,12 @@ PAGE['/regions/gcc/'] = {
             "Scegli un Paese per il dettaglio delle sue buste paga di legge e della conformità — e funziona anche nell'intera regione.",
             'Kies een land voor de details van de wettelijke salarisadministratie en compliance — en het werkt ook in de bredere regio.'),
         # ---- Country cross-grid: names ----
-        '<h3>Saudi Arabia</h3>': _t('<h3>Arabie saoudite</h3>', '<h3>Saudi-Arabien</h3>', '<h3>Arabia Saudí</h3>', '<h3>Arabia Saudita</h3>', '<h3>Saoedi-Arabië</h3>'),
-        '<h3>UAE</h3>': _t('<h3>EAU</h3>', '<h3>VAE</h3>', '<h3>EAU</h3>', '<h3>EAU</h3>', '<h3>VAE</h3>'),
-        '<h3>Qatar</h3>': _t('<h3>Qatar</h3>', '<h3>Katar</h3>', '<h3>Catar</h3>', '<h3>Qatar</h3>', '<h3>Qatar</h3>'),
-        '<h3>Kuwait</h3>': _t('<h3>Koweït</h3>', '<h3>Kuwait</h3>', '<h3>Kuwait</h3>', '<h3>Kuwait</h3>', '<h3>Koeweit</h3>'),
-        '<h3>Bahrain</h3>': _t('<h3>Bahreïn</h3>', '<h3>Bahrain</h3>', '<h3>Baréin</h3>', '<h3>Bahrein</h3>', '<h3>Bahrein</h3>'),
-        '<h3>Oman</h3>': _t('<h3>Oman</h3>', '<h3>Oman</h3>', '<h3>Omán</h3>', '<h3>Oman</h3>', '<h3>Oman</h3>'),
+        '<h4>Saudi Arabia</h4>': _t('<h4>Arabie saoudite</h4>', '<h4>Saudi-Arabien</h4>', '<h4>Arabia Saudí</h4>', '<h4>Arabia Saudita</h4>', '<h4>Saoedi-Arabië</h4>'),
+        '<h4>UAE</h4>': _t('<h4>EAU</h4>', '<h4>VAE</h4>', '<h4>EAU</h4>', '<h4>EAU</h4>', '<h4>VAE</h4>'),
+        '<h4>Qatar</h4>': _t('<h4>Qatar</h4>', '<h4>Katar</h4>', '<h4>Catar</h4>', '<h4>Qatar</h4>', '<h4>Qatar</h4>'),
+        '<h4>Kuwait</h4>': _t('<h4>Koweït</h4>', '<h4>Kuwait</h4>', '<h4>Kuwait</h4>', '<h4>Kuwait</h4>', '<h4>Koeweit</h4>'),
+        '<h4>Bahrain</h4>': _t('<h4>Bahreïn</h4>', '<h4>Bahrain</h4>', '<h4>Baréin</h4>', '<h4>Bahrein</h4>', '<h4>Bahrein</h4>'),
+        '<h4>Oman</h4>': _t('<h4>Oman</h4>', '<h4>Oman</h4>', '<h4>Omán</h4>', '<h4>Oman</h4>', '<h4>Oman</h4>'),
         # ---- Country cross-grid: served lists (proper nouns kept) ----
         'WPS · gratuity · GOSI · Nitaqat': _t('WPS · indemnité · GOSI · Nitaqat', 'WPS · Abfindung · GOSI · Nitaqat', 'WPS · gratificación · GOSI · Nitaqat', 'WPS · indennità · GOSI · Nitaqat', 'WPS · ontslagvergoeding · GOSI · Nitaqat'),
         'WPS · gratuity · GPSSA · Emiratization': _t('WPS · indemnité · GPSSA · Emiratization', 'WPS · Abfindung · GPSSA · Emiratization', 'WPS · gratificación · GPSSA · Emiratization', 'WPS · indennità · GPSSA · Emiratization', 'WPS · ontslagvergoeding · GPSSA · Emiratization'),
@@ -257,14 +264,13 @@ PAGE['/regions/saudi-arabia/'] = {
             "HR Suite per l'Arabia Saudita — file di protezione salariale WPS, GOSI, fine servizio (EOSB), Nitaqat e Saudization, anticipo alloggio, e buste paga e HR in arabo prima di tutto.",
             'HR Suite voor Saoedi-Arabië — WPS-loonbeschermingsbestanden, GOSI, einde dienstverband (EOSB), Nitaqat en Saudization, huisvestingsvoorschot, en salarisadministratie en HR met Arabisch voorop.'),
         # ---- Hero ----
-        '<span class="current">Saudi Arabia</span>': _t('<span class="current">Arabie saoudite</span>', '<span class="current">Saudi-Arabien</span>', '<span class="current">Arabia Saudí</span>', '<span class="current">Arabia Saudita</span>', '<span class="current">Saoedi-Arabië</span>'),
         'Saudi Arabia · KSA': _t('Arabie saoudite · KSA', 'Saudi-Arabien · KSA', 'Arabia Saudí · KSA', 'Arabia Saudita · KSA', 'Saoedi-Arabië · KSA'),
-        'HR &amp; payroll, built for <span class="p-grad">Saudi Arabia</span>': _t(
-            "RH &amp; paie, conçu pour <span class=\"p-grad\">l'Arabie saoudite</span>",
-            'HR &amp; Gehaltsabrechnung, entwickelt für <span class="p-grad">Saudi-Arabien</span>',
-            'RR. HH. &amp; nóminas, diseñado para <span class="p-grad">Arabia Saudí</span>',
-            "HR &amp; buste paga, pensato per <span class=\"p-grad\">l'Arabia Saudita</span>",
-            'HR &amp; salarisadministratie, gebouwd voor <span class="p-grad">Saoedi-Arabië</span>'),
+        'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Saudi Arabia</em>': _t(
+            "RH &amp; paie, conçu pour <em style=\"font-style:normal;color:var(--color-accent)\">l'Arabie saoudite</em>",
+            'HR &amp; Gehaltsabrechnung, entwickelt für <em style="font-style:normal;color:var(--color-accent)">Saudi-Arabien</em>',
+            'RR. HH. &amp; nóminas, diseñado para <em style="font-style:normal;color:var(--color-accent)">Arabia Saudí</em>',
+            "HR &amp; buste paga, pensato per <em style=\"font-style:normal;color:var(--color-accent)\">l'Arabia Saudita</em>",
+            'HR &amp; salarisadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Saoedi-Arabië</em>'),
         'HR Suite ships with Saudi payroll and compliance built in — WPS wage files, GOSI, end-of-service, Nitaqat and Saudization, with Arabic throughout. Run your Saudi workforce by the book, without bolt-ons.': _t(
             "HR Suite intègre nativement la paie et la conformité saoudiennes — fichiers de salaires WPS, GOSI, fin de service, Nitaqat et Saudization, avec l'arabe partout. Gérez vos effectifs saoudiens dans les règles, sans modules externes.",
             'HR Suite bringt saudische Gehaltsabrechnung und Compliance von Haus aus mit — WPS-Lohndateien, GOSI, Dienstende, Nitaqat und Saudization, durchgehend auf Arabisch. Führen Sie Ihre saudische Belegschaft vorschriftsgemäß, ohne Zusatzmodule.',
@@ -360,14 +366,13 @@ PAGE['/regions/uae/'] = {
             "HR Suite per gli EAU — buste paga MOHRE e file salariali WPS, indennità ai sensi del Federal Decree-Law 33/2021, pensioni GPSSA, monitoraggio dell'Emiratization (Nafis) e HR in arabo prima di tutto.",
             'HR Suite voor de VAE — MOHRE-salarisadministratie en WPS-salarisbestanden, ontslagvergoeding onder Federal Decree-Law 33/2021, GPSSA-pensioenen, tracking van Emiratization (Nafis) en HR met Arabisch voorop.'),
         # ---- Hero ----
-        '<span class="current">UAE</span>': _t('<span class="current">EAU</span>', '<span class="current">VAE</span>', '<span class="current">EAU</span>', '<span class="current">EAU</span>', '<span class="current">VAE</span>'),
         'United Arab Emirates · UAE': _t('Émirats arabes unis · EAU', 'Vereinigte Arabische Emirate · VAE', 'Emiratos Árabes Unidos · EAU', 'Emirati Arabi Uniti · EAU', 'Verenigde Arabische Emiraten · VAE'),
-        'HR &amp; payroll, built for <span class="p-grad">the UAE</span>': _t(
-            'RH &amp; paie, conçu pour <span class="p-grad">les EAU</span>',
-            'HR &amp; Gehaltsabrechnung, entwickelt für <span class="p-grad">die VAE</span>',
-            'RR. HH. &amp; nóminas, diseñado para <span class="p-grad">los EAU</span>',
-            'HR &amp; buste paga, pensato per <span class="p-grad">gli EAU</span>',
-            'HR &amp; salarisadministratie, gebouwd voor <span class="p-grad">de VAE</span>'),
+        'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">the UAE</em>': _t(
+            'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">les EAU</em>',
+            'HR &amp; Gehaltsabrechnung, entwickelt für <em style="font-style:normal;color:var(--color-accent)">die VAE</em>',
+            'RR. HH. &amp; nóminas, diseñado para <em style="font-style:normal;color:var(--color-accent)">los EAU</em>',
+            'HR &amp; buste paga, pensato per <em style="font-style:normal;color:var(--color-accent)">gli EAU</em>',
+            'HR &amp; salarisadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">de VAE</em>'),
         'HR Suite runs your UAE workforce end to end — MOHRE-compliant payroll and WPS salary files, gratuity to Federal Decree-Law 33/2021, pension and Emiratization tracking, and Arabic throughout.': _t(
             "HR Suite gère vos effectifs aux EAU de bout en bout — paie conforme MOHRE et fichiers de salaires WPS, indemnité selon le Federal Decree-Law 33/2021, suivi des retraites et de l'Emiratization, avec l'arabe partout.",
             'HR Suite steuert Ihre Belegschaft in den VAE durchgängig — MOHRE-konforme Gehaltsabrechnung und WPS-Gehaltsdateien, Abfindung gemäß Federal Decree-Law 33/2021, Renten- und Emiratization-Nachverfolgung, durchgehend auf Arabisch.',
@@ -455,14 +460,13 @@ PAGE['/regions/qatar/'] = {
             'HR Suite per il Qatar — buste paga WPS, indennità di fine servizio ai sensi del Labour Law No. 14 of 2004, pensioni GRSIA, monitoraggio della Qatarization e HR in arabo prima di tutto.',
             'HR Suite voor Qatar — WPS-salarisadministratie, ontslagvergoeding onder Labour Law No. 14 of 2004, GRSIA-pensioenen, tracking van Qatarization en HR met Arabisch voorop.'),
         # ---- Hero ----
-        '<span class="current">Qatar</span>': _t('<span class="current">Qatar</span>', '<span class="current">Katar</span>', '<span class="current">Catar</span>', '<span class="current">Qatar</span>', '<span class="current">Qatar</span>'),
         'Qatar · QA': _t('Qatar · QA', 'Katar · QA', 'Catar · QA', 'Qatar · QA', 'Qatar · QA'),
-        'HR &amp; payroll, built for <span class="p-grad">Qatar</span>': _t(
-            'RH &amp; paie, conçu pour <span class="p-grad">le Qatar</span>',
-            'HR &amp; Gehaltsabrechnung, entwickelt für <span class="p-grad">Katar</span>',
-            'RR. HH. &amp; nóminas, diseñado para <span class="p-grad">Catar</span>',
-            'HR &amp; buste paga, pensato per <span class="p-grad">il Qatar</span>',
-            'HR &amp; salarisadministratie, gebouwd voor <span class="p-grad">Qatar</span>'),
+        'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Qatar</em>': _t(
+            'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">le Qatar</em>',
+            'HR &amp; Gehaltsabrechnung, entwickelt für <em style="font-style:normal;color:var(--color-accent)">Katar</em>',
+            'RR. HH. &amp; nóminas, diseñado para <em style="font-style:normal;color:var(--color-accent)">Catar</em>',
+            'HR &amp; buste paga, pensato per <em style="font-style:normal;color:var(--color-accent)">il Qatar</em>',
+            'HR &amp; salarisadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Qatar</em>'),
         'HR Suite runs your Qatar workforce end to end — WPS-compliant payroll, end-of-service under Labour Law No. 14 of 2004, GRSIA pensions and Qatarization tracking, with Arabic throughout.': _t(
             "HR Suite gère vos effectifs au Qatar de bout en bout — paie conforme WPS, fin de service selon le Labour Law No. 14 of 2004, retraites GRSIA et suivi de la Qatarization, avec l'arabe partout.",
             'HR Suite steuert Ihre Belegschaft in Katar durchgängig — WPS-konforme Gehaltsabrechnung, Dienstende gemäß Labour Law No. 14 of 2004, GRSIA-Renten und Qatarization-Nachverfolgung, durchgehend auf Arabisch.',
@@ -543,14 +547,13 @@ PAGE['/regions/kuwait/'] = {
             "HR Suite per il Kuwait — buste paga WPS, indennità di fine servizio ai sensi del Labour Law No. 6 of 2010, trattenute PIFSS, monitoraggio dell'organico nazionale e HR in arabo prima di tutto.",
             'HR Suite voor Koeweit — WPS-salarisadministratie, ontslagvergoeding onder Labour Law No. 6 of 2010, PIFSS-inhoudingen, tracking van het nationale personeelsbestand en HR met Arabisch voorop.'),
         # ---- Hero ----
-        '<span class="current">Kuwait</span>': _t('<span class="current">Koweït</span>', '<span class="current">Kuwait</span>', '<span class="current">Kuwait</span>', '<span class="current">Kuwait</span>', '<span class="current">Koeweit</span>'),
         'Kuwait · KW': _t('Koweït · KW', 'Kuwait · KW', 'Kuwait · KW', 'Kuwait · KW', 'Koeweit · KW'),
-        'HR &amp; payroll, built for <span class="p-grad">Kuwait</span>': _t(
-            'RH &amp; paie, conçu pour <span class="p-grad">le Koweït</span>',
-            'HR &amp; Gehaltsabrechnung, entwickelt für <span class="p-grad">Kuwait</span>',
-            'RR. HH. &amp; nóminas, diseñado para <span class="p-grad">Kuwait</span>',
-            'HR &amp; buste paga, pensato per <span class="p-grad">il Kuwait</span>',
-            'HR &amp; salarisadministratie, gebouwd voor <span class="p-grad">Koeweit</span>'),
+        'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Kuwait</em>': _t(
+            'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">le Koweït</em>',
+            'HR &amp; Gehaltsabrechnung, entwickelt für <em style="font-style:normal;color:var(--color-accent)">Kuwait</em>',
+            'RR. HH. &amp; nóminas, diseñado para <em style="font-style:normal;color:var(--color-accent)">Kuwait</em>',
+            'HR &amp; buste paga, pensato per <em style="font-style:normal;color:var(--color-accent)">il Kuwait</em>',
+            'HR &amp; salarisadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Koeweit</em>'),
         'HR Suite runs your Kuwait workforce end to end — WPS-compliant payroll, indemnity under Labour Law No. 6 of 2010, PIFSS social security and national-workforce tracking, with Arabic throughout.': _t(
             "HR Suite gère vos effectifs au Koweït de bout en bout — paie conforme WPS, indemnité selon le Labour Law No. 6 of 2010, sécurité sociale PIFSS et suivi des effectifs nationaux, avec l'arabe partout.",
             'HR Suite steuert Ihre Belegschaft in Kuwait durchgängig — WPS-konforme Gehaltsabrechnung, Abfindung gemäß Labour Law No. 6 of 2010, PIFSS-Sozialversicherung und Nachverfolgung der nationalen Belegschaft, durchgehend auf Arabisch.',
@@ -631,14 +634,13 @@ PAGE['/regions/bahrain/'] = {
             "HR Suite per il Bahrein — buste paga WPS, indennità di cessazione ai sensi del Labour Law No. 36 of 2012, assicurazione sociale SIO, monitoraggio dell'organico nazionale e HR in arabo prima di tutto.",
             'HR Suite voor Bahrein — WPS-salarisadministratie, vertrekvergoeding onder Labour Law No. 36 of 2012, SIO sociale verzekering, tracking van het nationale personeelsbestand en HR met Arabisch voorop.'),
         # ---- Hero ----
-        '<span class="current">Bahrain</span>': _t('<span class="current">Bahreïn</span>', '<span class="current">Bahrain</span>', '<span class="current">Baréin</span>', '<span class="current">Bahrein</span>', '<span class="current">Bahrein</span>'),
         'Bahrain · BH': _t('Bahreïn · BH', 'Bahrain · BH', 'Baréin · BH', 'Bahrein · BH', 'Bahrein · BH'),
-        'HR &amp; payroll, built for <span class="p-grad">Bahrain</span>': _t(
-            'RH &amp; paie, conçu pour <span class="p-grad">Bahreïn</span>',
-            'HR &amp; Gehaltsabrechnung, entwickelt für <span class="p-grad">Bahrain</span>',
-            'RR. HH. &amp; nóminas, diseñado para <span class="p-grad">Baréin</span>',
-            'HR &amp; buste paga, pensato per <span class="p-grad">il Bahrein</span>',
-            'HR &amp; salarisadministratie, gebouwd voor <span class="p-grad">Bahrein</span>'),
+        'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Bahrain</em>': _t(
+            'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">Bahreïn</em>',
+            'HR &amp; Gehaltsabrechnung, entwickelt für <em style="font-style:normal;color:var(--color-accent)">Bahrain</em>',
+            'RR. HH. &amp; nóminas, diseñado para <em style="font-style:normal;color:var(--color-accent)">Baréin</em>',
+            'HR &amp; buste paga, pensato per <em style="font-style:normal;color:var(--color-accent)">il Bahrein</em>',
+            'HR &amp; salarisadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Bahrein</em>'),
         'HR Suite runs your Bahrain workforce end to end — WPS-compliant payroll, leaving indemnity under Law No. 36 of 2012, SIO social insurance and national-workforce tracking, with Arabic throughout.': _t(
             "HR Suite gère vos effectifs à Bahreïn de bout en bout — paie conforme WPS, indemnité de départ selon la Law No. 36 of 2012, assurance sociale SIO et suivi des effectifs nationaux, avec l'arabe partout.",
             'HR Suite steuert Ihre Belegschaft in Bahrain durchgängig — WPS-konforme Gehaltsabrechnung, Abfindung beim Ausscheiden gemäß Law No. 36 of 2012, SIO-Sozialversicherung und Nachverfolgung der nationalen Belegschaft, durchgehend auf Arabisch.',
@@ -719,14 +721,13 @@ PAGE['/regions/oman/'] = {
             "HR Suite per l'Oman — buste paga WPS, indennità di fine servizio, PASI / Social Protection Fund, monitoraggio dell'Omanization e HR in arabo prima di tutto, in linea con la Social Protection Law (Royal Decree 52/2023).",
             'HR Suite voor Oman — WPS-salarisadministratie, ontslagvergoeding, PASI / Social Protection Fund, tracking van Omanization en HR met Arabisch voorop, afgestemd op de Social Protection Law (Royal Decree 52/2023).'),
         # ---- Hero ----
-        '<span class="current">Oman</span>': _t('<span class="current">Oman</span>', '<span class="current">Oman</span>', '<span class="current">Omán</span>', '<span class="current">Oman</span>', '<span class="current">Oman</span>'),
         'Oman · OM': _t('Oman · OM', 'Oman · OM', 'Omán · OM', 'Oman · OM', 'Oman · OM'),
-        'HR &amp; payroll, built for <span class="p-grad">Oman</span>': _t(
-            'RH &amp; paie, conçu pour <span class="p-grad">Oman</span>',
-            'HR &amp; Gehaltsabrechnung, entwickelt für <span class="p-grad">Oman</span>',
-            'RR. HH. &amp; nóminas, diseñado para <span class="p-grad">Omán</span>',
-            "HR &amp; buste paga, pensato per <span class=\"p-grad\">l'Oman</span>",
-            'HR &amp; salarisadministratie, gebouwd voor <span class="p-grad">Oman</span>'),
+        'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Oman</em>': _t(
+            'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">Oman</em>',
+            'HR &amp; Gehaltsabrechnung, entwickelt für <em style="font-style:normal;color:var(--color-accent)">Oman</em>',
+            'RR. HH. &amp; nóminas, diseñado para <em style="font-style:normal;color:var(--color-accent)">Omán</em>',
+            "HR &amp; buste paga, pensato per <em style=\"font-style:normal;color:var(--color-accent)\">l'Oman</em>",
+            'HR &amp; salarisadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Oman</em>'),
         'HR Suite runs your Oman workforce end to end — WPS-compliant payroll, end-of-service gratuity, social protection and Omanization tracking, with Arabic throughout — and it follows the Social Protection Law reform as it phases in.': _t(
             "HR Suite gère vos effectifs à Oman de bout en bout — paie conforme WPS, indemnité de fin de service, protection sociale et suivi de l'Omanization, avec l'arabe partout — et elle suit la réforme de la Social Protection Law à mesure de son entrée en vigueur.",
             'HR Suite steuert Ihre Belegschaft in Oman durchgängig — WPS-konforme Gehaltsabrechnung, Abfindung zum Dienstende, Sozialschutz und Omanization-Nachverfolgung, durchgehend auf Arabisch — und folgt der Reform der Social Protection Law, während sie schrittweise in Kraft tritt.',
