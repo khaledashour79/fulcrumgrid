@@ -251,10 +251,103 @@ REGIONS = {
     'cta_p_en': "See HR Suite handle Oman payroll, WPS, and end-of-service for your team.",
     'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الرواتب و WPS ونهاية الخدمة في عُمان لفريقك.",
   },
+  'uk': {
+    'en_name': 'United Kingdom', 'ar_name': 'المملكة المتحدة',
+    'tag_en': 'United Kingdom · UK', 'tag_ar': 'المملكة المتحدة · UK',
+    'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'the UK',
+    'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للمملكة المتحدة',
+    'lead_en': "HR Suite runs your UK workforce end to end — PAYE and National Insurance on a configurable payroll, P60 and P45 statements, NINO validation, pensions, and full employee records.",
+    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في المملكة المتحدة بالكامل — ضريبة PAYE والتأمين الوطني على نظام رواتب قابل للتهيئة، وكشوف P60 و P45، والتحقق من رقم التأمين الوطني، والمعاشات، وسجلّات موظفين كاملة.",
+    'desc_en': "HR Suite for the UK — PAYE and National Insurance deductions, P60 and P45 statements, NINO validation, workplace pensions, and full HR on one platform.",
+    'desc_ar': "منظومة الموارد البشرية للمملكة المتحدة — استقطاعات PAYE والتأمين الوطني، وكشوف P60 و P45، والتحقق من رقم التأمين الوطني، ومعاشات العمل، وموارد بشرية كاملة على منصة واحدة.",
+    'hub_sub_en': 'PAYE · NI · P60/P45', 'hub_sub_ar': 'PAYE · التأمين الوطني · P60/P45',
+    'features': [
+      ("PAYE &amp; National Insurance", "PAYE والتأمين الوطني",
+       "Pay runs with deductions classified as PAYE income tax (rest-of-UK and Scottish rates) and National Insurance, on a configurable engine that keeps payslips and reports aligned.",
+       "دورات رواتب باستقطاعات مصنّفة كضريبة دخل PAYE (لبقية المملكة والمعدّلات الاسكتلندية) وتأمين وطني، على نظام قابل للتهيئة يبقي كشوف الرواتب والتقارير متطابقة."),
+      ("P60 &amp; P45 statements", "كشوف P60 و P45",
+       "Generate P60 (year-end) and P45 (leaver) statements from your finalized pay runs — statements from your own records, not the official HMRC form or an RTI submission.",
+       "أنشئ كشوف P60 (نهاية السنة) و P45 (عند المغادرة) من دورات الرواتب المعتمدة — كشوف من سجلّاتك، وليست النموذج الرسمي لهيئة HMRC ولا تقديم RTI."),
+      ("NINO validation", "التحقق من رقم التأمين الوطني",
+       "National Insurance numbers are checksum-validated on entry, so employee records stay clean and payroll-ready.",
+       "تُتحقَّق أرقام التأمين الوطني بخوارزمية تدقيق عند الإدخال، لتبقى سجلّات الموظفين نظيفة وجاهزة للرواتب."),
+      ("Pensions &amp; deductions", "المعاشات والاستقطاعات",
+       "Model workplace pension and other pre- and post-tax deductions on the same engine, with employer contributions tracked as company cost.",
+       "أنشئ معاش العمل وغيره من الاستقطاعات قبل الضريبة وبعدها على النظام نفسه، مع تتبّع مساهمات صاحب العمل كتكلفة على الشركة."),
+      ("Core HR &amp; self-service", "الموارد البشرية الأساسية والخدمة الذاتية",
+       "Employee records, onboarding, time off, documents and employee self-service — the whole lifecycle on one platform.",
+       "سجلّات الموظفين والتأهيل والإجازات والمستندات والخدمة الذاتية — دورة الحياة كاملة على منصة واحدة."),
+    ],
+    'cta_h_en': 'Run UK HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في المملكة المتحدة كما ينبغي',
+    'cta_p_en': "See HR Suite handle UK PAYE, National Insurance, and year-end for your team.",
+    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير PAYE والتأمين الوطني ونهاية السنة في المملكة المتحدة لفريقك.",
+  },
+  'usa': {
+    'en_name': 'United States', 'ar_name': 'الولايات المتحدة',
+    'tag_en': 'United States · US', 'tag_ar': 'الولايات المتحدة · US',
+    'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'the US',
+    'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للولايات المتحدة',
+    'lead_en': "HR Suite runs your US workforce end to end — configurable payroll with federal and state income tax, Social Security and Medicare, W-2 year-end statements, ACH pay files, and full employee records.",
+    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في الولايات المتحدة بالكامل — رواتب قابلة للتهيئة مع ضريبة الدخل الفيدرالية والولائية، والضمان الاجتماعي و Medicare، وكشوف W-2 لنهاية السنة، وملفات دفع ACH، وسجلّات موظفين كاملة.",
+    'desc_en': "HR Suite for the US — configurable payroll with federal/state income tax, Social Security and Medicare, W-2 year-end statements, ACH (NACHA) pay files, and full HR.",
+    'desc_ar': "منظومة الموارد البشرية للولايات المتحدة — رواتب قابلة للتهيئة مع ضريبة الدخل الفيدرالية والولائية، والضمان الاجتماعي و Medicare، وكشوف W-2، وملفات دفع ACH، وموارد بشرية كاملة.",
+    'hub_sub_en': 'Payroll · W-2 · ACH', 'hub_sub_ar': 'الرواتب · W-2 · ACH',
+    'features': [
+      ("Payroll + tax categories", "الرواتب + فئات الضريبة",
+       "Configurable pay runs with deductions classified as federal income tax, state income tax, Social Security and Medicare, so every payslip and report lines up.",
+       "دورات رواتب قابلة للتهيئة باستقطاعات مصنّفة كضريبة دخل فيدرالية وولائية، وضمان اجتماعي و Medicare، لتتطابق كل قسيمة راتب وتقرير."),
+      ("W-2 year-end statements", "كشوف W-2 لنهاية السنة",
+       "Generate W-2 statements for employees from your finalized pay runs at year-end — statements from your own records, not an IRS EFW2 e-file.",
+       "أنشئ كشوف W-2 للموظفين من دورات الرواتب المعتمدة في نهاية السنة — كشوف من سجلّاتك، وليست تقديمًا إلكترونيًا EFW2 لمصلحة الضرائب."),
+      ("ACH pay files", "ملفات دفع ACH",
+       "Export an ACH (NACHA) file from a finalized pay run for upload to your bank, with account details validated on entry.",
+       "صدّر ملف ACH (NACHA) من دورة رواتب معتمدة لرفعه إلى بنكك، مع التحقق من بيانات الحساب عند الإدخال."),
+      ("Benefits &amp; deductions", "المزايا والاستقطاعات",
+       "Model 401(k), benefits and other pre- and post-tax deductions on the same engine, with employer contributions tracked as company cost.",
+       "أنشئ خطة 401(k) والمزايا وغيرها من الاستقطاعات قبل الضريبة وبعدها على النظام نفسه، مع تتبّع مساهمات صاحب العمل كتكلفة على الشركة."),
+      ("Core HR &amp; self-service", "الموارد البشرية الأساسية والخدمة الذاتية",
+       "Employee records, onboarding, time off, documents and employee self-service — the whole lifecycle on one platform.",
+       "سجلّات الموظفين والتأهيل والإجازات والمستندات والخدمة الذاتية — دورة الحياة كاملة على منصة واحدة."),
+    ],
+    'cta_h_en': 'Run US HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في الولايات المتحدة كما ينبغي',
+    'cta_p_en': "See HR Suite handle US payroll, W-2, and ACH for your team.",
+    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الرواتب و W-2 و ACH في الولايات المتحدة لفريقك.",
+  },
+  'europe': {
+    'en_name': 'Europe', 'ar_name': 'أوروبا',
+    'tag_en': 'Europe · EU', 'tag_ar': 'أوروبا · EU',
+    'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Europe',
+    'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة لأوروبا',
+    'lead_en': "HR Suite runs your European workforce with SEPA payments, GDPR-grade data privacy, configurable local deductions, and full employee records — one platform across your entities.",
+    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في أوروبا مع مدفوعات SEPA، وخصوصية بيانات بمستوى GDPR، واستقطاعات محلية قابلة للتهيئة، وسجلّات موظفين كاملة — منصة واحدة عبر كياناتك.",
+    'desc_en': "HR Suite for Europe — SEPA credit-transfer pay files, GDPR data-subject rights (export and erasure), configurable local deductions, and full HR on one platform.",
+    'desc_ar': "منظومة الموارد البشرية لأوروبا — ملفات دفع SEPA، وحقوق أصحاب البيانات وفق GDPR (التصدير والمحو)، واستقطاعات محلية قابلة للتهيئة، وموارد بشرية كاملة على منصة واحدة.",
+    'hub_sub_en': 'SEPA · GDPR · payroll', 'hub_sub_ar': 'SEPA · GDPR · الرواتب',
+    'features': [
+      ("SEPA payments", "مدفوعات SEPA",
+       "Export a SEPA credit-transfer file from a finalized pay run for upload to your bank, with IBANs validated on entry.",
+       "صدّر ملف تحويل SEPA من دورة رواتب معتمدة لرفعه إلى بنكك، مع التحقق من الآيبان عند الإدخال."),
+      ("GDPR data-subject rights", "حقوق أصحاب البيانات (GDPR)",
+       "Built-in subject-access export (everything held about a person, as JSON) and selective erasure-with-retention, so DSARs are a workflow — with DPO contact and retention policies included.",
+       "تصدير حق الوصول للبيانات مدمج (كل ما يخصّ الشخص بصيغة JSON) ومحو انتقائي مع الاحتفاظ، لتصبح طلبات أصحاب البيانات إجراءً منظّمًا — مع بيانات مسؤول حماية البيانات وسياسات الاحتفاظ."),
+      ("Configurable local deductions", "استقطاعات محلية قابلة للتهيئة",
+       "Model each country's income tax and social contributions as configurable, classified deduction types, so payslips and reports stay consistent across entities.",
+       "أنشئ ضريبة الدخل والمساهمات الاجتماعية لكل دولة كأنواع استقطاعات قابلة للتهيئة ومصنّفة، لتبقى كشوف الرواتب والتقارير متّسقة عبر الكيانات."),
+      ("Documents &amp; e-sign", "المستندات والتوقيع الإلكتروني",
+       "Contracts, letters and click-to-sign, with data-retention rules applied automatically.",
+       "العقود والخطابات والتوقيع بنقرة، مع تطبيق قواعد الاحتفاظ بالبيانات تلقائيًا."),
+      ("Core HR &amp; self-service", "الموارد البشرية الأساسية والخدمة الذاتية",
+       "Employee records, onboarding, time off and self-service — the whole lifecycle on one platform.",
+       "سجلّات الموظفين والتأهيل والإجازات والخدمة الذاتية — دورة الحياة كاملة على منصة واحدة."),
+    ],
+    'cta_h_en': 'Run European HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في أوروبا كما ينبغي',
+    'cta_p_en': "See HR Suite handle SEPA payments, GDPR, and payroll for your team.",
+    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير مدفوعات SEPA و GDPR والرواتب لفريقك.",
+  },
 }
 
-# Display order on the hub and in the sitemap.
-REGION_ORDER = ['saudi-arabia', 'uae', 'qatar', 'kuwait', 'bahrain', 'oman']
+# Display order on the hub and in the sitemap (GCC first, then wider markets).
+REGION_ORDER = ['saudi-arabia', 'uae', 'qatar', 'kuwait', 'bahrain', 'oman', 'uk', 'usa', 'europe']
 
 def head(lang, path, title, desc):
     en = lang == 'en'
@@ -417,9 +510,9 @@ def region_page(slug, lang):
             <p>{be if en else ba}</p>
           </div>''')
     feats_html = '\n'.join(feats)
-    note = (f'Every module here is part of HR Suite — payroll, social insurance and end-of-service on the Enterprise plan, or added to any plan as a per-seat add-on. <a href="{b}/pricing/hr-suite/">See HR Suite pricing →</a>'
+    note = (f'Every module here is part of HR Suite — advanced payroll, year-end and compliance on the Enterprise plan, or added to any plan as a per-seat add-on. <a href="{b}/pricing/hr-suite/">See HR Suite pricing →</a>'
             if en else
-            f'كل وحدة هنا جزء من منظومة الموارد البشرية — الرواتب والتأمينات ونهاية الخدمة في خطة المؤسسات، أو تُضاف إلى أي خطة كإضافة لكل مقعد. <a href="{b}/pricing/hr-suite/">أسعار الموارد البشرية ←</a>')
+            f'كل وحدة هنا جزء من منظومة الموارد البشرية — الرواتب المتقدّمة ونهاية السنة والامتثال في خطة المؤسسات، أو تُضاف إلى أي خطة كإضافة لكل مقعد. <a href="{b}/pricing/hr-suite/">أسعار الموارد البشرية ←</a>')
     cta_h = d['cta_h_en'] if en else d['cta_h_ar']
     cta_p = d['cta_p_en'] if en else d['cta_p_ar']
     bc = breadcrumb(lang, [('Home' if en else 'الرئيسية', b + '/'),
