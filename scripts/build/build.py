@@ -34,7 +34,13 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 # generated + hand-authored English pages already ship the 7-language switcher,
 # and the Arabic tree is maintained separately. gen_sitemap runs last so it
 # sees every localized page.
-STEPS = ['gen_pricing.py', 'gen_blog.py', 'gen_regions.py', 'loc_static.py', 'gen_sitemap.py']
+# gen_daily runs LAST: the daily Q&A blog posts are self-contained 7-language
+# JSONs (content/blog/daily/*.json) that emit all seven pages directly, splice a
+# card into each language's freshly built blog index, and append their URLs to
+# the sitemap — sitting on top of the built site without going through
+# loc_static's per-string catalogs.
+STEPS = ['gen_pricing.py', 'gen_blog.py', 'gen_regions.py', 'loc_static.py',
+         'gen_sitemap.py', 'gen_daily.py']
 
 def main():
     env = dict(os.environ, FG_ROOT=ROOT)
