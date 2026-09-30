@@ -18,34 +18,32 @@ PAGE['/regions/europe/'] = {
     'src': 'regions/europe/index.html',
     't': {
         # ---- Meta ----
-        'HR Suite — HR &amp; payroll for Europe | FulcrumGrid': _t(
-            "HR Suite — RH &amp; paie pour l'Europe | FulcrumGrid",
-            'HR Suite — HR &amp; Gehaltsabrechnung für Europa | FulcrumGrid',
-            'HR Suite — RR. HH. &amp; nóminas para Europa | FulcrumGrid',
-            "HR Suite — HR &amp; buste paga per l'Europa | FulcrumGrid",
-            'HR Suite — HR &amp; salarisadministratie voor Europa | FulcrumGrid'),
-        'HR Suite for Europe — SEPA credit-transfer pay files, GDPR data-subject rights (export and erasure), configurable local deductions, and full HR on one platform.': _t(
-            "HR Suite pour l'Europe — fichiers de paiement par virement SEPA, droits des personnes concernées au titre du GDPR (export et effacement), retenues locales configurables, et RH complète sur une seule plateforme.",
-            'HR Suite für Europa — SEPA-Überweisungsdateien, Betroffenenrechte nach GDPR (Export und Löschung), konfigurierbare lokale Abzüge und vollständiges HR auf einer Plattform.',
-            'HR Suite para Europa — archivos de pago por transferencia SEPA, derechos del interesado según el GDPR (exportación y supresión), deducciones locales configurables y RR. HH. completos en una sola plataforma.',
-            "HR Suite per l'Europa — file di pagamento con bonifico SEPA, diritti dell'interessato ai sensi del GDPR (esportazione e cancellazione), trattenute locali configurabili e HR completo su un'unica piattaforma.",
-            'HR Suite voor Europa — SEPA-overschrijvingsbestanden voor betaling, rechten van betrokkenen onder het GDPR (export en wissing), configureerbare lokale inhoudingen en volledige HR op één platform.'),
+        'FulcrumGrid in Europe — every app, built for your region | FulcrumGrid': _t(
+            'FulcrumGrid en Europe — chaque application, conçue pour votre région | FulcrumGrid',
+            'FulcrumGrid in Europa — jede App, gebaut für Ihre Region | FulcrumGrid',
+            'FulcrumGrid en Europa — cada app, diseñada para su región | FulcrumGrid',
+            'FulcrumGrid in Europa — ogni app, costruita per la tua regione | FulcrumGrid',
+            'FulcrumGrid in Europa — elke app, gebouwd voor uw regio | FulcrumGrid'),
+        'FulcrumGrid across Europe — Command Center, Collection and HR Suite — with multi-currency VAT-ready finance, SEPA payments and GDPR-grade data privacy.': _t(
+            "FulcrumGrid dans toute l'Europe — Command Center, Collection et HR Suite — avec une finance multidevise prête pour la TVA, des paiements SEPA et une confidentialité des données au niveau du GDPR.",
+            'FulcrumGrid in ganz Europa — Command Center, Collection und HR Suite — mit MwSt.-fähiger Mehrwährungs-Finanzverwaltung, SEPA-Zahlungen und Datenschutz auf GDPR-Niveau.',
+            'FulcrumGrid en toda Europa — Command Center, Collection y HR Suite — con finanzas multidivisa preparadas para el IVA, pagos SEPA y privacidad de datos a nivel del GDPR.',
+            "FulcrumGrid in tutta Europa — Command Center, Collection e HR Suite — con finanza multivaluta pronta per l'IVA, pagamenti SEPA e privacy dei dati a livello GDPR.",
+            'FulcrumGrid in heel Europa — Command Center, Collection en HR Suite — met multivaluta, btw-klare financiën, SEPA-betalingen en gegevensprivacy op GDPR-niveau.'),
         # ---- Hero ----
         'Europe · EU': _t('Europe · UE', 'Europa · EU', 'Europa · UE', 'Europa · UE', 'Europa · EU'),
-        'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">Europe</em>': _t(
-            'RH &amp; paie, conçues pour <em style="font-style:normal;color:var(--color-accent)">l\'Europe</em>',
-            'HR &amp; Gehaltsabrechnung, entwickelt für <em style="font-style:normal;color:var(--color-accent)">Europa</em>',
-            'RR. HH. &amp; nóminas, diseñados para <em style="font-style:normal;color:var(--color-accent)">Europa</em>',
-            'HR &amp; buste paga, creati per <em style="font-style:normal;color:var(--color-accent)">l\'Europa</em>',
-            'HR &amp; salaris, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Europa</em>'),
-        'HR Suite runs your European workforce with SEPA payments, GDPR-grade data privacy, configurable local deductions, and full employee records — one platform across your entities.': _t(
-            "HR Suite gère vos effectifs européens avec des paiements SEPA, une confidentialité des données au niveau du GDPR, des retenues locales configurables et des dossiers salariés complets — une seule plateforme pour toutes vos entités.",
-            'HR Suite steuert Ihre europäische Belegschaft mit SEPA-Zahlungen, Datenschutz auf GDPR-Niveau, konfigurierbaren lokalen Abzügen und vollständigen Personalakten — eine Plattform über alle Ihre Gesellschaften hinweg.',
-            'HR Suite gestiona su plantilla europea con pagos SEPA, privacidad de datos a nivel del GDPR, deducciones locales configurables y expedientes de empleado completos — una sola plataforma para todas sus entidades.',
-            "HR Suite gestisce il tuo personale europeo con pagamenti SEPA, privacy dei dati a livello GDPR, trattenute locali configurabili e schede dipendente complete — un'unica piattaforma per tutte le tue entità.",
-            'HR Suite runt uw Europese personeelsbestand met SEPA-betalingen, gegevensprivacy op GDPR-niveau, configureerbare lokale inhoudingen en volledige personeelsdossiers — één platform voor al uw entiteiten.'),
-        'Explore HR Suite': _t('Découvrir HR Suite', 'HR Suite entdecken', 'Explorar HR Suite', 'Esplora HR Suite', 'Ontdek HR Suite'),
-        'See HR Suite pricing': _t('Voir les tarifs de HR Suite', 'HR Suite Preise ansehen', 'Ver precios de HR Suite', 'Vedi i prezzi di HR Suite', 'Bekijk prijzen van HR Suite'),
+        'FulcrumGrid, built for <em style="font-style:normal;color:var(--color-accent)">Europe</em>': _t(
+            'FulcrumGrid, conçu pour <em style="font-style:normal;color:var(--color-accent)">l\'Europe</em>',
+            'FulcrumGrid, entwickelt für <em style="font-style:normal;color:var(--color-accent)">Europa</em>',
+            'FulcrumGrid, diseñado para <em style="font-style:normal;color:var(--color-accent)">Europa</em>',
+            'FulcrumGrid, pensato per <em style="font-style:normal;color:var(--color-accent)">l\'Europa</em>',
+            'FulcrumGrid, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Europa</em>'),
+        'The whole grid runs across Europe — Command Center with multi-currency, VAT-ready finance; Collection with SEPA-friendly receivables; and HR Suite with SEPA payroll and GDPR-grade data privacy. One platform across your entities.': _t(
+            "Toute la grille fonctionne dans toute l'Europe — Command Center avec une finance multidevise prête pour la TVA ; Collection avec un recouvrement compatible SEPA ; et HR Suite avec une paie SEPA et une confidentialité des données au niveau du GDPR. Une seule plateforme pour toutes vos entités.",
+            'Das gesamte Grid läuft in ganz Europa — Command Center mit MwSt.-fähiger Mehrwährungs-Finanzverwaltung; Collection mit SEPA-freundlichem Forderungseinzug; und HR Suite mit SEPA-Gehaltsabrechnung und Datenschutz auf GDPR-Niveau. Eine Plattform über alle Ihre Gesellschaften hinweg.',
+            'Toda la cuadrícula funciona en toda Europa — Command Center con finanzas multidivisa preparadas para el IVA; Collection con cobros compatibles con SEPA; y HR Suite con nóminas SEPA y privacidad de datos a nivel del GDPR. Una sola plataforma para todas sus entidades.',
+            "Tutta la griglia funziona in tutta Europa — Command Center con finanza multivaluta pronta per l'IVA; Collection con recupero crediti compatibile con SEPA; e HR Suite con buste paga SEPA e privacy dei dati a livello GDPR. Un'unica piattaforma per tutte le tue entità.",
+            "Het hele grid draait in heel Europa — Command Center met multivaluta, btw-klare financiën; Collection met SEPA-vriendelijke debiteuren; en HR Suite met SEPA-salarisadministratie en gegevensprivacy op GDPR-niveau. Eén platform voor al uw entiteiten."),
         # ---- Built-in section ----
         'Built in': _t('Intégré', 'Integriert', 'Integrado', 'Integrato', 'Ingebouwd'),
         'Europe compliance, out of the box': _t(
@@ -157,18 +155,12 @@ PAGE['/regions/europe/'] = {
             'Pregunte por su mercado →', 'Chiedi informazioni sul tuo mercato →',
             'Vraag naar uw markt →'),
         # ---- CTA ----
-        'Run European HR &amp; payroll the right way': _t(
-            'Gérez la RH &amp; la paie européennes comme il se doit',
-            'Europäisches HR &amp; Gehaltsabrechnung richtig aufsetzen',
-            'Gestione los RR. HH. &amp; las nóminas europeas como es debido',
-            'Gestisci HR &amp; buste paga europei nel modo giusto',
-            'Regel Europese HR &amp; salaris op de juiste manier'),
-        'See HR Suite handle SEPA payments, GDPR, and payroll for your team.': _t(
-            "Voyez HR Suite gérer les paiements SEPA, le GDPR et la paie de votre équipe.",
-            'Sehen Sie, wie HR Suite SEPA-Zahlungen, GDPR und die Gehaltsabrechnung für Ihr Team erledigt.',
-            'Vea cómo HR Suite gestiona los pagos SEPA, el GDPR y las nóminas de su equipo.',
-            'Guarda HR Suite gestire i pagamenti SEPA, il GDPR e le buste paga del tuo team.',
-            'Zie hoe HR Suite SEPA-betalingen, het GDPR en de salarisadministratie voor uw team afhandelt.'),
+        'Run your European operation on one platform': _t(
+            'Gérez votre activité européenne sur une seule plateforme',
+            'Führen Sie Ihren europäischen Betrieb auf einer Plattform',
+            'Gestione su operación europea en una sola plataforma',
+            "Gestisci la tua attività europea su un'unica piattaforma",
+            'Run uw Europese activiteiten op één platform'),
     },
 }
 

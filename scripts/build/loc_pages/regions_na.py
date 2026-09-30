@@ -51,35 +51,35 @@ def _hero(t):
 PAGE = {}
 
 
-PAGE['/regions/north-america/'] = {'src': 'regions/north-america/index.html', 't': _hero({
-    'HR Suite — HR &amp; payroll for North America | FulcrumGrid': _t(
-        "HR Suite — RH &amp; paie pour l'Amérique du Nord | FulcrumGrid",
-        'HR Suite — HR &amp; Gehaltsabrechnung für Nordamerika | FulcrumGrid',
-        'HR Suite — RR. HH. &amp; nómina para América del Norte | FulcrumGrid',
-        'HR Suite — HR &amp; buste paga per il Nord America | FulcrumGrid',
-        'HR Suite — HR &amp; loonadministratie voor Noord-Amerika | FulcrumGrid'),
-    'HR Suite across North America — the United States and Canada — with configurable payroll, statutory leave and holidays, and federal/state/provincial overtime.': _t(
-        "HR Suite dans toute l'Amérique du Nord — les États-Unis et le Canada — avec paie configurable, congés et jours fériés légaux, et heures supplémentaires selon les règles fédérales/des États/provinciales.",
-        'HR Suite in ganz Nordamerika — die USA und Kanada — mit konfigurierbarer Gehaltsabrechnung, gesetzlichem Urlaub und Feiertagen sowie Überstunden nach Bundes-, Bundesstaats- und Provinzregelung.',
-        'HR Suite en toda América del Norte — Estados Unidos y Canadá — con nómina configurable, permisos y festivos legales, y horas extra según normas federales/estatales/provinciales.',
-        'HR Suite in tutto il Nord America — gli Stati Uniti e il Canada — con buste paga configurabili, ferie e festività di legge e straordinari secondo le norme federali/statali/provinciali.',
-        'HR Suite in heel Noord-Amerika — de Verenigde Staten en Canada — met configureerbare loonadministratie, wettelijk verlof en feestdagen, en overuren volgens federale/staats-/provinciale regels.'),
+PAGE['/regions/north-america/'] = {'src': 'regions/north-america/index.html', 't': {
+    'FulcrumGrid in North America — every app, built for your region | FulcrumGrid': _t(
+        "FulcrumGrid en Amérique du Nord — chaque application, conçue pour votre région | FulcrumGrid",
+        'FulcrumGrid in Nordamerika — jede App, gebaut für Ihre Region | FulcrumGrid',
+        'FulcrumGrid en Norteamérica — cada app, diseñada para su región | FulcrumGrid',
+        'FulcrumGrid in Nord America — ogni app, costruita per la tua regione | FulcrumGrid',
+        'FulcrumGrid in Noord-Amerika — elke app, gebouwd voor uw regio | FulcrumGrid'),
+    'FulcrumGrid across North America — Command Center, Collection and HR Suite — with real-time finance in USD and CAD, receivables, and configurable payroll by federal, state and provincial rule.': _t(
+        "FulcrumGrid dans toute l'Amérique du Nord — Command Center, Collection et HR Suite — avec une finance en temps réel en USD et CAD, le recouvrement, et une paie configurable selon les règles fédérales, des États et provinciales.",
+        'FulcrumGrid in ganz Nordamerika — Command Center, Collection und HR Suite — mit Echtzeit-Finanzverwaltung in USD und CAD, Forderungseinzug und konfigurierbarer Gehaltsabrechnung nach Bundes-, Bundesstaats- und Provinzregelung.',
+        'FulcrumGrid en toda América del Norte — Command Center, Collection y HR Suite — con finanzas en tiempo real en USD y CAD, cobros y nómina configurable según normas federales, estatales y provinciales.',
+        'FulcrumGrid in tutto il Nord America — Command Center, Collection e HR Suite — con finanza in tempo reale in USD e CAD, recupero crediti e buste paga configurabili secondo le norme federali, statali e provinciali.',
+        'FulcrumGrid in heel Noord-Amerika — Command Center, Collection en HR Suite — met realtime financiën in USD en CAD, debiteuren en configureerbare loonadministratie volgens federale, staats- en provinciale regels.'),
     'North America · US &amp; Canada': _t(
         'Amérique du Nord · États-Unis &amp; Canada', 'Nordamerika · USA &amp; Kanada',
         'América del Norte · EE. UU. &amp; Canadá', 'Nord America · USA &amp; Canada',
         'Noord-Amerika · VS &amp; Canada'),
-    'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">North America</em>': _t(
-        'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">l\'Amérique du Nord</em>',
-        'HR &amp; Gehaltsabrechnung, gebaut für <em style="font-style:normal;color:var(--color-accent)">Nordamerika</em>',
-        'RR. HH. &amp; nómina, creado para <em style="font-style:normal;color:var(--color-accent)">América del Norte</em>',
-        'HR &amp; buste paga, costruito per <em style="font-style:normal;color:var(--color-accent)">il Nord America</em>',
-        'HR &amp; loonadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Noord-Amerika</em>'),
-    'HR Suite runs your North American workforce — configurable payroll, statutory leave and holidays, and overtime by federal, state and provincial rule, across the US and Canada. Pick a country for the detail.': _t(
-        'HR Suite gère vos effectifs nord-américains — paie configurable, congés et jours fériés légaux, et heures supplémentaires selon les règles fédérales, des États et provinciales, aux États-Unis comme au Canada. Choisissez un pays pour le détail.',
-        'HR Suite steuert Ihre nordamerikanische Belegschaft — konfigurierbare Gehaltsabrechnung, gesetzlicher Urlaub und Feiertage sowie Überstunden nach Bundes-, Bundesstaats- und Provinzregelung, in den USA und Kanada. Wählen Sie ein Land für die Details.',
-        'HR Suite gestiona su plantilla norteamericana — nómina configurable, permisos y festivos legales, y horas extra según normas federales, estatales y provinciales, en Estados Unidos y Canadá. Elija un país para ver el detalle.',
-        'HR Suite gestisce il tuo organico nordamericano — buste paga configurabili, ferie e festività di legge e straordinari secondo le norme federali, statali e provinciali, negli Stati Uniti e in Canada. Scegli un paese per il dettaglio.',
-        'HR Suite runt uw Noord-Amerikaanse personeelsbestand — configureerbare loonadministratie, wettelijk verlof en feestdagen, en overuren volgens federale, staats- en provinciale regels, in de VS en Canada. Kies een land voor de details.'),
+    'FulcrumGrid, built for <em style="font-style:normal;color:var(--color-accent)">North America</em>': _t(
+        'FulcrumGrid, conçu pour <em style="font-style:normal;color:var(--color-accent)">l\'Amérique du Nord</em>',
+        'FulcrumGrid, entwickelt für <em style="font-style:normal;color:var(--color-accent)">Nordamerika</em>',
+        'FulcrumGrid, diseñado para <em style="font-style:normal;color:var(--color-accent)">Norteamérica</em>',
+        'FulcrumGrid, pensato per <em style="font-style:normal;color:var(--color-accent)">il Nord America</em>',
+        'FulcrumGrid, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Noord-Amerika</em>'),
+    'The whole grid runs across North America — Command Center with real-time finance and reporting in USD and CAD; Collection for receivables and reminders; and HR Suite with configurable payroll and federal, state and provincial rules. Pick a country for the detail.': _t(
+        'Toute la grille fonctionne dans toute l\'Amérique du Nord — Command Center avec une finance et un reporting en temps réel en USD et CAD ; Collection pour le recouvrement et les relances ; et HR Suite avec une paie configurable et des règles fédérales, des États et provinciales. Choisissez un pays pour le détail.',
+        'Das gesamte Grid läuft in ganz Nordamerika — Command Center mit Echtzeit-Finanzverwaltung und -Reporting in USD und CAD; Collection für Forderungseinzug und Mahnungen; und HR Suite mit konfigurierbarer Gehaltsabrechnung sowie Bundes-, Bundesstaats- und Provinzregeln. Wählen Sie ein Land für die Details.',
+        'Toda la cuadrícula funciona en toda América del Norte — Command Center con finanzas e informes en tiempo real en USD y CAD; Collection para cobros y recordatorios; y HR Suite con nómina configurable y normas federales, estatales y provinciales. Elija un país para ver el detalle.',
+        'Tutta la griglia funziona in tutto il Nord America — Command Center con finanza e reporting in tempo reale in USD e CAD; Collection per il recupero crediti e i solleciti; e HR Suite con buste paga configurabili e norme federali, statali e provinciali. Scegli un paese per il dettaglio.',
+        'Het hele grid draait in heel Noord-Amerika — Command Center met realtime financiën en rapportage in USD en CAD; Collection voor debiteuren en herinneringen; en HR Suite met configureerbare loonadministratie en federale, staats- en provinciale regels. Kies een land voor de details.'),
     'Countries': _t('Pays', 'Länder', 'Países', 'Paesi', 'Landen'),
     'Countries in this region': _t('Pays de cette région', 'Länder in dieser Region',
         'Países de esta región', 'Paesi di questa regione', 'Landen in deze regio'),
@@ -97,19 +97,13 @@ PAGE['/regions/north-america/'] = {'src': 'regions/north-america/index.html', 't
         '<h4>Canada</h4>', '<h4>Canada</h4>'),
     'Leave · Payroll · CPP/EI': _t('Congés · Paie · CPP/EI', 'Urlaub · Gehaltsabrechnung · CPP/EI',
         'Permisos · Nómina · CPP/EI', 'Ferie · Buste paga · CPP/EI', 'Verlof · Loon · CPP/EI'),
-    'Run North America HR &amp; payroll the right way': _t(
-        'Gérez les RH &amp; la paie en Amérique du Nord comme il se doit',
-        'HR &amp; Gehaltsabrechnung in Nordamerika richtig machen',
-        'Gestione las RR. HH. &amp; la nómina en América del Norte como es debido',
-        'Gestisci HR &amp; buste paga in Nord America nel modo giusto',
-        'Regel HR &amp; loonadministratie in Noord-Amerika zoals het hoort'),
-    "Tell us where you operate and we'll show you how HR Suite fits.": _t(
-        "Dites-nous où vous opérez et nous vous montrerons comment HR Suite s'intègre.",
-        'Sagen Sie uns, wo Sie tätig sind, und wir zeigen Ihnen, wie HR Suite passt.',
-        'Cuéntenos dónde opera y le mostraremos cómo encaja HR Suite.',
-        'Dicci dove operi e ti mostreremo come si integra HR Suite.',
-        'Vertel ons waar u actief bent en we laten zien hoe HR Suite past.'),
-})}
+    'Run your North American operation on one platform': _t(
+        'Gérez votre activité nord-américaine sur une seule plateforme',
+        'Führen Sie Ihren nordamerikanischen Betrieb auf einer Plattform',
+        'Gestione su operación norteamericana en una sola plataforma',
+        "Gestisci la tua attività nordamericana su un'unica piattaforma",
+        'Run uw Noord-Amerikaanse activiteiten op één platform'),
+}}
 
 
 PAGE['/regions/usa/'] = {'src': 'regions/usa/index.html', 't': _hero({

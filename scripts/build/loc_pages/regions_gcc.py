@@ -97,20 +97,20 @@ PAGE = {}
 
 PAGE['/regions/'] = {
     'src': 'regions/index.html',
-    't': _merge(_HOME, _EXPLORE, {
+    't': _merge(_HOME, {
         # ---- Meta (title tail; COMMON translates the leading "Regions") ----
-        ' — HR &amp; payroll by country | FulcrumGrid': _t(
-            ' — RH &amp; paie par pays | FulcrumGrid',
-            ' — HR &amp; Gehaltsabrechnung nach Land | FulcrumGrid',
-            ' — RR. HH. &amp; nóminas por país | FulcrumGrid',
-            ' — HR &amp; buste paga per Paese | FulcrumGrid',
-            ' — HR &amp; salarisadministratie per land | FulcrumGrid'),
-        'FulcrumGrid HR Suite adapts to local payroll and compliance — statutory contributions, wage-protection files, end-of-service, and language, by region.': _t(
-            "HR Suite de FulcrumGrid s'adapte à la paie et à la conformité locales — cotisations légales, fichiers de protection des salaires, fin de service et langue, selon la région.",
-            'FulcrumGrid HR Suite passt sich an lokale Gehaltsabrechnung und Compliance an — gesetzliche Beiträge, Lohnschutzdateien, Dienstende und Sprache, je nach Region.',
-            'HR Suite de FulcrumGrid se adapta a la nómina y el cumplimiento locales — cotizaciones obligatorias, archivos de protección salarial, fin de servicio e idioma, según la región.',
-            'HR Suite di FulcrumGrid si adatta a buste paga e conformità locali — contributi di legge, file di protezione salariale, fine servizio e lingua, per regione.',
-            'HR Suite van FulcrumGrid past zich aan lokale salarisadministratie en compliance aan — wettelijke bijdragen, loonbeschermingsbestanden, einde dienstverband en taal, per regio.'),
+        ' — every app, built for your region | FulcrumGrid': _t(
+            ' — chaque application, conçue pour votre région | FulcrumGrid',
+            ' — jede App, gebaut für Ihre Region | FulcrumGrid',
+            ' — cada app, diseñada para su región | FulcrumGrid',
+            ' — ogni app, costruita per la tua regione | FulcrumGrid',
+            ' — elke app, gebouwd voor uw regio | FulcrumGrid'),
+        'FulcrumGrid runs in your region — Command Center, Collection and HR Suite, adapted to local finance, payroll, compliance, currency and language.': _t(
+            'FulcrumGrid fonctionne dans votre région — Command Center, Collection et HR Suite, adaptés à la finance, la paie, la conformité, la devise et la langue locales.',
+            'FulcrumGrid läuft in Ihrer Region — Command Center, Collection und HR Suite, angepasst an lokale Finanzen, Gehaltsabrechnung, Compliance, Währung und Sprache.',
+            'FulcrumGrid funciona en su región — Command Center, Collection y HR Suite, adaptados a las finanzas, la nómina, el cumplimiento, la moneda y el idioma locales.',
+            'FulcrumGrid funziona nella tua regione — Command Center, Collection e HR Suite, adattati a finanza, buste paga, conformità, valuta e lingua locali.',
+            'FulcrumGrid draait in uw regio — Command Center, Collection en HR Suite, aangepast aan lokale financiën, salarisadministratie, compliance, valuta en taal.'),
         # ---- Hero ----
         'Built for how your <em style="font-style:normal;color:var(--color-accent)">region runs</em>': _t(
             'Conçu pour le fonctionnement de <em style="font-style:normal;color:var(--color-accent)">votre région</em>',
@@ -118,12 +118,12 @@ PAGE['/regions/'] = {
             'Diseñado para cómo opera <em style="font-style:normal;color:var(--color-accent)">su región</em>',
             'Pensato per come lavora <em style="font-style:normal;color:var(--color-accent)">la tua regione</em>',
             'Gebouwd voor hoe <em style="font-style:normal;color:var(--color-accent)">uw regio</em> werkt'),
-        'HR Suite adapts to local payroll and compliance — statutory contributions, wage-protection files, end-of-service rules, and language. Wherever you operate, your data runs on servers hosted in your region. Choose your region.': _t(
-            "HR Suite s'adapte à la paie et à la conformité locales — cotisations légales, fichiers de protection des salaires, règles de fin de service et langue. Où que vous opériez, vos données s'exécutent sur des serveurs hébergés dans votre région. Choisissez votre région.",
-            'HR Suite passt sich an lokale Gehaltsabrechnung und Compliance an — gesetzliche Beiträge, Lohnschutzdateien, Regeln zum Dienstende und Sprache. Wo immer Sie tätig sind, laufen Ihre Daten auf Servern, die in Ihrer Region gehostet werden. Wählen Sie Ihre Region.',
-            'HR Suite se adapta a la nómina y el cumplimiento locales — cotizaciones obligatorias, archivos de protección salarial, reglas de fin de servicio e idioma. Opere donde opere, sus datos se ejecutan en servidores alojados en su región. Elija su región.',
-            'HR Suite si adatta a buste paga e conformità locali — contributi di legge, file di protezione salariale, regole di fine servizio e lingua. Ovunque operi, i tuoi dati vengono eseguiti su server ospitati nella tua regione. Scegli la tua regione.',
-            'HR Suite past zich aan lokale salarisadministratie en compliance aan — wettelijke bijdragen, loonbeschermingsbestanden, regels voor einde dienstverband en taal. Waar u ook actief bent, uw gegevens draaien op servers die in uw regio worden gehost. Kies uw regio.'),
+        'The whole grid runs in your region — HR Suite for local payroll and compliance, Command Center for regional finance and tax, and Collection for local receivables — in your language and currency. Wherever you operate, your data runs on servers hosted in your region. Choose your region.': _t(
+            "Toute la grille fonctionne dans votre région — HR Suite pour la paie et la conformité locales, Command Center pour la finance et la fiscalité régionales, et Collection pour le recouvrement local — dans votre langue et votre devise. Où que vous opériez, vos données s'exécutent sur des serveurs hébergés dans votre région. Choisissez votre région.",
+            'Das gesamte Grid läuft in Ihrer Region — HR Suite für lokale Gehaltsabrechnung und Compliance, Command Center für regionale Finanzen und Steuern und Collection für lokalen Forderungseinzug — in Ihrer Sprache und Währung. Wo immer Sie tätig sind, laufen Ihre Daten auf Servern, die in Ihrer Region gehostet werden. Wählen Sie Ihre Region.',
+            'Toda la cuadrícula funciona en su región — HR Suite para la nómina y el cumplimiento locales, Command Center para las finanzas y los impuestos regionales, y Collection para el cobro local — en su idioma y moneda. Opere donde opere, sus datos se ejecutan en servidores alojados en su región. Elija su región.',
+            'Tutta la griglia funziona nella tua regione — HR Suite per buste paga e conformità locali, Command Center per finanza e fiscalità regionali e Collection per il recupero crediti locale — nella tua lingua e valuta. Ovunque operi, i tuoi dati vengono eseguiti su server ospitati nella tua regione. Scegli la tua regione.',
+            'Het hele grid draait in uw regio — HR Suite voor lokale salarisadministratie en compliance, Command Center voor regionale financiën en belasting, en Collection voor lokale debiteuren — in uw taal en valuta. Waar u ook actief bent, uw gegevens draaien op servers die in uw regio worden gehost. Kies uw regio.'),
         'Choose your region.': _t(
             'Choisissez votre région.',
             'Wählen Sie Ihre Region.',
@@ -163,50 +163,44 @@ PAGE['/regions/'] = {
             '¿No sabe si su región está cubierta?',
             'Non sai se la tua regione è coperta?',
             'Weet u niet zeker of uw regio wordt gedekt?'),
-        "Tell us where you operate and we'll show you how HR Suite fits.": _t(
-            "Dites-nous où vous opérez et nous vous montrerons comment HR Suite s'intègre.",
-            'Sagen Sie uns, wo Sie tätig sind, und wir zeigen Ihnen, wie HR Suite passt.',
-            'Díganos dónde opera y le mostraremos cómo encaja HR Suite.',
-            'Dicci dove operi e ti mostreremo come si integra HR Suite.',
-            'Vertel ons waar u actief bent en we laten u zien hoe HR Suite past.'),
     }),
 }
 
 
 PAGE['/regions/gcc/'] = {
     'src': 'regions/gcc/index.html',
-    't': _merge(_HOME, _EXPLORE, {'See HR Suite pricing': _SEE_PRICING['See HR Suite pricing']}, {
+    't': _merge(_HOME, {
         # ---- Meta ----
-        'HR Suite — HR &amp; payroll for GCC | FulcrumGrid': _t(
-            'HR Suite — RH &amp; paie pour le GCC | FulcrumGrid',
-            'HR Suite — HR &amp; Gehaltsabrechnung für den GCC | FulcrumGrid',
-            'HR Suite — RR. HH. &amp; nóminas para el GCC | FulcrumGrid',
-            'HR Suite — HR &amp; buste paga per il GCC | FulcrumGrid',
-            'HR Suite — HR &amp; salarisadministratie voor de GCC | FulcrumGrid'),
-        'HR Suite across the GCC — Saudi Arabia, UAE, Qatar, Kuwait, Bahrain and Oman — with WPS payroll, statutory end-of-service, social insurance and nationalization tracking per country.': _t(
-            'HR Suite dans tout le GCC — Arabie saoudite, EAU, Qatar, Koweït, Bahreïn et Oman — avec paie WPS, fin de service légale, assurance sociale et suivi de la nationalisation par pays.',
-            'HR Suite im gesamten GCC — Saudi-Arabien, VAE, Katar, Kuwait, Bahrain und Oman — mit WPS-Gehaltsabrechnung, gesetzlichem Dienstende, Sozialversicherung und Nachverfolgung der Nationalisierung pro Land.',
-            'HR Suite en todo el GCC — Arabia Saudí, EAU, Catar, Kuwait, Baréin y Omán — con nóminas WPS, fin de servicio obligatorio, seguro social y seguimiento de la nacionalización por país.',
-            'HR Suite in tutto il GCC — Arabia Saudita, EAU, Qatar, Kuwait, Bahrein e Oman — con buste paga WPS, fine servizio di legge, assicurazione sociale e monitoraggio della nazionalizzazione per Paese.',
-            'HR Suite in de hele GCC — Saoedi-Arabië, VAE, Qatar, Koeweit, Bahrein en Oman — met WPS-salarisadministratie, wettelijk einde dienstverband, sociale verzekering en tracking van nationalisatie per land.'),
+        'FulcrumGrid in GCC — every app, built for your region | FulcrumGrid': _t(
+            'FulcrumGrid dans le GCC — chaque application, conçue pour votre région | FulcrumGrid',
+            'FulcrumGrid im GCC — jede App, gebaut für Ihre Region | FulcrumGrid',
+            'FulcrumGrid en el GCC — cada app, diseñada para su región | FulcrumGrid',
+            'FulcrumGrid nel GCC — ogni app, costruita per la tua regione | FulcrumGrid',
+            'FulcrumGrid in de GCC — elke app, gebouwd voor uw regio | FulcrumGrid'),
+        'FulcrumGrid across the GCC — Command Center, Collection and HR Suite — with GCC-native finance, Tax and Zakat, WPS payroll, statutory end-of-service and Arabic, per country.': _t(
+            'FulcrumGrid dans tout le GCC — Command Center, Collection et HR Suite — avec une finance native du GCC, taxe et Zakat, paie WPS, fin de service légale et arabe, par pays.',
+            'FulcrumGrid im gesamten GCC — Command Center, Collection und HR Suite — mit GCC-nativer Finanzverwaltung, Steuer und Zakat, WPS-Gehaltsabrechnung, gesetzlichem Dienstende und Arabisch, pro Land.',
+            'FulcrumGrid en todo el GCC — Command Center, Collection y HR Suite — con finanzas nativas del GCC, impuesto y Zakat, nóminas WPS, fin de servicio obligatorio y árabe, por país.',
+            'FulcrumGrid in tutto il GCC — Command Center, Collection e HR Suite — con finanza nativa del GCC, imposta e Zakat, buste paga WPS, fine servizio di legge e arabo, per Paese.',
+            'FulcrumGrid in de hele GCC — Command Center, Collection en HR Suite — met GCC-native financiën, belasting en Zakat, WPS-salarisadministratie, wettelijk einde dienstverband en Arabisch, per land.'),
         # ---- Hero ----
         'Gulf Cooperation Council · GCC': _t(
             'Conseil de coopération du Golfe · GCC', 'Golf-Kooperationsrat · GCC',
             'Consejo de Cooperación del Golfo · GCC', 'Consiglio di cooperazione del Golfo · GCC',
             'Samenwerkingsraad van de Golf · GCC'),
         'KSA': _t('KSA', 'KSA', 'KSA', 'KSA', 'KSA'),
-        'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">the Gulf</em>': _t(
-            'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">le Golfe</em>',
-            'HR &amp; Gehaltsabrechnung, entwickelt für <em style="font-style:normal;color:var(--color-accent)">den Golf</em>',
-            'RR. HH. &amp; nóminas, diseñado para <em style="font-style:normal;color:var(--color-accent)">el Golfo</em>',
-            'HR &amp; buste paga, pensato per <em style="font-style:normal;color:var(--color-accent)">il Golfo</em>',
-            'HR &amp; salarisadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">de Golf</em>'),
-        "Six Gulf states, one platform — WPS payroll, statutory end-of-service by each country's labour law, social insurance, and nationalization tracking, with Arabic throughout. Pick a country for the detail.": _t(
-            "Six États du Golfe, une seule plateforme — paie WPS, fin de service légale selon le droit du travail de chaque pays, assurance sociale et suivi de la nationalisation, avec l'arabe partout. Choisissez un pays pour le détail.",
-            'Sechs Golfstaaten, eine Plattform — WPS-Gehaltsabrechnung, gesetzliches Dienstende nach dem Arbeitsrecht des jeweiligen Landes, Sozialversicherung und Nachverfolgung der Nationalisierung, durchgehend auf Arabisch. Wählen Sie ein Land für die Details.',
-            'Seis Estados del Golfo, una sola plataforma — nóminas WPS, fin de servicio obligatorio según la legislación laboral de cada país, seguro social y seguimiento de la nacionalización, con árabe en todo momento. Elija un país para ver el detalle.',
-            "Sei Stati del Golfo, una sola piattaforma — buste paga WPS, fine servizio di legge secondo il diritto del lavoro di ciascun Paese, assicurazione sociale e monitoraggio della nazionalizzazione, con l'arabo ovunque. Scegli un Paese per il dettaglio.",
-            'Zes Golfstaten, één platform — WPS-salarisadministratie, wettelijk einde dienstverband volgens het arbeidsrecht van elk land, sociale verzekering en tracking van nationalisatie, met Arabisch overal. Kies een land voor de details.'),
+        'FulcrumGrid, built for <em style="font-style:normal;color:var(--color-accent)">the Gulf</em>': _t(
+            'FulcrumGrid, conçu pour <em style="font-style:normal;color:var(--color-accent)">le Golfe</em>',
+            'FulcrumGrid, entwickelt für <em style="font-style:normal;color:var(--color-accent)">die Golfregion</em>',
+            'FulcrumGrid, diseñado para <em style="font-style:normal;color:var(--color-accent)">el Golfo</em>',
+            'FulcrumGrid, pensato per <em style="font-style:normal;color:var(--color-accent)">il Golfo</em>',
+            'FulcrumGrid, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">de Golfregio</em>'),
+        'The whole grid runs in the Gulf — Command Center with GCC-native finance, Tax and Zakat and multi-currency; Collection for local receivables; and HR Suite with WPS payroll, end-of-service and Arabic throughout. Pick a country for the detail.': _t(
+            "Toute la grille fonctionne dans le Golfe — Command Center avec une finance native du GCC, taxe et Zakat et multidevise ; Collection pour le recouvrement local ; et HR Suite avec paie WPS, fin de service et arabe partout. Choisissez un pays pour le détail.",
+            'Das gesamte Grid läuft am Golf — Command Center mit GCC-nativer Finanzverwaltung, Steuer und Zakat und Mehrwährung; Collection für lokalen Forderungseinzug; und HR Suite mit WPS-Gehaltsabrechnung, Dienstende und durchgehend Arabisch. Wählen Sie ein Land für die Details.',
+            'Toda la cuadrícula funciona en el Golfo — Command Center con finanzas nativas del GCC, impuesto y Zakat y multidivisa; Collection para el cobro local; y HR Suite con nóminas WPS, fin de servicio y árabe en todo momento. Elija un país para ver el detalle.',
+            "Tutta la griglia funziona nel Golfo — Command Center con finanza nativa del GCC, imposta e Zakat e multivaluta; Collection per il recupero crediti locale; e HR Suite con buste paga WPS, fine servizio e arabo ovunque. Scegli un Paese per il dettaglio.",
+            'Het hele grid draait in de Golf — Command Center met GCC-native financiën, belasting en Zakat en meerdere valuta; Collection voor lokale debiteuren; en HR Suite met WPS-salarisadministratie, einde dienstverband en Arabisch overal. Kies een land voor de details.'),
         # ---- Sub-head ----
         'Countries': _t('Pays', 'Länder', 'Países', 'Paesi', 'Landen'),
         'Countries in this region': _t('Pays de cette région', 'Länder in dieser Region', 'Países de esta región', 'Paesi di questa regione', 'Landen in deze regio'),
@@ -231,18 +225,12 @@ PAGE['/regions/gcc/'] = {
         'WPS · indemnity · SIO · Bahrainization': _t('WPS · indemnité · SIO · Bahrainization', 'WPS · Abfindung · SIO · Bahrainization', 'WPS · indemnización · SIO · Bahrainization', 'WPS · indennità · SIO · Bahrainization', 'WPS · ontslagvergoeding · SIO · Bahrainization'),
         'WPS · gratuity · social protection · Omanization': _t('WPS · indemnité · protection sociale · Omanization', 'WPS · Abfindung · Sozialschutz · Omanization', 'WPS · gratificación · protección social · Omanization', 'WPS · indennità · protezione sociale · Omanization', 'WPS · ontslagvergoeding · sociale bescherming · Omanization'),
         # ---- CTA ----
-        'Run Gulf HR &amp; payroll the right way': _t(
-            'Gérez la RH &amp; la paie du Golfe comme il se doit',
-            'Führen Sie HR &amp; Gehaltsabrechnung am Golf richtig durch',
-            'Gestione RR. HH. &amp; nóminas del Golfo como es debido',
-            'Gestisci HR &amp; buste paga del Golfo nel modo giusto',
-            'Voer HR &amp; salarisadministratie voor de Golf op de juiste manier uit'),
-        'See HR Suite handle Gulf payroll, WPS, and end-of-service for your team.': _t(
-            'Voyez HR Suite gérer la paie du Golfe, le WPS et la fin de service pour votre équipe.',
-            'Sehen Sie, wie HR Suite Golf-Gehaltsabrechnung, WPS und Dienstende für Ihr Team abwickelt.',
-            'Vea cómo HR Suite gestiona la nómina del Golfo, el WPS y el fin de servicio para su equipo.',
-            'Guarda HR Suite gestire buste paga del Golfo, WPS e fine servizio per il tuo team.',
-            'Zie hoe HR Suite de salarisadministratie van de Golf, WPS en einde dienstverband voor uw team afhandelt.'),
+        'Run your Gulf operation on one platform': _t(
+            'Gérez votre activité dans le Golfe sur une seule plateforme',
+            'Führen Sie Ihren Betrieb am Golf auf einer Plattform',
+            'Gestione su operación del Golfo en una sola plataforma',
+            "Gestisci la tua attività nel Golfo su un'unica piattaforma",
+            'Run uw activiteiten in de Golf op één platform'),
     }),
 }
 

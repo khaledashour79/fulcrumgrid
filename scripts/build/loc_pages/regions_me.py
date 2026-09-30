@@ -88,10 +88,19 @@ PRICE_NOTE_EN = ('Every module here is part of HR Suite — advanced payroll, ye
 
 
 def _common(t):
-    """Segments that appear (identically) on every page in the group."""
+    """Segments that appear (identically) on every country page in the group."""
     t['Built in'] = T_BUILT_IN
     t['Explore HR Suite'] = T_EXPLORE
     t['See HR Suite pricing'] = T_SEE_PRICING
+    t[PRICE_NOTE_EN] = T_PRICE_NOTE
+    return t
+
+
+def _group_common(t):
+    """Segments shared by the region-GROUP page, which leads the hero with the
+    all-apps buttons ("Explore the apps" / "See pricing", handled by COMMON) and
+    so does not carry the HR-Suite hero actions the country pages use."""
+    t['Built in'] = T_BUILT_IN
     t[PRICE_NOTE_EN] = T_PRICE_NOTE
     return t
 
@@ -598,33 +607,33 @@ PAGE['/regions/yemen/'] = {'src': 'regions/yemen/index.html', 't': _common({
 })}
 
 
-PAGE['/regions/middle-east/'] = {'src': 'regions/middle-east/index.html', 't': _common({
-    'HR Suite — HR &amp; payroll for Middle East | FulcrumGrid': _t(
-        'HR Suite — RH &amp; paie pour le Moyen-Orient | FulcrumGrid',
-        'HR Suite — HR &amp; Gehaltsabrechnung für den Nahen Osten | FulcrumGrid',
-        'HR Suite — RR. HH. &amp; nómina para Oriente Medio | FulcrumGrid',
-        'HR Suite — HR &amp; buste paga per il Medio Oriente | FulcrumGrid',
-        'HR Suite — HR &amp; loonadministratie voor het Midden-Oosten | FulcrumGrid'),
-    'HR Suite across the Middle East — Egypt, Jordan and the Levant — with configurable local payroll, rule-based end-of-service, multi-currency pay and Arabic-first HR.': _t(
-        "HR Suite dans tout le Moyen-Orient — Égypte, Jordanie et le Levant — avec paie locale configurable, fin de service basée sur des règles, paie multidevise et RH en arabe d'abord.",
-        'HR Suite im gesamten Nahen Osten — Ägypten, Jordanien und die Levante — mit konfigurierbarer lokaler Gehaltsabrechnung, regelbasiertem Dienstende, Mehrwährungs-Bezahlung und Arabisch-zuerst-HR.',
-        'HR Suite en todo Oriente Medio — Egipto, Jordania y el Levante — con nómina local configurable, fin de servicio basado en reglas, pago multidivisa y RR. HH. en árabe primero.',
-        'HR Suite in tutto il Medio Oriente — Egitto, Giordania e il Levante — con buste paga locali configurabili, fine servizio basata su regole, retribuzione multivaluta e HR in arabo prima di tutto.',
-        "HR Suite in het hele Midden-Oosten — Egypte, Jordanië en de Levant — met configureerbare lokale loonadministratie, op regels gebaseerd einde dienstverband, uitbetaling in meerdere valuta's en Arabisch-eerst-HR."),
+PAGE['/regions/middle-east/'] = {'src': 'regions/middle-east/index.html', 't': _group_common({
+    'FulcrumGrid in Middle East — every app, built for your region | FulcrumGrid': _t(
+        'FulcrumGrid au Moyen-Orient — chaque application, conçue pour votre région | FulcrumGrid',
+        'FulcrumGrid im Nahen Osten — jede App, gebaut für Ihre Region | FulcrumGrid',
+        'FulcrumGrid en Oriente Medio — cada app, diseñada para su región | FulcrumGrid',
+        'FulcrumGrid in Medio Oriente — ogni app, costruita per la tua regione | FulcrumGrid',
+        'FulcrumGrid in het Midden-Oosten — elke app, gebouwd voor uw regio | FulcrumGrid'),
+    'FulcrumGrid across the Middle East — Command Center, Collection and HR Suite — with Arabic-first finance, multi-currency, configurable local payroll and end-of-service.': _t(
+        "FulcrumGrid dans tout le Moyen-Orient — Command Center, Collection et HR Suite — avec une finance en arabe d'abord, le multidevise, une paie locale configurable et la fin de service.",
+        'FulcrumGrid im gesamten Nahen Osten — Command Center, Collection und HR Suite — mit Arabisch-zuerst-Finanzverwaltung, Mehrwährung, konfigurierbarer lokaler Gehaltsabrechnung und Dienstende.',
+        'FulcrumGrid en todo Oriente Medio — Command Center, Collection y HR Suite — con finanzas en árabe primero, multidivisa, nómina local configurable y fin de servicio.',
+        'FulcrumGrid in tutto il Medio Oriente — Command Center, Collection e HR Suite — con finanza in arabo prima di tutto, multivaluta, buste paga locali configurabili e fine servizio.',
+        "FulcrumGrid in het hele Midden-Oosten — Command Center, Collection en HR Suite — met Arabisch-eerst financiën, meerdere valuta's, configureerbare lokale loonadministratie en einde dienstverband."),
     'Middle East · MENA': _t('Moyen-Orient · MENA', 'Naher Osten · MENA', 'Oriente Medio · MENA',
         'Medio Oriente · MENA', 'Midden-Oosten · MENA'),
-    'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">the Middle East</em>': _t(
-        'RH &amp; paie, conçu pour <em style="font-style:normal;color:var(--color-accent)">le Moyen-Orient</em>',
-        'HR &amp; Gehaltsabrechnung, gebaut für <em style="font-style:normal;color:var(--color-accent)">den Nahen Osten</em>',
-        'RR. HH. &amp; nómina, creado para <em style="font-style:normal;color:var(--color-accent)">Oriente Medio</em>',
-        'HR &amp; buste paga, costruito per <em style="font-style:normal;color:var(--color-accent)">il Medio Oriente</em>',
-        'HR &amp; loonadministratie, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">het Midden-Oosten</em>'),
-    'Arabic-first HR and payroll across the wider Middle East — configurable local deductions and end-of-service, multi-currency pay, and full employee records. Deepest in the Gulf, ready beyond it.': _t(
-        "RH et paie en arabe d'abord dans tout le Moyen-Orient élargi — retenues locales et fin de service configurables, paie multidevise et dossiers complets des employés. Le plus abouti dans le Golfe, prêt au-delà.",
-        'Arabisch-zuerst-HR und -Gehaltsabrechnung im gesamten erweiterten Nahen Osten — konfigurierbare lokale Abzüge und Dienstende, Mehrwährungs-Bezahlung und vollständige Mitarbeiterakten. Am umfassendsten am Golf, bereit auch darüber hinaus.',
-        'RR. HH. y nómina en árabe primero en todo el Oriente Medio ampliado — deducciones locales y fin de servicio configurables, pago multidivisa y expedientes completos de empleados. Más completo en el Golfo, listo más allá.',
-        'HR e buste paga in arabo prima di tutto in tutto il Medio Oriente allargato — trattenute locali e fine servizio configurabili, retribuzione multivaluta e anagrafiche complete dei dipendenti. Più completo nel Golfo, pronto anche oltre.',
-        "Arabisch-eerst HR en loonadministratie in het hele bredere Midden-Oosten — configureerbare lokale inhoudingen en einde dienstverband, uitbetaling in meerdere valuta's en volledige personeelsdossiers. Het meest uitgebreid in de Golf, klaar voor daarbuiten."),
+    'FulcrumGrid, built for <em style="font-style:normal;color:var(--color-accent)">the Middle East</em>': _t(
+        'FulcrumGrid, conçu pour <em style="font-style:normal;color:var(--color-accent)">le Moyen-Orient</em>',
+        'FulcrumGrid, entwickelt für <em style="font-style:normal;color:var(--color-accent)">den Nahen Osten</em>',
+        'FulcrumGrid, diseñado para <em style="font-style:normal;color:var(--color-accent)">Oriente Medio</em>',
+        'FulcrumGrid, pensato per <em style="font-style:normal;color:var(--color-accent)">il Medio Oriente</em>',
+        'FulcrumGrid, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">het Midden-Oosten</em>'),
+    'The whole grid runs across the Middle East — Command Center with Arabic-first finance and multi-currency reporting; Collection for local receivables; and HR Suite with configurable local payroll and end-of-service. Deepest in the Gulf, ready beyond it.': _t(
+        "Toute la grille fonctionne dans tout le Moyen-Orient — Command Center avec une finance en arabe d'abord et un reporting multidevise ; Collection pour le recouvrement local ; et HR Suite avec une paie locale configurable et la fin de service. Le plus abouti dans le Golfe, prêt au-delà.",
+        'Das gesamte Grid läuft im gesamten Nahen Osten — Command Center mit Arabisch-zuerst-Finanzverwaltung und Mehrwährungs-Reporting; Collection für lokalen Forderungseinzug; und HR Suite mit konfigurierbarer lokaler Gehaltsabrechnung und Dienstende. Am umfassendsten am Golf, bereit auch darüber hinaus.',
+        'Toda la cuadrícula funciona en todo Oriente Medio — Command Center con finanzas en árabe primero e informes multidivisa; Collection para el cobro local; y HR Suite con nómina local configurable y fin de servicio. Más completo en el Golfo, listo más allá.',
+        'Tutta la griglia funziona in tutto il Medio Oriente — Command Center con finanza in arabo prima di tutto e reporting multivaluta; Collection per il recupero crediti locale; e HR Suite con buste paga locali configurabili e fine servizio. Più completo nel Golfo, pronto anche oltre.',
+        "Het hele grid draait in het hele Midden-Oosten — Command Center met Arabisch-eerst financiën en rapportage in meerdere valuta's; Collection voor lokale debiteuren; en HR Suite met configureerbare lokale loonadministratie en einde dienstverband. Het meest uitgebreid in de Golf, klaar voor daarbuiten."),
     'Middle East compliance, out of the box': _t(
         "Conformité Moyen-Orient, prête à l'emploi", 'Compliance im Nahen Osten, sofort einsatzbereit',
         'Cumplimiento en Oriente Medio, listo para usar', "Conformità Medio Oriente, pronta all'uso",
@@ -696,16 +705,10 @@ PAGE['/regions/middle-east/'] = {'src': 'regions/middle-east/index.html', 't': _
         '<strong>También funciona en toda la región:</strong> Marruecos · Túnez · Argelia · Libia · Sudán — con nómina local configurable, fin de servicio y pago multidivisa. <a href="/contact/">Pregunte por su mercado →</a>',
         '<strong>Funziona anche in tutta la regione:</strong> Marocco · Tunisia · Algeria · Libia · Sudan — con buste paga locali configurabili, fine servizio e retribuzione multivaluta. <a href="/contact/">Chiedi informazioni sul tuo mercato →</a>',
         "<strong>Werkt ook in de hele regio:</strong> Marokko · Tunesië · Algerije · Libië · Soedan — met configureerbare lokale loonadministratie, einde dienstverband en uitbetaling in meerdere valuta's. <a href=\"/contact/\">Vraag naar uw markt →</a>"),
-    'Run Middle East HR &amp; payroll the right way': _t(
-        'Gérez les RH &amp; la paie au Moyen-Orient comme il se doit',
-        'HR &amp; Gehaltsabrechnung im Nahen Osten richtig machen',
-        'Gestione las RR. HH. &amp; la nómina en Oriente Medio como es debido',
-        'Gestisci HR &amp; buste paga in Medio Oriente nel modo giusto',
-        'Regel HR &amp; loonadministratie in het Midden-Oosten zoals het hoort'),
-    "Tell us where you operate and we'll show you how HR Suite fits.": _t(
-        "Dites-nous où vous opérez et nous vous montrerons comment HR Suite s'intègre.",
-        'Sagen Sie uns, wo Sie tätig sind, und wir zeigen Ihnen, wie HR Suite passt.',
-        'Cuéntenos dónde opera y le mostraremos cómo encaja HR Suite.',
-        'Dicci dove operi e ti mostreremo come si integra HR Suite.',
-        'Vertel ons waar u actief bent en we laten zien hoe HR Suite past.'),
+    'Run your Middle East operation on one platform': _t(
+        'Gérez votre activité au Moyen-Orient sur une seule plateforme',
+        'Führen Sie Ihren Betrieb im Nahen Osten auf einer Plattform',
+        'Gestione su operación en Oriente Medio en una sola plataforma',
+        "Gestisci la tua attività in Medio Oriente su un'unica piattaforma",
+        'Run uw activiteiten in het Midden-Oosten op één platform'),
 })}

@@ -322,12 +322,12 @@ REGIONS = {
   'europe': {
     'en_name': 'Europe', 'ar_name': 'أوروبا',
     'tag_en': 'Europe · EU', 'tag_ar': 'أوروبا · EU',
-    'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Europe',
-    'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة لأوروبا',
-    'lead_en': "HR Suite runs your European workforce with SEPA payments, GDPR-grade data privacy, configurable local deductions, and full employee records — one platform across your entities.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في أوروبا مع مدفوعات SEPA، وخصوصية بيانات بمستوى GDPR، واستقطاعات محلية قابلة للتهيئة، وسجلّات موظفين كاملة — منصة واحدة عبر كياناتك.",
-    'desc_en': "HR Suite for Europe — SEPA credit-transfer pay files, GDPR data-subject rights (export and erasure), configurable local deductions, and full HR on one platform.",
-    'desc_ar': "منظومة الموارد البشرية لأوروبا — ملفات دفع SEPA، وحقوق أصحاب البيانات وفق GDPR (التصدير والمحو)، واستقطاعات محلية قابلة للتهيئة، وموارد بشرية كاملة على منصة واحدة.",
+    'h1_en': 'FulcrumGrid, built for', 'h1_grad_en': 'Europe',
+    'h1_ar': 'FulcrumGrid،', 'h1_grad_ar': 'مصمّمة لأوروبا',
+    'lead_en': "The whole grid runs across Europe — Command Center with multi-currency, VAT-ready finance; Collection with SEPA-friendly receivables; and HR Suite with SEPA payroll and GDPR-grade data privacy. One platform across your entities.",
+    'lead_ar': "الشبكة كاملة تعمل عبر أوروبا — Command Center بمالية متعددة العملات وجاهزة لضريبة القيمة المضافة؛ وCollection بتحصيل متوافق مع SEPA؛ وHR Suite برواتب SEPA وخصوصية بيانات بمستوى GDPR. منصة واحدة عبر كياناتك.",
+    'desc_en': "FulcrumGrid across Europe — Command Center, Collection and HR Suite — with multi-currency VAT-ready finance, SEPA payments and GDPR-grade data privacy.",
+    'desc_ar': "FulcrumGrid عبر أوروبا — Command Center وCollection وHR Suite — بمالية متعددة العملات جاهزة لضريبة القيمة المضافة، ومدفوعات SEPA، وخصوصية بيانات بمستوى GDPR.",
     'hub_sub_en': 'UK · Ireland · France · Germany · Spain · Italy · NL', 'hub_sub_ar': 'المملكة المتحدة · أيرلندا · فرنسا · ألمانيا · إسبانيا · إيطاليا · هولندا',
     'members': ['uk', 'ireland', 'france', 'germany', 'spain', 'italy', 'netherlands'],
     'served_en': 'Belgium · Portugal · Poland · Sweden · Denmark · Finland · Austria · Greece · and the rest of the EU / EEA',
@@ -349,34 +349,34 @@ REGIONS = {
        "Employee records, onboarding, time off and self-service — the whole lifecycle on one platform.",
        "سجلّات الموظفين والتأهيل والإجازات والخدمة الذاتية — دورة الحياة كاملة على منصة واحدة."),
     ],
-    'cta_h_en': 'Run European HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في أوروبا كما ينبغي',
-    'cta_p_en': "See HR Suite handle SEPA payments, GDPR, and payroll for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير مدفوعات SEPA و GDPR والرواتب لفريقك.",
+    'cta_h_en': 'Run your European operation on one platform', 'cta_h_ar': 'أدِر عملياتك الأوروبية على منصة واحدة',
+    'cta_p_en': "Tell us where you operate and we'll show you the whole grid in action.",
+    'cta_p_ar': "أخبرنا أين تعمل وسنعرض لك الشبكة كاملة وهي تعمل.",
   },
   'gcc': {
     'en_name': 'GCC', 'ar_name': 'دول الخليج',
     'tag_en': 'Gulf Cooperation Council · GCC', 'tag_ar': 'مجلس التعاون الخليجي · GCC',
-    'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'the Gulf',
-    'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للخليج',
-    'lead_en': "Six Gulf states, one platform — WPS payroll, statutory end-of-service by each country's labour law, social insurance, and nationalization tracking, with Arabic throughout. Pick a country for the detail.",
-    'lead_ar': "ست دول خليجية على منصة واحدة — رواتب WPS، ونهاية خدمة نظامية وفق قانون العمل في كل دولة، وتأمينات اجتماعية، ومتابعة التوطين، مع دعم العربية بالكامل. اختر دولة لعرض التفاصيل.",
-    'desc_en': "HR Suite across the GCC — Saudi Arabia, UAE, Qatar, Kuwait, Bahrain and Oman — with WPS payroll, statutory end-of-service, social insurance and nationalization tracking per country.",
-    'desc_ar': "منظومة الموارد البشرية عبر دول الخليج — السعودية والإمارات وقطر والكويت والبحرين وعُمان — مع رواتب WPS، ونهاية خدمة نظامية، وتأمينات، ومتابعة توطين لكل دولة.",
+    'h1_en': 'FulcrumGrid, built for', 'h1_grad_en': 'the Gulf',
+    'h1_ar': 'FulcrumGrid،', 'h1_grad_ar': 'مصمّمة للخليج',
+    'lead_en': "The whole grid runs in the Gulf — Command Center with GCC-native finance, Tax and Zakat and multi-currency; Collection for local receivables; and HR Suite with WPS payroll, end-of-service and Arabic throughout. Pick a country for the detail.",
+    'lead_ar': "الشبكة كاملة تعمل في الخليج — Command Center بمالية خليجية أصيلة والضريبة والزكاة وتعدّد العملات؛ وCollection للتحصيل المحلي؛ وHR Suite برواتب WPS ونهاية الخدمة ودعم العربية بالكامل. اختر دولة لعرض التفاصيل.",
+    'desc_en': "FulcrumGrid across the GCC — Command Center, Collection and HR Suite — with GCC-native finance, Tax and Zakat, WPS payroll, statutory end-of-service and Arabic, per country.",
+    'desc_ar': "FulcrumGrid عبر دول الخليج — Command Center وCollection وHR Suite — بمالية خليجية أصيلة والضريبة والزكاة ورواتب WPS ونهاية خدمة نظامية ودعم العربية، لكل دولة.",
     'hub_sub_en': 'Saudi · UAE · Qatar · Kuwait · Bahrain · Oman', 'hub_sub_ar': 'السعودية · الإمارات · قطر · الكويت · البحرين · عُمان',
     'members': ['saudi-arabia', 'uae', 'qatar', 'kuwait', 'bahrain', 'oman'],
-    'cta_h_en': 'Run Gulf HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في الخليج كما ينبغي',
-    'cta_p_en': "See HR Suite handle Gulf payroll, WPS, and end-of-service for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير رواتب الخليج و WPS ونهاية الخدمة لفريقك.",
+    'cta_h_en': 'Run your Gulf operation on one platform', 'cta_h_ar': 'أدِر عملياتك الخليجية على منصة واحدة',
+    'cta_p_en': "Tell us where you operate and we'll show you the whole grid in action.",
+    'cta_p_ar': "أخبرنا أين تعمل وسنعرض لك الشبكة كاملة وهي تعمل.",
   },
   'middle-east': {
     'en_name': 'Middle East', 'ar_name': 'الشرق الأوسط',
     'tag_en': 'Middle East · MENA', 'tag_ar': 'الشرق الأوسط · MENA',
-    'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'the Middle East',
-    'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للشرق الأوسط',
-    'lead_en': "Arabic-first HR and payroll across the wider Middle East — configurable local deductions and end-of-service, multi-currency pay, and full employee records. Deepest in the Gulf, ready beyond it.",
-    'lead_ar': "موارد بشرية ورواتب بالعربية أولًا عبر الشرق الأوسط الأوسع — استقطاعات محلية ونهاية خدمة قابلة للتهيئة، ودفع متعدّد العملات، وسجلّات موظفين كاملة. الأعمق في الخليج، وجاهزة لما بعده.",
-    'desc_en': "HR Suite across the Middle East — Egypt, Jordan and the Levant — with configurable local payroll, rule-based end-of-service, multi-currency pay and Arabic-first HR.",
-    'desc_ar': "منظومة الموارد البشرية عبر الشرق الأوسط — مصر والأردن وبلاد الشام — مع رواتب محلية قابلة للتهيئة، ونهاية خدمة قائمة على القواعد، ودفع متعدّد العملات، وموارد بشرية بالعربية أولًا.",
+    'h1_en': 'FulcrumGrid, built for', 'h1_grad_en': 'the Middle East',
+    'h1_ar': 'FulcrumGrid،', 'h1_grad_ar': 'مصمّمة للشرق الأوسط',
+    'lead_en': "The whole grid runs across the Middle East — Command Center with Arabic-first finance and multi-currency reporting; Collection for local receivables; and HR Suite with configurable local payroll and end-of-service. Deepest in the Gulf, ready beyond it.",
+    'lead_ar': "الشبكة كاملة تعمل عبر الشرق الأوسط — Command Center بمالية بالعربية أولًا وتقارير متعددة العملات؛ وCollection للتحصيل المحلي؛ وHR Suite برواتب محلية ونهاية خدمة قابلة للتهيئة. الأعمق في الخليج، وجاهزة لما بعده.",
+    'desc_en': "FulcrumGrid across the Middle East — Command Center, Collection and HR Suite — with Arabic-first finance, multi-currency, configurable local payroll and end-of-service.",
+    'desc_ar': "FulcrumGrid عبر الشرق الأوسط — Command Center وCollection وHR Suite — بمالية بالعربية أولًا وتعدّد العملات ورواتب محلية ونهاية خدمة قابلة للتهيئة.",
     'hub_sub_en': 'Egypt · Jordan · Lebanon · Iraq · Palestine · Syria · Yemen', 'hub_sub_ar': 'مصر · الأردن · لبنان · العراق · فلسطين · سوريا · اليمن',
     'members': ['egypt', 'jordan', 'lebanon', 'iraq', 'palestine', 'syria', 'yemen'],
     'served_en': 'Morocco · Tunisia · Algeria · Libya · Sudan',
@@ -395,9 +395,9 @@ REGIONS = {
        "Employee records, onboarding, time off and self-service — the whole lifecycle on one platform.",
        "سجلّات الموظفين والتأهيل والإجازات والخدمة الذاتية — دورة الحياة كاملة على منصة واحدة."),
     ],
-    'cta_h_en': 'Run Middle East HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في الشرق الأوسط كما ينبغي',
-    'cta_p_en': "Tell us where you operate and we'll show you how HR Suite fits.",
-    'cta_p_ar': "أخبرنا أين تعمل وسنعرض لك كيف تناسبك منظومة الموارد البشرية.",
+    'cta_h_en': 'Run your Middle East operation on one platform', 'cta_h_ar': 'أدِر عملياتك في الشرق الأوسط على منصة واحدة',
+    'cta_p_en': "Tell us where you operate and we'll show you the whole grid in action.",
+    'cta_p_ar': "أخبرنا أين تعمل وسنعرض لك الشبكة كاملة وهي تعمل.",
   },
   'egypt': {
     'en_name': 'Egypt', 'ar_name': 'مصر',
@@ -744,17 +744,17 @@ REGIONS = {
   'north-america': {
     'en_name': 'North America', 'ar_name': 'أمريكا الشمالية',
     'tag_en': 'North America · US &amp; Canada', 'tag_ar': 'أمريكا الشمالية · US و Canada',
-    'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'North America',
-    'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة لأمريكا الشمالية',
-    'lead_en': "HR Suite runs your North American workforce — configurable payroll, statutory leave and holidays, and overtime by federal, state and provincial rule, across the US and Canada. Pick a country for the detail.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في أمريكا الشمالية — رواتب قابلة للتهيئة، وإجازات وعطلات نظامية، وعمل إضافي وفق القواعد الفيدرالية والولائية والإقليمية، عبر الولايات المتحدة وكندا. اختر دولة لعرض التفاصيل.",
-    'desc_en': "HR Suite across North America — the United States and Canada — with configurable payroll, statutory leave and holidays, and federal/state/provincial overtime.",
-    'desc_ar': "منظومة الموارد البشرية عبر أمريكا الشمالية — الولايات المتحدة وكندا — مع رواتب قابلة للتهيئة، وإجازات وعطلات نظامية، وعمل إضافي فيدرالي وولائي وإقليمي.",
+    'h1_en': 'FulcrumGrid, built for', 'h1_grad_en': 'North America',
+    'h1_ar': 'FulcrumGrid،', 'h1_grad_ar': 'مصمّمة لأمريكا الشمالية',
+    'lead_en': "The whole grid runs across North America — Command Center with real-time finance and reporting in USD and CAD; Collection for receivables and reminders; and HR Suite with configurable payroll and federal, state and provincial rules. Pick a country for the detail.",
+    'lead_ar': "الشبكة كاملة تعمل عبر أمريكا الشمالية — Command Center بمالية وتقارير فورية بالدولار الأمريكي والكندي؛ وCollection للتحصيل والتذكيرات؛ وHR Suite برواتب قابلة للتهيئة وقواعد فيدرالية وولائية وإقليمية. اختر دولة لعرض التفاصيل.",
+    'desc_en': "FulcrumGrid across North America — Command Center, Collection and HR Suite — with real-time finance in USD and CAD, receivables, and configurable payroll by federal, state and provincial rule.",
+    'desc_ar': "FulcrumGrid عبر أمريكا الشمالية — Command Center وCollection وHR Suite — بمالية فورية بالدولار الأمريكي والكندي، وتحصيل، ورواتب قابلة للتهيئة وفق القواعد الفيدرالية والولائية والإقليمية.",
     'hub_sub_en': 'United States · Canada', 'hub_sub_ar': 'الولايات المتحدة · كندا',
     'members': ['usa', 'canada'],
-    'cta_h_en': 'Run North America HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في أمريكا الشمالية كما ينبغي',
-    'cta_p_en': "Tell us where you operate and we'll show you how HR Suite fits.",
-    'cta_p_ar': "أخبرنا أين تعمل وسنعرض لك كيف تناسبك منظومة الموارد البشرية.",
+    'cta_h_en': 'Run your North American operation on one platform', 'cta_h_ar': 'أدِر عملياتك في أمريكا الشمالية على منصة واحدة',
+    'cta_p_en': "Tell us where you operate and we'll show you the whole grid in action.",
+    'cta_p_ar': "أخبرنا أين تعمل وسنعرض لك الشبكة كاملة وهي تعمل.",
   },
   'syria': {
     'en_name': 'Syria', 'ar_name': 'سوريا',
@@ -821,6 +821,99 @@ REGION_ORDER = ['saudi-arabia', 'uae', 'qatar', 'kuwait', 'bahrain', 'oman', 'uk
 # The top-level regions shown on the /regions/ hub, in order.
 HUB_ORDER = ['north-america', 'europe', 'gcc', 'middle-east']
 
+# Reverse map: country slug -> its region group (for cross-app regional copy).
+COUNTRY_GROUP = {}
+for _g in HUB_ORDER:
+    for _m in REGIONS[_g].get('members', []):
+        COUNTRY_GROUP[_m] = _g
+DEFAULT_GROUP = 'europe'  # generic fallback for any country without a group
+
+# Per region group: how Command Center and Collection fit that region, as
+# (body_en, body_ar). Used on the region-group "grid in your region" section
+# and each country's "rest of the grid" section, so the outside view shows
+# every app working in every region while country pages stay HR-deep.
+GRID_APPS = {
+  'gcc': {
+    'cc': ("GCC-native finance — Tax and Zakat, VAT, and multi-currency reporting in SAR, AED and more, Arabic and right-to-left throughout.",
+           "مالية خليجية أصيلة — الضريبة والزكاة وضريبة القيمة المضافة وتقارير متعددة العملات بالريال والدرهم وغيرها، بالعربية ومن اليمين إلى اليسار بالكامل."),
+    'col': ("Chase receivables in your local currency with Arabic reminders and local payment terms.",
+            "تابِع التحصيل بعملتك المحلية مع تذكيرات بالعربية وشروط سداد محلية."),
+  },
+  'middle-east': {
+    'cc': ("Arabic-first finance with multi-currency reporting and local tax handling, real-time across your operation.",
+           "مالية بالعربية أولًا مع تقارير متعددة العملات ومعالجة الضرائب المحلية، فوريًا عبر عملياتك."),
+    'col': ("Chase receivables in local currency with Arabic reminders and local payment terms.",
+            "تابِع التحصيل بالعملة المحلية مع تذكيرات بالعربية وشروط سداد محلية."),
+  },
+  'europe': {
+    'cc': ("Multi-currency, VAT-ready finance and real-time dashboards in EUR, GBP and local currencies.",
+           "مالية متعددة العملات وجاهزة لضريبة القيمة المضافة ولوحات فورية باليورو والجنيه والعملات المحلية."),
+    'col': ("SEPA-friendly receivables with local payment terms and automated reminders.",
+            "تحصيل متوافق مع SEPA بشروط سداد محلية وتذكيرات آلية."),
+  },
+  'north-america': {
+    'cc': ("Real-time finance and reporting in USD and CAD, with live dashboards across your operation.",
+           "مالية وتقارير فورية بالدولار الأمريكي والكندي، بلوحات حيّة عبر عملياتك."),
+    'col': ("Track invoices and automate reminders with local payment terms.",
+            "تابِع الفواتير وأتمت التذكيرات بشروط سداد محلية."),
+  },
+}
+# Generic HR one-liner for the region-group "grid in your region" section
+# (country pages already lead with HR, so they don't repeat it).
+HR_GRID = ("Local payroll, statutory compliance and full HR — the deepest local coverage on the grid.",
+           "رواتب محلية وامتثال نظامي وموارد بشرية كاملة — أعمق تغطية محلية في الشبكة.")
+
+
+def app_cell(b, slug, name, body_en, body_ar, en):
+    """A .cell linking to an app's product page, used in the cross-app grids."""
+    body = body_en if en else body_ar
+    arrow = '→' if en else '←'
+    return (f'          <div class="cell"><h4><a href="{b}/products/{slug}/" '
+            f'style="text-decoration:none;color:inherit">{name} {arrow}</a></h4><p>{body}</p></div>')
+
+
+def grid_apps_section(d, slug, lang, n, is_group):
+    """Cross-app section: on a region-group page it shows all three apps ('the
+    grid, in your region'); on a country page it shows the two non-HR apps
+    ('the rest of the grid'), since the page already leads with HR."""
+    en = lang == 'en'
+    b = '' if en else '/ar'
+    grp = slug if is_group else COUNTRY_GROUP.get(slug, DEFAULT_GROUP)
+    ga = GRID_APPS.get(grp, GRID_APPS[DEFAULT_GROUP])
+    if is_group:
+        eye = ('%02d · The grid, in your region' % n) if en else 'الشبكة في منطقتك'
+        h2 = 'Every app, built for your region' if en else 'كل تطبيق، مصمّم لمنطقتك'
+        lead = ('Command Center, Collection and HR Suite all run here — in your language and currency.'
+                if en else 'يعمل هنا Command Center وCollection وHR Suite جميعًا — بلغتك وعملتك.')
+        cells = [
+            app_cell(b, 'command-center', 'Command Center', ga['cc'][0], ga['cc'][1], en),
+            app_cell(b, 'collection', 'Collection', ga['col'][0], ga['col'][1], en),
+            app_cell(b, 'hr-suite', 'HR Suite', HR_GRID[0], HR_GRID[1], en),
+        ]
+    else:
+        eye = ('%02d · The rest of the grid' % n) if en else 'بقية الشبكة'
+        h2 = 'The rest of the grid, here too' if en else 'بقية الشبكة، هنا أيضًا'
+        lead = ('HR Suite is only part of it — Command Center and Collection run in your market too, in your language and currency.'
+                if en else 'HR Suite جزء منها فقط — يعمل Command Center وCollection في سوقك أيضًا، بلغتك وعملتك.')
+        cells = [
+            app_cell(b, 'command-center', 'Command Center', ga['cc'][0], ga['cc'][1], en),
+            app_cell(b, 'collection', 'Collection', ga['col'][0], ga['col'][1], en),
+        ]
+    return f'''    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">{eye}</p>
+            <h2>{h2}</h2>
+          </div>
+          <p class="section-lead">{lead}</p>
+        </div>
+        <div class="grid-2">
+{chr(10).join(cells)}
+        </div>
+      </div>
+    </section>'''
+
 def head(lang, path, title, desc):
     # New fg2 ("industry" redesign) <head>, modelled on the homepage index.html:
     # CSP + GA, Barlow / Barlow Condensed fonts, /assets/css/fg2.css, icons and
@@ -828,15 +921,20 @@ def head(lang, path, title, desc):
     # https://fulcrumgrid.com<path>, and the full 7-language hreflang cluster
     # plus x-default. English only for now — Arabic emission is guarded off in
     # the write loop below, so `lang` currently only ever arrives as 'en'.
-    canon = 'https://fulcrumgrid.com%s' % path
+    en = lang == 'en'
+    pre = '' if en else '/ar'
+    canon = 'https://fulcrumgrid.com%s%s' % (pre, path)
     en_url = 'https://fulcrumgrid.com%s' % path
     og = 'https://fulcrumgrid.com/assets/og/og-hr-suite.png'
+    htmltag = '<html lang="en">' if en else '<html lang="ar" dir="rtl">'
+    oglocale = 'en_US' if en else 'ar_AR'
+    cairo = '' if en else '\n  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />'
     hreflang = '\n'.join(
-        '  <link rel="alternate" hreflang="%s" href="https://fulcrumgrid.com%s%s" />' % (code, pre, path)
-        for code, pre in (('en', ''), ('ar', '/ar'), ('fr', '/fr'), ('de', '/de'),
-                          ('es', '/es'), ('it', '/it'), ('nl', '/nl')))
+        '  <link rel="alternate" hreflang="%s" href="https://fulcrumgrid.com%s%s" />' % (code, p, path)
+        for code, p in (('en', ''), ('ar', '/ar'), ('fr', '/fr'), ('de', '/de'),
+                        ('es', '/es'), ('it', '/it'), ('nl', '/nl')))
     return f'''<!DOCTYPE html>
-<html lang="en">
+{htmltag}
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -853,7 +951,7 @@ def head(lang, path, title, desc):
   <meta property="og:description" content="{desc}" />
   <meta property="og:url" content="{canon}" />
   <meta property="og:site_name" content="FulcrumGrid" />
-  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale" content="{oglocale}" />
   <meta property="og:image" content="{og}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -874,52 +972,66 @@ def head(lang, path, title, desc):
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />{cairo}
   <link rel="stylesheet" href="/assets/css/fg2.css" />
 </head>'''
 
 def header(lang, path):
     # New fg2 header (site-head), modelled on index.html, with Regions active.
-    # English only for now (Arabic chrome deferred with Arabic emission).
-    return '''<body>
+    en = lang == 'en'
+    b = '' if en else '/ar'
+    brand_aria = 'FulcrumGrid home' if en else 'FulcrumGrid الصفحة الرئيسية'
+    nav_aria = 'Primary' if en else 'التنقّل الرئيسي'
+    nav_items = ([('/products/', 'Products'), ('/features/', 'Platform'), ('/pricing/', 'Pricing'),
+                  ('/regions/', 'Regions'), ('/blog/', 'Blog'), ('/contact/', 'Contact')] if en else
+                 [('/products/', 'المنتجات'), ('/features/', 'المنصّة'), ('/pricing/', 'الأسعار'),
+                  ('/regions/', 'المناطق'), ('/blog/', 'المدوّنة'), ('/contact/', 'اتصل بنا')])
+    nav = []
+    for href, label in nav_items:
+        act = ' class="active" aria-current="page"' if href == '/regions/' else ''
+        nav.append('        <a href="%s%s"%s>%s</a>' % (b, href, act, label))
+    nav = '\n'.join(nav)
+    langs = [('en', '/', 'English'), ('ar', '/ar/', 'العربية'), ('fr', '/fr/', 'Français'),
+             ('de', '/de/', 'Deutsch'), ('es', '/es/', 'Español'), ('it', '/it/', 'Italiano'),
+             ('nl', '/nl/', 'Nederlands')]
+    lang_links = []
+    for code, href, native in langs:
+        active = ' class="active"' if code == lang else ''
+        lang_links.append('            <a href="%s"%s hreflang="%s" lang="%s">%s</a>' % (href, active, code, code, native))
+    lang_links = '\n'.join(lang_links)
+    summary = ('Language', 'EN ▾') if en else ('اللغة', 'ع ▾')
+    demo = 'Request a demo' if en else 'اطلب عرضًا توضيحيًا'
+    menu_aria = 'Menu' if en else 'القائمة'
+    return f'''<body>
   <!-- ===== Header ===== -->
   <header class="site-head">
     <div class="wrap row">
-      <a class="brand" href="/" aria-label="FulcrumGrid home">
+      <a class="brand" href="{b}/" aria-label="{brand_aria}">
         <span class="brand-mark">F</span>
         <span class="brand-name">Fulcrum<b>Grid</b></span>
       </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="/products/">Products</a>
-        <a href="/features/">Platform</a>
-        <a href="/pricing/">Pricing</a>
-        <a href="/regions/" class="active" aria-current="page">Regions</a>
-        <a href="/blog/">Blog</a>
-        <a href="/contact/">Contact</a>
+      <nav class="site-nav" aria-label="{nav_aria}">
+{nav}
       </nav>
       <div class="head-cta">
         <details class="lang-dd">
-          <summary aria-label="Language">EN ▾</summary>
+          <summary aria-label="{summary[0]}">{summary[1]}</summary>
           <div class="lang-dd-menu">
-            <a href="/" class="active" hreflang="en" lang="en">English</a>
-            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
-            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
-            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
-            <a href="/es/" hreflang="es" lang="es">Español</a>
-            <a href="/it/" hreflang="it" lang="it">Italiano</a>
-            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+{lang_links}
           </div>
         </details>
-        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+        <a class="btn btn-primary btn-sm" href="{b}/contact/">{demo}</a>
       </div>
-      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+      <button class="nav-toggle" aria-label="{menu_aria}"><span>≡</span></button>
     </div>
   </header>'''
 
 def footer(lang):
     # New fg2 footer (site-foot), modelled on index.html. HR Suite listed first
-    # among the apps. English only for now (Arabic chrome deferred).
-    return '''  <!-- ===== Footer ===== -->
+    # among the apps.
+    en = lang == 'en'
+    if en:
+        return '''  <!-- ===== Footer ===== -->
   <footer class="site-foot">
     <div class="wrap">
       <div class="foot-grid">
@@ -963,6 +1075,50 @@ def footer(lang):
   <script src="/assets/js/consent.js" defer></script>
 </body>
 </html>'''
+    return '''  <!-- ===== Footer ===== -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>العمود الفقري التشغيلي للفرق الحديثة.</p>
+        </div>
+        <div class="foot-col">
+          <h5>المنتجات</h5>
+          <a href="/ar/products/">كل المنتجات</a>
+          <a href="/ar/products/hr-suite/">HR Suite</a>
+          <a href="/ar/products/command-center/">Command Center</a>
+          <a href="/ar/products/collection/">Collection</a>
+          <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
+        </div>
+        <div class="foot-col">
+          <h5>المنصّة</h5>
+          <a href="/ar/features/">الميزات</a>
+          <a href="/ar/integrations/">التكاملات</a>
+          <a href="/ar/how-it-works/">كيف تعمل</a>
+          <a href="/ar/pricing/">الأسعار</a>
+          <a href="/ar/regions/">المناطق</a>
+          <a href="/ar/blog/">المدوّنة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشركة</h5>
+          <a href="/ar/about/">من نحن</a>
+          <a href="/ar/faq/">الأسئلة الشائعة</a>
+          <a href="/ar/contact/">اتصل بنا</a>
+          <a href="/ar/privacy/">الخصوصية</a>
+          <a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>'''
 
 def region_code(slug):
     """Short code shown on a region/country card (KSA, UAE, NA, ...).
@@ -979,15 +1135,27 @@ def region_page(slug, lang):
     b = '' if en else '/ar'
     path = '/regions/%s/' % slug
     name = d['en_name'] if en else d['ar_name']
-    title = ('%s — HR &amp; payroll for %s | FulcrumGrid' % ('HR Suite', name)) if en else ('الموارد البشرية والرواتب في %s | FulcrumGrid' % name)
+    is_group = bool(d.get('members'))
+    if is_group:
+        title = ('FulcrumGrid in %s — every app, built for your region | FulcrumGrid' % name) if en else ('FulcrumGrid في %s — كل تطبيق، مصمّم لمنطقتك | FulcrumGrid' % name)
+    else:
+        title = ('%s — HR &amp; payroll for %s | FulcrumGrid' % ('HR Suite', name)) if en else ('الموارد البشرية والرواتب في %s | FulcrumGrid' % name)
     desc = d['desc_en'] if en else d['desc_ar']
     tag = d['tag_en'] if en else d['tag_ar']
     h1 = d['h1_en'] if en else d['h1_ar']
     h1g = d['h1_grad_en'] if en else d['h1_grad_ar']
     lead = d['lead_en'] if en else d['lead_ar']
     demo = 'Request a demo' if en else 'اطلب عرضًا توضيحيًا'
-    see_hr = 'Explore HR Suite' if en else 'استكشف الموارد البشرية'
-    see_price = 'See HR Suite pricing' if en else 'أسعار الموارد البشرية'
+    if is_group:
+        act2 = 'Explore the apps' if en else 'استكشف التطبيقات'
+        act2_href = f'{b}/products/'
+        act3 = 'See pricing' if en else 'شاهد الأسعار'
+        act3_href = f'{b}/pricing/'
+    else:
+        act2 = 'Explore HR Suite' if en else 'استكشف الموارد البشرية'
+        act2_href = f'{b}/products/hr-suite/'
+        act3 = 'See HR Suite pricing' if en else 'أسعار الموارد البشرية'
+        act3_href = f'{b}/pricing/hr-suite/'
     whatsin_h = ('%s compliance, out of the box' % name) if en else ('امتثال %s جاهز' % name)
     whatsin_p = ("The modules that make HR Suite work the way %s does — each part of the same platform, no separate tools." % name if en
                  else "الوحدات التي تجعل منظومة الموارد البشرية تعمل بالطريقة المحلية في %s — كلّها جزء من المنصة نفسها، دون أدوات منفصلة." % name)
@@ -1002,6 +1170,9 @@ def region_page(slug, lang):
     # group). Technical eyebrows are numbered monospace labels.
     sections = []
     n = 1
+    if is_group:
+        sections.append(grid_apps_section(d, slug, lang, n, True))
+        n += 1
     if d.get('features'):
         cells = []
         for te, ta, be, ba in d['features']:
@@ -1023,6 +1194,9 @@ def region_page(slug, lang):
         <p class="text-muted" style="margin-top:26px;max-width:74ch">{note}</p>
       </div>
     </section>''')
+    if not is_group:
+        sections.append(grid_apps_section(d, slug, lang, n, False))
+        n += 1
     if d.get('members'):
         mc = []
         for m in d['members']:
@@ -1072,8 +1246,8 @@ def region_page(slug, lang):
         <p class="hero-intro">{lead}</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="{b}/contact/">{demo}</a>
-          <a class="btn btn-secondary" href="{b}/products/hr-suite/">{see_hr}</a>
-          <a class="btn btn-secondary" href="{b}/pricing/hr-suite/">{see_price}</a>
+          <a class="btn btn-secondary" href="{act2_href}">{act2}</a>
+          <a class="btn btn-secondary" href="{act3_href}">{act3}</a>
         </div>
       </div>
     </section>
@@ -1098,16 +1272,16 @@ def hub_page(lang):
     en = lang == 'en'
     b = '' if en else '/ar'
     path = '/regions/'
-    title = ('Regions — HR &amp; payroll by country | FulcrumGrid' if en else 'المناطق — الموارد البشرية والرواتب حسب الدولة | FulcrumGrid')
-    desc = ("FulcrumGrid HR Suite adapts to local payroll and compliance — statutory contributions, wage-protection files, end-of-service, and language, by region."
-            if en else "تتكيّف منظومة الموارد البشرية من FulcrumGrid مع الرواتب والامتثال المحلي — الاشتراكات النظامية وملفات حماية الأجور ونهاية الخدمة واللغة، حسب المنطقة.")
+    title = ('Regions — every app, built for your region | FulcrumGrid' if en else 'المناطق — كل تطبيق، مصمّم لمنطقتك | FulcrumGrid')
+    desc = ("FulcrumGrid runs in your region — Command Center, Collection and HR Suite, adapted to local finance, payroll, compliance, currency and language."
+            if en else "يعمل FulcrumGrid في منطقتك — Command Center وCollection وHR Suite، متكيّفة مع المالية والرواتب والامتثال والعملة واللغة المحلية.")
     eye = 'Regions' if en else 'المناطق'
     h1 = 'Built for how your' if en else 'مصمّمة لطريقة'
     h1g = 'region runs' if en else 'عمل منطقتك'
-    lead = ("HR Suite adapts to local payroll and compliance — statutory contributions, wage-protection files, end-of-service rules, and language. Wherever you operate, your data runs on servers hosted in your region. Choose your region."
-            if en else "تتكيّف منظومة الموارد البشرية مع الرواتب والامتثال المحلي — الاشتراكات النظامية وملفات حماية الأجور وقواعد نهاية الخدمة واللغة. وأينما تعمل، تعمل بياناتك على خوادم مستضافة في منطقتك. اختر منطقتك.")
+    lead = ("The whole grid runs in your region — HR Suite for local payroll and compliance, Command Center for regional finance and tax, and Collection for local receivables — in your language and currency. Wherever you operate, your data runs on servers hosted in your region. Choose your region."
+            if en else "الشبكة كاملة تعمل في منطقتك — HR Suite للرواتب والامتثال المحلي، وCommand Center للمالية والضرائب الإقليمية، وCollection للتحصيل المحلي — بلغتك وعملتك. وأينما تعمل، تعمل بياناتك على خوادم مستضافة في منطقتك. اختر منطقتك.")
     demo = 'Request a demo' if en else 'اطلب عرضًا توضيحيًا'
-    see_hr = 'Explore HR Suite' if en else 'استكشف الموارد البشرية'
+    see_hr = 'Explore the apps' if en else 'استكشف التطبيقات'
     # Region cards — one .region card per top-level region (code + name + served
     # list), like the homepage "06 · Regions" grid, plus a "More markets" tile.
     cards_list = []
@@ -1125,7 +1299,7 @@ def hub_page(lang):
     reg_lead = 'Choose your region.' if en else 'اختر منطقتك.'
     cta_eye = '02 · Get started' if en else 'ابدأ الآن'
     cta_h = 'Not sure your region is covered?' if en else 'لست متأكدًا من تغطية منطقتك؟'
-    cta_p = "Tell us where you operate and we'll show you how HR Suite fits." if en else 'أخبرنا أين تعمل وسنعرض لك كيف تناسبك منظومة الموارد البشرية.'
+    cta_p = "Tell us where you operate and we'll show you the whole grid in action." if en else 'أخبرنا أين تعمل وسنعرض لك الشبكة كاملة وهي تعمل.'
     body = f'''{header(lang, path)}
 
   <main>
@@ -1136,7 +1310,7 @@ def hub_page(lang):
         <p class="hero-intro">{lead}</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="{b}/contact/">{demo}</a>
-          <a class="btn btn-secondary" href="{b}/products/hr-suite/">{see_hr}</a>
+          <a class="btn btn-secondary" href="{b}/products/">{see_hr}</a>
         </div>
       </div>
     </section>
@@ -1163,7 +1337,7 @@ def hub_page(lang):
         <p class="section-lead" style="margin:0 auto 26px">{cta_p}</p>
         <div class="actions">
           <a class="btn btn-primary" href="{b}/contact/">{demo}</a>
-          <a class="btn btn-secondary" href="{b}/products/hr-suite/">{see_hr}</a>
+          <a class="btn btn-secondary" href="{b}/products/">{see_hr}</a>
         </div>
       </div>
     </section>
@@ -1179,15 +1353,11 @@ def write(relpath, content):
     print('wrote', relpath)
 
 # ── Page emission ──────────────────────────────────────────────────────────
-# English pages use the new fg2 ("industry") design. Arabic emission is
-# intentionally GUARDED OFF for now — the /ar/regions/… pages are handled in a
-# later pass once the Arabic new-design chrome (head/header/footer) lands.
-# All Arabic DATA above (ar_name, lead_ar, feature[...][1|3], cta_*_ar, served_ar,
-# FOOTER_COLS_AR, NAV Arabic labels) is kept intact for that work — do NOT
-# remove it. To re-enable Arabic, add 'ar' back to LANGS below.
-# REGION_ORDER (the full set of generated pages) is unchanged, so the sitemap
-# (gen_sitemap via loc_catalog) still sees the same English page set.
-LANGS = ('en',)  # Arabic ('ar') deferred — see note above.
+# Both English and Arabic pages use the new fg2 ("industry") design. The
+# chrome (head/header/footer) and the region_page/hub_page bodies are fully
+# language-aware, so the /ar/regions/… tree is generated from the same
+# template and data as English (RTL, Cairo, Arabic nav/footer/switcher).
+LANGS = ('en', 'ar')
 
 for lang in LANGS:
     pref = '' if lang == 'en' else 'ar/'
