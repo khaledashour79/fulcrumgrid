@@ -74,30 +74,30 @@ PAGE = {
                 'Sincronice datos maestros, registre transacciones y extraiga saldos según un calendario — sin doble entrada.',
                 'Sincronizza i dati anagrafici, registra le transazioni ed estrai i saldi secondo una pianificazione — senza doppia immissione.',
                 'Synchroniseer stamgegevens, boek transacties en haal saldi op volgens een schema — zonder dubbele invoer.'),
-            'Sync customers, vendors, items and journals with SAP Business One. Available across HR Suite, Collection and Command Center.': _t(
-                'Synchronisez clients, fournisseurs, articles et écritures avec SAP Business One. Disponible dans HR Suite, Collection et Command Center.',
-                'Synchronisieren Sie Kunden, Lieferanten, Artikel und Buchungen mit SAP Business One. Verfügbar in HR Suite, Collection und Command Center.',
-                'Sincronice clientes, proveedores, artículos y asientos con SAP Business One. Disponible en HR Suite, Collection y Command Center.',
-                'Sincronizza clienti, fornitori, articoli e registrazioni con SAP Business One. Disponibile in HR Suite, Collection e Command Center.',
-                'Synchroniseer klanten, leveranciers, artikelen en boekingen met SAP Business One. Beschikbaar in HR Suite, Collection en Command Center.'),
-            'Two-way connector for Odoo — keep contacts, invoices and payments aligned between Odoo and the grid.': _t(
-                'Connecteur bidirectionnel pour Odoo — gardez contacts, factures et paiements alignés entre Odoo et la grille.',
-                'Bidirektionaler Konnektor für Odoo — halten Sie Kontakte, Rechnungen und Zahlungen zwischen Odoo und dem Grid im Einklang.',
-                'Conector bidireccional para Odoo — mantenga contactos, facturas y pagos alineados entre Odoo y la cuadrícula.',
-                'Connettore bidirezionale per Odoo — mantieni contatti, fatture e pagamenti allineati tra Odoo e la griglia.',
-                'Tweerichtingsconnector voor Odoo — houd contacten, facturen en betalingen op één lijn tussen Odoo en het grid.'),
-            'Connect Oracle financials to feed live balances and receivables into Command Center dashboards and alerts.': _t(
-                'Connectez Oracle Financials pour alimenter les tableaux de bord et alertes de Command Center en soldes et créances en direct.',
-                'Verbinden Sie Oracle Financials, um Live-Salden und Forderungen in Command-Center-Dashboards und -Warnungen einzuspeisen.',
-                'Conecte Oracle Financials para alimentar los paneles y alertas de Command Center con saldos y cobros en directo.',
-                'Collega Oracle Financials per alimentare dashboard e avvisi di Command Center con saldi e crediti in tempo reale.',
-                'Verbind Oracle Financials om live saldi en vorderingen in Command Center-dashboards en -meldingen te voeden.'),
-            'Link QuickBooks Online (QBO) to reconcile invoices and payments automatically — no more exporting spreadsheets.': _t(
-                'Reliez QuickBooks Online (QBO) pour rapprocher automatiquement factures et paiements — fini les exports de tableurs.',
-                'Verknüpfen Sie QuickBooks Online (QBO), um Rechnungen und Zahlungen automatisch abzustimmen — kein Export von Tabellen mehr.',
-                'Enlace QuickBooks Online (QBO) para conciliar facturas y pagos automáticamente — se acabó exportar hojas de cálculo.',
-                'Collega QuickBooks Online (QBO) per riconciliare fatture e pagamenti automaticamente — niente più esportazioni di fogli di calcolo.',
-                'Koppel QuickBooks Online (QBO) om facturen en betalingen automatisch af te letteren — geen spreadsheets meer exporteren.'),
+            'Two-way sync for business partners, items and journal entries — a change on either side lands on the other, with no re-keying. Available across HR Suite, Collection and Command Center.': _t(
+                "Synchronisation bidirectionnelle des partenaires, articles et écritures comptables — toute modification d'un côté se répercute de l'autre, sans ressaisie. Disponible dans HR Suite, Collection et Command Center.",
+                'Bidirektionale Synchronisation von Geschäftspartnern, Artikeln und Buchungen — eine Änderung auf einer Seite erscheint auf der anderen, ohne erneute Erfassung. Verfügbar in HR Suite, Collection und Command Center.',
+                'Sincronización bidireccional de socios de negocio, artículos y asientos — un cambio en un lado aparece en el otro, sin volver a teclear. Disponible en HR Suite, Collection y Command Center.',
+                "Sincronizzazione bidirezionale di partner commerciali, articoli e registrazioni contabili — una modifica da un lato compare dall'altro, senza reinserimento. Disponibile in HR Suite, Collection e Command Center.",
+                'Tweerichtingssynchronisatie van zakenpartners, artikelen en boekingen — een wijziging aan de ene kant verschijnt aan de andere, zonder opnieuw invoeren. Beschikbaar in HR Suite, Collection en Command Center.'),
+            'A two-way connector that keeps contacts, invoices and payments in step between Odoo and the grid, so collections and dashboards always read from the same numbers.': _t(
+                "Un connecteur bidirectionnel qui garde contacts, factures et paiements synchronisés entre Odoo et la grille, pour que le recouvrement et les tableaux de bord s'appuient toujours sur les mêmes chiffres.",
+                'Ein bidirektionaler Konnektor, der Kontakte, Rechnungen und Zahlungen zwischen Odoo und dem Grid im Gleichschritt hält, damit Inkasso und Dashboards stets dieselben Zahlen verwenden.',
+                'Un conector bidireccional que mantiene contactos, facturas y pagos sincronizados entre Odoo y la cuadrícula, para que cobros y paneles usen siempre las mismas cifras.',
+                'Un connettore bidirezionale che mantiene contatti, fatture e pagamenti allineati tra Odoo e la griglia, così recupero crediti e dashboard leggono sempre gli stessi numeri.',
+                'Een tweerichtingsconnector die contacten, facturen en betalingen gelijk houdt tussen Odoo en het grid, zodat incasso en dashboards altijd dezelfde cijfers gebruiken.'),
+            "Connect Oracle financials to stream live balances and receivables straight into Command Center — so leadership sees the real position, not last week's export.": _t(
+                "Connectez Oracle Financials pour diffuser soldes et créances en direct directement dans Command Center — afin que la direction voie la situation réelle, pas l'export de la semaine dernière.",
+                'Verbinden Sie Oracle Financials, um Live-Salden und Forderungen direkt in Command Center zu streamen — damit die Führung die tatsächliche Lage sieht, nicht den Export der letzten Woche.',
+                'Conecte Oracle Financials para transmitir saldos y cobros en directo directamente a Command Center — para que la dirección vea la situación real, no la exportación de la semana pasada.',
+                "Collega Oracle Financials per trasmettere saldi e crediti in tempo reale direttamente in Command Center — così la direzione vede la situazione reale, non l'esportazione della settimana scorsa.",
+                'Verbind Oracle Financials om live saldi en vorderingen rechtstreeks naar Command Center te streamen — zodat de leiding de werkelijke situatie ziet, niet de export van vorige week.'),
+            'Link QuickBooks Online (QBO) to match invoices to payments and reconcile automatically. Your books stay in QuickBooks; the export-and-reimport busywork disappears.': _t(
+                "Reliez QuickBooks Online (QBO) pour rapprocher factures et paiements et faire la réconciliation automatiquement. Votre comptabilité reste dans QuickBooks ; la corvée d'export et de réimport disparaît.",
+                'Verknüpfen Sie QuickBooks Online (QBO), um Rechnungen und Zahlungen zuzuordnen und automatisch abzustimmen. Ihre Buchhaltung bleibt in QuickBooks; die Mühe von Export und Reimport entfällt.',
+                'Enlace QuickBooks Online (QBO) para casar facturas con pagos y conciliar automáticamente. Su contabilidad permanece en QuickBooks; el trabajo de exportar y reimportar desaparece.',
+                'Collega QuickBooks Online (QBO) per abbinare fatture e pagamenti e riconciliare automaticamente. La tua contabilità resta in QuickBooks; il lavoro di esportazione e reimportazione sparisce.',
+                'Koppel QuickBooks Online (QBO) om facturen aan betalingen te matchen en automatisch af te letteren. Uw boekhouding blijft in QuickBooks; het export-en-herimport-werk verdwijnt.'),
             'Command Center includes one ERP connection on Growth, and unlimited connections with a scheduled pull on Enterprise.': _t(
                 'Command Center inclut une connexion ERP sur Growth, et des connexions illimitées avec récupération planifiée sur Enterprise.',
                 'Command Center enthält eine ERP-Verbindung bei Growth und unbegrenzte Verbindungen mit geplantem Abruf bei Enterprise.',
@@ -120,31 +120,31 @@ PAGE = {
                 'Todo lo que puede hacer en las apps, lo puede hacer a través de la API — con un sandbox para desarrollar con seguridad.',
                 "Tutto ciò che puoi fare nelle app puoi farlo tramite l'API — con una sandbox per sviluppare in sicurezza.",
                 'Alles wat u in de apps kunt doen, kunt u via de API doen — met een sandbox om veilig tegen te bouwen.'),
-            'A clean, documented REST API to read and write your data. Available on Collection Business and up.': _t(
-                'Une API REST claire et documentée pour lire et écrire vos données. Disponible sur Collection Société et plus.',
-                'Eine saubere, dokumentierte REST-API zum Lesen und Schreiben Ihrer Daten. Verfügbar ab Collection Unternehmen.',
-                'Una API REST clara y documentada para leer y escribir sus datos. Disponible en Collection Negocio y superior.',
-                'Un’API REST chiara e documentata per leggere e scrivere i tuoi dati. Disponibile su Collection Azienda e oltre.',
-                'Een heldere, gedocumenteerde REST-API om uw data te lezen en te schrijven. Beschikbaar op Collection Bedrijf en hoger.'),
-            'Subscribe to events and push updates into your own systems in real time — no polling required.': _t(
-                'Abonnez-vous aux événements et poussez les mises à jour dans vos propres systèmes en temps réel — sans interrogation.',
-                'Abonnieren Sie Ereignisse und übertragen Sie Updates in Echtzeit in Ihre eigenen Systeme — ohne Polling.',
-                'Suscríbase a eventos y envíe actualizaciones a sus propios sistemas en tiempo real — sin sondeo.',
-                'Iscriviti agli eventi e invia gli aggiornamenti ai tuoi sistemi in tempo reale — senza polling.',
-                'Abonneer u op events en push updates in realtime naar uw eigen systemen — geen polling nodig.'),
-            'A full sandbox environment to build and test integrations before you touch production data.': _t(
-                'Un environnement bac à sable complet pour créer et tester des intégrations avant de toucher aux données de production.',
-                'Eine vollständige Sandbox-Umgebung, um Integrationen zu erstellen und zu testen, bevor Sie Produktionsdaten anfassen.',
-                'Un entorno sandbox completo para crear y probar integraciones antes de tocar los datos de producción.',
-                'Un ambiente sandbox completo per creare e testare integrazioni prima di toccare i dati di produzione.',
-                'Een volledige sandbox-omgeving om integraties te bouwen en te testen voordat u productiedata aanraakt.'),
+            'A clean, versioned REST API with predictable JSON and token auth — read and write any record your team can reach in the app. Fully documented, available on Collection Business and up.': _t(
+                "Une API REST claire et versionnée, avec un JSON prévisible et une authentification par jeton — lisez et écrivez tout enregistrement accessible à votre équipe dans l'application. Entièrement documentée, disponible sur Collection Société et plus.",
+                'Eine saubere, versionierte REST-API mit vorhersehbarem JSON und Token-Authentifizierung — lesen und schreiben Sie jeden Datensatz, den Ihr Team in der App erreichen kann. Vollständig dokumentiert, verfügbar ab Collection Unternehmen.',
+                'Una API REST clara y versionada, con JSON predecible y autenticación por token — lea y escriba cualquier registro al que su equipo pueda acceder en la app. Totalmente documentada, disponible en Collection Negocio y superior.',
+                "Un’API REST chiara e versionata, con JSON prevedibile e autenticazione a token — leggi e scrivi qualsiasi record che il tuo team può raggiungere nell'app. Completamente documentata, disponibile su Collection Azienda e oltre.",
+                'Een heldere, geversioneerde REST-API met voorspelbare JSON en tokenauthenticatie — lees en schrijf elk record dat uw team in de app kan bereiken. Volledig gedocumenteerd, beschikbaar op Collection Bedrijf en hoger.'),
+            'Subscribe to the events that matter and FulcrumGrid pushes them to your endpoints the moment they happen — so your own systems react in real time, with no polling and no delay.': _t(
+                'Abonnez-vous aux événements qui comptent et FulcrumGrid les envoie à vos points de terminaison dès qu’ils surviennent — pour que vos propres systèmes réagissent en temps réel, sans interrogation ni délai.',
+                'Abonnieren Sie die relevanten Ereignisse, und FulcrumGrid sendet sie im selben Moment an Ihre Endpunkte — damit Ihre eigenen Systeme in Echtzeit reagieren, ohne Polling und ohne Verzögerung.',
+                'Suscríbase a los eventos que importan y FulcrumGrid los envía a sus endpoints en cuanto ocurren — para que sus sistemas reaccionen en tiempo real, sin sondeo ni retraso.',
+                'Iscriviti agli eventi che contano e FulcrumGrid li invia ai tuoi endpoint nel momento in cui accadono — così i tuoi sistemi reagiscono in tempo reale, senza polling e senza ritardi.',
+                'Abonneer u op de events die ertoe doen en FulcrumGrid pusht ze naar uw endpoints zodra ze gebeuren — zodat uw eigen systemen in realtime reageren, zonder polling en zonder vertraging.'),
+            'A full sandbox that mirrors production, with its own keys and test data — build and validate every integration safely before a single live record is touched.': _t(
+                'Un bac à sable complet qui reflète la production, avec ses propres clés et données de test — créez et validez chaque intégration en toute sécurité avant de toucher le moindre enregistrement réel.',
+                'Eine vollständige Sandbox als Abbild der Produktion, mit eigenen Schlüsseln und Testdaten — erstellen und prüfen Sie jede Integration sicher, bevor ein einziger Live-Datensatz berührt wird.',
+                'Un sandbox completo que refleja producción, con sus propias claves y datos de prueba — cree y valide cada integración con seguridad antes de tocar un solo registro real.',
+                'Una sandbox completa che rispecchia la produzione, con chiavi e dati di test propri — crea e valida ogni integrazione in sicurezza prima di toccare un solo record reale.',
+                'Een volledige sandbox die productie weerspiegelt, met eigen sleutels en testdata — bouw en valideer elke integratie veilig voordat één live record wordt aangeraakt.'),
             'Scheduled pull': _t('Récupération planifiée', 'Geplanter Abruf', 'Extracción programada', 'Estrazione pianificata', 'Geplande ophaling'),
-            'Let Command Center pull balances and records from your ERP on a schedule, so dashboards stay current on their own.': _t(
-                'Laissez Command Center récupérer soldes et données de votre ERP selon un calendrier, pour que les tableaux de bord restent à jour tout seuls.',
-                'Lassen Sie Command Center Salden und Daten aus Ihrem ERP nach Zeitplan abrufen, damit Dashboards von selbst aktuell bleiben.',
-                'Deje que Command Center extraiga saldos y registros de su ERP según un calendario, para que los paneles se mantengan al día solos.',
-                'Lascia che Command Center estragga saldi e dati dal tuo ERP secondo una pianificazione, così le dashboard restano aggiornate da sole.',
-                'Laat Command Center volgens een schema saldi en gegevens uit uw ERP ophalen, zodat dashboards vanzelf actueel blijven.'),
+            'Set a cadence and Command Center pulls balances and records from your ERP on its own — hourly, nightly, however you need — so dashboards stay current without anyone lifting a finger.': _t(
+                'Définissez une fréquence et Command Center récupère seul soldes et données de votre ERP — toutes les heures, chaque nuit, comme vous le souhaitez — pour que les tableaux de bord restent à jour sans lever le petit doigt.',
+                'Legen Sie einen Takt fest, und Command Center ruft Salden und Daten aus Ihrem ERP von selbst ab — stündlich, nächtlich, wie Sie es brauchen — damit Dashboards aktuell bleiben, ohne dass jemand eingreift.',
+                'Defina una cadencia y Command Center extrae por su cuenta saldos y registros de su ERP — cada hora, cada noche, como necesite — para que los paneles sigan al día sin que nadie mueva un dedo.',
+                'Imposta una cadenza e Command Center estrae da solo saldi e dati dal tuo ERP — ogni ora, ogni notte, come ti serve — così le dashboard restano aggiornate senza muovere un dito.',
+                'Stel een cadans in en Command Center haalt zelf saldi en gegevens uit uw ERP — elk uur, elke nacht, zoals u wilt — zodat dashboards actueel blijven zonder dat iemand iets hoeft te doen.'),
 
             # ---- 03 · Identity & access ----
             'Identity &amp; access': _t(
@@ -162,18 +162,18 @@ PAGE = {
                 'Traiga su propio proveedor de identidad y gestione a las personas como ya lo hace.',
                 'Porta il tuo provider di identità e gestisci le persone come già fai.',
                 'Neem uw eigen identiteitsprovider mee en beheer mensen zoals u dat al doet.'),
-            'Single sign-on so your team signs in with the identity provider you already use. Available on HR Suite Enterprise.': _t(
-                "Authentification unique pour que votre équipe se connecte avec le fournisseur d'identité que vous utilisez déjà. Disponible sur HR Suite Enterprise.",
-                'Single Sign-On, damit sich Ihr Team mit dem bereits genutzten Identitätsanbieter anmeldet. Verfügbar bei HR Suite Enterprise.',
-                'Inicio de sesión único para que su equipo entre con el proveedor de identidad que ya usa. Disponible en HR Suite Enterprise.',
-                "Single sign-on così il tuo team accede con il provider di identità che già usi. Disponibile su HR Suite Enterprise.",
-                'Eenmalige aanmelding zodat uw team inlogt met de identiteitsprovider die u al gebruikt. Beschikbaar op HR Suite Enterprise.'),
-            'Automated user provisioning and de-provisioning through SCIM — joiners and leavers stay in sync.': _t(
-                'Provisionnement et déprovisionnement automatisés des utilisateurs via SCIM — arrivées et départs restent synchronisés.',
-                'Automatisiertes Bereitstellen und Entziehen von Benutzern über SCIM — Zu- und Abgänge bleiben synchron.',
-                'Aprovisionamiento y desaprovisionamiento automatizado de usuarios mediante SCIM — altas y bajas se mantienen sincronizadas.',
-                'Provisioning e de-provisioning automatizzati degli utenti tramite SCIM — ingressi e uscite restano sincronizzati.',
-                'Geautomatiseerd gebruikers in- en uitfaseren via SCIM — instromers en vertrekkers blijven synchroon.'),
+            'Single sign-on through the identity provider you already run, so your team signs in once with credentials IT already controls — no extra passwords to manage. Available on HR Suite Enterprise.': _t(
+                "Authentification unique via le fournisseur d'identité que vous utilisez déjà : votre équipe se connecte une fois avec des identifiants que l'informatique gère déjà — aucun mot de passe supplémentaire à gérer. Disponible sur HR Suite Enterprise.",
+                'Single Sign-On über den bereits genutzten Identitätsanbieter: Ihr Team meldet sich einmal mit Zugangsdaten an, die die IT bereits verwaltet — keine zusätzlichen Passwörter. Verfügbar bei HR Suite Enterprise.',
+                'Inicio de sesión único mediante el proveedor de identidad que ya usa: su equipo entra una vez con credenciales que TI ya controla — sin contraseñas adicionales que gestionar. Disponible en HR Suite Enterprise.',
+                "Single sign-on tramite il provider di identità che già usi: il tuo team accede una volta con credenziali che l'IT già gestisce — nessuna password aggiuntiva. Disponibile su HR Suite Enterprise.",
+                'Eenmalige aanmelding via de identiteitsprovider die u al gebruikt: uw team logt één keer in met inloggegevens die IT al beheert — geen extra wachtwoorden. Beschikbaar op HR Suite Enterprise.'),
+            "Automated provisioning through SCIM — new hires get the right access the day they start, and leavers lose it the moment they're offboarded, straight from your directory.": _t(
+                'Provisionnement automatisé via SCIM — les nouvelles recrues obtiennent le bon accès dès leur premier jour, et les départs le perdent au moment de leur sortie, directement depuis votre annuaire.',
+                'Automatisierte Bereitstellung über SCIM — neue Mitarbeitende erhalten am ersten Tag die richtigen Zugriffe, Abgänge verlieren sie im Moment des Offboardings, direkt aus Ihrem Verzeichnis.',
+                'Aprovisionamiento automatizado mediante SCIM — las nuevas incorporaciones obtienen el acceso correcto el día que empiezan, y las bajas lo pierden en el momento de su salida, directamente desde su directorio.',
+                "Provisioning automatizzato tramite SCIM — i nuovi assunti ottengono l'accesso giusto il giorno in cui iniziano e chi esce lo perde nel momento dell'offboarding, direttamente dalla tua directory.",
+                'Geautomatiseerde provisioning via SCIM — nieuwe medewerkers krijgen de juiste toegang op hun eerste dag, en vertrekkers verliezen die op het moment van offboarding, rechtstreeks vanuit uw directory.'),
 
             # ---- CTA ----
             "Don't see your system?": _t(
