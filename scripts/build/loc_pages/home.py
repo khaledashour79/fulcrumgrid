@@ -153,24 +153,24 @@ PAGE = {
                 "Nella roadmap", "Op de roadmap"),
             # Coming-soon app name (product name, stays English across locales).
             "Close": _t("Close", "Close", "Close", "Close", "Close"),
-            '<span class="tag tag-outline">Inventory</span>': _t(
-                '<span class="tag tag-outline">Inventaire</span>',
-                '<span class="tag tag-outline">Lagerverwaltung</span>',
-                '<span class="tag tag-outline">Inventario</span>',
-                '<span class="tag tag-outline">Inventario</span>',
-                '<span class="tag tag-outline">Voorraad</span>'),
-            '<span class="tag tag-outline">Analytics</span>': _t(
-                '<span class="tag tag-outline">Analytique</span>',
-                '<span class="tag tag-outline">Analysen</span>',
-                '<span class="tag tag-outline">Analítica</span>',
-                '<span class="tag tag-outline">Analisi</span>',
-                '<span class="tag tag-outline">Analyse</span>'),
-            '<span class="tag tag-outline">Procurement</span>': _t(
-                '<span class="tag tag-outline">Achats</span>',
-                '<span class="tag tag-outline">Beschaffung</span>',
-                '<span class="tag tag-outline">Compras</span>',
-                '<span class="tag tag-outline">Approvvigionamento</span>',
-                '<span class="tag tag-outline">Inkoop</span>'),
+            '<span class="tag tag-outline">Agents</span>': _t(
+                '<span class="tag tag-outline">Agents</span>',
+                '<span class="tag tag-outline">Agenten</span>',
+                '<span class="tag tag-outline">Agentes</span>',
+                '<span class="tag tag-outline">Agenti</span>',
+                '<span class="tag tag-outline">Agents</span>'),
+            '<span class="tag tag-outline">Real Estate</span>': _t(
+                '<span class="tag tag-outline">Immobilier</span>',
+                '<span class="tag tag-outline">Immobilien</span>',
+                '<span class="tag tag-outline">Inmobiliaria</span>',
+                '<span class="tag tag-outline">Immobiliare</span>',
+                '<span class="tag tag-outline">Vastgoed</span>'),
+            '<span class="tag tag-outline">Workshop</span>': _t(
+                '<span class="tag tag-outline">Atelier</span>',
+                '<span class="tag tag-outline">Werkstatt</span>',
+                '<span class="tag tag-outline">Taller</span>',
+                '<span class="tag tag-outline">Officina</span>',
+                '<span class="tag tag-outline">Werkplaats</span>'),
 
             # ---- 02 · Explorer ----
             "02 · Inside each app": _t(
