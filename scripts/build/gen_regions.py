@@ -324,10 +324,10 @@ REGIONS = {
     'tag_en': 'Europe · EU', 'tag_ar': 'أوروبا · EU',
     'h1_en': 'FulcrumGrid, built for', 'h1_grad_en': 'Europe',
     'h1_ar': 'FulcrumGrid،', 'h1_grad_ar': 'مصمّمة لأوروبا',
-    'lead_en': "The whole grid runs across Europe — Command Center with multi-currency, VAT-ready finance; Collection with SEPA-friendly receivables; and HR Suite with SEPA payroll and GDPR-grade data privacy. One platform across your entities.",
-    'lead_ar': "الشبكة كاملة تعمل عبر أوروبا — Command Center بمالية متعددة العملات وجاهزة لضريبة القيمة المضافة؛ وCollection بتحصيل متوافق مع SEPA؛ وHR Suite برواتب SEPA وخصوصية بيانات بمستوى GDPR. منصة واحدة عبر كياناتك.",
-    'desc_en': "FulcrumGrid across Europe — Command Center, Collection and HR Suite — with multi-currency VAT-ready finance, SEPA payments and GDPR-grade data privacy.",
-    'desc_ar': "FulcrumGrid عبر أوروبا — Command Center وCollection وHR Suite — بمالية متعددة العملات جاهزة لضريبة القيمة المضافة، ومدفوعات SEPA، وخصوصية بيانات بمستوى GDPR.",
+    'lead_en': "The whole grid runs across Europe — HR Suite with SEPA payroll and GDPR-grade data privacy; Command Center with multi-currency, VAT-ready finance; and Collection with SEPA-friendly receivables. One platform across your entities.",
+    'lead_ar': "الشبكة كاملة تعمل عبر أوروبا — HR Suite برواتب SEPA وخصوصية بيانات بمستوى GDPR؛ وCommand Center بمالية متعددة العملات وجاهزة لضريبة القيمة المضافة؛ وCollection بتحصيل متوافق مع SEPA. منصة واحدة عبر كياناتك.",
+    'desc_en': "FulcrumGrid across Europe — HR Suite, Command Center and Collection — with SEPA payroll, GDPR-grade data privacy and multi-currency, VAT-ready finance.",
+    'desc_ar': "FulcrumGrid عبر أوروبا — HR Suite وCommand Center وCollection — برواتب SEPA وخصوصية بيانات بمستوى GDPR ومالية متعددة العملات جاهزة لضريبة القيمة المضافة.",
     'hub_sub_en': 'UK · Ireland · France · Germany · Spain · Italy · NL', 'hub_sub_ar': 'المملكة المتحدة · أيرلندا · فرنسا · ألمانيا · إسبانيا · إيطاليا · هولندا',
     'members': ['uk', 'ireland', 'france', 'germany', 'spain', 'italy', 'netherlands'],
     'served_en': 'Belgium · Portugal · Poland · Sweden · Denmark · Finland · Austria · Greece · and the rest of the EU / EEA',
@@ -358,10 +358,10 @@ REGIONS = {
     'tag_en': 'Gulf Cooperation Council · GCC', 'tag_ar': 'مجلس التعاون الخليجي · GCC',
     'h1_en': 'FulcrumGrid, built for', 'h1_grad_en': 'the Gulf',
     'h1_ar': 'FulcrumGrid،', 'h1_grad_ar': 'مصمّمة للخليج',
-    'lead_en': "The whole grid runs in the Gulf — Command Center with GCC-native finance, Tax and Zakat and multi-currency; Collection for local receivables; and HR Suite with WPS payroll, end-of-service and Arabic throughout. Pick a country for the detail.",
-    'lead_ar': "الشبكة كاملة تعمل في الخليج — Command Center بمالية خليجية أصيلة والضريبة والزكاة وتعدّد العملات؛ وCollection للتحصيل المحلي؛ وHR Suite برواتب WPS ونهاية الخدمة ودعم العربية بالكامل. اختر دولة لعرض التفاصيل.",
-    'desc_en': "FulcrumGrid across the GCC — Command Center, Collection and HR Suite — with GCC-native finance, Tax and Zakat, WPS payroll, statutory end-of-service and Arabic, per country.",
-    'desc_ar': "FulcrumGrid عبر دول الخليج — Command Center وCollection وHR Suite — بمالية خليجية أصيلة والضريبة والزكاة ورواتب WPS ونهاية خدمة نظامية ودعم العربية، لكل دولة.",
+    'lead_en': "The whole grid runs in the Gulf — HR Suite with WPS payroll, end-of-service and Arabic throughout; Command Center with GCC-native finance, Tax and Zakat and multi-currency; and Collection for local receivables. Pick a country for the detail.",
+    'lead_ar': "الشبكة كاملة تعمل في الخليج — HR Suite برواتب WPS ونهاية الخدمة ودعم العربية بالكامل؛ وCommand Center بمالية خليجية أصيلة والضريبة والزكاة وتعدّد العملات؛ وCollection للتحصيل المحلي. اختر دولة لعرض التفاصيل.",
+    'desc_en': "FulcrumGrid across the GCC — HR Suite, Command Center and Collection — with WPS payroll, statutory end-of-service and Arabic, plus GCC-native finance and Tax and Zakat, per country.",
+    'desc_ar': "FulcrumGrid عبر دول الخليج — HR Suite وCommand Center وCollection — برواتب WPS ونهاية خدمة نظامية ودعم العربية، ومالية خليجية أصيلة والضريبة والزكاة، لكل دولة.",
     'hub_sub_en': 'Saudi · UAE · Qatar · Kuwait · Bahrain · Oman', 'hub_sub_ar': 'السعودية · الإمارات · قطر · الكويت · البحرين · عُمان',
     'members': ['saudi-arabia', 'uae', 'qatar', 'kuwait', 'bahrain', 'oman'],
     'cta_h_en': 'Run your Gulf operation on one platform', 'cta_h_ar': 'أدِر عملياتك الخليجية على منصة واحدة',
@@ -373,10 +373,10 @@ REGIONS = {
     'tag_en': 'Middle East · MENA', 'tag_ar': 'الشرق الأوسط · MENA',
     'h1_en': 'FulcrumGrid, built for', 'h1_grad_en': 'the Middle East',
     'h1_ar': 'FulcrumGrid،', 'h1_grad_ar': 'مصمّمة للشرق الأوسط',
-    'lead_en': "The whole grid runs across the Middle East — Command Center with Arabic-first finance and multi-currency reporting; Collection for local receivables; and HR Suite with configurable local payroll and end-of-service. Deepest in the Gulf, ready beyond it.",
-    'lead_ar': "الشبكة كاملة تعمل عبر الشرق الأوسط — Command Center بمالية بالعربية أولًا وتقارير متعددة العملات؛ وCollection للتحصيل المحلي؛ وHR Suite برواتب محلية ونهاية خدمة قابلة للتهيئة. الأعمق في الخليج، وجاهزة لما بعده.",
-    'desc_en': "FulcrumGrid across the Middle East — Command Center, Collection and HR Suite — with Arabic-first finance, multi-currency, configurable local payroll and end-of-service.",
-    'desc_ar': "FulcrumGrid عبر الشرق الأوسط — Command Center وCollection وHR Suite — بمالية بالعربية أولًا وتعدّد العملات ورواتب محلية ونهاية خدمة قابلة للتهيئة.",
+    'lead_en': "The whole grid runs across the Middle East — HR Suite with configurable local payroll and end-of-service; Command Center with Arabic-first finance and multi-currency reporting; and Collection for local receivables. Deepest in the Gulf, ready beyond it.",
+    'lead_ar': "الشبكة كاملة تعمل عبر الشرق الأوسط — HR Suite برواتب محلية ونهاية خدمة قابلة للتهيئة؛ وCommand Center بمالية بالعربية أولًا وتقارير متعددة العملات؛ وCollection للتحصيل المحلي. الأعمق في الخليج، وجاهزة لما بعده.",
+    'desc_en': "FulcrumGrid across the Middle East — HR Suite, Command Center and Collection — with configurable local payroll and end-of-service, Arabic-first finance and multi-currency.",
+    'desc_ar': "FulcrumGrid عبر الشرق الأوسط — HR Suite وCommand Center وCollection — برواتب محلية ونهاية خدمة قابلة للتهيئة ومالية بالعربية أولًا وتعدّد العملات.",
     'hub_sub_en': 'Egypt · Jordan · Lebanon · Iraq · Palestine · Syria · Yemen', 'hub_sub_ar': 'مصر · الأردن · لبنان · العراق · فلسطين · سوريا · اليمن',
     'members': ['egypt', 'jordan', 'lebanon', 'iraq', 'palestine', 'syria', 'yemen'],
     'served_en': 'Morocco · Tunisia · Algeria · Libya · Sudan',
@@ -746,10 +746,10 @@ REGIONS = {
     'tag_en': 'North America · US &amp; Canada', 'tag_ar': 'أمريكا الشمالية · US و Canada',
     'h1_en': 'FulcrumGrid, built for', 'h1_grad_en': 'North America',
     'h1_ar': 'FulcrumGrid،', 'h1_grad_ar': 'مصمّمة لأمريكا الشمالية',
-    'lead_en': "The whole grid runs across North America — Command Center with real-time finance and reporting in USD and CAD; Collection for receivables and reminders; and HR Suite with configurable payroll and federal, state and provincial rules. Pick a country for the detail.",
-    'lead_ar': "الشبكة كاملة تعمل عبر أمريكا الشمالية — Command Center بمالية وتقارير فورية بالدولار الأمريكي والكندي؛ وCollection للتحصيل والتذكيرات؛ وHR Suite برواتب قابلة للتهيئة وقواعد فيدرالية وولائية وإقليمية. اختر دولة لعرض التفاصيل.",
-    'desc_en': "FulcrumGrid across North America — Command Center, Collection and HR Suite — with real-time finance in USD and CAD, receivables, and configurable payroll by federal, state and provincial rule.",
-    'desc_ar': "FulcrumGrid عبر أمريكا الشمالية — Command Center وCollection وHR Suite — بمالية فورية بالدولار الأمريكي والكندي، وتحصيل، ورواتب قابلة للتهيئة وفق القواعد الفيدرالية والولائية والإقليمية.",
+    'lead_en': "The whole grid runs across North America — HR Suite with configurable payroll and federal, state and provincial rules; Command Center with real-time finance and reporting in USD and CAD; and Collection for receivables and reminders. Pick a country for the detail.",
+    'lead_ar': "الشبكة كاملة تعمل عبر أمريكا الشمالية — HR Suite برواتب قابلة للتهيئة وقواعد فيدرالية وولائية وإقليمية؛ وCommand Center بمالية وتقارير فورية بالدولار الأمريكي والكندي؛ وCollection للتحصيل والتذكيرات. اختر دولة لعرض التفاصيل.",
+    'desc_en': "FulcrumGrid across North America — HR Suite, Command Center and Collection — with configurable payroll by federal, state and provincial rule, real-time finance in USD and CAD, and receivables.",
+    'desc_ar': "FulcrumGrid عبر أمريكا الشمالية — HR Suite وCommand Center وCollection — برواتب قابلة للتهيئة وفق القواعد الفيدرالية والولائية والإقليمية، ومالية فورية بالدولار الأمريكي والكندي، وتحصيل.",
     'hub_sub_en': 'United States · Canada', 'hub_sub_ar': 'الولايات المتحدة · كندا',
     'members': ['usa', 'canada'],
     'cta_h_en': 'Run your North American operation on one platform', 'cta_h_ar': 'أدِر عملياتك في أمريكا الشمالية على منصة واحدة',
@@ -883,12 +883,12 @@ def grid_apps_section(d, slug, lang, n, is_group):
     if is_group:
         eye = ('%02d · The grid, in your region' % n) if en else 'الشبكة في منطقتك'
         h2 = 'Every app, built for your region' if en else 'كل تطبيق، مصمّم لمنطقتك'
-        lead = ('Command Center, Collection and HR Suite all run here — in your language and currency.'
-                if en else 'يعمل هنا Command Center وCollection وHR Suite جميعًا — بلغتك وعملتك.')
+        lead = ('HR Suite, Command Center and Collection all run here — in your language and currency.'
+                if en else 'يعمل هنا HR Suite وCommand Center وCollection جميعًا — بلغتك وعملتك.')
         cells = [
+            app_cell(b, 'hr-suite', 'HR Suite', HR_GRID[0], HR_GRID[1], en),
             app_cell(b, 'command-center', 'Command Center', ga['cc'][0], ga['cc'][1], en),
             app_cell(b, 'collection', 'Collection', ga['col'][0], ga['col'][1], en),
-            app_cell(b, 'hr-suite', 'HR Suite', HR_GRID[0], HR_GRID[1], en),
         ]
     else:
         eye = ('%02d · The rest of the grid' % n) if en else 'بقية الشبكة'
@@ -1273,8 +1273,8 @@ def hub_page(lang):
     b = '' if en else '/ar'
     path = '/regions/'
     title = ('Regions — every app, built for your region | FulcrumGrid' if en else 'المناطق — كل تطبيق، مصمّم لمنطقتك | FulcrumGrid')
-    desc = ("FulcrumGrid runs in your region — Command Center, Collection and HR Suite, adapted to local finance, payroll, compliance, currency and language."
-            if en else "يعمل FulcrumGrid في منطقتك — Command Center وCollection وHR Suite، متكيّفة مع المالية والرواتب والامتثال والعملة واللغة المحلية.")
+    desc = ("FulcrumGrid runs in your region — HR Suite, Command Center and Collection, adapted to local payroll, compliance, finance, currency and language."
+            if en else "يعمل FulcrumGrid في منطقتك — HR Suite وCommand Center وCollection، متكيّفة مع الرواتب والامتثال والمالية والعملة واللغة المحلية.")
     eye = 'Regions' if en else 'المناطق'
     h1 = 'Built for how your' if en else 'مصمّمة لطريقة'
     h1g = 'region runs' if en else 'عمل منطقتك'

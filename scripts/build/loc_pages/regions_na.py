@@ -58,12 +58,12 @@ PAGE['/regions/north-america/'] = {'src': 'regions/north-america/index.html', 't
         'FulcrumGrid en Norteamérica — cada app, diseñada para su región | FulcrumGrid',
         'FulcrumGrid in Nord America — ogni app, costruita per la tua regione | FulcrumGrid',
         'FulcrumGrid in Noord-Amerika — elke app, gebouwd voor uw regio | FulcrumGrid'),
-    'FulcrumGrid across North America — Command Center, Collection and HR Suite — with real-time finance in USD and CAD, receivables, and configurable payroll by federal, state and provincial rule.': _t(
-        "FulcrumGrid dans toute l'Amérique du Nord — Command Center, Collection et HR Suite — avec une finance en temps réel en USD et CAD, le recouvrement, et une paie configurable selon les règles fédérales, des États et provinciales.",
-        'FulcrumGrid in ganz Nordamerika — Command Center, Collection und HR Suite — mit Echtzeit-Finanzverwaltung in USD und CAD, Forderungseinzug und konfigurierbarer Gehaltsabrechnung nach Bundes-, Bundesstaats- und Provinzregelung.',
-        'FulcrumGrid en toda América del Norte — Command Center, Collection y HR Suite — con finanzas en tiempo real en USD y CAD, cobros y nómina configurable según normas federales, estatales y provinciales.',
-        'FulcrumGrid in tutto il Nord America — Command Center, Collection e HR Suite — con finanza in tempo reale in USD e CAD, recupero crediti e buste paga configurabili secondo le norme federali, statali e provinciali.',
-        'FulcrumGrid in heel Noord-Amerika — Command Center, Collection en HR Suite — met realtime financiën in USD en CAD, debiteuren en configureerbare loonadministratie volgens federale, staats- en provinciale regels.'),
+    'FulcrumGrid across North America — HR Suite, Command Center and Collection — with configurable payroll by federal, state and provincial rule, real-time finance in USD and CAD, and receivables.': _t(
+        "FulcrumGrid dans toute l'Amérique du Nord — HR Suite, Command Center et Collection — avec une paie configurable selon les règles fédérales, des États et provinciales, une finance en temps réel en USD et CAD, et le recouvrement.",
+        'FulcrumGrid in ganz Nordamerika — HR Suite, Command Center und Collection — mit konfigurierbarer Gehaltsabrechnung nach Bundes-, Bundesstaats- und Provinzregelung, Echtzeit-Finanzverwaltung in USD und CAD und Forderungseinzug.',
+        'FulcrumGrid en toda América del Norte — HR Suite, Command Center y Collection — con nómina configurable según normas federales, estatales y provinciales, finanzas en tiempo real en USD y CAD y cobros.',
+        'FulcrumGrid in tutto il Nord America — HR Suite, Command Center e Collection — con buste paga configurabili secondo le norme federali, statali e provinciali, finanza in tempo reale in USD e CAD e recupero crediti.',
+        'FulcrumGrid in heel Noord-Amerika — HR Suite, Command Center en Collection — met configureerbare loonadministratie volgens federale, staats- en provinciale regels, realtime financiën in USD en CAD en debiteuren.'),
     'North America · US &amp; Canada': _t(
         'Amérique du Nord · États-Unis &amp; Canada', 'Nordamerika · USA &amp; Kanada',
         'América del Norte · EE. UU. &amp; Canadá', 'Nord America · USA &amp; Canada',
@@ -74,12 +74,12 @@ PAGE['/regions/north-america/'] = {'src': 'regions/north-america/index.html', 't
         'FulcrumGrid, diseñado para <em style="font-style:normal;color:var(--color-accent)">Norteamérica</em>',
         'FulcrumGrid, pensato per <em style="font-style:normal;color:var(--color-accent)">il Nord America</em>',
         'FulcrumGrid, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Noord-Amerika</em>'),
-    'The whole grid runs across North America — Command Center with real-time finance and reporting in USD and CAD; Collection for receivables and reminders; and HR Suite with configurable payroll and federal, state and provincial rules. Pick a country for the detail.': _t(
-        'Toute la grille fonctionne dans toute l\'Amérique du Nord — Command Center avec une finance et un reporting en temps réel en USD et CAD ; Collection pour le recouvrement et les relances ; et HR Suite avec une paie configurable et des règles fédérales, des États et provinciales. Choisissez un pays pour le détail.',
-        'Das gesamte Grid läuft in ganz Nordamerika — Command Center mit Echtzeit-Finanzverwaltung und -Reporting in USD und CAD; Collection für Forderungseinzug und Mahnungen; und HR Suite mit konfigurierbarer Gehaltsabrechnung sowie Bundes-, Bundesstaats- und Provinzregeln. Wählen Sie ein Land für die Details.',
-        'Toda la cuadrícula funciona en toda América del Norte — Command Center con finanzas e informes en tiempo real en USD y CAD; Collection para cobros y recordatorios; y HR Suite con nómina configurable y normas federales, estatales y provinciales. Elija un país para ver el detalle.',
-        'Tutta la griglia funziona in tutto il Nord America — Command Center con finanza e reporting in tempo reale in USD e CAD; Collection per il recupero crediti e i solleciti; e HR Suite con buste paga configurabili e norme federali, statali e provinciali. Scegli un paese per il dettaglio.',
-        'Het hele grid draait in heel Noord-Amerika — Command Center met realtime financiën en rapportage in USD en CAD; Collection voor debiteuren en herinneringen; en HR Suite met configureerbare loonadministratie en federale, staats- en provinciale regels. Kies een land voor de details.'),
+    'The whole grid runs across North America — HR Suite with configurable payroll and federal, state and provincial rules; Command Center with real-time finance and reporting in USD and CAD; and Collection for receivables and reminders. Pick a country for the detail.': _t(
+        'Toute la grille fonctionne dans toute l\'Amérique du Nord — HR Suite avec une paie configurable et des règles fédérales, des États et provinciales ; Command Center avec une finance et un reporting en temps réel en USD et CAD ; et Collection pour le recouvrement et les relances. Choisissez un pays pour le détail.',
+        'Das gesamte Grid läuft in ganz Nordamerika — HR Suite mit konfigurierbarer Gehaltsabrechnung sowie Bundes-, Bundesstaats- und Provinzregeln; Command Center mit Echtzeit-Finanzverwaltung und -Reporting in USD und CAD; und Collection für Forderungseinzug und Mahnungen. Wählen Sie ein Land für die Details.',
+        'Toda la cuadrícula funciona en toda América del Norte — HR Suite con nómina configurable y normas federales, estatales y provinciales; Command Center con finanzas e informes en tiempo real en USD y CAD; y Collection para cobros y recordatorios. Elija un país para ver el detalle.',
+        'Tutta la griglia funziona in tutto il Nord America — HR Suite con buste paga configurabili e norme federali, statali e provinciali; Command Center con finanza e reporting in tempo reale in USD e CAD; e Collection per il recupero crediti e i solleciti. Scegli un paese per il dettaglio.',
+        'Het hele grid draait in heel Noord-Amerika — HR Suite met configureerbare loonadministratie en federale, staats- en provinciale regels; Command Center met realtime financiën en rapportage in USD en CAD; en Collection voor debiteuren en herinneringen. Kies een land voor de details.'),
     'Countries': _t('Pays', 'Länder', 'Países', 'Paesi', 'Landen'),
     'Countries in this region': _t('Pays de cette région', 'Länder in dieser Region',
         'Países de esta región', 'Paesi di questa regione', 'Landen in deze regio'),

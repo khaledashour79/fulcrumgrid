@@ -24,12 +24,12 @@ PAGE['/regions/europe/'] = {
             'FulcrumGrid en Europa — cada app, diseñada para su región | FulcrumGrid',
             'FulcrumGrid in Europa — ogni app, costruita per la tua regione | FulcrumGrid',
             'FulcrumGrid in Europa — elke app, gebouwd voor uw regio | FulcrumGrid'),
-        'FulcrumGrid across Europe — Command Center, Collection and HR Suite — with multi-currency VAT-ready finance, SEPA payments and GDPR-grade data privacy.': _t(
-            "FulcrumGrid dans toute l'Europe — Command Center, Collection et HR Suite — avec une finance multidevise prête pour la TVA, des paiements SEPA et une confidentialité des données au niveau du GDPR.",
-            'FulcrumGrid in ganz Europa — Command Center, Collection und HR Suite — mit MwSt.-fähiger Mehrwährungs-Finanzverwaltung, SEPA-Zahlungen und Datenschutz auf GDPR-Niveau.',
-            'FulcrumGrid en toda Europa — Command Center, Collection y HR Suite — con finanzas multidivisa preparadas para el IVA, pagos SEPA y privacidad de datos a nivel del GDPR.',
-            "FulcrumGrid in tutta Europa — Command Center, Collection e HR Suite — con finanza multivaluta pronta per l'IVA, pagamenti SEPA e privacy dei dati a livello GDPR.",
-            'FulcrumGrid in heel Europa — Command Center, Collection en HR Suite — met multivaluta, btw-klare financiën, SEPA-betalingen en gegevensprivacy op GDPR-niveau.'),
+        'FulcrumGrid across Europe — HR Suite, Command Center and Collection — with SEPA payroll, GDPR-grade data privacy and multi-currency, VAT-ready finance.': _t(
+            "FulcrumGrid dans toute l'Europe — HR Suite, Command Center et Collection — avec une paie SEPA, une confidentialité des données au niveau du GDPR et une finance multidevise prête pour la TVA.",
+            'FulcrumGrid in ganz Europa — HR Suite, Command Center und Collection — mit SEPA-Gehaltsabrechnung, Datenschutz auf GDPR-Niveau und MwSt.-fähiger Mehrwährungs-Finanzverwaltung.',
+            'FulcrumGrid en toda Europa — HR Suite, Command Center y Collection — con nóminas SEPA, privacidad de datos a nivel del GDPR y finanzas multidivisa preparadas para el IVA.',
+            "FulcrumGrid in tutta Europa — HR Suite, Command Center e Collection — con buste paga SEPA, privacy dei dati a livello GDPR e finanza multivaluta pronta per l'IVA.",
+            'FulcrumGrid in heel Europa — HR Suite, Command Center en Collection — met SEPA-salarisadministratie, gegevensprivacy op GDPR-niveau en multivaluta, btw-klare financiën.'),
         # ---- Hero ----
         'Europe · EU': _t('Europe · UE', 'Europa · EU', 'Europa · UE', 'Europa · UE', 'Europa · EU'),
         'FulcrumGrid, built for <em style="font-style:normal;color:var(--color-accent)">Europe</em>': _t(
@@ -38,12 +38,12 @@ PAGE['/regions/europe/'] = {
             'FulcrumGrid, diseñado para <em style="font-style:normal;color:var(--color-accent)">Europa</em>',
             'FulcrumGrid, pensato per <em style="font-style:normal;color:var(--color-accent)">l\'Europa</em>',
             'FulcrumGrid, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Europa</em>'),
-        'The whole grid runs across Europe — Command Center with multi-currency, VAT-ready finance; Collection with SEPA-friendly receivables; and HR Suite with SEPA payroll and GDPR-grade data privacy. One platform across your entities.': _t(
-            "Toute la grille fonctionne dans toute l'Europe — Command Center avec une finance multidevise prête pour la TVA ; Collection avec un recouvrement compatible SEPA ; et HR Suite avec une paie SEPA et une confidentialité des données au niveau du GDPR. Une seule plateforme pour toutes vos entités.",
-            'Das gesamte Grid läuft in ganz Europa — Command Center mit MwSt.-fähiger Mehrwährungs-Finanzverwaltung; Collection mit SEPA-freundlichem Forderungseinzug; und HR Suite mit SEPA-Gehaltsabrechnung und Datenschutz auf GDPR-Niveau. Eine Plattform über alle Ihre Gesellschaften hinweg.',
-            'Toda la cuadrícula funciona en toda Europa — Command Center con finanzas multidivisa preparadas para el IVA; Collection con cobros compatibles con SEPA; y HR Suite con nóminas SEPA y privacidad de datos a nivel del GDPR. Una sola plataforma para todas sus entidades.',
-            "Tutta la griglia funziona in tutta Europa — Command Center con finanza multivaluta pronta per l'IVA; Collection con recupero crediti compatibile con SEPA; e HR Suite con buste paga SEPA e privacy dei dati a livello GDPR. Un'unica piattaforma per tutte le tue entità.",
-            "Het hele grid draait in heel Europa — Command Center met multivaluta, btw-klare financiën; Collection met SEPA-vriendelijke debiteuren; en HR Suite met SEPA-salarisadministratie en gegevensprivacy op GDPR-niveau. Eén platform voor al uw entiteiten."),
+        'The whole grid runs across Europe — HR Suite with SEPA payroll and GDPR-grade data privacy; Command Center with multi-currency, VAT-ready finance; and Collection with SEPA-friendly receivables. One platform across your entities.': _t(
+            "Toute la grille fonctionne dans toute l'Europe — HR Suite avec une paie SEPA et une confidentialité des données au niveau du GDPR ; Command Center avec une finance multidevise prête pour la TVA ; et Collection avec un recouvrement compatible SEPA. Une seule plateforme pour toutes vos entités.",
+            'Das gesamte Grid läuft in ganz Europa — HR Suite mit SEPA-Gehaltsabrechnung und Datenschutz auf GDPR-Niveau; Command Center mit MwSt.-fähiger Mehrwährungs-Finanzverwaltung; und Collection mit SEPA-freundlichem Forderungseinzug. Eine Plattform über alle Ihre Gesellschaften hinweg.',
+            'Toda la cuadrícula funciona en toda Europa — HR Suite con nóminas SEPA y privacidad de datos a nivel del GDPR; Command Center con finanzas multidivisa preparadas para el IVA; y Collection con cobros compatibles con SEPA. Una sola plataforma para todas sus entidades.',
+            "Tutta la griglia funziona in tutta Europa — HR Suite con buste paga SEPA e privacy dei dati a livello GDPR; Command Center con finanza multivaluta pronta per l'IVA; e Collection con recupero crediti compatibile con SEPA. Un'unica piattaforma per tutte le tue entità.",
+            "Het hele grid draait in heel Europa — HR Suite met SEPA-salarisadministratie en gegevensprivacy op GDPR-niveau; Command Center met multivaluta, btw-klare financiën; en Collection met SEPA-vriendelijke debiteuren. Eén platform voor al uw entiteiten."),
         # ---- Built-in section ----
         'Built in': _t('Intégré', 'Integriert', 'Integrado', 'Integrato', 'Ingebouwd'),
         'Europe compliance, out of the box': _t(

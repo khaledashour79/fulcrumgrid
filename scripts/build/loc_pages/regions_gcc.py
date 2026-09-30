@@ -105,12 +105,12 @@ PAGE['/regions/'] = {
             ' — cada app, diseñada para su región | FulcrumGrid',
             ' — ogni app, costruita per la tua regione | FulcrumGrid',
             ' — elke app, gebouwd voor uw regio | FulcrumGrid'),
-        'FulcrumGrid runs in your region — Command Center, Collection and HR Suite, adapted to local finance, payroll, compliance, currency and language.': _t(
-            'FulcrumGrid fonctionne dans votre région — Command Center, Collection et HR Suite, adaptés à la finance, la paie, la conformité, la devise et la langue locales.',
-            'FulcrumGrid läuft in Ihrer Region — Command Center, Collection und HR Suite, angepasst an lokale Finanzen, Gehaltsabrechnung, Compliance, Währung und Sprache.',
-            'FulcrumGrid funciona en su región — Command Center, Collection y HR Suite, adaptados a las finanzas, la nómina, el cumplimiento, la moneda y el idioma locales.',
-            'FulcrumGrid funziona nella tua regione — Command Center, Collection e HR Suite, adattati a finanza, buste paga, conformità, valuta e lingua locali.',
-            'FulcrumGrid draait in uw regio — Command Center, Collection en HR Suite, aangepast aan lokale financiën, salarisadministratie, compliance, valuta en taal.'),
+        'FulcrumGrid runs in your region — HR Suite, Command Center and Collection, adapted to local payroll, compliance, finance, currency and language.': _t(
+            'FulcrumGrid fonctionne dans votre région — HR Suite, Command Center et Collection, adaptés à la paie, la conformité, la finance, la devise et la langue locales.',
+            'FulcrumGrid läuft in Ihrer Region — HR Suite, Command Center und Collection, angepasst an lokale Gehaltsabrechnung, Compliance, Finanzen, Währung und Sprache.',
+            'FulcrumGrid funciona en su región — HR Suite, Command Center y Collection, adaptados a la nómina, el cumplimiento, las finanzas, la moneda y el idioma locales.',
+            'FulcrumGrid funziona nella tua regione — HR Suite, Command Center e Collection, adattati a buste paga, conformità, finanza, valuta e lingua locali.',
+            'FulcrumGrid draait in uw regio — HR Suite, Command Center en Collection, aangepast aan lokale salarisadministratie, compliance, financiën, valuta en taal.'),
         # ---- Hero ----
         'Built for how your <em style="font-style:normal;color:var(--color-accent)">region runs</em>': _t(
             'Conçu pour le fonctionnement de <em style="font-style:normal;color:var(--color-accent)">votre région</em>',
@@ -177,12 +177,12 @@ PAGE['/regions/gcc/'] = {
             'FulcrumGrid en el GCC — cada app, diseñada para su región | FulcrumGrid',
             'FulcrumGrid nel GCC — ogni app, costruita per la tua regione | FulcrumGrid',
             'FulcrumGrid in de GCC — elke app, gebouwd voor uw regio | FulcrumGrid'),
-        'FulcrumGrid across the GCC — Command Center, Collection and HR Suite — with GCC-native finance, Tax and Zakat, WPS payroll, statutory end-of-service and Arabic, per country.': _t(
-            'FulcrumGrid dans tout le GCC — Command Center, Collection et HR Suite — avec une finance native du GCC, taxe et Zakat, paie WPS, fin de service légale et arabe, par pays.',
-            'FulcrumGrid im gesamten GCC — Command Center, Collection und HR Suite — mit GCC-nativer Finanzverwaltung, Steuer und Zakat, WPS-Gehaltsabrechnung, gesetzlichem Dienstende und Arabisch, pro Land.',
-            'FulcrumGrid en todo el GCC — Command Center, Collection y HR Suite — con finanzas nativas del GCC, impuesto y Zakat, nóminas WPS, fin de servicio obligatorio y árabe, por país.',
-            'FulcrumGrid in tutto il GCC — Command Center, Collection e HR Suite — con finanza nativa del GCC, imposta e Zakat, buste paga WPS, fine servizio di legge e arabo, per Paese.',
-            'FulcrumGrid in de hele GCC — Command Center, Collection en HR Suite — met GCC-native financiën, belasting en Zakat, WPS-salarisadministratie, wettelijk einde dienstverband en Arabisch, per land.'),
+        'FulcrumGrid across the GCC — HR Suite, Command Center and Collection — with WPS payroll, statutory end-of-service and Arabic, plus GCC-native finance and Tax and Zakat, per country.': _t(
+            'FulcrumGrid dans tout le GCC — HR Suite, Command Center et Collection — avec paie WPS, fin de service légale et arabe, plus une finance native du GCC et taxe et Zakat, par pays.',
+            'FulcrumGrid im gesamten GCC — HR Suite, Command Center und Collection — mit WPS-Gehaltsabrechnung, gesetzlichem Dienstende und Arabisch, dazu GCC-native Finanzverwaltung sowie Steuer und Zakat, pro Land.',
+            'FulcrumGrid en todo el GCC — HR Suite, Command Center y Collection — con nóminas WPS, fin de servicio obligatorio y árabe, además de finanzas nativas del GCC e impuesto y Zakat, por país.',
+            'FulcrumGrid in tutto il GCC — HR Suite, Command Center e Collection — con buste paga WPS, fine servizio di legge e arabo, oltre a finanza nativa del GCC e imposta e Zakat, per Paese.',
+            'FulcrumGrid in de hele GCC — HR Suite, Command Center en Collection — met WPS-salarisadministratie, wettelijk einde dienstverband en Arabisch, plus GCC-native financiën en belasting en Zakat, per land.'),
         # ---- Hero ----
         'Gulf Cooperation Council · GCC': _t(
             'Conseil de coopération du Golfe · GCC', 'Golf-Kooperationsrat · GCC',
@@ -195,12 +195,12 @@ PAGE['/regions/gcc/'] = {
             'FulcrumGrid, diseñado para <em style="font-style:normal;color:var(--color-accent)">el Golfo</em>',
             'FulcrumGrid, pensato per <em style="font-style:normal;color:var(--color-accent)">il Golfo</em>',
             'FulcrumGrid, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">de Golfregio</em>'),
-        'The whole grid runs in the Gulf — Command Center with GCC-native finance, Tax and Zakat and multi-currency; Collection for local receivables; and HR Suite with WPS payroll, end-of-service and Arabic throughout. Pick a country for the detail.': _t(
-            "Toute la grille fonctionne dans le Golfe — Command Center avec une finance native du GCC, taxe et Zakat et multidevise ; Collection pour le recouvrement local ; et HR Suite avec paie WPS, fin de service et arabe partout. Choisissez un pays pour le détail.",
-            'Das gesamte Grid läuft am Golf — Command Center mit GCC-nativer Finanzverwaltung, Steuer und Zakat und Mehrwährung; Collection für lokalen Forderungseinzug; und HR Suite mit WPS-Gehaltsabrechnung, Dienstende und durchgehend Arabisch. Wählen Sie ein Land für die Details.',
-            'Toda la cuadrícula funciona en el Golfo — Command Center con finanzas nativas del GCC, impuesto y Zakat y multidivisa; Collection para el cobro local; y HR Suite con nóminas WPS, fin de servicio y árabe en todo momento. Elija un país para ver el detalle.',
-            "Tutta la griglia funziona nel Golfo — Command Center con finanza nativa del GCC, imposta e Zakat e multivaluta; Collection per il recupero crediti locale; e HR Suite con buste paga WPS, fine servizio e arabo ovunque. Scegli un Paese per il dettaglio.",
-            'Het hele grid draait in de Golf — Command Center met GCC-native financiën, belasting en Zakat en meerdere valuta; Collection voor lokale debiteuren; en HR Suite met WPS-salarisadministratie, einde dienstverband en Arabisch overal. Kies een land voor de details.'),
+        'The whole grid runs in the Gulf — HR Suite with WPS payroll, end-of-service and Arabic throughout; Command Center with GCC-native finance, Tax and Zakat and multi-currency; and Collection for local receivables. Pick a country for the detail.': _t(
+            "Toute la grille fonctionne dans le Golfe — HR Suite avec paie WPS, fin de service et arabe partout ; Command Center avec une finance native du GCC, taxe et Zakat et multidevise ; et Collection pour le recouvrement local. Choisissez un pays pour le détail.",
+            'Das gesamte Grid läuft am Golf — HR Suite mit WPS-Gehaltsabrechnung, Dienstende und durchgehend Arabisch; Command Center mit GCC-nativer Finanzverwaltung, Steuer und Zakat und Mehrwährung; und Collection für lokalen Forderungseinzug. Wählen Sie ein Land für die Details.',
+            'Toda la cuadrícula funciona en el Golfo — HR Suite con nóminas WPS, fin de servicio y árabe en todo momento; Command Center con finanzas nativas del GCC, impuesto y Zakat y multidivisa; y Collection para el cobro local. Elija un país para ver el detalle.',
+            "Tutta la griglia funziona nel Golfo — HR Suite con buste paga WPS, fine servizio e arabo ovunque; Command Center con finanza nativa del GCC, imposta e Zakat e multivaluta; e Collection per il recupero crediti locale. Scegli un Paese per il dettaglio.",
+            'Het hele grid draait in de Golf — HR Suite met WPS-salarisadministratie, einde dienstverband en Arabisch overal; Command Center met GCC-native financiën, belasting en Zakat en meerdere valuta; en Collection voor lokale debiteuren. Kies een land voor de details.'),
         # ---- Sub-head ----
         'Countries': _t('Pays', 'Länder', 'Países', 'Paesi', 'Landen'),
         'Countries in this region': _t('Pays de cette région', 'Länder in dieser Region', 'Países de esta región', 'Paesi di questa regione', 'Landen in deze regio'),

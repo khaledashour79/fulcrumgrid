@@ -45,12 +45,12 @@ COMMON = {
     # ---- Regions: cross-app repositioning (shared across region + country pages) ----
     'The grid, in your region': _t('La grille, dans votre région', 'Das Grid, in Ihrer Region', 'La cuadrícula, en su región', 'La griglia, nella tua regione', 'Het grid, in uw regio'),
     'Every app, built for your region': _t('Chaque application, conçue pour votre région', 'Jede App, gebaut für Ihre Region', 'Cada app, diseñada para su región', 'Ogni app, costruita per la tua regione', 'Elke app, gebouwd voor uw regio'),
-    'Command Center, Collection and HR Suite all run here — in your language and currency.': _t(
-        'Command Center, Collection et HR Suite fonctionnent tous ici — dans votre langue et votre devise.',
-        'Command Center, Collection und HR Suite laufen hier alle — in Ihrer Sprache und Währung.',
-        'Command Center, Collection y HR Suite funcionan todos aquí — en su idioma y moneda.',
-        'Command Center, Collection e HR Suite funzionano tutti qui — nella tua lingua e valuta.',
-        'Command Center, Collection en HR Suite draaien hier allemaal — in uw taal en valuta.'),
+    'HR Suite, Command Center and Collection all run here — in your language and currency.': _t(
+        'HR Suite, Command Center et Collection fonctionnent tous ici — dans votre langue et votre devise.',
+        'HR Suite, Command Center und Collection laufen hier alle — in Ihrer Sprache und Währung.',
+        'HR Suite, Command Center y Collection funcionan todos aquí — en su idioma y moneda.',
+        'HR Suite, Command Center e Collection funzionano tutti qui — nella tua lingua e valuta.',
+        'HR Suite, Command Center en Collection draaien hier allemaal — in uw taal en valuta.'),
     'The rest of the grid, here too': _t('Le reste de la grille, ici aussi', 'Der Rest des Grids, auch hier', 'El resto de la cuadrícula, también aquí', 'Il resto della griglia, anche qui', 'De rest van het grid, ook hier'),
     'The rest of the grid': _t('Le reste de la grille', 'Der Rest des Grids', 'El resto de la cuadrícula', 'Il resto della griglia', 'De rest van het grid'),
     "HR Suite is only part of it — Command Center and Collection run in your market too, in your language and currency.": _t(
