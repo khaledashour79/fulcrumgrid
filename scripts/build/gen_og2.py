@@ -63,7 +63,7 @@ CARDS = {
    head='HR Suite',
    tag='People operations from hire to retire — records, onboarding, payroll, time, leave, and performance.'),
  'og-default': dict(accent='#2156df', hsize=76, eyebrow='BUSINESS APPS',
-   head='One platform,<br><span class="ac">every operation.</span>',
+   head='One grid,<br><span class="ac">every operation.</span>',
    tag='Purpose-built business apps from one team — Command Center, Collection, HR Suite, and more.'),
 }
 

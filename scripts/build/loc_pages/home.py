@@ -22,18 +22,18 @@ PAGE = {
         'src': 'index.html',
         't': {
             # ---- Meta (title / description / og / twitter) ----
-            "FulcrumGrid — One platform. Every operation.": _t(
-                "FulcrumGrid — Une plateforme. Chaque opération.",
-                "FulcrumGrid — Eine Plattform. Jeder Betrieb.",
-                "FulcrumGrid — Una plataforma. Cada operación.",
-                "FulcrumGrid — Una piattaforma. Ogni operazione.",
-                "FulcrumGrid — Eén platform. Elke operatie."),
-            "FulcrumGrid is the operational backbone for modern teams — HR Suite, Command Center, Collection and more: purpose-built business apps on one platform.": _t(
-                "FulcrumGrid est l'épine dorsale opérationnelle des équipes modernes — HR Suite, Command Center, Collection et plus : des applications métier sur mesure sur une seule plateforme.",
-                "FulcrumGrid ist das operative Rückgrat für moderne Teams — HR Suite, Command Center, Collection und mehr: zweckgebaute Business-Apps auf einer Plattform.",
-                "FulcrumGrid es la columna vertebral operativa de los equipos modernos — HR Suite, Command Center, Collection y más: aplicaciones de negocio a medida en una sola plataforma.",
-                "FulcrumGrid è la spina dorsale operativa dei team moderni — HR Suite, Command Center, Collection e altro: applicazioni aziendali su misura su un'unica piattaforma.",
-                "FulcrumGrid is de operationele ruggengraat voor moderne teams — HR Suite, Command Center, Collection en meer: doelgerichte bedrijfsapps op één platform."),
+            "FulcrumGrid — One grid. Every operation.": _t(
+                "FulcrumGrid — Une grille. Chaque opération.",
+                "FulcrumGrid — Ein Grid. Jeder Betrieb.",
+                "FulcrumGrid — Una cuadrícula. Cada operación.",
+                "FulcrumGrid — Una griglia. Ogni operazione.",
+                "FulcrumGrid — Eén grid. Elke operatie."),
+            "FulcrumGrid is the operational backbone for modern teams — HR Suite, Command Center, Collection and more: purpose-built business apps on one grid.": _t(
+                "FulcrumGrid est l'épine dorsale opérationnelle des équipes modernes — HR Suite, Command Center, Collection et plus : des applications métier sur mesure sur une seule grille.",
+                "FulcrumGrid ist das operative Rückgrat für moderne Teams — HR Suite, Command Center, Collection und mehr: zweckgebaute Business-Apps auf einem Grid.",
+                "FulcrumGrid es la columna vertebral operativa de los equipos modernos — HR Suite, Command Center, Collection y más: aplicaciones de negocio a medida en una sola cuadrícula.",
+                "FulcrumGrid è la spina dorsale operativa dei team moderni — HR Suite, Command Center, Collection e altro: applicazioni aziendali su misura su un'unica griglia.",
+                "FulcrumGrid is de operationele ruggengraat voor moderne teams — HR Suite, Command Center, Collection en meer: doelgerichte bedrijfsapps op één grid."),
             "HR Suite, Command Center, Collection, and more — purpose-built business apps from one team.": _t(
                 "HR Suite, Command Center, Collection et plus — des applications métier sur mesure, d'une seule équipe.",
                 "HR Suite, Command Center, Collection und mehr — zweckgebaute Business-Apps aus einer Hand.",
@@ -69,12 +69,12 @@ PAGE = {
                 'data-l-orbit="Órbita" data-l-held="Órbita detenida" data-l-live="Disponible"',
                 'data-l-orbit="Orbita" data-l-held="Orbita ferma" data-l-live="Disponibile"',
                 'data-l-orbit="Baan" data-l-held="Baan gepauzeerd" data-l-live="Beschikbaar"'),
-            "One platform.<br />Every <em>operation.</em>": _t(
-                "Une plateforme.<br />Chaque <em>opération.</em>",
-                "Eine Plattform.<br />Jeder <em>Betrieb.</em>",
-                "Una plataforma.<br />Cada <em>operación.</em>",
-                "Una piattaforma.<br />Ogni <em>operazione.</em>",
-                "Eén platform.<br />Elke <em>operatie.</em>"),
+            "One grid.<br />Every <em>operation.</em>": _t(
+                "Une grille.<br />Chaque <em>opération.</em>",
+                "Ein Grid.<br />Jeder <em>Betrieb.</em>",
+                "Una cuadrícula.<br />Cada <em>operación.</em>",
+                "Una griglia.<br />Ogni <em>operazione.</em>",
+                "Eén grid.<br />Elke <em>operatie.</em>"),
             "A growing family of purpose-built business apps from one team — HR Suite, Command Center, Collection and more. Start with one today, and add more as you grow.": _t(
                 "Une famille grandissante d'applications métier sur mesure, d'une seule équipe — HR Suite, Command Center, Collection et plus. Commencez par une aujourd'hui, et ajoutez-en d'autres à mesure que vous grandissez.",
                 "Eine wachsende Familie zweckgebauter Business-Apps aus einer Hand — HR Suite, Command Center, Collection und mehr. Starten Sie heute mit einer und fügen Sie weitere hinzu, wenn Sie wachsen.",
@@ -489,12 +489,12 @@ PAGE = {
                 "Places incluses selon l'offre.", "Plätze je nach Tarif inbegriffen.",
                 "Puestos incluidos según el plan.", "Postazioni incluse in base al piano.",
                 "Plaatsen inbegrepen per abonnement."),
-            "A business app built for your specific workflow, on the same platform.": _t(
-                "Une application métier conçue pour votre flux de travail spécifique, sur la même plateforme.",
-                "Eine Business-App, gebaut für Ihren spezifischen Workflow — auf derselben Plattform.",
-                "Una aplicación de negocio creada para su flujo de trabajo específico, en la misma plataforma.",
-                "Un'applicazione aziendale creata per il tuo flusso di lavoro specifico, sulla stessa piattaforma.",
-                "Een bedrijfsapp gebouwd voor uw specifieke workflow, op hetzelfde platform."),
+            "A business app built for your specific workflow, on the same grid.": _t(
+                "Une application métier conçue pour votre flux de travail spécifique, sur la même grille.",
+                "Eine Business-App, gebaut für Ihren spezifischen Workflow — auf demselben Grid.",
+                "Una aplicación de negocio creada para su flujo de trabajo específico, en la misma cuadrícula.",
+                "Un'applicazione aziendale creata per il tuo flusso di lavoro specifico, sulla stessa griglia.",
+                "Een bedrijfsapp gebouwd voor uw specifieke workflow, op hetzelfde grid."),
             "Talk to us →": _t(
                 "Parlons-en →", "Sprechen Sie mit uns →", "Hablemos →",
                 "Parliamone →", "Neem contact op →"),

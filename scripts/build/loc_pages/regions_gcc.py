@@ -225,12 +225,12 @@ PAGE['/regions/gcc/'] = {
         'WPS · indemnity · SIO · Bahrainization': _t('WPS · indemnité · SIO · Bahrainization', 'WPS · Abfindung · SIO · Bahrainization', 'WPS · indemnización · SIO · Bahrainization', 'WPS · indennità · SIO · Bahrainization', 'WPS · ontslagvergoeding · SIO · Bahrainization'),
         'WPS · gratuity · social protection · Omanization': _t('WPS · indemnité · protection sociale · Omanization', 'WPS · Abfindung · Sozialschutz · Omanization', 'WPS · gratificación · protección social · Omanization', 'WPS · indennità · protezione sociale · Omanization', 'WPS · ontslagvergoeding · sociale bescherming · Omanization'),
         # ---- CTA ----
-        'Run your Gulf operation on one platform': _t(
-            'Gérez votre activité dans le Golfe sur une seule plateforme',
-            'Führen Sie Ihren Betrieb am Golf auf einer Plattform',
-            'Gestione su operación del Golfo en una sola plataforma',
-            "Gestisci la tua attività nel Golfo su un'unica piattaforma",
-            'Run uw activiteiten in de Golf op één platform'),
+        'Run your Gulf operation on one grid': _t(
+            'Gérez votre activité dans le Golfe sur une seule grille',
+            'Führen Sie Ihren Betrieb am Golf auf einem Grid',
+            'Gestione su operación del Golfo en una sola cuadrícula',
+            "Gestisci la tua attività nel Golfo su un'unica griglia",
+            'Run uw activiteiten in de Golf op één grid'),
     }),
 }
 
@@ -272,12 +272,12 @@ PAGE['/regions/saudi-arabia/'] = {
             'Cumplimiento para Arabia Saudí, listo para usar',
             "Conformità per l'Arabia Saudita, pronta all'uso",
             'Compliance voor Saoedi-Arabië, kant-en-klaar'),
-        'The modules that make HR Suite work the way Saudi Arabia does — each part of the same platform, no separate tools.': _t(
-            "Les modules qui font fonctionner HR Suite à la manière de l'Arabie saoudite — chacun fait partie de la même plateforme, sans outils séparés.",
-            'Die Module, die HR Suite so arbeiten lassen, wie es Saudi-Arabien tut — jedes Teil derselben Plattform, keine separaten Tools.',
-            'Los módulos que hacen que HR Suite funcione como lo hace Arabia Saudí — cada uno forma parte de la misma plataforma, sin herramientas separadas.',
-            "I moduli che fanno funzionare HR Suite come fa l'Arabia Saudita — ognuno parte della stessa piattaforma, senza strumenti separati.",
-            'De modules die HR Suite laten werken zoals Saoedi-Arabië dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+        'The modules that make HR Suite work the way Saudi Arabia does — each part of the same grid, no separate tools.': _t(
+            "Les modules qui font fonctionner HR Suite à la manière de l'Arabie saoudite — chacun fait partie de la même grille, sans outils séparés.",
+            'Die Module, die HR Suite so arbeiten lassen, wie es Saudi-Arabien tut — jedes Teil demselben Grid, keine separaten Tools.',
+            'Los módulos que hacen que HR Suite funcione como lo hace Arabia Saudí — cada uno forma parte de la misma cuadrícula, sin herramientas separadas.',
+            "I moduli che fanno funzionare HR Suite come fa l'Arabia Saudita — ognuno parte della stessa griglia, senza strumenti separati.",
+            'De modules die HR Suite laten werken zoals Saoedi-Arabië dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
         # ---- Feature cards ----
         'Payroll + WPS wage files': _t('Paie + fichiers de salaires WPS', 'Gehaltsabrechnung + WPS-Lohndateien', 'Nóminas + archivos de salarios WPS', 'Buste paga + file salariali WPS', 'Salarisadministratie + WPS-loonbestanden'),
         'Run compliant pay runs and export the Wage Protection System (WPS) bank file in the mandated format, so salaries clear through the right channels and on-time payment is on record.': _t(
@@ -374,12 +374,12 @@ PAGE['/regions/uae/'] = {
             'Cumplimiento para los EAU, listo para usar',
             "Conformità per gli EAU, pronta all'uso",
             'Compliance voor de VAE, kant-en-klaar'),
-        'The modules that make HR Suite work the way UAE does — each part of the same platform, no separate tools.': _t(
-            'Les modules qui font fonctionner HR Suite à la manière des EAU — chacun fait partie de la même plateforme, sans outils séparés.',
-            'Die Module, die HR Suite so arbeiten lassen, wie es die VAE tun — jedes Teil derselben Plattform, keine separaten Tools.',
-            'Los módulos que hacen que HR Suite funcione como lo hacen los EAU — cada uno forma parte de la misma plataforma, sin herramientas separadas.',
-            'I moduli che fanno funzionare HR Suite come fanno gli EAU — ognuno parte della stessa piattaforma, senza strumenti separati.',
-            'De modules die HR Suite laten werken zoals de VAE dat doen — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+        'The modules that make HR Suite work the way UAE does — each part of the same grid, no separate tools.': _t(
+            'Les modules qui font fonctionner HR Suite à la manière des EAU — chacun fait partie de la même grille, sans outils séparés.',
+            'Die Module, die HR Suite so arbeiten lassen, wie es die VAE tun — jedes Teil demselben Grid, keine separaten Tools.',
+            'Los módulos que hacen que HR Suite funcione como lo hacen los EAU — cada uno forma parte de la misma cuadrícula, sin herramientas separadas.',
+            'I moduli che fanno funzionare HR Suite come fanno gli EAU — ognuno parte della stessa griglia, senza strumenti separati.',
+            'De modules die HR Suite laten werken zoals de VAE dat doen — elk onderdeel van hetzelfde grid, geen aparte tools.'),
         # ---- Feature cards ----
         'Payroll + WPS salary files': _t('Paie + fichiers de salaires WPS', 'Gehaltsabrechnung + WPS-Gehaltsdateien', 'Nóminas + archivos salariales WPS', 'Buste paga + file salariali WPS', 'Salarisadministratie + WPS-salarisbestanden'),
         'Run MOHRE-compliant pay runs and export the Wage Protection System (WPS) SIF file, so salaries clear through approved agents and on-time payment is on record.': _t(
@@ -468,12 +468,12 @@ PAGE['/regions/qatar/'] = {
             'Cumplimiento para Catar, listo para usar',
             "Conformità per il Qatar, pronta all'uso",
             'Compliance voor Qatar, kant-en-klaar'),
-        'The modules that make HR Suite work the way Qatar does — each part of the same platform, no separate tools.': _t(
-            'Les modules qui font fonctionner HR Suite à la manière du Qatar — chacun fait partie de la même plateforme, sans outils séparés.',
-            'Die Module, die HR Suite so arbeiten lassen, wie es Katar tut — jedes Teil derselben Plattform, keine separaten Tools.',
-            'Los módulos que hacen que HR Suite funcione como lo hace Catar — cada uno forma parte de la misma plataforma, sin herramientas separadas.',
-            'I moduli che fanno funzionare HR Suite come fa il Qatar — ognuno parte della stessa piattaforma, senza strumenti separati.',
-            'De modules die HR Suite laten werken zoals Qatar dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+        'The modules that make HR Suite work the way Qatar does — each part of the same grid, no separate tools.': _t(
+            'Les modules qui font fonctionner HR Suite à la manière du Qatar — chacun fait partie de la même grille, sans outils séparés.',
+            'Die Module, die HR Suite so arbeiten lassen, wie es Katar tut — jedes Teil demselben Grid, keine separaten Tools.',
+            'Los módulos que hacen que HR Suite funcione como lo hace Catar — cada uno forma parte de la misma cuadrícula, sin herramientas separadas.',
+            'I moduli che fanno funzionare HR Suite come fa il Qatar — ognuno parte della stessa griglia, senza strumenti separati.',
+            'De modules die HR Suite laten werken zoals Qatar dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
         # ---- Feature cards ----
         "End-of-service computed to Labour Law No. 14 of 2004 (art. 54) — a minimum of three weeks' (21 days') basic wage per year of service, across all years.": _t(
             'Fin de service calculée selon le Labour Law No. 14 of 2004 (art. 54) — un minimum de trois semaines (21 jours) de salaire de base par année de service, pour toutes les années.',
@@ -555,12 +555,12 @@ PAGE['/regions/kuwait/'] = {
             'Cumplimiento para Kuwait, listo para usar',
             "Conformità per il Kuwait, pronta all'uso",
             'Compliance voor Koeweit, kant-en-klaar'),
-        'The modules that make HR Suite work the way Kuwait does — each part of the same platform, no separate tools.': _t(
-            'Les modules qui font fonctionner HR Suite à la manière du Koweït — chacun fait partie de la même plateforme, sans outils séparés.',
-            'Die Module, die HR Suite so arbeiten lassen, wie es Kuwait tut — jedes Teil derselben Plattform, keine separaten Tools.',
-            'Los módulos que hacen que HR Suite funcione como lo hace Kuwait — cada uno forma parte de la misma plataforma, sin herramientas separadas.',
-            'I moduli che fanno funzionare HR Suite come fa il Kuwait — ognuno parte della stessa piattaforma, senza strumenti separati.',
-            'De modules die HR Suite laten werken zoals Koeweit dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+        'The modules that make HR Suite work the way Kuwait does — each part of the same grid, no separate tools.': _t(
+            'Les modules qui font fonctionner HR Suite à la manière du Koweït — chacun fait partie de la même grille, sans outils séparés.',
+            'Die Module, die HR Suite so arbeiten lassen, wie es Kuwait tut — jedes Teil demselben Grid, keine separaten Tools.',
+            'Los módulos que hacen que HR Suite funcione como lo hace Kuwait — cada uno forma parte de la misma cuadrícula, sin herramientas separadas.',
+            'I moduli che fanno funzionare HR Suite come fa il Kuwait — ognuno parte della stessa griglia, senza strumenti separati.',
+            'De modules die HR Suite laten werken zoals Koeweit dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
         # ---- Feature cards ----
         'End-of-service indemnity': _t('Indemnité de fin de service', 'Abfindung zum Dienstende', 'Indemnización por fin de servicio', 'Indennità di fine servizio', 'Ontslagvergoeding'),
         "Indemnity computed to the Private Sector Labour Law No. 6 of 2010 (art. 51) — 15 days' wage per year for the first five years, a full month per year thereafter, capped at 1.5 years' wage, with a resignation scale.": _t(
@@ -642,12 +642,12 @@ PAGE['/regions/bahrain/'] = {
             'Cumplimiento para Baréin, listo para usar',
             "Conformità per il Bahrein, pronta all'uso",
             'Compliance voor Bahrein, kant-en-klaar'),
-        'The modules that make HR Suite work the way Bahrain does — each part of the same platform, no separate tools.': _t(
-            'Les modules qui font fonctionner HR Suite à la manière de Bahreïn — chacun fait partie de la même plateforme, sans outils séparés.',
-            'Die Module, die HR Suite so arbeiten lassen, wie es Bahrain tut — jedes Teil derselben Plattform, keine separaten Tools.',
-            'Los módulos que hacen que HR Suite funcione como lo hace Baréin — cada uno forma parte de la misma plataforma, sin herramientas separadas.',
-            'I moduli che fanno funzionare HR Suite come fa il Bahrein — ognuno parte della stessa piattaforma, senza strumenti separati.',
-            'De modules die HR Suite laten werken zoals Bahrein dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+        'The modules that make HR Suite work the way Bahrain does — each part of the same grid, no separate tools.': _t(
+            'Les modules qui font fonctionner HR Suite à la manière de Bahreïn — chacun fait partie de la même grille, sans outils séparés.',
+            'Die Module, die HR Suite so arbeiten lassen, wie es Bahrain tut — jedes Teil demselben Grid, keine separaten Tools.',
+            'Los módulos que hacen que HR Suite funcione como lo hace Baréin — cada uno forma parte de la misma cuadrícula, sin herramientas separadas.',
+            'I moduli che fanno funzionare HR Suite come fa il Bahrein — ognuno parte della stessa griglia, senza strumenti separati.',
+            'De modules die HR Suite laten werken zoals Bahrein dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
         # ---- Feature cards ----
         'Leaving indemnity': _t('Indemnité de départ', 'Abfindung beim Ausscheiden', 'Indemnización por cese', 'Indennità di cessazione', 'Vertrekvergoeding'),
         "Leaving indemnity computed to the Private Sector Labour Law No. 36 of 2012 (art. 116) — 15 days' wage per year for the first three years, a full month per year thereafter. Nationals covered by SIO are handled separately.": _t(
@@ -729,12 +729,12 @@ PAGE['/regions/oman/'] = {
             'Cumplimiento para Omán, listo para usar',
             "Conformità per l'Oman, pronta all'uso",
             'Compliance voor Oman, kant-en-klaar'),
-        'The modules that make HR Suite work the way Oman does — each part of the same platform, no separate tools.': _t(
-            "Les modules qui font fonctionner HR Suite à la manière d'Oman — chacun fait partie de la même plateforme, sans outils séparés.",
-            'Die Module, die HR Suite so arbeiten lassen, wie es Oman tut — jedes Teil derselben Plattform, keine separaten Tools.',
-            'Los módulos que hacen que HR Suite funcione como lo hace Omán — cada uno forma parte de la misma plataforma, sin herramientas separadas.',
-            "I moduli che fanno funzionare HR Suite come fa l'Oman — ognuno parte della stessa piattaforma, senza strumenti separati.",
-            'De modules die HR Suite laten werken zoals Oman dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+        'The modules that make HR Suite work the way Oman does — each part of the same grid, no separate tools.': _t(
+            "Les modules qui font fonctionner HR Suite à la manière d'Oman — chacun fait partie de la même grille, sans outils séparés.",
+            'Die Module, die HR Suite so arbeiten lassen, wie es Oman tut — jedes Teil demselben Grid, keine separaten Tools.',
+            'Los módulos que hacen que HR Suite funcione como lo hace Omán — cada uno forma parte de la misma cuadrícula, sin herramientas separadas.',
+            "I moduli che fanno funzionare HR Suite come fa l'Oman — ognuno parte della stessa griglia, senza strumenti separati.",
+            'De modules die HR Suite laten werken zoals Oman dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
         # ---- Feature cards ----
         "End-of-service gratuity of 15 days' wage per year for the first three years and a full month per year thereafter — with the Social Protection Law (Royal Decree 52/2023) savings scheme supported as it phases in.": _t(
             "Indemnité de fin de service de 15 jours de salaire par an pour les trois premières années et d'un mois entier par an ensuite — avec la prise en charge du régime d'épargne de la Social Protection Law (Royal Decree 52/2023) à mesure de son entrée en vigueur.",

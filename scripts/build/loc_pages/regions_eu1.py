@@ -38,24 +38,24 @@ PAGE['/regions/europe/'] = {
             'FulcrumGrid, diseñado para <em style="font-style:normal;color:var(--color-accent)">Europa</em>',
             'FulcrumGrid, pensato per <em style="font-style:normal;color:var(--color-accent)">l\'Europa</em>',
             'FulcrumGrid, gebouwd voor <em style="font-style:normal;color:var(--color-accent)">Europa</em>'),
-        'The whole grid runs across Europe — HR Suite with SEPA payroll and GDPR-grade data privacy; Command Center with multi-currency, VAT-ready finance; and Collection with SEPA-friendly receivables. One platform across your entities.': _t(
-            "Toute la grille fonctionne dans toute l'Europe — HR Suite avec une paie SEPA et une confidentialité des données au niveau du GDPR ; Command Center avec une finance multidevise prête pour la TVA ; et Collection avec un recouvrement compatible SEPA. Une seule plateforme pour toutes vos entités.",
-            'Das gesamte Grid läuft in ganz Europa — HR Suite mit SEPA-Gehaltsabrechnung und Datenschutz auf GDPR-Niveau; Command Center mit MwSt.-fähiger Mehrwährungs-Finanzverwaltung; und Collection mit SEPA-freundlichem Forderungseinzug. Eine Plattform über alle Ihre Gesellschaften hinweg.',
-            'Toda la cuadrícula funciona en toda Europa — HR Suite con nóminas SEPA y privacidad de datos a nivel del GDPR; Command Center con finanzas multidivisa preparadas para el IVA; y Collection con cobros compatibles con SEPA. Una sola plataforma para todas sus entidades.',
-            "Tutta la griglia funziona in tutta Europa — HR Suite con buste paga SEPA e privacy dei dati a livello GDPR; Command Center con finanza multivaluta pronta per l'IVA; e Collection con recupero crediti compatibile con SEPA. Un'unica piattaforma per tutte le tue entità.",
-            "Het hele grid draait in heel Europa — HR Suite met SEPA-salarisadministratie en gegevensprivacy op GDPR-niveau; Command Center met multivaluta, btw-klare financiën; en Collection met SEPA-vriendelijke debiteuren. Eén platform voor al uw entiteiten."),
+        'The whole grid runs across Europe — HR Suite with SEPA payroll and GDPR-grade data privacy; Command Center with multi-currency, VAT-ready finance; and Collection with SEPA-friendly receivables. One grid across your entities.': _t(
+            "Toute la grille fonctionne dans toute l'Europe — HR Suite avec une paie SEPA et une confidentialité des données au niveau du GDPR ; Command Center avec une finance multidevise prête pour la TVA ; et Collection avec un recouvrement compatible SEPA. Une seule grille pour toutes vos entités.",
+            'Das gesamte Grid läuft in ganz Europa — HR Suite mit SEPA-Gehaltsabrechnung und Datenschutz auf GDPR-Niveau; Command Center mit MwSt.-fähiger Mehrwährungs-Finanzverwaltung; und Collection mit SEPA-freundlichem Forderungseinzug. Ein Grid über alle Ihre Gesellschaften hinweg.',
+            'Toda la cuadrícula funciona en toda Europa — HR Suite con nóminas SEPA y privacidad de datos a nivel del GDPR; Command Center con finanzas multidivisa preparadas para el IVA; y Collection con cobros compatibles con SEPA. Una sola cuadrícula para todas sus entidades.',
+            "Tutta la griglia funziona in tutta Europa — HR Suite con buste paga SEPA e privacy dei dati a livello GDPR; Command Center con finanza multivaluta pronta per l'IVA; e Collection con recupero crediti compatibile con SEPA. Un'unica griglia per tutte le tue entità.",
+            "Het hele grid draait in heel Europa — HR Suite met SEPA-salarisadministratie en gegevensprivacy op GDPR-niveau; Command Center met multivaluta, btw-klare financiën; en Collection met SEPA-vriendelijke debiteuren. Eén grid voor al uw entiteiten."),
         # ---- Built-in section ----
         'Built in': _t('Intégré', 'Integriert', 'Integrado', 'Integrato', 'Ingebouwd'),
         'Europe compliance, out of the box': _t(
             "Conformité Europe, prête à l'emploi", 'Europa-Compliance, sofort einsatzbereit',
             'Cumplimiento para Europa, listo para usar', "Conformità Europa, pronta all'uso",
             'Europa-compliance, kant-en-klaar'),
-        'The modules that make HR Suite work the way Europe does — each part of the same platform, no separate tools.': _t(
-            "Les modules qui font fonctionner HR Suite à la manière de l'Europe — chacun faisant partie de la même plateforme, sans outils séparés.",
-            'Die Module, die HR Suite so arbeiten lassen, wie Europa es tut — jedes Teil derselben Plattform, keine separaten Tools.',
-            'Los módulos que hacen que HR Suite funcione como lo hace Europa — cada uno parte de la misma plataforma, sin herramientas aparte.',
-            "I moduli che fanno funzionare HR Suite come fa l'Europa — ognuno parte della stessa piattaforma, senza strumenti separati.",
-            'De modules die HR Suite laten werken zoals Europa dat doet — elk onderdeel van hetzelfde platform, zonder losse tools.'),
+        'The modules that make HR Suite work the way Europe does — each part of the same grid, no separate tools.': _t(
+            "Les modules qui font fonctionner HR Suite à la manière de l'Europe — chacun faisant partie de la même grille, sans outils séparés.",
+            'Die Module, die HR Suite so arbeiten lassen, wie Europa es tut — jedes Teil demselben Grid, keine separaten Tools.',
+            'Los módulos que hacen que HR Suite funcione como lo hace Europa — cada uno parte de la misma cuadrícula, sin herramientas aparte.',
+            "I moduli che fanno funzionare HR Suite come fa l'Europa — ognuno parte della stessa griglia, senza strumenti separati.",
+            'De modules die HR Suite laten werken zoals Europa dat doet — elk onderdeel van hetzelfde grid, zonder losse tools.'),
         # ---- Features ----
         'SEPA payments': _t('Paiements SEPA', 'SEPA-Zahlungen', 'Pagos SEPA', 'Pagamenti SEPA', 'SEPA-betalingen'),
         'Export a SEPA credit-transfer file from a finalized pay run for upload to your bank, with IBANs validated on entry.': _t(
@@ -98,12 +98,12 @@ PAGE['/regions/europe/'] = {
             'RH de base &amp; libre-service', 'Kern-HR &amp; Self-Service',
             'RR. HH. básicos &amp; autoservicio', 'HR di base &amp; self-service',
             'Kern-HR &amp; selfservice'),
-        'Employee records, onboarding, time off and self-service — the whole lifecycle on one platform.': _t(
-            'Dossiers salariés, intégration, congés et libre-service — tout le cycle de vie sur une seule plateforme.',
-            'Personalakten, Onboarding, Abwesenheiten und Self-Service — der gesamte Lebenszyklus auf einer Plattform.',
-            'Expedientes de empleado, incorporación, ausencias y autoservicio — todo el ciclo de vida en una sola plataforma.',
-            "Schede dipendente, onboarding, ferie e self-service — l'intero ciclo di vita su un'unica piattaforma.",
-            'Personeelsdossiers, onboarding, verlof en selfservice — de hele levenscyclus op één platform.'),
+        'Employee records, onboarding, time off and self-service — the whole lifecycle on one grid.': _t(
+            'Dossiers salariés, intégration, congés et libre-service — tout le cycle de vie sur une seule grille.',
+            'Personalakten, Onboarding, Abwesenheiten und Self-Service — der gesamte Lebenszyklus auf einem Grid.',
+            'Expedientes de empleado, incorporación, ausencias y autoservicio — todo el ciclo de vida en una sola cuadrícula.',
+            "Schede dipendente, onboarding, ferie e self-service — l'intero ciclo di vita su un'unica griglia.",
+            'Personeelsdossiers, onboarding, verlof en selfservice — de hele levenscyclus op één grid.'),
         # ---- Price note (shared across the four pages) ----
         'Every module here is part of HR Suite — advanced payroll, year-end and compliance on the Enterprise plan, or added to any plan as a per-seat add-on.': _t(
             "Chaque module ici fait partie de HR Suite — paie avancée, fin d'année et conformité sur le plan Enterprise, ou ajoutés à n'importe quel plan en option par utilisateur.",
@@ -155,12 +155,12 @@ PAGE['/regions/europe/'] = {
             'Pregunte por su mercado →', 'Chiedi informazioni sul tuo mercato →',
             'Vraag naar uw markt →'),
         # ---- CTA ----
-        'Run your European operation on one platform': _t(
-            'Gérez votre activité européenne sur une seule plateforme',
-            'Führen Sie Ihren europäischen Betrieb auf einer Plattform',
-            'Gestione su operación europea en una sola plataforma',
-            "Gestisci la tua attività europea su un'unica piattaforma",
-            'Run uw Europese activiteiten op één platform'),
+        'Run your European operation on one grid': _t(
+            'Gérez votre activité européenne sur une seule grille',
+            'Führen Sie Ihren europäischen Betrieb auf einem Grid',
+            'Gestione su operación europea en una sola cuadrícula',
+            "Gestisci la tua attività europea su un'unica griglia",
+            'Run uw Europese activiteiten op één grid'),
     },
 }
 
@@ -174,12 +174,12 @@ PAGE['/regions/uk/'] = {
             'HR Suite — RR. HH. &amp; nóminas para el Reino Unido | FulcrumGrid',
             'HR Suite — HR &amp; buste paga per il Regno Unito | FulcrumGrid',
             'HR Suite — HR &amp; salarisadministratie voor het Verenigd Koninkrijk | FulcrumGrid'),
-        'HR Suite for the UK — PAYE and National Insurance deductions, P60 and P45 statements, NINO validation, workplace pensions, and full HR on one platform.': _t(
-            'HR Suite pour le Royaume-Uni — retenues PAYE et National Insurance, attestations P60 et P45, validation NINO, retraites professionnelles, et RH complète sur une seule plateforme.',
-            'HR Suite für das Vereinigte Königreich — PAYE- und National-Insurance-Abzüge, P60- und P45-Bescheinigungen, NINO-Validierung, betriebliche Renten und vollständiges HR auf einer Plattform.',
-            'HR Suite para el Reino Unido — deducciones de PAYE y National Insurance, certificados P60 y P45, validación de NINO, pensiones de empresa y RR. HH. completos en una sola plataforma.',
-            "HR Suite per il Regno Unito — trattenute PAYE e National Insurance, attestazioni P60 e P45, validazione NINO, pensioni aziendali e HR completo su un'unica piattaforma.",
-            'HR Suite voor het Verenigd Koninkrijk — PAYE- en National Insurance-inhoudingen, P60- en P45-overzichten, NINO-validatie, bedrijfspensioenen en volledige HR op één platform.'),
+        'HR Suite for the UK — PAYE and National Insurance deductions, P60 and P45 statements, NINO validation, workplace pensions, and full HR on one grid.': _t(
+            'HR Suite pour le Royaume-Uni — retenues PAYE et National Insurance, attestations P60 et P45, validation NINO, retraites professionnelles, et RH complète sur une seule grille.',
+            'HR Suite für das Vereinigte Königreich — PAYE- und National-Insurance-Abzüge, P60- und P45-Bescheinigungen, NINO-Validierung, betriebliche Renten und vollständiges HR auf einem Grid.',
+            'HR Suite para el Reino Unido — deducciones de PAYE y National Insurance, certificados P60 y P45, validación de NINO, pensiones de empresa y RR. HH. completos en una sola cuadrícula.',
+            "HR Suite per il Regno Unito — trattenute PAYE e National Insurance, attestazioni P60 e P45, validazione NINO, pensioni aziendali e HR completo su un'unica griglia.",
+            'HR Suite voor het Verenigd Koninkrijk — PAYE- en National Insurance-inhoudingen, P60- en P45-overzichten, NINO-validatie, bedrijfspensioenen en volledige HR op één grid.'),
         # ---- Hero ----
         'United Kingdom · UK': _t('Royaume-Uni · UK', 'Vereinigtes Königreich · UK', 'Reino Unido · UK', 'Regno Unito · UK', 'Verenigd Koninkrijk · UK'),
         'HR &amp; payroll, built for <em style="font-style:normal;color:var(--color-accent)">the UK</em>': _t(
@@ -202,12 +202,12 @@ PAGE['/regions/uk/'] = {
             "Conformité Royaume-Uni, prête à l'emploi", 'Compliance für das Vereinigte Königreich, sofort einsatzbereit',
             'Cumplimiento para el Reino Unido, listo para usar', "Conformità Regno Unito, pronta all'uso",
             'Compliance voor het Verenigd Koninkrijk, kant-en-klaar'),
-        'The modules that make HR Suite work the way United Kingdom does — each part of the same platform, no separate tools.': _t(
-            'Les modules qui font fonctionner HR Suite à la manière du Royaume-Uni — chacun faisant partie de la même plateforme, sans outils séparés.',
-            'Die Module, die HR Suite so arbeiten lassen, wie das Vereinigte Königreich es tut — jedes Teil derselben Plattform, keine separaten Tools.',
-            'Los módulos que hacen que HR Suite funcione como lo hace el Reino Unido — cada uno parte de la misma plataforma, sin herramientas aparte.',
-            'I moduli che fanno funzionare HR Suite come fa il Regno Unito — ognuno parte della stessa piattaforma, senza strumenti separati.',
-            'De modules die HR Suite laten werken zoals het Verenigd Koninkrijk dat doet — elk onderdeel van hetzelfde platform, zonder losse tools.'),
+        'The modules that make HR Suite work the way United Kingdom does — each part of the same grid, no separate tools.': _t(
+            'Les modules qui font fonctionner HR Suite à la manière du Royaume-Uni — chacun faisant partie de la même grille, sans outils séparés.',
+            'Die Module, die HR Suite so arbeiten lassen, wie das Vereinigte Königreich es tut — jedes Teil demselben Grid, keine separaten Tools.',
+            'Los módulos que hacen que HR Suite funcione como lo hace el Reino Unido — cada uno parte de la misma cuadrícula, sin herramientas aparte.',
+            'I moduli che fanno funzionare HR Suite come fa il Regno Unito — ognuno parte della stessa griglia, senza strumenti separati.',
+            'De modules die HR Suite laten werken zoals het Verenigd Koninkrijk dat doet — elk onderdeel van hetzelfde grid, zonder losse tools.'),
         # ---- Features ----
         'PAYE &amp; National Insurance': _t(
             'PAYE &amp; National Insurance', 'PAYE &amp; National Insurance',
@@ -248,12 +248,12 @@ PAGE['/regions/uk/'] = {
             'RH de base &amp; libre-service', 'Kern-HR &amp; Self-Service',
             'RR. HH. básicos &amp; autoservicio', 'HR di base &amp; self-service',
             'Kern-HR &amp; selfservice'),
-        'Employee records, onboarding, time off, documents and employee self-service — the whole lifecycle on one platform.': _t(
-            'Dossiers salariés, intégration, congés, documents et libre-service employé — tout le cycle de vie sur une seule plateforme.',
-            'Personalakten, Onboarding, Abwesenheiten, Dokumente und Mitarbeiter-Self-Service — der gesamte Lebenszyklus auf einer Plattform.',
-            'Expedientes de empleado, incorporación, ausencias, documentos y autoservicio del empleado — todo el ciclo de vida en una sola plataforma.',
-            "Schede dipendente, onboarding, ferie, documenti e self-service dipendente — l'intero ciclo di vita su un'unica piattaforma.",
-            'Personeelsdossiers, onboarding, verlof, documenten en selfservice voor medewerkers — de hele levenscyclus op één platform.'),
+        'Employee records, onboarding, time off, documents and employee self-service — the whole lifecycle on one grid.': _t(
+            'Dossiers salariés, intégration, congés, documents et libre-service employé — tout le cycle de vie sur une seule grille.',
+            'Personalakten, Onboarding, Abwesenheiten, Dokumente und Mitarbeiter-Self-Service — der gesamte Lebenszyklus auf einem Grid.',
+            'Expedientes de empleado, incorporación, ausencias, documentos y autoservicio del empleado — todo el ciclo de vida en una sola cuadrícula.',
+            "Schede dipendente, onboarding, ferie, documenti e self-service dipendente — l'intero ciclo di vita su un'unica griglia.",
+            'Personeelsdossiers, onboarding, verlof, documenten en selfservice voor medewerkers — de hele levenscyclus op één grid.'),
         # ---- Price note ----
         'Every module here is part of HR Suite — advanced payroll, year-end and compliance on the Enterprise plan, or added to any plan as a per-seat add-on.': _t(
             "Chaque module ici fait partie de HR Suite — paie avancée, fin d'année et conformité sur le plan Enterprise, ou ajoutés à n'importe quel plan en option par utilisateur.",
@@ -319,12 +319,12 @@ PAGE['/regions/ireland/'] = {
             "Conformité Irlande, prête à l'emploi", 'Irland-Compliance, sofort einsatzbereit',
             'Cumplimiento para Irlanda, listo para usar', "Conformità Irlanda, pronta all'uso",
             'Ierland-compliance, kant-en-klaar'),
-        'The modules that make HR Suite work the way Ireland does — each part of the same platform, no separate tools.': _t(
-            "Les modules qui font fonctionner HR Suite à la manière de l'Irlande — chacun faisant partie de la même plateforme, sans outils séparés.",
-            'Die Module, die HR Suite so arbeiten lassen, wie Irland es tut — jedes Teil derselben Plattform, keine separaten Tools.',
-            'Los módulos que hacen que HR Suite funcione como lo hace Irlanda — cada uno parte de la misma plataforma, sin herramientas aparte.',
-            "I moduli che fanno funzionare HR Suite come fa l'Irlanda — ognuno parte della stessa piattaforma, senza strumenti separati.",
-            'De modules die HR Suite laten werken zoals Ierland dat doet — elk onderdeel van hetzelfde platform, zonder losse tools.'),
+        'The modules that make HR Suite work the way Ireland does — each part of the same grid, no separate tools.': _t(
+            "Les modules qui font fonctionner HR Suite à la manière de l'Irlande — chacun faisant partie de la même grille, sans outils séparés.",
+            'Die Module, die HR Suite so arbeiten lassen, wie Irland es tut — jedes Teil demselben Grid, keine separaten Tools.',
+            'Los módulos que hacen que HR Suite funcione como lo hace Irlanda — cada uno parte de la misma cuadrícula, sin herramientas aparte.',
+            "I moduli che fanno funzionare HR Suite come fa l'Irlanda — ognuno parte della stessa griglia, senza strumenti separati.",
+            'De modules die HR Suite laten werken zoals Ierland dat doet — elk onderdeel van hetzelfde grid, zonder losse tools.'),
         # ---- Features ----
         'Statutory leave &amp; holidays': _t(
             'Congés légaux &amp; jours fériés', 'Gesetzlicher Urlaub &amp; Feiertage',
@@ -428,12 +428,12 @@ PAGE['/regions/france/'] = {
             "Conformité France, prête à l'emploi", 'Frankreich-Compliance, sofort einsatzbereit',
             'Cumplimiento para Francia, listo para usar', "Conformità Francia, pronta all'uso",
             'Frankrijk-compliance, kant-en-klaar'),
-        'The modules that make HR Suite work the way France does — each part of the same platform, no separate tools.': _t(
-            'Les modules qui font fonctionner HR Suite à la manière de la France — chacun faisant partie de la même plateforme, sans outils séparés.',
-            'Die Module, die HR Suite so arbeiten lassen, wie Frankreich es tut — jedes Teil derselben Plattform, keine separaten Tools.',
-            'Los módulos que hacen que HR Suite funcione como lo hace Francia — cada uno parte de la misma plataforma, sin herramientas aparte.',
-            'I moduli che fanno funzionare HR Suite come fa la Francia — ognuno parte della stessa piattaforma, senza strumenti separati.',
-            'De modules die HR Suite laten werken zoals Frankrijk dat doet — elk onderdeel van hetzelfde platform, zonder losse tools.'),
+        'The modules that make HR Suite work the way France does — each part of the same grid, no separate tools.': _t(
+            'Les modules qui font fonctionner HR Suite à la manière de la France — chacun faisant partie de la même grille, sans outils séparés.',
+            'Die Module, die HR Suite so arbeiten lassen, wie Frankreich es tut — jedes Teil demselben Grid, keine separaten Tools.',
+            'Los módulos que hacen que HR Suite funcione como lo hace Francia — cada uno parte de la misma cuadrícula, sin herramientas aparte.',
+            'I moduli che fanno funzionare HR Suite come fa la Francia — ognuno parte della stessa griglia, senza strumenti separati.',
+            'De modules die HR Suite laten werken zoals Frankrijk dat doet — elk onderdeel van hetzelfde grid, zonder losse tools.'),
         # ---- Features ----
         'Overtime — 35-hour week': _t(
             'Heures supplémentaires — semaine de 35 heures', 'Überstunden — 35-Stunden-Woche',

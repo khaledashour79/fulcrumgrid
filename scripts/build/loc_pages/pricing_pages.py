@@ -47,12 +47,12 @@ PAGE['/pricing/'] = {
             "Un precio <em>por app.</em>",
             "Un prezzo <em>per applicazione.</em>",
             "Een prijs <em>per applicatie.</em>"),
-        "Pay only for the apps you use. Each FulcrumGrid app is priced on its own — start with one, add the rest as you grow, all on the same platform.": _t(
-            "Ne payez que pour les applications que vous utilisez. Chaque application FulcrumGrid est tarifée séparément — commencez avec une, ajoutez les autres à mesure que vous grandissez, le tout sur la même plateforme.",
-            "Zahlen Sie nur für die Apps, die Sie nutzen. Jede FulcrumGrid-App wird eigenständig bepreist — starten Sie mit einer und fügen Sie weitere hinzu, während Sie wachsen, alles auf derselben Plattform.",
-            "Pague solo por las apps que use. Cada app de FulcrumGrid tiene su propio precio — empiece con una y añada el resto a medida que crece, todo en la misma plataforma.",
-            "Paga solo per le app che usi. Ogni app FulcrumGrid ha un prezzo a sé — inizia con una e aggiungi le altre man mano che cresci, tutto sulla stessa piattaforma.",
-            "Betaal alleen voor de apps die u gebruikt. Elke FulcrumGrid-app heeft een eigen prijs — begin met één en voeg de rest toe naarmate u groeit, allemaal op hetzelfde platform."),
+        "Pay only for the apps you use. Each FulcrumGrid app is priced on its own — start with one, add the rest as you grow, all on the same grid.": _t(
+            "Ne payez que pour les applications que vous utilisez. Chaque application FulcrumGrid est tarifée séparément — commencez avec une, ajoutez les autres à mesure que vous grandissez, le tout sur la même grille.",
+            "Zahlen Sie nur für die Apps, die Sie nutzen. Jede FulcrumGrid-App wird eigenständig bepreist — starten Sie mit einer und fügen Sie weitere hinzu, während Sie wachsen, alles auf demselben Grid.",
+            "Pague solo por las apps que use. Cada app de FulcrumGrid tiene su propio precio — empiece con una y añada el resto a medida que crece, todo en la misma cuadrícula.",
+            "Paga solo per le app che usi. Ogni app FulcrumGrid ha un prezzo a sé — inizia con una e aggiungi le altre man mano che cresci, tutto sulla stessa griglia.",
+            "Betaal alleen voor de apps die u gebruikt. Elke FulcrumGrid-app heeft een eigen prijs — begin met één en voeg de rest toe naarmate u groeit, allemaal op hetzelfde grid."),
         # ---- Section: one price per app ----
         "One price per app": _t("Un prix par application", "Ein Preis pro App", "Un precio por app", "Un prezzo per app", "Eén prijs per app"),
         "Subscribe to the apps you need": _t(
@@ -586,12 +586,12 @@ PAGE['/pricing/collection/'] = {
         "<span class=\"amt\">Custom</span>": _t(
             "<span class=\"amt\">Sur mesure</span>", "<span class=\"amt\">Individuell</span>", "<span class=\"amt\">Personalizado</span>",
             "<span class=\"amt\">Personalizzato</span>", "<span class=\"amt\">Op maat</span>"),
-        "Receivables and collections, priced by plan — from a small in-house AR team to a multi-client agency. Every plan runs on the same secure platform.": _t(
-            "Créances et recouvrement, tarifés par forfait — d'une petite équipe de recouvrement interne à une agence multi-clients. Chaque forfait s'exécute sur la même plateforme sécurisée.",
-            "Forderungen und Inkasso, nach Tarif bepreist — vom kleinen internen Forderungsteam bis zur Agentur mit mehreren Mandanten. Jeder Tarif läuft auf derselben sicheren Plattform.",
-            "Cobros y recobros, con precio por plan — desde un pequeño equipo interno de cuentas por cobrar hasta una agencia multicliente. Cada plan se ejecuta en la misma plataforma segura.",
-            "Crediti e recupero crediti, con prezzo per piano — da un piccolo team interno di crediti a un'agenzia multi-cliente. Ogni piano gira sulla stessa piattaforma sicura.",
-            "Vorderingen en incasso, geprijsd per abonnement — van een klein intern debiteurenteam tot een multiclient-bureau. Elk abonnement draait op hetzelfde beveiligde platform."),
+        "Receivables and collections, priced by plan — from a small in-house AR team to a multi-client agency. Every plan runs on the same secure grid.": _t(
+            "Créances et recouvrement, tarifés par forfait — d'une petite équipe de recouvrement interne à une agence multi-clients. Chaque forfait s'exécute sur la même grille sécurisée.",
+            "Forderungen und Inkasso, nach Tarif bepreist — vom kleinen internen Forderungsteam bis zur Agentur mit mehreren Mandanten. Jeder Tarif läuft auf demselben sicheren Grid.",
+            "Cobros y recobros, con precio por plan — desde un pequeño equipo interno de cuentas por cobrar hasta una agencia multicliente. Cada plan se ejecuta en la misma cuadrícula segura.",
+            "Crediti e recupero crediti, con prezzo per piano — da un piccolo team interno di crediti a un'agenzia multi-cliente. Ogni piano gira sulla stessa griglia sicura.",
+            "Vorderingen en incasso, geprijsd per abonnement — van een klein intern debiteurenteam tot een multiclient-bureau. Elk abonnement draait op hetzelfde beveiligde grid."),
         # ---- Cards ----
         "Small in-house AR teams": _t("Petites équipes de recouvrement internes", "Kleine interne Forderungsteams", "Equipos internos pequeños de cuentas por cobrar", "Piccoli team crediti interni", "Kleine interne debiteurenteams"),
         "Debtors, accounts, invoices &amp; payments": _t(
@@ -813,12 +813,12 @@ PAGE['/pricing/hr-suite/'] = {
         "Enterprise": _t("Enterprise", "Enterprise", "Enterprise", "Enterprise", "Enterprise"),
         "GOSI": _t("GOSI", "GOSI", "GOSI", "GOSI", "GOSI"),
         "SAP Business One": _t("SAP Business One", "SAP Business One", "SAP Business One", "SAP Business One", "SAP Business One"),
-        "HR from hire to retire — 35 modules on one platform, with Core HR always on. Priced per seat, packaged into three plans plus à-la-carte add-ons.": _t(
-            "Les RH de l'embauche au départ — 35 modules sur une seule plateforme, avec les RH de base toujours activées. Tarifé par siège, réparti en trois forfaits plus des options à la carte.",
-            "HR von der Einstellung bis zum Ruhestand — 35 Module auf einer Plattform, mit stets aktivem Kern-HR. Bepreist pro Platz, gebündelt in drei Tarife plus à-la-carte-Add-ons.",
-            "RR. HH. de la contratación a la jubilación — 35 módulos en una sola plataforma, con RR. HH. básicos siempre activos. Con precio por asiento, agrupados en tres planes más complementos a la carta.",
-            "HR dall'assunzione alla pensione — 35 moduli su un'unica piattaforma, con HR di base sempre attivo. Con prezzo per postazione, raggruppati in tre piani più add-on à la carte.",
-            "HR van aanwerving tot pensioen — 35 modules op één platform, met Kern-HR altijd aan. Geprijsd per zitplaats, gebundeld in drie abonnementen plus à-la-carte add-ons."),
+        "HR from hire to retire — 35 modules on one grid, with Core HR always on. Priced per seat, packaged into three plans plus à-la-carte add-ons.": _t(
+            "Les RH de l'embauche au départ — 35 modules sur une seule grille, avec les RH de base toujours activées. Tarifé par siège, réparti en trois forfaits plus des options à la carte.",
+            "HR von der Einstellung bis zum Ruhestand — 35 Module auf einem Grid, mit stets aktivem Kern-HR. Bepreist pro Platz, gebündelt in drei Tarife plus à-la-carte-Add-ons.",
+            "RR. HH. de la contratación a la jubilación — 35 módulos en una sola cuadrícula, con RR. HH. básicos siempre activos. Con precio por asiento, agrupados en tres planes más complementos a la carta.",
+            "HR dall'assunzione alla pensione — 35 moduli su un'unica griglia, con HR di base sempre attivo. Con prezzo per postazione, raggruppati in tre piani più add-on à la carte.",
+            "HR van aanwerving tot pensioen — 35 modules op één grid, met Kern-HR altijd aan. Geprijsd per zitplaats, gebundeld in drie abonnementen plus à-la-carte add-ons."),
         # ---- Cards ----
         "Small teams getting HR in order": _t("Petites équipes qui structurent leurs RH", "Kleine Teams, die ihre HR ordnen", "Equipos pequeños que ordenan sus RR. HH.", "Piccoli team che mettono ordine nell'HR", "Kleine teams die hun HR op orde brengen"),
         "/ seat / mo": _t("/ siège / mois", "/ Platz / Mon.", "/ asiento / mes", "/ postazione / mese", "/ zitplaats / mnd"),

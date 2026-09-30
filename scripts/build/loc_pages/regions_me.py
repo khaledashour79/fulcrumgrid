@@ -138,12 +138,12 @@ PAGE['/regions/egypt/'] = {'src': 'regions/egypt/index.html', 't': _common({
         "Conformité Égypte, prête à l'emploi", 'Ägypten-Compliance, sofort einsatzbereit',
         'Cumplimiento en Egipto, listo para usar', "Conformità Egitto, pronta all'uso",
         'Egypte-compliance, direct klaar voor gebruik'),
-    'The modules that make HR Suite work the way Egypt does — each part of the same platform, no separate tools.': _t(
-        "Les modules qui font fonctionner HR Suite comme l'Égypte le fait — chacun faisant partie de la même plateforme, sans outils séparés.",
-        'Die Module, die HR Suite so arbeiten lassen, wie Ägypten es tut — jedes Teil derselben Plattform, keine separaten Tools.',
-        'Los módulos que hacen que HR Suite funcione como lo hace Egipto — cada uno parte de la misma plataforma, sin herramientas separadas.',
-        "I moduli che fanno funzionare HR Suite come fa l'Egitto — ciascuno parte della stessa piattaforma, senza strumenti separati.",
-        'De modules die HR Suite laten werken zoals Egypte dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+    'The modules that make HR Suite work the way Egypt does — each part of the same grid, no separate tools.': _t(
+        "Les modules qui font fonctionner HR Suite comme l'Égypte le fait — chacun faisant partie de la même grille, sans outils séparés.",
+        'Die Module, die HR Suite so arbeiten lassen, wie Ägypten es tut — jedes Teil demselben Grid, keine separaten Tools.',
+        'Los módulos que hacen que HR Suite funcione como lo hace Egipto — cada uno parte de la misma cuadrícula, sin herramientas separadas.',
+        "I moduli che fanno funzionare HR Suite come fa l'Egitto — ciascuno parte della stessa griglia, senza strumenti separati.",
+        'De modules die HR Suite laten werken zoals Egypte dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
     'Configurable payroll': T_CONFIG_PAYROLL_TITLE,
     'Model Egyptian income tax and social-insurance contributions as configurable, classified deduction types, applied in every pay run.': _t(
         "Modélisez l'impôt sur le revenu égyptien et les cotisations d'assurance sociale sous forme de types de retenues configurables et classifiés, appliqués à chaque cycle de paie.",
@@ -215,12 +215,12 @@ PAGE['/regions/jordan/'] = {'src': 'regions/jordan/index.html', 't': _common({
         "Conformité Jordanie, prête à l'emploi", 'Jordanien-Compliance, sofort einsatzbereit',
         'Cumplimiento en Jordania, listo para usar', "Conformità Giordania, pronta all'uso",
         'Jordanië-compliance, direct klaar voor gebruik'),
-    'The modules that make HR Suite work the way Jordan does — each part of the same platform, no separate tools.': _t(
-        'Les modules qui font fonctionner HR Suite comme la Jordanie le fait — chacun faisant partie de la même plateforme, sans outils séparés.',
-        'Die Module, die HR Suite so arbeiten lassen, wie Jordanien es tut — jedes Teil derselben Plattform, keine separaten Tools.',
-        'Los módulos que hacen que HR Suite funcione como lo hace Jordania — cada uno parte de la misma plataforma, sin herramientas separadas.',
-        'I moduli che fanno funzionare HR Suite come fa la Giordania — ciascuno parte della stessa piattaforma, senza strumenti separati.',
-        'De modules die HR Suite laten werken zoals Jordanië dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+    'The modules that make HR Suite work the way Jordan does — each part of the same grid, no separate tools.': _t(
+        'Les modules qui font fonctionner HR Suite comme la Jordanie le fait — chacun faisant partie de la même grille, sans outils séparés.',
+        'Die Module, die HR Suite so arbeiten lassen, wie Jordanien es tut — jedes Teil demselben Grid, keine separaten Tools.',
+        'Los módulos que hacen que HR Suite funcione como lo hace Jordania — cada uno parte de la misma cuadrícula, sin herramientas separadas.',
+        'I moduli che fanno funzionare HR Suite come fa la Giordania — ciascuno parte della stessa griglia, senza strumenti separati.',
+        'De modules die HR Suite laten werken zoals Jordanië dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
     'Configurable payroll': T_CONFIG_PAYROLL_TITLE,
     'Model Jordanian income tax and Social Security Corporation (SSC) contributions as configurable, classified deduction types, applied in every pay run.': _t(
         "Modélisez l'impôt sur le revenu jordanien et les cotisations à la Social Security Corporation (SSC) sous forme de types de retenues configurables et classifiés, appliqués à chaque cycle de paie.",
@@ -292,12 +292,12 @@ PAGE['/regions/lebanon/'] = {'src': 'regions/lebanon/index.html', 't': _common({
         "Conformité Liban, prête à l'emploi", 'Libanon-Compliance, sofort einsatzbereit',
         'Cumplimiento en el Líbano, listo para usar', "Conformità Libano, pronta all'uso",
         'Libanon-compliance, direct klaar voor gebruik'),
-    'The modules that make HR Suite work the way Lebanon does — each part of the same platform, no separate tools.': _t(
-        'Les modules qui font fonctionner HR Suite comme le Liban le fait — chacun faisant partie de la même plateforme, sans outils séparés.',
-        'Die Module, die HR Suite so arbeiten lassen, wie der Libanon es tut — jedes Teil derselben Plattform, keine separaten Tools.',
-        'Los módulos que hacen que HR Suite funcione como lo hace el Líbano — cada uno parte de la misma plataforma, sin herramientas separadas.',
-        'I moduli che fanno funzionare HR Suite come fa il Libano — ciascuno parte della stessa piattaforma, senza strumenti separati.',
-        'De modules die HR Suite laten werken zoals Libanon dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+    'The modules that make HR Suite work the way Lebanon does — each part of the same grid, no separate tools.': _t(
+        'Les modules qui font fonctionner HR Suite comme le Liban le fait — chacun faisant partie de la même grille, sans outils séparés.',
+        'Die Module, die HR Suite so arbeiten lassen, wie der Libanon es tut — jedes Teil demselben Grid, keine separaten Tools.',
+        'Los módulos que hacen que HR Suite funcione como lo hace el Líbano — cada uno parte de la misma cuadrícula, sin herramientas separadas.',
+        'I moduli che fanno funzionare HR Suite come fa il Libano — ciascuno parte della stessa griglia, senza strumenti separati.',
+        'De modules die HR Suite laten werken zoals Libanon dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
     'Statutory leave &amp; holidays': T_STAT_LEAVE_TITLE,
     'Statutory annual, sick and maternity leave and the Lebanese public-holiday calendar, built in.': _t(
         'Congés annuels, de maladie et de maternité légaux et le calendrier des jours fériés libanais, intégrés.',
@@ -361,12 +361,12 @@ PAGE['/regions/iraq/'] = {'src': 'regions/iraq/index.html', 't': _common({
         "Conformité Irak, prête à l'emploi", 'Irak-Compliance, sofort einsatzbereit',
         'Cumplimiento en Irak, listo para usar', "Conformità Iraq, pronta all'uso",
         'Irak-compliance, direct klaar voor gebruik'),
-    'The modules that make HR Suite work the way Iraq does — each part of the same platform, no separate tools.': _t(
-        "Les modules qui font fonctionner HR Suite comme l'Irak le fait — chacun faisant partie de la même plateforme, sans outils séparés.",
-        'Die Module, die HR Suite so arbeiten lassen, wie der Irak es tut — jedes Teil derselben Plattform, keine separaten Tools.',
-        'Los módulos que hacen que HR Suite funcione como lo hace Irak — cada uno parte de la misma plataforma, sin herramientas separadas.',
-        "I moduli che fanno funzionare HR Suite come fa l'Iraq — ciascuno parte della stessa piattaforma, senza strumenti separati.",
-        'De modules die HR Suite laten werken zoals Irak dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+    'The modules that make HR Suite work the way Iraq does — each part of the same grid, no separate tools.': _t(
+        "Les modules qui font fonctionner HR Suite comme l'Irak le fait — chacun faisant partie de la même grille, sans outils séparés.",
+        'Die Module, die HR Suite so arbeiten lassen, wie der Irak es tut — jedes Teil demselben Grid, keine separaten Tools.',
+        'Los módulos que hacen que HR Suite funcione como lo hace Irak — cada uno parte de la misma cuadrícula, sin herramientas separadas.',
+        "I moduli che fanno funzionare HR Suite come fa l'Iraq — ciascuno parte della stessa griglia, senza strumenti separati.",
+        'De modules die HR Suite laten werken zoals Irak dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
     'Statutory leave &amp; holidays': T_STAT_LEAVE_TITLE,
     'Statutory annual, sick and maternity leave and the Iraqi public-holiday calendar, built in.': _t(
         'Congés annuels, de maladie et de maternité légaux et le calendrier des jours fériés irakiens, intégrés.',
@@ -430,12 +430,12 @@ PAGE['/regions/palestine/'] = {'src': 'regions/palestine/index.html', 't': _comm
         "Conformité Palestine, prête à l'emploi", 'Palästina-Compliance, sofort einsatzbereit',
         'Cumplimiento en Palestina, listo para usar', "Conformità Palestina, pronta all'uso",
         'Palestina-compliance, direct klaar voor gebruik'),
-    'The modules that make HR Suite work the way Palestine does — each part of the same platform, no separate tools.': _t(
-        'Les modules qui font fonctionner HR Suite comme la Palestine le fait — chacun faisant partie de la même plateforme, sans outils séparés.',
-        'Die Module, die HR Suite so arbeiten lassen, wie Palästina es tut — jedes Teil derselben Plattform, keine separaten Tools.',
-        'Los módulos que hacen que HR Suite funcione como lo hace Palestina — cada uno parte de la misma plataforma, sin herramientas separadas.',
-        'I moduli che fanno funzionare HR Suite come fa la Palestina — ciascuno parte della stessa piattaforma, senza strumenti separati.',
-        'De modules die HR Suite laten werken zoals Palestina dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+    'The modules that make HR Suite work the way Palestine does — each part of the same grid, no separate tools.': _t(
+        'Les modules qui font fonctionner HR Suite comme la Palestine le fait — chacun faisant partie de la même grille, sans outils séparés.',
+        'Die Module, die HR Suite so arbeiten lassen, wie Palästina es tut — jedes Teil demselben Grid, keine separaten Tools.',
+        'Los módulos que hacen que HR Suite funcione como lo hace Palestina — cada uno parte de la misma cuadrícula, sin herramientas separadas.',
+        'I moduli che fanno funzionare HR Suite come fa la Palestina — ciascuno parte della stessa griglia, senza strumenti separati.',
+        'De modules die HR Suite laten werken zoals Palestina dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
     'Statutory leave &amp; holidays': T_STAT_LEAVE_TITLE,
     'Statutory annual, sick and maternity leave and the Palestinian public-holiday calendar, built in.': _t(
         'Congés annuels, de maladie et de maternité légaux et le calendrier des jours fériés palestiniens, intégrés.',
@@ -499,12 +499,12 @@ PAGE['/regions/syria/'] = {'src': 'regions/syria/index.html', 't': _common({
         "Conformité Syrie, prête à l'emploi", 'Syrien-Compliance, sofort einsatzbereit',
         'Cumplimiento en Siria, listo para usar', "Conformità Siria, pronta all'uso",
         'Syrië-compliance, direct klaar voor gebruik'),
-    'The modules that make HR Suite work the way Syria does — each part of the same platform, no separate tools.': _t(
-        'Les modules qui font fonctionner HR Suite comme la Syrie le fait — chacun faisant partie de la même plateforme, sans outils séparés.',
-        'Die Module, die HR Suite so arbeiten lassen, wie Syrien es tut — jedes Teil derselben Plattform, keine separaten Tools.',
-        'Los módulos que hacen que HR Suite funcione como lo hace Siria — cada uno parte de la misma plataforma, sin herramientas separadas.',
-        'I moduli che fanno funzionare HR Suite come fa la Siria — ciascuno parte della stessa piattaforma, senza strumenti separati.',
-        'De modules die HR Suite laten werken zoals Syrië dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+    'The modules that make HR Suite work the way Syria does — each part of the same grid, no separate tools.': _t(
+        'Les modules qui font fonctionner HR Suite comme la Syrie le fait — chacun faisant partie de la même grille, sans outils séparés.',
+        'Die Module, die HR Suite so arbeiten lassen, wie Syrien es tut — jedes Teil demselben Grid, keine separaten Tools.',
+        'Los módulos que hacen que HR Suite funcione como lo hace Siria — cada uno parte de la misma cuadrícula, sin herramientas separadas.',
+        'I moduli che fanno funzionare HR Suite come fa la Siria — ciascuno parte della stessa griglia, senza strumenti separati.',
+        'De modules die HR Suite laten werken zoals Syrië dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
     'Statutory leave &amp; holidays': T_STAT_LEAVE_TITLE,
     'Statutory annual, sick and maternity leave and the Syrian public-holiday calendar, built in.': _t(
         'Congés annuels, de maladie et de maternité légaux et le calendrier des jours fériés syriens, intégrés.',
@@ -568,12 +568,12 @@ PAGE['/regions/yemen/'] = {'src': 'regions/yemen/index.html', 't': _common({
         "Conformité Yémen, prête à l'emploi", 'Jemen-Compliance, sofort einsatzbereit',
         'Cumplimiento en Yemen, listo para usar', "Conformità Yemen, pronta all'uso",
         'Jemen-compliance, direct klaar voor gebruik'),
-    'The modules that make HR Suite work the way Yemen does — each part of the same platform, no separate tools.': _t(
-        'Les modules qui font fonctionner HR Suite comme le Yémen le fait — chacun faisant partie de la même plateforme, sans outils séparés.',
-        'Die Module, die HR Suite so arbeiten lassen, wie der Jemen es tut — jedes Teil derselben Plattform, keine separaten Tools.',
-        'Los módulos que hacen que HR Suite funcione como lo hace Yemen — cada uno parte de la misma plataforma, sin herramientas separadas.',
-        'I moduli che fanno funzionare HR Suite come fa lo Yemen — ciascuno parte della stessa piattaforma, senza strumenti separati.',
-        'De modules die HR Suite laten werken zoals Jemen dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+    'The modules that make HR Suite work the way Yemen does — each part of the same grid, no separate tools.': _t(
+        'Les modules qui font fonctionner HR Suite comme le Yémen le fait — chacun faisant partie de la même grille, sans outils séparés.',
+        'Die Module, die HR Suite so arbeiten lassen, wie der Jemen es tut — jedes Teil demselben Grid, keine separaten Tools.',
+        'Los módulos que hacen que HR Suite funcione como lo hace Yemen — cada uno parte de la misma cuadrícula, sin herramientas separadas.',
+        'I moduli che fanno funzionare HR Suite come fa lo Yemen — ciascuno parte della stessa griglia, senza strumenti separati.',
+        'De modules die HR Suite laten werken zoals Jemen dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
     'Statutory leave &amp; holidays': T_STAT_LEAVE_TITLE,
     'Statutory annual, sick and maternity leave and the Yemeni public-holiday calendar, built in.': _t(
         'Congés annuels, de maladie et de maternité légaux et le calendrier des jours fériés yéménites, intégrés.',
@@ -638,12 +638,12 @@ PAGE['/regions/middle-east/'] = {'src': 'regions/middle-east/index.html', 't': _
         "Conformité Moyen-Orient, prête à l'emploi", 'Compliance im Nahen Osten, sofort einsatzbereit',
         'Cumplimiento en Oriente Medio, listo para usar', "Conformità Medio Oriente, pronta all'uso",
         'Midden-Oosten-compliance, direct klaar voor gebruik'),
-    'The modules that make HR Suite work the way Middle East does — each part of the same platform, no separate tools.': _t(
-        'Les modules qui font fonctionner HR Suite comme le Moyen-Orient le fait — chacun faisant partie de la même plateforme, sans outils séparés.',
-        'Die Module, die HR Suite so arbeiten lassen, wie der Nahe Osten es tut — jedes Teil derselben Plattform, keine separaten Tools.',
-        'Los módulos que hacen que HR Suite funcione como lo hace Oriente Medio — cada uno parte de la misma plataforma, sin herramientas separadas.',
-        'I moduli che fanno funzionare HR Suite come fa il Medio Oriente — ciascuno parte della stessa piattaforma, senza strumenti separati.',
-        'De modules die HR Suite laten werken zoals het Midden-Oosten dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+    'The modules that make HR Suite work the way Middle East does — each part of the same grid, no separate tools.': _t(
+        'Les modules qui font fonctionner HR Suite comme le Moyen-Orient le fait — chacun faisant partie de la même grille, sans outils séparés.',
+        'Die Module, die HR Suite so arbeiten lassen, wie der Nahe Osten es tut — jedes Teil demselben Grid, keine separaten Tools.',
+        'Los módulos que hacen que HR Suite funcione como lo hace Oriente Medio — cada uno parte de la misma cuadrícula, sin herramientas separadas.',
+        'I moduli che fanno funzionare HR Suite come fa il Medio Oriente — ciascuno parte della stessa griglia, senza strumenti separati.',
+        'De modules die HR Suite laten werken zoals het Midden-Oosten dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
     'Configurable local payroll': _t('Paie locale configurable', 'Konfigurierbare lokale Gehaltsabrechnung',
         'Nómina local configurable', 'Buste paga locali configurabili', 'Configureerbare lokale loonadministratie'),
     "Model each country's income tax and social contributions as configurable, classified deduction types — no country hard-coding required.": _t(
@@ -669,12 +669,12 @@ PAGE['/regions/middle-east/'] = {'src': 'regions/middle-east/index.html', 't': _
         'Arabisch, van rechts naar links overal, tweetalige documenten en uitbetaling in lokale valuta.'),
     'Core HR &amp; self-service': _t('RH essentielles &amp; libre-service', 'Kern-HR &amp; Self-Service',
         'RR. HH. esenciales &amp; autoservicio', 'HR di base &amp; self-service', 'Kern-HR &amp; selfservice'),
-    'Employee records, onboarding, time off and self-service — the whole lifecycle on one platform.': _t(
-        'Dossiers des employés, intégration, congés et libre-service — tout le cycle de vie sur une seule plateforme.',
-        'Mitarbeiterakten, Onboarding, Abwesenheiten und Self-Service — der gesamte Lebenszyklus auf einer Plattform.',
-        'Expedientes de empleados, incorporación, ausencias y autoservicio — todo el ciclo de vida en una sola plataforma.',
-        "Anagrafiche dei dipendenti, onboarding, ferie e self-service — l'intero ciclo di vita su un'unica piattaforma.",
-        'Personeelsdossiers, onboarding, verlof en selfservice — de hele levenscyclus op één platform.'),
+    'Employee records, onboarding, time off and self-service — the whole lifecycle on one grid.': _t(
+        'Dossiers des employés, intégration, congés et libre-service — tout le cycle de vie sur une seule grille.',
+        'Mitarbeiterakten, Onboarding, Abwesenheiten und Self-Service — der gesamte Lebenszyklus auf einem Grid.',
+        'Expedientes de empleados, incorporación, ausencias y autoservicio — todo el ciclo de vida en una sola cuadrícula.',
+        "Anagrafiche dei dipendenti, onboarding, ferie e self-service — l'intero ciclo di vita su un'unica griglia.",
+        'Personeelsdossiers, onboarding, verlof en selfservice — de hele levenscyclus op één grid.'),
     'Countries': _t('Pays', 'Länder', 'Países', 'Paesi', 'Landen'),
     'Countries in this region': _t('Pays de cette région', 'Länder in dieser Region',
         'Países de esta región', 'Paesi di questa regione', 'Landen in deze regio'),
@@ -705,10 +705,10 @@ PAGE['/regions/middle-east/'] = {'src': 'regions/middle-east/index.html', 't': _
         '<strong>También funciona en toda la región:</strong> Marruecos · Túnez · Argelia · Libia · Sudán — con nómina local configurable, fin de servicio y pago multidivisa. <a href="/contact/">Pregunte por su mercado →</a>',
         '<strong>Funziona anche in tutta la regione:</strong> Marocco · Tunisia · Algeria · Libia · Sudan — con buste paga locali configurabili, fine servizio e retribuzione multivaluta. <a href="/contact/">Chiedi informazioni sul tuo mercato →</a>',
         "<strong>Werkt ook in de hele regio:</strong> Marokko · Tunesië · Algerije · Libië · Soedan — met configureerbare lokale loonadministratie, einde dienstverband en uitbetaling in meerdere valuta's. <a href=\"/contact/\">Vraag naar uw markt →</a>"),
-    'Run your Middle East operation on one platform': _t(
-        'Gérez votre activité au Moyen-Orient sur une seule plateforme',
-        'Führen Sie Ihren Betrieb im Nahen Osten auf einer Plattform',
-        'Gestione su operación en Oriente Medio en una sola plataforma',
-        "Gestisci la tua attività in Medio Oriente su un'unica piattaforma",
-        'Run uw activiteiten in het Midden-Oosten op één platform'),
+    'Run your Middle East operation on one grid': _t(
+        'Gérez votre activité au Moyen-Orient sur une seule grille',
+        'Führen Sie Ihren Betrieb im Nahen Osten auf einem Grid',
+        'Gestione su operación en Oriente Medio en una sola cuadrícula',
+        "Gestisci la tua attività in Medio Oriente su un'unica griglia",
+        'Run uw activiteiten in het Midden-Oosten op één grid'),
 })}

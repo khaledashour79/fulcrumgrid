@@ -274,12 +274,12 @@ PAGE = {
                 'Apps de negocio a medida adaptadas a su flujo de trabajo | FulcrumGrid',
                 'App aziendali su misura adattate al tuo flusso di lavoro | FulcrumGrid',
                 'Zakelijke apps op maat, afgestemd op uw workflow | FulcrumGrid'),
-            'FulcrumGrid builds customized business apps tailored to your specific use case — on the same secure, auditable platform as our ready-made apps.': _t(
-                "FulcrumGrid conçoit des applications métier personnalisées, adaptées à votre cas d'usage précis — sur la même plateforme sécurisée et auditable que nos applications prêtes à l'emploi.",
-                'FulcrumGrid entwickelt maßgeschneiderte Business-Apps, zugeschnitten auf Ihren konkreten Anwendungsfall — auf derselben sicheren, prüfbaren Plattform wie unsere fertigen Apps.',
-                'FulcrumGrid crea apps de negocio personalizadas, adaptadas a su caso de uso concreto — en la misma plataforma segura y auditable que nuestras apps listas para usar.',
-                "FulcrumGrid crea app aziendali personalizzate, adattate al tuo caso d'uso specifico — sulla stessa piattaforma sicura e verificabile delle nostre app pronte all'uso.",
-                'FulcrumGrid bouwt aangepaste bedrijfsapps, afgestemd op uw specifieke gebruikssituatie — op hetzelfde veilige, controleerbare platform als onze kant-en-klare apps.'),
+            'FulcrumGrid builds customized business apps tailored to your specific use case — on the same secure, auditable grid as our ready-made apps.': _t(
+                "FulcrumGrid conçoit des applications métier personnalisées, adaptées à votre cas d'usage précis — sur la même grille sécurisée et auditable que nos applications prêtes à l'emploi.",
+                'FulcrumGrid entwickelt maßgeschneiderte Business-Apps, zugeschnitten auf Ihren konkreten Anwendungsfall — auf demselben sicheren, prüfbaren Grid wie unsere fertigen Apps.',
+                'FulcrumGrid crea apps de negocio personalizadas, adaptadas a su caso de uso concreto — en la misma cuadrícula segura y auditable que nuestras apps listas para usar.',
+                "FulcrumGrid crea app aziendali personalizzate, adattate al tuo caso d'uso specifico — sulla stessa griglia sicura e verificabile delle nostre app pronte all'uso.",
+                'FulcrumGrid bouwt aangepaste bedrijfsapps, afgestemd op uw specifieke gebruikssituatie — op hetzelfde veilige, controleerbare grid als onze kant-en-klare apps.'),
             # ---- Hero ----
             'Built for you': _t('Conçu pour vous', 'Für Sie gebaut', 'Creado para usted', 'Costruito per te', 'Voor u gebouwd'),
             'Custom business apps for your exact workflow': _t(
@@ -288,12 +288,12 @@ PAGE = {
                 'Apps de negocio a medida para su flujo de trabajo exacto',
                 'App aziendali su misura per il tuo flusso di lavoro preciso',
                 'Zakelijke apps op maat voor precies uw workflow'),
-            'Beyond our ready-made apps, we build customized business apps tailored to your specific use case — designed around how your team actually works, on the same secure, auditable platform as the rest of the grid.': _t(
-                "Au-delà de nos applications prêtes à l'emploi, nous concevons des applications métier personnalisées, adaptées à votre cas d'usage précis — pensées autour de la façon dont votre équipe travaille réellement, sur la même plateforme sécurisée et auditable que le reste de la grille.",
-                'Über unsere fertigen Apps hinaus entwickeln wir maßgeschneiderte Business-Apps, zugeschnitten auf Ihren konkreten Anwendungsfall — gestaltet rund um die tatsächliche Arbeitsweise Ihres Teams, auf derselben sicheren, prüfbaren Plattform wie der Rest des Grids.',
-                'Más allá de nuestras apps listas para usar, creamos apps de negocio personalizadas, adaptadas a su caso de uso concreto — diseñadas en torno a cómo trabaja realmente su equipo, en la misma plataforma segura y auditable que el resto de la cuadrícula.',
-                "Oltre alle nostre app pronte all'uso, creiamo app aziendali personalizzate, adattate al tuo caso d'uso specifico — progettate attorno al modo in cui il tuo team lavora davvero, sulla stessa piattaforma sicura e verificabile del resto della griglia.",
-                'Naast onze kant-en-klare apps bouwen we aangepaste bedrijfsapps, afgestemd op uw specifieke gebruikssituatie — ontworpen rond hoe uw team echt werkt, op hetzelfde veilige, controleerbare platform als de rest van het grid.'),
+            'Beyond our ready-made apps, we build customized business apps tailored to your specific use case — designed around how your team actually works, on the same secure, auditable foundation as the rest of the grid.': _t(
+                "Au-delà de nos applications prêtes à l'emploi, nous concevons des applications métier personnalisées, adaptées à votre cas d'usage précis — pensées autour de la façon dont votre équipe travaille réellement, sur le même socle sécurisé et auditable que le reste de la grille.",
+                'Über unsere fertigen Apps hinaus entwickeln wir maßgeschneiderte Business-Apps, zugeschnitten auf Ihren konkreten Anwendungsfall — gestaltet rund um die tatsächliche Arbeitsweise Ihres Teams, auf demselben sicheren, prüfbaren Fundament wie der Rest des Grids.',
+                'Más allá de nuestras apps listas para usar, creamos apps de negocio personalizadas, adaptadas a su caso de uso concreto — diseñadas en torno a cómo trabaja realmente su equipo, sobre la misma base segura y auditable que el resto de la cuadrícula.',
+                "Oltre alle nostre app pronte all'uso, creiamo app aziendali personalizzate, adattate al tuo caso d'uso specifico — progettate attorno al modo in cui il tuo team lavora davvero, sulle stesse fondamenta sicure e verificabili del resto della griglia.",
+                'Naast onze kant-en-klare apps bouwen we aangepaste bedrijfsapps, afgestemd op uw specifieke gebruikssituatie — ontworpen rond hoe uw team echt werkt, op hetzelfde veilige, controleerbare fundament als de rest van het grid.'),
             'Discuss a custom app': _t("Discuter d'une application sur mesure", 'Eine individuelle App besprechen', 'Hablar de una app a medida', "Parla di un'app su misura", 'Bespreek een app op maat'),
             'See ready-made apps': _t("Voir les applications prêtes à l'emploi", 'Fertige Apps ansehen', 'Ver apps listas para usar', "Vedi le app pronte all'uso", 'Bekijk kant-en-klare apps'),
             # ---- Where custom fits ----
@@ -320,12 +320,12 @@ PAGE = {
             'Agencies': _t('Agences', 'Agenturen', 'Agencias', 'Agenzie', 'Bureaus'),
             # ---- How we build ----
             'How we build': _t('Comment nous construisons', 'Wie wir bauen', 'Cómo construimos', 'Come costruiamo', 'Hoe we bouwen'),
-            'On the same secure, auditable FulcrumGrid platform as every ready-made app.': _t(
-                "Sur la même plateforme FulcrumGrid sécurisée et auditable que chaque application prête à l'emploi.",
-                'Auf derselben sicheren, prüfbaren FulcrumGrid-Plattform wie jede fertige App.',
-                'En la misma plataforma FulcrumGrid segura y auditable que cada app lista para usar.',
-                "Sulla stessa piattaforma FulcrumGrid sicura e verificabile di ogni app pronta all'uso.",
-                'Op hetzelfde veilige, controleerbare FulcrumGrid-platform als elke kant-en-klare app.'),
+            'On the same secure, auditable grid as every ready-made app.': _t(
+                "Sur la même grille sécurisée et auditable que chaque application prête à l'emploi.",
+                'Auf demselben sicheren, prüfbaren Grid wie jede fertige App.',
+                'En la misma cuadrícula segura y auditable que cada app lista para usar.',
+                "Sulla stessa griglia sicura e verificabile di ogni app pronta all'uso.",
+                'Op hetzelfde veilige, controleerbare grid als elke kant-en-klare app.'),
             'STEP 01': _t('ÉTAPE 01', 'SCHRITT 01', 'PASO 01', 'PASSO 01', 'STAP 01'),
             'STEP 02': _t('ÉTAPE 02', 'SCHRITT 02', 'PASO 02', 'PASSO 02', 'STAP 02'),
             'STEP 03': _t('ÉTAPE 03', 'SCHRITT 03', 'PASO 03', 'PASSO 03', 'STAP 03'),
@@ -343,12 +343,12 @@ PAGE = {
                 'Partiamo da come il tuo team lavora davvero oggi — i passaggi, i dati, le persone e le regole.',
                 'We beginnen bij hoe uw team vandaag echt werkt — de stappen, de gegevens, de mensen en de regels.'),
             'Build on the grid': _t('Construire sur la grille', 'Auf dem Grid bauen', 'Construir sobre la cuadrícula', 'Costruire sulla griglia', 'Bouwen op het grid'),
-            'Your app is built on the same secure, auditable FulcrumGrid platform — with role-based access and exportable data from day one.': _t(
-                "Votre application est construite sur la même plateforme FulcrumGrid sécurisée et auditable — avec un accès basé sur les rôles et des données exportables dès le premier jour.",
-                'Ihre App wird auf derselben sicheren, prüfbaren FulcrumGrid-Plattform gebaut — mit rollenbasiertem Zugriff und exportierbaren Daten vom ersten Tag an.',
-                'Su app se crea en la misma plataforma FulcrumGrid segura y auditable — con acceso basado en roles y datos exportables desde el primer día.',
-                'La tua app è costruita sulla stessa piattaforma FulcrumGrid sicura e verificabile — con accesso basato sui ruoli e dati esportabili fin dal primo giorno.',
-                'Uw app wordt gebouwd op hetzelfde veilige, controleerbare FulcrumGrid-platform — met rolgebaseerde toegang en exporteerbare gegevens vanaf dag één.'),
+            'Your app is built on the same secure, auditable grid — with role-based access and exportable data from day one.': _t(
+                "Votre application est construite sur la même grille sécurisée et auditable — avec un accès basé sur les rôles et des données exportables dès le premier jour.",
+                'Ihre App wird auf demselben sicheren, prüfbaren Grid gebaut — mit rollenbasiertem Zugriff und exportierbaren Daten vom ersten Tag an.',
+                'Su app se crea en la misma cuadrícula segura y auditable — con acceso basado en roles y datos exportables desde el primer día.',
+                'La tua app è costruita sulla stessa griglia sicura e verificabile — con accesso basato sui ruoli e dati esportabili fin dal primo giorno.',
+                'Uw app wordt gebouwd op hetzelfde veilige, controleerbare grid — met rolgebaseerde toegang en exporteerbare gegevens vanaf dag één.'),
             'Run &amp; evolve': _t('Exploiter &amp; faire évoluer', 'Betreiben &amp; weiterentwickeln', 'Operar &amp; evolucionar', 'Gestire &amp; evolvere', 'Draaien &amp; doorontwikkelen'),
             'Launch with your team, then refine as you learn. It plugs straight into the rest of your grid.': _t(
                 'Lancez avec votre équipe, puis affinez à mesure que vous apprenez. Elle se connecte directement au reste de votre grille.',

@@ -97,12 +97,12 @@ PAGE['/regions/north-america/'] = {'src': 'regions/north-america/index.html', 't
         '<h4>Canada</h4>', '<h4>Canada</h4>'),
     'Leave · Payroll · CPP/EI': _t('Congés · Paie · CPP/EI', 'Urlaub · Gehaltsabrechnung · CPP/EI',
         'Permisos · Nómina · CPP/EI', 'Ferie · Buste paga · CPP/EI', 'Verlof · Loon · CPP/EI'),
-    'Run your North American operation on one platform': _t(
-        'Gérez votre activité nord-américaine sur une seule plateforme',
-        'Führen Sie Ihren nordamerikanischen Betrieb auf einer Plattform',
-        'Gestione su operación norteamericana en una sola plataforma',
-        "Gestisci la tua attività nordamericana su un'unica piattaforma",
-        'Run uw Noord-Amerikaanse activiteiten op één platform'),
+    'Run your North American operation on one grid': _t(
+        'Gérez votre activité nord-américaine sur une seule grille',
+        'Führen Sie Ihren nordamerikanischen Betrieb auf einem Grid',
+        'Gestione su operación norteamericana en una sola cuadrícula',
+        "Gestisci la tua attività nordamericana su un'unica griglia",
+        'Run uw Noord-Amerikaanse activiteiten op één grid'),
 }}
 
 
@@ -137,12 +137,12 @@ PAGE['/regions/usa/'] = {'src': 'regions/usa/index.html', 't': _hero({
         "Conformité États-Unis, prête à l'emploi", 'USA-Compliance, sofort einsatzbereit',
         'Cumplimiento en Estados Unidos, listo para usar', "Conformità Stati Uniti, pronta all'uso",
         'Verenigde Staten-compliance, direct klaar voor gebruik'),
-    'The modules that make HR Suite work the way United States does — each part of the same platform, no separate tools.': _t(
-        'Les modules qui font fonctionner HR Suite comme les États-Unis le font — chacun faisant partie de la même plateforme, sans outils séparés.',
-        'Die Module, die HR Suite so arbeiten lassen, wie die USA es tun — jedes Teil derselben Plattform, keine separaten Tools.',
-        'Los módulos que hacen que HR Suite funcione como lo hacen los Estados Unidos — cada uno parte de la misma plataforma, sin herramientas separadas.',
-        'I moduli che fanno funzionare HR Suite come fanno gli Stati Uniti — ciascuno parte della stessa piattaforma, senza strumenti separati.',
-        'De modules die HR Suite laten werken zoals de Verenigde Staten dat doen — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+    'The modules that make HR Suite work the way United States does — each part of the same grid, no separate tools.': _t(
+        'Les modules qui font fonctionner HR Suite comme les États-Unis le font — chacun faisant partie de la même grille, sans outils séparés.',
+        'Die Module, die HR Suite so arbeiten lassen, wie die USA es tun — jedes Teil demselben Grid, keine separaten Tools.',
+        'Los módulos que hacen que HR Suite funcione como lo hacen los Estados Unidos — cada uno parte de la misma cuadrícula, sin herramientas separadas.',
+        'I moduli che fanno funzionare HR Suite come fanno gli Stati Uniti — ciascuno parte della stessa griglia, senza strumenti separati.',
+        'De modules die HR Suite laten werken zoals de Verenigde Staten dat doen — elk onderdeel van hetzelfde grid, geen aparte tools.'),
     'Payroll + tax categories': _t('Paie + catégories fiscales', 'Gehaltsabrechnung + Steuerkategorien',
         'Nómina + categorías fiscales', 'Buste paga + categorie fiscali',
         'Loonadministratie + belastingcategorieën'),
@@ -193,12 +193,12 @@ PAGE['/regions/usa/'] = {'src': 'regions/usa/index.html', 't': _hero({
         'Modella il 401(k), i benefit e altre trattenute al lordo e al netto delle imposte sullo stesso motore, con i contributi del datore di lavoro tracciati come costo aziendale.',
         'Modelleer 401(k), voordelen en andere inhoudingen vóór en na belasting op dezelfde engine, met werkgeversbijdragen bijgehouden als bedrijfskosten.'),
     'Core HR &amp; self-service': T_CORE_HR_TITLE,
-    'Employee records, onboarding, time off, documents and employee self-service — the whole lifecycle on one platform.': _t(
-        'Dossiers des employés, intégration, congés, documents et libre-service des employés — tout le cycle de vie sur une seule plateforme.',
-        'Mitarbeiterakten, Onboarding, Abwesenheiten, Dokumente und Mitarbeiter-Self-Service — der gesamte Lebenszyklus auf einer Plattform.',
-        'Expedientes de empleados, incorporación, ausencias, documentos y autoservicio del empleado — todo el ciclo de vida en una sola plataforma.',
-        "Anagrafiche dei dipendenti, onboarding, ferie, documenti e self-service dei dipendenti — l'intero ciclo di vita su un'unica piattaforma.",
-        'Personeelsdossiers, onboarding, verlof, documenten en selfservice voor medewerkers — de hele levenscyclus op één platform.'),
+    'Employee records, onboarding, time off, documents and employee self-service — the whole lifecycle on one grid.': _t(
+        'Dossiers des employés, intégration, congés, documents et libre-service des employés — tout le cycle de vie sur une seule grille.',
+        'Mitarbeiterakten, Onboarding, Abwesenheiten, Dokumente und Mitarbeiter-Self-Service — der gesamte Lebenszyklus auf einem Grid.',
+        'Expedientes de empleados, incorporación, ausencias, documentos y autoservicio del empleado — todo el ciclo de vida en una sola cuadrícula.',
+        "Anagrafiche dei dipendenti, onboarding, ferie, documenti e self-service dei dipendenti — l'intero ciclo di vita su un'unica griglia.",
+        'Personeelsdossiers, onboarding, verlof, documenten en selfservice voor medewerkers — de hele levenscyclus op één grid.'),
     PRICE_NOTE_EN: T_PRICE_NOTE,
     'Built in': T_BUILT_IN,
     'Run US HR &amp; payroll the right way': _t(
@@ -247,12 +247,12 @@ PAGE['/regions/canada/'] = {'src': 'regions/canada/index.html', 't': _hero({
         "Conformité Canada, prête à l'emploi", 'Kanada-Compliance, sofort einsatzbereit',
         'Cumplimiento en Canadá, listo para usar', "Conformità Canada, pronta all'uso",
         'Canada-compliance, direct klaar voor gebruik'),
-    'The modules that make HR Suite work the way Canada does — each part of the same platform, no separate tools.': _t(
-        'Les modules qui font fonctionner HR Suite comme le Canada le fait — chacun faisant partie de la même plateforme, sans outils séparés.',
-        'Die Module, die HR Suite so arbeiten lassen, wie Kanada es tut — jedes Teil derselben Plattform, keine separaten Tools.',
-        'Los módulos que hacen que HR Suite funcione como lo hace Canadá — cada uno parte de la misma plataforma, sin herramientas separadas.',
-        'I moduli che fanno funzionare HR Suite come fa il Canada — ciascuno parte della stessa piattaforma, senza strumenti separati.',
-        'De modules die HR Suite laten werken zoals Canada dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+    'The modules that make HR Suite work the way Canada does — each part of the same grid, no separate tools.': _t(
+        'Les modules qui font fonctionner HR Suite comme le Canada le fait — chacun faisant partie de la même grille, sans outils séparés.',
+        'Die Module, die HR Suite so arbeiten lassen, wie Kanada es tut — jedes Teil demselben Grid, keine separaten Tools.',
+        'Los módulos que hacen que HR Suite funcione como lo hace Canadá — cada uno parte de la misma cuadrícula, sin herramientas separadas.',
+        'I moduli che fanno funzionare HR Suite come fa il Canada — ciascuno parte della stessa griglia, senza strumenti separati.',
+        'De modules die HR Suite laten werken zoals Canada dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
     'Statutory leave &amp; holidays': _t('Congés légaux &amp; jours fériés',
         'Gesetzlicher Urlaub &amp; Feiertage', 'Permisos legales &amp; festivos',
         'Ferie legali &amp; festività', 'Wettelijk verlof &amp; feestdagen'),

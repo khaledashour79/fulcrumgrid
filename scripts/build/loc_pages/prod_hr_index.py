@@ -194,12 +194,12 @@ PAGE = {
             "More apps →": _t("Plus d'applications →", "Weitere Apps →", "Más apps →", "Altre app →", "Meer apps →"),
             "Inventory, CRM &amp; more": _t("Inventaire, CRM &amp; plus", "Lagerverwaltung, CRM &amp; mehr", "Inventario, CRM &amp; más", "Inventario, CRM &amp; altro", "Voorraad, CRM &amp; meer"),
             # ---- CTA ----
-            "Run your people ops<br />on one platform.": _t(
-                "Pilotez votre gestion du personnel<br />sur une seule plateforme.",
-                "Führen Sie Ihr Personalmanagement<br />auf einer Plattform.",
-                "Gestione sus operaciones de personas<br />en una sola plataforma.",
-                "Gestisci le tue operazioni sul personale<br />su un'unica piattaforma.",
-                "Run uw personeelsoperatie<br />op één platform."),
+            "Run your people ops<br />on one grid.": _t(
+                "Pilotez votre gestion du personnel<br />sur une seule grille.",
+                "Führen Sie Ihr Personalmanagement<br />auf einem Grid.",
+                "Gestione sus operaciones de personas<br />en una sola cuadrícula.",
+                "Gestisci le tue operazioni sul personale<br />su un'unica griglia.",
+                "Run uw personeelsoperatie<br />op één grid."),
             "See HR Suite handle the full employee lifecycle for your team.": _t(
                 "Voyez HR Suite gérer tout le cycle de vie de l'employé pour votre équipe.",
                 "Erleben Sie, wie HR Suite den gesamten Mitarbeiter-Lebenszyklus für Ihr Team abwickelt.",
@@ -213,12 +213,12 @@ PAGE = {
         'src': 'products/index.html',
         't': {
             # ---- Meta ----
-            "Explore the FulcrumGrid family of purpose-built business apps — HR Suite, Command Center, Collection, and more, all on one platform.": _t(
-                "Découvrez la famille FulcrumGrid d'applications métier sur mesure — HR Suite, Command Center, Collection et plus, le tout sur une seule plateforme.",
-                "Entdecken Sie die FulcrumGrid-Familie zweckgebauter Business-Apps — HR Suite, Command Center, Collection und mehr, alle auf einer Plattform.",
-                "Explore la familia FulcrumGrid de aplicaciones de negocio a medida — HR Suite, Command Center, Collection y más, todo en una sola plataforma.",
-                "Esplora la famiglia FulcrumGrid di applicazioni aziendali su misura — HR Suite, Command Center, Collection e altro, tutto su un'unica piattaforma.",
-                "Ontdek de FulcrumGrid-familie van doelgerichte bedrijfsapps — HR Suite, Command Center, Collection en meer, allemaal op één platform."),
+            "Explore the FulcrumGrid family of purpose-built business apps — HR Suite, Command Center, Collection, and more, all on one grid.": _t(
+                "Découvrez la famille FulcrumGrid d'applications métier sur mesure — HR Suite, Command Center, Collection et plus, le tout sur une seule grille.",
+                "Entdecken Sie die FulcrumGrid-Familie zweckgebauter Business-Apps — HR Suite, Command Center, Collection und mehr, alle auf einem Grid.",
+                "Explore la familia FulcrumGrid de aplicaciones de negocio a medida — HR Suite, Command Center, Collection y más, todo en una sola cuadrícula.",
+                "Esplora la famiglia FulcrumGrid di applicazioni aziendali su misura — HR Suite, Command Center, Collection e altro, tutto su un'unica griglia.",
+                "Ontdek de FulcrumGrid-familie van doelgerichte bedrijfsapps — HR Suite, Command Center, Collection en meer, allemaal op één grid."),
             # ---- Hero ----
             "The grid of apps": _t("La grille d'applications", "Das Grid der Apps", "La cuadrícula de apps", "La griglia di app", "Het grid van apps"),
             "Purpose-built apps for every operation.": _t(
@@ -227,18 +227,18 @@ PAGE = {
                 "Aplicaciones a medida para cada operación.",
                 "App su misura per ogni operazione.",
                 "Doelgerichte apps voor elke operatie."),
-            "Three apps live today, each solving a real problem on its own — all on one platform.": _t(
-                "Trois applications sont déjà disponibles, chacune résolvant à elle seule un vrai problème — le tout sur une seule plateforme.",
-                "Drei Apps sind heute schon live, jede löst für sich ein echtes Problem — alle auf einer Plattform.",
-                "Tres apps ya disponibles hoy, cada una resolviendo por sí sola un problema real — todo en una sola plataforma.",
-                "Tre app già disponibili oggi, ognuna risolve da sola un problema reale — tutto su un'unica piattaforma.",
-                "Vandaag zijn er drie apps live, elk lost op zichzelf een echt probleem op — allemaal op één platform."),
-            "Each FulcrumGrid app solves a real problem on its own — and they all run on one platform, with the same clean experience. Start with one today and add the rest as you grow.": _t(
-                "Chaque application FulcrumGrid résout à elle seule un vrai problème — et elles fonctionnent toutes sur une seule plateforme, avec la même expérience épurée. Commencez par une aujourd'hui et ajoutez les autres à mesure que vous grandissez.",
-                "Jede FulcrumGrid-App löst für sich ein echtes Problem — und alle laufen auf einer Plattform, mit demselben klaren Erlebnis. Starten Sie heute mit einer und fügen Sie die übrigen hinzu, wenn Sie wachsen.",
-                "Cada app de FulcrumGrid resuelve por sí sola un problema real — y todas funcionan en una sola plataforma, con la misma experiencia limpia. Empiece hoy con una y añada el resto a medida que crece.",
-                "Ogni app FulcrumGrid risolve da sola un problema reale — e girano tutte su un'unica piattaforma, con la stessa esperienza pulita. Inizia oggi con una e aggiungi le altre man mano che cresci.",
-                "Elke FulcrumGrid-app lost op zichzelf een echt probleem op — en ze draaien allemaal op één platform, met dezelfde heldere ervaring. Begin vandaag met één en voeg de rest toe naarmate u groeit."),
+            "Three apps live today, each solving a real problem on its own — all on one grid.": _t(
+                "Trois applications sont déjà disponibles, chacune résolvant à elle seule un vrai problème — le tout sur une seule grille.",
+                "Drei Apps sind heute schon live, jede löst für sich ein echtes Problem — alle auf einem Grid.",
+                "Tres apps ya disponibles hoy, cada una resolviendo por sí sola un problema real — todo en una sola cuadrícula.",
+                "Tre app già disponibili oggi, ognuna risolve da sola un problema reale — tutto su un'unica griglia.",
+                "Vandaag zijn er drie apps live, elk lost op zichzelf een echt probleem op — allemaal op één grid."),
+            "Each FulcrumGrid app solves a real problem on its own — and they all run on one grid, with the same clean experience. Start with one today and add the rest as you grow.": _t(
+                "Chaque application FulcrumGrid résout à elle seule un vrai problème — et elles fonctionnent toutes sur une seule grille, avec la même expérience épurée. Commencez par une aujourd'hui et ajoutez les autres à mesure que vous grandissez.",
+                "Jede FulcrumGrid-App löst für sich ein echtes Problem — und alle laufen auf einem Grid, mit demselben klaren Erlebnis. Starten Sie heute mit einer und fügen Sie die übrigen hinzu, wenn Sie wachsen.",
+                "Cada app de FulcrumGrid resuelve por sí sola un problema real — y todas funcionan en una sola cuadrícula, con la misma experiencia limpia. Empiece hoy con una y añada el resto a medida que crece.",
+                "Ogni app FulcrumGrid risolve da sola un problema reale — e girano tutte su un'unica griglia, con la stessa esperienza pulita. Inizia oggi con una e aggiungi le altre man mano che cresci.",
+                "Elke FulcrumGrid-app lost op zichzelf een echt probleem op — en ze draaien allemaal op één grid, met dezelfde heldere ervaring. Begin vandaag met één en voeg de rest toe naarmate u groeit."),
             # ---- Product cards ----
             "Available now": _t("Disponible maintenant", "Jetzt verfügbar", "Ya disponible", "Ora disponibile", "Nu beschikbaar"),
             "Receivables": _t("Créances", "Forderungen", "Cobros", "Crediti", "Vorderingen"),
@@ -273,12 +273,12 @@ PAGE = {
             "Payroll &amp; time tracking": _t("Paie &amp; suivi du temps", "Gehaltsabrechnung &amp; Zeiterfassung", "Nóminas &amp; control horario", "Buste paga &amp; monitoraggio del tempo", "Loonadministratie &amp; tijdregistratie"),
             "Performance &amp; reviews": _t("Performance &amp; évaluations", "Leistung &amp; Beurteilungen", "Desempeño &amp; evaluaciones", "Performance &amp; valutazioni", "Prestaties &amp; beoordelingen"),
             "More on the grid": _t("Plus sur la grille", "Mehr im Grid", "Más en la cuadrícula", "Altro sulla griglia", "Meer op het grid"),
-            "Close, TMS, Voice and Assure are coming soon — with CRM, Agents, Real Estate and Workshop on the roadmap. Built on the same platform, so they plug straight in.": _t(
-                "Close, TMS, Voice et Assure arrivent bientôt — avec CRM, Agents, Immobilier et Atelier sur la feuille de route. Conçus sur la même plateforme, ils s'intègrent directement.",
-                "Close, TMS, Voice und Assure kommen bald — mit CRM, Agenten, Immobilien und Werkstatt auf der Roadmap. Auf derselben Plattform gebaut, fügen sie sich direkt ein.",
-                "Close, TMS, Voice y Assure llegan pronto — con CRM, Agentes, Inmobiliaria y Taller en la hoja de ruta. Creados en la misma plataforma, se integran directamente.",
-                "Close, TMS, Voice e Assure sono in arrivo — con CRM, Agenti, Immobiliare e Officina nella roadmap. Costruiti sulla stessa piattaforma, si integrano subito.",
-                "Close, TMS, Voice en Assure komen binnenkort — met CRM, Agents, Vastgoed en Werkplaats op de roadmap. Gebouwd op hetzelfde platform, zodat ze direct aansluiten."),
+            "Close, TMS, Voice and Assure are coming soon — with CRM, Agents, Real Estate and Workshop on the roadmap. Built on the same grid, so they plug straight in.": _t(
+                "Close, TMS, Voice et Assure arrivent bientôt — avec CRM, Agents, Immobilier et Atelier sur la feuille de route. Conçus sur la même grille, ils s'intègrent directement.",
+                "Close, TMS, Voice und Assure kommen bald — mit CRM, Agenten, Immobilien und Werkstatt auf der Roadmap. Auf demselben Grid gebaut, fügen sie sich direkt ein.",
+                "Close, TMS, Voice y Assure llegan pronto — con CRM, Agentes, Inmobiliaria y Taller en la hoja de ruta. Creados en la misma cuadrícula, se integran directamente.",
+                "Close, TMS, Voice e Assure sono in arrivo — con CRM, Agenti, Immobiliare e Officina nella roadmap. Costruiti sulla stessa griglia, si integrano subito.",
+                "Close, TMS, Voice en Assure komen binnenkort — met CRM, Agents, Vastgoed en Werkplaats op de roadmap. Gebouwd op hetzelfde grid, zodat ze direct aansluiten."),
             "Close, TMS, Voice &amp; Assure — coming soon": _t(
                 "Close, TMS, Voice &amp; Assure — bientôt",
                 "Close, TMS, Voice &amp; Assure — demnächst",
@@ -323,12 +323,12 @@ PAGE = {
                 "¿No encuentra su flujo de trabajo exacto?",
                 "Non trovi il tuo flusso di lavoro esatto?",
                 "Ziet u uw exacte workflow niet?"),
-            "Beyond our ready-made apps, we build customized business apps tailored to your specific use case — on the same secure, auditable platform as the rest of the grid.": _t(
-                "Au-delà de nos applications prêtes à l'emploi, nous concevons des applications métier personnalisées, adaptées à votre cas d'usage précis — sur la même plateforme sécurisée et auditable que le reste de la grille.",
-                "Über unsere fertigen Apps hinaus entwickeln wir maßgeschneiderte Business-Apps für Ihren konkreten Anwendungsfall — auf derselben sicheren, prüfbaren Plattform wie der Rest des Grids.",
-                "Más allá de nuestras apps listas para usar, creamos aplicaciones de negocio personalizadas y adaptadas a su caso de uso concreto — en la misma plataforma segura y auditable que el resto de la cuadrícula.",
-                "Oltre alle nostre app pronte all'uso, sviluppiamo applicazioni aziendali personalizzate su misura per il tuo caso d'uso specifico — sulla stessa piattaforma sicura e verificabile del resto della griglia.",
-                "Naast onze kant-en-klare apps bouwen we op maat gemaakte bedrijfsapps, afgestemd op uw specifieke use case — op hetzelfde veilige, controleerbare platform als de rest van het grid."),
+            "Beyond our ready-made apps, we build customized business apps tailored to your specific use case — on the same secure, auditable foundation as the rest of the grid.": _t(
+                "Au-delà de nos applications prêtes à l'emploi, nous concevons des applications métier personnalisées, adaptées à votre cas d'usage précis — sur le même socle sécurisé et auditable que le reste de la grille.",
+                "Über unsere fertigen Apps hinaus entwickeln wir maßgeschneiderte Business-Apps für Ihren konkreten Anwendungsfall — auf demselben sicheren, prüfbaren Fundament wie der Rest des Grids.",
+                "Más allá de nuestras apps listas para usar, creamos aplicaciones de negocio personalizadas y adaptadas a su caso de uso concreto — sobre la misma base segura y auditable que el resto de la cuadrícula.",
+                "Oltre alle nostre app pronte all'uso, sviluppiamo applicazioni aziendali personalizzate su misura per il tuo caso d'uso specifico — sulle stesse fondamenta sicure e verificabili del resto della griglia.",
+                "Naast onze kant-en-klare apps bouwen we op maat gemaakte bedrijfsapps, afgestemd op uw specifieke use case — op hetzelfde veilige, controleerbare fundament als de rest van het grid."),
             "Explore custom apps": _t("Découvrir les applications sur mesure", "Individuelle Apps entdecken", "Explorar apps a medida", "Esplora le app su misura", "Ontdek apps op maat"),
             # ---- Ready CTA ----
             "Ready to run<br />on one grid?": _t(
@@ -352,12 +352,12 @@ PAGE = {
         'src': 'products/coming-soon/index.html',
         't': {
             # ---- Meta ----
-            "More FulcrumGrid apps in active development — Close, TMS, Voice and Assure coming soon, with CRM, Agents, Real Estate and Workshop on the roadmap — built on the same platform. Get early access.": _t(
-                "D'autres applications FulcrumGrid en développement actif — Close, TMS, Voice et Assure bientôt, avec CRM, Agents, Immobilier et Atelier sur la feuille de route — conçues sur la même plateforme. Obtenez un accès anticipé.",
-                "Weitere FulcrumGrid-Apps in aktiver Entwicklung — Close, TMS, Voice und Assure demnächst, mit CRM, Agenten, Immobilien und Werkstatt auf der Roadmap — auf derselben Plattform gebaut. Sichern Sie sich frühen Zugang.",
-                "Más aplicaciones de FulcrumGrid en desarrollo activo — Close, TMS, Voice y Assure próximamente, con CRM, Agentes, Inmobiliaria y Taller en la hoja de ruta — creadas en la misma plataforma. Consiga acceso anticipado.",
-                "Altre app FulcrumGrid in fase di sviluppo attivo — Close, TMS, Voice e Assure in arrivo, con CRM, Agenti, Immobiliare e Officina nella roadmap — costruite sulla stessa piattaforma. Ottieni l'accesso anticipato.",
-                "Meer FulcrumGrid-apps in actieve ontwikkeling — Close, TMS, Voice en Assure binnenkort, met CRM, Agents, Vastgoed en Werkplaats op de roadmap — gebouwd op hetzelfde platform. Krijg vroege toegang."),
+            "More FulcrumGrid apps in active development — Close, TMS, Voice and Assure coming soon, with CRM, Agents, Real Estate and Workshop on the roadmap — built on the same grid. Get early access.": _t(
+                "D'autres applications FulcrumGrid en développement actif — Close, TMS, Voice et Assure bientôt, avec CRM, Agents, Immobilier et Atelier sur la feuille de route — conçues sur la même grille. Obtenez un accès anticipé.",
+                "Weitere FulcrumGrid-Apps in aktiver Entwicklung — Close, TMS, Voice und Assure demnächst, mit CRM, Agenten, Immobilien und Werkstatt auf der Roadmap — auf demselben Grid gebaut. Sichern Sie sich frühen Zugang.",
+                "Más aplicaciones de FulcrumGrid en desarrollo activo — Close, TMS, Voice y Assure próximamente, con CRM, Agentes, Inmobiliaria y Taller en la hoja de ruta — creadas en la misma cuadrícula. Consiga acceso anticipado.",
+                "Altre app FulcrumGrid in fase di sviluppo attivo — Close, TMS, Voice e Assure in arrivo, con CRM, Agenti, Immobiliare e Officina nella roadmap — costruite sulla stessa griglia. Ottieni l'accesso anticipato.",
+                "Meer FulcrumGrid-apps in actieve ontwikkeling — Close, TMS, Voice en Assure binnenkort, met CRM, Agents, Vastgoed en Werkplaats op de roadmap — gebouwd op hetzelfde grid. Krijg vroege toegang."),
             "Close, TMS, Voice and Assure — coming to the grid.": _t(
                 "Close, TMS, Voice et Assure — bientôt sur la grille.",
                 "Close, TMS, Voice und Assure — bald im Grid.",

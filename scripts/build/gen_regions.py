@@ -258,8 +258,8 @@ REGIONS = {
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للمملكة المتحدة',
     'lead_en': "HR Suite runs your UK workforce end to end — PAYE and National Insurance on a configurable payroll, P60 and P45 statements, NINO validation, pensions, and full employee records.",
     'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في المملكة المتحدة بالكامل — ضريبة PAYE والتأمين الوطني على نظام رواتب قابل للتهيئة، وكشوف P60 و P45، والتحقق من رقم التأمين الوطني، والمعاشات، وسجلّات موظفين كاملة.",
-    'desc_en': "HR Suite for the UK — PAYE and National Insurance deductions, P60 and P45 statements, NINO validation, workplace pensions, and full HR on one platform.",
-    'desc_ar': "منظومة الموارد البشرية للمملكة المتحدة — استقطاعات PAYE والتأمين الوطني، وكشوف P60 و P45، والتحقق من رقم التأمين الوطني، ومعاشات العمل، وموارد بشرية كاملة على منصة واحدة.",
+    'desc_en': "HR Suite for the UK — PAYE and National Insurance deductions, P60 and P45 statements, NINO validation, workplace pensions, and full HR on one grid.",
+    'desc_ar': "منظومة الموارد البشرية للمملكة المتحدة — استقطاعات PAYE والتأمين الوطني، وكشوف P60 و P45، والتحقق من رقم التأمين الوطني، ومعاشات العمل، وموارد بشرية كاملة على شبكة واحدة.",
     'hub_sub_en': 'PAYE · NI · P60/P45', 'hub_sub_ar': 'PAYE · التأمين الوطني · P60/P45',
     'features': [
       ("PAYE &amp; National Insurance", "PAYE والتأمين الوطني",
@@ -275,8 +275,8 @@ REGIONS = {
        "Model workplace pension and other pre- and post-tax deductions on the same engine, with employer contributions tracked as company cost.",
        "أنشئ معاش العمل وغيره من الاستقطاعات قبل الضريبة وبعدها على النظام نفسه، مع تتبّع مساهمات صاحب العمل كتكلفة على الشركة."),
       ("Core HR &amp; self-service", "الموارد البشرية الأساسية والخدمة الذاتية",
-       "Employee records, onboarding, time off, documents and employee self-service — the whole lifecycle on one platform.",
-       "سجلّات الموظفين والتأهيل والإجازات والمستندات والخدمة الذاتية — دورة الحياة كاملة على منصة واحدة."),
+       "Employee records, onboarding, time off, documents and employee self-service — the whole lifecycle on one grid.",
+       "سجلّات الموظفين والتأهيل والإجازات والمستندات والخدمة الذاتية — دورة الحياة كاملة على شبكة واحدة."),
     ],
     'cta_h_en': 'Run UK HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في المملكة المتحدة كما ينبغي',
     'cta_p_en': "See HR Suite handle UK PAYE, National Insurance, and year-end for your team.",
@@ -312,8 +312,8 @@ REGIONS = {
        "Model 401(k), benefits and other pre- and post-tax deductions on the same engine, with employer contributions tracked as company cost.",
        "أنشئ خطة 401(k) والمزايا وغيرها من الاستقطاعات قبل الضريبة وبعدها على النظام نفسه، مع تتبّع مساهمات صاحب العمل كتكلفة على الشركة."),
       ("Core HR &amp; self-service", "الموارد البشرية الأساسية والخدمة الذاتية",
-       "Employee records, onboarding, time off, documents and employee self-service — the whole lifecycle on one platform.",
-       "سجلّات الموظفين والتأهيل والإجازات والمستندات والخدمة الذاتية — دورة الحياة كاملة على منصة واحدة."),
+       "Employee records, onboarding, time off, documents and employee self-service — the whole lifecycle on one grid.",
+       "سجلّات الموظفين والتأهيل والإجازات والمستندات والخدمة الذاتية — دورة الحياة كاملة على شبكة واحدة."),
     ],
     'cta_h_en': 'Run US HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في الولايات المتحدة كما ينبغي',
     'cta_p_en': "See HR Suite handle US payroll, W-2, and ACH for your team.",
@@ -324,8 +324,8 @@ REGIONS = {
     'tag_en': 'Europe · EU', 'tag_ar': 'أوروبا · EU',
     'h1_en': 'FulcrumGrid, built for', 'h1_grad_en': 'Europe',
     'h1_ar': 'FulcrumGrid،', 'h1_grad_ar': 'مصمّمة لأوروبا',
-    'lead_en': "The whole grid runs across Europe — HR Suite with SEPA payroll and GDPR-grade data privacy; Command Center with multi-currency, VAT-ready finance; and Collection with SEPA-friendly receivables. One platform across your entities.",
-    'lead_ar': "الشبكة كاملة تعمل عبر أوروبا — HR Suite برواتب SEPA وخصوصية بيانات بمستوى GDPR؛ وCommand Center بمالية متعددة العملات وجاهزة لضريبة القيمة المضافة؛ وCollection بتحصيل متوافق مع SEPA. منصة واحدة عبر كياناتك.",
+    'lead_en': "The whole grid runs across Europe — HR Suite with SEPA payroll and GDPR-grade data privacy; Command Center with multi-currency, VAT-ready finance; and Collection with SEPA-friendly receivables. One grid across your entities.",
+    'lead_ar': "الشبكة كاملة تعمل عبر أوروبا — HR Suite برواتب SEPA وخصوصية بيانات بمستوى GDPR؛ وCommand Center بمالية متعددة العملات وجاهزة لضريبة القيمة المضافة؛ وCollection بتحصيل متوافق مع SEPA. شبكة واحدة عبر كياناتك.",
     'desc_en': "FulcrumGrid across Europe — HR Suite, Command Center and Collection — with SEPA payroll, GDPR-grade data privacy and multi-currency, VAT-ready finance.",
     'desc_ar': "FulcrumGrid عبر أوروبا — HR Suite وCommand Center وCollection — برواتب SEPA وخصوصية بيانات بمستوى GDPR ومالية متعددة العملات جاهزة لضريبة القيمة المضافة.",
     'hub_sub_en': 'UK · Ireland · France · Germany · Spain · Italy · NL', 'hub_sub_ar': 'المملكة المتحدة · أيرلندا · فرنسا · ألمانيا · إسبانيا · إيطاليا · هولندا',
@@ -346,10 +346,10 @@ REGIONS = {
        "Contracts, letters and click-to-sign, with data-retention rules applied automatically.",
        "العقود والخطابات والتوقيع بنقرة، مع تطبيق قواعد الاحتفاظ بالبيانات تلقائيًا."),
       ("Core HR &amp; self-service", "الموارد البشرية الأساسية والخدمة الذاتية",
-       "Employee records, onboarding, time off and self-service — the whole lifecycle on one platform.",
-       "سجلّات الموظفين والتأهيل والإجازات والخدمة الذاتية — دورة الحياة كاملة على منصة واحدة."),
+       "Employee records, onboarding, time off and self-service — the whole lifecycle on one grid.",
+       "سجلّات الموظفين والتأهيل والإجازات والخدمة الذاتية — دورة الحياة كاملة على شبكة واحدة."),
     ],
-    'cta_h_en': 'Run your European operation on one platform', 'cta_h_ar': 'أدِر عملياتك الأوروبية على منصة واحدة',
+    'cta_h_en': 'Run your European operation on one grid', 'cta_h_ar': 'أدِر عملياتك الأوروبية على شبكة واحدة',
     'cta_p_en': "Tell us where you operate and we'll show you the whole grid in action.",
     'cta_p_ar': "أخبرنا أين تعمل وسنعرض لك الشبكة كاملة وهي تعمل.",
   },
@@ -364,7 +364,7 @@ REGIONS = {
     'desc_ar': "FulcrumGrid عبر دول الخليج — HR Suite وCommand Center وCollection — برواتب WPS ونهاية خدمة نظامية ودعم العربية، ومالية خليجية أصيلة والضريبة والزكاة، لكل دولة.",
     'hub_sub_en': 'Saudi · UAE · Qatar · Kuwait · Bahrain · Oman', 'hub_sub_ar': 'السعودية · الإمارات · قطر · الكويت · البحرين · عُمان',
     'members': ['saudi-arabia', 'uae', 'qatar', 'kuwait', 'bahrain', 'oman'],
-    'cta_h_en': 'Run your Gulf operation on one platform', 'cta_h_ar': 'أدِر عملياتك الخليجية على منصة واحدة',
+    'cta_h_en': 'Run your Gulf operation on one grid', 'cta_h_ar': 'أدِر عملياتك الخليجية على شبكة واحدة',
     'cta_p_en': "Tell us where you operate and we'll show you the whole grid in action.",
     'cta_p_ar': "أخبرنا أين تعمل وسنعرض لك الشبكة كاملة وهي تعمل.",
   },
@@ -392,10 +392,10 @@ REGIONS = {
        "Arabic, right-to-left throughout, bilingual documents, and pay in local currency.",
        "العربية ومن اليمين إلى اليسار بالكامل، ومستندات ثنائية اللغة، والدفع بالعملة المحلية."),
       ("Core HR &amp; self-service", "الموارد البشرية الأساسية والخدمة الذاتية",
-       "Employee records, onboarding, time off and self-service — the whole lifecycle on one platform.",
-       "سجلّات الموظفين والتأهيل والإجازات والخدمة الذاتية — دورة الحياة كاملة على منصة واحدة."),
+       "Employee records, onboarding, time off and self-service — the whole lifecycle on one grid.",
+       "سجلّات الموظفين والتأهيل والإجازات والخدمة الذاتية — دورة الحياة كاملة على شبكة واحدة."),
     ],
-    'cta_h_en': 'Run your Middle East operation on one platform', 'cta_h_ar': 'أدِر عملياتك في الشرق الأوسط على منصة واحدة',
+    'cta_h_en': 'Run your Middle East operation on one grid', 'cta_h_ar': 'أدِر عملياتك في الشرق الأوسط على شبكة واحدة',
     'cta_p_en': "Tell us where you operate and we'll show you the whole grid in action.",
     'cta_p_ar': "أخبرنا أين تعمل وسنعرض لك الشبكة كاملة وهي تعمل.",
   },
@@ -752,7 +752,7 @@ REGIONS = {
     'desc_ar': "FulcrumGrid عبر أمريكا الشمالية — HR Suite وCommand Center وCollection — برواتب قابلة للتهيئة وفق القواعد الفيدرالية والولائية والإقليمية، ومالية فورية بالدولار الأمريكي والكندي، وتحصيل.",
     'hub_sub_en': 'United States · Canada', 'hub_sub_ar': 'الولايات المتحدة · كندا',
     'members': ['usa', 'canada'],
-    'cta_h_en': 'Run your North American operation on one platform', 'cta_h_ar': 'أدِر عملياتك في أمريكا الشمالية على منصة واحدة',
+    'cta_h_en': 'Run your North American operation on one grid', 'cta_h_ar': 'أدِر عملياتك في أمريكا الشمالية على شبكة واحدة',
     'cta_p_en': "Tell us where you operate and we'll show you the whole grid in action.",
     'cta_p_ar': "أخبرنا أين تعمل وسنعرض لك الشبكة كاملة وهي تعمل.",
   },
@@ -1158,8 +1158,8 @@ def region_page(slug, lang):
         act3 = 'See HR Suite pricing' if en else 'أسعار الموارد البشرية'
         act3_href = f'{b}/pricing/hr-suite/'
     whatsin_h = ('%s compliance, out of the box' % name) if en else ('امتثال %s جاهز' % name)
-    whatsin_p = ("The modules that make HR Suite work the way %s does — each part of the same platform, no separate tools." % name if en
-                 else "الوحدات التي تجعل منظومة الموارد البشرية تعمل بالطريقة المحلية في %s — كلّها جزء من المنصة نفسها، دون أدوات منفصلة." % name)
+    whatsin_p = ("The modules that make HR Suite work the way %s does — each part of the same grid, no separate tools." % name if en
+                 else "الوحدات التي تجعل منظومة الموارد البشرية تعمل بالطريقة المحلية في %s — كلّها جزء من الشبكة نفسها، دون أدوات منفصلة." % name)
     note = (f'Every module here is part of HR Suite — advanced payroll, year-end and compliance on the Enterprise plan, or added to any plan as a per-seat add-on. <a href="{b}/pricing/hr-suite/">See HR Suite pricing →</a>'
             if en else
             f'كل وحدة هنا جزء من منظومة الموارد البشرية — الرواتب المتقدّمة ونهاية السنة والامتثال في خطة المؤسسات، أو تُضاف إلى أي خطة كإضافة لكل مقعد. <a href="{b}/pricing/hr-suite/">أسعار الموارد البشرية ←</a>')

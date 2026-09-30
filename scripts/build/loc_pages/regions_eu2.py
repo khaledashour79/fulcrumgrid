@@ -126,12 +126,12 @@ PAGE['/regions/germany/'] = {
             'Cumplimiento para Alemania, listo para usar',
             "Conformità per la Germania, pronta all'uso",
             'Compliance voor Duitsland, kant-en-klaar'),
-        'The modules that make HR Suite work the way Germany does — each part of the same platform, no separate tools.': _t(
-            "Les modules qui font fonctionner HR Suite à la manière de l'Allemagne — chacun fait partie de la même plateforme, sans outils séparés.",
-            'Die Module, die HR Suite so arbeiten lassen, wie es Deutschland tut — jedes Teil derselben Plattform, keine separaten Tools.',
-            'Los módulos que hacen que HR Suite funcione como lo hace Alemania — cada uno forma parte de la misma plataforma, sin herramientas separadas.',
-            "I moduli che fanno funzionare HR Suite come fa la Germania — ognuno parte della stessa piattaforma, senza strumenti separati.",
-            'De modules die HR Suite laten werken zoals Duitsland dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+        'The modules that make HR Suite work the way Germany does — each part of the same grid, no separate tools.': _t(
+            "Les modules qui font fonctionner HR Suite à la manière de l'Allemagne — chacun fait partie de la même grille, sans outils séparés.",
+            'Die Module, die HR Suite so arbeiten lassen, wie es Deutschland tut — jedes Teil demselben Grid, keine separaten Tools.',
+            'Los módulos que hacen que HR Suite funcione como lo hace Alemania — cada uno forma parte de la misma cuadrícula, sin herramientas separadas.',
+            "I moduli che fanno funzionare HR Suite come fa la Germania — ognuno parte della stessa griglia, senza strumenti separati.",
+            'De modules die HR Suite laten werken zoals Duitsland dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
         # ---- Feature cards (Germany-specific) ----
         'Overtime &amp; working-time caps': _t(
             'Heures supplémentaires &amp; plafonds de temps de travail',
@@ -205,12 +205,12 @@ PAGE['/regions/spain/'] = {
             'Cumplimiento para España, listo para usar',
             "Conformità per la Spagna, pronta all'uso",
             'Compliance voor Spanje, kant-en-klaar'),
-        'The modules that make HR Suite work the way Spain does — each part of the same platform, no separate tools.': _t(
-            "Les modules qui font fonctionner HR Suite à la manière de l'Espagne — chacun fait partie de la même plateforme, sans outils séparés.",
-            'Die Module, die HR Suite so arbeiten lassen, wie es Spanien tut — jedes Teil derselben Plattform, keine separaten Tools.',
-            'Los módulos que hacen que HR Suite funcione como lo hace España — cada uno forma parte de la misma plataforma, sin herramientas separadas.',
-            "I moduli che fanno funzionare HR Suite come fa la Spagna — ognuno parte della stessa piattaforma, senza strumenti separati.",
-            'De modules die HR Suite laten werken zoals Spanje dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+        'The modules that make HR Suite work the way Spain does — each part of the same grid, no separate tools.': _t(
+            "Les modules qui font fonctionner HR Suite à la manière de l'Espagne — chacun fait partie de la même grille, sans outils séparés.",
+            'Die Module, die HR Suite so arbeiten lassen, wie es Spanien tut — jedes Teil demselben Grid, keine separaten Tools.',
+            'Los módulos que hacen que HR Suite funcione como lo hace España — cada uno forma parte de la misma cuadrícula, sin herramientas separadas.',
+            "I moduli che fanno funzionare HR Suite come fa la Spagna — ognuno parte della stessa griglia, senza strumenti separati.",
+            'De modules die HR Suite laten werken zoals Spanje dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
         # ---- Feature cards (Spain-specific) ----
         "Overtime — Workers' Statute": _t(
             'Heures supplémentaires — Statut des travailleurs',
@@ -284,12 +284,12 @@ PAGE['/regions/italy/'] = {
             'Cumplimiento para Italia, listo para usar',
             "Conformità per l'Italia, pronta all'uso",
             'Compliance voor Italië, kant-en-klaar'),
-        'The modules that make HR Suite work the way Italy does — each part of the same platform, no separate tools.': _t(
-            "Les modules qui font fonctionner HR Suite à la manière de l'Italie — chacun fait partie de la même plateforme, sans outils séparés.",
-            'Die Module, die HR Suite so arbeiten lassen, wie es Italien tut — jedes Teil derselben Plattform, keine separaten Tools.',
-            'Los módulos que hacen que HR Suite funcione como lo hace Italia — cada uno forma parte de la misma plataforma, sin herramientas separadas.',
-            "I moduli che fanno funzionare HR Suite come fa l'Italia — ognuno parte della stessa piattaforma, senza strumenti separati.",
-            'De modules die HR Suite laten werken zoals Italië dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+        'The modules that make HR Suite work the way Italy does — each part of the same grid, no separate tools.': _t(
+            "Les modules qui font fonctionner HR Suite à la manière de l'Italie — chacun fait partie de la même grille, sans outils séparés.",
+            'Die Module, die HR Suite so arbeiten lassen, wie es Italien tut — jedes Teil demselben Grid, keine separaten Tools.',
+            'Los módulos que hacen que HR Suite funcione como lo hace Italia — cada uno forma parte de la misma cuadrícula, sin herramientas separadas.',
+            "I moduli che fanno funzionare HR Suite come fa l'Italia — ognuno parte della stessa griglia, senza strumenti separati.",
+            'De modules die HR Suite laten werken zoals Italië dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
         # ---- Feature cards (Italy-specific) ----
         'Overtime — CCNL rates': _t(
             'Heures supplémentaires — taux CCNL', 'Überstunden — CCNL-Sätze',
@@ -361,12 +361,12 @@ PAGE['/regions/netherlands/'] = {
             'Cumplimiento para los Países Bajos, listo para usar',
             "Conformità per i Paesi Bassi, pronta all'uso",
             'Compliance voor Nederland, kant-en-klaar'),
-        'The modules that make HR Suite work the way Netherlands does — each part of the same platform, no separate tools.': _t(
-            "Les modules qui font fonctionner HR Suite à la manière des Pays-Bas — chacun fait partie de la même plateforme, sans outils séparés.",
-            'Die Module, die HR Suite so arbeiten lassen, wie es die Niederlande tun — jedes Teil derselben Plattform, keine separaten Tools.',
-            'Los módulos que hacen que HR Suite funcione como lo hacen los Países Bajos — cada uno forma parte de la misma plataforma, sin herramientas separadas.',
-            "I moduli che fanno funzionare HR Suite come fanno i Paesi Bassi — ognuno parte della stessa piattaforma, senza strumenti separati.",
-            'De modules die HR Suite laten werken zoals Nederland dat doet — elk onderdeel van hetzelfde platform, geen aparte tools.'),
+        'The modules that make HR Suite work the way Netherlands does — each part of the same grid, no separate tools.': _t(
+            "Les modules qui font fonctionner HR Suite à la manière des Pays-Bas — chacun fait partie de la même grille, sans outils séparés.",
+            'Die Module, die HR Suite so arbeiten lassen, wie es die Niederlande tun — jedes Teil demselben Grid, keine separaten Tools.',
+            'Los módulos que hacen que HR Suite funcione como lo hacen los Países Bajos — cada uno forma parte de la misma cuadrícula, sin herramientas separadas.',
+            "I moduli che fanno funzionare HR Suite come fanno i Paesi Bassi — ognuno parte della stessa griglia, senza strumenti separati.",
+            'De modules die HR Suite laten werken zoals Nederland dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
         # ---- Feature cards (Netherlands-specific) ----
         'Overtime — CBA rates': _t(
             'Heures supplémentaires — taux de la convention collective',
