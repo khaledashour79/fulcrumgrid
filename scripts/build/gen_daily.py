@@ -135,11 +135,12 @@ def head(lang, p, tr):
     ld = '\n'.join('  <script type="application/ld+json">\n  %s\n  </script>'
                    % json.dumps(o, ensure_ascii=False, indent=2).replace('\n', '\n  ') for o in objs)
 
-    fonts = ('  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700'
-             '&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />')
     if lang == 'ar':
-        fonts += ('\n  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800'
-                  '&display=swap" rel="stylesheet" />')
+        fonts = ('  <link rel="preload" href="/assets/fonts/cairo-600-arabic.woff2" as="font" type="font/woff2" crossorigin />\n'
+                 '  <link rel="preload" href="/assets/fonts/cairo-400-arabic.woff2" as="font" type="font/woff2" crossorigin />')
+    else:
+        fonts = ('  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />\n'
+                 '  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />')
     return ('<head>\n'
       '  <meta charset="UTF-8" />\n'
       '  <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n'
@@ -153,8 +154,7 @@ def head(lang, p, tr):
       '  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />\n'
       '  <link rel="manifest" href="/site.webmanifest" />\n'
       '  <link rel="canonical" href="%s" />\n%s\n\n'
-      '  <link rel="preconnect" href="https://fonts.googleapis.com" />\n'
-      '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\n%s\n'
+      '%s\n'
       '  <link rel="stylesheet" href="/assets/css/fg2.css" />\n%s\n</head>'
     ) % (gb.CSP, gb.GA, _a(title_tag), _a(tr['desc']), meta_block, canon,
          gb.hreflang_cluster(suffix), fonts, ld)

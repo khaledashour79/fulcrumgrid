@@ -928,7 +928,10 @@ def head(lang, path, title, desc):
     og = 'https://fulcrumgrid.com/assets/og/og-hr-suite.png'
     htmltag = '<html lang="en">' if en else '<html lang="ar" dir="rtl">'
     oglocale = 'en_US' if en else 'ar_AR'
-    cairo = '' if en else '\n  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />'
+    fontpreload = ('  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />\n'
+                   '  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />') if en else (
+                   '  <link rel="preload" href="/assets/fonts/cairo-600-arabic.woff2" as="font" type="font/woff2" crossorigin />\n'
+                   '  <link rel="preload" href="/assets/fonts/cairo-400-arabic.woff2" as="font" type="font/woff2" crossorigin />')
     hreflang = '\n'.join(
         '  <link rel="alternate" hreflang="%s" href="https://fulcrumgrid.com%s%s" />' % (code, p, path)
         for code, p in (('en', ''), ('ar', '/ar'), ('fr', '/fr'), ('de', '/de'),
@@ -970,9 +973,7 @@ def head(lang, path, title, desc):
 {hreflang}
   <link rel="alternate" hreflang="x-default" href="{en_url}" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />{cairo}
+{fontpreload}
   <link rel="stylesheet" href="/assets/css/fg2.css" />
 </head>'''
 

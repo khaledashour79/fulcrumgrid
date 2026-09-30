@@ -79,8 +79,8 @@ def check(path):
         problems.append('references old fg.css')
     if 'dir="rtl"' not in h:
         problems.append('missing dir="rtl"')
-    if 'Cairo' not in h:
-        problems.append('missing Cairo font link')
+    if 'cairo' not in h.lower():
+        problems.append('missing Cairo font (self-hosted preload / @font-face)')
     if '<html lang="ar"' not in h:
         problems.append('missing <html lang="ar">')
     leftovers = sorted({t for t in _text_nodes(h) if _english_leftover(t)})
