@@ -1,3 +1,43 @@
+/* FulcrumGrid — mobile navigation toggle.
+   The header and hamburger (.nav-toggle) are on every page, and this is the
+   only script loaded site-wide, so the mobile menu is wired here. At <=720px
+   the nav links are hidden and the hamburger opens them as a dropdown
+   (.site-head.nav-open .site-nav in fg2.css). Runs on every locale + page. */
+(function () {
+  function initNav() {
+    var head = document.querySelector('.site-head');
+    if (!head) return;
+    var btn = head.querySelector('.nav-toggle');
+    var nav = head.querySelector('.site-nav');
+    if (!btn || !nav) return;
+    if (!nav.id) nav.id = 'site-nav';
+    btn.setAttribute('aria-controls', nav.id);
+    var set = function (open) {
+      head.classList.toggle('nav-open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+    set(false);
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      set(!head.classList.contains('nav-open'));
+    });
+    Array.prototype.forEach.call(nav.querySelectorAll('a'), function (a) {
+      a.addEventListener('click', function () { set(false); });
+    });
+    document.addEventListener('click', function (e) {
+      if (head.classList.contains('nav-open') && !head.contains(e.target)) set(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' || e.keyCode === 27) set(false);
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initNav);
+  } else {
+    initNav();
+  }
+})();
+
 /* FulcrumGrid — IP-based language defaulting + Arabic toggle geo-gate.
    On a first visit that lands on the English (root) tree, redirect the visitor
    to the language version matching their country, preserving the page path;

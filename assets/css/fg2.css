@@ -443,6 +443,16 @@ img { display: block; max-width: 100%; }
   .hero-right .cue { display: none; }
   .site-nav, .head-cta .btn { display: none; }
   .nav-toggle { display: inline-grid; place-items: center; width: 40px; height: 38px; border: 1px solid var(--color-divider); background: transparent; }
+  .nav-toggle[aria-expanded="true"] { background: color-mix(in srgb, var(--color-text) 8%, transparent); }
+  /* Hamburger opens the nav as a full-width dropdown under the header. */
+  .site-head.nav-open .site-nav {
+    display: flex; flex-direction: column; align-items: stretch; gap: 0;
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--color-bg); border-bottom: 1px solid var(--color-divider);
+    box-shadow: var(--shadow-md); padding: 4px 20px 12px; z-index: 60;
+  }
+  .site-head.nav-open .site-nav a { padding: 13px 2px; font-size: 16px; border-top: 1px solid var(--color-divider); }
+  .site-head.nav-open .site-nav a:first-child { border-top: 0; }
   .foot-grid { grid-template-columns: 1fr; }
 }
 
