@@ -273,16 +273,48 @@ PAGE = {
             "Payroll &amp; time tracking": _t("Paie &amp; suivi du temps", "Gehaltsabrechnung &amp; Zeiterfassung", "Nóminas &amp; control horario", "Buste paga &amp; monitoraggio del tempo", "Loonadministratie &amp; tijdregistratie"),
             "Performance &amp; reviews": _t("Performance &amp; évaluations", "Leistung &amp; Beurteilungen", "Desempeño &amp; evaluaciones", "Performance &amp; valutazioni", "Prestaties &amp; beoordelingen"),
             "More on the grid": _t("Plus sur la grille", "Mehr im Grid", "Más en la cuadrícula", "Altro sulla griglia", "Meer op het grid"),
-            "Inventory, CRM, Analytics, and Procurement are in the works. Built on the same platform, so they plug straight in.": _t(
-                "Inventaire, CRM, Analytique et Achats sont en préparation. Conçus sur la même plateforme, ils s'intègrent directement.",
-                "Lagerverwaltung, CRM, Analysen und Beschaffung sind in Arbeit. Auf derselben Plattform gebaut, fügen sie sich direkt ein.",
-                "Inventario, CRM, Analítica y Compras están en desarrollo. Creados en la misma plataforma, se integran directamente.",
-                "Inventario, CRM, Analisi e Approvvigionamento sono in lavorazione. Costruiti sulla stessa piattaforma, si integrano subito.",
-                "Voorraad, CRM, Analyse en Inkoop zijn in ontwikkeling. Gebouwd op hetzelfde platform, zodat ze direct aansluiten."),
-            "Inventory &amp; Assets": _t("Inventaire &amp; actifs", "Lagerverwaltung &amp; Anlagen", "Inventario &amp; activos", "Inventario &amp; asset", "Voorraad &amp; activa"),
-            "CRM &amp; Sales": _t("CRM &amp; ventes", "CRM &amp; Vertrieb", "CRM &amp; ventas", "CRM &amp; vendite", "CRM &amp; verkoop"),
-            "Analytics &amp; Procurement": _t("Analytique &amp; achats", "Analysen &amp; Beschaffung", "Analítica &amp; compras", "Analisi &amp; approvvigionamento", "Analyse &amp; inkoop"),
-            "Inventory": _t("Inventaire", "Lagerverwaltung", "Inventario", "Inventario", "Voorraad"),
+            "Close, TMS, Voice and Assure are coming soon — with CRM, Agents, Real Estate and Workshop on the roadmap. Built on the same platform, so they plug straight in.": _t(
+                "Close, TMS, Voice et Assure arrivent bientôt — avec CRM, Agents, Immobilier et Atelier sur la feuille de route. Conçus sur la même plateforme, ils s'intègrent directement.",
+                "Close, TMS, Voice und Assure kommen bald — mit CRM, Agenten, Immobilien und Werkstatt auf der Roadmap. Auf derselben Plattform gebaut, fügen sie sich direkt ein.",
+                "Close, TMS, Voice y Assure llegan pronto — con CRM, Agentes, Inmobiliaria y Taller en la hoja de ruta. Creados en la misma plataforma, se integran directamente.",
+                "Close, TMS, Voice e Assure sono in arrivo — con CRM, Agenti, Immobiliare e Officina nella roadmap. Costruiti sulla stessa piattaforma, si integrano subito.",
+                "Close, TMS, Voice en Assure komen binnenkort — met CRM, Agents, Vastgoed en Werkplaats op de roadmap. Gebouwd op hetzelfde platform, zodat ze direct aansluiten."),
+            "Close, TMS, Voice &amp; Assure — coming soon": _t(
+                "Close, TMS, Voice &amp; Assure — bientôt",
+                "Close, TMS, Voice &amp; Assure — demnächst",
+                "Close, TMS, Voice &amp; Assure — próximamente",
+                "Close, TMS, Voice &amp; Assure — in arrivo",
+                "Close, TMS, Voice &amp; Assure — binnenkort"),
+            "CRM &amp; Agents — on the roadmap": _t(
+                "CRM &amp; Agents — sur la feuille de route",
+                "CRM &amp; Agenten — auf der Roadmap",
+                "CRM &amp; Agentes — en la hoja de ruta",
+                "CRM &amp; Agenti — nella roadmap",
+                "CRM &amp; Agents — op de roadmap"),
+            "Real Estate &amp; Workshop — on the roadmap": _t(
+                "Immobilier &amp; Atelier — sur la feuille de route",
+                "Immobilien &amp; Werkstatt — auf der Roadmap",
+                "Inmobiliaria &amp; Taller — en la hoja de ruta",
+                "Immobiliare &amp; Officina — nella roadmap",
+                "Vastgoed &amp; Werkplaats — op de roadmap"),
+            '<span class="tag tag-outline">Agents</span>': _t(
+                '<span class="tag tag-outline">Agents</span>',
+                '<span class="tag tag-outline">Agenten</span>',
+                '<span class="tag tag-outline">Agentes</span>',
+                '<span class="tag tag-outline">Agenti</span>',
+                '<span class="tag tag-outline">Agents</span>'),
+            '<span class="tag tag-outline">Real Estate</span>': _t(
+                '<span class="tag tag-outline">Immobilier</span>',
+                '<span class="tag tag-outline">Immobilien</span>',
+                '<span class="tag tag-outline">Inmobiliaria</span>',
+                '<span class="tag tag-outline">Immobiliare</span>',
+                '<span class="tag tag-outline">Vastgoed</span>'),
+            '<span class="tag tag-outline">Workshop</span>': _t(
+                '<span class="tag tag-outline">Atelier</span>',
+                '<span class="tag tag-outline">Werkstatt</span>',
+                '<span class="tag tag-outline">Taller</span>',
+                '<span class="tag tag-outline">Officina</span>',
+                '<span class="tag tag-outline">Werkplaats</span>'),
             # ---- Custom apps CTA ----
             "Built for you": _t("Conçu pour vous", "Für Sie entwickelt", "Diseñado para usted", "Pensato per te", "Voor u gebouwd"),
             "Don't see your exact workflow?": _t(
@@ -320,18 +352,18 @@ PAGE = {
         'src': 'products/coming-soon/index.html',
         't': {
             # ---- Meta ----
-            "More FulcrumGrid apps in active development — Inventory, CRM, Analytics, and Procurement — built on the same platform. Get early access.": _t(
-                "D'autres applications FulcrumGrid en développement actif — Inventaire, CRM, Analytique et Achats — conçues sur la même plateforme. Obtenez un accès anticipé.",
-                "Weitere FulcrumGrid-Apps in aktiver Entwicklung — Lagerverwaltung, CRM, Analysen und Beschaffung — auf derselben Plattform gebaut. Sichern Sie sich frühen Zugang.",
-                "Más aplicaciones de FulcrumGrid en desarrollo activo — Inventario, CRM, Analítica y Compras — creadas en la misma plataforma. Consiga acceso anticipado.",
-                "Altre app FulcrumGrid in fase di sviluppo attivo — Inventario, CRM, Analisi e Approvvigionamento — costruite sulla stessa piattaforma. Ottieni l'accesso anticipato.",
-                "Meer FulcrumGrid-apps in actieve ontwikkeling — Voorraad, CRM, Analyse en Inkoop — gebouwd op hetzelfde platform. Krijg vroege toegang."),
-            "Inventory, CRM, Analytics, and Procurement — coming to the grid.": _t(
-                "Inventaire, CRM, Analytique et Achats — bientôt sur la grille.",
-                "Lagerverwaltung, CRM, Analysen und Beschaffung — bald im Grid.",
-                "Inventario, CRM, Analítica y Compras — próximamente en la cuadrícula.",
-                "Inventario, CRM, Analisi e Approvvigionamento — presto sulla griglia.",
-                "Voorraad, CRM, Analyse en Inkoop — binnenkort op het grid."),
+            "More FulcrumGrid apps in active development — Close, TMS, Voice and Assure coming soon, with CRM, Agents, Real Estate and Workshop on the roadmap — built on the same platform. Get early access.": _t(
+                "D'autres applications FulcrumGrid en développement actif — Close, TMS, Voice et Assure bientôt, avec CRM, Agents, Immobilier et Atelier sur la feuille de route — conçues sur la même plateforme. Obtenez un accès anticipé.",
+                "Weitere FulcrumGrid-Apps in aktiver Entwicklung — Close, TMS, Voice und Assure demnächst, mit CRM, Agenten, Immobilien und Werkstatt auf der Roadmap — auf derselben Plattform gebaut. Sichern Sie sich frühen Zugang.",
+                "Más aplicaciones de FulcrumGrid en desarrollo activo — Close, TMS, Voice y Assure próximamente, con CRM, Agentes, Inmobiliaria y Taller en la hoja de ruta — creadas en la misma plataforma. Consiga acceso anticipado.",
+                "Altre app FulcrumGrid in fase di sviluppo attivo — Close, TMS, Voice e Assure in arrivo, con CRM, Agenti, Immobiliare e Officina nella roadmap — costruite sulla stessa piattaforma. Ottieni l'accesso anticipato.",
+                "Meer FulcrumGrid-apps in actieve ontwikkeling — Close, TMS, Voice en Assure binnenkort, met CRM, Agents, Vastgoed en Werkplaats op de roadmap — gebouwd op hetzelfde platform. Krijg vroege toegang."),
+            "Close, TMS, Voice and Assure — coming to the grid.": _t(
+                "Close, TMS, Voice et Assure — bientôt sur la grille.",
+                "Close, TMS, Voice und Assure — bald im Grid.",
+                "Close, TMS, Voice y Assure — próximamente en la cuadrícula.",
+                "Close, TMS, Voice e Assure — presto sulla griglia.",
+                "Close, TMS, Voice en Assure — binnenkort op het grid."),
             # ---- Hero ----
             "Roadmap": _t("Feuille de route", "Roadmap", "Hoja de ruta", "Roadmap", "Roadmap"),
             "In development": _t("En développement", "In Entwicklung", "En desarrollo", "In sviluppo", "In ontwikkeling"),
@@ -350,43 +382,84 @@ PAGE = {
             "Get early access": _t("Obtenir un accès anticipé", "Frühen Zugang sichern", "Conseguir acceso anticipado", "Ottieni l'accesso anticipato", "Vroege toegang krijgen"),
             "Available apps": _t("Applications disponibles", "Verfügbare Apps", "Apps disponibles", "App disponibili", "Beschikbare apps"),
             "Explore available apps": _t("Découvrir les applications disponibles", "Verfügbare Apps entdecken", "Explorar las apps disponibles", "Esplora le app disponibili", "Ontdek de beschikbare apps"),
-            "More apps are on the way — each built to the same standard as the apps already on the grid.": _t(
-                "D'autres applications arrivent — chacune conçue selon le même standard que les applications déjà sur la grille.",
-                "Weitere Apps sind unterwegs — jede nach demselben Standard gebaut wie die Apps, die bereits im Grid sind.",
-                "Llegan más apps — cada una creada con el mismo estándar que las apps que ya están en la cuadrícula.",
-                "Altre app sono in arrivo — ognuna costruita secondo lo stesso standard delle app già presenti sulla griglia.",
-                "Er komen meer apps aan — elk gebouwd volgens dezelfde standaard als de apps die al op het grid staan."),
-            # ---- Roadmap cards ----
+            # ---- 01 · Coming soon ----
             "On the roadmap": _t("Sur la feuille de route", "Auf der Roadmap", "En la hoja de ruta", "Nella roadmap", "Op de roadmap"),
-            "What's next on the grid": _t("Ce qui arrive sur la grille", "Was als Nächstes ins Grid kommt", "Lo próximo en la cuadrícula", "Cosa arriva sulla griglia", "Wat er nu op het grid komt"),
-            "Inventory &amp; Assets": _t("Inventaire &amp; actifs", "Lagerverwaltung &amp; Anlagen", "Inventario &amp; activos", "Inventario &amp; asset", "Voorraad &amp; activa"),
-            "Track stock, assets, and locations in real time, with the clarity you'd expect from a FulcrumGrid app.": _t(
-                "Suivez le stock, les actifs et les emplacements en temps réel, avec la clarté que vous attendez d'une application FulcrumGrid.",
-                "Verfolgen Sie Bestand, Anlagen und Standorte in Echtzeit — mit der Klarheit, die Sie von einer FulcrumGrid-App erwarten.",
-                "Controle existencias, activos y ubicaciones en tiempo real, con la claridad que espera de una app de FulcrumGrid.",
-                "Monitora scorte, asset e sedi in tempo reale, con la chiarezza che ti aspetti da un'app FulcrumGrid.",
-                "Volg voorraad, activa en locaties in realtime, met de helderheid die u van een FulcrumGrid-app verwacht."),
-            "CRM &amp; Sales": _t("CRM &amp; ventes", "CRM &amp; Vertrieb", "CRM &amp; ventas", "CRM &amp; vendite", "CRM &amp; verkoop"),
+            "Coming soon to the grid.": _t(
+                "Bientôt sur la grille.",
+                "Bald im Grid.",
+                "Próximamente en la cuadrícula.",
+                "Presto sulla griglia.",
+                "Binnenkort op het grid."),
+            "Next off the line — each built to the same standard as the apps already on the grid.": _t(
+                "Les prochaines de la série — chacune conçue selon le même standard que les applications déjà sur la grille.",
+                "Als Nächstes vom Band — jede nach demselben Standard gebaut wie die Apps, die bereits im Grid sind.",
+                "Las siguientes de la serie — cada una creada con el mismo estándar que las apps que ya están en la cuadrícula.",
+                "Le prossime della serie — ognuna costruita secondo lo stesso standard delle app già presenti sulla griglia.",
+                "De volgende van de lijn — elk gebouwd volgens dezelfde standaard als de apps die al op het grid staan."),
+            "A focused deal-closing workspace — quotes, approvals and e-signatures, so deals don't stall at the finish line.": _t(
+                "Un espace de travail dédié à la conclusion des affaires — devis, approbations et signatures électroniques, pour que les affaires ne calent pas sur la ligne d'arrivée.",
+                "Ein fokussierter Arbeitsbereich für den Geschäftsabschluss — Angebote, Genehmigungen und E-Signaturen, damit Deals auf der Zielgeraden nicht ins Stocken geraten.",
+                "Un espacio de trabajo centrado en cerrar acuerdos — presupuestos, aprobaciones y firmas electrónicas, para que los tratos no se atasquen en la meta.",
+                "Uno spazio di lavoro dedicato alla chiusura delle trattative — preventivi, approvazioni e firme elettroniche, perché gli affari non si blocchino sul traguardo.",
+                "Een gerichte werkruimte om deals te sluiten — offertes, goedkeuringen en e-handtekeningen, zodat deals niet vastlopen op de finish."),
+            "Transport management — plan and dispatch routes, track shipments and reconcile freight, all in one place.": _t(
+                "Gestion du transport — planifiez et affectez les tournées, suivez les expéditions et rapprochez les frais de fret, le tout au même endroit.",
+                "Transportmanagement — planen und disponieren Sie Routen, verfolgen Sie Sendungen und gleichen Sie Frachtkosten ab, alles an einem Ort.",
+                "Gestión del transporte — planifique y asigne rutas, rastree envíos y concilie fletes, todo en un solo lugar.",
+                "Gestione dei trasporti — pianifica e assegna le rotte, traccia le spedizioni e riconcilia i noli, tutto in un unico posto.",
+                "Transportbeheer — plan en verdeel routes, volg zendingen en verreken vracht, allemaal op één plek."),
+            "Business voice — calls, call logging and IVR tied to your records, so every conversation stays on file.": _t(
+                "Téléphonie d'entreprise — appels, journalisation des appels et SVI liés à vos dossiers, pour que chaque conversation reste archivée.",
+                "Geschäftstelefonie — Anrufe, Anrufprotokollierung und IVR, verknüpft mit Ihren Datensätzen, damit jedes Gespräch dokumentiert bleibt.",
+                "Telefonía empresarial — llamadas, registro de llamadas e IVR vinculados a sus registros, para que cada conversación quede archivada.",
+                "Telefonia aziendale — chiamate, registrazione delle chiamate e IVR collegati ai tuoi archivi, così ogni conversazione resta agli atti.",
+                "Zakelijke telefonie — gesprekken, gesprekslogboeken en IVR gekoppeld aan uw gegevens, zodat elk gesprek bewaard blijft."),
+            "Quality and compliance assurance — inspections, checklists and corrective actions, tracked end to end.": _t(
+                "Assurance qualité et conformité — inspections, listes de contrôle et actions correctives, suivies de bout en bout.",
+                "Qualitäts- und Compliance-Sicherung — Inspektionen, Checklisten und Korrekturmaßnahmen, durchgängig nachverfolgt.",
+                "Garantía de calidad y cumplimiento — inspecciones, listas de verificación y acciones correctivas, con seguimiento de principio a fin.",
+                "Garanzia di qualità e conformità — ispezioni, checklist e azioni correttive, tracciate dall'inizio alla fine.",
+                "Kwaliteits- en nalevingsborging — inspecties, checklists en corrigerende maatregelen, van begin tot eind gevolgd."),
+            # ---- 02 · On the roadmap ----
+            "Further out on the roadmap.": _t(
+                "Plus loin sur la feuille de route.",
+                "Weiter draußen auf der Roadmap.",
+                "Más adelante en la hoja de ruta.",
+                "Più avanti nella roadmap.",
+                "Verderop op de roadmap."),
+            "Planned for the grid — shaping up now, and on the way.": _t(
+                "Prévues pour la grille — en préparation, et en chemin.",
+                "Für das Grid geplant — nehmen Gestalt an und sind unterwegs.",
+                "Planeadas para la cuadrícula — tomando forma ahora, y en camino.",
+                "Previste per la griglia — in via di definizione, e in arrivo.",
+                "Gepland voor het grid — krijgen nu vorm en zijn onderweg."),
             "Manage leads, deals, and customer relationships from first touch to closed won.": _t(
                 "Gérez les prospects, les affaires et les relations clients, du premier contact à la conclusion.",
                 "Verwalten Sie Leads, Deals und Kundenbeziehungen vom ersten Kontakt bis zum Abschluss.",
                 "Gestione oportunidades, negociaciones y relaciones con clientes desde el primer contacto hasta el cierre.",
                 "Gestisci lead, trattative e relazioni con i clienti dal primo contatto alla chiusura.",
                 "Beheer leads, deals en klantrelaties van eerste contact tot gesloten deal."),
-            "<h4>Analytics</h4>": _t("<h4>Analytique</h4>", "<h4>Analysen</h4>", "<h4>Analítica</h4>", "<h4>Analisi</h4>", "<h4>Analyse</h4>"),
-            "Deep analytics and custom reports for your business — clear numbers you can trust.": _t(
-                "Des analyses approfondies et des rapports personnalisés pour votre entreprise — des chiffres clairs et fiables.",
-                "Tiefgehende Analysen und individuelle Berichte für Ihr Unternehmen — klare Zahlen, denen Sie vertrauen können.",
-                "Analítica profunda e informes personalizados para su negocio — cifras claras en las que puede confiar.",
-                "Analisi approfondite e report personalizzati per la tua azienda — numeri chiari e affidabili.",
-                "Diepgaande analyses en aangepaste rapporten voor uw bedrijf — heldere cijfers waarop u kunt vertrouwen."),
-            "<h4>Procurement</h4>": _t("<h4>Achats</h4>", "<h4>Beschaffung</h4>", "<h4>Compras</h4>", "<h4>Approvvigionamento</h4>", "<h4>Inkoop</h4>"),
-            "Purchase orders, vendors, and approvals in one clear, auditable workflow.": _t(
-                "Bons de commande, fournisseurs et approbations dans un flux de travail unique, clair et auditable.",
-                "Bestellungen, Lieferanten und Genehmigungen in einem klaren, prüfbaren Workflow.",
-                "Órdenes de compra, proveedores y aprobaciones en un flujo de trabajo único, claro y auditable.",
-                "Ordini d'acquisto, fornitori e approvazioni in un unico flusso di lavoro chiaro e verificabile.",
-                "Inkooporders, leveranciers en goedkeuringen in één heldere, controleerbare workflow."),
+            "<h4>Agents</h4>": _t("<h4>Agents</h4>", "<h4>Agenten</h4>", "<h4>Agentes</h4>", "<h4>Agenti</h4>", "<h4>Agents</h4>"),
+            "A workspace for agents and field teams — assignments, pipelines and commissions in one view.": _t(
+                "Un espace de travail pour les agents et les équipes terrain — affectations, pipelines et commissions dans une seule vue.",
+                "Ein Arbeitsbereich für Agenten und Außendienstteams — Zuweisungen, Pipelines und Provisionen in einer Ansicht.",
+                "Un espacio de trabajo para agentes y equipos de campo — asignaciones, pipelines y comisiones en una sola vista.",
+                "Uno spazio di lavoro per agenti e team sul campo — assegnazioni, pipeline e commissioni in un'unica vista.",
+                "Een werkruimte voor agents en buitendienstteams — toewijzingen, pipelines en commissies in één overzicht."),
+            "<h4>Real Estate</h4>": _t("<h4>Immobilier</h4>", "<h4>Immobilien</h4>", "<h4>Inmobiliaria</h4>", "<h4>Immobiliare</h4>", "<h4>Vastgoed</h4>"),
+            "Properties, listings, leases and tenants — the operations of real estate on one grid.": _t(
+                "Biens, annonces, baux et locataires — les opérations de l'immobilier sur une seule grille.",
+                "Immobilien, Angebote, Mietverträge und Mieter — der Immobilienbetrieb auf einem Grid.",
+                "Propiedades, anuncios, arrendamientos e inquilinos — las operaciones inmobiliarias en una sola cuadrícula.",
+                "Immobili, annunci, contratti di locazione e inquilini — le operazioni immobiliari su un'unica griglia.",
+                "Panden, advertenties, huurcontracten en huurders — de vastgoedoperatie op één grid."),
+            "<h4>Workshop</h4>": _t("<h4>Atelier</h4>", "<h4>Werkstatt</h4>", "<h4>Taller</h4>", "<h4>Officina</h4>", "<h4>Werkplaats</h4>"),
+            "Run a workshop or service center — jobs, parts, technicians and invoicing, start to finish.": _t(
+                "Gérez un atelier ou un centre de service — interventions, pièces, techniciens et facturation, du début à la fin.",
+                "Betreiben Sie eine Werkstatt oder ein Servicecenter — Aufträge, Teile, Techniker und Rechnungsstellung, von Anfang bis Ende.",
+                "Gestione un taller o centro de servicio — trabajos, piezas, técnicos y facturación, de principio a fin.",
+                "Gestisci un'officina o un centro assistenza — interventi, ricambi, tecnici e fatturazione, dall'inizio alla fine.",
+                "Beheer een werkplaats of servicecentrum — opdrachten, onderdelen, technici en facturatie, van begin tot eind."),
             # ---- Notify CTA ----
             "Be first to know": _t("Soyez informé en premier", "Erfahren Sie es als Erste", "Sea el primero en saberlo", "Sii il primo a saperlo", "Wees als eerste op de hoogte"),
             "Tell us what your team needs and we'll let you know the moment these apps go live.": _t(
