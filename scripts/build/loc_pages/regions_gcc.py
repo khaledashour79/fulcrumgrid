@@ -118,12 +118,12 @@ PAGE['/regions/'] = {
             'Diseñado para cómo opera <em style="font-style:normal;color:var(--color-accent)">su región</em>',
             'Pensato per come lavora <em style="font-style:normal;color:var(--color-accent)">la tua regione</em>',
             'Gebouwd voor hoe <em style="font-style:normal;color:var(--color-accent)">uw regio</em> werkt'),
-        'HR Suite adapts to local payroll and compliance — statutory contributions, wage-protection files, end-of-service rules, and language. Choose your region.': _t(
-            "HR Suite s'adapte à la paie et à la conformité locales — cotisations légales, fichiers de protection des salaires, règles de fin de service et langue. Choisissez votre région.",
-            'HR Suite passt sich an lokale Gehaltsabrechnung und Compliance an — gesetzliche Beiträge, Lohnschutzdateien, Regeln zum Dienstende und Sprache. Wählen Sie Ihre Region.',
-            'HR Suite se adapta a la nómina y el cumplimiento locales — cotizaciones obligatorias, archivos de protección salarial, reglas de fin de servicio e idioma. Elija su región.',
-            'HR Suite si adatta a buste paga e conformità locali — contributi di legge, file di protezione salariale, regole di fine servizio e lingua. Scegli la tua regione.',
-            'HR Suite past zich aan lokale salarisadministratie en compliance aan — wettelijke bijdragen, loonbeschermingsbestanden, regels voor einde dienstverband en taal. Kies uw regio.'),
+        'HR Suite adapts to local payroll and compliance — statutory contributions, wage-protection files, end-of-service rules, and language. Wherever you operate, your data runs on servers hosted in your region. Choose your region.': _t(
+            "HR Suite s'adapte à la paie et à la conformité locales — cotisations légales, fichiers de protection des salaires, règles de fin de service et langue. Où que vous opériez, vos données s'exécutent sur des serveurs hébergés dans votre région. Choisissez votre région.",
+            'HR Suite passt sich an lokale Gehaltsabrechnung und Compliance an — gesetzliche Beiträge, Lohnschutzdateien, Regeln zum Dienstende und Sprache. Wo immer Sie tätig sind, laufen Ihre Daten auf Servern, die in Ihrer Region gehostet werden. Wählen Sie Ihre Region.',
+            'HR Suite se adapta a la nómina y el cumplimiento locales — cotizaciones obligatorias, archivos de protección salarial, reglas de fin de servicio e idioma. Opere donde opere, sus datos se ejecutan en servidores alojados en su región. Elija su región.',
+            'HR Suite si adatta a buste paga e conformità locali — contributi di legge, file di protezione salariale, regole di fine servizio e lingua. Ovunque operi, i tuoi dati vengono eseguiti su server ospitati nella tua regione. Scegli la tua regione.',
+            'HR Suite past zich aan lokale salarisadministratie en compliance aan — wettelijke bijdragen, loonbeschermingsbestanden, regels voor einde dienstverband en taal. Waar u ook actief bent, uw gegevens draaien op servers die in uw regio worden gehost. Kies uw regio.'),
         'Choose your region.': _t(
             'Choisissez votre région.',
             'Wählen Sie Ihre Region.',

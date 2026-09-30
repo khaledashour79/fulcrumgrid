@@ -1104,8 +1104,8 @@ def hub_page(lang):
     eye = 'Regions' if en else 'المناطق'
     h1 = 'Built for how your' if en else 'مصمّمة لطريقة'
     h1g = 'region runs' if en else 'عمل منطقتك'
-    lead = ("HR Suite adapts to local payroll and compliance — statutory contributions, wage-protection files, end-of-service rules, and language. Choose your region."
-            if en else "تتكيّف منظومة الموارد البشرية مع الرواتب والامتثال المحلي — الاشتراكات النظامية وملفات حماية الأجور وقواعد نهاية الخدمة واللغة. اختر منطقتك.")
+    lead = ("HR Suite adapts to local payroll and compliance — statutory contributions, wage-protection files, end-of-service rules, and language. Wherever you operate, your data runs on servers hosted in your region. Choose your region."
+            if en else "تتكيّف منظومة الموارد البشرية مع الرواتب والامتثال المحلي — الاشتراكات النظامية وملفات حماية الأجور وقواعد نهاية الخدمة واللغة. وأينما تعمل، تعمل بياناتك على خوادم مستضافة في منطقتك. اختر منطقتك.")
     demo = 'Request a demo' if en else 'اطلب عرضًا توضيحيًا'
     see_hr = 'Explore HR Suite' if en else 'استكشف الموارد البشرية'
     # Region cards — one .region card per top-level region (code + name + served

@@ -165,6 +165,15 @@ PAGE = {
                 'Elija la región donde se almacenan y procesan sus datos, para cumplir los requisitos locales.',
                 'Scegli la regione in cui i tuoi dati vengono archiviati ed elaborati, per soddisfare i requisiti locali.',
                 'Kies de regio waarin uw gegevens worden opgeslagen en verwerkt, om aan lokale eisen te voldoen.'),
+            'Servers in your region': _t(
+                'Des serveurs dans votre région', 'Server in Ihrer Region', 'Servidores en su región',
+                'Server nella tua regione', 'Servers in uw regio'),
+            'We run infrastructure in every region we serve, so your data sits on servers close to your users — low latency, and kept in-region.': _t(
+                'Nous exploitons une infrastructure dans chaque région que nous desservons : vos données résident sur des serveurs proches de vos utilisateurs — faible latence, et conservées dans votre région.',
+                'Wir betreiben Infrastruktur in jeder Region, die wir bedienen, sodass Ihre Daten auf Servern nahe bei Ihren Nutzern liegen — geringe Latenz und in der Region gehalten.',
+                'Operamos infraestructura en cada región que servimos, de modo que sus datos residen en servidores cercanos a sus usuarios — baja latencia y mantenidos en la región.',
+                'Gestiamo infrastruttura in ogni regione che serviamo, così i tuoi dati risiedono su server vicini ai tuoi utenti — bassa latenza e mantenuti nella regione.',
+                'We draaien infrastructuur in elke regio die we bedienen, zodat uw gegevens op servers dicht bij uw gebruikers staan — lage latentie en in de regio gehouden.'),
             # ---- CTA ----
             'See the platform in action': _t('Voyez la plateforme en action', 'Sehen Sie die Plattform in Aktion', 'Vea la plataforma en acción', 'Guarda la piattaforma in azione', 'Zie het platform in actie'),
             'Explore the apps built on it, or tell us what your team needs.': _t(

@@ -362,6 +362,12 @@ PAGE = {
                 "Voir toutes les régions →", "Alle Regionen ansehen →",
                 "Ver todas las regiones →", "Vedi tutte le regioni →",
                 "Bekijk alle regio's →"),
+            "Hosted in every region we serve — your data stays close to your users.": _t(
+                "Hébergé dans chaque région que nous desservons — vos données restent proches de vos utilisateurs.",
+                "Gehostet in jeder Region, die wir bedienen — Ihre Daten bleiben nah bei Ihren Nutzern.",
+                "Alojado en cada región que servimos — sus datos permanecen cerca de sus usuarios.",
+                "Ospitato in ogni regione che serviamo — i tuoi dati restano vicini ai tuoi utenti.",
+                "Gehost in elke regio die we bedienen — uw gegevens blijven dicht bij uw gebruikers."),
             "<h4>North America</h4>": _t(
                 "<h4>Amérique du Nord</h4>", "<h4>Nordamerika</h4>", "<h4>Norteamérica</h4>",
                 "<h4>Nord America</h4>", "<h4>Noord-Amerika</h4>"),
