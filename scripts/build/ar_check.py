@@ -31,7 +31,8 @@ ALLOW = {
     'contact@avenlorconsulting.com', 'avenlor consulting', 'google analytics',
     'fig', 'fg-100', 'assembly', 'english', 'arabic', 'العربية', 'français',
     'deutsch', 'español', 'italiano', 'nederlands', 'sheet', 'net', 'cia',
-    'pia', 'sif', 'eosb', 'ksa',
+    'pia', 'sif', 'eosb', 'ksa', 'odoo', 'oracle', 'quickbooks',
+    'quickbooks online', 'qbo', 'sap',
 }
 _STRIP = ' \t\r\n·↗→—–-|/•:.,;!?()[]{}"\'’‘“”%&+#'
 

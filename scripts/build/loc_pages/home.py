@@ -246,9 +246,13 @@ PAGE = {
                 "Se conecta con los sistemas que ya utiliza.",
                 "Si collega ai sistemi che già utilizzi.",
                 "Verbindt met de systemen die u al gebruikt."),
-            "ERP connectors": _t(
-                "Connecteurs ERP", "ERP-Konnektoren", "Conectores ERP",
-                "Connettori ERP", "ERP-connectoren"),
+            "ERP &amp; accounting": _t(
+                "ERP &amp; comptabilité", "ERP &amp; Buchhaltung", "ERP &amp; contabilidad",
+                "ERP &amp; contabilità", "ERP &amp; boekhouding"),
+            "See all integrations →": _t(
+                "Voir toutes les intégrations →", "Alle Integrationen ansehen →",
+                "Ver todas las integraciones →", "Vedi tutte le integrazioni →",
+                "Alle integraties bekijken →"),
             "Collection · Business and up": _t(
                 "Collection · Société et plus", "Collection · Unternehmen und höher",
                 "Collection · Negocio y superior", "Collection · Azienda e oltre",

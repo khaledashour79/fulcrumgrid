@@ -141,6 +141,59 @@ _CC = {
         'Cada cambio, alerta y acción queda registrado. Sepa qué pasó, cuándo y quién actuó.',
         'Ogni modifica, avviso e azione viene registrato. Sappi cosa è successo, quando e chi è intervenuto.',
         'Elke wijziging, melding en actie wordt vastgelegd. Weet wat er gebeurde, wanneer en wie handelde.'),
+    # Integrations
+    'Integrations': _t('Intégrations', 'Integrationen', 'Integraciones', 'Integrazioni', 'Integraties'),
+    'Connects to your ERP and accounting.': _t(
+        'Se connecte à votre ERP et à votre comptabilité.',
+        'Verbindet sich mit Ihrem ERP und Ihrer Buchhaltung.',
+        'Se conecta con su ERP y su contabilidad.',
+        'Si collega al tuo ERP e alla tua contabilità.',
+        'Verbindt met uw ERP en boekhouding.'),
+    'Feed live balances into your dashboards without double entry.': _t(
+        'Alimentez vos tableaux de bord avec des soldes en direct, sans double saisie.',
+        'Speisen Sie Live-Salden in Ihre Dashboards ein — ohne Doppelerfassung.',
+        'Alimente sus paneles con saldos en directo, sin doble entrada.',
+        'Alimenta le tue dashboard con saldi in tempo reale, senza doppia immissione.',
+        'Voed uw dashboards met live saldi, zonder dubbele invoer.'),
+    'All integrations →': _t('Toutes les intégrations →', 'Alle Integrationen →', 'Todas las integraciones →', 'Tutte le integrazioni →', 'Alle integraties →'),
+    'Sync customers, vendors and journals with SAP Business One and pull balances into Command Center.': _t(
+        'Synchronisez clients, fournisseurs et écritures avec SAP Business One et récupérez les soldes dans Command Center.',
+        'Synchronisieren Sie Kunden, Lieferanten und Buchungen mit SAP Business One und holen Sie Salden in Command Center.',
+        'Sincronice clientes, proveedores y asientos con SAP Business One y traiga los saldos a Command Center.',
+        'Sincronizza clienti, fornitori e registrazioni con SAP Business One e porta i saldi in Command Center.',
+        'Synchroniseer klanten, leveranciers en boekingen met SAP Business One en haal saldi op in Command Center.'),
+    'Two-way connector for Odoo — keep contacts, invoices and payments aligned with the grid.': _t(
+        'Connecteur bidirectionnel pour Odoo — gardez contacts, factures et paiements alignés avec la grille.',
+        'Bidirektionaler Konnektor für Odoo — halten Sie Kontakte, Rechnungen und Zahlungen mit dem Grid im Einklang.',
+        'Conector bidireccional para Odoo — mantenga contactos, facturas y pagos alineados con la cuadrícula.',
+        'Connettore bidirezionale per Odoo — mantieni contatti, fatture e pagamenti allineati con la griglia.',
+        'Tweerichtingsconnector voor Odoo — houd contacten, facturen en betalingen op één lijn met het grid.'),
+    'Connect Oracle financials to feed live balances and receivables into your dashboards and alerts.': _t(
+        'Connectez Oracle Financials pour alimenter vos tableaux de bord et alertes en soldes et créances en direct.',
+        'Verbinden Sie Oracle Financials, um Live-Salden und Forderungen in Ihre Dashboards und Warnungen einzuspeisen.',
+        'Conecte Oracle Financials para alimentar sus paneles y alertas con saldos y cobros en directo.',
+        'Collega Oracle Financials per alimentare dashboard e avvisi con saldi e crediti in tempo reale.',
+        'Verbind Oracle Financials om live saldi en vorderingen in uw dashboards en meldingen te voeden.'),
+    'Link QuickBooks Online (QBO) to reconcile invoices and payments automatically.': _t(
+        'Reliez QuickBooks Online (QBO) pour rapprocher automatiquement factures et paiements.',
+        'Verknüpfen Sie QuickBooks Online (QBO), um Rechnungen und Zahlungen automatisch abzustimmen.',
+        'Enlace QuickBooks Online (QBO) para conciliar facturas y pagos automáticamente.',
+        'Collega QuickBooks Online (QBO) per riconciliare fatture e pagamenti automaticamente.',
+        'Koppel QuickBooks Online (QBO) om facturen en betalingen automatisch af te letteren.'),
+    'One connection on Growth': _t('Une connexion sur Growth', 'Eine Verbindung bei Growth', 'Una conexión en Growth', 'Una connessione su Growth', 'Eén verbinding op Growth'),
+    'Growth includes a single ERP connection; Enterprise unlocks unlimited connections with a scheduled pull.': _t(
+        'Growth inclut une seule connexion ERP ; Enterprise débloque des connexions illimitées avec récupération planifiée.',
+        'Growth enthält eine einzige ERP-Verbindung; Enterprise schaltet unbegrenzte Verbindungen mit geplantem Abruf frei.',
+        'Growth incluye una única conexión ERP; Enterprise desbloquea conexiones ilimitadas con extracción programada.',
+        'Growth include una singola connessione ERP; Enterprise sblocca connessioni illimitate con estrazione pianificata.',
+        'Growth bevat één ERP-verbinding; Enterprise ontgrendelt onbeperkte verbindingen met geplande ophaling.'),
+    'Scheduled pull': _t('Récupération planifiée', 'Geplanter Abruf', 'Extracción programada', 'Estrazione pianificata', 'Geplande ophaling'),
+    'Let Command Center pull records from your ERP on a schedule, so dashboards stay current on their own.': _t(
+        'Laissez Command Center récupérer des données de votre ERP selon un calendrier, pour que les tableaux de bord restent à jour tout seuls.',
+        'Lassen Sie Command Center Daten aus Ihrem ERP nach Zeitplan abrufen, damit Dashboards von selbst aktuell bleiben.',
+        'Deje que Command Center extraiga registros de su ERP según un calendario, para que los paneles se mantengan al día solos.',
+        'Lascia che Command Center estragga dati dal tuo ERP secondo una pianificazione, così le dashboard restano aggiornate da sole.',
+        'Laat Command Center volgens een schema gegevens uit uw ERP ophalen, zodat dashboards vanzelf actueel blijven.'),
     # Use cases
     'Made for the people who keep things running': _t(
         'Conçu pour ceux qui font tourner la machine',

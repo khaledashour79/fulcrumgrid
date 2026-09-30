@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Integraciones — SAP, Odoo, Oracle &amp; QuickBooks | FulcrumGrid</title>
+  <meta name="description" content="FulcrumGrid se conecta con los sistemas que ya utiliza — SAP Business One, Odoo, Oracle y QuickBooks Online — además de una API REST, webhooks y SSO/SCIM para encajar en su stack." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Integraciones — SAP, Odoo, Oracle &amp; QuickBooks | FulcrumGrid" />
+  <meta property="og:description" content="Conecte FulcrumGrid con SAP Business One, Odoo, Oracle y QuickBooks Online, con una API REST, webhooks y SSO/SCIM para encajar en su stack." />
+  <meta property="og:url" content="https://fulcrumgrid.com/es/integrations/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Integraciones — SAP, Odoo, Oracle &amp; QuickBooks | FulcrumGrid" />
+  <meta name="twitter:description" content="Conecte FulcrumGrid con SAP Business One, Odoo, Oracle y QuickBooks Online, con una API REST, webhooks y SSO/SCIM para encajar en su stack." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/es/integrations/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/integrations/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/integrations/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/integrations/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/integrations/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/integrations/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/integrations/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/integrations/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/integrations/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/es/products/">Productos</a>
+        <a href="/es/features/">Plataforma</a>
+        <a href="/es/pricing/">Precios</a>
+        <a href="/es/regions/">Regiones</a>
+        <a href="/es/blog/">Blog</a>
+        <a href="/es/contact/">Contacto</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Idioma">ES ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" class="active" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/es/contact/">Solicitar una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <p class="hero-eyebrow">Integraciones</p>
+        <h1 style="max-width:16ch">Se conecta con los sistemas que ya utiliza.</h1>
+        <p class="hero-intro">FulcrumGrid funciona junto a su stack de ERP y contabilidad — SAP Business One, Odoo, Oracle y QuickBooks Online — y ofrece a sus desarrolladores una API REST, webhooks y SSO/SCIM para conectarlo con todo lo demás. Mantenga su contabilidad donde está; ponga sus operaciones en una sola cuadrícula.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/es/contact/">Cuéntenos sobre su stack</a>
+          <a class="btn btn-secondary" href="/es/products/">Explorar las apps</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 01 · ERP & accounting ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">01 · ERP &amp; contabilidad</p>
+            <h2>Conecte su ERP y su contabilidad.</h2>
+          </div>
+          <p class="section-lead">Sincronice datos maestros, registre transacciones y extraiga saldos según un calendario — sin doble entrada.</p>
+        </div>
+        <div class="grid-2">
+          <div class="cell">
+            <h4>SAP Business One</h4>
+            <p>Sincronice clientes, proveedores, artículos y asientos con SAP Business One. Disponible en HR Suite, Collection y Command Center.</p>
+          </div>
+          <div class="cell">
+            <h4>Odoo</h4>
+            <p>Conector bidireccional para Odoo — mantenga contactos, facturas y pagos alineados entre Odoo y la cuadrícula.</p>
+          </div>
+          <div class="cell">
+            <h4>Oracle</h4>
+            <p>Conecte Oracle Financials para alimentar los paneles y alertas de Command Center con saldos y cobros en directo.</p>
+          </div>
+          <div class="cell">
+            <h4>QuickBooks Online</h4>
+            <p>Enlace QuickBooks Online (QBO) para conciliar facturas y pagos automáticamente — se acabó exportar hojas de cálculo.</p>
+          </div>
+        </div>
+        <p class="section-lead" style="margin-top:26px">Command Center incluye una conexión ERP en Growth y conexiones ilimitadas con extracción programada en Enterprise. <a href="/es/products/command-center/#integrations">Ver las integraciones de Command Center →</a></p>
+      </div>
+    </section>
+
+    <!-- ===== 02 · Construir sobre la API ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">02 · Construir sobre la API</p>
+            <h2>Conéctelo con todo lo demás.</h2>
+          </div>
+          <p class="section-lead">Todo lo que puede hacer en las apps, lo puede hacer a través de la API — con un sandbox para desarrollar con seguridad.</p>
+        </div>
+        <div class="grid-2">
+          <div class="cell">
+            <h4>REST API v1</h4>
+            <p>Una API REST clara y documentada para leer y escribir sus datos. Disponible en Collection Negocio y superior.</p>
+          </div>
+          <div class="cell">
+            <h4>Webhooks</h4>
+            <p>Suscríbase a eventos y envíe actualizaciones a sus propios sistemas en tiempo real — sin sondeo.</p>
+          </div>
+          <div class="cell">
+            <h4>Sandbox</h4>
+            <p>Un entorno sandbox completo para crear y probar integraciones antes de tocar los datos de producción.</p>
+          </div>
+          <div class="cell">
+            <h4>Extracción programada</h4>
+            <p>Deje que Command Center extraiga saldos y registros de su ERP según un calendario, para que los paneles se mantengan al día solos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 03 · Identity & access ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">03 · Identidad &amp; acceso</p>
+            <h2>Inicio de sesión único y aprovisionamiento.</h2>
+          </div>
+          <p class="section-lead">Traiga su propio proveedor de identidad y gestione a las personas como ya lo hace.</p>
+        </div>
+        <div class="grid-2">
+          <div class="cell">
+            <h4>SSO</h4>
+            <p>Inicio de sesión único para que su equipo entre con el proveedor de identidad que ya usa. Disponible en HR Suite Enterprise.</p>
+          </div>
+          <div class="cell">
+            <h4>SCIM</h4>
+            <p>Aprovisionamiento y desaprovisionamiento automatizado de usuarios mediante SCIM — altas y bajas se mantienen sincronizadas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">Empezar</p>
+        <h2>¿No ve su sistema?</h2>
+        <p class="section-lead" style="margin:0 auto 26px">Díganos qué utiliza y le mostraremos cómo FulcrumGrid encaja en su stack.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/es/contact/">Hable con nosotros</a>
+          <a class="btn btn-secondary" href="/es/pricing/">Ver precios</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La columna vertebral operativa de los equipos modernos.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Productos</h5>
+          <a href="/es/products/">Todos los productos</a>
+          <a href="/es/products/hr-suite/">HR Suite</a>
+          <a href="/es/products/command-center/">Command Center</a>
+          <a href="/es/products/collection/">Collection</a>
+          <a href="/es/custom-apps/">Apps a medida</a>
+        </div>
+        <div class="foot-col">
+          <h5>Plataforma</h5>
+          <a href="/es/features/">Funciones</a>
+          <a href="/es/integrations/">Integraciones</a>
+          <a href="/es/how-it-works/">Cómo funciona</a>
+          <a href="/es/pricing/">Precios</a>
+          <a href="/es/regions/">Regiones</a>
+        </div>
+        <div class="foot-col">
+          <h5>Empresa</h5>
+          <a href="/es/about/">Acerca de</a>
+          <a href="/es/faq/">FAQ</a>
+          <a href="/es/contact/">Contacto</a>
+          <a href="/es/privacy/">Privacidad</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Todos los derechos reservados.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
