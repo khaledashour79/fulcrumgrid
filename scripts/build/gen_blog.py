@@ -173,6 +173,7 @@ FOOTER_EN = '''  <footer class="site-foot">
         <div class="foot-col">
           <h5>Platform</h5>
           <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
           <a href="/how-it-works/">How it works</a>
           <a href="/pricing/">Pricing</a>
           <a href="/regions/">Regions</a>

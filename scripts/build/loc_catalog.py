@@ -31,6 +31,7 @@ COMMON = {
     'Custom apps':   _t('Applications sur mesure', 'Individuelle Apps', 'Apps a medida', 'App su misura', 'Apps op maat'),
     'Coming soon':   _t('Bientôt disponible', 'Demnächst', 'Próximamente', 'In arrivo', 'Binnenkort'),
     'Features':      _t('Fonctionnalités', 'Funktionen', 'Funciones', 'Funzionalità', 'Functies'),
+    'Integrations':  _t('Intégrations', 'Integrationen', 'Integraciones', 'Integrazioni', 'Integraties'),
     'How it works':  _t('Comment ça marche', "So funktioniert's", 'Cómo funciona', 'Come funziona', 'Hoe het werkt'),
     'Email us':      _t('Écrivez-nous', 'Schreiben Sie uns', 'Escríbenos', 'Scrivici', 'Mail ons'),
     'Privacy':       _t('Confidentialité', 'Datenschutz', 'Privacidad', 'Privacy', 'Privacy'),
