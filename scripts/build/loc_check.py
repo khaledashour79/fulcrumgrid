@@ -39,7 +39,7 @@ ALLOW = {
     'fulcrum', 'grid', 'fulcrum grid',
     # Integration / technology proper nouns kept English on every locale.
     'sap', 'sap business one', 'odoo', 'oracle', 'quickbooks', 'quickbooks online',
-    'qbo', 'sso', 'scim', 'rest api v1', 'webhooks', 'sandbox',
+    'qbo', 'sso', 'scim', 'rest api v1', 'webhooks', 'sandbox', 'cloud',
 }
 # Strip the trailing "↗" glyph, bullets, and surrounding punctuation for compare.
 _STRIP = ' \t\r\n·↗→—–-|/•:.,;!?()[]{}"\'’‘“”'

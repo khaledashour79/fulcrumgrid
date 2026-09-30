@@ -332,6 +332,24 @@ PAGE = {
                 "Dominio y certificado personalizados en el plan Empresa.",
                 "Dominio e certificato personalizzati con il piano Impresa.",
                 "Aangepast domein en certificaat bij Onderneming."),
+            "Dedicated environment": _t(
+                "Environnement dédié", "Dedizierte Umgebung", "Entorno dedicado",
+                "Ambiente dedicato", "Toegewijde omgeving"),
+            "A single-tenant instance isolated to your organization, on Enterprise.": _t(
+                "Une instance à locataire unique isolée pour votre organisation, sur Enterprise.",
+                "Eine Single-Tenant-Instanz, isoliert für Ihre Organisation, bei Enterprise.",
+                "Una instancia de un solo inquilino aislada para su organización, en Enterprise.",
+                "Un’istanza single-tenant isolata per la tua organizzazione, su Enterprise.",
+                "Een single-tenant-instantie geïsoleerd voor uw organisatie, op Enterprise."),
+            "On-premise option": _t(
+                "Option sur site", "On-Premise-Option", "Opción on-premise",
+                "Opzione on-premise", "On-premise-optie"),
+            "Run in your own datacenter or private cloud on Enterprise, by arrangement.": _t(
+                "Exécution dans votre propre datacenter ou cloud privé sur Enterprise, sur accord.",
+                "Betrieb in Ihrem eigenen Rechenzentrum oder Ihrer Private Cloud bei Enterprise, nach Vereinbarung.",
+                "Ejecución en su propio centro de datos o nube privada en Enterprise, previo acuerdo.",
+                "Esecuzione nel tuo datacenter o cloud privato su Enterprise, su accordo.",
+                "Draaien in uw eigen datacenter of private cloud op Enterprise, in overleg."),
 
             # ---- 06 · Regions ----
             "Built for how your region runs.": _t(

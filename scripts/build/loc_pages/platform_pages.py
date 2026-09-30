@@ -123,6 +123,48 @@ PAGE = {
                 'Empiece con una app. Añada el resto a medida que escala — sin migración, sin cambio de plataforma, sin arrancar y reemplazar.',
                 'Inizia con una app. Aggiungi le altre man mano che cresci — nessuna migrazione, nessun cambio di piattaforma, niente da buttare e sostituire.',
                 'Begin met één app. Voeg de rest toe naarmate u opschaalt — geen migratie, geen overstap van platform, geen slopen en vervangen.'),
+            # ---- Deployment ----
+            'Deployment': _t('Déploiement', 'Bereitstellung', 'Despliegue', 'Distribuzione', 'Implementatie'),
+            'Run it where it suits you.': _t(
+                'Exécutez-le là où cela vous convient.',
+                'Betreiben Sie es dort, wo es Ihnen passt.',
+                'Ejecútelo donde le convenga.',
+                'Eseguilo dove ti conviene.',
+                'Draai het waar het u uitkomt.'),
+            'Most teams run on our managed cloud. Regulated and enterprise organizations can run dedicated or on-premise. ': _t(
+                'La plupart des équipes utilisent notre cloud géré. Les organisations réglementées et les grandes entreprises peuvent opter pour un déploiement dédié ou sur site. ',
+                'Die meisten Teams nutzen unsere verwaltete Cloud. Regulierte und große Unternehmen können dediziert oder on-premise betreiben. ',
+                'La mayoría de los equipos usan nuestro cloud gestionado. Las organizaciones reguladas y las grandes empresas pueden optar por un despliegue dedicado o on-premise. ',
+                'La maggior parte dei team usa il nostro cloud gestito. Le organizzazioni regolamentate e le grandi imprese possono scegliere un deployment dedicato o on-premise. ',
+                'De meeste teams draaien op onze beheerde cloud. Gereguleerde en grote organisaties kunnen dedicated of on-premise draaien. '),
+            'Talk to sales →': _t('Parler aux ventes →', 'Vertrieb kontaktieren →', 'Hablar con ventas →', 'Parla con le vendite →', 'Praat met sales →'),
+            'Our managed, multi-tenant cloud — included on every plan, with nothing for you to run or maintain.': _t(
+                'Notre cloud géré et multi-locataire — inclus dans chaque offre, sans rien à exécuter ni à maintenir.',
+                'Unsere verwaltete, mandantenfähige Cloud — in jedem Tarif enthalten, ohne dass Sie etwas betreiben oder warten müssen.',
+                'Nuestro cloud gestionado y multiinquilino — incluido en cada plan, sin nada que ejecutar ni mantener.',
+                'Il nostro cloud gestito e multi-tenant — incluso in ogni piano, senza nulla da eseguire o mantenere.',
+                'Onze beheerde, multi-tenant cloud — inbegrepen in elk plan, zonder dat u iets hoeft te draaien of onderhouden.'),
+            'Dedicated environment': _t('Environnement dédié', 'Dedizierte Umgebung', 'Entorno dedicado', 'Ambiente dedicato', 'Toegewijde omgeving'),
+            'A single-tenant instance isolated to your organization, with its own database. Available on Enterprise.': _t(
+                'Une instance à locataire unique isolée pour votre organisation, avec sa propre base de données. Disponible sur Enterprise.',
+                'Eine Single-Tenant-Instanz, isoliert für Ihre Organisation, mit eigener Datenbank. Verfügbar bei Enterprise.',
+                'Una instancia de un solo inquilino aislada para su organización, con su propia base de datos. Disponible en Enterprise.',
+                'Un’istanza single-tenant isolata per la tua organizzazione, con un database dedicato. Disponibile su Enterprise.',
+                'Een single-tenant-instantie geïsoleerd voor uw organisatie, met een eigen database. Beschikbaar op Enterprise.'),
+            'On-premise / self-hosted': _t('Sur site / auto-hébergé', 'On-Premise / selbstgehostet', 'On-premise / autoalojado', 'On-premise / self-hosted', 'On-premise / zelf-gehost'),
+            'Run FulcrumGrid in your own datacenter or private cloud, behind your firewall. Available on Enterprise, by arrangement.': _t(
+                'Exécutez FulcrumGrid dans votre propre datacenter ou cloud privé, derrière votre pare-feu. Disponible sur Enterprise, sur accord.',
+                'Betreiben Sie FulcrumGrid in Ihrem eigenen Rechenzentrum oder Ihrer Private Cloud, hinter Ihrer Firewall. Verfügbar bei Enterprise, nach Vereinbarung.',
+                'Ejecute FulcrumGrid en su propio centro de datos o nube privada, tras su firewall. Disponible en Enterprise, previo acuerdo.',
+                'Esegui FulcrumGrid nel tuo datacenter o cloud privato, dietro il tuo firewall. Disponibile su Enterprise, su accordo.',
+                'Draai FulcrumGrid in uw eigen datacenter of private cloud, achter uw firewall. Beschikbaar op Enterprise, in overleg.'),
+            'Data residency': _t('Résidence des données', 'Datenspeicherort', 'Residencia de datos', 'Residenza dei dati', 'Dataresidentie'),
+            'Choose the region your data is stored and processed in, to meet local requirements.': _t(
+                'Choisissez la région où vos données sont stockées et traitées, pour répondre aux exigences locales.',
+                'Wählen Sie die Region, in der Ihre Daten gespeichert und verarbeitet werden, um lokale Anforderungen zu erfüllen.',
+                'Elija la región donde se almacenan y procesan sus datos, para cumplir los requisitos locales.',
+                'Scegli la regione in cui i tuoi dati vengono archiviati ed elaborati, per soddisfare i requisiti locali.',
+                'Kies de regio waarin uw gegevens worden opgeslagen en verwerkt, om aan lokale eisen te voldoen.'),
             # ---- CTA ----
             'See the platform in action': _t('Voyez la plateforme en action', 'Sehen Sie die Plattform in Aktion', 'Vea la plataforma en acción', 'Guarda la piattaforma in azione', 'Zie het platform in actie'),
             'Explore the apps built on it, or tell us what your team needs.': _t(

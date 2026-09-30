@@ -193,6 +193,18 @@ PAGE['/pricing/'] = {
             "Seguridad avanzada &amp; controles de administración",
             "Sicurezza avanzata &amp; controlli di amministrazione",
             "Geavanceerde beveiliging &amp; beheerinstellingen"),
+        "Dedicated single-tenant environment": _t(
+            "Environnement dédié à locataire unique", "Dedizierte Single-Tenant-Umgebung",
+            "Entorno dedicado de un solo inquilino", "Ambiente dedicato single-tenant",
+            "Toegewijde single-tenant-omgeving"),
+        "On-premise / self-hosted option": _t(
+            "Option sur site / auto-hébergée", "On-Premise-/selbstgehostete Option",
+            "Opción on-premise / autoalojada", "Opzione on-premise / self-hosted",
+            "On-premise / zelf-gehoste optie"),
+        "Data residency in your region": _t(
+            "Résidence des données dans votre région", "Datenspeicherung in Ihrer Region",
+            "Residencia de datos en su región", "Residenza dei dati nella tua regione",
+            "Dataresidentie in uw regio"),
         "SLA &amp; dedicated support": _t(
             "SLA &amp; assistance dédiée", "SLA &amp; dedizierter Support", "SLA &amp; soporte dedicado",
             "SLA &amp; supporto dedicato", "SLA &amp; toegewijde ondersteuning"),
@@ -444,6 +456,12 @@ PAGE['/pricing/command-center/'] = {
         "<th scope=\"row\">Support</th>": _t(
             "<th scope=\"row\">Assistance</th>", "<th scope=\"row\">Support</th>", "<th scope=\"row\">Soporte</th>",
             "<th scope=\"row\">Supporto</th>", "<th scope=\"row\">Ondersteuning</th>"),
+        "<th scope=\"row\">Deployment</th>": _t(
+            "<th scope=\"row\">Déploiement</th>", "<th scope=\"row\">Bereitstellung</th>", "<th scope=\"row\">Despliegue</th>",
+            "<th scope=\"row\">Distribuzione</th>", "<th scope=\"row\">Implementatie</th>"),
+        "Dedicated / on-premise": _t(
+            "Dédié / sur site", "Dediziert / on-premise", "Dedicado / on-premise",
+            "Dedicato / on-premise", "Dedicated / on-premise"),
         # ---- table cell values ----
         "up to 10": _t("jusqu'à 10", "bis zu 10", "hasta 10", "fino a 10", "tot 10"),
         "up to 50": _t("jusqu'à 50", "bis zu 50", "hasta 50", "fino a 50", "tot 50"),
@@ -981,6 +999,12 @@ PAGE['/pricing/hr-suite/'] = {
         "<th scope=\"row\">SSO &amp; SCIM</th>": _t(
             "<th scope=\"row\">SSO &amp; SCIM</th>", "<th scope=\"row\">SSO &amp; SCIM</th>", "<th scope=\"row\">SSO &amp; SCIM</th>",
             "<th scope=\"row\">SSO &amp; SCIM</th>", "<th scope=\"row\">SSO &amp; SCIM</th>"),
+        "<th scope=\"row\">Deployment</th>": _t(
+            "<th scope=\"row\">Déploiement</th>", "<th scope=\"row\">Bereitstellung</th>", "<th scope=\"row\">Despliegue</th>",
+            "<th scope=\"row\">Distribuzione</th>", "<th scope=\"row\">Implementatie</th>"),
+        "Dedicated / on-premise": _t(
+            "Dédié / sur site", "Dediziert / on-premise", "Dedicado / on-premise",
+            "Dedicato / on-premise", "Dedicated / on-premise"),
         # ---- Saudi note ----
         "Operating in Saudi Arabia?": _t(
             "Vous opérez en Arabie saoudite ?",
