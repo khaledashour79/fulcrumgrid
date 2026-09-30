@@ -21,7 +21,9 @@ def _t(fr, de, es, it, nl):
 COMMON = {
     # Nav / footer labels
     'Products':      _t('Produits', 'Produkte', 'Productos', 'Prodotti', 'Producten'),
-    'Platform':      _t('Plateforme', 'Plattform', 'Plataforma', 'Piattaforma', 'Platform'),
+    'Grid</a>':      _t('Grille</a>', 'Grid</a>', 'Cuadrícula</a>', 'Griglia</a>', 'Grid</a>'),
+    'Grid</h5>':     _t('Grille</h5>', 'Grid</h5>', 'Cuadrícula</h5>', 'Griglia</h5>', 'Grid</h5>'),
+    'Grid</h3>':     _t('Grille</h3>', 'Grid</h3>', 'Cuadrícula</h3>', 'Griglia</h3>', 'Grid</h3>'),
     'Pricing':       _t('Tarifs', 'Preise', 'Precios', 'Prezzi', 'Prijzen'),
     'Regions':       _t('Régions', 'Regionen', 'Regiones', 'Regioni', "Regio's"),
     'About':         _t('À propos', 'Über uns', 'Acerca de', 'Chi siamo', 'Over ons'),

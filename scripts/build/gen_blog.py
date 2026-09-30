@@ -134,7 +134,7 @@ def site_header(suffix):
       </a>
       <nav class="site-nav" aria-label="Primary">
         <a href="/products/">Products</a>
-        <a href="/features/">Platform</a>
+        <a href="/features/">Grid</a>
         <a href="/pricing/">Pricing</a>
         <a href="/regions/">Regions</a>
         <a href="/blog/" class="active" aria-current="page">Blog</a>
@@ -170,7 +170,7 @@ FOOTER_EN = '''  <footer class="site-foot">
           <a href="/custom-apps/">Custom apps</a>
         </div>
         <div class="foot-col">
-          <h5>Platform</h5>
+          <h5>Grid</h5>
           <a href="/features/">Features</a>
           <a href="/integrations/">Integrations</a>
           <a href="/how-it-works/">How it works</a>

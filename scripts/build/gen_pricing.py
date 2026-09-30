@@ -186,7 +186,7 @@ def cell(v, lang):
 def site_head(slug):
     """The new-design fg2 <header class="site-head"> with Pricing active and the
     language dropdown pointing at each locale's pricing page for this app."""
-    nav_items = [('/products/', 'Products'), ('/features/', 'Platform'),
+    nav_items = [('/products/', 'Products'), ('/features/', 'Grid'),
                  ('/pricing/', 'Pricing'), ('/regions/', 'Regions'),
                  ('/blog/', 'Blog'), ('/contact/', 'Contact')]
     nav = []
@@ -241,7 +241,7 @@ def site_foot():
           <a href="/custom-apps/">Custom apps</a>
         </div>
         <div class="foot-col">
-          <h5>Platform</h5>
+          <h5>Grid</h5>
           <a href="/features/">Features</a>
           <a href="/integrations/">Integrations</a>
           <a href="/how-it-works/">How it works</a>

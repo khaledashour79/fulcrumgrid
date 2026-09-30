@@ -42,7 +42,7 @@ MARKF = ('<span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" w
          '<circle cx="22.5" cy="22.5" r="2.6" fill="url(#bgf)"/>'
          '<defs><linearGradient id="bgf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs></svg></span>')
 
-NAV = [('/products/', 'Products', 'المنتجات'), ('/features/', 'Platform', 'المنصّة'),
+NAV = [('/products/', 'Products', 'المنتجات'), ('/features/', 'Grid', 'الشبكة'),
        ('/pricing/', 'Pricing', 'الأسعار'), ('/regions/', 'Regions', 'المناطق'), ('/blog/', 'Blog', 'المدوّنة'),
        ('/about/', 'About', 'من نحن'), ('/contact/', 'Contact', 'اتصل بنا')]
 
@@ -53,11 +53,11 @@ GLOBE = ('<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="cu
          'stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg>')
 
 FOOTER_COLS_EN = ('<div class="footer-col"><h3>Products</h3><a href="/products/">All products</a><a href="/products/command-center/">Command Center</a><a href="/products/collection/">Collection</a><a href="/products/hr-suite/">HR Suite</a><a href="/custom-apps/">Custom apps</a><a href="/products/coming-soon/">Coming soon</a></div>'
-                  '<div class="footer-col"><h3>Platform</h3><a href="/features/">Features</a><a href="/how-it-works/">How it works</a><a href="/pricing/">Pricing</a><a href="/regions/">Regions</a><a href="/blog/">Blog</a></div>'
+                  '<div class="footer-col"><h3>Grid</h3><a href="/features/">Features</a><a href="/how-it-works/">How it works</a><a href="/pricing/">Pricing</a><a href="/regions/">Regions</a><a href="/blog/">Blog</a></div>'
                   '<div class="footer-col"><h3>Company</h3><a href="/about/">About</a><a href="/faq/">FAQ</a><a href="/contact/">Contact</a><a href="mailto:contact@avenlorconsulting.com">Email us</a><a href="/privacy/">Privacy</a><a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a></div>')
 
 FOOTER_COLS_AR = ('<div class="footer-col"><h3>المنتجات</h3><a href="/ar/products/">كل المنتجات</a><a href="/ar/products/command-center/">مركز القيادة</a><a href="/ar/products/collection/">التحصيل</a><a href="/ar/products/hr-suite/">الموارد البشرية</a><a href="/ar/custom-apps/">تطبيقات مخصّصة</a><a href="/ar/products/coming-soon/">قريبًا</a></div>'
-                  '<div class="footer-col"><h3>المنصّة</h3><a href="/ar/features/">الميزات</a><a href="/ar/how-it-works/">كيف تعمل</a><a href="/ar/pricing/">الأسعار</a><a href="/ar/regions/">المناطق</a><a href="/ar/blog/">المدوّنة</a></div>'
+                  '<div class="footer-col"><h3>الشبكة</h3><a href="/ar/features/">الميزات</a><a href="/ar/how-it-works/">كيف تعمل</a><a href="/ar/pricing/">الأسعار</a><a href="/ar/regions/">المناطق</a><a href="/ar/blog/">المدوّنة</a></div>'
                   '<div class="footer-col"><h3>الشركة</h3><a href="/ar/about/">من نحن</a><a href="/ar/faq/">الأسئلة الشائعة</a><a href="/ar/contact/">اتصل بنا</a><a href="mailto:contact@avenlorconsulting.com">راسلنا</a><a href="/ar/privacy/">الخصوصية</a><a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a></div>')
 
 # ── Region content ───────────────────────────────────────────────────────────
@@ -983,9 +983,9 @@ def header(lang, path):
     b = '' if en else '/ar'
     brand_aria = 'FulcrumGrid home' if en else 'FulcrumGrid الصفحة الرئيسية'
     nav_aria = 'Primary' if en else 'التنقّل الرئيسي'
-    nav_items = ([('/products/', 'Products'), ('/features/', 'Platform'), ('/pricing/', 'Pricing'),
+    nav_items = ([('/products/', 'Products'), ('/features/', 'Grid'), ('/pricing/', 'Pricing'),
                   ('/regions/', 'Regions'), ('/blog/', 'Blog'), ('/contact/', 'Contact')] if en else
-                 [('/products/', 'المنتجات'), ('/features/', 'المنصّة'), ('/pricing/', 'الأسعار'),
+                 [('/products/', 'المنتجات'), ('/features/', 'الشبكة'), ('/pricing/', 'الأسعار'),
                   ('/regions/', 'المناطق'), ('/blog/', 'المدوّنة'), ('/contact/', 'اتصل بنا')])
     nav = []
     for href, label in nav_items:
@@ -1049,7 +1049,7 @@ def footer(lang):
           <a href="/custom-apps/">Custom apps</a>
         </div>
         <div class="foot-col">
-          <h5>Platform</h5>
+          <h5>Grid</h5>
           <a href="/features/">Features</a>
           <a href="/integrations/">Integrations</a>
           <a href="/how-it-works/">How it works</a>
@@ -1093,7 +1093,7 @@ def footer(lang):
           <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
         </div>
         <div class="foot-col">
-          <h5>المنصّة</h5>
+          <h5>الشبكة</h5>
           <a href="/ar/features/">الميزات</a>
           <a href="/ar/integrations/">التكاملات</a>
           <a href="/ar/how-it-works/">كيف تعمل</a>
