@@ -13,8 +13,12 @@
   // "Coming soon" list; available apps open their tab in the explorer.
   var APPS = [
     ['HR Suite', 'live', 'hr'], ['Command Center', 'live', 'cc'], ['Collection', 'live', 'col'],
-    ['TMS', 'soon', ''], ['Voice', 'soon', ''], ['CRM', 'soon', '']
+    ['TMS', 'soon', ''], ['Voice', 'soon', ''], ['CRM', 'soon', ''], ['Close', 'soon', '']
   ];
+  // Tiles per ring — drives the angular spacing so each ring stays evenly spread
+  // however many apps it carries.
+  var COUNT = { live: 0, soon: 0 };
+  APPS.forEach(function (a) { COUNT[a[1]]++; });
   var FACE = ['rotateY(0deg)', 'rotateY(90deg)', 'rotateY(180deg)', 'rotateY(-90deg)', 'rotateX(90deg)', 'rotateX(-90deg)'];
   var CORE = ['FG · Platform', 'FG · Platform', 'FG · Platform', 'FG · Platform', 'FG', 'FG'];
 
@@ -120,7 +124,7 @@
     var sb = '', sf = '', idx = { live: 0, soon: 0 };
     tiles.forEach(function (el, i) {
       var key = APPS[i][1], rg = RINGS[key], j = idx[key]++;
-      var th = oa * rg.spd + j * Math.PI * 2 / 3 + (key === 'soon' ? Math.PI / 3 : 0);
+      var th = oa * rg.spd + j * Math.PI * 2 / COUNT[key] + (key === 'soon' ? Math.PI / COUNT[key] : 0);
       var q = ringPt(rg, th);
       var dn = clamp((q[2] / (R * rg.f * k) + 1) / 2);
       el.style.transform = 'translate(' + q[0].toFixed(1) + 'px,' + q[1].toFixed(1) + 'px) translate(-50%,-50%) scale(' + (ts * (0.8 + 0.2 * dn)).toFixed(3) + ')';
