@@ -91,15 +91,9 @@
   </header>
 
   <main>
-    <!-- ===== Hero (grid variant) ===== -->
-    <section class="hero grid">
-      <div class="hero-floor">
-        <span class="fig mono">FIG. 01 — The grid, assembled</span>
-        <span class="readout mono mono-accent" data-readout>Assembly 100%</span>
-        <span class="cue mono">Scroll or drag to assemble</span>
-        <div class="gstage" data-stage="grid" aria-hidden="true"></div>
-      </div>
-      <div class="hero-copy">
+    <!-- ===== Hero (orbit variant) ===== -->
+    <section class="hero orbit">
+      <div class="hero-left">
         <p class="hero-eyebrow">The operational backbone for modern teams</p>
         <h1>One platform.<br />Every <em>operation.</em></h1>
         <p class="hero-intro">A growing family of purpose-built business apps from one team — HR Suite, Command Center, Collection and more. Start with one today, and add more as you grow.</p>
@@ -107,6 +101,13 @@
           <a class="btn btn-primary" href="/products/">Explore the apps</a>
           <a class="btn btn-secondary" href="/contact/">Request a demo</a>
         </div>
+      </div>
+      <div class="hero-right">
+        <span class="fig mono">FIG. 01 — Apps in orbit</span>
+        <span class="readout mono mono-accent" data-readout></span>
+        <span class="cue mono">Hover to hold · select an app</span>
+        <span class="legend mono"><span><i class="lg-live"></i>Available</span><span><i class="lg-soon"></i>Coming soon</span></span>
+        <div class="ostage" data-stage="orbit" aria-hidden="true" data-l-orbit="Orbit" data-l-held="Orbit held" data-l-live="Available" data-l-soon="Coming soon"></div>
       </div>
     </section>
 
@@ -348,7 +349,7 @@
     </div>
   </footer>
 
-  <script src="/assets/js/hero-grid.js" defer></script>
+  <script src="/assets/js/hero-orbit.js" defer></script>
   <script src="/assets/js/explorer.js" defer></script>
   <script src="/assets/js/consent.js" defer></script>
 </body>

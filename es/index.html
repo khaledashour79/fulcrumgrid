@@ -97,15 +97,9 @@
   </header>
 
   <main>
-    <!-- ===== Hero (grid variant) ===== -->
-    <section class="hero grid">
-      <div class="hero-floor">
-        <span class="fig mono">FIG. 01 — La cuadrícula, ensamblada</span>
-        <span class="readout mono mono-accent" data-readout>Ensamblaje 100%</span>
-        <span class="cue mono">Desplácese o arrastre para ensamblar</span>
-        <div class="gstage" data-stage="grid" aria-hidden="true"></div>
-      </div>
-      <div class="hero-copy">
+    <!-- ===== Hero (orbit variant) ===== -->
+    <section class="hero orbit">
+      <div class="hero-left">
         <p class="hero-eyebrow">La columna vertebral operativa de los equipos modernos</p>
         <h1>Una plataforma.<br />Cada <em>operación.</em></h1>
         <p class="hero-intro">Una familia creciente de aplicaciones de negocio a medida, de un solo equipo — HR Suite, Command Center, Collection y más. Empiece hoy con una y añada más a medida que crece.</p>
@@ -113,6 +107,13 @@
           <a class="btn btn-primary" href="/es/products/">Explorar las apps</a>
           <a class="btn btn-secondary" href="/es/contact/">Solicitar una demo</a>
         </div>
+      </div>
+      <div class="hero-right">
+        <span class="fig mono">FIG. 01 — Apps en órbita</span>
+        <span class="readout mono mono-accent" data-readout></span>
+        <span class="cue mono">Pase el cursor para detener · elija una app</span>
+        <span class="legend mono"><span><i class="lg-live"></i>Disponible</span><span><i class="lg-soon"></i>Próximamente</span></span>
+        <div class="ostage" data-stage="orbit" aria-hidden="true" data-l-orbit="Órbita" data-l-held="Órbita detenida" data-l-live="Disponible" data-l-soon="Próximamente"></div>
       </div>
     </section>
 
@@ -354,7 +355,7 @@
     </div>
   </footer>
 
-  <script src="/assets/js/hero-grid.js" defer></script>
+  <script src="/assets/js/hero-orbit.js" defer></script>
   <script src="/assets/js/explorer.js" defer></script>
   <script src="/assets/js/consent.js" defer></script>
 </body>

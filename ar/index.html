@@ -98,15 +98,9 @@
   </header>
 
   <main>
-    <!-- ===== Hero (grid variant) ===== -->
-    <section class="hero grid">
-      <div class="hero-floor">
-        <span class="fig mono">FIG. 01 — الشبكة، مُجمَّعة</span>
-        <span class="readout mono mono-accent" data-readout>التجميع 100%</span>
-        <span class="cue mono">مرّر أو اسحب للتجميع</span>
-        <div class="gstage" data-stage="grid" aria-hidden="true"></div>
-      </div>
-      <div class="hero-copy">
+    <!-- ===== Hero (orbit variant) ===== -->
+    <section class="hero orbit">
+      <div class="hero-left">
         <p class="hero-eyebrow">العمود الفقري التشغيلي للفرق الحديثة</p>
         <h1>منصة واحدة.<br />لكل <em>عملية.</em></h1>
         <p class="hero-intro">عائلة متنامية من تطبيقات الأعمال المُصمَّمة لغرضها من فريق واحد — HR Suite وCommand Center وCollection والمزيد. ابدأ بواحد اليوم، وأضِف المزيد مع نموّك.</p>
@@ -114,6 +108,13 @@
           <a class="btn btn-primary" href="/ar/products/">استكشف التطبيقات</a>
           <a class="btn btn-secondary" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
         </div>
+      </div>
+      <div class="hero-right">
+        <span class="fig mono">FIG. 01 — التطبيقات في المدار</span>
+        <span class="readout mono mono-accent" data-readout></span>
+        <span class="cue mono">مرّر المؤشر للإيقاف · اختر تطبيقًا</span>
+        <span class="legend mono"><span><i class="lg-live"></i>متاح</span><span><i class="lg-soon"></i>قريبًا</span></span>
+        <div class="ostage" data-stage="orbit" aria-hidden="true" data-l-orbit="المدار" data-l-held="المدار متوقف" data-l-live="متاح" data-l-soon="قريبًا"></div>
       </div>
     </section>
 
@@ -355,7 +356,7 @@
     </div>
   </footer>
 
-  <script src="/assets/js/hero-grid.js" defer></script>
+  <script src="/assets/js/hero-orbit.js" defer></script>
   <script src="/assets/js/explorer.js" defer></script>
   <script src="/assets/js/consent.js" defer></script>
 </body>
