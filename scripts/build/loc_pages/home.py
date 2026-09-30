@@ -151,8 +151,9 @@ PAGE = {
             "On the roadmap": _t(
                 "Sur la feuille de route", "Auf der Roadmap", "En la hoja de ruta",
                 "Nella roadmap", "Op de roadmap"),
-            # Coming-soon app name (product name, stays English across locales).
+            # Coming-soon app names (product names, stay English across locales).
             "Close": _t("Close", "Close", "Close", "Close", "Close"),
+            "Assure": _t("Assure", "Assure", "Assure", "Assure", "Assure"),
             '<span class="tag tag-outline">Agents</span>': _t(
                 '<span class="tag tag-outline">Agents</span>',
                 '<span class="tag tag-outline">Agenten</span>',
