@@ -96,15 +96,9 @@
   </header>
 
   <main>
-    <!-- ===== Hero (grid variant) ===== -->
-    <section class="hero grid">
-      <div class="hero-floor">
-        <span class="fig mono">FIG. 01 — La grille, assemblée</span>
-        <span class="readout mono mono-accent" data-readout>Assemblage 100%</span>
-        <span class="cue mono">Faites défiler ou glissez pour assembler</span>
-        <div class="gstage" data-stage="grid" aria-hidden="true"></div>
-      </div>
-      <div class="hero-copy">
+    <!-- ===== Hero (orbit variant) ===== -->
+    <section class="hero orbit">
+      <div class="hero-left">
         <p class="hero-eyebrow">L'épine dorsale opérationnelle des équipes modernes</p>
         <h1>Une plateforme.<br />Chaque <em>opération.</em></h1>
         <p class="hero-intro">Une famille grandissante d'applications métier sur mesure, d'une seule équipe — HR Suite, Command Center, Collection et plus. Commencez par une aujourd'hui, et ajoutez-en d'autres à mesure que vous grandissez.</p>
@@ -112,6 +106,13 @@
           <a class="btn btn-primary" href="/fr/products/">Découvrir les applications</a>
           <a class="btn btn-secondary" href="/fr/contact/">Demander une démo</a>
         </div>
+      </div>
+      <div class="hero-right">
+        <span class="fig mono">FIG. 01 — Les applications en orbite</span>
+        <span class="readout mono mono-accent" data-readout></span>
+        <span class="cue mono">Survolez pour figer · choisissez une application</span>
+        <span class="legend mono"><span><i class="lg-live"></i>Disponible</span><span><i class="lg-soon"></i>Bientôt disponible</span></span>
+        <div class="ostage" data-stage="orbit" aria-hidden="true" data-l-orbit="Orbite" data-l-held="Orbite figée" data-l-live="Disponible" data-l-soon="Bientôt disponible"></div>
       </div>
     </section>
 
@@ -353,7 +354,7 @@
     </div>
   </footer>
 
-  <script src="/assets/js/hero-grid.js" defer></script>
+  <script src="/assets/js/hero-orbit.js" defer></script>
   <script src="/assets/js/explorer.js" defer></script>
   <script src="/assets/js/consent.js" defer></script>
 </body>

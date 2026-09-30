@@ -7,8 +7,9 @@ is handled by loc_catalog.COMMON and not repeated here. Brand/product names
 (FulcrumGrid, Command Center, Collection, HR Suite, TMS, Voice, CRM) stay
 English, as do technology proper nouns (SAP Business One, REST API v1,
 Webhooks, Sandbox) and acronyms (MFA, SoD, TLS, ERP, GCC, UAE). The
-interactive hero grid is rendered by JavaScript (hero-grid.js) and its tile
-labels are product names, so they are not localized here.
+interactive orbit hero is rendered by JavaScript (hero-orbit.js); its tile
+names are product names, and its status/readout labels are read from the
+data-l-* attributes localized below.
 """
 
 
@@ -41,21 +42,33 @@ PAGE = {
                 "HR Suite, Command Center, Collection en meer — doelgerichte bedrijfsapps van één team."),
 
             # ---- Hero ----
-            "FIG. 01 — The grid, assembled": _t(
-                "FIG. 01 — La grille, assemblée",
-                "FIG. 01 — Das Grid, zusammengesetzt",
-                "FIG. 01 — La cuadrícula, ensamblada",
-                "FIG. 01 — La griglia, assemblata",
-                "FIG. 01 — Het grid, samengesteld"),
-            "Assembly 100%": _t(
-                "Assemblage 100%", "Zusammenbau 100%", "Ensamblaje 100%",
-                "Assemblaggio 100%", "Assemblage 100%"),
-            "Scroll or drag to assemble": _t(
-                "Faites défiler ou glissez pour assembler",
-                "Scrollen oder ziehen zum Zusammensetzen",
-                "Desplácese o arrastre para ensamblar",
-                "Scorri o trascina per assemblare",
-                "Scroll of sleep om samen te stellen"),
+            # Orbit hero (hero-orbit.js). "Coming soon" is covered by
+            # loc_catalog.COMMON; attribute/markup context keeps the short
+            # words ("Available", "Orbit") from rewriting other copy.
+            "FIG. 01 — Apps in orbit": _t(
+                "FIG. 01 — Les applications en orbite",
+                "FIG. 01 — Apps im Orbit",
+                "FIG. 01 — Apps en órbita",
+                "FIG. 01 — App in orbita",
+                "FIG. 01 — Apps in een baan"),
+            "Hover to hold · select an app": _t(
+                "Survolez pour figer · choisissez une application",
+                "Zum Anhalten darüberfahren · App auswählen",
+                "Pase el cursor para detener · elija una app",
+                "Passa sopra per fermare · scegli un'app",
+                "Beweeg erover om te pauzeren · kies een app"),
+            '<i class="lg-live"></i>Available': _t(
+                '<i class="lg-live"></i>Disponible',
+                '<i class="lg-live"></i>Verfügbar',
+                '<i class="lg-live"></i>Disponible',
+                '<i class="lg-live"></i>Disponibile',
+                '<i class="lg-live"></i>Beschikbaar'),
+            'data-l-orbit="Orbit" data-l-held="Orbit held" data-l-live="Available"': _t(
+                'data-l-orbit="Orbite" data-l-held="Orbite figée" data-l-live="Disponible"',
+                'data-l-orbit="Orbit" data-l-held="Orbit angehalten" data-l-live="Verfügbar"',
+                'data-l-orbit="Órbita" data-l-held="Órbita detenida" data-l-live="Disponible"',
+                'data-l-orbit="Orbita" data-l-held="Orbita ferma" data-l-live="Disponibile"',
+                'data-l-orbit="Baan" data-l-held="Baan gepauzeerd" data-l-live="Beschikbaar"'),
             "One platform.<br />Every <em>operation.</em>": _t(
                 "Une plateforme.<br />Chaque <em>opération.</em>",
                 "Eine Plattform.<br />Jeder <em>Betrieb.</em>",
