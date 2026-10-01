@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Hoe voer je een blameless post-mortem uit? Een praktische gids — FulcrumGrid</title>
+  <meta name="description" content="Een praktische gids voor een blameless post-mortem na een operationele storing: wanneer je het houdt, de agenda, de tijdlijn, de 5 keer waarom, actiepunten met eigenaren en opvolging." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Hoe voer je een blameless post-mortem uit? Een praktische gids" />
+  <meta property="og:description" content="Een praktische gids voor een blameless post-mortem na een operationele storing: wanneer je het houdt, de agenda, de tijdlijn, de 5 keer waarom, actiepunten met eigenaren en opvolging." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/how-to-run-a-blameless-post-mortem/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-10-01" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hoe voer je een blameless post-mortem uit? Een praktische gids" />
+  <meta name="twitter:description" content="Een praktische gids voor een blameless post-mortem na een operationele storing: wanneer je het houdt, de agenda, de tijdlijn, de 5 keer waarom, actiepunten met eigenaren en opvolging." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-run-a-blameless-post-mortem/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hoe voer je een blameless post-mortem uit? Een praktische gids",
+    "description": "Een praktische gids voor een blameless post-mortem na een operationele storing: wanneer je het houdt, de agenda, de tijdlijn, de 5 keer waarom, actiepunten met eigenaren en opvolging.",
+    "datePublished": "2026-10-01",
+    "dateModified": "2026-10-01",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/how-to-run-a-blameless-post-mortem/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Een blameless post-mortem uitvoeren",
+        "item": "https://fulcrumgrid.com/nl/blog/how-to-run-a-blameless-post-mortem/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is een blameless post-mortem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een gestructureerde evaluatie na een operationele storing die zich richt op hoe systeem, processen en omstandigheden de storing mogelijk maakten, niet op wie de schuld krijgt. Mensen blijven verantwoordelijk voor opvolgacties, maar de evaluatie zelf is gericht op leren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wanneer moet je een post-mortem houden?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Telkens wanneer de impact een vooraf afgesproken drempel overschrijdt, zoals problemen voor klanten, hoge kosten, veiligheidsincidenten, dataverlies of compliancekwesties, of herhaalde kleine storingen. Kom binnen enkele werkdagen bijeen, zolang de herinneringen vers zijn."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe werken de 5 keer waarom?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Je vraagt herhaaldelijk „waarom?”, uitgaande van het probleem, tot je een systemische oorzaak bereikt die je kunt veranderen. Vijf is een richtlijn; vertakken de antwoorden zich, volg dan elke tak in plaats van één grondoorzaak te forceren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat maakt een actiepunt goed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Het is concreet, gekoppeld aan een geïdentificeerde oorzaak, klein genoeg om af te ronden en heeft één eigenaar met naam, een deadline en een manier om te controleren of het werkte. Verander liever het systeem dan dat je eraan herinnert voorzichtiger te zijn."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe volg je een post-mortem op?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Verspreid een korte schriftelijke samenvatting, volg elke actie tot afronding in een vast overleg en controleer na enkele weken of de oplossing het probleem heeft verkleind. Bewaar het document waar anderen het kunnen vinden."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / Een blameless post-mortem uitvoeren</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Hoe voer je een blameless post-mortem uit? Een praktische gids</h1>
+        <p class="hero-intro">Een praktische gids voor een blameless post-mortem na een operationele storing: wanneer je het houdt, de agenda, de tijdlijn, de 5 keer waarom, actiepunten met eigenaren en opvolging.</p>
+        <p class="mono"><time datetime="2026-10-01">1 oktober 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Een post-mortem is een gestructureerde evaluatie die je houdt nadat er iets is misgegaan &mdash; een gemiste levering, een systeemstoring, een bijna-ongeval, een mislukte omschakeling. Een <strong>blameless</strong> post-mortem (zonder schuldvraag) voegt één regel toe: het doel is te begrijpen hoe de storing mogelijk werd, niet te bepalen wie je straft. Mensen nemen redelijke beslissingen met de informatie en de druk die ze op dat moment hadden. Als ze bang zijn voor beschuldigingen, verzwijgen ze details, en de volgende storing komt met dezelfde oorzaken.</p>
+
+          <h2>Wat „blameless” echt betekent</h2>
+
+          <p>Het betekent niet zonder gevolgen of zonder verantwoordelijkheid. Het betekent dat je <em>leren</em> en <em>disciplinaire maatregelen</em> scheidt. Individuen blijven verantwoordelijk voor het oplossen en opvolgen; de evaluatie zelf kijkt naar systemen, processen, hulpmiddelen, overdrachten en prikkels. Vraag dus niet „Wie maakte de fout?”, maar „Wat maakte deze fout makkelijk te maken en moeilijk te ontdekken?”</p>
+
+          <h2>Wanneer houd je er een?</h2>
+
+          <p>Houd een post-mortem wanneer de impact een vooraf afgesproken drempel overschrijdt. Typische aanleidingen:</p>
+
+          <ul>
+            <li>Gevolgen voor de klant, zoals een te late of verkeerde bestelling of downtime</li>
+            <li>Aanzienlijke financiële schade, herstelwerk of verspilling</li>
+            <li>Een veiligheidsincident of ernstig bijna-ongeval</li>
+            <li>Dataverlies, een compliance-overtreding of een beveiligingsincident</li>
+            <li>Een storing die terugkeert, ook als elk geval klein is</li>
+          </ul>
+
+          <p>Streef naar een bijeenkomst binnen twee tot vijf werkdagen: vroeg genoeg dat de herinneringen vers zijn, laat genoeg dat het team heeft kunnen uitrusten en de acute brand geblust is.</p>
+
+          <h2>Voorbereiding vóór de bijeenkomst</h2>
+
+          <p>Wijs een neutrale gespreksleider aan &mdash; bij voorkeur iemand die er niet direct bij betrokken was &mdash; en een notulist. Verzamel eerst het ruwe bewijs: logs, berichten, tickets, dienstnotities, foto&rsquo;s. Vraag deelnemers om vooraf in hun eigen woorden op te schrijven wat ze zagen en deden, zodat de eerste sprekers niemand anders beïnvloeden. Nodig de mensen uit die dicht bij het voorval stonden, plus een of twee uit aanpalende teams; houd de groep klein genoeg om te praten, meestal minder dan tien.</p>
+
+          <h2>Een eenvoudige agenda (60&ndash;90 minuten)</h2>
+
+          <ul>
+            <li><strong>Spelregels (5 min):</strong> maak duidelijk dat de evaluatie blameless is, dat het om leren gaat en dat feiten vóór meningen komen.</li>
+            <li><strong>Samenvatting van de impact (5 min):</strong> wat er gebeurde, wie geraakt werd, hoe lang het duurde.</li>
+            <li><strong>Tijdlijn (20 min):</strong> reconstrueer de gebeurtenissen op volgorde.</li>
+            <li><strong>Bijdragende factoren en grondoorzaak (25 min):</strong> graaf dieper in het waarom.</li>
+            <li><strong>Wat goed ging (5 min):</strong> noteer de reddingen, noodoplossingen en goede keuzes die herhaling verdienen.</li>
+            <li><strong>Actiepunten (15 min):</strong> spreek concrete verbeteringen, eigenaren en data af.</li>
+            <li><strong>Afsluiting (5 min):</strong> bevestig wie de samenvatting schrijft en verspreidt.</li>
+          </ul>
+
+          <h2>Bouw de tijdlijn op</h2>
+
+          <p>Begin alleen met tijdstippen en feiten: wat er gebeurde, wat op dat moment bekend was, welke actie werd ondernomen en wat het resultaat was. Weersta in deze fase de neiging tot interpreteren. Een gedeelde tijdlijn brengt meestal verrassingen aan het licht &mdash; een vertraagde melding, een onduidelijke overdracht, een stap waarvan niemand wist dat die handmatig was. Markeer de punten waarop een andere beslissing mogelijk was en vraag welke informatie de persoon toen had, niet wat wij nu weten. Achteraf lijkt alles vanzelfsprekend.</p>
+
+          <h2>Vind de grondoorzaak met de 5 keer waarom</h2>
+
+          <p>Bij de 5-keer-waarom-methode vraag je steeds „waarom?” tot je van het symptoom bij een systemische oorzaak komt. Vijf is een richtlijn, geen regel; stop wanneer je iets bereikt wat je echt kunt veranderen. Een kort voorbeeld:</p>
+
+          <ul>
+            <li>De zending vertrok te laat. <em>Waarom?</em> De bestelling was met het verkeerde artikel ingepakt en moest opnieuw worden gepickt.</li>
+            <li>Waarom werd het verkeerde artikel gepickt? De twee producten hebben bijna identieke etiketten.</li>
+            <li>Waarom werd dat niet gecontroleerd? De scanstap wordt overgeslagen als de wachtrij lang is.</li>
+            <li>Waarom wordt die overgeslagen? De scanner is traag en het team wordt afgerekend op doorvoer.</li>
+            <li>Waarom is doorvoer de enige maatstaf? Het dashboard toont geen foutpercentages.</li>
+          </ul>
+
+          <p>Merk op dat het antwoord niet is „de picker was slordig”. Echte storingen hebben meestal meerdere bijdragende oorzaken, dus forceer geen enkele „wortel”. Als de waarom-keten zich vertakt, volg dan elke tak.</p>
+
+          <h2>Maak van bevindingen actiepunten met eigenaren</h2>
+
+          <p>Een post-mortem zonder acties is slechts een gesprek. Goede actiepunten zijn concreet, klein genoeg om af te ronden en gekoppeld aan een geïdentificeerde oorzaak. Leg bij elk vast:</p>
+
+          <ul>
+            <li><strong>Wat:</strong> een concrete verandering, zoals „een verplichte scanstap met visuele waarschuwing bij een afwijking toevoegen”</li>
+            <li><strong>Eigenaar:</strong> één persoon met naam, geen team</li>
+            <li><strong>Deadline:</strong> realistisch, met een prioriteit</li>
+            <li><strong>Hoe we weten dat het werkte:</strong> een meetbare controle</li>
+          </ul>
+
+          <p>Geef de voorkeur aan oplossingen die het systeem veranderen &mdash; automatisering, checklists, betere standaardinstellingen, duidelijkere meldingen &mdash; boven „laten we iedereen eraan herinneren voorzichtiger te zijn”. Beperk de lijst tot wat het team echt kan opleveren: vijf afgeronde punten zijn beter dan vijftien vergeten punten.</p>
+
+          <h2>Volg op, zodat het beklijft</h2>
+
+          <p>Publiceer binnen enkele dagen een korte schriftelijke samenvatting: impact, tijdlijn, oorzaken en acties met eigenaren. Bewaar die op een doorzoekbare plek zodat toekomstige teams ervan kunnen leren. Loop openstaande acties in een vast overleg door tot elke actie is afgerond en controleer na enkele weken of de oplossing het probleem daadwerkelijk heeft verkleind. Deel de lessen buiten het directe team wanneer ze ook elders gelden.</p>
+
+          <h2>Veelgemaakte fouten</h2>
+
+          <ul>
+            <li><strong>Op zoek gaan naar een schuldige</strong> en eindigen met „menselijke fout”.</li>
+            <li><strong>De bijeenkomst overslaan</strong> omdat het incident klein was of al is verholpen.</li>
+            <li><strong>Vage acties</strong> zonder eigenaar of deadline.</li>
+            <li><strong>Leidinggevenden die het gesprek domineren</strong> en jongere collega&rsquo;s het zwijgen opleggen.</li>
+            <li><strong>Geen opvolging</strong>, waardoor het document wordt opgeborgen en vergeten.</li>
+          </ul>
+
+          <p>De aanpak werkt alleen als acties net zo zorgvuldig worden gevolgd als het incident is geëvalueerd. In FulcrumGrid Command Center kun je het incident vastleggen, elke corrigerende actie aan een eigenaar met deadline toewijzen en teamoverstijgend zien wat er nog openstaat, zodat opvolging niet afhangt van iemands geheugen. Een eenvoudige gedeelde spreadsheet werkt ook, zolang iemand hem bijhoudt.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wat is een blameless post-mortem?</summary><p>Een gestructureerde evaluatie na een operationele storing die zich richt op hoe systeem, processen en omstandigheden de storing mogelijk maakten, niet op wie de schuld krijgt. Mensen blijven verantwoordelijk voor opvolgacties, maar de evaluatie zelf is gericht op leren.</p></details>
+        <details class="faq-item"><summary>Wanneer moet je een post-mortem houden?</summary><p>Telkens wanneer de impact een vooraf afgesproken drempel overschrijdt, zoals problemen voor klanten, hoge kosten, veiligheidsincidenten, dataverlies of compliancekwesties, of herhaalde kleine storingen. Kom binnen enkele werkdagen bijeen, zolang de herinneringen vers zijn.</p></details>
+        <details class="faq-item"><summary>Hoe werken de 5 keer waarom?</summary><p>Je vraagt herhaaldelijk „waarom?”, uitgaande van het probleem, tot je een systemische oorzaak bereikt die je kunt veranderen. Vijf is een richtlijn; vertakken de antwoorden zich, volg dan elke tak in plaats van één grondoorzaak te forceren.</p></details>
+        <details class="faq-item"><summary>Wat maakt een actiepunt goed?</summary><p>Het is concreet, gekoppeld aan een geïdentificeerde oorzaak, klein genoeg om af te ronden en heeft één eigenaar met naam, een deadline en een manier om te controleren of het werkte. Verander liever het systeem dan dat je eraan herinnert voorzichtiger te zijn.</p></details>
+        <details class="faq-item"><summary>Hoe volg je een post-mortem op?</summary><p>Verspreid een korte schriftelijke samenvatting, volg elke actie tot afronding in een vast overleg en controleer na enkele weken of de oplossing het probleem heeft verkleind. Bewaar het document waar anderen het kunnen vinden.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Houd elke corrigerende actie op koers</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center helpt je incidenten vast te leggen, actiepunten met deadlines aan eigenaren toe te wijzen en te zien wat nog openstaat, zodat de lessen uit een post-mortem echte verbeteringen worden.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
