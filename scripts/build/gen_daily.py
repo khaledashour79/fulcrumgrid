@@ -50,9 +50,9 @@ CATLABEL = {
 }
 # Product proper names stay English except Arabic.
 PRODNAME = {
- 'collection': dict(ar='التحصيل', other='Collection'),
- 'hr':         dict(ar='الموارد البشرية', other='HR Suite'),
- 'operations': dict(ar='مركز القيادة', other='Command Center'),
+ 'collection': dict(ar='منصة تحصيل الديون', other='Collection'),
+ 'hr':         dict(ar='منصة الموارد البشرية', other='HR Suite'),
+ 'operations': dict(ar='لوحة التحكم للتنفيذيين', other='Command Center'),
 }
 PRODSLUG = {'collection': 'collection', 'hr': 'hr-suite', 'operations': 'command-center'}
 

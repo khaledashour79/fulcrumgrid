@@ -56,7 +56,7 @@ FOOTER_COLS_EN = ('<div class="footer-col"><h3>Products</h3><a href="/products/"
                   '<div class="footer-col"><h3>Grid</h3><a href="/features/">Features</a><a href="/how-it-works/">How it works</a><a href="/pricing/">Pricing</a><a href="/regions/">Regions</a><a href="/blog/">Blog</a></div>'
                   '<div class="footer-col"><h3>Company</h3><a href="/about/">About</a><a href="/faq/">FAQ</a><a href="/contact/">Contact</a><a href="mailto:contact@avenlorconsulting.com">Email us</a><a href="/privacy/">Privacy</a><a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a></div>')
 
-FOOTER_COLS_AR = ('<div class="footer-col"><h3>المنتجات</h3><a href="/ar/products/">كل المنتجات</a><a href="/ar/products/command-center/">مركز القيادة</a><a href="/ar/products/collection/">التحصيل</a><a href="/ar/products/hr-suite/">الموارد البشرية</a><a href="/ar/custom-apps/">تطبيقات مخصّصة</a><a href="/ar/products/coming-soon/">قريبًا</a></div>'
+FOOTER_COLS_AR = ('<div class="footer-col"><h3>المنتجات</h3><a href="/ar/products/">كل المنتجات</a><a href="/ar/products/command-center/">لوحة التحكم للتنفيذيين</a><a href="/ar/products/collection/">منصة تحصيل الديون</a><a href="/ar/products/hr-suite/">منصة الموارد البشرية</a><a href="/ar/custom-apps/">تطبيقات مخصّصة</a><a href="/ar/products/coming-soon/">قريبًا</a></div>'
                   '<div class="footer-col"><h3>الشبكة</h3><a href="/ar/features/">الميزات</a><a href="/ar/how-it-works/">كيف تعمل</a><a href="/ar/pricing/">الأسعار</a><a href="/ar/regions/">المناطق</a><a href="/ar/blog/">المدوّنة</a></div>'
                   '<div class="footer-col"><h3>الشركة</h3><a href="/ar/about/">من نحن</a><a href="/ar/faq/">الأسئلة الشائعة</a><a href="/ar/contact/">اتصل بنا</a><a href="mailto:contact@avenlorconsulting.com">راسلنا</a><a href="/ar/privacy/">الخصوصية</a><a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a></div>')
 
@@ -68,9 +68,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Saudi Arabia',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للسعودية',
     'lead_en': "HR Suite ships with Saudi payroll and compliance built in — WPS wage files, GOSI, end-of-service, Nitaqat and Saudization, with Arabic throughout. Run your Saudi workforce by the book, without bolt-ons.",
-    'lead_ar': "تأتي منظومة الموارد البشرية بالرواتب والامتثال السعودي جاهزَين — ملفات حماية الأجور (WPS)، والتأمينات الاجتماعية (GOSI)، ونهاية الخدمة، ونطاقات والسعودة، مع دعم العربية بالكامل. أدِر قوتك العاملة في السعودية وفق النظام، دون إضافات.",
+    'lead_ar': "تأتي منصة الموارد البشرية بالرواتب والامتثال السعودي جاهزَين — ملفات حماية الأجور (WPS)، والتأمينات الاجتماعية (GOSI)، ونهاية الخدمة، ونطاقات والسعودة، مع دعم العربية بالكامل. أدِر قوتك العاملة في السعودية وفق النظام، دون إضافات.",
     'desc_en': "HR Suite for Saudi Arabia — WPS wage-protection files, GOSI, end-of-service (EOSB), Nitaqat and Saudization, housing advance, and Arabic-first payroll and HR.",
-    'desc_ar': "منظومة الموارد البشرية للسعودية — ملفات حماية الأجور (WPS)، والتأمينات (GOSI)، ونهاية الخدمة، ونطاقات والسعودة، وسلفة السكن، ورواتب وموارد بشرية بالعربية أولًا.",
+    'desc_ar': "منصة الموارد البشرية للسعودية — ملفات حماية الأجور (WPS)، والتأمينات (GOSI)، ونهاية الخدمة، ونطاقات والسعودة، وسلفة السكن، ورواتب وموارد بشرية بالعربية أولًا.",
     'hub_sub_en': 'WPS · gratuity · GOSI · Nitaqat', 'hub_sub_ar': 'WPS · نهاية الخدمة · التأمينات · نطاقات',
     'features': [
       ("Payroll + WPS wage files", "الرواتب + ملفات حماية الأجور (WPS)",
@@ -94,7 +94,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Saudi HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في السعودية كما ينبغي',
     'cta_p_en': "See HR Suite handle Saudi payroll, GOSI, and end-of-service for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الرواتب والتأمينات ونهاية الخدمة في السعودية لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير الرواتب والتأمينات ونهاية الخدمة في السعودية لفريقك.",
   },
   'uae': {
     'en_name': 'UAE', 'ar_name': 'الإمارات',
@@ -102,9 +102,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'the UAE',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للإمارات',
     'lead_en': "HR Suite runs your UAE workforce end to end — MOHRE-compliant payroll and WPS salary files, gratuity to Federal Decree-Law 33/2021, pension and Emiratization tracking, and Arabic throughout.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في الإمارات بالكامل — رواتب متوافقة مع وزارة الموارد البشرية وملفات حماية الأجور (WPS)، ونهاية خدمة وفق المرسوم بقانون اتحادي 33/2021، ومتابعة المعاشات والتوطين، مع دعم العربية بالكامل.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في الإمارات بالكامل — رواتب متوافقة مع وزارة الموارد البشرية وملفات حماية الأجور (WPS)، ونهاية خدمة وفق المرسوم بقانون اتحادي 33/2021، ومتابعة المعاشات والتوطين، مع دعم العربية بالكامل.",
     'desc_en': "HR Suite for the UAE — MOHRE payroll and WPS salary files, gratuity under Federal Decree-Law 33/2021, GPSSA pensions, Emiratization (Nafis) tracking, and Arabic-first HR.",
-    'desc_ar': "منظومة الموارد البشرية للإمارات — رواتب وزارة الموارد البشرية وملفات WPS، ونهاية الخدمة وفق المرسوم بقانون 33/2021، ومعاشات GPSSA، ومتابعة التوطين (نافس)، وموارد بشرية بالعربية أولًا.",
+    'desc_ar': "منصة الموارد البشرية للإمارات — رواتب وزارة الموارد البشرية وملفات WPS، ونهاية الخدمة وفق المرسوم بقانون 33/2021، ومعاشات GPSSA، ومتابعة التوطين (نافس)، وموارد بشرية بالعربية أولًا.",
     'hub_sub_en': 'WPS · gratuity · GPSSA · Emiratization', 'hub_sub_ar': 'WPS · نهاية الخدمة · المعاشات · التوطين',
     'features': [
       ("Payroll + WPS salary files", "الرواتب + ملفات WPS",
@@ -125,7 +125,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run UAE HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في الإمارات كما ينبغي',
     'cta_p_en': "See HR Suite handle UAE payroll, WPS, and gratuity for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الرواتب و WPS ونهاية الخدمة في الإمارات لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير الرواتب و WPS ونهاية الخدمة في الإمارات لفريقك.",
   },
   'qatar': {
     'en_name': 'Qatar', 'ar_name': 'قطر',
@@ -133,9 +133,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Qatar',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة لقطر',
     'lead_en': "HR Suite runs your Qatar workforce end to end — WPS-compliant payroll, end-of-service under Labour Law No. 14 of 2004, GRSIA pensions and Qatarization tracking, with Arabic throughout.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في قطر بالكامل — رواتب متوافقة مع نظام حماية الأجور، ونهاية خدمة وفق قانون العمل رقم 14 لسنة 2004، ومعاشات التقاعد والتقطير، مع دعم العربية بالكامل.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في قطر بالكامل — رواتب متوافقة مع نظام حماية الأجور، ونهاية خدمة وفق قانون العمل رقم 14 لسنة 2004، ومعاشات التقاعد والتقطير، مع دعم العربية بالكامل.",
     'desc_en': "HR Suite for Qatar — WPS payroll, end-of-service gratuity under Labour Law No. 14 of 2004, GRSIA pensions, Qatarization tracking, and Arabic-first HR.",
-    'desc_ar': "منظومة الموارد البشرية لقطر — رواتب WPS، ونهاية الخدمة وفق قانون العمل رقم 14 لسنة 2004، ومعاشات التقاعد، ومتابعة التقطير، وموارد بشرية بالعربية أولًا.",
+    'desc_ar': "منصة الموارد البشرية لقطر — رواتب WPS، ونهاية الخدمة وفق قانون العمل رقم 14 لسنة 2004، ومعاشات التقاعد، ومتابعة التقطير، وموارد بشرية بالعربية أولًا.",
     'hub_sub_en': 'WPS · gratuity · pensions · Qatarization', 'hub_sub_ar': 'WPS · نهاية الخدمة · المعاشات · التقطير',
     'features': [
       ("Payroll + WPS", "الرواتب + WPS",
@@ -156,7 +156,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Qatar HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في قطر كما ينبغي',
     'cta_p_en': "See HR Suite handle Qatar payroll, WPS, and end-of-service for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الرواتب و WPS ونهاية الخدمة في قطر لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير الرواتب و WPS ونهاية الخدمة في قطر لفريقك.",
   },
   'kuwait': {
     'en_name': 'Kuwait', 'ar_name': 'الكويت',
@@ -164,9 +164,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Kuwait',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للكويت',
     'lead_en': "HR Suite runs your Kuwait workforce end to end — WPS-compliant payroll, indemnity under Labour Law No. 6 of 2010, PIFSS social security and national-workforce tracking, with Arabic throughout.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في الكويت بالكامل — رواتب متوافقة مع نظام حماية الأجور، ومكافأة نهاية الخدمة وفق قانون العمل رقم 6 لسنة 2010، وتأمينات المؤسسة العامة، ومتابعة القوى العاملة الوطنية، مع دعم العربية بالكامل.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في الكويت بالكامل — رواتب متوافقة مع نظام حماية الأجور، ومكافأة نهاية الخدمة وفق قانون العمل رقم 6 لسنة 2010، وتأمينات المؤسسة العامة، ومتابعة القوى العاملة الوطنية، مع دعم العربية بالكامل.",
     'desc_en': "HR Suite for Kuwait — WPS payroll, end-of-service indemnity under Labour Law No. 6 of 2010, PIFSS deductions, national-workforce tracking, and Arabic-first HR.",
-    'desc_ar': "منظومة الموارد البشرية للكويت — رواتب WPS، ومكافأة نهاية الخدمة وفق قانون العمل رقم 6 لسنة 2010، واستقطاعات التأمينات، ومتابعة القوى العاملة الوطنية، وموارد بشرية بالعربية أولًا.",
+    'desc_ar': "منصة الموارد البشرية للكويت — رواتب WPS، ومكافأة نهاية الخدمة وفق قانون العمل رقم 6 لسنة 2010، واستقطاعات التأمينات، ومتابعة القوى العاملة الوطنية، وموارد بشرية بالعربية أولًا.",
     'hub_sub_en': 'WPS · indemnity · PIFSS · Kuwaitization', 'hub_sub_ar': 'WPS · المكافأة · التأمينات · القوى الوطنية',
     'features': [
       ("Payroll + WPS", "الرواتب + WPS",
@@ -187,7 +187,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Kuwait HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في الكويت كما ينبغي',
     'cta_p_en': "See HR Suite handle Kuwait payroll, WPS, and indemnity for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الرواتب و WPS ونهاية الخدمة في الكويت لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير الرواتب و WPS ونهاية الخدمة في الكويت لفريقك.",
   },
   'bahrain': {
     'en_name': 'Bahrain', 'ar_name': 'البحرين',
@@ -195,9 +195,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Bahrain',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للبحرين',
     'lead_en': "HR Suite runs your Bahrain workforce end to end — WPS-compliant payroll, leaving indemnity under Law No. 36 of 2012, SIO social insurance and national-workforce tracking, with Arabic throughout.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في البحرين بالكامل — رواتب متوافقة مع نظام حماية الأجور، ومكافأة نهاية الخدمة وفق قانون رقم 36 لسنة 2012، وتأمينات الهيئة العامة، ومتابعة القوى العاملة الوطنية، مع دعم العربية بالكامل.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في البحرين بالكامل — رواتب متوافقة مع نظام حماية الأجور، ومكافأة نهاية الخدمة وفق قانون رقم 36 لسنة 2012، وتأمينات الهيئة العامة، ومتابعة القوى العاملة الوطنية، مع دعم العربية بالكامل.",
     'desc_en': "HR Suite for Bahrain — WPS payroll, leaving indemnity under Labour Law No. 36 of 2012, SIO social insurance, national-workforce tracking, and Arabic-first HR.",
-    'desc_ar': "منظومة الموارد البشرية للبحرين — رواتب WPS، ومكافأة نهاية الخدمة وفق قانون العمل رقم 36 لسنة 2012، وتأمينات SIO، ومتابعة القوى العاملة الوطنية، وموارد بشرية بالعربية أولًا.",
+    'desc_ar': "منصة الموارد البشرية للبحرين — رواتب WPS، ومكافأة نهاية الخدمة وفق قانون العمل رقم 36 لسنة 2012، وتأمينات SIO، ومتابعة القوى العاملة الوطنية، وموارد بشرية بالعربية أولًا.",
     'hub_sub_en': 'WPS · indemnity · SIO · Bahrainization', 'hub_sub_ar': 'WPS · المكافأة · التأمينات · القوى الوطنية',
     'features': [
       ("Payroll + WPS", "الرواتب + WPS",
@@ -218,7 +218,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Bahrain HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في البحرين كما ينبغي',
     'cta_p_en': "See HR Suite handle Bahrain payroll, WPS, and indemnity for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الرواتب و WPS ونهاية الخدمة في البحرين لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير الرواتب و WPS ونهاية الخدمة في البحرين لفريقك.",
   },
   'oman': {
     'en_name': 'Oman', 'ar_name': 'عُمان',
@@ -226,9 +226,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Oman',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة لعُمان',
     'lead_en': "HR Suite runs your Oman workforce end to end — WPS-compliant payroll, end-of-service gratuity, social protection and Omanization tracking, with Arabic throughout — and it follows the Social Protection Law reform as it phases in.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في عُمان بالكامل — رواتب متوافقة مع نظام حماية الأجور، ومكافأة نهاية الخدمة، والحماية الاجتماعية ومتابعة التعمين، مع دعم العربية بالكامل — وتواكب إصلاح قانون الحماية الاجتماعية أثناء تطبيقه التدريجي.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في عُمان بالكامل — رواتب متوافقة مع نظام حماية الأجور، ومكافأة نهاية الخدمة، والحماية الاجتماعية ومتابعة التعمين، مع دعم العربية بالكامل — وتواكب إصلاح قانون الحماية الاجتماعية أثناء تطبيقه التدريجي.",
     'desc_en': "HR Suite for Oman — WPS payroll, end-of-service gratuity, PASI / Social Protection Fund, Omanization tracking, and Arabic-first HR, aligned with the Social Protection Law (Royal Decree 52/2023).",
-    'desc_ar': "منظومة الموارد البشرية لعُمان — رواتب WPS، ومكافأة نهاية الخدمة، وصندوق الحماية الاجتماعية، ومتابعة التعمين، وموارد بشرية بالعربية أولًا، بما يتوافق مع قانون الحماية الاجتماعية (مرسوم سلطاني 52/2023).",
+    'desc_ar': "منصة الموارد البشرية لعُمان — رواتب WPS، ومكافأة نهاية الخدمة، وصندوق الحماية الاجتماعية، ومتابعة التعمين، وموارد بشرية بالعربية أولًا، بما يتوافق مع قانون الحماية الاجتماعية (مرسوم سلطاني 52/2023).",
     'hub_sub_en': 'WPS · gratuity · social protection · Omanization', 'hub_sub_ar': 'WPS · نهاية الخدمة · الحماية الاجتماعية · التعمين',
     'features': [
       ("Payroll + WPS", "الرواتب + WPS",
@@ -249,7 +249,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Oman HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في عُمان كما ينبغي',
     'cta_p_en': "See HR Suite handle Oman payroll, WPS, and end-of-service for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الرواتب و WPS ونهاية الخدمة في عُمان لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير الرواتب و WPS ونهاية الخدمة في عُمان لفريقك.",
   },
   'uk': {
     'en_name': 'United Kingdom', 'ar_name': 'المملكة المتحدة',
@@ -257,9 +257,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'the UK',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للمملكة المتحدة',
     'lead_en': "HR Suite runs your UK workforce end to end — PAYE and National Insurance on a configurable payroll, P60 and P45 statements, NINO validation, pensions, and full employee records.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في المملكة المتحدة بالكامل — ضريبة PAYE والتأمين الوطني على نظام رواتب قابل للتهيئة، وكشوف P60 و P45، والتحقق من رقم التأمين الوطني، والمعاشات، وسجلّات موظفين كاملة.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في المملكة المتحدة بالكامل — ضريبة PAYE والتأمين الوطني على نظام رواتب قابل للتهيئة، وكشوف P60 و P45، والتحقق من رقم التأمين الوطني، والمعاشات، وسجلّات موظفين كاملة.",
     'desc_en': "HR Suite for the UK — PAYE and National Insurance deductions, P60 and P45 statements, NINO validation, workplace pensions, and full HR on one grid.",
-    'desc_ar': "منظومة الموارد البشرية للمملكة المتحدة — استقطاعات PAYE والتأمين الوطني، وكشوف P60 و P45، والتحقق من رقم التأمين الوطني، ومعاشات العمل، وموارد بشرية كاملة على شبكة واحدة.",
+    'desc_ar': "منصة الموارد البشرية للمملكة المتحدة — استقطاعات PAYE والتأمين الوطني، وكشوف P60 و P45، والتحقق من رقم التأمين الوطني، ومعاشات العمل، وموارد بشرية كاملة على شبكة واحدة.",
     'hub_sub_en': 'PAYE · NI · P60/P45', 'hub_sub_ar': 'PAYE · التأمين الوطني · P60/P45',
     'features': [
       ("PAYE &amp; National Insurance", "PAYE والتأمين الوطني",
@@ -280,7 +280,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run UK HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في المملكة المتحدة كما ينبغي',
     'cta_p_en': "See HR Suite handle UK PAYE, National Insurance, and year-end for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير PAYE والتأمين الوطني ونهاية السنة في المملكة المتحدة لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير PAYE والتأمين الوطني ونهاية السنة في المملكة المتحدة لفريقك.",
   },
   'usa': {
     'en_name': 'United States', 'ar_name': 'الولايات المتحدة',
@@ -288,9 +288,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'the US',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للولايات المتحدة',
     'lead_en': "HR Suite runs your US workforce end to end — configurable payroll with federal and state income tax, Social Security and Medicare, W-2 year-end statements, ACH pay files, and full employee records.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في الولايات المتحدة بالكامل — رواتب قابلة للتهيئة مع ضريبة الدخل الفيدرالية والولائية، والضمان الاجتماعي و Medicare، وكشوف W-2 لنهاية السنة، وملفات دفع ACH، وسجلّات موظفين كاملة.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في الولايات المتحدة بالكامل — رواتب قابلة للتهيئة مع ضريبة الدخل الفيدرالية والولائية، والضمان الاجتماعي و Medicare، وكشوف W-2 لنهاية السنة، وملفات دفع ACH، وسجلّات موظفين كاملة.",
     'desc_en': "HR Suite for the US — configurable payroll with federal/state income tax, Social Security and Medicare, W-2 year-end statements, ACH (NACHA) pay files, and full HR.",
-    'desc_ar': "منظومة الموارد البشرية للولايات المتحدة — رواتب قابلة للتهيئة مع ضريبة الدخل الفيدرالية والولائية، والضمان الاجتماعي و Medicare، وكشوف W-2، وملفات دفع ACH، وموارد بشرية كاملة.",
+    'desc_ar': "منصة الموارد البشرية للولايات المتحدة — رواتب قابلة للتهيئة مع ضريبة الدخل الفيدرالية والولائية، والضمان الاجتماعي و Medicare، وكشوف W-2، وملفات دفع ACH، وموارد بشرية كاملة.",
     'hub_sub_en': 'Payroll · W-2 · ACH', 'hub_sub_ar': 'الرواتب · W-2 · ACH',
     'features': [
       ("Payroll + tax categories", "الرواتب + فئات الضريبة",
@@ -317,7 +317,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run US HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في الولايات المتحدة كما ينبغي',
     'cta_p_en': "See HR Suite handle US payroll, W-2, and ACH for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الرواتب و W-2 و ACH في الولايات المتحدة لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير الرواتب و W-2 و ACH في الولايات المتحدة لفريقك.",
   },
   'europe': {
     'en_name': 'Europe', 'ar_name': 'أوروبا',
@@ -325,9 +325,9 @@ REGIONS = {
     'h1_en': 'FulcrumGrid, built for', 'h1_grad_en': 'Europe',
     'h1_ar': 'FulcrumGrid،', 'h1_grad_ar': 'مصمّمة لأوروبا',
     'lead_en': "The whole grid runs across Europe — HR Suite with SEPA payroll and GDPR-grade data privacy; Command Center with multi-currency, VAT-ready finance; and Collection with SEPA-friendly receivables. One grid across your entities.",
-    'lead_ar': "الشبكة كاملة تعمل عبر أوروبا — HR Suite برواتب SEPA وخصوصية بيانات بمستوى GDPR؛ وCommand Center بمالية متعددة العملات وجاهزة لضريبة القيمة المضافة؛ وCollection بتحصيل متوافق مع SEPA. شبكة واحدة عبر كياناتك.",
+    'lead_ar': "الشبكة كاملة تعمل عبر أوروبا — منصة الموارد البشرية برواتب SEPA وخصوصية بيانات بمستوى GDPR؛ ولوحة التحكم للتنفيذيين بمالية متعددة العملات وجاهزة لضريبة القيمة المضافة؛ ومنصة تحصيل الديون بتحصيل متوافق مع SEPA. شبكة واحدة عبر كياناتك.",
     'desc_en': "FulcrumGrid across Europe — HR Suite, Command Center and Collection — with SEPA payroll, GDPR-grade data privacy and multi-currency, VAT-ready finance.",
-    'desc_ar': "FulcrumGrid عبر أوروبا — HR Suite وCommand Center وCollection — برواتب SEPA وخصوصية بيانات بمستوى GDPR ومالية متعددة العملات جاهزة لضريبة القيمة المضافة.",
+    'desc_ar': "FulcrumGrid عبر أوروبا — منصة الموارد البشرية ولوحة التحكم للتنفيذيين ومنصة تحصيل الديون — برواتب SEPA وخصوصية بيانات بمستوى GDPR ومالية متعددة العملات جاهزة لضريبة القيمة المضافة.",
     'hub_sub_en': 'UK · Ireland · France · Germany · Spain · Italy · NL', 'hub_sub_ar': 'المملكة المتحدة · أيرلندا · فرنسا · ألمانيا · إسبانيا · إيطاليا · هولندا',
     'members': ['uk', 'ireland', 'france', 'germany', 'spain', 'italy', 'netherlands'],
     'served_en': 'Belgium · Portugal · Poland · Sweden · Denmark · Finland · Austria · Greece · and the rest of the EU / EEA',
@@ -359,9 +359,9 @@ REGIONS = {
     'h1_en': 'FulcrumGrid, built for', 'h1_grad_en': 'the Gulf',
     'h1_ar': 'FulcrumGrid،', 'h1_grad_ar': 'مصمّمة للخليج',
     'lead_en': "The whole grid runs in the Gulf — HR Suite with WPS payroll, end-of-service and Arabic throughout; Command Center with GCC-native finance, Tax and Zakat and multi-currency; and Collection for local receivables. Pick a country for the detail.",
-    'lead_ar': "الشبكة كاملة تعمل في الخليج — HR Suite برواتب WPS ونهاية الخدمة ودعم العربية بالكامل؛ وCommand Center بمالية خليجية أصيلة والضريبة والزكاة وتعدّد العملات؛ وCollection للتحصيل المحلي. اختر دولة لعرض التفاصيل.",
+    'lead_ar': "الشبكة كاملة تعمل في الخليج — منصة الموارد البشرية برواتب WPS ونهاية الخدمة ودعم العربية بالكامل؛ ولوحة التحكم للتنفيذيين بمالية خليجية أصيلة والضريبة والزكاة وتعدّد العملات؛ ومنصة تحصيل الديون للتحصيل المحلي. اختر دولة لعرض التفاصيل.",
     'desc_en': "FulcrumGrid across the GCC — HR Suite, Command Center and Collection — with WPS payroll, statutory end-of-service and Arabic, plus GCC-native finance and Tax and Zakat, per country.",
-    'desc_ar': "FulcrumGrid عبر دول الخليج — HR Suite وCommand Center وCollection — برواتب WPS ونهاية خدمة نظامية ودعم العربية، ومالية خليجية أصيلة والضريبة والزكاة، لكل دولة.",
+    'desc_ar': "FulcrumGrid عبر دول الخليج — منصة الموارد البشرية ولوحة التحكم للتنفيذيين ومنصة تحصيل الديون — برواتب WPS ونهاية خدمة نظامية ودعم العربية، ومالية خليجية أصيلة والضريبة والزكاة، لكل دولة.",
     'hub_sub_en': 'Saudi · UAE · Qatar · Kuwait · Bahrain · Oman', 'hub_sub_ar': 'السعودية · الإمارات · قطر · الكويت · البحرين · عُمان',
     'members': ['saudi-arabia', 'uae', 'qatar', 'kuwait', 'bahrain', 'oman'],
     'cta_h_en': 'Run your Gulf operation on one grid', 'cta_h_ar': 'أدِر عملياتك الخليجية على شبكة واحدة',
@@ -374,9 +374,9 @@ REGIONS = {
     'h1_en': 'FulcrumGrid, built for', 'h1_grad_en': 'the Middle East',
     'h1_ar': 'FulcrumGrid،', 'h1_grad_ar': 'مصمّمة للشرق الأوسط',
     'lead_en': "The whole grid runs across the Middle East — HR Suite with configurable local payroll and end-of-service; Command Center with Arabic-first finance and multi-currency reporting; and Collection for local receivables. Deepest in the Gulf, ready beyond it.",
-    'lead_ar': "الشبكة كاملة تعمل عبر الشرق الأوسط — HR Suite برواتب محلية ونهاية خدمة قابلة للتهيئة؛ وCommand Center بمالية بالعربية أولًا وتقارير متعددة العملات؛ وCollection للتحصيل المحلي. الأعمق في الخليج، وجاهزة لما بعده.",
+    'lead_ar': "الشبكة كاملة تعمل عبر الشرق الأوسط — منصة الموارد البشرية برواتب محلية ونهاية خدمة قابلة للتهيئة؛ ولوحة التحكم للتنفيذيين بمالية بالعربية أولًا وتقارير متعددة العملات؛ ومنصة تحصيل الديون للتحصيل المحلي. الأعمق في الخليج، وجاهزة لما بعده.",
     'desc_en': "FulcrumGrid across the Middle East — HR Suite, Command Center and Collection — with configurable local payroll and end-of-service, Arabic-first finance and multi-currency.",
-    'desc_ar': "FulcrumGrid عبر الشرق الأوسط — HR Suite وCommand Center وCollection — برواتب محلية ونهاية خدمة قابلة للتهيئة ومالية بالعربية أولًا وتعدّد العملات.",
+    'desc_ar': "FulcrumGrid عبر الشرق الأوسط — منصة الموارد البشرية ولوحة التحكم للتنفيذيين ومنصة تحصيل الديون — برواتب محلية ونهاية خدمة قابلة للتهيئة ومالية بالعربية أولًا وتعدّد العملات.",
     'hub_sub_en': 'Egypt · Jordan · Lebanon · Iraq · Palestine · Syria · Yemen', 'hub_sub_ar': 'مصر · الأردن · لبنان · العراق · فلسطين · سوريا · اليمن',
     'members': ['egypt', 'jordan', 'lebanon', 'iraq', 'palestine', 'syria', 'yemen'],
     'served_en': 'Morocco · Tunisia · Algeria · Libya · Sudan',
@@ -405,9 +405,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Egypt',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة لمصر',
     'lead_en': "HR Suite runs your Egypt workforce — configurable payroll with local income tax and social-insurance deductions, end-of-service on a rule-based engine, EGP pay, Arabic throughout, and full employee records.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في مصر — رواتب قابلة للتهيئة مع ضريبة الدخل المحلية واستقطاعات التأمينات، ونهاية خدمة على محرّك قائم على القواعد، ودفع بالجنيه المصري، ودعم العربية بالكامل، وسجلّات موظفين كاملة.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في مصر — رواتب قابلة للتهيئة مع ضريبة الدخل المحلية واستقطاعات التأمينات، ونهاية خدمة على محرّك قائم على القواعد، ودفع بالجنيه المصري، ودعم العربية بالكامل، وسجلّات موظفين كاملة.",
     'desc_en': "HR Suite for Egypt — configurable payroll with local income tax and social insurance, rule-based end-of-service, EGP pay, and Arabic-first HR.",
-    'desc_ar': "منظومة الموارد البشرية لمصر — رواتب قابلة للتهيئة مع ضريبة الدخل المحلية والتأمينات، ونهاية خدمة قائمة على القواعد، ودفع بالجنيه المصري، وموارد بشرية بالعربية أولًا.",
+    'desc_ar': "منصة الموارد البشرية لمصر — رواتب قابلة للتهيئة مع ضريبة الدخل المحلية والتأمينات، ونهاية خدمة قائمة على القواعد، ودفع بالجنيه المصري، وموارد بشرية بالعربية أولًا.",
     'hub_sub_en': 'Payroll · EOSB · Arabic', 'hub_sub_ar': 'الرواتب · نهاية الخدمة · العربية',
     'features': [
       ("Configurable payroll", "رواتب قابلة للتهيئة",
@@ -428,7 +428,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Egypt HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في مصر كما ينبغي',
     'cta_p_en': "See HR Suite handle Egypt payroll and end-of-service for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الرواتب ونهاية الخدمة في مصر لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير الرواتب ونهاية الخدمة في مصر لفريقك.",
   },
   'jordan': {
     'en_name': 'Jordan', 'ar_name': 'الأردن',
@@ -436,9 +436,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Jordan',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للأردن',
     'lead_en': "HR Suite runs your Jordan workforce — configurable payroll with local income tax and Social Security Corporation deductions, end-of-service on a rule-based engine, JOD pay, Arabic throughout, and full employee records.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في الأردن — رواتب قابلة للتهيئة مع ضريبة الدخل المحلية واستقطاعات الضمان الاجتماعي، ونهاية خدمة على محرّك قائم على القواعد، ودفع بالدينار الأردني، ودعم العربية بالكامل، وسجلّات موظفين كاملة.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في الأردن — رواتب قابلة للتهيئة مع ضريبة الدخل المحلية واستقطاعات الضمان الاجتماعي، ونهاية خدمة على محرّك قائم على القواعد، ودفع بالدينار الأردني، ودعم العربية بالكامل، وسجلّات موظفين كاملة.",
     'desc_en': "HR Suite for Jordan — configurable payroll with local income tax and Social Security Corporation (SSC), rule-based end-of-service, JOD pay, and Arabic-first HR.",
-    'desc_ar': "منظومة الموارد البشرية للأردن — رواتب قابلة للتهيئة مع ضريبة الدخل المحلية والضمان الاجتماعي (SSC)، ونهاية خدمة قائمة على القواعد، ودفع بالدينار الأردني، وموارد بشرية بالعربية أولًا.",
+    'desc_ar': "منصة الموارد البشرية للأردن — رواتب قابلة للتهيئة مع ضريبة الدخل المحلية والضمان الاجتماعي (SSC)، ونهاية خدمة قائمة على القواعد، ودفع بالدينار الأردني، وموارد بشرية بالعربية أولًا.",
     'hub_sub_en': 'Payroll · SSC · Arabic', 'hub_sub_ar': 'الرواتب · الضمان · العربية',
     'features': [
       ("Configurable payroll", "رواتب قابلة للتهيئة",
@@ -459,7 +459,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Jordan HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في الأردن كما ينبغي',
     'cta_p_en': "See HR Suite handle Jordan payroll and end-of-service for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الرواتب ونهاية الخدمة في الأردن لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير الرواتب ونهاية الخدمة في الأردن لفريقك.",
   },
   'france': {
     'en_name': 'France', 'ar_name': 'فرنسا',
@@ -467,9 +467,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'France',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة لفرنسا',
     'lead_en': "HR Suite runs your France workforce — overtime priced to the statutory 35-hour week, SEPA pay files, GDPR data-subject rights, configurable local payroll in EUR, and full employee records.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في فرنسا — عمل إضافي وفق أسبوع الـ٣٥ ساعة النظامي، وملفات دفع SEPA، وحقوق أصحاب البيانات وفق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وسجلّات موظفين كاملة.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في فرنسا — عمل إضافي وفق أسبوع الـ٣٥ ساعة النظامي، وملفات دفع SEPA، وحقوق أصحاب البيانات وفق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وسجلّات موظفين كاملة.",
     'desc_en': "HR Suite for France — statutory 35-hour-week overtime, SEPA pay files, GDPR rights, configurable local payroll in EUR, and full HR.",
-    'desc_ar': "منظومة الموارد البشرية لفرنسا — عمل إضافي وفق أسبوع الـ٣٥ ساعة، وملفات SEPA، وحقوق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وموارد بشرية كاملة.",
+    'desc_ar': "منصة الموارد البشرية لفرنسا — عمل إضافي وفق أسبوع الـ٣٥ ساعة، وملفات SEPA، وحقوق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وموارد بشرية كاملة.",
     'hub_sub_en': '35h week · SEPA · GDPR', 'hub_sub_ar': 'أسبوع ٣٥ ساعة · SEPA · GDPR',
     'features': [
       ("Overtime — 35-hour week", "العمل الإضافي — أسبوع ٣٥ ساعة",
@@ -487,7 +487,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run France HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في فرنسا كما ينبغي',
     'cta_p_en': "See HR Suite handle French overtime, SEPA and GDPR for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير العمل الإضافي و SEPA و GDPR في فرنسا لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير العمل الإضافي و SEPA و GDPR في فرنسا لفريقك.",
   },
   'germany': {
     'en_name': 'Germany', 'ar_name': 'ألمانيا',
@@ -495,9 +495,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Germany',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة لألمانيا',
     'lead_en': "HR Suite runs your Germany workforce — collective-agreement overtime with Working Time Act caps, SEPA pay files, GDPR data-subject rights, configurable local payroll in EUR, and full employee records.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في ألمانيا — عمل إضافي وفق الاتفاقيات الجماعية مع سقوف قانون وقت العمل، وملفات دفع SEPA، وحقوق أصحاب البيانات وفق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وسجلّات موظفين كاملة.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في ألمانيا — عمل إضافي وفق الاتفاقيات الجماعية مع سقوف قانون وقت العمل، وملفات دفع SEPA، وحقوق أصحاب البيانات وفق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وسجلّات موظفين كاملة.",
     'desc_en': "HR Suite for Germany — CBA overtime with Working Time Act caps, SEPA pay files, GDPR rights, configurable local payroll in EUR, and full HR.",
-    'desc_ar': "منظومة الموارد البشرية لألمانيا — عمل إضافي وفق الاتفاقيات مع سقوف قانون وقت العمل، وملفات SEPA، وحقوق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وموارد بشرية كاملة.",
+    'desc_ar': "منصة الموارد البشرية لألمانيا — عمل إضافي وفق الاتفاقيات مع سقوف قانون وقت العمل، وملفات SEPA، وحقوق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وموارد بشرية كاملة.",
     'hub_sub_en': 'Overtime · SEPA · GDPR', 'hub_sub_ar': 'العمل الإضافي · SEPA · GDPR',
     'features': [
       ("Overtime &amp; working-time caps", "العمل الإضافي وسقوف وقت العمل",
@@ -515,7 +515,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Germany HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في ألمانيا كما ينبغي',
     'cta_p_en': "See HR Suite handle German overtime, SEPA and GDPR for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير العمل الإضافي و SEPA و GDPR في ألمانيا لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير العمل الإضافي و SEPA و GDPR في ألمانيا لفريقك.",
   },
   'spain': {
     'en_name': 'Spain', 'ar_name': 'إسبانيا',
@@ -523,9 +523,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Spain',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة لإسبانيا',
     'lead_en': "HR Suite runs your Spain workforce — Workers' Statute overtime, SEPA pay files, GDPR data-subject rights, configurable local payroll in EUR, and full employee records.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في إسبانيا — عمل إضافي وفق نظام العمال، وملفات دفع SEPA، وحقوق أصحاب البيانات وفق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وسجلّات موظفين كاملة.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في إسبانيا — عمل إضافي وفق نظام العمال، وملفات دفع SEPA، وحقوق أصحاب البيانات وفق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وسجلّات موظفين كاملة.",
     'desc_en': "HR Suite for Spain — Workers' Statute overtime, SEPA pay files, GDPR rights, configurable local payroll in EUR, and full HR.",
-    'desc_ar': "منظومة الموارد البشرية لإسبانيا — عمل إضافي وفق نظام العمال، وملفات SEPA، وحقوق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وموارد بشرية كاملة.",
+    'desc_ar': "منصة الموارد البشرية لإسبانيا — عمل إضافي وفق نظام العمال، وملفات SEPA، وحقوق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وموارد بشرية كاملة.",
     'hub_sub_en': 'Overtime · SEPA · GDPR', 'hub_sub_ar': 'العمل الإضافي · SEPA · GDPR',
     'features': [
       ("Overtime — Workers' Statute", "العمل الإضافي — نظام العمال",
@@ -543,7 +543,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Spain HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في إسبانيا كما ينبغي',
     'cta_p_en': "See HR Suite handle Spanish overtime, SEPA and GDPR for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير العمل الإضافي و SEPA و GDPR في إسبانيا لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير العمل الإضافي و SEPA و GDPR في إسبانيا لفريقك.",
   },
   'italy': {
     'en_name': 'Italy', 'ar_name': 'إيطاليا',
@@ -551,9 +551,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Italy',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة لإيطاليا',
     'lead_en': "HR Suite runs your Italy workforce — CCNL overtime, SEPA pay files, GDPR data-subject rights, configurable local payroll in EUR, and full employee records.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في إيطاليا — عمل إضافي وفق CCNL، وملفات دفع SEPA، وحقوق أصحاب البيانات وفق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وسجلّات موظفين كاملة.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في إيطاليا — عمل إضافي وفق CCNL، وملفات دفع SEPA، وحقوق أصحاب البيانات وفق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وسجلّات موظفين كاملة.",
     'desc_en': "HR Suite for Italy — CCNL overtime, SEPA pay files, GDPR rights, configurable local payroll in EUR, and full HR.",
-    'desc_ar': "منظومة الموارد البشرية لإيطاليا — عمل إضافي وفق CCNL، وملفات SEPA، وحقوق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وموارد بشرية كاملة.",
+    'desc_ar': "منصة الموارد البشرية لإيطاليا — عمل إضافي وفق CCNL، وملفات SEPA، وحقوق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وموارد بشرية كاملة.",
     'hub_sub_en': 'Overtime · SEPA · GDPR', 'hub_sub_ar': 'العمل الإضافي · SEPA · GDPR',
     'features': [
       ("Overtime — CCNL rates", "العمل الإضافي — معدّلات CCNL",
@@ -571,7 +571,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Italy HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في إيطاليا كما ينبغي',
     'cta_p_en': "See HR Suite handle Italian overtime, SEPA and GDPR for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير العمل الإضافي و SEPA و GDPR في إيطاليا لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير العمل الإضافي و SEPA و GDPR في إيطاليا لفريقك.",
   },
   'netherlands': {
     'en_name': 'Netherlands', 'ar_name': 'هولندا',
@@ -579,9 +579,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'the Netherlands',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة لهولندا',
     'lead_en': "HR Suite runs your Netherlands workforce — collective-agreement overtime, SEPA pay files, GDPR data-subject rights, configurable local payroll in EUR, and full employee records.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في هولندا — عمل إضافي وفق الاتفاقيات الجماعية، وملفات دفع SEPA، وحقوق أصحاب البيانات وفق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وسجلّات موظفين كاملة.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في هولندا — عمل إضافي وفق الاتفاقيات الجماعية، وملفات دفع SEPA، وحقوق أصحاب البيانات وفق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وسجلّات موظفين كاملة.",
     'desc_en': "HR Suite for the Netherlands — CBA overtime, SEPA pay files, GDPR rights, configurable local payroll in EUR, and full HR.",
-    'desc_ar': "منظومة الموارد البشرية لهولندا — عمل إضافي وفق الاتفاقيات، وملفات SEPA، وحقوق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وموارد بشرية كاملة.",
+    'desc_ar': "منصة الموارد البشرية لهولندا — عمل إضافي وفق الاتفاقيات، وملفات SEPA، وحقوق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وموارد بشرية كاملة.",
     'hub_sub_en': 'Overtime · SEPA · GDPR', 'hub_sub_ar': 'العمل الإضافي · SEPA · GDPR',
     'features': [
       ("Overtime — CBA rates", "العمل الإضافي — الاتفاقيات الجماعية",
@@ -599,7 +599,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Netherlands HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في هولندا كما ينبغي',
     'cta_p_en': "See HR Suite handle Dutch overtime, SEPA and GDPR for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير العمل الإضافي و SEPA و GDPR في هولندا لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير العمل الإضافي و SEPA و GDPR في هولندا لفريقك.",
   },
   'lebanon': {
     'en_name': 'Lebanon', 'ar_name': 'لبنان',
@@ -607,9 +607,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Lebanon',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للبنان',
     'lead_en': "HR Suite runs your Lebanon workforce — statutory leave and the local holiday calendar, configurable payroll with income tax and NSSF, rule-based end-of-service, Arabic throughout, and full employee records.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في لبنان — الإجازات النظامية وتقويم العطلات المحلي، ورواتب قابلة للتهيئة مع ضريبة الدخل والضمان الاجتماعي، ونهاية خدمة قائمة على القواعد، ودعم العربية بالكامل، وسجلّات موظفين كاملة.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في لبنان — الإجازات النظامية وتقويم العطلات المحلي، ورواتب قابلة للتهيئة مع ضريبة الدخل والضمان الاجتماعي، ونهاية خدمة قائمة على القواعد، ودعم العربية بالكامل، وسجلّات موظفين كاملة.",
     'desc_en': "HR Suite for Lebanon — statutory leave and holidays, configurable payroll with income tax and NSSF, rule-based end-of-service, and Arabic-first HR.",
-    'desc_ar': "منظومة الموارد البشرية للبنان — الإجازات والعطلات النظامية، ورواتب قابلة للتهيئة مع ضريبة الدخل والضمان الاجتماعي، ونهاية خدمة قائمة على القواعد، وموارد بشرية بالعربية أولًا.",
+    'desc_ar': "منصة الموارد البشرية للبنان — الإجازات والعطلات النظامية، ورواتب قابلة للتهيئة مع ضريبة الدخل والضمان الاجتماعي، ونهاية خدمة قائمة على القواعد، وموارد بشرية بالعربية أولًا.",
     'hub_sub_en': 'Leave · Payroll · NSSF', 'hub_sub_ar': 'الإجازات · الرواتب · الضمان',
     'features': [
       ("Statutory leave &amp; holidays", "الإجازات والعطلات النظامية",
@@ -627,7 +627,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Lebanon HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في لبنان كما ينبغي',
     'cta_p_en': "See HR Suite handle Lebanon leave, payroll and end-of-service for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الإجازات والرواتب ونهاية الخدمة في لبنان لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير الإجازات والرواتب ونهاية الخدمة في لبنان لفريقك.",
   },
   'iraq': {
     'en_name': 'Iraq', 'ar_name': 'العراق',
@@ -635,9 +635,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Iraq',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة للعراق',
     'lead_en': "HR Suite runs your Iraq workforce — statutory leave and the local holiday calendar, configurable payroll with income tax and social security, rule-based end-of-service, Arabic throughout, and full employee records.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في العراق — الإجازات النظامية وتقويم العطلات المحلي، ورواتب قابلة للتهيئة مع ضريبة الدخل والضمان الاجتماعي، ونهاية خدمة قائمة على القواعد، ودعم العربية بالكامل، وسجلّات موظفين كاملة.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في العراق — الإجازات النظامية وتقويم العطلات المحلي، ورواتب قابلة للتهيئة مع ضريبة الدخل والضمان الاجتماعي، ونهاية خدمة قائمة على القواعد، ودعم العربية بالكامل، وسجلّات موظفين كاملة.",
     'desc_en': "HR Suite for Iraq — statutory leave and holidays, configurable payroll with income tax and social security, rule-based end-of-service, and Arabic-first HR.",
-    'desc_ar': "منظومة الموارد البشرية للعراق — الإجازات والعطلات النظامية، ورواتب قابلة للتهيئة مع ضريبة الدخل والضمان الاجتماعي، ونهاية خدمة قائمة على القواعد، وموارد بشرية بالعربية أولًا.",
+    'desc_ar': "منصة الموارد البشرية للعراق — الإجازات والعطلات النظامية، ورواتب قابلة للتهيئة مع ضريبة الدخل والضمان الاجتماعي، ونهاية خدمة قائمة على القواعد، وموارد بشرية بالعربية أولًا.",
     'hub_sub_en': 'Leave · Payroll · Arabic', 'hub_sub_ar': 'الإجازات · الرواتب · العربية',
     'features': [
       ("Statutory leave &amp; holidays", "الإجازات والعطلات النظامية",
@@ -655,7 +655,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Iraq HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في العراق كما ينبغي',
     'cta_p_en': "See HR Suite handle Iraq leave, payroll and end-of-service for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الإجازات والرواتب ونهاية الخدمة في العراق لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير الإجازات والرواتب ونهاية الخدمة في العراق لفريقك.",
   },
   'palestine': {
     'en_name': 'Palestine', 'ar_name': 'فلسطين',
@@ -663,9 +663,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Palestine',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة لفلسطين',
     'lead_en': "HR Suite runs your Palestine workforce — statutory leave and the local holiday calendar, configurable payroll with income tax and social contributions, rule-based end-of-service, Arabic throughout, and full employee records.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في فلسطين — الإجازات النظامية وتقويم العطلات المحلي، ورواتب قابلة للتهيئة مع ضريبة الدخل والمساهمات الاجتماعية، ونهاية خدمة قائمة على القواعد، ودعم العربية بالكامل، وسجلّات موظفين كاملة.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في فلسطين — الإجازات النظامية وتقويم العطلات المحلي، ورواتب قابلة للتهيئة مع ضريبة الدخل والمساهمات الاجتماعية، ونهاية خدمة قائمة على القواعد، ودعم العربية بالكامل، وسجلّات موظفين كاملة.",
     'desc_en': "HR Suite for Palestine — statutory leave and holidays, configurable payroll with income tax and social contributions, rule-based end-of-service, and Arabic-first HR.",
-    'desc_ar': "منظومة الموارد البشرية لفلسطين — الإجازات والعطلات النظامية، ورواتب قابلة للتهيئة مع ضريبة الدخل والمساهمات الاجتماعية، ونهاية خدمة قائمة على القواعد، وموارد بشرية بالعربية أولًا.",
+    'desc_ar': "منصة الموارد البشرية لفلسطين — الإجازات والعطلات النظامية، ورواتب قابلة للتهيئة مع ضريبة الدخل والمساهمات الاجتماعية، ونهاية خدمة قائمة على القواعد، وموارد بشرية بالعربية أولًا.",
     'hub_sub_en': 'Leave · Payroll · Arabic', 'hub_sub_ar': 'الإجازات · الرواتب · العربية',
     'features': [
       ("Statutory leave &amp; holidays", "الإجازات والعطلات النظامية",
@@ -683,7 +683,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Palestine HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في فلسطين كما ينبغي',
     'cta_p_en': "See HR Suite handle Palestine leave, payroll and end-of-service for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الإجازات والرواتب ونهاية الخدمة في فلسطين لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير الإجازات والرواتب ونهاية الخدمة في فلسطين لفريقك.",
   },
   'ireland': {
     'en_name': 'Ireland', 'ar_name': 'أيرلندا',
@@ -691,9 +691,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Ireland',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة لأيرلندا',
     'lead_en': "HR Suite runs your Ireland workforce — statutory leave and the local holiday calendar, SEPA pay files, GDPR data-subject rights, configurable local payroll in EUR, and full employee records.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في أيرلندا — الإجازات النظامية وتقويم العطلات المحلي، وملفات دفع SEPA، وحقوق أصحاب البيانات وفق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وسجلّات موظفين كاملة.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في أيرلندا — الإجازات النظامية وتقويم العطلات المحلي، وملفات دفع SEPA، وحقوق أصحاب البيانات وفق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وسجلّات موظفين كاملة.",
     'desc_en': "HR Suite for Ireland — statutory leave and holidays, SEPA pay files, GDPR rights, configurable local payroll (PAYE/PRSI/USC) in EUR, and full HR.",
-    'desc_ar': "منظومة الموارد البشرية لأيرلندا — الإجازات والعطلات النظامية، وملفات SEPA، وحقوق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وموارد بشرية كاملة.",
+    'desc_ar': "منصة الموارد البشرية لأيرلندا — الإجازات والعطلات النظامية، وملفات SEPA، وحقوق GDPR، ورواتب محلية قابلة للتهيئة باليورو، وموارد بشرية كاملة.",
     'hub_sub_en': 'Leave · SEPA · GDPR', 'hub_sub_ar': 'الإجازات · SEPA · GDPR',
     'features': [
       ("Statutory leave &amp; holidays", "الإجازات والعطلات النظامية",
@@ -711,7 +711,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Ireland HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في أيرلندا كما ينبغي',
     'cta_p_en': "See HR Suite handle Irish leave, SEPA and GDPR for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الإجازات و SEPA و GDPR في أيرلندا لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير الإجازات و SEPA و GDPR في أيرلندا لفريقك.",
   },
   'canada': {
     'en_name': 'Canada', 'ar_name': 'كندا',
@@ -719,9 +719,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Canada',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة لكندا',
     'lead_en': "HR Suite runs your Canada workforce — statutory leave and the local holiday calendar, configurable payroll with federal and provincial tax, CPP and EI, and full employee records in CAD.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في كندا — الإجازات النظامية وتقويم العطلات المحلي، ورواتب قابلة للتهيئة مع الضريبة الفيدرالية والإقليمية و CPP و EI، وسجلّات موظفين كاملة بالدولار الكندي.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في كندا — الإجازات النظامية وتقويم العطلات المحلي، ورواتب قابلة للتهيئة مع الضريبة الفيدرالية والإقليمية و CPP و EI، وسجلّات موظفين كاملة بالدولار الكندي.",
     'desc_en': "HR Suite for Canada — statutory leave and holidays, configurable payroll with federal/provincial tax, CPP and EI, and full HR in CAD.",
-    'desc_ar': "منظومة الموارد البشرية لكندا — الإجازات والعطلات النظامية، ورواتب قابلة للتهيئة مع الضريبة الفيدرالية والإقليمية و CPP و EI، وموارد بشرية كاملة بالدولار الكندي.",
+    'desc_ar': "منصة الموارد البشرية لكندا — الإجازات والعطلات النظامية، ورواتب قابلة للتهيئة مع الضريبة الفيدرالية والإقليمية و CPP و EI، وموارد بشرية كاملة بالدولار الكندي.",
     'hub_sub_en': 'Leave · Payroll · CPP/EI', 'hub_sub_ar': 'الإجازات · الرواتب · CPP/EI',
     'features': [
       ("Statutory leave &amp; holidays", "الإجازات والعطلات النظامية",
@@ -739,7 +739,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Canada HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في كندا كما ينبغي',
     'cta_p_en': "See HR Suite handle Canadian leave, payroll and overtime for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الإجازات والرواتب والعمل الإضافي في كندا لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير الإجازات والرواتب والعمل الإضافي في كندا لفريقك.",
   },
   'north-america': {
     'en_name': 'North America', 'ar_name': 'أمريكا الشمالية',
@@ -747,9 +747,9 @@ REGIONS = {
     'h1_en': 'FulcrumGrid, built for', 'h1_grad_en': 'North America',
     'h1_ar': 'FulcrumGrid،', 'h1_grad_ar': 'مصمّمة لأمريكا الشمالية',
     'lead_en': "The whole grid runs across North America — HR Suite with configurable payroll and federal, state and provincial rules; Command Center with real-time finance and reporting in USD and CAD; and Collection for receivables and reminders. Pick a country for the detail.",
-    'lead_ar': "الشبكة كاملة تعمل عبر أمريكا الشمالية — HR Suite برواتب قابلة للتهيئة وقواعد فيدرالية وولائية وإقليمية؛ وCommand Center بمالية وتقارير فورية بالدولار الأمريكي والكندي؛ وCollection للتحصيل والتذكيرات. اختر دولة لعرض التفاصيل.",
+    'lead_ar': "الشبكة كاملة تعمل عبر أمريكا الشمالية — منصة الموارد البشرية برواتب قابلة للتهيئة وقواعد فيدرالية وولائية وإقليمية؛ ولوحة التحكم للتنفيذيين بمالية وتقارير فورية بالدولار الأمريكي والكندي؛ ومنصة تحصيل الديون للتحصيل والتذكيرات. اختر دولة لعرض التفاصيل.",
     'desc_en': "FulcrumGrid across North America — HR Suite, Command Center and Collection — with configurable payroll by federal, state and provincial rule, real-time finance in USD and CAD, and receivables.",
-    'desc_ar': "FulcrumGrid عبر أمريكا الشمالية — HR Suite وCommand Center وCollection — برواتب قابلة للتهيئة وفق القواعد الفيدرالية والولائية والإقليمية، ومالية فورية بالدولار الأمريكي والكندي، وتحصيل.",
+    'desc_ar': "FulcrumGrid عبر أمريكا الشمالية — منصة الموارد البشرية ولوحة التحكم للتنفيذيين ومنصة تحصيل الديون — برواتب قابلة للتهيئة وفق القواعد الفيدرالية والولائية والإقليمية، ومالية فورية بالدولار الأمريكي والكندي، وتحصيل.",
     'hub_sub_en': 'United States · Canada', 'hub_sub_ar': 'الولايات المتحدة · كندا',
     'members': ['usa', 'canada'],
     'cta_h_en': 'Run your North American operation on one grid', 'cta_h_ar': 'أدِر عملياتك في أمريكا الشمالية على شبكة واحدة',
@@ -762,9 +762,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Syria',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة لسوريا',
     'lead_en': "HR Suite runs your Syria workforce — statutory leave and the local holiday calendar, configurable payroll with income tax and social insurance, rule-based end-of-service, Arabic throughout, and full employee records.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في سوريا — الإجازات النظامية وتقويم العطلات المحلي، ورواتب قابلة للتهيئة مع ضريبة الدخل والتأمينات الاجتماعية، ونهاية خدمة قائمة على القواعد، ودعم العربية بالكامل، وسجلّات موظفين كاملة.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في سوريا — الإجازات النظامية وتقويم العطلات المحلي، ورواتب قابلة للتهيئة مع ضريبة الدخل والتأمينات الاجتماعية، ونهاية خدمة قائمة على القواعد، ودعم العربية بالكامل، وسجلّات موظفين كاملة.",
     'desc_en': "HR Suite for Syria — statutory leave and holidays, configurable payroll with income tax and social insurance, rule-based end-of-service, and Arabic-first HR.",
-    'desc_ar': "منظومة الموارد البشرية لسوريا — الإجازات والعطلات النظامية، ورواتب قابلة للتهيئة مع ضريبة الدخل والتأمينات، ونهاية خدمة قائمة على القواعد، وموارد بشرية بالعربية أولًا.",
+    'desc_ar': "منصة الموارد البشرية لسوريا — الإجازات والعطلات النظامية، ورواتب قابلة للتهيئة مع ضريبة الدخل والتأمينات، ونهاية خدمة قائمة على القواعد، وموارد بشرية بالعربية أولًا.",
     'hub_sub_en': 'Leave · Payroll · Arabic', 'hub_sub_ar': 'الإجازات · الرواتب · العربية',
     'features': [
       ("Statutory leave &amp; holidays", "الإجازات والعطلات النظامية",
@@ -782,7 +782,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Syria HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في سوريا كما ينبغي',
     'cta_p_en': "See HR Suite handle Syria leave, payroll and end-of-service for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الإجازات والرواتب ونهاية الخدمة في سوريا لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير الإجازات والرواتب ونهاية الخدمة في سوريا لفريقك.",
   },
   'yemen': {
     'en_name': 'Yemen', 'ar_name': 'اليمن',
@@ -790,9 +790,9 @@ REGIONS = {
     'h1_en': 'HR &amp; payroll, built for', 'h1_grad_en': 'Yemen',
     'h1_ar': 'موارد بشرية ورواتب،', 'h1_grad_ar': 'مصمّمة لليمن',
     'lead_en': "HR Suite runs your Yemen workforce — statutory leave and the local holiday calendar, configurable payroll with income tax and social insurance, rule-based end-of-service, Arabic throughout, and full employee records.",
-    'lead_ar': "تدير منظومة الموارد البشرية قوتك العاملة في اليمن — الإجازات النظامية وتقويم العطلات المحلي، ورواتب قابلة للتهيئة مع ضريبة الدخل والتأمينات الاجتماعية، ونهاية خدمة قائمة على القواعد، ودعم العربية بالكامل، وسجلّات موظفين كاملة.",
+    'lead_ar': "تدير منصة الموارد البشرية قوتك العاملة في اليمن — الإجازات النظامية وتقويم العطلات المحلي، ورواتب قابلة للتهيئة مع ضريبة الدخل والتأمينات الاجتماعية، ونهاية خدمة قائمة على القواعد، ودعم العربية بالكامل، وسجلّات موظفين كاملة.",
     'desc_en': "HR Suite for Yemen — statutory leave and holidays, configurable payroll with income tax and social insurance, rule-based end-of-service, and Arabic-first HR.",
-    'desc_ar': "منظومة الموارد البشرية لليمن — الإجازات والعطلات النظامية، ورواتب قابلة للتهيئة مع ضريبة الدخل والتأمينات، ونهاية خدمة قائمة على القواعد، وموارد بشرية بالعربية أولًا.",
+    'desc_ar': "منصة الموارد البشرية لليمن — الإجازات والعطلات النظامية، ورواتب قابلة للتهيئة مع ضريبة الدخل والتأمينات، ونهاية خدمة قائمة على القواعد، وموارد بشرية بالعربية أولًا.",
     'hub_sub_en': 'Leave · Payroll · Arabic', 'hub_sub_ar': 'الإجازات · الرواتب · العربية',
     'features': [
       ("Statutory leave &amp; holidays", "الإجازات والعطلات النظامية",
@@ -810,7 +810,7 @@ REGIONS = {
     ],
     'cta_h_en': 'Run Yemen HR &amp; payroll the right way', 'cta_h_ar': 'أدِر الموارد البشرية والرواتب في اليمن كما ينبغي',
     'cta_p_en': "See HR Suite handle Yemen leave, payroll and end-of-service for your team.",
-    'cta_p_ar': "شاهد منظومة الموارد البشرية تدير الإجازات والرواتب ونهاية الخدمة في اليمن لفريقك.",
+    'cta_p_ar': "شاهد منصة الموارد البشرية تدير الإجازات والرواتب ونهاية الخدمة في اليمن لفريقك.",
   },
 }
 
@@ -884,20 +884,20 @@ def grid_apps_section(d, slug, lang, n, is_group):
         eye = ('%02d · The grid, in your region' % n) if en else 'الشبكة في منطقتك'
         h2 = 'Every app, built for your region' if en else 'كل تطبيق، مصمّم لمنطقتك'
         lead = ('HR Suite, Command Center and Collection all run here — in your language and currency.'
-                if en else 'يعمل هنا HR Suite وCommand Center وCollection جميعًا — بلغتك وعملتك.')
+                if en else 'يعمل هنا منصة الموارد البشرية ولوحة التحكم للتنفيذيين ومنصة تحصيل الديون جميعًا — بلغتك وعملتك.')
         cells = [
-            app_cell(b, 'hr-suite', 'HR Suite', HR_GRID[0], HR_GRID[1], en),
-            app_cell(b, 'command-center', 'Command Center', ga['cc'][0], ga['cc'][1], en),
-            app_cell(b, 'collection', 'Collection', ga['col'][0], ga['col'][1], en),
+            app_cell(b, 'hr-suite', 'HR Suite' if en else 'منصة الموارد البشرية', HR_GRID[0], HR_GRID[1], en),
+            app_cell(b, 'command-center', 'Command Center' if en else 'لوحة التحكم للتنفيذيين', ga['cc'][0], ga['cc'][1], en),
+            app_cell(b, 'collection', 'Collection' if en else 'منصة تحصيل الديون', ga['col'][0], ga['col'][1], en),
         ]
     else:
         eye = ('%02d · The rest of the grid' % n) if en else 'بقية الشبكة'
         h2 = 'The rest of the grid, here too' if en else 'بقية الشبكة، هنا أيضًا'
         lead = ('HR Suite is only part of it — Command Center and Collection run in your market too, in your language and currency.'
-                if en else 'HR Suite جزء منها فقط — يعمل Command Center وCollection في سوقك أيضًا، بلغتك وعملتك.')
+                if en else 'منصة الموارد البشرية جزء منها فقط — يعمل لوحة التحكم للتنفيذيين ومنصة تحصيل الديون في سوقك أيضًا، بلغتك وعملتك.')
         cells = [
-            app_cell(b, 'command-center', 'Command Center', ga['cc'][0], ga['cc'][1], en),
-            app_cell(b, 'collection', 'Collection', ga['col'][0], ga['col'][1], en),
+            app_cell(b, 'command-center', 'Command Center' if en else 'لوحة التحكم للتنفيذيين', ga['cc'][0], ga['cc'][1], en),
+            app_cell(b, 'collection', 'Collection' if en else 'منصة تحصيل الديون', ga['col'][0], ga['col'][1], en),
         ]
     return f'''    <section class="section">
       <div class="wrap pad">
@@ -1087,9 +1087,9 @@ def footer(lang):
         <div class="foot-col">
           <h5>المنتجات</h5>
           <a href="/ar/products/">كل المنتجات</a>
-          <a href="/ar/products/hr-suite/">HR Suite</a>
-          <a href="/ar/products/command-center/">Command Center</a>
-          <a href="/ar/products/collection/">Collection</a>
+          <a href="/ar/products/hr-suite/">منصة الموارد البشرية</a>
+          <a href="/ar/products/command-center/">لوحة التحكم للتنفيذيين</a>
+          <a href="/ar/products/collection/">منصة تحصيل الديون</a>
           <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
         </div>
         <div class="foot-col">
@@ -1153,16 +1153,16 @@ def region_page(slug, lang):
         act3 = 'See pricing' if en else 'شاهد الأسعار'
         act3_href = f'{b}/pricing/'
     else:
-        act2 = 'Explore HR Suite' if en else 'استكشف الموارد البشرية'
+        act2 = 'Explore HR Suite' if en else 'استكشف منصة الموارد البشرية'
         act2_href = f'{b}/products/hr-suite/'
-        act3 = 'See HR Suite pricing' if en else 'أسعار الموارد البشرية'
+        act3 = 'See HR Suite pricing' if en else 'أسعار منصة الموارد البشرية'
         act3_href = f'{b}/pricing/hr-suite/'
     whatsin_h = ('%s compliance, out of the box' % name) if en else ('امتثال %s جاهز' % name)
     whatsin_p = ("The modules that make HR Suite work the way %s does — each part of the same grid, no separate tools." % name if en
-                 else "الوحدات التي تجعل منظومة الموارد البشرية تعمل بالطريقة المحلية في %s — كلّها جزء من الشبكة نفسها، دون أدوات منفصلة." % name)
+                 else "الوحدات التي تجعل منصة الموارد البشرية تعمل بالطريقة المحلية في %s — كلّها جزء من الشبكة نفسها، دون أدوات منفصلة." % name)
     note = (f'Every module here is part of HR Suite — advanced payroll, year-end and compliance on the Enterprise plan, or added to any plan as a per-seat add-on. <a href="{b}/pricing/hr-suite/">See HR Suite pricing →</a>'
             if en else
-            f'كل وحدة هنا جزء من منظومة الموارد البشرية — الرواتب المتقدّمة ونهاية السنة والامتثال في خطة المؤسسات، أو تُضاف إلى أي خطة كإضافة لكل مقعد. <a href="{b}/pricing/hr-suite/">أسعار الموارد البشرية ←</a>')
+            f'كل وحدة هنا جزء من منصة الموارد البشرية — الرواتب المتقدّمة ونهاية السنة والامتثال في خطة المؤسسات، أو تُضاف إلى أي خطة كإضافة لكل مقعد. <a href="{b}/pricing/hr-suite/">أسعار منصة الموارد البشرية ←</a>')
     cta_h = d['cta_h_en'] if en else d['cta_h_ar']
     cta_p = d['cta_p_en'] if en else d['cta_p_ar']
     email = 'Email us' if en else 'راسلنا'
@@ -1275,12 +1275,12 @@ def hub_page(lang):
     path = '/regions/'
     title = ('Regions — every app, built for your region | FulcrumGrid' if en else 'المناطق — كل تطبيق، مصمّم لمنطقتك | FulcrumGrid')
     desc = ("FulcrumGrid runs in your region — HR Suite, Command Center and Collection, adapted to local payroll, compliance, finance, currency and language."
-            if en else "يعمل FulcrumGrid في منطقتك — HR Suite وCommand Center وCollection، متكيّفة مع الرواتب والامتثال والمالية والعملة واللغة المحلية.")
+            if en else "يعمل FulcrumGrid في منطقتك — منصة الموارد البشرية ولوحة التحكم للتنفيذيين ومنصة تحصيل الديون، متكيّفة مع الرواتب والامتثال والمالية والعملة واللغة المحلية.")
     eye = 'Regions' if en else 'المناطق'
     h1 = 'Built for how your' if en else 'مصمّمة لطريقة'
     h1g = 'region runs' if en else 'عمل منطقتك'
     lead = ("The whole grid runs in your region — HR Suite for local payroll and compliance, Command Center for regional finance and tax, and Collection for local receivables — in your language and currency. Wherever you operate, your data runs on servers hosted in your region. Choose your region."
-            if en else "الشبكة كاملة تعمل في منطقتك — HR Suite للرواتب والامتثال المحلي، وCommand Center للمالية والضرائب الإقليمية، وCollection للتحصيل المحلي — بلغتك وعملتك. وأينما تعمل، تعمل بياناتك على خوادم مستضافة في منطقتك. اختر منطقتك.")
+            if en else "الشبكة كاملة تعمل في منطقتك — منصة الموارد البشرية للرواتب والامتثال المحلي، ولوحة التحكم للتنفيذيين للمالية والضرائب الإقليمية، ومنصة تحصيل الديون للتحصيل المحلي — بلغتك وعملتك. وأينما تعمل، تعمل بياناتك على خوادم مستضافة في منطقتك. اختر منطقتك.")
     demo = 'Request a demo' if en else 'اطلب عرضًا توضيحيًا'
     see_hr = 'Explore the apps' if en else 'استكشف التطبيقات'
     # Region cards — one .region card per top-level region (code + name + served

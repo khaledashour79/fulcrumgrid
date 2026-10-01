@@ -29,6 +29,13 @@
   var L = function (k, d) { return stage.getAttribute('data-l-' + k) || d; };
   var txtLive = L('live', 'Available'), txtSoon = L('soon', 'Coming soon');
   var txtOrbit = L('orbit', 'Orbit'), txtHeld = L('held', 'Orbit held');
+  // Localized app names by explorer key, e.g. data-l-apps="hr=…|cc=…|col=…".
+  // Falls back to the English name in the APPS array when unset (EN/European).
+  var NAMES = {};
+  (stage.getAttribute('data-l-apps') || '').split('|').forEach(function (p) {
+    var i = p.indexOf('='); if (i > 0) NAMES[p.slice(0, i)] = p.slice(i + 1);
+  });
+  var appName = function (a) { return NAMES[a[2]] || a[0]; };
 
   var NS = 'http://www.w3.org/2000/svg';
   function svgLayer(cls, paths) {
@@ -60,7 +67,7 @@
       '<i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>' +
       '<span class="ot-head"><span class="ot-num">' + pad(i + 1) + '</span>' +
       '<span class="ot-st"><i class="ot-dot"></i>' + (a[1] === 'live' ? txtLive : txtSoon) + '</span></span>' +
-      '<span class="ot-name">' + a[0] + '</span>';
+      '<span class="ot-name">' + appName(a) + '</span>';
     t.addEventListener('click', function () { pick(a); });
     stage.appendChild(t);
     return t;

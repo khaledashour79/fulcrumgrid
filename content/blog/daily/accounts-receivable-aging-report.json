@@ -14,10 +14,22 @@
       "cta_h": "Put your receivables on autopilot",
       "cta_p": "Let FulcrumGrid Collection build your aging report and chase every overdue invoice for you, automatically.",
       "faqs": [
-        {"q": "What is the difference between the Current and overdue buckets?", "a": "Current invoices are not yet past their due date, so the money is on schedule. Overdue buckets (1–30, 31–60, and beyond) count the days since the invoice became due — the further right, the higher the collection risk."},
-        {"q": "How often should I run an AR aging report?", "a": "Month-end is the minimum, but weekly is far better. Reviewing it every week lets you catch a slipping account while the balance is small and the customer still remembers the invoice."},
-        {"q": "Should invoices age from the invoice date or the due date?", "a": "From the due date. If your terms are net 30, an invoice issued today is Current, not overdue. Ageing from the due date keeps your buckets honest and your risk picture accurate."},
-        {"q": "What does a 90+ day balance mean for my business?", "a": "It signals serious delinquency and real risk of non-payment. These accounts usually warrant a payment plan, a credit hold, a final demand, or handoff to collections — and often a bad-debt reserve in your books."}
+        {
+          "q": "What is the difference between the Current and overdue buckets?",
+          "a": "Current invoices are not yet past their due date, so the money is on schedule. Overdue buckets (1–30, 31–60, and beyond) count the days since the invoice became due — the further right, the higher the collection risk."
+        },
+        {
+          "q": "How often should I run an AR aging report?",
+          "a": "Month-end is the minimum, but weekly is far better. Reviewing it every week lets you catch a slipping account while the balance is small and the customer still remembers the invoice."
+        },
+        {
+          "q": "Should invoices age from the invoice date or the due date?",
+          "a": "From the due date. If your terms are net 30, an invoice issued today is Current, not overdue. Ageing from the due date keeps your buckets honest and your risk picture accurate."
+        },
+        {
+          "q": "What does a 90+ day balance mean for my business?",
+          "a": "It signals serious delinquency and real risk of non-payment. These accounts usually warrant a payment plan, a credit hold, a final demand, or handoff to collections — and often a bad-debt reserve in your books."
+        }
       ]
     },
     "ar": {
@@ -27,14 +39,26 @@
       "card": "دليل مبسّط لتقرير أعمار الذمم المدينة — الفئات وكيفية قراءتها وكيف تحوّل كل فئة إلى تحصيل أسرع.",
       "metadate": "٢٩ سبتمبر ٢٠٢٦",
       "read": "٦ دقائق للقراءة",
-      "body": "<p>تقرير أعمار الذمم المدينة هو لقطة لحظية لكل فاتورة غير مسددة مستحقة لك، مرتّبة حسب المدة التي مضت على تأخّرها. وهو أهم أداة يملكها فريق المالية أو التحصيل للإجابة عن سؤالين في آن واحد: <strong>مَن يدين لنا بالمال</strong>، و<strong>ما مدى خطورة عدم استرداده</strong>.</p><h2>ما هو تقرير أعمار الذمم بالضبط؟</h2><p>يسرد التقرير كل عميل ويوزّع رصيده المفتوح على أعمدة تُسمى فئات التقادم. تُوضَع كل فاتورة في فئة بحسب عدد الأيام التي مرّت منذ تاريخ استحقاقها. وبجمع أي عمود ترى بنظرة واحدة كم من أموالك حديث وكم منها تقادم. يُصدر معظم الفرق التقرير في نهاية الشهر، لكن أكثرها كفاءة تراجعه أسبوعيًا.</p><h2>فئات التقادم القياسية</h2><p>تستخدم كل تقارير الأعمار تقريبًا الأعمدة الخمسة نفسها:</p><ul><li><strong>غير مستحق</strong> — فواتير لم يحلّ موعد استحقاقها بعد. المال يعمل تمامًا كما ينبغي.</li><li><strong>١ إلى ٣٠ يومًا</strong> — متأخرة حديثًا. غالبًا سهو أو فاتورة ضائعة أو دفعة لم تُنفَّذ بعد.</li><li><strong>٣١ إلى ٦٠ يومًا</strong> — أول إشارة إنذار حقيقية. شيء ما يُبطئ السداد ويستحق تواصلًا شخصيًا.</li><li><strong>٦١ إلى ٩٠ يومًا</strong> — متأخرة فعلًا. كلما بقي الرصيد هنا أطول، قلّت فرص تحصيله كاملًا.</li><li><strong>أكثر من ٩٠ يومًا</strong> — متعثّرة بشكل خطير. هذه الحسابات مرشّحة للتصعيد أو خطة سداد أو الإحالة إلى جهة تحصيل.</li></ul><p>القاعدة الذهبية لكل مسؤول تحصيل: <strong>كلما تقادم الدَّين صعُب تحصيله</strong>. تفقد الفاتورة جزءًا حقيقيًا من قيمتها مع كل شهر تأخير، ولهذا يبقى الهدف دائمًا تحريك المال نحو اليسار إلى عمود غير المستحق.</p><h2>كيف تقرأه؟</h2><p>ابدأ بصف الإجماليات. ما نسبة إجمالي ذممك غير المستحقة مقابل المتأخرة؟ المحفظة السليمة تُبقي الغالبية العظمى في غير المستحق و١ إلى ٣٠. ثم انظر أولًا إلى أعمدة أقصى اليسار: ففي فئتَي ٦١ إلى ٩٠ وأكثر من ٩٠ يومًا تتسرّب النقدية بهدوء. رتّب العملاء حسب حجم الرصيد المتأخر لتصرف وقتك على الحسابات التي تُحدث فرقًا. فبضع فواتير كبيرة قديمة أهمّ غالبًا من ذيل طويل من الفواتير الصغيرة.</p><h3>ما الذي تطلبه منك كل فئة</h3><ul><li><strong>غير مستحق:</strong> لا شيء عاجل — لكن تذكيرًا وديًّا قبل أيام من الاستحقاق يمنع مشكلة الغد.</li><li><strong>١ إلى ٣٠:</strong> أرسل تذكيرًا مهذبًا وتأكد من استلام الفاتورة واعتمادها.</li><li><strong>٣١ إلى ٦٠:</strong> ارفع السمّاعة. اعرف إن كان هناك نزاع أو أمر شراء ناقص أو ضائقة سيولة.</li><li><strong>٦١ إلى ٩٠:</strong> صعّد الأمر إلى مسؤول، وضع الحساب على إيقاف ائتماني، واتفق كتابةً على تاريخ سداد قاطع.</li><li><strong>أكثر من ٩٠:</strong> اختر بين خطة سداد منظّمة أو إنذار نهائي أو تحصيل خارجي — وكوّن مخصصًا مقابل الرصيد في دفاترك.</li></ul><h2>أخطاء شائعة يجب تجنّبها</h2><ul><li><strong>إصداره شهريًا فقط.</strong> بحلول نهاية الشهر قد تكون الفاتورة قد تأخرت ٣٠ يومًا أصلًا. التقرير الأسبوعي يلتقط المشكلات وهي لا تزال رخيصة الإصلاح.</li><li><strong>حساب العمر من تاريخ الفاتورة بدل تاريخ الاستحقاق.</strong> إذا كانت شروطك ٣٠ يومًا فالفاتورة ليست متأخرة في يومها الأول — والخلط بينهما يُضخّم فئاتك ويُخفي الخطر الحقيقي.</li><li><strong>تجاهل الإشعارات الدائنة والمقبوضات غير المخصَّصة.</strong> فهي تجعل عملاء منتظمين يبدون متعثّرين وتُفسد العلاقة حين تطاردهم.</li><li><strong>معاملة كل الفئات بالطريقة نفسها.</strong> رصيد ٩٠ يومًا يحتاج حديثًا مختلفًا عن رصيد ١٥ يومًا.</li><li><strong>عدم المطابقة مع دفتر الأستاذ أبدًا.</strong> إن لم يتطابق إجمالي التقرير مع حساب مراقبة العملاء، فأحدهم يعمل على رقم خاطئ.</li></ul><h2>كيف يقود تقرير الأعمار عملية التحصيل</h2><p>تقرير الأعمار ليس مجرد لوحة مؤشرات — بل قائمة عمل. تقابل كل فئة إجراءً محددًا، فيبدأ فريقك كل يوم بتقليص أقدم الأرصدة وأكبرها. تابع الاتجاه: هل تتقلّص فئة أكثر من ٩٠ يومًا؟ هل ينخفض <strong>متوسط فترة التحصيل (DSO)</strong>؟ هذه التحركات تخبرك إن كانت عمليتك تعمل فعلًا.</p><p>بناء التقرير يدويًا في جدول بيانات هو المكان الذي يضيع فيه معظم الفرق — فهو يصبح قديمًا لحظة تسجيل أي مقبوض. يُنشئ FulcrumGrid Collection تقرير أعمار حيًّا وتلقائيًا من فواتيرك ومدفوعاتك، ثم يحوّل كل فئة إلى تذكيرات مجدولة ومتابعات مرتّبة بالأولوية، فيبقى التقرير والعمل من ورائه متزامنَين دون صيغة واحدة تحتاج إلى صيانتها.</p>",
+      "body": "<p>تقرير أعمار الذمم المدينة هو لقطة لحظية لكل فاتورة غير مسددة مستحقة لك، مرتّبة حسب المدة التي مضت على تأخّرها. وهو أهم أداة يملكها فريق المالية أو التحصيل للإجابة عن سؤالين في آن واحد: <strong>مَن يدين لنا بالمال</strong>، و<strong>ما مدى خطورة عدم استرداده</strong>.</p><h2>ما هو تقرير أعمار الذمم بالضبط؟</h2><p>يسرد التقرير كل عميل ويوزّع رصيده المفتوح على أعمدة تُسمى فئات التقادم. تُوضَع كل فاتورة في فئة بحسب عدد الأيام التي مرّت منذ تاريخ استحقاقها. وبجمع أي عمود ترى بنظرة واحدة كم من أموالك حديث وكم منها تقادم. يُصدر معظم الفرق التقرير في نهاية الشهر، لكن أكثرها كفاءة تراجعه أسبوعيًا.</p><h2>فئات التقادم القياسية</h2><p>تستخدم كل تقارير الأعمار تقريبًا الأعمدة الخمسة نفسها:</p><ul><li><strong>غير مستحق</strong> — فواتير لم يحلّ موعد استحقاقها بعد. المال يعمل تمامًا كما ينبغي.</li><li><strong>١ إلى ٣٠ يومًا</strong> — متأخرة حديثًا. غالبًا سهو أو فاتورة ضائعة أو دفعة لم تُنفَّذ بعد.</li><li><strong>٣١ إلى ٦٠ يومًا</strong> — أول إشارة إنذار حقيقية. شيء ما يُبطئ السداد ويستحق تواصلًا شخصيًا.</li><li><strong>٦١ إلى ٩٠ يومًا</strong> — متأخرة فعلًا. كلما بقي الرصيد هنا أطول، قلّت فرص تحصيله كاملًا.</li><li><strong>أكثر من ٩٠ يومًا</strong> — متعثّرة بشكل خطير. هذه الحسابات مرشّحة للتصعيد أو خطة سداد أو الإحالة إلى جهة تحصيل.</li></ul><p>القاعدة الذهبية لكل مسؤول تحصيل: <strong>كلما تقادم الدَّين صعُب تحصيله</strong>. تفقد الفاتورة جزءًا حقيقيًا من قيمتها مع كل شهر تأخير، ولهذا يبقى الهدف دائمًا تحريك المال نحو اليسار إلى عمود غير المستحق.</p><h2>كيف تقرأه؟</h2><p>ابدأ بصف الإجماليات. ما نسبة إجمالي ذممك غير المستحقة مقابل المتأخرة؟ المحفظة السليمة تُبقي الغالبية العظمى في غير المستحق و١ إلى ٣٠. ثم انظر أولًا إلى أعمدة أقصى اليسار: ففي فئتَي ٦١ إلى ٩٠ وأكثر من ٩٠ يومًا تتسرّب النقدية بهدوء. رتّب العملاء حسب حجم الرصيد المتأخر لتصرف وقتك على الحسابات التي تُحدث فرقًا. فبضع فواتير كبيرة قديمة أهمّ غالبًا من ذيل طويل من الفواتير الصغيرة.</p><h3>ما الذي تطلبه منك كل فئة</h3><ul><li><strong>غير مستحق:</strong> لا شيء عاجل — لكن تذكيرًا وديًّا قبل أيام من الاستحقاق يمنع مشكلة الغد.</li><li><strong>١ إلى ٣٠:</strong> أرسل تذكيرًا مهذبًا وتأكد من استلام الفاتورة واعتمادها.</li><li><strong>٣١ إلى ٦٠:</strong> ارفع السمّاعة. اعرف إن كان هناك نزاع أو أمر شراء ناقص أو ضائقة سيولة.</li><li><strong>٦١ إلى ٩٠:</strong> صعّد الأمر إلى مسؤول، وضع الحساب على إيقاف ائتماني، واتفق كتابةً على تاريخ سداد قاطع.</li><li><strong>أكثر من ٩٠:</strong> اختر بين خطة سداد منظّمة أو إنذار نهائي أو تحصيل خارجي — وكوّن مخصصًا مقابل الرصيد في دفاترك.</li></ul><h2>أخطاء شائعة يجب تجنّبها</h2><ul><li><strong>إصداره شهريًا فقط.</strong> بحلول نهاية الشهر قد تكون الفاتورة قد تأخرت ٣٠ يومًا أصلًا. التقرير الأسبوعي يلتقط المشكلات وهي لا تزال رخيصة الإصلاح.</li><li><strong>حساب العمر من تاريخ الفاتورة بدل تاريخ الاستحقاق.</strong> إذا كانت شروطك ٣٠ يومًا فالفاتورة ليست متأخرة في يومها الأول — والخلط بينهما يُضخّم فئاتك ويُخفي الخطر الحقيقي.</li><li><strong>تجاهل الإشعارات الدائنة والمقبوضات غير المخصَّصة.</strong> فهي تجعل عملاء منتظمين يبدون متعثّرين وتُفسد العلاقة حين تطاردهم.</li><li><strong>معاملة كل الفئات بالطريقة نفسها.</strong> رصيد ٩٠ يومًا يحتاج حديثًا مختلفًا عن رصيد ١٥ يومًا.</li><li><strong>عدم المطابقة مع دفتر الأستاذ أبدًا.</strong> إن لم يتطابق إجمالي التقرير مع حساب مراقبة العملاء، فأحدهم يعمل على رقم خاطئ.</li></ul><h2>كيف يقود تقرير الأعمار عملية التحصيل</h2><p>تقرير الأعمار ليس مجرد لوحة مؤشرات — بل قائمة عمل. تقابل كل فئة إجراءً محددًا، فيبدأ فريقك كل يوم بتقليص أقدم الأرصدة وأكبرها. تابع الاتجاه: هل تتقلّص فئة أكثر من ٩٠ يومًا؟ هل ينخفض <strong>متوسط فترة التحصيل (DSO)</strong>؟ هذه التحركات تخبرك إن كانت عمليتك تعمل فعلًا.</p><p>بناء التقرير يدويًا في جدول بيانات هو المكان الذي يضيع فيه معظم الفرق — فهو يصبح قديمًا لحظة تسجيل أي مقبوض. يُنشئ FulcrumGrid منصة تحصيل الديون تقرير أعمار حيًّا وتلقائيًا من فواتيرك ومدفوعاتك، ثم يحوّل كل فئة إلى تذكيرات مجدولة ومتابعات مرتّبة بالأولوية، فيبقى التقرير والعمل من ورائه متزامنَين دون صيغة واحدة تحتاج إلى صيانتها.</p>",
       "cta_h": "اجعل تحصيل ذممك يعمل تلقائيًا",
-      "cta_p": "دع FulcrumGrid Collection يبني تقرير الأعمار ويتابع كل فاتورة متأخرة نيابةً عنك تلقائيًا.",
+      "cta_p": "دع FulcrumGrid منصة تحصيل الديون يبني تقرير الأعمار ويتابع كل فاتورة متأخرة نيابةً عنك تلقائيًا.",
       "faqs": [
-        {"q": "ما الفرق بين فئة غير المستحق والفئات المتأخرة؟", "a": "الفواتير غير المستحقة لم يتجاوز موعد استحقاقها بعد، فالسداد ضمن الجدول. أما الفئات المتأخرة (١ إلى ٣٠ و٣١ إلى ٦٠ وما بعدها) فتحسب الأيام منذ الاستحقاق — وكلما اتجهت يسارًا ارتفع خطر التحصيل."},
-        {"q": "كم مرة ينبغي أن أُصدر تقرير الأعمار؟", "a": "نهاية الشهر هي الحد الأدنى، لكن الأسبوعي أفضل بكثير. فمراجعته كل أسبوع تتيح لك احتواء حساب يتراجع بينما الرصيد صغير والعميل لا يزال يتذكّر الفاتورة."},
-        {"q": "هل يُحسب العمر من تاريخ الفاتورة أم من تاريخ الاستحقاق؟", "a": "من تاريخ الاستحقاق. فمع شروط ٣٠ يومًا تكون فاتورة اليوم غير مستحقة لا متأخرة. الحساب من الاستحقاق يُبقي فئاتك صادقة وصورة المخاطر لديك دقيقة."},
-        {"q": "ماذا يعني رصيد أكثر من ٩٠ يومًا لعملي؟", "a": "يشير إلى تعثّر خطير وخطر حقيقي لعدم السداد. تستدعي هذه الحسابات عادةً خطة سداد أو إيقافًا ائتمانيًا أو إنذارًا نهائيًا أو الإحالة إلى التحصيل — وغالبًا تكوين مخصص للديون المشكوك فيها."}
+        {
+          "q": "ما الفرق بين فئة غير المستحق والفئات المتأخرة؟",
+          "a": "الفواتير غير المستحقة لم يتجاوز موعد استحقاقها بعد، فالسداد ضمن الجدول. أما الفئات المتأخرة (١ إلى ٣٠ و٣١ إلى ٦٠ وما بعدها) فتحسب الأيام منذ الاستحقاق — وكلما اتجهت يسارًا ارتفع خطر التحصيل."
+        },
+        {
+          "q": "كم مرة ينبغي أن أُصدر تقرير الأعمار؟",
+          "a": "نهاية الشهر هي الحد الأدنى، لكن الأسبوعي أفضل بكثير. فمراجعته كل أسبوع تتيح لك احتواء حساب يتراجع بينما الرصيد صغير والعميل لا يزال يتذكّر الفاتورة."
+        },
+        {
+          "q": "هل يُحسب العمر من تاريخ الفاتورة أم من تاريخ الاستحقاق؟",
+          "a": "من تاريخ الاستحقاق. فمع شروط ٣٠ يومًا تكون فاتورة اليوم غير مستحقة لا متأخرة. الحساب من الاستحقاق يُبقي فئاتك صادقة وصورة المخاطر لديك دقيقة."
+        },
+        {
+          "q": "ماذا يعني رصيد أكثر من ٩٠ يومًا لعملي؟",
+          "a": "يشير إلى تعثّر خطير وخطر حقيقي لعدم السداد. تستدعي هذه الحسابات عادةً خطة سداد أو إيقافًا ائتمانيًا أو إنذارًا نهائيًا أو الإحالة إلى التحصيل — وغالبًا تكوين مخصص للديون المشكوك فيها."
+        }
       ]
     },
     "fr": {
@@ -48,10 +72,22 @@
       "cta_h": "Mettez vos créances en pilote automatique",
       "cta_p": "Laissez FulcrumGrid Collection établir votre balance âgée et relancer chaque facture en retard à votre place, automatiquement.",
       "faqs": [
-        {"q": "Quelle est la différence entre la tranche à échoir et les tranches en retard ?", "a": "Les factures à échoir n'ont pas encore dépassé leur date d'échéance : le paiement est dans les temps. Les tranches en retard (1 à 30, 31 à 60, etc.) comptent les jours depuis l'échéance — plus on va vers la droite, plus le risque de recouvrement est élevé."},
-        {"q": "À quelle fréquence éditer une balance âgée ?", "a": "La fin de mois est un minimum, mais l'hebdomadaire est bien préférable. Un suivi chaque semaine permet de rattraper un compte qui dérape tant que le solde est petit et que le client se souvient de la facture."},
-        {"q": "Faut-il calculer l'ancienneté depuis la date de facture ou l'échéance ?", "a": "Depuis l'échéance. Avec des conditions à 30 jours, une facture émise aujourd'hui est à échoir, pas en retard. Partir de l'échéance garde vos tranches honnêtes et votre vision du risque juste."},
-        {"q": "Que signifie un solde de plus de 90 jours ?", "a": "Un impayé grave et un vrai risque de non-recouvrement. Ces comptes justifient en général un échéancier, un blocage de crédit, une mise en demeure ou un transfert en recouvrement — souvent avec une provision pour créance douteuse."}
+        {
+          "q": "Quelle est la différence entre la tranche à échoir et les tranches en retard ?",
+          "a": "Les factures à échoir n'ont pas encore dépassé leur date d'échéance : le paiement est dans les temps. Les tranches en retard (1 à 30, 31 à 60, etc.) comptent les jours depuis l'échéance — plus on va vers la droite, plus le risque de recouvrement est élevé."
+        },
+        {
+          "q": "À quelle fréquence éditer une balance âgée ?",
+          "a": "La fin de mois est un minimum, mais l'hebdomadaire est bien préférable. Un suivi chaque semaine permet de rattraper un compte qui dérape tant que le solde est petit et que le client se souvient de la facture."
+        },
+        {
+          "q": "Faut-il calculer l'ancienneté depuis la date de facture ou l'échéance ?",
+          "a": "Depuis l'échéance. Avec des conditions à 30 jours, une facture émise aujourd'hui est à échoir, pas en retard. Partir de l'échéance garde vos tranches honnêtes et votre vision du risque juste."
+        },
+        {
+          "q": "Que signifie un solde de plus de 90 jours ?",
+          "a": "Un impayé grave et un vrai risque de non-recouvrement. Ces comptes justifient en général un échéancier, un blocage de crédit, une mise en demeure ou un transfert en recouvrement — souvent avec une provision pour créance douteuse."
+        }
       ]
     },
     "de": {
@@ -65,10 +101,22 @@
       "cta_h": "Bringen Sie Ihre Forderungen auf Autopilot",
       "cta_p": "Lassen Sie FulcrumGrid Collection Ihre Fälligkeitsanalyse erstellen und jede überfällige Rechnung automatisch für Sie nachfassen.",
       "faqs": [
-        {"q": "Was ist der Unterschied zwischen nicht fälligen und überfälligen Klassen?", "a": "Nicht fällige Rechnungen haben ihr Fälligkeitsdatum noch nicht überschritten, die Zahlung ist also im Plan. Überfällige Klassen (1 bis 30, 31 bis 60 und weiter) zählen die Tage seit Fälligkeit — je weiter rechts, desto höher das Einbringungsrisiko."},
-        {"q": "Wie oft sollte ich eine Fälligkeitsanalyse erstellen?", "a": "Monatsende ist das Minimum, wöchentlich ist deutlich besser. Wer sie jede Woche prüft, fängt ein abrutschendes Konto ab, solange der Saldo klein ist und der Kunde sich an die Rechnung erinnert."},
-        {"q": "Sollten Rechnungen ab Rechnungsdatum oder ab Fälligkeit altern?", "a": "Ab Fälligkeit. Bei Zahlungsziel 30 Tage ist eine heute erstellte Rechnung nicht fällig, nicht überfällig. Ab Fälligkeit zu rechnen hält Ihre Klassen ehrlich und Ihr Risikobild korrekt."},
-        {"q": "Was bedeutet ein Saldo über 90 Tage für mein Unternehmen?", "a": "Er signalisiert ernsthaften Verzug und ein echtes Ausfallrisiko. Solche Konten rechtfertigen meist einen Ratenplan, eine Kreditsperre, eine letzte Mahnung oder die Übergabe an ein Inkasso — oft samt Rückstellung für zweifelhafte Forderungen."}
+        {
+          "q": "Was ist der Unterschied zwischen nicht fälligen und überfälligen Klassen?",
+          "a": "Nicht fällige Rechnungen haben ihr Fälligkeitsdatum noch nicht überschritten, die Zahlung ist also im Plan. Überfällige Klassen (1 bis 30, 31 bis 60 und weiter) zählen die Tage seit Fälligkeit — je weiter rechts, desto höher das Einbringungsrisiko."
+        },
+        {
+          "q": "Wie oft sollte ich eine Fälligkeitsanalyse erstellen?",
+          "a": "Monatsende ist das Minimum, wöchentlich ist deutlich besser. Wer sie jede Woche prüft, fängt ein abrutschendes Konto ab, solange der Saldo klein ist und der Kunde sich an die Rechnung erinnert."
+        },
+        {
+          "q": "Sollten Rechnungen ab Rechnungsdatum oder ab Fälligkeit altern?",
+          "a": "Ab Fälligkeit. Bei Zahlungsziel 30 Tage ist eine heute erstellte Rechnung nicht fällig, nicht überfällig. Ab Fälligkeit zu rechnen hält Ihre Klassen ehrlich und Ihr Risikobild korrekt."
+        },
+        {
+          "q": "Was bedeutet ein Saldo über 90 Tage für mein Unternehmen?",
+          "a": "Er signalisiert ernsthaften Verzug und ein echtes Ausfallrisiko. Solche Konten rechtfertigen meist einen Ratenplan, eine Kreditsperre, eine letzte Mahnung oder die Übergabe an ein Inkasso — oft samt Rückstellung für zweifelhafte Forderungen."
+        }
       ]
     },
     "es": {
@@ -82,10 +130,22 @@
       "cta_h": "Ponga sus cuentas por cobrar en piloto automático",
       "cta_p": "Deje que FulcrumGrid Collection genere su informe de antigüedad y reclame cada factura vencida por usted, de forma automática.",
       "faqs": [
-        {"q": "¿Cuál es la diferencia entre el tramo por vencer y los tramos vencidos?", "a": "Las facturas por vencer aún no han superado su fecha de vencimiento, así que el pago va en plazo. Los tramos vencidos (1 a 30, 31 a 60 y siguientes) cuentan los días desde el vencimiento — cuanto más a la derecha, mayor es el riesgo de cobro."},
-        {"q": "¿Con qué frecuencia debo generar el informe de antigüedad?", "a": "Fin de mes es el mínimo, pero semanal es mucho mejor. Revisarlo cada semana permite atajar una cuenta que se desliza mientras el saldo es pequeño y el cliente aún recuerda la factura."},
-        {"q": "¿La antigüedad debe contarse desde la fecha de factura o desde el vencimiento?", "a": "Desde el vencimiento. Con condiciones a 30 días, una factura emitida hoy está por vencer, no vencida. Contar desde el vencimiento mantiene sus tramos honestos y su visión del riesgo exacta."},
-        {"q": "¿Qué significa un saldo de más de 90 días para mi negocio?", "a": "Señala una mora grave y un riesgo real de impago. Estas cuentas suelen justificar un plan de pagos, un bloqueo de crédito, un requerimiento final o el traspaso a cobranzas — y a menudo una provisión por insolvencias."}
+        {
+          "q": "¿Cuál es la diferencia entre el tramo por vencer y los tramos vencidos?",
+          "a": "Las facturas por vencer aún no han superado su fecha de vencimiento, así que el pago va en plazo. Los tramos vencidos (1 a 30, 31 a 60 y siguientes) cuentan los días desde el vencimiento — cuanto más a la derecha, mayor es el riesgo de cobro."
+        },
+        {
+          "q": "¿Con qué frecuencia debo generar el informe de antigüedad?",
+          "a": "Fin de mes es el mínimo, pero semanal es mucho mejor. Revisarlo cada semana permite atajar una cuenta que se desliza mientras el saldo es pequeño y el cliente aún recuerda la factura."
+        },
+        {
+          "q": "¿La antigüedad debe contarse desde la fecha de factura o desde el vencimiento?",
+          "a": "Desde el vencimiento. Con condiciones a 30 días, una factura emitida hoy está por vencer, no vencida. Contar desde el vencimiento mantiene sus tramos honestos y su visión del riesgo exacta."
+        },
+        {
+          "q": "¿Qué significa un saldo de más de 90 días para mi negocio?",
+          "a": "Señala una mora grave y un riesgo real de impago. Estas cuentas suelen justificar un plan de pagos, un bloqueo de crédito, un requerimiento final o el traspaso a cobranzas — y a menudo una provisión por insolvencias."
+        }
       ]
     },
     "it": {
@@ -99,10 +159,22 @@
       "cta_h": "Metti i tuoi crediti in pilota automatico",
       "cta_p": "Lascia che FulcrumGrid Collection crei il tuo scadenzario e solleciti ogni fattura scaduta al posto tuo, in automatico.",
       "faqs": [
-        {"q": "Qual è la differenza tra la fascia a scadere e le fasce scadute?", "a": "Le fatture a scadere non hanno ancora superato la data di scadenza, quindi il pagamento è nei tempi. Le fasce scadute (1-30, 31-60 e oltre) contano i giorni dalla scadenza — più si va a destra, più alto è il rischio di incasso."},
-        {"q": "Con quale frequenza dovrei generare lo scadenzario?", "a": "Fine mese è il minimo, ma settimanale è molto meglio. Consultarlo ogni settimana permette di intercettare un conto che scivola mentre il saldo è piccolo e il cliente ricorda ancora la fattura."},
-        {"q": "L'anzianità va calcolata dalla data fattura o dalla scadenza?", "a": "Dalla scadenza. Con termini a 30 giorni, una fattura emessa oggi è a scadere, non scaduta. Partire dalla scadenza mantiene le fasce oneste e il quadro del rischio corretto."},
-        {"q": "Cosa significa un saldo oltre i 90 giorni per la mia azienda?", "a": "Segnala un'insolvenza grave e un rischio concreto di mancato incasso. Questi conti giustificano di solito un piano di rientro, un blocco del fido, una diffida finale o il passaggio al recupero — spesso con un accantonamento a fondo svalutazione crediti."}
+        {
+          "q": "Qual è la differenza tra la fascia a scadere e le fasce scadute?",
+          "a": "Le fatture a scadere non hanno ancora superato la data di scadenza, quindi il pagamento è nei tempi. Le fasce scadute (1-30, 31-60 e oltre) contano i giorni dalla scadenza — più si va a destra, più alto è il rischio di incasso."
+        },
+        {
+          "q": "Con quale frequenza dovrei generare lo scadenzario?",
+          "a": "Fine mese è il minimo, ma settimanale è molto meglio. Consultarlo ogni settimana permette di intercettare un conto che scivola mentre il saldo è piccolo e il cliente ricorda ancora la fattura."
+        },
+        {
+          "q": "L'anzianità va calcolata dalla data fattura o dalla scadenza?",
+          "a": "Dalla scadenza. Con termini a 30 giorni, una fattura emessa oggi è a scadere, non scaduta. Partire dalla scadenza mantiene le fasce oneste e il quadro del rischio corretto."
+        },
+        {
+          "q": "Cosa significa un saldo oltre i 90 giorni per la mia azienda?",
+          "a": "Segnala un'insolvenza grave e un rischio concreto di mancato incasso. Questi conti giustificano di solito un piano di rientro, un blocco del fido, una diffida finale o il passaggio al recupero — spesso con un accantonamento a fondo svalutazione crediti."
+        }
       ]
     },
     "nl": {
@@ -116,10 +188,22 @@
       "cta_h": "Zet uw debiteuren op de automatische piloot",
       "cta_p": "Laat FulcrumGrid Collection uw ouderdomsanalyse opstellen en elke vervallen factuur automatisch voor u opvolgen.",
       "faqs": [
-        {"q": "Wat is het verschil tussen de categorie nog niet vervallen en de vervallen categorieën?", "a": "Nog niet vervallen facturen hebben hun vervaldatum nog niet gepasseerd, dus de betaling loopt op schema. De vervallen categorieën (1 tot 30, 31 tot 60 en verder) tellen de dagen sinds de vervaldatum — hoe verder naar rechts, hoe hoger het inningsrisico."},
-        {"q": "Hoe vaak moet ik een ouderdomsanalyse draaien?", "a": "Einde maand is het minimum, maar wekelijks is veel beter. Wie hem elke week bekijkt, vangt een wegglijdend account op terwijl het saldo klein is en de klant de factuur nog kent."},
-        {"q": "Moet ouderdom vanaf de factuurdatum of de vervaldatum worden geteld?", "a": "Vanaf de vervaldatum. Bij een betaaltermijn van 30 dagen is een vandaag verstuurde factuur nog niet vervallen. Rekenen vanaf de vervaldatum houdt uw categorieën eerlijk en uw risicobeeld juist."},
-        {"q": "Wat betekent een saldo van meer dan 90 dagen voor mijn bedrijf?", "a": "Het duidt op ernstige achterstand en een reëel risico op wanbetaling. Zulke accounts rechtvaardigen meestal een betalingsregeling, een kredietstop, een laatste aanmaning of overdracht aan incasso — en vaak een voorziening voor dubieuze debiteuren."}
+        {
+          "q": "Wat is het verschil tussen de categorie nog niet vervallen en de vervallen categorieën?",
+          "a": "Nog niet vervallen facturen hebben hun vervaldatum nog niet gepasseerd, dus de betaling loopt op schema. De vervallen categorieën (1 tot 30, 31 tot 60 en verder) tellen de dagen sinds de vervaldatum — hoe verder naar rechts, hoe hoger het inningsrisico."
+        },
+        {
+          "q": "Hoe vaak moet ik een ouderdomsanalyse draaien?",
+          "a": "Einde maand is het minimum, maar wekelijks is veel beter. Wie hem elke week bekijkt, vangt een wegglijdend account op terwijl het saldo klein is en de klant de factuur nog kent."
+        },
+        {
+          "q": "Moet ouderdom vanaf de factuurdatum of de vervaldatum worden geteld?",
+          "a": "Vanaf de vervaldatum. Bij een betaaltermijn van 30 dagen is een vandaag verstuurde factuur nog niet vervallen. Rekenen vanaf de vervaldatum houdt uw categorieën eerlijk en uw risicobeeld juist."
+        },
+        {
+          "q": "Wat betekent een saldo van meer dan 90 dagen voor mijn bedrijf?",
+          "a": "Het duidt op ernstige achterstand en een reëel risico op wanbetaling. Zulke accounts rechtvaardigen meestal een betalingsregeling, een kredietstop, een laatste aanmaning of overdracht aan incasso — en vaak een voorziening voor dubieuze debiteuren."
+        }
       ]
     }
   }
