@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Come condurre un post-mortem senza colpe? Guida pratica — FulcrumGrid</title>
+  <meta name="description" content="Guida pratica per condurre un post-mortem senza colpe dopo un guasto operativo: quando farlo, l’agenda, la cronologia, i 5 perché, le azioni con responsabili e il follow-up." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Come condurre un post-mortem senza colpe? Guida pratica" />
+  <meta property="og:description" content="Guida pratica per condurre un post-mortem senza colpe dopo un guasto operativo: quando farlo, l’agenda, la cronologia, i 5 perché, le azioni con responsabili e il follow-up." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/how-to-run-a-blameless-post-mortem/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-01" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Come condurre un post-mortem senza colpe? Guida pratica" />
+  <meta name="twitter:description" content="Guida pratica per condurre un post-mortem senza colpe dopo un guasto operativo: quando farlo, l’agenda, la cronologia, i 5 perché, le azioni con responsabili e il follow-up." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-run-a-blameless-post-mortem/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Come condurre un post-mortem senza colpe? Guida pratica",
+    "description": "Guida pratica per condurre un post-mortem senza colpe dopo un guasto operativo: quando farlo, l’agenda, la cronologia, i 5 perché, le azioni con responsabili e il follow-up.",
+    "datePublished": "2026-10-01",
+    "dateModified": "2026-10-01",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/how-to-run-a-blameless-post-mortem/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Condurre un post-mortem senza colpe",
+        "item": "https://fulcrumgrid.com/it/blog/how-to-run-a-blameless-post-mortem/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Che cos’è un post-mortem senza colpe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Una revisione strutturata dopo un guasto operativo che si concentra su come sistema, processi e circostanze lo abbiano reso possibile, non su chi incolpare. Le persone restano responsabili delle azioni di follow-up, ma la revisione mira ad apprendere."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quando va fatto un post-mortem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ogni volta che l’impatto supera una soglia concordata in anticipo: problemi per i clienti, costi significativi, incidenti di sicurezza, perdita di dati o questioni di conformità, oppure piccoli guasti ripetuti. Ci si riunisce entro pochi giorni lavorativi, finché i ricordi sono freschi."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come funzionano i 5 perché?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Si chiede «perché?» ripetutamente, partendo dal problema, fino a raggiungere una causa sistemica che si possa cambiare. Cinque è un’indicazione; se le risposte si ramificano, si segue ogni ramo invece di forzare un’unica causa radice."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Che cosa rende buona un’azione correttiva?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "È specifica, legata a una causa individuata, abbastanza piccola da essere completata e ha un responsabile indicato per nome, una scadenza e un modo per verificare che abbia funzionato. Meglio cambiare il sistema che ricordare di fare più attenzione."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come si fa il follow-up dopo un post-mortem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Si distribuisce un breve riepilogo scritto, si segue ogni azione fino alla chiusura in una riunione periodica e si verifica dopo qualche settimana che la correzione abbia ridotto il problema. Il documento va conservato dove altri possano trovarlo."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Condurre un post-mortem senza colpe</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Come condurre un post-mortem senza colpe? Guida pratica</h1>
+        <p class="hero-intro">Guida pratica per condurre un post-mortem senza colpe dopo un guasto operativo: quando farlo, l’agenda, la cronologia, i 5 perché, le azioni con responsabili e il follow-up.</p>
+        <p class="mono"><time datetime="2026-10-01">1 ottobre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Un post-mortem è una revisione strutturata che si tiene dopo che qualcosa è andato storto &mdash; una consegna mancata, un’interruzione di sistema, un quasi incidente, un cambio di linea eseguito male. Un post-mortem <strong>senza colpe</strong> aggiunge una regola: lo scopo è capire come il guasto sia stato possibile, non decidere chi punire. Le persone prendono decisioni ragionevoli con le informazioni e la pressione che avevano in quel momento. Se temono di essere incolpate, nascondono dettagli, e il guasto successivo arriva con le stesse cause.</p>
+
+          <h2>Che cosa significa davvero «senza colpe»</h2>
+
+          <p>Non significa senza conseguenze né senza responsabilità. Significa separare l’<em>apprendimento</em> dalla <em>disciplina</em>. Le singole persone sono responsabili di correggere e dare seguito; la revisione in sé esamina sistemi, processi, strumenti, passaggi di consegne e incentivi. Invece di chiedere «Chi ha sbagliato?», chieda «Che cosa ha reso questo errore facile da commettere e difficile da individuare?»</p>
+
+          <h2>Quando farlo</h2>
+
+          <p>Tenga un post-mortem quando l’impatto supera una soglia concordata in anticipo. Inneschi tipici:</p>
+
+          <ul>
+            <li>Impatto sul cliente, come un ordine in ritardo o sbagliato o un fermo del servizio</li>
+            <li>Una perdita economica significativa, rilavorazioni o sprechi</li>
+            <li>Un incidente di sicurezza o un quasi incidente serio</li>
+            <li>Perdita di dati, una violazione della conformità o un evento di sicurezza informatica</li>
+            <li>Un guasto che si ripete, anche se ogni episodio è piccolo</li>
+          </ul>
+
+          <p>Punti a riunirsi entro due-cinque giorni lavorativi: abbastanza presto perché i ricordi siano freschi, abbastanza tardi perché il team abbia riposato e l’emergenza immediata sia rientrata.</p>
+
+          <h2>Prepararsi prima dell’incontro</h2>
+
+          <p>Nomini un facilitatore neutrale &mdash; idealmente qualcuno non coinvolto direttamente &mdash; e un verbalizzante. Raccolga prima le prove grezze: log, messaggi, ticket, note di turno, foto. Chieda ai partecipanti di annotare, con parole proprie, ciò che hanno visto e fatto prima dell’incontro, così che i primi interventi non condizionino tutti gli altri. Inviti le persone vicine all’evento e una o due dei team confinanti; mantenga il gruppo abbastanza piccolo da poter parlare, di solito meno di dieci.</p>
+
+          <h2>Un’agenda semplice (60&ndash;90 minuti)</h2>
+
+          <ul>
+            <li><strong>Regole del gioco (5 min):</strong> chiarire che la revisione è senza colpe, che lo scopo è imparare e che i fatti vengono prima delle opinioni.</li>
+            <li><strong>Sintesi dell’impatto (5 min):</strong> che cosa è successo, chi è stato colpito, quanto è durato.</li>
+            <li><strong>Cronologia (20 min):</strong> ricostruire gli eventi in ordine.</li>
+            <li><strong>Fattori concorrenti e causa radice (25 min):</strong> scavare nel perché.</li>
+            <li><strong>Che cosa è andato bene (5 min):</strong> annotare i salvataggi, le soluzioni tampone e le buone decisioni da ripetere.</li>
+            <li><strong>Azioni (15 min):</strong> concordare correzioni specifiche, responsabili e scadenze.</li>
+            <li><strong>Chiusura (5 min):</strong> confermare chi scrive e distribuisce il riepilogo.</li>
+          </ul>
+
+          <h2>Costruire la cronologia</h2>
+
+          <p>Parta solo da orari e fatti: che cosa è successo, che cosa si sapeva in quel momento, quale azione è stata intrapresa e con quale esito. In questa fase eviti di interpretare. Una cronologia condivisa di solito fa emergere sorprese &mdash; un allarme in ritardo, un passaggio di consegne poco chiaro, un passaggio che nessuno sapeva fosse manuale. Segni i punti in cui era possibile una decisione diversa e si chieda quali informazioni avesse la persona allora, non che cosa sappiamo oggi. Con il senno di poi tutto sembra ovvio.</p>
+
+          <h2>Trovare la causa radice con i 5 perché</h2>
+
+          <p>La tecnica dei 5 perché consiste nel chiedere «perché?» finché si passa dal sintomo a una causa sistemica. Cinque è un’indicazione, non una regola; si fermi quando arriva a qualcosa che può davvero cambiare. Un breve esempio:</p>
+
+          <ul>
+            <li>La spedizione è partita in ritardo. <em>Perché?</em> L’ordine era stato preparato con l’articolo sbagliato e ha dovuto essere ripreparato.</li>
+            <li>Perché è stato prelevato l’articolo sbagliato? I due prodotti hanno etichette quasi identiche.</li>
+            <li>Perché non sono stati controllati? Il passaggio di scansione viene saltato quando la coda è lunga.</li>
+            <li>Perché viene saltato? Lo scanner è lento e il team è valutato sulla produttività.</li>
+            <li>Perché la produttività è l’unico indicatore? La dashboard non mostra i tassi di errore.</li>
+          </ul>
+
+          <p>Noti che la risposta non è «l’addetto è stato negligente». I guasti reali hanno di solito più cause concorrenti, quindi non forzi un’unica «radice». Se i perché si ramificano, segua ogni ramo.</p>
+
+          <h2>Trasformare i risultati in azioni con responsabili</h2>
+
+          <p>Un post-mortem senza azioni è solo una conversazione. Le buone azioni sono specifiche, abbastanza piccole da essere completate e legate a una causa individuata. Per ognuna registri:</p>
+
+          <ul>
+            <li><strong>Che cosa:</strong> un cambiamento concreto, per esempio «aggiungere un passaggio di scansione obbligatorio con avviso visivo in caso di difformità»</li>
+            <li><strong>Responsabile:</strong> una persona indicata per nome, non un team</li>
+            <li><strong>Scadenza:</strong> realistica, con una priorità</li>
+            <li><strong>Come sapremo che ha funzionato:</strong> un controllo misurabile</li>
+          </ul>
+
+          <p>Preferisca le correzioni che cambiano il sistema &mdash; automazione, checklist, impostazioni predefinite migliori, avvisi più chiari &mdash; a «ricordiamo a tutti di fare più attenzione». Limiti l’elenco a ciò che il team può davvero realizzare: cinque azioni concluse valgono più di quindici dimenticate.</p>
+
+          <h2>Il follow-up, perché funzioni</h2>
+
+          <p>Pubblichi entro pochi giorni un breve riepilogo scritto: impatto, cronologia, cause e azioni con responsabili. Lo conservi in un luogo dove si possa cercare, così i team futuri potranno imparare da esso. Riesamini le azioni aperte in una riunione periodica finché ciascuna non è chiusa, e verifichi dopo qualche settimana che la correzione abbia davvero ridotto il problema. Condivida le lezioni oltre il team coinvolto quando valgono anche altrove.</p>
+
+          <h2>Errori comuni</h2>
+
+          <ul>
+            <li><strong>Cercare un colpevole</strong> e concludere con un «errore umano».</li>
+            <li><strong>Saltare l’incontro</strong> perché l’incidente era piccolo o già risolto.</li>
+            <li><strong>Azioni vaghe</strong>, senza responsabile né scadenza.</li>
+            <li><strong>Dirigenti che dominano</strong> la discussione e zittiscono le voci più giovani.</li>
+            <li><strong>Nessun follow-up</strong>, così il documento viene archiviato e dimenticato.</li>
+          </ul>
+
+          <p>La pratica funziona solo se le azioni sono seguite con la stessa cura con cui è stato esaminato l’incidente. In FulcrumGrid Command Center può registrare l’incidente, assegnare ogni azione correttiva a un responsabile con una scadenza e vedere che cosa resta aperto tra i team, così il follow-up non dipende dalla memoria di qualcuno. Anche un semplice foglio di calcolo condiviso va bene, purché qualcuno lo controlli.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Che cos’è un post-mortem senza colpe?</summary><p>Una revisione strutturata dopo un guasto operativo che si concentra su come sistema, processi e circostanze lo abbiano reso possibile, non su chi incolpare. Le persone restano responsabili delle azioni di follow-up, ma la revisione mira ad apprendere.</p></details>
+        <details class="faq-item"><summary>Quando va fatto un post-mortem?</summary><p>Ogni volta che l’impatto supera una soglia concordata in anticipo: problemi per i clienti, costi significativi, incidenti di sicurezza, perdita di dati o questioni di conformità, oppure piccoli guasti ripetuti. Ci si riunisce entro pochi giorni lavorativi, finché i ricordi sono freschi.</p></details>
+        <details class="faq-item"><summary>Come funzionano i 5 perché?</summary><p>Si chiede «perché?» ripetutamente, partendo dal problema, fino a raggiungere una causa sistemica che si possa cambiare. Cinque è un’indicazione; se le risposte si ramificano, si segue ogni ramo invece di forzare un’unica causa radice.</p></details>
+        <details class="faq-item"><summary>Che cosa rende buona un’azione correttiva?</summary><p>È specifica, legata a una causa individuata, abbastanza piccola da essere completata e ha un responsabile indicato per nome, una scadenza e un modo per verificare che abbia funzionato. Meglio cambiare il sistema che ricordare di fare più attenzione.</p></details>
+        <details class="faq-item"><summary>Come si fa il follow-up dopo un post-mortem?</summary><p>Si distribuisce un breve riepilogo scritto, si segue ogni azione fino alla chiusura in una riunione periodica e si verifica dopo qualche settimana che la correzione abbia ridotto il problema. Il documento va conservato dove altri possano trovarlo.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Tieni sotto controllo ogni azione correttiva</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center ti aiuta a registrare gli incidenti, assegnare le azioni a responsabili con scadenza e vedere che cosa resta aperto, così le lezioni di un post-mortem diventano correzioni concrete.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

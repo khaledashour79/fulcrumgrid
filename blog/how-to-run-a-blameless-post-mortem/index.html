@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>How Do You Run a Blameless Post-Mortem? A Practical Guide — FulcrumGrid</title>
+  <meta name="description" content="A practical guide to running a blameless post-mortem after an operational failure: when to hold one, the agenda, building the timeline, 5 whys, action items and follow-up." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How Do You Run a Blameless Post-Mortem? A Practical Guide" />
+  <meta property="og:description" content="A practical guide to running a blameless post-mortem after an operational failure: when to hold one, the agenda, building the timeline, 5 whys, action items and follow-up." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/how-to-run-a-blameless-post-mortem/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-01" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Do You Run a Blameless Post-Mortem? A Practical Guide" />
+  <meta name="twitter:description" content="A practical guide to running a blameless post-mortem after an operational failure: when to hold one, the agenda, building the timeline, 5 whys, action items and follow-up." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-run-a-blameless-post-mortem/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-run-a-blameless-post-mortem/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How Do You Run a Blameless Post-Mortem? A Practical Guide",
+    "description": "A practical guide to running a blameless post-mortem after an operational failure: when to hold one, the agenda, building the timeline, 5 whys, action items and follow-up.",
+    "datePublished": "2026-10-01",
+    "dateModified": "2026-10-01",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/how-to-run-a-blameless-post-mortem/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Running a blameless post-mortem",
+        "item": "https://fulcrumgrid.com/blog/how-to-run-a-blameless-post-mortem/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a blameless post-mortem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A structured review after an operational failure that focuses on how the system, process, and conditions allowed the failure, rather than on who to blame. People remain accountable for follow-up actions, but the review itself aims at learning."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When should you hold a post-mortem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Whenever impact crosses a threshold you agreed in advance, such as customer-facing problems, significant cost, safety incidents, data or compliance issues, or repeated smaller failures. Meet within a few working days while memories are fresh."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do the 5 whys work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You ask “why?” repeatedly, starting from the problem, until you reach a systemic cause you can change. Five is a guideline; if the answers branch, follow each branch rather than forcing a single root cause."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes a good action item?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is specific, linked to an identified cause, small enough to finish, and has one named owner, a due date, and a way to check that it worked. Prefer changes to the system over reminders to be more careful."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you follow up after a post-mortem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Share a short written summary, track every action to completion in a regular review, and check after a few weeks that the fix reduced the problem. Store the write-up where others can find it."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Running a blameless post-mortem</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>How Do You Run a Blameless Post-Mortem? A Practical Guide</h1>
+        <p class="hero-intro">A practical guide to running a blameless post-mortem after an operational failure: when to hold one, the agenda, building the timeline, 5 whys, action items and follow-up.</p>
+        <p class="mono"><time datetime="2026-10-01">October 1, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>A post-mortem is a structured review held after something has gone wrong &mdash; a missed delivery, a system outage, a safety near-miss, a botched changeover. A <strong>blameless</strong> post-mortem adds one rule: the goal is to understand how the failure became possible, not to decide who to punish. People make reasonable decisions with the information and pressure they had at the time. If they fear blame, they hide details, and the next failure arrives with the same causes intact.</p>
+
+          <h2>What blameless really means</h2>
+
+          <p>Blameless does not mean consequence-free or accountability-free. It means you separate <em>learning</em> from <em>discipline</em>. Individuals are accountable for fixing things and following up; the review itself looks at systems, processes, tools, handoffs, and incentives. Instead of asking &ldquo;Who made the mistake?&rdquo;, ask &ldquo;What made that mistake easy to make, and hard to catch?&rdquo;</p>
+
+          <h2>When to hold one</h2>
+
+          <p>Hold a post-mortem when the impact crosses a threshold you agree on in advance. Typical triggers:</p>
+
+          <ul>
+            <li>Customer-facing impact, such as a late or wrong order, or downtime</li>
+            <li>A significant financial loss, rework, or waste</li>
+            <li>A safety incident or serious near-miss</li>
+            <li>Data loss, a compliance breach, or a security event</li>
+            <li>A failure that recurs, even if each instance is small</li>
+          </ul>
+
+          <p>Aim to meet within two to five working days: soon enough that memories are fresh, late enough that the team has slept and the immediate fire is out.</p>
+
+          <h2>Prepare before the meeting</h2>
+
+          <p>Name a neutral facilitator &mdash; ideally someone not directly involved &mdash; and a note-taker. Gather the raw evidence first: logs, messages, tickets, shift notes, photos. Ask participants to write down what they saw and did, in their own words, before the meeting so that early voices do not anchor everyone else. Invite the people who were close to the event plus one or two from adjacent teams; keep the group small enough to talk, usually fewer than ten.</p>
+
+          <h2>A simple agenda (60&ndash;90 minutes)</h2>
+
+          <ul>
+            <li><strong>Ground rules (5 min):</strong> state that the review is blameless, that the aim is learning, and that facts come before opinions.</li>
+            <li><strong>Impact summary (5 min):</strong> what happened, who was affected, how long it lasted.</li>
+            <li><strong>Timeline (20 min):</strong> reconstruct events in order.</li>
+            <li><strong>Contributing factors and root cause (25 min):</strong> dig into why.</li>
+            <li><strong>What went well (5 min):</strong> note the saves, workarounds, and good calls worth repeating.</li>
+            <li><strong>Action items (15 min):</strong> agree on specific fixes, owners, and dates.</li>
+            <li><strong>Wrap-up (5 min):</strong> confirm who writes up and shares the summary.</li>
+          </ul>
+
+          <h2>Build the timeline</h2>
+
+          <p>Start with timestamps and facts only: what happened, what was known at that moment, what action was taken, and what the result was. Resist interpretation at this stage. A shared timeline usually exposes surprises &mdash; a delayed alert, an unclear handoff, a step that nobody realised was manual. Mark the points where a different decision was possible, and ask what information the person had at that point, not what we know now. Hindsight makes everything look obvious.</p>
+
+          <h2>Find the root cause with the 5 whys</h2>
+
+          <p>The 5 whys technique keeps asking &ldquo;why?&rdquo; until you move from a symptom to a systemic cause. Five is a guide, not a rule; stop when you reach something you can actually change. A short example:</p>
+
+          <ul>
+            <li>The shipment left late. <em>Why?</em> The order was packed with the wrong item and had to be re-picked.</li>
+            <li>Why was the wrong item picked? The two products have near-identical labels.</li>
+            <li>Why were they not checked? The scan step is skipped when the queue is long.</li>
+            <li>Why is it skipped? The scanner is slow and the team is measured on throughput.</li>
+            <li>Why is throughput the only metric? The dashboard does not show error rates.</li>
+          </ul>
+
+          <p>Notice that the answer is not &ldquo;the picker was careless&rdquo;. Real failures usually have several contributing causes, so do not force a single &ldquo;root&rdquo;. If the 5 whys branches, follow each branch.</p>
+
+          <h2>Turn findings into action items with owners</h2>
+
+          <p>A post-mortem without actions is just a conversation. Good action items are specific, small enough to finish, and tied to a cause you identified. For each one, record:</p>
+
+          <ul>
+            <li><strong>What:</strong> a concrete change, such as &ldquo;add a mandatory scan step with a visual mismatch alert&rdquo;</li>
+            <li><strong>Owner:</strong> one named person, not a team</li>
+            <li><strong>Due date:</strong> realistic, with a priority</li>
+            <li><strong>How we will know it worked:</strong> a measurable check</li>
+          </ul>
+
+          <p>Prefer fixes that change the system &mdash; automation, checklists, better defaults, clearer alerts &mdash; over &ldquo;remind everyone to be more careful&rdquo;. Limit the list to what the team can really deliver; five done beat fifteen forgotten.</p>
+
+          <h2>Follow up so it sticks</h2>
+
+          <p>Publish a short written summary within a few days: impact, timeline, causes, and actions with owners. Store it somewhere searchable so future teams can learn from it. Review open actions in a regular meeting until each is closed, and check again after a few weeks that the fix actually reduced the problem. Share lessons beyond the immediate team when they apply elsewhere.</p>
+
+          <h2>Common pitfalls</h2>
+
+          <ul>
+            <li><strong>Hunting for a culprit</strong> and calling it a &ldquo;human error&rdquo; finding.</li>
+            <li><strong>Skipping the meeting</strong> because the incident was small or already fixed.</li>
+            <li><strong>Vague actions</strong> with no owner or date.</li>
+            <li><strong>Leaders dominating</strong> the discussion and silencing junior voices.</li>
+            <li><strong>No follow-up</strong>, so the document is filed and forgotten.</li>
+          </ul>
+
+          <p>The practice only works if actions are tracked as carefully as the incident was reviewed. In FulcrumGrid Command Center you can log the incident, assign each corrective action to an owner with a due date, and see what is still open across teams, so the follow-up does not depend on someone remembering. A simple shared spreadsheet works too, as long as someone checks it.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>What is a blameless post-mortem?</summary><p>A structured review after an operational failure that focuses on how the system, process, and conditions allowed the failure, rather than on who to blame. People remain accountable for follow-up actions, but the review itself aims at learning.</p></details>
+        <details class="faq-item"><summary>When should you hold a post-mortem?</summary><p>Whenever impact crosses a threshold you agreed in advance, such as customer-facing problems, significant cost, safety incidents, data or compliance issues, or repeated smaller failures. Meet within a few working days while memories are fresh.</p></details>
+        <details class="faq-item"><summary>How do the 5 whys work?</summary><p>You ask “why?” repeatedly, starting from the problem, until you reach a systemic cause you can change. Five is a guideline; if the answers branch, follow each branch rather than forcing a single root cause.</p></details>
+        <details class="faq-item"><summary>What makes a good action item?</summary><p>It is specific, linked to an identified cause, small enough to finish, and has one named owner, a due date, and a way to check that it worked. Prefer changes to the system over reminders to be more careful.</p></details>
+        <details class="faq-item"><summary>How do you follow up after a post-mortem?</summary><p>Share a short written summary, track every action to completion in a regular review, and check after a few weeks that the fix reduced the problem. Store the write-up where others can find it.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Keep every corrective action on track</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center helps you log incidents, assign action items to owners with due dates, and see what is still open, so lessons from a post-mortem turn into real fixes.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
