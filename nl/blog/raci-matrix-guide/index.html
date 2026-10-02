@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wat is een RACI-matrix en hoe bouw je er een voor je team? — FulcrumGrid</title>
+  <meta name="description" content="Een RACI-matrix laat zien wie per taak uitvoert, eindverantwoordelijk is, wordt geraadpleegd en wordt geïnformeerd. Zo bouw je er een en houd je hem actueel." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wat is een RACI-matrix en hoe bouw je er een voor je team?" />
+  <meta property="og:description" content="Een RACI-matrix laat zien wie per taak uitvoert, eindverantwoordelijk is, wordt geraadpleegd en wordt geïnformeerd. Zo bouw je er een en houd je hem actueel." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/raci-matrix-guide/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-10-02" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wat is een RACI-matrix en hoe bouw je er een voor je team?" />
+  <meta name="twitter:description" content="Een RACI-matrix laat zien wie per taak uitvoert, eindverantwoordelijk is, wordt geraadpleegd en wordt geïnformeerd. Zo bouw je er een en houd je hem actueel." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/raci-matrix-guide/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/raci-matrix-guide/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/raci-matrix-guide/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/raci-matrix-guide/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/raci-matrix-guide/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/raci-matrix-guide/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/raci-matrix-guide/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/raci-matrix-guide/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/raci-matrix-guide/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wat is een RACI-matrix en hoe bouw je er een voor je team?",
+    "description": "Een RACI-matrix laat zien wie per taak uitvoert, eindverantwoordelijk is, wordt geraadpleegd en wordt geïnformeerd. Zo bouw je er een en houd je hem actueel.",
+    "datePublished": "2026-10-02",
+    "dateModified": "2026-10-02",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/raci-matrix-guide/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "RACI-matrix gids",
+        "item": "https://fulcrumgrid.com/nl/blog/raci-matrix-guide/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Kan een taak meer dan één eindverantwoordelijke (A) hebben?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. Precies één persoon moet verantwoording afleggen voor elke taak of beslissing. Gedeelde verantwoordelijkheid betekent meestal dat niemand zich echt aangesproken voelt. Kun je niet kiezen, splits de taak dan in kleinere opleveringen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan dezelfde persoon Uitvoerder en Eindverantwoordelijke zijn?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Bij kleine taken bezit degene die het werk doet vaak ook het resultaat, geschreven als A/R. Bij grotere trajecten is het gezonder ze te scheiden, zodat iemand onafhankelijks goedkeurt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is het verschil tussen Geraadpleegd en Geïnformeerd?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Geraadpleegden geven hun inbreng v&oacute;&oacute;r een beslissing of oplevering, dus de communicatie loopt twee kanten op. Geïnformeerden horen het pas achteraf, dus die loopt een kant op. Houd beide lijsten kort."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe vaak moeten we een RACI-matrix bijwerken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bij elke projectmijlpaal, wanneer teamleden erbij komen of weggaan en wanneer verantwoordelijkheden verschuiven. Een korte controle per kwartaal is een goed minimum voor terugkerende processen."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / RACI-matrix gids</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Wat is een RACI-matrix en hoe bouw je er een voor je team?</h1>
+        <p class="hero-intro">Een RACI-matrix laat zien wie per taak uitvoert, eindverantwoordelijk is, wordt geraadpleegd en wordt geïnformeerd. Zo bouw je er een en houd je hem actueel.</p>
+        <p class="mono"><time datetime="2026-10-02">2 oktober 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Weinig dingen vertragen een team zo als een taak waarvan iedereen aanneemt dat iemand anders hem oppakt. Een deadline schuift, een beslissing blijft liggen, en een week later ontdekken twee mensen dat ze hetzelfde werk deden terwijl een derde nooit iets hoorde. Een RACI-matrix voorkomt dat. Het is een eenvoudig raster dat vastlegt wie het werk doet, wie beslist en wie op de hoogte moet zijn. Deze gids legt uit wat een RACI-matrix is, hoe je er stap voor stap een bouwt, welke fouten hem nutteloos maken en hoe je hem actueel houdt.</p><h2>Wat is een RACI-matrix?</h2><p>Een RACI-matrix is een overzicht van taak- en verantwoordelijkheidsverdeling. Links zet je taken, opleveringen of beslissingen, bovenaan mensen of rollen. In elke cel plaats je een van vier letters, of je laat hem leeg. De letters staan voor:</p><h3>Uitvoerder (R &mdash; Responsible)</h3><p>De mensen die het werk doen. Het kunnen er meerdere zijn, en elke taak heeft er minstens een nodig.</p><h3>Eindverantwoordelijke (A &mdash; Accountable)</h3><p>De ene persoon die het resultaat bezit en de eindgoedkeuring geeft. Mislukt de taak, dan moet zij of hij zich verantwoorden. Er moet precies een zijn.</p><h3>Geraadpleegde (C &mdash; Consulted)</h3><p>Mensen wier inbreng nodig is v&oacute;&oacute;r een beslissing of oplevering: vakexperts, juridische zaken, financi&euml;n. De communicatie loopt twee kanten op.</p><h3>Geïnformeerde (I &mdash; Informed)</h3><p>Mensen die op de hoogte worden gehouden van voortgang of resultaten, maar het werk niet vormgeven. De communicatie loopt een kant op.</p><p>Bij kleine taken kan dezelfde persoon R en A tegelijk zijn, meestal geschreven als A/R. Alle anderen in die rij krijgen een C, een I of niets.</p><h2>Waarom zou je het doen?</h2><p>Een RACI-matrix haalt onduidelijkheid weg voordat die een probleem wordt. Beslissingen vallen sneller, omdat iedereen weet wie het laatste woord heeft. Nieuwe collega's zien bij wie ze moeten zijn. En omdat het raster werkdruk zichtbaar maakt, laat het ook zien wie overladen is met R's en wie stilletjes te veel A's draagt.</p><h2>Zo bouw je een RACI-matrix in zes stappen</h2><ul><li><strong>Stap 1: som de taken en beslissingen op.</strong> Begin bij een projectplan of een terugkerend proces. Mik op 10 tot 25 betekenisvolle rijen, niet op elke kleine handeling.</li><li><strong>Stap 2: som de mensen of rollen op.</strong> Rollen verouderen beter dan namen; schrijf waar mogelijk &laquo;marketingmanager&raquo; in plaats van een naam.</li><li><strong>Stap 3: wijs eerst de A toe.</strong> Bepaal per rij de ene persoon die het resultaat bezit. Dit is de moeilijkste en waardevolste stap.</li><li><strong>Stap 4: wijs de R's toe.</strong> Wie doet het werk echt? Doet de A het zelf ook, noteer dan A/R.</li><li><strong>Stap 5: voeg C's en I's spaarzaam toe.</strong> Vraag wie moet worden geraadpleegd voordat het werk klaar is en wie het pas achteraf hoeft te horen.</li><li><strong>Stap 6: loop hem door met de betrokkenen.</strong> Een van bovenaf opgelegde RACI wordt genegeerd. Neem samen elke rij door en los meningsverschillen ter plekke op.</li></ul><h2>Een eenvoudig voorbeeld</h2><p>Stel je een website-herontwerp voor met vier mensen: de marketingmanager, een ontwerper, de directeur en de salesmanager.</p><ul><li><strong>Het designbriefing goedkeuren:</strong> marketingmanager A, ontwerper R, directeur C, salesmanager I.</li><li><strong>De pagina-ontwerpen maken:</strong> ontwerper A/R, marketingmanager C, salesmanager C.</li><li><strong>De definitieve site accorderen:</strong> directeur A, marketingmanager R, ontwerper C, salesmanager I.</li><li><strong>De lancering aan klanten aankondigen:</strong> marketingmanager A/R, salesmanager C, directeur I.</li></ul><p>Merk op dat elke rij precies een A heeft en dat niemand over alles wordt geraadpleegd.</p><h2>Veelgemaakte RACI-fouten</h2><ul><li><strong>Meerdere A's bij een taak.</strong> Twee eindverantwoordelijken betekent dat niemand het is. Kun je er niet een kiezen, dan is de taak waarschijnlijk te groot &mdash; splits hem.</li><li><strong>Helemaal geen A.</strong> Een rij met alleen R's is een taak die gaat afdrijven. Elke rij heeft een eigenaar nodig.</li><li><strong>Te veel C's en I's.</strong> Wordt iedereen geraadpleegd, dan kruipen beslissingen. Wordt iedereen ge&iuml;nformeerd, dan leest niemand de updates.</li><li><strong>Te gedetailleerd.</strong> Een matrix van 200 rijen wordt nooit bijgehouden. Bundel kleine acties tot &eacute;&eacute;n oplevering.</li><li><strong>Het gesprek overslaan.</strong> Iemand een R of A geven zonder instemming schuift de verwarring alleen door.</li><li><strong>Het als eenmalig zien.</strong> Een RACI die bij de kickoff is getekend en nooit meer wordt geopend, is binnen een maand verouderd.</li></ul><h2>Hem actueel houden</h2><p>Mensen wisselen van rol, projecten veranderen van omvang, en een matrix die niet meer klopt met de werkelijkheid is erger dan geen, omdat hij mensen naar de verkeerde deur stuurt. Loop hem langs bij projectmijlpalen, wanneer iemand erbij komt of vertrekt, en wanneer een taak herhaaldelijk bij de verkeerde persoon terechtkomt. Bewaar hem waar iedereen hem kan vinden, niet als bijlage diep in een mailbox.</p><p>Een spreadsheet werkt prima voor een RACI, en veel teams hebben nooit meer nodig. Als je je operatie al in <strong>FulcrumGrid Command Center</strong> draait, kan het helpen om eigenaarschap zichtbaar te houden naast de projecten en KPI's waar het bij hoort, zodat de vraag &laquo;van wie is dit?&raquo; wordt beantwoord op dezelfde plek waar je het werk volgt.</p><p>Bouw hem samen met het team, geef elke rij een eigenaar en herzie hem als er iets verandert. Een RACI-matrix doet het werk niet voor je, maar zorgt er wel voor dat iedereen weet van wie het werk is.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Kan een taak meer dan één eindverantwoordelijke (A) hebben?</summary><p>Nee. Precies één persoon moet verantwoording afleggen voor elke taak of beslissing. Gedeelde verantwoordelijkheid betekent meestal dat niemand zich echt aangesproken voelt. Kun je niet kiezen, splits de taak dan in kleinere opleveringen.</p></details>
+        <details class="faq-item"><summary>Kan dezelfde persoon Uitvoerder en Eindverantwoordelijke zijn?</summary><p>Ja. Bij kleine taken bezit degene die het werk doet vaak ook het resultaat, geschreven als A/R. Bij grotere trajecten is het gezonder ze te scheiden, zodat iemand onafhankelijks goedkeurt.</p></details>
+        <details class="faq-item"><summary>Wat is het verschil tussen Geraadpleegd en Geïnformeerd?</summary><p>Geraadpleegden geven hun inbreng v&amp;oacute;&amp;oacute;r een beslissing of oplevering, dus de communicatie loopt twee kanten op. Geïnformeerden horen het pas achteraf, dus die loopt een kant op. Houd beide lijsten kort.</p></details>
+        <details class="faq-item"><summary>Hoe vaak moeten we een RACI-matrix bijwerken?</summary><p>Bij elke projectmijlpaal, wanneer teamleden erbij komen of weggaan en wanneer verantwoordelijkheden verschuiven. Een korte controle per kwartaal is een goed minimum voor terugkerende processen.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Houd eigenaarschap naast het werk</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center helpt je projecten en KPI's op één plek te volgen, zodat iedereen ziet wie waarvan eigenaar is.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

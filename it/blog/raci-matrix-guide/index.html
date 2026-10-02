@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Cos'è una matrice RACI e come costruirla per il tuo team? — FulcrumGrid</title>
+  <meta name="description" content="Una matrice RACI mostra chi è Responsabile, Approvatore, Consultato e Informato per ogni attività. Scopri come costruirla, evitare errori e tenerla aggiornata." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cos'è una matrice RACI e come costruirla per il tuo team?" />
+  <meta property="og:description" content="Una matrice RACI mostra chi è Responsabile, Approvatore, Consultato e Informato per ogni attività. Scopri come costruirla, evitare errori e tenerla aggiornata." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/raci-matrix-guide/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-02" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cos'è una matrice RACI e come costruirla per il tuo team?" />
+  <meta name="twitter:description" content="Una matrice RACI mostra chi è Responsabile, Approvatore, Consultato e Informato per ogni attività. Scopri come costruirla, evitare errori e tenerla aggiornata." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/raci-matrix-guide/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/raci-matrix-guide/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/raci-matrix-guide/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/raci-matrix-guide/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/raci-matrix-guide/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/raci-matrix-guide/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/raci-matrix-guide/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/raci-matrix-guide/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/raci-matrix-guide/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cos'è una matrice RACI e come costruirla per il tuo team?",
+    "description": "Una matrice RACI mostra chi è Responsabile, Approvatore, Consultato e Informato per ogni attività. Scopri come costruirla, evitare errori e tenerla aggiornata.",
+    "datePublished": "2026-10-02",
+    "dateModified": "2026-10-02",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/raci-matrix-guide/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida alla matrice RACI",
+        "item": "https://fulcrumgrid.com/it/blog/raci-matrix-guide/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Un'attivit&agrave; pu&ograve; avere pi&ugrave; di un Approvatore finale (A)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Esattamente una persona deve rispondere di ogni attivit&agrave; o decisione. La responsabilit&agrave; condivisa di solito significa che nessuno si sente davvero in gioco. Se non riesci a sceglierne una, dividi l'attivit&agrave; in deliverable pi&ugrave; piccoli."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "La stessa persona pu&ograve; essere Esecutore e Approvatore finale?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "S&igrave;. Nelle attivit&agrave; piccole chi svolge il lavoro spesso possiede anche il risultato, e si scrive A/R. Nei lavori pi&ugrave; grandi &egrave; pi&ugrave; sano separare i ruoli, cos&igrave; approva qualcuno di indipendente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual &egrave; la differenza tra Consultato e Informato?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "I consultati danno il loro parere prima di una decisione o consegna, quindi la comunicazione &egrave; bidirezionale. Gli informati vengono aggiornati solo dopo, quindi &egrave; unidirezionale. Tieni brevi entrambe le liste."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ogni quanto dovremmo aggiornare una matrice RACI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A ogni tappa del progetto, quando membri del team entrano o escono e quando le responsabilit&agrave; cambiano. Una rapida revisione ogni trimestre &egrave; un buon minimo per i processi ricorrenti."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida alla matrice RACI</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Cos'è una matrice RACI e come costruirla per il tuo team?</h1>
+        <p class="hero-intro">Una matrice RACI mostra chi è Responsabile, Approvatore, Consultato e Informato per ogni attività. Scopri come costruirla, evitare errori e tenerla aggiornata.</p>
+        <p class="mono"><time datetime="2026-10-02">2 ottobre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Poche cose rallentano un team come un'attività che tutti credono spetti a qualcun altro. Una scadenza slitta, una decisione si blocca e una settimana dopo due persone scoprono di aver fatto lo stesso lavoro mentre una terza non è mai stata avvisata. Una matrice RACI lo evita. &Egrave; una semplice tabella che chiarisce chi svolge il lavoro, chi decide e chi deve essere al corrente. Questa guida spiega cos'&egrave; una matrice RACI, come costruirla passo dopo passo, gli errori che la rendono inutile e come tenerla aggiornata.</p><h2>Cos'&egrave; una matrice RACI?</h2><p>Una matrice RACI &egrave; una tabella di assegnazione delle responsabilit&agrave;. A sinistra elenchi attivit&agrave;, deliverable o decisioni. In alto, persone o ruoli. In ogni cella inserisci una di quattro lettere, oppure la lasci vuota. Le lettere indicano:</p><h3>Esecutore (R &mdash; Responsible)</h3><p>Le persone che svolgono il lavoro. Possono essere pi&ugrave; di una, e ogni attivit&agrave; ne richiede almeno una.</p><h3>Approvatore finale (A &mdash; Accountable)</h3><p>L'unica persona che possiede il risultato e d&agrave; l'approvazione finale. Se l'attivit&agrave; fallisce, risponde lei. Deve essercene esattamente una.</p><h3>Consultato (C &mdash; Consulted)</h3><p>Persone il cui parere serve prima di una decisione o di una consegna: esperti di materia, legale, finanza. La comunicazione va in entrambe le direzioni.</p><h3>Informato (I &mdash; Informed)</h3><p>Persone tenute aggiornate su avanzamento o risultati, ma che non plasmano il lavoro. La comunicazione va in una sola direzione.</p><p>Nelle attivit&agrave; piccole la stessa persona pu&ograve; essere R e A insieme, di solito scritto A/R. Gli altri nella riga ricevono una C, una I o nulla.</p><h2>Perch&eacute; prendersi la briga?</h2><p>Una matrice RACI elimina l'ambiguit&agrave; prima che diventi un problema. Le decisioni si prendono pi&ugrave; in fretta perch&eacute; tutti sanno chi ha l'ultima parola. I nuovi arrivati vedono a chi chiedere. E poich&eacute; la tabella rende visibili i carichi di lavoro, mostra anche chi &egrave; sommerso di R e chi porta in silenzio troppe A.</p><h2>Come costruire una matrice RACI in sei passaggi</h2><ul><li><strong>Passaggio 1: elenca attivit&agrave; e decisioni.</strong> Parti da un piano di progetto o da un processo ricorrente. Punta a 10-25 righe significative, non a ogni minima azione.</li><li><strong>Passaggio 2: elenca persone o ruoli.</strong> I ruoli invecchiano meglio dei nomi; scrivi &laquo;responsabile marketing&raquo; invece di un nome quando puoi.</li><li><strong>Passaggio 3: assegna prima la A.</strong> Per ogni riga, decidi l'unica persona che possiede il risultato. &Egrave; il passaggio pi&ugrave; difficile e pi&ugrave; prezioso.</li><li><strong>Passaggio 4: assegna le R.</strong> Chi svolge davvero il lavoro? Se lo fa anche la A, scrivi A/R.</li><li><strong>Passaggio 5: aggiungi C e I con parsimonia.</strong> Chiediti chi va interpellato prima di fare il lavoro e chi ha bisogno di saperlo solo dopo.</li><li><strong>Passaggio 6: rivedila con le persone coinvolte.</strong> Una RACI imposta dall'alto viene ignorata. Scorrete insieme ogni riga e risolvete i disaccordi nella stanza.</li></ul><h2>Un esempio semplice</h2><p>Immagina il rifacimento di un sito web con quattro persone: la responsabile marketing, un designer, l'amministratore delegato e il responsabile vendite.</p><ul><li><strong>Approvare il brief di design:</strong> responsabile marketing A, designer R, amministratore delegato C, responsabile vendite I.</li><li><strong>Realizzare i design delle pagine:</strong> designer A/R, responsabile marketing C, responsabile vendite C.</li><li><strong>Approvare il sito finale:</strong> amministratore delegato A, responsabile marketing R, designer C, responsabile vendite I.</li><li><strong>Annunciare il lancio ai clienti:</strong> responsabile marketing A/R, responsabile vendite C, amministratore delegato I.</li></ul><p>Nota che ogni riga ha esattamente una A e che nessuno viene consultato su tutto.</p><h2>Errori comuni con la matrice RACI</h2><ul><li><strong>Pi&ugrave; A su una stessa attivit&agrave;.</strong> Due approvatori finali significano che non ce n'&egrave; nessuno. Se non riesci a sceglierne uno, l'attivit&agrave; &egrave; probabilmente troppo grande: dividila.</li><li><strong>Nessuna A.</strong> Una riga con soli R &egrave; un'attivit&agrave; destinata alla deriva. Ogni riga ha bisogno di un responsabile finale.</li><li><strong>Troppe C e I.</strong> Se tutti vengono consultati, le decisioni arrancano. Se tutti vengono informati, nessuno legge gli aggiornamenti.</li><li><strong>Scendere troppo nel dettaglio.</strong> Una matrice di 200 righe non verr&agrave; mai mantenuta. Raggruppa le piccole azioni in un unico deliverable.</li><li><strong>Saltare il confronto.</strong> Assegnare una R o una A senza l'accordo della persona sposta solo la confusione pi&ugrave; avanti.</li><li><strong>Considerarla un'attivit&agrave; una tantum.</strong> Una RACI disegnata al kickoff e mai pi&ugrave; riaperta &egrave; obsoleta entro un mese.</li></ul><h2>Come tenerla aggiornata</h2><p>Le persone cambiano ruolo, i progetti cambiano perimetro, e una matrice che non riflette pi&ugrave; la realt&agrave; &egrave; peggio di nessuna, perch&eacute; manda la gente alla porta sbagliata. Rivedila alle tappe del progetto, ogni volta che qualcuno entra o esce e quando un'attivit&agrave; viene ripetutamente escalata alla persona sbagliata. Tienila dove tutti possano trovarla, non in un allegato sepolto nella posta.</p><p>Un foglio di calcolo va benissimo per una RACI, e molti team non hanno mai bisogno di altro. Se gestisci gi&agrave; le tue operazioni in <strong>FulcrumGrid Command Center</strong>, pu&ograve; essere utile tenere la titolarit&agrave; visibile accanto ai progetti e ai KPI a cui si riferisce, cos&igrave; la domanda &laquo;di chi &egrave;?&raquo; trova risposta nello stesso posto in cui segui il lavoro.</p><p>Costruiscila con il team, dai a ogni riga un solo responsabile finale e rivedila quando le cose cambiano. Una matrice RACI non far&agrave; il lavoro al posto tuo, ma far&agrave; in modo che tutti sappiano a chi spetta.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Un'attivit&amp;agrave; pu&amp;ograve; avere pi&amp;ugrave; di un Approvatore finale (A)?</summary><p>No. Esattamente una persona deve rispondere di ogni attivit&amp;agrave; o decisione. La responsabilit&amp;agrave; condivisa di solito significa che nessuno si sente davvero in gioco. Se non riesci a sceglierne una, dividi l'attivit&amp;agrave; in deliverable pi&amp;ugrave; piccoli.</p></details>
+        <details class="faq-item"><summary>La stessa persona pu&amp;ograve; essere Esecutore e Approvatore finale?</summary><p>S&amp;igrave;. Nelle attivit&amp;agrave; piccole chi svolge il lavoro spesso possiede anche il risultato, e si scrive A/R. Nei lavori pi&amp;ugrave; grandi &amp;egrave; pi&amp;ugrave; sano separare i ruoli, cos&amp;igrave; approva qualcuno di indipendente.</p></details>
+        <details class="faq-item"><summary>Qual &amp;egrave; la differenza tra Consultato e Informato?</summary><p>I consultati danno il loro parere prima di una decisione o consegna, quindi la comunicazione &amp;egrave; bidirezionale. Gli informati vengono aggiornati solo dopo, quindi &amp;egrave; unidirezionale. Tieni brevi entrambe le liste.</p></details>
+        <details class="faq-item"><summary>Ogni quanto dovremmo aggiornare una matrice RACI?</summary><p>A ogni tappa del progetto, quando membri del team entrano o escono e quando le responsabilit&amp;agrave; cambiano. Una rapida revisione ogni trimestre &amp;egrave; un buon minimo per i processi ricorrenti.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Tieni le responsabilit&amp;agrave; accanto al lavoro</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center ti aiuta a seguire progetti e KPI in un unico posto, cos&amp;igrave; tutti vedono chi &amp;egrave; responsabile di cosa.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
