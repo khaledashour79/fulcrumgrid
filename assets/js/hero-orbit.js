@@ -1,6 +1,7 @@
 /* FulcrumGrid redesign — "Apps in orbit" hero (option 1d from the Claude Design
    handoff). Available apps ride the outer ring, coming-soon apps the inner
-   dashed ring, both around a small solid "FG · Platform" cube. Hovering a tile
+   dashed ring, both around a small "FG" wireframe globe (longitude lines sweep
+   like a spinning sphere). Hovering a tile
    holds the orbit; selecting one jumps to it further down the page.
    Vanilla, CSP safe, respects prefers-reduced-motion. Localised strings come
    from data-l-* attributes on the stage so each language page owns its copy. */
@@ -19,9 +20,6 @@
   // however many apps it carries.
   var COUNT = { live: 0, soon: 0 };
   APPS.forEach(function (a) { COUNT[a[1]]++; });
-  var FACE = ['rotateY(0deg)', 'rotateY(90deg)', 'rotateY(180deg)', 'rotateY(-90deg)', 'rotateX(90deg)', 'rotateX(-90deg)'];
-  var CORE = ['FG · Platform', 'FG · Platform', 'FG · Platform', 'FG · Platform', 'FG', 'FG'];
-
   var clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.max(a, Math.min(b, v)); };
   var ease = function (t) { return 1 - Math.pow(1 - t, 3); };
   var pad = function (n) { return String(n).padStart(2, '0'); };
@@ -51,12 +49,23 @@
   }
   // back layer (behind the core) and front layer (in front of it)
   var back = svgLayer('back', ['o-ring-live b', 'o-ring-soon b', 'o-spoke b']);
+  // Center: a small "FG" wireframe globe. Rim + two static parallels, plus a
+  // few meridians whose horizontal radius sweeps so the longitude lines rotate
+  // like a spinning sphere. Billboarded (always circular) so it reads cleanly
+  // against the tilted rings.
+  function cEl(tag, attrs) { var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); return e; }
+  var GR = 56, NM = 3;
   var core = document.createElement('div'); core.className = 'ocore';
-  CORE.forEach(function (t, i) {
-    var f = document.createElement('div'); f.className = 'ocore-face'; f.textContent = t;
-    f.style.transform = FACE[i] + ' translateZ(50px)';
-    core.appendChild(f);
-  });
+  var gsvg = cEl('svg', { 'class': 'oglobe', viewBox: '-60 -60 120 120', 'aria-hidden': 'true' });
+  gsvg.appendChild(cEl('circle', { 'class': 'g-rim', cx: 0, cy: 0, r: GR }));
+  gsvg.appendChild(cEl('ellipse', { 'class': 'g-par', cx: 0, cy: 0, rx: GR, ry: GR * 0.34 }));
+  gsvg.appendChild(cEl('ellipse', { 'class': 'g-par', cx: 0, cy: 0, rx: GR, ry: GR * 0.7 }));
+  var mg = cEl('g', { 'class': 'g-mer' }), merids = [];
+  for (var m = 0; m < NM; m++) { var me = cEl('ellipse', { cx: 0, cy: 0, rx: GR, ry: GR }); mg.appendChild(me); merids.push(me); }
+  gsvg.appendChild(mg);
+  core.appendChild(gsvg);
+  var coreFG = document.createElement('span'); coreFG.className = 'ocore-fg'; coreFG.textContent = 'FG';
+  core.appendChild(coreFG);
   stage.appendChild(core);
   var front = svgLayer('front', ['o-ring-live f', 'o-ring-soon f', 'o-spoke f']);
 
@@ -144,7 +153,11 @@
     back['o-spoke b'].setAttribute('d', sb);
     front['o-spoke f'].setAttribute('d', sf);
 
-    core.style.transform = 'translate(' + cx.toFixed(1) + 'px,' + cy.toFixed(1) + 'px) rotateX(-24deg) rotateY(' + (reduce ? -32 : now * 12).toFixed(2) + 'deg) scale(' + (ts * 0.8 * (0.6 + 0.4 * intro)).toFixed(3) + ')';
+    core.style.transform = 'translate(' + cx.toFixed(1) + 'px,' + cy.toFixed(1) + 'px) scale(' + (ts * 0.9 * (0.6 + 0.4 * intro)).toFixed(3) + ')';
+    var mph = reduce ? 0.6 : now * 0.5;
+    for (var mi = 0; mi < merids.length; mi++) {
+      merids[mi].setAttribute('rx', Math.max(0.5, Math.abs(Math.cos(mph + mi * Math.PI / NM)) * GR * 0.985).toFixed(2));
+    }
 
     if (readout) readout.textContent = held ? txtHeld : txtOrbit + ' ' + String(Math.round(((oa * 57.3) % 360 + 360) % 360)).padStart(3, '0') + '°';
   }

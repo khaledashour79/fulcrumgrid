@@ -260,11 +260,14 @@ img { display: block; max-width: 100%; }
 .o-ring-soon.b { opacity: 0.35; } .o-ring-soon.f { opacity: 0.7; }
 .o-spoke { stroke: var(--color-text); stroke-width: 1; }
 .o-spoke.b { opacity: 0.16; } .o-spoke.f { opacity: 0.3; }
-.ocore { position: absolute; left: 0; top: 0; width: 0; height: 0; z-index: 10; transform-style: preserve-3d; pointer-events: none; }
-.ocore-face { position: absolute; left: -50px; top: -50px; width: 100px; height: 100px; box-sizing: border-box;
-  display: flex; align-items: flex-end; padding: 10px; background: var(--color-accent); border: 1px solid var(--color-accent-700);
-  color: var(--color-bg); font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 15px;
-  line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; direction: ltr; }
+.ocore { position: absolute; left: 0; top: 0; width: 0; height: 0; z-index: 10; pointer-events: none; }
+.oglobe { position: absolute; left: -62px; top: -62px; width: 124px; height: 124px; overflow: visible; }
+.oglobe .g-rim { fill: color-mix(in srgb, var(--color-accent) 6%, transparent); stroke: var(--color-accent); stroke-width: 1.1; }
+.oglobe .g-par { fill: none; stroke: color-mix(in srgb, var(--color-text) 20%, transparent); stroke-width: 1; }
+.oglobe .g-mer ellipse { fill: none; stroke: color-mix(in srgb, var(--color-text) 34%, transparent); stroke-width: 1; }
+.ocore-fg { position: absolute; left: -62px; top: -62px; width: 124px; height: 124px; display: grid; place-items: center;
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 23px; letter-spacing: 0.06em;
+  color: var(--color-accent); direction: ltr; }
 .otile { position: absolute; left: 0; top: 0; width: 148px; box-sizing: border-box; padding: 10px 12px;
   display: flex; flex-direction: column; gap: 6px; cursor: pointer; opacity: 0; will-change: transform;
   transition: background-color .2s, border-color .2s; }
@@ -425,7 +428,7 @@ img { display: block; max-width: 100%; }
 [dir="rtl"] .hero-right { border-left: 0; border-right: 1px solid var(--color-divider); }
 [dir="rtl"] .hero-right .cue { left: auto; right: 22px; }
 [dir="rtl"] .hero-right .legend { left: auto; right: 22px; }
-[dir="rtl"] .otile .ot-head, [dir="rtl"] .otile .ot-name, [dir="rtl"] .ocore-face { letter-spacing: normal; }
+[dir="rtl"] .otile .ot-head, [dir="rtl"] .otile .ot-name, [dir="rtl"] .ocore-fg { letter-spacing: normal; }
 
 /* ── Responsive ── */
 @media (max-width: 900px) {
