@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wat is een SLA en hoe stel je realistische servicedoelen vast? — FulcrumGrid</title>
+  <meta name="description" content="Een SLA is een schriftelijke belofte over de service die je levert. Ontdek wat erin hoort, hoe je doelen stelt die je echt haalt en hoe je ze blijft toetsen." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wat is een SLA en hoe stel je realistische servicedoelen vast?" />
+  <meta property="og:description" content="Een SLA is een schriftelijke belofte over de service die je levert. Ontdek wat erin hoort, hoe je doelen stelt die je echt haalt en hoe je ze blijft toetsen." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/what-is-an-sla/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-10-03" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wat is een SLA en hoe stel je realistische servicedoelen vast?" />
+  <meta name="twitter:description" content="Een SLA is een schriftelijke belofte over de service die je levert. Ontdek wat erin hoort, hoe je doelen stelt die je echt haalt en hoe je ze blijft toetsen." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/what-is-an-sla/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-an-sla/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-an-sla/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-an-sla/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-an-sla/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-an-sla/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-an-sla/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-an-sla/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-an-sla/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wat is een SLA en hoe stel je realistische servicedoelen vast?",
+    "description": "Een SLA is een schriftelijke belofte over de service die je levert. Ontdek wat erin hoort, hoe je doelen stelt die je echt haalt en hoe je ze blijft toetsen.",
+    "datePublished": "2026-10-03",
+    "dateModified": "2026-10-03",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/what-is-an-sla/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "SLA-gids",
+        "item": "https://fulcrumgrid.com/nl/blog/what-is-an-sla/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is het verschil tussen een SLA en een contract?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een contract regelt de hele zakelijke relatie, inclusief prijs, aansprakelijkheid en looptijd. Een SLA is meestal een onderdeel daarvan, gericht op meetbare serviceniveaus en wat er gebeurt als die niet worden gehaald."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is een goed beschikbaarheidsdoel voor een SLA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dat hangt af van wat je kunt leveren en wat gebruikers nodig hebben. 99,5% staat ongeveer 3,6 uur downtime per maand toe, 99,9% ongeveer 43 minuten. Kijk naar je eigen historie en je leveranciers voordat je kiest."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hebben interne teams SLA's nodig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vaak wel. Een interne SLA tussen bijvoorbeeld IT en finance maakt verwachtingen en prioriteiten duidelijk zonder juridisch gewicht. Houd hem kort en richt je op de paar verzoeken die het belangrijkst zijn."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe vaak moet een SLA worden herzien?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rapporteer maandelijks en toets de doelen zelf elke zes tot twaalf maanden, of eerder na een grote verandering in bezetting, hulpmiddelen of vraag."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / SLA-gids</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Wat is een SLA en hoe stel je realistische servicedoelen vast?</h1>
+        <p class="hero-intro">Een SLA is een schriftelijke belofte over de service die je levert. Ontdek wat erin hoort, hoe je doelen stelt die je echt haalt en hoe je ze blijft toetsen.</p>
+        <p class="mono"><time datetime="2026-10-03">3 oktober 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Elk team dat iets voor anderen doet, of het nu klanten zijn of collega's van een andere afdeling, doet beloftes, uitgesproken of niet. &ldquo;We reageren snel.&rdquo; &ldquo;Het systeem is bijna altijd beschikbaar.&rdquo; Een service level agreement (SLA) maakt van die vage beloftes iets wat beide partijen kunnen meten. Deze gids beantwoordt de meestgestelde vragen: wat een SLA is, wat erin staat en hoe je doelen stelt die je echt kunt waarmaken.</p><h2>Wat is een service level agreement?</h2><p>Een SLA is een schriftelijke afspraak tussen een dienstverlener en degenen die van die dienst afhankelijk zijn. Hij legt vast welk serviceniveau wordt geleverd, hoe dat wordt gemeten en wat er gebeurt als het niet wordt gehaald. Een SLA kan extern zijn, tussen een bedrijf en zijn klanten, of intern, tussen twee teams zoals IT en finance.</p><h2>Wat hoort er in een SLA?</h2><ul><li><strong>Reikwijdte.</strong> Wat de service dekt en, minstens zo belangrijk, wat niet.</li><li><strong>Meetwaarden.</strong> De cijfers waarover je rapporteert, zoals beschikbaarheid, tijd tot eerste reactie, oplostijd of foutpercentage.</li><li><strong>Doelen.</strong> De waarde die elke meetwaarde moet halen, bijvoorbeeld 99,5% beschikbaarheid of een eerste reactie binnen vier werkuren.</li><li><strong>Meetperiode en meetmethode.</strong> Per maand of per kwartaal, met welk hulpmiddel en volgens welke uren.</li><li><strong>Verantwoordelijkheden.</strong> Wat de klant moet aanleveren, zoals toegang, informatie of tijdige goedkeuringen.</li><li><strong>Gevolgen.</strong> Servicetegoeden, escalatie of een evaluatiegesprek wanneer een doel niet wordt gehaald.</li><li><strong>Uitzonderingen.</strong> Gepland onderhoud, gebeurtenissen buiten jouw controle en verzoeken buiten de scope.</li></ul><h2>SLA, SLO en SLI: wat is het verschil?</h2><p>De drie termen worden vaak door elkaar gehaald. Een <strong>service level indicator (SLI)</strong> is de meting zelf, zoals het percentage verzoeken dat binnen twee seconden wordt beantwoord. Een <strong>service level objective (SLO)</strong> is het interne doel voor die meting, bijvoorbeeld 99,9%. De <strong>SLA</strong> is de afspraak, met gevolgen eraan verbonden. Een goede gewoonte is om je interne SLO iets strenger te stellen dan de SLA, zodat je een waarschuwingsmarge hebt voordat een belofte breekt.</p><h2>Hoe stel je realistische doelen?</h2><h3>Begin bij data, niet bij ambitie</h3><p>Kijk naar je daadwerkelijke prestaties van de afgelopen drie tot zes maanden. Los je nu 80% van de tickets binnen twee dagen op, dan is 95% binnen één dag beloven een wens, geen doel. Kies een getal dat je meestal al haalt en verbeter het bewust.</p><h3>Vraag wat klanten echt nodig hebben</h3><p>Een snellere reactie is niet altijd waardevol. Vraag gebruikers welke vertragingen pijn doen en welke ze nauwelijks merken. Een eerste reactie binnen vier uur kan ze volledig tevredenstellen, terwijl een belofte van één uur extra personeel kost zonder echt voordeel.</p><h3>Houd rekening met capaciteit en afhankelijkheden</h3><p>Je doel is zo sterk als je zwakste leverancier. Hangt je service af van een partij die 99,5% garandeert, dan kun je eerlijk gezegd geen 99,9% beloven. Controleer ook bezetting, vakanties en tijdzones.</p><h3>Werk met niveaus in plaats van één getal</h3><p>Niet elk verzoek is gelijk. Definieer prioriteitsniveaus, met een strak doel voor urgente incidenten en een ruimer doel voor routineverzoeken. Beperk je tot drie of vier niveaus, zodat mensen ze onthouden.</p><h3>Formuleer doelen als percentages</h3><p>&ldquo;Elk ticket binnen vier uur beantwoord&rdquo; wordt al op dag één gebroken. &ldquo;95% van de tickets binnen vier werkuren beantwoord&rdquo; is eerlijk over de incidentele slechte dag.</p><h2>Een eenvoudig voorbeeld</h2><p>Een intern IT-team ondersteunt 200 medewerkers. Vorig kwartaal beantwoordde het 88% van de tickets binnen vier werkuren en loste het 90% van de urgente incidenten binnen acht uur op. Het kan deze doelen stellen:</p><ul><li><strong>Urgent:</strong> eerste reactie binnen een uur, 90% binnen acht uur opgelost.</li><li><strong>Normaal:</strong> eerste reactie binnen vier werkuren voor 92% van de tickets.</li><li><strong>Laag:</strong> eerste reactie binnen twee werkdagen voor 95% van de tickets.</li></ul><p>Deze waarden liggen iets boven de huidige prestaties, dus ze dagen het team uit zonder fantasie te zijn.</p><h2>Veelgemaakte SLA-fouten</h2><ul><li><strong>100% beloven.</strong> Geen enkele service is perfect, en een doel zonder ruimte voor falen wordt gebroken.</li><li><strong>Te veel meetwaarden.</strong> Drie tot vijf goed gekozen cijfers verslaan twintig die niemand leest.</li><li><strong>Meten wat makkelijk is in plaats van wat telt.</strong> De uptime kan 100% zijn terwijl gebruikers niet kunnen inloggen.</li><li><strong>Eén keer vaststellen en vergeten.</strong> Behoeften veranderen en de afspraak moet meebewegen.</li><li><strong>Geen evaluatie en geen gesprek.</strong> Een SLA waarover nooit wordt gesproken is slechts een document.</li></ul><h2>Evalueren en rapporteren</h2><p>Rapporteer de resultaten in een vast ritme, voor de meeste teams maandelijks, en bespreek missers zonder schuldvraag: wat was de oorzaak, en ligt het aan het doel of aan het proces? Toets de doelen zelf elke zes tot twaalf maanden. Een spreadsheet is genoeg om te beginnen. Als je je operatie al volgt in <strong>FulcrumGrid Command Center</strong>, kun je SLA-meetwaarden naast je andere KPI's en projecten bewaren, zodat een verslechterende reactietijd zichtbaar is vóór de maandelijkse evaluatie in plaats van tijdens.</p><p>Begin met echte data, beloof wat je kunt waarmaken en kom er vaak op terug. Een realistische SLA schept meer vertrouwen dan een indrukwekkende die je niet kunt halen.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wat is het verschil tussen een SLA en een contract?</summary><p>Een contract regelt de hele zakelijke relatie, inclusief prijs, aansprakelijkheid en looptijd. Een SLA is meestal een onderdeel daarvan, gericht op meetbare serviceniveaus en wat er gebeurt als die niet worden gehaald.</p></details>
+        <details class="faq-item"><summary>Wat is een goed beschikbaarheidsdoel voor een SLA?</summary><p>Dat hangt af van wat je kunt leveren en wat gebruikers nodig hebben. 99,5% staat ongeveer 3,6 uur downtime per maand toe, 99,9% ongeveer 43 minuten. Kijk naar je eigen historie en je leveranciers voordat je kiest.</p></details>
+        <details class="faq-item"><summary>Hebben interne teams SLA's nodig?</summary><p>Vaak wel. Een interne SLA tussen bijvoorbeeld IT en finance maakt verwachtingen en prioriteiten duidelijk zonder juridisch gewicht. Houd hem kort en richt je op de paar verzoeken die het belangrijkst zijn.</p></details>
+        <details class="faq-item"><summary>Hoe vaak moet een SLA worden herzien?</summary><p>Rapporteer maandelijks en toets de doelen zelf elke zes tot twaalf maanden, of eerder na een grote verandering in bezetting, hulpmiddelen of vraag.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Zie je serviceniveaus in één oogopslag</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center helpt je KPI's en projecten op één plek te volgen, zodat reactietijden en doelen de hele maand zichtbaar blijven.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
