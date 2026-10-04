@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>How Do You Find the Bottleneck in a Business Process? — FulcrumGrid</title>
+  <meta name="description" content="A bottleneck limits how much your whole process can deliver. Learn the symptoms, how to map the flow, measure queue and cycle time, and fix the constraint." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How Do You Find the Bottleneck in a Business Process?" />
+  <meta property="og:description" content="A bottleneck limits how much your whole process can deliver. Learn the symptoms, how to map the flow, measure queue and cycle time, and fix the constraint." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/how-to-find-bottlenecks-in-a-process/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-04" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Do You Find the Bottleneck in a Business Process?" />
+  <meta name="twitter:description" content="A bottleneck limits how much your whole process can deliver. Learn the symptoms, how to map the flow, measure queue and cycle time, and fix the constraint." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/how-to-find-bottlenecks-in-a-process/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-find-bottlenecks-in-a-process/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-find-bottlenecks-in-a-process/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-find-bottlenecks-in-a-process/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-find-bottlenecks-in-a-process/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-find-bottlenecks-in-a-process/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-find-bottlenecks-in-a-process/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-find-bottlenecks-in-a-process/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-find-bottlenecks-in-a-process/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How Do You Find the Bottleneck in a Business Process?",
+    "description": "A bottleneck limits how much your whole process can deliver. Learn the symptoms, how to map the flow, measure queue and cycle time, and fix the constraint.",
+    "datePublished": "2026-10-04",
+    "dateModified": "2026-10-04",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/how-to-find-bottlenecks-in-a-process/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Bottleneck Guide",
+        "item": "https://fulcrumgrid.com/blog/how-to-find-bottlenecks-in-a-process/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between a bottleneck and a slow step?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A slow step takes a long time to do its own work. A bottleneck limits the output of the whole process. A step can be slow without being the constraint if it still has more capacity than the demand it faces."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can a process have more than one bottleneck?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "At any moment one step is the main constraint, though others may be close behind. After you fix the first, the next slowest takes its place, so treat the work as a repeating cycle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should we check for bottlenecks?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Review queue lengths weekly and run a fuller check every month or quarter. Do it sooner after a change in demand, staffing, tools or the process itself."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need special software to find a bottleneck?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. A process map, a timestamp for when each item enters and leaves each step, and a spreadsheet are enough. Software helps once you want to track the numbers continuously."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Bottleneck Guide</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>How Do You Find the Bottleneck in a Business Process?</h1>
+        <p class="hero-intro">A bottleneck limits how much your whole process can deliver. Learn the symptoms, how to map the flow, measure queue and cycle time, and fix the constraint.</p>
+        <p class="mono"><time datetime="2026-10-04">October 4, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Most teams feel the problem long before they can name it. Work piles up, deadlines slip, and everyone seems busy, yet output stays flat. Usually one step in the process is holding everything back. This guide explains what a bottleneck is, how to spot it, how to measure it, and how to fix it without simply moving the problem somewhere else.</p><h2>What is a bottleneck?</h2><p>A bottleneck is the step in a process with the lowest capacity relative to the demand placed on it. Like the neck of a bottle, it limits how fast everything can flow through, no matter how wide the rest is. If one step can handle 20 items a day and every other step can handle 50, the whole process delivers 20 a day. Speeding up any other step changes nothing.</p><h2>Symptoms that point to a bottleneck</h2><ul><li><strong>Queues in front of one step.</strong> Work waits there while the steps after it sit half idle.</li><li><strong>Idle time downstream.</strong> People after the constraint wait for work to arrive.</li><li><strong>Overloaded people or machines.</strong> One person or system is always behind, working overtime or being chased for updates.</li><li><strong>Long and unpredictable lead times.</strong> Items spend far more time waiting than being worked on.</li><li><strong>Expediting and escalations.</strong> The same step keeps getting urgent requests to jump the line.</li><li><strong>Rework and shortcuts.</strong> Pressure at one point leads to mistakes that come back later.</li></ul><p>A warning: the busiest-looking step is not always the bottleneck. Verify with data before you act.</p><h2>Step 1: map the flow</h2><p>Write down every step from the moment a request arrives to the moment it is delivered. Walk the real process with the people who do the work, not the one in the procedure manual. For each step, note who owns it, what comes in, what goes out, and where work waits between steps. Eight to twelve boxes on a whiteboard are enough. Include the hand-offs, because that is where work most often sits unnoticed.</p><h2>Step 2: measure queue time and cycle time</h2><p>For every step, collect two numbers:</p><ul><li><strong>Cycle time.</strong> How long the work actually takes once someone starts it.</li><li><strong>Queue time.</strong> How long it waits before anyone starts.</li></ul><p>Also note throughput, meaning how many items each step completes per day or week, and the number of items waiting in front of it. Sample 20 to 30 recent items if you can, since a single week can mislead. The bottleneck is usually the step with the longest queue and the lowest throughput capacity, not necessarily the longest cycle time.</p><h3>A quick example</h3><p>A small firm sends quotes to customers. Receiving the request takes 15 minutes of work, preparing the quote 45 minutes, manager approval 10 minutes, and sending the contract 15 minutes. Yet a quote takes three days overall. Measuring the queues shows the problem: quotes wait about two days for approval because one manager signs them once a day. The step with only 10 minutes of real work is the bottleneck. Hiring another quote writer would have made things worse.</p><h2>The theory of constraints in plain language</h2><p>The theory of constraints, from Eliyahu Goldratt, rests on one idea: every process has one constraint that sets its pace, and improving anything else is wasted effort. Its practical routine is simple. Identify the constraint. Get the most out of it. Make everything else support it. Add capacity only if that is still not enough. Then go back to the start, because the constraint will have moved.</p><h2>Step 3: fix the constraint</h2><h3>Protect and exploit it</h3><p>Make sure the constraint never waits or works on the wrong thing. Remove interruptions, meetings and low-value tasks from it. Feed it complete, correct work so nothing bounces back. In the quote example, give the manager a clear checklist so approvals take one pass.</p><h3>Align everything else to it</h3><p>Upstream steps should not pour in more work than the constraint can handle, because extra work only grows the queue and the lead time. Limit work in progress and release new items at the constraint's pace.</p><h3>Raise its capacity</h3><p>If protecting it is not enough, add capacity: delegate approvals below a threshold, train a second person, add a shift, automate a repetitive task or split the step in two. Do this last, since it usually costs money, and the earlier fixes are often free.</p><h2>Step 4: re-check</h2><p>When you relieve one constraint, another step becomes the slowest. That is progress, not failure. Remeasure queue time, cycle time and throughput after every change, and compare them with your baseline. Repeat the cycle every few weeks or whenever demand, staffing or tools change. Watch for the common traps: fixing a step that only looks busy, relocating the bottleneck to a place that is harder to see, or declaring victory after one good week.</p><h2>Keep it visible</h2><p>Bottlenecks come back when nobody is watching. A shared board, a weekly review of queue lengths and a few simple KPIs are enough. If you already run projects and KPIs in <strong>FulcrumGrid Command Center</strong>, you can track queue size and lead time next to your other targets, so a growing queue stands out early. A spreadsheet works too, as long as someone looks at it every week.</p><p>Find the one step that limits the whole, measure it honestly, fix it, and look again. That loop will do more for your output than working harder everywhere.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>What is the difference between a bottleneck and a slow step?</summary><p>A slow step takes a long time to do its own work. A bottleneck limits the output of the whole process. A step can be slow without being the constraint if it still has more capacity than the demand it faces.</p></details>
+        <details class="faq-item"><summary>Can a process have more than one bottleneck?</summary><p>At any moment one step is the main constraint, though others may be close behind. After you fix the first, the next slowest takes its place, so treat the work as a repeating cycle.</p></details>
+        <details class="faq-item"><summary>How often should we check for bottlenecks?</summary><p>Review queue lengths weekly and run a fuller check every month or quarter. Do it sooner after a change in demand, staffing, tools or the process itself.</p></details>
+        <details class="faq-item"><summary>Do I need special software to find a bottleneck?</summary><p>No. A process map, a timestamp for when each item enters and leaves each step, and a spreadsheet are enough. Software helps once you want to track the numbers continuously.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Keep your process metrics in one place</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center helps you track projects and KPIs together, so queue length and lead time stay visible and a growing bottleneck shows up early.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
