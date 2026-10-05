@@ -80,18 +80,18 @@ PAGE = {
                 'Sincronización bidireccional de socios de negocio, artículos y asientos — un cambio en un lado aparece en el otro, sin volver a teclear. Disponible en HR Suite, Collection y Command Center.',
                 "Sincronizzazione bidirezionale di partner commerciali, articoli e registrazioni contabili — una modifica da un lato compare dall'altro, senza reinserimento. Disponibile in HR Suite, Collection e Command Center.",
                 'Tweerichtingssynchronisatie van zakenpartners, artikelen en boekingen — een wijziging aan de ene kant verschijnt aan de andere, zonder opnieuw invoeren. Beschikbaar in HR Suite, Collection en Command Center.'),
-            'A two-way connector that keeps contacts, invoices and payments in step between Odoo and the grid, so collections and dashboards always read from the same numbers.': _t(
-                "Un connecteur bidirectionnel qui garde contacts, factures et paiements synchronisés entre Odoo et la grille, pour que le recouvrement et les tableaux de bord s'appuient toujours sur les mêmes chiffres.",
-                'Ein bidirektionaler Konnektor, der Kontakte, Rechnungen und Zahlungen zwischen Odoo und dem Grid im Gleichschritt hält, damit Inkasso und Dashboards stets dieselben Zahlen verwenden.',
-                'Un conector bidireccional que mantiene contactos, facturas y pagos sincronizados entre Odoo y la cuadrícula, para que cobros y paneles usen siempre las mismas cifras.',
-                'Un connettore bidirezionale che mantiene contatti, fatture e pagamenti allineati tra Odoo e la griglia, così recupero crediti e dashboard leggono sempre gli stessi numeri.',
-                'Een tweerichtingsconnector die contacten, facturen en betalingen gelijk houdt tussen Odoo en het grid, zodat incasso en dashboards altijd dezelfde cijfers gebruiken.'),
-            "Connect Oracle financials to stream live balances and receivables straight into Command Center — so leadership sees the real position, not last week's export.": _t(
-                "Connectez Oracle Financials pour diffuser soldes et créances en direct directement dans Command Center — afin que la direction voie la situation réelle, pas l'export de la semaine dernière.",
-                'Verbinden Sie Oracle Financials, um Live-Salden und Forderungen direkt in Command Center zu streamen — damit die Führung die tatsächliche Lage sieht, nicht den Export der letzten Woche.',
-                'Conecte Oracle Financials para transmitir saldos y cobros en directo directamente a Command Center — para que la dirección vea la situación real, no la exportación de la semana pasada.',
-                "Collega Oracle Financials per trasmettere saldi e crediti in tempo reale direttamente in Command Center — così la direzione vede la situazione reale, non l'esportazione della settimana scorsa.",
-                'Verbind Oracle Financials om live saldi en vorderingen rechtstreeks naar Command Center te streamen — zodat de leiding de werkelijke situatie ziet, niet de export van vorige week.'),
+            'Post HR Suite payroll as draft journal entries into Odoo, and keep Command Center dashboards reading from the same numbers — a two-way connection, with no re-keying.': _t(
+                "Postez la paie de HR Suite sous forme d'écritures comptables provisoires dans Odoo, et gardez les tableaux de bord de Command Center sur les mêmes chiffres — une connexion bidirectionnelle, sans ressaisie.",
+                'Buchen Sie die HR-Suite-Gehaltsabrechnung als Buchungsentwürfe in Odoo und halten Sie die Command-Center-Dashboards auf denselben Zahlen — eine bidirektionale Verbindung, ohne erneute Eingabe.',
+                'Contabilice la nómina de HR Suite como asientos en borrador en Odoo y mantenga los paneles de Command Center sobre las mismas cifras — una conexión bidireccional, sin volver a teclear.',
+                'Registra le buste paga di HR Suite come scritture in bozza in Odoo e mantieni le dashboard di Command Center sugli stessi numeri — una connessione bidirezionale, senza reinserimenti.',
+                'Boek de loonadministratie van HR Suite als concept-journaalposten in Odoo en houd de Command Center-dashboards op dezelfde cijfers — een tweerichtingsverbinding, zonder opnieuw typen.'),
+            "Command Center streams live Oracle balances into your dashboards, and HR Suite posts payroll journals through Oracle Integration (OIC) and Oracle Fusion (ERP Cloud).": _t(
+                "Command Center diffuse les soldes Oracle en direct dans vos tableaux de bord, et HR Suite poste les écritures de paie via Oracle Integration (OIC) et Oracle Fusion (ERP Cloud).",
+                'Command Center streamt Live-Oracle-Salden in Ihre Dashboards, und HR Suite bucht Gehaltsabrechnungs-Journale über Oracle Integration (OIC) und Oracle Fusion (ERP Cloud).',
+                'Command Center transmite saldos de Oracle en directo a sus paneles, y HR Suite contabiliza los asientos de nómina a través de Oracle Integration (OIC) y Oracle Fusion (ERP Cloud).',
+                "Command Center trasmette in tempo reale i saldi Oracle nelle tue dashboard e HR Suite registra le scritture delle buste paga tramite Oracle Integration (OIC) e Oracle Fusion (ERP Cloud).",
+                'Command Center streamt live Oracle-saldi naar uw dashboards, en HR Suite boekt loonjournalen via Oracle Integration (OIC) en Oracle Fusion (ERP Cloud).'),
             'Link QuickBooks Online (QBO) to match invoices to payments and reconcile automatically. Your books stay in QuickBooks; the export-and-reimport busywork disappears.': _t(
                 "Reliez QuickBooks Online (QBO) pour rapprocher factures et paiements et faire la réconciliation automatiquement. Votre comptabilité reste dans QuickBooks ; la corvée d'export et de réimport disparaît.",
                 'Verknüpfen Sie QuickBooks Online (QBO), um Rechnungen und Zahlungen zuzuordnen und automatisch abzustimmen. Ihre Buchhaltung bleibt in QuickBooks; die Mühe von Export und Reimport entfällt.',
@@ -120,12 +120,12 @@ PAGE = {
                 'Todo lo que puede hacer en las apps, lo puede hacer a través de la API — con un sandbox para desarrollar con seguridad.',
                 "Tutto ciò che puoi fare nelle app puoi farlo tramite l'API — con una sandbox per sviluppare in sicurezza.",
                 'Alles wat u in de apps kunt doen, kunt u via de API doen — met een sandbox om veilig tegen te bouwen.'),
-            'A clean, versioned REST API with predictable JSON and token auth — read and write any record your team can reach in the app. Fully documented, available on Collection Business and up.': _t(
-                "Une API REST claire et versionnée, avec un JSON prévisible et une authentification par jeton — lisez et écrivez tout enregistrement accessible à votre équipe dans l'application. Entièrement documentée, disponible sur Collection Société et plus.",
-                'Eine saubere, versionierte REST-API mit vorhersehbarem JSON und Token-Authentifizierung — lesen und schreiben Sie jeden Datensatz, den Ihr Team in der App erreichen kann. Vollständig dokumentiert, verfügbar ab Collection Unternehmen.',
-                'Una API REST clara y versionada, con JSON predecible y autenticación por token — lea y escriba cualquier registro al que su equipo pueda acceder en la app. Totalmente documentada, disponible en Collection Negocio y superior.',
-                "Un’API REST chiara e versionata, con JSON prevedibile e autenticazione a token — leggi e scrivi qualsiasi record che il tuo team può raggiungere nell'app. Completamente documentata, disponibile su Collection Azienda e oltre.",
-                'Een heldere, geversioneerde REST-API met voorspelbare JSON en tokenauthenticatie — lees en schrijf elk record dat uw team in de app kan bereiken. Volledig gedocumenteerd, beschikbaar op Collection Bedrijf en hoger.'),
+            "A clean, versioned REST API with predictable JSON and token auth — read and write any record your team can reach in the app. Fully documented: Collection's REST API on Business and up, and HR Suite's Partner API on Enterprise.": _t(
+                "Une API REST claire et versionnée, avec un JSON prévisible et une authentification par jeton — lisez et écrivez tout enregistrement accessible à votre équipe dans l'application. Entièrement documentée : l'API REST de Collection à partir de Business, et l'API Partenaire de HR Suite sur Enterprise.",
+                "Eine saubere, versionierte REST-API mit vorhersehbarem JSON und Token-Authentifizierung — lesen und schreiben Sie jeden Datensatz, den Ihr Team in der App erreichen kann. Vollständig dokumentiert: die REST-API von Collection ab Business und die Partner-API von HR Suite auf Enterprise.",
+                "Una API REST limpia y versionada, con JSON predecible y autenticación por token — lea y escriba cualquier registro que su equipo pueda alcanzar en la app. Totalmente documentada: la API REST de Collection desde Business, y la API para socios de HR Suite en Enterprise.",
+                "Un'API REST pulita e versionata, con JSON prevedibile e autenticazione tramite token — leggi e scrivi qualsiasi record raggiungibile dal tuo team nell'app. Completamente documentata: l'API REST di Collection da Business in su e l'API per partner di HR Suite su Enterprise.",
+                "Een nette, geversioneerde REST-API met voorspelbare JSON en tokenauthenticatie — lees en schrijf elk record dat uw team in de app kan bereiken. Volledig gedocumenteerd: de REST-API van Collection vanaf Business en de Partner-API van HR Suite op Enterprise."),
             'Subscribe to the events that matter and FulcrumGrid pushes them to your endpoints the moment they happen — so your own systems react in real time, with no polling and no delay.': _t(
                 'Abonnez-vous aux événements qui comptent et FulcrumGrid les envoie à vos points de terminaison dès qu’ils surviennent — pour que vos propres systèmes réagissent en temps réel, sans interrogation ni délai.',
                 'Abonnieren Sie die relevanten Ereignisse, und FulcrumGrid sendet sie im selben Moment an Ihre Endpunkte — damit Ihre eigenen Systeme in Echtzeit reagieren, ohne Polling und ohne Verzögerung.',
@@ -162,12 +162,12 @@ PAGE = {
                 'Traiga su propio proveedor de identidad y gestione a las personas como ya lo hace.',
                 'Porta il tuo provider di identità e gestisci le persone come già fai.',
                 'Neem uw eigen identiteitsprovider mee en beheer mensen zoals u dat al doet.'),
-            'Single sign-on through the identity provider you already run, so your team signs in once with credentials IT already controls — no extra passwords to manage. Available on HR Suite Enterprise.': _t(
-                "Authentification unique via le fournisseur d'identité que vous utilisez déjà : votre équipe se connecte une fois avec des identifiants que l'informatique gère déjà — aucun mot de passe supplémentaire à gérer. Disponible sur HR Suite Enterprise.",
-                'Single Sign-On über den bereits genutzten Identitätsanbieter: Ihr Team meldet sich einmal mit Zugangsdaten an, die die IT bereits verwaltet — keine zusätzlichen Passwörter. Verfügbar bei HR Suite Enterprise.',
-                'Inicio de sesión único mediante el proveedor de identidad que ya usa: su equipo entra una vez con credenciales que TI ya controla — sin contraseñas adicionales que gestionar. Disponible en HR Suite Enterprise.',
-                "Single sign-on tramite il provider di identità che già usi: il tuo team accede una volta con credenziali che l'IT già gestisce — nessuna password aggiuntiva. Disponibile su HR Suite Enterprise.",
-                'Eenmalige aanmelding via de identiteitsprovider die u al gebruikt: uw team logt één keer in met inloggegevens die IT al beheert — geen extra wachtwoorden. Beschikbaar op HR Suite Enterprise.'),
+            'Single sign-on through the identity provider you already run, so your team signs in once with credentials IT already controls — no extra passwords to manage. Available on HR Suite and Collection (Enterprise).': _t(
+                "Authentification unique via le fournisseur d'identité que vous utilisez déjà : votre équipe se connecte une fois avec des identifiants que l'informatique gère déjà — aucun mot de passe supplémentaire à gérer. Disponible sur HR Suite et Collection (Enterprise).",
+                'Single Sign-On über den bereits genutzten Identitätsanbieter: Ihr Team meldet sich einmal mit Zugangsdaten an, die die IT bereits verwaltet — keine zusätzlichen Passwörter. Verfügbar für HR Suite und Collection (Enterprise).',
+                'Inicio de sesión único mediante el proveedor de identidad que ya usa: su equipo entra una vez con credenciales que TI ya controla — sin contraseñas adicionales que gestionar. Disponible en HR Suite y Collection (Enterprise).',
+                "Single sign-on tramite il provider di identità che già usi: il tuo team accede una volta con credenziali che l'IT già gestisce — nessuna password aggiuntiva. Disponibile su HR Suite e Collection (Enterprise).",
+                'Eenmalige aanmelding via de identiteitsprovider die u al gebruikt: uw team logt één keer in met inloggegevens die IT al beheert — geen extra wachtwoorden. Beschikbaar op HR Suite en Collection (Enterprise).'),
             "Automated provisioning through SCIM — new hires get the right access the day they start, and leavers lose it the moment they're offboarded, straight from your directory.": _t(
                 'Provisionnement automatisé via SCIM — les nouvelles recrues obtiennent le bon accès dès leur premier jour, et les départs le perdent au moment de leur sortie, directement depuis votre annuaire.',
                 'Automatisierte Bereitstellung über SCIM — neue Mitarbeitende erhalten am ersten Tag die richtigen Zugriffe, Abgänge verlieren sie im Moment des Offboardings, direkt aus Ihrem Verzeichnis.',
@@ -176,6 +176,39 @@ PAGE = {
                 'Geautomatiseerde provisioning via SCIM — nieuwe medewerkers krijgen de juiste toegang op hun eerste dag, en vertrekkers verliezen die op het moment van offboarding, rechtstreeks vanuit uw directory.'),
 
             # ---- CTA ----
+            "04 · Alerts &amp; messaging": _t(
+                "04 · Alertes &amp; messagerie", "04 · Benachrichtigungen &amp; Messaging",
+                "04 · Alertas &amp; mensajería", "04 · Avvisi &amp; messaggistica", "04 · Meldingen &amp; berichten"),
+            "Push the signal where your team already is.": _t(
+                "Envoyez le signal là où se trouve déjà votre équipe.",
+                "Senden Sie das Signal dorthin, wo Ihr Team schon ist.",
+                "Lleve la señal a donde ya está su equipo.",
+                "Invia il segnale dove il tuo team è già.",
+                "Stuur het signaal naar waar uw team al is."),
+            "Send what matters to the channels people already watch — no extra dashboard to check.": _t(
+                "Envoyez l'essentiel sur les canaux que vos équipes surveillent déjà — aucun tableau de bord supplémentaire à consulter.",
+                "Senden Sie das Wesentliche an die Kanäle, die Ihre Leute ohnehin beobachten — kein zusätzliches Dashboard.",
+                "Envíe lo importante a los canales que su gente ya vigila — sin otro panel que consultar.",
+                "Invia ciò che conta ai canali che le persone già seguono — nessuna dashboard in più da controllare.",
+                "Stuur wat telt naar de kanalen die mensen toch al volgen — geen extra dashboard om te checken."),
+            "Slack &amp; Microsoft Teams": _t(
+                "Slack &amp; Microsoft Teams", "Slack &amp; Microsoft Teams", "Slack &amp; Microsoft Teams",
+                "Slack &amp; Microsoft Teams", "Slack &amp; Microsoft Teams"),
+            "Command Center posts a summary of overdue items and key events to a Slack or Teams channel through an incoming webhook — so your team sees what needs attention without opening the app.": _t(
+                "Command Center publie un résumé des éléments en retard et des événements clés dans un canal Slack ou Teams via un webhook entrant — pour que votre équipe voie ce qui requiert son attention sans ouvrir l'application.",
+                "Command Center postet eine Zusammenfassung überfälliger Posten und wichtiger Ereignisse über einen eingehenden Webhook in einen Slack- oder Teams-Kanal — damit Ihr Team sieht, was Aufmerksamkeit braucht, ohne die App zu öffnen.",
+                "Command Center publica un resumen de los elementos vencidos y los eventos clave en un canal de Slack o Teams mediante un webhook entrante — para que su equipo vea lo que requiere atención sin abrir la app.",
+                "Command Center pubblica un riepilogo degli elementi scaduti e degli eventi chiave in un canale Slack o Teams tramite un webhook in entrata — così il tuo team vede cosa richiede attenzione senza aprire l'app.",
+                "Command Center plaatst een samenvatting van achterstallige items en belangrijke gebeurtenissen in een Slack- of Teams-kanaal via een inkomende webhook — zodat uw team ziet wat aandacht nodig heeft zonder de app te openen."),
+            "Multi-channel reminders": _t(
+                "Rappels multicanaux", "Mehrkanal-Erinnerungen", "Recordatorios multicanal",
+                "Promemoria multicanale", "Multichannel-herinneringen"),
+            "Collection reaches each debtor on the channel they actually answer, sent automatically on the reminder schedule you set — so follow-ups go out without anyone chasing by hand.": _t(
+                "Collection atteint chaque débiteur sur le canal auquel il répond vraiment, envoyé automatiquement selon le calendrier de relance que vous définissez — pour que les relances partent sans que personne ne relance à la main.",
+                "Collection erreicht jeden Schuldner auf dem Kanal, auf dem er tatsächlich antwortet, automatisch gemäß dem von Ihnen festgelegten Erinnerungsplan versendet — damit Nachfassaktionen ausgehen, ohne dass jemand von Hand nachhakt.",
+                "Collection llega a cada deudor por el canal al que realmente responde, enviado automáticamente según el calendario de recordatorios que usted define — para que los seguimientos salgan sin que nadie persiga a mano.",
+                "Collection raggiunge ogni debitore sul canale a cui risponde davvero, inviato automaticamente secondo il calendario di solleciti che imposti — così i solleciti partono senza che nessuno insegua a mano.",
+                "Collection bereikt elke debiteur op het kanaal waarop die echt reageert, automatisch verzonden volgens het herinneringsschema dat u instelt — zodat opvolging uitgaat zonder dat iemand handmatig achter betalingen aan zit."),
             "Don't see your system?": _t(
                 'Vous ne voyez pas votre système ?', 'Ihr System nicht dabei?',
                 '¿No ve su sistema?', 'Non trovi il tuo sistema?', 'Ziet u uw systeem niet?'),

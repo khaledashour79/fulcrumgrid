@@ -322,15 +322,16 @@ PAGE = {
                 "Collection · Société et plus", "Collection · Unternehmen und höher",
                 "Collection · Negocio y superior", "Collection · Azienda e oltre",
                 "Collection · Bedrijf en hoger"),
-            "HR Suite · Enterprise": _t(
-                "HR Suite · Entreprise", "HR Suite · Großunternehmen",
-                "HR Suite · Empresa", "HR Suite · Impresa", "HR Suite · Onderneming"),
+            "Scheduled pull": _t(
+                "Récupération planifiée", "Geplanter Abruf",
+                "Extracción programada", "Estrazione pianificata", "Geplande ophaling"),
             # Technology proper nouns — kept English on every locale (declared so
             # the acceptance oracle treats them as handled rather than untranslated).
             "SAP Business One": _t("SAP Business One", "SAP Business One", "SAP Business One", "SAP Business One", "SAP Business One"),
             "REST API v1": _t("REST API v1", "REST API v1", "REST API v1", "REST API v1", "REST API v1"),
             "Webhooks": _t("Webhooks", "Webhooks", "Webhooks", "Webhooks", "Webhooks"),
             "Sandbox": _t("Sandbox", "Sandbox", "Sandbox", "Sandbox", "Sandbox"),
+            "Slack &amp; Teams": _t("Slack &amp; Teams", "Slack &amp; Teams", "Slack &amp; Teams", "Slack &amp; Teams", "Slack &amp; Teams"),
 
             # ---- 05 · Security ----
             "05 · Security &amp; compliance": _t(

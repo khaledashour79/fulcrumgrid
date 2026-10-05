@@ -181,6 +181,13 @@ _CC = {
         'Collega QuickBooks Online (QBO) per abbinare fatture e pagamenti e riconciliare automaticamente.',
         'Koppel QuickBooks Online (QBO) om facturen aan betalingen te matchen en automatisch af te letteren.'),
     'One connection on Growth': _t('Une connexion sur Growth', 'Eine Verbindung bei Growth', 'Una conexión en Growth', 'Una connessione su Growth', 'Eén verbinding op Growth'),
+    'Slack &amp; Teams alerts': _t('Alertes Slack &amp; Teams', 'Slack- &amp; Teams-Benachrichtigungen', 'Alertas de Slack &amp; Teams', 'Avvisi Slack &amp; Teams', 'Slack- &amp; Teams-meldingen'),
+    'Post a summary of overdue items and key events to a Slack or Teams channel through an incoming webhook — so your team sees what needs attention without opening the app.': _t(
+        "Publiez un résumé des éléments en retard et des événements clés dans un canal Slack ou Teams via un webhook entrant — pour que votre équipe voie ce qui requiert son attention sans ouvrir l'application.",
+        'Posten Sie eine Zusammenfassung überfälliger Posten und wichtiger Ereignisse über einen eingehenden Webhook in einen Slack- oder Teams-Kanal — damit Ihr Team sieht, was Aufmerksamkeit braucht, ohne die App zu öffnen.',
+        'Publique un resumen de los elementos vencidos y los eventos clave en un canal de Slack o Teams mediante un webhook entrante — para que su equipo vea lo que requiere atención sin abrir la app.',
+        'Pubblica un riepilogo degli elementi scaduti e degli eventi chiave in un canale Slack o Teams tramite un webhook in entrata — così il tuo team vede cosa richiede attenzione senza aprire l\'app.',
+        'Plaats een samenvatting van achterstallige items en belangrijke gebeurtenissen in een Slack- of Teams-kanaal via een inkomende webhook — zodat uw team ziet wat aandacht nodig heeft zonder de app te openen.'),
     'Growth includes a single ERP connection; Enterprise unlocks unlimited connections with a scheduled pull.': _t(
         'Growth inclut une seule connexion ERP ; Enterprise débloque des connexions illimitées avec récupération planifiée.',
         'Growth enthält eine einzige ERP-Verbindung; Enterprise schaltet unbegrenzte Verbindungen mit geplantem Abruf frei.',
@@ -345,12 +352,12 @@ _COL = {
         'Una vista in tempo reale di ogni fattura — chi deve cosa, da quando e a che punto è ciascuna.',
         'Een live-weergave van elke factuur — wie wat verschuldigd is, sinds wanneer en waar elke staat.'),
     'Automated reminders': _t('Relances automatisées', 'Automatisierte Erinnerungen', 'Recordatorios automatizados', 'Solleciti automatizzati', 'Geautomatiseerde herinneringen'),
-    'Schedule polite, escalating follow-ups by email or SMS — sent automatically so no one has to chase manually.': _t(
-        "Programmez des relances polies et progressives par e-mail ou SMS — envoyées automatiquement, pour que personne n'ait à relancer à la main.",
-        'Planen Sie höfliche, eskalierende Nachfassaktionen per E-Mail oder SMS — automatisch versendet, sodass niemand manuell nachfassen muss.',
-        'Programe seguimientos corteses y progresivos por correo o SMS — enviados automáticamente para que nadie tenga que reclamar a mano.',
-        'Pianifica solleciti cortesi e progressivi via e-mail o SMS — inviati automaticamente, così nessuno deve rincorrere manualmente.',
-        'Plan beleefde, oplopende opvolgingen per e-mail of sms — automatisch verzonden, zodat niemand handmatig hoeft na te jagen.'),
+    'Schedule polite, escalating follow-ups that reach each debtor on the channel they actually answer — sent automatically so no one has to chase manually.': _t(
+        "Programmez des relances polies et progressives qui atteignent chaque débiteur sur le canal auquel il répond vraiment — envoyées automatiquement, pour que personne n'ait à relancer à la main.",
+        'Planen Sie höfliche, eskalierende Nachfassaktionen, die jeden Schuldner auf dem Kanal erreichen, auf dem er tatsächlich antwortet — automatisch versendet, sodass niemand manuell nachfassen muss.',
+        'Programe seguimientos corteses y progresivos que lleguen a cada deudor por el canal al que realmente responde — enviados automáticamente para que nadie tenga que reclamar a mano.',
+        'Pianifica solleciti cortesi e progressivi che raggiungono ogni debitore sul canale a cui risponde davvero — inviati automaticamente, così nessuno deve rincorrere manualmente.',
+        'Plan beleefde, oplopende opvolgingen die elke debiteur bereiken op het kanaal waarop die echt reageert — automatisch verzonden, zodat niemand handmatig hoeft na te jagen.'),
     'Payment plans': _t('Plans de paiement', 'Zahlungspläne', 'Planes de pago', 'Piani di pagamento', 'Betalingsplannen'),
     'Split a balance into scheduled installments and let Collection track each one to completion.': _t(
         'Divisez un solde en échéances programmées et laissez Collection suivre chacune jusqu\'à son terme.',
