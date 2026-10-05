@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>ما هو دليل التشغيل (Runbook) وكيف تكتب دليلاً يستخدمه فريقك؟ — FulcrumGrid</title>
+  <meta name="description" content="دليل التشغيل إرشادات خطوة بخطوة لمهمة متكررة أو حادثة. تعرّف على الفرق بينه وبين الإجراء التشغيلي القياسي، وما يتضمنه، وكيف تبقيه مفيداً مع الوقت." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="ما هو دليل التشغيل (Runbook) وكيف تكتب دليلاً يستخدمه فريقك؟" />
+  <meta property="og:description" content="دليل التشغيل إرشادات خطوة بخطوة لمهمة متكررة أو حادثة. تعرّف على الفرق بينه وبين الإجراء التشغيلي القياسي، وما يتضمنه، وكيف تبقيه مفيداً مع الوقت." />
+  <meta property="og:url" content="https://fulcrumgrid.com/ar/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-05" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="لوحة التحكم للتنفيذيين من FulcrumGrid — العمليات في لمحة" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ما هو دليل التشغيل (Runbook) وكيف تكتب دليلاً يستخدمه فريقك؟" />
+  <meta name="twitter:description" content="دليل التشغيل إرشادات خطوة بخطوة لمهمة متكررة أو حادثة. تعرّف على الفرق بينه وبين الإجراء التشغيلي القياسي، وما يتضمنه، وكيف تبقيه مفيداً مع الوقت." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/ar/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-runbook-and-how-to-write-one/" />
+
+  <link rel="preload" href="/assets/fonts/cairo-600-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/cairo-400-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "ما هو دليل التشغيل (Runbook) وكيف تكتب دليلاً يستخدمه فريقك؟",
+    "description": "دليل التشغيل إرشادات خطوة بخطوة لمهمة متكررة أو حادثة. تعرّف على الفرق بينه وبين الإجراء التشغيلي القياسي، وما يتضمنه، وكيف تبقيه مفيداً مع الوقت.",
+    "datePublished": "2026-10-05",
+    "dateModified": "2026-10-05",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/ar/blog/what-is-a-runbook-and-how-to-write-one/"
+    },
+    "inLanguage": "ar"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "الرئيسية",
+        "item": "https://fulcrumgrid.com/ar/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "المدوّنة",
+        "item": "https://fulcrumgrid.com/ar/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "دليل التشغيل",
+        "item": "https://fulcrumgrid.com/ar/blog/what-is-a-runbook-and-how-to-write-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "هل دليل التشغيل هو نفسه دليل الخطط (Playbook)؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "المصطلحان يتداخلان. تستخدم كثير من الفرق دليل التشغيل للإجراءات التقنية أو التشغيلية الدقيقة خطوة بخطوة، ودليل الخطط للاستراتيجية الأوسع، كإدارة حادثة كبرى أو تصعيد من عميل، وقد يشير إلى عدة أدلة تشغيل."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كم ينبغي أن يكون طول دليل التشغيل؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "أقصر ما يمكن، ويفضّل صفحة أو صفحتان. وإذا احتاج أكثر، فقسّمه إلى أدلة أصغر أو اربطه بمواد خلفية بدل دفن الخطوات."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "من ينبغي أن يكتب دليل التشغيل؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "من يؤدي المهمة اليوم يجب أن يكتب المسودة لأنه يعرف التفاصيل. ثم يختبره ويحرّره شخص لم يؤدِّها قط، لأنه يلتقط الافتراضات الناقصة."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كم مرة ينبغي مراجعة أدلة التشغيل؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "راجع الأدلة الحرجة كل ربع سنة وغيرها مرتين في السنة. وحدّث أي دليل فور استخدامه في حادثة حقيقية أو عند تغيّر النظام الذي يغطيه."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <a href="/ar/products/">المنتجات</a>
+        <a href="/ar/features/">الشبكة</a>
+        <a href="/ar/pricing/">الأسعار</a>
+        <a href="/ar/regions/">المناطق</a>
+        <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
+        <a href="/ar/contact/">اتصل بنا</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="اللغة">ع ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" class="active" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      </div>
+      <button class="nav-toggle" aria-label="القائمة"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/ar/">الرئيسية</a> / <a href="/ar/blog/">المدوّنة</a> / دليل التشغيل</p>
+        <span class="tag tag-accent">العمليات</span>
+        <h1>ما هو دليل التشغيل (Runbook) وكيف تكتب دليلاً يستخدمه فريقك؟</h1>
+        <p class="hero-intro">دليل التشغيل إرشادات خطوة بخطوة لمهمة متكررة أو حادثة. تعرّف على الفرق بينه وبين الإجراء التشغيلي القياسي، وما يتضمنه، وكيف تبقيه مفيداً مع الوقت.</p>
+        <p class="mono"><time datetime="2026-10-05">٥ أكتوبر ٢٠٢٦</time> · ٦ دقائق للقراءة</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>الساعة الثانية فجراً، وقد تعطّل شيء ما، والشخص الوحيد الذي يعرف الحل على متن طائرة. سواء كانت المشكلة دفعة رواتب فاشلة أو خادماً متوقفاً أو طابور طلبات عالقاً، فإن الساعة التالية تتوقف على أمر واحد: هل المعرفة مكتوبة، أم أنها في رأس شخص واحد فقط؟ دليل التشغيل (Runbook) هو وسيلتك لكتابتها. يشرح هذا الدليل ما هو دليل التشغيل، وكيف يختلف عن الإجراء التشغيلي القياسي، وكيف تكتب دليلاً يفتحه الناس فعلاً حين يكونون تحت الضغط.</p><h2>ما هو دليل التشغيل؟</h2><p>دليل التشغيل إرشادات قصيرة وعملية للتعامل مع موقف محدد: مهمة متكررة أو عطل معروف أو حادثة. يخبر المناوب بما الذي أطلق الموقف، ومن المسؤول عنه، وماذا يفعل بالضبط، وكيف يتراجع إن ساءت الأمور، ومن يتصل به. والاختبار الحاسم بسيط: هل يستطيع زميل كفء لم يؤدِّ هذه المهمة من قبل أن يتبعه وحده في الليل دون أن يتصل بك؟</p><h2>دليل التشغيل مقابل الإجراء التشغيلي القياسي: ما الفرق؟</h2><p>يتداخل الاثنان، وكثير من الفرق تستخدم الكلمتين بالمعنى نفسه. وهذا تمييز مفيد:</p><ul><li><strong>الإجراء التشغيلي القياسي (SOP)</strong> يصف كيف ينبغي دائماً إنجاز العمل الروتيني، كإضافة مورّد جديد أو إقفال الشهر. يتعلق بالاتساق والامتثال، وغالباً يُقرأ مسبقاً.</li><li><strong>دليل التشغيل</strong> يصف كيفية الاستجابة لحدث معين أو تنفيذ مهمة تشغيلية محددة، غالباً تحت ضغط الوقت. يتعلق بالسرعة والسلامة، ويُقرأ في اللحظة نفسها.</li></ul><p>قد يكون الإجراء القياسي مفصّلاً ورسمياً بعض الشيء. أما دليل التشغيل فيجب أن يكون مباشراً: جمل قصيرة وأوامر دقيقة بلا مقالات تمهيدية. اربط الدليل بالإجراء القياسي حين يحتاج أحدهم إلى معرفة &laquo;السبب&raquo;.</p><h2>متى تكتب دليل تشغيل؟</h2><p>لا يمكنك توثيق كل شيء، فابدأ من مواضع الألم. اكتب دليلاً عندما:</p><ul><li>تكون المهمة <strong>متكررة</strong> وكلفة الخطأ فيها عالية، كتصدير الرواتب الشهري أو إصدار نسخة جديدة.</li><li>تقع <strong>حادثة للمرة الثانية</strong>. المرة الثانية هي الإشارة.</li><li>يعرف <strong>شخص واحد فقط</strong> كيف يؤدي أمراً ما. هذا خطر لا رصيد.</li><li>تكون المهمة <strong>نادرة لكنها حاسمة</strong>، كالاستعادة من النسخ الاحتياطي. لا أحد يتذكر الإجراءات النادرة.</li><li>يكرّر الموظفون الجدد <strong>الأسئلة نفسها</strong>.</li></ul><h2>ماذا ينبغي أن يتضمن دليل التشغيل؟</h2><p>احتفظ بالأجزاء الخمسة نفسها في كل دليل، ليعرف الناس دائماً أين ينظرون.</p><ul><li><strong>المُحفِّز.</strong> متى يُستخدم هذا الدليل: التنبيه أو العَرَض أو التاريخ في التقويم. عبارة &laquo;معدل أخطاء الدفع أعلى من ٥٪ لمدة عشر دقائق&raquo; محفّز. أما &laquo;حين تسوء الأمور&raquo; فليست كذلك.</li><li><strong>المالك.</strong> شخص أو دور واحد مسمّى مسؤول عن إبقائه دقيقاً، مع تاريخ آخر مراجعة.</li><li><strong>الخطوات.</strong> قائمة مرقّمة، إجراء واحد في كل خطوة، بالترتيب الذي ينبغي أن تحدث به، ومع النتيجة المتوقعة لكل خطوة ليعرف القارئ أنها نجحت.</li><li><strong>التراجع.</strong> كيف تعود إلى الحالة السابقة إذا فشلت خطوة أو زادت الأمور سوءاً. اكتبه قبل أن تحتاج إليه.</li><li><strong>التصعيد.</strong> من يُتصل به إذا لم تحلّ الخطوات المشكلة، وبأي ترتيب، وبأي وسيلة، وبعد كم دقيقة من المحاولة.</li></ul><h2>كيف تكتب خطوات يتبعها الناس؟</h2><h3>إجراء واحد في كل خطوة</h3><p>عبارة &laquo;أعد تشغيل الخدمة وافحص السجلات&raquo; خطوتان. افصلهما حتى لا يتجاوز شخص متوتر نصفها.</p><h3>كن دقيقاً</h3><p>اكتب الأمر الفعلي أو مسار القائمة بالضبط أو الرابط الحقيقي. عبارة &laquo;افتح لوحة الإدارة&raquo; تجبر القارئ على التخمين. النسخ واللصق أفضل من التأويل في الثانية فجراً.</p><h3>اذكر شكل النجاح</h3><p>بعد كل خطوة رئيسية، اكتب ما ينبغي أن يراه القارئ: &laquo;تعرض صفحة الحالة: قيد التشغيل.&raquo; فإن لم يحدث ذلك عرف أن عليه التوقف والتصعيد بدلاً من المتابعة عشوائياً.</p><h2>مثال مختصر</h2><p>هذا مخطط دليل لطابور طلبات عالق:</p><ul><li><strong>المحفّز:</strong> أكثر من ٥٠ طلباً منتظراً لأكثر من ١٥ دقيقة.</li><li><strong>المالك:</strong> مسؤول العمليات؛ آخر مراجعة في سبتمبر.</li><li><strong>الخطوات:</strong> افحص صفحة حالة معالج الدفع؛ أعد تشغيل عامل الطابور؛ تأكد من أن عدد الطلبات المنتظرة ينخفض خلال خمس دقائق.</li><li><strong>التراجع:</strong> إذا تسبّبت إعادة التشغيل في طلبات مكررة، أوقف العامل واتبع دليل تنظيف الطلبات المكررة.</li><li><strong>التصعيد:</strong> إذا لم يتحرك الطابور بعد ٢٠ دقيقة، فاتصل بالمهندس المناوب، ثم بمدير العمليات.</li></ul><h2>كيف تختبر دليل التشغيل؟</h2><p>الدليل غير المختبر مجرد تخمين. أعطه لشخص لم يكتبه واطلب منه اتباعه، ويفضّل في بيئة آمنة أو أثناء تدريب، وأنت تراقب بصمت. كل موضع تردّد فيه أو سأل أو ارتجل هو ثغرة تحتاج إلى إصلاح. أجرِ هذه التدريبات مرة أو مرتين في السنة للأدلة الحرجة. وبعد كل حادثة حقيقية، أضف سؤالاً إلى المراجعة: هل ساعد الدليل، وما الذي كان سيحسّنه؟</p><h2>كيف تبقي دليل التشغيل محدّثاً؟</h2><ul><li><strong>امنح كل دليل مالكاً وتاريخ مراجعة.</strong> كل ربع سنة للأدلة الحرجة، ومرتين في السنة لغيرها.</li><li><strong>حدّثه بعد كل استخدام.</strong> من اتبعه للتو هو الأعرف بما كان خاطئاً أو ناقصاً، فاجعل التصحيح جزءاً من إغلاق الحادثة.</li><li><strong>اربطه بالتغيير.</strong> حين يتغير نظام أو أداة أو مورّد، فليكن تحديث الأدلة المرتبطة ضمن قائمة المهام نفسها.</li><li><strong>اجعله سهل الوصول.</strong> دليل مثالي في مجلد منسي لا فائدة منه. احفظ الأدلة في مكان واحد بأسماء واضحة، وأرفق رابطها بالتنبيه نفسه إن أمكن.</li></ul><h2>أين تحفظ أدلة التشغيل؟</h2><p>يكفي مستند مشترك أو ويكي للبداية. والأهم من الأداة أن تكون الأدلة قريبة من العمل. وإذا كنت تتابع عملياتك ومهامك ومؤشراتك أصلاً في <strong>FulcrumGrid Command Center</strong>، فيمكنك ربط كل دليل بالمشروع أو المؤشر الذي يحميه، وإسناد تواريخ المراجعة إلى المالكين كأي مهمة أخرى، فلا تنتهي صلاحيتها بصمت. لكن ابدأ بما سيفتحه فريقك فعلاً.</p><p>اختر الحادثة الأكثر إيلاماً في الربع الماضي، واكتب دليلها هذا الأسبوع، واختبره مع شخص جديد. دليل واحد جيد يفيد فريقك أكثر من ملف مليء بأدلة لم تُختبر.</p>
+
+        <h2>الأسئلة الشائعة</h2>
+        <details class="faq-item"><summary>هل دليل التشغيل هو نفسه دليل الخطط (Playbook)؟</summary><p>المصطلحان يتداخلان. تستخدم كثير من الفرق دليل التشغيل للإجراءات التقنية أو التشغيلية الدقيقة خطوة بخطوة، ودليل الخطط للاستراتيجية الأوسع، كإدارة حادثة كبرى أو تصعيد من عميل، وقد يشير إلى عدة أدلة تشغيل.</p></details>
+        <details class="faq-item"><summary>كم ينبغي أن يكون طول دليل التشغيل؟</summary><p>أقصر ما يمكن، ويفضّل صفحة أو صفحتان. وإذا احتاج أكثر، فقسّمه إلى أدلة أصغر أو اربطه بمواد خلفية بدل دفن الخطوات.</p></details>
+        <details class="faq-item"><summary>من ينبغي أن يكتب دليل التشغيل؟</summary><p>من يؤدي المهمة اليوم يجب أن يكتب المسودة لأنه يعرف التفاصيل. ثم يختبره ويحرّره شخص لم يؤدِّها قط، لأنه يلتقط الافتراضات الناقصة.</p></details>
+        <details class="faq-item"><summary>كم مرة ينبغي مراجعة أدلة التشغيل؟</summary><p>راجع الأدلة الحرجة كل ربع سنة وغيرها مرتين في السنة. وحدّث أي دليل فور استخدامه في حادثة حقيقية أو عند تغيّر النظام الذي يغطيه.</p></details>
+
+        <p style="margin-top:32px"><a href="/ar/blog/"><span aria-hidden="true">←</span> العودة إلى المدوّنة</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid لوحة التحكم للتنفيذيين</p>
+        <h2>أبقِ أدلة التشغيل مرتبطة بالعمل</h2>
+        <p class="section-lead" style="margin:0 auto 26px">يساعدك FulcrumGrid Command Center على متابعة المهام والمالكين ومؤشرات الأداء في مكان واحد، فتُسند مراجعات الأدلة ولا يتقادم شيء بصمت.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/ar/products/command-center/">استكشف لوحة التحكم للتنفيذيين</a>
+          <a class="btn btn-secondary" href="/ar/blog/">العودة إلى المدوّنة</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>العمود الفقري التشغيلي للفرق الحديثة.</p>
+        </div>
+        <div class="foot-col">
+          <h5>المنتجات</h5>
+          <a href="/ar/products/">كل المنتجات</a>
+          <a href="/ar/products/hr-suite/">منصة الموارد البشرية</a>
+          <a href="/ar/products/command-center/">لوحة التحكم للتنفيذيين</a>
+          <a href="/ar/products/collection/">منصة تحصيل الديون</a>
+          <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشبكة</h5>
+          <a href="/ar/features/">الميزات</a>
+          <a href="/ar/integrations/">التكاملات</a>
+          <a href="/ar/how-it-works/">كيف تعمل</a>
+          <a href="/ar/pricing/">الأسعار</a>
+          <a href="/ar/regions/">المناطق</a>
+          <a href="/ar/blog/">المدوّنة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشركة</h5>
+          <a href="/ar/about/">من نحن</a>
+          <a href="/ar/faq/">الأسئلة الشائعة</a>
+          <a href="/ar/contact/">اتصل بنا</a>
+          <a href="/ar/privacy/">الخصوصية</a>
+          <a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

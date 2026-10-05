@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wie berechnet man die Mitarbeiterfluktuation und was ist ein guter Wert? — FulcrumGrid</title>
+  <meta name="description" content="Die Fluktuationsrate ist die Zahl der Abgänge geteilt durch die durchschnittliche Mitarbeiterzahl. Formel, freiwillig vs. unfreiwillig, monatlich vs. jährlich und Richtwerte." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wie berechnet man die Mitarbeiterfluktuation und was ist ein guter Wert?" />
+  <meta property="og:description" content="Die Fluktuationsrate ist die Zahl der Abgänge geteilt durch die durchschnittliche Mitarbeiterzahl. Formel, freiwillig vs. unfreiwillig, monatlich vs. jährlich und Richtwerte." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/how-to-calculate-employee-turnover-rate/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-05" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid HR Suite — people operations" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wie berechnet man die Mitarbeiterfluktuation und was ist ein guter Wert?" />
+  <meta name="twitter:description" content="Die Fluktuationsrate ist die Zahl der Abgänge geteilt durch die durchschnittliche Mitarbeiterzahl. Formel, freiwillig vs. unfreiwillig, monatlich vs. jährlich und Richtwerte." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-employee-turnover-rate/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wie berechnet man die Mitarbeiterfluktuation und was ist ein guter Wert?",
+    "description": "Die Fluktuationsrate ist die Zahl der Abgänge geteilt durch die durchschnittliche Mitarbeiterzahl. Formel, freiwillig vs. unfreiwillig, monatlich vs. jährlich und Richtwerte.",
+    "datePublished": "2026-10-05",
+    "dateModified": "2026-10-05",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/how-to-calculate-employee-turnover-rate/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Fluktuationsrate",
+        "item": "https://fulcrumgrid.com/de/blog/how-to-calculate-employee-turnover-rate/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wie berechnet man die Mitarbeiterfluktuation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Teilen Sie die Zahl der im Zeitraum ausgeschiedenen Beschäftigten durch den durchschnittlichen Personalbestand dieses Zeitraums und multiplizieren Sie mit 100. Der Durchschnitt ist Anfangs- plus Endbestand, geteilt durch zwei."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was ist eine gute Fluktuationsrate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Das hängt von Branche, Rollen und Größe ab. Vergleichen Sie sich mit Ihrer eigenen Historie und mit Vergleichsunternehmen nach derselben Definition und beobachten Sie Trend und Gründe statt eines allgemeinen Zielwerts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ist hohe Fluktuation immer schlecht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. Der Abgang leistungsschwacher Personen oder von Stellen, die Sie umbauen, kann gesund sein. Bedenklich ist hohe freiwillige Fluktuation bei Menschen, die Sie halten wollten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was ist der Unterschied zwischen Fluktuation und Attrition?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Begriffe werden oft gleichbedeutend verwendet. Attrition meint manchmal Abgänge, die nicht nachbesetzt werden, während die Fluktuation jeden Abgang zählt, ob die Stelle neu besetzt wird oder nicht."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / Fluktuationsrate</p>
+        <span class="tag tag-accent">HR</span>
+        <h1>Wie berechnet man die Mitarbeiterfluktuation und was ist ein guter Wert?</h1>
+        <p class="hero-intro">Die Fluktuationsrate ist die Zahl der Abgänge geteilt durch die durchschnittliche Mitarbeiterzahl. Formel, freiwillig vs. unfreiwillig, monatlich vs. jährlich und Richtwerte.</p>
+        <p class="mono"><time datetime="2026-10-05">5. Oktober 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Fast jeder HR-Bericht enthält eine Fluktuationszahl, und fast in jeder Führungsrunde fragt jemand, ob sie gut oder schlecht ist. Die ehrliche Antwort lautet: Die Zahl sagt wenig, solange man nicht weiß, wie sie berechnet wurde und womit sie verglichen wird. Dieser Leitfaden behandelt die Formel, die sinnvollen Varianten und was Sie mit dem Ergebnis anfangen.</p><h2>Was ist die Mitarbeiterfluktuation?</h2><p>Die Fluktuationsrate ist der Prozentsatz der Belegschaft, der in einem Zeitraum, meist einem Jahr, das Unternehmen verlässt. Sie zählt Kündigungen, Entlassungen, Renteneintritte und jedes andere Ende eines Beschäftigungsverhältnisses und wird an der durchschnittlichen Größe Ihres Teams im gleichen Zeitraum gemessen.</p><h2>Die Grundformel</h2><p>Die übliche Berechnung lautet:</p><p><strong>Fluktuationsrate = (Anzahl der Abgänge &divide; durchschnittlicher Personalbestand) &times; 100</strong></p><p>Der durchschnittliche Personalbestand ist der Bestand zu Beginn plus der Bestand am Ende des Zeitraums, geteilt durch zwei. Ein Rechenbeispiel:</p><ul><li>Personalbestand am 1. Januar: 120.</li><li>Personalbestand am 31. Dezember: 130, der Durchschnitt beträgt also 125.</li><li>Im Jahr ausgeschiedene Beschäftigte: 20.</li><li>Fluktuationsrate: 20 &divide; 125 &times; 100 = <strong>16 %</strong>.</li></ul><p>Verwenden Sie jedes Mal dieselbe Definition. Zählt ein Bericht Praktikanten mit und ein anderer nicht, führt der Trend in die Irre.</p><h2>Freiwillige und unfreiwillige Fluktuation</h2><p>Eine einzelne Gesamtzahl verbirgt die nützlichste Information: warum die Leute gegangen sind.</p><ul><li><strong>Freiwillige Fluktuation</strong> umfasst Kündigungen durch Beschäftigte und Renteneintritte, bei denen die Person selbst gehen wollte.</li><li><strong>Unfreiwillige Fluktuation</strong> umfasst Entlassungen, betriebsbedingte Kündigungen und nicht verlängerte Verträge auf Entscheidung des Arbeitgebers.</li></ul><p>Angenommen, im obigen Beispiel haben 14 der 20 Abgänge selbst gekündigt und 6 wurden entlassen. Die freiwillige Fluktuation beträgt 14 &divide; 125 = 11,2 %, die unfreiwillige 6 &divide; 125 = 4,8 %. Beide deuten auf unterschiedliche Probleme hin. Hohe freiwillige Fluktuation spricht für Probleme bei Gehalt, Führung, Arbeitsbelastung oder Entwicklung. Hohe unfreiwillige Fluktuation spricht für Probleme bei Auswahl oder Einarbeitung. Viele Teams trennen zudem bedauerte Abgänge aus, also Menschen, die Sie gern gehalten hätten, denn der Verlust einer Leistungsträgerin ist etwas anderes als der Verlust einer Stelle, die Sie ohnehin umbauen wollten.</p><h2>Jährliche und monatliche Fluktuation</h2><p>Sie können die Fluktuation für jeden Zeitraum berechnen. Die Formel bleibt gleich, nur das Zeitfenster ändert sich.</p><ul><li><strong>Jährlich</strong> ist am gebräuchlichsten und lässt sich am leichtesten mit anderen Unternehmen vergleichen.</li><li><strong>Monatlich oder vierteljährlich</strong> hilft, ein Problem früh zu erkennen, doch ein einzelner Monat schwankt stark, besonders in kleinen Teams.</li></ul><p>Verlassen in einem Monat drei Personen das Unternehmen und der durchschnittliche Bestand liegt bei 125, beträgt die monatliche Fluktuation 2,4 %. Mal zwölf ergibt das hochgerechnet rund 29 % im Jahr, was die Lage überzeichnet, wenn der Monat ungewöhnlich war. Für ein stabileres Bild nutzen Sie einen gleitenden Zwölfmonatswert, der jeden Monat neu berechnet wird.</p><h2>Fluktuation bei Neueinstellungen</h2><p>Die Fluktuation bei Neueinstellungen, auch Frühfluktuation genannt, erfasst Personen, die kurz nach dem Eintritt wieder gehen. Eine gängige Variante: die Zahl der Eingestellten, die innerhalb von 90 Tagen gegangen sind, geteilt durch die Zahl der Eingestellten dieser Gruppe.</p><p>Haben Sie im Jahr 30 Personen eingestellt und 6 sind in den ersten 90 Tagen gegangen, liegt die Frühfluktuation bei 20 %. Diese Zahl verdient eine eigene Beobachtung, weil sie eher auf Auswahl und Einarbeitung als auf die allgemeine Kultur hinweist. Gehen Menschen schnell, liegt die Ursache oft in einem Unterschied zwischen ausgeschriebener und erlebter Stelle oder in schwachen ersten Wochen.</p><h2>Was ist also ein guter Wert?</h2><p>Eine allgemeingültige gute Zahl gibt es nicht, und wer ohne Kontext eine nennt, sollte mit Vorsicht betrachtet werden. Einige Vorbehalte beim Lesen von Richtwerten:</p><ul><li><strong>Die Branche spielt eine große Rolle.</strong> Gastgewerbe, Einzelhandel und Callcenter haben meist deutlich höhere Fluktuation als öffentlicher Dienst, Bildung oder Versorger.</li><li><strong>Die Rolle spielt eine Rolle.</strong> Einstiegs- und Saisonstellen wechseln schneller als Senior- oder Spezialistenstellen.</li><li><strong>Die Unternehmensgröße spielt eine Rolle.</strong> In einem Team von zehn Personen sind es bei einem Abgang schon 10 %.</li><li><strong>Definitionen unterscheiden sich.</strong> Manche veröffentlichten Zahlen enthalten nur freiwillige Abgänge, manche Renteneintritte, manche schließen Zeitarbeitskräfte aus.</li><li><strong>Etwas Fluktuation ist gesund.</strong> Eine Rate von null kann bedeuten, dass Menschen bleiben, weil sie keine Alternative haben, und dass kaum frische Ideen hinzukommen.</li></ul><p>Der bessere Maßstab ist Ihre eigene Historie. Vergleichen Sie dieses Jahr mit den letzten drei, vergleichen Sie Abteilungen untereinander und vergleichen Sie sich mit einer Vergleichsgruppe Ihrer Branche und Region nach derselben Definition. Ein Anstieg ist wichtiger als das absolute Niveau.</p><h2>Was tun mit der Zahl?</h2><ol><li>Schlüsseln Sie sie nach Abteilung, Führungskraft, Betriebszugehörigkeit und Rolle auf. Gesamt 16 % können ein Team mit 40 % verbergen.</li><li>Trennen Sie freiwillig von unfreiwillig und bedauert von nicht bedauert.</li><li>Lesen Sie Austrittsgespräche und Bleibegespräche auf Muster, nicht auf einzelne Beschwerden.</li><li>Beziffern Sie die Kosten grob. Eine Nachbesetzung kostet oft einen spürbaren Anteil des Jahresgehalts, wenn Recruiting, Einarbeitung und Produktivitätsverlust mitgerechnet werden.</li><li>Wählen Sie ein oder zwei Maßnahmen, etwa bessere Einarbeitung oder Führungskräfteschulung, und prüfen Sie, ob sich die Rate in den nächsten zwei Quartalen bewegt.</li></ol><p>Wenn Sie diesen Bericht bisher von Hand aus Tabellen erstellen, bündelt <strong>FulcrumGrid HR Suite</strong> Personalakten, Ein- und Austrittsdaten sowie Austrittsgründe an einem Ort, sodass sich Bestand und Abgänge einheitlicher abrufen lassen. Eine gepflegte Tabelle funktioniert ebenfalls, solange die Definitionen fest bleiben.</p><p>Berechnen Sie die Rate immer gleich, schlüsseln Sie sie auf und nutzen Sie sie, um bessere Fragen zu stellen, nicht um zu urteilen.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Wie berechnet man die Mitarbeiterfluktuation?</summary><p>Teilen Sie die Zahl der im Zeitraum ausgeschiedenen Beschäftigten durch den durchschnittlichen Personalbestand dieses Zeitraums und multiplizieren Sie mit 100. Der Durchschnitt ist Anfangs- plus Endbestand, geteilt durch zwei.</p></details>
+        <details class="faq-item"><summary>Was ist eine gute Fluktuationsrate?</summary><p>Das hängt von Branche, Rollen und Größe ab. Vergleichen Sie sich mit Ihrer eigenen Historie und mit Vergleichsunternehmen nach derselben Definition und beobachten Sie Trend und Gründe statt eines allgemeinen Zielwerts.</p></details>
+        <details class="faq-item"><summary>Ist hohe Fluktuation immer schlecht?</summary><p>Nein. Der Abgang leistungsschwacher Personen oder von Stellen, die Sie umbauen, kann gesund sein. Bedenklich ist hohe freiwillige Fluktuation bei Menschen, die Sie halten wollten.</p></details>
+        <details class="faq-item"><summary>Was ist der Unterschied zwischen Fluktuation und Attrition?</summary><p>Die Begriffe werden oft gleichbedeutend verwendet. Attrition meint manchmal Abgänge, die nicht nachbesetzt werden, während die Fluktuation jeden Abgang zählt, ob die Stelle neu besetzt wird oder nicht.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid HR Suite</p>
+        <h2>Bestand und Abgänge an einem Ort</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid HR Suite bündelt Personalakten, Daten und Austrittsgründe, damit sich die Fluktuationsrate jedes Mal gleich berechnen lässt.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/hr-suite/">Entdecken HR Suite</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

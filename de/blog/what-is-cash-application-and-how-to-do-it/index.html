@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Was ist Zahlungszuordnung und wie ordnet man Zahlungen Rechnungen zu? — FulcrumGrid</title>
+  <meta name="description" content="Zahlungszuordnung heißt, eingehende Zahlungen offenen Rechnungen zuzuordnen. So gehen Sie mit Avisdaten, Teilzahlungen und nicht zugeordnetem Geld genau um." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Was ist Zahlungszuordnung und wie ordnet man Zahlungen Rechnungen zu?" />
+  <meta property="og:description" content="Zahlungszuordnung heißt, eingehende Zahlungen offenen Rechnungen zuzuordnen. So gehen Sie mit Avisdaten, Teilzahlungen und nicht zugeordnetem Geld genau um." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/what-is-cash-application-and-how-to-do-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-05" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Was ist Zahlungszuordnung und wie ordnet man Zahlungen Rechnungen zu?" />
+  <meta name="twitter:description" content="Zahlungszuordnung heißt, eingehende Zahlungen offenen Rechnungen zuzuordnen. So gehen Sie mit Avisdaten, Teilzahlungen und nicht zugeordnetem Geld genau um." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/what-is-cash-application-and-how-to-do-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-cash-application-and-how-to-do-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-cash-application-and-how-to-do-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-cash-application-and-how-to-do-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-cash-application-and-how-to-do-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-cash-application-and-how-to-do-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-cash-application-and-how-to-do-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-cash-application-and-how-to-do-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-cash-application-and-how-to-do-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Was ist Zahlungszuordnung und wie ordnet man Zahlungen Rechnungen zu?",
+    "description": "Zahlungszuordnung heißt, eingehende Zahlungen offenen Rechnungen zuzuordnen. So gehen Sie mit Avisdaten, Teilzahlungen und nicht zugeordnetem Geld genau um.",
+    "datePublished": "2026-10-05",
+    "dateModified": "2026-10-05",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/what-is-cash-application-and-how-to-do-it/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Zahlungszuordnung",
+        "item": "https://fulcrumgrid.com/de/blog/what-is-cash-application-and-how-to-do-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist der Unterschied zwischen Zahlungszuordnung und Mahnwesen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Zahlungszuordnung verbucht erhaltene Zahlungen auf den richtigen Rechnungen. Das Mahnwesen verfolgt Rechnungen, die noch unbezahlt sind. Genaue Zuordnung hält das Mahnwesen auf die richtigen Konten fokussiert."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was mache ich mit nicht zugeordnetem Geld?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prüfen Sie es täglich. Suchen Sie den Zahler in Ihren Unterlagen, kontrollieren Sie die Bankreferenz und fragen Sie den Kunden nach Avisdetails. Was Sie nach wenigen Tagen nicht zuordnen können, eskalieren Sie und verfolgen es nach Alter."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie gehe ich mit einem Kunden um, der jede Rechnung kürzt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Suchen Sie das Muster. Es kann ein wiederkehrender Abzug, ein Einbehalt oder Streit über Konditionen sein. Erfassen Sie jedes Mal einen Grundcode und vereinbaren Sie mit dem Kunden eine Lösung, damit die nächste Zahlung vollständig eintrifft."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Lässt sich die Zahlungszuordnung vollständig automatisieren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Größtenteils, bei Routinezahlungen. Die automatische Zuordnung meistert exakte Treffer gut, aber Kürzungen, unklare Referenzen und Vorauszahlungen brauchen weiterhin einen Menschen. Automatisieren Sie die einfache Mehrheit und prüfen Sie die Ausnahmen."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / Zahlungszuordnung</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>Was ist Zahlungszuordnung und wie ordnet man Zahlungen Rechnungen zu?</h1>
+        <p class="hero-intro">Zahlungszuordnung heißt, eingehende Zahlungen offenen Rechnungen zuzuordnen. So gehen Sie mit Avisdaten, Teilzahlungen und nicht zugeordnetem Geld genau um.</p>
+        <p class="mono"><time datetime="2026-10-05">5. Oktober 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Ein Kunde zahlt. Das Geld landet auf Ihrem Bankkonto. Doch solange niemand diese Zahlung der richtigen Rechnung zuordnet, zeigen Ihre Bücher weiterhin, dass der Kunde Geld schuldet, und Ihr Mahnwesen jagt es vielleicht noch hinterher. Die Zahlungszuordnung (Cash Application) schließt diese Lücke. Dieser Leitfaden erklärt, was sie ist, wo Fehler passieren und wie Sie Zahlungen genau Rechnungen zuordnen.</p><h2>Was ist Zahlungszuordnung?</h2><p>Zahlungszuordnung ist der Prozess in der Debitorenbuchhaltung, bei dem eingehende Zahlungen den offenen Rechnungen zugeordnet werden, die sie ausgleichen, und das Ergebnis im Hauptbuch erfasst wird. Wird sie gut gemacht, stimmen die Kundensalden, die Fälligkeitsberichte sind verlässlich und niemand bekommt eine Erinnerung für eine bereits bezahlte Rechnung.</p><h2>Was ist nicht zugeordnetes Geld?</h2><p>Nicht zugeordnetes Geld ist Geld, das Sie erhalten, aber noch keiner Rechnung zugeordnet haben. Es liegt als Guthaben auf dem Konto, oft unter einer allgemeinen Bezeichnung. Ein Teil ist unvermeidlich, etwa eine Vorauszahlung oder Anzahlung. Vieles ist schlicht eine Zahlung mit fehlenden oder unklaren Angaben. Das Ziel ist nicht, jederzeit bei null zu sein, sondern einen kleinen Bestand mit bekanntem Alter und klarem Verantwortlichen, der schnell abgebaut wird.</p><h2>Der Zuordnungsprozess Schritt für Schritt</h2><h3>1. Zahlung und Avisdaten sammeln</h3><p>Avisdaten (Remittance) sind die Informationen, die eine Zahlung erklären: wer gezahlt hat, welche Rechnungen sie abdeckt und wie viel auf jede entfällt. Sie kommen in vielen Formen, etwa als Bankreferenz, per E-Mail gesendetes Zahlungsavis, Portal-Download oder Notiz auf einem Scheckabschnitt. Sammeln Sie sie täglich an einem Ort, statt erst zu suchen, wenn eine Zahlung nicht passt.</p><h3>2. Den Kunden identifizieren</h3><p>Zahler verwenden nicht immer den Namen auf Ihrer Rechnung. Eine Muttergesellschaft, ein Shared-Service-Center oder ein Zahlungsdienstleister kann das Geld senden. Führen Sie eine Liste bekannter Zahlernamen und Bankverbindungen, die jedem Kundenkonto zugeordnet sind, und ergänzen Sie sie bei jeder neuen Variante.</p><h3>3. Offenen Rechnungen zuordnen</h3><p>Der sauberste Fall ist die exakte Übereinstimmung: Die Zahlung entspricht einer Rechnung und die Referenz nennt deren Nummer. Danach kommen eine Zahlung für mehrere Rechnungen und mehrere Zahlungen für eine Rechnung. Ordnen Sie zuerst nach Rechnungsnummer zu, dann nach Betrag und Kunde, und erst zuletzt nach Ermessen.</p><h3>4. Buchen und abstimmen</h3><p>Ordnen Sie die Zahlung zu, aktualisieren Sie den Kundensaldo und stimmen Sie die Summe mit dem Kontoauszug ab. Stimmen die Summen nicht überein, klären Sie die Ursache, bevor Sie weitermachen.</p><h2>Umgang mit Kürzungen und Überzahlungen</h2><p>Eine Kürzung entsteht, wenn ein Kunde weniger als den Rechnungsbetrag zahlt. Lassen Sie den Restbetrag nicht einfach stehen. Finden Sie zuerst den Grund, denn er bestimmt Ihr weiteres Vorgehen.</p><ul><li><strong>Abzug vorgenommen.</strong> Der Kunde hat Skonto, eine Retoure oder einen behaupteten Schaden abgezogen. Erfassen Sie ihn mit einem Grundcode und geben Sie ihn zur Freigabe oder Ablehnung an die richtige Person weiter.</li><li><strong>Bankgebühren oder Quellensteuer.</strong> Die Differenz ist eine Gebühr oder ein Einbehalt. Buchen Sie sie korrekt und fordern Sie gegebenenfalls die Bescheinigung an.</li><li><strong>Streitfall.</strong> Der Kunde widerspricht einem Teil der Rechnung. Ordnen Sie das erhaltene Geld zu und leiten Sie den Rest in Ihren Reklamationsprozess.</li><li><strong>Einfacher Fehler.</strong> Ein Tippfehler oder eine Rundungsdifferenz. Kleine Beträge können einer schriftlichen Toleranzregel folgen, etwa alles unter einem festen Schwellenwert.</li></ul><p>Überzahlungen erfordern dieselbe Sorgfalt. Halten Sie den Mehrbetrag als Guthaben auf dem Konto und verrechnen Sie ihn mit Zustimmung des Kunden mit der nächsten Rechnung oder erstatten Sie ihn.</p><h2>Automatische Zuordnungsregeln, die Zeit sparen</h2><p>Die meisten Zahlungen sind unspektakulär, und das ist gut so. Legen Sie Regeln fest, damit Routinezahlungen sich selbst zuordnen und Menschen nur die Ausnahmen sehen:</p><ul><li><strong>Rechnungsnummer und Betrag exakt gleich.</strong> Automatisch zuordnen.</li><li><strong>Bekannter Zahler, eine offene Rechnung, gleicher Betrag.</strong> Automatisch zuordnen.</li><li><strong>Bekannter Zahler, Betrag entspricht der Summe mehrerer offener Rechnungen.</strong> Zuordnung vorschlagen und kurz von einem Menschen prüfen lassen.</li><li><strong>Betrag innerhalb einer kleinen Toleranz.</strong> Zuordnen und die winzige Differenz auf ein festgelegtes Konto buchen.</li><li><strong>Alles andere.</strong> In eine Ausnahmeliste mit den wahrscheinlichen Kandidaten schicken.</li></ul><p>Beginnen Sie mit vorsichtigen Regeln und beobachten Sie die Ergebnisse einige Wochen. Eine Regel, die fälschlich zuordnet, ist schlimmer als eine Zahlung, die auf einen Menschen wartet.</p><h2>Ein täglicher Rhythmus</h2><p>Zahlungszuordnung funktioniert am besten als kurze tägliche Routine, nicht als monatliche Aufräumaktion. Ein einfacher Rhythmus: jeden Morgen den Bankabruf importieren, die automatische Zuordnung laufen lassen, die Ausnahmeliste abarbeiten und dann jede Position prüfen, die seit mehr als ein paar Tagen offen ist. Fragen Sie fehlende Avisdetails beim Absender noch am selben Tag nach, solange die Zahlung ihm präsent ist. Einmal pro Woche prüfen Sie nicht zugeordnetes Geld nach Alter und Zahler und suchen nach Mustern, etwa einem Kunden, der nie Rechnungsnummern angibt.</p><h2>Häufige Fehler</h2><ul><li><strong>Standardmäßig der ältesten Rechnung zuordnen.</strong> Das kann versehentlich eine strittige Rechnung ausgleichen oder der Absicht des Kunden widersprechen.</li><li><strong>Zahlungen auf ein Klärungskonto parken.</strong> Ungeprüfte Posten bleiben dort gern liegen.</li><li><strong>Die Ursache wiederkehrender Ausnahmen ignorieren.</strong> Verursacht ein Kunde immer Probleme, beheben Sie seinen Avisprozess, nicht nur jede einzelne Zahlung.</li><li><strong>Die Bankabstimmung überspringen.</strong> Sie ist die Kontrolle, die Buchungsfehler früh aufdeckt.</li></ul><h2>Wo Werkzeuge helfen</h2><p>Eine Tabellenkalkulation reicht, solange das Volumen gering ist. Wachsen die Zahlungen, kostet die manuelle Zuordnung mehr Zeit als nötig. Wenn Sie Ihre Forderungen mit <strong>FulcrumGrid Collection</strong> verwalten, können Sie überfällige Rechnungen und Nachfassaktionen an einem Ort halten, was es leichter macht zu sehen, welche Konten nach der Zuordnung wirklich überfällig sind. Gute Avisgewohnheiten ersetzt es nicht, aber es kann das Nachfassen bereits beglichener Rechnungen verringern.</p><p>Holen Sie die Avisdaten ein, ordnen Sie Routinezahlungen per Regel zu, geben Sie jeder Ausnahme einen Verantwortlichen und prüfen Sie täglich. Genaue Zahlungszuordnung ist stille, stetige Arbeit und macht jede andere Kennzahl der Forderungen vertrauenswürdiger.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Was ist der Unterschied zwischen Zahlungszuordnung und Mahnwesen?</summary><p>Die Zahlungszuordnung verbucht erhaltene Zahlungen auf den richtigen Rechnungen. Das Mahnwesen verfolgt Rechnungen, die noch unbezahlt sind. Genaue Zuordnung hält das Mahnwesen auf die richtigen Konten fokussiert.</p></details>
+        <details class="faq-item"><summary>Was mache ich mit nicht zugeordnetem Geld?</summary><p>Prüfen Sie es täglich. Suchen Sie den Zahler in Ihren Unterlagen, kontrollieren Sie die Bankreferenz und fragen Sie den Kunden nach Avisdetails. Was Sie nach wenigen Tagen nicht zuordnen können, eskalieren Sie und verfolgen es nach Alter.</p></details>
+        <details class="faq-item"><summary>Wie gehe ich mit einem Kunden um, der jede Rechnung kürzt?</summary><p>Suchen Sie das Muster. Es kann ein wiederkehrender Abzug, ein Einbehalt oder Streit über Konditionen sein. Erfassen Sie jedes Mal einen Grundcode und vereinbaren Sie mit dem Kunden eine Lösung, damit die nächste Zahlung vollständig eintrifft.</p></details>
+        <details class="faq-item"><summary>Lässt sich die Zahlungszuordnung vollständig automatisieren?</summary><p>Größtenteils, bei Routinezahlungen. Die automatische Zuordnung meistert exakte Treffer gut, aber Kürzungen, unklare Referenzen und Vorauszahlungen brauchen weiterhin einen Menschen. Automatisieren Sie die einfache Mehrheit und prüfen Sie die Ausnahmen.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Mahnen Sie nur, was wirklich überfällig ist</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Collection hilft Ihnen, überfällige Rechnungen zu verfolgen und in sinnvollem Takt nachzufassen, damit sich Ihr Team auf wirklich verspätete Konten konzentriert.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/collection/">Entdecken Collection</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

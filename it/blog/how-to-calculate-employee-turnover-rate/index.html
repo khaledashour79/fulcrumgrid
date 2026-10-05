@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Come si calcola il tasso di turnover dei dipendenti e quale valore è buono? — FulcrumGrid</title>
+  <meta name="description" content="Il tasso di turnover è il numero di uscite diviso per l'organico medio. Formula, uscite volontarie e involontarie, dati mensili e annuali, e quale valore è buono." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Come si calcola il tasso di turnover dei dipendenti e quale valore è buono?" />
+  <meta property="og:description" content="Il tasso di turnover è il numero di uscite diviso per l'organico medio. Formula, uscite volontarie e involontarie, dati mensili e annuali, e quale valore è buono." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/how-to-calculate-employee-turnover-rate/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-05" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid HR Suite — people operations" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Come si calcola il tasso di turnover dei dipendenti e quale valore è buono?" />
+  <meta name="twitter:description" content="Il tasso di turnover è il numero di uscite diviso per l'organico medio. Formula, uscite volontarie e involontarie, dati mensili e annuali, e quale valore è buono." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-employee-turnover-rate/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Come si calcola il tasso di turnover dei dipendenti e quale valore è buono?",
+    "description": "Il tasso di turnover è il numero di uscite diviso per l'organico medio. Formula, uscite volontarie e involontarie, dati mensili e annuali, e quale valore è buono.",
+    "datePublished": "2026-10-05",
+    "dateModified": "2026-10-05",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/how-to-calculate-employee-turnover-rate/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida al turnover",
+        "item": "https://fulcrumgrid.com/it/blog/how-to-calculate-employee-turnover-rate/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Come si calcola il tasso di turnover dei dipendenti?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dividi il numero di dipendenti usciti nel periodo per l'organico medio dello stesso periodo e moltiplica per 100. L'organico medio è quello iniziale più quello finale, diviso per due."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual è un buon tasso di turnover?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dipende da settore, ruoli e dimensioni. Confrontati con la tua storia e con realtà simili usando la stessa definizione, e osserva trend e motivazioni anziché un obiettivo universale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Un turnover alto è sempre negativo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Perdere persone poco performanti o ruoli in via di riorganizzazione può essere sano. Preoccupa il turnover volontario alto tra chi volevi trattenere."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Che differenza c'è tra turnover e attrition?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Spesso i due termini si usano come sinonimi. L'attrition a volte indica le uscite non sostituite, mentre il turnover conta ogni uscita, che il ruolo venga rioccupato o meno."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida al turnover</p>
+        <span class="tag tag-accent">HR</span>
+        <h1>Come si calcola il tasso di turnover dei dipendenti e quale valore è buono?</h1>
+        <p class="hero-intro">Il tasso di turnover è il numero di uscite diviso per l'organico medio. Formula, uscite volontarie e involontarie, dati mensili e annuali, e quale valore è buono.</p>
+        <p class="mono"><time datetime="2026-10-05">5 ottobre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Quasi ogni report HR contiene un dato sul turnover, e quasi ogni riunione di direzione ha qualcuno che chiede se sia buono o cattivo. La risposta onesta è che il numero dice poco finché non si sa come è stato calcolato e con cosa viene confrontato. Questa guida spiega la formula, le varianti utili da monitorare e cosa fare una volta ottenuto il valore.</p><h2>Cos'è il tasso di turnover dei dipendenti?</h2><p>Il tasso di turnover è la percentuale di forza lavoro che lascia l'azienda in un periodo, di solito un anno. Conta chi si dimette, chi viene licenziato, chi va in pensione e chi conclude in altro modo il rapporto di lavoro, e si misura rispetto alla dimensione media del team nello stesso periodo.</p><h2>La formula di base</h2><p>Il calcolo standard è:</p><p><strong>Tasso di turnover = (numero di uscite &divide; organico medio) &times; 100</strong></p><p>L'organico medio è l'organico a inizio periodo più quello a fine periodo, diviso per due. Un esempio pratico:</p><ul><li>Organico al 1° gennaio: 120.</li><li>Organico al 31 dicembre: 130, quindi la media è 125.</li><li>Dipendenti usciti nel corso dell'anno: 20.</li><li>Tasso di turnover: 20 &divide; 125 &times; 100 = <strong>16%</strong>.</li></ul><p>Usa ogni volta la stessa definizione. Se un report conta gli stagisti e un altro no, il trend ti porterà fuori strada.</p><h2>Turnover volontario e involontario</h2><p>Un totale unico nasconde l'informazione più utile, cioè perché le persone se ne sono andate.</p><ul><li><strong>Il turnover volontario</strong> comprende dimissioni e pensionamenti, dove è stato il dipendente a scegliere di andare.</li><li><strong>Il turnover involontario</strong> comprende licenziamenti, esuberi e mancati rinnovi decisi dal datore di lavoro.</li></ul><p>Nell'esempio sopra, supponiamo che 14 delle 20 uscite siano dimissioni e 6 licenziamenti. Il turnover volontario è 14 &divide; 125 = 11,2%, quello involontario 6 &divide; 125 = 4,8%. Indicano problemi diversi. Un turnover volontario alto suggerisce questioni di retribuzione, gestione, carico di lavoro o crescita. Uno involontario alto suggerisce problemi di selezione o di inserimento. Molti team separano anche le perdite da rimpiangere, cioè le persone che avresti voluto trattenere, perché perdere un elemento di valore non è come perdere un ruolo che stavi per riorganizzare.</p><h2>Turnover annuale e mensile</h2><p>Puoi calcolare il turnover per qualsiasi periodo. La formula resta la stessa, cambia solo la finestra.</p><ul><li><strong>Annuale</strong> è il più comune e il più facile da confrontare con altre aziende.</li><li><strong>Mensile o trimestrale</strong> aiuta a individuare presto un problema, ma un singolo mese è molto variabile, soprattutto in un team piccolo.</li></ul><p>Se in un mese escono tre persone e l'organico medio è 125, il turnover mensile è del 2,4%. Moltiplicando per dodici si ottiene circa il 29% annualizzato, ma è una stima eccessiva se il mese è stato anomalo. Per una visione più stabile usa un valore mobile su dodici mesi, ricalcolato ogni mese.</p><h2>Turnover dei neoassunti</h2><p>Il turnover dei neoassunti, a volte chiamato abbandono precoce, segue chi se ne va poco dopo l'ingresso. Una versione comune: il numero di assunti usciti entro 90 giorni, diviso per il numero di assunti di quel gruppo.</p><p>Se hai assunto 30 persone nell'anno e 6 se ne sono andate nei primi 90 giorni, il turnover dei neoassunti è del 20%. Vale la pena osservare questo dato a parte, perché indica selezione e inserimento più che la cultura generale. Quando le persone se ne vanno in fretta, la causa è spesso uno scarto tra il lavoro annunciato e quello vissuto, o delle prime settimane deboli.</p><h2>Quindi, qual è un buon valore?</h2><p>Non esiste un valore buono universale, e chi ne cita uno senza contesto va preso con cautela. Alcune avvertenze quando leggi i benchmark:</p><ul><li><strong>Il settore conta moltissimo.</strong> Ristorazione, commercio al dettaglio e call center hanno di solito un turnover molto più alto di pubblica amministrazione, istruzione o servizi pubblici.</li><li><strong>Il ruolo conta.</strong> I ruoli d'ingresso e stagionali ruotano più in fretta di quelli senior o specialistici.</li><li><strong>La dimensione conta.</strong> In un team di dieci persone, un'uscita vale il 10%.</li><li><strong>Le definizioni differiscono.</strong> Alcuni dati pubblicati includono solo le uscite volontarie, altri i pensionamenti, altri escludono il personale temporaneo.</li><li><strong>Un po' di turnover è sano.</strong> Un tasso pari a zero può voler dire che le persone restano perché non hanno alternative e che le idee fresche arrivano di rado.</li></ul><p>Un benchmark migliore è la tua storia. Confronta quest'anno con i tre precedenti, confronta i reparti tra loro e confrontati con un gruppo di pari del tuo settore e della tua area usando la stessa definizione. Un aumento conta più del livello assoluto.</p><h2>Cosa fare con il dato</h2><ol><li>Scomponilo per reparto, responsabile, anzianità e ruolo. Un 16% complessivo può nascondere un team al 40%.</li><li>Separa volontario da involontario e uscite da rimpiangere da quelle che non lo sono.</li><li>Leggi le interviste di uscita e quelle di permanenza cercando schemi ricorrenti, non lamentele isolate.</li><li>Stima un costo approssimativo. Sostituire qualcuno costa spesso una quota rilevante della retribuzione annua, considerando selezione, formazione e produttività persa.</li><li>Scegli una o due azioni, come migliorare l'inserimento o formare i responsabili, e verifica se il tasso si muove nei due trimestri successivi.</li></ol><p>Se oggi costruisci questo report a mano dai fogli di calcolo, <strong>FulcrumGrid HR Suite</strong> tiene in un unico posto schede dei dipendenti, date di ingresso e uscita e motivi di cessazione, così organico e uscite si estraggono in modo più coerente. Anche un foglio di calcolo ben tenuto funziona, purché le definizioni restino fisse.</p><p>Calcolalo sempre allo stesso modo, scomponilo e usalo per porre domande migliori, non per giudicare.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Come si calcola il tasso di turnover dei dipendenti?</summary><p>Dividi il numero di dipendenti usciti nel periodo per l'organico medio dello stesso periodo e moltiplica per 100. L'organico medio è quello iniziale più quello finale, diviso per due.</p></details>
+        <details class="faq-item"><summary>Qual è un buon tasso di turnover?</summary><p>Dipende da settore, ruoli e dimensioni. Confrontati con la tua storia e con realtà simili usando la stessa definizione, e osserva trend e motivazioni anziché un obiettivo universale.</p></details>
+        <details class="faq-item"><summary>Un turnover alto è sempre negativo?</summary><p>No. Perdere persone poco performanti o ruoli in via di riorganizzazione può essere sano. Preoccupa il turnover volontario alto tra chi volevi trattenere.</p></details>
+        <details class="faq-item"><summary>Che differenza c'è tra turnover e attrition?</summary><p>Spesso i due termini si usano come sinonimi. L'attrition a volte indica le uscite non sostituite, mentre il turnover conta ogni uscita, che il ruolo venga rioccupato o meno.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid HR Suite</p>
+        <h2>Organico e uscite in un unico posto</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid HR Suite riunisce schede dei dipendenti, date e motivi di uscita, così il turnover si calcola sempre allo stesso modo.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/hr-suite/">Esplora HR Suite</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
