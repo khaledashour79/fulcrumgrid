@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wie findet man den Engpass in einem Geschäftsprozess? — FulcrumGrid</title>
+  <meta name="description" content="Ein Engpass begrenzt, was Ihr gesamter Prozess leisten kann. Erfahren Sie die Symptome, wie Sie den Ablauf abbilden, Warte- und Durchlaufzeit messen und den Engpass beheben." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wie findet man den Engpass in einem Geschäftsprozess?" />
+  <meta property="og:description" content="Ein Engpass begrenzt, was Ihr gesamter Prozess leisten kann. Erfahren Sie die Symptome, wie Sie den Ablauf abbilden, Warte- und Durchlaufzeit messen und den Engpass beheben." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/how-to-find-bottlenecks-in-a-process/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-04" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wie findet man den Engpass in einem Geschäftsprozess?" />
+  <meta name="twitter:description" content="Ein Engpass begrenzt, was Ihr gesamter Prozess leisten kann. Erfahren Sie die Symptome, wie Sie den Ablauf abbilden, Warte- und Durchlaufzeit messen und den Engpass beheben." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/how-to-find-bottlenecks-in-a-process/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-find-bottlenecks-in-a-process/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-find-bottlenecks-in-a-process/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-find-bottlenecks-in-a-process/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-find-bottlenecks-in-a-process/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-find-bottlenecks-in-a-process/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-find-bottlenecks-in-a-process/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-find-bottlenecks-in-a-process/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-find-bottlenecks-in-a-process/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wie findet man den Engpass in einem Geschäftsprozess?",
+    "description": "Ein Engpass begrenzt, was Ihr gesamter Prozess leisten kann. Erfahren Sie die Symptome, wie Sie den Ablauf abbilden, Warte- und Durchlaufzeit messen und den Engpass beheben.",
+    "datePublished": "2026-10-04",
+    "dateModified": "2026-10-04",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/how-to-find-bottlenecks-in-a-process/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Engpass-Leitfaden",
+        "item": "https://fulcrumgrid.com/de/blog/how-to-find-bottlenecks-in-a-process/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist der Unterschied zwischen einem Engpass und einem langsamen Schritt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ein langsamer Schritt braucht lange für seine eigene Arbeit. Ein Engpass begrenzt die Leistung des gesamten Prozesses. Ein Schritt kann langsam sein, ohne der Engpass zu sein, wenn seine Kapazität noch über der Nachfrage liegt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann ein Prozess mehrere Engpässe haben?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zu jedem Zeitpunkt ist ein Schritt der Hauptengpass, auch wenn andere dicht dahinter liegen. Haben Sie den ersten behoben, rückt der nächstlangsamste nach. Betrachten Sie die Arbeit deshalb als wiederkehrenden Zyklus."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie oft sollten wir nach Engpässen suchen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prüfen Sie die Schlangenlängen wöchentlich und machen Sie monatlich oder quartalsweise eine gründlichere Untersuchung. Tun Sie es früher, wenn sich Nachfrage, Besetzung, Werkzeuge oder der Prozess selbst ändern."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Brauche ich spezielle Software, um einen Engpass zu finden?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. Eine Prozesslandkarte, ein Zeitstempel für Ein- und Austritt jedes Vorgangs pro Schritt und eine Tabellenkalkulation genügen. Software hilft, sobald Sie die Zahlen laufend verfolgen möchten."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / Engpass-Leitfaden</p>
+        <span class="tag tag-accent">Betrieb</span>
+        <h1>Wie findet man den Engpass in einem Geschäftsprozess?</h1>
+        <p class="hero-intro">Ein Engpass begrenzt, was Ihr gesamter Prozess leisten kann. Erfahren Sie die Symptome, wie Sie den Ablauf abbilden, Warte- und Durchlaufzeit messen und den Engpass beheben.</p>
+        <p class="mono"><time datetime="2026-10-04">4. Oktober 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Die meisten Teams spüren das Problem lange, bevor sie es benennen können. Arbeit staut sich, Termine rutschen, alle wirken ausgelastet, und doch bleibt die Leistung gleich. Meist hält ein einziger Schritt im Prozess alles andere auf. Dieser Leitfaden erklärt, was ein Engpass ist, wie Sie ihn erkennen und messen und wie Sie ihn beheben, ohne das Problem nur an eine andere Stelle zu verschieben.</p><h2>Was ist ein Engpass?</h2><p>Ein Engpass ist der Schritt eines Prozesses mit der geringsten Kapazität im Verhältnis zur Nachfrage, die auf ihm lastet. Wie der Hals einer Flasche begrenzt er, wie schnell alles hindurchfließen kann, egal wie breit der Rest ist. Schafft ein Schritt 20 Vorgänge am Tag und jeder andere 50, liefert der ganze Prozess 20 am Tag. Jeden anderen Schritt zu beschleunigen, ändert nichts.</p><h2>Symptome, die auf einen Engpass hindeuten</h2><ul><li><strong>Warteschlangen vor einem Schritt.</strong> Dort wartet die Arbeit, während die nachfolgenden Schritte halb leer laufen.</li><li><strong>Leerlauf danach.</strong> Wer nach dem Engpass arbeitet, wartet darauf, dass Arbeit ankommt.</li><li><strong>Überlastete Personen oder Maschinen.</strong> Eine Person oder ein System hängt ständig hinterher, macht Überstunden oder wird dauernd nach dem Stand gefragt.</li><li><strong>Lange und unberechenbare Durchlaufzeiten.</strong> Vorgänge warten viel länger, als an ihnen gearbeitet wird.</li><li><strong>Eilaufträge und Eskalationen.</strong> Derselbe Schritt bekommt immer wieder dringende Bitten, sich vorzudrängeln.</li><li><strong>Nacharbeit und Abkürzungen.</strong> Druck an einer Stelle führt zu Fehlern, die später zurückkommen.</li></ul><p>Eine Warnung: Der scheinbar geschäftigste Schritt ist nicht immer der Engpass. Prüfen Sie es mit Daten, bevor Sie handeln.</p><h2>Schritt 1: Den Ablauf abbilden</h2><p>Schreiben Sie jeden Schritt auf, vom Eingang einer Anfrage bis zu ihrer Auslieferung. Gehen Sie den tatsächlichen Prozess gemeinsam mit den Menschen durch, die die Arbeit machen, nicht den aus dem Verfahrenshandbuch. Notieren Sie für jeden Schritt, wer ihn verantwortet, was hineinkommt, was herausgeht und wo die Arbeit zwischen den Schritten wartet. Acht bis zwölf Kästchen auf einem Whiteboard genügen. Beziehen Sie die Übergaben ein, denn dort liegt Arbeit am häufigsten unbemerkt herum.</p><h2>Schritt 2: Wartezeit und Bearbeitungszeit messen</h2><p>Erheben Sie für jeden Schritt zwei Zahlen:</p><ul><li><strong>Bearbeitungszeit.</strong> Wie lange die Arbeit tatsächlich dauert, sobald jemand damit begonnen hat.</li><li><strong>Wartezeit.</strong> Wie lange sie liegt, bevor jemand anfängt.</li></ul><p>Notieren Sie außerdem den Durchsatz, also wie viele Vorgänge jeder Schritt pro Tag oder Woche abschließt, und wie viele davor warten. Ziehen Sie wenn möglich eine Stichprobe von 20 bis 30 aktuellen Vorgängen, denn eine einzelne Woche kann täuschen. Der Engpass ist meist der Schritt mit der längsten Schlange und der geringsten Durchsatzkapazität, nicht unbedingt der mit der längsten Bearbeitungszeit.</p><h3>Ein kurzes Beispiel</h3><p>Eine kleine Firma schickt Kunden Angebote. Die Anfrage entgegenzunehmen kostet 15 Minuten Arbeit, das Angebot zu erstellen 45 Minuten, die Freigabe durch den Chef 10 Minuten und der Versand des Vertrags 15 Minuten. Trotzdem dauert ein Angebot insgesamt drei Tage. Die Messung der Warteschlangen zeigt das Problem: Angebote warten etwa zwei Tage auf die Freigabe, weil ein einziger Vorgesetzter sie einmal am Tag unterschreibt. Der Schritt mit nur 10 Minuten echter Arbeit ist der Engpass. Eine weitere Person zum Angebotsschreiben hätte alles verschlimmert.</p><h2>Die Engpasstheorie in einfachen Worten</h2><p>Die Theory of Constraints von Eliyahu Goldratt beruht auf einem Gedanken: Jeder Prozess hat einen Engpass, der sein Tempo bestimmt, und alles andere zu verbessern ist verschwendeter Aufwand. Die praktische Routine ist einfach. Engpass erkennen. Das Beste aus ihm herausholen. Alles andere darauf ausrichten. Nur wenn das nicht reicht, Kapazität aufbauen. Dann von vorn beginnen, denn der Engpass wird gewandert sein.</p><h2>Schritt 3: Den Engpass beheben</h2><h3>Schützen und ausreizen</h3><p>Sorgen Sie dafür, dass der Engpass nie wartet und nicht an der falschen Sache arbeitet. Nehmen Sie Unterbrechungen, Meetings und Aufgaben mit geringem Wert von ihm fern. Versorgen Sie ihn mit vollständiger, korrekter Arbeit, damit nichts zurückkommt. Im Angebotsbeispiel bekommt der Vorgesetzte eine klare Checkliste, damit Freigaben in einem Durchgang erledigt sind.</p><h3>Alles andere darauf ausrichten</h3><p>Vorgelagerte Schritte sollten nicht mehr Arbeit hineinkippen, als der Engpass bewältigen kann, denn zusätzliche Arbeit verlängert nur Schlange und Durchlaufzeit. Begrenzen Sie die laufenden Arbeiten und geben Sie neue Vorgänge im Takt des Engpasses frei.</p><h3>Kapazität erhöhen</h3><p>Reicht der Schutz nicht, erhöhen Sie die Kapazität: Freigaben unterhalb einer Schwelle delegieren, eine zweite Person einarbeiten, eine Schicht ergänzen, eine wiederkehrende Aufgabe automatisieren oder den Schritt teilen. Tun Sie das zuletzt, denn es kostet meist Geld, während die früheren Maßnahmen oft nichts kosten.</p><h2>Schritt 4: Erneut prüfen</h2><p>Wenn Sie einen Engpass entlasten, wird ein anderer Schritt zum langsamsten. Das ist Fortschritt, kein Scheitern. Messen Sie nach jeder Änderung Wartezeit, Bearbeitungszeit und Durchsatz neu und vergleichen Sie mit Ihrer Ausgangslage. Wiederholen Sie den Zyklus alle paar Wochen oder wenn sich Nachfrage, Besetzung oder Werkzeuge ändern. Achten Sie auf die typischen Fallen: einen Schritt zu optimieren, der nur beschäftigt aussieht, den Engpass an eine schwerer sichtbare Stelle zu verlagern oder nach einer guten Woche den Sieg zu erklären.</p><h2>Sichtbar halten</h2><p>Engpässe kehren zurück, wenn niemand hinsieht. Ein gemeinsames Board, eine wöchentliche Durchsicht der Schlangenlängen und ein paar einfache KPIs genügen. Wenn Sie Projekte und KPIs ohnehin in <strong>FulcrumGrid Command Center</strong> führen, können Sie Schlangengröße und Durchlaufzeit neben Ihren anderen Zielen verfolgen, sodass eine wachsende Schlange früh auffällt. Eine Tabellenkalkulation tut es auch, solange jemand jede Woche hineinschaut.</p><p>Finden Sie den einen Schritt, der das Ganze begrenzt, messen Sie ihn ehrlich, beheben Sie ihn und schauen Sie erneut hin. Diese Schleife bringt mehr für Ihre Leistung, als überall härter zu arbeiten.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Was ist der Unterschied zwischen einem Engpass und einem langsamen Schritt?</summary><p>Ein langsamer Schritt braucht lange für seine eigene Arbeit. Ein Engpass begrenzt die Leistung des gesamten Prozesses. Ein Schritt kann langsam sein, ohne der Engpass zu sein, wenn seine Kapazität noch über der Nachfrage liegt.</p></details>
+        <details class="faq-item"><summary>Kann ein Prozess mehrere Engpässe haben?</summary><p>Zu jedem Zeitpunkt ist ein Schritt der Hauptengpass, auch wenn andere dicht dahinter liegen. Haben Sie den ersten behoben, rückt der nächstlangsamste nach. Betrachten Sie die Arbeit deshalb als wiederkehrenden Zyklus.</p></details>
+        <details class="faq-item"><summary>Wie oft sollten wir nach Engpässen suchen?</summary><p>Prüfen Sie die Schlangenlängen wöchentlich und machen Sie monatlich oder quartalsweise eine gründlichere Untersuchung. Tun Sie es früher, wenn sich Nachfrage, Besetzung, Werkzeuge oder der Prozess selbst ändern.</p></details>
+        <details class="faq-item"><summary>Brauche ich spezielle Software, um einen Engpass zu finden?</summary><p>Nein. Eine Prozesslandkarte, ein Zeitstempel für Ein- und Austritt jedes Vorgangs pro Schritt und eine Tabellenkalkulation genügen. Software hilft, sobald Sie die Zahlen laufend verfolgen möchten.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Ihre Prozesskennzahlen an einem Ort</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center hilft Ihnen, Projekte und KPIs gemeinsam zu verfolgen, damit Schlangenlänge und Durchlaufzeit sichtbar bleiben und ein wachsender Engpass früh auffällt.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/command-center/">Entdecken Command Center</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

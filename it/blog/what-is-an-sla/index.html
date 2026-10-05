@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Cos'è un SLA e come fissare obiettivi di servizio realistici? — FulcrumGrid</title>
+  <meta name="description" content="Un SLA è una promessa scritta sul servizio che offri. Scopri cosa deve includere, come fissare obiettivi davvero raggiungibili e come rivederli nel tempo." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cos'è un SLA e come fissare obiettivi di servizio realistici?" />
+  <meta property="og:description" content="Un SLA è una promessa scritta sul servizio che offri. Scopri cosa deve includere, come fissare obiettivi davvero raggiungibili e come rivederli nel tempo." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/what-is-an-sla/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-03" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cos'è un SLA e come fissare obiettivi di servizio realistici?" />
+  <meta name="twitter:description" content="Un SLA è una promessa scritta sul servizio che offri. Scopri cosa deve includere, come fissare obiettivi davvero raggiungibili e come rivederli nel tempo." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/what-is-an-sla/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-an-sla/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-an-sla/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-an-sla/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-an-sla/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-an-sla/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-an-sla/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-an-sla/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-an-sla/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cos'è un SLA e come fissare obiettivi di servizio realistici?",
+    "description": "Un SLA è una promessa scritta sul servizio che offri. Scopri cosa deve includere, come fissare obiettivi davvero raggiungibili e come rivederli nel tempo.",
+    "datePublished": "2026-10-03",
+    "dateModified": "2026-10-03",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/what-is-an-sla/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida all'SLA",
+        "item": "https://fulcrumgrid.com/it/blog/what-is-an-sla/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual è la differenza tra SLA e contratto?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un contratto copre l'intero rapporto commerciale, inclusi prezzo, responsabilità e durata. Lo SLA ne è di solito una parte, incentrata sui livelli di servizio misurabili e su ciò che accade quando non vengono raggiunti."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual è un buon obiettivo di disponibilità per uno SLA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dipende da ciò che puoi offrire e da ciò che serve agli utenti. Il 99,5% consente circa 3,6 ore di fermo al mese, il 99,9% circa 43 minuti. Controlla il tuo storico e i tuoi fornitori prima di scegliere."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "I team interni hanno bisogno di SLA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Spesso sì. Uno SLA interno tra, ad esempio, IT e finanza chiarisce aspettative e priorità senza peso legale. Tienilo breve e concentrati sulle poche richieste più importanti."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ogni quanto va rivisto uno SLA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Riferisci i risultati ogni mese e rivedi gli obiettivi stessi ogni sei-dodici mesi, o prima dopo un cambiamento importante in organico, strumenti o domanda."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida all'SLA</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Cos'è un SLA e come fissare obiettivi di servizio realistici?</h1>
+        <p class="hero-intro">Un SLA è una promessa scritta sul servizio che offri. Scopri cosa deve includere, come fissare obiettivi davvero raggiungibili e come rivederli nel tempo.</p>
+        <p class="mono"><time datetime="2026-10-03">3 ottobre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Ogni team che lavora per altri, clienti o colleghi di un altro reparto, fa promesse, dette o sottintese. &laquo;Risponderemo in fretta.&raquo; &laquo;Il sistema è praticamente sempre attivo.&raquo; Un accordo sul livello di servizio (SLA) trasforma queste promesse vaghe in qualcosa che entrambe le parti possono misurare. Questa guida risponde alle domande più comuni: cos'è uno SLA, cosa contiene e come fissare obiettivi che puoi davvero mantenere.</p><h2>Cos'è un accordo sul livello di servizio?</h2><p>Uno SLA è un accordo scritto tra un fornitore di servizi e chi ne dipende. Stabilisce quale livello di servizio sarà garantito, come viene misurato e cosa succede se non viene raggiunto. Può essere esterno, tra un'azienda e i suoi clienti, o interno, tra due team come IT e finanza.</p><h2>Cosa deve includere uno SLA?</h2><ul><li><strong>Ambito.</strong> Cosa copre il servizio e, altrettanto importante, cosa non copre.</li><li><strong>Metriche.</strong> I numeri di cui riferirai, come disponibilità, tempo di prima risposta, tempo di risoluzione o tasso di errore.</li><li><strong>Obiettivi.</strong> Il valore che ogni metrica deve raggiungere, ad esempio il 99,5% di disponibilità o una prima risposta entro quattro ore lavorative.</li><li><strong>Periodo e metodo di misurazione.</strong> Al mese o al trimestre, con quale strumento, contando quali ore.</li><li><strong>Responsabilità.</strong> Cosa deve fornire il cliente, come accessi, informazioni o approvazioni tempestive.</li><li><strong>Rimedi.</strong> Crediti di servizio, escalation o una riunione di revisione quando un obiettivo non viene raggiunto.</li><li><strong>Esclusioni.</strong> Manutenzione programmata, eventi fuori dal tuo controllo e richieste fuori ambito.</li></ul><h2>SLA, SLO e SLI: qual è la differenza?</h2><p>I tre termini vengono spesso confusi. Un <strong>service level indicator (SLI)</strong> è la misurazione in sé, ad esempio la percentuale di richieste evase entro due secondi. Un <strong>service level objective (SLO)</strong> è l'obiettivo interno per quella misurazione, ad esempio il 99,9%. Lo <strong>SLA</strong> è l'accordo, con conseguenze associate. Una buona abitudine è fissare lo SLO interno leggermente più stretto dello SLA, così hai un margine di preavviso prima di infrangere una promessa.</p><h2>Come si fissano obiettivi realistici?</h2><h3>Parti dai dati, non dall'ambizione</h3><p>Guarda le prestazioni reali degli ultimi tre-sei mesi. Se oggi risolvi l'80% dei ticket in due giorni, promettere il 95% in un giorno è un desiderio, non un obiettivo. Scegli un numero che già rispetti quasi sempre, poi miglioralo in modo mirato.</p><h3>Chiedi di cosa hanno davvero bisogno i clienti</h3><p>Una risposta più veloce non ha sempre valore. Chiedi agli utenti quali ritardi danno fastidio e quali notano appena. Una prima risposta entro quattro ore può soddisfarli del tutto, mentre promettere un'ora ti costerebbe personale in più senza un vero beneficio.</p><h3>Tieni conto di capacità e dipendenze</h3><p>Il tuo obiettivo è solido quanto il tuo fornitore più debole. Se il tuo servizio dipende da un fornitore che garantisce il 99,5%, non puoi onestamente promettere il 99,9%. Verifica anche organico, festività e fusi orari.</p><h3>Usa livelli invece di un solo numero</h3><p>Non tutte le richieste sono uguali. Definisci livelli di priorità, con un obiettivo stretto per gli incidenti urgenti e uno più morbido per le richieste ordinarie. Fermati a tre o quattro livelli, così si ricordano.</p><h3>Esprimi gli obiettivi in percentuale</h3><p>&laquo;Ogni ticket evaso in quattro ore&raquo; verrà violato il primo giorno. &laquo;Il 95% dei ticket evaso entro quattro ore lavorative&raquo; è onesto riguardo alla giornata storta occasionale.</p><h2>Un esempio semplice</h2><p>Un team IT interno supporta 200 dipendenti. Lo scorso trimestre ha risposto all'88% dei ticket entro quattro ore lavorative e risolto il 90% degli incidenti urgenti entro otto ore. Potrebbe fissare questi obiettivi:</p><ul><li><strong>Urgente:</strong> prima risposta entro un'ora, 90% risolto entro otto ore.</li><li><strong>Normale:</strong> prima risposta entro quattro ore lavorative per il 92% dei ticket.</li><li><strong>Bassa:</strong> prima risposta entro due giorni lavorativi per il 95% dei ticket.</li></ul><p>Questi valori stanno poco sopra le prestazioni attuali, quindi mettono alla prova il team senza essere fantasia.</p><h2>Errori comuni con gli SLA</h2><ul><li><strong>Promettere il 100%.</strong> Nessun servizio è perfetto, e un obiettivo senza margine di errore verrà infranto.</li><li><strong>Troppe metriche.</strong> Da tre a cinque numeri scelti bene valgono più di venti che nessuno legge.</li><li><strong>Misurare ciò che è facile anziché ciò che conta.</strong> La disponibilità può segnare il 100% mentre gli utenti non riescono ad accedere.</li><li><strong>Fissarlo una volta e dimenticarlo.</strong> I bisogni cambiano, e l'accordo deve cambiare con loro.</li><li><strong>Nessuna revisione, nessun confronto.</strong> Uno SLA di cui non si parla mai è solo un documento.</li></ul><h2>Revisione e reportistica</h2><p>Riferisci i risultati con un ritmo regolare, mensile per la maggior parte dei team, e discuti gli scostamenti senza cercare colpevoli: qual è la causa, e a sbagliare è l'obiettivo o il processo? Rivedi gli obiettivi stessi ogni sei-dodici mesi. Per iniziare basta un foglio di calcolo. Se già monitori le tue operazioni in <strong>FulcrumGrid Command Center</strong>, puoi tenere le metriche dello SLA accanto agli altri KPI e progetti, così un tempo di risposta in peggioramento si vede prima della revisione mensile e non durante.</p><p>Parti da dati reali, prometti ciò che puoi mantenere e rivedilo spesso. Uno SLA realistico crea più fiducia di uno impressionante che non riesci a rispettare.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Qual è la differenza tra SLA e contratto?</summary><p>Un contratto copre l'intero rapporto commerciale, inclusi prezzo, responsabilità e durata. Lo SLA ne è di solito una parte, incentrata sui livelli di servizio misurabili e su ciò che accade quando non vengono raggiunti.</p></details>
+        <details class="faq-item"><summary>Qual è un buon obiettivo di disponibilità per uno SLA?</summary><p>Dipende da ciò che puoi offrire e da ciò che serve agli utenti. Il 99,5% consente circa 3,6 ore di fermo al mese, il 99,9% circa 43 minuti. Controlla il tuo storico e i tuoi fornitori prima di scegliere.</p></details>
+        <details class="faq-item"><summary>I team interni hanno bisogno di SLA?</summary><p>Spesso sì. Uno SLA interno tra, ad esempio, IT e finanza chiarisce aspettative e priorità senza peso legale. Tienilo breve e concentrati sulle poche richieste più importanti.</p></details>
+        <details class="faq-item"><summary>Ogni quanto va rivisto uno SLA?</summary><p>Riferisci i risultati ogni mese e rivedi gli obiettivi stessi ogni sei-dodici mesi, o prima dopo un cambiamento importante in organico, strumenti o domanda.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Guarda i tuoi livelli di servizio a colpo d'occhio</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center ti aiuta a seguire KPI e progetti in un unico posto, così tempi di risposta e obiettivi restano visibili per tutto il mese.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
