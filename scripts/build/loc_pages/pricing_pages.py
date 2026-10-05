@@ -1033,27 +1033,27 @@ PAGE['/pricing/hr-suite/'] = {
             "Dédié / sur site", "Dediziert / on-premise", "Dedicado / on-premise",
             "Dedicato / on-premise", "Dedicated / on-premise"),
         # ---- Saudi note ----
-        "Operating in Saudi Arabia?": _t(
-            "Vous opérez en Arabie saoudite ?",
-            "Sie sind in Saudi-Arabien tätig?",
-            "¿Opera en Arabia Saudí?",
-            "Operi in Arabia Saudita?",
-            "Actief in Saoedi-Arabië?"),
-        "Built for KSA compliance.": _t(
-            "Conçu pour la conformité KSA.",
-            "Für die KSA-Compliance gebaut.",
-            "Diseñado para el cumplimiento en KSA.",
-            "Progettato per la conformità KSA.",
-            "Gebouwd voor KSA-compliance."),
-        "WPS wage files, GOSI, end-of-service &amp; Nitaqat are built in.": _t(
-            "Les fichiers de paie WPS, la GOSI, l'indemnité de fin de service &amp; Nitaqat sont intégrés.",
-            "WPS-Lohndateien, GOSI, Abfindung &amp; Nitaqat sind integriert.",
-            "Los archivos salariales WPS, GOSI, fin de servicio &amp; Nitaqat están integrados.",
-            "I file salariali WPS, GOSI, fine servizio &amp; Nitaqat sono integrati.",
-            "WPS-loonbestanden, GOSI, einde dienstverband &amp; Nitaqat zijn ingebouwd."),
-        "See Saudi compliance →": _t(
-            "Voir la conformité saoudienne →", "Saudi-Compliance ansehen →", "Ver el cumplimiento saudí →",
-            "Vedi la conformità saudita →", "Bekijk Saoedische compliance →"),
+        "Wherever you operate": _t(
+            "Où que vous opériez",
+            "Wo immer Sie tätig sind",
+            "Dondequiera que opere",
+            "Ovunque operi",
+            "Waar u ook actief bent"),
+        "Built for your region.": _t(
+            "Conçu pour votre région.",
+            "Für Ihre Region gebaut.",
+            "Diseñado para su región.",
+            "Progettato per la tua regione.",
+            "Gebouwd voor uw regio."),
+        "Payroll, statutory year-end and compliance tuned to each market — across the Gulf, the UK, the US and Europe, with WPS, GOSI, end-of-service &amp; Nitaqat built in for the GCC.": _t(
+            "Paie, clôture annuelle légale et conformité adaptées à chaque marché — dans le Golfe, au Royaume-Uni, aux États-Unis et en Europe, avec WPS, GOSI, indemnité de fin de service &amp; Nitaqat intégrés pour le Golfe.",
+            "Gehaltsabrechnung, gesetzlicher Jahresabschluss und Compliance, abgestimmt auf jeden Markt — in der Golfregion, im Vereinigten Königreich, in den USA und in Europa, mit WPS, GOSI, Abfindung &amp; Nitaqat integriert für die Golfregion.",
+            "Nóminas, cierre anual legal y cumplimiento ajustados a cada mercado — en el Golfo, el Reino Unido, EE. UU. y Europa, con WPS, GOSI, fin de servicio &amp; Nitaqat integrados para el Golfo.",
+            "Buste paga, chiusura annuale di legge e conformità su misura per ogni mercato — nel Golfo, nel Regno Unito, negli Stati Uniti e in Europa, con WPS, GOSI, fine servizio &amp; Nitaqat integrati per il Golfo.",
+            "Loonadministratie, wettelijke jaarafsluiting en compliance afgestemd op elke markt — in de Golfregio, het VK, de VS en Europa, met WPS, GOSI, einde dienstverband &amp; Nitaqat ingebouwd voor de Golfregio."),
+        "See all regions →": _t(
+            "Voir toutes les régions →", "Alle Regionen ansehen →", "Ver todas las regiones →",
+            "Vedi tutte le regioni →", "Bekijk alle regio's →"),
         # ---- FAQ ----
         "HR Suite pricing, answered": _t(
             "Tarifs de HR Suite, expliqués", "HR Suite Preise, erklärt", "Precios de HR Suite, explicados",

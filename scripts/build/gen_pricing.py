@@ -407,7 +407,7 @@ def page(slug, d, lang='en'):
     ld_json = '<script type="application/ld+json">%s</script>\n  <script type="application/ld+json">%s</script>' % (
         json.dumps(app_ld, ensure_ascii=False), json.dumps(bc_ld, ensure_ascii=False))
 
-    # ── Optional Saudi region callout (HR Suite only) ──
+    # ── Optional region/compliance callout (HR Suite only) ──
     region_section = ''
     if slug == 'hr-suite':
         region_section = '''
@@ -415,10 +415,10 @@ def page(slug, d, lang='en'):
       <div class="wrap pad">
         <div class="section-head">
           <div>
-            <p class="mono mono-accent">Operating in Saudi Arabia?</p>
-            <h2>Built for KSA compliance.</h2>
+            <p class="mono mono-accent">Wherever you operate</p>
+            <h2>Built for your region.</h2>
           </div>
-          <p class="section-lead">WPS wage files, GOSI, end-of-service &amp; Nitaqat are built in. <a href="/regions/saudi-arabia/">See Saudi compliance →</a></p>
+          <p class="section-lead">Payroll, statutory year-end and compliance tuned to each market — across the Gulf, the UK, the US and Europe, with WPS, GOSI, end-of-service &amp; Nitaqat built in for the GCC. <a href="/regions/">See all regions →</a></p>
         </div>
       </div>
     </section>
