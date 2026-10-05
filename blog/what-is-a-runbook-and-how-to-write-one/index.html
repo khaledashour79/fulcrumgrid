@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>What Is a Runbook and How Do You Write One Your Team Will Use? — FulcrumGrid</title>
+  <meta name="description" content="A runbook is a step-by-step guide for a recurring task or incident. Learn how it differs from an SOP, what to include, and how to keep it useful over time." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What Is a Runbook and How Do You Write One Your Team Will Use?" />
+  <meta property="og:description" content="A runbook is a step-by-step guide for a recurring task or incident. Learn how it differs from an SOP, what to include, and how to keep it useful over time." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-05" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What Is a Runbook and How Do You Write One Your Team Will Use?" />
+  <meta name="twitter:description" content="A runbook is a step-by-step guide for a recurring task or incident. Learn how it differs from an SOP, what to include, and how to keep it useful over time." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-runbook-and-how-to-write-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What Is a Runbook and How Do You Write One Your Team Will Use?",
+    "description": "A runbook is a step-by-step guide for a recurring task or incident. Learn how it differs from an SOP, what to include, and how to keep it useful over time.",
+    "datePublished": "2026-10-05",
+    "dateModified": "2026-10-05",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/what-is-a-runbook-and-how-to-write-one/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Runbook Guide",
+        "item": "https://fulcrumgrid.com/blog/what-is-a-runbook-and-how-to-write-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is a runbook the same as a playbook?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The words overlap. Many teams use a runbook for exact, step-by-step technical or operational actions, and a playbook for broader strategy, such as how to run a major incident or a customer escalation, which may point to several runbooks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long should a runbook be?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As short as possible, ideally one or two pages. If it needs more, split it into smaller runbooks or link to background material instead of burying the steps."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who should write the runbook?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The person who does the task today should draft it, because they know the details. Then someone who has never done it should test and edit it, because they spot the missing assumptions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should runbooks be reviewed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Review critical runbooks every quarter and the rest twice a year. Update any runbook straight after it is used in a real incident or when the system it covers changes."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Runbook Guide</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>What Is a Runbook and How Do You Write One Your Team Will Use?</h1>
+        <p class="hero-intro">A runbook is a step-by-step guide for a recurring task or incident. Learn how it differs from an SOP, what to include, and how to keep it useful over time.</p>
+        <p class="mono"><time datetime="2026-10-05">October 5, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>It is 2 a.m., something has broken, and the one person who knows the fix is on a plane. Whether the problem is a failed payment run, a dead server or a stuck order queue, the next hour depends on one thing: is the knowledge written down, or is it only in someone&rsquo;s head? A runbook is how you write it down. This guide covers what a runbook is, how it differs from an SOP, and how to write one that people actually open when they are under pressure.</p><h2>What is a runbook?</h2><p>A runbook is a short, practical guide for handling a specific situation: a recurring task, a known failure or an incident. It tells the person on duty what triggered the situation, who owns it, exactly what to do, how to undo it if things get worse and who to call. The test of a good runbook is simple: could a competent colleague who has never done this task follow it alone, at night, without calling you?</p><h2>Runbook vs SOP: what is the difference?</h2><p>The two overlap, and many teams use the words interchangeably. A useful distinction:</p><ul><li><strong>An SOP (standard operating procedure)</strong> describes how routine work should always be done, such as onboarding a supplier or closing the month. It is about consistency and compliance, and it is usually read in advance.</li><li><strong>A runbook</strong> describes how to respond to a particular event or perform a specific operational task, often under time pressure. It is about speed and safety, and it is read in the moment.</li></ul><p>An SOP can be thorough and a little formal. A runbook should be blunt: short sentences, exact commands, no background essays. Link from the runbook to the SOP when someone needs the &ldquo;why&rdquo;.</p><h2>When should you write a runbook?</h2><p>You cannot document everything, so start where the pain is. Write a runbook when:</p><ul><li>A task is <strong>repeated</strong> and costly to get wrong, such as monthly payroll exports or a release.</li><li>An <strong>incident has happened twice</strong>. The second time is the signal.</li><li>Only <strong>one person</strong> knows how to do something. That is a risk, not an asset.</li><li>A task is <strong>rare but critical</strong>, like restoring from backup. Nobody remembers rare procedures.</li><li>New starters keep asking the <strong>same questions</strong>.</li></ul><h2>What should a runbook contain?</h2><p>Keep the same five parts in every runbook, so people always know where to look.</p><ul><li><strong>Trigger.</strong> When to use this runbook: the alert, symptom or calendar date. &ldquo;Checkout error rate above 5% for ten minutes&rdquo; is a trigger. &ldquo;When things look bad&rdquo; is not.</li><li><strong>Owner.</strong> One named person or role responsible for keeping it accurate, plus a date of the last review.</li><li><strong>Steps.</strong> A numbered list, one action per step, in the order they should happen, each with the expected result so the reader knows it worked.</li><li><strong>Rollback.</strong> How to return to the previous state if a step fails or makes things worse. Write this before you need it.</li><li><strong>Escalation.</strong> Who to contact if the steps do not solve it, in what order, how, and after how many minutes of trying.</li></ul><h2>How do you write steps people will follow?</h2><h3>One action per step</h3><p>&ldquo;Restart the service and check the logs&rdquo; is two steps. Split them, so a person under stress cannot skip half.</p><h3>Be exact</h3><p>Give the real command, the exact menu path or the actual link. &ldquo;Open the admin panel&rdquo; forces the reader to guess. Copy-paste beats interpretation at 2 a.m.</p><h3>State what success looks like</h3><p>After each key step, write what the reader should see: &ldquo;The status page shows Running.&rdquo; If it does not, they know to stop and escalate rather than continue blindly.</p><h2>A short example</h2><p>Here is the outline of a runbook for a stuck order queue:</p><ul><li><strong>Trigger:</strong> more than 50 orders waiting for over 15 minutes.</li><li><strong>Owner:</strong> operations lead; last reviewed in September.</li><li><strong>Steps:</strong> check the processor status page; restart the queue worker; confirm that the waiting count is falling within five minutes.</li><li><strong>Rollback:</strong> if the restart creates duplicate orders, pause the worker and follow the duplicate-order cleanup guide.</li><li><strong>Escalation:</strong> if the queue is not moving after 20 minutes, call the engineer on call, then the operations director.</li></ul><h2>How do you test a runbook?</h2><p>An untested runbook is a guess. Give it to someone who did not write it and have them follow it, ideally in a safe environment or a drill, while you watch silently. Every place they hesitate, ask a question or improvise is a gap to fix. Run these drills once or twice a year for critical runbooks. After every real incident, ask one more question in the review: did the runbook help, and what would have made it better?</p><h2>How do you keep a runbook current?</h2><ul><li><strong>Give every runbook an owner and a review date.</strong> Quarterly for critical ones, twice a year for the rest.</li><li><strong>Update after every use.</strong> The person who just followed it knows best what was wrong or missing, so make fixing it part of closing the incident.</li><li><strong>Tie it to change.</strong> When a system, tool or supplier changes, updating the related runbooks belongs on the same checklist.</li><li><strong>Keep it findable.</strong> A perfect runbook in a forgotten folder is useless. Store them in one place, with clear names, linked from the alert itself where possible.</li></ul><h2>Where to keep your runbooks</h2><p>A shared document or wiki is enough to start. What matters more than the tool is that runbooks sit close to the work. If you already track operations, tasks and KPIs in <strong>FulcrumGrid Command Center</strong>, you can link each runbook to the project or metric it protects, and assign review dates to owners like any other task, so they do not quietly expire. But start with whatever your team will really open.</p><p>Pick the one incident that hurt most last quarter, write its runbook this week, and test it with someone new. A single good runbook will do more for your team than a binder full of untested ones.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>Is a runbook the same as a playbook?</summary><p>The words overlap. Many teams use a runbook for exact, step-by-step technical or operational actions, and a playbook for broader strategy, such as how to run a major incident or a customer escalation, which may point to several runbooks.</p></details>
+        <details class="faq-item"><summary>How long should a runbook be?</summary><p>As short as possible, ideally one or two pages. If it needs more, split it into smaller runbooks or link to background material instead of burying the steps.</p></details>
+        <details class="faq-item"><summary>Who should write the runbook?</summary><p>The person who does the task today should draft it, because they know the details. Then someone who has never done it should test and edit it, because they spot the missing assumptions.</p></details>
+        <details class="faq-item"><summary>How often should runbooks be reviewed?</summary><p>Review critical runbooks every quarter and the rest twice a year. Update any runbook straight after it is used in a real incident or when the system it covers changes.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Keep your runbooks tied to the work</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center helps you track tasks, owners and KPIs in one place, so runbook reviews are assigned and nothing quietly goes stale.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

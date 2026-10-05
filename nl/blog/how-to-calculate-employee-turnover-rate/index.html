@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Hoe bereken je het personeelsverloop en wat is een goed percentage? — FulcrumGrid</title>
+  <meta name="description" content="Het verloopcijfer is het aantal vertrekkers gedeeld door de gemiddelde personeelsomvang. Formule, vrijwillig vs. onvrijwillig, per maand vs. per jaar en richtcijfers." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Hoe bereken je het personeelsverloop en wat is een goed percentage?" />
+  <meta property="og:description" content="Het verloopcijfer is het aantal vertrekkers gedeeld door de gemiddelde personeelsomvang. Formule, vrijwillig vs. onvrijwillig, per maand vs. per jaar en richtcijfers." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/how-to-calculate-employee-turnover-rate/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-10-05" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid HR Suite — people operations" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hoe bereken je het personeelsverloop en wat is een goed percentage?" />
+  <meta name="twitter:description" content="Het verloopcijfer is het aantal vertrekkers gedeeld door de gemiddelde personeelsomvang. Formule, vrijwillig vs. onvrijwillig, per maand vs. per jaar en richtcijfers." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-employee-turnover-rate/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-employee-turnover-rate/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hoe bereken je het personeelsverloop en wat is een goed percentage?",
+    "description": "Het verloopcijfer is het aantal vertrekkers gedeeld door de gemiddelde personeelsomvang. Formule, vrijwillig vs. onvrijwillig, per maand vs. per jaar en richtcijfers.",
+    "datePublished": "2026-10-05",
+    "dateModified": "2026-10-05",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/how-to-calculate-employee-turnover-rate/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Verloopcijfer-gids",
+        "item": "https://fulcrumgrid.com/nl/blog/how-to-calculate-employee-turnover-rate/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Hoe bereken je het personeelsverloop?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Deel het aantal medewerkers dat in de periode vertrok door de gemiddelde personeelsomvang in die periode en vermenigvuldig met 100. Het gemiddelde is de omvang aan het begin plus die aan het einde, gedeeld door twee."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is een goed verloopcijfer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dat hangt af van je sector, functies en omvang. Vergelijk jezelf met je eigen historie en met vergelijkbare bedrijven volgens dezelfde definitie, en let op de trend en de redenen in plaats van op één universeel doel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is hoog verloop altijd slecht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. Het vertrek van slecht presterende medewerkers of van functies die je herstructureert kan gezond zijn. Zorgwekkend is hoog vrijwillig verloop onder mensen die je wilde behouden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is het verschil tussen verloop en uitstroom?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De termen worden vaak door elkaar gebruikt. Uitstroom verwijst soms naar vertrek dat niet wordt aangevuld, terwijl verloop elk vertrek telt, of de functie nu opnieuw wordt ingevuld of niet."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / Verloopcijfer-gids</p>
+        <span class="tag tag-accent">HR</span>
+        <h1>Hoe bereken je het personeelsverloop en wat is een goed percentage?</h1>
+        <p class="hero-intro">Het verloopcijfer is het aantal vertrekkers gedeeld door de gemiddelde personeelsomvang. Formule, vrijwillig vs. onvrijwillig, per maand vs. per jaar en richtcijfers.</p>
+        <p class="mono"><time datetime="2026-10-05">5 oktober 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Bijna elk HR-rapport bevat een verloopcijfer, en bijna elk managementoverleg kent iemand die vraagt of het goed of slecht is. Het eerlijke antwoord is dat het getal weinig zegt zolang je niet weet hoe het is berekend en waarmee het wordt vergeleken. Deze gids behandelt de formule, de varianten die het volgen waard zijn en wat je met het cijfer doet.</p><h2>Wat is het personeelsverloop?</h2><p>Het verloopcijfer is het percentage van je personeelsbestand dat in een periode, meestal een jaar, vertrekt. Het telt mensen die ontslag nemen, worden ontslagen, met pensioen gaan of op een andere manier hun dienstverband beëindigen, en wordt afgezet tegen de gemiddelde omvang van je team in dezelfde periode.</p><h2>De basisformule</h2><p>De gebruikelijke berekening is:</p><p><strong>Verloopcijfer = (aantal vertrekkers &divide; gemiddelde personeelsomvang) &times; 100</strong></p><p>De gemiddelde personeelsomvang is het aantal medewerkers aan het begin van de periode plus dat aan het einde, gedeeld door twee. Een voorbeeld:</p><ul><li>Personeelsomvang op 1 januari: 120.</li><li>Personeelsomvang op 31 december: 130, dus het gemiddelde is 125.</li><li>Medewerkers die in het jaar vertrokken: 20.</li><li>Verloopcijfer: 20 &divide; 125 &times; 100 = <strong>16%</strong>.</li></ul><p>Gebruik elke keer dezelfde definitie. Telt het ene rapport stagiairs mee en het andere niet, dan misleidt de trend je.</p><h2>Vrijwillig en onvrijwillig verloop</h2><p>Eén totaalcijfer verbergt de nuttigste informatie, namelijk waarom mensen vertrokken.</p><ul><li><strong>Vrijwillig verloop</strong> omvat ontslagnames en pensionering, waarbij de medewerker zelf koos om te gaan.</li><li><strong>Onvrijwillig verloop</strong> omvat ontslagen, reorganisaties en niet verlengde contracten op initiatief van de werkgever.</li></ul><p>Stel dat in het voorbeeld hierboven 14 van de 20 vertrekkers zelf opzegden en 6 werden ontslagen. Het vrijwillige verloop is dan 14 &divide; 125 = 11,2% en het onvrijwillige 6 &divide; 125 = 4,8%. Ze wijzen op verschillende problemen. Hoog vrijwillig verloop duidt op kwesties rond salaris, leidinggeven, werkdruk of groeimogelijkheden. Hoog onvrijwillig verloop duidt op problemen bij werving of inwerken. Veel teams scheiden ook betreurd verloop af, dus mensen die je graag had behouden, want het verlies van een topper is iets anders dan het verlies van iemand in een functie die je toch wilde herstructureren.</p><h2>Verloop per jaar en per maand</h2><p>Je kunt het verloop over elke periode berekenen. De formule blijft hetzelfde, alleen het tijdvak verandert.</p><ul><li><strong>Per jaar</strong> is het gangbaarst en het makkelijkst te vergelijken met andere bedrijven.</li><li><strong>Per maand of kwartaal</strong> helpt een probleem vroeg te signaleren, maar één maand schommelt sterk, vooral in een klein team.</li></ul><p>Vertrekken er in een maand drie mensen en is je gemiddelde personeelsomvang 125, dan is het maandverloop 2,4%. Maal twaalf geeft ongeveer 29% op jaarbasis, maar dat overdrijft als de maand uitzonderlijk was. Voor een stabieler beeld gebruik je een voortschrijdend cijfer over twaalf maanden dat elke maand opnieuw wordt berekend.</p><h2>Verloop onder nieuwe medewerkers</h2><p>Verloop onder nieuwe medewerkers, soms vroegtijdig verloop genoemd, volgt mensen die kort na hun start weer weggaan. Een gangbare variant: het aantal nieuwe medewerkers dat binnen 90 dagen vertrok, gedeeld door het aantal nieuwe medewerkers in die groep.</p><p>Heb je in het jaar 30 mensen aangenomen en zijn er 6 binnen de eerste 90 dagen weggegaan, dan is het verloop onder nieuwe medewerkers 20%. Dit cijfer verdient een eigen blik, omdat het eerder naar werving en inwerken wijst dan naar de bredere cultuur. Als mensen snel vertrekken, is de oorzaak vaak een verschil tussen de functie zoals die was omschreven en zoals die werd ervaren, of een zwakke eerste paar weken.</p><h2>Wat is dan een goed percentage?</h2><p>Een universeel goed getal bestaat niet, en wie er zonder context een noemt, verdient wat wantrouwen. Enkele kanttekeningen bij benchmarks:</p><ul><li><strong>De sector doet er veel toe.</strong> Horeca, detailhandel en callcenters kennen meestal veel hoger verloop dan overheid, onderwijs of nutsbedrijven.</li><li><strong>De functie doet ertoe.</strong> Instap- en seizoensfuncties wisselen sneller dan senior- of specialistische functies.</li><li><strong>De omvang doet ertoe.</strong> In een team van tien is één vertrek al 10%.</li><li><strong>Definities verschillen.</strong> Sommige gepubliceerde cijfers bevatten alleen vrijwillig vertrek, sommige ook pensionering, sommige sluiten tijdelijk personeel uit.</li><li><strong>Een beetje verloop is gezond.</strong> Een percentage van nul kan betekenen dat mensen blijven omdat ze nergens heen kunnen, en dat er zelden nieuwe ideeën binnenkomen.</li></ul><p>Een betere benchmark is je eigen historie. Vergelijk dit jaar met de afgelopen drie, vergelijk afdelingen onderling en vergelijk jezelf met een vergelijkbare groep in je sector en regio volgens dezelfde definitie. Een stijging zegt meer dan het absolute niveau.</p><h2>Wat doe je met het cijfer?</h2><ol><li>Splits het uit naar afdeling, leidinggevende, dienstjaren en functie. Een totaal van 16% kan een team op 40% verbergen.</li><li>Scheid vrijwillig van onvrijwillig en betreurd van niet-betreurd.</li><li>Lees exitgesprekken en stay-gesprekken op patronen, niet op losse klachten.</li><li>Geef het een grove prijs. Vervanging kost vaak een flink deel van het jaarsalaris als je werving, inwerken en verloren productiviteit meetelt.</li><li>Kies een of twee acties, zoals beter inwerken of leidinggevenden trainen, en kijk of het percentage de komende twee kwartalen beweegt.</li></ol><p>Als je dit rapport nu met de hand uit spreadsheets opbouwt, bewaart <strong>FulcrumGrid HR Suite</strong> medewerkerdossiers, in- en uitdiensttredingsdata en vertrekredenen op één plek, zodat personeelsomvang en vertrekkers gemakkelijker consistent zijn op te vragen. Een goed bijgehouden spreadsheet werkt ook, zolang de definities vastliggen.</p><p>Bereken het steeds op dezelfde manier, splits het uit en gebruik het om betere vragen te stellen in plaats van te oordelen.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Hoe bereken je het personeelsverloop?</summary><p>Deel het aantal medewerkers dat in de periode vertrok door de gemiddelde personeelsomvang in die periode en vermenigvuldig met 100. Het gemiddelde is de omvang aan het begin plus die aan het einde, gedeeld door twee.</p></details>
+        <details class="faq-item"><summary>Wat is een goed verloopcijfer?</summary><p>Dat hangt af van je sector, functies en omvang. Vergelijk jezelf met je eigen historie en met vergelijkbare bedrijven volgens dezelfde definitie, en let op de trend en de redenen in plaats van op één universeel doel.</p></details>
+        <details class="faq-item"><summary>Is hoog verloop altijd slecht?</summary><p>Nee. Het vertrek van slecht presterende medewerkers of van functies die je herstructureert kan gezond zijn. Zorgwekkend is hoog vrijwillig verloop onder mensen die je wilde behouden.</p></details>
+        <details class="faq-item"><summary>Wat is het verschil tussen verloop en uitstroom?</summary><p>De termen worden vaak door elkaar gebruikt. Uitstroom verwijst soms naar vertrek dat niet wordt aangevuld, terwijl verloop elk vertrek telt, of de functie nu opnieuw wordt ingevuld of niet.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid HR Suite</p>
+        <h2>Personeelsomvang en vertrekkers op één plek</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid HR Suite bewaart medewerkerdossiers, data en vertrekredenen bij elkaar, zodat je het verloop elke keer op dezelfde manier berekent.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/hr-suite/">Ontdek HR Suite</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

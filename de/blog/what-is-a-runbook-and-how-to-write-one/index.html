@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Was ist ein Runbook und wie schreibt man eines, das das Team nutzt? — FulcrumGrid</title>
+  <meta name="description" content="Ein Runbook ist eine Schritt-für-Schritt-Anleitung für wiederkehrende Aufgaben oder Störungen. Unterschied zur SOP, Inhalt und wie es dauerhaft nützlich bleibt." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Was ist ein Runbook und wie schreibt man eines, das das Team nutzt?" />
+  <meta property="og:description" content="Ein Runbook ist eine Schritt-für-Schritt-Anleitung für wiederkehrende Aufgaben oder Störungen. Unterschied zur SOP, Inhalt und wie es dauerhaft nützlich bleibt." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-05" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Was ist ein Runbook und wie schreibt man eines, das das Team nutzt?" />
+  <meta name="twitter:description" content="Ein Runbook ist eine Schritt-für-Schritt-Anleitung für wiederkehrende Aufgaben oder Störungen. Unterschied zur SOP, Inhalt und wie es dauerhaft nützlich bleibt." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-runbook-and-how-to-write-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-runbook-and-how-to-write-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Was ist ein Runbook und wie schreibt man eines, das das Team nutzt?",
+    "description": "Ein Runbook ist eine Schritt-für-Schritt-Anleitung für wiederkehrende Aufgaben oder Störungen. Unterschied zur SOP, Inhalt und wie es dauerhaft nützlich bleibt.",
+    "datePublished": "2026-10-05",
+    "dateModified": "2026-10-05",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/what-is-a-runbook-and-how-to-write-one/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Runbook-Leitfaden",
+        "item": "https://fulcrumgrid.com/de/blog/what-is-a-runbook-and-how-to-write-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ist ein Runbook dasselbe wie ein Playbook?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Begriffe überschneiden sich. Viele Teams nutzen ein Runbook für exakte, schrittweise technische oder operative Handlungen und ein Playbook für die breitere Strategie, etwa den Umgang mit einem Großvorfall oder einer Kundeneskalation, das auf mehrere Runbooks verweisen kann."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie lang sollte ein Runbook sein?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "So kurz wie möglich, idealerweise ein bis zwei Seiten. Braucht es mehr, teilen Sie es in kleinere Runbooks auf oder verlinken Sie Hintergrundmaterial, statt die Schritte zu vergraben."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wer sollte das Runbook schreiben?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wer die Aufgabe heute erledigt, sollte den Entwurf schreiben, denn diese Person kennt die Details. Danach sollte jemand, der sie nie gemacht hat, es testen und überarbeiten, denn er erkennt fehlende Annahmen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie oft sollten Runbooks überprüft werden?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prüfen Sie kritische Runbooks vierteljährlich und die übrigen halbjährlich. Aktualisieren Sie jedes Runbook direkt nach dem Einsatz bei einem echten Vorfall oder wenn sich das abgedeckte System ändert."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / Runbook-Leitfaden</p>
+        <span class="tag tag-accent">Betrieb</span>
+        <h1>Was ist ein Runbook und wie schreibt man eines, das das Team nutzt?</h1>
+        <p class="hero-intro">Ein Runbook ist eine Schritt-für-Schritt-Anleitung für wiederkehrende Aufgaben oder Störungen. Unterschied zur SOP, Inhalt und wie es dauerhaft nützlich bleibt.</p>
+        <p class="mono"><time datetime="2026-10-05">5. Oktober 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Es ist zwei Uhr nachts, etwas ist ausgefallen, und die einzige Person, die die Lösung kennt, sitzt im Flugzeug. Ob ein fehlgeschlagener Zahlungslauf, ein toter Server oder eine hängende Bestellwarteschlange: Die nächste Stunde hängt an einer Frage. Ist das Wissen aufgeschrieben oder nur in einem Kopf? Ein Runbook ist die Art, es aufzuschreiben. Dieser Leitfaden erklärt, was ein Runbook ist, wie es sich von einer SOP unterscheidet und wie Sie eines schreiben, das Menschen unter Druck tatsächlich öffnen.</p><h2>Was ist ein Runbook?</h2><p>Ein Runbook ist eine kurze, praktische Anleitung für eine bestimmte Situation: eine wiederkehrende Aufgabe, eine bekannte Störung oder einen Vorfall. Es sagt der diensthabenden Person, was die Situation ausgelöst hat, wer dafür zuständig ist, was genau zu tun ist, wie man bei Verschlimmerung zurückrollt und wen man anruft. Der Test für ein gutes Runbook ist einfach: Könnte ein fähiger Kollege, der die Aufgabe noch nie gemacht hat, es nachts allein befolgen, ohne Sie anzurufen?</p><h2>Runbook oder SOP: Wo liegt der Unterschied?</h2><p>Beide überschneiden sich, und viele Teams verwenden die Begriffe gleichbedeutend. Eine nützliche Unterscheidung:</p><ul><li><strong>Eine SOP (Standardarbeitsanweisung)</strong> beschreibt, wie Routinearbeit immer erledigt werden soll, etwa einen Lieferanten anlegen oder den Monat abschließen. Es geht um Einheitlichkeit und Compliance, und man liest sie meist vorab.</li><li><strong>Ein Runbook</strong> beschreibt, wie man auf ein bestimmtes Ereignis reagiert oder eine konkrete Betriebsaufgabe ausführt, oft unter Zeitdruck. Es geht um Tempo und Sicherheit, und man liest es im Moment.</li></ul><p>Eine SOP darf ausführlich und etwas förmlich sein. Ein Runbook sollte unverblümt sein: kurze Sätze, exakte Befehle, keine Hintergrundaufsätze. Verlinken Sie vom Runbook auf die SOP, wenn jemand das &bdquo;Warum&ldquo; braucht.</p><h2>Wann sollten Sie ein Runbook schreiben?</h2><p>Man kann nicht alles dokumentieren, also beginnen Sie dort, wo es wehtut. Schreiben Sie ein Runbook, wenn:</p><ul><li>eine Aufgabe <strong>wiederholt</strong> anfällt und Fehler teuer sind, etwa der monatliche Gehaltsexport oder ein Release.</li><li>ein <strong>Vorfall zweimal passiert ist</strong>. Das zweite Mal ist das Signal.</li><li>nur <strong>eine Person</strong> etwas kann. Das ist ein Risiko, kein Vorteil.</li><li>eine Aufgabe <strong>selten, aber kritisch</strong> ist, etwa die Wiederherstellung aus einem Backup. An seltene Abläufe erinnert sich niemand.</li><li>neue Kolleginnen und Kollegen immer wieder <strong>dieselben Fragen</strong> stellen.</li></ul><h2>Was gehört in ein Runbook?</h2><p>Behalten Sie in jedem Runbook dieselben fünf Teile bei, damit jeder weiß, wo er nachsehen muss.</p><ul><li><strong>Auslöser.</strong> Wann dieses Runbook gilt: der Alarm, das Symptom oder das Kalenderdatum. &bdquo;Fehlerquote im Checkout über 5 % seit zehn Minuten&ldquo; ist ein Auslöser. &bdquo;Wenn es schlecht aussieht&ldquo; nicht.</li><li><strong>Verantwortliche Person.</strong> Eine benannte Person oder Rolle, die es aktuell hält, plus Datum der letzten Überprüfung.</li><li><strong>Schritte.</strong> Eine nummerierte Liste, eine Aktion pro Schritt, in der richtigen Reihenfolge, jeweils mit dem erwarteten Ergebnis, damit der Leser merkt, dass es geklappt hat.</li><li><strong>Rollback.</strong> Wie man in den vorherigen Zustand zurückkehrt, wenn ein Schritt scheitert oder alles verschlimmert. Schreiben Sie es, bevor Sie es brauchen.</li><li><strong>Eskalation.</strong> Wen man kontaktiert, wenn die Schritte das Problem nicht lösen, in welcher Reihenfolge, wie und nach wie vielen Minuten Versuch.</li></ul><h2>Wie schreibt man Schritte, denen Menschen folgen?</h2><h3>Eine Aktion pro Schritt</h3><p>&bdquo;Dienst neu starten und Logs prüfen&ldquo; sind zwei Schritte. Trennen Sie sie, damit eine gestresste Person nicht die Hälfte überspringt.</p><h3>Seien Sie exakt</h3><p>Geben Sie den echten Befehl, den genauen Menüpfad oder den tatsächlichen Link an. &bdquo;Öffnen Sie das Admin-Panel&ldquo; zwingt zum Raten. Um zwei Uhr nachts schlägt Kopieren und Einfügen jede Interpretation.</p><h3>Beschreiben Sie, wie Erfolg aussieht</h3><p>Schreiben Sie nach jedem wichtigen Schritt, was der Leser sehen sollte: &bdquo;Die Statusseite zeigt Läuft.&ldquo; Wenn nicht, weiß er, dass er anhalten und eskalieren soll, statt blind weiterzumachen.</p><h2>Ein kurzes Beispiel</h2><p>Hier die Gliederung eines Runbooks für eine hängende Bestellwarteschlange:</p><ul><li><strong>Auslöser:</strong> mehr als 50 Bestellungen warten seit über 15 Minuten.</li><li><strong>Verantwortlich:</strong> die Betriebsleitung; zuletzt im September geprüft.</li><li><strong>Schritte:</strong> Statusseite des Zahlungsanbieters prüfen; Queue-Worker neu starten; bestätigen, dass die Zahl der wartenden Bestellungen innerhalb von fünf Minuten sinkt.</li><li><strong>Rollback:</strong> Erzeugt der Neustart doppelte Bestellungen, den Worker anhalten und der Anleitung zur Bereinigung von Dubletten folgen.</li><li><strong>Eskalation:</strong> Bewegt sich die Warteschlange nach 20 Minuten nicht, die Bereitschaftsingenieurin anrufen, danach die Betriebsdirektion.</li></ul><h2>Wie testet man ein Runbook?</h2><p>Ein ungetestetes Runbook ist eine Vermutung. Geben Sie es jemandem, der es nicht geschrieben hat, und lassen Sie die Person es befolgen, am besten in einer sicheren Umgebung oder bei einer Übung, während Sie schweigend zusehen. Jede Stelle, an der sie zögert, nachfragt oder improvisiert, ist eine Lücke. Führen Sie diese Übungen für kritische Runbooks ein- bis zweimal im Jahr durch. Stellen Sie nach jedem echten Vorfall in der Nachbesprechung eine weitere Frage: Hat das Runbook geholfen, und was hätte es besser gemacht?</p><h2>Wie hält man ein Runbook aktuell?</h2><ul><li><strong>Geben Sie jedem Runbook eine verantwortliche Person und ein Prüfdatum.</strong> Vierteljährlich für kritische, halbjährlich für die übrigen.</li><li><strong>Aktualisieren Sie nach jeder Nutzung.</strong> Wer es gerade befolgt hat, weiß am besten, was falsch war oder fehlte. Machen Sie die Korrektur zum Teil des Vorfallabschlusses.</li><li><strong>Koppeln Sie es an Änderungen.</strong> Ändert sich ein System, ein Werkzeug oder ein Lieferant, gehört die Aktualisierung der zugehörigen Runbooks auf dieselbe Checkliste.</li><li><strong>Halten Sie es auffindbar.</strong> Ein perfektes Runbook in einem vergessenen Ordner nützt nichts. Bewahren Sie alle an einem Ort auf, mit klaren Namen, und verlinken Sie sie nach Möglichkeit im Alarm selbst.</li></ul><h2>Wo bewahrt man Runbooks auf?</h2><p>Für den Anfang genügt ein geteiltes Dokument oder ein Wiki. Wichtiger als das Werkzeug ist, dass Runbooks nah an der Arbeit liegen. Wenn Sie Abläufe, Aufgaben und KPIs bereits in <strong>FulcrumGrid Command Center</strong> verfolgen, können Sie jedes Runbook mit dem Projekt oder der Kennzahl verknüpfen, die es schützt, und Prüftermine wie jede andere Aufgabe den Verantwortlichen zuweisen, damit sie nicht unbemerkt ablaufen. Beginnen Sie aber mit dem, was Ihr Team wirklich öffnet.</p><p>Wählen Sie den Vorfall, der im letzten Quartal am meisten wehgetan hat, schreiben Sie diese Woche sein Runbook und testen Sie es mit jemand Neuem. Ein einziges gutes Runbook nützt Ihrem Team mehr als ein Ordner voll ungetesteter.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Ist ein Runbook dasselbe wie ein Playbook?</summary><p>Die Begriffe überschneiden sich. Viele Teams nutzen ein Runbook für exakte, schrittweise technische oder operative Handlungen und ein Playbook für die breitere Strategie, etwa den Umgang mit einem Großvorfall oder einer Kundeneskalation, das auf mehrere Runbooks verweisen kann.</p></details>
+        <details class="faq-item"><summary>Wie lang sollte ein Runbook sein?</summary><p>So kurz wie möglich, idealerweise ein bis zwei Seiten. Braucht es mehr, teilen Sie es in kleinere Runbooks auf oder verlinken Sie Hintergrundmaterial, statt die Schritte zu vergraben.</p></details>
+        <details class="faq-item"><summary>Wer sollte das Runbook schreiben?</summary><p>Wer die Aufgabe heute erledigt, sollte den Entwurf schreiben, denn diese Person kennt die Details. Danach sollte jemand, der sie nie gemacht hat, es testen und überarbeiten, denn er erkennt fehlende Annahmen.</p></details>
+        <details class="faq-item"><summary>Wie oft sollten Runbooks überprüft werden?</summary><p>Prüfen Sie kritische Runbooks vierteljährlich und die übrigen halbjährlich. Aktualisieren Sie jedes Runbook direkt nach dem Einsatz bei einem echten Vorfall oder wenn sich das abgedeckte System ändert.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Halten Sie Ihre Runbooks nah an der Arbeit</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center hilft Ihnen, Aufgaben, Verantwortliche und KPIs an einem Ort zu verfolgen, damit Runbook-Prüfungen zugewiesen sind und nichts unbemerkt veraltet.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/command-center/">Entdecken Command Center</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
