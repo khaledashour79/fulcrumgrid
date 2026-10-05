@@ -85,6 +85,55 @@ PAGE = {
                 "Découvrir les applications", "Apps entdecken", "Explorar las apps",
                 "Esplora le app", "Ontdek de apps"),
 
+            # ---- Flagship · AI band ----
+            "New · AI, built in": _t(
+                "Nouveau · IA intégrée", "Neu · KI integriert", "Nuevo · IA integrada",
+                "Novità · IA integrata", "Nieuw · AI ingebouwd"),
+            "AI, built into the work.": _t(
+                "L'IA, intégrée au travail.", "KI, in die Arbeit integriert.",
+                "IA, integrada en el trabajo.", "IA, integrata nel lavoro.",
+                "AI, ingebouwd in het werk."),
+            "A copilot that answers from your own policies, AI reviews grounded in the record, and acting agents that never move without a human approval — on the model and data boundary you choose. Live now in HR Suite.": _t(
+                "Un copilote qui répond à partir de vos propres politiques, des analyses IA ancrées dans le dossier et des agents actifs qui n'agissent jamais sans l'approbation d'une personne — sur le modèle et la frontière de données que vous choisissez. Déjà disponible dans HR Suite.",
+                "Ein Copilot, der aus Ihren eigenen Richtlinien antwortet, KI-Analysen direkt am Datensatz und handelnde Agenten, die sich nie ohne menschliche Freigabe bewegen — auf dem Modell und der Datengrenze Ihrer Wahl. Jetzt in HR Suite verfügbar.",
+                "Un copiloto que responde a partir de sus propias políticas, análisis de IA anclados en el registro y agentes que actúan pero nunca se mueven sin la aprobación de una persona — sobre el modelo y el límite de datos que usted elija. Ya disponible en HR Suite.",
+                "Un copilota che risponde dalle tue policy, analisi IA ancorate al record e agenti operativi che non si muovono mai senza l'approvazione di una persona — sul modello e sul confine dei dati che scegli. Già disponibile in HR Suite.",
+                "Een copilot die antwoordt vanuit uw eigen beleid, AI-analyses verankerd in het record en handelende agents die nooit iets doen zonder menselijke goedkeuring — op het model en de datagrens die u kiest. Nu beschikbaar in HR Suite."),
+            "Copilot &amp; policy answers": _t(
+                "Copilote &amp; réponses sur les politiques", "Copilot &amp; Richtlinien-Antworten",
+                "Copiloto &amp; respuestas de políticas", "Copilota &amp; risposte sulle policy",
+                "Copilot &amp; beleidsantwoorden"),
+            "Ask in plain language and get an answer drawn only from what you're allowed to see, cited to the source.": _t(
+                "Posez votre question en langage courant et obtenez une réponse tirée uniquement de ce que vous êtes autorisé à voir, avec la source citée.",
+                "Fragen Sie in natürlicher Sprache und erhalten Sie eine Antwort, die nur aus dem stammt, was Sie sehen dürfen — mit Quellenangabe.",
+                "Pregunte en lenguaje natural y obtenga una respuesta extraída solo de lo que puede ver, citada a la fuente.",
+                "Chiedi in linguaggio naturale e ottieni una risposta tratta solo da ciò che puoi vedere, con la fonte citata.",
+                "Vraag in gewone taal en krijg een antwoord dat alleen is gebaseerd op wat u mag zien, met bronvermelding."),
+            "Human-approved agents": _t(
+                "Des agents approuvés par un humain", "Von Menschen freigegebene Agenten",
+                "Agentes aprobados por una persona", "Agenti approvati da una persona",
+                "Door mensen goedgekeurde agents"),
+            "Agents propose; a person approves. Reversible, low-stakes steps only — never money or employment status.": _t(
+                "Les agents proposent ; une personne approuve. Uniquement des actions réversibles et à faible enjeu — jamais l'argent ni le statut d'emploi.",
+                "Agenten schlagen vor; ein Mensch genehmigt. Nur reversible, risikoarme Schritte — niemals Geld oder Beschäftigungsstatus.",
+                "Los agentes proponen; una persona aprueba. Solo pasos reversibles y de bajo riesgo — nunca dinero ni situación laboral.",
+                "Gli agenti propongono; una persona approva. Solo passaggi reversibili e a basso rischio — mai denaro o stato occupazionale.",
+                "Agents stellen voor; een persoon keurt goed. Alleen omkeerbare stappen met laag risico — nooit geld of dienstverband."),
+            "Your model, your data": _t(
+                "Votre modèle, vos données", "Ihr Modell, Ihre Daten",
+                "Su modelo, sus datos", "Il tuo modello, i tuoi dati",
+                "Uw model, uw data"),
+            "Bring your own key or self-host. Encrypted, isolated per tenant, and off until you turn it on.": _t(
+                "Apportez votre propre clé ou hébergez-la vous-même. Chiffrée, isolée par locataire, et désactivée jusqu'à ce que vous l'activiez.",
+                "Bringen Sie Ihren eigenen Schlüssel mit oder hosten Sie selbst. Verschlüsselt, pro Mandant isoliert und aus, bis Sie es einschalten.",
+                "Use su propia clave o autoalójela. Cifrada, aislada por inquilino y desactivada hasta que la active.",
+                "Porta la tua chiave o self-host. Cifrata, isolata per tenant e disattivata finché non la attivi.",
+                "Gebruik uw eigen sleutel of self-host. Versleuteld, geïsoleerd per tenant en uit tot u het inschakelt."),
+            "See AI in HR Suite →": _t(
+                "Voir l'IA dans HR Suite →", "KI in HR Suite ansehen →",
+                "Ver la IA en HR Suite →", "Scopri l'IA in HR Suite →",
+                "Bekijk AI in HR Suite →"),
+
             # ---- 01 · Products ----
             "01 · The grid of apps": _t(
                 "01 · La grille d'applications", "01 · Das Grid der Apps",

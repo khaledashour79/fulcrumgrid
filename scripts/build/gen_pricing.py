@@ -733,7 +733,7 @@ APPS['hr-suite'] = {
     (("Succession &amp; development","التعاقب والتطوير"),'+','+','+','y'),
     (("Engagement surveys","استبيانات التفاعل"),'+','+','+','y'),
     (("Learning (LMS)","التعلّم (LMS)"),'+','+','+','y'),
-    (("AI helper","المساعد الذكي"),'+','+','+','y'),
+    (("AI Copilot &amp; Agents","المساعد الذكي والوكلاء"),'+','+','+','y'),
     (("SSO &amp; SCIM","SSO و SCIM"),'+','+','+','y'),
     (("SAP Business One","SAP Business One"),'+','+','+','y'),
   ],

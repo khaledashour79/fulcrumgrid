@@ -856,9 +856,9 @@ PAGE['/pricing/hr-suite/'] = {
         "Recruitment, learning &amp; analytics": _t(
             "Recrutement, formation &amp; analytique", "Rekrutierung, Lernen &amp; Analysen", "Contratación, formación &amp; analítica",
             "Selezione, formazione &amp; analisi", "Werving, leren &amp; analyses"),
-        "SSO / SCIM, AI helper &amp; SAP": _t(
-            "SSO / SCIM, assistant IA &amp; SAP", "SSO / SCIM, KI-Helfer &amp; SAP", "SSO / SCIM, asistente de IA &amp; SAP",
-            "SSO / SCIM, assistente IA &amp; SAP", "SSO / SCIM, AI-helper &amp; SAP"),
+        "SSO / SCIM, AI Copilot &amp; Agents, SAP": _t(
+            "SSO / SCIM, Copilote IA &amp; agents, SAP", "SSO / SCIM, KI-Copilot &amp; Agenten, SAP", "SSO / SCIM, Copiloto de IA &amp; agentes, SAP",
+            "SSO / SCIM, Copilota IA &amp; agenti, SAP", "SSO / SCIM, AI-copilot &amp; agents, SAP"),
         "Per seat, per month. Core HR is included on every plan. Every plan includes a 14-day free trial; any module not in your plan is available as a per-seat add-on.": _t(
             "Par siège, par mois. Les RH de base sont incluses dans chaque forfait. Chaque forfait inclut un essai gratuit de 14 jours ; tout module absent de votre forfait est disponible en option par siège.",
             "Pro Platz, pro Monat. Kern-HR ist in jedem Tarif enthalten. Jeder Tarif enthält eine 14-tägige kostenlose Testphase; jedes Modul, das nicht in Ihrem Tarif enthalten ist, ist als Add-on pro Platz verfügbar.",
@@ -993,9 +993,9 @@ PAGE['/pricing/hr-suite/'] = {
         "<th scope=\"row\">Learning (LMS)</th>": _t(
             "<th scope=\"row\">Formation (LMS)</th>", "<th scope=\"row\">Lernen (LMS)</th>", "<th scope=\"row\">Formación (LMS)</th>",
             "<th scope=\"row\">Formazione (LMS)</th>", "<th scope=\"row\">Leren (LMS)</th>"),
-        "<th scope=\"row\">AI helper</th>": _t(
-            "<th scope=\"row\">Assistant IA</th>", "<th scope=\"row\">KI-Helfer</th>", "<th scope=\"row\">Asistente de IA</th>",
-            "<th scope=\"row\">Assistente IA</th>", "<th scope=\"row\">AI-helper</th>"),
+        "<th scope=\"row\">AI Copilot &amp; Agents</th>": _t(
+            "<th scope=\"row\">Copilote IA &amp; agents</th>", "<th scope=\"row\">KI-Copilot &amp; Agenten</th>", "<th scope=\"row\">Copiloto de IA &amp; agentes</th>",
+            "<th scope=\"row\">Copilota IA &amp; agenti</th>", "<th scope=\"row\">AI-copilot &amp; agents</th>"),
         "<th scope=\"row\">SSO &amp; SCIM</th>": _t(
             "<th scope=\"row\">SSO &amp; SCIM</th>", "<th scope=\"row\">SSO &amp; SCIM</th>", "<th scope=\"row\">SSO &amp; SCIM</th>",
             "<th scope=\"row\">SSO &amp; SCIM</th>", "<th scope=\"row\">SSO &amp; SCIM</th>"),

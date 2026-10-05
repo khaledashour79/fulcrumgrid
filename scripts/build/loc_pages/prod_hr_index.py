@@ -45,6 +45,83 @@ PAGE = {
                 "HR Suite gestisce il tuo team dall'assunzione alla pensione. Conserva ogni scheda dipendente, fai l'onboarding con un clic, elabora le buste paga, monitora tempo e ferie e gestisci la performance — tutto in un unico luogo conforme e facile da usare.",
                 "HR Suite runt uw team van aanwerving tot pensioen. Bewaar elk medewerkersdossier, onboard met één klik, verwerk de loonadministratie, volg tijd en verlof en beheer prestaties — allemaal op één conforme, eenvoudig te beheren plek."),
             "Open HR Suite": _t("Ouvrir HR Suite", "HR Suite öffnen", "Abrir HR Suite", "Apri HR Suite", "HR Suite openen"),
+            # ---- Flagship · AI Copilot & Agents ----
+            "New · AI Copilot &amp; Agents": _t(
+                "Nouveau · Copilote IA &amp; agents", "Neu · KI-Copilot &amp; Agenten",
+                "Nuevo · Copiloto de IA &amp; agentes", "Novità · Copilota IA &amp; agenti",
+                "Nieuw · AI-copilot &amp; agents"),
+            "AI that works the way HR has to.": _t(
+                "Une IA qui fonctionne comme la RH l'exige.",
+                "KI, die so arbeitet, wie HR es muss.",
+                "IA que funciona como RR. HH. lo exige.",
+                "Un'IA che lavora come deve farlo l'HR.",
+                "AI die werkt zoals HR dat moet."),
+            "A copilot on every page, AI reviews grounded in the record, and acting agents that never move without a human approval — on the model and data boundary you choose.": _t(
+                "Un copilote sur chaque page, des analyses IA ancrées dans le dossier et des agents actifs qui n'agissent jamais sans l'approbation d'une personne — sur le modèle et la frontière de données que vous choisissez.",
+                "Ein Copilot auf jeder Seite, KI-Analysen direkt am Datensatz und handelnde Agenten, die sich nie ohne menschliche Freigabe bewegen — auf dem Modell und der Datengrenze Ihrer Wahl.",
+                "Un copiloto en cada página, análisis de IA anclados en el registro y agentes que actúan pero nunca se mueven sin la aprobación de una persona — sobre el modelo y el límite de datos que usted elija.",
+                "Un copilota su ogni pagina, analisi IA ancorate al record e agenti operativi che non si muovono mai senza l'approvazione di una persona — sul modello e sul confine dei dati che scegli.",
+                "Een copilot op elke pagina, AI-analyses verankerd in het record en handelende agents die nooit iets doen zonder menselijke goedkeuring — op het model en de datagrens die u kiest."),
+            "Copilot on every page": _t(
+                "Un copilote sur chaque page", "Ein Copilot auf jeder Seite",
+                "Un copiloto en cada página", "Un copilota su ogni pagina",
+                "Een copilot op elke pagina"),
+            "Ask about any policy in plain language and get an answer drawn only from the policies you're allowed to see, cited to the source. If no policy covers it, it says so — it never guesses.": _t(
+                "Posez une question sur n'importe quelle politique en langage courant et obtenez une réponse tirée uniquement des politiques que vous êtes autorisé à voir, avec la source citée. Si aucune politique ne couvre la question, il le dit — il ne devine jamais.",
+                "Fragen Sie in natürlicher Sprache nach einer Richtlinie und erhalten Sie eine Antwort, die nur aus den Richtlinien stammt, die Sie sehen dürfen — mit Quellenangabe. Deckt keine Richtlinie die Frage ab, sagt er es — er rät nie.",
+                "Pregunte sobre cualquier política en lenguaje natural y obtenga una respuesta extraída solo de las políticas que puede ver, citada a la fuente. Si ninguna política lo cubre, lo dice — nunca adivina.",
+                "Chiedi di qualsiasi policy in linguaggio naturale e ottieni una risposta tratta solo dalle policy che puoi vedere, con la fonte citata. Se nessuna policy copre la domanda, lo dice — non tira mai a indovinare.",
+                "Vraag in gewone taal naar een beleidsregel en krijg een antwoord dat alleen is gebaseerd op het beleid dat u mag zien, met bronvermelding. Dekt geen enkel beleid de vraag, dan zegt het dat — het gokt nooit."),
+            "AI reviews, in context": _t(
+                "Des analyses IA, en contexte", "KI-Analysen, im Kontext",
+                "Análisis de IA, en contexto", "Analisi IA, nel contesto",
+                "AI-analyses, in context"),
+            "A grounded summary right on the record — review an employee, summarize a candidate, explain a pay-run variance, triage attendance exceptions. Read-only: it summarizes, it never changes the record.": _t(
+                "Un résumé étayé directement sur le dossier — évaluer un employé, résumer un candidat, expliquer un écart de paie, trier les anomalies de présence. En lecture seule : il résume, il ne modifie jamais le dossier.",
+                "Eine fundierte Zusammenfassung direkt am Datensatz — einen Mitarbeiter prüfen, einen Kandidaten zusammenfassen, eine Abweichung im Gehaltslauf erklären, Anwesenheitsausnahmen sichten. Nur Lesezugriff: Er fasst zusammen, er ändert den Datensatz nie.",
+                "Un resumen fundamentado directamente en el registro — revisar a un empleado, resumir a un candidato, explicar una variación de nómina, clasificar excepciones de asistencia. Solo lectura: resume, nunca cambia el registro.",
+                "Una sintesi fondata direttamente sul record — valutare un dipendente, riassumere un candidato, spiegare uno scostamento di un ciclo paga, smistare le eccezioni di presenza. Sola lettura: sintetizza, non modifica mai il record.",
+                "Een onderbouwde samenvatting direct op het record — een medewerker beoordelen, een kandidaat samenvatten, een afwijking in een loonrun verklaren, aanwezigheidsuitzonderingen triëren. Alleen-lezen: het vat samen, het wijzigt het record nooit."),
+            "Acting agents, human-approved": _t(
+                "Des agents actifs, approuvés par un humain", "Handelnde Agenten, von Menschen freigegeben",
+                "Agentes que actúan, aprobados por una persona", "Agenti operativi, approvati da una persona",
+                "Handelende agents, door mensen goedgekeurd"),
+            "Agents like AI shortlist propose a change; nothing happens until a person approves it in the Approvals inbox. Whoever ran the agent can't approve it — the same separation of duties as money.": _t(
+                "Des agents comme la présélection IA proposent un changement ; rien ne se produit tant qu'une personne ne l'a pas approuvé dans la boîte des approbations. Celui qui a lancé l'agent ne peut pas l'approuver — la même séparation des tâches que pour l'argent.",
+                "Agenten wie die KI-Vorauswahl schlagen eine Änderung vor; nichts geschieht, bis eine Person sie im Genehmigungs-Posteingang freigibt. Wer den Agenten gestartet hat, kann ihn nicht freigeben — dieselbe Funktionstrennung wie bei Geld.",
+                "Agentes como la preselección por IA proponen un cambio; nada ocurre hasta que una persona lo aprueba en la bandeja de aprobaciones. Quien ejecutó el agente no puede aprobarlo — la misma separación de funciones que con el dinero.",
+                "Agenti come la preselezione IA propongono una modifica; non accade nulla finché una persona non la approva nella casella delle approvazioni. Chi ha avviato l'agente non può approvarla — la stessa separazione dei compiti del denaro.",
+                "Agents zoals AI-shortlist stellen een wijziging voor; er gebeurt niets tot een persoon het goedkeurt in de goedkeuringeninbox. Wie de agent uitvoerde, kan het niet goedkeuren — dezelfde functiescheiding als bij geld."),
+            "Low-stakes steps only": _t(
+                "Uniquement des actions à faible enjeu", "Nur risikoarme Schritte",
+                "Solo pasos de bajo riesgo", "Solo passaggi a basso rischio",
+                "Alleen stappen met laag risico"),
+            "Agents take only reversible, low-stakes steps such as a pipeline move. Money, employment status, ratings and government actions are never available to an AI agent.": _t(
+                "Les agents n'effectuent que des actions réversibles et à faible enjeu, comme un déplacement dans le pipeline. L'argent, le statut d'emploi, les évaluations et les démarches administratives ne sont jamais accessibles à un agent IA.",
+                "Agenten führen nur reversible, risikoarme Schritte aus, etwa eine Verschiebung in der Pipeline. Geld, Beschäftigungsstatus, Bewertungen und Behördenvorgänge stehen einem KI-Agenten nie zur Verfügung.",
+                "Los agentes solo realizan pasos reversibles y de bajo riesgo, como mover una etapa del pipeline. El dinero, la situación laboral, las valoraciones y los trámites ante la Administración nunca están disponibles para un agente de IA.",
+                "Gli agenti eseguono solo passaggi reversibili e a basso rischio, come uno spostamento nella pipeline. Denaro, stato occupazionale, valutazioni e adempimenti verso la pubblica amministrazione non sono mai accessibili a un agente IA.",
+                "Agents voeren alleen omkeerbare stappen met laag risico uit, zoals een verplaatsing in de pipeline. Geld, dienstverband, beoordelingen en overheidshandelingen zijn nooit beschikbaar voor een AI-agent."),
+            "Your model, your data": _t(
+                "Votre modèle, vos données", "Ihr Modell, Ihre Daten",
+                "Su modelo, sus datos", "Il tuo modello, i tuoi dati",
+                "Uw model, uw data"),
+            "Try it on a capped shared key, bring your own OpenAI, Anthropic or Azure key, or point it at a self-hosted model so data never leaves your infrastructure. Keys are encrypted and isolated per tenant.": _t(
+                "Essayez-la avec une clé partagée plafonnée, apportez votre propre clé OpenAI, Anthropic ou Azure, ou pointez-la vers un modèle auto-hébergé pour que les données ne quittent jamais votre infrastructure. Les clés sont chiffrées et isolées par locataire.",
+                "Testen Sie sie mit einem gedeckelten gemeinsamen Schlüssel, bringen Sie Ihren eigenen OpenAI-, Anthropic- oder Azure-Schlüssel mit oder richten Sie sie auf ein selbst gehostetes Modell, damit Daten Ihre Infrastruktur nie verlassen. Schlüssel werden verschlüsselt und pro Mandant isoliert.",
+                "Pruébela con una clave compartida con tope, use su propia clave de OpenAI, Anthropic o Azure, o apúntela a un modelo autoalojado para que los datos nunca salgan de su infraestructura. Las claves se cifran y se aíslan por inquilino.",
+                "Provala con una chiave condivisa con tetto massimo, porta la tua chiave OpenAI, Anthropic o Azure, oppure puntala a un modello self-hosted così i dati non lasciano mai la tua infrastruttura. Le chiavi sono cifrate e isolate per tenant.",
+                "Probeer het met een gedeelde sleutel met limiet, gebruik uw eigen OpenAI-, Anthropic- of Azure-sleutel, of wijs het naar een zelf-gehost model zodat data uw infrastructuur nooit verlaat. Sleutels worden versleuteld en per tenant geïsoleerd."),
+            "Governed &amp; auditable": _t(
+                "Encadrée &amp; auditable", "Gesteuert &amp; prüfbar",
+                "Gobernada &amp; auditable", "Governata &amp; verificabile",
+                "Beheerst &amp; controleerbaar"),
+            "AI is off until you turn it on, gated by the Act with AI permission, with an Agent Center log of every request — metadata only, so it holds no employee data.": _t(
+                "L'IA est désactivée tant que vous ne l'activez pas, protégée par l'autorisation « Agir avec l'IA », avec un journal du Centre des agents pour chaque requête — métadonnées uniquement, sans aucune donnée d'employé.",
+                "Die KI ist aus, bis Sie sie einschalten, abgesichert durch die Berechtigung „Mit KI handeln“, mit einem Agent-Center-Protokoll jeder Anfrage — nur Metadaten, also ohne Mitarbeiterdaten.",
+                "La IA está desactivada hasta que la active, protegida por el permiso «Actuar con IA», con un registro del Centro de Agentes de cada solicitud — solo metadatos, sin datos de empleados.",
+                "L'IA è disattivata finché non la attivi, protetta dall'autorizzazione «Agire con l'IA», con un registro dell'Agent Center per ogni richiesta — solo metadati, quindi senza dati dei dipendenti.",
+                "AI staat uit tot u het inschakelt, beveiligd door de machtiging 'Handelen met AI', met een Agent Center-logboek van elke aanvraag — alleen metadata, dus zonder medewerkersgegevens."),
             # ---- Pricing ----
             "HR Suite pricing": _t("Tarifs HR Suite", "HR Suite Preise", "Precios de HR Suite", "Prezzi di HR Suite", "HR Suite-prijzen"),
             "Per seat / month": _t("Par poste / mois", "Pro Platz / Monat", "Por puesto / mes", "Per postazione / mese", "Per gebruiker / maand"),
