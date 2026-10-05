@@ -813,12 +813,12 @@ PAGE['/pricing/hr-suite/'] = {
         "Enterprise": _t("Enterprise", "Enterprise", "Enterprise", "Enterprise", "Enterprise"),
         "GOSI": _t("GOSI", "GOSI", "GOSI", "GOSI", "GOSI"),
         "SAP Business One": _t("SAP Business One", "SAP Business One", "SAP Business One", "SAP Business One", "SAP Business One"),
-        "HR from hire to retire — 35 modules on one grid, with Core HR always on. Priced per seat, packaged into three plans plus à-la-carte add-ons.": _t(
-            "Les RH de l'embauche au départ — 35 modules sur une seule grille, avec les RH de base toujours activées. Tarifé par siège, réparti en trois forfaits plus des options à la carte.",
-            "HR von der Einstellung bis zum Ruhestand — 35 Module auf einem Grid, mit stets aktivem Kern-HR. Bepreist pro Platz, gebündelt in drei Tarife plus à-la-carte-Add-ons.",
-            "RR. HH. de la contratación a la jubilación — 35 módulos en una sola cuadrícula, con RR. HH. básicos siempre activos. Con precio por asiento, agrupados en tres planes más complementos a la carta.",
-            "HR dall'assunzione alla pensione — 35 moduli su un'unica griglia, con HR di base sempre attivo. Con prezzo per postazione, raggruppati in tre piani più add-on à la carte.",
-            "HR van aanwerving tot pensioen — 35 modules op één grid, met Kern-HR altijd aan. Geprijsd per zitplaats, gebundeld in drie abonnementen plus à-la-carte add-ons."),
+        "HR from hire to retire — 40 modules on one grid, with Core HR always on. Priced per seat, packaged into three plans plus à-la-carte add-ons.": _t(
+            "Les RH de l'embauche au départ — 40 modules sur une seule grille, avec les RH de base toujours activées. Tarifé par siège, réparti en trois forfaits plus des options à la carte.",
+            "HR von der Einstellung bis zum Ruhestand — 40 Module auf einem Grid, mit stets aktivem Kern-HR. Bepreist pro Platz, gebündelt in drei Tarife plus à-la-carte-Add-ons.",
+            "RR. HH. de la contratación a la jubilación — 40 módulos en una sola cuadrícula, con RR. HH. básicos siempre activos. Con precio por asiento, agrupados en tres planes más complementos a la carta.",
+            "HR dall'assunzione alla pensione — 40 moduli su un'unica griglia, con HR di base sempre attivo. Con prezzo per postazione, raggruppati in tre piani più add-on à la carte.",
+            "HR van aanwerving tot pensioen — 40 modules op één grid, met Kern-HR altijd aan. Geprijsd per zitplaats, gebundeld in drie abonnementen plus à-la-carte add-ons."),
         # ---- Cards ----
         "Small teams getting HR in order": _t("Petites équipes qui structurent leurs RH", "Kleine Teams, die ihre HR ordnen", "Equipos pequeños que ordenan sus RR. HH.", "Piccoli team che mettono ordine nell'HR", "Kleine teams die hun HR op orde brengen"),
         "/ seat / mo": _t("/ siège / mois", "/ Platz / Mon.", "/ asiento / mes", "/ postazione / mese", "/ zitplaats / mnd"),
@@ -996,6 +996,33 @@ PAGE['/pricing/hr-suite/'] = {
         "<th scope=\"row\">AI Copilot &amp; Agents</th>": _t(
             "<th scope=\"row\">Copilote IA &amp; agents</th>", "<th scope=\"row\">KI-Copilot &amp; Agenten</th>", "<th scope=\"row\">Copiloto de IA &amp; agentes</th>",
             "<th scope=\"row\">Copilota IA &amp; agenti</th>", "<th scope=\"row\">AI-copilot &amp; agents</th>"),
+        "<th scope=\"row\">Approval workflows</th>": _t(
+            "<th scope=\"row\">Flux d'approbation</th>", "<th scope=\"row\">Genehmigungs-Workflows</th>", "<th scope=\"row\">Flujos de aprobación</th>",
+            "<th scope=\"row\">Flussi di approvazione</th>", "<th scope=\"row\">Goedkeuringsworkflows</th>"),
+        "<th scope=\"row\">Document requests</th>": _t(
+            "<th scope=\"row\">Demandes de documents</th>", "<th scope=\"row\">Dokumentenanfragen</th>", "<th scope=\"row\">Solicitudes de documentos</th>",
+            "<th scope=\"row\">Richieste di documenti</th>", "<th scope=\"row\">Documentaanvragen</th>"),
+        "<th scope=\"row\">Mobile app</th>": _t(
+            "<th scope=\"row\">Application mobile</th>", "<th scope=\"row\">Mobile App</th>", "<th scope=\"row\">Aplicación móvil</th>",
+            "<th scope=\"row\">App mobile</th>", "<th scope=\"row\">Mobiele app</th>"),
+        "<th scope=\"row\">Business travel</th>": _t(
+            "<th scope=\"row\">Voyages d'affaires</th>", "<th scope=\"row\">Geschäftsreisen</th>", "<th scope=\"row\">Viajes de negocios</th>",
+            "<th scope=\"row\">Viaggi di lavoro</th>", "<th scope=\"row\">Zakenreizen</th>"),
+        "<th scope=\"row\">Air tickets</th>": _t(
+            "<th scope=\"row\">Billets d'avion</th>", "<th scope=\"row\">Flugtickets</th>", "<th scope=\"row\">Billetes de avión</th>",
+            "<th scope=\"row\">Biglietti aerei</th>", "<th scope=\"row\">Vliegtickets</th>"),
+        "<th scope=\"row\">Report builder</th>": _t(
+            "<th scope=\"row\">Générateur de rapports</th>", "<th scope=\"row\">Report-Builder</th>", "<th scope=\"row\">Generador de informes</th>",
+            "<th scope=\"row\">Generatore di report</th>", "<th scope=\"row\">Rapportbouwer</th>"),
+        "<th scope=\"row\">Policy Library</th>": _t(
+            "<th scope=\"row\">Bibliothèque de politiques</th>", "<th scope=\"row\">Richtlinienbibliothek</th>", "<th scope=\"row\">Biblioteca de políticas</th>",
+            "<th scope=\"row\">Libreria delle policy</th>", "<th scope=\"row\">Beleidsbibliotheek</th>"),
+        "<th scope=\"row\">Partner API</th>": _t(
+            "<th scope=\"row\">API partenaire</th>", "<th scope=\"row\">Partner-API</th>", "<th scope=\"row\">API para socios</th>",
+            "<th scope=\"row\">API per partner</th>", "<th scope=\"row\">Partner-API</th>"),
+        "<th scope=\"row\">Custom domain</th>": _t(
+            "<th scope=\"row\">Domaine personnalisé</th>", "<th scope=\"row\">Eigene Domain</th>", "<th scope=\"row\">Dominio propio</th>",
+            "<th scope=\"row\">Dominio personalizzato</th>", "<th scope=\"row\">Eigen domein</th>"),
         "<th scope=\"row\">SSO &amp; SCIM</th>": _t(
             "<th scope=\"row\">SSO &amp; SCIM</th>", "<th scope=\"row\">SSO &amp; SCIM</th>", "<th scope=\"row\">SSO &amp; SCIM</th>",
             "<th scope=\"row\">SSO &amp; SCIM</th>", "<th scope=\"row\">SSO &amp; SCIM</th>"),

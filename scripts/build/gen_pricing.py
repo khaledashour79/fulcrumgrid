@@ -679,7 +679,7 @@ APPS['hr-suite'] = {
   'pricenote_ar':"لكل مقعد شهريًا (مقترح). الموارد البشرية الأساسية مشمولة مجانًا في كل خطة. كل خطة تشمل تجربة مجانية ١٤ يومًا.",
   'modsub_en':"Every HR Suite module, and where it unlocks across the four plans.  ✓ included · ＋ available as an add-on · KSA = Saudi compliance. Tiers are cumulative.",
   'modsub_ar':"كل وحدة في منظومة الموارد البشرية، وأين تتوفّر عبر الخطط الأربع.  ✓ مشمول · ＋ متاح كإضافة · KSA = امتثال سعودي. الخطط تراكمية.",
-  'en_lead':"HR from hire to retire — 35 modules on one grid, with Core HR always on. Priced per seat, packaged into four plans plus à-la-carte add-ons.",
+  'en_lead':"HR from hire to retire — 40 modules on one grid, with Core HR always on. Priced per seat, packaged into four plans plus à-la-carte add-ons.",
   'ar_lead':"الموارد البشرية من التعيين إلى التقاعد — ٣٥ وحدة على شبكة واحدة، مع تفعيل الموارد البشرية الأساسية دائمًا. تُسعّر لكل مقعد، ومُجمّعة في أربع خطط مع إضافات اختيارية.",
   'en_desc':"HR Suite pricing — Essentials, Operations, Payroll & Compliance, and Enterprise — with a module-by-module breakdown, including Saudi payroll and compliance.",
   'ar_desc':"أسعار منظومة الموارد البشرية — الأساسية والعمليات والرواتب والامتثال والمؤسسات — مع تفصيل للوحدات، بما في ذلك الرواتب والامتثال السعودي.",

@@ -205,6 +205,34 @@ PAGE = {
                 "Objetivos, comentarios y ciclos de evaluación que mantienen las conversaciones de crecimiento encaminadas y registradas.",
                 "Obiettivi, feedback e cicli di valutazione che tengono i colloqui di crescita in linea e documentati.",
                 "Doelen, feedback en beoordelingscycli die groeigesprekken op koers en vastgelegd houden."),
+            "Approval workflows": _t("Flux d'approbation", "Genehmigungs-Workflows", "Flujos de aprobación", "Flussi di approvazione", "Goedkeuringsworkflows"),
+            "Design multi-step approval chains with your own conditions — amount, department, grade — for leave, expenses, travel, offers and loans, with separation of duties built in.": _t(
+                "Concevez des chaînes d'approbation à plusieurs étapes avec vos propres conditions — montant, service, grade — pour les congés, les notes de frais, les voyages, les offres et les prêts, avec la séparation des tâches intégrée.",
+                "Gestalten Sie mehrstufige Genehmigungsketten mit Ihren eigenen Bedingungen — Betrag, Abteilung, Stufe — für Abwesenheiten, Spesen, Reisen, Angebote und Darlehen, mit integrierter Funktionstrennung.",
+                "Diseñe cadenas de aprobación de varios pasos con sus propias condiciones — importe, departamento, grado — para ausencias, gastos, viajes, ofertas y préstamos, con separación de funciones integrada.",
+                "Progetta catene di approvazione a più fasi con le tue condizioni — importo, reparto, livello — per ferie, spese, viaggi, offerte e prestiti, con separazione dei compiti integrata.",
+                "Ontwerp goedkeuringsketens met meerdere stappen met uw eigen voorwaarden — bedrag, afdeling, schaal — voor verlof, onkosten, reizen, aanbiedingen en leningen, met ingebouwde functiescheiding."),
+            "Policy Library": _t("Bibliothèque de politiques", "Richtlinienbibliothek", "Biblioteca de políticas", "Libreria delle policy", "Beleidsbibliotheek"),
+            "Publish versioned policies and procedures; new hires read and acknowledge them automatically, with a full compliance audit trail.": _t(
+                "Publiez des politiques et procédures versionnées ; les nouvelles recrues les lisent et les acceptent automatiquement, avec une piste d'audit de conformité complète.",
+                "Veröffentlichen Sie versionierte Richtlinien und Verfahren; neue Mitarbeitende lesen und bestätigen sie automatisch, mit einem vollständigen Compliance-Audit-Trail.",
+                "Publique políticas y procedimientos versionados; los nuevos empleados los leen y aceptan automáticamente, con una pista de auditoría de cumplimiento completa.",
+                "Pubblica policy e procedure versionate; i nuovi assunti le leggono e le accettano automaticamente, con una pista di controllo della conformità completa.",
+                "Publiceer geversioneerde beleidsregels en procedures; nieuwe medewerkers lezen en accepteren ze automatisch, met een volledig compliance-audittrail."),
+            "Business travel": _t("Voyages d'affaires", "Geschäftsreisen", "Viajes de negocios", "Viaggi di lavoro", "Zakenreizen"),
+            "Trips, per-diems, advances and settlement — approved through a workflow and paid through expenses, with GCC home-leave air tickets.": _t(
+                "Déplacements, indemnités journalières, avances et règlement — approuvés via un flux de travail et payés via les notes de frais, avec les billets d'avion de congé dans le pays d'origine pour le Golfe.",
+                "Reisen, Tagespauschalen, Vorschüsse und Abrechnung — über einen Workflow genehmigt und über Spesen bezahlt, mit Heimaturlaubs-Flugtickets für die Golfregion.",
+                "Viajes, dietas, anticipos y liquidación — aprobados mediante un flujo de trabajo y pagados a través de gastos, con billetes de avión de permiso de origen para el Golfo.",
+                "Trasferte, diarie, anticipi e liquidazione — approvati tramite un flusso di lavoro e pagati tramite le spese, con biglietti aerei per il congedo di rientro per il Golfo.",
+                "Reizen, dagvergoedingen, voorschotten en afrekening — goedgekeurd via een workflow en betaald via onkosten, met thuisverlof-vliegtickets voor de Golfregio."),
+            "Mobile &amp; self-service": _t("Mobile &amp; libre-service", "Mobil &amp; Self-Service", "Móvil &amp; autoservicio", "Mobile &amp; self-service", "Mobiel &amp; selfservice"),
+            "A mobile app for clock-in, requests and payslips — with approved-phone binding that stops buddy-punching.": _t(
+                "Une application mobile pour le pointage, les demandes et les bulletins de paie — avec un verrouillage par téléphone approuvé qui empêche le pointage à la place d'un collègue.",
+                "Eine mobile App für Stempelung, Anträge und Gehaltsabrechnungen — mit Bindung an ein genehmigtes Telefon, die das Stempeln für Kollegen verhindert.",
+                "Una aplicación móvil para el fichaje, las solicitudes y las nóminas — con vinculación a un teléfono aprobado que impide fichar por un compañero.",
+                "Un'app mobile per la timbratura, le richieste e i cedolini — con vincolo a un telefono approvato che impedisce di timbrare per un collega.",
+                "Een mobiele app voor klokken, aanvragen en loonstroken — met binding aan een goedgekeurde telefoon die klokken voor een collega voorkomt."),
             # ---- Built for ----
             "Built for": _t("Conçu pour", "Entwickelt für", "Diseñado para", "Pensato per", "Gebouwd voor"),
             "For the people who look after people": _t(
