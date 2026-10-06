@@ -310,7 +310,10 @@ def page(slug, d, lang='en'):
         per_html = '' if (is_custom or is_free) else '<span class="unit">%s</span>' % per
         blab = d.get('badge_labels', {}).get(i)
         btext = (blab[0] if blab else ('Most popular' if popular else None))
-        badge = ('<p class="mono mono-accent">%s</p>' % btext) if btext else ''
+        # Always emit the badge line so the tier name + price align across all
+        # cards; a card without a badge gets an invisible placeholder of the
+        # same height (e.g. Starter, which has no "Most popular"/"All modules").
+        badge = ('<p class="mono mono-accent">%s</p>' % btext) if btext else '<p class="mono mono-accent" aria-hidden="true">&nbsp;</p>'
         feats = '\n'.join('            <div class="tier"><span>%s</span></div>' % f for f in tiers[i])
         if is_custom:
             btn = '<a class="btn btn-secondary" href="mailto:contact@avenlorconsulting.com">Contact sales</a>'
