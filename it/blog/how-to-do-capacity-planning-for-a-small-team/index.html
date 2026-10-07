@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Come si fa la pianificazione della capacità per un piccolo team? — FulcrumGrid</title>
+  <meta name="description" content="La pianificazione della capacità mette a confronto il lavoro in arrivo con le ore che il tuo team ha davvero. Un metodo semplice passo dopo passo, un esempio e gli errori da evitare." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Come si fa la pianificazione della capacità per un piccolo team?" />
+  <meta property="og:description" content="La pianificazione della capacità mette a confronto il lavoro in arrivo con le ore che il tuo team ha davvero. Un metodo semplice passo dopo passo, un esempio e gli errori da evitare." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-07" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Come si fa la pianificazione della capacità per un piccolo team?" />
+  <meta name="twitter:description" content="La pianificazione della capacità mette a confronto il lavoro in arrivo con le ore che il tuo team ha davvero. Un metodo semplice passo dopo passo, un esempio e gli errori da evitare." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-do-capacity-planning-for-a-small-team/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Come si fa la pianificazione della capacità per un piccolo team?",
+    "description": "La pianificazione della capacità mette a confronto il lavoro in arrivo con le ore che il tuo team ha davvero. Un metodo semplice passo dopo passo, un esempio e gli errori da evitare.",
+    "datePublished": "2026-10-07",
+    "dateModified": "2026-10-07",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/how-to-do-capacity-planning-for-a-small-team/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Pianificazione della capacità",
+        "item": "https://fulcrumgrid.com/it/blog/how-to-do-capacity-planning-for-a-small-team/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quale tasso di utilizzo dovrebbe pianificare un piccolo team?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La maggior parte dei team rende meglio tra il 75 e l'85% delle ore disponibili. Il tempo restante assorbe richieste impreviste, giorni di malattia e stime rivelatesi troppo basse. Pianificare al 100% garantisce quasi di mancare le scadenze."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Con quanto anticipo un piccolo team deve pianificare la capacità?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pianifica nel dettaglio le prossime quattro-otto settimane e in modo approssimativo il prossimo trimestre. I dettagli a più lungo termine invecchiano in fretta, ma uno sguardo d'insieme aiuta a individuare in tempo grandi picchi, ferie ed esigenze di assunzione."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Serve un software specifico per la pianificazione della capacità?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Un foglio di calcolo con le persone sulle righe, le settimane sulle colonne e le ore nelle celle basta alla maggior parte dei piccoli team. Passa a uno strumento dedicato solo quando il foglio diventa difficile da tenere aggiornato."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "E se la domanda supera sempre la capacità?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Allora il problema non è la pianificazione ma le priorità. Mostra il divario in ore a chi stabilisce le priorità e chiedigli di scegliere cosa lasciare, rimandare o finanziare. Un sovraccarico permanente richiede una decisione, non più impegno."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Pianificazione della capacità</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Come si fa la pianificazione della capacità per un piccolo team?</h1>
+        <p class="hero-intro">La pianificazione della capacità mette a confronto il lavoro in arrivo con le ore che il tuo team ha davvero. Un metodo semplice passo dopo passo, un esempio e gli errori da evitare.</p>
+        <p class="mono"><time datetime="2026-10-07">7 ottobre 2026</time> · 5 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>I piccoli team raramente mancano le scadenze perché le persone sono pigre. Le mancano perché il lavoro promesso supera le ore disponibili e nessuno se ne è accorto finché non era troppo tardi. La pianificazione della capacità è l'abitudine di confrontare le due cose prima di dire di sì. Questa guida risponde alle domande più comuni: cos'è la pianificazione della capacità, come farla senza software specifici e come mantenerla utile.</p><h2>Cos'è la pianificazione della capacità?</h2><p>Significa stimare quanto lavoro il tuo team può realisticamente completare in un dato periodo e metterlo a confronto con il lavoro in arrivo. La <strong>capacità</strong> è l'offerta di ore produttive. La <strong>domanda</strong> è il lavoro richiesto o promesso. Il piano mostra dove le due coincidono e dove no.</p><h2>Perché conta di più per i piccoli team?</h2><p>In un team di cinque persone, un giorno di malattia, una dimissione o una richiesta urgente di un cliente cambiano il quadro in modo evidente. Non c'è un bacino di persone di riserva che assorba l'urto. Un piano breve e regolare trasforma le brutte sorprese in scelte fatte con cognizione di causa.</p><h2>Come si pianifica la capacità passo dopo passo?</h2><h3>1. Calcola le ore realmente disponibili</h3><p>Parti dalle ore contrattuali, poi sottrai festività, ferie programmate, formazione e riunioni ricorrenti. Una persona pagata per 40 ore settimanali raramente ha più di 25-30 ore per il lavoro sui progetti. Pianificare su 40 è la causa più comune del fallimento dei piani di capacità.</p><h3>2. Riserva un margine per l'imprevisto</h3><p>Richieste di assistenza, rifacimenti e piccoli favori compaiono sempre. Tieni da parte il 15-20% della capacità per loro, di più se il tuo team lavora soprattutto in reazione alle richieste. Guarda il trimestre scorso per conoscere il dato reale invece di tirare a indovinare.</p><h3>3. Elenca la domanda</h3><p>Annota ogni progetto, attività ricorrente e impegno, ciascuno con una stima approssimativa in ore o giorni. L'approssimazione basta: un intervallo come 20-30 ore è più onesto di un 24 falsamente preciso. Non dimenticare il lavoro invisibile, come l'inserimento dei nuovi arrivati, le revisioni e l'amministrazione.</p><h3>4. Confronta offerta e domanda</h3><p>Mettile su un'unica pagina, per persona o per competenza, per le prossime quattro-otto settimane. Dove la domanda supera la capacità c'è sovraccarico. Dove la capacità supera la domanda c'è spazio per qualcosa di nuovo o per investire in miglioramenti.</p><h3>5. Decidi cosa cede</h3><p>Quando i numeri non tornano, hai quattro opzioni oneste:</p><ul><li><strong>Riprioritizzare.</strong> Lascia o metti in pausa ciò che conta meno.</li><li><strong>Ripianificare.</strong> Sposta una scadenza che ha un po' di flessibilità.</li><li><strong>Aggiungere capacità.</strong> Chiedi in prestito un collega, ricorri a un collaboratore esterno o avvia un'assunzione.</li><li><strong>Ridurre l'ambito.</strong> Consegna una prima versione più piccola.</li></ul><p>Lavorare di più non è nell'elenco. Gli straordinari nascondono il problema per una o due settimane e poi lo peggiorano.</p><h2>Un esempio semplice</h2><p>Un team di quattro persone ha 160 ore contrattuali a settimana. Dopo ferie, riunioni e amministrazione, restano circa 110 ore per il lavoro vero. Tenendo da parte il 20% per le richieste impreviste, ne restano 88. Il lavoro pianificato per la prossima settimana ammonta a 105 ore. Quel divario di 17 ore si vede già il lunedì mattina, così la responsabile del team può rimandare un report poco prioritario o chiedere aiuto, invece di scoprire il problema il venerdì pomeriggio.</p><h2>Errori comuni nella pianificazione della capacità</h2><ul><li><strong>Pianificare al 100% di utilizzo.</strong> Un team impegnato al massimo non ha spazio per nulla di inatteso. Punta al 75-85% delle ore disponibili.</li><li><strong>Trattare le persone come intercambiabili.</strong> Dieci ore libere di un designer non servono quando il collo di bottiglia è l'unica persona in grado di tenere la contabilità.</li><li><strong>Ignorare il multitasking.</strong> Destreggiarsi tra molti progetti insieme costa tempo nei passaggi da uno all'altro, e la produzione reale cala.</li><li><strong>Pianificare una volta e dimenticarsene.</strong> Priorità, assenze e domanda cambiano ogni settimana.</li><li><strong>Tenere il piano riservato.</strong> Se lo vede solo il responsabile, nessun altro può avvisarti quando è sbagliato.</li></ul><h2>Come mantenere utile il piano</h2><p>Dedica quindici minuti a settimana ad aggiornarlo, magari insieme alla riunione di team. Confronta ciò che avevi pianificato con ciò che è accaduto davvero e correggi stime e margine. Dopo qualche ciclo i tuoi numeri saranno molto più affidabili di qualsiasi modello. Per iniziare basta un foglio di calcolo. Se già monitori progetti e KPI in <strong>FulcrumGrid Command Center</strong>, puoi tenere accanto i dati sul carico di lavoro, così una settimana sovraccarica si vede insieme al progetto che mette a rischio, e non in un file separato.</p><p>Conta le ore che hai davvero, sii onesto sul lavoro in arrivo e decidi presto cosa cede. Un piano modesto aggiornato ogni settimana vale più di uno perfetto che non guardi mai.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Quale tasso di utilizzo dovrebbe pianificare un piccolo team?</summary><p>La maggior parte dei team rende meglio tra il 75 e l'85% delle ore disponibili. Il tempo restante assorbe richieste impreviste, giorni di malattia e stime rivelatesi troppo basse. Pianificare al 100% garantisce quasi di mancare le scadenze.</p></details>
+        <details class="faq-item"><summary>Con quanto anticipo un piccolo team deve pianificare la capacità?</summary><p>Pianifica nel dettaglio le prossime quattro-otto settimane e in modo approssimativo il prossimo trimestre. I dettagli a più lungo termine invecchiano in fretta, ma uno sguardo d'insieme aiuta a individuare in tempo grandi picchi, ferie ed esigenze di assunzione.</p></details>
+        <details class="faq-item"><summary>Serve un software specifico per la pianificazione della capacità?</summary><p>No. Un foglio di calcolo con le persone sulle righe, le settimane sulle colonne e le ore nelle celle basta alla maggior parte dei piccoli team. Passa a uno strumento dedicato solo quando il foglio diventa difficile da tenere aggiornato.</p></details>
+        <details class="faq-item"><summary>E se la domanda supera sempre la capacità?</summary><p>Allora il problema non è la pianificazione ma le priorità. Mostra il divario in ore a chi stabilisce le priorità e chiedigli di scegliere cosa lasciare, rimandare o finanziare. Un sovraccarico permanente richiede una decisione, non più impegno.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Guarda il carico di lavoro accanto ai tuoi progetti</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center ti aiuta a seguire KPI e progetti in un unico posto, così le settimane sovraccariche emergono prima che le scadenze saltino.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

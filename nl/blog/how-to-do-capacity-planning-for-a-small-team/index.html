@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Hoe doe je capaciteitsplanning voor een klein team? — FulcrumGrid</title>
+  <meta name="description" content="Capaciteitsplanning zet het binnenkomende werk af tegen de uren die je team echt heeft. Een eenvoudige stappenmethode, een voorbeeld en de fouten die je moet vermijden." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Hoe doe je capaciteitsplanning voor een klein team?" />
+  <meta property="og:description" content="Capaciteitsplanning zet het binnenkomende werk af tegen de uren die je team echt heeft. Een eenvoudige stappenmethode, een voorbeeld en de fouten die je moet vermijden." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-10-07" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hoe doe je capaciteitsplanning voor een klein team?" />
+  <meta name="twitter:description" content="Capaciteitsplanning zet het binnenkomende werk af tegen de uren die je team echt heeft. Een eenvoudige stappenmethode, een voorbeeld en de fouten die je moet vermijden." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-do-capacity-planning-for-a-small-team/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hoe doe je capaciteitsplanning voor een klein team?",
+    "description": "Capaciteitsplanning zet het binnenkomende werk af tegen de uren die je team echt heeft. Een eenvoudige stappenmethode, een voorbeeld en de fouten die je moet vermijden.",
+    "datePublished": "2026-10-07",
+    "dateModified": "2026-10-07",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/how-to-do-capacity-planning-for-a-small-team/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Capaciteitsplanning",
+        "item": "https://fulcrumgrid.com/nl/blog/how-to-do-capacity-planning-for-a-small-team/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bezettingsgraad moet een klein team plannen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De meeste teams presteren het best bij 75 tot 85% van de beschikbare uren. De resterende tijd vangt onvoorziene verzoeken, ziektedagen en te lage schattingen op. Plannen op 100% leidt bijna zeker tot gemiste deadlines."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe ver vooruit moet een klein team de capaciteit plannen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Plan de komende vier tot acht weken in detail en het volgende kwartaal grof. Details op langere termijn raken snel verouderd, maar een grof overzicht helpt je grote pieken, vakanties en wervingsbehoeften op tijd te zien."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Heb ik speciale software nodig voor capaciteitsplanning?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. Een spreadsheet met personen in de rijen, weken in de kolommen en uren in de cellen is genoeg voor de meeste kleine teams. Stap pas over op een speciaal hulpmiddel wanneer de spreadsheet moeilijk actueel te houden wordt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat als de vraag altijd hoger is dan de capaciteit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dan ligt het probleem niet bij de planning maar bij de prioriteiten. Toon het gat in uren aan wie de prioriteiten bepaalt en vraag te kiezen wat vervalt, wordt uitgesteld of wordt gefinancierd. Permanente overbelasting vraagt om een besluit, niet om meer inspanning."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / Capaciteitsplanning</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Hoe doe je capaciteitsplanning voor een klein team?</h1>
+        <p class="hero-intro">Capaciteitsplanning zet het binnenkomende werk af tegen de uren die je team echt heeft. Een eenvoudige stappenmethode, een voorbeeld en de fouten die je moet vermijden.</p>
+        <p class="mono"><time datetime="2026-10-07">7 oktober 2026</time> · 5 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Kleine teams missen zelden deadlines omdat mensen lui zijn. Ze missen ze omdat het beloofde werk groter is dan de beschikbare uren en niemand het doorhad tot het te laat was. Capaciteitsplanning is de gewoonte om die twee te vergelijken voordat je ja zegt. Deze gids beantwoordt de meestgestelde vragen: wat capaciteitsplanning is, hoe je het doet zonder speciale software en hoe je het nuttig houdt.</p><h2>Wat is capaciteitsplanning?</h2><p>Capaciteitsplanning betekent inschatten hoeveel werk je team in een bepaalde periode realistisch kan afronden en dat afzetten tegen het werk dat binnenkomt. <strong>Capaciteit</strong> is het aanbod aan productieve uren. <strong>Vraag</strong> is het werk dat is aangevraagd of beloofd. Het plan laat zien waar die twee samenkomen en waar niet.</p><h2>Waarom is het belangrijker voor kleine teams?</h2><p>In een team van vijf verandert één ziektedag, één ontslag of één dringend klantverzoek het beeld merkbaar. Er is geen reservepool van mensen die de klap opvangt. Een kort, regelmatig plan maakt van vervelende verrassingen keuzes die je bewust maakt.</p><h2>Hoe plan je capaciteit stap voor stap?</h2><h3>1. Bereken de echt beschikbare uren</h3><p>Begin bij de contracturen en trek er feestdagen, geplande verlofdagen, trainingen en terugkerende vergaderingen vanaf. Iemand die voor 40 uur per week wordt betaald, houdt zelden meer dan 25 tot 30 uur over voor projectwerk. Plannen met 40 uur is de meest voorkomende reden waarom capaciteitsplannen mislukken.</p><h3>2. Houd een buffer aan voor het onvoorziene</h3><p>Supportvragen, herwerk en kleine gunsten komen er altijd. Reserveer er 15 tot 20% van de capaciteit voor, en meer als je team vooral reactief werkt. Kijk naar het afgelopen kwartaal om het echte cijfer te kennen in plaats van te gokken.</p><h3>3. Zet de vraag op een rij</h3><p>Schrijf elk project, elke terugkerende taak en elke toezegging op, met een grove schatting in uren of dagen. Grof is prima: een bandbreedte van 20 tot 30 uur is eerlijker dan een schijnnauwkeurige 24. Vergeet het onzichtbare werk niet, zoals inwerken, reviews en administratie.</p><h3>4. Vergelijk aanbod en vraag</h3><p>Zet beide op één pagina, per persoon of per vaardigheid, voor de komende vier tot acht weken. Waar de vraag de capaciteit overstijgt, is er overbelasting. Waar de capaciteit de vraag overstijgt, is er ruimte voor iets nieuws of om in verbeteringen te investeren.</p><h3>5. Beslis wat moet wijken</h3><p>Als de cijfers niet kloppen, heb je vier eerlijke opties:</p><ul><li><strong>Herprioriteren.</strong> Laat het minst belangrijke werk vallen of zet het op pauze.</li><li><strong>Herplannen.</strong> Verschuif een deadline die wat flexibiliteit heeft.</li><li><strong>Capaciteit toevoegen.</strong> Leen een collega, schakel een freelancer in of start met werven.</li><li><strong>De scope verkleinen.</strong> Lever eerst een kleinere versie op.</li></ul><p>Harder werken staat niet op de lijst. Overwerk verbergt het probleem een week of twee en maakt het daarna erger.</p><h2>Een eenvoudig voorbeeld</h2><p>Een team van vier heeft 160 contracturen per week. Na vakanties, vergaderingen en administratie blijven ongeveer 110 uur over voor echt werk. Houd je 20% apart voor onvoorziene verzoeken, dan blijft er 88 uur over. Het geplande werk voor volgende week komt op 105 uur uit. Dat gat van 17 uur zie je al op maandagochtend, zodat de teamleider een minder belangrijk rapport kan uitstellen of hulp kan vragen, in plaats van het probleem vrijdagmiddag te ontdekken.</p><h2>Veelgemaakte fouten bij capaciteitsplanning</h2><ul><li><strong>Plannen op 100% bezetting.</strong> Een team dat helemaal vol zit, heeft geen ruimte voor iets onverwachts. Mik op 75 tot 85% van de beschikbare uren.</li><li><strong>Mensen als inwisselbaar behandelen.</strong> Tien vrije uren van een ontwerper helpen niet als de bottleneck de ene persoon is die de boekhouding kan doen.</li><li><strong>Multitasking negeren.</strong> Veel projecten tegelijk jongleren kost tijd aan schakelen, waardoor de echte output daalt.</li><li><strong>Eén keer plannen en vergeten.</strong> Prioriteiten, afwezigheid en vraag veranderen elke week.</li><li><strong>Het plan privé houden.</strong> Als alleen de manager het ziet, kan niemand anders je waarschuwen wanneer het niet klopt.</li></ul><h2>Het plan nuttig houden</h2><p>Besteed elke week een kwartier aan het bijwerken, het liefst tijdens je teamoverleg. Vergelijk wat je had gepland met wat er echt gebeurde en stel je schattingen en je buffer bij. Na een paar rondes zijn je cijfers veel betrouwbaarder dan welk sjabloon ook. Een spreadsheet is genoeg om te beginnen. Als je projecten en KPI's al volgt in <strong>FulcrumGrid Command Center</strong>, kun je de werkdrukcijfers ernaast bewaren, zodat een overbelaste week zichtbaar is naast het project dat gevaar loopt, in plaats van in een los bestand.</p><p>Tel de uren die je echt hebt, wees eerlijk over het werk dat binnenkomt en beslis op tijd wat moet wijken. Een bescheiden plan dat je elke week bijwerkt, wint van een perfect plan waar je nooit naar kijkt.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Welke bezettingsgraad moet een klein team plannen?</summary><p>De meeste teams presteren het best bij 75 tot 85% van de beschikbare uren. De resterende tijd vangt onvoorziene verzoeken, ziektedagen en te lage schattingen op. Plannen op 100% leidt bijna zeker tot gemiste deadlines.</p></details>
+        <details class="faq-item"><summary>Hoe ver vooruit moet een klein team de capaciteit plannen?</summary><p>Plan de komende vier tot acht weken in detail en het volgende kwartaal grof. Details op langere termijn raken snel verouderd, maar een grof overzicht helpt je grote pieken, vakanties en wervingsbehoeften op tijd te zien.</p></details>
+        <details class="faq-item"><summary>Heb ik speciale software nodig voor capaciteitsplanning?</summary><p>Nee. Een spreadsheet met personen in de rijen, weken in de kolommen en uren in de cellen is genoeg voor de meeste kleine teams. Stap pas over op een speciaal hulpmiddel wanneer de spreadsheet moeilijk actueel te houden wordt.</p></details>
+        <details class="faq-item"><summary>Wat als de vraag altijd hoger is dan de capaciteit?</summary><p>Dan ligt het probleem niet bij de planning maar bij de prioriteiten. Toon het gat in uren aan wie de prioriteiten bepaalt en vraag te kiezen wat vervalt, wordt uitgesteld of wordt gefinancierd. Permanente overbelasting vraagt om een besluit, niet om meer inspanning.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Zie werkdruk naast je projecten</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center helpt je KPI's en projecten op één plek te volgen, zodat overbelaste weken zichtbaar worden voordat deadlines schuiven.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
