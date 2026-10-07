@@ -181,6 +181,20 @@ _CC = {
         'Collega QuickBooks Online (QBO) per abbinare fatture e pagamenti e riconciliare automaticamente.',
         'Koppel QuickBooks Online (QBO) om facturen aan betalingen te matchen en automatisch af te letteren.'),
     'One connection on Growth': _t('Une connexion sur Growth', 'Eine Verbindung bei Growth', 'Una conexión en Growth', 'Una connessione su Growth', 'Eén verbinding op Growth'),
+    'Goals, tasks &amp; approvals': _t('Objectifs, tâches &amp; approbations', 'Ziele, Aufgaben &amp; Genehmigungen', 'Objetivos, tareas &amp; aprobaciones', 'Obiettivi, attività &amp; approvazioni', 'Doelen, taken &amp; goedkeuringen'),
+    'OKRs, KPIs and projects with the tasks beneath them, plus an approvals workflow so decisions get signed off — on the record.': _t(
+        "Des OKR, des KPI et des projets avec les tâches qui en découlent, plus un flux d'approbation pour que les décisions soient validées — et tracées.",
+        'OKRs, KPIs und Projekte mit den darunterliegenden Aufgaben, plus ein Genehmigungs-Workflow, damit Entscheidungen freigegeben werden — nachvollziehbar.',
+        'OKR, KPI y proyectos con las tareas que cuelgan de ellos, más un flujo de aprobación para que las decisiones queden autorizadas — y registradas.',
+        'OKR, KPI e progetti con le attività che ne derivano, più un flusso di approvazione perché le decisioni vengano autorizzate — e tracciate.',
+        "OKR's, KPI's en projecten met de taken daaronder, plus een goedkeuringsworkflow zodat beslissingen worden afgetekend — en vastgelegd."),
+    'Business cards': _t('Cartes de visite', 'Visitenkarten', 'Tarjetas de visita', 'Biglietti da visita', 'Visitekaartjes'),
+    'Capture the business cards your team collects — scanned, categorized and searchable, so new contacts never get lost.': _t(
+        "Capturez les cartes de visite collectées par votre équipe — scannées, classées et consultables, pour ne perdre aucun nouveau contact.",
+        'Erfassen Sie die Visitenkarten, die Ihr Team sammelt — gescannt, kategorisiert und durchsuchbar, damit kein neuer Kontakt verloren geht.',
+        'Capture las tarjetas de visita que recopila su equipo — escaneadas, categorizadas y consultables, para no perder ningún contacto nuevo.',
+        'Acquisisci i biglietti da visita raccolti dal tuo team — scansionati, categorizzati e ricercabili, così nessun nuovo contatto va perso.',
+        'Leg de visitekaartjes vast die uw team verzamelt — gescand, gecategoriseerd en doorzoekbaar, zodat geen nieuw contact verloren gaat.'),
     'Slack &amp; Teams alerts': _t('Alertes Slack &amp; Teams', 'Slack- &amp; Teams-Benachrichtigungen', 'Alertas de Slack &amp; Teams', 'Avvisi Slack &amp; Teams', 'Slack- &amp; Teams-meldingen'),
     'Post a summary of overdue items and key events to a Slack or Teams channel through an incoming webhook — so your team sees what needs attention without opening the app.': _t(
         "Publiez un résumé des éléments en retard et des événements clés dans un canal Slack ou Teams via un webhook entrant — pour que votre équipe voie ce qui requiert son attention sans ouvrir l'application.",

@@ -410,10 +410,14 @@ PAGE['/pricing/command-center/'] = {
         "<th scope=\"row\">Departments</th>": _t(
             "<th scope=\"row\">Services</th>", "<th scope=\"row\">Abteilungen</th>", "<th scope=\"row\">Departamentos</th>",
             "<th scope=\"row\">Reparti</th>", "<th scope=\"row\">Afdelingen</th>"),
-        "<th scope=\"row\">Strategy (OKRs, KPIs, Projects)</th>": _t(
-            "<th scope=\"row\">Stratégie (OKR, KPI, projets)</th>", "<th scope=\"row\">Strategie (OKRs, KPIs, Projekte)</th>",
-            "<th scope=\"row\">Estrategia (OKR, KPI, proyectos)</th>", "<th scope=\"row\">Strategia (OKR, KPI, progetti)</th>",
-            "<th scope=\"row\">Strategie (OKR's, KPI's, projecten)</th>"),
+        "<th scope=\"row\">Strategy (OKRs, KPIs, Projects, Tasks, Approvals)</th>": _t(
+            "<th scope=\"row\">Stratégie (OKR, KPI, projets, tâches, approbations)</th>", "<th scope=\"row\">Strategie (OKRs, KPIs, Projekte, Aufgaben, Genehmigungen)</th>",
+            "<th scope=\"row\">Estrategia (OKR, KPI, proyectos, tareas, aprobaciones)</th>", "<th scope=\"row\">Strategia (OKR, KPI, progetti, attività, approvazioni)</th>",
+            "<th scope=\"row\">Strategie (OKR's, KPI's, projecten, taken, goedkeuringen)</th>"),
+        "<th scope=\"row\">Business cards</th>": _t(
+            "<th scope=\"row\">Cartes de visite</th>", "<th scope=\"row\">Visitenkarten</th>",
+            "<th scope=\"row\">Tarjetas de visita</th>", "<th scope=\"row\">Biglietti da visita</th>",
+            "<th scope=\"row\">Visitekaartjes</th>"),
         "<th scope=\"row\">Finance (P&amp;L, BS, CF, Budget)</th>": _t(
             "<th scope=\"row\">Finance (résultat, bilan, trésorerie, budget)</th>",
             "<th scope=\"row\">Finanzen (GuV, Bilanz, CF, Budget)</th>",

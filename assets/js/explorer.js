@@ -10,7 +10,7 @@
       name: 'Command Center', tag: 'Operations',
       line: 'Real-time operations dashboard. Monitor every metric, workflow, and alert across your business from one screen.',
       price: 'From SAR 490 / mo', href: '/products/command-center/',
-      modules: ['OKRs', 'KPIs', 'Projects', 'P&L', 'Balance sheet', 'Cash flow', 'Budget', 'Compliance', 'Risk', 'Innovation pipeline', 'AI assistant', 'Anomaly alerts', 'ERP integrations', 'Slack & Teams alerts', 'Contracts, loans & rents', 'Announcements']
+      modules: ['OKRs', 'KPIs', 'Projects', 'Tasks', 'Approvals', 'P&L', 'Balance sheet', 'Cash flow', 'Budget', 'Compliance', 'Risk', 'Innovation pipeline', 'AI assistant', 'Anomaly alerts', 'ERP integrations', 'Slack & Teams alerts', 'Contracts, loans & rents', 'Announcements', 'Business cards']
     },
     col: {
       name: 'Collection', tag: 'Receivables',
@@ -31,7 +31,7 @@
       name: 'لوحة التحكم للتنفيذيين', tag: 'العمليات',
       line: 'لوحة عمليات فورية. راقب كل مقياس وسير عمل وتنبيه عبر أعمالك من شاشة واحدة.',
       price: 'من 490 ريال / شهريًا', href: '/ar/products/command-center/',
-      modules: ['الأهداف والنتائج (OKRs)', 'مؤشرات الأداء (KPIs)', 'المشاريع', 'الأرباح والخسائر', 'الميزانية العمومية', 'التدفّق النقدي', 'الموازنة', 'الامتثال', 'المخاطر', 'مسار الابتكار', 'المساعد الذكي', 'تنبيهات الشذوذ', 'تكاملات ERP', 'تنبيهات Slack و Teams', 'العقود والقروض والإيجارات', 'الإعلانات']
+      modules: ['الأهداف والنتائج (OKRs)', 'مؤشرات الأداء (KPIs)', 'المشاريع', 'المهام', 'الموافقات', 'الأرباح والخسائر', 'الميزانية العمومية', 'التدفّق النقدي', 'الموازنة', 'الامتثال', 'المخاطر', 'مسار الابتكار', 'المساعد الذكي', 'تنبيهات الشذوذ', 'تكاملات ERP', 'تنبيهات Slack و Teams', 'العقود والقروض والإيجارات', 'الإعلانات', 'بطاقات العمل']
     },
     col: {
       name: 'منصة تحصيل الديون', tag: 'الذمم',
