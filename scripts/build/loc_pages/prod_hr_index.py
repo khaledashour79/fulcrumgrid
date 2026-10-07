@@ -233,6 +233,27 @@ PAGE = {
                 "Una aplicación móvil para el fichaje, las solicitudes y las nóminas — con vinculación a un teléfono aprobado que impide fichar por un compañero.",
                 "Un'app mobile per la timbratura, le richieste e i cedolini — con vincolo a un telefono approvato che impedisce di timbrare per un collega.",
                 "Een mobiele app voor klokken, aanvragen en loonstroken — met binding aan een goedgekeurde telefoon die klokken voor een collega voorkomt."),
+            "Talent &amp; hiring": _t("Talents &amp; recrutement", "Talent &amp; Einstellung", "Talento &amp; contratación", "Talenti &amp; assunzioni", "Talent &amp; werving"),
+            "A full ATS and public careers page, AI CV screening and an AI shortlist you approve, interview scorecards and video interviews, offers and internal mobility — then performance, learning and succession to grow people once they're in.": _t(
+                "Un ATS complet et une page carrières publique, le tri de CV par IA et une présélection IA que vous validez, des grilles d'entretien et des entretiens vidéo, des offres et la mobilité interne — puis la performance, la formation et la relève pour faire grandir vos talents une fois en poste.",
+                "Ein vollständiges Bewerbermanagement (ATS) und eine öffentliche Karriereseite, KI-Lebenslaufprüfung und eine KI-Vorauswahl, die Sie freigeben, Interview-Bewertungsbögen und Video-Interviews, Angebote und interne Mobilität — dann Leistung, Lernen und Nachfolge, um Menschen weiterzuentwickeln, sobald sie da sind.",
+                "Un ATS completo y una página de empleo pública, cribado de CV por IA y una preselección con IA que usted aprueba, formularios de entrevista y entrevistas en vídeo, ofertas y movilidad interna — luego desempeño, formación y sucesión para hacer crecer a las personas una vez dentro.",
+                "Un ATS completo e una pagina lavora-con-noi pubblica, screening dei CV con IA e una rosa di candidati suggerita dall'IA che approvi tu, schede di valutazione dei colloqui e colloqui video, offerte e mobilità interna — poi performance, formazione e successione per far crescere le persone una volta entrate.",
+                "Een volledig ATS en een openbare vacaturepagina, AI-cv-screening en een AI-shortlist die u goedkeurt, interviewscorekaarten en video-interviews, aanbiedingen en interne mobiliteit — daarna prestaties, leren en opvolging om mensen te laten groeien zodra ze binnen zijn."),
+            "Roles &amp; permissions": _t("Rôles &amp; permissions", "Rollen &amp; Berechtigungen", "Roles &amp; permisos", "Ruoli &amp; autorizzazioni", "Rollen &amp; rechten"),
+            "Custom roles with granular permissions, and a security-scoped IT Admin role that runs the workspace and SSO without ever seeing salary or personal records.": _t(
+                "Des rôles personnalisés aux permissions fines, et un rôle Admin IT au périmètre de sécurité restreint qui administre l'espace de travail et le SSO sans jamais voir les salaires ni les dossiers personnels.",
+                "Individuelle Rollen mit feingranularen Berechtigungen und eine sicherheitsbeschränkte IT-Admin-Rolle, die den Arbeitsbereich und SSO verwaltet, ohne jemals Gehälter oder persönliche Datensätze zu sehen.",
+                "Roles personalizados con permisos granulares, y un rol de administrador de TI acotado por seguridad que gestiona el espacio de trabajo y el SSO sin ver nunca salarios ni expedientes personales.",
+                "Ruoli personalizzati con autorizzazioni granulari e un ruolo IT Admin con ambito di sicurezza ristretto che gestisce lo spazio di lavoro e l'SSO senza mai vedere stipendi o dati personali.",
+                "Aangepaste rollen met granulaire rechten, en een qua beveiliging afgebakende IT-Admin-rol die de werkruimte en SSO beheert zonder ooit salarissen of persoonlijke dossiers te zien."),
+            "Org structure": _t("Structure organisationnelle", "Organisationsstruktur", "Estructura organizativa", "Struttura organizzativa", "Organisatiestructuur"),
+            "Branches, departments, locations and positions — the org chart your headcount, reporting and compliance hang off.": _t(
+                "Filiales, départements, sites et postes — l'organigramme sur lequel reposent vos effectifs, votre reporting et votre conformité.",
+                "Niederlassungen, Abteilungen, Standorte und Stellen — das Organigramm, an dem Ihr Personalbestand, Ihr Reporting und Ihre Compliance hängen.",
+                "Sucursales, departamentos, ubicaciones y puestos — el organigrama del que dependen su plantilla, sus informes y su cumplimiento.",
+                "Filiali, reparti, sedi e posizioni — l'organigramma su cui poggiano organico, reportistica e conformità.",
+                "Vestigingen, afdelingen, locaties en functies — het organigram waar uw personeelsbestand, rapportage en compliance aan hangen."),
             # ---- Built for ----
             "Built for": _t("Conçu pour", "Entwickelt für", "Diseñado para", "Pensato per", "Gebouwd voor"),
             "For the people who look after people": _t(

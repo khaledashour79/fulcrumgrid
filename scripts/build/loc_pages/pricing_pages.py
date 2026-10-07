@@ -1023,6 +1023,12 @@ PAGE['/pricing/hr-suite/'] = {
         "<th scope=\"row\">Custom domain</th>": _t(
             "<th scope=\"row\">Domaine personnalisé</th>", "<th scope=\"row\">Eigene Domain</th>", "<th scope=\"row\">Dominio propio</th>",
             "<th scope=\"row\">Dominio personalizzato</th>", "<th scope=\"row\">Eigen domein</th>"),
+        "<th scope=\"row\">Oracle Integration (OIC)</th>": _t(
+            "<th scope=\"row\">Oracle Integration (OIC)</th>", "<th scope=\"row\">Oracle Integration (OIC)</th>", "<th scope=\"row\">Oracle Integration (OIC)</th>",
+            "<th scope=\"row\">Oracle Integration (OIC)</th>", "<th scope=\"row\">Oracle Integration (OIC)</th>"),
+        "<th scope=\"row\">Oracle Fusion (ERP Cloud)</th>": _t(
+            "<th scope=\"row\">Oracle Fusion (ERP Cloud)</th>", "<th scope=\"row\">Oracle Fusion (ERP Cloud)</th>", "<th scope=\"row\">Oracle Fusion (ERP Cloud)</th>",
+            "<th scope=\"row\">Oracle Fusion (ERP Cloud)</th>", "<th scope=\"row\">Oracle Fusion (ERP Cloud)</th>"),
         "<th scope=\"row\">SSO &amp; SCIM</th>": _t(
             "<th scope=\"row\">SSO &amp; SCIM</th>", "<th scope=\"row\">SSO &amp; SCIM</th>", "<th scope=\"row\">SSO &amp; SCIM</th>",
             "<th scope=\"row\">SSO &amp; SCIM</th>", "<th scope=\"row\">SSO &amp; SCIM</th>"),
