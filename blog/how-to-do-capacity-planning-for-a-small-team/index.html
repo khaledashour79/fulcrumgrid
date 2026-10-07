@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>How Do You Do Capacity Planning for a Small Team? — FulcrumGrid</title>
+  <meta name="description" content="Capacity planning matches the work coming in with the hours your team really has. Learn a simple step-by-step method, an example and the mistakes to avoid." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How Do You Do Capacity Planning for a Small Team?" />
+  <meta property="og:description" content="Capacity planning matches the work coming in with the hours your team really has. Learn a simple step-by-step method, an example and the mistakes to avoid." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-07" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Do You Do Capacity Planning for a Small Team?" />
+  <meta name="twitter:description" content="Capacity planning matches the work coming in with the hours your team really has. Learn a simple step-by-step method, an example and the mistakes to avoid." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-do-capacity-planning-for-a-small-team/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-do-capacity-planning-for-a-small-team/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How Do You Do Capacity Planning for a Small Team?",
+    "description": "Capacity planning matches the work coming in with the hours your team really has. Learn a simple step-by-step method, an example and the mistakes to avoid.",
+    "datePublished": "2026-10-07",
+    "dateModified": "2026-10-07",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/how-to-do-capacity-planning-for-a-small-team/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Capacity Planning",
+        "item": "https://fulcrumgrid.com/blog/how-to-do-capacity-planning-for-a-small-team/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What utilisation rate should a small team plan for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most teams do best at 75 to 85% of available hours. The remaining time absorbs unplanned requests, sick days and estimates that turn out too low. Planning at 100% almost guarantees missed deadlines."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far ahead should a small team plan capacity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Plan the next four to eight weeks in detail and the next quarter roughly. Detail further out goes stale quickly, but a rough view helps you spot big peaks, holidays and hiring needs in time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need special software for capacity planning?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. A spreadsheet with people in rows, weeks in columns and hours in the cells is enough for most small teams. Move to a dedicated tool only when the spreadsheet becomes hard to keep current."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if demand is always higher than capacity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Then the issue is not planning but priorities. Show the gap in hours to whoever sets the priorities and ask them to choose what to drop, delay or fund. A permanent overload needs a decision, not more effort."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Capacity Planning</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>How Do You Do Capacity Planning for a Small Team?</h1>
+        <p class="hero-intro">Capacity planning matches the work coming in with the hours your team really has. Learn a simple step-by-step method, an example and the mistakes to avoid.</p>
+        <p class="mono"><time datetime="2026-10-07">October 7, 2026</time> · 5 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Small teams rarely miss deadlines because people are lazy. They miss them because the work promised is larger than the hours available, and nobody noticed until it was too late. Capacity planning is the habit of comparing the two before you say yes. This guide answers the most common questions: what capacity planning is, how to do it without special software, and how to keep it useful.</p><h2>What is capacity planning?</h2><p>Capacity planning means estimating how much work your team can realistically complete in a given period, then matching it against the work that is coming in. <strong>Capacity</strong> is the supply of productive hours. <strong>Demand</strong> is the work that has been requested or promised. The plan shows where the two meet and where they do not.</p><h2>Why does it matter more for small teams?</h2><p>In a team of five, one sick day, one resignation or one urgent client request changes the picture noticeably. There is no spare pool of people to absorb the shock. A short, regular plan turns unpleasant surprises into trade-offs you make on purpose.</p><h2>How do you plan capacity step by step?</h2><h3>1. Calculate real available hours</h3><p>Start with contracted hours, then subtract public holidays, planned leave, training and recurring meetings. A person paid for 40 hours a week rarely has more than 25 to 30 hours left for project work. Planning with 40 is the most common reason capacity plans fail.</p><h3>2. Reserve a buffer for the unplanned</h3><p>Support requests, rework and small favours always appear. Hold back 15 to 20% of capacity for them, and more if your team is mostly reactive. Look at last quarter to see what the real figure was instead of guessing.</p><h3>3. List the demand</h3><p>Write down every project, recurring task and commitment, each with a rough estimate in hours or days. Rough is fine: a range such as 20 to 30 hours is more honest than a falsely precise 24. Do not forget the invisible work, such as onboarding, reviews and administration.</p><h3>4. Compare supply and demand</h3><p>Put both on one page, per person or per skill, for the next four to eight weeks. Where demand exceeds capacity you have an overload. Where capacity exceeds demand you have room to take on something new or to invest in improvements.</p><h3>5. Decide what gives</h3><p>When the numbers do not fit, you have four honest options:</p><ul><li><strong>Reprioritise.</strong> Drop or pause the work that matters least.</li><li><strong>Reschedule.</strong> Move a deadline that has some flexibility.</li><li><strong>Add capacity.</strong> Borrow a colleague, use a contractor or start hiring.</li><li><strong>Reduce scope.</strong> Deliver a smaller first version.</li></ul><p>Working harder is not on the list. Overtime hides the problem for a week or two and then makes it worse.</p><h2>A simple example</h2><p>A team of four has 160 contracted hours a week. After holidays, meetings and administration, about 110 hours are available for real work. Holding back 20% for unplanned requests leaves 88 hours. The planned work for next week adds up to 105 hours. That gap of 17 hours is visible on Monday morning, so the team lead can postpone a low-priority report or ask for help, instead of discovering the problem on Friday afternoon.</p><h2>Common capacity planning mistakes</h2><ul><li><strong>Planning at 100% utilisation.</strong> A team booked solid has no room for anything unexpected. Aim for 75 to 85% of available hours.</li><li><strong>Treating people as interchangeable.</strong> Ten free hours of a designer do not help when the bottleneck is the one person who can do the accounts.</li><li><strong>Ignoring multitasking.</strong> Juggling many projects at once costs time in switching, so real output drops.</li><li><strong>Planning once and forgetting it.</strong> Priorities, absences and demand change every week.</li><li><strong>Keeping the plan private.</strong> If only the manager sees it, nobody else can warn you when it is wrong.</li></ul><h2>Keeping the plan useful</h2><p>Spend fifteen minutes a week updating it, ideally at the same time as your team meeting. Compare what you planned with what actually happened, and adjust your estimates and your buffer. After a few cycles, your numbers will be far more reliable than any template. A spreadsheet is enough to start. If you already track projects and KPIs in <strong>FulcrumGrid Command Center</strong>, you can keep workload figures next to them, so an overloaded week is visible alongside the project it threatens rather than in a separate file.</p><p>Count the hours you really have, be honest about the work coming in, and decide early what gives. A modest plan that you update every week beats a perfect one you never look at.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>What utilisation rate should a small team plan for?</summary><p>Most teams do best at 75 to 85% of available hours. The remaining time absorbs unplanned requests, sick days and estimates that turn out too low. Planning at 100% almost guarantees missed deadlines.</p></details>
+        <details class="faq-item"><summary>How far ahead should a small team plan capacity?</summary><p>Plan the next four to eight weeks in detail and the next quarter roughly. Detail further out goes stale quickly, but a rough view helps you spot big peaks, holidays and hiring needs in time.</p></details>
+        <details class="faq-item"><summary>Do I need special software for capacity planning?</summary><p>No. A spreadsheet with people in rows, weeks in columns and hours in the cells is enough for most small teams. Move to a dedicated tool only when the spreadsheet becomes hard to keep current.</p></details>
+        <details class="faq-item"><summary>What if demand is always higher than capacity?</summary><p>Then the issue is not planning but priorities. Show the gap in hours to whoever sets the priorities and ask them to choose what to drop, delay or fund. A permanent overload needs a decision, not more effort.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>See workload next to your projects</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center helps you track KPIs and projects in one place, so overloaded weeks show up before deadlines slip.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
