@@ -22,7 +22,7 @@
       name: 'HR Suite', tag: 'People',
       line: 'People operations from hire to retire. Manage employees, payroll, time off, and everything in between.',
       price: 'From SAR 5 / seat / mo', href: '/products/hr-suite/',
-      modules: ['Core HR', 'Time off', 'Expenses', 'HR letters', 'Onboarding', 'Documents & e-sign', 'Time & attendance', 'Overtime', 'Employment contracts', 'Assets', 'HR helpdesk', 'Benefits', 'Performance', 'Payroll', 'GOSI', 'End-of-service', 'Recruitment (ATS)', 'Learning (LMS)', 'Engagement surveys', 'Approval workflows', 'Policy Library', 'Business travel', 'Report builder', 'Mobile app', 'Document requests', 'AI Copilot & Agents', 'SSO & SCIM', 'SAP Business One', '+ 12 more modules']
+      modules: ['Core HR', 'Time off', 'Expenses', 'HR letters', 'Onboarding', 'Documents & e-sign', 'Time & attendance', 'Overtime', 'Employment contracts', 'Assets', 'HR helpdesk', 'Benefits', 'Performance', 'Payroll', 'GOSI', 'End-of-service', 'Recruitment (ATS)', 'Candidate portal', 'Learning (LMS)', 'Engagement surveys', 'Approval workflows', 'Policy Library', 'Business travel', 'Report builder', 'Mobile app', 'Document requests', 'AI Copilot & Agents', 'SSO & SCIM', 'SAP Business One', '+ 11 more modules']
     }
   };
 
@@ -43,7 +43,7 @@
       name: 'منصة الموارد البشرية', tag: 'الأفراد',
       line: 'عمليات الأفراد من التعيين إلى التقاعد. أدِر الموظفين والرواتب والإجازات وكل ما بينهما.',
       price: 'من 5 ريال / مقعد / شهريًا', href: '/ar/products/hr-suite/',
-      modules: ['الموارد البشرية الأساسية', 'الإجازات', 'المصروفات', 'خطابات الموارد البشرية', 'التأهيل', 'المستندات والتوقيع الإلكتروني', 'الوقت والحضور', 'العمل الإضافي', 'عقود العمل', 'العُهد والأصول', 'مكتب خدمة الموارد البشرية', 'المزايا', 'الأداء', 'الرواتب', 'التأمينات (GOSI)', 'نهاية الخدمة', 'التوظيف (ATS)', 'التعلّم (LMS)', 'استبيانات التفاعل', 'مسارات الموافقات', 'مكتبة السياسات', 'سفر الأعمال', 'منشئ التقارير', 'تطبيق الجوال', 'طلبات المستندات', 'المساعد الذكي والوكلاء', 'SSO و SCIM', 'SAP Business One', '+ 12 وحدة إضافية']
+      modules: ['الموارد البشرية الأساسية', 'الإجازات', 'المصروفات', 'خطابات الموارد البشرية', 'التأهيل', 'المستندات والتوقيع الإلكتروني', 'الوقت والحضور', 'العمل الإضافي', 'عقود العمل', 'العُهد والأصول', 'مكتب خدمة الموارد البشرية', 'المزايا', 'الأداء', 'الرواتب', 'التأمينات (GOSI)', 'نهاية الخدمة', 'التوظيف (ATS)', 'بوابة المتقدّمين', 'التعلّم (LMS)', 'استبيانات التفاعل', 'مسارات الموافقات', 'مكتبة السياسات', 'سفر الأعمال', 'منشئ التقارير', 'تطبيق الجوال', 'طلبات المستندات', 'المساعد الذكي والوكلاء', 'SSO و SCIM', 'SAP Business One', '+ 11 وحدة إضافية']
     }
   };
 

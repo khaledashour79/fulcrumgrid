@@ -988,6 +988,12 @@ PAGE['/pricing/hr-suite/'] = {
         "<th scope=\"row\">Careers page</th>": _t(
             "<th scope=\"row\">Page carrières</th>", "<th scope=\"row\">Karriereseite</th>", "<th scope=\"row\">Página de empleo</th>",
             "<th scope=\"row\">Pagina lavora con noi</th>", "<th scope=\"row\">Vacaturepagina</th>"),
+        "<th scope=\"row\">Candidate portal</th>": _t(
+            "<th scope=\"row\">Portail candidat</th>", "<th scope=\"row\">Bewerberportal</th>", "<th scope=\"row\">Portal del candidato</th>",
+            "<th scope=\"row\">Portale candidati</th>", "<th scope=\"row\">Kandidaatportaal</th>"),
+        "<th scope=\"row\">Video interviews</th>": _t(
+            "<th scope=\"row\">Entretiens vidéo</th>", "<th scope=\"row\">Video-Interviews</th>", "<th scope=\"row\">Entrevistas en vídeo</th>",
+            "<th scope=\"row\">Colloqui video</th>", "<th scope=\"row\">Video-interviews</th>"),
         "<th scope=\"row\">Succession &amp; development</th>": _t(
             "<th scope=\"row\">Succession &amp; développement</th>", "<th scope=\"row\">Nachfolge &amp; Entwicklung</th>", "<th scope=\"row\">Sucesión &amp; desarrollo</th>",
             "<th scope=\"row\">Successione &amp; sviluppo</th>", "<th scope=\"row\">Opvolging &amp; ontwikkeling</th>"),
