@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Come costruire uno scadenzario di solleciti di pagamento? — FulcrumGrid</title>
+  <meta name="description" content="Uno scadenzario di solleciti trasforma la rincorsa delle fatture scadute in una sequenza pianificata. Scopri una cadenza tipo, il tono per fase e quando sospendere o escalare." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Come costruire uno scadenzario di solleciti di pagamento?" />
+  <meta property="og:description" content="Uno scadenzario di solleciti trasforma la rincorsa delle fatture scadute in una sequenza pianificata. Scopri una cadenza tipo, il tono per fase e quando sospendere o escalare." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/how-to-build-a-dunning-schedule/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-09" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Come costruire uno scadenzario di solleciti di pagamento?" />
+  <meta name="twitter:description" content="Uno scadenzario di solleciti trasforma la rincorsa delle fatture scadute in una sequenza pianificata. Scopri una cadenza tipo, il tono per fase e quando sospendere o escalare." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/how-to-build-a-dunning-schedule/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-build-a-dunning-schedule/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-build-a-dunning-schedule/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-build-a-dunning-schedule/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-build-a-dunning-schedule/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-build-a-dunning-schedule/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-build-a-dunning-schedule/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-build-a-dunning-schedule/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-build-a-dunning-schedule/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Come costruire uno scadenzario di solleciti di pagamento?",
+    "description": "Uno scadenzario di solleciti trasforma la rincorsa delle fatture scadute in una sequenza pianificata. Scopri una cadenza tipo, il tono per fase e quando sospendere o escalare.",
+    "datePublished": "2026-10-09",
+    "dateModified": "2026-10-09",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/how-to-build-a-dunning-schedule/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida allo scadenzario solleciti",
+        "item": "https://fulcrumgrid.com/it/blog/how-to-build-a-dunning-schedule/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Che cosa significa sollecito di pagamento (dunning)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Il sollecito è il processo di contattare i clienti per incassare fatture scadute. Uno scadenzario di solleciti è semplicemente la sequenza pianificata di questi promemoria, da un avviso prima della scadenza a una messa in mora formale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanti promemoria dovrebbe avere una sequenza di solleciti?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La maggior parte delle aziende usa da cinque a sette passi ancorati alla scadenza. Uno schema comune: un promemoria prima della scadenza, uno il giorno stesso, poi follow-up verso 7, 14, 30, 45 e 60 giorni di ritardo, con tono crescente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quando devo escalare a un'agenzia di recupero o al legale?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Escala quando i promemoria vengono ripetutamente ignorati, una promessa di pagamento viene infranta o il saldo supera un valore fissato in anticipo, di solito verso i 60 giorni di ritardo dopo un avviso finale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Devo sospendere i promemoria se un cliente contesta una fattura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì. Sospendi la sequenza non appena esiste una contestazione reale o un piano di pagamento concordato, e monitoralo a parte. Rincorrere una fattura contestata spreca lavoro e danneggia la relazione."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida allo scadenzario solleciti</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>Come costruire uno scadenzario di solleciti di pagamento?</h1>
+        <p class="hero-intro">Uno scadenzario di solleciti trasforma la rincorsa delle fatture scadute in una sequenza pianificata. Scopri una cadenza tipo, il tono per fase e quando sospendere o escalare.</p>
+        <p class="mono"><time datetime="2026-10-09">9 ottobre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Ogni azienda che fattura a termini prima o poi arriva allo stesso momento: un pagamento è in ritardo e qualcuno deve decidere cosa fare. Presa all’occorrenza, quella decisione risulta diversa ogni volta, di solito a seconda di chi se ne ricorda. Uno scadenzario di solleciti sostituisce l’improvvisazione con una sequenza pianificata di promemoria che inizia prima della scadenza e cresce di intensità per passi chiari, concordati in anticipo. Questa guida spiega cos’è uno scadenzario di solleciti, come progettare una cadenza, come adattare tono e canale a ogni fase e quando sospendere o escalare — senza bruciare la relazione.</p><h2>Che cos’è uno scadenzario di solleciti?</h2><p>Il sollecito è il processo di comunicazione con i clienti per incassare fatture scadute. Uno scadenzario di solleciti è la sequenza pianificata di queste comunicazioni — cosa invii, quando, su quale canale e con quale tono — da un avviso cortese prima della scadenza fino a una messa in mora formale. L’idea è semplice: decidere i passi una volta, a mente fredda, perché nessuno debba improvvisare sotto pressione quando una fattura slitta.</p><h2>Perché pianificare invece di rincorrere all’occorrenza?</h2><p>La rincorsa improvvisata ha tre problemi. È incoerente, così clienti simili vengono trattati in modo diverso e nessuno prevede cosa accadrà. Si dimentica, così i promemoria saltano proprio quando il team è impegnato — cioè quando la cassa conta di più. Ed è stressante, perché ogni fattura scaduta diventa una valutazione a sé. Uno scadenzario risolve tutti e tre. Rende l’incasso prevedibile per il cliente, ripetibile per il team e misurabile per l’azienda, così col tempo vedi quali passi recuperano davvero denaro e quali si limitano a infastidire.</p><h2>Una cadenza di solleciti tipo</h2><p>Considera quanto segue un modello di partenza, non una regola. Àncora ogni passo alla scadenza e adatta gli intervalli alle tue condizioni e ai tuoi clienti.</p><ul><li><strong>3 giorni prima della scadenza.</strong> Un promemoria cortese che una fattura sta per scadere, con l’importo e un link di pagamento. È un servizio, non un sollecito.</li><li><strong>Il giorno della scadenza.</strong> Una nota neutra «in scadenza oggi» che conferma l’importo e come pagare.</li><li><strong>+7 giorni.</strong> Un primo promemoria cortese che la fattura è ora scaduta, presumendo una semplice dimenticanza.</li><li><strong>+14 giorni.</strong> Un secondo promemoria più fermo che richiama le condizioni concordate e chiede una data di pagamento precisa.</li><li><strong>+30 giorni.</strong> Un avviso diretto, idealmente sostenuto da una telefonata, che illustra le conseguenze del mancato pagamento prolungato.</li><li><strong>+45 giorni.</strong> Una comunicazione formale, spesso da un responsabile, che avverte che il conto è vicino all’escalation.</li><li><strong>+60 giorni.</strong> Un avviso finale prima che il credito passi a un’agenzia di recupero o al legale, con una scadenza perentoria.</li></ul><h2>Adattare canale e tono a ogni fase</h2><p>I primi passi devono essere leggeri e cordiali: e-mail o SMS, brevi e utili, scritti come se il cliente avesse semplicemente dimenticato — cosa di solito vera. Col passare dei giorni il tono si irrigidisce e il canale diventa più personale. Una telefonata intorno al +30 spesso recupera più di qualsiasi e-mail, perché fa emergere le contestazioni e consente di concordare un piano sul momento. Riserva le comunicazioni formali in stile lettera e la menzione di un’agenzia o di un’azione legale alle fasi tardive. Aumenta la fermezza gradualmente; non aprire mai con una minaccia e non lasciare che il linguaggio diventi personale o umiliante.</p><h2>Segmentare per valore e rischio del cliente</h2><p>Un solo scadenzario raramente va bene per tutti. Un conto strategico di lunga data in ritardo di tre giorni merita un contatto più morbido e lento di un cliente nuovissimo con una storia di pagamenti tardivi. Segmenta per valore e per rischio: i saldi grandi o ad alto rischio ricevono una telefonata prima e scadenze più strette, mentre i conti piccoli o affidabili possono seguire il percorso morbido quasi in automatico. Assegna sempre a ogni conto un unico responsabile con nome, così i follow-up non cadono tra le persone.</p><h2>Quando sospendere e quando escalare</h2><p>Uno scadenzario ha bisogno di una regola di stop tanto quanto di una di avvio. Sospendi la sequenza nel momento in cui un cliente solleva una contestazione reale e indirizzala a chi può risolverla — rincorrere una fattura contestata distrugge la buona volontà e spreca lavoro. Sospendila anche quando si concorda un piano di pagamento e monitoralo a parte. Escala, invece, quando i promemoria vengono ignorati, una promessa viene infranta o il saldo supera una soglia: passalo a un responsabile, poi a un’agenzia o al legale, secondo una regola concordata in anticipo e non secondo l’umore del giorno.</p><h2>Errori comuni da evitare</h2><ul><li><strong>Lo stesso messaggio ogni volta.</strong> Se l’avviso a +7 e quello a +45 si leggono identici, i clienti imparano che nulla cambia e ignorano entrambi.</li><li><strong>Nessun responsabile.</strong> Uno scadenzario senza nessuno incaricato di ciascun conto smette di girare in silenzio.</li><li><strong>Nessuna regola di stop.</strong> Rincorrere fatture contestate o già pagate è il modo più rapido per perdere un buon cliente.</li><li><strong>Bruciare la relazione troppo presto.</strong> Aprire con fermezza o minacciare azioni legali al settimo giorno costa molto più della fattura.</li><li><strong>Nessun percorso di escalation.</strong> Se dopo l’ultimo promemoria non accade mai nulla, l’intera sequenza perde peso.</li><li><strong>Non misurare mai.</strong> Se non monitori quale passo ottiene il pagamento, non puoi migliorare la cadenza.</li></ul><p>Parti dal modello qui sopra, usalo per un trimestre e regola tempi e tono in base a ciò che davvero fa pagare le tue fatture.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Che cosa significa sollecito di pagamento (dunning)?</summary><p>Il sollecito è il processo di contattare i clienti per incassare fatture scadute. Uno scadenzario di solleciti è semplicemente la sequenza pianificata di questi promemoria, da un avviso prima della scadenza a una messa in mora formale.</p></details>
+        <details class="faq-item"><summary>Quanti promemoria dovrebbe avere una sequenza di solleciti?</summary><p>La maggior parte delle aziende usa da cinque a sette passi ancorati alla scadenza. Uno schema comune: un promemoria prima della scadenza, uno il giorno stesso, poi follow-up verso 7, 14, 30, 45 e 60 giorni di ritardo, con tono crescente.</p></details>
+        <details class="faq-item"><summary>Quando devo escalare a un'agenzia di recupero o al legale?</summary><p>Escala quando i promemoria vengono ripetutamente ignorati, una promessa di pagamento viene infranta o il saldo supera un valore fissato in anticipo, di solito verso i 60 giorni di ritardo dopo un avviso finale.</p></details>
+        <details class="faq-item"><summary>Devo sospendere i promemoria se un cliente contesta una fattura?</summary><p>Sì. Sospendi la sequenza non appena esiste una contestazione reale o un piano di pagamento concordato, e monitoralo a parte. Rincorrere una fattura contestata spreca lavoro e danneggia la relazione.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Metti i solleciti in pilota automatico</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Collection automatizza i promemoria multicanale e raccoglie ogni promessa e follow-up in un unico posto, così nessuna fattura scaduta sfugge tra le maglie.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/collection/">Esplora Collection</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

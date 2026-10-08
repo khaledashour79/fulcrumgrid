@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Comment construire un échéancier de relance ? — FulcrumGrid</title>
+  <meta name="description" content="Un échéancier de relance transforme la poursuite des factures en retard en une séquence planifiée. Découvrez une cadence type, le ton par étape, quand suspendre et escalader." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Comment construire un échéancier de relance ?" />
+  <meta property="og:description" content="Un échéancier de relance transforme la poursuite des factures en retard en une séquence planifiée. Découvrez une cadence type, le ton par étape, quand suspendre et escalader." />
+  <meta property="og:url" content="https://fulcrumgrid.com/fr/blog/how-to-build-a-dunning-schedule/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-09" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Comment construire un échéancier de relance ?" />
+  <meta name="twitter:description" content="Un échéancier de relance transforme la poursuite des factures en retard en une séquence planifiée. Découvrez une cadence type, le ton par étape, quand suspendre et escalader." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/fr/blog/how-to-build-a-dunning-schedule/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-build-a-dunning-schedule/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-build-a-dunning-schedule/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-build-a-dunning-schedule/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-build-a-dunning-schedule/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-build-a-dunning-schedule/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-build-a-dunning-schedule/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-build-a-dunning-schedule/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-build-a-dunning-schedule/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Comment construire un échéancier de relance ?",
+    "description": "Un échéancier de relance transforme la poursuite des factures en retard en une séquence planifiée. Découvrez une cadence type, le ton par étape, quand suspendre et escalader.",
+    "datePublished": "2026-10-09",
+    "dateModified": "2026-10-09",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/fr/blog/how-to-build-a-dunning-schedule/"
+    },
+    "inLanguage": "fr"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://fulcrumgrid.com/fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/fr/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guide de l'échéancier de relance",
+        "item": "https://fulcrumgrid.com/fr/blog/how-to-build-a-dunning-schedule/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Que signifie « relance » en recouvrement ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La relance est le fait de contacter les clients pour recouvrer des factures échues. Un échéancier de relance est simplement la séquence planifiée de ces rappels, d'un rappel avant échéance à une mise en demeure formelle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Combien de rappels une séquence de relance doit-elle comporter ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La plupart des entreprises utilisent cinq à sept étapes, ancrées à l'échéance. Un schéma courant : un rappel avant échéance, un le jour J, puis des relances vers 7, 14, 30, 45 et 60 jours de retard, au ton croissant."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quand escalader vers une agence de recouvrement ou le juridique ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Escaladez quand les rappels sont ignorés à répétition, qu'une promesse de paiement est rompue, ou que le solde dépasse une valeur fixée d'avance, souvent vers 60 jours de retard après un avis final."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Faut-il suspendre les rappels si un client conteste une facture ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. Suspendez la séquence dès qu'il existe un litige réel ou un plan de paiement convenu, et suivez-le à part. Relancer une facture contestée gaspille de l'énergie et nuit à la relation."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/fr/" aria-label="Accueil FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/fr/products/">Produits</a>
+        <a href="/fr/features/">Grille</a>
+        <a href="/fr/pricing/">Tarifs</a>
+        <a href="/fr/regions/">Régions</a>
+        <a href="/fr/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/fr/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Langue">FR ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" class="active" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/fr/contact/">Demander une démo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/fr/">Accueil</a> / <a href="/fr/blog/">Blog</a> / Guide de l'échéancier de relance</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>Comment construire un échéancier de relance ?</h1>
+        <p class="hero-intro">Un échéancier de relance transforme la poursuite des factures en retard en une séquence planifiée. Découvrez une cadence type, le ton par étape, quand suspendre et escalader.</p>
+        <p class="mono"><time datetime="2026-10-09">9 octobre 2026</time> · 6 min de lecture</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Toute entreprise qui facture à crédit finit par connaître le même moment : un paiement est en retard, et quelqu’un doit décider quoi faire. Prise au cas par cas, cette décision diffère à chaque fois, souvent selon celui qui y pense. Un échéancier de relance remplace l’improvisation par une séquence planifiée de rappels qui commence avant l’échéance et monte en intensité par étapes claires, convenues à l’avance. Ce guide explique ce qu’est un échéancier de relance, comment concevoir une cadence, comment adapter le ton et le canal à chaque étape, et quand suspendre ou escalader — sans abîmer la relation.</p><h2>Qu’est-ce qu’un échéancier de relance ?</h2><p>La relance est le processus par lequel on contacte les clients pour recouvrer des factures échues. Un échéancier de relance est la séquence planifiée de ces communications — ce que vous envoyez, quand, par quel canal et sur quel ton — depuis un rappel courtois avant l’échéance jusqu’à une mise en demeure formelle. L’idée est simple : décider les étapes une fois, à froid, pour que personne n’ait à improviser sous pression lorsqu’une facture glisse.</p><h2>Pourquoi planifier plutôt que relancer au cas par cas ?</h2><p>La relance improvisée pose trois problèmes. Elle est incohérente : des clients semblables sont traités différemment et nul ne prévoit la suite. Elle s’oublie : les rappels sautent justement quand l’équipe est débordée — c’est-à-dire quand la trésorerie compte le plus. Et elle est stressante, car chaque facture en retard devient un cas de conscience. Un échéancier règle les trois. Il rend le recouvrement prévisible pour le client, reproductible pour l’équipe et mesurable pour l’entreprise : vous voyez avec le temps quelles étapes recouvrent vraiment, et lesquelles ne font qu’agacer.</p><h2>Une cadence de relance type</h2><p>Voyez ce qui suit comme un modèle de départ, pas une règle. Ancrez chaque étape à l’échéance et ajustez les intervalles à vos conditions et à vos clients.</p><ul><li><strong>3 jours avant l’échéance.</strong> Un rappel courtois indiquant qu’une facture arrive à échéance, avec le montant et un lien de paiement. C’est un service, pas une relance.</li><li><strong>Le jour de l’échéance.</strong> Une note neutre « à régler aujourd’hui » confirmant le montant et le mode de paiement.</li><li><strong>+7 jours.</strong> Un premier rappel poli signalant que la facture est désormais en retard, en supposant un simple oubli.</li><li><strong>+14 jours.</strong> Un deuxième rappel plus ferme qui rappelle les conditions et demande une date de paiement précise.</li><li><strong>+30 jours.</strong> Une notification directe, idéalement appuyée d’un appel, exposant les conséquences d’un non-paiement prolongé.</li><li><strong>+45 jours.</strong> Une mise en demeure formelle, souvent d’un responsable, avertissant que le compte approche de l’escalade.</li><li><strong>+60 jours.</strong> Un avis final avant transmission de la créance à une agence de recouvrement ou au service juridique, avec une échéance ferme.</li></ul><h2>Adapter le canal et le ton à chaque étape</h2><p>Les premières étapes doivent être fluides et chaleureuses : e-mail ou SMS, bref et utile, écrit comme si le client avait simplement oublié — ce qui est généralement vrai. À mesure que les jours passent, le ton se raffermit et le canal devient plus personnel. Un appel autour du +30 recouvre souvent plus que n’importe quel e-mail, car il fait remonter les litiges et permet de convenir d’un plan sur-le-champ. Réservez les courriers formels et la mention d’une agence ou d’une action en justice aux étapes tardives. Durcissez progressivement ; ne commencez jamais par une menace et ne laissez pas le ton devenir personnel ou humiliant.</p><h2>Segmenter par valeur et par risque</h2><p>Un seul échéancier convient rarement à tous. Un compte stratégique de longue date, en retard de trois jours, mérite un contact plus doux et plus lent qu’un nouveau client au passé de paiements tardifs. Segmentez par valeur et par risque : les soldes importants ou risqués reçoivent un appel plus tôt et des délais plus serrés, tandis que les comptes petits ou fiables suivent la voie douce presque en pilote automatique. Attribuez toujours à chaque compte un responsable nommé, pour que les relances ne tombent entre personne.</p><h2>Quand suspendre et quand escalader</h2><p>Un échéancier a besoin d’une règle d’arrêt autant que d’une règle de départ. Suspendez la séquence dès qu’un client soulève un litige réel, et orientez-le vers qui peut le résoudre — relancer une facture contestée détruit la bonne volonté et gaspille de l’énergie. Suspendez-la aussi lorsqu’un plan de paiement est convenu, et suivez ce plan à part. Escaladez, à l’inverse, quand les rappels sont ignorés, une promesse rompue, ou le solde dépasse un seuil : passez-le à un responsable, puis à une agence ou au juridique, selon une règle convenue d’avance et non selon l’humeur du jour.</p><h2>Erreurs courantes à éviter</h2><ul><li><strong>Le même message à chaque fois.</strong> Si le +7 et le +45 sont identiques, le client comprend que rien ne change et ignore les deux.</li><li><strong>Pas de responsable.</strong> Un échéancier sans personne en charge de chaque compte s’arrête discrètement de tourner.</li><li><strong>Pas de règle d’arrêt.</strong> Relancer une facture contestée ou déjà payée est le plus court chemin pour perdre un bon client.</li><li><strong>Abîmer la relation trop tôt.</strong> Commencer ferme, ou menacer d’une action en justice au septième jour, coûte bien plus que la facture.</li><li><strong>Pas de voie d’escalade.</strong> Si rien n’arrive jamais après le dernier rappel, toute la séquence perd son poids.</li><li><strong>Ne jamais mesurer.</strong> Sans suivre quelle étape déclenche le paiement, vous ne pouvez pas améliorer la cadence.</li></ul><p>Partez du modèle ci-dessus, utilisez-le un trimestre, puis ajustez le rythme et le ton à partir de ce qui fait réellement payer vos factures.</p>
+
+        <h2>Questions fréquentes</h2>
+        <details class="faq-item"><summary>Que signifie « relance » en recouvrement ?</summary><p>La relance est le fait de contacter les clients pour recouvrer des factures échues. Un échéancier de relance est simplement la séquence planifiée de ces rappels, d'un rappel avant échéance à une mise en demeure formelle.</p></details>
+        <details class="faq-item"><summary>Combien de rappels une séquence de relance doit-elle comporter ?</summary><p>La plupart des entreprises utilisent cinq à sept étapes, ancrées à l'échéance. Un schéma courant : un rappel avant échéance, un le jour J, puis des relances vers 7, 14, 30, 45 et 60 jours de retard, au ton croissant.</p></details>
+        <details class="faq-item"><summary>Quand escalader vers une agence de recouvrement ou le juridique ?</summary><p>Escaladez quand les rappels sont ignorés à répétition, qu'une promesse de paiement est rompue, ou que le solde dépasse une valeur fixée d'avance, souvent vers 60 jours de retard après un avis final.</p></details>
+        <details class="faq-item"><summary>Faut-il suspendre les rappels si un client conteste une facture ?</summary><p>Oui. Suspendez la séquence dès qu'il existe un litige réel ou un plan de paiement convenu, et suivez-le à part. Relancer une facture contestée gaspille de l'énergie et nuit à la relation.</p></details>
+
+        <p style="margin-top:32px"><a href="/fr/blog/"><span aria-hidden="true">←</span> Retour au blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Pilotez vos relances automatiquement</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Collection automatise les rappels multicanaux et réunit chaque promesse et relance au même endroit, pour qu’aucune facture en retard ne passe à travers les mailles.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/fr/products/collection/">Découvrir Collection</a>
+          <a class="btn btn-secondary" href="/fr/blog/">Retour au blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>L'épine dorsale opérationnelle des équipes modernes.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produits</h5>
+          <a href="/fr/products/">Tous les produits</a>
+          <a href="/fr/products/hr-suite/">HR Suite</a>
+          <a href="/fr/products/command-center/">Command Center</a>
+          <a href="/fr/products/collection/">Collection</a>
+          <a href="/fr/custom-apps/">Applications sur mesure</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grille</h5>
+          <a href="/fr/features/">Fonctionnalités</a>
+          <a href="/fr/integrations/">Intégrations</a>
+          <a href="/fr/how-it-works/">Comment ça marche</a>
+          <a href="/fr/pricing/">Tarifs</a>
+          <a href="/fr/regions/">Régions</a>
+          <a href="/fr/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Entreprise</h5>
+          <a href="/fr/about/">À propos</a>
+          <a href="/fr/faq/">FAQ</a>
+          <a href="/fr/contact/">Contact</a>
+          <a href="/fr/privacy/">Confidentialité</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tous droits réservés.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

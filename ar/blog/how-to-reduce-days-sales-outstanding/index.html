@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>كيف تخفّض متوسط فترة التحصيل (DSO)؟ — FulcrumGrid</title>
+  <meta name="description" content="يقيس متوسط فترة التحصيل المدة اللازمة لقبض ثمن البيع. تعرّف على المعادلة، وما هو الرقم الجيد، والخطوات العملية للتحصيل أسرع وحماية السيولة." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="كيف تخفّض متوسط فترة التحصيل (DSO)؟" />
+  <meta property="og:description" content="يقيس متوسط فترة التحصيل المدة اللازمة لقبض ثمن البيع. تعرّف على المعادلة، وما هو الرقم الجيد، والخطوات العملية للتحصيل أسرع وحماية السيولة." />
+  <meta property="og:url" content="https://fulcrumgrid.com/ar/blog/how-to-reduce-days-sales-outstanding/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-09" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="منصة تحصيل الديون من FulcrumGrid — الذمم والمدفوعات" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="كيف تخفّض متوسط فترة التحصيل (DSO)؟" />
+  <meta name="twitter:description" content="يقيس متوسط فترة التحصيل المدة اللازمة لقبض ثمن البيع. تعرّف على المعادلة، وما هو الرقم الجيد، والخطوات العملية للتحصيل أسرع وحماية السيولة." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/ar/blog/how-to-reduce-days-sales-outstanding/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-reduce-days-sales-outstanding/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-reduce-days-sales-outstanding/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-reduce-days-sales-outstanding/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-reduce-days-sales-outstanding/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-reduce-days-sales-outstanding/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-reduce-days-sales-outstanding/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-reduce-days-sales-outstanding/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-reduce-days-sales-outstanding/" />
+
+  <link rel="preload" href="/assets/fonts/cairo-600-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/cairo-400-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "كيف تخفّض متوسط فترة التحصيل (DSO)؟",
+    "description": "يقيس متوسط فترة التحصيل المدة اللازمة لقبض ثمن البيع. تعرّف على المعادلة، وما هو الرقم الجيد، والخطوات العملية للتحصيل أسرع وحماية السيولة.",
+    "datePublished": "2026-10-09",
+    "dateModified": "2026-10-09",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/ar/blog/how-to-reduce-days-sales-outstanding/"
+    },
+    "inLanguage": "ar"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "الرئيسية",
+        "item": "https://fulcrumgrid.com/ar/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "المدوّنة",
+        "item": "https://fulcrumgrid.com/ar/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "دليل خفض فترة التحصيل",
+        "item": "https://fulcrumgrid.com/ar/blog/how-to-reduce-days-sales-outstanding/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "ما هو الرقم الجيد لمتوسط فترة التحصيل؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "لا يوجد هدف واحد. فالرقم الجيد هو الذي يبقى قريباً من شروط سدادك؛ فشرط ٣٠ يوماً مع متوسط تحصيل في نهاية الثلاثينات رقم صحي، بينما متوسط أعلى بكثير من شروطك يشير إلى مشكلة تحصيل تستوجب المعالجة."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كيف يُحسب متوسط فترة التحصيل؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "اقسم الذمم المدينة على إجمالي المبيعات الآجلة لفترة ما، ثم اضرب الناتج في عدد أيام تلك الفترة. فمثلاً ٦٠٠٬٠٠٠ ذمماً مقابل ٣٬٠٠٠٬٠٠٠ مبيعات آجلة خلال ٩٠ يوماً يعطي متوسطاً قدره ٥٤ يوماً."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "لماذا يضرّ ارتفاع فترة التحصيل بالسيولة؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "يعني ارتفاع فترة التحصيل أن أموالاً كسبتها فعلاً محتجزة في فواتير غير مسدّدة. فهذه الأموال لا تموّل الرواتب ولا الموردين ولا النمو، فقد تضطر إلى الاقتراض لسدّ الفجوة بينما لا يزال العملاء مدينين لك."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ما أسرع طريقة لخفض فترة التحصيل؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "أصدر الفاتورة فوراً وبدقة، وأرسل التذكيرات قبل تاريخ الاستحقاق لا بعده. فهاتان العادتان تزيلان أكثر أسباب التأخير شيوعاً دون إرهاق العلاقة مع العميل."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <a href="/ar/products/">المنتجات</a>
+        <a href="/ar/features/">الشبكة</a>
+        <a href="/ar/pricing/">الأسعار</a>
+        <a href="/ar/regions/">المناطق</a>
+        <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
+        <a href="/ar/contact/">اتصل بنا</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="اللغة">ع ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" class="active" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      </div>
+      <button class="nav-toggle" aria-label="القائمة"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/ar/">الرئيسية</a> / <a href="/ar/blog/">المدوّنة</a> / دليل خفض فترة التحصيل</p>
+        <span class="tag tag-accent">التحصيل</span>
+        <h1>كيف تخفّض متوسط فترة التحصيل (DSO)؟</h1>
+        <p class="hero-intro">يقيس متوسط فترة التحصيل المدة اللازمة لقبض ثمن البيع. تعرّف على المعادلة، وما هو الرقم الجيد، والخطوات العملية للتحصيل أسرع وحماية السيولة.</p>
+        <p class="mono"><time datetime="2026-10-09">٩ أكتوبر ٢٠٢٦</time> · ٦ دقائق للقراءة</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>كل يوم تبقى فيه الفاتورة دون سداد هو يوم تعمل فيه أموالك لحساب عميلك بدلاً من حسابك. ومتوسط فترة التحصيل (DSO) هو الرقم الذي يقيس هذا التأخير. والخبر الجيد أن هذا المؤشر من أكثر مقاييس المالية قابلية للتحسين؛ فتغييرات صغيرة ومنتظمة في طريقة إصدار الفواتير والمتابعة تستطيع أن تخصم منه أياماً خلال ربع سنة واحد. يشرح هذا الدليل ما هو متوسط فترة التحصيل، وما هو الرقم الصحي، والخطوات العملية التي تخفّضه.</p><h2>ما هو متوسط فترة التحصيل؟</h2><p>متوسط فترة التحصيل هو متوسط عدد الأيام اللازمة لقبض المبلغ بعد بيع آجل. فالرقم ٤٥ يعني أن المال يصل في المتوسط بعد نحو ٤٥ يوماً من إصدار الفاتورة. وهو مقياس سيولة لا مقياس ربح؛ فقد تكون الشركة رابحة على الورق ومع ذلك تعاني ضيق السيولة لأن فترة تحصيلها طويلة جداً والمال محتجز في الذمم المدينة.</p><h2>كيف يُحسب متوسط فترة التحصيل؟</h2><p>المعادلة المعتمدة بسيطة:</p><ul><li><strong>متوسط فترة التحصيل = (الذمم المدينة ÷ إجمالي المبيعات الآجلة) × عدد الأيام</strong></li></ul><p>اختر فترة، واستخدم المبيعات الآجلة لتلك الفترة وعدد أيامها. وإليك مثالاً تطبيقياً. لنفترض أن الذمم المدينة في نهاية ربع مدته ٩٠ يوماً تبلغ ٦٠٠٬٠٠٠، وأن إجمالي مبيعاتك الآجلة في الربع كان ٣٬٠٠٠٬٠٠٠. عندئذٍ يكون متوسط فترة التحصيل = (٦٠٠٬٠٠٠ ÷ ٣٬٠٠٠٬٠٠٠) × ٩٠ = ٠٫٢ × ٩٠ = <strong>٥٤ يوماً</strong>. أي أنك تحتاج في المتوسط إلى ٥٤ يوماً لتحويل البيع إلى نقد في البنك.</p><h2>ما هو الرقم الجيد؟</h2><p>لا يوجد هدف موحّد — فالرقم الجيد هو الذي يقترب من شروط السداد لديك. فإذا كنت تصدر فواتيرك بشرط ٣٠ يوماً وكان متوسط تحصيلك ٣٨ يوماً فأنت تحصّل بشكل معقول، لأن تأخراً بسيطاً أمر طبيعي. أما إذا كان الشرط ٣٠ يوماً والمتوسط ٦٥ يوماً فإن ما يفوق شهراً من المبيعات يبقى دون تحصيل بعد انتهاء المهلة، وهذه الفجوة هي ما ينبغي معالجته. قارن المؤشر بشروطك أنت وباتجاهك عبر الزمن، لا برقم من قطاع آخر.</p><h2>لماذا يضرّ ارتفاع فترة التحصيل؟</h2><p>يحتجز ارتفاع فترة التحصيل أموالاً كسبتها فعلاً. فهذه الأموال لا تستطيع سداد الموردين ولا تمويل الرواتب ولا تغطية النمو، فقد تضطر إلى الاقتراض لسدّ الفجوة ودفع فوائد على مال يدين به العملاء لك أصلاً. كما أن ارتفاع المؤشر إنذار مبكر؛ فقد يشير إلى أخطاء في الفوترة، أو إلى عملاء غير راضين يعترضون على الفواتير، أو إلى تراجع في الجدارة الائتمانية لقاعدة عملائك. فمراقبة الاتجاه لا تقل أهمية عن مراقبة الرقم نفسه.</p><h2>ما هي أدوات خفض فترة التحصيل؟</h2><p>تنخفض فترة التحصيل حين تزيل الاحتكاك والتأخير من دورة الطلب حتى القبض كاملةً. وأكثر الأدوات فاعلية هي:</p><ul><li><strong>أصدر الفاتورة بسرعة ودقة.</strong> أرسلها لحظة تسليم العمل، وتأكد من صحة المبلغ ورقم أمر الشراء والتفاصيل؛ فالفاتورة الخاطئة تعيد العدّاد إلى الصفر.</li><li><strong>حدّد شروط سداد واضحة.</strong> اذكر تاريخ الاستحقاق ووسائل الدفع المقبولة والشروط بوضوح في كل فاتورة، واتفق عليها قبل البيع لا بعده.</li><li><strong>وفّر وسائل دفع سهلة.</strong> كلما سهُل الدفع — ببطاقة أو حوالة مصرفية أو خصم مباشر أو رابط بنقرة واحدة — عجّلت القبض.</li><li><strong>تحقّق من الجدارة الائتمانية وضع حدوداً ائتمانية.</strong> افحص العملاء الجدد وقيّد حجم المخاطرة حتى لا يهيمن متأخّر واحد على ذممك المدينة.</li><li><strong>أرسل تذكيرات استباقية.</strong> رسالة ودّية قبل تاريخ الاستحقاق، ثم سلسلة متابعة منظّمة بعده (أسلوب التذكير المتدرّج)، تبقي فاتورتك في مقدمة الأولويات.</li><li><strong>رتّب الأولويات بالقيمة والتقادم.</strong> تابِع أكبر الأرصدة وأقدمها أولاً، فهناك تتركّز السيولة والمخاطرة.</li><li><strong>عالِج الاعتراضات بسرعة.</strong> فالاستفسار المعلّق فاتورة غير مسدّدة؛ وجّهه إلى مسؤول وأغلقه سريعاً.</li><li><strong>قدّم حوافز السداد المبكر بحذر.</strong> قد يفيد خصم صغير مقابل السداد المبكر، لكن احسبه بحيث لا تفوق تكلفته مكسب السيولة.</li><li><strong>راجع تقرير أعمار الذمم بانتظام.</strong> يصنّف هذا التقرير الذمم بحسب مدى تأخّرها ويبيّن بالضبط أين تركّز جهدك كل أسبوع.</li></ul><h2>أخطاء شائعة</h2><ul><li><strong>البدء متأخراً جداً.</strong> إذا خرج التذكير الأول بعد تاريخ الاستحقاق فقد خسرت الوقت أصلاً؛ تواصل قبل استحقاق الفاتورة.</li><li><strong>معاملة كل الحسابات بالطريقة نفسها.</strong> فالمتابعة الموحّدة تبدّد الجهد على الأرصدة الصغيرة وتقصّر مع الكبيرة.</li><li><strong>تجاهل الاعتراضات.</strong> فالاستفسار الذي لا يُجاب عنه يتحوّل بهدوء إلى دين متقادم.</li><li><strong>الإفراط في الخصومات.</strong> قد تآكل خصومات السداد المبكر الدائمة الهامش أكثر مما يساويه القبض الأسرع.</li><li><strong>مراقبة الرقم الإجمالي فقط.</strong> فالمتوسط الثابت قد يُخفي ذيلاً متنامياً من فواتير قديمة جداً وعالية المخاطر — اقرأ دائماً تقرير الأعمار الكامن تحته.</li></ul><p>ابدأ بأرخص أداتين: أصدر الفاتورة يوم إنجاز العمل، وأرسل تذكيراً قبل كل تاريخ استحقاق. قِس متوسط فترة التحصيل كل شهر، واقرأ تقرير الأعمار خلفه، ودع الاتجاه — لا شهراً واحداً — يخبرك هل ينجح الأمر.</p>
+
+        <h2>الأسئلة الشائعة</h2>
+        <details class="faq-item"><summary>ما هو الرقم الجيد لمتوسط فترة التحصيل؟</summary><p>لا يوجد هدف واحد. فالرقم الجيد هو الذي يبقى قريباً من شروط سدادك؛ فشرط ٣٠ يوماً مع متوسط تحصيل في نهاية الثلاثينات رقم صحي، بينما متوسط أعلى بكثير من شروطك يشير إلى مشكلة تحصيل تستوجب المعالجة.</p></details>
+        <details class="faq-item"><summary>كيف يُحسب متوسط فترة التحصيل؟</summary><p>اقسم الذمم المدينة على إجمالي المبيعات الآجلة لفترة ما، ثم اضرب الناتج في عدد أيام تلك الفترة. فمثلاً ٦٠٠٬٠٠٠ ذمماً مقابل ٣٬٠٠٠٬٠٠٠ مبيعات آجلة خلال ٩٠ يوماً يعطي متوسطاً قدره ٥٤ يوماً.</p></details>
+        <details class="faq-item"><summary>لماذا يضرّ ارتفاع فترة التحصيل بالسيولة؟</summary><p>يعني ارتفاع فترة التحصيل أن أموالاً كسبتها فعلاً محتجزة في فواتير غير مسدّدة. فهذه الأموال لا تموّل الرواتب ولا الموردين ولا النمو، فقد تضطر إلى الاقتراض لسدّ الفجوة بينما لا يزال العملاء مدينين لك.</p></details>
+        <details class="faq-item"><summary>ما أسرع طريقة لخفض فترة التحصيل؟</summary><p>أصدر الفاتورة فوراً وبدقة، وأرسل التذكيرات قبل تاريخ الاستحقاق لا بعده. فهاتان العادتان تزيلان أكثر أسباب التأخير شيوعاً دون إرهاق العلاقة مع العميل.</p></details>
+
+        <p style="margin-top:32px"><a href="/ar/blog/"><span aria-hidden="true">←</span> العودة إلى المدوّنة</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid منصة تحصيل الديون</p>
+        <h2>اخفض فترة تحصيلك في مكان واحد</h2>
+        <p class="section-lead" style="margin:0 auto 26px">تساعدك FulcrumGrid منصة تحصيل الديون على متابعة الذمم والأعمار والتذكيرات معاً، فترى ما تأخّر وتتابعه قبل أن تفلت السيولة.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/ar/products/collection/">استكشف منصة تحصيل الديون</a>
+          <a class="btn btn-secondary" href="/ar/blog/">العودة إلى المدوّنة</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>العمود الفقري التشغيلي للفرق الحديثة.</p>
+        </div>
+        <div class="foot-col">
+          <h5>المنتجات</h5>
+          <a href="/ar/products/">كل المنتجات</a>
+          <a href="/ar/products/hr-suite/">منصة الموارد البشرية</a>
+          <a href="/ar/products/command-center/">لوحة التحكم للتنفيذيين</a>
+          <a href="/ar/products/collection/">منصة تحصيل الديون</a>
+          <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشبكة</h5>
+          <a href="/ar/features/">الميزات</a>
+          <a href="/ar/integrations/">التكاملات</a>
+          <a href="/ar/how-it-works/">كيف تعمل</a>
+          <a href="/ar/pricing/">الأسعار</a>
+          <a href="/ar/regions/">المناطق</a>
+          <a href="/ar/blog/">المدوّنة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشركة</h5>
+          <a href="/ar/about/">من نحن</a>
+          <a href="/ar/faq/">الأسئلة الشائعة</a>
+          <a href="/ar/contact/">اتصل بنا</a>
+          <a href="/ar/privacy/">الخصوصية</a>
+          <a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
