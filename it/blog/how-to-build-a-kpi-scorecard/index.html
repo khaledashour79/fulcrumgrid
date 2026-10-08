@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Come costruire una scorecard di KPI che il tuo team userà davvero? — FulcrumGrid</title>
+  <meta name="description" content="Una scorecard di KPI funziona solo se viene aperta. Scopri come scegliere da 5 a 8 metriche, assegnare responsabili, fissare obiettivi e soglie RAG e definire la cadenza." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Come costruire una scorecard di KPI che il tuo team userà davvero?" />
+  <meta property="og:description" content="Una scorecard di KPI funziona solo se viene aperta. Scopri come scegliere da 5 a 8 metriche, assegnare responsabili, fissare obiettivi e soglie RAG e definire la cadenza." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/how-to-build-a-kpi-scorecard/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-08" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Come costruire una scorecard di KPI che il tuo team userà davvero?" />
+  <meta name="twitter:description" content="Una scorecard di KPI funziona solo se viene aperta. Scopri come scegliere da 5 a 8 metriche, assegnare responsabili, fissare obiettivi e soglie RAG e definire la cadenza." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/how-to-build-a-kpi-scorecard/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-build-a-kpi-scorecard/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-build-a-kpi-scorecard/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-build-a-kpi-scorecard/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-build-a-kpi-scorecard/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-build-a-kpi-scorecard/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-build-a-kpi-scorecard/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-build-a-kpi-scorecard/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-build-a-kpi-scorecard/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Come costruire una scorecard di KPI che il tuo team userà davvero?",
+    "description": "Una scorecard di KPI funziona solo se viene aperta. Scopri come scegliere da 5 a 8 metriche, assegnare responsabili, fissare obiettivi e soglie RAG e definire la cadenza.",
+    "datePublished": "2026-10-08",
+    "dateModified": "2026-10-08",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/how-to-build-a-kpi-scorecard/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida alla scorecard KPI",
+        "item": "https://fulcrumgrid.com/it/blog/how-to-build-a-kpi-scorecard/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quanti KPI deve avere una scorecard?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Punta a cinque-otto. Bastano per coprire risultati, driver e salute, e sono abbastanza pochi da essere ricordati da tutti senza aprire la pagina."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual è la differenza tra KPI e metrica?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Una metrica è qualsiasi numero misurabile. Un KPI è una metrica legata a un obiettivo, con un target e un responsabile, e abbastanza importante da essere rivista con regolarità."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come funzionano le soglie RAG?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RAG sta per rosso, giallo (amber), verde. Si concorda in anticipo quanto una metrica può scostarsi dall'obiettivo prima di cambiare stato, per esempio verde al 95% o più, giallo dall'85% al 95%, rosso sotto l'85%."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ogni quanto va rivista la scorecard?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le metriche trainanti, veloci, ogni settimana; quelle di risultato ogni mese. Rivedi le metriche e gli obiettivi stessi ogni trimestre."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida alla scorecard KPI</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Come costruire una scorecard di KPI che il tuo team userà davvero?</h1>
+        <p class="hero-intro">Una scorecard di KPI funziona solo se viene aperta. Scopri come scegliere da 5 a 8 metriche, assegnare responsabili, fissare obiettivi e soglie RAG e definire la cadenza.</p>
+        <p class="mono"><time datetime="2026-10-08">8 ottobre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>La maggior parte delle scorecard di KPI parte con entusiasmo e finisce come un foglio di calcolo dimenticato. Raramente il problema è lo strumento. Di solito ci sono troppe metriche, nessun responsabile chiaro e nessun momento regolare in cui qualcuno guardi i numeri insieme. Questa guida spiega come costruire una scorecard abbastanza piccola da essere letta in due minuti e abbastanza utile da cambiare le decisioni.</p><h2>Che cos&rsquo;è una scorecard di KPI?</h2><p>È una vista di una pagina con i pochi numeri che dicono se il tuo team o la tua azienda è sulla strada giusta. Ogni metrica ha un responsabile, un obiettivo e uno stato, così si vede a colpo d&rsquo;occhio che cosa va bene, che cosa sta peggiorando e chi ne risponde. Non è un report completo: è la pagina che ti dice quale report aprire dopo.</p><h2>Quante metriche deve contenere?</h2><p>Da cinque a otto. Con meno di cinque si perdono compromessi importanti; con più di otto nessuno le ricorda. Scegli metriche che coprano aspetti diversi del lavoro, in modo che migliorarne una non danneggi in silenzio un&rsquo;altra. Un insieme equilibrato di solito comprende:</p><ul><li><strong>Metriche di risultato.</strong> Ciò che conta alla fine, come il fatturato rispetto al piano o la soddisfazione dei clienti.</li><li><strong>Metriche trainanti.</strong> Le attività che portano a quei risultati, come la copertura della pipeline o le consegne puntuali.</li><li><strong>Metriche di salute.</strong> Segnali di sostenibilità, come il turnover del personale o la posizione di cassa.</li></ul><p>Per ogni candidata poni tre domande. Possiamo misurarla in modo affidabile a ogni periodo? Qualcuno nel team può davvero influenzarla? Agiremmo diversamente se diventasse rossa? Se l&rsquo;ultima risposta è no, scartala.</p><h2>Un esempio concreto</h2><p>Ecco una scorecard di sei metriche per un&rsquo;azienda di servizi di medie dimensioni. Considera i numeri illustrativi e sostituiscili con i tuoi.</p><ul><li><strong>Ricavi vs. piano</strong> (responsabile: finanza). Obiettivo: 100% del piano mensile.</li><li><strong>Copertura della pipeline</strong> (responsabile: vendite). Obiettivo: 3 volte la quota del trimestre successivo.</li><li><strong>Consegne puntuali</strong> (responsabile: operations). Obiettivo: 95% di progetti o ordini.</li><li><strong>Soddisfazione del cliente (CSAT)</strong> (responsabile: supporto). Obiettivo: 4,5 su 5.</li><li><strong>Giorni medi di incasso</strong> (responsabile: finanza). Obiettivo: 45 giorni o meno.</li><li><strong>Dimissioni volontarie</strong> (responsabile: risorse umane). Obiettivo: meno del 10% annuo.</li></ul><h2>Perché ogni metrica ha bisogno di un solo responsabile</h2><p>Il responsabile non è chi inserisce il numero, ma chi lo spiega e propone una soluzione quando peggiora. Dai a ogni metrica un solo nome: la responsabilità condivisa significa che nessuno parla in riunione. Annota anche la fonte dei dati e la definizione, per esempio: &laquo;puntuale significa consegnato alla data confermata con il cliente o prima&raquo;. Le discussioni sulle definizioni fanno perdere più tempo di quelle sulle prestazioni.</p><h2>Fissare obiettivi e soglie RAG</h2><p>L&rsquo;obiettivo è il valore a cui punti; la soglia è la linea che decide il colore. Mantieni i colori semplici e concordate le regole prima che arrivino i numeri:</p><ul><li><strong>Verde.</strong> Almeno il 95% dell&rsquo;obiettivo. Nessuna azione necessaria.</li><li><strong>Giallo.</strong> Tra l&rsquo;85% e il 95% dell&rsquo;obiettivo. Il responsabile spiega causa e piano.</li><li><strong>Rosso.</strong> Sotto l&rsquo;85% dell&rsquo;obiettivo. Il responsabile porta un piano di recupero e chiede aiuto se serve.</li></ul><p>Per le metriche in cui meno è meglio, come i giorni di incasso, inverti la logica. Basa gli obiettivi sulle prestazioni passate e sulle esigenze dell&rsquo;azienda, non sui desideri. Un obiettivo sempre verde insegna a ignorare la pagina, e uno sempre rosso fa lo stesso. Mostra anche il trend: una piccola freccia o gli ultimi tre periodi dicono se il giallo sta migliorando o peggiorando.</p><h2>Scegliere la cadenza</h2><p>Adatta il ritmo di revisione alla velocità con cui si muove ciascuna metrica. Settimanale per i driver operativi come consegne e pipeline, mensile per i risultati come ricavi e soddisfazione, trimestrale per le metriche di salute lente e per rivedere gli obiettivi stessi. Limita la riunione a 30 minuti, concentra la discussione su giallo e rosso e chiudi con azioni assegnate e scadenze. Il verde merita un cenno del capo, non una presentazione.</p><h2>Errori comuni</h2><ul><li><strong>Troppe metriche.</strong> Se la pagina richiede lo scorrimento, è un report, non una scorecard.</li><li><strong>Metriche di vanità.</strong> Visualizzazioni e iscrizioni fanno bella figura ma raramente guidano una decisione.</li><li><strong>Nessun responsabile.</strong> Una metrica rossa senza nome accanto resta rossa.</li><li><strong>Dati obsoleti.</strong> Se i numeri arrivano con due settimane di ritardo, la riunione parla del passato, non di controllo.</li><li><strong>Non cambiarla mai.</strong> Rivedi l&rsquo;insieme ogni trimestre. Elimina ciò che non conta più e aggiungi ciò che conta.</li><li><strong>Usarla per dare la colpa.</strong> Se il rosso significa punizione, le persone ritoccheranno i numeri in silenzio. Tratta il rosso come una richiesta di aiuto.</li></ul><p>Parti in piccolo: costruisci la prima versione in un pomeriggio, usala per un mese e migliorala in base a ciò che il team dice davvero in riunione.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Quanti KPI deve avere una scorecard?</summary><p>Punta a cinque-otto. Bastano per coprire risultati, driver e salute, e sono abbastanza pochi da essere ricordati da tutti senza aprire la pagina.</p></details>
+        <details class="faq-item"><summary>Qual è la differenza tra KPI e metrica?</summary><p>Una metrica è qualsiasi numero misurabile. Un KPI è una metrica legata a un obiettivo, con un target e un responsabile, e abbastanza importante da essere rivista con regolarità.</p></details>
+        <details class="faq-item"><summary>Come funzionano le soglie RAG?</summary><p>RAG sta per rosso, giallo (amber), verde. Si concorda in anticipo quanto una metrica può scostarsi dall'obiettivo prima di cambiare stato, per esempio verde al 95% o più, giallo dall'85% al 95%, rosso sotto l'85%.</p></details>
+        <details class="faq-item"><summary>Ogni quanto va rivista la scorecard?</summary><p>Le metriche trainanti, veloci, ogni settimana; quelle di risultato ogni mese. Rivedi le metriche e gli obiettivi stessi ogni trimestre.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Tieni la tua scorecard in un unico posto</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center ti permette di seguire KPI, responsabili e progetti insieme, così la tua scorecard resta aggiornata senza copia e incolla manuali.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
