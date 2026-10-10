@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wie erstellt man einen Notfallplan für den Geschäftsbetrieb im Kleinunternehmen? — FulcrumGrid</title>
+  <meta name="description" content="Praxisleitfaden für den Business-Continuity-Plan im Kleinunternehmen: kritische Funktionen, Risiken, Wiederanlaufzeiten, Rollen, Backups, Tests und Überprüfung." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wie erstellt man einen Notfallplan für den Geschäftsbetrieb im Kleinunternehmen?" />
+  <meta property="og:description" content="Praxisleitfaden für den Business-Continuity-Plan im Kleinunternehmen: kritische Funktionen, Risiken, Wiederanlaufzeiten, Rollen, Backups, Tests und Überprüfung." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-10" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wie erstellt man einen Notfallplan für den Geschäftsbetrieb im Kleinunternehmen?" />
+  <meta name="twitter:description" content="Praxisleitfaden für den Business-Continuity-Plan im Kleinunternehmen: kritische Funktionen, Risiken, Wiederanlaufzeiten, Rollen, Backups, Tests und Überprüfung." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wie erstellt man einen Notfallplan für den Geschäftsbetrieb im Kleinunternehmen?",
+    "description": "Praxisleitfaden für den Business-Continuity-Plan im Kleinunternehmen: kritische Funktionen, Risiken, Wiederanlaufzeiten, Rollen, Backups, Tests und Überprüfung.",
+    "datePublished": "2026-10-10",
+    "dateModified": "2026-10-10",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/how-to-write-a-business-continuity-plan-for-a-small-business/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Business-Continuity-Plan",
+        "item": "https://fulcrumgrid.com/de/blog/how-to-write-a-business-continuity-plan-for-a-small-business/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist ein Business-Continuity-Plan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ein kurzes schriftliches Dokument, das beschreibt, wie ein Unternehmen weiterarbeitet oder sich schnell erholt, wenn etwas den Betrieb stört, etwa ein Brand, ein Ausfall, ein Cybervorfall oder der Verlust einer Schlüsselperson. Er umfasst kritische Funktionen, Wiederanlaufziele, Rollen, Kontakte, Backups und Tests."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie lang sollte der Plan eines Kleinunternehmens sein?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "So lang, dass er nutzbar bleibt, und das sind bei den meisten Kleinunternehmen wenige Seiten. Klarheit zählt mehr als Länge: Man muss ihn im Ernstfall schnell finden und befolgen können."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was ist eine Recovery Time Objective (RTO)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sie ist die längste Zeit, die eine Funktion ausfallen darf, bevor der Schaden nicht mehr tragbar ist. Sie legen eine pro kritischer Funktion fest, zum Beispiel zwei Stunden für die Auftragsannahme oder einen Tag für die Rechnungsstellung, und sie bestimmt, wie viel Sie in Backups und Alternativen investieren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie oft sollte ich den Plan testen und überprüfen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prüfen Sie ihn mindestens einmal im Jahr und bei jeder wichtigen Änderung, etwa einem neuen System, Standort oder einer neuen Schlüsselperson. Führen Sie mindestens eine Planbesprechung pro Jahr durch und testen Sie die Wiederherstellung Ihrer Backups regelmäßig."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ist ein Business-Continuity-Plan dasselbe wie ein Notfallwiederherstellungsplan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nicht ganz. Der Continuity-Plan sichert den Betrieb des gesamten Unternehmens samt Personal, Räumen und Lieferanten. Der Disaster-Recovery-Plan ist meist der engere technische Teil, der sich auf die Wiederherstellung von IT-Systemen und Daten konzentriert."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / Business-Continuity-Plan</p>
+        <span class="tag tag-accent">Betrieb</span>
+        <h1>Wie erstellt man einen Notfallplan für den Geschäftsbetrieb im Kleinunternehmen?</h1>
+        <p class="hero-intro">Praxisleitfaden für den Business-Continuity-Plan im Kleinunternehmen: kritische Funktionen, Risiken, Wiederanlaufzeiten, Rollen, Backups, Tests und Überprüfung.</p>
+        <p class="mono"><time datetime="2026-10-10">10. Oktober 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Ein Business-Continuity-Plan (BCP) ist ein kurzes, schriftliches Dokument, das erklärt, wie Ihr Unternehmen weiterläuft oder schnell wieder in Betrieb kommt, wenn etwas den Betrieb stört: ein Brand, ein Stromausfall, ein Ransomware-Angriff, der Ausfall eines Lieferanten oder das plötzliche Fehlen einer Schlüsselperson. Für ein Kleinunternehmen muss er keine achtzig Seiten umfassen. Wenige klare Seiten, die man unter Druck findet und befolgen kann, sind weit mehr wert als ein dicker Ordner, den niemand gelesen hat.</p>
+
+          <h2>Warum braucht ein Kleinunternehmen einen solchen Plan?</h2>
+
+          <p>Kleine Betriebe haben selten Puffer: eine Inhaberin oder ein Inhaber, ein Standort, ein zentrales System und ein paar Kunden, die morgen mit Ihnen rechnen. Ein Plan verhindert keine Vorfälle, verkürzt aber das Chaos danach, schützt Umsatz und Kundenvertrauen und wird zunehmend von Großkunden, Versicherern und Kreditgebern verlangt.</p>
+
+          <h2>Schritt 1: Kritische Funktionen bestimmen</h2>
+
+          <p>Listen Sie zunächst auf, was das Unternehmen im Alltag tatsächlich tut, und markieren Sie, was bei einem Ausfall am meisten schmerzen würde. Typische Kandidaten:</p>
+
+          <ul>
+            <li><strong>Umsatzbringende Tätigkeiten:</strong> Produkte oder Leistungen erbringen, Bestellungen annehmen, Laden oder Baustelle betreiben.</li>
+            <li><strong>Geld einnehmen:</strong> Rechnungsstellung, Zahlungsabwicklung und Mahnwesen.</li>
+            <li><strong>Geld auszahlen:</strong> Löhne, Lieferanten, Steuern und Miete.</li>
+            <li><strong>Kommunikation:</strong> Telefon, E-Mail und die Kanäle, über die Kunden Sie erreichen.</li>
+            <li><strong>Rechts- und Sicherheitspflichten:</strong> alles, was Sie weiterführen müssen, um regelkonform zu bleiben oder Menschen zu schützen.</li>
+          </ul>
+
+          <p>Notieren Sie zu jeder Funktion, von welchen Personen, Systemen, Lieferanten und Orten sie abhängt. Diese Abhängigkeitsliste ist das Rohmaterial für alles Weitere.</p>
+
+          <h2>Schritt 2: Eine einfache Risikobewertung durchführen</h2>
+
+          <p>Sie brauchen keine formelle Methodik. Fragen Sie für jede kritische Funktion, was sie realistisch unterbrechen könnte, und bewerten Sie zwei Dinge von eins bis fünf: die Eintrittswahrscheinlichkeit und die Schwere der Auswirkung. Multiplizieren Sie die Werte und gehen Sie die höchsten zuerst an. Häufige Szenarien:</p>
+
+          <ul>
+            <li>Verlust der Räumlichkeiten durch Brand, Wasserschaden oder ein gesperrtes Gebäude.</li>
+            <li>Ausfall von Strom, Internet oder Telefon.</li>
+            <li>Cybervorfall, Datenverlust oder defektes Gerät.</li>
+            <li>Ausfall eines wichtigen Lieferanten oder Softwareanbieters.</li>
+            <li>Krankheit, Kündigung oder Abwesenheit einer Schlüsselperson.</li>
+          </ul>
+
+          <p>Seien Sie ehrlich bei Einzelausfallpunkten, etwa der einen Person, die die Passwörter kennt, oder dem einen Lieferanten ohne Alternative.</p>
+
+          <h2>Schritt 3: Wiederanlaufzeiten festlegen</h2>
+
+          <p>Die Recovery Time Objective (RTO) ist die längste Zeit, die eine Funktion ausfallen darf, bevor der Schaden nicht mehr tragbar ist. Legen Sie für jede kritische Funktion eine fest, in einfachen Einheiten wie zwei Stunden, ein Tag oder eine Woche. Eine verwandte Größe ist die Recovery Point Objective (RPO): wie viele aktuelle Daten Sie sich zu verlieren leisten können, was bestimmt, wie oft Backups laufen müssen. Kurze Ziele kosten mehr; lassen Sie die Zahlen also lenken, wo Sie investieren: Die Rechnungsstellung verkraftet vielleicht einen Tag, die Auftragsannahme eher nicht.</p>
+
+          <h2>Schritt 4: Rollen verteilen und Kontakte aktuell halten</h2>
+
+          <p>Im Ernstfall ist oft das größte Problem, dass niemand weiß, wer entscheidet. Benennen Sie eine verantwortliche Person für den Plan, für jede Rolle eine Vertretung und eine klare Entscheidungsreihenfolge. Halten Sie dann fest:</p>
+
+          <ul>
+            <li><strong>Kontakte der Mitarbeitenden:</strong> Mobilnummern und eine private E-Mail-Adresse, nicht nur Firmenkonten, die ausfallen können.</li>
+            <li><strong>Wichtige externe Kontakte:</strong> Lieferanten, Vermieter, Versicherung, Bank, IT-Dienstleister, Steuerberater und Versorger.</li>
+            <li><strong>Kundenkommunikation:</strong> wer den Kunden was mitteilt, über welchen Kanal und mit welcher Überbrückungsmeldung.</li>
+          </ul>
+
+          <p>Bewahren Sie eine gedruckte oder Offline-Kopie an einem zugänglichen Ort auf, denn ein Plan, der nur auf dem ausgefallenen System liegt, nützt nichts.</p>
+
+          <h2>Schritt 5: Backups und Ausweichlösungen planen</h2>
+
+          <p>Schreiben Sie für jede kritische Funktion die Rückfalllösung auf. Meist ist das eine Mischung aus Datensicherungen und manuellen oder alternativen Arbeitsweisen:</p>
+
+          <ul>
+            <li><strong>Daten:</strong> Halten Sie mindestens eine Kopie extern oder in der Cloud, eine Kopie, die ein infizierter Rechner nicht ändern oder löschen kann, und prüfen Sie, ob die Wiederherstellung wirklich funktioniert.</li>
+            <li><strong>Systeme und Zugänge:</strong> Bewahren Sie kritische Zugangsdaten sicher auf, mit einem Weg für eine zweite vertrauenswürdige Person.</li>
+            <li><strong>Räume und Ausstattung:</strong> Homeoffice-Option, gegenseitige Vereinbarung mit einem anderen Betrieb oder Ersatzgeräte für das Wesentliche.</li>
+            <li><strong>Lieferanten:</strong> eine freigegebene Alternative für alles, ohne das Sie nicht auskommen.</li>
+            <li><strong>Liquidität:</strong> genug Rücklagen oder Kredit, um Löhne bei gestörten Einnahmen zu zahlen, und eine Prüfung, was Ihre Versicherung tatsächlich abdeckt.</li>
+          </ul>
+
+          <h2>Schritt 6: Den Plan testen</h2>
+
+          <p>Ein ungetesteter Plan ist eine Vermutung. Beginnen Sie mit einer kurzen Planbesprechung: Versammeln Sie das Team, schildern Sie ein Szenario wie &bdquo;Das Büro ist am Montagmorgen nicht zugänglich&ldquo; und gehen Sie durch, wer was tut. Notieren Sie jede Lücke, etwa eine veraltete Nummer oder ein fehlendes Passwort. Testen Sie danach die technischen Teile getrennt, vor allem die Wiederherstellung eines Backups. Schon eine realistische Übung pro Jahr deckt Probleme auf, die sich jetzt viel günstiger beheben lassen.</p>
+
+          <h2>Schritt 7: Nach festem Turnus überprüfen</h2>
+
+          <p>Pläne veralten schnell. Überprüfen Sie Ihren mindestens einmal im Jahr und immer, wenn sich etwas Wesentliches ändert: ein neues System, ein neuer Standort, Ein- oder Austritt einer Schlüsselperson, ein größerer Lieferantenwechsel oder nach jedem echten Vorfall oder Test. Halten Sie Datum, Version und Freigebende fest und weisen Sie neue Mitarbeitende bei der Einarbeitung in ihre Rolle ein.</p>
+
+          <p>Wenn der Plan dort leben soll, wo Ihr Team ohnehin arbeitet, kann FulcrumGrid Command Center Ihre wichtigsten Aufgaben, Verantwortlichen und Fristen an einem Ort bündeln, was bei der Abhängigkeitsliste und den Erinnerungen an die Überprüfung hilft. Es ist ein Koordinationshilfsmittel, kein Ersatz für das oben beschriebene Nachdenken: Der Wert eines Continuity-Plans liegt in den Entscheidungen, die Sie darin treffen, und darin, sie zu üben, bevor Sie sie brauchen.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Was ist ein Business-Continuity-Plan?</summary><p>Ein kurzes schriftliches Dokument, das beschreibt, wie ein Unternehmen weiterarbeitet oder sich schnell erholt, wenn etwas den Betrieb stört, etwa ein Brand, ein Ausfall, ein Cybervorfall oder der Verlust einer Schlüsselperson. Er umfasst kritische Funktionen, Wiederanlaufziele, Rollen, Kontakte, Backups und Tests.</p></details>
+        <details class="faq-item"><summary>Wie lang sollte der Plan eines Kleinunternehmens sein?</summary><p>So lang, dass er nutzbar bleibt, und das sind bei den meisten Kleinunternehmen wenige Seiten. Klarheit zählt mehr als Länge: Man muss ihn im Ernstfall schnell finden und befolgen können.</p></details>
+        <details class="faq-item"><summary>Was ist eine Recovery Time Objective (RTO)?</summary><p>Sie ist die längste Zeit, die eine Funktion ausfallen darf, bevor der Schaden nicht mehr tragbar ist. Sie legen eine pro kritischer Funktion fest, zum Beispiel zwei Stunden für die Auftragsannahme oder einen Tag für die Rechnungsstellung, und sie bestimmt, wie viel Sie in Backups und Alternativen investieren.</p></details>
+        <details class="faq-item"><summary>Wie oft sollte ich den Plan testen und überprüfen?</summary><p>Prüfen Sie ihn mindestens einmal im Jahr und bei jeder wichtigen Änderung, etwa einem neuen System, Standort oder einer neuen Schlüsselperson. Führen Sie mindestens eine Planbesprechung pro Jahr durch und testen Sie die Wiederherstellung Ihrer Backups regelmäßig.</p></details>
+        <details class="faq-item"><summary>Ist ein Business-Continuity-Plan dasselbe wie ein Notfallwiederherstellungsplan?</summary><p>Nicht ganz. Der Continuity-Plan sichert den Betrieb des gesamten Unternehmens samt Personal, Räumen und Lieferanten. Der Disaster-Recovery-Plan ist meist der engere technische Teil, der sich auf die Wiederherstellung von IT-Systemen und Daten konzentriert.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Halten Sie Ihren Continuity-Plan zugeordnet, aktuell und sichtbar</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center gibt Ihrem Team einen Ort für Verantwortliche, Aufgaben und Überprüfungstermine, damit Ihr Continuity-Plan aktuell bleibt, statt vergessen in einem Ordner zu liegen.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/command-center/">Entdecken Command Center</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

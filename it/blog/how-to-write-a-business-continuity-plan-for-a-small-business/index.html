@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Come si scrive un piano di continuità operativa per una piccola impresa? — FulcrumGrid</title>
+  <meta name="description" content="Guida pratica per scrivere un piano di continuità operativa in una piccola impresa: funzioni critiche, rischi, tempi di ripristino, ruoli, backup, test e revisione." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Come si scrive un piano di continuità operativa per una piccola impresa?" />
+  <meta property="og:description" content="Guida pratica per scrivere un piano di continuità operativa in una piccola impresa: funzioni critiche, rischi, tempi di ripristino, ruoli, backup, test e revisione." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-10" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Come si scrive un piano di continuità operativa per una piccola impresa?" />
+  <meta name="twitter:description" content="Guida pratica per scrivere un piano di continuità operativa in una piccola impresa: funzioni critiche, rischi, tempi di ripristino, ruoli, backup, test e revisione." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Come si scrive un piano di continuità operativa per una piccola impresa?",
+    "description": "Guida pratica per scrivere un piano di continuità operativa in una piccola impresa: funzioni critiche, rischi, tempi di ripristino, ruoli, backup, test e revisione.",
+    "datePublished": "2026-10-10",
+    "dateModified": "2026-10-10",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/how-to-write-a-business-continuity-plan-for-a-small-business/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Piano di continuità operativa",
+        "item": "https://fulcrumgrid.com/it/blog/how-to-write-a-business-continuity-plan-for-a-small-business/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Che cos’è un piano di continuità operativa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "È un documento scritto e breve che descrive come un’azienda continua a funzionare, o si riprende in fretta, quando qualcosa la interrompe, come un incendio, un guasto, un incidente informatico o la perdita di una persona chiave. Copre funzioni critiche, obiettivi di ripristino, ruoli, contatti, backup e test."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto deve essere lungo il piano di una piccola impresa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Quanto basta perché sia utilizzabile, e per la maggior parte delle piccole imprese sono poche pagine. La chiarezza conta più della lunghezza: deve potersi trovare e seguire rapidamente durante un incidente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Che cos’è l’obiettivo di tempo di ripristino (RTO)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "È il periodo più lungo in cui una funzione può restare non disponibile prima che il danno diventi inaccettabile. Se ne fissa uno per ogni funzione critica, per esempio due ore per la presa degli ordini o un giorno per la fatturazione, e guida quanto investire in backup e alternative."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ogni quanto devo testare e rivedere il piano?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Lo riveda almeno una volta l’anno e ogni volta che cambia qualcosa di importante, come un sistema, una sede o una persona chiave. Faccia almeno un’esercitazione a tavolino all’anno e provi il ripristino dei backup a intervalli regolari."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Un piano di continuità è la stessa cosa di un piano di disaster recovery?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non esattamente. Il piano di continuità riguarda il funzionamento dell’intera attività, comprese persone, sede e fornitori. Il piano di disaster recovery è di solito la parte tecnica, più ristretta, dedicata al ripristino dei sistemi informatici e dei dati."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Piano di continuità operativa</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Come si scrive un piano di continuità operativa per una piccola impresa?</h1>
+        <p class="hero-intro">Guida pratica per scrivere un piano di continuità operativa in una piccola impresa: funzioni critiche, rischi, tempi di ripristino, ruoli, backup, test e revisione.</p>
+        <p class="mono"><time datetime="2026-10-10">10 ottobre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Un piano di continuità operativa è un documento scritto e breve che spiega come la sua azienda continua a funzionare, o torna a farlo in fretta, quando qualcosa la interrompe: un incendio, un blackout, un attacco ransomware, il guasto di un fornitore o l&rsquo;assenza improvvisa di una persona chiave. In una piccola impresa non deve occupare ottanta pagine. Poche pagine chiare, che si trovano e si seguono sotto pressione, valgono molto più di un faldone che nessuno ha letto.</p>
+
+          <h2>Perché serve a una piccola impresa?</h2>
+
+          <p>Le piccole imprese hanno di solito poco margine: un solo titolare, una sola sede, un sistema principale e pochi clienti che contano su di lei domani. Un piano non evita gli incidenti, ma accorcia la confusione che ne segue, protegge i ricavi e la fiducia dei clienti ed è sempre più richiesto da grandi clienti, assicuratori e finanziatori.</p>
+
+          <h2>Passo 1: individuare le funzioni critiche</h2>
+
+          <p>Parta elencando ciò che l&rsquo;azienda fa davvero ogni giorno, poi segni ciò il cui blocco farebbe più male. I candidati tipici:</p>
+
+          <ul>
+            <li><strong>Il lavoro che genera ricavi:</strong> consegnare prodotti o servizi, ricevere ordini, tenere aperto il negozio o il cantiere.</li>
+            <li><strong>Farsi pagare:</strong> fatturazione, gestione dei pagamenti e sollecito dei crediti scaduti.</li>
+            <li><strong>Pagare gli altri:</strong> stipendi, fornitori, imposte e affitto.</li>
+            <li><strong>Comunicazione:</strong> telefono, posta elettronica e i canali con cui i clienti la raggiungono.</li>
+            <li><strong>Obblighi legali e di sicurezza:</strong> tutto ciò che deve continuare a fare per restare in regola o proteggere le persone.</li>
+          </ul>
+
+          <p>Per ogni funzione annoti da quali persone, sistemi, fornitori e luoghi dipende. Questo elenco di dipendenze è la materia prima di tutto il resto.</p>
+
+          <h2>Passo 2: fare una semplice valutazione dei rischi</h2>
+
+          <p>Non serve una metodologia formale. Per ogni funzione critica si chieda che cosa potrebbe realisticamente interromperla e assegni da uno a cinque due punteggi: la probabilità e la gravità dell&rsquo;impatto. Moltiplichi i punteggi e affronti per primi i più alti. Scenari comuni:</p>
+
+          <ul>
+            <li>Perdita della sede per incendio, allagamento o edificio inagibile.</li>
+            <li>Interruzione di corrente, internet o telefono.</li>
+            <li>Incidente informatico, perdita di dati o dispositivo guasto.</li>
+            <li>Fermo di un fornitore o di un servizio software chiave.</li>
+            <li>Malattia, dimissioni o assenza di una persona chiave.</li>
+          </ul>
+
+          <p>Sia onesto sui punti unici di guasto, come l&rsquo;unica persona che conosce le password o l&rsquo;unico fornitore senza alternative.</p>
+
+          <h2>Passo 3: fissare gli obiettivi di tempo di ripristino</h2>
+
+          <p>L&rsquo;obiettivo di tempo di ripristino (RTO) è il periodo più lungo in cui una funzione può restare ferma prima che il danno diventi inaccettabile. Ne fissi uno per ogni funzione critica, in unità semplici come due ore, un giorno o una settimana. Un valore affine è l&rsquo;obiettivo di punto di ripristino (RPO): quanti dati recenti può permettersi di perdere, che determina ogni quanto vanno eseguiti i backup. Obiettivi brevi costano di più, quindi lasci che i numeri guidino dove investire: la fatturazione può tollerare un giorno, la presa degli ordini probabilmente no.</p>
+
+          <h2>Passo 4: assegnare i ruoli e tenere aggiornati i contatti</h2>
+
+          <p>In un incidente il problema peggiore è spesso non sapere chi decide. Indichi un responsabile del piano, un sostituto per ogni ruolo e un ordine di autorità chiaro. Poi registri:</p>
+
+          <ul>
+            <li><strong>Contatti del personale:</strong> numeri di cellulare e un indirizzo email personale, non solo account aziendali che potrebbero essere fuori uso.</li>
+            <li><strong>Contatti esterni chiave:</strong> fornitori, locatore, assicurazione, banca, fornitore IT, commercialista e utenze.</li>
+            <li><strong>Comunicazione ai clienti:</strong> chi dice che cosa ai clienti, attraverso quale canale e con quale messaggio provvisorio.</li>
+          </ul>
+
+          <p>Conservi una copia stampata o offline in un luogo accessibile: un piano che esiste solo sul sistema guasto è inutile.</p>
+
+          <h2>Passo 5: pianificare backup e soluzioni alternative</h2>
+
+          <p>Per ogni funzione critica scriva la soluzione di ripiego. Di solito è un mix di backup dei dati e modi di lavorare manuali o alternativi:</p>
+
+          <ul>
+            <li><strong>Dati:</strong> tenga almeno una copia fuori sede o nel cloud, una copia che un computer infetto non possa modificare né cancellare, e verifichi che il ripristino funzioni davvero.</li>
+            <li><strong>Sistemi e accessi:</strong> custodisca in modo sicuro le credenziali critiche, con un modo per una seconda persona fidata di raggiungerle.</li>
+            <li><strong>Sede e attrezzature:</strong> possibilità di lavoro da remoto, accordo reciproco con un&rsquo;altra azienda o dispositivi di scorta per l&rsquo;essenziale.</li>
+            <li><strong>Fornitori:</strong> un&rsquo;alternativa approvata per tutto ciò di cui non può fare a meno.</li>
+            <li><strong>Flusso di cassa:</strong> riserve o credito sufficienti a pagare gli stipendi mentre gli incassi sono compromessi, e una verifica di ciò che l&rsquo;assicurazione copre davvero.</li>
+          </ul>
+
+          <h2>Passo 6: testare il piano</h2>
+
+          <p>Un piano non testato è un&rsquo;ipotesi. Cominci con una breve esercitazione a tavolino: riunisca il team, descriva uno scenario come &laquo;lunedì mattina l&rsquo;ufficio non è accessibile&raquo; e ripercorra chi fa che cosa. Annoti ogni lacuna, come un numero obsoleto o una password mancante. Poi provi separatamente le parti tecniche, soprattutto il ripristino di un backup. Anche una sola esercitazione realistica all&rsquo;anno porta alla luce problemi molto meno costosi da risolvere ora.</p>
+
+          <h2>Passo 7: rivedere secondo un calendario</h2>
+
+          <p>I piani invecchiano in fretta. Rivede il suo almeno una volta l&rsquo;anno e ogni volta che cambia qualcosa di rilevante: un nuovo sistema, una nuova sede, l&rsquo;arrivo o l&rsquo;uscita di una persona chiave, un cambio importante di fornitore, oppure dopo ogni incidente reale o test. Registri data, versione e chi l&rsquo;ha approvato, e presenti ai nuovi arrivati il loro ruolo durante l&rsquo;inserimento.</p>
+
+          <p>Se vuole che il piano viva dove il suo team già lavora, FulcrumGrid Command Center può raccogliere in un unico posto attività chiave, responsabili e scadenze, il che aiuta con l&rsquo;elenco delle dipendenze e i promemoria di revisione. È un supporto al coordinamento, non un sostituto della riflessione descritta sopra: il valore di un piano di continuità sta nelle decisioni che vi si prendono e nel provarle prima di averne bisogno.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Che cos’è un piano di continuità operativa?</summary><p>È un documento scritto e breve che descrive come un’azienda continua a funzionare, o si riprende in fretta, quando qualcosa la interrompe, come un incendio, un guasto, un incidente informatico o la perdita di una persona chiave. Copre funzioni critiche, obiettivi di ripristino, ruoli, contatti, backup e test.</p></details>
+        <details class="faq-item"><summary>Quanto deve essere lungo il piano di una piccola impresa?</summary><p>Quanto basta perché sia utilizzabile, e per la maggior parte delle piccole imprese sono poche pagine. La chiarezza conta più della lunghezza: deve potersi trovare e seguire rapidamente durante un incidente.</p></details>
+        <details class="faq-item"><summary>Che cos’è l’obiettivo di tempo di ripristino (RTO)?</summary><p>È il periodo più lungo in cui una funzione può restare non disponibile prima che il danno diventi inaccettabile. Se ne fissa uno per ogni funzione critica, per esempio due ore per la presa degli ordini o un giorno per la fatturazione, e guida quanto investire in backup e alternative.</p></details>
+        <details class="faq-item"><summary>Ogni quanto devo testare e rivedere il piano?</summary><p>Lo riveda almeno una volta l’anno e ogni volta che cambia qualcosa di importante, come un sistema, una sede o una persona chiave. Faccia almeno un’esercitazione a tavolino all’anno e provi il ripristino dei backup a intervalli regolari.</p></details>
+        <details class="faq-item"><summary>Un piano di continuità è la stessa cosa di un piano di disaster recovery?</summary><p>Non esattamente. Il piano di continuità riguarda il funzionamento dell’intera attività, comprese persone, sede e fornitori. Il piano di disaster recovery è di solito la parte tecnica, più ristretta, dedicata al ripristino dei sistemi informatici e dei dati.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Tieni il piano di continuità assegnato, aggiornato e visibile</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center offre al tuo team un unico posto per seguire responsabili, attività e date di revisione, così il piano di continuità resta aggiornato invece di restare dimenticato in una cartella.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

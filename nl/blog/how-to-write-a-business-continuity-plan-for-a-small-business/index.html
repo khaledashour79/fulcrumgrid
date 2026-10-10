@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Hoe schrijf je een bedrijfscontinuïteitsplan voor een klein bedrijf? — FulcrumGrid</title>
+  <meta name="description" content="Een praktische gids voor een bedrijfscontinuïteitsplan in het mkb: kritieke functies, risico’s, hersteltijden, rollen en contacten, back-ups, testen en evalueren." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Hoe schrijf je een bedrijfscontinuïteitsplan voor een klein bedrijf?" />
+  <meta property="og:description" content="Een praktische gids voor een bedrijfscontinuïteitsplan in het mkb: kritieke functies, risico’s, hersteltijden, rollen en contacten, back-ups, testen en evalueren." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-10-10" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hoe schrijf je een bedrijfscontinuïteitsplan voor een klein bedrijf?" />
+  <meta name="twitter:description" content="Een praktische gids voor een bedrijfscontinuïteitsplan in het mkb: kritieke functies, risico’s, hersteltijden, rollen en contacten, back-ups, testen en evalueren." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hoe schrijf je een bedrijfscontinuïteitsplan voor een klein bedrijf?",
+    "description": "Een praktische gids voor een bedrijfscontinuïteitsplan in het mkb: kritieke functies, risico’s, hersteltijden, rollen en contacten, back-ups, testen en evalueren.",
+    "datePublished": "2026-10-10",
+    "dateModified": "2026-10-10",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/how-to-write-a-business-continuity-plan-for-a-small-business/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Bedrijfscontinuïteitsplan",
+        "item": "https://fulcrumgrid.com/nl/blog/how-to-write-a-business-continuity-plan-for-a-small-business/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is een bedrijfscontinuïteitsplan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een kort schriftelijk plan dat beschrijft hoe een bedrijf blijft draaien, of snel herstelt, wanneer iets de bedrijfsvoering verstoort, zoals een brand, een storing, een cyberincident of het wegvallen van een sleutelpersoon. Het omvat kritieke functies, hersteldoelen, rollen, contacten, back-ups en tests."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe lang moet het plan van een klein bedrijf zijn?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zo lang als nodig om bruikbaar te zijn, en voor de meeste kleine bedrijven zijn dat een paar pagina’s. Helderheid gaat boven lengte: je moet het bij een incident snel kunnen vinden en volgen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is een recovery time objective (RTO)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dat is de langste tijd dat een functie niet beschikbaar mag zijn voordat de schade onaanvaardbaar wordt. Je stelt er een vast per kritieke functie, bijvoorbeeld twee uur voor het aannemen van bestellingen of een dag voor facturatie, en het bepaalt hoeveel je investeert in back-ups en alternatieven."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe vaak moet ik het plan testen en evalueren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evalueer het minstens eens per jaar en telkens als er iets belangrijks verandert, zoals een nieuw systeem, een nieuwe locatie of sleutelpersoon. Houd minstens één tafeloefening per jaar en test regelmatig of je back-ups echt terug te zetten zijn."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is een bedrijfscontinuïteitsplan hetzelfde als een disaster recovery-plan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niet helemaal. Een continuïteitsplan gaat over het draaiende houden van het hele bedrijf, inclusief mensen, pand en leveranciers. Een disaster recovery-plan is meestal het engere technische onderdeel dat zich richt op het herstellen van IT-systemen en data."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / Bedrijfscontinuïteitsplan</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Hoe schrijf je een bedrijfscontinuïteitsplan voor een klein bedrijf?</h1>
+        <p class="hero-intro">Een praktische gids voor een bedrijfscontinuïteitsplan in het mkb: kritieke functies, risico’s, hersteltijden, rollen en contacten, back-ups, testen en evalueren.</p>
+        <p class="mono"><time datetime="2026-10-10">10 oktober 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Een bedrijfscontinuïteitsplan (BCP) is een kort, schriftelijk document dat uitlegt hoe je bedrijf blijft draaien, of snel weer gaat draaien, wanneer iets de bedrijfsvoering verstoort: een brand, een stroomuitval, een ransomware-aanval, een falende leverancier of het plotselinge wegvallen van een sleutelpersoon. Voor een klein bedrijf hoeft het geen tachtig pagina&rsquo;s te beslaan. Een paar heldere pagina&rsquo;s die mensen onder druk kunnen vinden en volgen, zijn veel meer waard dan een dikke map die niemand heeft gelezen.</p>
+
+          <h2>Waarom heeft een klein bedrijf er een nodig?</h2>
+
+          <p>Kleine bedrijven hebben meestal weinig speling: één eigenaar, één locatie, één hoofdsysteem en een handvol klanten die morgen op je rekenen. Een plan voorkomt geen incidenten, maar verkort de verwarring erna, beschermt omzet en klantvertrouwen en wordt steeds vaker gevraagd door grotere klanten, verzekeraars en financiers.</p>
+
+          <h2>Stap 1: bepaal je kritieke functies</h2>
+
+          <p>Begin met een lijst van wat het bedrijf dagelijks echt doet en markeer wat het meeste pijn zou doen als het stilviel. Gebruikelijke kandidaten:</p>
+
+          <ul>
+            <li><strong>Werk dat omzet oplevert:</strong> producten of diensten leveren, bestellingen aannemen, de winkel of werkplek draaiende houden.</li>
+            <li><strong>Betaald krijgen:</strong> facturatie, betalingsverwerking en het innen van achterstallige rekeningen.</li>
+            <li><strong>Anderen betalen:</strong> salarissen, leveranciers, belastingen en huur.</li>
+            <li><strong>Communicatie:</strong> telefoon, e-mail en de kanalen waarlangs klanten je bereiken.</li>
+            <li><strong>Wettelijke en veiligheidsverplichtingen:</strong> alles wat je moet blijven doen om aan de regels te voldoen of mensen te beschermen.</li>
+          </ul>
+
+          <p>Noteer bij elke functie van welke mensen, systemen, leveranciers en locaties ze afhankelijk is. Die lijst met afhankelijkheden is de grondstof voor al het andere.</p>
+
+          <h2>Stap 2: voer een eenvoudige risicobeoordeling uit</h2>
+
+          <p>Je hebt geen formele methodiek nodig. Vraag bij elke kritieke functie wat haar realistisch gezien kan onderbreken en geef twee dingen een score van een tot vijf: de kans dat het gebeurt en de ernst van de gevolgen. Vermenigvuldig de scores en pak de hoogste eerst aan. Veelvoorkomende scenario&rsquo;s:</p>
+
+          <ul>
+            <li>Verlies van het pand door brand, wateroverlast of een afgesloten gebouw.</li>
+            <li>Uitval van stroom, internet of telefoon.</li>
+            <li>Cyberincident, dataverlies of een defect apparaat.</li>
+            <li>Uitval van een belangrijke leverancier of softwareaanbieder.</li>
+            <li>Ziekte, ontslag of afwezigheid van een sleutelpersoon.</li>
+          </ul>
+
+          <p>Wees eerlijk over single points of failure, zoals de ene persoon die de wachtwoorden kent of de ene leverancier zonder alternatief.</p>
+
+          <h2>Stap 3: stel hersteltijddoelen vast</h2>
+
+          <p>Een recovery time objective (RTO) is de langste tijd dat een functie uit de lucht mag zijn voordat de schade onaanvaardbaar wordt. Stel er een vast voor elke kritieke functie, in eenvoudige eenheden zoals twee uur, een dag of een week. Een verwante maat is de recovery point objective (RPO): hoeveel recente data je kunt missen, wat bepaalt hoe vaak er een back-up moet draaien. Korte doelen kosten meer, dus laat de cijfers bepalen waar je geld aan uitgeeft: facturatie kan misschien een dag wachten, het aannemen van bestellingen waarschijnlijk niet.</p>
+
+          <h2>Stap 4: wijs rollen toe en houd contactgegevens actueel</h2>
+
+          <p>Bij een incident is het ergste vaak dat niemand weet wie beslist. Benoem een eigenaar van het plan, een vervanger voor elke rol en een duidelijke beslisvolgorde. Leg daarna vast:</p>
+
+          <ul>
+            <li><strong>Contactgegevens van medewerkers:</strong> mobiele nummers en een privé-e-mailadres, niet alleen werkaccounts die kunnen uitvallen.</li>
+            <li><strong>Belangrijke externe contacten:</strong> leveranciers, verhuurder, verzekeraar, bank, IT-partner, accountant en nutsbedrijven.</li>
+            <li><strong>Klantcommunicatie:</strong> wie wat aan klanten vertelt, via welk kanaal en met welk overbruggingsbericht.</li>
+          </ul>
+
+          <p>Bewaar een geprinte of offline kopie op een bereikbare plek, want een plan dat alleen op het uitgevallen systeem staat, helpt niemand.</p>
+
+          <h2>Stap 5: plan back-ups en noodoplossingen</h2>
+
+          <p>Schrijf bij elke kritieke functie de terugvaloptie op. Meestal is dat een mix van data-back-ups en handmatige of alternatieve werkwijzen:</p>
+
+          <ul>
+            <li><strong>Data:</strong> bewaar minstens één kopie extern of in de cloud, een kopie die een besmet apparaat niet kan wijzigen of verwijderen, en controleer of terugzetten echt werkt.</li>
+            <li><strong>Systemen en toegang:</strong> bewaar kritieke inloggegevens veilig, met een manier voor een tweede vertrouwde persoon om erbij te komen.</li>
+            <li><strong>Pand en apparatuur:</strong> thuiswerkmogelijkheid, een wederzijdse afspraak met een ander bedrijf of reserveapparatuur voor het hoogstnodige.</li>
+            <li><strong>Leveranciers:</strong> een goedgekeurd alternatief voor alles waar je niet zonder kunt.</li>
+            <li><strong>Cashflow:</strong> genoeg reserve of krediet om salarissen te betalen terwijl de inkomsten haperen, en een check van wat je verzekering werkelijk dekt.</li>
+          </ul>
+
+          <h2>Stap 6: test het plan</h2>
+
+          <p>Een ongetest plan is een gok. Begin met een korte tafeloefening: breng het team samen, beschrijf een scenario als &bdquo;het kantoor is maandagochtend onbereikbaar&rdquo; en loop door wie wat doet. Noteer elke lacune, zoals een verouderd nummer of een ontbrekend wachtwoord. Test daarna de technische onderdelen apart, vooral het terugzetten van een back-up. Zelfs één realistische oefening per jaar legt problemen bloot die nu veel goedkoper op te lossen zijn.</p>
+
+          <h2>Stap 7: evalueer volgens een vast ritme</h2>
+
+          <p>Plannen veroudern snel. Loop je plan minstens eens per jaar na, en telkens als er iets wezenlijks verandert: een nieuw systeem, een nieuwe locatie, de komst of het vertrek van een sleutelpersoon, een grote leverancierswissel, of na elk echt incident of elke test. Leg de datum, de versie en de goedkeurder vast en laat nieuwe medewerkers tijdens de inwerkperiode kennismaken met hun rol.</p>
+
+          <p>Wil je dat het plan leeft op de plek waar je team al werkt, dan kan FulcrumGrid Command Center je belangrijkste taken, eigenaren en deadlines op één plek bundelen, wat helpt bij de lijst met afhankelijkheden en de herinneringen voor de evaluatie. Het is een hulpmiddel voor coördinatie, geen vervanging van het denkwerk hierboven: de waarde van een continuïteitsplan zit in de beslissingen die je erin neemt en in het oefenen ervan voordat je ze nodig hebt.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wat is een bedrijfscontinuïteitsplan?</summary><p>Een kort schriftelijk plan dat beschrijft hoe een bedrijf blijft draaien, of snel herstelt, wanneer iets de bedrijfsvoering verstoort, zoals een brand, een storing, een cyberincident of het wegvallen van een sleutelpersoon. Het omvat kritieke functies, hersteldoelen, rollen, contacten, back-ups en tests.</p></details>
+        <details class="faq-item"><summary>Hoe lang moet het plan van een klein bedrijf zijn?</summary><p>Zo lang als nodig om bruikbaar te zijn, en voor de meeste kleine bedrijven zijn dat een paar pagina’s. Helderheid gaat boven lengte: je moet het bij een incident snel kunnen vinden en volgen.</p></details>
+        <details class="faq-item"><summary>Wat is een recovery time objective (RTO)?</summary><p>Dat is de langste tijd dat een functie niet beschikbaar mag zijn voordat de schade onaanvaardbaar wordt. Je stelt er een vast per kritieke functie, bijvoorbeeld twee uur voor het aannemen van bestellingen of een dag voor facturatie, en het bepaalt hoeveel je investeert in back-ups en alternatieven.</p></details>
+        <details class="faq-item"><summary>Hoe vaak moet ik het plan testen en evalueren?</summary><p>Evalueer het minstens eens per jaar en telkens als er iets belangrijks verandert, zoals een nieuw systeem, een nieuwe locatie of sleutelpersoon. Houd minstens één tafeloefening per jaar en test regelmatig of je back-ups echt terug te zetten zijn.</p></details>
+        <details class="faq-item"><summary>Is een bedrijfscontinuïteitsplan hetzelfde als een disaster recovery-plan?</summary><p>Niet helemaal. Een continuïteitsplan gaat over het draaiende houden van het hele bedrijf, inclusief mensen, pand en leveranciers. Een disaster recovery-plan is meestal het engere technische onderdeel dat zich richt op het herstellen van IT-systemen en data.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Houd je continuïteitsplan toegewezen, actueel en zichtbaar</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center geeft je team één plek om eigenaren, taken en evaluatiedata te volgen, zodat je continuïteitsplan actueel blijft in plaats van vergeten in een map te liggen.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
