@@ -290,6 +290,73 @@ PAGE = {
                 "Autoservicio para recibos de nómina, ausencias y datos personales — respuestas sin escribir a RR. HH.",
                 "Self-service per cedolini, ferie e dati personali — risposte senza scrivere all'HR.",
                 "Selfservice voor loonstroken, verlof en persoonlijke gegevens — antwoorden zonder een e-mail naar HR."),
+            # ---- On your phone (browser app, m.fulcrumgrid-hr.com) ----
+            "New · On your phone": _t(
+                "Nouveau · Sur votre téléphone",
+                "Neu · Auf dem Smartphone",
+                "Nuevo · En tu móvil",
+                "Novità · Sul telefono",
+                "Nieuw · Op je telefoon"),
+            "HR Suite in your pocket": _t(
+                "HR Suite dans votre poche",
+                "HR Suite für die Hosentasche",
+                "HR Suite en tu bolsillo",
+                "HR Suite in tasca",
+                "HR Suite in je broekzak"),
+            "The everyday tasks, on any phone — no app store needed. Open it in your phone's browser and add it to your home screen.": _t(
+                "Les tâches du quotidien, sur n'importe quel téléphone — sans passer par un store. Ouvrez-la dans le navigateur de votre téléphone et ajoutez-la à l'écran d'accueil.",
+                "Die täglichen Aufgaben auf jedem Smartphone — ganz ohne App Store. Im Browser des Telefons öffnen und zum Startbildschirm hinzufügen.",
+                "Las tareas del día a día, en cualquier móvil — sin tienda de aplicaciones. Ábrela en el navegador del teléfono y añádela a la pantalla de inicio.",
+                "Le attività di tutti i giorni, su qualsiasi telefono — senza passare da uno store. Aprila nel browser del telefono e aggiungila alla schermata Home.",
+                "De dagelijkse taken, op elke telefoon — zonder appstore. Open de app in de browser van je telefoon en zet hem op je beginscherm."),
+            "Clock in and out": _t(
+                "Pointer à l'arrivée et au départ",
+                "Ein- und Ausstempeln",
+                "Fichar entrada y salida",
+                "Timbrare entrata e uscita",
+                "In- en uitklokken"),
+            "One tap, with an on-site location check, a live shift timer and your week at a glance.": _t(
+                "D'un geste, avec vérification de la présence sur site, minuteur de poste en direct et votre semaine en un coup d'œil.",
+                "Mit einem Tipp, inklusive Standortprüfung vor Ort, laufendem Schicht-Timer und der Woche im Überblick.",
+                "Con un toque, con comprobación de ubicación en el centro de trabajo, temporizador del turno y tu semana de un vistazo.",
+                "Con un tocco, con verifica della posizione in sede, timer del turno in tempo reale e la settimana a colpo d'occhio.",
+                "Met één tik, met een locatiecontrole op de werkplek, een live diensttimer en je week in één oogopslag."),
+            "Leave &amp; approvals": _t(
+                "Congés et validations",
+                "Urlaub &amp; Genehmigungen",
+                "Vacaciones y aprobaciones",
+                "Ferie e approvazioni",
+                "Verlof &amp; goedkeuringen"),
+            "Request time off on a calendar that knows your weekends and holidays. Managers approve leave, expenses and overtime in one inbox.": _t(
+                "Demandez vos congés sur un calendrier qui connaît vos week-ends et jours fériés. Les managers valident congés, notes de frais et heures supplémentaires dans une seule boîte.",
+                "Urlaub in einem Kalender beantragen, der Wochenenden und Feiertage kennt. Führungskräfte genehmigen Urlaub, Spesen und Überstunden in einem Posteingang.",
+                "Solicita días libres en un calendario que conoce tus fines de semana y festivos. Los responsables aprueban vacaciones, gastos y horas extra en una sola bandeja.",
+                "Richiedi le ferie su un calendario che conosce weekend e festività. I responsabili approvano ferie, note spese e straordinari in un'unica casella.",
+                "Vraag verlof aan in een kalender die je weekenden en feestdagen kent. Leidinggevenden keuren verlof, declaraties en overuren goed in één inbox."),
+            "Pay &amp; documents": _t(
+                "Paie et documents",
+                "Gehalt &amp; Dokumente",
+                "Nómina y documentos",
+                "Paga e documenti",
+                "Salaris &amp; documenten"),
+            "Payslips with the full breakdown, expense claims with a photo of the receipt, your documents and your benefits.": _t(
+                "Bulletins de paie détaillés, notes de frais avec photo du justificatif, vos documents et vos avantages.",
+                "Gehaltsabrechnungen mit allen Positionen, Spesenanträge mit Foto des Belegs, Ihre Dokumente und Ihre Zusatzleistungen.",
+                "Nóminas con el desglose completo, notas de gastos con foto del recibo, tus documentos y tus beneficios.",
+                "Buste paga con il dettaglio completo, note spese con la foto della ricevuta, i tuoi documenti e i tuoi benefit.",
+                "Loonstroken met de volledige specificatie, declaraties met een foto van de bon, je documenten en je arbeidsvoorwaarden."),
+            "Open the app": _t(
+                "Ouvrir l'application",
+                "App öffnen",
+                "Abrir la app",
+                "Apri l'app",
+                "Open de app"),
+            "iPhone: Share → Add to Home Screen. Android: menu → Install app. Sign in with your workspace, email and password.": _t(
+                "iPhone : Partager → Sur l'écran d'accueil. Android : menu → Installer l'application. Connectez-vous avec votre espace de travail, e-mail et mot de passe.",
+                "iPhone: Teilen → Zum Home-Bildschirm. Android: Menü → App installieren. Anmeldung mit Workspace, E-Mail und Passwort.",
+                "iPhone: Compartir → Añadir a pantalla de inicio. Android: menú → Instalar aplicación. Inicia sesión con tu espacio de trabajo, correo y contraseña.",
+                "iPhone: Condividi → Aggiungi alla schermata Home. Android: menu → Installa app. Accedi con workspace, e-mail e password.",
+                "iPhone: Deel → Zet op beginscherm. Android: menu → App installeren. Log in met je workspace, e-mail en wachtwoord."),
             # ---- Compliance / regions ----
             "04 · Compliance": _t("04 · Conformité", "04 · Compliance", "04 · Cumplimiento", "04 · Conformità", "04 · Compliance"),
             "Built for global payroll": _t("Conçu pour la paie mondiale", "Für die weltweite Gehaltsabrechnung gebaut", "Diseñado para la nómina global", "Costruito per le buste paga globali", "Gebouwd voor wereldwijde loonadministratie"),
