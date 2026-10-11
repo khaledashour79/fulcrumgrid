@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wie baut man ein Mitarbeiterempfehlungsprogramm auf, das funktioniert? — FulcrumGrid</title>
+  <meta name="description" content="Ein gutes Empfehlungsprogramm ist einfach, fair und messbar. Teilnahme, Prämienhöhe und Auszahlung, Fairness, Ablauf und Messung der Einstellungsqualität." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wie baut man ein Mitarbeiterempfehlungsprogramm auf, das funktioniert?" />
+  <meta property="og:description" content="Ein gutes Empfehlungsprogramm ist einfach, fair und messbar. Teilnahme, Prämienhöhe und Auszahlung, Fairness, Ablauf und Messung der Einstellungsqualität." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/how-to-build-an-employee-referral-program/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-11" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid HR Suite — people operations" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wie baut man ein Mitarbeiterempfehlungsprogramm auf, das funktioniert?" />
+  <meta name="twitter:description" content="Ein gutes Empfehlungsprogramm ist einfach, fair und messbar. Teilnahme, Prämienhöhe und Auszahlung, Fairness, Ablauf und Messung der Einstellungsqualität." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/how-to-build-an-employee-referral-program/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-build-an-employee-referral-program/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-build-an-employee-referral-program/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-build-an-employee-referral-program/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-build-an-employee-referral-program/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-build-an-employee-referral-program/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-build-an-employee-referral-program/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-build-an-employee-referral-program/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-build-an-employee-referral-program/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wie baut man ein Mitarbeiterempfehlungsprogramm auf, das funktioniert?",
+    "description": "Ein gutes Empfehlungsprogramm ist einfach, fair und messbar. Teilnahme, Prämienhöhe und Auszahlung, Fairness, Ablauf und Messung der Einstellungsqualität.",
+    "datePublished": "2026-10-11",
+    "dateModified": "2026-10-11",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/how-to-build-an-employee-referral-program/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Leitfaden Mitarbeiterempfehlung",
+        "item": "https://fulcrumgrid.com/de/blog/how-to-build-an-employee-referral-program/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wie hoch sollte eine Empfehlungsprämie sein?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Üblich sind 5 % bis 20 % des ersten Jahresgehalts oder ein Pauschalbetrag nach Seniorität. Vergleichen Sie mit den Honoraren von Personalberatungen: Die Prämie sollte deutlich günstiger sein und trotzdem hoch genug, dass sie auffällt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sollte die Prämie bei der Einstellung ausgezahlt werden?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Besser ist eine Aufteilung: ein Teil nach Arbeitsbeginn, der Rest nach sechs Monaten oder der Probezeit. Das belohnt die Einstellungsqualität und hält davon ab, Personen zu empfehlen, die schnell wieder gehen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Können Empfehlungsprogramme die Vielfalt verringern?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, denn Netzwerke spiegeln tendenziell die aktuelle Belegschaft. Nutzen Sie für alle dieselbe strukturierte Bewertung, vergleichen Sie empfohlene mit allen Einstellungen und fördern Sie Empfehlungen aus breiteren Kreisen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Woran erkennt man, ob Empfehlungen gute Einstellungen sind?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vergleichen Sie empfohlene und andere Einstellungen nach Verbleib nach 6 und 12 Monaten, Leistung nach dem ersten Review, Angebotsannahme, Besetzungsdauer und Kosten pro Einstellung."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / Leitfaden Mitarbeiterempfehlung</p>
+        <span class="tag tag-accent">HR</span>
+        <h1>Wie baut man ein Mitarbeiterempfehlungsprogramm auf, das funktioniert?</h1>
+        <p class="hero-intro">Ein gutes Empfehlungsprogramm ist einfach, fair und messbar. Teilnahme, Prämienhöhe und Auszahlung, Fairness, Ablauf und Messung der Einstellungsqualität.</p>
+        <p class="mono"><time datetime="2026-10-11">11. Oktober 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Empfehlungen sind oft die beste Quelle für Neueinstellungen: Kandidaten kommen bereits von jemandem geprüft, der die Arbeit kennt, nehmen Angebote eher an und bleiben länger. Doch ein Empfehlungsprogramm funktioniert nur, wenn es einfach, fair und messbar ist. Dieser Leitfaden beantwortet die Fragen, die HR-Teams beim Aufbau am häufigsten stellen.</p><h2>Warum ein Mitarbeiterempfehlungsprogramm einführen?</h2><p>Empfohlene Kandidaten durchlaufen den Prozess meist schneller, kosten weniger als Personalberatung oder Anzeigen und passen oft besser ins Team, weil der Empfehlende die Stelle realistisch einschätzt. Ein Programm zeigt zudem, dass Sie dem Urteil Ihrer Beschäftigten vertrauen. Der Haken: Ohne Steuerung kann es den Talentpool unbemerkt verengen.</p><h2>Wer darf empfehlen, und für welche Stellen?</h2><p>Halten Sie die Regeln so kurz, dass sie auf eine Seite passen.</p><ul><li><strong>Empfehlende.</strong> Alle Beschäftigten nach der Probezeit, auch in Teilzeit und im Homeoffice. Ausgenommen sind Recruiter, die einstellende Führungskraft und alle, die in der direkten Berichtslinie der offenen Stelle stehen.</li><li><strong>Kandidaten.</strong> Alle, die sich in den letzten sechs bis zwölf Monaten nicht beworben haben und nicht in Ihrem System geführt wurden. Legen Sie vorab fest, wie Dubletten behandelt werden: Die erste dokumentierte Empfehlung gilt.</li><li><strong>Stellen.</strong> Öffnen Sie das Programm für nahezu alle Stellen und zahlen Sie für schwer zu besetzende mehr, statt leichte auszuschließen.</li></ul><h2>Wie hoch sollte die Prämie sein?</h2><p>Orientieren Sie sich an den Kosten der Alternative. Üblich sind 5 % bis 20 % des Jahresgehalts im ersten Jahr oder ein Pauschalbetrag nach Seniorität: weniger für Einstiegsstellen, mehr für Spezialisten und erfahrene Kräfte. Vergleichen Sie mit dem, was Sie Personalberatungen zahlen; die Prämie sollte nur ein Bruchteil davon sein. Mehr ist nicht immer besser. Sehr hohe Beträge verleiten dazu, Freunde zu empfehlen, die nicht passen, und führen zu Streit. Sachleistungen wie zusätzliche Urlaubstage können in manchen Kulturen funktionieren, aber Geld ist am klarsten.</p><h2>Wann sollte die Prämie ausgezahlt werden?</h2><p>Zahlen Sie in zwei Stufen, etwa die Hälfte nach dem Start der neuen Person und die andere Hälfte nach sechs Monaten oder zum Ende der Probezeit. Das belohnt Qualität statt Tempo und hält den Empfehlenden am Erfolg der neuen Kollegin oder des neuen Kollegen interessiert. Legen Sie klar fest, dass die eingestellte Person am Auszahlungstag noch beschäftigt sein muss, und weisen Sie vorab darauf hin, dass Prämien in der Regel steuerpflichtig sind.</p><h2>Wie bleiben Empfehlungen fair und frei von Verzerrungen?</h2><p>Empfehlungsnetzwerke spiegeln die Menschen wider, die bereits bei Ihnen arbeiten. Ein unkontrolliertes Programm kann daher die Vielfalt verringern.</p><ul><li>Bewerten Sie empfohlene Kandidaten mit demselben strukturierten Interview und Bewertungsbogen wie alle anderen. Keine Abkürzungen, keine automatischen Gespräche.</li><li>Halten Sie Empfehlende aus der Einstellungsentscheidung für ihre eigene Kandidatin oder ihren eigenen Kandidaten heraus.</li><li>Vergleichen Sie empfohlene Einstellungen mit allen Einstellungen nach Geschlecht, Hintergrund und Ebene und suchen Sie nach Lücken.</li><li>Ermuntern Sie zu Empfehlungen jenseits enger Freunde: frühere Kollegen, Studienkollegen, Kontakte von Veranstaltungen. Teilen Sie offene Stellen in Gruppen, die Ihre Belegschaft bisher nicht erreicht.</li><li>Versprechen Sie empfohlenen Kandidaten nie eine Stelle. Informieren Sie den Empfehlenden kurz und respektvoll über das Ergebnis, ohne vertrauliche Details der Bewertung preiszugeben.</li></ul><h2>Wie sollte der Ablauf aussehen?</h2><p>Für Beschäftigte sollte er weniger als zwei Minuten dauern.</p><ul><li>Veröffentlichen Sie offene Stellen mit einer kurzen Beschreibung, die sich leicht weiterleiten lässt.</li><li>Bieten Sie eine zentrale Stelle für Empfehlungen, etwa ein Formular oder einen Link, mit Einverständnis der Kandidaten.</li><li>Bestätigen Sie jede Empfehlung innerhalb von zwei Arbeitstagen und informieren Sie den Empfehlenden in jeder Phase.</li><li>Prüfen Sie Empfehlungen nach demselben Maßstab und in derselben Geschwindigkeit wie andere Bewerbungen.</li><li>Zahlen Sie zum versprochenen Termin, ohne dass jemand nachfragen muss.</li></ul><p>Langsames oder ausbleibendes Feedback ist der Hauptgrund, warum Programme sterben. Beschäftigte hören auf zu empfehlen, wenn sie nie etwas hören.</p><h2>Wie misst man die Einstellungsqualität?</h2><p>Es genügt nicht, empfohlene Einstellungen zu zählen. Vergleichen Sie empfohlene und andere Einstellungen anhand von:</p><ul><li>Besetzungsdauer und Kosten pro Einstellung.</li><li>Annahmequote bei Angeboten.</li><li>Verbleib nach 6 und 12 Monaten.</li><li>Bewertung durch die Führungskraft oder Leistung nach dem ersten Review.</li><li>Zeit bis zur vollen Produktivität.</li></ul><p>Beobachten Sie außerdem die Beteiligung (Anteil der Beschäftigten, die empfehlen) und die Konversion (Empfehlungen pro Einstellung). Sind empfohlene Einstellungen nicht mindestens so stark wie andere, verschärfen Sie die Kriterien, statt die Prämie zu erhöhen.</p><h2>Was sind typische Fehler?</h2><ul><li><strong>Unklare Regeln,</strong> die zu Streit darüber führen, wer wen empfohlen hat.</li><li><strong>Schweigen nach der Einreichung,</strong> das Beschäftigten beibringt, sich nicht mehr zu bemühen.</li><li><strong>Verspätete oder vergessene Auszahlungen,</strong> die Vertrauen schnell zerstören.</li><li><strong>Menge belohnen.</strong> Wer jeden eingereichten Lebenslauf bezahlt, bekommt Spam statt Einstellungen.</li><li><strong>Vielfaltsdaten ignorieren,</strong> bis die Belegschaft einheitlich geworden ist.</li><li><strong>Starten und vergessen.</strong> Prüfen Sie Prämienhöhe und Teilnahmebedingungen mindestens einmal im Jahr.</li></ul><h2>Wo hilft Software?</h2><p>Für eine Handvoll Empfehlungen genügt eine Tabelle. Darüber hinaus wird es fehleranfällig, Stufe für Stufe nachzuhalten, wer wen empfohlen hat, samt Auszahlungsterminen und Verbleib. Wenn Sie Ihre Personaldaten bereits in <strong>FulcrumGrid HR Suite</strong> verwalten, können Sie Empfehlungsquellen, Eintrittsdaten und Verbleib zusammen führen, sodass Auszahlungspläne und Qualitätskennzahlen aus denselben Datensätzen stammen statt aus verstreuten E-Mails.</p><p>Beginnen Sie einfach: klare Regeln, eine faire Prämie in zwei Stufen, schnelles Feedback und eine jährliche Überprüfung der Zahlen.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Wie hoch sollte eine Empfehlungsprämie sein?</summary><p>Üblich sind 5 % bis 20 % des ersten Jahresgehalts oder ein Pauschalbetrag nach Seniorität. Vergleichen Sie mit den Honoraren von Personalberatungen: Die Prämie sollte deutlich günstiger sein und trotzdem hoch genug, dass sie auffällt.</p></details>
+        <details class="faq-item"><summary>Sollte die Prämie bei der Einstellung ausgezahlt werden?</summary><p>Besser ist eine Aufteilung: ein Teil nach Arbeitsbeginn, der Rest nach sechs Monaten oder der Probezeit. Das belohnt die Einstellungsqualität und hält davon ab, Personen zu empfehlen, die schnell wieder gehen.</p></details>
+        <details class="faq-item"><summary>Können Empfehlungsprogramme die Vielfalt verringern?</summary><p>Ja, denn Netzwerke spiegeln tendenziell die aktuelle Belegschaft. Nutzen Sie für alle dieselbe strukturierte Bewertung, vergleichen Sie empfohlene mit allen Einstellungen und fördern Sie Empfehlungen aus breiteren Kreisen.</p></details>
+        <details class="faq-item"><summary>Woran erkennt man, ob Empfehlungen gute Einstellungen sind?</summary><p>Vergleichen Sie empfohlene und andere Einstellungen nach Verbleib nach 6 und 12 Monaten, Leistung nach dem ersten Review, Angebotsannahme, Besetzungsdauer und Kosten pro Einstellung.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid HR Suite</p>
+        <h2>Empfehlungen und Einstellungen an einem Ort</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid HR Suite hilft Ihnen, Personaldaten zu verwalten, damit Empfehlungsquellen, Eintrittsdaten und Verbleib verbunden und leicht prüfbar bleiben.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/hr-suite/">Entdecken HR Suite</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
