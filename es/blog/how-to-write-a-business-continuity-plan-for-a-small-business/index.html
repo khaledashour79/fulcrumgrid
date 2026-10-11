@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>¿Cómo se redacta un plan de continuidad del negocio para una pyme? — FulcrumGrid</title>
+  <meta name="description" content="Guía práctica para redactar un plan de continuidad del negocio en una pyme: funciones críticas, riesgos, tiempos de recuperación, roles, copias de seguridad y pruebas." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="¿Cómo se redacta un plan de continuidad del negocio para una pyme?" />
+  <meta property="og:description" content="Guía práctica para redactar un plan de continuidad del negocio en una pyme: funciones críticas, riesgos, tiempos de recuperación, roles, copias de seguridad y pruebas." />
+  <meta property="og:url" content="https://fulcrumgrid.com/es/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-10" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="¿Cómo se redacta un plan de continuidad del negocio para una pyme?" />
+  <meta name="twitter:description" content="Guía práctica para redactar un plan de continuidad del negocio en una pyme: funciones críticas, riesgos, tiempos de recuperación, roles, copias de seguridad y pruebas." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/es/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-write-a-business-continuity-plan-for-a-small-business/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "¿Cómo se redacta un plan de continuidad del negocio para una pyme?",
+    "description": "Guía práctica para redactar un plan de continuidad del negocio en una pyme: funciones críticas, riesgos, tiempos de recuperación, roles, copias de seguridad y pruebas.",
+    "datePublished": "2026-10-10",
+    "dateModified": "2026-10-10",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/es/blog/how-to-write-a-business-continuity-plan-for-a-small-business/"
+    },
+    "inLanguage": "es"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://fulcrumgrid.com/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/es/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Plan de continuidad del negocio",
+        "item": "https://fulcrumgrid.com/es/blog/how-to-write-a-business-continuity-plan-for-a-small-business/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es un plan de continuidad del negocio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Es un documento escrito y breve que describe cómo una empresa sigue funcionando, o se recupera con rapidez, cuando algo la interrumpe, como un incendio, una caída, un incidente cibernético o la pérdida de una persona clave. Abarca funciones críticas, objetivos de recuperación, roles, contactos, copias de seguridad y pruebas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué extensión debe tener el plan de una pequeña empresa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La necesaria para que sea utilizable, que en la mayoría de las pymes son unas pocas páginas. La claridad importa más que la longitud: debe poder encontrarse y seguirse rápido durante un incidente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es un objetivo de tiempo de recuperación (RTO)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Es el máximo tiempo que una función puede estar no disponible antes de que el daño sea inaceptable. Se fija uno por función crítica, por ejemplo dos horas para recibir pedidos o un día para facturar, y orienta cuánto invertir en copias de seguridad y alternativas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Con qué frecuencia debo probar y revisar el plan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Revíselo al menos una vez al año y cuando cambie algo importante, como un sistema, una sede o una persona clave. Haga al menos un ejercicio de mesa al año y pruebe la restauración de sus copias de seguridad de forma periódica."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Es lo mismo un plan de continuidad que un plan de recuperación ante desastres?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No exactamente. El plan de continuidad cubre que todo el negocio siga operando, incluidos personas, local y proveedores. El plan de recuperación ante desastres suele ser la parte técnica, más acotada, centrada en restaurar sistemas informáticos y datos."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/es/products/">Productos</a>
+        <a href="/es/features/">Cuadrícula</a>
+        <a href="/es/pricing/">Precios</a>
+        <a href="/es/regions/">Regiones</a>
+        <a href="/es/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/es/contact/">Contacto</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Idioma">ES ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" class="active" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/es/contact/">Solicitar una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/es/">Inicio</a> / <a href="/es/blog/">Blog</a> / Plan de continuidad del negocio</p>
+        <span class="tag tag-accent">Operaciones</span>
+        <h1>¿Cómo se redacta un plan de continuidad del negocio para una pyme?</h1>
+        <p class="hero-intro">Guía práctica para redactar un plan de continuidad del negocio en una pyme: funciones críticas, riesgos, tiempos de recuperación, roles, copias de seguridad y pruebas.</p>
+        <p class="mono"><time datetime="2026-10-10">10 de octubre de 2026</time> · 6 min de lectura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Un plan de continuidad del negocio es un documento escrito y breve que explica cómo su empresa sigue funcionando, o vuelve a hacerlo cuanto antes, cuando algo la interrumpe: un incendio, un corte de luz, un ataque de ransomware, la caída de un proveedor o la ausencia repentina de una persona clave. En una pyme no tiene por qué ocupar ochenta páginas. Unas pocas páginas claras que la gente encuentre y pueda seguir bajo presión valen mucho más que una carpeta gruesa que nadie ha leído.</p>
+
+          <h2>¿Por qué lo necesita una pequeña empresa?</h2>
+
+          <p>Las pequeñas empresas suelen tener poco margen: un solo propietario, un solo local, un sistema principal y unos pocos clientes que cuentan con usted mañana. Un plan no evita los incidentes, pero acorta la confusión posterior, protege los ingresos y la confianza de los clientes, y cada vez más lo piden las grandes empresas clientes, las aseguradoras y las entidades financieras.</p>
+
+          <h2>Paso 1: identifique sus funciones críticas</h2>
+
+          <p>Empiece listando lo que la empresa hace realmente cada día y marque aquello cuya parada dolería más. Los candidatos habituales:</p>
+
+          <ul>
+            <li><strong>El trabajo que genera ingresos:</strong> entregar productos o servicios, recibir pedidos, mantener abierta la tienda u obra.</li>
+            <li><strong>Cobrar:</strong> facturación, procesamiento de pagos y reclamación de cuentas vencidas.</li>
+            <li><strong>Pagar a terceros:</strong> nóminas, proveedores, impuestos y alquiler.</li>
+            <li><strong>Comunicación:</strong> teléfono, correo y los canales por los que los clientes le contactan.</li>
+            <li><strong>Obligaciones legales y de seguridad:</strong> todo lo que debe seguir haciendo para cumplir la norma o proteger a las personas.</li>
+          </ul>
+
+          <p>Para cada función, anote de qué personas, sistemas, proveedores y lugares depende. Esa lista de dependencias es la materia prima de todo lo demás.</p>
+
+          <h2>Paso 2: haga una evaluación de riesgos sencilla</h2>
+
+          <p>No necesita una metodología formal. Para cada función crítica, pregunte qué podría interrumpirla de forma realista y puntúe de uno a cinco dos aspectos: su probabilidad y la gravedad de su impacto. Multiplique las puntuaciones y aborde primero las más altas. Escenarios habituales:</p>
+
+          <ul>
+            <li>Pérdida del local por incendio, inundación o edificio inaccesible.</li>
+            <li>Corte de electricidad, internet o teléfono.</li>
+            <li>Incidente cibernético, pérdida de datos o equipo averiado.</li>
+            <li>Caída de un proveedor o de un servicio de software clave.</li>
+            <li>Enfermedad, renuncia o ausencia de una persona clave.</li>
+          </ul>
+
+          <p>Sea sincero con los puntos únicos de fallo, como la única persona que conoce las contraseñas o el único proveedor sin alternativa.</p>
+
+          <h2>Paso 3: fije objetivos de tiempo de recuperación</h2>
+
+          <p>El objetivo de tiempo de recuperación (RTO, por sus siglas en inglés) es el máximo que puede estar parada una función antes de que el daño sea inaceptable. Fije uno por cada función crítica, en unidades sencillas: dos horas, un día, una semana. Una cifra afín es el objetivo de punto de recuperación (RPO): cuántos datos recientes puede permitirse perder, lo que marca la frecuencia de las copias de seguridad. Los plazos cortos cuestan más, así que deje que los números orienten su inversión: la facturación quizá tolere un día; la recepción de pedidos, probablemente no.</p>
+
+          <h2>Paso 4: asigne roles y mantenga los contactos al día</h2>
+
+          <p>En un incidente, lo peor suele ser no saber quién decide. Designe a un responsable del plan, un suplente para cada rol y un orden de autoridad claro. Después registre:</p>
+
+          <ul>
+            <li><strong>Contactos del personal:</strong> teléfonos móviles y un correo personal, no solo cuentas de trabajo que podrían estar caídas.</li>
+            <li><strong>Contactos externos clave:</strong> proveedores, arrendador, aseguradora, banco, proveedor informático, contador y suministros.</li>
+            <li><strong>Comunicación con clientes:</strong> quién informa a los clientes, de qué, por qué canal y con qué mensaje provisional.</li>
+          </ul>
+
+          <p>Guarde una copia impresa o sin conexión en un lugar accesible: un plan que solo existe en el sistema averiado no sirve de nada.</p>
+
+          <h2>Paso 5: planifique copias de seguridad y alternativas</h2>
+
+          <p>Para cada función crítica, anote la alternativa. Suele ser una combinación de copias de datos y formas de trabajo manuales o sustitutivas:</p>
+
+          <ul>
+            <li><strong>Datos:</strong> conserve al menos una copia fuera del local o en la nube, una copia que un equipo infectado no pueda modificar ni borrar, y compruebe que la restauración funciona de verdad.</li>
+            <li><strong>Sistemas y accesos:</strong> guarde las credenciales críticas de forma segura, con un modo de que una segunda persona de confianza acceda a ellas.</li>
+            <li><strong>Local y equipos:</strong> opción de teletrabajo, acuerdo recíproco con otra empresa o equipos de repuesto para lo esencial.</li>
+            <li><strong>Proveedores:</strong> una alternativa aprobada para todo aquello sin lo que no pueda trabajar.</li>
+            <li><strong>Flujo de caja:</strong> reservas o crédito suficientes para pagar nóminas mientras los ingresos se resienten, y una revisión de lo que su seguro cubre de verdad.</li>
+          </ul>
+
+          <h2>Paso 6: pruebe el plan</h2>
+
+          <p>Un plan sin probar es una conjetura. Empiece con un ejercicio breve de mesa: reúna al equipo, plantee un escenario como &laquo;la oficina es inaccesible el lunes por la mañana&raquo; y repasen quién hace qué. Anote cada laguna, como un teléfono desactualizado o una contraseña que falta. Después pruebe por separado las partes técnicas, sobre todo restaurar una copia de seguridad. Incluso un ejercicio realista al año saca a la luz problemas mucho más baratos de arreglar ahora.</p>
+
+          <h2>Paso 7: revíselo con un calendario</h2>
+
+          <p>Los planes envejecen deprisa. Revise el suyo al menos una vez al año y cada vez que cambie algo importante: un sistema nuevo, otra sede, la incorporación o salida de una persona clave, un cambio de proveedor relevante, o tras cualquier incidente real o prueba. Registre la fecha, la versión y quién lo aprobó, e informe a las nuevas incorporaciones de su papel durante la integración.</p>
+
+          <p>Si quiere que el plan viva donde su equipo ya trabaja, FulcrumGrid Command Center puede reunir en un solo lugar sus tareas clave, responsables y plazos, lo que ayuda con la lista de dependencias y los recordatorios de revisión. Es una ayuda de coordinación, no un sustituto de la reflexión descrita arriba: el valor de un plan de continuidad está en las decisiones que se toman en él y en ensayarlas antes de necesitarlas.</p>
+
+        <h2>Preguntas frecuentes</h2>
+        <details class="faq-item"><summary>¿Qué es un plan de continuidad del negocio?</summary><p>Es un documento escrito y breve que describe cómo una empresa sigue funcionando, o se recupera con rapidez, cuando algo la interrumpe, como un incendio, una caída, un incidente cibernético o la pérdida de una persona clave. Abarca funciones críticas, objetivos de recuperación, roles, contactos, copias de seguridad y pruebas.</p></details>
+        <details class="faq-item"><summary>¿Qué extensión debe tener el plan de una pequeña empresa?</summary><p>La necesaria para que sea utilizable, que en la mayoría de las pymes son unas pocas páginas. La claridad importa más que la longitud: debe poder encontrarse y seguirse rápido durante un incidente.</p></details>
+        <details class="faq-item"><summary>¿Qué es un objetivo de tiempo de recuperación (RTO)?</summary><p>Es el máximo tiempo que una función puede estar no disponible antes de que el daño sea inaceptable. Se fija uno por función crítica, por ejemplo dos horas para recibir pedidos o un día para facturar, y orienta cuánto invertir en copias de seguridad y alternativas.</p></details>
+        <details class="faq-item"><summary>¿Con qué frecuencia debo probar y revisar el plan?</summary><p>Revíselo al menos una vez al año y cuando cambie algo importante, como un sistema, una sede o una persona clave. Haga al menos un ejercicio de mesa al año y pruebe la restauración de sus copias de seguridad de forma periódica.</p></details>
+        <details class="faq-item"><summary>¿Es lo mismo un plan de continuidad que un plan de recuperación ante desastres?</summary><p>No exactamente. El plan de continuidad cubre que todo el negocio siga operando, incluidos personas, local y proveedores. El plan de recuperación ante desastres suele ser la parte técnica, más acotada, centrada en restaurar sistemas informáticos y datos.</p></details>
+
+        <p style="margin-top:32px"><a href="/es/blog/"><span aria-hidden="true">←</span> Volver al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Mantén tu plan de continuidad con responsable, al día y visible</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center ofrece a tu equipo un solo lugar para seguir responsables, tareas y fechas de revisión, de modo que tu plan de continuidad se mantenga al día en lugar de quedar olvidado en una carpeta.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/es/products/command-center/">Explorar Command Center</a>
+          <a class="btn btn-secondary" href="/es/blog/">Volver al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La columna vertebral operativa de los equipos modernos.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Productos</h5>
+          <a href="/es/products/">Todos los productos</a>
+          <a href="/es/products/hr-suite/">HR Suite</a>
+          <a href="/es/products/command-center/">Command Center</a>
+          <a href="/es/products/collection/">Collection</a>
+          <a href="/es/custom-apps/">Apps a medida</a>
+        </div>
+        <div class="foot-col">
+          <h5>Cuadrícula</h5>
+          <a href="/es/features/">Funciones</a>
+          <a href="/es/integrations/">Integraciones</a>
+          <a href="/es/how-it-works/">Cómo funciona</a>
+          <a href="/es/pricing/">Precios</a>
+          <a href="/es/regions/">Regiones</a>
+          <a href="/es/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Empresa</h5>
+          <a href="/es/about/">Acerca de</a>
+          <a href="/es/faq/">FAQ</a>
+          <a href="/es/contact/">Contacto</a>
+          <a href="/es/privacy/">Privacidad</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Todos los derechos reservados.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
