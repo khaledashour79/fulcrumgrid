@@ -16,13 +16,13 @@
       name: 'Collection', tag: 'Receivables',
       line: 'Receivables and payments, handled. Track invoices, automate reminders, and get paid faster without the chase.',
       price: 'Starter free · from SAR 370 / mo', href: '/products/collection/',
-      modules: ['Debtors & accounts', 'Invoices & payments', 'Tasks & promises', 'Disputes', 'Debtor portal', 'Strategies & templates', 'Custom roles (RBAC)', 'Approvals / SoD', 'Advanced analytics', 'SAP Business One', 'Legal & settlements', 'REST API & webhooks', 'Agency mode', 'Trust accounting', 'Creditor portal']
+      modules: ['Debtors & accounts', 'Invoices & payments', 'Tasks & promises', 'Disputes', 'Debtor portal', 'Strategies & templates', 'Custom roles (RBAC)', 'Approvals / SoD', 'Advanced analytics', 'ERP connectors', 'Cheque register', 'Legal & settlements', 'REST API & webhooks', 'Agency mode', 'Trust accounting', 'Creditor portal']
     },
     hr: {
       name: 'HR Suite', tag: 'People',
       line: 'People operations from hire to retire. Manage employees, payroll, time off, and everything in between.',
       price: 'From SAR 5 / seat / mo', href: '/products/hr-suite/',
-      modules: ['Core HR', 'Time off', 'Expenses', 'HR letters', 'Onboarding', 'Documents & e-sign', 'Time & attendance', 'Overtime', 'Employment contracts', 'Assets', 'HR helpdesk', 'Benefits', 'Performance', 'Payroll', 'GOSI', 'End-of-service', 'Recruitment (ATS)', 'Candidate portal', 'Learning (LMS)', 'Engagement surveys', 'Approval workflows', 'Policy Library', 'Business travel', 'Report builder', 'Mobile app', 'Document requests', 'AI Copilot & Agents', 'SSO & SCIM', 'SAP Business One', '+ 11 more modules']
+      modules: ['Core HR', 'Time off', 'Expenses', 'HR letters', 'Onboarding', 'Documents & e-sign', 'Time & attendance', 'Overtime', 'Employment contracts', 'Assets', 'HR helpdesk', 'Benefits', 'Performance', 'Payroll', 'GOSI', 'End-of-service', 'Recruitment (ATS)', 'Candidate portal', 'Learning (LMS)', 'Learning providers', 'Engagement surveys', 'Approval workflows', 'Policy Library', 'Business travel', 'Report builder', 'Mobile app', 'Document requests', 'AI Copilot & Agents', 'SSO & SCIM', 'SAP Business One', '+ 10 more modules']
     }
   };
 
@@ -37,13 +37,13 @@
       name: 'منصة تحصيل الديون', tag: 'الذمم',
       line: 'الذمم والمدفوعات، مُدارة. تتبّع الفواتير وأتمت التذكيرات واحصل على مستحقّاتك أسرع دون مطاردة.',
       price: 'الباقة الأساسية مجانية · من 370 ريال / شهريًا', href: '/ar/products/collection/',
-      modules: ['المدينون والحسابات', 'الفواتير والمدفوعات', 'المهام والوعود', 'النزاعات', 'بوابة المدين', 'الاستراتيجيات والقوالب', 'أدوار مخصّصة (RBAC)', 'الموافقات / فصل المهام (SoD)', 'تحليلات متقدّمة', 'SAP Business One', 'الشؤون القانونية والتسويات', 'REST API و webhooks', 'وضع الوكالة', 'محاسبة الأمانات', 'بوابة الدائن']
+      modules: ['المدينون والحسابات', 'الفواتير والمدفوعات', 'المهام والوعود', 'النزاعات', 'بوابة المدين', 'الاستراتيجيات والقوالب', 'أدوار مخصّصة (RBAC)', 'الموافقات / فصل المهام (SoD)', 'تحليلات متقدّمة', 'موصلات ERP', 'سجل الشيكات', 'الشؤون القانونية والتسويات', 'REST API و webhooks', 'وضع الوكالة', 'محاسبة الأمانات', 'بوابة الدائن']
     },
     hr: {
       name: 'منصة الموارد البشرية', tag: 'الأفراد',
       line: 'عمليات الأفراد من التعيين إلى التقاعد. أدِر الموظفين والرواتب والإجازات وكل ما بينهما.',
       price: 'من 5 ريال / مقعد / شهريًا', href: '/ar/products/hr-suite/',
-      modules: ['الموارد البشرية الأساسية', 'الإجازات', 'المصروفات', 'خطابات الموارد البشرية', 'التأهيل', 'المستندات والتوقيع الإلكتروني', 'الوقت والحضور', 'العمل الإضافي', 'عقود العمل', 'العُهد والأصول', 'مكتب خدمة الموارد البشرية', 'المزايا', 'الأداء', 'الرواتب', 'التأمينات (GOSI)', 'نهاية الخدمة', 'التوظيف (ATS)', 'بوابة المتقدّمين', 'التعلّم (LMS)', 'استبيانات التفاعل', 'مسارات الموافقات', 'مكتبة السياسات', 'سفر الأعمال', 'منشئ التقارير', 'تطبيق الجوال', 'طلبات المستندات', 'المساعد الذكي والوكلاء', 'SSO و SCIM', 'SAP Business One', '+ 11 وحدة إضافية']
+      modules: ['الموارد البشرية الأساسية', 'الإجازات', 'المصروفات', 'خطابات الموارد البشرية', 'التأهيل', 'المستندات والتوقيع الإلكتروني', 'الوقت والحضور', 'العمل الإضافي', 'عقود العمل', 'العُهد والأصول', 'مكتب خدمة الموارد البشرية', 'المزايا', 'الأداء', 'الرواتب', 'التأمينات (GOSI)', 'نهاية الخدمة', 'التوظيف (ATS)', 'بوابة المتقدّمين', 'التعلّم (LMS)', 'مزوّدو التعلّم', 'استبيانات التفاعل', 'مسارات الموافقات', 'مكتبة السياسات', 'سفر الأعمال', 'منشئ التقارير', 'تطبيق الجوال', 'طلبات المستندات', 'المساعد الذكي والوكلاء', 'SSO و SCIM', 'SAP Business One', '+ 10 وحدة إضافية']
     }
   };
 

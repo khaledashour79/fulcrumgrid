@@ -144,12 +144,12 @@ PAGE = {
             "See full pricing ↗": _t("Voir tous les tarifs ↗", "Alle Preise ansehen ↗", "Ver precios completos ↗", "Vedi tutti i prezzi ↗", "Bekijk alle prijzen ↗"),
             "Core HR &amp; time off": _t("RH de base &amp; congés", "Kern-HR &amp; Abwesenheiten", "RR. HH. esenciales &amp; ausencias", "HR di base &amp; ferie", "Kern-HR &amp; verlof"),
             "Expenses &amp; HR letters": _t("Notes de frais &amp; courriers RH", "Spesen &amp; HR-Schreiben", "Gastos &amp; cartas de RR. HH.", "Spese &amp; lettere HR", "Onkosten &amp; HR-brieven"),
-            "Announcements, recognition &amp; probation": _t(
-                "Annonces, reconnaissance &amp; période d'essai",
-                "Ankündigungen, Anerkennung &amp; Probezeit",
-                "Anuncios, reconocimiento &amp; periodo de prueba",
-                "Annunci, riconoscimenti &amp; periodo di prova",
-                "Aankondigingen, erkenning &amp; proeftijd"),
+            "News, recognition &amp; probation": _t(
+                "Actualités, reconnaissance &amp; période d'essai",
+                "News, Anerkennung &amp; Probezeit",
+                "Noticias, reconocimiento &amp; periodo de prueba",
+                "News, riconoscimenti &amp; periodo di prova",
+                "Nieuws, erkenning &amp; proeftijd"),
             "Email support": _t("Assistance par e-mail", "E-Mail-Support", "Soporte por correo", "Supporto via e-mail", "E-mailondersteuning"),
             # ---- Capabilities ----
             "Capabilities": _t("Capacités", "Funktionen", "Capacidades", "Funzionalità", "Mogelijkheden"),
@@ -171,19 +171,19 @@ PAGE = {
                 "Un profilo unico e sicuro per ogni dipendente — documenti, ruoli, retribuzione e cronologia in un unico file.",
                 "Eén beveiligd profiel voor elke medewerker — documenten, rollen, beloning en geschiedenis in één dossier."),
             "<h4>Onboarding</h4>": _t("<h4>Intégration</h4>", "<h4>Onboarding</h4>", "<h4>Incorporación</h4>", "<h4>Onboarding</h4>", "<h4>Onboarding</h4>"),
-            "Turn a new hire into a set-up teammate with checklists, e-signatures, and automatic account provisioning.": _t(
-                "Transformez une nouvelle recrue en coéquipier opérationnel grâce aux listes de contrôle, aux signatures électroniques et à la création automatique des comptes.",
-                "Machen Sie aus einer neuen Einstellung ein startklares Teammitglied — mit Checklisten, elektronischen Signaturen und automatischer Kontoeinrichtung.",
-                "Convierta a un nuevo empleado en un compañero listo para trabajar con listas de verificación, firmas electrónicas y aprovisionamiento automático de cuentas.",
-                "Trasforma un nuovo assunto in un collega pronto a partire con checklist, firme elettroniche e creazione automatica degli account.",
-                "Maak van een nieuwe medewerker een startklare collega met checklists, e-handtekeningen en automatische accountaanmaak."),
+            "Turn a new hire into a set-up teammate with checklists, e-signatures, and automatic account provisioning — plus AI-assisted import that maps your spreadsheet columns and reads existing documents to propose the setup for you to approve.": _t(
+                "Transformez une nouvelle recrue en coéquipier opérationnel grâce aux listes de contrôle, aux signatures électroniques et à la création automatique des comptes — avec un import assisté par IA qui mappe les colonnes de votre tableur et lit les documents existants pour proposer la configuration que vous validez.",
+                "Machen Sie aus einer neuen Einstellung ein startklares Teammitglied — mit Checklisten, elektronischen Signaturen und automatischer Kontoeinrichtung — plus KI-gestütztem Import, der Ihre Tabellenspalten zuordnet und vorhandene Dokumente liest, um die Einrichtung zur Freigabe vorzuschlagen.",
+                "Convierta a un nuevo empleado en un compañero listo para trabajar con listas de verificación, firmas electrónicas y aprovisionamiento automático de cuentas — además de una importación asistida por IA que asigna las columnas de su hoja de cálculo y lee los documentos existentes para proponer la configuración que usted aprueba.",
+                "Trasforma un nuovo assunto in un collega pronto a partire con checklist, firme elettroniche e creazione automatica degli account — più un'importazione assistita dall'IA che mappa le colonne del foglio di calcolo e legge i documenti esistenti per proporre la configurazione che approvi tu.",
+                "Maak van een nieuwe medewerker een startklare collega met checklists, e-handtekeningen en automatische accountaanmaak — plus AI-ondersteunde import die uw spreadsheetkolommen koppelt en bestaande documenten leest om de inrichting voor te stellen die u goedkeurt."),
             "<h4>Payroll</h4>": _t("<h4>Paie</h4>", "<h4>Gehaltsabrechnung</h4>", "<h4>Nóminas</h4>", "<h4>Buste paga</h4>", "<h4>Loonadministratie</h4>"),
-            "Run accurate payroll on schedule, with earnings, deductions, and payslips generated for every cycle.": _t(
-                "Exécutez une paie exacte dans les délais, avec les gains, les retenues et les bulletins de paie générés à chaque cycle.",
-                "Rechnen Sie Gehälter präzise und pünktlich ab — mit Bezügen, Abzügen und Gehaltsabrechnungen für jeden Zyklus.",
-                "Ejecute nóminas precisas a tiempo, con ingresos, deducciones y recibos generados en cada ciclo.",
-                "Elabora buste paga precise e puntuali, con retribuzioni, trattenute e cedolini generati a ogni ciclo.",
-                "Verwerk nauwkeurige loonadministratie op tijd, met verdiensten, inhoudingen en loonstroken voor elke cyclus."),
+            "Run accurate payroll on schedule, with earnings, deductions, and payslips generated for every cycle — including sales commissions recorded by your team and paid straight through the pay run.": _t(
+                "Exécutez une paie exacte dans les délais, avec les gains, les retenues et les bulletins de paie générés à chaque cycle — y compris les commissions sur ventes enregistrées par votre équipe et versées directement via la paie.",
+                "Rechnen Sie Gehälter präzise und pünktlich ab — mit Bezügen, Abzügen und Gehaltsabrechnungen für jeden Zyklus — einschließlich Verkaufsprovisionen, die Ihr Team erfasst und die direkt über den Lohnlauf ausgezahlt werden.",
+                "Ejecute nóminas precisas a tiempo, con ingresos, deducciones y recibos generados en cada ciclo — incluidas las comisiones de ventas registradas por su equipo y pagadas directamente a través de la nómina.",
+                "Elabora buste paga precise e puntuali, con retribuzioni, trattenute e cedolini generati a ogni ciclo — comprese le provvigioni sulle vendite registrate dal tuo team e pagate direttamente tramite il ciclo paga.",
+                "Verwerk nauwkeurige loonadministratie op tijd, met verdiensten, inhoudingen en loonstroken voor elke cyclus — inclusief verkoopcommissies die uw team registreert en die rechtstreeks via de loonrun worden uitbetaald."),
             "Time &amp; attendance": _t("Temps &amp; présences", "Zeit &amp; Anwesenheit", "Tiempo &amp; asistencia", "Presenze &amp; orari", "Tijd &amp; aanwezigheid"),
             "Clock-ins, timesheets, and shift tracking that flow straight into payroll — no double entry.": _t(
                 "Pointages, feuilles de temps et suivi des équipes qui alimentent directement la paie — sans double saisie.",
@@ -205,6 +205,20 @@ PAGE = {
                 "Objetivos, comentarios y ciclos de evaluación que mantienen las conversaciones de crecimiento encaminadas y registradas.",
                 "Obiettivi, feedback e cicli di valutazione che tengono i colloqui di crescita in linea e documentati.",
                 "Doelen, feedback en beoordelingscycli die groeigesprekken op koers en vastgelegd houden."),
+            "Learning &amp; development": _t("Formation &amp; développement", "Lernen &amp; Entwicklung", "Formación &amp; desarrollo", "Formazione &amp; sviluppo", "Leren &amp; ontwikkeling"),
+            "Build courses, lessons and quizzes with completion certificates — or bring provider catalogues from Udemy Business, LinkedIn Learning and Coursera, assign them, track completions, and recommend them right inside reviews and development plans.": _t(
+                "Créez des cours, des leçons et des quiz avec des certificats de réussite — ou importez les catalogues de Udemy Business, LinkedIn Learning et Coursera, attribuez-les, suivez les achèvements et recommandez-les directement dans les évaluations et les plans de développement.",
+                "Erstellen Sie Kurse, Lektionen und Quiz mit Abschlusszertifikaten — oder binden Sie die Kataloge von Udemy Business, LinkedIn Learning und Coursera ein, weisen Sie sie zu, verfolgen Sie Abschlüsse und empfehlen Sie sie direkt in Beurteilungen und Entwicklungsplänen.",
+                "Cree cursos, lecciones y cuestionarios con certificados de finalización — o incorpore los catálogos de Udemy Business, LinkedIn Learning y Coursera, asígnelos, haga seguimiento de las finalizaciones y recomiéndelos directamente en las evaluaciones y los planes de desarrollo.",
+                "Crea corsi, lezioni e quiz con certificati di completamento — oppure integra i cataloghi di Udemy Business, LinkedIn Learning e Coursera, assegnali, monitora i completamenti e consigliali direttamente nelle valutazioni e nei piani di sviluppo.",
+                "Bouw cursussen, lessen en quizzen met voltooiingscertificaten — of haal de catalogi van Udemy Business, LinkedIn Learning en Coursera binnen, wijs ze toe, volg voltooiingen en beveel ze direct aan in beoordelingen en ontwikkelplannen."),
+            "Company news": _t("Actualités de l'entreprise", "Unternehmens-News", "Noticias de la empresa", "Notizie aziendali", "Bedrijfsnieuws"),
+            "A company news feed with articles, reactions and moderated comments, alongside read-and-accept announcements — so the whole company stays current from the Home screen and the mobile app.": _t(
+                "Un fil d'actualités de l'entreprise avec articles, réactions et commentaires modérés, aux côtés des annonces à lire et accepter — pour que toute l'entreprise reste informée depuis l'écran d'accueil et l'application mobile.",
+                "Ein Unternehmens-Newsfeed mit Artikeln, Reaktionen und moderierten Kommentaren, neben Ankündigungen zum Lesen und Bestätigen — damit das ganze Unternehmen über den Startbildschirm und die mobile App auf dem Laufenden bleibt.",
+                "Un canal de noticias de la empresa con artículos, reacciones y comentarios moderados, junto a los anuncios de leer y aceptar — para que toda la empresa se mantenga al día desde la pantalla de inicio y la app móvil.",
+                "Un feed di notizie aziendali con articoli, reazioni e commenti moderati, accanto agli annunci da leggere e accettare — così tutta l'azienda resta aggiornata dalla schermata Home e dall'app mobile.",
+                "Een bedrijfsnieuwsfeed met artikelen, reacties en gemodereerde opmerkingen, naast meldingen om te lezen en te accepteren — zodat het hele bedrijf actueel blijft vanaf het startscherm en de mobiele app."),
             "Approval workflows": _t("Flux d'approbation", "Genehmigungs-Workflows", "Flujos de aprobación", "Flussi di approvazione", "Goedkeuringsworkflows"),
             "Design multi-step approval chains with your own conditions — amount, department, grade — for leave, expenses, travel, offers and loans, with separation of duties built in.": _t(
                 "Concevez des chaînes d'approbation à plusieurs étapes avec vos propres conditions — montant, service, grade — pour les congés, les notes de frais, les voyages, les offres et les prêts, avec la séparation des tâches intégrée.",

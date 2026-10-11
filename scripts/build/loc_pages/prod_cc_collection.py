@@ -182,12 +182,12 @@ _CC = {
         'Koppel QuickBooks Online (QBO) om facturen aan betalingen te matchen en automatisch af te letteren.'),
     'One connection on Growth': _t('Une connexion sur Growth', 'Eine Verbindung bei Growth', 'Una conexión en Growth', 'Una connessione su Growth', 'Eén verbinding op Growth'),
     'Goals, tasks &amp; approvals': _t('Objectifs, tâches &amp; approbations', 'Ziele, Aufgaben &amp; Genehmigungen', 'Objetivos, tareas &amp; aprobaciones', 'Obiettivi, attività &amp; approvazioni', 'Doelen, taken &amp; goedkeuringen'),
-    'OKRs, KPIs and projects with the tasks beneath them, plus an approvals workflow so decisions get signed off — on the record.': _t(
-        "Des OKR, des KPI et des projets avec les tâches qui en découlent, plus un flux d'approbation pour que les décisions soient validées — et tracées.",
-        'OKRs, KPIs und Projekte mit den darunterliegenden Aufgaben, plus ein Genehmigungs-Workflow, damit Entscheidungen freigegeben werden — nachvollziehbar.',
-        'OKR, KPI y proyectos con las tareas que cuelgan de ellos, más un flujo de aprobación para que las decisiones queden autorizadas — y registradas.',
-        'OKR, KPI e progetti con le attività che ne derivano, più un flusso di approvazione perché le decisioni vengano autorizzate — e tracciate.',
-        "OKR's, KPI's en projecten met de taken daaronder, plus een goedkeuringsworkflow zodat beslissingen worden afgetekend — en vastgelegd."),
+    'OKRs, KPIs and projects with the tasks beneath them — subtasks, dependencies and a kanban board — plus an approvals workflow so decisions get signed off on the record. Import KPI actuals and tasks in bulk from CSV, with a preview before you commit.': _t(
+        "Des OKR, des KPI et des projets avec les tâches qui en découlent — sous-tâches, dépendances et un tableau kanban — plus un flux d'approbation pour que les décisions soient validées et tracées. Importez en masse les valeurs réelles de KPI et les tâches depuis un CSV, avec un aperçu avant de valider.",
+        'OKRs, KPIs und Projekte mit den darunterliegenden Aufgaben — Unteraufgaben, Abhängigkeiten und ein Kanban-Board — plus ein Genehmigungs-Workflow, damit Entscheidungen nachvollziehbar freigegeben werden. Importieren Sie KPI-Istwerte und Aufgaben per CSV im Stapel, mit Vorschau vor dem Übernehmen.',
+        'OKR, KPI y proyectos con las tareas que cuelgan de ellos — subtareas, dependencias y un tablero kanban — más un flujo de aprobación para que las decisiones queden autorizadas y registradas. Importe valores reales de KPI y tareas de forma masiva desde CSV, con una vista previa antes de confirmar.',
+        'OKR, KPI e progetti con le attività che ne derivano — sottoattività, dipendenze e una bacheca kanban — più un flusso di approvazione perché le decisioni vengano autorizzate e tracciate. Importa in blocco i valori effettivi dei KPI e le attività da CSV, con un\'anteprima prima di confermare.',
+        "OKR's, KPI's en projecten met de taken daaronder — subtaken, afhankelijkheden en een kanbanbord — plus een goedkeuringsworkflow zodat beslissingen worden afgetekend en vastgelegd. Importeer KPI-werkelijke waarden en taken in bulk vanuit CSV, met een voorbeeld voordat u bevestigt."),
     'Business cards': _t('Cartes de visite', 'Visitenkarten', 'Tarjetas de visita', 'Biglietti da visita', 'Visitekaartjes'),
     'Capture the business cards your team collects — scanned, categorized and searchable, so new contacts never get lost.': _t(
         "Capturez les cartes de visite collectées par votre équipe — scannées, classées et consultables, pour ne perdre aucun nouveau contact.",
@@ -385,6 +385,20 @@ _COL = {
         'Concilie automáticamente los pagos entrantes con las facturas y señale todo lo que no cuadre.',
         'Abbina automaticamente i pagamenti in entrata alle fatture e segnala tutto ciò che non torna.',
         'Koppel binnenkomende betalingen automatisch aan facturen en markeer alles wat niet klopt.'),
+    'Cheque register': _t('Registre des chèques', 'Scheckregister', 'Registro de cheques', 'Registro assegni', 'Chequeregister'),
+    'Capture post-dated cheques against an account, track them through to cleared, and post the cleared cheque straight to your ERP — with capture and clearing kept as separate duties.': _t(
+        "Enregistrez les chèques postdatés sur un compte, suivez-les jusqu'à l'encaissement et comptabilisez le chèque encaissé directement dans votre ERP — la saisie et l'encaissement restant des tâches séparées.",
+        'Erfassen Sie nachdatierte Schecks zu einem Konto, verfolgen Sie sie bis zur Einlösung und buchen Sie den eingelösten Scheck direkt in Ihr ERP — wobei Erfassung und Einlösung getrennte Aufgaben bleiben.',
+        'Registre cheques posfechados en una cuenta, sígalos hasta su cobro y contabilice el cheque cobrado directamente en su ERP — manteniendo la captura y el cobro como tareas separadas.',
+        "Registra assegni postdatati su un conto, seguili fino all'incasso e contabilizza l'assegno incassato direttamente nel tuo ERP — mantenendo acquisizione e incasso come compiti separati.",
+        'Leg postgedateerde cheques vast op een account, volg ze tot ze zijn geïnd en boek de geïnde cheque rechtstreeks in uw ERP — waarbij vastleggen en innen gescheiden taken blijven.'),
+    'ERP connectors': _t('Connecteurs ERP', 'ERP-Konnektoren', 'Conectores ERP', 'Connettori ERP', 'ERP-connectoren'),
+    'Two-way sync with SAP Business One, Odoo, Oracle Fusion and Oracle Integration (OIC) — collected payments and cleared cheques post to your ledger automatically, with a posting-activity feed for every connector.': _t(
+        "Synchronisation bidirectionnelle avec SAP Business One, Odoo, Oracle Fusion et Oracle Integration (OIC) — les paiements encaissés et les chèques encaissés se comptabilisent automatiquement dans votre grand livre, avec un journal d'activité de comptabilisation pour chaque connecteur.",
+        'Zwei-Wege-Synchronisierung mit SAP Business One, Odoo, Oracle Fusion und Oracle Integration (OIC) — eingegangene Zahlungen und eingelöste Schecks werden automatisch in Ihr Hauptbuch gebucht, mit einem Buchungs-Aktivitätsfeed für jeden Konnektor.',
+        'Sincronización bidireccional con SAP Business One, Odoo, Oracle Fusion y Oracle Integration (OIC) — los pagos cobrados y los cheques cobrados se contabilizan automáticamente en su libro mayor, con un registro de actividad de contabilización para cada conector.',
+        'Sincronizzazione bidirezionale con SAP Business One, Odoo, Oracle Fusion e Oracle Integration (OIC) — i pagamenti incassati e gli assegni incassati vengono contabilizzati automaticamente nel tuo libro mastro, con un feed di attività di registrazione per ogni connettore.',
+        'Tweerichtingssynchronisatie met SAP Business One, Odoo, Oracle Fusion en Oracle Integration (OIC) — geïnde betalingen en geïnde cheques worden automatisch in uw grootboek geboekt, met een boekingsactiviteitenfeed voor elke connector.'),
     'Aging &amp; risk reports': _t("Rapports d'ancienneté &amp; de risque", 'Fälligkeits- &amp; Risikoberichte', 'Informes de antigüedad &amp; riesgo', 'Report di scadenza &amp; rischio', 'Ouderdoms- &amp; risicorapporten'),
     "See receivables by age bucket, spot at-risk accounts early, and forecast the cash that's actually coming.": _t(
         "Visualisez les créances par tranche d'ancienneté, repérez tôt les comptes à risque et prévoyez la trésorerie qui va réellement rentrer.",

@@ -693,10 +693,14 @@ PAGE['/pricing/collection/'] = {
             "<th scope=\"row\">Analytique avancée (A/B, prévisions)</th>", "<th scope=\"row\">Erweiterte Analysen (A/B, Prognose)</th>",
             "<th scope=\"row\">Analítica avanzada (A/B, previsión)</th>", "<th scope=\"row\">Analisi avanzate (A/B, previsioni)</th>",
             "<th scope=\"row\">Geavanceerde analyses (A/B, prognose)</th>"),
-        "<th scope=\"row\">ERP connection (SAP Business One)</th>": _t(
-            "<th scope=\"row\">Connexion ERP (SAP Business One)</th>", "<th scope=\"row\">ERP-Verbindung (SAP Business One)</th>",
-            "<th scope=\"row\">Conexión ERP (SAP Business One)</th>", "<th scope=\"row\">Connessione ERP (SAP Business One)</th>",
-            "<th scope=\"row\">ERP-verbinding (SAP Business One)</th>"),
+        "<th scope=\"row\">ERP connectors (SAP B1 · Odoo · Oracle Fusion · OIC)</th>": _t(
+            "<th scope=\"row\">Connecteurs ERP (SAP B1 · Odoo · Oracle Fusion · OIC)</th>", "<th scope=\"row\">ERP-Konnektoren (SAP B1 · Odoo · Oracle Fusion · OIC)</th>",
+            "<th scope=\"row\">Conectores ERP (SAP B1 · Odoo · Oracle Fusion · OIC)</th>", "<th scope=\"row\">Connettori ERP (SAP B1 · Odoo · Oracle Fusion · OIC)</th>",
+            "<th scope=\"row\">ERP-connectoren (SAP B1 · Odoo · Oracle Fusion · OIC)</th>"),
+        "<th scope=\"row\">Cheque register (capture → clear → post to ERP)</th>": _t(
+            "<th scope=\"row\">Registre des chèques (saisie → encaissement → comptabilisation ERP)</th>", "<th scope=\"row\">Scheckregister (Erfassung → Einlösung → ERP-Buchung)</th>",
+            "<th scope=\"row\">Registro de cheques (captura → cobro → contabilización ERP)</th>", "<th scope=\"row\">Registro assegni (acquisizione → incasso → registrazione ERP)</th>",
+            "<th scope=\"row\">Chequeregister (vastleggen → innen → ERP-boeking)</th>"),
         "<th scope=\"row\">Legal · Settlements (tiered)</th>": _t(
             "<th scope=\"row\">Contentieux · Règlements (échelonnés)</th>", "<th scope=\"row\">Rechtliches · Vergleiche (gestaffelt)</th>",
             "<th scope=\"row\">Legal · Acuerdos (escalonados)</th>", "<th scope=\"row\">Legale · Transazioni (a livelli)</th>",
@@ -922,9 +926,9 @@ PAGE['/pricing/hr-suite/'] = {
         "<th scope=\"row\">HR letters</th>": _t(
             "<th scope=\"row\">Courriers RH</th>", "<th scope=\"row\">HR-Schreiben</th>", "<th scope=\"row\">Cartas de RR. HH.</th>",
             "<th scope=\"row\">Lettere HR</th>", "<th scope=\"row\">HR-brieven</th>"),
-        "<th scope=\"row\">Announcements</th>": _t(
-            "<th scope=\"row\">Annonces</th>", "<th scope=\"row\">Ankündigungen</th>", "<th scope=\"row\">Anuncios</th>",
-            "<th scope=\"row\">Annunci</th>", "<th scope=\"row\">Aankondigingen</th>"),
+        "<th scope=\"row\">News & announcements</th>": _t(
+            "<th scope=\"row\">Actualités & annonces</th>", "<th scope=\"row\">News & Ankündigungen</th>", "<th scope=\"row\">Noticias & anuncios</th>",
+            "<th scope=\"row\">News & annunci</th>", "<th scope=\"row\">Nieuws & aankondigingen</th>"),
         "<th scope=\"row\">Recognition</th>": _t(
             "<th scope=\"row\">Reconnaissance</th>", "<th scope=\"row\">Anerkennung</th>", "<th scope=\"row\">Reconocimiento</th>",
             "<th scope=\"row\">Riconoscimenti</th>", "<th scope=\"row\">Erkenning</th>"),
@@ -1003,6 +1007,9 @@ PAGE['/pricing/hr-suite/'] = {
         "<th scope=\"row\">Learning (LMS)</th>": _t(
             "<th scope=\"row\">Formation (LMS)</th>", "<th scope=\"row\">Lernen (LMS)</th>", "<th scope=\"row\">Formación (LMS)</th>",
             "<th scope=\"row\">Formazione (LMS)</th>", "<th scope=\"row\">Leren (LMS)</th>"),
+        "<th scope=\"row\">Learning providers</th>": _t(
+            "<th scope=\"row\">Fournisseurs de formation</th>", "<th scope=\"row\">Lernanbieter</th>", "<th scope=\"row\">Proveedores de formación</th>",
+            "<th scope=\"row\">Fornitori di formazione</th>", "<th scope=\"row\">Leeraanbieders</th>"),
         "<th scope=\"row\">AI Copilot &amp; Agents</th>": _t(
             "<th scope=\"row\">Copilote IA &amp; agents</th>", "<th scope=\"row\">KI-Copilot &amp; Agenten</th>", "<th scope=\"row\">Copiloto de IA &amp; agentes</th>",
             "<th scope=\"row\">Copilota IA &amp; agenti</th>", "<th scope=\"row\">AI-copilot &amp; agents</th>"),

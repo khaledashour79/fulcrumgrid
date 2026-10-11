@@ -80,18 +80,18 @@ PAGE = {
                 'Sincronización bidireccional de socios de negocio, artículos y asientos — un cambio en un lado aparece en el otro, sin volver a teclear. Disponible en HR Suite, Collection y Command Center.',
                 "Sincronizzazione bidirezionale di partner commerciali, articoli e registrazioni contabili — una modifica da un lato compare dall'altro, senza reinserimento. Disponibile in HR Suite, Collection e Command Center.",
                 'Tweerichtingssynchronisatie van zakenpartners, artikelen en boekingen — een wijziging aan de ene kant verschijnt aan de andere, zonder opnieuw invoeren. Beschikbaar in HR Suite, Collection en Command Center.'),
-            'Post HR Suite payroll as draft journal entries into Odoo, and keep Command Center dashboards reading from the same numbers — a two-way connection, with no re-keying.': _t(
-                "Postez la paie de HR Suite sous forme d'écritures comptables provisoires dans Odoo, et gardez les tableaux de bord de Command Center sur les mêmes chiffres — une connexion bidirectionnelle, sans ressaisie.",
-                'Buchen Sie die HR-Suite-Gehaltsabrechnung als Buchungsentwürfe in Odoo und halten Sie die Command-Center-Dashboards auf denselben Zahlen — eine bidirektionale Verbindung, ohne erneute Eingabe.',
-                'Contabilice la nómina de HR Suite como asientos en borrador en Odoo y mantenga los paneles de Command Center sobre las mismas cifras — una conexión bidireccional, sin volver a teclear.',
-                'Registra le buste paga di HR Suite come scritture in bozza in Odoo e mantieni le dashboard di Command Center sugli stessi numeri — una connessione bidirezionale, senza reinserimenti.',
-                'Boek de loonadministratie van HR Suite als concept-journaalposten in Odoo en houd de Command Center-dashboards op dezelfde cijfers — een tweerichtingsverbinding, zonder opnieuw typen.'),
-            "Command Center streams live Oracle balances into your dashboards, and HR Suite posts payroll journals through Oracle Integration (OIC) and Oracle Fusion (ERP Cloud).": _t(
-                "Command Center diffuse les soldes Oracle en direct dans vos tableaux de bord, et HR Suite poste les écritures de paie via Oracle Integration (OIC) et Oracle Fusion (ERP Cloud).",
-                'Command Center streamt Live-Oracle-Salden in Ihre Dashboards, und HR Suite bucht Gehaltsabrechnungs-Journale über Oracle Integration (OIC) und Oracle Fusion (ERP Cloud).',
-                'Command Center transmite saldos de Oracle en directo a sus paneles, y HR Suite contabiliza los asientos de nómina a través de Oracle Integration (OIC) y Oracle Fusion (ERP Cloud).',
-                "Command Center trasmette in tempo reale i saldi Oracle nelle tue dashboard e HR Suite registra le scritture delle buste paga tramite Oracle Integration (OIC) e Oracle Fusion (ERP Cloud).",
-                'Command Center streamt live Oracle-saldi naar uw dashboards, en HR Suite boekt loonjournalen via Oracle Integration (OIC) en Oracle Fusion (ERP Cloud).'),
+            'Post HR Suite payroll as draft journal entries into Odoo, push Collection\'s collected payments and cleared cheques as draft payments, and keep Command Center dashboards reading from the same numbers — a two-way connection, with no re-keying.': _t(
+                "Postez la paie de HR Suite sous forme d'écritures comptables provisoires dans Odoo, poussez les paiements encaissés et les chèques encaissés de Collection sous forme de paiements provisoires, et gardez les tableaux de bord de Command Center sur les mêmes chiffres — une connexion bidirectionnelle, sans ressaisie.",
+                'Buchen Sie die HR-Suite-Gehaltsabrechnung als Buchungsentwürfe in Odoo, übertragen Sie die eingegangenen Zahlungen und eingelösten Schecks von Collection als Zahlungsentwürfe und halten Sie die Command-Center-Dashboards auf denselben Zahlen — eine bidirektionale Verbindung, ohne erneute Eingabe.',
+                'Contabilice la nómina de HR Suite como asientos en borrador en Odoo, envíe los pagos cobrados y los cheques cobrados de Collection como pagos en borrador y mantenga los paneles de Command Center sobre las mismas cifras — una conexión bidireccional, sin volver a teclear.',
+                'Registra le buste paga di HR Suite come scritture in bozza in Odoo, invia i pagamenti incassati e gli assegni incassati di Collection come pagamenti in bozza e mantieni le dashboard di Command Center sugli stessi numeri — una connessione bidirezionale, senza reinserimenti.',
+                'Boek de loonadministratie van HR Suite als concept-journaalposten in Odoo, push de geïnde betalingen en geïnde cheques van Collection als conceptbetalingen en houd de Command Center-dashboards op dezelfde cijfers — een tweerichtingsverbinding, zonder opnieuw typen.'),
+            "Command Center streams live Oracle balances into your dashboards; HR Suite posts payroll journals through Oracle Integration (OIC) and Oracle Fusion (ERP Cloud); and Collection posts collected payments back as Oracle Fusion AR receipts.": _t(
+                "Command Center diffuse les soldes Oracle en direct dans vos tableaux de bord ; HR Suite poste les écritures de paie via Oracle Integration (OIC) et Oracle Fusion (ERP Cloud) ; et Collection reporte les paiements encaissés sous forme d'encaissements clients Oracle Fusion.",
+                'Command Center streamt Live-Oracle-Salden in Ihre Dashboards; HR Suite bucht Gehaltsabrechnungs-Journale über Oracle Integration (OIC) und Oracle Fusion (ERP Cloud); und Collection bucht eingegangene Zahlungen als Oracle-Fusion-Debitoren-Zahlungseingänge zurück.',
+                'Command Center transmite saldos de Oracle en directo a sus paneles; HR Suite contabiliza los asientos de nómina a través de Oracle Integration (OIC) y Oracle Fusion (ERP Cloud); y Collection contabiliza los pagos cobrados como cobros de clientes de Oracle Fusion.',
+                "Command Center trasmette in tempo reale i saldi Oracle nelle tue dashboard; HR Suite registra le scritture delle buste paga tramite Oracle Integration (OIC) e Oracle Fusion (ERP Cloud); e Collection registra i pagamenti incassati come incassi clienti di Oracle Fusion.",
+                'Command Center streamt live Oracle-saldi naar uw dashboards; HR Suite boekt loonjournalen via Oracle Integration (OIC) en Oracle Fusion (ERP Cloud); en Collection boekt geïnde betalingen terug als Oracle Fusion-debiteurenontvangsten.'),
             'Link QuickBooks Online (QBO) to match invoices to payments and reconcile automatically. Your books stay in QuickBooks; the export-and-reimport busywork disappears.': _t(
                 "Reliez QuickBooks Online (QBO) pour rapprocher factures et paiements et faire la réconciliation automatiquement. Votre comptabilité reste dans QuickBooks ; la corvée d'export et de réimport disparaît.",
                 'Verknüpfen Sie QuickBooks Online (QBO), um Rechnungen und Zahlungen zuzuordnen und automatisch abzustimmen. Ihre Buchhaltung bleibt in QuickBooks; die Mühe von Export und Reimport entfällt.',
@@ -209,6 +209,35 @@ PAGE = {
                 "Collection llega a cada deudor por el canal al que realmente responde, enviado automáticamente según el calendario de recordatorios que usted define — para que los seguimientos salgan sin que nadie persiga a mano.",
                 "Collection raggiunge ogni debitore sul canale a cui risponde davvero, inviato automaticamente secondo il calendario di solleciti che imposti — così i solleciti partono senza che nessuno insegua a mano.",
                 "Collection bereikt elke debiteur op het kanaal waarop die echt reageert, automatisch verzonden volgens het herinneringsschema dat u instelt — zodat opvolging uitgaat zonder dat iemand handmatig achter betalingen aan zit."),
+            "05 · Learning": _t("05 · Formation", "05 · Lernen", "05 · Formación", "05 · Formazione", "05 · Leren"),
+            "Bring your learning catalogue in.": _t(
+                "Intégrez votre catalogue de formation.",
+                "Bringen Sie Ihren Lernkatalog ein.",
+                "Incorpore su catálogo de formación.",
+                "Porta il tuo catalogo di formazione.",
+                "Breng uw leercatalogus binnen."),
+            "Connect the course libraries your team already uses, assign from them, and track completions inside HR Suite.": _t(
+                "Connectez les bibliothèques de cours que votre équipe utilise déjà, attribuez des cours et suivez les achèvements dans HR Suite.",
+                "Verbinden Sie die Kursbibliotheken, die Ihr Team bereits nutzt, weisen Sie daraus zu und verfolgen Sie Abschlüsse in HR Suite.",
+                "Conecte las bibliotecas de cursos que su equipo ya usa, asigne desde ellas y haga seguimiento de las finalizaciones dentro de HR Suite.",
+                "Collega le librerie di corsi che il tuo team già utilizza, assegna da esse e monitora i completamenti dentro HR Suite.",
+                "Verbind de cursusbibliotheken die uw team al gebruikt, wijs eruit toe en volg voltooiingen binnen HR Suite."),
+            "Udemy Business": _t("Udemy Business", "Udemy Business", "Udemy Business", "Udemy Business", "Udemy Business"),
+            "Sync the Udemy Business catalogue into HR Suite, assign courses to employees and managers, and record completions back against their learning record — then recommend courses right inside reviews and development plans.": _t(
+                "Synchronisez le catalogue Udemy Business dans HR Suite, attribuez des cours aux employés et aux managers, et enregistrez les achèvements dans leur dossier de formation — puis recommandez des cours directement dans les évaluations et les plans de développement.",
+                "Synchronisieren Sie den Udemy-Business-Katalog in HR Suite, weisen Sie Mitarbeitenden und Führungskräften Kurse zu und verbuchen Sie Abschlüsse in deren Lernakte — und empfehlen Sie Kurse direkt in Beurteilungen und Entwicklungsplänen.",
+                "Sincronice el catálogo de Udemy Business en HR Suite, asigne cursos a empleados y responsables, y registre las finalizaciones en su expediente de formación — y luego recomiende cursos directamente en las evaluaciones y los planes de desarrollo.",
+                "Sincronizza il catalogo Udemy Business in HR Suite, assegna corsi a dipendenti e manager e registra i completamenti nel loro fascicolo formativo — poi consiglia corsi direttamente nelle valutazioni e nei piani di sviluppo.",
+                "Synchroniseer de Udemy Business-catalogus naar HR Suite, wijs cursussen toe aan medewerkers en managers en leg voltooiingen vast in hun leerdossier — en beveel cursussen vervolgens direct aan in beoordelingen en ontwikkelplannen."),
+            "LinkedIn Learning &amp; Coursera": _t(
+                "LinkedIn Learning &amp; Coursera", "LinkedIn Learning &amp; Coursera", "LinkedIn Learning &amp; Coursera",
+                "LinkedIn Learning &amp; Coursera", "LinkedIn Learning &amp; Coursera"),
+            "Connect LinkedIn Learning and Coursera for Business the same way — browse the provider catalogue, assign a course, and have completions flow back automatically, with a certificate on the employee's file.": _t(
+                "Connectez LinkedIn Learning et Coursera for Business de la même manière — parcourez le catalogue du fournisseur, attribuez un cours et laissez les achèvements remonter automatiquement, avec un certificat au dossier de l'employé.",
+                "Verbinden Sie LinkedIn Learning und Coursera for Business auf dieselbe Weise — durchsuchen Sie den Anbieterkatalog, weisen Sie einen Kurs zu und lassen Sie Abschlüsse automatisch zurückfließen, mit einem Zertifikat in der Mitarbeiterakte.",
+                "Conecte LinkedIn Learning y Coursera for Business de la misma manera — explore el catálogo del proveedor, asigne un curso y deje que las finalizaciones regresen automáticamente, con un certificado en el expediente del empleado.",
+                "Collega LinkedIn Learning e Coursera for Business allo stesso modo — esplora il catalogo del fornitore, assegna un corso e lascia che i completamenti rientrino automaticamente, con un certificato nel fascicolo del dipendente.",
+                "Verbind LinkedIn Learning en Coursera for Business op dezelfde manier — blader door de aanbiederscatalogus, wijs een cursus toe en laat voltooiingen automatisch terugvloeien, met een certificaat in het dossier van de medewerker."),
             "Don't see your system?": _t(
                 'Vous ne voyez pas votre système ?', 'Ihr System nicht dabei?',
                 '¿No ve su sistema?', 'Non trovi il tuo sistema?', 'Ziet u uw systeem niet?'),
