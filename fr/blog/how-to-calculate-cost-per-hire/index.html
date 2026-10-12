@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Comment calculer le coût par embauche (et le réduire) ? — FulcrumGrid</title>
+  <meta name="description" content="Comment calculer le coût par embauche : la formule, coûts internes et externes, un exemple chiffré, la prudence face aux benchmarks et des leviers concrets pour le réduire." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Comment calculer le coût par embauche (et le réduire) ?" />
+  <meta property="og:description" content="Comment calculer le coût par embauche : la formule, coûts internes et externes, un exemple chiffré, la prudence face aux benchmarks et des leviers concrets pour le réduire." />
+  <meta property="og:url" content="https://fulcrumgrid.com/fr/blog/how-to-calculate-cost-per-hire/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-12" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid HR Suite — people operations" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Comment calculer le coût par embauche (et le réduire) ?" />
+  <meta name="twitter:description" content="Comment calculer le coût par embauche : la formule, coûts internes et externes, un exemple chiffré, la prudence face aux benchmarks et des leviers concrets pour le réduire." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Comment calculer le coût par embauche (et le réduire) ?",
+    "description": "Comment calculer le coût par embauche : la formule, coûts internes et externes, un exemple chiffré, la prudence face aux benchmarks et des leviers concrets pour le réduire.",
+    "datePublished": "2026-10-12",
+    "dateModified": "2026-10-12",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/fr/blog/how-to-calculate-cost-per-hire/"
+    },
+    "inLanguage": "fr"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://fulcrumgrid.com/fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/fr/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Coût par embauche",
+        "item": "https://fulcrumgrid.com/fr/blog/how-to-calculate-cost-per-hire/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qu’est-ce qui est inclus dans le coût par embauche ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Les coûts internes, comme la rémunération des recruteurs et le temps des interviewers, et les coûts externes, comme la publicité, les honoraires de cabinet, les évaluations et la mobilité. Décidez des postes inclus et gardez la même définition à chaque période."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment calcule-t-on le coût par embauche ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Additionnez les coûts de recrutement internes et externes d’une période et divisez par le nombre d’embauches de cette période. Par exemple, 40 000 dépensés pour 10 embauches donnent un coût par embauche de 4 000."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quel est un bon coût par embauche ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Il n’y a pas de réponse universelle. Les moyennes publiées varient selon le pays, le secteur, le niveau de poste et la définition des coûts. Comparez-vous plutôt à votre propre historique par type de poste, et utilisez les chiffres externes comme simple repère."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quel est le moyen le plus rapide de réduire le coût par embauche ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Examinez les canaux qui produisent réellement des embauches, misez sur la cooptation, limitez les cabinets pour les postes que vous pouvez pourvoir seul et raccourcissez le processus. Suivez la qualité des embauches et la rétention pour éviter que les économies se retournent contre vous."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/fr/" aria-label="Accueil FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/fr/products/">Produits</a>
+        <a href="/fr/features/">Grille</a>
+        <a href="/fr/pricing/">Tarifs</a>
+        <a href="/fr/regions/">Régions</a>
+        <a href="/fr/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/fr/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Langue">FR ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" class="active" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/fr/contact/">Demander une démo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/fr/">Accueil</a> / <a href="/fr/blog/">Blog</a> / Coût par embauche</p>
+        <span class="tag tag-accent">RH</span>
+        <h1>Comment calculer le coût par embauche (et le réduire) ?</h1>
+        <p class="hero-intro">Comment calculer le coût par embauche : la formule, coûts internes et externes, un exemple chiffré, la prudence face aux benchmarks et des leviers concrets pour le réduire.</p>
+        <p class="mono"><time datetime="2026-10-12">12 octobre 2026</time> · 6 min de lecture</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Le coût par embauche est la somme moyenne que votre organisation dépense pour pourvoir un poste. C’est l’un des indicateurs de recrutement les plus courants, car il transforme un processus complexe en un chiffre unique que l’on peut suivre dans le temps et utiliser pour bâtir un budget de recrutement. Il n’est toutefois utile que si vous le calculez toujours de la même façon et savez ce qu’il inclut.</p>
+
+          <h2>La formule du coût par embauche</h2>
+
+          <p>La formule standard additionne tous les coûts de recrutement d’une période et les divise par le nombre de personnes embauchées sur cette même période :</p>
+
+          <p><strong>Coût par embauche = (coûts de recrutement internes + coûts de recrutement externes) ÷ nombre total d’embauches</strong></p>
+
+          <p>Choisissez une période constante, comme un trimestre ou une année, et ne comptez que les personnes ayant réellement pris leur poste ou accepté une offre pendant cette période. Coûts et embauches doivent couvrir la même fenêtre, sinon le résultat est faussé.</p>
+
+          <h2>Coûts internes et coûts externes</h2>
+
+          <h3>Coûts internes</h3>
+
+          <p>Ce sont les coûts de vos équipes et de vos ressources propres. On les oublie facilement, car ils arrivent rarement sous forme de facture :</p>
+
+          <ul>
+            <li><strong>Rémunération de l’équipe de recrutement :</strong> la part des salaires et avantages des recruteurs et des RH consacrée aux embauches.</li>
+            <li><strong>Temps des managers et des interviewers :</strong> heures passées à présélectionner, interviewer et décider, valorisées à leur coût horaire.</li>
+            <li><strong>Primes de cooptation :</strong> sommes versées aux salariés qui recommandent un candidat retenu.</li>
+            <li><strong>Préparation de l’arrivée :</strong> matériel, comptes et tâches administratives nécessaires au démarrage, si vous choisissez de les inclure.</li>
+          </ul>
+
+          <h3>Coûts externes</h3>
+
+          <p>Ce sont les sommes versées à des tiers :</p>
+
+          <ul>
+            <li><strong>Publicité :</strong> annonces sur les sites d’emploi, annonces sponsorisées et campagnes sur les réseaux sociaux.</li>
+            <li><strong>Honoraires de cabinets et de chasseurs de têtes :</strong> en général un pourcentage du salaire de la première année.</li>
+            <li><strong>Outils et logiciels :</strong> suivi des candidatures, plateformes d’évaluation, vérifications d’antécédents et de références.</li>
+            <li><strong>Événements et déplacements :</strong> salons, frais de déplacement des candidats et aides à la mobilité.</li>
+            <li><strong>Marque employeur :</strong> la part des dépenses de site carrières et de campagnes qui soutient le recrutement.</li>
+          </ul>
+
+          <h2>Un exemple chiffré</h2>
+
+          <p>Supposons que vous ayez réalisé 10 embauches en un trimestre. Les coûts externes étaient de 18 000 (publicité, honoraires de cabinet et vérifications) et les coûts internes de 22 000 (temps des recruteurs et des interviewers, primes de cooptation). La dépense totale est de 40 000 : le coût par embauche est donc de 40 000 ÷ 10 = <strong>4 000</strong>. Sans les coûts internes, vous auriez annoncé 1 800 et sous-estimé nettement la réalité.</p>
+
+          <h2>Prudence avec les benchmarks</h2>
+
+          <p>Vous trouverez des moyennes publiées pour le coût par embauche, mais maniez-les avec précaution. Les études définissent les coûts différemment, certaines n’incluent que les dépenses externes, et les résultats varient fortement selon le pays, le secteur, le niveau de poste et la taille de l’entreprise. Recruter un opérateur logistique et un ingénieur senior sont deux exercices très différents. Le benchmark d’une autre entreprise peut ne pas du tout correspondre à votre méthode.</p>
+
+          <p>La comparaison la plus fiable reste votre propre historique : calculez le chiffre de la même manière à chaque période, par type de poste ou par service, et suivez la tendance. N’utilisez les chiffres externes que comme repère approximatif, après avoir vérifié leur définition.</p>
+
+          <h2>Comment réduire le coût par embauche</h2>
+
+          <ul>
+            <li><strong>Renforcez la cooptation :</strong> les candidats recommandés coûtent souvent moins cher à trouver, et un barème de primes clair revient moins cher que la plupart des honoraires de cabinet.</li>
+            <li><strong>Limitez le recours aux cabinets :</strong> réservez-les aux postes difficiles à pourvoir et négociez les honoraires ou un plafond.</li>
+            <li><strong>Passez les canaux en revue :</strong> suivez les sources qui produisent des embauches, pas seulement des candidatures, et cessez de payer celles qui n’en produisent pas.</li>
+            <li><strong>Raccourcissez le processus :</strong> chaque tour d’entretien supplémentaire et chaque semaine de poste vacant ajoutent du temps interne et de la productivité perdue.</li>
+            <li><strong>Améliorez l’annonce :</strong> des exigences claires et une fourchette de rémunération attirent des candidats mieux adaptés et allègent la présélection.</li>
+            <li><strong>Puisez dans votre vivier :</strong> anciens candidats, anciens salariés et candidats internes vous sont déjà connus.</li>
+            <li><strong>Réduisez l’administratif manuel :</strong> planification, suivi des statuts et paperasse s’accumulent quand on les fait à la main.</li>
+          </ul>
+
+          <h2>Ne réduisez pas le coût au détriment de la qualité</h2>
+
+          <p>Un faible coût par embauche n’est pas automatiquement un bon résultat. Une recrue peu coûteuse qui part au bout de six mois devient chère une fois son remplacement payé. Lisez l’indicateur avec le délai de recrutement, le taux d’acceptation des offres, la rétention à un an et la qualité de l’embauche, pour que les économies ne déplacent pas simplement le coût ailleurs.</p>
+
+          <p>Pour en faire une routine, il faut que les données de recrutement soient réunies au même endroit plutôt que dispersées entre tableurs et boîtes mail. FulcrumGrid HR Suite peut y contribuer en regroupant candidats, étapes de recrutement et dossiers du personnel, ce qui facilite le décompte des embauches et le suivi du temps passé. Il ne fixera pas votre budget et ne décidera pas qui recruter, mais il fournit des données plus propres pour la formule ci-dessus.</p>
+
+        <h2>Questions fréquentes</h2>
+        <details class="faq-item"><summary>Qu’est-ce qui est inclus dans le coût par embauche ?</summary><p>Les coûts internes, comme la rémunération des recruteurs et le temps des interviewers, et les coûts externes, comme la publicité, les honoraires de cabinet, les évaluations et la mobilité. Décidez des postes inclus et gardez la même définition à chaque période.</p></details>
+        <details class="faq-item"><summary>Comment calcule-t-on le coût par embauche ?</summary><p>Additionnez les coûts de recrutement internes et externes d’une période et divisez par le nombre d’embauches de cette période. Par exemple, 40 000 dépensés pour 10 embauches donnent un coût par embauche de 4 000.</p></details>
+        <details class="faq-item"><summary>Quel est un bon coût par embauche ?</summary><p>Il n’y a pas de réponse universelle. Les moyennes publiées varient selon le pays, le secteur, le niveau de poste et la définition des coûts. Comparez-vous plutôt à votre propre historique par type de poste, et utilisez les chiffres externes comme simple repère.</p></details>
+        <details class="faq-item"><summary>Quel est le moyen le plus rapide de réduire le coût par embauche ?</summary><p>Examinez les canaux qui produisent réellement des embauches, misez sur la cooptation, limitez les cabinets pour les postes que vous pouvez pourvoir seul et raccourcissez le processus. Suivez la qualité des embauches et la rétention pour éviter que les économies se retournent contre vous.</p></details>
+
+        <p style="margin-top:32px"><a href="/fr/blog/"><span aria-hidden="true">←</span> Retour au blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid HR Suite</p>
+        <h2>Suivez vos recrutements au même endroit</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid HR Suite réunit candidats, étapes de recrutement et dossiers du personnel, pour mesurer le coût par embauche de façon cohérente et voir où vont le temps et l’argent.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/fr/products/hr-suite/">Découvrir HR Suite</a>
+          <a class="btn btn-secondary" href="/fr/blog/">Retour au blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>L'épine dorsale opérationnelle des équipes modernes.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produits</h5>
+          <a href="/fr/products/">Tous les produits</a>
+          <a href="/fr/products/hr-suite/">HR Suite</a>
+          <a href="/fr/products/command-center/">Command Center</a>
+          <a href="/fr/products/collection/">Collection</a>
+          <a href="/fr/custom-apps/">Applications sur mesure</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grille</h5>
+          <a href="/fr/features/">Fonctionnalités</a>
+          <a href="/fr/integrations/">Intégrations</a>
+          <a href="/fr/how-it-works/">Comment ça marche</a>
+          <a href="/fr/pricing/">Tarifs</a>
+          <a href="/fr/regions/">Régions</a>
+          <a href="/fr/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Entreprise</h5>
+          <a href="/fr/about/">À propos</a>
+          <a href="/fr/faq/">FAQ</a>
+          <a href="/fr/contact/">Contact</a>
+          <a href="/fr/privacy/">Confidentialité</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tous droits réservés.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Come si calcola il costo per assunzione (e come ridurlo)? — FulcrumGrid</title>
+  <meta name="description" content="Come calcolare il costo per assunzione: la formula, costi interni ed esterni, un esempio numerico, la cautela sui benchmark e modi pratici per ridurlo." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Come si calcola il costo per assunzione (e come ridurlo)?" />
+  <meta property="og:description" content="Come calcolare il costo per assunzione: la formula, costi interni ed esterni, un esempio numerico, la cautela sui benchmark e modi pratici per ridurlo." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/how-to-calculate-cost-per-hire/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-12" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid HR Suite — people operations" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Come si calcola il costo per assunzione (e come ridurlo)?" />
+  <meta name="twitter:description" content="Come calcolare il costo per assunzione: la formula, costi interni ed esterni, un esempio numerico, la cautela sui benchmark e modi pratici per ridurlo." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Come si calcola il costo per assunzione (e come ridurlo)?",
+    "description": "Come calcolare il costo per assunzione: la formula, costi interni ed esterni, un esempio numerico, la cautela sui benchmark e modi pratici per ridurlo.",
+    "datePublished": "2026-10-12",
+    "dateModified": "2026-10-12",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/how-to-calculate-cost-per-hire/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Costo per assunzione",
+        "item": "https://fulcrumgrid.com/it/blog/how-to-calculate-cost-per-hire/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Che cosa comprende il costo per assunzione?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "I costi interni, come le retribuzioni del team di selezione e il tempo degli intervistatori, e quelli esterni, come pubblicità, commissioni di agenzia, valutazioni e trasferimenti. Decida quali voci includere e mantenga la stessa definizione a ogni periodo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come si calcola il costo per assunzione?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sommi i costi di selezione interni ed esterni di un periodo e li divida per il numero di assunzioni di quel periodo. Per esempio, 40.000 spesi per 10 assunzioni danno un costo per assunzione di 4.000."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual è un buon costo per assunzione?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non esiste una risposta valida per tutti. Le medie pubblicate variano per Paese, settore, seniority e definizione dei costi. Meglio confrontarsi con il proprio storico per tipo di ruolo e usare i dati esterni solo come indicazione di massima."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual è il modo più rapido per ridurre il costo per assunzione?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Verifichi quali canali producono davvero assunzioni, punti sulle segnalazioni dei dipendenti, usi meno le agenzie per i ruoli che può coprire da solo e accorci il processo. Monitori qualità dell’assunzione e retention perché il risparmio non si ritorca contro di lei."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Costo per assunzione</p>
+        <span class="tag tag-accent">HR</span>
+        <h1>Come si calcola il costo per assunzione (e come ridurlo)?</h1>
+        <p class="hero-intro">Come calcolare il costo per assunzione: la formula, costi interni ed esterni, un esempio numerico, la cautela sui benchmark e modi pratici per ridurlo.</p>
+        <p class="mono"><time datetime="2026-10-12">12 ottobre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Il costo per assunzione è l’importo medio che la sua organizzazione spende per coprire una posizione. È uno degli indicatori di selezione più diffusi perché riduce un processo complesso a un solo numero, che si può seguire nel tempo e usare per pianificare il budget di assunzione. Però è utile soltanto se lo calcola sempre allo stesso modo e sa che cosa include.</p>
+
+          <h2>La formula del costo per assunzione</h2>
+
+          <p>La formula standard somma tutti i costi di selezione di un periodo e li divide per il numero di persone assunte nello stesso periodo:</p>
+
+          <p><strong>Costo per assunzione = (costi di selezione interni + costi di selezione esterni) ÷ totale assunzioni</strong></p>
+
+          <p>Scelga un periodo costante, come un trimestre o un anno, e conti solo le persone che hanno effettivamente iniziato o accettato un’offerta in quel periodo. Costi e assunzioni devono coprire la stessa finestra, altrimenti il risultato risulta distorto.</p>
+
+          <h2>Costi interni ed esterni</h2>
+
+          <h3>Costi interni</h3>
+
+          <p>Sono i costi del suo personale e delle sue risorse. Si trascurano facilmente perché raramente arrivano sotto forma di fattura:</p>
+
+          <ul>
+            <li><strong>Retribuzioni del team di selezione:</strong> la quota di stipendi e benefit di recruiter e personale HR dedicata alle assunzioni.</li>
+            <li><strong>Tempo di manager e intervistatori:</strong> ore di screening, colloqui e decisione, valorizzate al loro costo orario.</li>
+            <li><strong>Premi per segnalazione:</strong> compensi ai dipendenti che segnalano un candidato poi assunto.</li>
+            <li><strong>Predisposizione dell’inserimento:</strong> dotazioni, account e attività amministrative necessarie per far iniziare la persona, se sceglie di includerle.</li>
+          </ul>
+
+          <h3>Costi esterni</h3>
+
+          <p>Sono gli importi che paga a terzi:</p>
+
+          <ul>
+            <li><strong>Pubblicità:</strong> annunci sui portali di lavoro, inserzioni sponsorizzate e campagne sui social.</li>
+            <li><strong>Commissioni di agenzie e società di ricerca:</strong> di solito una percentuale della retribuzione del primo anno.</li>
+            <li><strong>Strumenti e software:</strong> gestione delle candidature, piattaforme di valutazione, verifiche di background e referenze.</li>
+            <li><strong>Eventi e trasferte:</strong> career day, viaggi dei candidati e pacchetti di trasferimento.</li>
+            <li><strong>Employer branding:</strong> la parte di spesa per la pagina carriere e le campagne che sostiene le assunzioni.</li>
+          </ul>
+
+          <h2>Un esempio numerico</h2>
+
+          <p>Supponiamo che in un trimestre abbia effettuato 10 assunzioni. I costi esterni sono stati 18.000 (pubblicità, commissioni di agenzia e verifiche) e quelli interni 22.000 (tempo di recruiter e intervistatori, premi per segnalazione). La spesa totale è 40.000, quindi il costo per assunzione è 40.000 ÷ 10 = <strong>4.000</strong>. Se avesse escluso i costi interni, avrebbe indicato 1.800 sottostimando molto il valore reale.</p>
+
+          <h2>Cautela sui benchmark</h2>
+
+          <p>Trova medie pubblicate del costo per assunzione, ma vanno prese con cautela. Gli studi definiscono i costi in modi diversi, alcuni includono solo la spesa esterna, e i risultati variano molto per Paese, settore, seniority e dimensione aziendale. Assumere un magazziniere e un ingegnere senior sono esercizi molto diversi. Il benchmark di un’altra azienda può non corrispondere affatto al suo metodo.</p>
+
+          <p>Il confronto più affidabile è con il suo storico: calcoli il dato allo stesso modo a ogni periodo, per tipo di ruolo o reparto, e osservi la tendenza. Usi i numeri esterni solo come verifica di massima, dopo aver controllato come sono stati definiti.</p>
+
+          <h2>Come ridurre il costo per assunzione</h2>
+
+          <ul>
+            <li><strong>Valorizzi le segnalazioni:</strong> i candidati segnalati spesso costano meno da trovare, e un sistema di premi chiaro costa meno della maggior parte delle commissioni di agenzia.</li>
+            <li><strong>Riduca la dipendenza dalle agenzie:</strong> le riservi ai ruoli difficili da coprire e negozi commissioni o un tetto massimo.</li>
+            <li><strong>Riveda i canali:</strong> verifichi quali fonti generano assunzioni, non solo candidature, e smetta di pagare quelle che non ne producono.</li>
+            <li><strong>Accorci il processo:</strong> ogni round di colloqui in più e ogni settimana di posizione aperta aggiungono tempo interno e produttività persa.</li>
+            <li><strong>Migliori l’annuncio:</strong> requisiti chiari e indicazioni sulla retribuzione attirano candidati più adatti e riducono lo sforzo di screening.</li>
+            <li><strong>Attinga al suo bacino:</strong> ex candidati, ex dipendenti e candidati interni sono già noti.</li>
+            <li><strong>Riduca l’amministrazione manuale:</strong> pianificazione dei colloqui, aggiornamenti di stato e pratiche si accumulano se fatti a mano.</li>
+          </ul>
+
+          <h2>Non tagli i costi a scapito della qualità</h2>
+
+          <p>Un costo per assunzione basso non è automaticamente un buon risultato. Un’assunzione economica che se ne va dopo sei mesi diventa costosa quando si deve pagare la sostituzione. Legga l’indicatore insieme a tempo di copertura, tasso di accettazione delle offerte, retention nel primo anno e qualità dell’assunzione, perché il risparmio non si limiti a spostare il costo altrove.</p>
+
+          <p>Per farne una routine servono i dati di selezione in un unico posto, non sparsi tra fogli di calcolo e caselle di posta. FulcrumGrid HR Suite può aiutare riunendo candidati, fasi di selezione e schede dei dipendenti, il che rende più semplice contare le assunzioni e monitorare il tempo impiegato. Non definirà il suo budget né deciderà chi assumere, ma offre dati più puliti per la formula qui sopra.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Che cosa comprende il costo per assunzione?</summary><p>I costi interni, come le retribuzioni del team di selezione e il tempo degli intervistatori, e quelli esterni, come pubblicità, commissioni di agenzia, valutazioni e trasferimenti. Decida quali voci includere e mantenga la stessa definizione a ogni periodo.</p></details>
+        <details class="faq-item"><summary>Come si calcola il costo per assunzione?</summary><p>Sommi i costi di selezione interni ed esterni di un periodo e li divida per il numero di assunzioni di quel periodo. Per esempio, 40.000 spesi per 10 assunzioni danno un costo per assunzione di 4.000.</p></details>
+        <details class="faq-item"><summary>Qual è un buon costo per assunzione?</summary><p>Non esiste una risposta valida per tutti. Le medie pubblicate variano per Paese, settore, seniority e definizione dei costi. Meglio confrontarsi con il proprio storico per tipo di ruolo e usare i dati esterni solo come indicazione di massima.</p></details>
+        <details class="faq-item"><summary>Qual è il modo più rapido per ridurre il costo per assunzione?</summary><p>Verifichi quali canali producono davvero assunzioni, punti sulle segnalazioni dei dipendenti, usi meno le agenzie per i ruoli che può coprire da solo e accorci il processo. Monitori qualità dell’assunzione e retention perché il risparmio non si ritorca contro di lei.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid HR Suite</p>
+        <h2>Segui le tue assunzioni in un unico posto</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid HR Suite riunisce candidati, fasi di selezione e schede dei dipendenti, così misuri il costo per assunzione in modo coerente e vedi dove vanno tempo e denaro.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/hr-suite/">Esplora HR Suite</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

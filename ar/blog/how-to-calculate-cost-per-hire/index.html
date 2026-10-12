@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>كيف تحسب تكلفة التوظيف الواحد (وكيف تخفّضها)؟ — FulcrumGrid</title>
+  <meta name="description" content="كيف تحسب تكلفة التوظيف: المعادلة، والتكاليف الداخلية مقابل الخارجية، ومثال محسوب، وسبب الحذر من المعايير المرجعية، وطرق عملية لخفضها." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="كيف تحسب تكلفة التوظيف الواحد (وكيف تخفّضها)؟" />
+  <meta property="og:description" content="كيف تحسب تكلفة التوظيف: المعادلة، والتكاليف الداخلية مقابل الخارجية، ومثال محسوب، وسبب الحذر من المعايير المرجعية، وطرق عملية لخفضها." />
+  <meta property="og:url" content="https://fulcrumgrid.com/ar/blog/how-to-calculate-cost-per-hire/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-12" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="منصة الموارد البشرية من FulcrumGrid — عمليات الأفراد" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="كيف تحسب تكلفة التوظيف الواحد (وكيف تخفّضها)؟" />
+  <meta name="twitter:description" content="كيف تحسب تكلفة التوظيف: المعادلة، والتكاليف الداخلية مقابل الخارجية، ومثال محسوب، وسبب الحذر من المعايير المرجعية، وطرق عملية لخفضها." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/" />
+
+  <link rel="preload" href="/assets/fonts/cairo-600-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/cairo-400-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "كيف تحسب تكلفة التوظيف الواحد (وكيف تخفّضها)؟",
+    "description": "كيف تحسب تكلفة التوظيف: المعادلة، والتكاليف الداخلية مقابل الخارجية، ومثال محسوب، وسبب الحذر من المعايير المرجعية، وطرق عملية لخفضها.",
+    "datePublished": "2026-10-12",
+    "dateModified": "2026-10-12",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/ar/blog/how-to-calculate-cost-per-hire/"
+    },
+    "inLanguage": "ar"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "الرئيسية",
+        "item": "https://fulcrumgrid.com/ar/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "المدوّنة",
+        "item": "https://fulcrumgrid.com/ar/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "تكلفة التوظيف",
+        "item": "https://fulcrumgrid.com/ar/blog/how-to-calculate-cost-per-hire/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "ما الذي تشمله تكلفة التوظيف؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "تشمل التكاليف الداخلية مثل رواتب فريق التوظيف ووقت المحاورين، والخارجية مثل الإعلانات ورسوم الوكالات والتقييمات والانتقال. حدّد البنود التي تدرجها والتزم بالتعريف نفسه في كل فترة."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كيف تُحسب تكلفة التوظيف؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "اجمع إجمالي تكاليف التوظيف الداخلية والخارجية في فترة ما واقسمه على عدد التعيينات فيها. فمثلًا إنفاق ٤٠٬٠٠٠ على ١٠ تعيينات يعطي تكلفة توظيف ٤٬٠٠٠."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ما هي تكلفة التوظيف الجيدة؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "لا توجد إجابة عامة. فالمتوسطات المنشورة تختلف بحسب البلد والقطاع والمستوى الوظيفي وتعريف التكاليف. قارن بتاريخك أنت بحسب نوع الوظيفة، واستخدم الأرقام الخارجية للاستئناس فقط."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ما أسرع طريقة لخفض تكلفة التوظيف؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "راجِع القنوات التي تنتج تعيينات فعلًا، واعتمد على ترشيحات الموظفين، وقلّل استخدام الوكالات للوظائف التي تستطيع شغلها بنفسك، واختصر عملية التوظيف. وتابع جودة التعيين والاحتفاظ بالموظفين حتى لا تأتي الوفورات بنتائج عكسية."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <a href="/ar/products/">المنتجات</a>
+        <a href="/ar/features/">الشبكة</a>
+        <a href="/ar/pricing/">الأسعار</a>
+        <a href="/ar/regions/">المناطق</a>
+        <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
+        <a href="/ar/contact/">اتصل بنا</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="اللغة">ع ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" class="active" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      </div>
+      <button class="nav-toggle" aria-label="القائمة"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/ar/">الرئيسية</a> / <a href="/ar/blog/">المدوّنة</a> / تكلفة التوظيف</p>
+        <span class="tag tag-accent">الموارد البشرية</span>
+        <h1>كيف تحسب تكلفة التوظيف الواحد (وكيف تخفّضها)؟</h1>
+        <p class="hero-intro">كيف تحسب تكلفة التوظيف: المعادلة، والتكاليف الداخلية مقابل الخارجية، ومثال محسوب، وسبب الحذر من المعايير المرجعية، وطرق عملية لخفضها.</p>
+        <p class="mono"><time datetime="2026-10-12">١٢ أكتوبر ٢٠٢٦</time> · ٦ دقائق للقراءة</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>تكلفة التوظيف هي متوسط ما تنفقه منشأتك لشغل وظيفة واحدة. وهي من أكثر مؤشرات التوظيف شيوعًا لأنها تختصر عمليةً متشعّبة في رقم واحد يمكنك متابعته ومقارنته عبر الزمن واعتماده عند وضع ميزانية التوظيف. لكن الرقم لا يفيد إلا إذا حسبته بالطريقة نفسها في كل مرة وعرفتَ ما الذي يشمله.</p>
+
+          <h2>معادلة تكلفة التوظيف</h2>
+
+          <p>تجمع المعادلة المعتادة كل تكاليف التوظيف في فترة ما ثم تقسمها على عدد من عُيِّنوا في الفترة نفسها:</p>
+
+          <p><strong>تكلفة التوظيف = (تكاليف التوظيف الداخلية + تكاليف التوظيف الخارجية) ÷ إجمالي التعيينات</strong></p>
+
+          <p>اختر فترة ثابتة مثل ربع سنة أو سنة، واحسب فقط من باشروا العمل أو قبلوا العرض خلالها. ويجب أن تغطي التكاليف والتعيينات النافذة الزمنية نفسها، وإلا اختلّت النتيجة.</p>
+
+          <h2>التكاليف الداخلية مقابل الخارجية</h2>
+
+          <h3>التكاليف الداخلية</h3>
+
+          <p>هي تكلفة موظفيك ومواردك الخاصة، وكثيرًا ما تُغفَل لأنها نادرًا ما تصل في صورة فاتورة:</p>
+
+          <ul>
+            <li><strong>رواتب فريق التوظيف:</strong> حصة رواتب ومزايا الموظفين ومختصي الموارد البشرية المخصّصة للتوظيف.</li>
+            <li><strong>وقت المدير المباشر والمحاورين:</strong> ساعات الفرز والمقابلات واتخاذ القرار، محسوبة بتكلفتها بالساعة.</li>
+            <li><strong>مكافآت الترشيح:</strong> ما يُدفع للموظفين الذين يرشّحون مرشحًا ناجحًا.</li>
+            <li><strong>تجهيزات المباشرة:</strong> المعدات والحسابات والأعمال الإدارية اللازمة لبدء الموظف الجديد، إن اخترت إدراجها.</li>
+          </ul>
+
+          <h3>التكاليف الخارجية</h3>
+
+          <p>هي المبالغ التي تدفعها لجهات خارجية:</p>
+
+          <ul>
+            <li><strong>الإعلانات:</strong> نشر الوظائف في المواقع، والقوائم المموّلة، والحملات على وسائل التواصل.</li>
+            <li><strong>رسوم الوكالات والاستقطاب:</strong> وتكون عادةً نسبة من راتب السنة الأولى.</li>
+            <li><strong>الأدوات والبرمجيات:</strong> أنظمة تتبّع المتقدمين، ومنصات التقييم، وفحص الخلفية والمراجع.</li>
+            <li><strong>الفعاليات والسفر:</strong> معارض التوظيف، وسفر المرشحين، وحزم الانتقال.</li>
+            <li><strong>العلامة التجارية لصاحب العمل:</strong> الجزء من إنفاق صفحة الوظائف والحملات الذي يدعم التوظيف.</li>
+          </ul>
+
+          <h2>مثال محسوب</h2>
+
+          <p>لنفترض أنك عيّنت ١٠ أشخاص في ربع سنة واحد. كانت التكاليف الخارجية ١٨٬٠٠٠ (إعلانات ورسوم وكالات وفحوص) والداخلية ٢٢٬٠٠٠ (وقت المسؤولين عن التوظيف ووقت المحاورين ومكافآت الترشيح). فيكون الإنفاق الكلي ٤٠٬٠٠٠، وتكلفة التوظيف ٤٠٬٠٠٠ ÷ ١٠ = <strong>٤٬٠٠٠</strong>. ولو أهملت التكاليف الداخلية لسجّلت ١٬٨٠٠ فقط، ولبخست الرقم الحقيقي بشدة.</p>
+
+          <h2>تنبيه بشأن المعايير المرجعية</h2>
+
+          <p>ستجد متوسطات منشورة لتكلفة التوظيف، لكن تعامل معها بحذر. فالدراسات تعرّف التكاليف تعريفات مختلفة، وبعضها يحتسب الإنفاق الخارجي وحده، وتتفاوت النتائج كثيرًا بحسب البلد والقطاع والمستوى الوظيفي وحجم الشركة. وتوظيف عامل مستودع يختلف جذريًا عن توظيف مهندس أول. وقد لا يتوافق معيار من شركة أخرى مع طريقتك أصلًا.</p>
+
+          <p>أوثق مقارنة هي مقارنتك بتاريخك أنت: احسب الرقم بالطريقة نفسها كل فترة، بحسب نوع الوظيفة أو الإدارة، وتابع الاتجاه. واستخدم الأرقام الخارجية للاستئناس فقط، بعد التحقق من كيفية تعريفها.</p>
+
+          <h2>طرق لخفض تكلفة التوظيف</h2>
+
+          <ul>
+            <li><strong>عزّز الترشيحات:</strong> المرشحون بتوصية أقل كلفة في الاستقطاب غالبًا، ونظام مكافآت واضح أرخص من معظم رسوم الوكالات.</li>
+            <li><strong>قلّل الاعتماد على الوكالات:</strong> أبقِها للوظائف العسيرة وفاوِض على الرسوم أو على سقف لها.</li>
+            <li><strong>راجِع القنوات:</strong> تتبّع المصادر التي تنتج تعيينات لا طلبات فقط، وتوقّف عن الدفع لما لا ينتج.</li>
+            <li><strong>اختصر العملية:</strong> كل جولة مقابلة زائدة وكل أسبوع تبقى فيه الوظيفة شاغرة يزيدان الوقت الداخلي والإنتاجية الضائعة.</li>
+            <li><strong>حسّن إعلان الوظيفة:</strong> المتطلبات الواضحة ومعلومات الأجر تجتذب متقدمين أنسب وتقلّل جهد الفرز.</li>
+            <li><strong>أعد التوظيف من مخزونك:</strong> المتقدمون السابقون والخريجون من الشركة والمرشحون الداخليون معروفون لديك.</li>
+            <li><strong>قلّل العمل الإداري اليدوي:</strong> الجدولة وتحديث الحالات والأوراق تتراكم كلفتها حين تُنجَز يدويًا.</li>
+          </ul>
+
+          <h2>لا تخفّض التكلفة على حساب الجودة</h2>
+
+          <p>انخفاض تكلفة التوظيف ليس نتيجة جيدة بالضرورة. فموظف رخيص التوظيف يغادر خلال ستة أشهر يصبح مكلفًا حين تدفع لاستبداله. اقرأ المؤشر مع مدة شغل الوظيفة ونسبة قبول العروض والاحتفاظ بالموظفين في السنة الأولى وجودة التعيين، حتى لا تنتقل الكلفة ببساطة إلى مكان آخر.</p>
+
+          <p>ولجعل ذلك روتينًا تحتاج إلى بيانات التوظيف في مكان واحد لا موزّعة بين جداول وصناديق بريد. يمكن أن تساعد FulcrumGrid HR Suite منصة الموارد البشرية بجمع المرشحين ومراحل التوظيف وسجلات الموظفين معًا، فيسهل عدّ التعيينات ومتابعة الوقت المبذول. وهي لن تضع ميزانيتك ولن تقرّر من توظّف، لكنها تمنحك مدخلات أنظف للمعادلة أعلاه.</p>
+
+        <h2>الأسئلة الشائعة</h2>
+        <details class="faq-item"><summary>ما الذي تشمله تكلفة التوظيف؟</summary><p>تشمل التكاليف الداخلية مثل رواتب فريق التوظيف ووقت المحاورين، والخارجية مثل الإعلانات ورسوم الوكالات والتقييمات والانتقال. حدّد البنود التي تدرجها والتزم بالتعريف نفسه في كل فترة.</p></details>
+        <details class="faq-item"><summary>كيف تُحسب تكلفة التوظيف؟</summary><p>اجمع إجمالي تكاليف التوظيف الداخلية والخارجية في فترة ما واقسمه على عدد التعيينات فيها. فمثلًا إنفاق ٤٠٬٠٠٠ على ١٠ تعيينات يعطي تكلفة توظيف ٤٬٠٠٠.</p></details>
+        <details class="faq-item"><summary>ما هي تكلفة التوظيف الجيدة؟</summary><p>لا توجد إجابة عامة. فالمتوسطات المنشورة تختلف بحسب البلد والقطاع والمستوى الوظيفي وتعريف التكاليف. قارن بتاريخك أنت بحسب نوع الوظيفة، واستخدم الأرقام الخارجية للاستئناس فقط.</p></details>
+        <details class="faq-item"><summary>ما أسرع طريقة لخفض تكلفة التوظيف؟</summary><p>راجِع القنوات التي تنتج تعيينات فعلًا، واعتمد على ترشيحات الموظفين، وقلّل استخدام الوكالات للوظائف التي تستطيع شغلها بنفسك، واختصر عملية التوظيف. وتابع جودة التعيين والاحتفاظ بالموظفين حتى لا تأتي الوفورات بنتائج عكسية.</p></details>
+
+        <p style="margin-top:32px"><a href="/ar/blog/"><span aria-hidden="true">←</span> العودة إلى المدوّنة</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid منصة الموارد البشرية</p>
+        <h2>تابِع توظيفك في مكان واحد</h2>
+        <p class="section-lead" style="margin:0 auto 26px">تجمع FulcrumGrid HR Suite منصة الموارد البشرية المرشحين ومراحل التوظيف وسجلات الموظفين معًا، فتقيس تكلفة التوظيف بانتظام وترى أين يذهب الوقت والمال.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/ar/products/hr-suite/">استكشف منصة الموارد البشرية</a>
+          <a class="btn btn-secondary" href="/ar/blog/">العودة إلى المدوّنة</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>العمود الفقري التشغيلي للفرق الحديثة.</p>
+        </div>
+        <div class="foot-col">
+          <h5>المنتجات</h5>
+          <a href="/ar/products/">كل المنتجات</a>
+          <a href="/ar/products/hr-suite/">منصة الموارد البشرية</a>
+          <a href="/ar/products/command-center/">لوحة التحكم للتنفيذيين</a>
+          <a href="/ar/products/collection/">منصة تحصيل الديون</a>
+          <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشبكة</h5>
+          <a href="/ar/features/">الميزات</a>
+          <a href="/ar/integrations/">التكاملات</a>
+          <a href="/ar/how-it-works/">كيف تعمل</a>
+          <a href="/ar/pricing/">الأسعار</a>
+          <a href="/ar/regions/">المناطق</a>
+          <a href="/ar/blog/">المدوّنة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشركة</h5>
+          <a href="/ar/about/">من نحن</a>
+          <a href="/ar/faq/">الأسئلة الشائعة</a>
+          <a href="/ar/contact/">اتصل بنا</a>
+          <a href="/ar/privacy/">الخصوصية</a>
+          <a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

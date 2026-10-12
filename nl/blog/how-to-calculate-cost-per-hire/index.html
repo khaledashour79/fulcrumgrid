@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Hoe bereken je de kosten per aanname (en breng je ze omlaag)? — FulcrumGrid</title>
+  <meta name="description" content="Hoe bereken je de kosten per aanname: de formule, interne en externe kosten, een rekenvoorbeeld, voorzichtigheid met benchmarks en praktische manieren om ze te verlagen." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Hoe bereken je de kosten per aanname (en breng je ze omlaag)?" />
+  <meta property="og:description" content="Hoe bereken je de kosten per aanname: de formule, interne en externe kosten, een rekenvoorbeeld, voorzichtigheid met benchmarks en praktische manieren om ze te verlagen." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/how-to-calculate-cost-per-hire/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-10-12" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid HR Suite — people operations" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hoe bereken je de kosten per aanname (en breng je ze omlaag)?" />
+  <meta name="twitter:description" content="Hoe bereken je de kosten per aanname: de formule, interne en externe kosten, een rekenvoorbeeld, voorzichtigheid met benchmarks en praktische manieren om ze te verlagen." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hoe bereken je de kosten per aanname (en breng je ze omlaag)?",
+    "description": "Hoe bereken je de kosten per aanname: de formule, interne en externe kosten, een rekenvoorbeeld, voorzichtigheid met benchmarks en praktische manieren om ze te verlagen.",
+    "datePublished": "2026-10-12",
+    "dateModified": "2026-10-12",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/how-to-calculate-cost-per-hire/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Kosten per aanname",
+        "item": "https://fulcrumgrid.com/nl/blog/how-to-calculate-cost-per-hire/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat zit er in de kosten per aanname?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zowel interne kosten, zoals het salaris van het wervingsteam en de tijd van interviewers, als externe kosten, zoals advertenties, bureaukosten, assessments en verhuiskosten. Bepaal welke posten je meeneemt en houd elke periode dezelfde definitie aan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe bereken je de kosten per aanname?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tel de interne en externe wervingskosten van een periode op en deel ze door het aantal aannames in die periode. Bijvoorbeeld: 40.000 uitgegeven aan 10 aannames geeft kosten per aanname van 4.000."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat zijn goede kosten per aanname?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Daar is geen algemeen antwoord op. Gepubliceerde gemiddelden verschillen per land, sector, senioriteit en kostendefinitie. Vergelijk liever met je eigen historie per functietype en gebruik externe cijfers alleen als grove richtlijn."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is de snelste manier om de kosten per aanname te verlagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bekijk welke kanalen echt aannames opleveren, maak gebruik van doorverwijzingen door medewerkers, schakel minder bureaus in voor functies die je zelf kunt invullen en kort het proces in. Houd de kwaliteit van aannames en het behoud in de gaten, zodat besparingen niet averechts werken."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / Kosten per aanname</p>
+        <span class="tag tag-accent">HR</span>
+        <h1>Hoe bereken je de kosten per aanname (en breng je ze omlaag)?</h1>
+        <p class="hero-intro">Hoe bereken je de kosten per aanname: de formule, interne en externe kosten, een rekenvoorbeeld, voorzichtigheid met benchmarks en praktische manieren om ze te verlagen.</p>
+        <p class="mono"><time datetime="2026-10-12">12 oktober 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>De kosten per aanname zijn het gemiddelde bedrag dat je organisatie uitgeeft om één functie in te vullen. Het is een van de meest gebruikte recruitmentmaatstaven, omdat het een rommelig proces terugbrengt tot één getal dat je in de tijd kunt volgen en kunt gebruiken bij het opstellen van een wervingsbudget. Het getal is alleen nuttig als je het altijd op dezelfde manier berekent en weet wat erin zit.</p>
+
+          <h2>De formule voor kosten per aanname</h2>
+
+          <p>De standaardformule telt alle wervingskosten in een periode bij elkaar op en deelt die door het aantal mensen dat in dezelfde periode is aangenomen:</p>
+
+          <p><strong>Kosten per aanname = (interne wervingskosten + externe wervingskosten) ÷ totaal aantal aannames</strong></p>
+
+          <p>Kies een vaste periode, zoals een kwartaal of een jaar, en tel alleen mensen mee die in die periode daadwerkelijk zijn gestart of een aanbod hebben geaccepteerd. Kosten en aannames moeten hetzelfde tijdvak beslaan, anders klopt het resultaat niet.</p>
+
+          <h2>Interne en externe kosten</h2>
+
+          <h3>Interne kosten</h3>
+
+          <p>Dit zijn de kosten van je eigen mensen en middelen. Ze worden makkelijk over het hoofd gezien, omdat ze zelden als factuur binnenkomen:</p>
+
+          <ul>
+            <li><strong>Salaris van het wervingsteam:</strong> het deel van de salarissen en arbeidsvoorwaarden van recruiters en HR-medewerkers dat aan werving wordt besteed.</li>
+            <li><strong>Tijd van leidinggevenden en interviewers:</strong> uren voor screening, gesprekken en besluitvorming, gewaardeerd tegen hun uurtarief.</li>
+            <li><strong>Doorverwijsbonussen:</strong> betalingen aan medewerkers die een succesvolle kandidaat aanbevelen.</li>
+            <li><strong>Inwerken en opstarten:</strong> apparatuur, accounts en administratie om de nieuwe medewerker te laten beginnen, als je die wilt meerekenen.</li>
+          </ul>
+
+          <h3>Externe kosten</h3>
+
+          <p>Dit zijn de bedragen die je aan derden betaalt:</p>
+
+          <ul>
+            <li><strong>Advertenties:</strong> vacatures op jobboards, gesponsorde plaatsingen en campagnes op sociale media.</li>
+            <li><strong>Bureau- en zoekkosten:</strong> meestal een percentage van het eerste jaarsalaris.</li>
+            <li><strong>Tools en software:</strong> sollicitantenvolgsystemen, assessmentplatforms en antecedenten- of referentiecontroles.</li>
+            <li><strong>Evenementen en reizen:</strong> carrièrebeurzen, reiskosten van kandidaten en verhuispakketten.</li>
+            <li><strong>Werkgeversmerk:</strong> het deel van de uitgaven aan de carrièresite en campagnes dat werving ondersteunt.</li>
+          </ul>
+
+          <h2>Een rekenvoorbeeld</h2>
+
+          <p>Stel dat je in één kwartaal 10 mensen hebt aangenomen. De externe kosten waren 18.000 (advertenties, bureaukosten en controles) en de interne kosten 22.000 (tijd van recruiters en interviewers en doorverwijsbonussen). De totale uitgaven zijn 40.000, dus de kosten per aanname zijn 40.000 ÷ 10 = <strong>4.000</strong>. Had je de interne kosten weggelaten, dan had je 1.800 gerapporteerd en het echte bedrag sterk onderschat.</p>
+
+          <h2>Wees voorzichtig met benchmarks</h2>
+
+          <p>Er zijn gepubliceerde gemiddelden voor de kosten per aanname, maar ga er voorzichtig mee om. Onderzoeken definiëren kosten verschillend, sommige nemen alleen externe uitgaven mee, en de uitkomsten lopen sterk uiteen per land, sector, senioriteit en bedrijfsgrootte. Een magazijnmedewerker aannemen is heel iets anders dan een senior engineer vinden. Een benchmark van een ander bedrijf sluit mogelijk helemaal niet aan op jouw methode.</p>
+
+          <p>De betrouwbaarste vergelijking is je eigen historie: bereken het cijfer elke periode op dezelfde manier, per functietype of afdeling, en volg de trend. Gebruik externe cijfers alleen als grove toets, nadat je hebt gecontroleerd hoe ze zijn gedefinieerd.</p>
+
+          <h2>Manieren om de kosten per aanname te verlagen</h2>
+
+          <ul>
+            <li><strong>Versterk doorverwijzingen:</strong> aanbevolen kandidaten zijn vaak goedkoper te vinden, en een duidelijke bonusregeling kost minder dan de meeste bureaukosten.</li>
+            <li><strong>Leun minder op bureaus:</strong> bewaar ze voor moeilijk in te vullen functies en onderhandel over tarieven of een plafond.</li>
+            <li><strong>Beoordeel je kanalen:</strong> volg welke bronnen aannames opleveren, niet alleen sollicitaties, en stop met betalen voor wat niets oplevert.</li>
+            <li><strong>Kort het proces in:</strong> elke extra gespreksronde en elke week dat een vacature openstaat kost interne tijd en productiviteit.</li>
+            <li><strong>Verbeter de vacaturetekst:</strong> duidelijke eisen en salarisinformatie trekken beter passende sollicitanten aan en verminderen het screeningwerk.</li>
+            <li><strong>Put uit je eigen pool:</strong> eerdere sollicitanten, oud-medewerkers en interne kandidaten ken je al.</li>
+            <li><strong>Beperk handmatige administratie:</strong> plannen, statusupdates en papierwerk tellen op als je ze met de hand doet.</li>
+          </ul>
+
+          <h2>Bezuinig niet ten koste van kwaliteit</h2>
+
+          <p>Lage kosten per aanname zijn niet automatisch een goed resultaat. Een goedkope aanname die na zes maanden vertrekt, wordt duur als je de vervanging moet betalen. Lees de maatstaf samen met de doorlooptijd van vacatures, het acceptatiepercentage van aanbiedingen, het behoud in het eerste jaar en de kwaliteit van de aanname, zodat besparingen de kosten niet gewoon verplaatsen.</p>
+
+          <p>Om dit een routine te maken, heb je wervingsgegevens op één plek nodig in plaats van verspreid over spreadsheets en mailboxen. FulcrumGrid HR Suite kan daarbij helpen door kandidaten, wervingsfasen en personeelsdossiers samen te brengen, waardoor het tellen van aannames en het bijhouden van bestede tijd makkelijker wordt. Het stelt je budget niet vast en beslist niet wie je aanneemt, maar het levert schonere invoer voor de formule hierboven.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wat zit er in de kosten per aanname?</summary><p>Zowel interne kosten, zoals het salaris van het wervingsteam en de tijd van interviewers, als externe kosten, zoals advertenties, bureaukosten, assessments en verhuiskosten. Bepaal welke posten je meeneemt en houd elke periode dezelfde definitie aan.</p></details>
+        <details class="faq-item"><summary>Hoe bereken je de kosten per aanname?</summary><p>Tel de interne en externe wervingskosten van een periode op en deel ze door het aantal aannames in die periode. Bijvoorbeeld: 40.000 uitgegeven aan 10 aannames geeft kosten per aanname van 4.000.</p></details>
+        <details class="faq-item"><summary>Wat zijn goede kosten per aanname?</summary><p>Daar is geen algemeen antwoord op. Gepubliceerde gemiddelden verschillen per land, sector, senioriteit en kostendefinitie. Vergelijk liever met je eigen historie per functietype en gebruik externe cijfers alleen als grove richtlijn.</p></details>
+        <details class="faq-item"><summary>Wat is de snelste manier om de kosten per aanname te verlagen?</summary><p>Bekijk welke kanalen echt aannames opleveren, maak gebruik van doorverwijzingen door medewerkers, schakel minder bureaus in voor functies die je zelf kunt invullen en kort het proces in. Houd de kwaliteit van aannames en het behoud in de gaten, zodat besparingen niet averechts werken.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid HR Suite</p>
+        <h2>Volg je werving op één plek</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid HR Suite brengt kandidaten, wervingsfasen en personeelsdossiers samen, zodat je de kosten per aanname consistent meet en ziet waar tijd en geld naartoe gaan.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/hr-suite/">Ontdek HR Suite</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
