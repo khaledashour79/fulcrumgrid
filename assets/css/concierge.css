@@ -169,9 +169,14 @@
 
 /* ---- mobile ---- */
 @media (max-width: 560px) {
-  .fgc-stage { width: clamp(96px, 30vw, 140px); height: clamp(120px, 38vw, 180px); }
+  /* Phones have no side gutter — body text runs edge to edge — so a full-size
+     character would sit on top of it. Keep the resting character compact (still
+     a character, head + shoulders) so it reads as a corner helper; the panel
+     takes over the screen when it's opened. */
+  .fgc-stage { width: clamp(60px, 19vw, 86px); height: clamp(78px, 24vw, 110px); }
+  #fg-concierge.fgc-no-invite:not(.is-open) .fgc-stage { width: clamp(48px, 14vw, 64px); height: clamp(62px, 18vw, 82px); }
   .fgc-panel { width: calc(100vw - 24px); }
-  .fgc-invite { max-width: calc(100vw - 150px); }
+  .fgc-invite { max-width: calc(100vw - 118px); }
 }
 
 /* ---- dark mode (follows the site if present) ---- */
