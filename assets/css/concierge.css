@@ -1,0 +1,160 @@
+/* FulcrumGrid concierge — lower-left AI character.
+   Anchored bottom-left (mirrored bottom-right under dir="rtl"). Mid/full-size
+   standing figure (Rive canvas, or built-in SVG placeholder), with an idle
+   invite bubble and a conversation panel that opens on activate. Uses the
+   brand tokens from fg2.css; degrades gracefully with prefers-reduced-motion. */
+
+#fg-concierge,
+#fg-concierge * { box-sizing: border-box; }
+
+#fg-concierge {
+  position: fixed;
+  bottom: clamp(12px, 3vw, 28px);
+  left: clamp(12px, 3vw, 28px);
+  z-index: 2147483000;           /* above site chrome, below nothing of ours */
+  font-family: var(--font-body, "Barlow", system-ui, sans-serif);
+  color: var(--color-text, #1d1f20);
+  display: flex;
+  flex-direction: column-reverse; /* panel sits above the character */
+  align-items: flex-start;
+  gap: 10px;
+  pointer-events: none;           /* children re-enable; lets clicks pass otherwise */
+  --fgc-accent: var(--color-accent, #5980a6);
+  --fgc-surface: #fff;
+  --fgc-ink: var(--color-text, #1d1f20);
+  --fgc-muted: #5c6063;
+  --fgc-line: color-mix(in srgb, var(--fgc-ink) 14%, transparent);
+}
+[dir="rtl"] #fg-concierge { left: auto; right: clamp(12px, 3vw, 28px); align-items: flex-end; }
+
+#fg-concierge > * { pointer-events: auto; }
+#fg-concierge[hidden] { display: none; }
+#fg-concierge.is-dismissed .fgc-stage,
+#fg-concierge.is-dismissed .fgc-invite,
+#fg-concierge.is-dismissed .fgc-panel { display: none; }
+
+/* ---- the character ---- */
+.fgc-stage {
+  position: relative;
+  width: clamp(120px, 20vmin, 220px);
+  height: clamp(150px, 26vmin, 280px);
+  cursor: pointer;
+  filter: drop-shadow(var(--shadow-md, 0 3px 10px rgba(43,43,45,.16)));
+  transition: transform .25s ease;
+  background: none;
+  border: 0;
+  padding: 0;
+  display: block;
+}
+.fgc-stage:focus-visible { outline: 2px solid var(--fgc-accent); outline-offset: 4px; border-radius: 8px; }
+.fgc-stage canvas, .fgc-stage svg { width: 100%; height: 100%; display: block; }
+#fg-concierge.is-listening .fgc-stage { transform: scale(1.03); }
+
+/* gentle idle bob on the placeholder/character wrapper */
+.fgc-float { animation: fgc-bob 4.5s ease-in-out infinite; transform-origin: 50% 90%; }
+@keyframes fgc-bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+
+/* ring + waveform shown while listening */
+.fgc-ring {
+  position: absolute; inset: auto 0 6px 0; margin: 0 auto;
+  width: 54px; height: 54px; border-radius: 50%;
+  border: 2px solid var(--fgc-accent);
+  opacity: 0; transform: scale(.6); pointer-events: none;
+}
+#fg-concierge.is-listening .fgc-ring { animation: fgc-pulse 1.4s ease-out infinite; }
+@keyframes fgc-pulse { 0% { opacity:.5; transform:scale(.6);} 100% { opacity:0; transform:scale(1.8);} }
+
+/* ---- idle invite bubble ---- */
+.fgc-invite {
+  max-width: 230px;
+  background: var(--fgc-surface);
+  border: 1px solid var(--fgc-line);
+  border-radius: 14px 14px 14px 4px;
+  box-shadow: var(--shadow-md, 0 3px 10px rgba(43,43,45,.16));
+  padding: 10px 12px;
+  font-size: 14px; line-height: 1.35;
+  position: relative;
+}
+[dir="rtl"] .fgc-invite { border-radius: 14px 14px 4px 14px; }
+.fgc-invite .fgc-x {
+  position: absolute; top: 4px; right: 6px; border: 0; background: none;
+  color: var(--fgc-muted); font-size: 16px; line-height: 1; cursor: pointer; padding: 2px;
+}
+[dir="rtl"] .fgc-invite .fgc-x { right: auto; left: 6px; }
+.fgc-invite strong { font-weight: 600; }
+.fgc-invite .fgc-cta {
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 8px;
+  font-weight: 600; color: var(--fgc-accent); background: none; border: 0;
+  cursor: pointer; font-size: 14px; padding: 0;
+}
+
+/* ---- conversation panel ---- */
+.fgc-panel {
+  width: min(340px, 86vw);
+  max-height: min(70vh, 540px);
+  background: var(--fgc-surface);
+  border: 1px solid var(--fgc-line);
+  border-radius: 14px;
+  box-shadow: var(--shadow-lg, 0 12px 32px rgba(43,43,45,.22));
+  display: none; flex-direction: column; overflow: hidden;
+}
+#fg-concierge.is-open .fgc-panel { display: flex; }
+#fg-concierge.is-open .fgc-invite { display: none; }
+
+.fgc-head {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 12px; border-bottom: 1px solid var(--fgc-line);
+}
+.fgc-head .fgc-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--fgc-accent); }
+.fgc-head .fgc-title { font-weight: 600; font-size: 14px; }
+.fgc-head .fgc-status { color: var(--fgc-muted); font-size: 12px; margin-inline-start: auto; }
+.fgc-head .fgc-min { border: 0; background: none; cursor: pointer; color: var(--fgc-muted); font-size: 18px; line-height: 1; padding: 2px 4px; }
+
+.fgc-log { flex: 1; overflow-y: auto; padding: 12px; display: flex; flex-direction: column; gap: 8px; }
+.fgc-msg { max-width: 85%; padding: 8px 11px; border-radius: 12px; font-size: 14px; line-height: 1.4; }
+.fgc-msg.user { align-self: flex-end; background: var(--fgc-accent); color: #fff; border-bottom-right-radius: 4px; }
+.fgc-msg.bot  { align-self: flex-start; background: var(--color-surface, #e9e9ea); color: var(--fgc-ink); border-bottom-left-radius: 4px; }
+[dir="rtl"] .fgc-msg.user { border-bottom-right-radius: 12px; border-bottom-left-radius: 4px; }
+[dir="rtl"] .fgc-msg.bot  { border-bottom-left-radius: 12px; border-bottom-right-radius: 4px; }
+.fgc-msg.bot.is-caption { opacity: .72; font-style: italic; }
+
+.fgc-foot { border-top: 1px solid var(--fgc-line); padding: 8px; display: flex; align-items: center; gap: 8px; }
+.fgc-mic {
+  flex: 0 0 auto; width: 40px; height: 40px; border-radius: 50%;
+  border: 1px solid var(--fgc-accent); background: var(--fgc-accent); color: #fff;
+  cursor: pointer; display: grid; place-items: center;
+}
+.fgc-mic[aria-pressed="true"] { animation: fgc-mic 1.1s ease-in-out infinite; }
+@keyframes fgc-mic { 0%,100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--fgc-accent) 45%, transparent);} 50% { box-shadow: 0 0 0 7px transparent;} }
+.fgc-input { flex: 1; min-width: 0; border: 1px solid var(--fgc-line); border-radius: 10px; padding: 9px 11px; font: inherit; font-size: 14px; }
+.fgc-input:focus { outline: 2px solid var(--fgc-accent); outline-offset: -1px; }
+.fgc-send { flex: 0 0 auto; border: 0; background: none; color: var(--fgc-accent); font-weight: 600; cursor: pointer; padding: 6px; font-size: 14px; }
+
+.fgc-consent { padding: 10px 12px; font-size: 12px; color: var(--fgc-muted); border-top: 1px solid var(--fgc-line); }
+.fgc-consent a { color: var(--fgc-accent); }
+
+/* listening waveform inside the status area */
+.fgc-wave { display: none; align-items: flex-end; gap: 2px; height: 14px; }
+#fg-concierge.is-listening .fgc-wave { display: inline-flex; }
+.fgc-wave i { width: 3px; background: var(--fgc-accent); border-radius: 2px; animation: fgc-w 1s ease-in-out infinite; }
+.fgc-wave i:nth-child(2){ animation-delay:.15s } .fgc-wave i:nth-child(3){ animation-delay:.3s } .fgc-wave i:nth-child(4){ animation-delay:.45s }
+@keyframes fgc-w { 0%,100% { height: 4px; } 50% { height: 14px; } }
+
+/* ---- mobile ---- */
+@media (max-width: 560px) {
+  .fgc-stage { width: clamp(96px, 30vw, 140px); height: clamp(120px, 38vw, 180px); }
+  .fgc-panel { width: calc(100vw - 24px); }
+  .fgc-invite { max-width: calc(100vw - 150px); }
+}
+
+/* ---- dark mode (follows the site if present) ---- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) #fg-concierge { --fgc-surface:#1d1f20; --fgc-ink:#f2f2f3; --fgc-muted:#9aa0a4; --fgc-line: color-mix(in srgb, #f2f2f3 16%, transparent); }
+  :root:not([data-theme="light"]) .fgc-msg.bot { background:#2a2c2e; }
+}
+
+/* ---- reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  .fgc-float, .fgc-ring, .fgc-mic[aria-pressed="true"], .fgc-wave i { animation: none !important; }
+  .fgc-stage { transition: none; }
+}

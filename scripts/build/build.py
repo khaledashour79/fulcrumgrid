@@ -40,7 +40,7 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 # the sitemap — sitting on top of the built site without going through
 # loc_static's per-string catalogs.
 STEPS = ['gen_pricing.py', 'gen_blog.py', 'gen_regions.py', 'loc_static.py',
-         'gen_sitemap.py', 'gen_daily.py']
+         'gen_sitemap.py', 'gen_daily.py', 'gen_concierge.py']
 
 def main():
     env = dict(os.environ, FG_ROOT=ROOT)
