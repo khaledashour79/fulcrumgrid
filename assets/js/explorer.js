@@ -16,7 +16,7 @@
       name: 'Collection', tag: 'Receivables',
       line: 'Receivables and payments, handled. Track invoices, automate reminders, and get paid faster without the chase.',
       price: 'Starter free · from SAR 370 / mo', href: '/products/collection/',
-      modules: ['Debtors & accounts', 'Invoices & payments', 'Tasks & promises', 'Disputes', 'Debtor portal', 'Strategies & templates', 'Custom roles (RBAC)', 'Approvals / SoD', 'Advanced analytics', 'ERP connectors', 'Cheque register', 'Legal & settlements', 'REST API & webhooks', 'Agency mode', 'Trust accounting', 'Creditor portal']
+      modules: ['Debtors & accounts', 'Invoices & payments', 'Tasks & promises', 'Disputes', 'Debtor portal', 'Strategies & templates', 'Custom roles (RBAC)', 'Approvals / SoD', 'Advanced analytics', 'AI add-on', 'ERP connectors', 'Cheque register', 'Legal & settlements', 'REST API & webhooks', 'Agency mode', 'Trust accounting', 'Creditor portal']
     },
     hr: {
       name: 'HR Suite', tag: 'People',
@@ -37,7 +37,7 @@
       name: 'منصة تحصيل الديون', tag: 'الذمم',
       line: 'الذمم والمدفوعات، مُدارة. تتبّع الفواتير وأتمت التذكيرات واحصل على مستحقّاتك أسرع دون مطاردة.',
       price: 'الباقة الأساسية مجانية · من 370 ريال / شهريًا', href: '/ar/products/collection/',
-      modules: ['المدينون والحسابات', 'الفواتير والمدفوعات', 'المهام والوعود', 'النزاعات', 'بوابة المدين', 'الاستراتيجيات والقوالب', 'أدوار مخصّصة (RBAC)', 'الموافقات / فصل المهام (SoD)', 'تحليلات متقدّمة', 'موصلات ERP', 'سجل الشيكات', 'الشؤون القانونية والتسويات', 'REST API و webhooks', 'وضع الوكالة', 'محاسبة الأمانات', 'بوابة الدائن']
+      modules: ['المدينون والحسابات', 'الفواتير والمدفوعات', 'المهام والوعود', 'النزاعات', 'بوابة المدين', 'الاستراتيجيات والقوالب', 'أدوار مخصّصة (RBAC)', 'الموافقات / فصل المهام (SoD)', 'تحليلات متقدّمة', 'إضافة الذكاء الاصطناعي', 'موصلات ERP', 'سجل الشيكات', 'الشؤون القانونية والتسويات', 'REST API و webhooks', 'وضع الوكالة', 'محاسبة الأمانات', 'بوابة الدائن']
     },
     hr: {
       name: 'منصة الموارد البشرية', tag: 'الأفراد',

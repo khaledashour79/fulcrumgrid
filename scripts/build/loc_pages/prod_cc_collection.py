@@ -413,6 +413,27 @@ _COL = {
         'Registre disputas, promesas de pago y notas de cuenta en cada registro — un historial completo de cada cliente.',
         'Registra contestazioni, promesse di pagamento e note sul conto per ogni record — uno storico completo per ogni cliente.',
         'Leg geschillen, betalingstoezeggingen en accountnotities vast bij elk record — een volledige historie voor elke klant.'),
+    'AI account brief': _t('Synthèse de compte par IA', 'KI-Kontoübersicht', 'Resumen de cuenta con IA', 'Sintesi conto con IA', 'AI-accountbriefing'),
+    'An AI read of any account in five short lines — balance, promises, disputes, risk — each citing the record it came from, so a collector gets the full picture in seconds.': _t(
+        "Une lecture IA de tout compte en cinq lignes — solde, promesses, litiges, risque — chacune citant l'enregistrement d'origine, pour qu'un chargé de recouvrement ait toute l'image en quelques secondes.",
+        'Ein KI-Überblick zu jedem Konto in fünf kurzen Zeilen — Saldo, Zusagen, Streitfälle, Risiko — jede mit Verweis auf den Quelldatensatz, damit ein Sachbearbeiter in Sekunden das ganze Bild hat.',
+        'Una lectura con IA de cualquier cuenta en cinco líneas — saldo, promesas, disputas, riesgo — cada una citando el registro de origen, para que un gestor tenga la imagen completa en segundos.',
+        "Una lettura IA di qualsiasi conto in cinque righe — saldo, promesse, contestazioni, rischio — ciascuna con il riferimento al record d'origine, così l'operatore ha il quadro completo in pochi secondi.",
+        'Een AI-overzicht van elke account in vijf korte regels — saldo, toezeggingen, geschillen, risico — elk met verwijzing naar het bronrecord, zodat een incassomedewerker in seconden het volledige beeld heeft.'),
+    'Draft &amp; structure with AI': _t('Rédiger &amp; structurer avec l\'IA', 'Entwerfen &amp; strukturieren mit KI', 'Redactar &amp; estructurar con IA', 'Redigere &amp; strutturare con l\'IA', 'Opstellen &amp; structureren met AI'),
+    'Draft a collections message for a person to review and send, and turn a free-text call note into a structured outcome you confirm — the AI proposes, a human decides.': _t(
+        "Rédigez un message de recouvrement qu'une personne relit et envoie, et transformez une note d'appel en texte libre en résultat structuré que vous confirmez — l'IA propose, un humain décide.",
+        'Entwerfen Sie eine Inkasso-Nachricht, die eine Person prüft und sendet, und verwandeln Sie eine freie Anrufnotiz in ein strukturiertes Ergebnis, das Sie bestätigen — die KI schlägt vor, ein Mensch entscheidet.',
+        'Redacte un mensaje de cobro para que una persona lo revise y envíe, y convierta una nota de llamada en texto libre en un resultado estructurado que usted confirma — la IA propone, una persona decide.',
+        "Redigi un messaggio di recupero crediti che una persona rivede e invia, e trasforma una nota di chiamata in testo libero in un esito strutturato che confermi tu — l'IA propone, una persona decide.",
+        'Stel een incassobericht op dat iemand beoordeelt en verzendt, en zet een vrije-tekst-gespreksnotitie om in een gestructureerde uitkomst die u bevestigt — de AI stelt voor, een mens beslist.'),
+    'Private, governed AI': _t('IA privée et encadrée', 'Private, kontrollierte KI', 'IA privada y gobernada', 'IA privata e governata', 'Privé, beheerste AI'),
+    'An opt-in add-on with your own AI key (Anthropic or OpenAI). Debtor identities are pseudonymised and personal data scrubbed before anything leaves — with a kill switch, supervisor review, and retention and erasure built in.': _t(
+        "Une option avec votre propre clé IA (Anthropic ou OpenAI). Les identités des débiteurs sont pseudonymisées et les données personnelles masquées avant tout envoi — avec un coupe-circuit, une revue par un superviseur, et la conservation et l'effacement intégrés.",
+        'Ein optionales Add-on mit Ihrem eigenen KI-Schlüssel (Anthropic oder OpenAI). Schuldneridentitäten werden pseudonymisiert und personenbezogene Daten vor dem Versand bereinigt — mit Not-Aus, Supervisor-Prüfung sowie integrierter Aufbewahrung und Löschung.',
+        'Un complemento opcional con su propia clave de IA (Anthropic u OpenAI). Las identidades de los deudores se seudonimizan y los datos personales se depuran antes de salir — con interruptor de emergencia, revisión por un supervisor, y conservación y borrado integrados.',
+        "Un componente aggiuntivo opzionale con la tua chiave IA (Anthropic o OpenAI). Le identità dei debitori sono pseudonimizzate e i dati personali ripuliti prima di qualsiasi invio — con interruttore di emergenza, revisione di un supervisore e conservazione e cancellazione integrate.",
+        'Een optionele add-on met uw eigen AI-sleutel (Anthropic of OpenAI). Debiteuridentiteiten worden gepseudonimiseerd en persoonsgegevens geschoond voordat er iets vertrekt — met een noodstop, supervisorbeoordeling en ingebouwde bewaring en wissing.'),
     # Use cases
     'For everyone chasing revenue': _t(
         'Pour tous ceux qui courent après les revenus',

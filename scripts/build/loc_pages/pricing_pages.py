@@ -693,6 +693,10 @@ PAGE['/pricing/collection/'] = {
             "<th scope=\"row\">Analytique avancée (A/B, prévisions)</th>", "<th scope=\"row\">Erweiterte Analysen (A/B, Prognose)</th>",
             "<th scope=\"row\">Analítica avanzada (A/B, previsión)</th>", "<th scope=\"row\">Analisi avanzate (A/B, previsioni)</th>",
             "<th scope=\"row\">Geavanceerde analyses (A/B, prognose)</th>"),
+        "<th scope=\"row\">AI add-on (BYOK · private, confirm-first)</th>": _t(
+            "<th scope=\"row\">Option IA (votre clé · privée, avec confirmation)</th>", "<th scope=\"row\">KI-Add-on (eigener Schlüssel · privat, mit Bestätigung)</th>",
+            "<th scope=\"row\">Complemento de IA (tu clave · privado, con confirmación)</th>", "<th scope=\"row\">Add-on IA (tua chiave · privato, con conferma)</th>",
+            "<th scope=\"row\">AI-add-on (eigen sleutel · privé, met bevestiging)</th>"),
         "<th scope=\"row\">ERP connectors (SAP B1 · Odoo · Oracle Fusion · OIC)</th>": _t(
             "<th scope=\"row\">Connecteurs ERP (SAP B1 · Odoo · Oracle Fusion · OIC)</th>", "<th scope=\"row\">ERP-Konnektoren (SAP B1 · Odoo · Oracle Fusion · OIC)</th>",
             "<th scope=\"row\">Conectores ERP (SAP B1 · Odoo · Oracle Fusion · OIC)</th>", "<th scope=\"row\">Connettori ERP (SAP B1 · Odoo · Oracle Fusion · OIC)</th>",
