@@ -54,6 +54,25 @@
 .fgc-float { animation: fgc-bob 4.5s ease-in-out infinite; transform-origin: 50% 90%; }
 @keyframes fgc-bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
 
+/* ---- built-in SVG character animation (first-draft, until a .riv is supplied) ---- */
+.fgc-char svg { overflow: visible; }
+/* blink: eyelids drop briefly on a loop */
+.fgc-char .fgc-lid { transform-box: fill-box; transform-origin: center; transform: scaleY(0); animation: fgc-blink 5.2s infinite; }
+@keyframes fgc-blink { 0%,94%,100% { transform: scaleY(0); } 96%,98% { transform: scaleY(1); } }
+/* head leans in while listening, tips up a touch while thinking */
+.fgc-char .fgc-head { transform-box: fill-box; transform-origin: 50% 85%; transition: transform .28s ease; }
+#fg-concierge.is-listening .fgc-char .fgc-head { transform: translateY(1px) rotate(-3deg) scale(1.02); }
+#fg-concierge.is-thinking  .fgc-char .fgc-head { transform: rotate(4deg); }
+#fg-concierge.is-thinking  .fgc-char .fgc-pupil { transform: translate(2px,-1.5px); }
+.fgc-char .fgc-pupil { transition: transform .25s ease; }
+/* mouth: closed at rest; while talking its height follows --fgc-mouth (0..1) */
+.fgc-char .fgc-mouth { transform-box: fill-box; transform-origin: center; transform: scaleY(.18); transition: transform .06s linear; }
+#fg-concierge.is-talking .fgc-char .fgc-mouth { transform: scaleY(calc(.18 + var(--fgc-mouth, 0) * 1.25)); }
+/* tiny arm gesture while talking */
+.fgc-char .fgc-arm-r { transform-box: fill-box; transform-origin: 50% 0; }
+#fg-concierge.is-talking .fgc-char .fgc-arm-r { animation: fgc-gesture 1.6s ease-in-out infinite; }
+@keyframes fgc-gesture { 0%,100% { transform: rotate(0); } 50% { transform: rotate(-9deg); } }
+
 /* ring + waveform shown while listening */
 .fgc-ring {
   position: absolute; inset: auto 0 6px 0; margin: 0 auto;
@@ -155,6 +174,7 @@
 
 /* ---- reduced motion ---- */
 @media (prefers-reduced-motion: reduce) {
-  .fgc-float, .fgc-ring, .fgc-mic[aria-pressed="true"], .fgc-wave i { animation: none !important; }
+  .fgc-float, .fgc-ring, .fgc-mic[aria-pressed="true"], .fgc-wave i,
+  .fgc-char .fgc-lid, .fgc-char .fgc-arm-r { animation: none !important; }
   .fgc-stage { transition: none; }
 }

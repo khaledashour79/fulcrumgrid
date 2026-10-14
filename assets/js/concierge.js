@@ -100,7 +100,11 @@
     if (riveInputs.state) { try { riveInputs.state.value = STATES.indexOf(s); } catch (e) {} }
     if (s !== 'talking' && riveInputs.mouth) { try { riveInputs.mouth.value = 0; } catch (e) {} }
   }
-  function setMouth(v) { if (riveInputs.mouth) { try { riveInputs.mouth.value = Math.max(0, Math.min(1, v)); } catch (e) {} } }
+  function setMouth(v) {
+    v = Math.max(0, Math.min(1, v || 0));
+    if (riveInputs.mouth) { try { riveInputs.mouth.value = v; } catch (e) {} }
+    try { mount.style.setProperty('--fgc-mouth', v.toFixed(3)); } catch (e) {}   // drives the SVG placeholder mouth
+  }
   setState('idle');
 
   // ---- open / close ----
@@ -285,19 +289,44 @@
 
   // ---- built-in placeholder character (brand-styled standing figure) ----
   function placeholderSVG() {
-    var wrap = el('span', 'fgc-float');
+    var wrap = el('span', 'fgc-float fgc-char');
     wrap.innerHTML =
-      '<svg viewBox="0 0 120 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">' +
-      '<defs><linearGradient id="fgcg" x1="0" y1="0" x2="0" y2="1">' +
-      '<stop offset="0" stop-color="#6b8fb3"/><stop offset="1" stop-color="#5980a6"/></linearGradient></defs>' +
-      '<ellipse cx="60" cy="162" rx="34" ry="6" fill="rgba(29,31,32,.12)"/>' +
-      '<rect x="34" y="78" width="52" height="74" rx="22" fill="url(#fgcg)"/>' +
-      '<rect x="40" y="96" width="40" height="40" rx="8" fill="#fff" opacity=".14"/>' +
-      '<circle cx="60" cy="48" r="30" fill="url(#fgcg)"/>' +
-      '<circle cx="50" cy="46" r="4.4" fill="#fff"/><circle cx="70" cy="46" r="4.4" fill="#fff"/>' +
-      '<circle cx="50.5" cy="46.6" r="2" fill="#1d1f20"/><circle cx="70.5" cy="46.6" r="2" fill="#1d1f20"/>' +
-      '<rect x="52" y="58" width="16" height="4" rx="2" fill="#fff" opacity=".85" class="fgc-smile"/>' +
-      '<rect x="20" y="20" width="80" height="18" rx="3" fill="none"/>' +   // headroom
+      '<svg viewBox="0 0 120 184" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="FulcrumGrid assistant">' +
+      '<defs>' +
+        '<linearGradient id="fgcBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6d92b6"/><stop offset="1" stop-color="#4f749a"/></linearGradient>' +
+        '<linearGradient id="fgcHead" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7498bb"/><stop offset="1" stop-color="#5980a6"/></linearGradient>' +
+      '</defs>' +
+      '<ellipse class="fgc-shadow" cx="60" cy="176" rx="32" ry="6" fill="rgba(29,31,32,.12)"/>' +
+      // body + arms
+      '<g class="fgc-body">' +
+        '<rect x="51" y="86" width="18" height="34" rx="8" fill="url(#fgcBody)"/>' +   // neck
+        '<path d="M30 180 v-40 a30 30 0 0 1 60 0 v40 z" fill="url(#fgcBody)"/>' +
+        '<rect class="fgc-arm fgc-arm-l" x="24" y="120" width="12" height="40" rx="6" fill="url(#fgcBody)"/>' +
+        '<rect class="fgc-arm fgc-arm-r" x="84" y="120" width="12" height="40" rx="6" fill="url(#fgcBody)"/>' +
+        // lanyard + accent badge (reads as a helpful rep)
+        '<path d="M52 112 L58 140 M68 112 L62 140" stroke="#2d4660" stroke-width="2.4" fill="none" opacity=".55"/>' +
+        '<rect x="54" y="138" width="12" height="9" rx="2" fill="#f2f2f3"/>' +
+        '<rect x="56" y="140.5" width="8" height="2" rx="1" fill="#5980a6"/>' +
+      '</g>' +
+      // head group (leans in when listening via CSS)
+      '<g class="fgc-head">' +
+        '<circle cx="60" cy="66" r="31" fill="url(#fgcHead)"/>' +
+        // headset
+        '<path d="M31 66 a29 23 0 0 1 58 0" fill="none" stroke="#3a597a" stroke-width="4" stroke-linecap="round" opacity=".9"/>' +
+        '<rect x="27" y="62" width="7" height="13" rx="3" fill="#3a597a"/>' +
+        '<rect x="86" y="62" width="7" height="13" rx="3" fill="#3a597a"/>' +
+        '<path class="fgc-boom" d="M30 72 q-6 14 18 18" fill="none" stroke="#3a597a" stroke-width="2.6" stroke-linecap="round"/>' +
+        '<circle cx="49" cy="91" r="2.6" fill="#3a597a"/>' +
+        // eyes (with lids for blinking)
+        '<g class="fgc-eyes">' +
+          '<ellipse cx="50" cy="63" rx="5" ry="5.4" fill="#fff"/><ellipse cx="70" cy="63" rx="5" ry="5.4" fill="#fff"/>' +
+          '<circle class="fgc-pupil" cx="50.5" cy="64" r="2.3" fill="#1d1f20"/><circle class="fgc-pupil" cx="70.5" cy="64" r="2.3" fill="#1d1f20"/>' +
+          '<rect class="fgc-lid" x="44.6" y="57" width="10.8" height="11" rx="5" fill="url(#fgcHead)"/>' +
+          '<rect class="fgc-lid" x="64.6" y="57" width="10.8" height="11" rx="5" fill="url(#fgcHead)"/>' +
+        '</g>' +
+        // mouth (scaleY driven by --fgc-mouth while talking)
+        '<g class="fgc-mouth-g"><ellipse class="fgc-mouth" cx="60" cy="80" rx="7" ry="4.2" fill="#223247"/></g>' +
+      '</g>' +
       '</svg>';
     return wrap;
   }
