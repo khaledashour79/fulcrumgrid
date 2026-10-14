@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Cos'è una promessa di pagamento e come si monitora? — FulcrumGrid</title>
+  <meta name="description" content="Una promessa di pagamento è l'impegno di un cliente a saldare una fattura scaduta entro una data precisa. Scopri come registrarla, seguirla e agire se viene meno." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cos'è una promessa di pagamento e come si monitora?" />
+  <meta property="og:description" content="Una promessa di pagamento è l'impegno di un cliente a saldare una fattura scaduta entro una data precisa. Scopri come registrarla, seguirla e agire se viene meno." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/what-is-a-promise-to-pay-and-how-do-you-track-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-14" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cos'è una promessa di pagamento e come si monitora?" />
+  <meta name="twitter:description" content="Una promessa di pagamento è l'impegno di un cliente a saldare una fattura scaduta entro una data precisa. Scopri come registrarla, seguirla e agire se viene meno." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/what-is-a-promise-to-pay-and-how-do-you-track-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-promise-to-pay-and-how-do-you-track-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-promise-to-pay-and-how-do-you-track-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-promise-to-pay-and-how-do-you-track-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-promise-to-pay-and-how-do-you-track-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-promise-to-pay-and-how-do-you-track-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-promise-to-pay-and-how-do-you-track-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-promise-to-pay-and-how-do-you-track-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-promise-to-pay-and-how-do-you-track-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cos'è una promessa di pagamento e come si monitora?",
+    "description": "Una promessa di pagamento è l'impegno di un cliente a saldare una fattura scaduta entro una data precisa. Scopri come registrarla, seguirla e agire se viene meno.",
+    "datePublished": "2026-10-14",
+    "dateModified": "2026-10-14",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/what-is-a-promise-to-pay-and-how-do-you-track-it/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida alla promessa di pagamento",
+        "item": "https://fulcrumgrid.com/it/blog/what-is-a-promise-to-pay-and-how-do-you-track-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "La promessa di pagamento è legalmente vincolante?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Di solito non da sola. È un impegno in buona fede, non un contratto. Resta comunque importante come prova del credito e dei tuoi tentativi di recupero, quindi conserva una traccia scritta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto devo attendere un pagamento promesso?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Controlla la mattina dopo la data promessa. Concedi uno o due giorni per l'accredito bancario se il cliente dice di averlo inviato, e chiedi il riferimento del bonifico per conferma."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Devo accettare una promessa di pagamento parziale?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In genere sì, se accompagnata da una data ferma per il resto. Registra ogni parte come promessa a sé, così puoi seguirle entrambe."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual è un buon tasso di PTP mantenute?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Varia per settore e clientela, quindi confrontalo prima con il tuo storico. Un tasso in calo per diversi mesi è un segnale per chiedere date più ferme o rivedere il processo di sollecito."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida alla promessa di pagamento</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>Cos'è una promessa di pagamento e come si monitora?</h1>
+        <p class="hero-intro">Una promessa di pagamento è l'impegno di un cliente a saldare una fattura scaduta entro una data precisa. Scopri come registrarla, seguirla e agire se viene meno.</p>
+        <p class="mono"><time datetime="2026-10-14">14 ottobre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Chi si occupa di recupero crediti conosce bene questa telefonata. Chiami per una fattura scaduta e il cliente risponde: &laquo;Pagheremo venerdì.&raquo; Lo ringrazi, riattacchi e passi al conto successivo. Poi il venerdì passa, non arriva nulla e nessuno ricorda con precisione cosa sia stato detto. Una promessa di pagamento serve solo se viene registrata, verificata e seguita da un'azione. Questa guida spiega cos'è una promessa di pagamento, come registrarla e cosa fare quando non viene rispettata.</p><h2>Cos'è una promessa di pagamento?</h2><p>Una promessa di pagamento (PTP, da <em>promise to pay</em>) è l'impegno di un cliente a pagare un importo preciso entro una data precisa. Nasce di solito da una telefonata, da una risposta via e-mail o da un messaggio dell'ufficio contabilità fornitori del cliente. Non è un pagamento e non è un accordo legale. È un impegno a breve termine, in buona fede, che trasforma un vago &laquo;presto&raquo; in una data misurabile.</p><p>La distinzione conta. Una PTP ti dà un motivo per attendere qualche giorno senza inasprire i toni e un punto chiaro in cui agire se il denaro non arriva.</p><h2>Cosa contiene una buona registrazione</h2><p>Una nota come &laquo;il cliente pagherà presto&raquo; è quasi inutile. Annota i dettagli che permettono a qualsiasi collega di riprendere la pratica:</p><ul><li><strong>Importo.</strong> La somma esatta promessa e le fatture che copre. Le promesse parziali sono comuni.</li><li><strong>Data.</strong> Un giorno preciso, non &laquo;la settimana prossima&raquo;. Se il cliente è vago, chiedi una data.</li><li><strong>Chi ha promesso.</strong> Nome e ruolo della persona, e se può davvero autorizzare il pagamento.</li><li><strong>Metodo di pagamento.</strong> Bonifico, carta, assegno o addebito diretto, perché influisce su quando arrivano i fondi.</li><li><strong>Contesto.</strong> Ogni motivo del ritardo, come un ordine d'acquisto mancante o una contestazione su una riga.</li><li><strong>Fonte e data di registrazione.</strong> Se è arrivata per telefono o e-mail, e quando.</li></ul><h2>Come registrare una PTP passo dopo passo</h2><ol><li>Conferma importo, data e metodo prima di chiudere la conversazione.</li><li>Registrala lo stesso giorno sul conto del cliente, collegandola alle fatture specifiche.</li><li>Invia una breve conferma scritta: &laquo;Grazie per la telefonata. Comprendiamo che 4.200 &euro; relativi alle fatture 1042 e 1051 saranno pagati con bonifico il 21 ottobre.&raquo;</li><li>Imposta un promemoria di verifica per il giorno dopo la data promessa, non prima.</li><li>Sospendi ulteriori solleciti su quelle fatture fino a quella data, per non pressare un cliente che mantiene la parola.</li></ol><p>La conferma scritta è il passaggio che la maggior parte dei team salta, ed è il più prezioso. Crea una traccia condivisa e segnala con garbo che verificherai.</p><h2>Come fare il follow-up</h2><h3>Controlla nel giorno previsto</h3><p>Guarda la banca o il partitario la mattina dopo la data promessa. I fondi possono impiegare uno o due giorni: verifica se il pagamento è in transito o semplicemente assente.</p><h3>Mantieni un tono oggettivo</h3><p>Se il denaro non c'è, evita le accuse. &laquo;Ci aspettavamo il pagamento il 21 e non l'abbiamo ancora ricevuto. Potete confermare che sia stato inviato?&raquo; è fermo ed educato, e spesso rivela una causa semplice, come un'approvazione mancata.</p><h3>Chiedi una prova</h3><p>Se il cliente dice di aver pagato, chiedi l'avviso di pagamento o il riferimento del bonifico. La questione si chiude in pochi minuti.</p><h2>Cosa fare quando la promessa viene meno</h2><p>Alcune promesse non verranno mantenute. La risposta deve essere proporzionata e rapida, idealmente entro un giorno lavorativo.</p><ul><li><strong>Contatta il cliente lo stesso giorno.</strong> Chiedi cos'è successo e proponi una nuova data. Una sola promessa mancata è spesso un ritardo di processo, non malafede.</li><li><strong>Cerca l'ostacolo reale.</strong> Approvazioni, dati di fatturazione errati, contestazioni o problemi di liquidità richiedono risposte diverse.</li><li><strong>Accetta un pagamento minore.</strong> Un pagamento parziale subito, con una data ferma per il resto, è meglio di niente.</li><li><strong>Escala dopo la seconda rottura.</strong> Coinvolgi un responsabile, chiama un referente più senior o sposta il conto a una fase di sollecito più decisa.</li><li><strong>Registra lo schema.</strong> Annota ogni promessa non mantenuta. Due o tre sullo stesso conto sono un segnale di rischio che può giustificare condizioni più strette o un blocco del credito.</li></ul><h2>Errori comuni</h2><ul><li><strong>Accettare date vaghe.</strong> &laquo;Inizio della prossima settimana&raquo; non è tracciabile.</li><li><strong>Non scrivere nulla.</strong> Le note a memoria o su un taccuino personale spariscono quando sei in ferie.</li><li><strong>Sollecitare troppo presto.</strong> Insistere prima della data promessa rovina la relazione.</li><li><strong>Sollecitare troppo tardi.</strong> Aspettare una settimana trasforma una piccola svista in un'abitudine.</li><li><strong>Trattare tutti i clienti allo stesso modo.</strong> Un buon pagatore con una svista merita un tono diverso da un recidivo.</li></ul><h2>Misurare quanto funzionano le promesse</h2><p>Per iniziare bastano due numeri. Il <strong>tasso di PTP mantenute</strong> è la quota di promesse pagate per intero alla data promessa. Il <strong>valore di PTP mantenute</strong> è la stessa misura ponderata per importo. Se il tasso è basso, forse i clienti promettono solo per chiudere la telefonata, e conviene chiedere impegni più fermi. Esaminali ogni mese per operatore e per segmento di clientela.</p><p>Per un portafoglio piccolo basta un foglio di calcolo. Quando le promesse aperte sono decine, promemoria e storico sono più semplici in uno strumento pensato apposta. <strong>FulcrumGrid Collection</strong> permette di registrare una promessa su una fattura, pianifica il follow-up del giorno dopo, sospende i promemoria nel frattempo e conserva lo storico delle promesse non mantenute per cliente. Non farà pagare i clienti, ma evita che le promesse si perdano per strada.</p><p>Il principio è semplice: ottenere una data precisa, scriverla, confermarla per iscritto e verificare in tempo. Se lo fai con costanza, la promessa di pagamento diventa un segnale affidabile e non un cortese rinvio.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>La promessa di pagamento è legalmente vincolante?</summary><p>Di solito non da sola. È un impegno in buona fede, non un contratto. Resta comunque importante come prova del credito e dei tuoi tentativi di recupero, quindi conserva una traccia scritta.</p></details>
+        <details class="faq-item"><summary>Quanto devo attendere un pagamento promesso?</summary><p>Controlla la mattina dopo la data promessa. Concedi uno o due giorni per l'accredito bancario se il cliente dice di averlo inviato, e chiedi il riferimento del bonifico per conferma.</p></details>
+        <details class="faq-item"><summary>Devo accettare una promessa di pagamento parziale?</summary><p>In genere sì, se accompagnata da una data ferma per il resto. Registra ogni parte come promessa a sé, così puoi seguirle entrambe.</p></details>
+        <details class="faq-item"><summary>Qual è un buon tasso di PTP mantenute?</summary><p>Varia per settore e clientela, quindi confrontalo prima con il tuo storico. Un tasso in calo per diversi mesi è un segnale per chiedere date più ferme o rivedere il processo di sollecito.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Non perdere mai più traccia di una promessa</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Collection ti aiuta a registrare le promesse di pagamento, pianificare i follow-up e vedere le promesse non mantenute per cliente in un unico posto.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/collection/">Esplora Collection</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

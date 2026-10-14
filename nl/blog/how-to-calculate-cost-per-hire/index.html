@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Hoe bereken je de kosten per hire en hoe verlaag je ze? — FulcrumGrid</title>
+  <meta name="description" content="De kosten per hire zijn de totale wervingsuitgaven gedeeld door het aantal aanstellingen. Formule, rekenvoorbeeld, de beperkingen van benchmarks en manieren om te besparen." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Hoe bereken je de kosten per hire en hoe verlaag je ze?" />
+  <meta property="og:description" content="De kosten per hire zijn de totale wervingsuitgaven gedeeld door het aantal aanstellingen. Formule, rekenvoorbeeld, de beperkingen van benchmarks en manieren om te besparen." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/how-to-calculate-cost-per-hire/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-10-14" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid HR Suite — people operations" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hoe bereken je de kosten per hire en hoe verlaag je ze?" />
+  <meta name="twitter:description" content="De kosten per hire zijn de totale wervingsuitgaven gedeeld door het aantal aanstellingen. Formule, rekenvoorbeeld, de beperkingen van benchmarks en manieren om te besparen." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hoe bereken je de kosten per hire en hoe verlaag je ze?",
+    "description": "De kosten per hire zijn de totale wervingsuitgaven gedeeld door het aantal aanstellingen. Formule, rekenvoorbeeld, de beperkingen van benchmarks en manieren om te besparen.",
+    "datePublished": "2026-10-14",
+    "dateModified": "2026-10-14",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/how-to-calculate-cost-per-hire/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Gids kosten per hire",
+        "item": "https://fulcrumgrid.com/nl/blog/how-to-calculate-cost-per-hire/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat zit er in de kosten per hire?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Externe kosten, zoals advertenties, bureauvergoedingen, antecedentenonderzoek en reizen, en interne kosten, zoals recruitersalarissen, interviewtijd en wervingssoftware. Wat je ook meetelt, houd de definitie van periode tot periode gelijk."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is het verschil tussen kosten per hire en totale wervingskosten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De termen worden vaak door elkaar gebruikt. De kosten per hire zijn een gemiddelde: de totale wervingsuitgaven gedeeld door het aantal aanstellingen. De totale kosten van aannemen kunnen ook onboarding, training en inwerktijd omvatten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe vaak moet ik de kosten per hire berekenen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Per kwartaal werkt voor de meeste bedrijven, met een jaarlijkse terugblik op de trend. Zeer kleine teams die weinig aannemen krijgen een stabieler getal als ze één keer per jaar rekenen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is lagere kosten per hire altijd beter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. Een laag getal kan betekenen dat je beknibbelt op screening of te weinig biedt om sterke kandidaten aan te trekken. Lees het samen met kwaliteit van de aanstelling, invultijd en vroeg behoud."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / Gids kosten per hire</p>
+        <span class="tag tag-accent">HR</span>
+        <h1>Hoe bereken je de kosten per hire en hoe verlaag je ze?</h1>
+        <p class="hero-intro">De kosten per hire zijn de totale wervingsuitgaven gedeeld door het aantal aanstellingen. Formule, rekenvoorbeeld, de beperkingen van benchmarks en manieren om te besparen.</p>
+        <p class="mono"><time datetime="2026-10-14">14 oktober 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Werven is een van de grootste uitgavenposten van elk groeiend bedrijf, en toch kunnen veel teams niet zeggen wat één aanstelling werkelijk kost. De kosten per hire beantwoorden die vraag. Deze gids legt de formule uit, werkt een voorbeeld door, waarschuwt voor de beperkingen van gepubliceerde benchmarks en noemt praktische manieren om het getal omlaag te brengen zonder de kwaliteit te schaden.</p><h2>Wat zijn de kosten per hire?</h2><p>De kosten per hire zijn de gemiddelde totale kosten om een vacature in te vullen, vanaf de dag dat je begint met werven tot de dag dat de kandidaat accepteert. Ze worden meestal over een periode berekend, zoals een kwartaal of een jaar, zodat één afwijkende aanstelling het beeld niet vertekent.</p><h2>De formule voor kosten per hire</h2><p>De standaardformule is eenvoudig:</p><p><strong>Kosten per hire = (interne wervingskosten + externe wervingskosten) &divide; aantal aanstellingen</strong></p><p>Het lastige is niet de deling, maar bepalen wat je meetelt en dan elke keer hetzelfde tellen.</p><h3>Externe kosten</h3><p>Dit zijn de facturen en vergoedingen die je aan derden betaalt:</p><ul><li><strong>Advertenties.</strong> Vacatures op jobboards, gesponsorde berichten en tools voor je carrièresite.</li><li><strong>Bureau- en searchvergoedingen.</strong> Meestal een percentage van het jaarsalaris in het eerste jaar.</li><li><strong>Screening.</strong> Antecedentenonderzoek, assessments en referentiechecks.</li><li><strong>Kosten van kandidaten.</strong> Reizen, verblijf en verhuishulp.</li><li><strong>Doorverwijsbonussen en evenementen.</strong> Uitbetalingen aan medewerkers, banenbeurzen en campusbezoeken.</li></ul><h3>Interne kosten</h3><p>Deze zijn lastiger te zien, omdat niemand er een factuur voor stuurt:</p><ul><li><strong>Tijd van recruiters en HR.</strong> Salaris en secundaire voorwaarden van wie werft, naar rato van de tijd die ze eraan besteden.</li><li><strong>Tijd van interviewers en leidinggevenden.</strong> Uren voor screeninggesprekken, interviews en nabesprekingen, tegen hun uurtarief.</li><li><strong>Tools.</strong> Je applicant tracking systeem en andere wervingssoftware.</li><li><strong>Administratie en overhead.</strong> Planning, papierwerk en werkgeversmerkwerk.</li></ul><h2>Een rekenvoorbeeld</h2><p>Een bedrijf stelt in een kwartaal 12 mensen aan. De externe kosten zijn:</p><ul><li>Vacatureadvertenties: &euro;&nbsp;9.000</li><li>Bureauvergoeding voor één senior aanstelling: &euro;&nbsp;18.000</li><li>Antecedentenonderzoek en assessments: &euro;&nbsp;2.400</li><li>Doorverwijsbonussen: &euro;&nbsp;3.000</li><li>Reiskosten van kandidaten: &euro;&nbsp;1.600</li></ul><p>Dat is <strong>&euro;&nbsp;34.000</strong> aan externe kosten. De interne kosten zijn:</p><ul><li>Eén recruiter die alleen werft, volledige kosten over het kwartaal: &euro;&nbsp;18.000</li><li>150 uur interviewtijd à &euro;&nbsp;50 per uur: &euro;&nbsp;7.500</li><li>Applicant tracking software en HR-administratie: &euro;&nbsp;4.500</li></ul><p>Dat is intern <strong>&euro;&nbsp;30.000</strong>. Het totaal is &euro;&nbsp;64.000, en &euro;&nbsp;64.000 &divide; 12 aanstellingen geeft kosten per hire van ongeveer <strong>&euro;&nbsp;5.333</strong>.</p><p>Let op wat het gemiddelde verbergt. De ene bureauplaatsing kostte alleen al &euro;&nbsp;18.000 aan vergoeding, terwijl de andere elf aanstellingen veel minder kostten. Het getal opsplitsen per kanaal, functietype of afdeling leert je meestal meer dan het totaalcijfer.</p><h2>Benchmarks: gebruik ze met zorg</h2><p>Het is verleidelijk om je getal te vergelijken met een gepubliceerd gemiddelde. Wees voorzichtig. Gepubliceerde gemiddelden lopen per onderzoek uiteen van enkele duizenden tot ruim boven de tienduizend euro, en dat komt vooral door verschillen in methode, niet door echte verschillen in werven:</p><ul><li><strong>Definities verschillen.</strong> Sommige onderzoeken tellen alleen externe uitgaven, andere nemen salarissen en tijd van leidinggevenden mee.</li><li><strong>De functiemix telt.</strong> Een executive search en een grootschalige aanstelling in de winkel zitten aan tegenovergestelde uiteinden.</li><li><strong>Sector, regio en bedrijfsgrootte</strong> verschuiven het getal, net als een krappe of ruime arbeidsmarkt.</li><li><strong>Steekproeven zijn scheef.</strong> Respondenten zijn vaak grotere bedrijven met een formele wervingsfunctie.</li></ul><p>De nuttigste benchmark is je eigen. Bereken hem elk kwartaal op dezelfde manier en volg de trend en de verschillen tussen functies.</p><h2>Hoe verlaag je de kosten per hire?</h2><ul><li><strong>Volg kosten per bron.</strong> Ontdek welke kanalen aanstellingen opleveren en welke alleen facturen, en verschuif het budget daarnaar.</li><li><strong>Bouw een doorverwijsprogramma.</strong> Een bonus is meestal veel goedkoper dan een bureauvergoeding, en doorverwezen medewerkers blijven vaak langer.</li><li><strong>Verkort de invultijd.</strong> Elke extra week openstaande gesprekken kost werktijd, en een lege plek kost productie.</li><li><strong>Stroomlijn de gesprekken.</strong> Minder, meer gestructureerde rondes besparen uren zonder de lat te verlagen.</li><li><strong>Kijk eerst intern.</strong> Interne doorstroom en terugkerende oud-medewerkers voorkomen het grootste deel van advertentie- en bureaukosten.</li><li><strong>Onderhandel met bureaus.</strong> Zet ze alleen in voor moeilijk in te vullen functies en vraag lagere of gestaffelde vergoedingen.</li><li><strong>Versterk je werkgeversmerk.</strong> Een duidelijke carrièrepagina en eerlijke functieomschrijvingen trekken beter passende sollicitanten aan, zodat je minder ongeschikte kandidaten hoeft te screenen.</li><li><strong>Verlaag het verloop.</strong> De goedkoopste aanstelling is die je niet hoeft te herhalen.</li></ul><p>Een waarschuwing: jaag niet op een laag getal ten koste van de kwaliteit. Combineer de kosten per hire met de kwaliteit van de aanstelling en het behoud na 90 dagen, anders lijkt een goedkope hire die snel vertrekt een succes.</p><h2>Maak er een gewoonte van</h2><p>Voor een start heb je geen speciale software nodig. Een spreadsheet met één rij per aanstelling en een lijst met je kwartaalkosten is genoeg. Beheer je je personeelsprocessen al in <strong>FulcrumGrid HR Suite</strong>, dan kun je personeelsaanvragen, bronnen en wervingskosten naast je andere HR-gegevens bewaren, waardoor de kwartaalberekening minuten kost in plaats van een zoektocht door facturen.</p><p>Leg je kosten één keer vast, bereken ze volgens een vast ritme en gebruik de uitkomst om betere vragen te stellen over waar je wervingsbudget naartoe gaat.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wat zit er in de kosten per hire?</summary><p>Externe kosten, zoals advertenties, bureauvergoedingen, antecedentenonderzoek en reizen, en interne kosten, zoals recruitersalarissen, interviewtijd en wervingssoftware. Wat je ook meetelt, houd de definitie van periode tot periode gelijk.</p></details>
+        <details class="faq-item"><summary>Wat is het verschil tussen kosten per hire en totale wervingskosten?</summary><p>De termen worden vaak door elkaar gebruikt. De kosten per hire zijn een gemiddelde: de totale wervingsuitgaven gedeeld door het aantal aanstellingen. De totale kosten van aannemen kunnen ook onboarding, training en inwerktijd omvatten.</p></details>
+        <details class="faq-item"><summary>Hoe vaak moet ik de kosten per hire berekenen?</summary><p>Per kwartaal werkt voor de meeste bedrijven, met een jaarlijkse terugblik op de trend. Zeer kleine teams die weinig aannemen krijgen een stabieler getal als ze één keer per jaar rekenen.</p></details>
+        <details class="faq-item"><summary>Is lagere kosten per hire altijd beter?</summary><p>Nee. Een laag getal kan betekenen dat je beknibbelt op screening of te weinig biedt om sterke kandidaten aan te trekken. Lees het samen met kwaliteit van de aanstelling, invultijd en vroeg behoud.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid HR Suite</p>
+        <h2>Weet wat elke aanstelling echt kost</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid HR Suite bewaart je wervingsgegevens en personeelsprocessen op één plek, zodat de kwartaalcontrole van de kosten per hire minuten kost in plaats van dagen.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/hr-suite/">Ontdek HR Suite</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
