@@ -128,6 +128,9 @@
     log.appendChild(m); log.scrollTop = log.scrollHeight; return m;
   }
 
+  // Per-turn speech pipeline state (one turn at a time, since ask() gates on busy).
+  var ttsQueue = [], ttsPlaying = false, streamDone = false;
+
   function ask(text) {
     text = (text || '').trim(); if (!text || busy) return;
     addMsg('user', text);
@@ -140,21 +143,41 @@
     }
     busy = true; setState('thinking');
     var bubble = addMsg('bot', '…');
-    streamChat(text, bubble).then(function (reply) {
+    ttsQueue = []; ttsPlaying = false; streamDone = false;
+    var spokenChars = 0, firstDone = false;
+
+    // Fire the first complete sentence at TTS as soon as it streams in, so the
+    // voice starts within ~1s instead of after the whole answer. The remainder
+    // goes as one more call on completion — at most 2 /tts calls per turn.
+    function onText(full) {
+      if (firstDone) return;
+      var m = full.slice(spokenChars).match(/^[\s\S]*?[.!?؟\n]["')»”]?(\s|$)/);
+      if (m && m[0].trim().length >= 12) {
+        firstDone = true;
+        var sentence = full.slice(spokenChars, spokenChars + m[0].length).trim();
+        spokenChars += m[0].length;
+        enqueueSpeak(sentence);
+      }
+    }
+
+    streamChat(text, bubble, onText).then(function (reply) {
       history.push({ role: 'assistant', content: reply });
-      busy = false;
-      if (reply) speak(reply); else setState('idle');
-    }).catch(function () { bubble.textContent = t.err; busy = false; setState('idle'); });
+      busy = false; streamDone = true;
+      var rest = (reply || '').slice(spokenChars).trim();
+      if (rest) enqueueSpeak(rest);
+      pumpQueue();                                 // handle the already-drained case
+      if (!firstDone && !rest) setState('idle');   // empty reply
+    }).catch(function () { bubble.textContent = t.err; busy = false; streamDone = true; setState('idle'); });
   }
 
-  function streamChat(message, bubble) {
+  function streamChat(message, bubble, onText) {
     var body = JSON.stringify({ sessionId: sessionId, lang: docLang, message: message, history: history.slice(0, -1) });
     return fetch(endpoint + '/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: body })
       .then(function (r) {
         if (!r.ok) throw new Error('chat ' + r.status);
         var ct = r.headers.get('content-type') || '';
         if (ct.indexOf('text/event-stream') === -1 || !r.body) {
-          return r.json().then(function (j) { var txt = j.reply || ''; bubble.textContent = txt; return txt; });
+          return r.json().then(function (j) { var txt = j.reply || ''; bubble.textContent = txt; if (onText) onText(txt); return txt; });
         }
         var reader = r.body.getReader(), dec = new TextDecoder(), buf = '', out = '';
         bubble.textContent = '';
@@ -167,7 +190,7 @@
               ln = ln.trim(); if (ln.indexOf('data:') !== 0) return;
               var payload = ln.slice(5).trim(); if (!payload) return;
               try { var d = JSON.parse(payload);
-                if (d.delta) { out += d.delta; bubble.textContent = out; log.scrollTop = log.scrollHeight; }
+                if (d.delta) { out += d.delta; bubble.textContent = out; log.scrollTop = log.scrollHeight; if (onText) onText(out); }
               } catch (e) {}
             });
             return pump();
@@ -176,27 +199,39 @@
       });
   }
 
-  // ---- speak (Worker TTS preferred, with lip-flap; else speechSynthesis) ----
+  // ---- ordered speech queue: fetch each chunk's audio and play it in turn,
+  //      with lip-flap; browser speechSynthesis is the per-chunk fallback. ----
   var audioEl = null, audioCtx = null, analyser = null, rafId = 0;
-  function speak(text) {
+  function enqueueSpeak(text) {
+    if (!text) return;
+    ttsQueue.push(text);
     setState('talking');
-    if (!endpoint) return browserTTS(text);
+    pumpQueue();
+  }
+  function pumpQueue() {
+    if (ttsPlaying) return;
+    if (!ttsQueue.length) { if (streamDone) finishSpeaking(); return; }
+    ttsPlaying = true;
+    var text = ttsQueue.shift();
     fetch(endpoint + '/tts', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ text: text, lang: docLang }) })
       .then(function (r) { if (!r.ok) throw 0; return r.blob(); })
       .then(function (blob) { playBlob(blob); })
-      .catch(function () { browserTTS(text); });
+      .catch(function () { browserSpeakChunk(text); });   // keep the queue moving
   }
   function playBlob(blob) {
     try {
-      if (!audioEl) { audioEl = new Audio(); audioEl.addEventListener('ended', onSpeakEnd); }
+      if (!audioEl) { audioEl = new Audio(); audioEl.addEventListener('ended', onChunkEnd); audioEl.addEventListener('error', onChunkEnd); }
       audioEl.src = URL.createObjectURL(blob);
       startAnalyser(audioEl);
-      audioEl.play().catch(function () { onSpeakEnd(); });
-    } catch (e) { onSpeakEnd(); }
+      audioEl.play().catch(function () { onChunkEnd(); });
+    } catch (e) { onChunkEnd(); }
   }
+  function onChunkEnd() { ttsPlaying = false; if (rafId) cancelAnimationFrame(rafId); setMouth(0); pumpQueue(); }
+  function finishSpeaking() { if (rafId) cancelAnimationFrame(rafId); setMouth(0); setState('idle'); }
   function startAnalyser(a) {
     try {
       audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+      if (audioCtx.state === 'suspended') { try { audioCtx.resume(); } catch (e) {} }
       if (!a._fgcSrc) { a._fgcSrc = audioCtx.createMediaElementSource(a); analyser = audioCtx.createAnalyser(); analyser.fftSize = 256; a._fgcSrc.connect(analyser); analyser.connect(audioCtx.destination); }
       var data = new Uint8Array(analyser.frequencyBinCount);
       (function tick() {
@@ -207,18 +242,17 @@
       })();
     } catch (e) {}
   }
-  function browserTTS(text) {
+  function browserSpeakChunk(text) {
     try {
-      if (!('speechSynthesis' in window)) return onSpeakEnd();
+      if (!('speechSynthesis' in window)) { onChunkEnd(); return; }
       var u = new SpeechSynthesisUtterance(text);
-      u.lang = sttLang(); u.onend = onSpeakEnd;
-      // crude lip-flap without analyser
+      u.lang = sttLang();
       var flap = setInterval(function () { setMouth(Math.random() * 0.8); }, 90);
-      u.onend = function () { clearInterval(flap); onSpeakEnd(); };
+      u.onend = function () { clearInterval(flap); onChunkEnd(); };
+      u.onerror = function () { clearInterval(flap); onChunkEnd(); };
       speechSynthesis.speak(u);
-    } catch (e) { onSpeakEnd(); }
+    } catch (e) { onChunkEnd(); }
   }
-  function onSpeakEnd() { if (rafId) cancelAnimationFrame(rafId); setMouth(0); setState('idle'); }
 
   // ---- speech recognition (STT) ----
   var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
