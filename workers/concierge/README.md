@@ -13,6 +13,34 @@ The Worker is dependency-free: plain `fetch` + Web Streams, no npm packages.
 
 ---
 
+## Choose the brain: Anthropic or DeepSeek
+
+`/chat` works with either, chosen by the `LLM_PROVIDER` var — no code change:
+
+- `LLM_PROVIDER = "anthropic"` (default) → set secret `ANTHROPIC_API_KEY`, var `ANTHROPIC_MODEL` (default `claude-haiku-4-5`).
+- `LLM_PROVIDER = "deepseek"` → set secret `DEEPSEEK_API_KEY`, vars `DEEPSEEK_MODEL` (default `deepseek-chat`) and `DEEPSEEK_BASE_URL` (default `https://api.deepseek.com`). The DeepSeek path is OpenAI-compatible, so the same setting works for OpenAI/Groq/Together/Mistral by changing the base URL, model, and key.
+
+Either way you still set `ELEVENLABS_API_KEY` for the voice. **Privacy note:** visitor messages go to whichever provider you pick; DeepSeek is a China-based service, so disclose it in the site's consent/privacy copy if you use it.
+
+---
+
+## Deploy with NO local repo (all in the browser)
+
+If you don't have the repo (or wrangler) on a machine, deploy from the Cloudflare dashboard:
+
+1. **dash.cloudflare.com → Workers & Pages → Create → Create Worker.** Name it `fg-concierge`, deploy the starter, then **Edit code**.
+2. In the editor, select-all, delete, and paste the full contents of **`workers/concierge/src/index.js`** (copy it from GitHub: open the file → "Copy raw file"). **Deploy.**
+3. **KV:** Workers & Pages → **KV → Create namespace** `RL`. Back in the Worker → **Settings → Bindings → Add → KV namespace**, variable name `RL`, pick `RL`.
+4. **Settings → Variables & Secrets** — add:
+   - Secrets: `ELEVENLABS_API_KEY`, and `ANTHROPIC_API_KEY` *or* `DEEPSEEK_API_KEY` (whichever provider).
+   - Text vars: `ALLOWED_ORIGINS` = `https://fulcrumgrid.com`, `LLM_PROVIDER` = `anthropic` (or `deepseek`), `ELEVENLABS_VOICE_ID` = your voice id, plus the model vars you want (`ANTHROPIC_MODEL` / `DEEPSEEK_MODEL`, `ELEVENLABS_MODEL`).
+   - **Deploy** again so the bindings take effect.
+5. Copy the Worker URL (`https://fg-concierge.<you>.workers.dev`) — that's your **WORKER_ORIGIN**. Send it to whoever flips the site flag (step 6 below), or set it yourself.
+
+The CLI path below does the same thing from a checkout; use whichever you prefer.
+
+---
+
 ## 1. Install Wrangler
 
 ```bash

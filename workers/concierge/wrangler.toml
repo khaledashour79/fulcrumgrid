@@ -14,14 +14,26 @@ id = "<KV_ID>"   # TODO: replace with the id from `wrangler kv namespace create 
 [vars]
 # Comma-separated list of origins allowed to call this Worker (CORS).
 ALLOWED_ORIGINS = "https://fulcrumgrid.com,http://localhost:8000"
-# Anthropic model used for /chat.
+
+# Which LLM powers /chat: "anthropic" (default) or "deepseek" (OpenAI-compatible).
+# Switch here anytime — no code change. Set only the matching API key secret.
+LLM_PROVIDER = "anthropic"
+
+# Anthropic (used when LLM_PROVIDER = "anthropic").
 ANTHROPIC_MODEL = "claude-haiku-4-5"
+
+# DeepSeek (used when LLM_PROVIDER = "deepseek"). Works for any OpenAI-compatible
+# endpoint — change DEEPSEEK_BASE_URL/MODEL for OpenAI, Groq, Together, etc.
+DEEPSEEK_MODEL = "deepseek-chat"
+DEEPSEEK_BASE_URL = "https://api.deepseek.com"
+
 # ElevenLabs voice + model used for /tts. Set a real voice id before deploying.
 ELEVENLABS_VOICE_ID = "<ELEVENLABS_VOICE_ID>"   # TODO: set your voice id
 ELEVENLABS_MODEL = "eleven_multilingual_v2"
 
 # --- Secrets (do NOT put these in this file) ------------------------------------
 # Set them with wrangler so they never land in source control:
-#   wrangler secret put ANTHROPIC_API_KEY
-#   wrangler secret put ELEVENLABS_API_KEY
+#   wrangler secret put ANTHROPIC_API_KEY     # only if LLM_PROVIDER = "anthropic"
+#   wrangler secret put DEEPSEEK_API_KEY      # only if LLM_PROVIDER = "deepseek"
+#   wrangler secret put ELEVENLABS_API_KEY    # always (voice)
 # They are injected into `env` at runtime alongside the vars above.

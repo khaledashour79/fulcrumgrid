@@ -265,30 +265,56 @@ async function handleChat(request, env) {
   const rl = await checkRateLimit(env, ip, sessionId);
   if (!rl.ok) return sseErrorResponse(rl.error, 429, request, env);
 
-  if (!env.ANTHROPIC_API_KEY) {
+  // Which LLM powers the brain. Switch with the LLM_PROVIDER var in the
+  // dashboard / wrangler.toml — no code change needed. Both stream, and both
+  // get normalized to the widget's `data: {"delta":...}` protocol below.
+  const provider = (env.LLM_PROVIDER || 'anthropic').toLowerCase();
+  const sys = buildSystemPrompt(lang);
+  // clamped history + the new user turn
+  const messages = history.concat([{ role: 'user', content: message }]);
+
+  const providerKey = provider === 'deepseek' ? env.DEEPSEEK_API_KEY : env.ANTHROPIC_API_KEY;
+  if (!providerKey) {
     return sseErrorResponse('The assistant is not configured yet.', 500, request, env);
   }
 
-  // Build the Anthropic message list: clamped history + the new user turn.
-  const messages = history.concat([{ role: 'user', content: message }]);
-
-  let upstream;
+  // extractDelta(evt): map one parsed upstream SSE event to its text delta ('' if none).
+  let upstream, extractDelta;
   try {
-    upstream = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'x-api-key': env.ANTHROPIC_API_KEY,
-        'anthropic-version': '2023-06-01',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        model: env.ANTHROPIC_MODEL || 'claude-haiku-4-5',
-        max_tokens: CHAT_MAX_TOKENS,
-        stream: true,
-        system: buildSystemPrompt(lang),
-        messages
-      })
-    });
+    if (provider === 'deepseek') {
+      // OpenAI-compatible Chat Completions (also works for OpenAI/Groq/Together/…).
+      extractDelta = (evt) =>
+        (evt && evt.choices && evt.choices[0] && evt.choices[0].delta && evt.choices[0].delta.content) || '';
+      upstream = await fetch((env.DEEPSEEK_BASE_URL || 'https://api.deepseek.com') + '/chat/completions', {
+        method: 'POST',
+        headers: { 'Authorization': 'Bearer ' + env.DEEPSEEK_API_KEY, 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: env.DEEPSEEK_MODEL || 'deepseek-chat',
+          max_tokens: CHAT_MAX_TOKENS,
+          stream: true,
+          messages: [{ role: 'system', content: sys }].concat(messages)
+        })
+      });
+    } else {
+      // Anthropic Messages API.
+      extractDelta = (evt) =>
+        (evt && evt.type === 'content_block_delta' && evt.delta && evt.delta.type === 'text_delta' && evt.delta.text) || '';
+      upstream = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: {
+          'x-api-key': env.ANTHROPIC_API_KEY,
+          'anthropic-version': '2023-06-01',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          model: env.ANTHROPIC_MODEL || 'claude-haiku-4-5',
+          max_tokens: CHAT_MAX_TOKENS,
+          stream: true,
+          system: sys,
+          messages
+        })
+      });
+    }
   } catch (e) {
     return sseErrorResponse('Sorry, I could not reach the assistant. Please try again.', 502, request, env);
   }
@@ -323,11 +349,9 @@ async function handleChat(request, env) {
             if (!payload || payload === '[DONE]') continue;
             let evt;
             try { evt = JSON.parse(payload); } catch (e) { continue; }
-            if (evt.type === 'content_block_delta' && evt.delta && evt.delta.type === 'text_delta') {
-              if (evt.delta.text) emitDelta(evt.delta.text);
-            } else if (evt.type === 'error') {
-              emitDelta('Sorry, something went wrong.');
-            }
+            const text = extractDelta(evt);
+            if (text) emitDelta(text);
+            else if (evt.type === 'error' || evt.error) emitDelta('Sorry, something went wrong.');
           }
         }
       } catch (e) {
