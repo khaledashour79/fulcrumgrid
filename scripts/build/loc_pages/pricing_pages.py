@@ -974,9 +974,9 @@ PAGE['/pricing/hr-suite/'] = {
         "<th scope=\"row\">Payroll</th>": _t(
             "<th scope=\"row\">Paie</th>", "<th scope=\"row\">Gehaltsabrechnung</th>", "<th scope=\"row\">Nóminas</th>",
             "<th scope=\"row\">Buste paga</th>", "<th scope=\"row\">Loonadministratie</th>"),
-        "<th scope=\"row\">End-of-service (EOSB)</th>": _t(
-            "<th scope=\"row\">Fin de service (EOSB)</th>", "<th scope=\"row\">Abfindung (EOSB)</th>", "<th scope=\"row\">Fin de servicio (EOSB)</th>",
-            "<th scope=\"row\">Fine servizio (EOSB)</th>", "<th scope=\"row\">Einde dienstverband (EOSB)</th>"),
+        "<th scope=\"row\">Statutory & local compliance</th>": _t(
+            "<th scope=\"row\">Conformité légale & locale</th>", "<th scope=\"row\">Gesetzliche & lokale Compliance</th>", "<th scope=\"row\">Cumplimiento legal & local</th>",
+            "<th scope=\"row\">Conformità normativa & locale</th>", "<th scope=\"row\">Wettelijke & lokale naleving</th>"),
         "<th scope=\"row\">Housing advance</th>": _t(
             "<th scope=\"row\">Avance logement</th>", "<th scope=\"row\">Wohnungsvorschuss</th>", "<th scope=\"row\">Anticipo de vivienda</th>",
             "<th scope=\"row\">Anticipo alloggio</th>", "<th scope=\"row\">Huisvestingsvoorschot</th>"),
@@ -1068,12 +1068,12 @@ PAGE['/pricing/hr-suite/'] = {
             "Diseñado para su región.",
             "Progettato per la tua regione.",
             "Gebouwd voor uw regio."),
-        "Payroll, statutory year-end and compliance tuned to each market — across the Gulf, the UK, the US and Europe, with WPS, GOSI, end-of-service &amp; Nitaqat built in for the GCC.": _t(
-            "Paie, clôture annuelle légale et conformité adaptées à chaque marché — dans le Golfe, au Royaume-Uni, aux États-Unis et en Europe, avec WPS, GOSI, indemnité de fin de service &amp; Nitaqat intégrés pour le Golfe.",
-            "Gehaltsabrechnung, gesetzlicher Jahresabschluss und Compliance, abgestimmt auf jeden Markt — in der Golfregion, im Vereinigten Königreich, in den USA und in Europa, mit WPS, GOSI, Abfindung &amp; Nitaqat integriert für die Golfregion.",
-            "Nóminas, cierre anual legal y cumplimiento ajustados a cada mercado — en el Golfo, el Reino Unido, EE. UU. y Europa, con WPS, GOSI, fin de servicio &amp; Nitaqat integrados para el Golfo.",
-            "Buste paga, chiusura annuale di legge e conformità su misura per ogni mercato — nel Golfo, nel Regno Unito, negli Stati Uniti e in Europa, con WPS, GOSI, fine servizio &amp; Nitaqat integrati per il Golfo.",
-            "Loonadministratie, wettelijke jaarafsluiting en compliance afgestemd op elke markt — in de Golfregio, het VK, de VS en Europa, met WPS, GOSI, einde dienstverband &amp; Nitaqat ingebouwd voor de Golfregio."),
+        "Payroll, statutory year-end and compliance tuned to each market — across North America, Europe, the Gulf and the wider Middle East, with local statutory handling built in for each (WPS, GOSI, end-of-service and Nitaqat in the Gulf).": _t(
+            "Paie, clôture annuelle légale et conformité adaptées à chaque marché — en Amérique du Nord, en Europe, dans le Golfe et au Moyen-Orient élargi, avec le traitement légal local intégré pour chacun (WPS, GOSI, indemnité de fin de service et Nitaqat dans le Golfe).",
+            "Gehaltsabrechnung, gesetzlicher Jahresabschluss und Compliance, abgestimmt auf jeden Markt — in Nordamerika, Europa, der Golfregion und dem erweiterten Nahen Osten, mit integrierter lokaler gesetzlicher Abwicklung für jeden (WPS, GOSI, Abfindung und Nitaqat in der Golfregion).",
+            "Nóminas, cierre anual legal y cumplimiento ajustados a cada mercado — en Norteamérica, Europa, el Golfo y el resto de Oriente Medio, con el tratamiento legal local integrado para cada uno (WPS, GOSI, fin de servicio y Nitaqat en el Golfo).",
+            "Buste paga, chiusura annuale di legge e conformità su misura per ogni mercato — in Nord America, Europa, nel Golfo e nel resto del Medio Oriente, con la gestione normativa locale integrata per ciascuno (WPS, GOSI, fine servizio e Nitaqat nel Golfo).",
+            "Loonadministratie, wettelijke jaarafsluiting en compliance afgestemd op elke markt — in Noord-Amerika, Europa, de Golfregio en het bredere Midden-Oosten, met lokale wettelijke afhandeling ingebouwd voor elk (WPS, GOSI, einde dienstverband en Nitaqat in de Golfregio)."),
         "See all regions →": _t(
             "Voir toutes les régions →", "Alle Regionen ansehen →", "Ver todas las regiones →",
             "Vedi tutte le regioni →", "Bekijk alle regio's →"),

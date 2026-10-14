@@ -374,12 +374,12 @@ PAGE = {
             # ---- Compliance / regions ----
             "04 · Compliance": _t("04 · Conformité", "04 · Compliance", "04 · Cumplimiento", "04 · Conformità", "04 · Compliance"),
             "Built for global payroll": _t("Conçu pour la paie mondiale", "Für die weltweite Gehaltsabrechnung gebaut", "Diseñado para la nómina global", "Costruito per le buste paga globali", "Gebouwd voor wereldwijde loonadministratie"),
-            "Payroll, statutory year-end, and compliance tuned to each market — across the Gulf, the UK, the US and Europe. Pick yours.": _t(
-                "Paie, clôture annuelle légale et conformité adaptées à chaque marché — dans le Golfe, au Royaume-Uni, aux États-Unis et en Europe. Choisissez le vôtre.",
-                "Gehaltsabrechnung, gesetzlicher Jahresabschluss und Compliance, abgestimmt auf jeden Markt — in der Golfregion, im Vereinigten Königreich, in den USA und in Europa. Wählen Sie Ihren.",
-                "Nóminas, cierre anual legal y cumplimiento ajustados a cada mercado — en el Golfo, el Reino Unido, EE. UU. y Europa. Elija el suyo.",
-                "Buste paga, chiusura annuale di legge e conformità su misura per ogni mercato — nel Golfo, nel Regno Unito, negli Stati Uniti e in Europa. Scegli il tuo.",
-                "Loonadministratie, wettelijke jaarafsluiting en compliance afgestemd op elke markt — in de Golfregio, het VK, de VS en Europa. Kies de uwe."),
+            "Payroll, statutory year-end, and compliance tuned to each market — across North America, Europe, the Gulf and the wider Middle East. Pick yours.": _t(
+                "Paie, clôture annuelle légale et conformité adaptées à chaque marché — en Amérique du Nord, en Europe, dans le Golfe et au Moyen-Orient élargi. Choisissez le vôtre.",
+                "Gehaltsabrechnung, gesetzlicher Jahresabschluss und Compliance, abgestimmt auf jeden Markt — in Nordamerika, Europa, der Golfregion und dem erweiterten Nahen Osten. Wählen Sie Ihren.",
+                "Nóminas, cierre anual legal y cumplimiento ajustados a cada mercado — en Norteamérica, Europa, el Golfo y el resto de Oriente Medio. Elija el suyo.",
+                "Buste paga, chiusura annuale di legge e conformità su misura per ogni mercato — in Nord America, Europa, nel Golfo e nel resto del Medio Oriente. Scegli il tuo.",
+                "Loonadministratie, wettelijke jaarafsluiting en compliance afgestemd op elke markt — in Noord-Amerika, Europa, de Golfregio en het bredere Midden-Oosten. Kies de uwe."),
             "North America →": _t("Amérique du Nord →", "Nordamerika →", "Norteamérica →", "Nord America →", "Noord-Amerika →"),
             "United States · Canada": _t("États-Unis · Canada", "USA · Kanada", "Estados Unidos · Canadá", "Stati Uniti · Canada", "Verenigde Staten · Canada"),
             "Europe →": _t("Europe →", "Europa →", "Europa →", "Europa →", "Europa →"),

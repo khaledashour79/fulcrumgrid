@@ -421,7 +421,7 @@ def page(slug, d, lang='en'):
             <p class="mono mono-accent">Wherever you operate</p>
             <h2>Built for your region.</h2>
           </div>
-          <p class="section-lead">Payroll, statutory year-end and compliance tuned to each market — across the Gulf, the UK, the US and Europe, with WPS, GOSI, end-of-service &amp; Nitaqat built in for the GCC. <a href="/regions/">See all regions →</a></p>
+          <p class="section-lead">Payroll, statutory year-end and compliance tuned to each market — across North America, Europe, the Gulf and the wider Middle East, with local statutory handling built in for each (WPS, GOSI, end-of-service and Nitaqat in the Gulf). <a href="/regions/">See all regions →</a></p>
         </div>
       </div>
     </section>
