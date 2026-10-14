@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
 
   <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
@@ -68,6 +68,7 @@
   <script type="application/ld+json">
   {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is FulcrumGrid a spreadsheet replacement?", "acceptedAnswer": {"@type": "Answer", "text": "For running a business process — invoicing, HR records, operations tracking — yes. FulcrumGrid replaces the fragile spreadsheets teams outgrow with structured, multi-user apps. For quick one-off analysis, a spreadsheet is still a fine tool."}}, {"@type": "Question", "name": "Can I import my existing spreadsheets?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can bring your records in when you set up an app. Tell us what you have on the contact page and we'll help you move."}}, {"@type": "Question", "name": "When is a spreadsheet still the better choice?", "acceptedAnswer": {"@type": "Answer", "text": "For a quick model, a throwaway calculation, or a solo one-off analysis, a spreadsheet is fast and flexible. The moment several people share it, it becomes a system of record, or mistakes start to cost money, a purpose-built app pays off."}}]}
   </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css">
 </head>
 <body>
   <!-- ===== Header ===== -->
@@ -236,5 +237,10 @@
   </footer>
 
   <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js" defer></script>
+<!-- fg-concierge:end -->
 </body>
 </html>

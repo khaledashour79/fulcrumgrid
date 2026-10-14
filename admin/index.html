@@ -6,9 +6,15 @@
   <meta name="robots" content="noindex, nofollow" />
   <title>FulcrumGrid — Content admin</title>
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/css/concierge.css">
 </head>
 <body>
   <!-- Decap CMS loads /admin/config.yml automatically -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js" defer></script>
+<!-- fg-concierge:end -->
 </body>
 </html>

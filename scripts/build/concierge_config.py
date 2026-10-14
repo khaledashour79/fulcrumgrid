@@ -15,13 +15,13 @@ is set. Keep ENABLED False until:
 
 # Master switch. False = the injector strips any previously-injected widget
 # markup from every page, so flipping off fully removes it.
-ENABLED = False
+ENABLED = True
 
 # Deployed Worker origin, no trailing slash, e.g.
 #   'https://fg-concierge.<your-subdomain>.workers.dev'
 # or a custom route like 'https://concierge.fulcrumgrid.com'.
 # Added to each page's CSP connect-src when ENABLED.
-WORKER_ORIGIN = ''
+WORKER_ORIGIN = 'https://fg-concierge.khaled-ashour.workers.dev'
 
 # Languages that get the voice/chat experience now. Others still render the
 # character but route interaction to the contact page until added here.

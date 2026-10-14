@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
 
   <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
@@ -83,6 +83,7 @@
 
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "FulcrumGrid Collection", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "url": "https://fulcrumgrid.com/pricing/collection/", "description": "Planes de precios de Collection — Starter, Professional, Business y Enterprise / Agency — con un desglose módulo a módulo de lo que se incluye en cada nivel.", "inLanguage": "en", "provider": {"@type": "Organization", "name": "FulcrumGrid", "url": "https://fulcrumgrid.com/"}, "offers": {"@type": "AggregateOffer", "priceCurrency": "SAR", "lowPrice": "370", "highPrice": "1120", "offerCount": "4", "url": "https://fulcrumgrid.com/pricing/collection/", "availability": "https://schema.org/InStock"}}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://fulcrumgrid.com/"}, {"@type": "ListItem", "position": 2, "name": "Precios", "item": "https://fulcrumgrid.com/pricing/"}, {"@type": "ListItem", "position": 3, "name": "Collection", "item": "https://fulcrumgrid.com/pricing/collection/"}]}</script>
+  <link rel="stylesheet" href="/assets/css/concierge.css">
 </head>
 <body>
   <header class="site-head">
@@ -309,5 +310,10 @@
   </footer>
 
   <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js" defer></script>
+<!-- fg-concierge:end -->
 </body>
 </html>
