@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>How Do You Calculate Cost Per Hire (and Bring It Down)? — FulcrumGrid</title>
+  <meta name="description" content="Cost per hire is total recruiting spend divided by hires made. Learn the formula, a worked example, why benchmarks mislead, and how to lower the number." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How Do You Calculate Cost Per Hire (and Bring It Down)?" />
+  <meta property="og:description" content="Cost per hire is total recruiting spend divided by hires made. Learn the formula, a worked example, why benchmarks mislead, and how to lower the number." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-14" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid HR Suite — people operations" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Do You Calculate Cost Per Hire (and Bring It Down)?" />
+  <meta name="twitter:description" content="Cost per hire is total recruiting spend divided by hires made. Learn the formula, a worked example, why benchmarks mislead, and how to lower the number." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How Do You Calculate Cost Per Hire (and Bring It Down)?",
+    "description": "Cost per hire is total recruiting spend divided by hires made. Learn the formula, a worked example, why benchmarks mislead, and how to lower the number.",
+    "datePublished": "2026-10-14",
+    "dateModified": "2026-10-14",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Cost Per Hire Guide",
+        "item": "https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is included in cost per hire?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both external costs, such as ads, agency fees, background checks and travel, and internal costs, such as recruiter salaries, interviewer time and recruiting software. Whatever you include, keep the definition identical from period to period."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between cost per hire and cost of hiring?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The terms are often used interchangeably. Cost per hire is an average, total recruiting spend divided by the number of hires, while the total cost of hiring may also include onboarding, training and ramp-up time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should I calculate cost per hire?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Quarterly works for most companies, with a yearly review of the trend. Very small teams that hire rarely get a steadier figure by calculating once a year."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a lower cost per hire always better?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. A low figure can mean you are cutting corners on screening or paying too little to attract strong candidates. Read it together with quality of hire, time to fill and early retention."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Cost Per Hire Guide</p>
+        <span class="tag tag-accent">HR</span>
+        <h1>How Do You Calculate Cost Per Hire (and Bring It Down)?</h1>
+        <p class="hero-intro">Cost per hire is total recruiting spend divided by hires made. Learn the formula, a worked example, why benchmarks mislead, and how to lower the number.</p>
+        <p class="mono"><time datetime="2026-10-14">October 14, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Hiring is one of the biggest line items in any growing company, yet many teams cannot say what a single hire actually costs. Cost per hire is the metric that answers it. This guide explains the formula, walks through a worked example, warns about the limits of published benchmarks, and lists practical ways to bring the number down without hurting quality.</p><h2>What is cost per hire?</h2><p>Cost per hire is the average total cost of filling a position, from the day you start recruiting to the day the candidate accepts. It is normally calculated over a period, such as a quarter or a year, so that one unusual hire does not distort the picture.</p><h2>The cost-per-hire formula</h2><p>The standard formula is simple:</p><p><strong>Cost per hire = (internal recruiting costs + external recruiting costs) &divide; number of hires</strong></p><p>The hard part is not the division. It is deciding what to count, and then counting the same things every time.</p><h3>External costs</h3><p>These are the invoices and fees you pay to third parties:</p><ul><li><strong>Advertising.</strong> Job board listings, sponsored posts and career-site tools.</li><li><strong>Agency and search fees.</strong> Usually a percentage of the first-year salary.</li><li><strong>Screening.</strong> Background checks, assessments and reference-checking services.</li><li><strong>Candidate expenses.</strong> Travel, accommodation and relocation support.</li><li><strong>Referral bonuses and events.</strong> Payouts to employees, job fairs and campus visits.</li></ul><h3>Internal costs</h3><p>These are harder to see because nobody sends an invoice for them:</p><ul><li><strong>Recruiter and HR time.</strong> The salary and benefits of the people doing the hiring, in proportion to the time they spend on it.</li><li><strong>Interviewer and manager time.</strong> Hours spent on screening calls, interviews and debriefs, valued at their hourly cost.</li><li><strong>Tools.</strong> Your applicant tracking system and other recruiting software.</li><li><strong>Admin and overhead.</strong> Scheduling, paperwork and employer-branding work.</li></ul><h2>A worked example</h2><p>A company makes 12 hires in a quarter. Its external costs are:</p><ul><li>Job ads: $9,000</li><li>Agency fee for one senior hire: $18,000</li><li>Background checks and assessments: $2,400</li><li>Referral bonuses: $3,000</li><li>Candidate travel: $1,600</li></ul><p>That is <strong>$34,000</strong> in external costs. Its internal costs are:</p><ul><li>One recruiter working only on hiring, fully loaded cost for the quarter: $18,000</li><li>150 hours of interviewer time at $50 an hour: $7,500</li><li>Applicant tracking software and HR admin: $4,500</li></ul><p>That is <strong>$30,000</strong> internally. The total is $64,000, and $64,000 &divide; 12 hires gives a cost per hire of about <strong>$5,333</strong>.</p><p>Notice what the average hides. The single agency placement cost $18,000 in fees alone, while the other eleven hires cost far less. Splitting the figure by channel, role type or department usually teaches you more than the headline number.</p><h2>Benchmarks: use them with care</h2><p>It is tempting to compare your number with a published average. Be cautious. Published averages vary from a few thousand to well over ten thousand dollars depending on the survey, and the reasons are mostly differences in method rather than real differences in hiring:</p><ul><li><strong>Definitions differ.</strong> Some surveys count only external spend, others include salaries and manager time.</li><li><strong>Role mix matters.</strong> An executive search and a high-volume retail hire sit at opposite ends of the scale.</li><li><strong>Industry, region and company size</strong> all move the number, as do tight or loose labor markets.</li><li><strong>Samples are skewed.</strong> Respondents tend to be larger companies with formal recruiting functions.</li></ul><p>The most useful benchmark is your own. Calculate it the same way every quarter, and watch the trend and the gaps between roles.</p><h2>How to reduce cost per hire</h2><ul><li><strong>Track cost by source.</strong> Find which channels produce hires and which only produce invoices, then shift budget accordingly.</li><li><strong>Build a referral program.</strong> A bonus is usually far cheaper than an agency fee, and referred hires often stay longer.</li><li><strong>Shorten time to fill.</strong> Every extra week of open interviews costs staff time, and an empty seat costs output.</li><li><strong>Streamline interviews.</strong> Fewer, more structured rounds save hours without lowering the bar.</li><li><strong>Look inside first.</strong> Internal moves and returning alumni skip most advertising and agency costs.</li><li><strong>Negotiate agency terms.</strong> Reserve agencies for hard-to-fill roles and push for lower or tiered fees.</li><li><strong>Strengthen your employer brand.</strong> A clear careers page and honest job descriptions attract better-fit applicants, so you screen fewer of the wrong ones.</li><li><strong>Reduce turnover.</strong> The cheapest hire is the one you do not have to repeat.</li></ul><p>One warning: do not chase a low number at the expense of quality. Pair cost per hire with quality of hire and 90-day retention, otherwise a cheap hire who leaves quickly will look like a success.</p><h2>Make it a habit</h2><p>You do not need special software to begin. A spreadsheet with one row per hire, plus a list of your quarterly costs, is enough. If you already manage people processes in <strong>FulcrumGrid HR Suite</strong>, you can keep requisitions, sources and hiring costs alongside the rest of your HR data, which makes a quarterly calculation a matter of minutes rather than a hunt through invoices.</p><p>Define your costs once, calculate on a schedule, and use the result to ask better questions about where your hiring money goes.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>What is included in cost per hire?</summary><p>Both external costs, such as ads, agency fees, background checks and travel, and internal costs, such as recruiter salaries, interviewer time and recruiting software. Whatever you include, keep the definition identical from period to period.</p></details>
+        <details class="faq-item"><summary>What is the difference between cost per hire and cost of hiring?</summary><p>The terms are often used interchangeably. Cost per hire is an average, total recruiting spend divided by the number of hires, while the total cost of hiring may also include onboarding, training and ramp-up time.</p></details>
+        <details class="faq-item"><summary>How often should I calculate cost per hire?</summary><p>Quarterly works for most companies, with a yearly review of the trend. Very small teams that hire rarely get a steadier figure by calculating once a year.</p></details>
+        <details class="faq-item"><summary>Is a lower cost per hire always better?</summary><p>No. A low figure can mean you are cutting corners on screening or paying too little to attract strong candidates. Read it together with quality of hire, time to fill and early retention.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid HR Suite</p>
+        <h2>Know what each hire really costs</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid HR Suite keeps your hiring data and people processes in one place, so your quarterly cost-per-hire check takes minutes, not days.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/hr-suite/">Explore HR Suite</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

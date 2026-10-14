@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wie berechnet man die Kosten pro Einstellung und senkt sie? — FulcrumGrid</title>
+  <meta name="description" content="Die Kosten pro Einstellung sind die gesamten Recruiting-Ausgaben geteilt durch die Zahl der Einstellungen. Formel, Rechenbeispiel, Grenzen von Benchmarks und Spartipps." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wie berechnet man die Kosten pro Einstellung und senkt sie?" />
+  <meta property="og:description" content="Die Kosten pro Einstellung sind die gesamten Recruiting-Ausgaben geteilt durch die Zahl der Einstellungen. Formel, Rechenbeispiel, Grenzen von Benchmarks und Spartipps." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/how-to-calculate-cost-per-hire/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-14" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid HR Suite — people operations" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wie berechnet man die Kosten pro Einstellung und senkt sie?" />
+  <meta name="twitter:description" content="Die Kosten pro Einstellung sind die gesamten Recruiting-Ausgaben geteilt durch die Zahl der Einstellungen. Formel, Rechenbeispiel, Grenzen von Benchmarks und Spartipps." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-cost-per-hire/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-cost-per-hire/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wie berechnet man die Kosten pro Einstellung und senkt sie?",
+    "description": "Die Kosten pro Einstellung sind die gesamten Recruiting-Ausgaben geteilt durch die Zahl der Einstellungen. Formel, Rechenbeispiel, Grenzen von Benchmarks und Spartipps.",
+    "datePublished": "2026-10-14",
+    "dateModified": "2026-10-14",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/how-to-calculate-cost-per-hire/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Leitfaden Kosten pro Einstellung",
+        "item": "https://fulcrumgrid.com/de/blog/how-to-calculate-cost-per-hire/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was gehört zu den Kosten pro Einstellung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Externe Kosten wie Anzeigen, Agenturgebühren, Hintergrundprüfungen und Reisen sowie interne Kosten wie Recruiter-Gehälter, Interviewerzeit und Recruiting-Software. Was auch immer Sie einbeziehen: Halten Sie die Definition von Zeitraum zu Zeitraum gleich."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was ist der Unterschied zwischen Kosten pro Einstellung und Gesamtkosten der Einstellung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Begriffe werden oft synonym verwendet. Die Kosten pro Einstellung sind ein Durchschnitt, nämlich die gesamten Recruiting-Ausgaben geteilt durch die Zahl der Einstellungen. Die Gesamtkosten können zusätzlich Einarbeitung, Schulung und Anlaufzeit enthalten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie oft sollte ich die Kosten pro Einstellung berechnen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Quartalsweise passt für die meisten Unternehmen, ergänzt um eine jährliche Trendprüfung. Sehr kleine Teams mit wenigen Einstellungen erhalten einen stabileren Wert, wenn sie nur einmal im Jahr rechnen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sind niedrigere Kosten pro Einstellung immer besser?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. Ein niedriger Wert kann bedeuten, dass Sie bei der Vorauswahl sparen oder zu wenig bieten, um starke Kandidaten anzuziehen. Lesen Sie ihn zusammen mit Einstellungsqualität, Besetzungsdauer und früher Bindung."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / Leitfaden Kosten pro Einstellung</p>
+        <span class="tag tag-accent">HR</span>
+        <h1>Wie berechnet man die Kosten pro Einstellung und senkt sie?</h1>
+        <p class="hero-intro">Die Kosten pro Einstellung sind die gesamten Recruiting-Ausgaben geteilt durch die Zahl der Einstellungen. Formel, Rechenbeispiel, Grenzen von Benchmarks und Spartipps.</p>
+        <p class="mono"><time datetime="2026-10-14">14. Oktober 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Personalgewinnung gehört in jedem wachsenden Unternehmen zu den größten Ausgabenposten, und doch können viele Teams nicht sagen, was eine einzelne Einstellung wirklich kostet. Die Kennzahl Kosten pro Einstellung beantwortet das. Dieser Leitfaden erklärt die Formel, rechnet ein Beispiel durch, warnt vor den Grenzen veröffentlichter Benchmarks und nennt praktische Wege, die Zahl zu senken, ohne die Qualität zu gefährden.</p><h2>Was sind die Kosten pro Einstellung?</h2><p>Die Kosten pro Einstellung sind die durchschnittlichen Gesamtkosten, um eine Stelle zu besetzen, vom ersten Tag der Suche bis zur Zusage des Kandidaten. Sie werden meist über einen Zeitraum berechnet, etwa ein Quartal oder ein Jahr, damit eine ungewöhnliche Einstellung das Bild nicht verzerrt.</p><h2>Die Formel für die Kosten pro Einstellung</h2><p>Die Standardformel ist einfach:</p><p><strong>Kosten pro Einstellung = (interne Recruiting-Kosten + externe Recruiting-Kosten) &divide; Anzahl der Einstellungen</strong></p><p>Schwierig ist nicht die Division, sondern die Entscheidung, was gezählt wird, und dann jedes Mal dasselbe zu zählen.</p><h3>Externe Kosten</h3><p>Das sind Rechnungen und Gebühren an Dritte:</p><ul><li><strong>Werbung.</strong> Stellenanzeigen auf Jobportalen, gesponserte Beiträge und Werkzeuge für die Karriereseite.</li><li><strong>Agentur- und Vermittlungsgebühren.</strong> Meist ein Prozentsatz des Jahresgehalts im ersten Jahr.</li><li><strong>Vorauswahl.</strong> Hintergrundprüfungen, Eignungstests und Referenzauskünfte.</li><li><strong>Kandidatenkosten.</strong> Reise, Unterkunft und Umzugshilfe.</li><li><strong>Empfehlungsprämien und Veranstaltungen.</strong> Zahlungen an Mitarbeitende, Jobmessen und Campus-Besuche.</li></ul><h3>Interne Kosten</h3><p>Sie sind schwerer zu erkennen, weil dafür niemand eine Rechnung schickt:</p><ul><li><strong>Zeit von Recruitern und HR.</strong> Gehalt und Nebenleistungen der Beteiligten, anteilig nach der Zeit, die sie für Einstellungen aufwenden.</li><li><strong>Zeit von Interviewern und Führungskräften.</strong> Stunden für Vorgespräche, Interviews und Nachbesprechungen, bewertet mit dem Stundensatz.</li><li><strong>Werkzeuge.</strong> Ihr Bewerbermanagementsystem und weitere Recruiting-Software.</li><li><strong>Verwaltung und Gemeinkosten.</strong> Terminplanung, Papierkram und Arbeitgebermarken-Aufgaben.</li></ul><h2>Ein Rechenbeispiel</h2><p>Ein Unternehmen stellt in einem Quartal 12 Personen ein. Die externen Kosten:</p><ul><li>Stellenanzeigen: 9.000&nbsp;&euro;</li><li>Agenturgebühr für eine Senior-Einstellung: 18.000&nbsp;&euro;</li><li>Hintergrundprüfungen und Tests: 2.400&nbsp;&euro;</li><li>Empfehlungsprämien: 3.000&nbsp;&euro;</li><li>Reisekosten der Kandidaten: 1.600&nbsp;&euro;</li></ul><p>Das sind <strong>34.000&nbsp;&euro;</strong> externe Kosten. Die internen Kosten:</p><ul><li>Ein Recruiter, der ausschließlich einstellt, volle Kosten für das Quartal: 18.000&nbsp;&euro;</li><li>150 Stunden Interviewerzeit à 50&nbsp;&euro;: 7.500&nbsp;&euro;</li><li>Bewerbermanagement-Software und HR-Verwaltung: 4.500&nbsp;&euro;</li></ul><p>Das sind intern <strong>30.000&nbsp;&euro;</strong>. Die Summe beträgt 64.000&nbsp;&euro;, und 64.000&nbsp;&euro; &divide; 12 Einstellungen ergeben Kosten pro Einstellung von rund <strong>5.333&nbsp;&euro;</strong>.</p><p>Beachten Sie, was der Durchschnitt verbirgt. Die eine Agenturvermittlung kostete allein 18.000&nbsp;&euro; an Gebühren, die übrigen elf Einstellungen deutlich weniger. Die Zahl nach Kanal, Rollentyp oder Abteilung aufzuschlüsseln, lehrt meist mehr als der Gesamtwert.</p><h2>Benchmarks: mit Vorsicht verwenden</h2><p>Es ist verlockend, die eigene Zahl mit einem veröffentlichten Durchschnitt zu vergleichen. Seien Sie vorsichtig. Veröffentlichte Durchschnitte reichen je nach Studie von wenigen Tausend bis weit über zehntausend Euro, und das liegt meist an unterschiedlichen Methoden, nicht an echten Unterschieden beim Einstellen:</p><ul><li><strong>Definitionen unterscheiden sich.</strong> Manche Studien zählen nur externe Ausgaben, andere beziehen Gehälter und Führungskräftezeit ein.</li><li><strong>Der Rollenmix zählt.</strong> Eine Führungskräftesuche und eine Masseneinstellung im Einzelhandel liegen an gegenüberliegenden Enden.</li><li><strong>Branche, Region und Unternehmensgröße</strong> verschieben die Zahl ebenso wie ein angespannter oder entspannter Arbeitsmarkt.</li><li><strong>Stichproben sind verzerrt.</strong> Die Befragten sind oft größere Unternehmen mit formaler Recruiting-Funktion.</li></ul><p>Der nützlichste Vergleichswert ist Ihr eigener. Berechnen Sie ihn jedes Quartal auf dieselbe Weise und beobachten Sie Trend und Unterschiede zwischen Rollen.</p><h2>Wie senkt man die Kosten pro Einstellung?</h2><ul><li><strong>Kosten nach Quelle erfassen.</strong> Finden Sie heraus, welche Kanäle Einstellungen bringen und welche nur Rechnungen, und verschieben Sie das Budget entsprechend.</li><li><strong>Ein Empfehlungsprogramm aufbauen.</strong> Eine Prämie ist meist weit günstiger als eine Agenturgebühr, und empfohlene Mitarbeitende bleiben oft länger.</li><li><strong>Die Besetzungsdauer verkürzen.</strong> Jede zusätzliche Woche offener Interviews kostet Arbeitszeit, und ein leerer Platz kostet Leistung.</li><li><strong>Interviews verschlanken.</strong> Weniger, dafür strukturiertere Runden sparen Stunden, ohne die Messlatte zu senken.</li><li><strong>Zuerst intern schauen.</strong> Interne Wechsel und zurückkehrende Ehemalige umgehen den Großteil von Werbe- und Agenturkosten.</li><li><strong>Agenturkonditionen verhandeln.</strong> Setzen Sie Agenturen nur für schwer zu besetzende Stellen ein und handeln Sie niedrigere oder gestaffelte Gebühren aus.</li><li><strong>Die Arbeitgebermarke stärken.</strong> Eine klare Karriereseite und ehrliche Stellenbeschreibungen ziehen besser passende Bewerber an, sodass Sie weniger ungeeignete sichten müssen.</li><li><strong>Fluktuation senken.</strong> Die günstigste Einstellung ist die, die man nicht wiederholen muss.</li></ul><p>Eine Warnung: Jagen Sie keiner niedrigen Zahl auf Kosten der Qualität hinterher. Kombinieren Sie die Kosten pro Einstellung mit der Einstellungsqualität und der 90-Tage-Bindung, sonst wirkt eine billige Einstellung, die schnell wieder geht, wie ein Erfolg.</p><h2>Zur Gewohnheit machen</h2><p>Für den Anfang brauchen Sie keine Spezialsoftware. Eine Tabelle mit einer Zeile pro Einstellung und eine Liste der Quartalskosten genügen. Wenn Sie Ihre Personalprozesse schon in <strong>FulcrumGrid HR Suite</strong> verwalten, können Sie Stellenanforderungen, Quellen und Einstellungskosten neben Ihren übrigen HR-Daten führen. Die Quartalsberechnung dauert dann Minuten statt einer Suche durch Rechnungen.</p><p>Legen Sie Ihre Kostenarten einmal fest, rechnen Sie nach festem Rhythmus und nutzen Sie das Ergebnis, um bessere Fragen dazu zu stellen, wohin Ihr Recruiting-Budget fließt.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Was gehört zu den Kosten pro Einstellung?</summary><p>Externe Kosten wie Anzeigen, Agenturgebühren, Hintergrundprüfungen und Reisen sowie interne Kosten wie Recruiter-Gehälter, Interviewerzeit und Recruiting-Software. Was auch immer Sie einbeziehen: Halten Sie die Definition von Zeitraum zu Zeitraum gleich.</p></details>
+        <details class="faq-item"><summary>Was ist der Unterschied zwischen Kosten pro Einstellung und Gesamtkosten der Einstellung?</summary><p>Die Begriffe werden oft synonym verwendet. Die Kosten pro Einstellung sind ein Durchschnitt, nämlich die gesamten Recruiting-Ausgaben geteilt durch die Zahl der Einstellungen. Die Gesamtkosten können zusätzlich Einarbeitung, Schulung und Anlaufzeit enthalten.</p></details>
+        <details class="faq-item"><summary>Wie oft sollte ich die Kosten pro Einstellung berechnen?</summary><p>Quartalsweise passt für die meisten Unternehmen, ergänzt um eine jährliche Trendprüfung. Sehr kleine Teams mit wenigen Einstellungen erhalten einen stabileren Wert, wenn sie nur einmal im Jahr rechnen.</p></details>
+        <details class="faq-item"><summary>Sind niedrigere Kosten pro Einstellung immer besser?</summary><p>Nein. Ein niedriger Wert kann bedeuten, dass Sie bei der Vorauswahl sparen oder zu wenig bieten, um starke Kandidaten anzuziehen. Lesen Sie ihn zusammen mit Einstellungsqualität, Besetzungsdauer und früher Bindung.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid HR Suite</p>
+        <h2>Wissen, was jede Einstellung wirklich kostet</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid HR Suite hält Ihre Recruiting-Daten und Personalprozesse an einem Ort, damit die Quartalsprüfung der Kosten pro Einstellung Minuten statt Tage dauert.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/hr-suite/">Entdecken HR Suite</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>

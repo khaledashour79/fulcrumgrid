@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>¿Cómo evaluar el rendimiento de los proveedores con una tarjeta de puntuación sencilla? — FulcrumGrid</title>
+  <meta name="description" content="Una tarjeta de puntuación convierte opiniones en números. Descubre qué criterios puntuar, cómo ponderarlos, cada cuánto revisar y cuándo toca cambiar de proveedor." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="¿Cómo evaluar el rendimiento de los proveedores con una tarjeta de puntuación sencilla?" />
+  <meta property="og:description" content="Una tarjeta de puntuación convierte opiniones en números. Descubre qué criterios puntuar, cómo ponderarlos, cada cuánto revisar y cuándo toca cambiar de proveedor." />
+  <meta property="og:url" content="https://fulcrumgrid.com/es/blog/how-to-evaluate-vendor-performance/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-11" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="¿Cómo evaluar el rendimiento de los proveedores con una tarjeta de puntuación sencilla?" />
+  <meta name="twitter:description" content="Una tarjeta de puntuación convierte opiniones en números. Descubre qué criterios puntuar, cómo ponderarlos, cada cuánto revisar y cuándo toca cambiar de proveedor." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/es/blog/how-to-evaluate-vendor-performance/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-evaluate-vendor-performance/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-evaluate-vendor-performance/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-evaluate-vendor-performance/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-evaluate-vendor-performance/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-evaluate-vendor-performance/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-evaluate-vendor-performance/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-evaluate-vendor-performance/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-evaluate-vendor-performance/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "¿Cómo evaluar el rendimiento de los proveedores con una tarjeta de puntuación sencilla?",
+    "description": "Una tarjeta de puntuación convierte opiniones en números. Descubre qué criterios puntuar, cómo ponderarlos, cada cuánto revisar y cuándo toca cambiar de proveedor.",
+    "datePublished": "2026-10-11",
+    "dateModified": "2026-10-11",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/es/blog/how-to-evaluate-vendor-performance/"
+    },
+    "inLanguage": "es"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://fulcrumgrid.com/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/es/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guía de evaluación de proveedores",
+        "item": "https://fulcrumgrid.com/es/blog/how-to-evaluate-vendor-performance/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuántos criterios debe tener una tarjeta de puntuación de proveedores?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De cuatro a seis son suficientes para la mayoría de las empresas. Calidad, entrega, coste y capacidad de respuesta cubren lo esencial, y puedes añadir uno o dos propios de tu sector, como el cumplimiento normativo o la sostenibilidad."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es una buena puntuación para un proveedor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En una escala de 1 a 5, una puntuación ponderada de 4,0 o más es sólida, de 3,0 a 3,9 es aceptable pero conviene hablarla, y por debajo de 3,0 requiere un plan de mejora. Fija estos tramos antes de empezar a puntuar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Deben las pequeñas empresas puntuar a todos los proveedores?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Céntrate en los proveedores críticos o en los que concentran la mayor parte de tu gasto. Para los menores basta una revisión anual rápida."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Debo enseñar la tarjeta al proveedor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Compartir los resultados y acordar mejoras concretas es lo que cambia el comportamiento. Un proveedor no puede corregir un problema del que nunca se entera."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/es/products/">Productos</a>
+        <a href="/es/features/">Cuadrícula</a>
+        <a href="/es/pricing/">Precios</a>
+        <a href="/es/regions/">Regiones</a>
+        <a href="/es/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/es/contact/">Contacto</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Idioma">ES ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" class="active" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/es/contact/">Solicitar una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/es/">Inicio</a> / <a href="/es/blog/">Blog</a> / Guía de evaluación de proveedores</p>
+        <span class="tag tag-accent">Operaciones</span>
+        <h1>¿Cómo evaluar el rendimiento de los proveedores con una tarjeta de puntuación sencilla?</h1>
+        <p class="hero-intro">Una tarjeta de puntuación convierte opiniones en números. Descubre qué criterios puntuar, cómo ponderarlos, cada cuánto revisar y cuándo toca cambiar de proveedor.</p>
+        <p class="mono"><time datetime="2026-10-11">11 de octubre de 2026</time> · 6 min de lectura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Casi todas las empresas dependen de proveedores externos, desde fabricantes y transportistas hasta empresas de software y agencias. La mayoría de los dueños los juzgan por intuición: la última entrega, la última factura, la última discusión. Una tarjeta de puntuación sencilla sustituye esa intuición por unas pocas cifras que recoges siempre de la misma manera. Esta guía responde a las preguntas más habituales: qué puntuar, cómo ponderar, cada cuánto revisar y cuándo dejar al proveedor.</p><h2>¿Por qué usar una tarjeta de puntuación de proveedores?</h2><p>Sin un registro, las opiniones las moldean el último problema o el gestor de cuenta más simpático. Una tarjeta te da una base común y justa para comparar proveedores, detectar tendencias a tiempo y llevar datos a una conversación difícil. También te protege cuando la persona que gestionaba al proveedor se va, porque el historial se queda en la empresa.</p><h2>¿Qué debe medir una tarjeta de puntuación?</h2><p>Cuatro criterios cubren la mayoría de las relaciones. Mantén la lista corta para que de verdad se rellene.</p><ul><li><strong>Calidad.</strong> ¿Recibiste lo que pediste, sin defectos? Mide el porcentaje de artículos o tareas aceptados a la primera, la tasa de devoluciones o repeticiones y el número de reclamaciones.</li><li><strong>Entrega.</strong> ¿Llegó cuando se prometió? Mide la entrega puntual como porcentaje, además del número de entregas parciales o fallidas.</li><li><strong>Coste.</strong> ¿Es el precio total competitivo y previsible? Mira más allá del precio unitario: cargos inesperados, subidas de precio y el coste de corregir errores.</li><li><strong>Capacidad de respuesta.</strong> ¿Con qué rapidez y claridad responde el proveedor a las preguntas y resuelve los problemas? Mide el tiempo medio de respuesta y cuántas incidencias se resuelven al primer intento.</li></ul><h2>¿Cómo se ponderan los criterios?</h2><p>No todos los criterios pesan igual. La ponderación es la parte de la puntuación final que controla cada criterio, y los pesos deben sumar el 100 %. Un punto de partida habitual: calidad 35 %, entrega 30 %, coste 20 % y capacidad de respuesta 15 %. Ajústalo a la relación. En un proveedor de alimentos, la calidad puede merecer el 50 %. En una empresa de software, la capacidad de respuesta puede importar más que nada. Decide los pesos antes de ver ninguna puntuación, para no doblarlos hasta obtener la respuesta que querías.</p><h2>¿Cómo se puntúa a un proveedor?</h2><p>Usa una escala de 1 a 5 y escribe qué significa cada número en cada criterio. En entrega puntual, por ejemplo, un 5 podría ser el 98 % o más, un 3 en torno al 90 % y un 1 menos del 80 %. Las definiciones escritas evitan que dos personas puntúen distinto al mismo proveedor.</p><p>Un ejemplo con números. Un proveedor de embalajes saca un 4 en calidad, un 3 en entrega, un 5 en coste y un 4 en capacidad de respuesta:</p><ul><li>Calidad: 4 × 35 % = 1,40</li><li>Entrega: 3 × 30 % = 0,90</li><li>Coste: 5 × 20 % = 1,00</li><li>Capacidad de respuesta: 4 × 15 % = 0,60</li></ul><p>El total es 3,90 sobre 5, es decir, el 78 %. La cifra importa menos que el patrón: este proveedor es barato y amable, pero llega tarde demasiado a menudo, justo lo que hay que plantear en la próxima reunión.</p><h2>¿Cada cuánto conviene revisar a los proveedores?</h2><p>Recoge datos de forma continua, pero puntúa con un ritmo fijo. Una revisión trimestral sirve para la mayoría de los proveedores importantes, mensual para los críticos cuyo fallo paraliza tu negocio y anual para los menores. Fija las fechas con antelación y compara cada puntuación con el periodo anterior, porque la dirección suele decir más que el nivel.</p><h2>¿Cómo hablar con el proveedor de los resultados?</h2><p>Comparte la tarjeta en lugar de sacarla como una queja. Empieza por lo que va bien y luego muestra el criterio más débil con ejemplos concretos, como las tres entregas tardías de marzo. Pide la explicación del proveedor, acordad una o dos mejoras con fechas y dejadlas por escrito. Los proveedores suelen responder bien a un comentario claro, y los buenos acabarán pidiendo su propia puntuación.</p><h2>¿Cuándo hay que sustituir a un proveedor?</h2><p>Plantéate cambiar cuando ocurra alguna de estas situaciones:</p><ul><li>La puntuación se queda por debajo de tu mínimo, digamos 3,0, en dos revisiones seguidas pese a un plan de mejora acordado.</li><li>Un único fallo es grave, como un problema de seguridad, de cumplimiento normativo o un problema financiero importante.</li><li>El proveedor deja de responder o repite el mismo error tras prometer corregirlo.</li><li>Existe una opción claramente mejor una vez contados el coste y las molestias del cambio.</li></ul><p>Cambiar tiene costes reales, como la incorporación, las pruebas y un periodo de menor eficiencia, así que no te vayas al primer mal mes. Pero tampoco te quedes por costumbre. Ten un proveedor de reserva antes de necesitarlo, para que irse sea una decisión y no una urgencia.</p><h2>Errores comunes</h2><ul><li><strong>Demasiados criterios.</strong> De cuatro a seis son suficientes. Los formularios largos no se completan.</li><li><strong>Puntuar por intuición.</strong> Una puntuación sin datos detrás es solo una opinión con un número pegado.</li><li><strong>Juzgar solo por el precio.</strong> El más barato suele costar más cuando se cuentan retrasos y repeticiones.</li><li><strong>No compartir nunca los resultados.</strong> Una tarjeta que el proveedor nunca ve no mejora nada.</li><li><strong>Cambiar las reglas a mitad de año.</strong> Mantén estables criterios y pesos para que las tendencias sigan siendo comparables.</li></ul><h2>Todo en un mismo lugar</h2><p>Una hoja de cálculo basta para empezar. Si ya gestionas tus operaciones en <strong>FulcrumGrid Command Center</strong>, puedes mantener las puntuaciones de proveedores junto a tus demás KPI y proyectos, de modo que una tasa de entregas que baja se vea antes de la revisión trimestral y no durante ella. La herramienta es opcional; lo que marca la diferencia es el hábito de puntuar con constancia.</p><p>Elige cuatro criterios, pondéralos, puntúa según un calendario y habla con tus proveedores de los resultados. Normalmente eso basta para convertir la gestión de proveedores de una conjetura en una decisión que puedes defender.</p>
+
+        <h2>Preguntas frecuentes</h2>
+        <details class="faq-item"><summary>¿Cuántos criterios debe tener una tarjeta de puntuación de proveedores?</summary><p>De cuatro a seis son suficientes para la mayoría de las empresas. Calidad, entrega, coste y capacidad de respuesta cubren lo esencial, y puedes añadir uno o dos propios de tu sector, como el cumplimiento normativo o la sostenibilidad.</p></details>
+        <details class="faq-item"><summary>¿Qué es una buena puntuación para un proveedor?</summary><p>En una escala de 1 a 5, una puntuación ponderada de 4,0 o más es sólida, de 3,0 a 3,9 es aceptable pero conviene hablarla, y por debajo de 3,0 requiere un plan de mejora. Fija estos tramos antes de empezar a puntuar.</p></details>
+        <details class="faq-item"><summary>¿Deben las pequeñas empresas puntuar a todos los proveedores?</summary><p>No. Céntrate en los proveedores críticos o en los que concentran la mayor parte de tu gasto. Para los menores basta una revisión anual rápida.</p></details>
+        <details class="faq-item"><summary>¿Debo enseñar la tarjeta al proveedor?</summary><p>Sí. Compartir los resultados y acordar mejoras concretas es lo que cambia el comportamiento. Un proveedor no puede corregir un problema del que nunca se entera.</p></details>
+
+        <p style="margin-top:32px"><a href="/es/blog/"><span aria-hidden="true">←</span> Volver al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Ten el rendimiento de proveedores a la vista</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center te ayuda a seguir KPI y proyectos en un solo lugar, para que las puntuaciones de proveedores y las tendencias de entrega estén visibles entre revisiones.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/es/products/command-center/">Explorar Command Center</a>
+          <a class="btn btn-secondary" href="/es/blog/">Volver al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La columna vertebral operativa de los equipos modernos.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Productos</h5>
+          <a href="/es/products/">Todos los productos</a>
+          <a href="/es/products/hr-suite/">HR Suite</a>
+          <a href="/es/products/command-center/">Command Center</a>
+          <a href="/es/products/collection/">Collection</a>
+          <a href="/es/custom-apps/">Apps a medida</a>
+        </div>
+        <div class="foot-col">
+          <h5>Cuadrícula</h5>
+          <a href="/es/features/">Funciones</a>
+          <a href="/es/integrations/">Integraciones</a>
+          <a href="/es/how-it-works/">Cómo funciona</a>
+          <a href="/es/pricing/">Precios</a>
+          <a href="/es/regions/">Regiones</a>
+          <a href="/es/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Empresa</h5>
+          <a href="/es/about/">Acerca de</a>
+          <a href="/es/faq/">FAQ</a>
+          <a href="/es/contact/">Contacto</a>
+          <a href="/es/privacy/">Privacidad</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Todos los derechos reservados.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+</body>
+</html>
