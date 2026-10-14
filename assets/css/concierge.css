@@ -46,8 +46,9 @@
   padding: 0;
   display: block;
 }
-/* dismissed greeting → shrink the character to a compact launcher (still clickable to reopen) */
-#fg-concierge.fgc-no-invite .fgc-stage {
+/* dismissed greeting → shrink the character to a compact launcher, but restore
+   full size while the panel is open (reopening brings the character back) */
+#fg-concierge.fgc-no-invite:not(.is-open) .fgc-stage {
   width: clamp(56px, 10vmin, 82px);
   height: clamp(72px, 13vmin, 106px);
 }
