@@ -20,10 +20,24 @@ import concierge_config as cfg
 
 ROOT = os.environ.get('FG_ROOT') or os.path.abspath(os.path.join(HERE, '..', '..'))
 
-CSS_LINK = '<link rel="stylesheet" href="/assets/css/concierge.css">'
 M_A, M_B = '<!-- fg-concierge:start -->', '<!-- fg-concierge:end -->'
 # Directories never scanned (no HTML pages we own, or third-party).
 SKIP_DIRS = {'.git', 'node_modules', 'assets', 'workers', 'scripts', 'content', 'docs'}
+
+
+def _ver(relpath):
+    """Short content hash of an asset, for cache-busting its URL on each change."""
+    try:
+        with open(os.path.join(ROOT, relpath), 'rb') as f:
+            import hashlib
+            return hashlib.md5(f.read()).hexdigest()[:8]
+    except Exception:
+        return '1'
+
+
+JS_SRC = '/assets/js/concierge.js?v=' + _ver('assets/js/concierge.js')
+CSS_HREF = '/assets/css/concierge.css?v=' + _ver('assets/css/concierge.css')
+CSS_LINK = '<link rel="stylesheet" href="%s">' % CSS_HREF
 
 
 def _block():
@@ -39,14 +53,15 @@ def _block():
         '%s\n'
         '<div id="fg-concierge" data-fg-concierge hidden></div>\n'
         '<script>%s</script>\n'
-        '<script src="/assets/js/concierge.js" defer></script>\n'
-        '%s' % (M_A, boot, M_B)
+        '<script src="%s" defer></script>\n'
+        '%s' % (M_A, boot, JS_SRC, M_B)
     )
 
 
 def _strip(html):
     html = re.sub(re.escape(M_A) + r'.*?' + re.escape(M_B) + r'\n?', '', html, flags=re.S)
-    html = html.replace('  ' + CSS_LINK + '\n', '').replace(CSS_LINK + '\n', '').replace(CSS_LINK, '')
+    # remove any previously-injected concierge stylesheet link (any ?v=…)
+    html = re.sub(r'\s*<link rel="stylesheet" href="/assets/css/concierge\.css[^"]*">', '', html)
     return html
 
 
