@@ -48,7 +48,7 @@
   function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
   function ss(k, v) { try { if (v === undefined) return sessionStorage.getItem(k); sessionStorage.setItem(k, v); } catch (e) {} }
   function ls(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) {} }
-  if (ss('fgc_dismissed')) return;                      // dismissed this visit
+  var inviteDismissed = !!ss('fgc_invite_dismissed');   // greeting bubble dismissed this visit (character stays as launcher)
 
   var sessionId = ss('fgc_sid') || (Math.random().toString(36).slice(2) + Date.now().toString(36));
   ss('fgc_sid', sessionId);
@@ -109,16 +109,19 @@
 
   // ---- open / close ----
   function open() {
+    dismissInvite();                               // once engaged, drop the proactive greeting
     mount.classList.add('is-open'); mount.hidden = false;
     if (!ls('fgc_consent')) consentBox.hidden = false;
     setTimeout(function () { input.focus(); }, 60);
   }
-  function close() { mount.classList.remove('is-open'); }
-  function dismiss() { ss('fgc_dismissed', '1'); mount.hidden = true; try { stopListening(); } catch (e) {} }
+  function close() { mount.classList.remove('is-open'); }      // collapse to the character launcher
+  // The "×" dismisses only the greeting bubble; the character stays as a quiet,
+  // always-clickable launcher so the chat can always be reopened.
+  function dismissInvite() { inviteDismissed = true; ss('fgc_invite_dismissed', '1'); mount.classList.add('fgc-no-invite'); }
 
-  stage.addEventListener('click', open);
+  stage.addEventListener('click', function () { mount.classList.contains('is-open') ? close() : open(); });
   invite.querySelector('.fgc-cta').addEventListener('click', open);
-  invite.querySelector('.fgc-x').addEventListener('click', function (e) { e.stopPropagation(); dismiss(); });
+  invite.querySelector('.fgc-x').addEventListener('click', function (e) { e.stopPropagation(); dismissInvite(); });
   panel.querySelector('.fgc-min').addEventListener('click', close);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && mount.classList.contains('is-open')) close(); });
 
