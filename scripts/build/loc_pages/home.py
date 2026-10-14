@@ -93,12 +93,12 @@ PAGE = {
                 "L'IA, intégrée au travail.", "KI, in die Arbeit integriert.",
                 "IA, integrada en el trabajo.", "IA, integrata nel lavoro.",
                 "AI, ingebouwd in het werk."),
-            "A copilot that answers from your own policies, AI reviews grounded in the record, and acting agents that never move without a human approval — on the model and data boundary you choose. Live now in HR Suite and Collection.": _t(
-                "Un copilote qui répond à partir de vos propres politiques, des analyses IA ancrées dans le dossier et des agents actifs qui n'agissent jamais sans l'approbation d'une personne — sur le modèle et la frontière de données que vous choisissez. Déjà disponible dans HR Suite et Collection.",
-                "Ein Copilot, der aus Ihren eigenen Richtlinien antwortet, KI-Analysen direkt am Datensatz und handelnde Agenten, die sich nie ohne menschliche Freigabe bewegen — auf dem Modell und der Datengrenze Ihrer Wahl. Jetzt in HR Suite und Collection verfügbar.",
-                "Un copiloto que responde a partir de sus propias políticas, análisis de IA anclados en el registro y agentes que actúan pero nunca se mueven sin la aprobación de una persona — sobre el modelo y el límite de datos que usted elija. Ya disponible en HR Suite y Collection.",
-                "Un copilota che risponde dalle tue policy, analisi IA ancorate al record e agenti operativi che non si muovono mai senza l'approvazione di una persona — sul modello e sul confine dei dati che scegli. Già disponibile in HR Suite e Collection.",
-                "Een copilot die antwoordt vanuit uw eigen beleid, AI-analyses verankerd in het record en handelende agents die nooit iets doen zonder menselijke goedkeuring — op het model en de datagrens die u kiest. Nu beschikbaar in HR Suite en Collection."),
+            "A copilot that answers from your own policies, AI reviews grounded in the record, and acting agents that never move without a human approval — on the model and data boundary you choose. Live now in HR Suite, Collection and Command Center.": _t(
+                "Un copilote qui répond à partir de vos propres politiques, des analyses IA ancrées dans le dossier et des agents actifs qui n'agissent jamais sans l'approbation d'une personne — sur le modèle et la frontière de données que vous choisissez. Déjà disponible dans HR Suite, Collection et Command Center.",
+                "Ein Copilot, der aus Ihren eigenen Richtlinien antwortet, KI-Analysen direkt am Datensatz und handelnde Agenten, die sich nie ohne menschliche Freigabe bewegen — auf dem Modell und der Datengrenze Ihrer Wahl. Jetzt in HR Suite, Collection und Command Center verfügbar.",
+                "Un copiloto que responde a partir de sus propias políticas, análisis de IA anclados en el registro y agentes que actúan pero nunca se mueven sin la aprobación de una persona — sobre el modelo y el límite de datos que usted elija. Ya disponible en HR Suite, Collection y Command Center.",
+                "Un copilota che risponde dalle tue policy, analisi IA ancorate al record e agenti operativi che non si muovono mai senza l'approvazione di una persona — sul modello e sul confine dei dati che scegli. Già disponibile in HR Suite, Collection e Command Center.",
+                "Een copilot die antwoordt vanuit uw eigen beleid, AI-analyses verankerd in het record en handelende agents die nooit iets doen zonder menselijke goedkeuring — op het model en de datagrens die u kiest. Nu beschikbaar in HR Suite, Collection en Command Center."),
             "Copilot &amp; policy answers": _t(
                 "Copilote &amp; réponses sur les politiques", "Copilot &amp; Richtlinien-Antworten",
                 "Copiloto &amp; respuestas de políticas", "Copilota &amp; risposte sulle policy",
@@ -137,6 +137,10 @@ PAGE = {
                 "L'IA dans Collection →", "KI in Collection →",
                 "La IA en Collection →", "L'IA in Collection →",
                 "AI in Collection →"),
+            "AI in Command Center →": _t(
+                "L'IA dans Command Center →", "KI in Command Center →",
+                "La IA en Command Center →", "L'IA in Command Center →",
+                "AI in Command Center →"),
 
             # ---- 01 · Products ----
             "01 · The grid of apps": _t(
