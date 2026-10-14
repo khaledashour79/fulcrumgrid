@@ -33,13 +33,17 @@
           thinking: 'Thinking…', mic: 'Hold to talk', close: 'Close', dismiss: 'Dismiss',
           consent: 'Tap the mic to talk — your voice is sent to our assistant to answer you. ',
           contact: 'Contact us', err: "Sorry — I couldn't reach the assistant. Please try the contact page.",
-          sr: "Voice isn't supported in this browser — you can type instead." },
+          sr: "Voice isn't supported in this browser — you can type instead.",
+          micdenied: "I couldn't use the mic — allow microphone access in your browser, or just type.",
+          noheard: "I didn't catch that — tap the mic and try again, or type your question." },
     ar: { title: 'مساعد FulcrumGrid', invite: 'مرحبًا — أنا هنا للمساعدة. اسألني أي شيء عن FulcrumGrid.',
           talk: 'تحدّث إليّ', placeholder: 'اكتب رسالة…', send: 'إرسال', listening: 'أستمع…',
           thinking: 'أفكّر…', mic: 'اضغط للتحدّث', close: 'إغلاق', dismiss: 'إخفاء',
           consent: 'اضغط الميكروفون للتحدّث — يُرسَل صوتك إلى مساعدنا للإجابة عليك. ',
           contact: 'تواصل معنا', err: 'عذرًا — تعذّر الوصول إلى المساعد. جرّب صفحة التواصل من فضلك.',
-          sr: 'الإدخال الصوتي غير مدعوم في هذا المتصفح — يمكنك الكتابة بدلًا من ذلك.' }
+          sr: 'الإدخال الصوتي غير مدعوم في هذا المتصفح — يمكنك الكتابة بدلًا من ذلك.',
+          micdenied: 'تعذّر استخدام الميكروفون — اسمح بالوصول إلى الميكروفون في المتصفح، أو اكتب رسالتك.',
+          noheard: 'لم ألتقط ذلك — اضغط الميكروفون وحاول مجددًا، أو اكتب سؤالك.' }
   };
   var t = T[docLang] || T.en;
   var contactHref = (docLang === 'en' ? '' : '/' + docLang) + '/contact/';
@@ -257,18 +261,35 @@
     } catch (e) { onChunkEnd(); }
   }
 
-  // ---- speech recognition (STT) ----
+  // ---- speech-to-text: Web Speech API on desktop; on mobile/iOS (where it is
+  //      unavailable or unreliable) record the mic and transcribe via /stt ----
   var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  var canRecord = !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && window.MediaRecorder);
+  var isTouch = (navigator.maxTouchPoints > 0) || ('ontouchstart' in window) ||
+                (window.matchMedia && window.matchMedia('(pointer: coarse)').matches);
+  var useServerSTT = canRecord && (!SR || isTouch);
   var recog = null, listening = false;
+  var mediaRec = null, recStream = null, recChunks = [], recording = false, recTimer = null;
+
   function sttLang() {
     return { en: 'en-US', ar: 'ar-SA', fr: 'fr-FR', de: 'de-DE', es: 'es-ES', it: 'it-IT', nl: 'nl-NL' }[docLang] || 'en-US';
   }
+  function setMic(on) { micBtn.setAttribute('aria-pressed', on ? 'true' : 'false'); }
+
   function toggleMic() {
     if (!active) { location.href = contactHref; return; }
-    if (!SR) { addMsg('bot', t.sr, true); input.focus(); return; }
     ls('fgc_consent', '1'); consentBox.hidden = true;
-    listening ? stopListening() : startListening();
+    if (recording || listening) { stopMic(); return; }
+    if (useServerSTT) startRecording();
+    else if (SR) startListening();
+    else { addMsg('bot', t.sr, true); input.focus(); }
   }
+  function stopMic() {
+    if (recording) { try { mediaRec && mediaRec.state !== 'inactive' && mediaRec.stop(); } catch (e) { recording = false; setMic(false); } }
+    else stopListening();
+  }
+
+  // --- Web Speech (desktop) ---
   function startListening() {
     try {
       recog = new SR(); recog.lang = sttLang(); recog.interimResults = true; recog.maxAlternatives = 1;
@@ -283,10 +304,47 @@
       recog.onerror = function () { stopListening(); };
       recog.onend = function () { setMic(false); mount.classList.remove('is-listening'); if (finalTxt.trim()) ask(finalTxt); };
       recog.start(); listening = true; setMic(true); setState('listening');
-    } catch (e) { setMic(false); }
+    } catch (e) { setMic(false); if (canRecord) startRecording(); }   // fall back to server STT
   }
   function stopListening() { listening = false; setMic(false); try { recog && recog.stop(); } catch (e) {} }
-  function setMic(on) { micBtn.setAttribute('aria-pressed', on ? 'true' : 'false'); }
+
+  // --- server STT (mobile/iOS): record, then transcribe through the Worker ---
+  function pickMime() {
+    var types = ['audio/webm;codecs=opus', 'audio/webm', 'audio/mp4', 'audio/aac', 'audio/ogg'];
+    for (var i = 0; i < types.length; i++) { try { if (window.MediaRecorder.isTypeSupported(types[i])) return types[i]; } catch (e) {} }
+    return '';
+  }
+  function startRecording() {
+    navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
+      recStream = stream;
+      var mime = pickMime();
+      try { mediaRec = mime ? new MediaRecorder(stream, { mimeType: mime }) : new MediaRecorder(stream); }
+      catch (e) { mediaRec = new MediaRecorder(stream); }
+      recChunks = [];
+      mediaRec.ondataavailable = function (e) { if (e.data && e.data.size) recChunks.push(e.data); };
+      mediaRec.onstop = function () {
+        if (recTimer) { clearTimeout(recTimer); recTimer = null; }
+        stopStream();
+        var blob = new Blob(recChunks, { type: (mediaRec && mediaRec.mimeType) || 'audio/webm' });
+        recording = false; setMic(false); mount.classList.remove('is-listening');
+        if (blob.size > 1200) { setState('thinking'); statusTxt.textContent = t.thinking; sendSTT(blob); }
+        else setState('idle');
+      };
+      mediaRec.start();
+      recording = true; setMic(true); setState('listening'); statusTxt.textContent = t.listening;
+      recTimer = setTimeout(function () { if (recording) stopMic(); }, 30000);   // 30s safety cap
+    }).catch(function () { setMic(false); setState('idle'); addMsg('bot', t.micdenied, true); });
+  }
+  function stopStream() { if (recStream) { try { recStream.getTracks().forEach(function (tr) { tr.stop(); }); } catch (e) {} recStream = null; } }
+  function sendSTT(blob) {
+    fetch(endpoint + '/stt?lang=' + encodeURIComponent(docLang), {
+      method: 'POST', headers: { 'Content-Type': blob.type || 'audio/webm' }, body: blob
+    }).then(function (r) { if (!r.ok) throw 0; return r.json(); })
+      .then(function (j) {
+        var txt = (j && j.text || '').trim();
+        if (txt) ask(txt); else { setState('idle'); addMsg('bot', t.noheard, true); }
+      }).catch(function () { setState('idle'); addMsg('bot', t.err, true); });
+  }
 
   micBtn.addEventListener('click', toggleMic);
   panel.querySelector('.fgc-send').addEventListener('click', function () { ask(input.value); });

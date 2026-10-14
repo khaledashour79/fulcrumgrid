@@ -63,6 +63,7 @@ const MAX_HISTORY_TURNS = 10;     // clamp to the last N turns
 const MAX_BODY_BYTES = 64 * 1024; // reject oversized request bodies
 const MAX_TTS_CHARS = 800;        // truncate text before TTS
 const CHAT_MAX_TOKENS = 400;      // concise, speech-friendly answers
+const MAX_AUDIO_BYTES = 8 * 1024 * 1024; // reject STT uploads larger than this (~8 MB)
 
 // Rate limits.
 const IP_WINDOW_SEC = 600;        // 10 minutes
@@ -447,6 +448,59 @@ async function handleTts(request, env) {
 }
 
 // ---------------------------------------------------------------------------
+// STT provider (swappable). Reuses the ElevenLabs key — "Scribe" speech-to-text.
+// To swap to Deepgram/Groq/OpenAI, replace this function's body and keep the
+// return shape { ok, status, text }.
+// ---------------------------------------------------------------------------
+async function sttTranscribe(env, audioBuffer, contentType, lang) {
+  const form = new FormData();
+  form.append('file', new Blob([audioBuffer], { type: contentType || 'audio/webm' }), 'audio');
+  form.append('model_id', env.ELEVENLABS_STT_MODEL || 'scribe_v1');
+  if (lang && lang !== 'auto') form.append('language_code', lang);
+  const resp = await fetch('https://api.elevenlabs.io/v1/speech-to-text', {
+    method: 'POST',
+    headers: { 'xi-api-key': env.ELEVENLABS_API_KEY },
+    body: form
+  });
+  if (!resp.ok) return { ok: false, status: resp.status, text: '' };
+  let data = {};
+  try { data = await resp.json(); } catch (e) {}
+  return { ok: true, status: 200, text: (data && typeof data.text === 'string') ? data.text.trim() : '' };
+}
+
+// /stt — the browser records the mic (MediaRecorder) and POSTs the audio bytes;
+// we transcribe server-side so voice works on iOS Safari / mobile where the Web
+// Speech API is unavailable. Body is the raw audio; Content-Type is its mime.
+async function handleStt(request, env) {
+  if (!env.ELEVENLABS_API_KEY) {
+    return jsonResponse({ error: 'Voice input is not configured.' }, 500, request, env);
+  }
+  const ip = request.headers.get('cf-connecting-ip') || '';
+  const rl = await checkRateLimit(env, ip, '');
+  if (!rl.ok) return jsonResponse({ error: rl.error }, 429, request, env);
+
+  const cl = parseInt(request.headers.get('content-length') || '0', 10);
+  if (cl && cl > MAX_AUDIO_BYTES) return jsonResponse({ error: 'Audio too large.' }, 413, request, env);
+
+  let buf;
+  try { buf = await request.arrayBuffer(); } catch (e) { return jsonResponse({ error: 'Bad audio.' }, 400, request, env); }
+  if (!buf || !buf.byteLength) return jsonResponse({ error: 'No audio.' }, 400, request, env);
+  if (buf.byteLength > MAX_AUDIO_BYTES) return jsonResponse({ error: 'Audio too large.' }, 413, request, env);
+
+  const ct = request.headers.get('content-type') || 'audio/webm';
+  const lang = normalizeLang(new URL(request.url).searchParams.get('lang'));
+
+  let result;
+  try {
+    result = await sttTranscribe(env, buf, ct, lang);
+  } catch (e) {
+    return jsonResponse({ error: 'Transcription failed.' }, 502, request, env);
+  }
+  if (!result.ok) return jsonResponse({ error: 'Transcription unavailable.' }, 502, request, env);
+  return jsonResponse({ text: result.text }, 200, request, env);
+}
+
+// ---------------------------------------------------------------------------
 // Entry point
 // ---------------------------------------------------------------------------
 export default {
@@ -471,6 +525,13 @@ export default {
         return jsonResponse({ error: 'Method not allowed.' }, 405, request, env);
       }
       return handleTts(request, env);
+    }
+
+    if (path === '/stt') {
+      if (request.method !== 'POST') {
+        return jsonResponse({ error: 'Method not allowed.' }, 405, request, env);
+      }
+      return handleStt(request, env);
     }
 
     return jsonResponse({ error: 'Not found.' }, 404, request, env);
