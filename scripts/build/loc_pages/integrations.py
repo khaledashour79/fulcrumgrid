@@ -238,6 +238,36 @@ PAGE = {
                 "Conecte LinkedIn Learning y Coursera for Business de la misma manera — explore el catálogo del proveedor, asigne un curso y deje que las finalizaciones regresen automáticamente, con un certificado en el expediente del empleado.",
                 "Collega LinkedIn Learning e Coursera for Business allo stesso modo — esplora il catalogo del fornitore, assegna un corso e lascia che i completamenti rientrino automaticamente, con un certificato nel fascicolo del dipendente.",
                 "Verbind LinkedIn Learning en Coursera for Business op dezelfde manier — blader door de aanbiederscatalogus, wijs een cursus toe en laat voltooiingen automatisch terugvloeien, met een certificaat in het dossier van de medewerker."),
+            "06 · AI": _t("06 · IA", "06 · KI", "06 · IA", "06 · IA", "06 · AI"),
+            "Bring your own AI model.": _t(
+                "Apportez votre propre modèle d'IA.",
+                "Bringen Sie Ihr eigenes KI-Modell mit.",
+                "Traiga su propio modelo de IA.",
+                "Porta il tuo modello di IA.",
+                "Breng uw eigen AI-model mee."),
+            "The AI in HR Suite and Collection runs on the model and data boundary you choose — your key, your provider, off until you turn it on.": _t(
+                "L'IA de HR Suite et de Collection fonctionne sur le modèle et la frontière de données que vous choisissez — votre clé, votre fournisseur, désactivée tant que vous ne l'activez pas.",
+                "Die KI in HR Suite und Collection läuft auf dem Modell und der Datengrenze Ihrer Wahl — Ihr Schlüssel, Ihr Anbieter, aus, bis Sie sie einschalten.",
+                "La IA de HR Suite y Collection funciona sobre el modelo y el límite de datos que usted elija — su clave, su proveedor, desactivada hasta que la active.",
+                "L'IA di HR Suite e Collection funziona sul modello e sul confine dei dati che scegli — la tua chiave, il tuo provider, spenta finché non la attivi.",
+                "De AI in HR Suite en Collection draait op het model en de datagrens die u kiest — uw sleutel, uw provider, uit totdat u het inschakelt."),
+            "Anthropic &amp; OpenAI (BYOK)": _t(
+                "Anthropic &amp; OpenAI (votre clé)", "Anthropic &amp; OpenAI (eigener Schlüssel)",
+                "Anthropic &amp; OpenAI (tu clave)", "Anthropic &amp; OpenAI (tua chiave)",
+                "Anthropic &amp; OpenAI (eigen sleutel)"),
+            "Connect your own Anthropic or OpenAI key and the apps run their AI on it — no model is bundled or shared. HR Suite's AI Copilot and Collection's AI add-on both use the provider you bring.": _t(
+                "Connectez votre propre clé Anthropic ou OpenAI et les applications y exécutent leur IA — aucun modèle n'est fourni ni partagé. Le Copilot IA de HR Suite et l'option IA de Collection utilisent tous deux le fournisseur que vous apportez.",
+                "Verbinden Sie Ihren eigenen Anthropic- oder OpenAI-Schlüssel, und die Apps führen ihre KI darauf aus — kein Modell wird mitgeliefert oder geteilt. Der KI-Copilot von HR Suite und das KI-Add-on von Collection nutzen beide den von Ihnen gewählten Anbieter.",
+                "Conecte su propia clave de Anthropic u OpenAI y las aplicaciones ejecutan su IA en ella — no se incluye ni comparte ningún modelo. El Copiloto de IA de HR Suite y el complemento de IA de Collection usan el proveedor que usted aporta.",
+                "Collega la tua chiave Anthropic o OpenAI e le app vi eseguono la loro IA — nessun modello è incluso o condiviso. Il Copilot IA di HR Suite e l'add-on IA di Collection usano entrambi il provider che porti tu.",
+                "Verbind uw eigen Anthropic- of OpenAI-sleutel en de apps draaien hun AI erop — er wordt geen model meegeleverd of gedeeld. De AI-copilot van HR Suite en de AI-add-on van Collection gebruiken beide de provider die u meebrengt."),
+            "Private by design": _t("Confidentialité dès la conception", "Privat per Design", "Privado por diseño", "Privato per progettazione", "Privacy door ontwerp"),
+            "Personal data is minimised before anything is sent — identities pseudonymised and contact details, IDs and IBANs scrubbed — with a per-tenant kill switch, human-in-the-loop review, and retention and erasure controls.": _t(
+                "Les données personnelles sont minimisées avant tout envoi — identités pseudonymisées et coordonnées, identifiants et IBAN masqués — avec un coupe-circuit par locataire, une revue humaine et des contrôles de conservation et d'effacement.",
+                "Personenbezogene Daten werden vor dem Versand minimiert — Identitäten pseudonymisiert und Kontaktdaten, Ausweisnummern und IBANs bereinigt — mit einem Not-Aus pro Mandant, menschlicher Prüfung sowie Aufbewahrungs- und Löschkontrollen.",
+                "Los datos personales se minimizan antes de enviar nada — identidades seudonimizadas y datos de contacto, identificadores e IBAN depurados — con un interruptor de emergencia por inquilino, revisión humana y controles de conservación y borrado.",
+                "I dati personali sono minimizzati prima di qualsiasi invio — identità pseudonimizzate e recapiti, documenti e IBAN ripuliti — con un interruttore di emergenza per tenant, revisione umana e controlli di conservazione e cancellazione.",
+                "Persoonsgegevens worden geminimaliseerd voordat er iets wordt verzonden — identiteiten gepseudonimiseerd en contactgegevens, ID's en IBANs geschoond — met een noodstop per tenant, menselijke beoordeling en bewaar- en wiscontroles."),
             "Don't see your system?": _t(
                 'Vous ne voyez pas votre système ?', 'Ihr System nicht dabei?',
                 '¿No ve su sistema?', 'Non trovi il tuo sistema?', 'Ziet u uw systeem niet?'),
