@@ -364,12 +364,12 @@ PAGE['/pricing/command-center/'] = {
         "Everything in Pilot + risk": _t(
             "Tout ce que contient Pilot + risque", "Alles aus Pilot + Risiko", "Todo lo de Pilot + riesgo",
             "Tutto ciò che c'è in Pilot + rischio", "Alles uit Pilot + risico"),
-        "AI assistant, auto-summary &amp; anomalies": _t(
-            "Assistant IA, résumé automatique &amp; anomalies",
-            "KI-Assistent, Auto-Zusammenfassung &amp; Anomalien",
-            "Asistente de IA, resumen automático &amp; anomalías",
-            "Assistente IA, riepilogo automatico &amp; anomalie",
-            "AI-assistent, automatische samenvatting &amp; afwijkingen"),
+        "Contracts, loans &amp; rents · require-ack": _t(
+            "Contrats, prêts &amp; loyers · accusé requis",
+            "Verträge, Kredite &amp; Mieten · Bestätigungspflicht",
+            "Contratos, préstamos &amp; alquileres · acuse requerido",
+            "Contratti, prestiti &amp; affitti · conferma richiesta",
+            "Contracten, leningen &amp; huur · bevestiging vereist"),
         "1 ERP connection · innovation pipeline": _t(
             "1 connexion ERP · pipeline d'innovation", "1 ERP-Verbindung · Innovationspipeline", "1 conexión ERP · pipeline de innovación",
             "1 connessione ERP · pipeline di innovazione", "1 ERP-verbinding · innovatiepijplijn"),
@@ -431,12 +431,6 @@ PAGE['/pricing/command-center/'] = {
         "<th scope=\"row\">Innovation pipeline</th>": _t(
             "<th scope=\"row\">Pipeline d'innovation</th>", "<th scope=\"row\">Innovationspipeline</th>", "<th scope=\"row\">Pipeline de innovación</th>",
             "<th scope=\"row\">Pipeline di innovazione</th>", "<th scope=\"row\">Innovatiepijplijn</th>"),
-        "<th scope=\"row\">AI assistant + auto-summary + anomalies</th>": _t(
-            "<th scope=\"row\">Assistant IA + résumé auto + anomalies</th>",
-            "<th scope=\"row\">KI-Assistent + Auto-Zusammenfassung + Anomalien</th>",
-            "<th scope=\"row\">Asistente de IA + resumen automático + anomalías</th>",
-            "<th scope=\"row\">Assistente IA + riepilogo automatico + anomalie</th>",
-            "<th scope=\"row\">AI-assistent + automatische samenvatting + afwijkingen</th>"),
         "<th scope=\"row\">ERP integrations (SAP · QBO · Odoo · Oracle)</th>": _t(
             "<th scope=\"row\">Intégrations ERP (SAP · QBO · Odoo · Oracle)</th>",
             "<th scope=\"row\">ERP-Integrationen (SAP · QBO · Odoo · Oracle)</th>",
