@@ -1,0 +1,27 @@
+name = "fg-concierge"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+
+# --- Rate-limiting KV namespace -------------------------------------------------
+# Create it once with:   wrangler kv namespace create RL
+# then paste the printed id below (replacing <KV_ID>).
+[[kv_namespaces]]
+binding = "RL"
+id = "<KV_ID>"   # TODO: replace with the id from `wrangler kv namespace create RL`
+
+# --- Non-secret configuration ---------------------------------------------------
+# These are plain vars (visible in the dashboard). Secrets are NOT here — see below.
+[vars]
+# Comma-separated list of origins allowed to call this Worker (CORS).
+ALLOWED_ORIGINS = "https://fulcrumgrid.com,http://localhost:8000"
+# Anthropic model used for /chat.
+ANTHROPIC_MODEL = "claude-haiku-4-5"
+# ElevenLabs voice + model used for /tts. Set a real voice id before deploying.
+ELEVENLABS_VOICE_ID = "<ELEVENLABS_VOICE_ID>"   # TODO: set your voice id
+ELEVENLABS_MODEL = "eleven_multilingual_v2"
+
+# --- Secrets (do NOT put these in this file) ------------------------------------
+# Set them with wrangler so they never land in source control:
+#   wrangler secret put ANTHROPIC_API_KEY
+#   wrangler secret put ELEVENLABS_API_KEY
+# They are injected into `env` at runtime alongside the vars above.
