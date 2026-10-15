@@ -209,16 +209,26 @@
 
   // ---- ordered speech queue: fetch each chunk's audio and play it in turn,
   //      with lip-flap; browser speechSynthesis is the per-chunk fallback. ----
-  var audioEl = null, audioCtx = null, analyser = null, rafId = 0;
+  var audioEl = null, flapTimer = 0;
   // Mobile (esp. iOS) blocks audio that wasn't started by a user gesture, so a
   // spoken reply arriving seconds after the mic tap is silently refused. Prime
-  // the context + the <audio> element inside the gesture once, so later TTS and
-  // the mic VAD both work. A tiny silent clip "blesses" the element.
+  // the <audio> element inside the gesture once — a tiny silent clip "blesses"
+  // it — so later TTS can play. Playback uses this plain element (not Web Audio)
+  // on purpose: after the mic has been used, Web Audio output gets stuck on the
+  // phone earpiece, while a plain media element routes to the loudspeaker.
   var SILENT_MP3 = 'data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tQxAADB8AhSmxhIIEVCSiJrDCQBTcu3UrAIwUdkRgQbFAZC1CQEwTJ9mjRvBA4UOLD8nKVOWfh+UlK3z/177OXrfOdKl7pyn3Xf//WreyTEFNRTMuMTAwVVVVVVVVVVVVVUxBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV';
+  function ensureAudioEl() {
+    if (!audioEl) {
+      audioEl = new Audio();
+      try { audioEl.setAttribute('playsinline', ''); } catch (e) {}
+      audioEl.addEventListener('ended', onChunkEnd);
+      audioEl.addEventListener('error', onChunkEnd);
+    }
+    return audioEl;
+  }
   function unlockAudio() {
-    try { audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)(); if (audioCtx.state === 'suspended') audioCtx.resume(); } catch (e) {}
     try {
-      if (!audioEl) { audioEl = new Audio(); audioEl.addEventListener('ended', onChunkEnd); audioEl.addEventListener('error', onChunkEnd); }
+      ensureAudioEl();
       if (!audioEl._fgcBlessed) {
         audioEl._fgcBlessed = true;
         audioEl.src = SILENT_MP3;
@@ -244,28 +254,18 @@
   }
   function playBlob(blob) {
     try {
-      if (!audioEl) { audioEl = new Audio(); audioEl.addEventListener('ended', onChunkEnd); audioEl.addEventListener('error', onChunkEnd); }
+      ensureAudioEl();
       audioEl.src = URL.createObjectURL(blob);
-      startAnalyser(audioEl);
-      audioEl.play().catch(function () { onChunkEnd(); });
+      startFlap();
+      var p = audioEl.play(); if (p && p.catch) p.catch(function () { onChunkEnd(); });
     } catch (e) { onChunkEnd(); }
   }
-  function onChunkEnd() { ttsPlaying = false; if (rafId) cancelAnimationFrame(rafId); setMouth(0); pumpQueue(); }
-  function finishSpeaking() { if (rafId) cancelAnimationFrame(rafId); setMouth(0); setState('idle'); }
-  function startAnalyser(a) {
-    try {
-      audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
-      if (audioCtx.state === 'suspended') { try { audioCtx.resume(); } catch (e) {} }
-      if (!a._fgcSrc) { a._fgcSrc = audioCtx.createMediaElementSource(a); analyser = audioCtx.createAnalyser(); analyser.fftSize = 256; a._fgcSrc.connect(analyser); analyser.connect(audioCtx.destination); }
-      var data = new Uint8Array(analyser.frequencyBinCount);
-      (function tick() {
-        if (!analyser) return; analyser.getByteFrequencyData(data);
-        var s = 0; for (var i = 0; i < data.length; i++) s += data[i];
-        setMouth((s / data.length) / 110);
-        rafId = requestAnimationFrame(tick);
-      })();
-    } catch (e) {}
-  }
+  function onChunkEnd() { ttsPlaying = false; stopFlap(); setMouth(0); pumpQueue(); }
+  function finishSpeaking() { stopFlap(); setMouth(0); setState('idle'); }
+  // Plain-element playback gives us no amplitude to read, so the mouth is driven
+  // by a gentle timed flap while a chunk is playing.
+  function startFlap() { stopFlap(); flapTimer = setInterval(function () { setMouth(0.22 + Math.random() * 0.6); }, 95); }
+  function stopFlap() { if (flapTimer) { clearInterval(flapTimer); flapTimer = 0; } }
   function browserSpeakChunk(text) {
     try {
       if (!('speechSynthesis' in window)) { onChunkEnd(); return; }
@@ -343,6 +343,7 @@
       mediaRec.onstop = function () {
         if (recTimer) { clearTimeout(recTimer); recTimer = null; }
         stopStream();
+        closeMicCtx();                        // release the record audio session → playback returns to the loudspeaker
         var blob = new Blob(recChunks, { type: (mediaRec && mediaRec.mimeType) || 'audio/webm' });
         recording = false; setMic(false); mount.classList.remove('is-listening');
         if (blob.size > 1200) { setState('thinking'); statusTxt.textContent = t.thinking; sendSTT(blob); }
@@ -357,18 +358,23 @@
   // Voice-activity auto-stop: once the visitor has spoken, end the recording
   // after ~1.4s of quiet so they don't have to tap the mic again. Falls back to
   // the 30s cap / manual tap if the audio context can't run (older browsers).
+  // The VAD runs on its OWN short-lived AudioContext (micCtx), closed the moment
+  // recording ends — never the playback path — so the mic's record audio session
+  // doesn't trap the spoken reply on the earpiece.
+  var micCtx = null;
+  function closeMicCtx() { if (micCtx) { try { micCtx.close(); } catch (e) {} micCtx = null; } }
   function startVAD(stream) {
     try {
-      audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
-      if (audioCtx.state === 'suspended') { try { audioCtx.resume(); } catch (e) {} }
-      var src = audioCtx.createMediaStreamSource(stream);
-      var vad = audioCtx.createAnalyser(); vad.fftSize = 512;
+      micCtx = new (window.AudioContext || window.webkitAudioContext)();
+      if (micCtx.state === 'suspended') { try { micCtx.resume(); } catch (e) {} }
+      var src = micCtx.createMediaStreamSource(stream);
+      var vad = micCtx.createAnalyser(); vad.fftSize = 512;
       src.connect(vad);                                    // not to destination — no feedback
       var buf = new Uint8Array(vad.frequencyBinCount);
       var started = Date.now(), lastLoud = started, heard = false;
       var MIN_MS = 700, SILENCE_MS = 1400, LOUD = 12;
       (function monitor() {
-        if (!recording) { try { src.disconnect(); } catch (e) {} return; }
+        if (!recording || !micCtx) { try { src.disconnect(); } catch (e) {} return; }
         vad.getByteFrequencyData(buf);
         var s = 0; for (var i = 0; i < buf.length; i++) s += buf[i];
         var avg = s / buf.length, now = Date.now();
