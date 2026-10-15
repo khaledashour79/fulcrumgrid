@@ -453,8 +453,16 @@ async function handleTts(request, env) {
 // return shape { ok, status, text }.
 // ---------------------------------------------------------------------------
 async function sttTranscribe(env, audioBuffer, contentType, lang) {
+  const ct = contentType || 'audio/webm';
+  // ElevenLabs' multipart upload wants a filename with a real extension — a
+  // bare "audio" is rejected on some paths. Derive one from the mime type.
+  const ext = (ct.indexOf('mp4') !== -1 || ct.indexOf('m4a') !== -1 || ct.indexOf('aac') !== -1) ? 'm4a'
+            : (ct.indexOf('mpeg') !== -1 || ct.indexOf('mp3') !== -1) ? 'mp3'
+            : (ct.indexOf('ogg') !== -1) ? 'ogg'
+            : (ct.indexOf('wav') !== -1) ? 'wav'
+            : 'webm';
   const form = new FormData();
-  form.append('file', new Blob([audioBuffer], { type: contentType || 'audio/webm' }), 'audio');
+  form.append('file', new Blob([audioBuffer], { type: ct }), 'audio.' + ext);
   form.append('model_id', env.ELEVENLABS_STT_MODEL || 'scribe_v1');
   if (lang && lang !== 'auto') form.append('language_code', lang);
   const resp = await fetch('https://api.elevenlabs.io/v1/speech-to-text', {
@@ -462,7 +470,11 @@ async function sttTranscribe(env, audioBuffer, contentType, lang) {
     headers: { 'xi-api-key': env.ELEVENLABS_API_KEY },
     body: form
   });
-  if (!resp.ok) return { ok: false, status: resp.status, text: '' };
+  if (!resp.ok) {
+    let detail = '';
+    try { detail = (await resp.text() || '').slice(0, 400); } catch (e) {}
+    return { ok: false, status: resp.status, text: '', detail: detail };
+  }
   let data = {};
   try { data = await resp.json(); } catch (e) {}
   return { ok: true, status: 200, text: (data && typeof data.text === 'string') ? data.text.trim() : '' };
@@ -496,7 +508,7 @@ async function handleStt(request, env) {
   } catch (e) {
     return jsonResponse({ error: 'Transcription failed.' }, 502, request, env);
   }
-  if (!result.ok) return jsonResponse({ error: 'Transcription unavailable.' }, 502, request, env);
+  if (!result.ok) return jsonResponse({ error: 'Transcription unavailable.', status: result.status || 0, detail: result.detail || '' }, 502, request, env);
   return jsonResponse({ text: result.text }, 200, request, env);
 }
 
