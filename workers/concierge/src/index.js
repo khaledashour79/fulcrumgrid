@@ -470,11 +470,7 @@ async function sttTranscribe(env, audioBuffer, contentType, lang) {
     headers: { 'xi-api-key': env.ELEVENLABS_API_KEY },
     body: form
   });
-  if (!resp.ok) {
-    let detail = '';
-    try { detail = (await resp.text() || '').slice(0, 400); } catch (e) {}
-    return { ok: false, status: resp.status, text: '', detail: detail };
-  }
+  if (!resp.ok) return { ok: false, status: resp.status, text: '' };
   let data = {};
   try { data = await resp.json(); } catch (e) {}
   return { ok: true, status: 200, text: (data && typeof data.text === 'string') ? data.text.trim() : '' };
@@ -508,7 +504,7 @@ async function handleStt(request, env) {
   } catch (e) {
     return jsonResponse({ error: 'Transcription failed.' }, 502, request, env);
   }
-  if (!result.ok) return jsonResponse({ error: 'Transcription unavailable.', status: result.status || 0, detail: result.detail || '' }, 502, request, env);
+  if (!result.ok) return jsonResponse({ error: 'Transcription unavailable.' }, 502, request, env);
   return jsonResponse({ text: result.text }, 200, request, env);
 }
 
