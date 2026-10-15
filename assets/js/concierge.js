@@ -114,6 +114,7 @@
   // ---- open / close ----
   function open() {
     dismissInvite();                               // once engaged, drop the proactive greeting
+    unlockAudio();                                 // bless audio while we're in the open gesture
     mount.classList.add('is-open'); mount.hidden = false;
     if (!ls('fgc_consent')) consentBox.hidden = false;
     setTimeout(function () { input.focus(); }, 60);
@@ -209,6 +210,22 @@
   // ---- ordered speech queue: fetch each chunk's audio and play it in turn,
   //      with lip-flap; browser speechSynthesis is the per-chunk fallback. ----
   var audioEl = null, audioCtx = null, analyser = null, rafId = 0;
+  // Mobile (esp. iOS) blocks audio that wasn't started by a user gesture, so a
+  // spoken reply arriving seconds after the mic tap is silently refused. Prime
+  // the context + the <audio> element inside the gesture once, so later TTS and
+  // the mic VAD both work. A tiny silent clip "blesses" the element.
+  var SILENT_MP3 = 'data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tQxAADB8AhSmxhIIEVCSiJrDCQBTcu3UrAIwUdkRgQbFAZC1CQEwTJ9mjRvBA4UOLD8nKVOWfh+UlK3z/177OXrfOdKl7pyn3Xf//WreyTEFNRTMuMTAwVVVVVVVVVVVVVUxBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV';
+  function unlockAudio() {
+    try { audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)(); if (audioCtx.state === 'suspended') audioCtx.resume(); } catch (e) {}
+    try {
+      if (!audioEl) { audioEl = new Audio(); audioEl.addEventListener('ended', onChunkEnd); audioEl.addEventListener('error', onChunkEnd); }
+      if (!audioEl._fgcBlessed) {
+        audioEl._fgcBlessed = true;
+        audioEl.src = SILENT_MP3;
+        var p = audioEl.play(); if (p && p.catch) p.catch(function () {});
+      }
+    } catch (e) {}
+  }
   function enqueueSpeak(text) {
     if (!text) return;
     ttsQueue.push(text);
@@ -278,6 +295,7 @@
 
   function toggleMic() {
     if (!active) { location.href = contactHref; return; }
+    unlockAudio();                                 // the tap is our gesture — bless audio for the spoken reply
     ls('fgc_consent', '1'); consentBox.hidden = true;
     if (recording || listening) { stopMic(); return; }
     if (useServerSTT) startRecording();
@@ -333,7 +351,32 @@
       mediaRec.start();
       recording = true; setMic(true); setState('listening'); statusTxt.textContent = t.listening;
       recTimer = setTimeout(function () { if (recording) stopMic(); }, 30000);   // 30s safety cap
+      startVAD(stream);                                                           // auto-stop on a pause
     }).catch(function () { setMic(false); setState('idle'); addMsg('bot', t.micdenied, true); });
+  }
+  // Voice-activity auto-stop: once the visitor has spoken, end the recording
+  // after ~1.4s of quiet so they don't have to tap the mic again. Falls back to
+  // the 30s cap / manual tap if the audio context can't run (older browsers).
+  function startVAD(stream) {
+    try {
+      audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+      if (audioCtx.state === 'suspended') { try { audioCtx.resume(); } catch (e) {} }
+      var src = audioCtx.createMediaStreamSource(stream);
+      var vad = audioCtx.createAnalyser(); vad.fftSize = 512;
+      src.connect(vad);                                    // not to destination — no feedback
+      var buf = new Uint8Array(vad.frequencyBinCount);
+      var started = Date.now(), lastLoud = started, heard = false;
+      var MIN_MS = 700, SILENCE_MS = 1400, LOUD = 12;
+      (function monitor() {
+        if (!recording) { try { src.disconnect(); } catch (e) {} return; }
+        vad.getByteFrequencyData(buf);
+        var s = 0; for (var i = 0; i < buf.length; i++) s += buf[i];
+        var avg = s / buf.length, now = Date.now();
+        if (avg > LOUD) { lastLoud = now; if (now - started > 200) heard = true; }
+        if (heard && now - started > MIN_MS && now - lastLoud > SILENCE_MS) { try { src.disconnect(); } catch (e) {} stopMic(); return; }
+        requestAnimationFrame(monitor);
+      })();
+    } catch (e) { /* no VAD — manual stop / 30s cap still apply */ }
   }
   function stopStream() { if (recStream) { try { recStream.getTracks().forEach(function (tr) { tr.stop(); }); } catch (e) {} recStream = null; } }
   function sendSTT(blob) {
@@ -347,8 +390,8 @@
   }
 
   micBtn.addEventListener('click', toggleMic);
-  panel.querySelector('.fgc-send').addEventListener('click', function () { ask(input.value); });
-  input.addEventListener('keydown', function (e) { if (e.key === 'Enter') ask(input.value); });
+  panel.querySelector('.fgc-send').addEventListener('click', function () { unlockAudio(); ask(input.value); });
+  input.addEventListener('keydown', function (e) { if (e.key === 'Enter') { unlockAudio(); ask(input.value); } });
 
   // ---- optional Rive character ----
   loadRive();
