@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>ما هو مؤشر فعالية التحصيل CEI وكيف يُحسب؟ — FulcrumGrid</title>
+  <meta name="description" content="يوضح مؤشر فعالية التحصيل نسبة الذمم القابلة للتحصيل التي حصّلتها فعلاً. تعرّف على المعادلة ومثال رقمي وكيفية قراءة النتيجة." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="ما هو مؤشر فعالية التحصيل CEI وكيف يُحسب؟" />
+  <meta property="og:description" content="يوضح مؤشر فعالية التحصيل نسبة الذمم القابلة للتحصيل التي حصّلتها فعلاً. تعرّف على المعادلة ومثال رقمي وكيفية قراءة النتيجة." />
+  <meta property="og:url" content="https://fulcrumgrid.com/ar/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-16" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="منصة تحصيل الديون من FulcrumGrid — الذمم والمدفوعات" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ما هو مؤشر فعالية التحصيل CEI وكيف يُحسب؟" />
+  <meta name="twitter:description" content="يوضح مؤشر فعالية التحصيل نسبة الذمم القابلة للتحصيل التي حصّلتها فعلاً. تعرّف على المعادلة ومثال رقمي وكيفية قراءة النتيجة." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/ar/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/cairo-600-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/cairo-400-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "ما هو مؤشر فعالية التحصيل CEI وكيف يُحسب؟",
+    "description": "يوضح مؤشر فعالية التحصيل نسبة الذمم القابلة للتحصيل التي حصّلتها فعلاً. تعرّف على المعادلة ومثال رقمي وكيفية قراءة النتيجة.",
+    "datePublished": "2026-10-16",
+    "dateModified": "2026-10-16",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/ar/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "ar"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "الرئيسية",
+        "item": "https://fulcrumgrid.com/ar/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "المدوّنة",
+        "item": "https://fulcrumgrid.com/ar/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "دليل مؤشر CEI",
+        "item": "https://fulcrumgrid.com/ar/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "ما هي النتيجة الجيدة لمؤشر فعالية التحصيل؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "يستهدف معظم الفرق ٨٠٪ فأكثر، و١٠٠٪ هي الحالة المثالية. يعتمد الهدف المناسب على قطاعك وشروط الدفع، فقارن أولاً بنتائجك السابقة."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "هل يمكن أن يتجاوز CEI نسبة ١٠٠٪؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "عادةً لا. وإن حدث فراجع البيانات: مدفوعات مسجلة في الفترة الخطأ، أو إشعارات دائنة، أو أرصدة ذمم غير متطابقة."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "هل أستخدم CEI أم DSO؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "استخدم الاثنين. يُظهر DSO المدة التي يستغرقها الدفع، ويُظهر CEI مدى فعالية فريقك في تحصيل المستحق."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كم مرة يجب أن أحسب CEI؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "الإيقاع المعتاد شهري. قد يفيد الحساب الأسبوعي أثناء حملة تحصيل، لكن الفترات القصيرة تجعل الرقم أكثر تذبذباً."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=ae8f0bf4">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <a href="/ar/products/">المنتجات</a>
+        <a href="/ar/features/">الشبكة</a>
+        <a href="/ar/pricing/">الأسعار</a>
+        <a href="/ar/regions/">المناطق</a>
+        <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
+        <a href="/ar/contact/">اتصل بنا</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="اللغة">ع ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" class="active" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      </div>
+      <button class="nav-toggle" aria-label="القائمة"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/ar/">الرئيسية</a> / <a href="/ar/blog/">المدوّنة</a> / دليل مؤشر CEI</p>
+        <span class="tag tag-accent">التحصيل</span>
+        <h1>ما هو مؤشر فعالية التحصيل CEI وكيف يُحسب؟</h1>
+        <p class="hero-intro">يوضح مؤشر فعالية التحصيل نسبة الذمم القابلة للتحصيل التي حصّلتها فعلاً. تعرّف على المعادلة ومثال رقمي وكيفية قراءة النتيجة.</p>
+        <p class="mono"><time datetime="2026-10-16">١٦ أكتوبر ٢٠٢٦</time> · ٦ دقائق للقراءة</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>غالباً ما يُقيَّم فريق التحصيل برقم واحد: كم دخل من النقد. لكن النقد يتوقف على حجم ما فُوتر، فالشهر الجيد لا يعني بالضرورة عملية جيدة. أما مؤشر فعالية التحصيل (CEI) فيجيب عن سؤال أدق: من كل ما كان بإمكاننا تحصيله، كم حصّلنا فعلاً؟ وفيما يلي إجابات أكثر الأسئلة شيوعاً.</p><h2>ما هو مؤشر فعالية التحصيل؟</h2><p>CEI نسبة مئوية تقيس مدى نجاح الفريق في تحصيل الذمم المدينة المستحقة خلال فترة ما، وهي عادةً شهر. النتيجة ١٠٠٪ تعني أن كل ما أمكن تحصيله قد حُصّل. وأي نتيجة أقل تعني أن جزءاً من المال بقي دون تحصيل.</p><h2>ما معادلة CEI؟</h2><p><strong>CEI = (الذمم المدينة في بداية الفترة + المبيعات الآجلة &minus; إجمالي الذمم المدينة في نهاية الفترة) &divide; (الذمم المدينة في بداية الفترة + المبيعات الآجلة &minus; الذمم الجارية في نهاية الفترة) &times; ١٠٠</strong></p><ul><li><strong>الذمم في بداية الفترة.</strong> إجمالي المبالغ المستحقة لك عند بدء الفترة.</li><li><strong>المبيعات الآجلة.</strong> الفواتير الصادرة بالآجل خلال الفترة.</li><li><strong>إجمالي الذمم في نهاية الفترة.</strong> كل ما بقي مستحقاً عند النهاية، سواء حلّ أجله أم لا.</li><li><strong>الذمم الجارية في نهاية الفترة.</strong> الجزء من هذا الرصيد الذي لم يحلّ موعده بعد. يُستبعد من المقام لأنه لم يكن بالإمكان تحصيله منطقياً.</li></ul><h2>هل من مثال محلول؟</h2><p>لنفترض أنك بدأت سبتمبر بذمم مدينة قدرها ٥٠٠٬٠٠٠ وأصدرت مبيعات آجلة بقيمة ٨٠٠٬٠٠٠. في نهاية الشهر يبلغ إجمالي المستحق لك ٥٦٠٬٠٠٠، منها ٤٤٠٬٠٠٠ ما زالت ضمن مهلة السداد و١٢٠٬٠٠٠ متأخرة.</p><ul><li>البسط: ٥٠٠٬٠٠٠ + ٨٠٠٬٠٠٠ &minus; ٥٦٠٬٠٠٠ = ٧٤٠٬٠٠٠</li><li>المقام: ٥٠٠٬٠٠٠ + ٨٠٠٬٠٠٠ &minus; ٤٤٠٬٠٠٠ = ٨٦٠٬٠٠٠</li><li>CEI: ٧٤٠٬٠٠٠ &divide; ٨٦٠٬٠٠٠ &times; ١٠٠ = <strong>٨٦٫٠٪</strong></li></ul><p>حصّل الفريق ٨٦٪ مما كان قابلاً للتحصيل. أما الـ١٤٪ المتبقية فهي الرصيد المتأخر الذي ينتقل إلى الشهر التالي.</p><h2>ما الفرق بين CEI وDSO؟</h2><p>يخبرك مؤشر DSO (متوسط أيام التحصيل) بالمدة التي يستغرقها استلام المدفوعات في المتوسط. وبالأرقام نفسها يساوي ٥٦٠٬٠٠٠ &divide; ٨٠٠٬٠٠٠ &times; ٣٠، أي نحو ٢١ يوماً. وهو مقياس سرعة يتأثر بحجم المبيعات والموسمية وشروط الدفع. فقد تؤدي فاتورة كبيرة تصدر في آخر يوم من الشهر إلى رفع DSO دون أي تقصير من الفريق.</p><p>أما CEI فيقيس الجهد والنتيجة مقارنةً بما كان مستحقاً فعلاً. ولأنه يتجاهل الذمم الجارية فهو أعدل بحق المحصّلين وأقل تأثراً بتوقيت الفواتير. ويعملان معاً على أفضل وجه: DSO يُظهر دورة النقد، وCEI يُظهر مدى كفاءة الفريق في إدارتها.</p><h2>كيف تقرأ النتيجة؟</h2><ul><li><strong>١٠٠٪:</strong> الوضع المثالي. حُصّل كل ما أمكن تحصيله.</li><li><strong>٨٠٪ فأكثر:</strong> هدف شائع وعلامة صحية في الغالب.</li><li><strong>أقل من ٨٠٪:</strong> الأرصدة المتأخرة تتراكم. افحص عملاء محددين وأعمار الفواتير.</li></ul><p>تختلف الأهداف بحسب القطاع وشروط الدفع، لذا تابع اتجاهك الخاص على مدى أشهر بدلاً من مطاردة رقم واحد.</p><h2>ما الذي يرفع CEI أو يخفضه؟</h2><h3>ما يرفعه</h3><ul><li>فواتير واضحة ودقيقة ترسل في موعدها.</li><li>تذكيرات قبل الاستحقاق وبعده مباشرة.</li><li>حل النزاعات بسرعة.</li><li>فحص الائتمان وشروط معقولة للعملاء الجدد.</li></ul><h3>ما يخفضه</h3><ul><li>أخطاء الفواتير التي تثير النزاعات.</li><li>عملاء كبار اعتادوا السداد متأخرين.</li><li>مدفوعات غير مطابقة تُبقي فواتير مسددة مفتوحة.</li><li>التحصيل فقط عندما يتذكر أحدهم.</li></ul><h2>ما الأخطاء التي ينبغي تجنبها؟</h2><ul><li><strong>استخدام فترات مختلفة.</strong> يجب أن تغطي أرصدة البداية والنهاية الفترة نفسها.</li><li><strong>إدخال المبيعات النقدية.</strong> المبيعات الآجلة وحدها تدخل في المعادلة.</li><li><strong>الخلط بين الجاري والمتأخر.</strong> أخطاء تقادم الذمم تغيّر المقام والنتيجة.</li><li><strong>إهمال الديون المعدومة والإشعارات الدائنة.</strong> حدّد كيف تعاملها والتزم بذلك.</li><li><strong>الحكم على شهر واحد.</strong> قد تغيّر دفعة كبيرة واحدة الرقم كثيراً، فراقب الاتجاه.</li></ul><h2>كيف يبدو الروتين الشهري؟</h2><ul><li>أقفل الشهر وتأكد من مطابقة المدفوعات.</li><li>استخرج من تقرير أعمار الذمم رصيد البداية وإجمالي النهاية والجاري في النهاية.</li><li>احسب CEI، وإلى جانبه DSO.</li><li>أدرج أكبر خمسة حسابات متأخرة واتفق على إجراء لكل منها.</li><li>سجّل النتيجة وقارنها بالأشهر الثلاثة السابقة.</li></ul><p>يكفي جدول بيانات للبداية. وإن لم ترغب في إعادة بنائه كل شهر، فإن <strong>FulcrumGrid التحصيل</strong> يتتبع الفواتير وأعمارها والمتابعات في مكان واحد، فتبقى مدخلات CEI محدّثة دائماً. وأياً كانت الأداة، فالعادة أهم من البرنامج.</p>
+
+        <h2>الأسئلة الشائعة</h2>
+        <details class="faq-item"><summary>ما هي النتيجة الجيدة لمؤشر فعالية التحصيل؟</summary><p>يستهدف معظم الفرق ٨٠٪ فأكثر، و١٠٠٪ هي الحالة المثالية. يعتمد الهدف المناسب على قطاعك وشروط الدفع، فقارن أولاً بنتائجك السابقة.</p></details>
+        <details class="faq-item"><summary>هل يمكن أن يتجاوز CEI نسبة ١٠٠٪؟</summary><p>عادةً لا. وإن حدث فراجع البيانات: مدفوعات مسجلة في الفترة الخطأ، أو إشعارات دائنة، أو أرصدة ذمم غير متطابقة.</p></details>
+        <details class="faq-item"><summary>هل أستخدم CEI أم DSO؟</summary><p>استخدم الاثنين. يُظهر DSO المدة التي يستغرقها الدفع، ويُظهر CEI مدى فعالية فريقك في تحصيل المستحق.</p></details>
+        <details class="faq-item"><summary>كم مرة يجب أن أحسب CEI؟</summary><p>الإيقاع المعتاد شهري. قد يفيد الحساب الأسبوعي أثناء حملة تحصيل، لكن الفترات القصيرة تجعل الرقم أكثر تذبذباً.</p></details>
+
+        <p style="margin-top:32px"><a href="/ar/blog/"><span aria-hidden="true">←</span> العودة إلى المدوّنة</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid منصة تحصيل الديون</p>
+        <h2>أبقِ التحصيل منتظماً كل شهر</h2>
+        <p class="section-lead" style="margin:0 auto 26px">يساعدك FulcrumGrid التحصيل على متابعة الفواتير المتأخرة ورؤية أعمارها بنظرة واحدة، فتبقى بيانات CEI محدّثة دائماً.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/ar/products/collection/">استكشف منصة تحصيل الديون</a>
+          <a class="btn btn-secondary" href="/ar/blog/">العودة إلى المدوّنة</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>العمود الفقري التشغيلي للفرق الحديثة.</p>
+        </div>
+        <div class="foot-col">
+          <h5>المنتجات</h5>
+          <a href="/ar/products/">كل المنتجات</a>
+          <a href="/ar/products/hr-suite/">منصة الموارد البشرية</a>
+          <a href="/ar/products/command-center/">لوحة التحكم للتنفيذيين</a>
+          <a href="/ar/products/collection/">منصة تحصيل الديون</a>
+          <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشبكة</h5>
+          <a href="/ar/features/">الميزات</a>
+          <a href="/ar/integrations/">التكاملات</a>
+          <a href="/ar/how-it-works/">كيف تعمل</a>
+          <a href="/ar/pricing/">الأسعار</a>
+          <a href="/ar/regions/">المناطق</a>
+          <a href="/ar/blog/">المدوّنة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشركة</h5>
+          <a href="/ar/about/">من نحن</a>
+          <a href="/ar/faq/">الأسئلة الشائعة</a>
+          <a href="/ar/contact/">اتصل بنا</a>
+          <a href="/ar/privacy/">الخصوصية</a>
+          <a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=b2179049" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

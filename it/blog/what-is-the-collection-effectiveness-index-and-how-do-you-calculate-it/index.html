@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Che cos'è il Collection Effectiveness Index (CEI) e come si calcola? — FulcrumGrid</title>
+  <meta name="description" content="Il CEI mostra quanta parte dei crediti incassabili avete davvero incassato. Scoprite la formula, un esempio numerico e come interpretare il risultato." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Che cos'è il Collection Effectiveness Index (CEI) e come si calcola?" />
+  <meta property="og:description" content="Il CEI mostra quanta parte dei crediti incassabili avete davvero incassato. Scoprite la formula, un esempio numerico e come interpretare il risultato." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-16" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Che cos'è il Collection Effectiveness Index (CEI) e come si calcola?" />
+  <meta name="twitter:description" content="Il CEI mostra quanta parte dei crediti incassabili avete davvero incassato. Scoprite la formula, un esempio numerico e come interpretare il risultato." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Che cos'è il Collection Effectiveness Index (CEI) e come si calcola?",
+    "description": "Il CEI mostra quanta parte dei crediti incassabili avete davvero incassato. Scoprite la formula, un esempio numerico e come interpretare il risultato.",
+    "datePublished": "2026-10-16",
+    "dateModified": "2026-10-16",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida al CEI",
+        "item": "https://fulcrumgrid.com/it/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual è un buon Collection Effectiveness Index?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La maggior parte dei team punta all'80% o più, e il 100% è l'ideale. L'obiettivo dipende dal settore e dalle condizioni di pagamento; confrontatevi prima con i vostri risultati passati."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Il CEI può superare il 100%?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Di norma no. Se succede, controllate i dati: pagamenti abbinati al periodo sbagliato, note di credito o saldi dei crediti non coerenti."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Devo usare il CEI o il DSO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Entrambi. Il DSO mostra quanto tempo richiede il pagamento, il CEI mostra con quale efficacia il team incassa ciò che è dovuto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Con che frequenza va calcolato il CEI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Di solito ogni mese. Settimanalmente può servire durante una campagna di recupero, ma su periodi brevi il valore oscilla di più."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=ae8f0bf4">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida al CEI</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>Che cos'è il Collection Effectiveness Index (CEI) e come si calcola?</h1>
+        <p class="hero-intro">Il CEI mostra quanta parte dei crediti incassabili avete davvero incassato. Scoprite la formula, un esempio numerico e come interpretare il risultato.</p>
+        <p class="mono"><time datetime="2026-10-16">16 ottobre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>I team di recupero crediti vengono spesso giudicati con un solo numero: quanta liquidità è entrata. Ma gli incassi dipendono da quanto è stato fatturato, quindi un buon mese non coincide con un buon processo. Il Collection Effectiveness Index, o CEI, risponde a una domanda più precisa: di tutto ciò che potevamo incassare, quanto abbiamo incassato davvero? Ecco le risposte alle domande più comuni.</p><h2>Che cos'è il Collection Effectiveness Index?</h2><p>Il CEI è una percentuale che misura quanto bene un team incassa i crediti esigibili in un periodo, di solito un mese. Un punteggio del 100% significa che tutto ciò che era incassabile è stato incassato. Valori più bassi indicano che del denaro è rimasto indietro.</p><h2>Qual è la formula del CEI?</h2><p><strong>CEI = (crediti iniziali + vendite a credito &minus; crediti totali finali) &divide; (crediti iniziali + vendite a credito &minus; crediti correnti finali) &times; 100</strong></p><ul><li><strong>Crediti iniziali.</strong> Importo totale dovuto all'inizio del periodo.</li><li><strong>Vendite a credito.</strong> Fatture emesse a credito durante il periodo.</li><li><strong>Crediti totali finali.</strong> Tutto ciò che resta da incassare alla fine, scaduto o no.</li><li><strong>Crediti correnti finali.</strong> La parte di quel saldo non ancora scaduta. Viene esclusa dal denominatore perché nessuno poteva ragionevolmente incassarla.</li></ul><h2>Può mostrare un esempio svolto?</h2><p>Supponiamo che a settembre si parta da 500.000 di crediti e si emettano 800.000 di vendite a credito. A fine mese vi devono in totale 560.000, di cui 440.000 ancora nei termini e 120.000 scaduti.</p><ul><li>Numeratore: 500.000 + 800.000 &minus; 560.000 = 740.000</li><li>Denominatore: 500.000 + 800.000 &minus; 440.000 = 860.000</li><li>CEI: 740.000 &divide; 860.000 &times; 100 = <strong>86,0%</strong></li></ul><p>Il team ha incassato l'86% del dovuto esigibile. Il restante 14% è il saldo scaduto che passa al mese successivo.</p><h2>In che cosa il CEI differisce dal DSO?</h2><p>Il DSO (days sales outstanding) indica in media quanto tempo occorre per essere pagati. Con le stesse cifre, il DSO è 560.000 &divide; 800.000 &times; 30, circa 21 giorni. È una misura di velocità e cambia con il volume delle vendite, la stagionalità e le condizioni di pagamento. Una fattura grande emessa l'ultimo giorno del mese può far salire il DSO anche se il team non ha sbagliato nulla.</p><p>Il CEI misura impegno e risultati rispetto a ciò che era realmente scaduto. Poiché ignora i crediti correnti, è più equo verso chi incassa ed è meno distorto dalle tempistiche. Danno il meglio insieme: il DSO mostra il ciclo di cassa, il CEI mostra quanto bene il team lo gestisce.</p><h2>Come si interpreta il risultato?</h2><ul><li><strong>100%:</strong> l'ideale. Tutto l'incassabile è stato incassato.</li><li><strong>80% e oltre:</strong> un obiettivo comune e, in genere, un buon segnale.</li><li><strong>Sotto l'80%:</strong> i saldi scaduti si accumulano. Esaminate i singoli clienti e l'anzianità delle fatture.</li></ul><p>Gli obiettivi variano per settore e condizioni di pagamento, quindi seguite il vostro andamento su più mesi invece di inseguire un numero isolato.</p><h2>Che cosa fa salire o scendere il CEI?</h2><h3>Ciò che lo aumenta</h3><ul><li>Fatture chiare, corrette e inviate in tempo.</li><li>Solleciti prima e subito dopo la scadenza.</li><li>Risoluzione rapida delle contestazioni.</li><li>Verifiche di affidabilità e condizioni sensate per i nuovi clienti.</li></ul><h3>Ciò che lo riduce</h3><ul><li>Errori di fatturazione che generano contestazioni.</li><li>Grandi clienti che pagano sempre in ritardo.</li><li>Pagamenti non abbinati che lasciano aperte fatture già saldate.</li><li>Sollecitare solo quando qualcuno se ne ricorda.</li></ul><h2>Quali errori evitare?</h2><ul><li><strong>Usare periodi diversi.</strong> I saldi iniziali e finali devono riferirsi allo stesso periodo.</li><li><strong>Includere le vendite per cassa.</strong> Nella formula entrano solo le vendite a credito.</li><li><strong>Classificare male corrente e scaduto.</strong> Gli errori di anzianità cambiano denominatore e punteggio.</li><li><strong>Ignorare stralci e note di credito.</strong> Decidete come trattarli e restate coerenti.</li><li><strong>Giudicare un solo mese.</strong> Un unico grosso pagamento può spostare il dato: guardate il trend.</li></ul><h2>Che aspetto ha una routine mensile?</h2><ul><li>Chiudete il mese e verificate che gli incassi siano abbinati.</li><li>Estraete dallo scadenzario i crediti iniziali, totali finali e correnti finali.</li><li>Calcolate il CEI e, accanto, il DSO.</li><li>Elencate i cinque conti scaduti più grandi e concordate un'azione per ciascuno.</li><li>Registrate il risultato e confrontatelo con i tre mesi precedenti.</li></ul><p>Per iniziare basta un foglio di calcolo. Se preferite non ricostruirlo ogni mese, <strong>FulcrumGrid Collection</strong> tiene fatture, anzianità e solleciti in un unico posto, così i dati per il CEI sono sempre aggiornati. Qualunque strumento usiate, conta più l'abitudine del software.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Qual è un buon Collection Effectiveness Index?</summary><p>La maggior parte dei team punta all'80% o più, e il 100% è l'ideale. L'obiettivo dipende dal settore e dalle condizioni di pagamento; confrontatevi prima con i vostri risultati passati.</p></details>
+        <details class="faq-item"><summary>Il CEI può superare il 100%?</summary><p>Di norma no. Se succede, controllate i dati: pagamenti abbinati al periodo sbagliato, note di credito o saldi dei crediti non coerenti.</p></details>
+        <details class="faq-item"><summary>Devo usare il CEI o il DSO?</summary><p>Entrambi. Il DSO mostra quanto tempo richiede il pagamento, il CEI mostra con quale efficacia il team incassa ciò che è dovuto.</p></details>
+        <details class="faq-item"><summary>Con che frequenza va calcolato il CEI?</summary><p>Di solito ogni mese. Settimanalmente può servire durante una campagna di recupero, ma su periodi brevi il valore oscilla di più.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Tenete il recupero crediti sotto controllo ogni mese</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Collection vi aiuta a sollecitare le fatture scadute e a vedere l'anzianità a colpo d'occhio, così i dati del vostro CEI sono sempre aggiornati.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/collection/">Esplora Collection</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=b2179049" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
