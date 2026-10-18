@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>How Do You Do a Root Cause Analysis with the 5 Whys? — FulcrumGrid</title>
+  <meta name="description" content="Learn how to run a root cause analysis with the 5 Whys: the steps, a worked example, common mistakes, when to use a fishbone instead, and how to track actions." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How Do You Do a Root Cause Analysis with the 5 Whys?" />
+  <meta property="og:description" content="Learn how to run a root cause analysis with the 5 Whys: the steps, a worked example, common mistakes, when to use a fishbone instead, and how to track actions." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-18" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Do You Do a Root Cause Analysis with the 5 Whys?" />
+  <meta name="twitter:description" content="Learn how to run a root cause analysis with the 5 Whys: the steps, a worked example, common mistakes, when to use a fishbone instead, and how to track actions." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How Do You Do a Root Cause Analysis with the 5 Whys?",
+    "description": "Learn how to run a root cause analysis with the 5 Whys: the steps, a worked example, common mistakes, when to use a fishbone instead, and how to track actions.",
+    "datePublished": "2026-10-18",
+    "dateModified": "2026-10-18",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "5 Whys root cause analysis",
+        "item": "https://fulcrumgrid.com/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the 5 Whys method?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is a root cause technique where you ask &ldquo;why?&rdquo; repeatedly, each time answering from evidence, until you reach a process or system cause you can fix. Five is a guideline; the right number is however many it takes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you always need exactly five whys?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Stop when you reach a cause that, if fixed, would prevent the problem returning. That may take three questions or more than five."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When should I use a fishbone diagram instead?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use a fishbone when the problem is complex or the cause is unclear, because it helps you explore several categories of cause at once. You can then apply the 5 Whys to the most likely branches."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I avoid blaming people in a 5 Whys?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ask why the process allowed the mistake, not who made it. If your chain ends with a person&rsquo;s name or a vague word like carelessness, keep digging into the system around them."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I make sure the actions get done?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Give every action one owner, a due date, and a success check, then review the list on a schedule. Keeping it in a shared tracker rather than a one-off document makes follow-up much more likely."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=ae8f0bf4">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / 5 Whys root cause analysis</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>How Do You Do a Root Cause Analysis with the 5 Whys?</h1>
+        <p class="hero-intro">Learn how to run a root cause analysis with the 5 Whys: the steps, a worked example, common mistakes, when to use a fishbone instead, and how to track actions.</p>
+        <p class="mono"><time datetime="2026-10-18">October 18, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>The 5 Whys is a simple root cause technique: you state a problem, ask &ldquo;why did this happen?&rdquo;, answer with a fact, and repeat until you reach a cause you can fix for good. It was popularised by Toyota&rsquo;s production system and works well because it needs no software, no statistics, and only a few minutes of honest conversation. The number five is a rule of thumb, not a law. Sometimes three questions are enough; sometimes you need seven.</p>
+
+          <h2>Steps to run a 5 Whys analysis</h2>
+
+          <ul>
+            <li><strong>Define the problem precisely.</strong> Write one factual sentence: what happened, where, when, and how big. &ldquo;Orders are a mess&rdquo; is not a problem statement; &ldquo;14 orders shipped more than 2 days late in September&rdquo; is.</li>
+            <li><strong>Gather the right people.</strong> Include those who do the work, not just those who manage it. Three to five people is plenty.</li>
+            <li><strong>Ask why, and answer from evidence.</strong> Each answer must be something you can check in a record, a log, or by observation, not a guess.</li>
+            <li><strong>Keep asking until the answer is a process or system cause.</strong> Stop when the next &ldquo;why&rdquo; leads outside your control or when fixing the cause would stop the problem recurring.</li>
+            <li><strong>Test the chain backwards.</strong> Read from the root cause up to the problem, adding &ldquo;therefore&rdquo; at each step. If the logic breaks, a step is wrong.</li>
+            <li><strong>Agree on actions and owners.</strong> A root cause with no action is only an interesting story.</li>
+          </ul>
+
+          <h2>A worked example</h2>
+
+          <p>Problem: a customer received an order two days late.</p>
+
+          <ul>
+            <li><strong>Why was it late?</strong> It was picked on day 3 instead of day 1.</li>
+            <li><strong>Why was picking delayed?</strong> Picking only starts after the order is manually approved.</li>
+            <li><strong>Why was approval delayed?</strong> The only approver was on leave and nobody else could approve.</li>
+            <li><strong>Why could nobody else approve?</strong> Approval rights were assigned to one person when the process was set up.</li>
+            <li><strong>Why was there no backup?</strong> The process has no defined cover for absences and nobody owns reviewing it.</li>
+          </ul>
+
+          <p>The root cause is a process gap, not a careless employee. The fix is to name a backup approver, set an escalation rule if an order waits more than 24 hours, and give someone ownership of the process. Notice that the first answer (&ldquo;picked late&rdquo;) would have led to a very different, and weaker, fix.</p>
+
+          <h2>Common mistakes</h2>
+
+          <h3>Blaming people</h3>
+
+          <p>If a chain ends at &ldquo;Sam forgot&rdquo;, you have stopped too early. Ask why the process allowed one person&rsquo;s memory to be the only safeguard. Blame makes people hide information, and then your next analysis starts with bad data.</p>
+
+          <h3>Stopping at symptoms</h3>
+
+          <p>&ldquo;The report was late because the data was late&rdquo; describes the problem a second time. A genuine root cause is something that, once changed, prevents recurrence. If you could fix the answer and the problem could still return, keep going.</p>
+
+          <h3>Single-cause bias</h3>
+
+          <p>Real incidents often have several contributing causes. A linear chain can hide this. If a &ldquo;why&rdquo; has two plausible answers, follow both branches and record each as its own chain rather than picking the convenient one.</p>
+
+          <h2>When to use a fishbone diagram instead</h2>
+
+          <p>The 5 Whys is best for problems with a fairly clear, single thread: a missed deadline, a repeated error, a one-off failure. When the cause is unclear or the problem is complex, use a fishbone (Ishikawa) diagram. You sort possible causes into categories such as people, process, tools, materials, environment, and measurement, then investigate the likeliest. Many teams combine them: brainstorm with a fishbone, then run the 5 Whys on each promising branch.</p>
+
+          <h2>Turn findings into tracked actions</h2>
+
+          <p>Analysis only pays off when something changes. Before the meeting ends, convert each root cause into an action with these details:</p>
+
+          <ul>
+            <li><strong>A specific task:</strong> &ldquo;Add a backup approver for order approvals&rdquo; rather than &ldquo;improve coverage&rdquo;.</li>
+            <li><strong>One named owner:</strong> a person, not a team.</li>
+            <li><strong>A due date:</strong> realistic, and visible to everyone involved.</li>
+            <li><strong>A success check:</strong> how you will know it worked, such as zero late shipments from approval delays over the next 30 days.</li>
+            <li><strong>A follow-up review:</strong> a date to confirm the fix held and the problem has not returned.</li>
+          </ul>
+
+          <p>Where the action list lives matters as much as the analysis. If it sits in a document nobody reopens, the same problem will be back within months. FulcrumGrid Command Center is one place to keep such actions with owners, due dates, and status in view, so open items from an analysis are reviewed alongside everything else. Any reliable tracker will do the job if it is checked regularly.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>What is the 5 Whys method?</summary><p>It is a root cause technique where you ask &amp;ldquo;why?&amp;rdquo; repeatedly, each time answering from evidence, until you reach a process or system cause you can fix. Five is a guideline; the right number is however many it takes.</p></details>
+        <details class="faq-item"><summary>Do you always need exactly five whys?</summary><p>No. Stop when you reach a cause that, if fixed, would prevent the problem returning. That may take three questions or more than five.</p></details>
+        <details class="faq-item"><summary>When should I use a fishbone diagram instead?</summary><p>Use a fishbone when the problem is complex or the cause is unclear, because it helps you explore several categories of cause at once. You can then apply the 5 Whys to the most likely branches.</p></details>
+        <details class="faq-item"><summary>How do I avoid blaming people in a 5 Whys?</summary><p>Ask why the process allowed the mistake, not who made it. If your chain ends with a person&amp;rsquo;s name or a vague word like carelessness, keep digging into the system around them.</p></details>
+        <details class="faq-item"><summary>How do I make sure the actions get done?</summary><p>Give every action one owner, a due date, and a success check, then review the list on a schedule. Keeping it in a shared tracker rather than a one-off document makes follow-up much more likely.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Keep root cause actions from getting lost</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center lets you track follow-up actions with owners and due dates alongside your other operations, so the fixes from your 5 Whys sessions actually get done.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=b2179049" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

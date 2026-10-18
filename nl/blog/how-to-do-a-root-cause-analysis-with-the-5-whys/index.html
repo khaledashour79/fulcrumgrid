@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Hoe doe je een oorzaakanalyse met de 5x waarom-methode? — FulcrumGrid</title>
+  <meta name="description" content="Leer hoe je een oorzaakanalyse doet met de 5x waarom-methode: stappen, een uitgewerkt voorbeeld, veelgemaakte fouten, wanneer visgraat beter is en acties opvolgen." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Hoe doe je een oorzaakanalyse met de 5x waarom-methode?" />
+  <meta property="og:description" content="Leer hoe je een oorzaakanalyse doet met de 5x waarom-methode: stappen, een uitgewerkt voorbeeld, veelgemaakte fouten, wanneer visgraat beter is en acties opvolgen." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-10-18" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hoe doe je een oorzaakanalyse met de 5x waarom-methode?" />
+  <meta name="twitter:description" content="Leer hoe je een oorzaakanalyse doet met de 5x waarom-methode: stappen, een uitgewerkt voorbeeld, veelgemaakte fouten, wanneer visgraat beter is en acties opvolgen." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hoe doe je een oorzaakanalyse met de 5x waarom-methode?",
+    "description": "Leer hoe je een oorzaakanalyse doet met de 5x waarom-methode: stappen, een uitgewerkt voorbeeld, veelgemaakte fouten, wanneer visgraat beter is en acties opvolgen.",
+    "datePublished": "2026-10-18",
+    "dateModified": "2026-10-18",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "5x waarom-analyse",
+        "item": "https://fulcrumgrid.com/nl/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is de 5x waarom-methode?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Het is een techniek voor oorzaakanalyse waarbij je herhaaldelijk &ldquo;waarom?&rdquo; vraagt en telkens met bewijs antwoordt, tot je een proces- of systeemoorzaak bereikt die je kunt oplossen. Vijf is een richtlijn; het juiste aantal is zoveel als nodig is."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Heb je altijd precies vijf keer waarom nodig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. Stop wanneer je een oorzaak bereikt die, als je haar oplost, voorkomt dat het probleem terugkeert. Dat kunnen drie vragen zijn of meer dan vijf."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wanneer gebruik ik beter een visgraatdiagram?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wanneer het probleem complex is of de oorzaak onduidelijk, omdat je er meerdere oorzaakcategorieën tegelijk mee verkent. Daarna kun je de 5x waarom toepassen op de meest waarschijnlijke takken."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe voorkom ik dat ik mensen de schuld geef?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vraag waarom het proces de fout toeliet, niet wie hem maakte. Eindigt je keten bij een naam of een vaag woord als onzorgvuldigheid, blijf dan het systeem rond die persoon onderzoeken."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe zorg ik dat de acties ook worden uitgevoerd?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Geef elke actie één eigenaar, een deadline en een succescontrole en loop de lijst regelmatig na. Door haar in een gedeelde tracker te bewaren in plaats van in een eenmalig document, is opvolging veel waarschijnlijker."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=ae8f0bf4">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / 5x waarom-analyse</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Hoe doe je een oorzaakanalyse met de 5x waarom-methode?</h1>
+        <p class="hero-intro">Leer hoe je een oorzaakanalyse doet met de 5x waarom-methode: stappen, een uitgewerkt voorbeeld, veelgemaakte fouten, wanneer visgraat beter is en acties opvolgen.</p>
+        <p class="mono"><time datetime="2026-10-18">18 oktober 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>De 5x waarom-methode (5 Whys) is een eenvoudige techniek voor oorzaakanalyse: je benoemt een probleem, vraagt &ldquo;waarom gebeurde dit?&rdquo;, antwoordt met een feit en herhaalt dat tot je een oorzaak bereikt die je blijvend kunt oplossen. De methode werd bekend door het productiesysteem van Toyota en werkt goed omdat je er geen software of statistiek voor nodig hebt, alleen een paar minuten eerlijk gesprek. Het getal vijf is een vuistregel, geen wet: soms zijn drie vragen genoeg, soms heb je er zeven nodig.</p>
+
+          <h2>Stappen voor een 5x waarom-analyse</h2>
+
+          <ul>
+            <li><strong>Definieer het probleem precies.</strong> Schrijf één feitelijke zin: wat er gebeurde, waar, wanneer en hoe groot. &ldquo;De bestellingen zijn een puinhoop&rdquo; is geen probleemstelling; &ldquo;14 bestellingen werden in september meer dan 2 dagen te laat verzonden&rdquo; wel.</li>
+            <li><strong>Breng de juiste mensen samen.</strong> Neem degenen mee die het werk doen, niet alleen degenen die het aansturen. Drie tot vijf mensen is ruim voldoende.</li>
+            <li><strong>Vraag waarom en antwoord met bewijs.</strong> Elk antwoord moet je kunnen controleren in een registratie, een logboek of door observatie, geen gok zijn.</li>
+            <li><strong>Blijf vragen tot het antwoord een proces- of systeemoorzaak is.</strong> Stop wanneer het volgende &ldquo;waarom&rdquo; buiten je invloed valt of wanneer het oplossen van de oorzaak herhaling zou voorkomen.</li>
+            <li><strong>Test de keten achterstevoren.</strong> Lees van de grondoorzaak naar het probleem en voeg bij elke stap &ldquo;daardoor&rdquo; toe. Klopt de logica niet, dan is een stap fout.</li>
+            <li><strong>Spreek acties en eigenaren af.</strong> Een grondoorzaak zonder actie is slechts een interessant verhaal.</li>
+          </ul>
+
+          <h2>Een uitgewerkt voorbeeld</h2>
+
+          <p>Probleem: een klant kreeg zijn bestelling twee dagen te laat.</p>
+
+          <ul>
+            <li><strong>Waarom was het te laat?</strong> Het is op dag 3 gepickt in plaats van op dag 1.</li>
+            <li><strong>Waarom liep het picken vertraging op?</strong> Picken begint pas nadat de bestelling handmatig is goedgekeurd.</li>
+            <li><strong>Waarom liep de goedkeuring vertraging op?</strong> De enige goedkeurder was met verlof en niemand anders kon goedkeuren.</li>
+            <li><strong>Waarom kon niemand anders goedkeuren?</strong> Het recht om goed te keuren was bij de inrichting van het proces aan één persoon toegewezen.</li>
+            <li><strong>Waarom was er geen vervanger?</strong> Het proces kent geen vervanging bij afwezigheid en niemand is verantwoordelijk voor de herziening ervan.</li>
+          </ul>
+
+          <p>De grondoorzaak is een gat in het proces, geen onzorgvuldige medewerker. De oplossing: een vervangend goedkeurder aanwijzen, een escalatieregel instellen als een bestelling langer dan 24 uur wacht, en iemand eigenaar van het proces maken. Merk op dat het eerste antwoord (&ldquo;te laat gepickt&rdquo;) tot een heel andere, zwakkere oplossing had geleid.</p>
+
+          <h2>Veelgemaakte fouten</h2>
+
+          <h3>Mensen de schuld geven</h3>
+
+          <p>Als de keten eindigt bij &ldquo;Sam vergat het&rdquo;, ben je te vroeg gestopt. Vraag waarom het proces toeliet dat het geheugen van één persoon de enige waarborg was. Schuldigen aanwijzen zorgt dat mensen informatie achterhouden, en dan begint je volgende analyse met slechte gegevens.</p>
+
+          <h3>Bij symptomen blijven steken</h3>
+
+          <p>&ldquo;Het rapport was laat omdat de data laat was&rdquo; beschrijft het probleem voor de tweede keer. Een echte grondoorzaak is iets dat, als je het verandert, herhaling voorkomt. Kun je het antwoord oplossen en kan het probleem toch terugkomen, vraag dan door.</p>
+
+          <h3>De valkuil van één oorzaak</h3>
+
+          <p>Echte incidenten hebben vaak meerdere bijdragende oorzaken, die een lineaire keten kan verbergen. Heeft een &ldquo;waarom&rdquo; twee aannemelijke antwoorden, volg dan beide takken en leg elk vast als eigen keten in plaats van de handigste te kiezen.</p>
+
+          <h2>Wanneer je beter een visgraatdiagram gebruikt</h2>
+
+          <p>De 5x waarom-methode werkt het best bij problemen met een vrij duidelijke rode draad: een gemiste deadline, een terugkerende fout, een eenmalige storing. Is de oorzaak onduidelijk of het probleem complex, gebruik dan een visgraat- of Ishikawa-diagram. Je rangschikt mogelijke oorzaken in categorieën zoals mensen, proces, hulpmiddelen, materialen, omgeving en meting en onderzoekt dan de meest waarschijnlijke. Veel teams combineren beide: brainstormen met een visgraat en daarna de 5x waarom op elke veelbelovende tak.</p>
+
+          <h2>Bevindingen omzetten in opgevolgde acties</h2>
+
+          <p>Een analyse levert pas iets op als er iets verandert. Zet vóór het einde van de bespreking elke grondoorzaak om in een actie met deze gegevens:</p>
+
+          <ul>
+            <li><strong>Een concrete taak:</strong> &ldquo;Een vervangend goedkeurder voor bestellingen aanwijzen&rdquo; in plaats van &ldquo;de dekking verbeteren&rdquo;.</li>
+            <li><strong>Eén genoemde eigenaar:</strong> een persoon, geen team.</li>
+            <li><strong>Een deadline:</strong> realistisch en zichtbaar voor iedereen die erbij betrokken is.</li>
+            <li><strong>Een succescontrole:</strong> hoe je weet dat het werkte, bijvoorbeeld geen enkele te late zending door goedkeuringsvertraging in de komende 30 dagen.</li>
+            <li><strong>Een vervolgreview:</strong> een datum om te bevestigen dat de oplossing standhoudt en het probleem niet is teruggekeerd.</li>
+          </ul>
+
+          <p>Waar de actielijst staat, is even belangrijk als de analyse. Staat ze in een document dat niemand meer opent, dan keert hetzelfde probleem binnen enkele maanden terug. FulcrumGrid Command Center is één plek om zulke acties met eigenaren, deadlines en status in beeld te houden, zodat openstaande punten uit een analyse samen met al het andere worden bekeken. Elke betrouwbare tracker doet het werk, mits je er regelmatig in kijkt.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wat is de 5x waarom-methode?</summary><p>Het is een techniek voor oorzaakanalyse waarbij je herhaaldelijk &amp;ldquo;waarom?&amp;rdquo; vraagt en telkens met bewijs antwoordt, tot je een proces- of systeemoorzaak bereikt die je kunt oplossen. Vijf is een richtlijn; het juiste aantal is zoveel als nodig is.</p></details>
+        <details class="faq-item"><summary>Heb je altijd precies vijf keer waarom nodig?</summary><p>Nee. Stop wanneer je een oorzaak bereikt die, als je haar oplost, voorkomt dat het probleem terugkeert. Dat kunnen drie vragen zijn of meer dan vijf.</p></details>
+        <details class="faq-item"><summary>Wanneer gebruik ik beter een visgraatdiagram?</summary><p>Wanneer het probleem complex is of de oorzaak onduidelijk, omdat je er meerdere oorzaakcategorieën tegelijk mee verkent. Daarna kun je de 5x waarom toepassen op de meest waarschijnlijke takken.</p></details>
+        <details class="faq-item"><summary>Hoe voorkom ik dat ik mensen de schuld geef?</summary><p>Vraag waarom het proces de fout toeliet, niet wie hem maakte. Eindigt je keten bij een naam of een vaag woord als onzorgvuldigheid, blijf dan het systeem rond die persoon onderzoeken.</p></details>
+        <details class="faq-item"><summary>Hoe zorg ik dat de acties ook worden uitgevoerd?</summary><p>Geef elke actie één eigenaar, een deadline en een succescontrole en loop de lijst regelmatig na. Door haar in een gedeelde tracker te bewaren in plaats van in een eenmalig document, is opvolging veel waarschijnlijker.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Laat acties uit je oorzaakanalyse niet verloren gaan</h2>
+        <p class="section-lead" style="margin:0 auto 26px">Met FulcrumGrid Command Center volg je vervolgacties met eigenaren en deadlines naast je andere operationele werk, zodat de uitkomsten van je 5x waarom-sessies ook echt worden uitgevoerd.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=b2179049" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
