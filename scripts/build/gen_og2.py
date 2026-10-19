@@ -65,6 +65,15 @@ CARDS = {
  'og-default': dict(accent='#2156df', hsize=76, eyebrow='BUSINESS APPS',
    head='One grid,<br><span class="ac">every operation.</span>',
    tag='Purpose-built business apps from one team — Command Center, Collection, HR Suite, and more.'),
+ 'og-tms': dict(accent='#d9822b', hsize=84, eyebrow='LOGISTICS',
+   head='TMS',
+   tag='Logistics operations and finance on one grid — forwarding, transport, yard, parcel, and warehousing, with the books built in.'),
+ 'og-assure': dict(accent='#2e9e5b', hsize=84, eyebrow='COMPLIANCE',
+   head='Assure',
+   tag='Governance, risk and compliance, built for Saudi regulation — obligations mapped to controls, with the evidence trail to match.'),
+ 'og-close': dict(accent='#6a5acd', hsize=84, eyebrow='FINANCE',
+   head='Close',
+   tag='IFRS period-end estimates — IAS 19, IFRS 9 and IFRS 16 — with versioned assumptions and a full audit trail.'),
 }
 
 for fn,c in CARDS.items():
