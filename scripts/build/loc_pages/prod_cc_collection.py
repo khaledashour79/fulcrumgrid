@@ -32,6 +32,9 @@ _SHARED = {
     'Explore the rest of the grid': _t('Découvrez le reste de la grille', 'Entdecken Sie den Rest des Grids', 'Explore el resto de la cuadrícula', 'Esplora il resto della griglia', 'Ontdek de rest van het grid'),
     'Finance': _t('Finance', 'Finanzen', 'Finanzas', 'Finanza', 'Financiën'),
     'People operations': _t('Gestion des personnes', 'Personalmanagement', 'Gestión de personas', 'Gestione del personale', 'Personeelsbeheer'),
+    'Logistics &amp; finance': _t('Logistique &amp; finances', 'Logistik &amp; Finanzen', 'Logística &amp; finanzas', 'Logistica &amp; finanza', 'Logistiek &amp; financiën'),
+    'Risk &amp; compliance': _t('Risque &amp; conformité', 'Risiko &amp; Compliance', 'Riesgo &amp; cumplimiento', 'Rischio &amp; conformità', 'Risico &amp; compliance'),
+    'IFRS period-end': _t('Clôture IFRS', 'IFRS-Periodenabschluss', 'Cierre IFRS', 'Chiusura IFRS', 'IFRS-periodeafsluiting'),
     'More apps': _t("Plus d'applications", 'Weitere Apps', 'Más apps', 'Altre app', 'Meer apps'),
     'Inventory, CRM &amp; more': _t('Inventaire, CRM &amp; plus', 'Lagerverwaltung, CRM &amp; mehr', 'Inventario, CRM &amp; más', 'Inventario, CRM &amp; altro', 'Voorraad, CRM &amp; meer'),
 }

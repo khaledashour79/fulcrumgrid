@@ -334,6 +334,12 @@ PAGE = {
             "Receivables &amp; payments": _t(
                 "Créances &amp; paiements", "Forderungen &amp; Zahlungen", "Cobros &amp; pagos",
                 "Crediti &amp; pagamenti", "Vorderingen &amp; betalingen"),
+            "Logistics &amp; finance": _t(
+                "Logistique &amp; finances", "Logistik &amp; Finanzen", "Logística &amp; finanzas",
+                "Logistica &amp; finanza", "Logistiek &amp; financiën"),
+            "Risk &amp; compliance": _t(
+                "Risque &amp; conformité", "Risiko &amp; Compliance", "Riesgo &amp; cumplimiento",
+                "Rischio &amp; conformità", "Risico &amp; compliance"),
             "More apps →": _t(
                 "Plus d'applications →", "Weitere Apps →", "Más apps →", "Altre app →", "Meer apps →"),
             "Inventory, CRM &amp; more": _t(

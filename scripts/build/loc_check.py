@@ -30,6 +30,7 @@ ROOT = os.environ.get('FG_ROOT') or os.path.abspath(os.path.join(HERE, '..', '..
 # Terms that are supposed to remain English on every localized page.
 ALLOW = {
     'fulcrumgrid', 'command center', 'collection', 'hr suite', 'tms', 'voice',
+    'assure', 'close', 'ifrs',
     'crm', 'erp', 'blog', 'faq', 'api', 'saas', 'kpi', 'okr', 'okrs', 'kpis',
     'pto', 'hr', 'sop', 'dso', 'gcc', 'uae', 'uk', 'usa', 'eu', 'sar', 'aed',
     'qar', 'kwd', 'bhd', 'omr', 'egp', 'jod', 'sar', 'ig', 'ceo', 'cfo',

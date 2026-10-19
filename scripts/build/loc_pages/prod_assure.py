@@ -300,6 +300,8 @@ PAGE = {
             "People operations": _t("Gestion du personnel", "Personalmanagement", "Gestión de personas", "Gestione del personale", "Personeelsbeheer"),
             "Operations dashboard": _t("Tableau de bord des opérations", "Betriebs-Dashboard", "Panel de operaciones", "Dashboard operativa", "Operationeel dashboard"),
             "Receivables &amp; payments": _t("Créances &amp; paiements", "Forderungen &amp; Zahlungen", "Cobros &amp; pagos", "Crediti &amp; pagamenti", "Vorderingen &amp; betalingen"),
+            "Logistics &amp; finance": _t("Logistique &amp; finances", "Logistik &amp; Finanzen", "Logística &amp; finanzas", "Logistica &amp; finanza", "Logistiek &amp; financiën"),
+            "IFRS period-end": _t("Clôture IFRS", "IFRS-Periodenabschluss", "Cierre IFRS", "Chiusura IFRS", "IFRS-periodeafsluiting"),
             "More apps →": _t("Plus d'applications →", "Weitere Apps →", "Más apps →", "Altre app →", "Meer apps →"),
             "Inventory, CRM &amp; more": _t("Inventaire, CRM &amp; plus", "Lagerverwaltung, CRM &amp; mehr", "Inventario, CRM &amp; más", "Inventario, CRM &amp; altro", "Voorraad, CRM &amp; meer"),
             # ---- CTA ----

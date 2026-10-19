@@ -308,6 +308,10 @@ PAGE = {
                 "Tableau de bord des opérations", "Betriebs-Dashboard", "Panel de operaciones", "Dashboard operativa", "Operationeel dashboard"),
             "Receivables &amp; payments": _t(
                 "Créances &amp; paiements", "Forderungen &amp; Zahlungen", "Cobros &amp; pagos", "Crediti &amp; pagamenti", "Vorderingen &amp; betalingen"),
+            "Risk &amp; compliance": _t(
+                "Risque &amp; conformité", "Risiko &amp; Compliance", "Riesgo &amp; cumplimiento", "Rischio &amp; conformità", "Risico &amp; compliance"),
+            "IFRS period-end": _t(
+                "Clôture IFRS", "IFRS-Periodenabschluss", "Cierre IFRS", "Chiusura IFRS", "IFRS-periodeafsluiting"),
             "More apps →": _t(
                 "Plus d'applications →", "Weitere Apps →", "Más apps →", "Altre app →", "Meer apps →"),
             "Inventory, CRM &amp; more": _t(
