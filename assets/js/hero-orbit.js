@@ -15,7 +15,8 @@
   var APPS = [
     ['HR Suite', 'live', 'hr'], ['Command Center', 'live', 'cc'], ['Collection', 'live', 'col'],
     ['TMS', 'live', 'tms'], ['Assure', 'live', 'assure'], ['Close', 'live', 'close'],
-    ['Voice', 'soon', '']
+    ['Voice', 'soon', ''], ['CRM', 'soon', 'crm'], ['Agents', 'soon', 'agents'],
+    ['Real Estate', 'soon', 'realestate'], ['Workshop', 'soon', 'workshop']
   ];
   // Tiles per ring — drives the angular spacing so each ring stays evenly spread
   // however many apps it carries.
@@ -85,9 +86,11 @@
 
   function pick(a) {
     var target;
-    if (a[2]) {
-      var tab = document.querySelector('.exp-tab[data-exp="' + a[2] + '"]');
-      if (tab) tab.click();
+    // A live app with its own explorer tab jumps there; coming-soon apps (no
+    // tab, even when they carry a localization key) scroll to the products hub.
+    var tab = a[2] ? document.querySelector('.exp-tab[data-exp="' + a[2] + '"]') : null;
+    if (tab) {
+      tab.click();
       target = document.getElementById('explorer');
     } else {
       target = document.getElementById('products');

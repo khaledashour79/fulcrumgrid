@@ -263,6 +263,11 @@ PAGE = {
                 '<span class="tag tag-outline">Taller</span>',
                 '<span class="tag tag-outline">Officina</span>',
                 '<span class="tag tag-outline">Werkplaats</span>'),
+            # Orbit sphere coming-soon app names, carried in the data-l-apps
+            # attribute (slug=Name). Keep in step with the roadmap tags above.
+            "agents=Agents": _t("agents=Agents", "agents=Agenten", "agents=Agentes", "agents=Agenti", "agents=Agents"),
+            "realestate=Real Estate": _t("realestate=Immobilier", "realestate=Immobilien", "realestate=Inmobiliaria", "realestate=Immobiliare", "realestate=Vastgoed"),
+            "workshop=Workshop": _t("workshop=Atelier", "workshop=Werkstatt", "workshop=Taller", "workshop=Officina", "workshop=Werkplaats"),
 
             # ---- 02 · Explorer ----
             "02 · Inside each app": _t(
