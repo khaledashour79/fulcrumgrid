@@ -218,6 +218,14 @@ Growth includes a single ERP connection; Enterprise unlocks unlimited connection
 
 Let Command Center pull records from your ERP on a schedule, so dashboards stay current on their own.
 
+#### REST API & developer tools
+
+A versioned REST API (v1) over your finance and operational data, with API keys and a live/test sandbox, outbound webhooks, and an OpenAPI spec plus Postman collection on a developer guide — so your team can build on your own data.
+
+#### Single sign-on (SSO)
+
+Sign in through your own identity provider over OIDC, so access to Command Center follows your company directory.
+
 04 · Built for
 
 ## Made for the people who keep things running.
@@ -353,7 +361,11 @@ Capture post-dated cheques against an account, track them through to cleared, an
 
 #### ERP connectors
 
-Two-way sync with SAP Business One, Odoo, Oracle Fusion and Oracle Integration (OIC) — collected payments and cleared cheques post to your ledger automatically, with a posting-activity feed for every connector.
+Two-way sync with SAP Business One, Odoo, Oracle Fusion, Oracle Integration (OIC) and Daftra — collected payments and cleared cheques post to your ledger automatically, with a posting-activity feed for every connector.
+
+#### Single sign-on (SSO)
+
+Sign in through your own identity provider over OIDC, with just-in-time provisioning and a break-glass admin login, so access follows your company directory.
 
 #### Aging & risk reports
 
@@ -362,6 +374,10 @@ See receivables by age bucket, spot at-risk accounts early, and forecast the cas
 #### Disputes & notes
 
 Log disputes, promises to pay, and account notes against each record — a full history for every customer.
+
+#### Field collection & visits
+
+Dispatch field collectors by territory with geo-routed day plans, proof-of-visit (device GPS inside the debtor's geo-fence), conduct-hour and workplace limits, and cash hand-in reconciliation from collector to cashier — with collecting and reconciling kept as separate duties.
 
 #### AI account brief
 
@@ -577,6 +593,10 @@ Candidates get their own portal — one-click apply, a "My applications" tracker
 #### Roles & permissions
 
 Custom roles with granular permissions, and a security-scoped IT Admin role that runs the workspace and SSO without ever seeing salary or personal records.
+
+#### Data-access audit log
+
+A transparent record of who read pay data, documents and privacy exports — tenant-visible and toggleable, so you can meet PDPL and GDPR access-transparency obligations.
 
 #### Org structure
 
@@ -1174,6 +1194,10 @@ Innovation pipeline · — · ✓ · ✓
 
 ERP integrations (SAP · QBO · Odoo · Oracle) · — · 1 connection · Unlimited + scheduled pull
 
+REST API · webhooks · keys · — · ✓ · ✓
+
+SSO (OIDC) sign-in · — · — · ✓
+
 Contracts, Loans & Rents · — · ✓ · ✓
 
 Announcements / broadcast · Notify only · + Require-ack · + Require-ack
@@ -1325,13 +1349,17 @@ Advanced analytics (A/B, forecast) · — · ✓ · ✓ · ✓
 
 AI add-on (BYOK · private, confirm-first) · — · ＋ · ＋ · ＋
 
-ERP connectors (SAP B1 · Odoo · Oracle Fusion · OIC) · — · ✓ · ✓ · ✓
+ERP connectors (SAP B1 · Odoo · Oracle Fusion · OIC · Daftra) · — · ✓ · ✓ · ✓
 
 Cheque register (capture → clear → post to ERP) · — · ✓ · ✓ · ✓
+
+Field visits (proof-of-visit · cash SoD) · — · ✓ · ✓ · ✓
 
 Legal · Settlements (tiered) · — · — · ✓ · ✓
 
 Integrations: API keys · REST v1 · webhooks · sandbox · — · — · ✓ · ✓
+
+SSO (OIDC) sign-in · — · — · ✓ · ✓
 
 Custom domain · — · — · ✓ · ✓
 
@@ -1400,7 +1428,7 @@ Core HR & time off
 
 Expenses & HR letters
 
-Announcements, recognition & probation
+News, recognition & probation
 
 Start free trial
 
@@ -1476,6 +1504,8 @@ Probation · ✓ · ✓ · ✓
 
 Onboarding · ＋ · ✓ · ✓
 
+Smart onboarding import (AI) · ＋ · ＋ · ✓
+
 Time, attendance & operations
 
 Time & attendance · ＋ · ✓ · ✓
@@ -1510,7 +1540,11 @@ Payroll & compliance
 
 Payroll · ＋ · ＋ · ✓
 
+Sales commissions · ＋ · ＋ · ✓
+
 Statutory & local compliance · ＋ · ＋ · ✓
+
+Data-access (PII) audit log · ✓ · ✓ · ✓
 
 Housing advance · ＋ · ＋ · ✓
 
@@ -3413,6 +3447,14 @@ URL: https://fulcrumgrid.com/ar/products/command-center/
 
 دع لوحة التحكم للتنفيذيين يسحب السجلات من نظام ERP لديك وفق جدول، لتبقى اللوحات محدّثة تلقائيًا.
 
+#### REST API وأدوات المطوّرين
+
+واجهة REST API مُصدَّرة (v1) على بياناتك المالية والتشغيلية، مع مفاتيح API وبيئة اختبار حيّة/تجريبية، وويب هوكس صادرة، ومواصفة OpenAPI ومجموعة Postman ضمن دليل للمطوّرين — لتبني فرقك على بياناتك أنت.
+
+#### الدخول الموحّد (SSO)
+
+سجّل الدخول عبر موفّر الهوية الخاص بك عبر OIDC، فيتبع الوصول إلى لوحة التحكم للتنفيذيين دليل شركتك.
+
 04 · مُصمَّم لأجل
 
 ## لمن يُبقون كل شيء يعمل.
@@ -3548,7 +3590,11 @@ URL: https://fulcrumgrid.com/ar/products/collection/
 
 #### موصلات ERP
 
-مزامنة ثنائية الاتجاه مع SAP Business One و Odoo و Oracle Fusion و Oracle Integration (OIC) — تُرحَّل المدفوعات المحصّلة والشيكات المحصّلة إلى دفترك تلقائيًا، مع موجز لنشاط الترحيل لكل موصل.
+مزامنة ثنائية الاتجاه مع SAP Business One و Odoo و Oracle Fusion و Oracle Integration (OIC) و Daftra — تُرحَّل المدفوعات المحصّلة والشيكات المحصّلة إلى دفترك تلقائيًا، مع موجز لنشاط الترحيل لكل موصل.
+
+#### الدخول الموحّد (SSO)
+
+سجّل الدخول عبر موفّر الهوية الخاص بك عبر OIDC، مع توفير فوري للمستخدمين ودخول إداري طارئ، فيتبع الوصول دليل شركتك.
 
 #### تقارير التقادم والمخاطر
 
@@ -3557,6 +3603,10 @@ URL: https://fulcrumgrid.com/ar/products/collection/
 #### النزاعات والملاحظات
 
 سجّل النزاعات، ووعود السداد، وملاحظات الحساب على كل سجل — تاريخ كامل لكل عميل.
+
+#### التحصيل الميداني والزيارات
+
+وزّع محصّلين ميدانيين حسب المنطقة مع خطط يومية مُحسّنة جغرافيًا، وإثبات زيارة (GPS الجهاز داخل النطاق الجغرافي للمدين)، وحدود لساعات العمل ومكانه، وتسوية تسليم النقد من المحصّل إلى أمين الصندوق — مع إبقاء التحصيل والتسوية مهامّ منفصلة.
 
 #### ملخّص الحساب بالذكاء الاصطناعي
 
@@ -3772,6 +3822,10 @@ URL: https://fulcrumgrid.com/ar/products/hr-suite/
 #### الأدوار والصلاحيات
 
 أدوار مخصّصة بصلاحيات دقيقة، ودور «مدير تقنية المعلومات» محدود الصلاحية أمنيًا يدير مساحة العمل والدخول الموحّد دون أن يرى الرواتب أو السجلات الشخصية أبدًا.
+
+#### سجل الوصول إلى البيانات
+
+سجلّ شفّاف لمن اطّلع على بيانات الرواتب والمستندات وعمليات تصدير الخصوصية — ظاهر للمستأجر وقابل للتفعيل، لتفي بالتزامات شفافية الوصول في نظام حماية البيانات (PDPL) واللائحة العامة (GDPR).
 
 #### الهيكل التنظيمي
 
@@ -4369,6 +4423,10 @@ SLA + تأهيل · تصدير السجل
 
 تكاملات ERP (SAP Business One · QBO وغيرها) · — · اتصال واحد · بلا حدود + سحب مجدول
 
+REST API · Webhooks · مفاتيح · — · ✓ · ✓
+
+الدخول الموحّد (OIDC) · — · — · ✓
+
 العقود والقروض والإيجارات · — · ✓ · ✓
 
 الإعلانات / البثّ · إشعار فقط · + إلزام بالإقرار · + إلزام بالإقرار
@@ -4520,13 +4578,17 @@ SAR 1,120 / شهريًا
 
 إضافة الذكاء الاصطناعي (بمفتاحك · خاصة · بتأكيد بشري) · — · ＋ · ＋ · ＋
 
-موصلات ERP (SAP B1 · Odoo · Oracle Fusion · OIC) · — · ✓ · ✓ · ✓
+موصلات ERP (SAP B1 · Odoo · Oracle Fusion · OIC · Daftra) · — · ✓ · ✓ · ✓
 
 سجل الشيكات (الاستلام ← التحصيل ← الترحيل إلى ERP) · — · ✓ · ✓ · ✓
+
+الزيارات الميدانية (إثبات الزيارة · فصل مهام النقدية) · — · ✓ · ✓ · ✓
 
 القضايا القانونية · التسويات (متدرّجة) · — · — · ✓ · ✓
 
 تكاملات: مفاتيح API · REST v1 · Webhooks · بيئة اختبار · — · — · ✓ · ✓
+
+الدخول الموحّد (OIDC) · — · — · ✓ · ✓
 
 نطاق مخصّص · — · — · ✓ · ✓
 
@@ -4595,7 +4657,7 @@ SAR 5 / لكل مقعد شهريًا
 
 النفقات وخطابات الموارد البشرية
 
-الإعلانات والتقدير وفترة التجربة
+الأخبار والتقدير وفترة التجربة
 
 ابدأ تجربة مجانية
 
@@ -4671,6 +4733,8 @@ SSO / SCIM والمساعد الذكي و SAP
 
 التأهيل · ＋ · ✓ · ✓
 
+استيراد التأهيل الذكي (ذكاء اصطناعي) · ＋ · ＋ · ✓
+
 الوقت والحضور والعمليات
 
 الوقت والحضور · ＋ · ✓ · ✓
@@ -4705,7 +4769,11 @@ SSO / SCIM والمساعد الذكي و SAP
 
 الرواتب · ＋ · ＋ · ✓
 
+عمولات المبيعات · ＋ · ＋ · ✓
+
 الامتثال النظامي والمحلي · ＋ · ＋ · ✓
+
+سجل الوصول إلى البيانات الشخصية · ✓ · ✓ · ✓
 
 سلفة السكن · ＋ · ＋ · ✓
 

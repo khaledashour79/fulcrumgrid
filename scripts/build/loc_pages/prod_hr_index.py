@@ -268,6 +268,13 @@ PAGE = {
                 "Roles personalizados con permisos granulares, y un rol de administrador de TI acotado por seguridad que gestiona el espacio de trabajo y el SSO sin ver nunca salarios ni expedientes personales.",
                 "Ruoli personalizzati con autorizzazioni granulari e un ruolo IT Admin con ambito di sicurezza ristretto che gestisce lo spazio di lavoro e l'SSO senza mai vedere stipendi o dati personali.",
                 "Aangepaste rollen met granulaire rechten, en een qua beveiliging afgebakende IT-Admin-rol die de werkruimte en SSO beheert zonder ooit salarissen of persoonlijke dossiers te zien."),
+            "Data-access audit log": _t("Journal d'accès aux données", "Datenzugriffs-Protokoll", "Registro de acceso a datos", "Log di accesso ai dati", "Logboek gegevenstoegang"),
+            "A transparent record of who read pay data, documents and privacy exports — tenant-visible and toggleable, so you can meet PDPL and GDPR access-transparency obligations.": _t(
+                "Un registre transparent de qui a consulté les données de paie, les documents et les exports de confidentialité — visible par le locataire et activable, pour répondre aux obligations de transparence d'accès du PDPL et du RGPD.",
+                "Ein transparentes Protokoll darüber, wer Gehaltsdaten, Dokumente und Datenschutz-Exporte gelesen hat — mandantensichtbar und aktivierbar, damit Sie die Zugriffstransparenz-Pflichten von PDPL und DSGVO erfüllen.",
+                "Un registro transparente de quién consultó datos de nómina, documentos y exportaciones de privacidad — visible para el inquilino y activable, para cumplir las obligaciones de transparencia de acceso de la PDPL y el RGPD.",
+                "Un registro trasparente di chi ha letto dati di retribuzione, documenti ed export sulla privacy — visibile al tenant e attivabile, per soddisfare gli obblighi di trasparenza d'accesso di PDPL e GDPR.",
+                "Een transparant overzicht van wie salarisgegevens, documenten en privacy-exports heeft ingezien — zichtbaar voor de tenant en in/uit te schakelen, zodat u voldoet aan de toegangstransparantie-eisen van PDPL en AVG."),
             "Org structure": _t("Structure organisationnelle", "Organisationsstruktur", "Estructura organizativa", "Struttura organizzativa", "Organisatiestructuur"),
             "Branches, departments, locations and positions — the org chart your headcount, reporting and compliance hang off.": _t(
                 "Filiales, départements, sites et postes — l'organigramme sur lequel reposent vos effectifs, votre reporting et votre conformité.",

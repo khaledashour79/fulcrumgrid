@@ -437,6 +437,14 @@ PAGE['/pricing/command-center/'] = {
             "<th scope=\"row\">Integraciones ERP (SAP · QBO · Odoo · Oracle)</th>",
             "<th scope=\"row\">Integrazioni ERP (SAP · QBO · Odoo · Oracle)</th>",
             "<th scope=\"row\">ERP-integraties (SAP · QBO · Odoo · Oracle)</th>"),
+        "<th scope=\"row\">REST API · webhooks · keys</th>": _t(
+            "<th scope=\"row\">API REST · webhooks · clés</th>", "<th scope=\"row\">REST-API · Webhooks · Schlüssel</th>",
+            "<th scope=\"row\">API REST · webhooks · claves</th>", "<th scope=\"row\">API REST · webhook · chiavi</th>",
+            "<th scope=\"row\">REST API · webhooks · sleutels</th>"),
+        "<th scope=\"row\">SSO (OIDC) sign-in</th>": _t(
+            "<th scope=\"row\">Connexion SSO (OIDC)</th>", "<th scope=\"row\">SSO-Anmeldung (OIDC)</th>",
+            "<th scope=\"row\">Inicio de sesión SSO (OIDC)</th>", "<th scope=\"row\">Accesso SSO (OIDC)</th>",
+            "<th scope=\"row\">SSO-aanmelding (OIDC)</th>"),
         "<th scope=\"row\">Contracts, Loans &amp; Rents</th>": _t(
             "<th scope=\"row\">Contrats, prêts &amp; loyers</th>", "<th scope=\"row\">Verträge, Darlehen &amp; Mieten</th>",
             "<th scope=\"row\">Contratos, préstamos &amp; alquileres</th>", "<th scope=\"row\">Contratti, prestiti &amp; affitti</th>",
@@ -691,10 +699,18 @@ PAGE['/pricing/collection/'] = {
             "<th scope=\"row\">Option IA (votre clé · privée, avec confirmation)</th>", "<th scope=\"row\">KI-Add-on (eigener Schlüssel · privat, mit Bestätigung)</th>",
             "<th scope=\"row\">Complemento de IA (tu clave · privado, con confirmación)</th>", "<th scope=\"row\">Add-on IA (tua chiave · privato, con conferma)</th>",
             "<th scope=\"row\">AI-add-on (eigen sleutel · privé, met bevestiging)</th>"),
-        "<th scope=\"row\">ERP connectors (SAP B1 · Odoo · Oracle Fusion · OIC)</th>": _t(
-            "<th scope=\"row\">Connecteurs ERP (SAP B1 · Odoo · Oracle Fusion · OIC)</th>", "<th scope=\"row\">ERP-Konnektoren (SAP B1 · Odoo · Oracle Fusion · OIC)</th>",
-            "<th scope=\"row\">Conectores ERP (SAP B1 · Odoo · Oracle Fusion · OIC)</th>", "<th scope=\"row\">Connettori ERP (SAP B1 · Odoo · Oracle Fusion · OIC)</th>",
-            "<th scope=\"row\">ERP-connectoren (SAP B1 · Odoo · Oracle Fusion · OIC)</th>"),
+        "<th scope=\"row\">ERP connectors (SAP B1 · Odoo · Oracle Fusion · OIC · Daftra)</th>": _t(
+            "<th scope=\"row\">Connecteurs ERP (SAP B1 · Odoo · Oracle Fusion · OIC · Daftra)</th>", "<th scope=\"row\">ERP-Konnektoren (SAP B1 · Odoo · Oracle Fusion · OIC · Daftra)</th>",
+            "<th scope=\"row\">Conectores ERP (SAP B1 · Odoo · Oracle Fusion · OIC · Daftra)</th>", "<th scope=\"row\">Connettori ERP (SAP B1 · Odoo · Oracle Fusion · OIC · Daftra)</th>",
+            "<th scope=\"row\">ERP-connectoren (SAP B1 · Odoo · Oracle Fusion · OIC · Daftra)</th>"),
+        "<th scope=\"row\">Field visits (proof-of-visit · cash SoD)</th>": _t(
+            "<th scope=\"row\">Visites terrain (preuve de visite · SoD espèces)</th>", "<th scope=\"row\">Außendienstbesuche (Besuchsnachweis · Bargeld-SoD)</th>",
+            "<th scope=\"row\">Visitas de campo (prueba de visita · SoD de efectivo)</th>", "<th scope=\"row\">Visite sul campo (prova di visita · SoD contante)</th>",
+            "<th scope=\"row\">Veldbezoeken (bezoekbewijs · kas-SoD)</th>"),
+        "<th scope=\"row\">SSO (OIDC) sign-in</th>": _t(
+            "<th scope=\"row\">Connexion SSO (OIDC)</th>", "<th scope=\"row\">SSO-Anmeldung (OIDC)</th>",
+            "<th scope=\"row\">Inicio de sesión SSO (OIDC)</th>", "<th scope=\"row\">Accesso SSO (OIDC)</th>",
+            "<th scope=\"row\">SSO-aanmelding (OIDC)</th>"),
         "<th scope=\"row\">Cheque register (capture → clear → post to ERP)</th>": _t(
             "<th scope=\"row\">Registre des chèques (saisie → encaissement → comptabilisation ERP)</th>", "<th scope=\"row\">Scheckregister (Erfassung → Einlösung → ERP-Buchung)</th>",
             "<th scope=\"row\">Registro de cheques (captura → cobro → contabilización ERP)</th>", "<th scope=\"row\">Registro assegni (acquisizione → incasso → registrazione ERP)</th>",
@@ -838,9 +854,9 @@ PAGE['/pricing/hr-suite/'] = {
         "Expenses &amp; HR letters": _t(
             "Notes de frais &amp; courriers RH", "Spesen &amp; HR-Schreiben", "Gastos &amp; cartas de RR. HH.",
             "Note spese &amp; lettere HR", "Onkosten &amp; HR-brieven"),
-        "Announcements, recognition &amp; probation": _t(
-            "Annonces, reconnaissance &amp; période d'essai", "Ankündigungen, Anerkennung &amp; Probezeit", "Anuncios, reconocimiento &amp; período de prueba",
-            "Annunci, riconoscimenti &amp; periodo di prova", "Aankondigingen, erkenning &amp; proeftijd"),
+        "News, recognition &amp; probation": _t(
+            "Actualités, reconnaissance &amp; période d'essai", "News, Anerkennung &amp; Probezeit", "Noticias, reconocimiento &amp; período de prueba",
+            "Notizie, riconoscimenti &amp; periodo di prova", "Nieuws, erkenning &amp; proeftijd"),
         "A real HR function, day to day": _t("Une véritable fonction RH, au quotidien", "Eine echte HR-Funktion, Tag für Tag", "Una verdadera función de RR. HH., día a día", "Una vera funzione HR, giorno per giorno", "Een echte HR-functie, dag in dag uit"),
         "Up to 50 people": _t("Jusqu'à 50 personnes", "Bis zu 50 Personen", "Hasta 50 personas", "Fino a 50 persone", "Tot 50 personen"),
         "Attendance, overtime &amp; timesheets": _t(
@@ -936,6 +952,9 @@ PAGE['/pricing/hr-suite/'] = {
         "<th scope=\"row\">Onboarding</th>": _t(
             "<th scope=\"row\">Intégration</th>", "<th scope=\"row\">Onboarding</th>", "<th scope=\"row\">Incorporación</th>",
             "<th scope=\"row\">Onboarding</th>", "<th scope=\"row\">Onboarding</th>"),
+        "<th scope=\"row\">Smart onboarding import (AI)</th>": _t(
+            "<th scope=\"row\">Import d'intégration intelligent (IA)</th>", "<th scope=\"row\">Intelligenter Onboarding-Import (KI)</th>", "<th scope=\"row\">Importación inteligente de incorporación (IA)</th>",
+            "<th scope=\"row\">Import onboarding intelligente (IA)</th>", "<th scope=\"row\">Slimme onboarding-import (AI)</th>"),
         "<th scope=\"row\">Time &amp; attendance</th>": _t(
             "<th scope=\"row\">Temps &amp; présence</th>", "<th scope=\"row\">Zeit &amp; Anwesenheit</th>", "<th scope=\"row\">Tiempo &amp; asistencia</th>",
             "<th scope=\"row\">Tempo &amp; presenze</th>", "<th scope=\"row\">Tijd &amp; aanwezigheid</th>"),
@@ -972,9 +991,15 @@ PAGE['/pricing/hr-suite/'] = {
         "<th scope=\"row\">Payroll</th>": _t(
             "<th scope=\"row\">Paie</th>", "<th scope=\"row\">Gehaltsabrechnung</th>", "<th scope=\"row\">Nóminas</th>",
             "<th scope=\"row\">Buste paga</th>", "<th scope=\"row\">Loonadministratie</th>"),
+        "<th scope=\"row\">Sales commissions</th>": _t(
+            "<th scope=\"row\">Commissions sur ventes</th>", "<th scope=\"row\">Verkaufsprovisionen</th>", "<th scope=\"row\">Comisiones de ventas</th>",
+            "<th scope=\"row\">Commissioni di vendita</th>", "<th scope=\"row\">Verkoopcommissies</th>"),
         "<th scope=\"row\">Statutory & local compliance</th>": _t(
             "<th scope=\"row\">Conformité légale & locale</th>", "<th scope=\"row\">Gesetzliche & lokale Compliance</th>", "<th scope=\"row\">Cumplimiento legal & local</th>",
             "<th scope=\"row\">Conformità normativa & locale</th>", "<th scope=\"row\">Wettelijke & lokale naleving</th>"),
+        "<th scope=\"row\">Data-access (PII) audit log</th>": _t(
+            "<th scope=\"row\">Journal d'accès aux données (PII)</th>", "<th scope=\"row\">Datenzugriffs-Protokoll (PII)</th>", "<th scope=\"row\">Registro de acceso a datos (PII)</th>",
+            "<th scope=\"row\">Log di accesso ai dati (PII)</th>", "<th scope=\"row\">Logboek gegevenstoegang (PII)</th>"),
         "<th scope=\"row\">Housing advance</th>": _t(
             "<th scope=\"row\">Avance logement</th>", "<th scope=\"row\">Wohnungsvorschuss</th>", "<th scope=\"row\">Anticipo de vivienda</th>",
             "<th scope=\"row\">Anticipo alloggio</th>", "<th scope=\"row\">Huisvestingsvoorschot</th>"),
