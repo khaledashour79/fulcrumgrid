@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>How Do You Calculate a Reorder Point for Stock and Supplies? — FulcrumGrid</title>
+  <meta name="description" content="A reorder point tells you when to order more stock before you run out. Learn the formula, a worked example, how to size safety stock and avoid common mistakes." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How Do You Calculate a Reorder Point for Stock and Supplies?" />
+  <meta property="og:description" content="A reorder point tells you when to order more stock before you run out. Learn the formula, a worked example, how to size safety stock and avoid common mistakes." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/how-to-calculate-a-reorder-point/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-19" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Do You Calculate a Reorder Point for Stock and Supplies?" />
+  <meta name="twitter:description" content="A reorder point tells you when to order more stock before you run out. Learn the formula, a worked example, how to size safety stock and avoid common mistakes." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-a-reorder-point/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How Do You Calculate a Reorder Point for Stock and Supplies?",
+    "description": "A reorder point tells you when to order more stock before you run out. Learn the formula, a worked example, how to size safety stock and avoid common mistakes.",
+    "datePublished": "2026-10-19",
+    "dateModified": "2026-10-19",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/how-to-calculate-a-reorder-point/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Reorder Point Guide",
+        "item": "https://fulcrumgrid.com/blog/how-to-calculate-a-reorder-point/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between a reorder point and safety stock?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Safety stock is the extra buffer you keep for surprises. The reorder point is the total level that triggers a new order, and it includes the safety stock plus the stock you expect to use while waiting for delivery."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need software to calculate a reorder point?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. A spreadsheet with usage, lead time and safety stock columns is enough for a small business. Software helps once you have many items and want automatic alerts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much safety stock is enough?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on how costly a stock-out is compared with holding extra stock. Critical items deserve a bigger buffer, while cheap and easy-to-replace items need little or none."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should seasonal products use the same reorder point all year?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Recalculate when demand changes, using usage figures from the relevant season rather than the yearly average."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I do if the supplier changes the lead time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Recalculate straight away. A longer lead time raises both the lead-time demand and the safety stock, so your reorder point goes up."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=ae8f0bf4">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Reorder Point Guide</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>How Do You Calculate a Reorder Point for Stock and Supplies?</h1>
+        <p class="hero-intro">A reorder point tells you when to order more stock before you run out. Learn the formula, a worked example, how to size safety stock and avoid common mistakes.</p>
+        <p class="mono"><time datetime="2026-10-19">October 19, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Running out of a key item costs sales, goodwill and sometimes a whole production day. Ordering too early ties up cash in boxes on a shelf. A reorder point sits between the two: it is the stock level at which you place a new order, so the delivery arrives just as the shelf is nearly empty. This Q&amp;A covers how to calculate it with nothing more than a spreadsheet.</p><h2>What is a reorder point?</h2><p>A reorder point (ROP) is a trigger quantity. When the units on hand, plus any already ordered and arriving, fall to that number, you place a new order. It works for resale stock, raw materials and everyday supplies such as packaging, toner or cleaning products.</p><h2>What is the formula?</h2><p><strong>Reorder point = (average daily usage &times; lead time in days) + safety stock</strong></p><ul><li><strong>Average daily usage.</strong> How many units you sell or consume per day, taken from recent history.</li><li><strong>Lead time.</strong> The days between placing an order and having the goods ready to use or sell.</li><li><strong>Safety stock.</strong> An extra buffer for surprises in demand or delivery.</li></ul><h2>Can you show a worked example?</h2><p>Say a small bakery uses 12 bags of flour a day on average. The supplier usually delivers in 7 days, so lead-time demand is 12 &times; 7 = 84 bags. Add a safety stock of 96 bags (calculated below) and the reorder point is 180 bags. When stock drops to 180, order again. If the delivery arrives on time, you will still hold about 96 bags when it lands.</p><h2>How do you work out safety stock?</h2><p>The simplest method that works for most small businesses is:</p><p><strong>Safety stock = (highest daily usage &times; longest lead time) &minus; (average daily usage &times; average lead time)</strong></p><p>In our example the busiest day used 18 bags and the slowest delivery took 10 days. So 18 &times; 10 = 180, minus 84, gives 96 bags. This is a cautious choice because it covers the worst case on both sides at once. If that ties up too much cash, accept a small risk: use a high-but-not-extreme figure, such as the 90th percentile of daily usage, or cover only the delays you actually see once in a while.</p><h2>How do you handle variable demand?</h2><ul><li><strong>Use a sensible window.</strong> Average the last 30 to 90 days, not a single week.</li><li><strong>Adjust for seasons.</strong> If December is double a normal month, use December data for December, not the yearly average.</li><li><strong>Separate one-offs.</strong> A big one-time order or a promotion will distort the average. Remove it or treat it separately.</li><li><strong>Add buffer to volatile items.</strong> A product with wild swings needs more safety stock than a steady one, even with the same average.</li></ul><h2>What if the supplier is sometimes late?</h2><p>Record the real lead time of each order, not the promised one. After ten or so deliveries you will see the typical and the worst case. Use the typical figure in the formula and let the gap to the worst case set your safety stock. If one supplier is consistently unreliable, the cheaper fix is often a second source or a firmer agreement rather than more buffer.</p><h2>How often should you review it?</h2><p>Review fast-moving items monthly and slow movers every quarter. Also recalculate whenever something changes: a new supplier, a price change, a new sales channel, or a season starting. A stock count at least once a month keeps the system honest, because the formula only works if the quantity on hand is accurate.</p><h2>What are the most common mistakes?</h2><ul><li><strong>Using the promised lead time.</strong> Supplier quotes are best-case. Measure what actually happens.</li><li><strong>Forgetting open orders.</strong> If you count only shelf stock, you may order twice for the same gap.</li><li><strong>Setting it once and forgetting it.</strong> Usage and lead times drift, so a reorder point from last year is probably wrong.</li><li><strong>Mixing units.</strong> Daily usage in boxes and stock in single items gives a meaningless result.</li><li><strong>Treating every item the same.</strong> Spend your effort on the few items that stop work or sales if they run out.</li><li><strong>Ignoring minimum order quantities.</strong> If the supplier sells only in pallets, your order size and your cash plan change.</li></ul><h2>Where do you start?</h2><p>Pick your ten most critical items, gather three months of usage and the last few delivery times, and calculate a reorder point for each. A spreadsheet is enough. If you already manage operations in <strong>FulcrumGrid Command Center</strong>, you can keep reorder points, review dates and supplier follow-ups next to your other tasks and KPIs, so a low-stock warning does not depend on someone remembering to check.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>What is the difference between a reorder point and safety stock?</summary><p>Safety stock is the extra buffer you keep for surprises. The reorder point is the total level that triggers a new order, and it includes the safety stock plus the stock you expect to use while waiting for delivery.</p></details>
+        <details class="faq-item"><summary>Do I need software to calculate a reorder point?</summary><p>No. A spreadsheet with usage, lead time and safety stock columns is enough for a small business. Software helps once you have many items and want automatic alerts.</p></details>
+        <details class="faq-item"><summary>How much safety stock is enough?</summary><p>It depends on how costly a stock-out is compared with holding extra stock. Critical items deserve a bigger buffer, while cheap and easy-to-replace items need little or none.</p></details>
+        <details class="faq-item"><summary>Should seasonal products use the same reorder point all year?</summary><p>No. Recalculate when demand changes, using usage figures from the relevant season rather than the yearly average.</p></details>
+        <details class="faq-item"><summary>What should I do if the supplier changes the lead time?</summary><p>Recalculate straight away. A longer lead time raises both the lead-time demand and the safety stock, so your reorder point goes up.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Keep reorder checks on your radar</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center lets you track KPIs, tasks and recurring reviews in one place, so reorder points and supplier follow-ups do not slip through the cracks.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=b2179049" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

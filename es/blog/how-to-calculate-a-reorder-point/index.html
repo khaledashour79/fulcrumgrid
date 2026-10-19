@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>¿Cómo calcular el punto de reorden de tu stock y tus suministros? — FulcrumGrid</title>
+  <meta name="description" content="El punto de reorden te dice cuándo pedir más antes de quedarte sin existencias. Conoce la fórmula, un ejemplo con números, el stock de seguridad y los errores típicos." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="¿Cómo calcular el punto de reorden de tu stock y tus suministros?" />
+  <meta property="og:description" content="El punto de reorden te dice cuándo pedir más antes de quedarte sin existencias. Conoce la fórmula, un ejemplo con números, el stock de seguridad y los errores típicos." />
+  <meta property="og:url" content="https://fulcrumgrid.com/es/blog/how-to-calculate-a-reorder-point/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-19" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="¿Cómo calcular el punto de reorden de tu stock y tus suministros?" />
+  <meta name="twitter:description" content="El punto de reorden te dice cuándo pedir más antes de quedarte sin existencias. Conoce la fórmula, un ejemplo con números, el stock de seguridad y los errores típicos." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/es/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-a-reorder-point/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "¿Cómo calcular el punto de reorden de tu stock y tus suministros?",
+    "description": "El punto de reorden te dice cuándo pedir más antes de quedarte sin existencias. Conoce la fórmula, un ejemplo con números, el stock de seguridad y los errores típicos.",
+    "datePublished": "2026-10-19",
+    "dateModified": "2026-10-19",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/es/blog/how-to-calculate-a-reorder-point/"
+    },
+    "inLanguage": "es"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://fulcrumgrid.com/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/es/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guía del punto de reorden",
+        "item": "https://fulcrumgrid.com/es/blog/how-to-calculate-a-reorder-point/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué diferencia hay entre punto de reorden y stock de seguridad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El stock de seguridad es el colchón para imprevistos. El punto de reorden es el nivel total que dispara el pedido: incluye el stock de seguridad más lo que consumirás mientras esperas la entrega."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Necesito un programa para calcular el punto de reorden?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Para un negocio pequeño basta una hoja de cálculo con columnas de consumo, plazo y stock de seguridad. El software ayuda cuando tienes muchos artículos y quieres alertas automáticas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto stock de seguridad es suficiente?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende de lo que cueste quedarte sin existencias frente a lo que cuesta mantener más. Los artículos críticos merecen un colchón mayor; los baratos y fáciles de reponer, poco o ninguno."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Un producto de temporada usa el mismo punto de reorden todo el año?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Recalcula cuando cambie la demanda, usando las cifras de la temporada correspondiente y no la media anual."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué hago si el proveedor cambia el plazo de entrega?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Recalcula de inmediato. Un plazo más largo aumenta tanto la demanda durante el plazo como el stock de seguridad, así que el punto de reorden sube."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=ae8f0bf4">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/es/products/">Productos</a>
+        <a href="/es/features/">Cuadrícula</a>
+        <a href="/es/pricing/">Precios</a>
+        <a href="/es/regions/">Regiones</a>
+        <a href="/es/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/es/contact/">Contacto</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Idioma">ES ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" class="active" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/es/contact/">Solicitar una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/es/">Inicio</a> / <a href="/es/blog/">Blog</a> / Guía del punto de reorden</p>
+        <span class="tag tag-accent">Operaciones</span>
+        <h1>¿Cómo calcular el punto de reorden de tu stock y tus suministros?</h1>
+        <p class="hero-intro">El punto de reorden te dice cuándo pedir más antes de quedarte sin existencias. Conoce la fórmula, un ejemplo con números, el stock de seguridad y los errores típicos.</p>
+        <p class="mono"><time datetime="2026-10-19">19 de octubre de 2026</time> · 6 min de lectura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Quedarte sin un artículo clave cuesta ventas, confianza y, a veces, un día entero de producción. Pedir demasiado pronto deja el dinero parado en cajas en un estante. El punto de reorden está entre ambos extremos: es el nivel de existencias en el que haces un nuevo pedido, de modo que la entrega llegue cuando el estante está casi vacío. Estas preguntas y respuestas explican cómo calcularlo solo con una hoja de cálculo.</p><h2>¿Qué es el punto de reorden?</h2><p>El punto de reorden es una cantidad que dispara el pedido. Cuando las unidades disponibles, más las ya pedidas que están en camino, bajan a ese número, haces un nuevo pedido. Sirve para mercancía de reventa, materias primas y suministros cotidianos como embalaje, tóner o productos de limpieza.</p><h2>¿Cuál es la fórmula?</h2><p><strong>Punto de reorden = (consumo medio diario &times; plazo de entrega en días) + stock de seguridad</strong></p><ul><li><strong>Consumo medio diario.</strong> Cuántas unidades vendes o consumes al día, según tu historial reciente.</li><li><strong>Plazo de entrega.</strong> Los días entre hacer el pedido y tener la mercancía lista para usar o vender.</li><li><strong>Stock de seguridad.</strong> Un colchón extra para imprevistos de demanda o de entrega.</li></ul><h2>¿Puedes poner un ejemplo con números?</h2><p>Una panadería pequeña gasta de media 12 sacos de harina al día. El proveedor suele entregar en 7 días, así que la demanda durante el plazo es 12 &times; 7 = 84 sacos. Si añades un stock de seguridad de 96 sacos (se calcula abajo), el punto de reorden es de 180 sacos. Cuando el stock baje a 180, haces el pedido. Si la entrega llega a tiempo, aún te quedarán unos 96 sacos cuando aterrice.</p><h2>¿Cómo se calcula el stock de seguridad?</h2><p>El método más sencillo, válido para la mayoría de los negocios pequeños:</p><p><strong>Stock de seguridad = (consumo diario máximo &times; plazo de entrega más largo) &minus; (consumo medio diario &times; plazo medio)</strong></p><p>En el ejemplo, el día más intenso se gastaron 18 sacos y la entrega más lenta tardó 10 días. Es decir, 18 &times; 10 = 180, menos 84, da 96 sacos. Es una opción prudente porque cubre el peor caso de ambos lados a la vez. Si inmoviliza demasiado dinero, asume un riesgo pequeño: usa una cifra alta pero no extrema, o cubre solo los retrasos que de verdad ves de vez en cuando.</p><h2>¿Cómo se gestiona una demanda variable?</h2><ul><li><strong>Elige un periodo razonable.</strong> Haz la media de los últimos 30 a 90 días, no de una sola semana.</li><li><strong>Ajusta por temporadas.</strong> Si diciembre duplica un mes normal, usa los datos de diciembre para diciembre, no la media anual.</li><li><strong>Separa lo excepcional.</strong> Un pedido grande puntual o una promoción distorsionan la media. Exclúyelos o trátalos aparte.</li><li><strong>Da más margen a los artículos volátiles.</strong> Un producto con grandes oscilaciones necesita más stock de seguridad que uno estable, aunque tengan la misma media.</li></ul><h2>¿Y si el proveedor se retrasa a veces?</h2><p>Anota el plazo real de cada pedido, no el prometido. Tras unas diez entregas verás el caso habitual y el peor. Usa la cifra habitual en la fórmula y deja que la diferencia con el peor caso determine tu stock de seguridad. Si un proveedor es poco fiable de forma constante, la solución más barata suele ser un segundo proveedor o un acuerdo más firme, no más colchón.</p><h2>¿Cada cuánto conviene revisarlo?</h2><p>Revisa los artículos de rotación rápida cada mes y los lentos cada trimestre. Recalcula también cuando algo cambie: un proveedor nuevo, un cambio de precio, un canal de venta nuevo o el inicio de una temporada. Un recuento de existencias al menos una vez al mes mantiene el sistema fiable, porque la fórmula solo funciona si la cantidad en mano es correcta.</p><h2>¿Cuáles son los errores más comunes?</h2><ul><li><strong>Usar el plazo prometido.</strong> Los presupuestos de los proveedores describen el mejor caso. Mide lo que ocurre de verdad.</li><li><strong>Olvidar los pedidos abiertos.</strong> Si cuentas solo lo que hay en el estante, puedes pedir dos veces para el mismo hueco.</li><li><strong>Calcularlo una vez y olvidarlo.</strong> El consumo y los plazos cambian, así que un punto de reorden del año pasado probablemente ya no sirve.</li><li><strong>Mezclar unidades.</strong> Consumo diario en cajas y stock en piezas sueltas da un resultado sin sentido.</li><li><strong>Tratar todos los artículos igual.</strong> Concentra el esfuerzo en los pocos que paran el trabajo o las ventas si se agotan.</li><li><strong>Ignorar los pedidos mínimos.</strong> Si el proveedor solo vende por palés, cambian tu cantidad de pedido y tu plan de tesorería.</li></ul><h2>¿Por dónde empezar?</h2><p>Elige tus diez artículos más críticos, reúne tres meses de consumo y los últimos plazos de entrega, y calcula un punto de reorden para cada uno. Una hoja de cálculo basta. Si ya gestionas tus operaciones en <strong>FulcrumGrid Command Center</strong>, puedes guardar puntos de reorden, fechas de revisión y seguimientos a proveedores junto a tus otras tareas e indicadores, para que el aviso de poco stock no dependa de que alguien se acuerde de mirar.</p>
+
+        <h2>Preguntas frecuentes</h2>
+        <details class="faq-item"><summary>¿Qué diferencia hay entre punto de reorden y stock de seguridad?</summary><p>El stock de seguridad es el colchón para imprevistos. El punto de reorden es el nivel total que dispara el pedido: incluye el stock de seguridad más lo que consumirás mientras esperas la entrega.</p></details>
+        <details class="faq-item"><summary>¿Necesito un programa para calcular el punto de reorden?</summary><p>No. Para un negocio pequeño basta una hoja de cálculo con columnas de consumo, plazo y stock de seguridad. El software ayuda cuando tienes muchos artículos y quieres alertas automáticas.</p></details>
+        <details class="faq-item"><summary>¿Cuánto stock de seguridad es suficiente?</summary><p>Depende de lo que cueste quedarte sin existencias frente a lo que cuesta mantener más. Los artículos críticos merecen un colchón mayor; los baratos y fáciles de reponer, poco o ninguno.</p></details>
+        <details class="faq-item"><summary>¿Un producto de temporada usa el mismo punto de reorden todo el año?</summary><p>No. Recalcula cuando cambie la demanda, usando las cifras de la temporada correspondiente y no la media anual.</p></details>
+        <details class="faq-item"><summary>¿Qué hago si el proveedor cambia el plazo de entrega?</summary><p>Recalcula de inmediato. Un plazo más largo aumenta tanto la demanda durante el plazo como el stock de seguridad, así que el punto de reorden sube.</p></details>
+
+        <p style="margin-top:32px"><a href="/es/blog/"><span aria-hidden="true">←</span> Volver al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Ten a la vista tus pedidos de reposición</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center te permite seguir indicadores, tareas y revisiones periódicas en un solo lugar, para que los puntos de reorden y los seguimientos a proveedores no se pierdan.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/es/products/command-center/">Explorar Command Center</a>
+          <a class="btn btn-secondary" href="/es/blog/">Volver al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La columna vertebral operativa de los equipos modernos.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Productos</h5>
+          <a href="/es/products/">Todos los productos</a>
+          <a href="/es/products/hr-suite/">HR Suite</a>
+          <a href="/es/products/command-center/">Command Center</a>
+          <a href="/es/products/collection/">Collection</a>
+          <a href="/es/custom-apps/">Apps a medida</a>
+        </div>
+        <div class="foot-col">
+          <h5>Cuadrícula</h5>
+          <a href="/es/features/">Funciones</a>
+          <a href="/es/integrations/">Integraciones</a>
+          <a href="/es/how-it-works/">Cómo funciona</a>
+          <a href="/es/pricing/">Precios</a>
+          <a href="/es/regions/">Regiones</a>
+          <a href="/es/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Empresa</h5>
+          <a href="/es/about/">Acerca de</a>
+          <a href="/es/faq/">FAQ</a>
+          <a href="/es/contact/">Contacto</a>
+          <a href="/es/privacy/">Privacidad</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Todos los derechos reservados.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=b2179049" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
