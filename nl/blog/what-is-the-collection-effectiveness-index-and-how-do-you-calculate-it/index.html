@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wat is de Collection Effectiveness Index (CEI) en hoe bereken je die? — FulcrumGrid</title>
+  <meta name="description" content="De CEI laat zien hoeveel van de invorderbare vorderingen je daadwerkelijk hebt geïnd. Lees de formule, een rekenvoorbeeld en hoe je de uitkomst beoordeelt." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wat is de Collection Effectiveness Index (CEI) en hoe bereken je die?" />
+  <meta property="og:description" content="De CEI laat zien hoeveel van de invorderbare vorderingen je daadwerkelijk hebt geïnd. Lees de formule, een rekenvoorbeeld en hoe je de uitkomst beoordeelt." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-10-16" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wat is de Collection Effectiveness Index (CEI) en hoe bereken je die?" />
+  <meta name="twitter:description" content="De CEI laat zien hoeveel van de invorderbare vorderingen je daadwerkelijk hebt geïnd. Lees de formule, een rekenvoorbeeld en hoe je de uitkomst beoordeelt." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wat is de Collection Effectiveness Index (CEI) en hoe bereken je die?",
+    "description": "De CEI laat zien hoeveel van de invorderbare vorderingen je daadwerkelijk hebt geïnd. Lees de formule, een rekenvoorbeeld en hoe je de uitkomst beoordeelt.",
+    "datePublished": "2026-10-16",
+    "dateModified": "2026-10-16",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "CEI-gids",
+        "item": "https://fulcrumgrid.com/nl/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is een goede Collection Effectiveness Index?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De meeste teams streven naar 80% of hoger, en 100% is het ideaal. Het juiste streefcijfer hangt af van je sector en betalingsvoorwaarden; vergelijk jezelf eerst met je eigen eerdere resultaten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan de CEI boven de 100% uitkomen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Normaal gesproken niet. Gebeurt het toch, controleer dan je gegevens: betalingen in de verkeerde periode, creditnota's of saldi die niet kloppen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik de CEI of de DSO gebruiken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Allebei. De DSO laat zien hoe lang betaling duurt, de CEI hoe effectief je team int wat verschuldigd is."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe vaak moet ik de CEI berekenen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Maandelijks is gebruikelijk. Wekelijks kan helpen tijdens een incassoactie, maar bij korte perioden schommelt het cijfer meer."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=ae8f0bf4">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / CEI-gids</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>Wat is de Collection Effectiveness Index (CEI) en hoe bereken je die?</h1>
+        <p class="hero-intro">De CEI laat zien hoeveel van de invorderbare vorderingen je daadwerkelijk hebt geïnd. Lees de formule, een rekenvoorbeeld en hoe je de uitkomst beoordeelt.</p>
+        <p class="mono"><time datetime="2026-10-16">16 oktober 2026</time> · 6 min leestijd</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Incassoteams worden vaak op één getal beoordeeld: hoeveel geld er binnenkwam. Maar de ontvangsten hangen af van wat er gefactureerd is, dus een goede maand is nog geen goed proces. De Collection Effectiveness Index, kortweg CEI, beantwoordt een scherpere vraag: van alles wat we konden innen, hoeveel hebben we echt geïnd? Hier volgen de antwoorden op de meest gestelde vragen.</p><h2>Wat is de Collection Effectiveness Index?</h2><p>De CEI is een percentage dat meet hoe goed een team de invorderbare vorderingen over een periode int, meestal een maand. Een score van 100% betekent dat alles wat te innen was ook is geïnd. Een lagere score betekent dat er geld is blijven liggen.</p><h2>Wat is de CEI-formule?</h2><p><strong>CEI = (beginsaldo debiteuren + verkopen op krediet &minus; totaal eindsaldo debiteuren) &divide; (beginsaldo debiteuren + verkopen op krediet &minus; eindsaldo niet-vervallen debiteuren) &times; 100</strong></p><ul><li><strong>Beginsaldo debiteuren.</strong> Het totaal dat je aan het begin van de periode tegoed had.</li><li><strong>Verkopen op krediet.</strong> Facturen die in de periode op rekening zijn verstuurd.</li><li><strong>Totaal eindsaldo debiteuren.</strong> Alles wat aan het eind nog openstaat, vervallen of niet.</li><li><strong>Eindsaldo niet-vervallen debiteuren.</strong> Het deel van dat saldo dat nog niet betaald hoefde te zijn. Het valt buiten de noemer, omdat niemand dat redelijkerwijs al kon innen.</li></ul><h2>Is er een uitgewerkt voorbeeld?</h2><p>Stel dat je in september start met 500.000 aan debiteuren en 800.000 aan verkopen op krediet factureert. Aan het eind van de maand staat in totaal 560.000 open, waarvan 440.000 nog binnen de betaaltermijn valt en 120.000 vervallen is.</p><ul><li>Teller: 500.000 + 800.000 &minus; 560.000 = 740.000</li><li>Noemer: 500.000 + 800.000 &minus; 440.000 = 860.000</li><li>CEI: 740.000 &divide; 860.000 &times; 100 = <strong>86,0%</strong></li></ul><p>Het team heeft 86% van het invorderbare bedrag geïnd. De overige 14% is het vervallen saldo dat naar de volgende maand schuift.</p><h2>Hoe verschilt de CEI van DSO?</h2><p>DSO (days sales outstanding) vertelt hoe lang het gemiddeld duurt voordat je betaald krijgt. Met dezelfde cijfers is de DSO 560.000 &divide; 800.000 &times; 30, ongeveer 21 dagen. Het is een snelheidsmaat die meebeweegt met omzet, seizoenspatronen en betalingsvoorwaarden. Een grote factuur op de laatste dag van de maand kan de DSO omhoog duwen, ook als je team niets fout deed.</p><p>De CEI meet inspanning en resultaat ten opzichte van wat echt verschuldigd was. Omdat niet-vervallen vorderingen buiten beschouwing blijven, is hij eerlijker voor de incassoteams en minder vertekend door timing. Samen werken ze het best: DSO toont de kasstroomcyclus, CEI toont hoe goed het team die bewerkt.</p><h2>Hoe beoordeel je de uitkomst?</h2><ul><li><strong>100%:</strong> het ideaal. Alles wat te innen was, is geïnd.</li><li><strong>80% en hoger:</strong> een gebruikelijk streefcijfer en doorgaans gezond.</li><li><strong>Onder de 80%:</strong> vervallen saldo's lopen op. Kijk naar specifieke klanten en de leeftijd van facturen.</li></ul><p>Streefcijfers verschillen per sector en betalingsvoorwaarden, dus volg je eigen trend over meerdere maanden in plaats van één getal na te jagen.</p><h2>Wat laat de CEI stijgen of dalen?</h2><h3>Wat hem verhoogt</h3><ul><li>Duidelijke, juiste facturen die op tijd verstuurd worden.</li><li>Herinneringen voor en direct na de vervaldatum.</li><li>Snelle afhandeling van geschillen.</li><li>Kredietchecks en verstandige voorwaarden voor nieuwe klanten.</li></ul><h3>Wat hem verlaagt</h3><ul><li>Factuurfouten die geschillen veroorzaken.</li><li>Grote klanten die structureel te laat betalen.</li><li>Niet toegewezen betalingen waardoor betaalde facturen open blijven staan.</li><li>Alleen innen wanneer iemand eraan denkt.</li></ul><h2>Welke fouten kun je beter vermijden?</h2><ul><li><strong>Verschillende perioden gebruiken.</strong> Begin- en eindsaldo moeten dezelfde periode beslaan.</li><li><strong>Contante verkopen meetellen.</strong> Alleen verkopen op krediet horen in de formule.</li><li><strong>Vervallen en niet-vervallen verkeerd indelen.</strong> Fouten in de ouderdomsanalyse veranderen de noemer en de score.</li><li><strong>Afschrijvingen en creditnota's negeren.</strong> Bepaal hoe je ze behandelt en blijf consequent.</li><li><strong>Eén maand los beoordelen.</strong> Eén grote betaling kan het cijfer flink doen schommelen, dus kijk naar de trend.</li></ul><h2>Hoe ziet een maandelijkse routine eruit?</h2><ul><li>Sluit de maand af en controleer of alle betalingen zijn toegewezen.</li><li>Haal uit je ouderdomsanalyse het beginsaldo, het totaal eindsaldo en het eindsaldo niet-vervallen.</li><li>Bereken de CEI en daarnaast de DSO.</li><li>Maak een lijst van de vijf grootste vervallen rekeningen en spreek voor elk een actie af.</li><li>Leg de uitkomst vast en vergelijk die met de drie voorgaande maanden.</li></ul><p>Een spreadsheet is genoeg om te beginnen. Wil je dat niet elke maand opnieuw opbouwen, dan houdt <strong>FulcrumGrid Collection</strong> facturen, ouderdom en opvolging op één plek bij, zodat de gegevens voor de CEI altijd actueel zijn. Welk hulpmiddel je ook gebruikt, de gewoonte telt zwaarder dan de software.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wat is een goede Collection Effectiveness Index?</summary><p>De meeste teams streven naar 80% of hoger, en 100% is het ideaal. Het juiste streefcijfer hangt af van je sector en betalingsvoorwaarden; vergelijk jezelf eerst met je eigen eerdere resultaten.</p></details>
+        <details class="faq-item"><summary>Kan de CEI boven de 100% uitkomen?</summary><p>Normaal gesproken niet. Gebeurt het toch, controleer dan je gegevens: betalingen in de verkeerde periode, creditnota's of saldi die niet kloppen.</p></details>
+        <details class="faq-item"><summary>Moet ik de CEI of de DSO gebruiken?</summary><p>Allebei. De DSO laat zien hoe lang betaling duurt, de CEI hoe effectief je team int wat verschuldigd is.</p></details>
+        <details class="faq-item"><summary>Hoe vaak moet ik de CEI berekenen?</summary><p>Maandelijks is gebruikelijk. Wekelijks kan helpen tijdens een incassoactie, maar bij korte perioden schommelt het cijfer meer.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Houd het incasso elke maand op koers</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Collection helpt je vervallen facturen op te volgen en de ouderdom in één oogopslag te zien, zodat je CEI-gegevens altijd actueel blijven.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/collection/">Ontdek Collection</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=b2179049" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

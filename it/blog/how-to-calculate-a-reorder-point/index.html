@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Come si calcola il punto di riordino per scorte e materiali di consumo? — FulcrumGrid</title>
+  <meta name="description" content="Il punto di riordino indica quando ordinare prima di restare senza scorte. Scopri la formula, un esempio numerico, la scorta di sicurezza e gli errori più comuni." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Come si calcola il punto di riordino per scorte e materiali di consumo?" />
+  <meta property="og:description" content="Il punto di riordino indica quando ordinare prima di restare senza scorte. Scopri la formula, un esempio numerico, la scorta di sicurezza e gli errori più comuni." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/how-to-calculate-a-reorder-point/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-19" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Come si calcola il punto di riordino per scorte e materiali di consumo?" />
+  <meta name="twitter:description" content="Il punto di riordino indica quando ordinare prima di restare senza scorte. Scopri la formula, un esempio numerico, la scorta di sicurezza e gli errori più comuni." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-a-reorder-point/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Come si calcola il punto di riordino per scorte e materiali di consumo?",
+    "description": "Il punto di riordino indica quando ordinare prima di restare senza scorte. Scopri la formula, un esempio numerico, la scorta di sicurezza e gli errori più comuni.",
+    "datePublished": "2026-10-19",
+    "dateModified": "2026-10-19",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/how-to-calculate-a-reorder-point/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida al punto di riordino",
+        "item": "https://fulcrumgrid.com/it/blog/how-to-calculate-a-reorder-point/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual è la differenza tra punto di riordino e scorta di sicurezza?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La scorta di sicurezza è il margine per gli imprevisti. Il punto di riordino è il livello totale che fa scattare l'ordine: comprende la scorta di sicurezza più ciò che consumerai in attesa della consegna."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Serve un software per calcolare il punto di riordino?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Per una piccola impresa basta un foglio di calcolo con colonne per consumo, tempo di approvvigionamento e scorta di sicurezza. Il software aiuta quando gli articoli sono tanti e vuoi avvisi automatici."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanta scorta di sicurezza basta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dipende da quanto costa una rottura di stock rispetto al costo di tenere più merce. Gli articoli critici meritano un margine maggiore, quelli economici e facili da sostituire poco o nulla."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Un prodotto stagionale ha lo stesso punto di riordino tutto l'anno?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Ricalcolalo quando cambia la domanda, usando i dati della stagione interessata e non la media annuale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Cosa fare se il fornitore cambia i tempi di consegna?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ricalcola subito. Un tempo più lungo aumenta sia la domanda durante l'approvvigionamento sia la scorta di sicurezza, quindi il punto di riordino sale."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=ae8f0bf4">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida al punto di riordino</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Come si calcola il punto di riordino per scorte e materiali di consumo?</h1>
+        <p class="hero-intro">Il punto di riordino indica quando ordinare prima di restare senza scorte. Scopri la formula, un esempio numerico, la scorta di sicurezza e gli errori più comuni.</p>
+        <p class="mono"><time datetime="2026-10-19">19 ottobre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Restare senza un articolo chiave costa vendite, fiducia e a volte un'intera giornata di produzione. Ordinare troppo presto, invece, blocca liquidità in scatoloni fermi sullo scaffale. Il punto di riordino sta nel mezzo: è il livello di scorta al quale effettui un nuovo ordine, in modo che la consegna arrivi quando lo scaffale è quasi vuoto. Queste domande e risposte spiegano come calcolarlo con un semplice foglio di calcolo.</p><h2>Che cos'è il punto di riordino?</h2><p>Il punto di riordino è una quantità che fa scattare l'ordine. Quando le unità disponibili, più quelle già ordinate e in arrivo, scendono a quel numero, lanci un nuovo ordine. Va bene per merce destinata alla rivendita, materie prime e materiali di consumo come imballaggi, toner o prodotti per la pulizia.</p><h2>Qual è la formula?</h2><p><strong>Punto di riordino = (consumo medio giornaliero &times; tempo di approvvigionamento in giorni) + scorta di sicurezza</strong></p><ul><li><strong>Consumo medio giornaliero.</strong> Quante unità vendi o consumi al giorno, in base allo storico recente.</li><li><strong>Tempo di approvvigionamento.</strong> I giorni che passano tra l'ordine e il momento in cui la merce è pronta per essere usata o venduta.</li><li><strong>Scorta di sicurezza.</strong> Un margine in più per gli imprevisti di domanda o di consegna.</li></ul><h2>Puoi fare un esempio con i numeri?</h2><p>Un piccolo forno consuma in media 12 sacchi di farina al giorno. Il fornitore di solito consegna in 7 giorni, quindi la domanda durante l'approvvigionamento è 12 &times; 7 = 84 sacchi. Aggiungendo una scorta di sicurezza di 96 sacchi (calcolata sotto), il punto di riordino è 180 sacchi. Quando la scorta scende a 180, ordini. Se la consegna arriva puntuale, ti resteranno ancora circa 96 sacchi al suo arrivo.</p><h2>Come si calcola la scorta di sicurezza?</h2><p>Il metodo più semplice, adatto alla maggior parte delle piccole imprese:</p><p><strong>Scorta di sicurezza = (consumo giornaliero massimo &times; tempo di approvvigionamento più lungo) &minus; (consumo medio giornaliero &times; tempo medio)</strong></p><p>Nell'esempio il giorno più intenso ha consumato 18 sacchi e la consegna più lenta ha richiesto 10 giorni. Quindi 18 &times; 10 = 180, meno 84, fa 96 sacchi. È una scelta prudente perché copre il caso peggiore da entrambi i lati insieme. Se immobilizza troppa liquidità, accetta un piccolo rischio: usa un valore alto ma non estremo, oppure copri solo i ritardi che vedi davvero ogni tanto.</p><h2>Come si gestisce una domanda variabile?</h2><ul><li><strong>Scegli un periodo sensato.</strong> Calcola la media degli ultimi 30-90 giorni, non di una sola settimana.</li><li><strong>Tieni conto delle stagioni.</strong> Se dicembre vale il doppio di un mese normale, usa i dati di dicembre per dicembre, non la media annuale.</li><li><strong>Separa i casi eccezionali.</strong> Un grosso ordine isolato o una promozione falsano la media: escludili o trattali a parte.</li><li><strong>Aggiungi margine agli articoli instabili.</strong> Un prodotto con forti oscillazioni richiede più scorta di sicurezza di uno regolare, anche a parità di media.</li></ul><h2>E se il fornitore ritarda qualche volta?</h2><p>Annota il tempo reale di ogni ordine, non quello promesso. Dopo una decina di consegne vedrai il caso tipico e il peggiore. Usa il valore tipico nella formula e lascia che la distanza dal caso peggiore determini la scorta di sicurezza. Se un fornitore è costantemente inaffidabile, la soluzione meno costosa è spesso un secondo fornitore o un accordo più vincolante, non più scorta.</p><h2>Ogni quanto va rivisto?</h2><p>Rivedi gli articoli a rotazione veloce ogni mese e quelli lenti ogni trimestre. Ricalcola anche quando cambia qualcosa: un nuovo fornitore, una variazione di prezzo, un nuovo canale di vendita o l'inizio di una stagione. Un inventario almeno mensile mantiene il sistema affidabile, perché la formula funziona solo se la quantità in magazzino è corretta.</p><h2>Quali sono gli errori più comuni?</h2><ul><li><strong>Usare il tempo promesso.</strong> I preventivi dei fornitori descrivono il caso migliore. Misura ciò che accade davvero.</li><li><strong>Dimenticare gli ordini aperti.</strong> Se conti solo la scorta a scaffale, rischi di ordinare due volte per lo stesso buco.</li><li><strong>Calcolarlo una volta e dimenticarlo.</strong> Consumi e tempi cambiano, quindi un punto di riordino dell'anno scorso probabilmente è sbagliato.</li><li><strong>Mescolare le unità.</strong> Un consumo giornaliero in scatole e una scorta in pezzi singoli danno un risultato senza senso.</li><li><strong>Trattare tutti gli articoli allo stesso modo.</strong> Concentra l'impegno sui pochi articoli la cui mancanza ferma il lavoro o le vendite.</li><li><strong>Ignorare i lotti minimi.</strong> Se il fornitore vende solo a bancali, cambiano la quantità d'ordine e il piano di cassa.</li></ul><h2>Da dove cominciare?</h2><p>Scegli i dieci articoli più critici, raccogli tre mesi di consumi e gli ultimi tempi di consegna, e calcola un punto di riordino per ciascuno. Basta un foglio di calcolo. Se gestisci già le attività in <strong>FulcrumGrid Command Center</strong>, puoi tenere punti di riordino, date di revisione e solleciti ai fornitori accanto alle altre attività e ai KPI, così l'avviso di scorta bassa non dipende dal fatto che qualcuno si ricordi di controllare.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Qual è la differenza tra punto di riordino e scorta di sicurezza?</summary><p>La scorta di sicurezza è il margine per gli imprevisti. Il punto di riordino è il livello totale che fa scattare l'ordine: comprende la scorta di sicurezza più ciò che consumerai in attesa della consegna.</p></details>
+        <details class="faq-item"><summary>Serve un software per calcolare il punto di riordino?</summary><p>No. Per una piccola impresa basta un foglio di calcolo con colonne per consumo, tempo di approvvigionamento e scorta di sicurezza. Il software aiuta quando gli articoli sono tanti e vuoi avvisi automatici.</p></details>
+        <details class="faq-item"><summary>Quanta scorta di sicurezza basta?</summary><p>Dipende da quanto costa una rottura di stock rispetto al costo di tenere più merce. Gli articoli critici meritano un margine maggiore, quelli economici e facili da sostituire poco o nulla.</p></details>
+        <details class="faq-item"><summary>Un prodotto stagionale ha lo stesso punto di riordino tutto l'anno?</summary><p>No. Ricalcolalo quando cambia la domanda, usando i dati della stagione interessata e non la media annuale.</p></details>
+        <details class="faq-item"><summary>Cosa fare se il fornitore cambia i tempi di consegna?</summary><p>Ricalcola subito. Un tempo più lungo aumenta sia la domanda durante l'approvvigionamento sia la scorta di sicurezza, quindi il punto di riordino sale.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Tieni sotto controllo i riordini</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center ti permette di seguire KPI, attività e revisioni periodiche in un unico posto, così punti di riordino e solleciti ai fornitori non si perdono per strada.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=b2179049" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

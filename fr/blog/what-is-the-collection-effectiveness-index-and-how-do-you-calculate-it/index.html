@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Qu'est-ce que l'indice d'efficacité du recouvrement (CEI) et comment le calculer ? — FulcrumGrid</title>
+  <meta name="description" content="Le CEI indique quelle part des créances recouvrables vous avez réellement encaissée. Découvrez la formule, un exemple chiffré et la façon d'interpréter le résultat." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Qu'est-ce que l'indice d'efficacité du recouvrement (CEI) et comment le calculer ?" />
+  <meta property="og:description" content="Le CEI indique quelle part des créances recouvrables vous avez réellement encaissée. Découvrez la formule, un exemple chiffré et la façon d'interpréter le résultat." />
+  <meta property="og:url" content="https://fulcrumgrid.com/fr/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-16" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Qu'est-ce que l'indice d'efficacité du recouvrement (CEI) et comment le calculer ?" />
+  <meta name="twitter:description" content="Le CEI indique quelle part des créances recouvrables vous avez réellement encaissée. Découvrez la formule, un exemple chiffré et la façon d'interpréter le résultat." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/fr/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Qu'est-ce que l'indice d'efficacité du recouvrement (CEI) et comment le calculer ?",
+    "description": "Le CEI indique quelle part des créances recouvrables vous avez réellement encaissée. Découvrez la formule, un exemple chiffré et la façon d'interpréter le résultat.",
+    "datePublished": "2026-10-16",
+    "dateModified": "2026-10-16",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/fr/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "fr"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://fulcrumgrid.com/fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/fr/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guide du CEI",
+        "item": "https://fulcrumgrid.com/fr/blog/what-is-the-collection-effectiveness-index-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quel est un bon indice d'efficacité du recouvrement ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La plupart des équipes visent 80 % ou plus, et 100 % est l'idéal. L'objectif dépend de votre secteur et de vos conditions de paiement ; comparez-vous d'abord à vos propres résultats passés."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le CEI peut-il dépasser 100 % ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Normalement non. Si c'est le cas, vérifiez vos données : paiements affectés à la mauvaise période, avoirs ou soldes de créances incohérents."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Faut-il utiliser le CEI ou le DSO ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Les deux. Le DSO montre le temps que prend le paiement, tandis que le CEI montre l'efficacité avec laquelle votre équipe encaisse ce qui est dû."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "À quelle fréquence calculer le CEI ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Une fois par mois en général. Un suivi hebdomadaire peut aider lors d'une campagne de relance, mais sur une période courte le chiffre varie davantage."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=ae8f0bf4">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/fr/" aria-label="Accueil FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/fr/products/">Produits</a>
+        <a href="/fr/features/">Grille</a>
+        <a href="/fr/pricing/">Tarifs</a>
+        <a href="/fr/regions/">Régions</a>
+        <a href="/fr/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/fr/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Langue">FR ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" class="active" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/fr/contact/">Demander une démo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/fr/">Accueil</a> / <a href="/fr/blog/">Blog</a> / Guide du CEI</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>Qu'est-ce que l'indice d'efficacité du recouvrement (CEI) et comment le calculer ?</h1>
+        <p class="hero-intro">Le CEI indique quelle part des créances recouvrables vous avez réellement encaissée. Découvrez la formule, un exemple chiffré et la façon d'interpréter le résultat.</p>
+        <p class="mono"><time datetime="2026-10-16">16 octobre 2026</time> · 6 min de lecture</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>On juge souvent une équipe de recouvrement sur un seul chiffre : l'argent encaissé. Or l'encaissement dépend du volume facturé : un bon mois ne prouve pas un bon processus. L'indice d'efficacité du recouvrement, ou CEI (Collection Effectiveness Index), pose une question plus précise : sur tout ce que nous pouvions encaisser, combien l'avons-nous réellement encaissé ? Voici les réponses aux questions les plus fréquentes.</p><h2>Qu'est-ce que l'indice d'efficacité du recouvrement ?</h2><p>Le CEI est un pourcentage qui mesure la capacité d'une équipe à encaisser les créances recouvrables sur une période, généralement un mois. Un score de 100 % signifie que tout ce qui pouvait être encaissé l'a été. Un score plus bas signifie que de l'argent est resté en route.</p><h2>Quelle est la formule du CEI ?</h2><p><strong>CEI = (créances initiales + ventes à crédit &minus; créances totales finales) &divide; (créances initiales + ventes à crédit &minus; créances courantes finales) &times; 100</strong></p><ul><li><strong>Créances initiales.</strong> Montant total dû au début de la période.</li><li><strong>Ventes à crédit.</strong> Factures émises à crédit pendant la période.</li><li><strong>Créances totales finales.</strong> Tout ce qui reste dû à la fin, échu ou non.</li><li><strong>Créances courantes finales.</strong> La part de ce solde qui n'est pas encore échue. Elle est exclue du dénominateur, car personne ne pouvait raisonnablement l'encaisser.</li></ul><h2>Un exemple chiffré ?</h2><p>Supposons qu'en septembre vous démarriez avec 500 000 de créances et émettiez 800 000 de ventes à crédit. En fin de mois, on vous doit 560 000 au total, dont 440 000 encore dans les délais et 120 000 en retard.</p><ul><li>Numérateur : 500 000 + 800 000 &minus; 560 000 = 740 000</li><li>Dénominateur : 500 000 + 800 000 &minus; 440 000 = 860 000</li><li>CEI : 740 000 &divide; 860 000 &times; 100 = <strong>86,0 %</strong></li></ul><p>L'équipe a encaissé 86 % de ce qui était recouvrable. Les 14 % restants correspondent au solde échu reporté.</p><h2>En quoi le CEI diffère-t-il du DSO ?</h2><p>Le DSO (délai moyen de paiement) indique en moyenne combien de temps il faut pour être payé. Avec les mêmes chiffres, le DSO est de 560 000 &divide; 800 000 &times; 30, soit environ 21 jours. C'est une mesure de vitesse, qui varie avec le volume des ventes, la saisonnalité et les conditions de paiement. Une grosse facture émise le dernier jour du mois peut faire grimper le DSO sans que l'équipe n'ait commis la moindre erreur.</p><p>Le CEI mesure l'effort et le résultat par rapport à ce qui était réellement dû. Comme il ignore les créances courantes, il est plus équitable pour les gestionnaires et moins faussé par le calendrier. Les deux indicateurs se complètent : le DSO montre le cycle de trésorerie, le CEI montre la qualité du travail de recouvrement.</p><h2>Comment interpréter le résultat ?</h2><ul><li><strong>100 % :</strong> l'idéal. Tout ce qui était recouvrable a été encaissé.</li><li><strong>80 % et plus :</strong> un objectif courant et, en général, un signe de bonne santé.</li><li><strong>Moins de 80 % :</strong> les impayés s'accumulent. Examinez les clients concernés et l'ancienneté des factures.</li></ul><p>Les objectifs varient selon le secteur et les conditions de paiement ; suivez donc votre propre tendance sur plusieurs mois plutôt que de viser un chiffre isolé.</p><h2>Qu'est-ce qui fait monter ou baisser le CEI ?</h2><h3>Ce qui l'améliore</h3><ul><li>Des factures claires, exactes et envoyées à temps.</li><li>Des relances avant et juste après l'échéance.</li><li>Un règlement rapide des litiges.</li><li>Des vérifications de solvabilité et des conditions raisonnables pour les nouveaux clients.</li></ul><h3>Ce qui le dégrade</h3><ul><li>Des erreurs de facturation qui provoquent des litiges.</li><li>De gros clients qui paient systématiquement en retard.</li><li>Des paiements non affectés qui laissent des factures réglées ouvertes.</li><li>Des relances faites seulement quand quelqu'un y pense.</li></ul><h2>Quelles erreurs éviter ?</h2><ul><li><strong>Mélanger les périodes.</strong> Les soldes initiaux et finaux doivent couvrir la même période.</li><li><strong>Inclure les ventes au comptant.</strong> Seules les ventes à crédit entrent dans la formule.</li><li><strong>Mal classer courant et échu.</strong> Une erreur de balance âgée modifie le dénominateur et le score.</li><li><strong>Ignorer les passages en perte et les avoirs.</strong> Décidez comment les traiter et restez cohérent.</li><li><strong>Juger un mois isolé.</strong> Un seul gros paiement peut faire varier le chiffre : regardez la tendance.</li></ul><h2>À quoi ressemble une routine mensuelle ?</h2><ul><li>Clôturez le mois et vérifiez que les paiements sont affectés.</li><li>Extrayez de votre balance âgée les créances initiales, totales finales et courantes finales.</li><li>Calculez le CEI, et le DSO à côté.</li><li>Listez les cinq plus gros comptes en retard et convenez d'une action pour chacun.</li><li>Consignez le résultat et comparez-le aux trois mois précédents.</li></ul><p>Un tableur suffit pour commencer. Si vous ne voulez pas tout reconstruire chaque mois, <strong>FulcrumGrid Collection</strong> suit les factures, l'ancienneté et les relances au même endroit, de sorte que les données du CEI sont toujours à jour. Quel que soit l'outil, l'habitude compte plus que le logiciel.</p>
+
+        <h2>Questions fréquentes</h2>
+        <details class="faq-item"><summary>Quel est un bon indice d'efficacité du recouvrement ?</summary><p>La plupart des équipes visent 80 % ou plus, et 100 % est l'idéal. L'objectif dépend de votre secteur et de vos conditions de paiement ; comparez-vous d'abord à vos propres résultats passés.</p></details>
+        <details class="faq-item"><summary>Le CEI peut-il dépasser 100 % ?</summary><p>Normalement non. Si c'est le cas, vérifiez vos données : paiements affectés à la mauvaise période, avoirs ou soldes de créances incohérents.</p></details>
+        <details class="faq-item"><summary>Faut-il utiliser le CEI ou le DSO ?</summary><p>Les deux. Le DSO montre le temps que prend le paiement, tandis que le CEI montre l'efficacité avec laquelle votre équipe encaisse ce qui est dû.</p></details>
+        <details class="faq-item"><summary>À quelle fréquence calculer le CEI ?</summary><p>Une fois par mois en général. Un suivi hebdomadaire peut aider lors d'une campagne de relance, mais sur une période courte le chiffre varie davantage.</p></details>
+
+        <p style="margin-top:32px"><a href="/fr/blog/"><span aria-hidden="true">←</span> Retour au blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Gardez le recouvrement sous contrôle chaque mois</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Collection vous aide à relancer les factures en retard et à visualiser l'ancienneté d'un coup d'œil, pour que vos données CEI restent à jour.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/fr/products/collection/">Découvrir Collection</a>
+          <a class="btn btn-secondary" href="/fr/blog/">Retour au blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>L'épine dorsale opérationnelle des équipes modernes.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produits</h5>
+          <a href="/fr/products/">Tous les produits</a>
+          <a href="/fr/products/hr-suite/">HR Suite</a>
+          <a href="/fr/products/command-center/">Command Center</a>
+          <a href="/fr/products/collection/">Collection</a>
+          <a href="/fr/custom-apps/">Applications sur mesure</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grille</h5>
+          <a href="/fr/features/">Fonctionnalités</a>
+          <a href="/fr/integrations/">Intégrations</a>
+          <a href="/fr/how-it-works/">Comment ça marche</a>
+          <a href="/fr/pricing/">Tarifs</a>
+          <a href="/fr/regions/">Régions</a>
+          <a href="/fr/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Entreprise</h5>
+          <a href="/fr/about/">À propos</a>
+          <a href="/fr/faq/">FAQ</a>
+          <a href="/fr/contact/">Contact</a>
+          <a href="/fr/privacy/">Confidentialité</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tous droits réservés.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=b2179049" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

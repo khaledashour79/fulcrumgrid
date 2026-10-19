@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Come fare un'analisi delle cause radice con i 5 perché? — FulcrumGrid</title>
+  <meta name="description" content="Scopri come fare un'analisi delle cause radice con i 5 perché: i passaggi, un esempio pratico, gli errori comuni, quando usare Ishikawa e come tracciare le azioni." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Come fare un'analisi delle cause radice con i 5 perché?" />
+  <meta property="og:description" content="Scopri come fare un'analisi delle cause radice con i 5 perché: i passaggi, un esempio pratico, gli errori comuni, quando usare Ishikawa e come tracciare le azioni." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-18" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Come fare un'analisi delle cause radice con i 5 perché?" />
+  <meta name="twitter:description" content="Scopri come fare un'analisi delle cause radice con i 5 perché: i passaggi, un esempio pratico, gli errori comuni, quando usare Ishikawa e come tracciare le azioni." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Come fare un'analisi delle cause radice con i 5 perché?",
+    "description": "Scopri come fare un'analisi delle cause radice con i 5 perché: i passaggi, un esempio pratico, gli errori comuni, quando usare Ishikawa e come tracciare le azioni.",
+    "datePublished": "2026-10-18",
+    "dateModified": "2026-10-18",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Analisi dei 5 perché",
+        "item": "https://fulcrumgrid.com/it/blog/how-to-do-a-root-cause-analysis-with-the-5-whys/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Che cos&rsquo;è il metodo dei 5 perché?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "È una tecnica di analisi delle cause radice in cui si chiede ripetutamente &laquo;perché?&raquo;, rispondendo ogni volta con prove, fino a raggiungere una causa di processo o di sistema correggibile. Cinque è un riferimento; il numero giusto è quello che serve."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Servono sempre esattamente cinque perché?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Si fermi quando raggiunge una causa che, una volta corretta, impedirebbe al problema di tornare. Possono bastare tre domande o servirne più di cinque."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quando conviene usare un diagramma di Ishikawa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Quando il problema è complesso o la causa non è chiara, perché permette di esplorare più categorie di cause insieme. Poi può applicare i 5 perché ai rami più probabili."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come evito di dare la colpa alle persone nei 5 perché?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chieda perché il processo ha permesso l&rsquo;errore, non chi lo ha commesso. Se la catena finisce con un nome o con una parola vaga come negligenza, continui a scavare nel sistema attorno alla persona."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come mi assicuro che le azioni vengano completate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Assegni a ogni azione un responsabile, una scadenza e un controllo di successo, e riveda l&rsquo;elenco con regolarità. Tenerlo in un tracker condiviso anziché in un documento una tantum rende molto più probabile il follow-up."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=ae8f0bf4">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Analisi dei 5 perché</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Come fare un'analisi delle cause radice con i 5 perché?</h1>
+        <p class="hero-intro">Scopri come fare un'analisi delle cause radice con i 5 perché: i passaggi, un esempio pratico, gli errori comuni, quando usare Ishikawa e come tracciare le azioni.</p>
+        <p class="mono"><time datetime="2026-10-18">18 ottobre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>I 5 perché sono una tecnica semplice di analisi delle cause radice: si enuncia un problema, ci si chiede &laquo;perché è successo?&raquo;, si risponde con un fatto e si ripete fino a raggiungere una causa che si possa correggere in modo definitivo. Resa popolare dal sistema di produzione Toyota, funziona bene perché non richiede software né statistica, solo pochi minuti di conversazione onesta. Il numero cinque è una regola pratica, non una legge: a volte bastano tre domande, a volte ne servono sette.</p>
+
+          <h2>I passaggi di un&rsquo;analisi dei 5 perché</h2>
+
+          <ul>
+            <li><strong>Definisca il problema con precisione.</strong> Scriva una frase fattuale: che cosa è successo, dove, quando e con quale entità. &laquo;Gli ordini sono un disastro&raquo; non è l&rsquo;enunciato di un problema; &laquo;14 ordini sono stati spediti con oltre 2 giorni di ritardo a settembre&raquo; lo è.</li>
+            <li><strong>Riunisca le persone giuste.</strong> Includa chi svolge il lavoro, non solo chi lo coordina. Bastano da tre a cinque persone.</li>
+            <li><strong>Chieda perché e risponda con prove.</strong> Ogni risposta deve poter essere verificata in un registro, in un log o per osservazione, non essere un&rsquo;ipotesi.</li>
+            <li><strong>Prosegua finché la risposta è una causa di processo o di sistema.</strong> Si fermi quando il &laquo;perché&raquo; successivo esce dal suo controllo o quando correggere la causa impedirebbe al problema di ripresentarsi.</li>
+            <li><strong>Verifichi la catena al contrario.</strong> Legga dalla causa radice al problema aggiungendo &laquo;quindi&raquo; a ogni passaggio. Se la logica si rompe, un passaggio è sbagliato.</li>
+            <li><strong>Concordi azioni e responsabili.</strong> Una causa radice senza azione è solo una storia interessante.</li>
+          </ul>
+
+          <h2>Un esempio pratico</h2>
+
+          <p>Problema: un cliente ha ricevuto un ordine con due giorni di ritardo.</p>
+
+          <ul>
+            <li><strong>Perché è arrivato in ritardo?</strong> È stato preparato il giorno 3 invece del giorno 1.</li>
+            <li><strong>Perché la preparazione è slittata?</strong> Parte solo dopo l&rsquo;approvazione manuale dell&rsquo;ordine.</li>
+            <li><strong>Perché l&rsquo;approvazione è slittata?</strong> L&rsquo;unico approvatore era in ferie e nessun altro poteva approvare.</li>
+            <li><strong>Perché nessun altro poteva approvare?</strong> Il diritto di approvazione è stato assegnato a una sola persona quando il processo è stato impostato.</li>
+            <li><strong>Perché non c&rsquo;era un sostituto?</strong> Il processo non prevede una copertura per le assenze e nessuno è responsabile di rivederlo.</li>
+          </ul>
+
+          <p>La causa radice è una lacuna del processo, non un dipendente negligente. La soluzione è nominare un approvatore sostituto, fissare una regola di escalation se un ordine attende oltre 24 ore e affidare a qualcuno la responsabilità del processo. Si noti che la prima risposta (&laquo;preparato in ritardo&raquo;) avrebbe portato a una correzione molto diversa e più debole.</p>
+
+          <h2>Errori comuni</h2>
+
+          <h3>Dare la colpa alle persone</h3>
+
+          <p>Se la catena finisce con &laquo;Sam si è dimenticato&raquo;, vi siete fermati troppo presto. Chieda perché il processo ha permesso che la memoria di una sola persona fosse l&rsquo;unica salvaguardia. La colpevolizzazione spinge le persone a nascondere le informazioni, e la prossima analisi partirà da dati scadenti.</p>
+
+          <h3>Fermarsi ai sintomi</h3>
+
+          <p>&laquo;Il report era in ritardo perché i dati erano in ritardo&raquo; descrive il problema una seconda volta. Una vera causa radice è qualcosa che, una volta cambiato, evita che il problema si ripeta. Se potesse correggere la risposta e il problema potesse comunque tornare, continui.</p>
+
+          <h3>Il pregiudizio della causa unica</h3>
+
+          <p>Gli incidenti reali hanno spesso più cause concorrenti, che una catena lineare può nascondere. Se un &laquo;perché&raquo; ha due risposte plausibili, segua entrambi i rami e registri ciascuno come catena a sé, invece di scegliere il più comodo.</p>
+
+          <h2>Quando usare invece un diagramma di Ishikawa</h2>
+
+          <p>I 5 perché funzionano meglio per problemi con un filo abbastanza chiaro: una scadenza mancata, un errore ripetuto, un guasto isolato. Quando la causa non è chiara o il problema è complesso, usi un diagramma di Ishikawa (a lisca di pesce). Si classificano le possibili cause in categorie come persone, processo, strumenti, materiali, ambiente e misurazione, poi si indagano le più probabili. Molti team combinano i due metodi: brainstorming con Ishikawa e poi i 5 perché su ogni ramo promettente.</p>
+
+          <h2>Trasformare i risultati in azioni tracciate</h2>
+
+          <p>L&rsquo;analisi rende solo se qualcosa cambia. Prima della fine della riunione, trasformi ogni causa radice in un&rsquo;azione con questi elementi:</p>
+
+          <ul>
+            <li><strong>Un compito specifico:</strong> &laquo;Aggiungere un approvatore sostituto per gli ordini&raquo; anziché &laquo;migliorare la copertura&raquo;.</li>
+            <li><strong>Un responsabile con nome:</strong> una persona, non un team.</li>
+            <li><strong>Una scadenza:</strong> realistica e visibile a tutti gli interessati.</li>
+            <li><strong>Un controllo di successo:</strong> come saprà che ha funzionato, per esempio zero spedizioni in ritardo per ritardi di approvazione nei prossimi 30 giorni.</li>
+            <li><strong>Una revisione di follow-up:</strong> una data per confermare che la correzione regge e il problema non è tornato.</li>
+          </ul>
+
+          <p>Dove vive l&rsquo;elenco delle azioni conta quanto l&rsquo;analisi. Se resta in un documento che nessuno riapre, lo stesso problema tornerà nel giro di pochi mesi. FulcrumGrid Command Center è un posto dove tenere queste azioni con responsabili, scadenze e stato in vista, così i punti aperti di un&rsquo;analisi vengono riesaminati insieme a tutto il resto. Qualsiasi strumento di tracciamento affidabile va bene, se viene consultato con regolarità.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Che cos&amp;rsquo;è il metodo dei 5 perché?</summary><p>È una tecnica di analisi delle cause radice in cui si chiede ripetutamente &amp;laquo;perché?&amp;raquo;, rispondendo ogni volta con prove, fino a raggiungere una causa di processo o di sistema correggibile. Cinque è un riferimento; il numero giusto è quello che serve.</p></details>
+        <details class="faq-item"><summary>Servono sempre esattamente cinque perché?</summary><p>No. Si fermi quando raggiunge una causa che, una volta corretta, impedirebbe al problema di tornare. Possono bastare tre domande o servirne più di cinque.</p></details>
+        <details class="faq-item"><summary>Quando conviene usare un diagramma di Ishikawa?</summary><p>Quando il problema è complesso o la causa non è chiara, perché permette di esplorare più categorie di cause insieme. Poi può applicare i 5 perché ai rami più probabili.</p></details>
+        <details class="faq-item"><summary>Come evito di dare la colpa alle persone nei 5 perché?</summary><p>Chieda perché il processo ha permesso l&amp;rsquo;errore, non chi lo ha commesso. Se la catena finisce con un nome o con una parola vaga come negligenza, continui a scavare nel sistema attorno alla persona.</p></details>
+        <details class="faq-item"><summary>Come mi assicuro che le azioni vengano completate?</summary><p>Assegni a ogni azione un responsabile, una scadenza e un controllo di successo, e riveda l&amp;rsquo;elenco con regolarità. Tenerlo in un tracker condiviso anziché in un documento una tantum rende molto più probabile il follow-up.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Non lasciare che le azioni correttive si perdano</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center ti permette di tracciare le azioni di follow-up con responsabili e scadenze insieme alle altre attività operative, così le decisioni delle tue sessioni dei 5 perché vengono davvero portate a termine.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=b2179049" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

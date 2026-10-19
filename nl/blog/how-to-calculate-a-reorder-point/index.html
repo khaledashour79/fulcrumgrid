@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Hoe bereken je het bestelpunt voor voorraad en benodigdheden? — FulcrumGrid</title>
+  <meta name="description" content="Het bestelpunt vertelt je wanneer je moet bijbestellen voordat je voorraad op is. Lees de formule, een rekenvoorbeeld, over veiligheidsvoorraad en veelgemaakte fouten." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Hoe bereken je het bestelpunt voor voorraad en benodigdheden?" />
+  <meta property="og:description" content="Het bestelpunt vertelt je wanneer je moet bijbestellen voordat je voorraad op is. Lees de formule, een rekenvoorbeeld, over veiligheidsvoorraad en veelgemaakte fouten." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/how-to-calculate-a-reorder-point/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-10-19" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hoe bereken je het bestelpunt voor voorraad en benodigdheden?" />
+  <meta name="twitter:description" content="Het bestelpunt vertelt je wanneer je moet bijbestellen voordat je voorraad op is. Lees de formule, een rekenvoorbeeld, over veiligheidsvoorraad en veelgemaakte fouten." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-calculate-a-reorder-point/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-calculate-a-reorder-point/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hoe bereken je het bestelpunt voor voorraad en benodigdheden?",
+    "description": "Het bestelpunt vertelt je wanneer je moet bijbestellen voordat je voorraad op is. Lees de formule, een rekenvoorbeeld, over veiligheidsvoorraad en veelgemaakte fouten.",
+    "datePublished": "2026-10-19",
+    "dateModified": "2026-10-19",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/how-to-calculate-a-reorder-point/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Gids bestelpunt",
+        "item": "https://fulcrumgrid.com/nl/blog/how-to-calculate-a-reorder-point/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is het verschil tussen bestelpunt en veiligheidsvoorraad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De veiligheidsvoorraad is de buffer voor verrassingen. Het bestelpunt is het totale niveau dat de bestelling activeert: het bevat de veiligheidsvoorraad plus wat je verbruikt terwijl je op de levering wacht."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Heb ik software nodig om een bestelpunt te berekenen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. Voor een klein bedrijf is een spreadsheet met kolommen voor verbruik, levertijd en veiligheidsvoorraad genoeg. Software helpt als je veel artikelen hebt en automatische meldingen wilt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoeveel veiligheidsvoorraad is genoeg?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dat hangt af van wat een tekort kost ten opzichte van extra voorraad aanhouden. Kritieke artikelen verdienen een grotere buffer, goedkope en makkelijk vervangbare artikelen weinig of geen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Gebruikt een seizoensproduct het hele jaar hetzelfde bestelpunt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. Reken opnieuw als de vraag verandert en gebruik de cijfers van het betreffende seizoen in plaats van het jaargemiddelde."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat doe ik als de leverancier de levertijd wijzigt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reken meteen opnieuw. Een langere levertijd verhoogt zowel de vraag tijdens de levertijd als de veiligheidsvoorraad, dus het bestelpunt gaat omhoog."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=ae8f0bf4">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / Gids bestelpunt</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Hoe bereken je het bestelpunt voor voorraad en benodigdheden?</h1>
+        <p class="hero-intro">Het bestelpunt vertelt je wanneer je moet bijbestellen voordat je voorraad op is. Lees de formule, een rekenvoorbeeld, over veiligheidsvoorraad en veelgemaakte fouten.</p>
+        <p class="mono"><time datetime="2026-10-19">19 oktober 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Zonder een belangrijk artikel zitten kost omzet, vertrouwen en soms een hele productiedag. Te vroeg bestellen legt juist geld vast in dozen op de plank. Het bestelpunt zit daartussen: het is het voorraadniveau waarop je een nieuwe bestelling plaatst, zodat de levering aankomt als de plank bijna leeg is. Deze vraag-en-antwoordgids laat zien hoe je het berekent met niet meer dan een spreadsheet.</p><h2>Wat is een bestelpunt?</h2><p>Een bestelpunt is een triggerhoeveelheid. Zakt de beschikbare voorraad, plus wat al besteld is en onderweg is, tot dat getal, dan plaats je een nieuwe bestelling. Het werkt voor handelswaar, grondstoffen en dagelijkse benodigdheden zoals verpakking, toner of schoonmaakmiddelen.</p><h2>Wat is de formule?</h2><p><strong>Bestelpunt = (gemiddeld dagverbruik &times; levertijd in dagen) + veiligheidsvoorraad</strong></p><ul><li><strong>Gemiddeld dagverbruik.</strong> Hoeveel eenheden je per dag verkoopt of gebruikt, op basis van recente cijfers.</li><li><strong>Levertijd.</strong> De dagen tussen het plaatsen van de bestelling en het moment dat de goederen klaar zijn voor gebruik of verkoop.</li><li><strong>Veiligheidsvoorraad.</strong> Een extra buffer voor verrassingen in vraag of levering.</li></ul><h2>Kun je een rekenvoorbeeld geven?</h2><p>Een kleine bakkerij gebruikt gemiddeld 12 zakken bloem per dag. De leverancier levert meestal binnen 7 dagen, dus de vraag tijdens de levertijd is 12 &times; 7 = 84 zakken. Tel daar een veiligheidsvoorraad van 96 zakken bij op (hieronder berekend) en het bestelpunt is 180 zakken. Zakt de voorraad naar 180, dan bestel je. Komt de levering op tijd, dan heb je bij aankomst nog ongeveer 96 zakken over.</p><h2>Hoe bepaal je de veiligheidsvoorraad?</h2><p>De eenvoudigste methode, geschikt voor de meeste kleine bedrijven:</p><p><strong>Veiligheidsvoorraad = (hoogste dagverbruik &times; langste levertijd) &minus; (gemiddeld dagverbruik &times; gemiddelde levertijd)</strong></p><p>In ons voorbeeld verbruikte de drukste dag 18 zakken en duurde de langzaamste levering 10 dagen. Dus 18 &times; 10 = 180, min 84, is 96 zakken. Dit is een voorzichtige keuze, omdat het het slechtste geval aan beide kanten tegelijk afdekt. Legt dat te veel geld vast, accepteer dan een klein risico: gebruik een hoog maar niet extreem getal, of dek alleen de vertragingen af die je echt af en toe ziet.</p><h2>Hoe ga je om met wisselende vraag?</h2><ul><li><strong>Kies een verstandige periode.</strong> Neem het gemiddelde van de laatste 30 tot 90 dagen, niet van één week.</li><li><strong>Houd rekening met seizoenen.</strong> Is december twee keer zo druk als een gewone maand, gebruik dan de decembercijfers voor december, niet het jaargemiddelde.</li><li><strong>Haal uitschieters apart.</strong> Een grote eenmalige order of een actie vertekent het gemiddelde. Laat die weg of behandel ze apart.</li><li><strong>Geef schommelende artikelen meer buffer.</strong> Een product met grote uitschieters heeft meer veiligheidsvoorraad nodig dan een stabiel product, ook bij hetzelfde gemiddelde.</li></ul><h2>Wat als de leverancier soms te laat is?</h2><p>Noteer de werkelijke levertijd van elke bestelling, niet de beloofde. Na een stuk of tien leveringen zie je het gebruikelijke en het slechtste geval. Gebruik de gebruikelijke waarde in de formule en laat het verschil met het slechtste geval je veiligheidsvoorraad bepalen. Is één leverancier structureel onbetrouwbaar, dan is een tweede leverancier of een strakkere afspraak vaak goedkoper dan extra buffer.</p><h2>Hoe vaak moet je het herzien?</h2><p>Herzie snelle artikelen maandelijks en langzame elk kwartaal. Reken ook opnieuw als er iets verandert: een nieuwe leverancier, een prijswijziging, een nieuw verkoopkanaal of het begin van een seizoen. Een voorraadtelling minstens één keer per maand houdt het systeem eerlijk, want de formule werkt alleen als de voorraad in het magazijn klopt.</p><h2>Wat zijn de meest gemaakte fouten?</h2><ul><li><strong>De beloofde levertijd gebruiken.</strong> Offertes van leveranciers beschrijven het beste geval. Meet wat er echt gebeurt.</li><li><strong>Openstaande bestellingen vergeten.</strong> Tel je alleen de voorraad op de plank, dan bestel je mogelijk twee keer voor hetzelfde gat.</li><li><strong>Eén keer instellen en vergeten.</strong> Verbruik en levertijden veranderen, dus een bestelpunt van vorig jaar klopt waarschijnlijk niet meer.</li><li><strong>Eenheden door elkaar halen.</strong> Dagverbruik in dozen en voorraad in losse stuks geeft een zinloos resultaat.</li><li><strong>Alle artikelen hetzelfde behandelen.</strong> Besteed je aandacht aan de paar artikelen die werk of verkoop stilleggen als ze op zijn.</li><li><strong>Minimale bestelhoeveelheden negeren.</strong> Verkoopt de leverancier alleen per pallet, dan veranderen je bestelgrootte en je liquiditeitsplanning.</li></ul><h2>Waar begin je?</h2><p>Kies je tien belangrijkste artikelen, verzamel drie maanden verbruik en de laatste levertijden en bereken voor elk een bestelpunt. Een spreadsheet is genoeg. Beheer je je bedrijfsvoering al in <strong>FulcrumGrid Command Center</strong>, dan kun je bestelpunten, controledatums en opvolging bij leveranciers naast je andere taken en KPI's bewaren, zodat een waarschuwing voor lage voorraad niet afhangt van iemand die eraan denkt om te kijken.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wat is het verschil tussen bestelpunt en veiligheidsvoorraad?</summary><p>De veiligheidsvoorraad is de buffer voor verrassingen. Het bestelpunt is het totale niveau dat de bestelling activeert: het bevat de veiligheidsvoorraad plus wat je verbruikt terwijl je op de levering wacht.</p></details>
+        <details class="faq-item"><summary>Heb ik software nodig om een bestelpunt te berekenen?</summary><p>Nee. Voor een klein bedrijf is een spreadsheet met kolommen voor verbruik, levertijd en veiligheidsvoorraad genoeg. Software helpt als je veel artikelen hebt en automatische meldingen wilt.</p></details>
+        <details class="faq-item"><summary>Hoeveel veiligheidsvoorraad is genoeg?</summary><p>Dat hangt af van wat een tekort kost ten opzichte van extra voorraad aanhouden. Kritieke artikelen verdienen een grotere buffer, goedkope en makkelijk vervangbare artikelen weinig of geen.</p></details>
+        <details class="faq-item"><summary>Gebruikt een seizoensproduct het hele jaar hetzelfde bestelpunt?</summary><p>Nee. Reken opnieuw als de vraag verandert en gebruik de cijfers van het betreffende seizoen in plaats van het jaargemiddelde.</p></details>
+        <details class="faq-item"><summary>Wat doe ik als de leverancier de levertijd wijzigt?</summary><p>Reken meteen opnieuw. Een langere levertijd verhoogt zowel de vraag tijdens de levertijd als de veiligheidsvoorraad, dus het bestelpunt gaat omhoog.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Houd je bestelmomenten in het oog</h2>
+        <p class="section-lead" style="margin:0 auto 26px">Met FulcrumGrid Command Center volg je KPI's, taken en terugkerende controles op één plek, zodat bestelpunten en opvolging bij leveranciers niet tussen wal en schip raken.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=b2179049" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
