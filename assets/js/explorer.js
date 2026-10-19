@@ -23,6 +23,24 @@
       line: 'People operations from hire to retire. Manage employees, payroll, time off, and everything in between.',
       price: 'From SAR 5 / seat / mo', href: '/products/hr-suite/',
       modules: ['Core HR', 'Time off', 'Expenses', 'HR letters', 'Onboarding', 'Documents & e-sign', 'Time & attendance', 'Overtime', 'Employment contracts', 'Assets', 'HR helpdesk', 'Benefits', 'Performance', 'Payroll', 'Statutory & local compliance', 'Recruitment (ATS)', 'Candidate portal', 'Learning (LMS)', 'Learning providers', 'Engagement surveys', 'Approval workflows', 'Policy Library', 'Business travel', 'Report builder', 'Mobile app', 'Document requests', 'Company news', 'Video interviews', 'Sales commissions', 'AI Copilot & Agents', 'SSO & SCIM', 'SAP Business One', '+ 8 more modules']
+    },
+    tms: {
+      name: 'TMS', tag: 'Logistics',
+      line: 'Logistics operations and finance on one grid. Forwarding, transport, yard, parcel and warehousing, with the books built in.',
+      price: 'Talk to sales', href: '/products/tms/',
+      modules: ['Finance (GL · AR · AP)', 'VAT engine', 'Freight forwarding', 'Customs clearance', 'Transport & fleet', 'Container yard', 'Parcel & express', 'Warehousing / 3PL', 'Purchasing & inventory', 'Maintenance & workshop', 'ERP connectors', 'SSO & REST API']
+    },
+    assure: {
+      name: 'Assure', tag: 'Compliance',
+      line: 'Governance, risk and compliance, built for Saudi regulation. Obligations mapped to controls, with the evidence trail to match.',
+      price: 'Talk to sales', href: '/products/assure/',
+      modules: ['Obligations register', 'Controls & crosswalk', 'Self-assessment', 'Risk register', 'Cyber posture (CSPM)', 'PDPL (DSAR & RoPA)', 'Vendor risk (TPRM)', 'Incidents', 'Attestations', 'Policies', 'Evidence vault', 'Audit log']
+    },
+    close: {
+      name: 'Close', tag: 'Finance',
+      line: 'IFRS period-end estimates. IAS 19, IFRS 9 and IFRS 16, with versioned assumptions and a full audit trail.',
+      price: 'Talk to sales', href: '/products/close/',
+      modules: ['IAS 19 (end-of-service)', 'IFRS 9 (ECL)', 'IFRS 16 (leases)', 'Reporting periods', 'Input snapshots', 'Versioned assumptions', 'Reproducible runs', 'Segregation of duties', 'Actuary sign-off', 'Journal vouchers', 'Audit pack', 'Access log']
     }
   };
 
@@ -44,6 +62,24 @@
       line: 'عمليات الأفراد من التعيين إلى التقاعد. أدِر الموظفين والرواتب والإجازات وكل ما بينهما.',
       price: 'من 5 ريال / مقعد / شهريًا', href: '/ar/products/hr-suite/',
       modules: ['الموارد البشرية الأساسية', 'الإجازات', 'المصروفات', 'خطابات الموارد البشرية', 'التأهيل', 'المستندات والتوقيع الإلكتروني', 'الوقت والحضور', 'العمل الإضافي', 'عقود العمل', 'العُهد والأصول', 'مكتب خدمة الموارد البشرية', 'المزايا', 'الأداء', 'الرواتب', 'الامتثال النظامي والمحلي', 'التوظيف (ATS)', 'بوابة المتقدّمين', 'التعلّم (LMS)', 'مزوّدو التعلّم', 'استبيانات التفاعل', 'مسارات الموافقات', 'مكتبة السياسات', 'سفر الأعمال', 'منشئ التقارير', 'تطبيق الجوال', 'طلبات المستندات', 'أخبار الشركة', 'المقابلات المرئية', 'عمولات المبيعات', 'المساعد الذكي والوكلاء', 'SSO و SCIM', 'SAP Business One', '+ 8 وحدة إضافية']
+    },
+    tms: {
+      name: 'TMS', tag: 'اللوجستيات',
+      line: 'عمليات لوجستية ومالية على شبكة واحدة. الشحن والنقل والساحة والطرود والتخزين، مع الحسابات مدمجة.',
+      price: 'تواصل مع المبيعات', href: '/ar/products/tms/',
+      modules: ['المالية (دفتر الأستاذ · المدينون · الدائنون)', 'محرك ضريبة القيمة المضافة', 'الشحن والتخليص', 'التخليص الجمركي', 'النقل والأسطول', 'ساحة الحاويات', 'الطرود والتوصيل السريع', 'التخزين / الطرف الثالث', 'المشتريات والمخزون', 'الصيانة والورشة', 'موصلات ERP', 'الدخول الموحّد و REST API']
+    },
+    assure: {
+      name: 'Assure', tag: 'الامتثال',
+      line: 'الحوكمة والمخاطر والامتثال، مبنية للتنظيم السعودي. الالتزامات مرتبطة بالضوابط، مع سجلّ أدلّة مطابق.',
+      price: 'تواصل مع المبيعات', href: '/ar/products/assure/',
+      modules: ['سجل الالتزامات', 'الضوابط والربط المرجعي', 'التقييم الذاتي', 'سجل المخاطر', 'الوضع السيبراني (CSPM)', 'حماية البيانات (DSAR و RoPA)', 'مخاطر الموردين (TPRM)', 'الحوادث', 'الإقرارات', 'السياسات', 'خزنة الأدلّة', 'سجل التدقيق']
+    },
+    close: {
+      name: 'Close', tag: 'المالية',
+      line: 'تقديرات إقفال الفترة وفق IFRS. المعايير IAS 19 و IFRS 9 و IFRS 16، مع افتراضات مُؤرشَفة وسجل تدقيق كامل.',
+      price: 'تواصل مع المبيعات', href: '/ar/products/close/',
+      modules: ['IAS 19 (نهاية الخدمة)', 'IFRS 9 (خسائر ائتمانية)', 'IFRS 16 (الإيجارات)', 'فترات التقرير', 'لقطات المدخلات', 'افتراضات مُؤرشَفة', 'عمليات قابلة للتكرار', 'فصل المهام', 'اعتماد الخبير الاكتواري', 'قيود اليومية', 'حزمة التدقيق', 'سجل الوصول']
     }
   };
 

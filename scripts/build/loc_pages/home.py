@@ -205,6 +205,40 @@ PAGE = {
             "Explore Collection →": _t(
                 "Découvrir Collection →", "Collection entdecken →", "Explorar Collection →",
                 "Esplora Collection →", "Ontdek Collection →"),
+            '<span class="tag tag-outline">Logistics</span>': _t(
+                '<span class="tag tag-outline">Logistique</span>', '<span class="tag tag-outline">Logistik</span>',
+                '<span class="tag tag-outline">Logística</span>', '<span class="tag tag-outline">Logistica</span>',
+                '<span class="tag tag-outline">Logistiek</span>'),
+            '<span class="tag tag-outline">Compliance</span>': _t(
+                '<span class="tag tag-outline">Conformité</span>', '<span class="tag tag-outline">Compliance</span>',
+                '<span class="tag tag-outline">Cumplimiento</span>', '<span class="tag tag-outline">Conformità</span>',
+                '<span class="tag tag-outline">Compliance</span>'),
+            '<span class="tag tag-outline">Finance</span>': _t(
+                '<span class="tag tag-outline">Finance</span>', '<span class="tag tag-outline">Finanzen</span>',
+                '<span class="tag tag-outline">Finanzas</span>', '<span class="tag tag-outline">Finanza</span>',
+                '<span class="tag tag-outline">Financiën</span>'),
+            "Logistics operations and finance on one grid — forwarding, transport, yard, parcel and warehousing, with the books built in.": _t(
+                "Opérations logistiques et finance sur une seule grille — transit, transport, parc à conteneurs, colis et entreposage, avec la comptabilité intégrée.",
+                "Logistikbetrieb und Finanzen auf einem Grid — Spedition, Transport, Containeryard, Pakete und Lager, mit integrierter Buchhaltung.",
+                "Operaciones logísticas y finanzas en una sola grid — transitario, transporte, depósito de contenedores, paquetería y almacén, con la contabilidad integrada.",
+                "Operazioni logistiche e finanza su un'unica grid — spedizioni, trasporto, deposito container, colli e magazzino, con la contabilità integrata.",
+                "Logistieke operaties en financiën op één grid — expeditie, transport, containeryard, pakketten en magazijn, met de boekhouding ingebouwd."),
+            "Governance, risk and compliance, built for Saudi regulation — obligations mapped to controls, with the evidence trail to match.": _t(
+                "Gouvernance, risque et conformité, conçu pour la réglementation saoudienne — les obligations reliées aux contrôles, avec la piste de preuves qui va avec.",
+                "Governance, Risiko und Compliance, gebaut für die saudische Regulierung — Pflichten auf Kontrollen abgebildet, mit dem passenden Nachweispfad.",
+                "Gobernanza, riesgo y cumplimiento, creado para la regulación saudí — obligaciones asignadas a controles, con el rastro de evidencias correspondiente.",
+                "Governance, rischio e conformità, creato per la regolamentazione saudita — obblighi mappati sui controlli, con la relativa pista di evidenze.",
+                "Governance, risico en compliance, gebouwd voor Saoedische regelgeving — verplichtingen gekoppeld aan controls, met het bijbehorende bewijsspoor."),
+            "IFRS period-end estimates — IAS 19, IFRS 9 and IFRS 16 — with versioned assumptions and a full audit trail.": _t(
+                "Estimations IFRS de clôture — IAS 19, IFRS 9 et IFRS 16 — avec des hypothèses versionnées et une piste d'audit complète.",
+                "IFRS-Abschlussschätzungen — IAS 19, IFRS 9 und IFRS 16 — mit versionierten Annahmen und einem vollständigen Prüfpfad.",
+                "Estimaciones IFRS de cierre — IAS 19, IFRS 9 e IFRS 16 — con supuestos versionados y una pista de auditoría completa.",
+                "Stime IFRS di fine periodo — IAS 19, IFRS 9 e IFRS 16 — con ipotesi versionate e una pista di audit completa.",
+                "IFRS-eindeperiodeschattingen — IAS 19, IFRS 9 en IFRS 16 — met geversioneerde aannames en een volledig auditspoor."),
+            "Explore TMS →": _t("Découvrir TMS →", "TMS entdecken →", "Explorar TMS →", "Esplora TMS →", "Ontdek TMS →"),
+            "Explore Assure →": _t("Découvrir Assure →", "Assure entdecken →", "Explorar Assure →", "Esplora Assure →", "Ontdek Assure →"),
+            "Explore Close →": _t("Découvrir Close →", "Close entdecken →", "Explorar Close →", "Esplora Close →", "Ontdek Close →"),
+            "TMS": _t("TMS", "TMS", "TMS", "TMS", "TMS"),
             "On the roadmap": _t(
                 "Sur la feuille de route", "Auf der Roadmap", "En la hoja de ruta",
                 "Nella roadmap", "Op de roadmap"),

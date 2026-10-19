@@ -33,16 +33,19 @@
 const KNOWLEDGE = `
 Company. FulcrumGrid is a growing family of purpose-built business apps from one team, made by Avenlor Consulting. Site: fulcrumgrid.com. Taglines: "The operational backbone for modern teams" and "One grid. Every operation." Contact / sales: contact@avenlorconsulting.com or the demo form at /contact/. Pricing at /pricing/. Start with one app today and add the rest as you grow — every app runs on the same secure, auditable grid, with cross-app data when you run several.
 
-Live apps (3).
+Live apps (6).
 - HR Suite — people operations from hire to retire: employee records, onboarding, payroll, time off, attendance, performance, and 40 modules on one grid (Core HR always on). Includes an AI Copilot and human-approved agents. From SAR 5 / seat / month (Starter; Growth SAR 10, Enterprise SAR 18, per seat/mo).
 - Command Center — a real-time operations dashboard / control room: live KPIs and custom dashboards, alerts and thresholds, automated workflows, reporting and exports, OKRs/projects/approvals, and ERP integrations. From SAR 490 / month (Pilot, flat per organization; Growth SAR 1,900/mo, Enterprise custom).
 - Collection — receivables and payments, handled: invoice and ledger tracking, automated reminders and payment plans, reconciliation, cheque register, ERP connectors, aging and risk reports. Starter is free, then from SAR 370 / month (Professional; Business SAR 1,120/mo, Enterprise/Agency custom).
+- TMS — a logistics-operations and finance suite for GCC SMEs: freight forwarding, customs clearance, transport & fleet, container yard/depot, parcel & express, warehousing/3PL, purchasing & inventory, maintenance & workshop, with a built-in double-entry general ledger (AR, AP, bank reconciliation, VAT engine). ERP connectors (SAP Business One, Odoo, Oracle), Arabic + English, multi-currency. Pricing is custom — talk to sales (contact page / contact@avenlorconsulting.com).
+- Assure — a governance, risk and compliance (GRC) platform built for Saudi regulation: NCA ECC-2, PDPL, CMA and Companies Law obligations mapped to controls, a submit/review/approve evidence workflow, immutable evidence vault, risk register, vendor (third-party) risk, PDPL DSAR + RoPA, incident management, attestations and cyber posture (CSPM). Pricing is custom — talk to sales.
+- Close — the calculation layer for IFRS period-end estimates: IAS 19 end-of-service benefits, IFRS 9 expected credit loss and IFRS 16 leases, with controlled reporting periods, frozen input snapshots, versioned assumptions, reproducible runs, segregation of duties, draft journal vouchers and a bilingual audit pack. For Saudi finance teams preparing IFRS statements. Pricing is custom — talk to sales.
 
 Bundle. Running several apps? The whole-grid plan covers every app at $29 / user / month (unlimited users, cross-app data, priority support); Enterprise is custom (single-tenant, on-premise/self-hosted option, data residency, SLA).
 
 Trials & billing. Every plan has a 14-day free trial, no card required. Annual billing saves 20%.
 
-Coming soon / roadmap. Close, TMS, Voice and Assure are coming soon; CRM, Agents, Real Estate and Workshop are on the roadmap. Custom apps are built to order on the same foundation.
+Coming soon / roadmap. Voice is coming soon; CRM, Agents, Real Estate and Workshop are on the roadmap. Custom apps are built to order on the same foundation.
 
 Regions. Hosted and tuned per region, with data in your region, your language and currency, and local payroll/compliance (e.g. WPS, GOSI, end-of-service, Nitaqat in the Gulf): North America (US, Canada), Europe (UK, Ireland, France, Germany, Spain, Italy, Netherlands), GCC (Saudi, UAE, Qatar, Kuwait, Bahrain, Oman), Middle East (Egypt, Jordan, Lebanon, Iraq, Palestine, Syria, Yemen); other markets on request.
 
