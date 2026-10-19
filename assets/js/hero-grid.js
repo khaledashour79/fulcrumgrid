@@ -11,8 +11,9 @@
   // (TMS, Voice, CRM) that sits taller and floats slightly above the plain
   // roadmap placeholders, then roadmap / built-to-order / your-next-app.
   var GRID = [
-    ['HR Suite', 'Live'], ['Command Center', 'Live'], ['Collection', 'Live'], ['TMS', 'Coming soon'],
-    ['Voice', 'Coming soon'], ['CRM', 'Coming soon'], ['Inventory', 'Roadmap'], ['Analytics', 'Roadmap'],
+    ['HR Suite', 'Live'], ['Command Center', 'Live'], ['Collection', 'Live'], ['TMS', 'Live'],
+    ['Assure', 'Live'], ['Close', 'Live'], ['Voice', 'Coming soon'], ['CRM', 'Coming soon'],
+    ['Inventory', 'Roadmap'], ['Analytics', 'Roadmap'],
     ['Procurement', 'Roadmap'], ['Custom apps', 'Built to order'], ['Your next app', '']
   ];
   var COLS = 4, W = 148, GAP = 174;

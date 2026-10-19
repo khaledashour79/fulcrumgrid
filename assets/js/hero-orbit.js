@@ -14,7 +14,8 @@
   // "Coming soon" list; available apps open their tab in the explorer.
   var APPS = [
     ['HR Suite', 'live', 'hr'], ['Command Center', 'live', 'cc'], ['Collection', 'live', 'col'],
-    ['Close', 'soon', ''], ['TMS', 'soon', ''], ['Voice', 'soon', ''], ['Assure', 'soon', '']
+    ['TMS', 'live', 'tms'], ['Assure', 'live', 'assure'], ['Close', 'live', 'close'],
+    ['Voice', 'soon', '']
   ];
   // Tiles per ring — drives the angular spacing so each ring stays evenly spread
   // however many apps it carries.

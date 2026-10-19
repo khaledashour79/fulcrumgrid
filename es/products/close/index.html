@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Close — FulcrumGrid</title>
+  <meta name="description" content="Close es la capa de cálculo de FulcrumGrid para las estimaciones IFRS de cierre de periodo — IAS 19, IFRS 9 e IFRS 16 — con entradas congeladas, supuestos versionados y ejecuciones reproducibles y listas para auditoría, para equipos financieros saudíes." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Close — FulcrumGrid" />
+  <meta property="og:description" content="La capa de cálculo para las estimaciones IFRS de cierre de periodo — IAS 19, IFRS 9 e IFRS 16 — con una pista de auditoría completa." />
+  <meta property="og:url" content="https://fulcrumgrid.com/es/products/close/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Close — FulcrumGrid" />
+  <meta name="twitter:description" content="La capa de cálculo para las estimaciones IFRS de cierre de periodo — IAS 19, IFRS 9 e IFRS 16 — con una pista de auditoría completa." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/es/products/close/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/products/close/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/products/close/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/products/close/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/products/close/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/products/close/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/products/close/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/products/close/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/products/close/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=ae8f0bf4">
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/es/products/" aria-current="page">Productos</a>
+        <a href="/es/features/">Cuadrícula</a>
+        <a href="/es/pricing/">Precios</a>
+        <a href="/es/regions/">Regiones</a>
+        <a href="/es/blog/">Blog</a>
+        <a href="/es/contact/">Contacto</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Idioma">ES ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" class="active" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/es/contact/">Solicitar una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <p class="hero-eyebrow">Finanzas · Ya disponible</p>
+        <h1 style="max-width:16ch">Cierre los libros, con la prueba adjunta.</h1>
+        <p class="hero-intro">Close es la capa de cálculo de sus estimaciones IFRS de cierre de periodo — IAS 19, IFRS 9 e IFRS 16 — con cada entrada congelada, cada supuesto justificado y cada ejecución reproducible hasta el hash. Un espacio de trabajo para el preparador, para equipos financieros saudíes, creado para resistir una auditoría.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/es/contact/">Solicitar una demo</a>
+          <a class="btn btn-secondary" href="/es/products/">Todos los productos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 01 · Precios ===== -->
+    <section class="section" id="pricing">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">01 · Precios</p>
+            <h2>Precios — hable con ventas.</h2>
+          </div>
+          <p class="section-lead">Close no tiene precio público. Definimos su alcance según sus entidades informantes y su cierre, y luego lo presupuestamos.</p>
+        </div>
+        <div class="pricing">
+          <div class="price-col">
+            <h4>Close</h4>
+            <span class="unit">Precio por encargo</span>
+            <div class="tiers"><div class="tier"><span>Hablar con ventas</span><b>—</b></div></div>
+            <p class="note">Aún no hay precio publicado. Cuéntenos cómo cierra y le pondremos una cifra.</p>
+          </div>
+          <div class="price-col">
+            <h4>Qué cubre una demo</h4>
+            <span class="unit">En una breve llamada</span>
+            <div class="tiers">
+              <div class="tier"><span>Sus estimaciones de cierre de periodo</span><b>✓</b></div>
+              <div class="tier"><span>El paquete de auditoría y la pista de aprobación</span><b>✓</b></div>
+              <div class="tier"><span>Cómo una ejecución sigue siendo reproducible</span><b>✓</b></div>
+              <div class="tier"><span>La adecuación a sus entidades informantes</span><b>✓</b></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-actions" style="margin-top:20px">
+          <a class="btn btn-primary" href="/es/contact/">Solicitar una demo</a>
+          <a class="btn btn-secondary" href="/es/contact/">Hablar con ventas ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 02 · Capacidades ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">02 · Capacidades</p>
+            <h2>Estimaciones IFRS, creadas para ser demostradas.</h2>
+          </div>
+          <p class="section-lead">Cada cálculo de cierre de periodo, desde una entrada congelada hasta un paquete de auditoría aprobado.</p>
+        </div>
+        <div class="grid-2">
+          <div class="cell"><h4>Motores IFRS de cierre de periodo</h4><p>Beneficios por fin de servicio IAS 19, pérdida crediticia esperada IFRS 9 y arrendamientos IFRS 16, en un solo espacio de trabajo.</p></div>
+          <div class="cell"><h4>Cierre controlado</h4><p>Abra, revise y bloquee cada periodo de informe; la reapertura exige un segundo aprobador y un motivo registrado.</p></div>
+          <div class="cell"><h4>Instantáneas de entradas congeladas</h4><p>Los datos de origen se validan y congelan con un hash de contenido, de modo que un cambio posterior en el origen nunca altera un resultado pasado.</p></div>
+          <div class="cell"><h4>Supuestos versionados con evidencias</h4><p>Cada tasa de descuento o supuesto de crecimiento lleva una justificación y un archivo de evidencia adjunto, y debe aprobarse antes de usarse.</p></div>
+          <div class="cell"><h4>Ejecuciones reproducibles</h4><p>Cada cálculo se reejecuta hasta un hash de resultado idéntico byte a byte, demostrable ante un auditor.</p></div>
+          <div class="cell"><h4>Separación de funciones</h4><p>La misma persona no puede preparar y aprobar una estimación a la vez.</p></div>
+          <div class="cell"><h4>Aprobación de un actuario externo</h4><p>Las ejecuciones IAS 19 incluyen una etapa dedicada de revisión y aprobación por un actuario.</p></div>
+          <div class="cell"><h4>Ajustes trazados</h4><p>Las anulaciones manuales se registran como líneas separadas con un motivo y un aprobador, nunca escritas encima de las cifras calculadas.</p></div>
+          <div class="cell"><h4>Comprobantes de diario en borrador</h4><p>Asientos equilibrados y conciliados con los resultados, exportados como CSV o Excel para su ERP.</p></div>
+          <div class="cell"><h4>Paquete de auditoría con un clic</h4><p>Un paquete Excel bilingüe por ejecución — entradas, supuestos, cálculos, sensibilidades y pista de aprobación — con un manifiesto de hash.</p></div>
+          <div class="cell"><h4>Control de acceso de nivel PDPL</h4><p>Cada visualización, exportación o descarga de datos personales está controlada y se registra en un log de acceso de solo adición.</p></div>
+          <div class="cell"><h4>Árabe primero, RTL</h4><p>Todo el espacio de trabajo está construido de derecha a izquierda, con árabe e inglés completos y multidivisa (ISO-4217, SAR por defecto).</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 03 · Diseñado para ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">03 · Diseñado para</p>
+            <h2>Diseñado para la silla del preparador.</h2>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="cell"><h4>Equipos financieros</h4><p>Prepare las estimaciones IAS 19, IFRS 9 e IFRS 16 para empresas cotizadas y de interés público de Arabia Saudí (KSA), listas para su revisión.</p></div>
+          <div class="cell"><h4>Controllers de grupo</h4><p>Consolide las estimaciones de cierre de periodo entre entidades con un solo bloqueo, una sola pista y un solo paquete de auditoría.</p></div>
+          <div class="cell"><h4>Información financiera IFRS</h4><p>Entregue a su auditor cifras reproducibles y una pista de evidencias completa en lugar de una carpeta de hojas de cálculo.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 04 · Su región ===== -->
+    <section class="section" id="regions">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">04 · Su región</p>
+            <h2>Diseñado para Arabia Saudí.</h2>
+          </div>
+          <p class="section-lead">IFRS avaladas por la SOCPA, árabe primero y multidivisa — Close funciona como funcionan las finanzas en KSA.</p>
+        </div>
+        <div class="grid-2">
+          <div class="cell"><h4>IFRS avaladas por la SOCPA</h4><p>Diseñado para las normas IFRS tal como las avala la SOCPA para las entidades informantes saudíes.</p></div>
+          <div class="cell"><h4>Árabe primero, de derecha a izquierda</h4><p>Todo el espacio de trabajo funciona de derecha a izquierda, en árabe e inglés completos.</p></div>
+          <div class="cell"><h4>Multidivisa</h4><p>Las cifras llevan su propia divisa ISO-4217, con SAR por defecto.</p></div>
+          <div class="cell"><h4>Pasa el relevo a su ERP</h4><p>Los comprobantes de diario en borrador se exportan como CSV o Excel para SAP Business One o cualquier libro mayor — Close prepara, su ERP contabiliza.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 05 · La familia FulcrumGrid ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <div class="section-head">
+          <div>
+            <p class="mono mono-accent">05 · La familia FulcrumGrid</p>
+            <h2>Explore el resto de la cuadrícula.</h2>
+          </div>
+          <p class="section-lead">Close es una de las varias aplicaciones de FulcrumGrid, cada una creada con el mismo estándar. Explore las demás, creadas para sus operaciones.</p>
+        </div>
+        <div class="grid-2">
+          <div class="cell"><h4><a href="/es/products/hr-suite/" style="text-decoration:none;color:inherit">HR Suite →</a></h4><p>Gestión de personas</p></div>
+          <div class="cell"><h4><a href="/es/products/command-center/" style="text-decoration:none;color:inherit">Command Center →</a></h4><p>Panel de operaciones</p></div>
+          <div class="cell"><h4><a href="/es/products/collection/" style="text-decoration:none;color:inherit">Collection →</a></h4><p>Cobros &amp; pagos</p></div>
+          <div class="cell"><h4><a href="/es/products/" style="text-decoration:none;color:inherit">Más apps →</a></h4><p>Inventario, CRM &amp; más</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section cta" id="contact">
+      <div class="wrap">
+        <p class="mono mono-accent">Empezar</p>
+        <h2>Cierre con confianza.<br />Cada periodo.</h2>
+        <p class="section-lead" style="margin:0 auto 26px">Vea cómo Close convierte sus estimaciones de cierre de periodo en cifras que su auditor puede reproducir.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/es/contact/">Solicitar una demo</a>
+          <a class="btn btn-secondary" href="mailto:contact@avenlorconsulting.com">Escríbenos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La columna vertebral operativa de los equipos modernos.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Productos</h5>
+          <a href="/es/products/">Todos los productos</a>
+          <a href="/es/products/hr-suite/">HR Suite</a>
+          <a href="/es/products/command-center/">Command Center</a>
+          <a href="/es/products/collection/">Collection</a>
+          <a href="/es/products/tms/">TMS</a>
+          <a href="/es/products/assure/">Assure</a>
+          <a href="/es/products/close/">Close</a>
+          <a href="/es/custom-apps/">Apps a medida</a>
+        </div>
+        <div class="foot-col">
+          <h5>Cuadrícula</h5>
+          <a href="/es/features/">Funciones</a>
+          <a href="/es/integrations/">Integraciones</a>
+          <a href="/es/how-it-works/">Cómo funciona</a>
+          <a href="/es/pricing/">Precios</a>
+          <a href="/es/regions/">Regiones</a>
+          <a href="/es/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Empresa</h5>
+          <a href="/es/about/">Acerca de</a>
+          <a href="/es/faq/">FAQ</a>
+          <a href="/es/contact/">Contacto</a>
+          <a href="/es/privacy/">Privacidad</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Todos los derechos reservados.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=b2179049" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
