@@ -291,7 +291,41 @@ PAGE = {
                 "IVA repercutido, soportado y de importación llevados como cuentas distintas, con preparación de la declaración de IVA para sus presentaciones.",
                 "IVA a debito, a credito e all'importazione tenute come conti distinti, con preparazione della dichiarazione IVA per i tuoi adempimenti.",
                 "Verschuldigde, voorbelasting- en invoer-btw als aparte rekeningen, met voorbereiding van de btw-aangifte voor uw indieningen."),
-            # ---- 05 · The FulcrumGrid family ----
+            # ---- 05 · Works with the grid ----
+            "Works with the grid": _t(
+                "Fonctionne avec la grille", "Arbeitet mit dem Grid", "Funciona con la cuadrícula",
+                "Funziona con la griglia", "Werkt met het grid"),
+            "One ledger across the grid.": _t(
+                "Un seul grand livre sur toute la grille.",
+                "Ein Hauptbuch über das gesamte Grid.",
+                "Un solo libro mayor en toda la cuadrícula.",
+                "Un solo libro mastro su tutta la griglia.",
+                "Eén grootboek over het hele grid."),
+            "TMS is the finance hub of the grid. Run it with your other FulcrumGrid apps and the books stay in one place — no re-keying, no second source of truth.": _t(
+                "TMS est le centre financier de la grille. Utilisez-le avec vos autres applications FulcrumGrid et les comptes restent au même endroit — sans ressaisie, sans seconde source de vérité.",
+                "TMS ist das Finanzzentrum des Grids. Betreiben Sie es mit Ihren anderen FulcrumGrid-Apps, und die Bücher bleiben an einem Ort — ohne erneute Erfassung, ohne zweite Quelle der Wahrheit.",
+                "TMS es el centro financiero de la cuadrícula. Úselo con sus otras aplicaciones FulcrumGrid y las cuentas permanecen en un solo lugar — sin volver a teclear, sin una segunda fuente de verdad.",
+                "TMS è il centro finanziario della griglia. Usalo con le altre app FulcrumGrid e i conti restano in un unico posto — senza reinserimenti, senza una seconda fonte di verità.",
+                "TMS is het financiële knooppunt van het grid. Gebruik het met uw andere FulcrumGrid-apps en de boeken blijven op één plek — zonder opnieuw invoeren, zonder tweede bron van waarheid."),
+            "Payroll, expense and loan journals post straight to the TMS ledger, so people costs and operations close on one set of books.": _t(
+                "Les écritures de paie, de notes de frais et de prêts sont comptabilisées directement dans le grand livre TMS, pour que les coûts du personnel et les opérations se clôturent sur un seul jeu de comptes.",
+                "Gehalts-, Spesen- und Darlehensbuchungen werden direkt im TMS-Hauptbuch gebucht, sodass Personalkosten und Betrieb auf einem Satz Bücher abgeschlossen werden.",
+                "Los asientos de nómina, gastos y préstamos se contabilizan directamente en el libro mayor de TMS, para que los costes de personal y las operaciones cierren en un solo juego de libros.",
+                "Le scritture di buste paga, note spese e prestiti vengono registrate direttamente nel libro mastro di TMS, così i costi del personale e le operazioni chiudono su un unico insieme di libri.",
+                "Boekingen voor loon, onkosten en leningen worden rechtstreeks in het TMS-grootboek geboekt, zodat personeelskosten en operatie op één set boeken worden afgesloten."),
+            "Receivables and write-offs post into the same ledger, so what you collect and what you owe reconcile in one place.": _t(
+                "Les créances et les passages en perte sont comptabilisés dans le même grand livre, pour que ce que vous encaissez et ce que vous devez se rapprochent au même endroit.",
+                "Forderungen und Abschreibungen werden im selben Hauptbuch gebucht, sodass sich Einnahmen und Verbindlichkeiten an einem Ort abstimmen.",
+                "Los cobros y las bajas por incobrables se contabilizan en el mismo libro mayor, para que lo que cobra y lo que debe se concilien en un solo lugar.",
+                "I crediti e le svalutazioni vengono registrati nello stesso libro mastro, così ciò che incassi e ciò che devi si riconciliano in un unico posto.",
+                "Vorderingen en afschrijvingen worden in hetzelfde grootboek geboekt, zodat wat u int en wat u verschuldigd bent op één plek wordt afgestemd."),
+            "Live TMS operations stream to Command Center, so shipments, revenue and exceptions show up on its dashboards and alerts.": _t(
+                "Les opérations TMS en direct sont transmises à Command Center, pour que expéditions, revenus et exceptions apparaissent sur ses tableaux de bord et alertes.",
+                "Live-TMS-Vorgänge werden an Command Center übertragen, sodass Sendungen, Umsatz und Ausnahmen auf seinen Dashboards und Warnungen erscheinen.",
+                "Las operaciones de TMS en directo se transmiten a Command Center, para que envíos, ingresos y excepciones aparezcan en sus paneles y alertas.",
+                "Le operazioni TMS in tempo reale vengono trasmesse a Command Center, così spedizioni, ricavi ed eccezioni compaiono sulle sue dashboard e avvisi.",
+                "Live TMS-operaties worden naar Command Center gestuurd, zodat zendingen, omzet en uitzonderingen op zijn dashboards en meldingen verschijnen."),
+            # ---- 06 · The FulcrumGrid family ----
             "The FulcrumGrid family": _t(
                 "La famille FulcrumGrid", "Die FulcrumGrid-Familie", "La familia FulcrumGrid", "La famiglia FulcrumGrid", "De FulcrumGrid-familie"),
             "Explore the rest of the grid": _t(
