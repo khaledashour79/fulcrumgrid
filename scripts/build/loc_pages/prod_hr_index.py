@@ -497,13 +497,13 @@ PAGE = {
             "Payroll &amp; time tracking": _t("Paie &amp; suivi du temps", "Gehaltsabrechnung &amp; Zeiterfassung", "Nóminas &amp; control horario", "Buste paga &amp; monitoraggio del tempo", "Loonadministratie &amp; tijdregistratie"),
             "Performance &amp; reviews": _t("Performance &amp; évaluations", "Leistung &amp; Beurteilungen", "Desempeño &amp; evaluaciones", "Performance &amp; valutazioni", "Prestaties &amp; beoordelingen"),
             "More on the grid": _t("Plus sur la grille", "Mehr im Grid", "Más en la cuadrícula", "Altro sulla griglia", "Meer op het grid"),
-            "Voice and Consolidate are coming soon — with CRM, Agents, Real Estate, Workshop, VPN and Desk on the roadmap. Built on the same grid, so they plug straight in.": _t(
-                "Voice et Consolidate arrivent bientôt — avec CRM, Agents, Immobilier, Atelier, VPN et Desk sur la feuille de route. Conçus sur la même grille, ils s'intègrent directement.",
-                "Voice und Consolidate kommen bald — mit CRM, Agenten, Immobilien, Werkstatt, VPN und Desk auf der Roadmap. Auf demselben Grid gebaut, fügen sie sich direkt ein.",
-                "Voice y Consolidate llegan pronto — con CRM, Agentes, Inmobiliaria, Taller, VPN y Desk en la hoja de ruta. Creados en la misma cuadrícula, se integran directamente.",
-                "Voice e Consolidate sono in arrivo — con CRM, Agenti, Immobiliare, Officina, VPN e Desk nella roadmap. Costruiti sulla stessa griglia, si integrano subito.",
-                "Voice en Consolidate komen binnenkort — met CRM, Agents, Vastgoed, Werkplaats, VPN en Desk op de roadmap. Gebouwd op hetzelfde grid, zodat ze direct aansluiten."),
-            "Voice &amp; Consolidate — coming soon": _t("Voice &amp; Consolidate — bientôt", "Voice &amp; Consolidate — demnächst", "Voice &amp; Consolidate — próximamente", "Voice &amp; Consolidate — in arrivo", "Voice &amp; Consolidate — binnenkort"),
+            "Voice, CRM and Consolidate are coming soon — with Agents, Real Estate, Workshop, VPN and Desk on the roadmap. Built on the same grid, so they plug straight in.": _t(
+                "Voice, CRM et Consolidate arrivent bientôt — avec Agents, Immobilier, Atelier, VPN et Desk sur la feuille de route. Conçus sur la même grille, ils s'intègrent directement.",
+                "Voice, CRM und Consolidate kommen bald — mit Agenten, Immobilien, Werkstatt, VPN und Desk auf der Roadmap. Auf demselben Grid gebaut, fügen sie sich direkt ein.",
+                "Voice, CRM y Consolidate llegan pronto — con Agentes, Inmobiliaria, Taller, VPN y Desk en la hoja de ruta. Creados en la misma cuadrícula, se integran directamente.",
+                "Voice, CRM e Consolidate sono in arrivo — con Agenti, Immobiliare, Officina, VPN e Desk nella roadmap. Costruiti sulla stessa griglia, si integrano subito.",
+                "Voice, CRM en Consolidate komen binnenkort — met Agents, Vastgoed, Werkplaats, VPN en Desk op de roadmap. Gebouwd op hetzelfde grid, zodat ze direct aansluiten."),
+            "Voice, CRM &amp; Consolidate — coming soon": _t("Voice, CRM &amp; Consolidate — bientôt", "Voice, CRM &amp; Consolidate — demnächst", "Voice, CRM &amp; Consolidate — próximamente", "Voice, CRM &amp; Consolidate — in arrivo", "Voice, CRM &amp; Consolidate — binnenkort"),
             # ---- New live apps: TMS, Assure, Close ----
             "TMS": _t("TMS", "TMS", "TMS", "TMS", "TMS"),
             "Assure": _t("Assure", "Assure", "Assure", "Assure", "Assure"),
@@ -541,12 +541,12 @@ PAGE = {
             "Controlled, reproducible close": _t("Clôture contrôlée et reproductible", "Kontrollierter, reproduzierbarer Abschluss", "Cierre controlado y reproducible", "Chiusura controllata e riproducibile", "Gecontroleerde, reproduceerbare afsluiting"),
             "Audit pack &amp; journal vouchers": _t("Dossier d'audit &amp; écritures comptables", "Audit-Paket &amp; Buchungsbelege", "Paquete de auditoría &amp; asientos contables", "Pacchetto di audit &amp; scritture contabili", "Auditpakket &amp; journaalposten"),
             "Explore Close →": _t("Découvrir Close →", "Close entdecken →", "Explorar Close →", "Esplora Close →", "Ontdek Close →"),
-            "CRM, Agents, Real Estate &amp; Workshop — on the roadmap": _t(
-                "CRM, Agents, Immobilier &amp; Atelier — sur la feuille de route",
-                "CRM, Agenten, Immobilien &amp; Werkstatt — auf der Roadmap",
-                "CRM, Agentes, Inmobiliaria &amp; Taller — en la hoja de ruta",
-                "CRM, Agenti, Immobiliare &amp; Officina — nella roadmap",
-                "CRM, Agents, Vastgoed &amp; Werkplaats — op de roadmap"),
+            "Agents, Real Estate &amp; Workshop — on the roadmap": _t(
+                "Agents, Immobilier &amp; Atelier — sur la feuille de route",
+                "Agenten, Immobilien &amp; Werkstatt — auf der Roadmap",
+                "Agentes, Inmobiliaria &amp; Taller — en la hoja de ruta",
+                "Agenti, Immobiliare &amp; Officina — nella roadmap",
+                "Agents, Vastgoed &amp; Werkplaats — op de roadmap"),
             "VPN &amp; Desk — on the roadmap": _t(
                 "VPN &amp; Desk — sur la feuille de route",
                 "VPN &amp; Desk — auf der Roadmap",
@@ -608,12 +608,12 @@ PAGE = {
         'src': 'products/coming-soon/index.html',
         't': {
             # ---- Meta ----
-            "More FulcrumGrid apps in active development — Voice and Consolidate are coming soon, with CRM, Agents, Real Estate, Workshop, VPN and Desk on the roadmap — built on the same grid. Get early access.": _t(
-                "D'autres applications FulcrumGrid en développement actif — Voice et Consolidate bientôt, avec CRM, Agents, Immobilier, Atelier, VPN et Desk sur la feuille de route — conçues sur la même grille. Obtenez un accès anticipé.",
-                "Weitere FulcrumGrid-Apps in aktiver Entwicklung — Voice und Consolidate demnächst, mit CRM, Agenten, Immobilien, Werkstatt, VPN und Desk auf der Roadmap — auf demselben Grid gebaut. Sichern Sie sich frühen Zugang.",
-                "Más aplicaciones de FulcrumGrid en desarrollo activo — Voice y Consolidate próximamente, con CRM, Agentes, Inmobiliaria, Taller, VPN y Desk en la hoja de ruta — creadas en la misma cuadrícula. Consiga acceso anticipado.",
-                "Altre app FulcrumGrid in fase di sviluppo attivo — Voice e Consolidate in arrivo, con CRM, Agenti, Immobiliare, Officina, VPN e Desk nella roadmap — costruite sulla stessa griglia. Ottieni l'accesso anticipato.",
-                "Meer FulcrumGrid-apps in actieve ontwikkeling — Voice en Consolidate binnenkort, met CRM, Agents, Vastgoed, Werkplaats, VPN en Desk op de roadmap — gebouwd op hetzelfde grid. Krijg vroege toegang."),
+            "More FulcrumGrid apps in active development — Voice, CRM and Consolidate are coming soon, with Agents, Real Estate, Workshop, VPN and Desk on the roadmap — built on the same grid. Get early access.": _t(
+                "D'autres applications FulcrumGrid en développement actif — Voice, CRM et Consolidate bientôt, avec Agents, Immobilier, Atelier, VPN et Desk sur la feuille de route — conçues sur la même grille. Obtenez un accès anticipé.",
+                "Weitere FulcrumGrid-Apps in aktiver Entwicklung — Voice, CRM und Consolidate demnächst, mit Agenten, Immobilien, Werkstatt, VPN und Desk auf der Roadmap — auf demselben Grid gebaut. Sichern Sie sich frühen Zugang.",
+                "Más aplicaciones de FulcrumGrid en desarrollo activo — Voice, CRM y Consolidate próximamente, con Agentes, Inmobiliaria, Taller, VPN y Desk en la hoja de ruta — creadas en la misma cuadrícula. Consiga acceso anticipado.",
+                "Altre app FulcrumGrid in fase di sviluppo attivo — Voice, CRM e Consolidate in arrivo, con Agenti, Immobiliare, Officina, VPN e Desk nella roadmap — costruite sulla stessa griglia. Ottieni l'accesso anticipato.",
+                "Meer FulcrumGrid-apps in actieve ontwikkeling — Voice, CRM en Consolidate binnenkort, met Agents, Vastgoed, Werkplaats, VPN en Desk op de roadmap — gebouwd op hetzelfde grid. Krijg vroege toegang."),
             "Voice — coming to the grid.": _t(
                 "Voice — bientôt sur la grille.",
                 "Voice — bald im Grid.",

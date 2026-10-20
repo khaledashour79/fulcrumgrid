@@ -45,9 +45,9 @@ custom (single-tenant, on-premise/self-hosted option, data residency, SLA).
 **Trials & billing.** Every plan has a **14-day free trial**, no card required. Annual
 billing saves 20%.
 
-**Coming soon / roadmap.** Voice (business telephony) and Consolidate (a consolidated
+**Coming soon / roadmap.** Voice (business telephony), CRM and Consolidate (a consolidated
 commercial & financial dashboard across every company you run — KPIs, trends and ageing
-over all your connected sources) are coming soon; CRM, Agents, Real Estate, Workshop, VPN
+over all your connected sources) are coming soon; Agents, Real Estate, Workshop, VPN
 and Desk are on the roadmap. Custom apps are built to order on the same foundation.
 
 **Regions.** Hosted and tuned per region, with data in your region, your language and
