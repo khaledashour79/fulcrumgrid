@@ -307,18 +307,18 @@ PAGE = {
                 "TMS es el centro financiero de la cuadrícula. Úselo con sus otras aplicaciones FulcrumGrid y las cuentas permanecen en un solo lugar — sin volver a teclear, sin una segunda fuente de verdad.",
                 "TMS è il centro finanziario della griglia. Usalo con le altre app FulcrumGrid e i conti restano in un unico posto — senza reinserimenti, senza una seconda fonte di verità.",
                 "TMS is het financiële knooppunt van het grid. Gebruik het met uw andere FulcrumGrid-apps en de boeken blijven op één plek — zonder opnieuw invoeren, zonder tweede bron van waarheid."),
-            "Payroll, expense and loan journals post straight to the TMS ledger, so people costs and operations close on one set of books.": _t(
-                "Les écritures de paie, de notes de frais et de prêts sont comptabilisées directement dans le grand livre TMS, pour que les coûts du personnel et les opérations se clôturent sur un seul jeu de comptes.",
-                "Gehalts-, Spesen- und Darlehensbuchungen werden direkt im TMS-Hauptbuch gebucht, sodass Personalkosten und Betrieb auf einem Satz Bücher abgeschlossen werden.",
-                "Los asientos de nómina, gastos y préstamos se contabilizan directamente en el libro mayor de TMS, para que los costes de personal y las operaciones cierren en un solo juego de libros.",
-                "Le scritture di buste paga, note spese e prestiti vengono registrate direttamente nel libro mastro di TMS, così i costi del personale e le operazioni chiudono su un unico insieme di libri.",
-                "Boekingen voor loon, onkosten en leningen worden rechtstreeks in het TMS-grootboek geboekt, zodat personeelskosten en operatie op één set boeken worden afgesloten."),
-            "Receivables and write-offs post into the same ledger, so what you collect and what you owe reconcile in one place.": _t(
-                "Les créances et les passages en perte sont comptabilisés dans le même grand livre, pour que ce que vous encaissez et ce que vous devez se rapprochent au même endroit.",
-                "Forderungen und Abschreibungen werden im selben Hauptbuch gebucht, sodass sich Einnahmen und Verbindlichkeiten an einem Ort abstimmen.",
-                "Los cobros y las bajas por incobrables se contabilizan en el mismo libro mayor, para que lo que cobra y lo que debe se concilien en un solo lugar.",
-                "I crediti e le svalutazioni vengono registrati nello stesso libro mastro, così ciò che incassi e ciò che devi si riconciliano in un unico posto.",
-                "Vorderingen en afschrijvingen worden in hetzelfde grootboek geboekt, zodat wat u int en wat u verschuldigd bent op één plek wordt afgestemd."),
+            "Payroll, expense and loan journals post straight to the TMS ledger, and posted entries flow back for reconciliation — so people costs and operations stay in step on one set of books.": _t(
+                "Les écritures de paie, de notes de frais et de prêts sont comptabilisées directement dans le grand livre TMS, et les écritures comptabilisées reviennent pour rapprochement — pour que les coûts du personnel et les opérations restent alignés sur un seul jeu de comptes.",
+                "Gehalts-, Spesen- und Darlehensbuchungen werden direkt im TMS-Hauptbuch gebucht, und die gebuchten Einträge fließen zum Abgleich zurück — sodass Personalkosten und Betrieb auf einem Satz Bücher im Gleichtakt bleiben.",
+                "Los asientos de nómina, gastos y préstamos se contabilizan directamente en el libro mayor de TMS, y los asientos contabilizados regresan para su conciliación — para que los costes de personal y las operaciones se mantengan alineados en un solo juego de libros.",
+                "Le scritture di buste paga, note spese e prestiti vengono registrate direttamente nel libro mastro di TMS, e le scritture registrate tornano indietro per la riconciliazione — così i costi del personale e le operazioni restano allineati su un unico insieme di libri.",
+                "Boekingen voor loon, onkosten en leningen worden rechtstreeks in het TMS-grootboek geboekt, en de geboekte posten stromen terug voor reconciliatie — zodat personeelskosten en operatie op één set boeken in de pas blijven."),
+            "Receivables and write-offs post into the TMS ledger, and ageing and reconciliation flow back to Collection — so what you collect and what you owe stay in sync, both ways.": _t(
+                "Les créances et les passages en perte sont comptabilisés dans le grand livre TMS, et la balance âgée et le rapprochement reviennent vers Collection — pour que ce que vous encaissez et ce que vous devez restent synchronisés, dans les deux sens.",
+                "Forderungen und Abschreibungen werden im TMS-Hauptbuch gebucht, und Altersstruktur und Abstimmung fließen zu Collection zurück — sodass Einnahmen und Verbindlichkeiten in beide Richtungen synchron bleiben.",
+                "Los cobros y las bajas por incobrables se contabilizan en el libro mayor de TMS, y la antigüedad de saldos y la conciliación regresan a Collection — para que lo que cobra y lo que debe se mantengan sincronizados, en ambos sentidos.",
+                "I crediti e le svalutazioni vengono registrati nel libro mastro di TMS, e lo scadenziario e la riconciliazione tornano a Collection — così ciò che incassi e ciò che devi restano sincronizzati, in entrambe le direzioni.",
+                "Vorderingen en afschrijvingen worden in het TMS-grootboek geboekt, en ouderdomsanalyse en reconciliatie stromen terug naar Collection — zodat wat u int en wat u verschuldigd bent in beide richtingen gesynchroniseerd blijven."),
             "Live TMS operations stream to Command Center, so shipments, revenue and exceptions show up on its dashboards and alerts.": _t(
                 "Les opérations TMS en direct sont transmises à Command Center, pour que expéditions, revenus et exceptions apparaissent sur ses tableaux de bord et alertes.",
                 "Live-TMS-Vorgänge werden an Command Center übertragen, sodass Sendungen, Umsatz und Ausnahmen auf seinen Dashboards und Warnungen erscheinen.",
