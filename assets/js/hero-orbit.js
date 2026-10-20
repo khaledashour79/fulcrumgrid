@@ -17,7 +17,7 @@
     ['TMS', 'live', 'tms'], ['Assure', 'live', 'assure'], ['Close', 'live', 'close'],
     ['Voice', 'soon', ''], ['Consolidate', 'soon', ''], ['CRM', 'soon', 'crm'],
     ['Agents', 'soon', 'agents'], ['Real Estate', 'soon', 'realestate'],
-    ['Workshop', 'soon', 'workshop'], ['VPN', 'soon', ''], ['Desk', 'soon', '']
+    ['Workshop', 'soon', 'workshop']
   ];
   // Tiles per ring — drives the angular spacing so each ring stays evenly spread
   // however many apps it carries.
