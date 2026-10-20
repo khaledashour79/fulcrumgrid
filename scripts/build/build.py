@@ -41,6 +41,9 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 # loc_static's per-string catalogs.
 STEPS = ['gen_pricing.py', 'gen_blog.py', 'gen_regions.py', 'loc_static.py',
          'gen_sitemap.py', 'gen_daily.py', 'gen_concierge.py',
+         # cachebust versions the interactive homepage scripts (?v=<hash>) across
+         # all generated pages, so a deploy busts the browser cache for them.
+         'cachebust.py',
          # gen_llms_full runs last: it reads the finished page trees (EN + AR)
          # and writes llms-full.txt, the single-file content dump for LLMs.
          'gen_llms_full.py']
