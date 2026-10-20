@@ -30,7 +30,8 @@
   var T = {
     en: { title: 'FulcrumGrid assistant', invite: "Hi — I'm here to help. Ask me anything about FulcrumGrid.",
           talk: 'Talk to me', placeholder: 'Type a message…', send: 'Send', listening: 'Listening…',
-          thinking: 'Thinking…', mic: 'Hold to talk', close: 'Close', dismiss: 'Dismiss',
+          thinking: 'Thinking…', speaking: 'Speaking…', voicehint: 'Tap the mic to stop',
+          mic: 'Hold to talk', close: 'Close', dismiss: 'Dismiss',
           consent: 'Tap the mic to talk — your voice is sent to our assistant to answer you. ',
           contact: 'Contact us', err: "Sorry — I couldn't reach the assistant. Please try the contact page.",
           sr: "Voice isn't supported in this browser — you can type instead.",
@@ -38,7 +39,8 @@
           noheard: "I didn't catch that — tap the mic and try again, or type your question." },
     ar: { title: 'مساعد FulcrumGrid', invite: 'مرحبًا — أنا هنا للمساعدة. اسألني أي شيء عن FulcrumGrid.',
           talk: 'تحدّث إليّ', placeholder: 'اكتب رسالة…', send: 'إرسال', listening: 'أستمع…',
-          thinking: 'أفكّر…', mic: 'اضغط للتحدّث', close: 'إغلاق', dismiss: 'إخفاء',
+          thinking: 'أفكّر…', speaking: 'أتحدّث…', voicehint: 'اضغط الميكروفون للإيقاف',
+          mic: 'اضغط للتحدّث', close: 'إغلاق', dismiss: 'إخفاء',
           consent: 'اضغط الميكروفون للتحدّث — يُرسَل صوتك إلى مساعدنا للإجابة عليك. ',
           contact: 'تواصل معنا', err: 'عذرًا — تعذّر الوصول إلى المساعد. جرّب صفحة التواصل من فضلك.',
           sr: 'الإدخال الصوتي غير مدعوم في هذا المتصفح — يمكنك الكتابة بدلًا من ذلك.',
@@ -77,6 +79,9 @@
       '<span class="fgc-status" aria-live="polite"><span class="fgc-wave"><i></i><i></i><i></i><i></i></span><span class="fgc-status-txt"></span></span>' +
       '<button class="fgc-min" aria-label="' + t.close + '">–</button></div>' +
     '<div class="fgc-log" aria-live="polite"></div>' +
+    '<div class="fgc-voice"><div class="fgc-orb"><i></i></div>' +
+      '<div class="fgc-voice-status" aria-live="polite"></div>' +
+      '<div class="fgc-voice-hint">' + esc(t.voicehint) + '</div></div>' +
     '<div class="fgc-foot">' +
       '<button class="fgc-mic" aria-label="' + t.mic + '" aria-pressed="false">' + micIcon() + '</button>' +
       '<input class="fgc-input" type="text" placeholder="' + esc(t.placeholder) + '" aria-label="' + esc(t.placeholder) + '">' +
@@ -86,6 +91,7 @@
   mount.appendChild(panel); mount.appendChild(invite); mount.appendChild(stage);
   var log = panel.querySelector('.fgc-log');
   var statusTxt = panel.querySelector('.fgc-status-txt');
+  var voiceStatus = panel.querySelector('.fgc-voice-status');
   var micBtn = panel.querySelector('.fgc-mic');
   var input = panel.querySelector('.fgc-input');
   var consentBox = panel.querySelector('.fgc-consent');
@@ -100,7 +106,9 @@
   var STATES = ['idle', 'listening', 'thinking', 'talking'];
   function setState(s) {
     STATES.forEach(function (x) { mount.classList.toggle('is-' + x, x === s); });
-    statusTxt.textContent = s === 'listening' ? t.listening : (s === 'thinking' ? t.thinking : '');
+    var word = s === 'listening' ? t.listening : (s === 'thinking' ? t.thinking : (s === 'talking' ? t.speaking : ''));
+    statusTxt.textContent = (s === 'talking' && !voiceMode) ? '' : word;
+    if (voiceStatus) voiceStatus.textContent = word;
     if (riveInputs.state) { try { riveInputs.state.value = STATES.indexOf(s); } catch (e) {} }
     if (s !== 'talking' && riveInputs.mouth) { try { riveInputs.mouth.value = 0; } catch (e) {} }
   }
@@ -119,7 +127,7 @@
     if (!ls('fgc_consent')) consentBox.hidden = false;
     setTimeout(function () { input.focus(); }, 60);
   }
-  function close() { mount.classList.remove('is-open'); }      // collapse to the character launcher
+  function close() { if (voiceMode) exitVoice(); mount.classList.remove('is-open'); }   // collapse to the character launcher
   // The "×" dismisses only the greeting bubble; the character stays as a quiet,
   // always-clickable launcher so the chat can always be reopened.
   function dismissInvite() { inviteDismissed = true; ss('fgc_invite_dismissed', '1'); mount.classList.add('fgc-no-invite'); }
@@ -138,20 +146,28 @@
 
   // Per-turn speech pipeline state (one turn at a time, since ask() gates on busy).
   var ttsQueue = [], ttsPlaying = false, streamDone = false;
+  // Voice-only mode: entered on a mic tap. No transcript/answer text is shown —
+  // the visitor just speaks and hears the reply, and the mic auto-reopens after
+  // each answer (hands-free loop). If audio can't play, we fall back to text.
+  var voiceMode = false, canceling = false, turnSpoke = false,
+      lastUserText = '', lastReply = '', vadHeard = false, noSpeechTimer = null;
 
   function ask(text) {
     text = (text || '').trim(); if (!text || busy) return;
-    addMsg('user', text);
+    var vm = voiceMode;                            // this turn's mode (snapshot)
+    lastUserText = text; lastReply = '';
+    if (!vm) addMsg('user', text);                 // voice mode shows no transcript
     history.push({ role: 'user', content: text });
-    input.value = '';
+    if (!vm) input.value = '';
     if (!endpoint) {                               // backend not wired yet → route to a human
+      if (vm) exitVoice();
       addMsg('bot', t.err);
       setTimeout(function () { location.href = contactHref; }, 1200);
       return;
     }
     busy = true; setState('thinking');
-    var bubble = addMsg('bot', '…');
-    ttsQueue = []; ttsPlaying = false; streamDone = false;
+    var bubble = vm ? el('div') : addMsg('bot', '…');   // detached (invisible) in voice mode
+    ttsQueue = []; ttsPlaying = false; streamDone = false; turnSpoke = false;
     var spokenChars = 0, firstDone = false;
 
     // Fire the first complete sentence at TTS as soon as it streams in, so the
@@ -170,12 +186,16 @@
 
     streamChat(text, bubble, onText).then(function (reply) {
       history.push({ role: 'assistant', content: reply });
+      lastReply = reply;
       busy = false; streamDone = true;
       var rest = (reply || '').slice(spokenChars).trim();
       if (rest) enqueueSpeak(rest);
       pumpQueue();                                 // handle the already-drained case
-      if (!firstDone && !rest) setState('idle');   // empty reply
-    }).catch(function () { bubble.textContent = t.err; busy = false; streamDone = true; setState('idle'); });
+      if (!firstDone && !rest) { setState('idle'); if (vm) exitVoice(); }   // empty reply
+    }).catch(function () {
+      busy = false; streamDone = true; setState('idle');
+      if (vm) exitVoice(); else bubble.textContent = t.err;
+    });
   }
 
   function streamChat(message, bubble, onText) {
@@ -257,11 +277,26 @@
       ensureAudioEl();
       audioEl.src = URL.createObjectURL(blob);
       startFlap();
-      var p = audioEl.play(); if (p && p.catch) p.catch(function () { onChunkEnd(); });
+      var p = audioEl.play();
+      if (p && p.then) p.then(function () { turnSpoke = true; }).catch(function () { onChunkEnd(); });
     } catch (e) { onChunkEnd(); }
   }
   function onChunkEnd() { ttsPlaying = false; stopFlap(); setMouth(0); pumpQueue(); }
-  function finishSpeaking() { stopFlap(); setMouth(0); setState('idle'); }
+  function finishSpeaking() {
+    stopFlap(); setMouth(0); setState('idle');
+    if (!voiceMode) return;
+    if (!turnSpoke) { revealTurn(); return; }                 // audio never played → reveal as text
+    setTimeout(function () {                                    // hands-free: listen for the next question
+      if (voiceMode && !busy && !recording && !listening && mount.classList.contains('is-open')) startMic();
+    }, 550);
+  }
+  // Fallback: audio couldn't play, so drop out of voice mode and show the turn.
+  function revealTurn() {
+    voiceMode = false; mount.classList.remove('is-voice');
+    if (lastUserText) addMsg('user', lastUserText);
+    if (lastReply) addMsg('bot', lastReply);
+    setState('idle');
+  }
   // Plain-element playback gives us no amplitude to read, so the mouth is driven
   // by a gentle timed flap while a chunk is playing.
   function startFlap() { stopFlap(); flapTimer = setInterval(function () { setMouth(0.22 + Math.random() * 0.6); }, 95); }
@@ -272,7 +307,7 @@
       var u = new SpeechSynthesisUtterance(text);
       u.lang = sttLang();
       var flap = setInterval(function () { setMouth(Math.random() * 0.8); }, 90);
-      u.onend = function () { clearInterval(flap); onChunkEnd(); };
+      u.onend = function () { clearInterval(flap); turnSpoke = true; onChunkEnd(); };
       u.onerror = function () { clearInterval(flap); onChunkEnd(); };
       speechSynthesis.speak(u);
     } catch (e) { onChunkEnd(); }
@@ -293,14 +328,28 @@
   }
   function setMic(on) { micBtn.setAttribute('aria-pressed', on ? 'true' : 'false'); }
 
+  function startMic() {
+    if (useServerSTT) startRecording();
+    else if (SR) startListening();
+    else { exitVoice(); addMsg('bot', t.sr, true); input.focus(); }
+  }
+  function enterVoice() { voiceMode = true; mount.classList.add('is-voice'); }
+  function exitVoice() {
+    voiceMode = false; mount.classList.remove('is-voice');
+    if (noSpeechTimer) { clearTimeout(noSpeechTimer); noSpeechTimer = null; }
+    if (recording || listening) canceling = true;  // don't transcribe/answer a canceled turn
+    ttsQueue = []; try { if (audioEl) audioEl.pause(); } catch (e) {}
+    ttsPlaying = false; stopFlap(); setMouth(0);
+    if (recording || listening) stopMic();
+    setState('idle');
+  }
   function toggleMic() {
     if (!active) { location.href = contactHref; return; }
     unlockAudio();                                 // the tap is our gesture — bless audio for the spoken reply
     ls('fgc_consent', '1'); consentBox.hidden = true;
+    if (voiceMode) { exitVoice(); return; }        // a tap while in voice mode stops & exits
     if (recording || listening) { stopMic(); return; }
-    if (useServerSTT) startRecording();
-    else if (SR) startListening();
-    else { addMsg('bot', t.sr, true); input.focus(); }
+    enterVoice(); startMic();                       // mic tap → enter hands-free voice mode
   }
   function stopMic() {
     if (recording) { try { mediaRec && mediaRec.state !== 'inactive' && mediaRec.stop(); } catch (e) { recording = false; setMic(false); } }
@@ -320,7 +369,12 @@
         statusTxt.textContent = (finalTxt + interim) || t.listening;
       };
       recog.onerror = function () { stopListening(); };
-      recog.onend = function () { setMic(false); mount.classList.remove('is-listening'); if (finalTxt.trim()) ask(finalTxt); };
+      recog.onend = function () {
+        setMic(false); mount.classList.remove('is-listening');
+        if (canceling) { canceling = false; return; }
+        if (finalTxt.trim()) ask(finalTxt);
+        else if (voiceMode) exitVoice();                 // nothing said → end the hands-free loop
+      };
       recog.start(); listening = true; setMic(true); setState('listening');
     } catch (e) { setMic(false); if (canRecord) startRecording(); }   // fall back to server STT
   }
@@ -342,18 +396,22 @@
       mediaRec.ondataavailable = function (e) { if (e.data && e.data.size) recChunks.push(e.data); };
       mediaRec.onstop = function () {
         if (recTimer) { clearTimeout(recTimer); recTimer = null; }
+        if (noSpeechTimer) { clearTimeout(noSpeechTimer); noSpeechTimer = null; }
         stopStream();
         closeMicCtx();                        // release the record audio session → playback returns to the loudspeaker
         var blob = new Blob(recChunks, { type: (mediaRec && mediaRec.mimeType) || 'audio/webm' });
         recording = false; setMic(false); mount.classList.remove('is-listening');
+        if (canceling) { canceling = false; setState('idle'); return; }          // exited/canceled → don't send
         if (blob.size > 1200) { setState('thinking'); statusTxt.textContent = t.thinking; sendSTT(blob); }
-        else setState('idle');
+        else { setState('idle'); if (voiceMode) exitVoice(); }
       };
       mediaRec.start();
-      recording = true; setMic(true); setState('listening'); statusTxt.textContent = t.listening;
+      recording = true; vadHeard = false; setMic(true); setState('listening'); statusTxt.textContent = t.listening;
       recTimer = setTimeout(function () { if (recording) stopMic(); }, 30000);   // 30s safety cap
+      // Hands-free loop: if nothing is said, end quietly instead of hanging on the 30s cap.
+      if (voiceMode) noSpeechTimer = setTimeout(function () { if (recording && voiceMode && !vadHeard) exitVoice(); }, 8000);
       startVAD(stream);                                                           // auto-stop on a pause
-    }).catch(function () { setMic(false); setState('idle'); addMsg('bot', t.micdenied, true); });
+    }).catch(function () { setMic(false); setState('idle'); if (voiceMode) exitVoice(); addMsg('bot', t.micdenied, true); });
   }
   // Voice-activity auto-stop: once the visitor has spoken, end the recording
   // after ~1.4s of quiet so they don't have to tap the mic again. Falls back to
@@ -378,7 +436,7 @@
         vad.getByteFrequencyData(buf);
         var s = 0; for (var i = 0; i < buf.length; i++) s += buf[i];
         var avg = s / buf.length, now = Date.now();
-        if (avg > LOUD) { lastLoud = now; if (now - started > 200) heard = true; }
+        if (avg > LOUD) { lastLoud = now; if (now - started > 200) { heard = true; vadHeard = true; } }
         if (heard && now - started > MIN_MS && now - lastLoud > SILENCE_MS) { try { src.disconnect(); } catch (e) {} stopMic(); return; }
         requestAnimationFrame(monitor);
       })();
