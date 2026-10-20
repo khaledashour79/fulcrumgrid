@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>¿Cómo se configura un proceso de recepción de solicitudes? — FulcrumGrid</title>
+  <meta name="description" content="Un proceso de recepción de solicitudes da a cada petición un único lugar donde llegar. Aprende a definir puerta única, campos, prioridades, responsables, SLA y métricas." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="¿Cómo se configura un proceso de recepción de solicitudes?" />
+  <meta property="og:description" content="Un proceso de recepción de solicitudes da a cada petición un único lugar donde llegar. Aprende a definir puerta única, campos, prioridades, responsables, SLA y métricas." />
+  <meta property="og:url" content="https://fulcrumgrid.com/es/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-20" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="¿Cómo se configura un proceso de recepción de solicitudes?" />
+  <meta name="twitter:description" content="Un proceso de recepción de solicitudes da a cada petición un único lugar donde llegar. Aprende a definir puerta única, campos, prioridades, responsables, SLA y métricas." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/es/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "¿Cómo se configura un proceso de recepción de solicitudes?",
+    "description": "Un proceso de recepción de solicitudes da a cada petición un único lugar donde llegar. Aprende a definir puerta única, campos, prioridades, responsables, SLA y métricas.",
+    "datePublished": "2026-10-20",
+    "dateModified": "2026-10-20",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/es/blog/how-to-set-up-a-request-intake-process-for-your-team/"
+    },
+    "inLanguage": "es"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://fulcrumgrid.com/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/es/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guía de recepción de solicitudes",
+        "item": "https://fulcrumgrid.com/es/blog/how-to-set-up-a-request-intake-process-for-your-team/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es un proceso de recepción de solicitudes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Es la forma acordada en que las peticiones de trabajo entran en tu equipo: un solo canal, unos pocos datos obligatorios y reglas claras de triaje, responsabilidad y tiempos de respuesta. Sustituye las peticiones dispersas en chats y correos por una única cola visible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué campos debe incluir un formulario de solicitud?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Como mínimo: quién pide, qué necesita, por qué importa, la fecha límite y su motivo, y los enlaces o archivos relevantes. Deja el resto como opcional para que el formulario se complete rápido."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo evito que me envíen solicitudes por mensaje directo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Responde con amabilidad con el enlace al formulario, ofrécete a registrar la primera por la persona y asegúrate de que los líderes sigan la misma regla. En unas semanas el hábito cambia, sobre todo si la cola es visiblemente más rápida y fiable."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué SLA son realistas para un equipo pequeño?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Empieza con compromisos de respuesta, como acusar recibo en un día laborable y hacer el triaje en dos. Los tiempos de resolución varían demasiado según el tipo de solicitud, así que da una fecha objetivo tras el triaje en lugar de una promesa general."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=ae8f0bf4">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/es/products/">Productos</a>
+        <a href="/es/features/">Cuadrícula</a>
+        <a href="/es/pricing/">Precios</a>
+        <a href="/es/regions/">Regiones</a>
+        <a href="/es/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/es/contact/">Contacto</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Idioma">ES ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" class="active" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/es/contact/">Solicitar una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/es/">Inicio</a> / <a href="/es/blog/">Blog</a> / Guía de recepción de solicitudes</p>
+        <span class="tag tag-accent">Operaciones</span>
+        <h1>¿Cómo se configura un proceso de recepción de solicitudes?</h1>
+        <p class="hero-intro">Un proceso de recepción de solicitudes da a cada petición un único lugar donde llegar. Aprende a definir puerta única, campos, prioridades, responsables, SLA y métricas.</p>
+        <p class="mono"><time datetime="2026-10-20">20 de octubre de 2026</time> · 6 min de lectura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Todo equipo conoce el problema: el trabajo llega como un mensaje de chat aquí, un correo allá, un comentario en el pasillo el viernes por la tarde. Nadie sabe cuántas solicitudes hay abiertas, quién se encarga de ellas ni cuál es la más importante. Un proceso de recepción de solicitudes lo resuelve dando a cada petición un único lugar de entrada y un único conjunto de reglas para lo que sigue.</p><h2>Empieza con una puerta única</h2><p>Elige un canal, ya sea un formulario, un buzón compartido o un tablero de tickets, y declara que es la única vía oficial para pedir trabajo a tu equipo. Una sola puerta no significa rigidez. Significa que cada solicitud queda registrada, con fecha y hora, y a la vista. Publica el enlace donde la gente ya mira: la descripción del canal, tu firma de correo y el documento de bienvenida.</p><h2>Decide qué campos son obligatorios</h2><p>Una solicitud a medias cuesta más tiempo en preguntas de seguimiento del que ahorra en rapidez. Mantén el formulario corto, pero haz obligatorio lo esencial:</p><ul><li><strong>Solicitante y equipo</strong>, para saber a quién volver a consultar.</li><li><strong>Qué se necesita</strong>, en una o dos frases claras.</li><li><strong>Por qué importa</strong>: el resultado de negocio o el riesgo de no hacerlo.</li><li><strong>Fecha límite</strong>, junto con el motivo de esa fecha.</li><li><strong>Enlaces o adjuntos</strong> que ahorren una ronda de preguntas.</li></ul><p>Todo lo demás puede ser opcional. Si la gente abandona el formulario a medias, es demasiado largo.</p><h2>Fija reglas de triaje y prioridad</h2><p>El triaje es una decisión breve y periódica: aceptar, rechazar o pedir más información. Deja las reglas por escrito para que el resultado no dependa de quién esté de turno.</p><h3>Una escala de prioridad sencilla</h3><ul><li><strong>Urgente:</strong> algo está roto o peligra un plazo legal o financiero. Se atiende el mismo día.</li><li><strong>Alta:</strong> bloquea a otro equipo o a un cliente. Se atiende esta semana.</li><li><strong>Normal:</strong> trabajo planificado, por orden de llegada y valor.</li><li><strong>Baja:</strong> deseable. Agrúpalas y revísalas cada mes.</li></ul><p>Define cada nivel por su impacto, no por lo fuerte que insista quien pide. Y permítete decir que no: un rechazo con una breve explicación es mejor que una solicitud ignorada en silencio.</p><h2>Asigna responsables y SLA</h2><p>Cada solicitud necesita exactamente un responsable dentro de un plazo fijado. Una forma sencilla de lograrlo es un turno rotativo de triaje: una persona por semana revisa las novedades y las asigna. Después, compromete tiempos de respuesta en lugar de tiempos de resolución: por ejemplo, acusar recibo en un día laborable, hacer el triaje en dos y dar una fecha objetivo cuando la solicitud se acepte. Empieza con compromisos modestos que puedas cumplir y ajústalos a medida que reúnas datos.</p><h2>Haz que todo sea visible</h2><p>Quien solicita debería poder ver el estado sin preguntar. Un tablero compartido con etapas claras (Nueva, Clasificada, En curso, A la espera del solicitante, Hecha) hace casi todo el trabajo, sobre todo si los cambios de estado avisan automáticamente al solicitante. La visibilidad reduce los mensajes de «¿alguna novedad?» y muestra a la dirección la carga real cuando toca negociar capacidad.</p><h2>Evita las solicitudes por mensaje directo</h2><p>Es la parte más difícil porque es cuestión de conducta, no de tecnología. Cuando una solicitud llegue a tus mensajes directos, no la hagas en silencio ni regañes. Responde con amabilidad con el enlace y ofrécete a registrarla tú la primera vez. Los líderes también deben cumplir la regla: si el jefe manda trabajo por mensaje directo, el proceso está muerto. Un buen lema de equipo: «si no está en la cola, no está en el plan».</p><h2>Revisa las métricas cada mes</h2><ul><li>Volumen por origen y tipo de solicitud.</li><li>Tiempo hasta la primera respuesta y hasta la finalización, por prioridad.</li><li>Porcentaje de solicitudes que llegan fuera de la puerta única.</li><li>Solicitudes rechazadas, reabiertas o devueltas.</li></ul><p>Usa estas cifras para ajustar el formulario, la dotación y las reglas. Muchas solicitudes rechazadas suelen indicar que el formulario no es claro. Un porcentaje creciente de urgencias suele apuntar a un problema de planificación previo, no a un problema de tu equipo.</p><h2>Dónde ayuda una herramienta</h2><p>Puedes llevar todo esto con una hoja de cálculo y un buzón compartido, y muchos equipos empiezan así. Cuando crece el volumen, una herramienta específica se justifica. FulcrumGrid Command Center ofrece a los equipos una cola de solicitudes compartida con responsables, prioridades y estado en una sola vista, de modo que el triaje y los informes no dependan de la memoria de nadie. Uses lo que uses, el proceso importa más que el software.</p>
+
+        <h2>Preguntas frecuentes</h2>
+        <details class="faq-item"><summary>¿Qué es un proceso de recepción de solicitudes?</summary><p>Es la forma acordada en que las peticiones de trabajo entran en tu equipo: un solo canal, unos pocos datos obligatorios y reglas claras de triaje, responsabilidad y tiempos de respuesta. Sustituye las peticiones dispersas en chats y correos por una única cola visible.</p></details>
+        <details class="faq-item"><summary>¿Qué campos debe incluir un formulario de solicitud?</summary><p>Como mínimo: quién pide, qué necesita, por qué importa, la fecha límite y su motivo, y los enlaces o archivos relevantes. Deja el resto como opcional para que el formulario se complete rápido.</p></details>
+        <details class="faq-item"><summary>¿Cómo evito que me envíen solicitudes por mensaje directo?</summary><p>Responde con amabilidad con el enlace al formulario, ofrécete a registrar la primera por la persona y asegúrate de que los líderes sigan la misma regla. En unas semanas el hábito cambia, sobre todo si la cola es visiblemente más rápida y fiable.</p></details>
+        <details class="faq-item"><summary>¿Qué SLA son realistas para un equipo pequeño?</summary><p>Empieza con compromisos de respuesta, como acusar recibo en un día laborable y hacer el triaje en dos. Los tiempos de resolución varían demasiado según el tipo de solicitud, así que da una fecha objetivo tras el triaje en lugar de una promesa general.</p></details>
+
+        <p style="margin-top:32px"><a href="/es/blog/"><span aria-hidden="true">←</span> Volver al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Dale un hogar a cada solicitud</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center reúne solicitudes, responsables, prioridades y estado en una vista compartida, para que nada se pierda en un mensaje directo.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/es/products/command-center/">Explorar Command Center</a>
+          <a class="btn btn-secondary" href="/es/blog/">Volver al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La columna vertebral operativa de los equipos modernos.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Productos</h5>
+          <a href="/es/products/">Todos los productos</a>
+          <a href="/es/products/hr-suite/">HR Suite</a>
+          <a href="/es/products/command-center/">Command Center</a>
+          <a href="/es/products/collection/">Collection</a>
+          <a href="/es/custom-apps/">Apps a medida</a>
+        </div>
+        <div class="foot-col">
+          <h5>Cuadrícula</h5>
+          <a href="/es/features/">Funciones</a>
+          <a href="/es/integrations/">Integraciones</a>
+          <a href="/es/how-it-works/">Cómo funciona</a>
+          <a href="/es/pricing/">Precios</a>
+          <a href="/es/regions/">Regiones</a>
+          <a href="/es/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Empresa</h5>
+          <a href="/es/about/">Acerca de</a>
+          <a href="/es/faq/">FAQ</a>
+          <a href="/es/contact/">Contacto</a>
+          <a href="/es/privacy/">Privacidad</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Todos los derechos reservados.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=b2179049" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
