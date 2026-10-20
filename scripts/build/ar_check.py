@@ -32,7 +32,7 @@ ALLOW = {
     'fig', 'fg-100', 'assembly', 'english', 'arabic', 'العربية', 'français',
     'deutsch', 'español', 'italiano', 'nederlands', 'sheet', 'net', 'cia',
     'pia', 'sif', 'eosb', 'ksa', 'odoo', 'oracle', 'quickbooks',
-    'quickbooks online', 'qbo', 'sap', 'cloud',
+    'quickbooks online', 'qbo', 'sap', 'cloud', 'consolidate', 'vpn', 'desk',
 }
 _STRIP = ' \t\r\n·↗→—–-|/•:.,;!?()[]{}"\'’‘“”%&+#'
 
