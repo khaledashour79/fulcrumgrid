@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Come si imposta un processo di gestione delle richieste? — FulcrumGrid</title>
+  <meta name="description" content="Un processo di intake delle richieste dà a ogni richiesta un punto d’ingresso unico. Scopri come definire campi, priorità, responsabili, SLA e metriche." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Come si imposta un processo di gestione delle richieste?" />
+  <meta property="og:description" content="Un processo di intake delle richieste dà a ogni richiesta un punto d’ingresso unico. Scopri come definire campi, priorità, responsabili, SLA e metriche." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-20" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Come si imposta un processo di gestione delle richieste?" />
+  <meta name="twitter:description" content="Un processo di intake delle richieste dà a ogni richiesta un punto d’ingresso unico. Scopri come definire campi, priorità, responsabili, SLA e metriche." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Come si imposta un processo di gestione delle richieste?",
+    "description": "Un processo di intake delle richieste dà a ogni richiesta un punto d’ingresso unico. Scopri come definire campi, priorità, responsabili, SLA e metriche.",
+    "datePublished": "2026-10-20",
+    "dateModified": "2026-10-20",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/how-to-set-up-a-request-intake-process-for-your-team/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida alla gestione delle richieste",
+        "item": "https://fulcrumgrid.com/it/blog/how-to-set-up-a-request-intake-process-for-your-team/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Che cos’è un processo di intake delle richieste?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "È il modo concordato in cui le richieste di lavoro entrano nel tuo team: un solo canale, pochi dati obbligatori e regole chiare per triage, responsabilità e tempi di risposta. Sostituisce le richieste sparse in chat e mail con un’unica coda visibile."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quali campi deve includere un modulo di richiesta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Come minimo: chi chiede, cosa serve, perché è importante, la scadenza con il suo motivo e gli eventuali link o file utili. Lascia tutto il resto facoltativo, così il modulo si compila in fretta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come evito che mi mandino richieste via messaggio diretto?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rispondi con gentilezza con il link al modulo, offriti di registrare la prima richiesta al posto della persona e fai in modo che i responsabili seguano la stessa regola. In poche settimane l’abitudine cambia, soprattutto se la coda è visibilmente più rapida e affidabile."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quali SLA sono realistici per un piccolo team?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Parti da impegni di risposta, come la presa in carico entro un giorno lavorativo e il triage entro due. I tempi di risoluzione variano troppo a seconda del tipo di richiesta, quindi dopo il triage indica una data obiettivo invece di una promessa generica."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=ae8f0bf4">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida alla gestione delle richieste</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Come si imposta un processo di gestione delle richieste?</h1>
+        <p class="hero-intro">Un processo di intake delle richieste dà a ogni richiesta un punto d’ingresso unico. Scopri come definire campi, priorità, responsabili, SLA e metriche.</p>
+        <p class="mono"><time datetime="2026-10-20">20 ottobre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Ogni team conosce il problema: il lavoro arriva con un messaggio in chat qui, una mail là, una frase al volo in corridoio il venerdì pomeriggio. Nessuno sa dire quante richieste siano aperte, chi se ne occupi o quale conti di più. Un processo di intake delle richieste risolve il problema dando a ogni richiesta un solo punto d’arrivo e un unico insieme di regole su cosa succede dopo.</p><h2>Parti da un unico punto d’ingresso</h2><p>Scegli un canale, che sia un modulo, una casella condivisa o una board di ticket, e dichiaralo l’unico modo ufficiale per chiedere lavoro al tuo team. Un solo ingresso non significa rigidità. Significa che ogni richiesta è registrata, datata e visibile. Pubblica il link dove le persone guardano già: la descrizione del canale, la firma email e il documento di onboarding.</p><h2>Decidi quali campi sono obbligatori</h2><p>Una richiesta incompleta costa più tempo in domande di chiarimento di quanto ne faccia risparmiare in velocità. Tieni il modulo breve, ma rendi obbligatorio l’essenziale:</p><ul><li><strong>Richiedente e team</strong>, per sapere a chi tornare.</li><li><strong>Cosa serve</strong>, in una o due frasi semplici.</li><li><strong>Perché è importante</strong>: il risultato di business o il rischio di non farlo.</li><li><strong>Scadenza</strong>, con il motivo di quella data.</li><li><strong>Link o allegati</strong> che evitino un giro di domande.</li></ul><p>Tutto il resto può essere facoltativo. Se le persone abbandonano il modulo a metà, è troppo lungo.</p><h2>Stabilisci regole di triage e priorità</h2><p>Il triage è una decisione breve e regolare: accettare, rifiutare o chiedere più informazioni. Metti le regole per iscritto, così l’esito non dipende da chi è di turno.</p><h3>Una scala di priorità semplice</h3><ul><li><strong>Urgente:</strong> qualcosa non funziona o una scadenza legale o finanziaria è a rischio. Si gestisce in giornata.</li><li><strong>Alta:</strong> blocca un altro team o un cliente. Si gestisce entro la settimana.</li><li><strong>Normale:</strong> lavoro pianificato, in ordine di arrivo e valore.</li><li><strong>Bassa:</strong> utile ma non necessario. Raggruppale e rivedile ogni mese.</li></ul><p>Definisci ogni livello in base all’impatto, non a quanto forte insiste chi chiede. E concediti di dire no: un rifiuto con una breve spiegazione è meglio di una richiesta ignorata in silenzio.</p><h2>Assegna responsabili e SLA</h2><p>Ogni richiesta ha bisogno di un solo responsabile entro un tempo stabilito. Un modo semplice è un turno di triage a rotazione: una persona a settimana esamina le novità e le assegna. Poi prometti tempi di risposta anziché tempi di risoluzione: per esempio, presa in carico entro un giorno lavorativo, triage entro due e una data obiettivo una volta accettata la richiesta. Parti con impegni modesti che puoi rispettare, poi rendili più stringenti man mano che raccogli dati.</p><h2>Rendi tutto visibile</h2><p>Chi richiede dovrebbe poter vedere lo stato senza chiedere. Una board condivisa con fasi chiare (Nuova, Valutata, In corso, In attesa del richiedente, Completata) fa gran parte del lavoro, soprattutto se i cambi di stato avvisano automaticamente il richiedente. La visibilità riduce i messaggi del tipo «novità?» e mostra alla direzione il carico reale quando bisogna negoziare la capacità.</p><h2>Evita le richieste via messaggio diretto</h2><p>È la parte più difficile perché riguarda i comportamenti, non la tecnologia. Quando una richiesta arriva nei tuoi messaggi diretti, non eseguirla in silenzio e non fare la predica. Rispondi con gentilezza con il link e offriti di registrarla tu la prima volta. Anche i responsabili devono rispettare la regola: se il capo manda lavoro in privato, il processo è finito. Un buon motto di team: «se non è in coda, non è nel piano».</p><h2>Rivedi le metriche ogni mese</h2><ul><li>Volume per fonte e tipo di richiesta.</li><li>Tempo alla prima risposta e al completamento, per priorità.</li><li>Quota di richieste che arrivano fuori dal punto d’ingresso unico.</li><li>Richieste rifiutate, riaperte o rimandate indietro.</li></ul><p>Usa questi numeri per adattare il modulo, le risorse e le regole. Molte richieste rifiutate di solito indicano un modulo poco chiaro. Una quota crescente di urgenze di solito segnala un problema di pianificazione a monte, non un problema del tuo team.</p><h2>Dove uno strumento aiuta</h2><p>Puoi gestire tutto con un foglio di calcolo e una casella condivisa, e molti team iniziano così. Quando il volume cresce, uno strumento dedicato si guadagna il posto. FulcrumGrid Command Center offre ai team una coda di richieste condivisa con responsabili, priorità e stato in un’unica vista, così triage e report non dipendono dalla memoria di nessuno. Qualunque strumento usi, il processo conta più del software.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Che cos’è un processo di intake delle richieste?</summary><p>È il modo concordato in cui le richieste di lavoro entrano nel tuo team: un solo canale, pochi dati obbligatori e regole chiare per triage, responsabilità e tempi di risposta. Sostituisce le richieste sparse in chat e mail con un’unica coda visibile.</p></details>
+        <details class="faq-item"><summary>Quali campi deve includere un modulo di richiesta?</summary><p>Come minimo: chi chiede, cosa serve, perché è importante, la scadenza con il suo motivo e gli eventuali link o file utili. Lascia tutto il resto facoltativo, così il modulo si compila in fretta.</p></details>
+        <details class="faq-item"><summary>Come evito che mi mandino richieste via messaggio diretto?</summary><p>Rispondi con gentilezza con il link al modulo, offriti di registrare la prima richiesta al posto della persona e fai in modo che i responsabili seguano la stessa regola. In poche settimane l’abitudine cambia, soprattutto se la coda è visibilmente più rapida e affidabile.</p></details>
+        <details class="faq-item"><summary>Quali SLA sono realistici per un piccolo team?</summary><p>Parti da impegni di risposta, come la presa in carico entro un giorno lavorativo e il triage entro due. I tempi di risoluzione variano troppo a seconda del tipo di richiesta, quindi dopo il triage indica una data obiettivo invece di una promessa generica.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Dai una casa a ogni richiesta</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center riunisce richieste, responsabili, priorità e stato in un’unica vista condivisa, così nulla si perde in un messaggio diretto.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=b2179049" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

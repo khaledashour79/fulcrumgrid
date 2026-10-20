@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>How Do You Set Up a Request Intake Process for Your Team? — FulcrumGrid</title>
+  <meta name="description" content="A request intake process gives every ask one place to land. Learn how to set up a single front door, required fields, triage rules, ownership, SLAs and metrics." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How Do You Set Up a Request Intake Process for Your Team?" />
+  <meta property="og:description" content="A request intake process gives every ask one place to land. Learn how to set up a single front door, required fields, triage rules, ownership, SLAs and metrics." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-20" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Do You Set Up a Request Intake Process for Your Team?" />
+  <meta name="twitter:description" content="A request intake process gives every ask one place to land. Learn how to set up a single front door, required fields, triage rules, ownership, SLAs and metrics." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-set-up-a-request-intake-process-for-your-team/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How Do You Set Up a Request Intake Process for Your Team?",
+    "description": "A request intake process gives every ask one place to land. Learn how to set up a single front door, required fields, triage rules, ownership, SLAs and metrics.",
+    "datePublished": "2026-10-20",
+    "dateModified": "2026-10-20",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/how-to-set-up-a-request-intake-process-for-your-team/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Request Intake Guide",
+        "item": "https://fulcrumgrid.com/blog/how-to-set-up-a-request-intake-process-for-your-team/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a request intake process?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is the agreed way work requests enter your team: one channel, a short set of required details, and clear rules for triage, ownership and response times. It replaces scattered chat and email asks with a single visible queue."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What fields should a request form include?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "At minimum: who is asking, what they need, why it matters, the deadline and the reason for it, and any relevant links or files. Keep everything else optional so the form stays quick to complete."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I stop people sending requests by DM?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reply kindly with the intake link, offer to log the first one for them, and make sure leaders follow the same rule. Over a few weeks the habit shifts, especially if the queue is visibly faster and more reliable."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What SLAs are realistic for a small team?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start with response commitments, such as acknowledging within one business day and triaging within two. Resolution times vary too much by request type, so give a target date after triage instead of a blanket promise."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=ae8f0bf4">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Request Intake Guide</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>How Do You Set Up a Request Intake Process for Your Team?</h1>
+        <p class="hero-intro">A request intake process gives every ask one place to land. Learn how to set up a single front door, required fields, triage rules, ownership, SLAs and metrics.</p>
+        <p class="mono"><time datetime="2026-10-20">October 20, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Every team knows the problem: work arrives as a chat message here, an email there, a hallway comment on Friday afternoon. Nobody can say how many requests are open, who owns them, or which one matters most. A request intake process fixes that by giving every ask one place to land and one set of rules for what happens next.</p><h2>Start with a single front door</h2><p>Pick one channel, whether a form, a shared inbox or a ticketing board, and declare it the only official way to ask your team for work. One door does not mean being rigid. It means every request is captured, timestamped and visible. Publish the link where people already look: the channel topic, your email signature and your onboarding document.</p><h2>Decide which fields are required</h2><p>A half-formed request costs more time in follow-up questions than it saves in speed. Keep the form short, but make the essentials mandatory:</p><ul><li><strong>Requester and team</strong>, so you know who to go back to.</li><li><strong>What is needed</strong>, in one or two plain sentences.</li><li><strong>Why it matters</strong>, meaning the business outcome or the risk of not doing it.</li><li><strong>Deadline</strong>, plus the reason for that date.</li><li><strong>Links or attachments</strong> that save the owner a round of questions.</li></ul><p>Everything else can be optional. If people abandon the form halfway, it is too long.</p><h2>Set triage and priority rules</h2><p>Triage is a short, regular decision: accept, decline or ask for more information. Write the rules down so the outcome does not depend on who happens to be on duty.</p><h3>A simple priority scale</h3><ul><li><strong>Urgent:</strong> something is broken, or a legal or financial deadline is at risk. Handle it the same day.</li><li><strong>High:</strong> it blocks another team or a customer. Handle it this week.</li><li><strong>Normal:</strong> planned work, taken in order of arrival and value.</li><li><strong>Low:</strong> nice to have. Batch these and revisit them monthly.</li></ul><p>Define each level by impact, not by how loudly someone asks. And allow yourself to say no: a declined request with a short explanation beats one that is silently ignored.</p><h2>Assign ownership and SLAs</h2><p>Every request needs exactly one owner within a set time. A simple way to get there is a rotating triage duty, where one person per week reviews new items and assigns them. Then promise response times rather than resolution times: for example, acknowledge within one business day, triage within two, and give a target date once the request is accepted. Start with modest commitments you can actually keep, then tighten them as you gather data.</p><h2>Make everything visible</h2><p>Requesters should be able to see status without asking. A shared board with clear stages (New, Triaged, In progress, Waiting on requester, Done) does most of the work, especially if status changes notify the requester automatically. Visibility cuts the “any update?” messages, and it shows leadership the real workload when you need to negotiate capacity.</p><h2>Stop requests arriving through DMs</h2><p>This is the hardest part because it is behavioral, not technical. When a request lands in your DMs, do not quietly do it, and do not scold. Reply kindly with the link, and offer to log it yourself the first time. Leaders must follow the rule too: if the boss sends work by DM, the process is dead. A useful team motto is “if it is not in the queue, it is not in the plan.”</p><h2>Review metrics monthly</h2><ul><li>Volume by source and request type.</li><li>Time to first response and time to completion, by priority.</li><li>Share of requests that arrive outside the front door.</li><li>Rejected, reopened or bounced-back requests.</li></ul><p>Use these numbers to adjust the form, the staffing and the rules. Lots of rejected requests usually means the form is unclear. A rising share of urgent items usually points to a planning problem upstream, not a problem with your team.</p><h2>Where tooling helps</h2><p>You can run all of this on a spreadsheet and a shared inbox, and many teams start there. As volume grows, a dedicated tool earns its place. FulcrumGrid Command Center gives teams a shared request queue with owners, priorities and status in one view, so triage and reporting do not depend on anyone’s memory. Whatever you use, the process matters more than the software.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>What is a request intake process?</summary><p>It is the agreed way work requests enter your team: one channel, a short set of required details, and clear rules for triage, ownership and response times. It replaces scattered chat and email asks with a single visible queue.</p></details>
+        <details class="faq-item"><summary>What fields should a request form include?</summary><p>At minimum: who is asking, what they need, why it matters, the deadline and the reason for it, and any relevant links or files. Keep everything else optional so the form stays quick to complete.</p></details>
+        <details class="faq-item"><summary>How do I stop people sending requests by DM?</summary><p>Reply kindly with the intake link, offer to log the first one for them, and make sure leaders follow the same rule. Over a few weeks the habit shifts, especially if the queue is visibly faster and more reliable.</p></details>
+        <details class="faq-item"><summary>What SLAs are realistic for a small team?</summary><p>Start with response commitments, such as acknowledging within one business day and triaging within two. Resolution times vary too much by request type, so give a target date after triage instead of a blanket promise.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Give every request a home</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center brings requests, owners, priorities and status into one shared view, so nothing gets lost in a DM.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=b2179049" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
