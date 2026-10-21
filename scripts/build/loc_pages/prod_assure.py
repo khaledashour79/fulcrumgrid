@@ -83,6 +83,16 @@ PAGE = {
                 "Las obligaciones llegan ya vinculadas a NCA ECC-2, PDPL, el Gobierno Corporativo de la CMA y la Ley de Sociedades, junto a ISO 27001 y NIST CSF — aplicadas por entidad jurídica mediante una puerta de alcance.",
                 "Gli obblighi arrivano già mappati per NCA ECC-2, PDPL, la Corporate Governance della CMA e la legge sulle società, insieme a ISO 27001 e NIST CSF — applicati per entità giuridica tramite un gate di perimetro.",
                 "De verplichtingen komen al gekoppeld voor NCA ECC-2, PDPL, CMA Corporate Governance en de vennootschapswet, naast ISO 27001 en NIST CSF — toegepast per rechtspersoon via een scope-gate."),
+            "Multi-entity scope gate": _t(
+                "Barrière de périmètre multi-entités", "Scope-Gate für mehrere Rechtsträger",
+                "Puerta de alcance multientidad", "Gate di perimetro multi-entità",
+                "Scope-gate voor meerdere entiteiten"),
+            "Register every legal entity, and the scope gate decides which obligations apply to each from its attributes — so a group assesses once and applies the result across all its entities.": _t(
+                "Enregistrez chaque entité juridique, et la barrière de périmètre détermine, à partir de ses attributs, les obligations qui s'appliquent à chacune — un groupe évalue une fois et applique le résultat à toutes ses entités.",
+                "Erfassen Sie jeden Rechtsträger, und das Scope-Gate entscheidet anhand seiner Attribute, welche Pflichten für ihn gelten — eine Gruppe bewertet einmal und wendet das Ergebnis auf alle Rechtsträger an.",
+                "Registre cada entidad jurídica y la puerta de alcance decide, a partir de sus atributos, qué obligaciones le aplican — un grupo evalúa una vez y aplica el resultado a todas sus entidades.",
+                "Registra ogni entità giuridica e il gate di perimetro decide, dai suoi attributi, quali obblighi si applicano a ciascuna — un gruppo valuta una volta e applica il risultato a tutte le sue entità.",
+                "Registreer elke rechtspersoon, en de scope-gate bepaalt op basis van zijn kenmerken welke verplichtingen gelden — een groep beoordeelt één keer en past het resultaat toe op al zijn entiteiten."),
             "Recurring obligation engine": _t(
                 "Moteur d'obligations récurrentes", "Engine für wiederkehrende Pflichten",
                 "Motor de obligaciones recurrentes", "Motore degli obblighi ricorrenti",
@@ -131,15 +141,25 @@ PAGE = {
                 "Puntúe los riesgos inherentes y residuales, adjunte planes de tratamiento y limite en el tiempo la aceptación del riesgo, que se reabre automáticamente al vencer.",
                 "Valuta i rischi inerenti e residui, allega piani di trattamento e limita nel tempo l'accettazione del rischio, che si riapre automaticamente alla scadenza.",
                 "Scoor risico's inherent en residueel, voeg behandelplannen toe en begrens risicoacceptatie in de tijd, zodat die bij het verlopen automatisch heropent."),
-            "Cyber posture": _t(
-                "Posture cyber", "Cyber-Posture", "Postura cibernética",
-                "Postura cyber", "Cyberpostuur"),
-            "Outside-in vulnerability scans and inside-out cloud posture across AWS, Azure and GCP, with findings auto-assigned remediation SLAs by severity.": _t(
-                "Des analyses de vulnérabilités de l'extérieur et une posture cloud de l'intérieur sur AWS, Azure et GCP, avec des SLA de remédiation attribués automatiquement aux constats selon leur gravité.",
-                "Vulnerability-Scans von außen und Cloud-Posture von innen über AWS, Azure und GCP, wobei Funde automatisch Behebungs-SLAs nach Schweregrad erhalten.",
-                "Escaneos de vulnerabilidades de fuera hacia dentro y postura de nube de dentro hacia fuera en AWS, Azure y GCP, con SLA de remediación asignados automáticamente a los hallazgos según su gravedad.",
-                "Scansioni delle vulnerabilità dall'esterno e postura cloud dall'interno su AWS, Azure e GCP, con SLA di remediation assegnati automaticamente ai rilievi in base alla gravità.",
-                "Vulnerability-scans van buitenaf en cloudpostuur van binnenuit over AWS, Azure en GCP, met bevindingen die automatisch remediatie-SLA's krijgen op basis van ernst."),
+            "Authorized attack-surface scanning": _t(
+                "Analyse autorisée de la surface d'attaque", "Autorisiertes Angriffsflächen-Scanning",
+                "Escaneo autorizado de la superficie de ataque", "Scansione autorizzata della superficie di attacco",
+                "Geautoriseerde aanvalsoppervlak-scan"),
+            "Outside-in scanning gated by signed authorization, asset-ownership checks and a kill switch, so security testing stays in scope — findings carry remediation SLAs by severity.": _t(
+                "Analyse de l'extérieur, encadrée par une autorisation signée, des vérifications de propriété des actifs et un coupe-circuit, pour que les tests restent dans le périmètre — les constats portent des SLA de remédiation selon la gravité.",
+                "Scanning von außen, abgesichert durch eine signierte Autorisierung, Prüfungen des Asset-Eigentums und einen Notausschalter, damit Tests im Rahmen bleiben — Befunde tragen Behebungs-SLAs nach Schweregrad.",
+                "Escaneo desde fuera, controlado por una autorización firmada, comprobaciones de propiedad de activos y un interruptor de corte, para que las pruebas se mantengan en alcance — los hallazgos llevan SLA de remediación por gravedad.",
+                "Scansione dall'esterno, regolata da un'autorizzazione firmata, verifiche di proprietà degli asset e un kill switch, così i test restano nel perimetro — i rilievi portano SLA di remediation per gravità.",
+                "Scannen van buitenaf, afgeschermd met een ondertekende autorisatie, controles op asset-eigendom en een noodstop, zodat tests binnen scope blijven — bevindingen krijgen herstel-SLA's per ernst."),
+            "Cloud posture (CSPM)": _t(
+                "Posture cloud (CSPM)", "Cloud-Posture (CSPM)", "Postura en la nube (CSPM)",
+                "Postura cloud (CSPM)", "Cloudpostuur (CSPM)"),
+            "Read-only connections to AWS, Azure and GCP run scheduled cloud-posture checks — no static keys stored — and raise findings against your controls.": _t(
+                "Des connexions en lecture seule à AWS, Azure et GCP exécutent des contrôles de posture cloud planifiés — aucune clé statique stockée — et remontent des constats face à vos contrôles.",
+                "Schreibgeschützte Verbindungen zu AWS, Azure und GCP führen geplante Cloud-Posture-Prüfungen aus — keine statischen Schlüssel gespeichert — und melden Befunde gegen Ihre Kontrollen.",
+                "Conexiones de solo lectura a AWS, Azure y GCP ejecutan comprobaciones de postura en la nube programadas — sin claves estáticas almacenadas — y generan hallazgos frente a sus controles.",
+                "Connessioni in sola lettura ad AWS, Azure e GCP eseguono controlli di postura cloud pianificati — nessuna chiave statica memorizzata — e segnalano rilievi rispetto ai tuoi controlli.",
+                "Alleen-lezen verbindingen met AWS, Azure en GCP voeren geplande cloudpostuur-controles uit — geen statische sleutels opgeslagen — en melden bevindingen tegen uw controls."),
             "PDPL privacy toolkit": _t(
                 "Boîte à outils de confidentialité PDPL", "PDPL-Datenschutz-Toolkit",
                 "Kit de privacidad PDPL", "Toolkit privacy PDPL", "PDPL-privacytoolkit"),
@@ -176,6 +196,33 @@ PAGE = {
                 "Ejecute campañas de aprobación que recojan firmas y emitan certificados al completarse cada certificación.",
                 "Avvia campagne di sign-off che raccolgono le firme ed emettono certificati al completamento di ogni attestazione.",
                 "Voer sign-off-campagnes uit die handtekeningen verzamelen en certificaten uitgeven zodra elke attestatie is voltooid."),
+            "My Work inbox": _t(
+                "Boîte Mon travail", "Mein-Aufgaben-Postfach", "Bandeja Mi trabajo",
+                "Casella Il mio lavoro", "Mijn werk-inbox"),
+            "A personal queue that shows each user exactly the obligations, reviews and attestations awaiting their action — nothing to hunt for.": _t(
+                "Une file personnelle qui montre à chaque utilisateur exactement les obligations, revues et attestations en attente de son action — rien à chercher.",
+                "Eine persönliche Warteschlange, die jedem Nutzer genau die Pflichten, Prüfungen und Attestierungen zeigt, die auf seine Aktion warten — nichts zu suchen.",
+                "Una cola personal que muestra a cada usuario exactamente las obligaciones, revisiones y certificaciones que esperan su acción — nada que buscar.",
+                "Una coda personale che mostra a ogni utente esattamente gli obblighi, le revisioni e le attestazioni in attesa della sua azione — niente da cercare.",
+                "Een persoonlijke wachtrij die elke gebruiker precies de verplichtingen, reviews en attestaties toont die op actie wachten — niets om te zoeken."),
+            "Executive dashboard &amp; KRIs": _t(
+                "Tableau de bord exécutif &amp; KRI", "Management-Dashboard &amp; KRIs",
+                "Panel ejecutivo &amp; KRI", "Dashboard esecutiva &amp; KRI", "Directiedashboard &amp; KRI's"),
+            "Board-ready indicators — open critical findings, SLA breaches, overdue obligations, compliance % and open incidents — with posture tracked day over day.": _t(
+                "Des indicateurs prêts pour le conseil — constats critiques ouverts, SLA dépassés, obligations en retard, % de conformité et incidents ouverts — avec la posture suivie jour après jour.",
+                "Vorstandsreife Kennzahlen — offene kritische Befunde, SLA-Verstöße, überfällige Pflichten, Compliance-% und offene Vorfälle — mit täglich verfolgter Posture.",
+                "Indicadores listos para el consejo — hallazgos críticos abiertos, incumplimientos de SLA, obligaciones vencidas, % de cumplimiento e incidentes abiertos — con la postura seguida día a día.",
+                "Indicatori pronti per il consiglio — rilievi critici aperti, violazioni SLA, obblighi scaduti, % di conformità e incidenti aperti — con la postura monitorata giorno per giorno.",
+                "Bestuursklare indicatoren — openstaande kritieke bevindingen, SLA-overschrijdingen, achterstallige verplichtingen, compliance-% en open incidenten — met het postuur dag na dag gevolgd."),
+            "Reports &amp; exports": _t(
+                "Rapports &amp; exports", "Berichte &amp; Exporte", "Informes &amp; exportaciones",
+                "Report &amp; esportazioni", "Rapporten &amp; exports"),
+            "Compliance-status and audit-pack exports to CSV, plus print-ready reports to hand an auditor or the board.": _t(
+                "Exports de l'état de conformité et du dossier d'audit au format CSV, plus des rapports prêts à imprimer à remettre à un auditeur ou au conseil.",
+                "Exporte des Compliance-Status und des Audit-Pakets als CSV, plus druckfertige Berichte für Prüfer oder Vorstand.",
+                "Exportaciones del estado de cumplimiento y del paquete de auditoría a CSV, además de informes listos para imprimir para un auditor o el consejo.",
+                "Esportazioni dello stato di conformità e del pacchetto di audit in CSV, più report pronti per la stampa da consegnare a un revisore o al consiglio.",
+                "Exports van compliancestatus en auditpakket naar CSV, plus printklare rapporten voor een auditor of het bestuur."),
             "Audit-ready &amp; secure": _t(
                 "Prêt pour l'audit &amp; sécurisé", "Prüfbereit &amp; sicher",
                 "Listo para auditoría &amp; seguro", "Pronto per l'audit &amp; sicuro",

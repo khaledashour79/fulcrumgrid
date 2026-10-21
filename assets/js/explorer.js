@@ -22,7 +22,7 @@
       name: 'HR Suite', tag: 'People',
       line: 'People operations from hire to retire. Manage employees, payroll, time off, and everything in between.',
       price: 'From SAR 5 / seat / mo', href: '/products/hr-suite/',
-      modules: ['Core HR', 'Time off', 'Expenses', 'HR letters', 'Onboarding', 'Documents & e-sign', 'Time & attendance', 'Overtime', 'Employment contracts', 'Assets', 'HR helpdesk', 'Benefits', 'Performance', 'Payroll', 'Statutory & local compliance', 'Recruitment (ATS)', 'Candidate portal', 'Learning (LMS)', 'Learning providers', 'Engagement surveys', 'Approval workflows', 'Policy Library', 'Business travel', 'Report builder', 'Mobile app', 'Document requests', 'Company news', 'Video interviews', 'Sales commissions', 'AI Copilot & Agents', 'SSO & SCIM', 'SAP Business One', '+ 8 more modules']
+      modules: ['Core HR', 'Time off', 'Expenses', 'HR letters', 'Onboarding', 'Documents & e-sign', 'Time & attendance', 'Overtime', 'Employment contracts', 'Assets', 'HR helpdesk', 'Benefits', 'Performance', 'Payroll', 'Statutory & local compliance', 'Recruitment (ATS)', 'Candidate portal', 'Learning (LMS)', 'Learning providers', 'Engagement surveys', 'Approval workflows', 'Policy Library', 'Business travel', 'Report builder', 'Mobile app', 'Document requests', 'Company news', 'Video interviews', 'Sales commissions', 'AI Copilot & Agents', 'SSO & SCIM', 'SAP Business One', 'End-of-service (EOSB)', 'GOSI', 'Saudization (Nitaqat)', 'Loans & advances', 'Credentials & expiry', 'Probation', 'Disciplinary', 'Recognition', 'Compensation review', 'Succession', 'Positions', 'HR analytics', 'Partner API', 'Custom domain', '+ more modules']
     },
     tms: {
       name: 'TMS', tag: 'Logistics',
@@ -34,7 +34,7 @@
       name: 'Assure', tag: 'Compliance',
       line: 'Governance, risk and compliance, built for Saudi regulation. Obligations mapped to controls, with the evidence trail to match.',
       price: 'Talk to sales', href: '/products/assure/',
-      modules: ['Obligations register', 'Controls & crosswalk', 'Self-assessment', 'Risk register', 'Cyber posture (CSPM)', 'PDPL (DSAR & RoPA)', 'Vendor risk (TPRM)', 'Incidents', 'Attestations', 'Policies', 'Evidence vault', 'Audit log']
+      modules: ['Obligations register', 'Entities & scope gate', 'Controls & crosswalk', 'Self-assessment', 'Risk register', 'Authorized scanning', 'Cloud posture (CSPM)', 'PDPL (DSAR & RoPA)', 'Vendor risk (TPRM)', 'Incidents', 'Attestations', 'My Work', 'KRIs & dashboard', 'Posture trends', 'Reports & exports', 'Policies', 'Evidence vault', 'SSO & API tokens', 'Roles & permissions', 'Audit log']
     },
     close: {
       name: 'Close', tag: 'Finance',
@@ -61,7 +61,7 @@
       name: 'منصة الموارد البشرية', tag: 'الأفراد',
       line: 'عمليات الأفراد من التعيين إلى التقاعد. أدِر الموظفين والرواتب والإجازات وكل ما بينهما.',
       price: 'من 5 ريال / مقعد / شهريًا', href: '/ar/products/hr-suite/',
-      modules: ['الموارد البشرية الأساسية', 'الإجازات', 'المصروفات', 'خطابات الموارد البشرية', 'التأهيل', 'المستندات والتوقيع الإلكتروني', 'الوقت والحضور', 'العمل الإضافي', 'عقود العمل', 'العُهد والأصول', 'مكتب خدمة الموارد البشرية', 'المزايا', 'الأداء', 'الرواتب', 'الامتثال النظامي والمحلي', 'التوظيف (ATS)', 'بوابة المتقدّمين', 'التعلّم (LMS)', 'مزوّدو التعلّم', 'استبيانات التفاعل', 'مسارات الموافقات', 'مكتبة السياسات', 'سفر الأعمال', 'منشئ التقارير', 'تطبيق الجوال', 'طلبات المستندات', 'أخبار الشركة', 'المقابلات المرئية', 'عمولات المبيعات', 'المساعد الذكي والوكلاء', 'SSO و SCIM', 'SAP Business One', '+ 8 وحدة إضافية']
+      modules: ['الموارد البشرية الأساسية', 'الإجازات', 'المصروفات', 'خطابات الموارد البشرية', 'التأهيل', 'المستندات والتوقيع الإلكتروني', 'الوقت والحضور', 'العمل الإضافي', 'عقود العمل', 'العُهد والأصول', 'مكتب خدمة الموارد البشرية', 'المزايا', 'الأداء', 'الرواتب', 'الامتثال النظامي والمحلي', 'التوظيف (ATS)', 'بوابة المتقدّمين', 'التعلّم (LMS)', 'مزوّدو التعلّم', 'استبيانات التفاعل', 'مسارات الموافقات', 'مكتبة السياسات', 'سفر الأعمال', 'منشئ التقارير', 'تطبيق الجوال', 'طلبات المستندات', 'أخبار الشركة', 'المقابلات المرئية', 'عمولات المبيعات', 'المساعد الذكي والوكلاء', 'SSO و SCIM', 'SAP Business One', 'نهاية الخدمة', 'التأمينات الاجتماعية (GOSI)', 'السعودة (نطاقات)', 'القروض والسلف', 'الوثائق وانتهاؤها', 'فترة التجربة', 'الإجراءات التأديبية', 'التقدير', 'مراجعة التعويضات', 'التعاقب الوظيفي', 'الوظائف والمِلاك', 'تحليلات الموارد البشرية', 'واجهة الشركاء (API)', 'نطاق مخصّص', '+ المزيد من الوحدات']
     },
     tms: {
       name: 'منصة العمليات اللوجستية', tag: 'اللوجستيات',
@@ -73,7 +73,7 @@
       name: 'منصة الحوكمة والامتثال', tag: 'الامتثال',
       line: 'الحوكمة والمخاطر والامتثال، مبنية للتنظيم السعودي. الالتزامات مرتبطة بالضوابط، مع سجلّ أدلّة مطابق.',
       price: 'تواصل مع المبيعات', href: '/ar/products/assure/',
-      modules: ['سجل الالتزامات', 'الضوابط والربط المرجعي', 'التقييم الذاتي', 'سجل المخاطر', 'الوضع السيبراني (CSPM)', 'حماية البيانات (DSAR و RoPA)', 'مخاطر الموردين (TPRM)', 'الحوادث', 'الإقرارات', 'السياسات', 'خزنة الأدلّة', 'سجل التدقيق']
+      modules: ['سجل الالتزامات', 'الكيانات وبوابة النطاق', 'الضوابط والربط المرجعي', 'التقييم الذاتي', 'سجل المخاطر', 'الفحص المُصرَّح', 'الوضع السحابي (CSPM)', 'حماية البيانات (DSAR و RoPA)', 'مخاطر الموردين (TPRM)', 'الحوادث', 'الإقرارات', 'مهامّي', 'المؤشرات واللوحة', 'اتجاهات الوضع', 'التقارير والتصدير', 'السياسات', 'خزنة الأدلّة', 'الدخول الموحّد ومفاتيح الواجهة', 'الأدوار والصلاحيات', 'سجل التدقيق']
     },
     close: {
       name: 'منصة المعايير المحاسبية والإغلاق', tag: 'المالية',

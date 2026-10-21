@@ -282,6 +282,62 @@ PAGE = {
                 "Sucursales, departamentos, ubicaciones y puestos — el organigrama del que dependen su plantilla, sus informes y su cumplimiento.",
                 "Filiali, reparti, sedi e posizioni — l'organigramma su cui poggiano organico, reportistica e conformità.",
                 "Vestigingen, afdelingen, locaties en functies — het organigram waar uw personeelsbestand, rapportage en compliance aan hangen."),
+            "Saudi payroll &amp; statutory": _t(
+                "Paie &amp; obligations saoudiennes", "Saudische Gehaltsabrechnung &amp; Pflichten",
+                "Nómina &amp; obligaciones saudíes", "Buste paga &amp; obblighi sauditi",
+                "Saudische loonadministratie &amp; wettelijke verplichtingen"),
+            "GOSI calculated inside every pay run, end-of-service (EOSB) liability and settlements, live Nitaqat and Saudization tracking, and interest-free housing advances and staff loans repaid through payroll — built for the Kingdom.": _t(
+                "GOSI calculé dans chaque cycle de paie, passif et règlements de fin de service (EOSB), suivi en direct du Nitaqat et de la saoudisation, et avances au logement et prêts au personnel sans intérêt remboursés via la paie — conçu pour le Royaume.",
+                "GOSI in jedem Gehaltslauf berechnet, Rückstellung und Auszahlung der Abfindung (EOSB), Live-Verfolgung von Nitaqat und Saudisierung sowie zinslose Wohnungsvorschüsse und Mitarbeiterdarlehen, über die Gehaltsabrechnung zurückgezahlt — für das Königreich gebaut.",
+                "GOSI calculado en cada ciclo de nómina, pasivo y liquidaciones de fin de servicio (EOSB), seguimiento en vivo de Nitaqat y saudización, y anticipos de vivienda y préstamos al personal sin intereses devueltos por nómina — creado para el Reino.",
+                "GOSI calcolato in ogni ciclo di paga, passività e liquidazioni di fine servizio (EOSB), monitoraggio in tempo reale di Nitaqat e sauditizzazione, e anticipi casa e prestiti al personale senza interessi rimborsati tramite la busta paga — costruito per il Regno.",
+                "GOSI berekend in elke loonrun, eindedienstverplichting en -afrekeningen (EOSB), live Nitaqat- en saudiseringsvolging, en rentevrije huisvestingsvoorschotten en personeelsleningen die via de loonrun worden terugbetaald — gebouwd voor het Koninkrijk."),
+            "Credentials &amp; renewals": _t(
+                "Titres &amp; renouvellements", "Nachweise &amp; Erneuerungen", "Credenciales &amp; renovaciones",
+                "Credenziali &amp; rinnovi", "Documenten &amp; verlengingen"),
+            "Track Iqama, licence and permit expiry with automatic reminders, and batch-renew documents and credentials when they fall due.": _t(
+                "Suivez l'expiration des iqamas, licences et permis avec des rappels automatiques, et renouvelez par lots les documents et titres à leur échéance.",
+                "Verfolgen Sie den Ablauf von Iqama, Lizenzen und Genehmigungen mit automatischen Erinnerungen und erneuern Sie Dokumente und Nachweise bei Fälligkeit im Stapel.",
+                "Controle el vencimiento de iqamas, licencias y permisos con recordatorios automáticos, y renueve por lotes documentos y credenciales cuando vencen.",
+                "Monitora la scadenza di iqama, licenze e permessi con promemoria automatici e rinnova in blocco documenti e credenziali alla scadenza.",
+                "Volg het verlopen van iqama's, licenties en vergunningen met automatische herinneringen, en verleng documenten en credentials in bulk wanneer ze aflopen."),
+            "Compensation &amp; succession": _t(
+                "Rémunération &amp; succession", "Vergütung &amp; Nachfolge", "Retribución &amp; sucesión",
+                "Retribuzione &amp; successione", "Beloning &amp; opvolging"),
+            "Manager-led compensation review cycles, establishment positions tracked filled-versus-vacant, succession plans and individual development paths.": _t(
+                "Cycles de révision salariale menés par les managers, postes d'effectif suivis pourvus/vacants, plans de succession et parcours de développement individuels.",
+                "Von Führungskräften geleitete Vergütungsrunden, Stellen im Stellenplan als besetzt/vakant verfolgt, Nachfolgepläne und individuelle Entwicklungspfade.",
+                "Ciclos de revisión salarial dirigidos por managers, puestos de plantilla con seguimiento de ocupado/vacante, planes de sucesión y rutas de desarrollo individuales.",
+                "Cicli di revisione retributiva guidati dai manager, posizioni in organico monitorate coperte/vacanti, piani di successione e percorsi di sviluppo individuali.",
+                "Door managers geleide beloningsronden, formatieplaatsen gevolgd als bezet/vacant, opvolgingsplannen en individuele ontwikkelpaden."),
+            "Recognition &amp; moments": _t(
+                "Reconnaissance &amp; moments", "Anerkennung &amp; Momente", "Reconocimiento &amp; momentos",
+                "Riconoscimenti &amp; momenti", "Waardering &amp; momenten"),
+            "Peer kudos with a points leaderboard, and a birthday and work-anniversary feed to mark the moments that matter.": _t(
+                "Félicitations entre collègues avec un classement par points, et un fil des anniversaires et des anniversaires d'ancienneté pour marquer les moments qui comptent.",
+                "Kudos unter Kollegen mit Punkte-Bestenliste und ein Feed für Geburtstage und Jubiläen, um die wichtigen Momente zu würdigen.",
+                "Reconocimientos entre compañeros con una clasificación por puntos, y un feed de cumpleaños y aniversarios laborales para marcar los momentos que importan.",
+                "Riconoscimenti tra colleghi con una classifica a punti e un feed di compleanni e anniversari di lavoro per celebrare i momenti che contano.",
+                "Kudos tussen collega's met een puntenranglijst, en een feed met verjaardagen en werkjubilea om de momenten te markeren die ertoe doen."),
+            "Cases &amp; offboarding": _t(
+                "Dossiers &amp; départs", "Fälle &amp; Offboarding", "Casos &amp; salidas",
+                "Casi &amp; offboarding", "Dossiers &amp; uitstroom"),
+            "Probation tracking, a disciplinary and violations register, employee self-service data-change requests, and resignation with a cross-department clearance checklist.": _t(
+                "Suivi des périodes d'essai, un registre disciplinaire et des infractions, des demandes de modification de données en self-service, et une démission avec une liste de décharge inter-services.",
+                "Verfolgung der Probezeit, ein Register für Disziplinar- und Verstoßfälle, Self-Service-Anträge auf Datenänderung und Kündigung mit abteilungsübergreifender Freigabe-Checkliste.",
+                "Seguimiento del período de prueba, un registro disciplinario y de infracciones, solicitudes de cambio de datos en autoservicio, y renuncia con una lista de finiquito entre departamentos.",
+                "Monitoraggio del periodo di prova, un registro disciplinare e delle violazioni, richieste self-service di modifica dati e dimissioni con una checklist di liberatoria tra reparti.",
+                "Proeftijdbewaking, een register voor disciplinaire zaken en overtredingen, selfservice-verzoeken voor gegevenswijziging, en ontslag met een afdelingsoverstijgende uitdienst-checklist."),
+            "Developer platform &amp; analytics": _t(
+                "Plateforme développeur &amp; analytique", "Entwicklerplattform &amp; Analytik",
+                "Plataforma para desarrolladores &amp; analítica", "Piattaforma per sviluppatori &amp; analisi",
+                "Ontwikkelaarsplatform &amp; analyse"),
+            "A versioned REST API with scoped keys and signed webhooks, OIDC single sign-on and SCIM provisioning and your own custom domain — plus workforce, headcount and engagement dashboards.": _t(
+                "Une API REST versionnée avec des clés à portée limitée et des webhooks signés, l'authentification unique OIDC, le provisionnement SCIM et votre propre domaine — ainsi que des tableaux de bord sur la main-d'œuvre, les effectifs et l'engagement.",
+                "Eine versionierte REST-API mit scoped Keys und signierten Webhooks, OIDC-Single-Sign-on und SCIM-Bereitstellung und Ihre eigene Domain — plus Dashboards zu Belegschaft, Personalbestand und Engagement.",
+                "Una API REST versionada con claves con alcance y webhooks firmados, inicio de sesión único OIDC y aprovisionamiento SCIM y su propio dominio — además de paneles de fuerza laboral, plantilla y compromiso.",
+                "Un'API REST con versioni, chiavi con ambito e webhook firmati, single sign-on OIDC e provisioning SCIM e il tuo dominio personalizzato — più dashboard su forza lavoro, organico ed engagement.",
+                "Een geversioneerde REST-API met scoped sleutels en ondertekende webhooks, OIDC-single sign-on en SCIM-provisioning en uw eigen domein — plus dashboards voor personeelsbestand, headcount en betrokkenheid."),
             # ---- Built for ----
             "Built for": _t("Conçu pour", "Entwickelt für", "Diseñado para", "Pensato per", "Gebouwd voor"),
             "For the people who look after people": _t(

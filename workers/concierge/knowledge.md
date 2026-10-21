@@ -13,9 +13,12 @@ secure, auditable grid, with cross-app data when you run several.
 
 **Live apps (6).**
 - **HR Suite** — people operations from hire to retire: employee records, onboarding,
-  payroll, time off, attendance, performance, and 40 modules on one grid (Core HR always
-  on). Includes AI Copilot & human-approved agents. **From SAR 5 / seat / month**
-  (Starter; Growth SAR 10, Enterprise SAR 18, per seat/mo).
+  payroll (with GOSI, end-of-service/EOSB and Nitaqat/Saudization tracking for Saudi),
+  time off, attendance, performance, recruitment (ATS), learning, credentials & renewals
+  (Iqama/licence expiry), recognition, loans & advances, and 40+ modules on one grid
+  (Core HR always on). Includes AI Copilot & human-approved agents, a partner REST API,
+  and OIDC SSO / SCIM. **From SAR 5 / seat / month** (Starter; Growth SAR 10, Enterprise
+  SAR 18, per seat/mo).
 - **Command Center** — a real-time operations dashboard / control room: live KPIs and
   custom dashboards, alerts and thresholds, automated workflows, reporting and exports,
   OKRs/projects/approvals, and ERP integrations. **From SAR 490 / month** (Pilot, flat per
@@ -30,9 +33,11 @@ secure, auditable grid, with cross-app data when you run several.
   double-entry general ledger (AR, AP, bank reconciliation, VAT engine). ERP connectors,
   Arabic + English, multi-currency. **Pricing is custom — talk to sales.**
 - **Assure** — a governance, risk & compliance (GRC) platform built for Saudi regulation:
-  NCA ECC-2, PDPL, CMA and Companies Law obligations mapped to controls, evidence workflow,
-  immutable evidence vault, risk register, vendor risk, PDPL DSAR + RoPA, incidents,
-  attestations and cyber posture (CSPM). **Pricing is custom — talk to sales.**
+  NCA ECC-2, PDPL, CMA and Companies Law obligations mapped to controls with a multi-entity
+  scope gate, a maker-checker evidence workflow, immutable evidence vault, risk register,
+  authorized attack-surface scanning and multi-cloud posture (CSPM), vendor risk, PDPL
+  DSAR + RoPA, incidents, attestations, board-ready KRIs and print-ready audit reports.
+  **Pricing is custom — talk to sales.**
 - **Close** — IFRS period-end estimates: IAS 19 end-of-service, IFRS 9 expected credit loss
   and IFRS 16 leases, with controlled periods, frozen snapshots, versioned assumptions,
   reproducible runs, segregation of duties, draft journal vouchers and a bilingual audit
