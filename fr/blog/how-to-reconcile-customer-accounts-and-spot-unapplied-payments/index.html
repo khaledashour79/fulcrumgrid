@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Comment rapprocher les comptes clients et repérer les paiements non affectés ? — FulcrumGrid</title>
+  <meta name="description" content="Rapprocher un compte client, c'est confronter votre grand livre à la banque et au client. Une routine simple et des pistes pour retrouver les paiements non affectés." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Comment rapprocher les comptes clients et repérer les paiements non affectés ?" />
+  <meta property="og:description" content="Rapprocher un compte client, c'est confronter votre grand livre à la banque et au client. Une routine simple et des pistes pour retrouver les paiements non affectés." />
+  <meta property="og:url" content="https://fulcrumgrid.com/fr/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-22" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Comment rapprocher les comptes clients et repérer les paiements non affectés ?" />
+  <meta name="twitter:description" content="Rapprocher un compte client, c'est confronter votre grand livre à la banque et au client. Une routine simple et des pistes pour retrouver les paiements non affectés." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/fr/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Comment rapprocher les comptes clients et repérer les paiements non affectés ?",
+    "description": "Rapprocher un compte client, c'est confronter votre grand livre à la banque et au client. Une routine simple et des pistes pour retrouver les paiements non affectés.",
+    "datePublished": "2026-10-22",
+    "dateModified": "2026-10-22",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/fr/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/"
+    },
+    "inLanguage": "fr"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://fulcrumgrid.com/fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/fr/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Rapprochement clients",
+        "item": "https://fulcrumgrid.com/fr/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quelle différence entre rapprochement et affectation des encaissements ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "L'affectation rattache un paiement reçu à des factures. Le rapprochement est plus large : il confronte votre grand livre, la banque et les chiffres du client, et explique chaque écart, y compris les encaissements non affectés."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Combien de temps un paiement peut-il rester non affecté ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Idéalement quelques jours. Au-delà d'un mois, c'est le signe d'une référence manquante ou d'une faille de processus : à examiner et à solder avant l'envoi du prochain relevé."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dois-je relancer avant de rapprocher le compte ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non. Vérifiez d'abord les crédits et les encaissements non rapprochés. Relancer un client qui a déjà payé abîme la confiance et gaspille votre effort de recouvrement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Et si les chiffres du client ne concordent jamais avec les miens ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Envoyez un relevé des éléments ouverts et demandez-lui de le comparer ligne à ligne. La plupart des écarts tiennent à quelques factures, avoirs ou décalages précis, pas à tout le solde."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/fr/" aria-label="Accueil FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/fr/products/">Produits</a>
+        <a href="/fr/features/">Grille</a>
+        <a href="/fr/pricing/">Tarifs</a>
+        <a href="/fr/regions/">Régions</a>
+        <a href="/fr/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/fr/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Langue">FR ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" class="active" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/fr/contact/">Demander une démo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/fr/">Accueil</a> / <a href="/fr/blog/">Blog</a> / Rapprochement clients</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>Comment rapprocher les comptes clients et repérer les paiements non affectés ?</h1>
+        <p class="hero-intro">Rapprocher un compte client, c'est confronter votre grand livre à la banque et au client. Une routine simple et des pistes pour retrouver les paiements non affectés.</p>
+        <p class="mono"><time datetime="2026-10-22">22 octobre 2026</time> · 6 min de lecture</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Votre balance âgée indique qu'un client vous doit 14 200 $. Le client affirme avoir payé la semaine dernière. Les deux peuvent avoir raison : l'argent est peut-être arrivé sans jamais être rattaché à une facture. Un rapprochement régulier permet de repérer ces écarts avant qu'ils ne se transforment en relances gênantes. Ce guide répond aux questions courantes sur le rapprochement des comptes clients et la détection des paiements non affectés.</p><h2>Que signifie rapprocher un compte client ?</h2><p>Rapprocher un compte client, c'est comparer ce que vos écritures indiquent comme dû avec des éléments indépendants, puis expliquer chaque écart. Ces éléments viennent de deux sources : vos relevés bancaires, qui montrent ce qui a réellement été encaissé, et le point de vue du client, par exemple son relevé de compte ou son avis de paiement. Quand les trois concordent, le solde est fiable. Sinon, il y a une enquête à mener.</p><h2>Pourquoi les soldes divergent-ils ?</h2><ul><li><strong>Paiements pas encore lettrés.</strong> L'argent est en banque mais n'est affecté à rien.</li><li><strong>Paiements partiels.</strong> Le client déduit des frais bancaires, une ligne contestée ou une remise que vous n'avez pas enregistrée.</li><li><strong>Paiements groupés.</strong> Un seul virement couvre plusieurs factures et le détail manque.</li><li><strong>Mauvais client ou mauvaise facture.</strong> Un paiement est imputé à un compte au nom proche ou à un numéro mal saisi.</li><li><strong>Avoirs non émis.</strong> Vous avez convenu d'un avoir, le client l'a déduit, et votre système ne l'a jamais enregistré.</li><li><strong>Décalage de dates.</strong> Le client a payé le 30 et les fonds sont arrivés le 2.</li></ul><h2>Qu'est-ce qu'un paiement non affecté ?</h2><p>Un paiement non affecté est une somme reçue mais pas encore rattachée à des factures précises. Elle est généralement enregistrée comme acompte sur le compte du client ou placée sur un compte d'attente. Les factures restent ouvertes et semblent en retard, pendant que le crédit dort ailleurs. Résultat : une balance âgée faussée, des relances inutiles et un client agacé.</p><h2>Comment rapprocher un compte pas à pas ?</h2><h3>1. Fixez une date d'arrêté</h3><p>Choisissez une date, souvent la fin de mois, et travaillez sur tout ce qui précède. Comparer des chiffres arrêtés à des dates différentes est la première source de faux écarts.</p><h3>2. Rassemblez les deux côtés</h3><p>Exportez le compte du client depuis votre système : factures, avoirs et règlements. Récupérez ensuite les lignes bancaires de la même période, ainsi que le relevé ou l'avis de paiement du client si vous l'avez.</p><h3>3. Pointez ligne à ligne</h3><p>Associez chaque règlement aux factures qu'il solde. Pointez d'abord par référence, puis par montant exact, puis par date et nom du payeur.</p><h3>4. Listez chaque écart</h3><p>Notez chaque élément qui ne concorde pas, avec son montant et sa date. Classez-les par cause : non affecté, paiement partiel, litige, décalage ou erreur.</p><h3>5. Enquêtez et corrigez</h3><p>Affectez les paiements en attente, enregistrez les avoirs manquants, corrigez les erreurs d'imputation et transmettez les litiges à la personne qui peut les trancher. Gardez la trace du motif de chaque ajustement.</p><h3>6. Validez le solde final</h3><p>Vérifiez que le solde corrigé du grand livre correspond aux éléments bancaires, augmentés des décalages expliqués. S'il reste un trou, le travail n'est pas terminé.</p><h2>Comment repérer les paiements non affectés ?</h2><ul><li><strong>Les soldes créditeurs.</strong> Sortez la liste des clients au solde négatif ou créditeur. Chacun est un suspect potentiel.</li><li><strong>Les clients à la fois créditeurs et en retard.</strong> C'est le signe classique d'un paiement qui n'a pas trouvé sa facture.</li><li><strong>Les lignes bancaires sans correspondance.</strong> Filtrez votre flux bancaire pour isoler les encaissements liés à aucune facture.</li><li><strong>Les comptes d'attente.</strong> Examinez tout ce qui y reste plus de quelques jours.</li><li><strong>Les réclamations de clients.</strong> Un &laquo;&nbsp;nous avons déjà payé&nbsp;&raquo; mérite d'abord une recherche en banque, pas une discussion.</li><li><strong>Les montants ronds ou étranges.</strong> Un règlement égal à deux factures moins des frais trahit souvent un virement groupé payé en partie.</li></ul><h2>Un exemple rapide</h2><p>Un client a cinq factures ouvertes pour 14 200 $ et votre balance âgée en classe 6 800 $ à plus de 30 jours. Dans le flux bancaire, vous trouvez un virement de 3 000 $ daté du 5 octobre, avec pour seule référence le nom de l'entreprise. Il a été enregistré comme acompte. Vous l'affectez aux deux plus anciennes factures, ce qui retire 3 000 $ de retard apparent. Le solde net réel est de 11 200 $, et la relance que vous alliez envoyer aurait été erronée.</p><h2>À quelle fréquence rapprocher ?</h2><p>Lettrez les encaissements chaque jour ou chaque semaine, avant qu'ils ne s'accumulent. Passez en revue les soldes créditeurs et les encaissements non rapprochés chaque semaine. Faites un rapprochement complet de vos plus gros comptes chaque mois et envoyez des relevés pour que les clients signalent les écarts. Pour les petits comptes, un échantillonnage trimestriel suffit.</p><h2>Les habitudes qui évitent l'essentiel des problèmes</h2><ul><li>Demandez aux clients de citer le numéro de facture sur chaque paiement.</li><li>Réclamez un avis de paiement pour les virements groupés.</li><li>Enregistrez les avoirs le jour où ils sont convenus.</li><li>Videz le compte d'attente par principe, pas comme un chantier de nettoyage.</li><li>Séparez, si possible, la personne qui encaisse de celle qui affecte.</li></ul><p>Le rapprochement est de la comptabilité courante, pas une enquête policière. Pratiqué régulièrement, il garde votre balance clients fidèle et vos échanges de recouvrement exacts.</p>
+
+        <h2>Questions fréquentes</h2>
+        <details class="faq-item"><summary>Quelle différence entre rapprochement et affectation des encaissements ?</summary><p>L'affectation rattache un paiement reçu à des factures. Le rapprochement est plus large : il confronte votre grand livre, la banque et les chiffres du client, et explique chaque écart, y compris les encaissements non affectés.</p></details>
+        <details class="faq-item"><summary>Combien de temps un paiement peut-il rester non affecté ?</summary><p>Idéalement quelques jours. Au-delà d'un mois, c'est le signe d'une référence manquante ou d'une faille de processus : à examiner et à solder avant l'envoi du prochain relevé.</p></details>
+        <details class="faq-item"><summary>Dois-je relancer avant de rapprocher le compte ?</summary><p>Non. Vérifiez d'abord les crédits et les encaissements non rapprochés. Relancer un client qui a déjà payé abîme la confiance et gaspille votre effort de recouvrement.</p></details>
+        <details class="faq-item"><summary>Et si les chiffres du client ne concordent jamais avec les miens ?</summary><p>Envoyez un relevé des éléments ouverts et demandez-lui de le comparer ligne à ligne. La plupart des écarts tiennent à quelques factures, avoirs ou décalages précis, pas à tout le solde.</p></details>
+
+        <p style="margin-top:32px"><a href="/fr/blog/"><span aria-hidden="true">←</span> Retour au blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Ne relancez que les bonnes factures</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Collection vous aide à suivre factures en retard et relances au même endroit, pour que les rappels ne portent que sur ce qui est réellement impayé une fois vos paiements rapprochés.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/fr/products/collection/">Découvrir Collection</a>
+          <a class="btn btn-secondary" href="/fr/blog/">Retour au blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>L'épine dorsale opérationnelle des équipes modernes.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produits</h5>
+          <a href="/fr/products/">Tous les produits</a>
+          <a href="/fr/products/hr-suite/">HR Suite</a>
+          <a href="/fr/products/command-center/">Command Center</a>
+          <a href="/fr/products/collection/">Collection</a>
+          <a href="/fr/custom-apps/">Applications sur mesure</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grille</h5>
+          <a href="/fr/features/">Fonctionnalités</a>
+          <a href="/fr/integrations/">Intégrations</a>
+          <a href="/fr/how-it-works/">Comment ça marche</a>
+          <a href="/fr/pricing/">Tarifs</a>
+          <a href="/fr/regions/">Régions</a>
+          <a href="/fr/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Entreprise</h5>
+          <a href="/fr/about/">À propos</a>
+          <a href="/fr/faq/">FAQ</a>
+          <a href="/fr/contact/">Contact</a>
+          <a href="/fr/privacy/">Confidentialité</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tous droits réservés.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=d8b1fb73" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

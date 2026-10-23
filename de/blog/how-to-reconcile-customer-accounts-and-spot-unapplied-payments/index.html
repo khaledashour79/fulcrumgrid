@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wie stimmt man Kundenkonten ab und findet nicht zugeordnete Zahlungen? — FulcrumGrid</title>
+  <meta name="description" content="Kundenkonten abstimmen heißt, Debitorenbuch, Bank und Kundenangaben abzugleichen. So gehen Sie Schritt für Schritt vor und finden nicht zugeordnete Zahlungen." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wie stimmt man Kundenkonten ab und findet nicht zugeordnete Zahlungen?" />
+  <meta property="og:description" content="Kundenkonten abstimmen heißt, Debitorenbuch, Bank und Kundenangaben abzugleichen. So gehen Sie Schritt für Schritt vor und finden nicht zugeordnete Zahlungen." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-22" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wie stimmt man Kundenkonten ab und findet nicht zugeordnete Zahlungen?" />
+  <meta name="twitter:description" content="Kundenkonten abstimmen heißt, Debitorenbuch, Bank und Kundenangaben abzugleichen. So gehen Sie Schritt für Schritt vor und finden nicht zugeordnete Zahlungen." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wie stimmt man Kundenkonten ab und findet nicht zugeordnete Zahlungen?",
+    "description": "Kundenkonten abstimmen heißt, Debitorenbuch, Bank und Kundenangaben abzugleichen. So gehen Sie Schritt für Schritt vor und finden nicht zugeordnete Zahlungen.",
+    "datePublished": "2026-10-22",
+    "dateModified": "2026-10-22",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Kontenabstimmung",
+        "item": "https://fulcrumgrid.com/de/blog/how-to-reconcile-customer-accounts-and-spot-unapplied-payments/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist der Unterschied zwischen Kontenabstimmung und Zahlungszuordnung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Zahlungszuordnung weist eine eingegangene Zahlung Rechnungen zu. Die Abstimmung ist umfassender: Sie gleicht Debitorenbuch, Bank und Kundenangaben ab und erklärt jede Abweichung, auch nicht zugeordnetes Geld."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie lange darf eine Zahlung nicht zugeordnet bleiben?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Idealerweise nur wenige Tage. Was älter als ein Monat ist, deutet auf eine fehlende Referenz oder eine Prozesslücke hin und sollte vor dem nächsten Kontoauszug geklärt werden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Soll ich vor der Abstimmung eines Kontos mahnen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. Prüfen Sie zuerst Guthaben und nicht zugeordnete Eingänge. Einen Kunden zu mahnen, der schon bezahlt hat, schadet dem Vertrauen und verschwendet Ihren Aufwand."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was, wenn die Zahlen des Kunden nie zu meinen passen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Schicken Sie einen Kontoauszug mit den offenen Posten und bitten Sie ihn, ihn Zeile für Zeile zu vergleichen. Die meisten Abweichungen betreffen einige wenige Rechnungen, Gutschriften oder Zeitdifferenzen, nicht den ganzen Saldo."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / Kontenabstimmung</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>Wie stimmt man Kundenkonten ab und findet nicht zugeordnete Zahlungen?</h1>
+        <p class="hero-intro">Kundenkonten abstimmen heißt, Debitorenbuch, Bank und Kundenangaben abzugleichen. So gehen Sie Schritt für Schritt vor und finden nicht zugeordnete Zahlungen.</p>
+        <p class="mono"><time datetime="2026-10-22">22. Oktober 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Ihre Offene-Posten-Liste zeigt, dass ein Kunde Ihnen 14.200 $ schuldet. Der Kunde sagt, er habe letzte Woche bezahlt. Beide können recht haben: Das Geld ist womöglich eingegangen, aber nie einer Rechnung zugeordnet worden. Regelmäßige Kontenabstimmung deckt solche Lücken auf, bevor daraus unangenehme Mahngespräche werden. Dieser Leitfaden beantwortet die häufigsten Fragen zur Abstimmung von Kundenkonten und zum Aufspüren nicht zugeordneter Zahlungen.</p><h2>Was bedeutet es, ein Kundenkonto abzustimmen?</h2><p>Ein Kundenkonto abzustimmen heißt, den Saldo in Ihrer Buchhaltung mit unabhängigen Belegen zu vergleichen und jede Abweichung zu erklären. Die Belege stammen meist aus zwei Quellen: Ihren Kontoauszügen, die zeigen, was tatsächlich eingegangen ist, und der Sicht des Kunden, etwa seinem Kontoauszug oder Zahlungsavis. Stimmen alle drei überein, ist der Saldo verlässlich. Wenn nicht, gibt es etwas zu klären.</p><h2>Warum laufen Salden auseinander?</h2><ul><li><strong>Noch nicht zugeordnete Zahlungen.</strong> Das Geld liegt auf der Bank, ist aber keiner Rechnung zugewiesen.</li><li><strong>Kurzzahlungen.</strong> Der Kunde zieht Bankgebühren, eine strittige Position oder einen nicht erfassten Rabatt ab.</li><li><strong>Sammelzahlungen.</strong> Eine Überweisung deckt mehrere Rechnungen ab, die Aufschlüsselung fehlt.</li><li><strong>Falscher Kunde oder falsche Rechnung.</strong> Eine Zahlung wird einem ähnlich benannten Konto oder einer vertippten Nummer zugebucht.</li><li><strong>Nicht ausgestellte Gutschriften.</strong> Sie haben eine Gutschrift vereinbart, der Kunde hat sie abgezogen, Ihr System kennt sie nicht.</li><li><strong>Zeitliche Verschiebung.</strong> Der Kunde zahlte am 30., das Geld kam am 2. an.</li></ul><h2>Was ist eine nicht zugeordnete Zahlung?</h2><p>Eine nicht zugeordnete Zahlung ist Geld, das eingegangen ist, aber noch nicht bestimmten Rechnungen zugewiesen wurde. Sie wird meist als Guthaben auf dem Kundenkonto verbucht oder auf einem Verrechnungskonto geparkt. Die Rechnungen bleiben offen und wirken überfällig, während das Guthaben unbemerkt woanders liegt. Die Folgen sind eine verzerrte Fälligkeitsliste, überflüssige Mahnungen und ein verärgerter Kunde.</p><h2>Wie stimmt man ein Konto Schritt für Schritt ab?</h2><h3>1. Stichtag festlegen</h3><p>Wählen Sie ein Datum, meist das Monatsende, und arbeiten Sie mit allem bis dahin. Zahlen von unterschiedlichen Tagen zu vergleichen ist die häufigste Quelle falscher Differenzen.</p><h3>2. Beide Seiten zusammentragen</h3><p>Exportieren Sie das Kundenkonto aus Ihrem System: Rechnungen, Gutschriften und Zahlungen. Holen Sie dann die Bankbuchungen desselben Zeitraums und, falls vorhanden, den Kontoauszug oder das Zahlungsavis des Kunden.</p><h3>3. Zeile für Zeile abgleichen</h3><p>Haken Sie jede Zahlung gegen die Rechnungen ab, die sie begleicht. Gleichen Sie zuerst über die Referenz ab, dann über den exakten Betrag, dann über Datum und Zahlernamen.</p><h3>4. Jede Differenz auflisten</h3><p>Notieren Sie jede Position, die nicht passt, mit Betrag und Datum. Ordnen Sie sie nach Ursache: nicht zugeordnet, Kurzzahlung, strittig, Zeitversatz oder Fehler.</p><h3>5. Klären und korrigieren</h3><p>Ordnen Sie die offenen Zahlungen zu, erfassen Sie fehlende Gutschriften, beheben Sie Fehlbuchungen und geben Sie strittige Posten an die Person weiter, die sie entscheiden kann. Halten Sie den Grund jeder Korrektur fest.</p><h3>6. Endsaldo bestätigen</h3><p>Prüfen Sie, ob der korrigierte Saldo im Buch den Bankbelegen plus erklärten Zeitdifferenzen entspricht. Bleibt eine Lücke, sind Sie noch nicht fertig.</p><h2>Wie findet man nicht zugeordnete Zahlungen?</h2><ul><li><strong>Guthabensalden.</strong> Lassen Sie sich Kunden mit negativem Saldo oder Guthaben anzeigen. Jeder ist ein Verdachtsfall.</li><li><strong>Kunden mit Guthaben und überfälligen Rechnungen zugleich.</strong> Das ist das klassische Zeichen einer Zahlung, die ihre Rechnung nie gefunden hat.</li><li><strong>Bankbuchungen ohne Zuordnung.</strong> Filtern Sie Ihren Bankumsatz nach Zahlungseingängen, die mit keiner Rechnung verknüpft sind.</li><li><strong>Verrechnungs- und Interimskonten.</strong> Prüfen Sie alles, was dort länger als ein paar Tage liegt.</li><li><strong>Kundenreklamationen.</strong> Auf &bdquo;Das haben wir schon bezahlt&ldquo; gehört zuerst ein Blick auf die Bank, keine Diskussion.</li><li><strong>Runde oder krumme Beträge.</strong> Eine Zahlung, die zwei Rechnungen abzüglich einer Gebühr entspricht, deutet oft auf eine gekürzte Sammelüberweisung hin.</li></ul><h2>Ein kurzes Beispiel</h2><p>Ein Kunde hat fünf offene Rechnungen über insgesamt 14.200 $, und Ihre Fälligkeitsliste weist 6.800 $ davon als 30 Tage überfällig aus. Im Bankumsatz finden Sie eine Überweisung über 3.000 $ vom 5. Oktober, die nur den Firmennamen als Verwendungszweck trägt. Sie wurde als Guthaben auf dem Konto verbucht. Sie ordnen sie den beiden ältesten Rechnungen zu, wodurch 3.000 $ scheinbarer Rückstand entfallen. Der tatsächliche Nettosaldo beträgt 11.200 $, und die Mahnung, die Sie gerade verschicken wollten, wäre falsch gewesen.</p><h2>Wie oft sollte man abstimmen?</h2><p>Ordnen Sie eingehende Zahlungen täglich oder wöchentlich zu, bevor sich etwas aufstaut. Prüfen Sie Guthaben und nicht zugeordnete Eingänge wöchentlich. Stimmen Sie Ihre größten Konten monatlich gründlicher ab und versenden Sie Kontoauszüge, damit Kunden Abweichungen melden können. Bei kleineren Konten genügt eine vierteljährliche Stichprobe.</p><h2>Gewohnheiten, die die meisten Probleme verhindern</h2><ul><li>Bitten Sie Kunden, bei jeder Zahlung die Rechnungsnummer anzugeben.</li><li>Fordern Sie bei Sammelüberweisungen ein Zahlungsavis an.</li><li>Erfassen Sie Gutschriften am Tag der Vereinbarung.</li><li>Räumen Sie das Verrechnungskonto laufend auf, nicht in einer Aufräumaktion.</li><li>Trennen Sie nach Möglichkeit, wer Geld entgegennimmt und wer es zuordnet.</li></ul><p>Abstimmung ist Buchhaltungsroutine, keine Detektivarbeit. Wer sie gleichmäßig betreibt, hält seine Forderungsliste ehrlich und seine Mahngespräche korrekt.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Was ist der Unterschied zwischen Kontenabstimmung und Zahlungszuordnung?</summary><p>Die Zahlungszuordnung weist eine eingegangene Zahlung Rechnungen zu. Die Abstimmung ist umfassender: Sie gleicht Debitorenbuch, Bank und Kundenangaben ab und erklärt jede Abweichung, auch nicht zugeordnetes Geld.</p></details>
+        <details class="faq-item"><summary>Wie lange darf eine Zahlung nicht zugeordnet bleiben?</summary><p>Idealerweise nur wenige Tage. Was älter als ein Monat ist, deutet auf eine fehlende Referenz oder eine Prozesslücke hin und sollte vor dem nächsten Kontoauszug geklärt werden.</p></details>
+        <details class="faq-item"><summary>Soll ich vor der Abstimmung eines Kontos mahnen?</summary><p>Nein. Prüfen Sie zuerst Guthaben und nicht zugeordnete Eingänge. Einen Kunden zu mahnen, der schon bezahlt hat, schadet dem Vertrauen und verschwendet Ihren Aufwand.</p></details>
+        <details class="faq-item"><summary>Was, wenn die Zahlen des Kunden nie zu meinen passen?</summary><p>Schicken Sie einen Kontoauszug mit den offenen Posten und bitten Sie ihn, ihn Zeile für Zeile zu vergleichen. Die meisten Abweichungen betreffen einige wenige Rechnungen, Gutschriften oder Zeitdifferenzen, nicht den ganzen Saldo.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Nur die richtigen Rechnungen nachfassen</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Collection hilft Ihnen, überfällige Rechnungen und Nachfassaktionen an einem Ort zu verfolgen, damit Erinnerungen nur noch zu dem gehen, was nach der Zuordnung Ihrer Zahlungen wirklich offen ist.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/collection/">Entdecken Collection</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=d8b1fb73" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
