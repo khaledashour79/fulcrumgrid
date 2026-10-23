@@ -78,25 +78,28 @@
   // Fire a tiny throwaway turn the moment the panel opens, so the worker is
   // spun up (isolate booted, upstream model connection + prompt-cache warmed)
   // before the visitor's first real question arrives. Fully fire-and-forget:
-  // a throwaway sessionId keeps it out of the real conversation, we read just
-  // the first chunk to pay the time-to-first-token cost, then abort. Any
-  // failure is swallowed — this must never affect the real chat path.
+  // a throwaway sessionId keeps it out of the real conversation, and the worker
+  // caps it to a single token so the whole response is a few bytes. We drain
+  // that response to completion (no abort, no keepalive) so the underlying
+  // connection is left clean for the real request to reuse — aborting a
+  // half-read stream can poison HTTP/2 connection reuse and stall the next
+  // request. Any failure is swallowed — this must never affect the real chat.
   function prewarm() {
     if (prewarmed || !active || !endpoint) return;
     prewarmed = true;
     try {
-      var ctrl = ('AbortController' in window) ? new AbortController() : null;
       var body = JSON.stringify({
         sessionId: 'warm_' + Math.random().toString(36).slice(2),
         lang: docLang, message: 'hi', history: [], prewarm: true
       });
       fetch(endpoint + '/chat', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: body, signal: ctrl ? ctrl.signal : undefined, keepalive: true
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: body
       }).then(function (r) {
-        if (!r.ok || !r.body) { if (ctrl) ctrl.abort(); return; }
+        if (!r.body) return;
         var reader = r.body.getReader();
-        reader.read().then(function () { if (ctrl) ctrl.abort(); }, function () {});
+        (function drain() {
+          return reader.read().then(function (res) { if (!res.done) return drain(); });
+        })().catch(function () {});
       }).catch(function () {});
     } catch (e) {}
   }
@@ -248,7 +251,16 @@
 
   function streamChat(message, bubble, onText) {
     var body = JSON.stringify({ sessionId: sessionId, lang: docLang, message: message, history: history.slice(0, -1) });
-    return fetch(endpoint + '/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: body })
+    // Watchdog: if a turn ever hangs (dropped connection, stalled stream), abort
+    // it so the promise rejects and busy is released — the chat can never freeze
+    // permanently and leave the visitor unable to send another message.
+    var ctrl = ('AbortController' in window) ? new AbortController() : null;
+    var guard = setTimeout(function () { try { if (ctrl) ctrl.abort(); } catch (e) {} }, 45000);
+    var clear = function (v) { clearTimeout(guard); return v; };
+    return fetch(endpoint + '/chat', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: body,
+      signal: ctrl ? ctrl.signal : undefined
+    })
       .then(function (r) {
         if (!r.ok) throw new Error('chat ' + r.status);
         var ct = r.headers.get('content-type') || '';
@@ -272,7 +284,8 @@
             return pump();
           });
         })();
-      });
+      })
+      .then(clear, function (e) { clear(); throw e; });   // stop the watchdog on settle, either way
   }
 
   // ---- ordered speech queue: fetch each chunk's audio and play it in turn,
