@@ -26,6 +26,17 @@
   var active = langs.indexOf(docLang) !== -1;           // voice/chat enabled for this locale?
   var endpoint = (CFG.endpoint || '').replace(/\/$/, '');
 
+  // Warm DNS + TLS to the worker origin as soon as the widget mounts, so the
+  // first real request doesn't pay the connection handshake. Cheap and harmless.
+  if (endpoint) {
+    try {
+      var _origin = new URL(endpoint, location.href).origin;
+      var _pc = document.createElement('link');
+      _pc.rel = 'preconnect'; _pc.href = _origin; _pc.crossOrigin = 'anonymous';
+      document.head.appendChild(_pc);
+    } catch (e) {}
+  }
+
   // ---- copy ----
   var T = {
     en: { title: 'FulcrumGrid assistant', invite: "Hi — I'm here to help. Ask me anything about FulcrumGrid.",
@@ -62,6 +73,33 @@
   ss('fgc_sid', sessionId);
   var history = [];
   var busy = false;
+  var prewarmed = false;
+
+  // Fire a tiny throwaway turn the moment the panel opens, so the worker is
+  // spun up (isolate booted, upstream model connection + prompt-cache warmed)
+  // before the visitor's first real question arrives. Fully fire-and-forget:
+  // a throwaway sessionId keeps it out of the real conversation, we read just
+  // the first chunk to pay the time-to-first-token cost, then abort. Any
+  // failure is swallowed — this must never affect the real chat path.
+  function prewarm() {
+    if (prewarmed || !active || !endpoint) return;
+    prewarmed = true;
+    try {
+      var ctrl = ('AbortController' in window) ? new AbortController() : null;
+      var body = JSON.stringify({
+        sessionId: 'warm_' + Math.random().toString(36).slice(2),
+        lang: docLang, message: 'hi', history: [], prewarm: true
+      });
+      fetch(endpoint + '/chat', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: body, signal: ctrl ? ctrl.signal : undefined, keepalive: true
+      }).then(function (r) {
+        if (!r.ok || !r.body) { if (ctrl) ctrl.abort(); return; }
+        var reader = r.body.getReader();
+        reader.read().then(function () { if (ctrl) ctrl.abort(); }, function () {});
+      }).catch(function () {});
+    } catch (e) {}
+  }
 
   // ---- DOM ----
   var stage = el('button', 'fgc-stage');
@@ -125,6 +163,7 @@
   function open() {
     dismissInvite();                               // once engaged, drop the proactive greeting
     unlockAudio();                                 // bless audio while we're in the open gesture
+    prewarm();                                     // spin up the worker before the first question lands
     mount.classList.add('is-open'); mount.hidden = false;
     if (!ls('fgc_consent')) consentBox.hidden = false;
     setTimeout(function () { input.focus(); }, 60);

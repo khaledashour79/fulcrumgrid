@@ -262,12 +262,22 @@ async function handleChat(request, env) {
   }
 
   const lang = normalizeLang(body.lang);
+  // A prewarm ping (fired when the widget opens) just needs the isolate booted
+  // and the upstream connection + prompt cache warm — it isn't a real question,
+  // so cap generation to a single token to keep it cheap.
+  const isPrewarm = body.prewarm === true;
+  const maxTokens = isPrewarm ? 1 : CHAT_MAX_TOKENS;
   const history = sanitizeHistory(body.history);
   const sessionId = typeof body.sessionId === 'string' ? body.sessionId.slice(0, 128) : '';
   const ip = request.headers.get('cf-connecting-ip') || '';
 
-  const rl = await checkRateLimit(env, ip, sessionId);
-  if (!rl.ok) return sseErrorResponse(rl.error, 429, request, env);
+  // Prewarm pings are self-throttled by the widget (once per page load) and
+  // cost next to nothing, so they skip the rate limiter and don't eat a
+  // visitor's quota before they've asked anything.
+  if (!isPrewarm) {
+    const rl = await checkRateLimit(env, ip, sessionId);
+    if (!rl.ok) return sseErrorResponse(rl.error, 429, request, env);
+  }
 
   // Which LLM powers the brain. Switch with the LLM_PROVIDER var in the
   // dashboard / wrangler.toml — no code change needed. Both stream, and both
@@ -294,7 +304,7 @@ async function handleChat(request, env) {
         headers: { 'Authorization': 'Bearer ' + env.DEEPSEEK_API_KEY, 'Content-Type': 'application/json' },
         body: JSON.stringify({
           model: env.DEEPSEEK_MODEL || 'deepseek-chat',
-          max_tokens: CHAT_MAX_TOKENS,
+          max_tokens: maxTokens,
           stream: true,
           messages: [{ role: 'system', content: sys }].concat(messages)
         })
@@ -312,7 +322,7 @@ async function handleChat(request, env) {
         },
         body: JSON.stringify({
           model: env.ANTHROPIC_MODEL || 'claude-haiku-4-5',
-          max_tokens: CHAT_MAX_TOKENS,
+          max_tokens: maxTokens,
           stream: true,
           system: sys,
           messages
