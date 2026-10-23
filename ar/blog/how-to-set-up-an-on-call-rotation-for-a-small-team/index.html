@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>كيف تُنشئ جدول مناوبة عادلاً للدعم الطارئ في فريق صغير؟ — FulcrumGrid</title>
+  <meta name="description" content="تعرّف على كيفية بناء جدول مناوبة عادل لفريق صغير: مدة الوردية، والاحتياطي، والتسليم، والتعويض، والتصعيد، وكيف تقلّل ضجيج التنبيهات والإرهاق." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="كيف تُنشئ جدول مناوبة عادلاً للدعم الطارئ في فريق صغير؟" />
+  <meta property="og:description" content="تعرّف على كيفية بناء جدول مناوبة عادل لفريق صغير: مدة الوردية، والاحتياطي، والتسليم، والتعويض، والتصعيد، وكيف تقلّل ضجيج التنبيهات والإرهاق." />
+  <meta property="og:url" content="https://fulcrumgrid.com/ar/blog/how-to-set-up-an-on-call-rotation-for-a-small-team/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-23" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="لوحة التحكم للتنفيذيين من FulcrumGrid — العمليات في لمحة" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="كيف تُنشئ جدول مناوبة عادلاً للدعم الطارئ في فريق صغير؟" />
+  <meta name="twitter:description" content="تعرّف على كيفية بناء جدول مناوبة عادل لفريق صغير: مدة الوردية، والاحتياطي، والتسليم، والتعويض، والتصعيد، وكيف تقلّل ضجيج التنبيهات والإرهاق." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/ar/blog/how-to-set-up-an-on-call-rotation-for-a-small-team/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-set-up-an-on-call-rotation-for-a-small-team/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-set-up-an-on-call-rotation-for-a-small-team/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-set-up-an-on-call-rotation-for-a-small-team/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-set-up-an-on-call-rotation-for-a-small-team/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-set-up-an-on-call-rotation-for-a-small-team/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-set-up-an-on-call-rotation-for-a-small-team/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-set-up-an-on-call-rotation-for-a-small-team/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-set-up-an-on-call-rotation-for-a-small-team/" />
+
+  <link rel="preload" href="/assets/fonts/cairo-600-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/cairo-400-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "كيف تُنشئ جدول مناوبة عادلاً للدعم الطارئ في فريق صغير؟",
+    "description": "تعرّف على كيفية بناء جدول مناوبة عادل لفريق صغير: مدة الوردية، والاحتياطي، والتسليم، والتعويض، والتصعيد، وكيف تقلّل ضجيج التنبيهات والإرهاق.",
+    "datePublished": "2026-10-23",
+    "dateModified": "2026-10-23",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/ar/blog/how-to-set-up-an-on-call-rotation-for-a-small-team/"
+    },
+    "inLanguage": "ar"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "الرئيسية",
+        "item": "https://fulcrumgrid.com/ar/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "المدوّنة",
+        "item": "https://fulcrumgrid.com/ar/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "دليل المناوبة",
+        "item": "https://fulcrumgrid.com/ar/blog/how-to-set-up-an-on-call-rotation-for-a-small-team/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "كم شخصاً نحتاج لجدول مناوبة؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "أربعة إلى خمسة حدّ أدنى مريح. مع عدد أقل تتكرر الورديات أكثر من اللازم. ضيّق الساعات أو الخدمات المغطاة، أو شارك الجدول مع فريق آخر."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ما المدة المناسبة لوردية المناوبة؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "أسبوع واحد هو الأشيع مع موعد تسليم ثابت. الورديات الأقصر تعني تسليمات أكثر، والأطول تزيد التعب. انشر الجدول قبل شهر على الأقل."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "هل ينبغي دفع أجر إضافي للمناوبين؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "الإتاحة عمل، لذا تدفع أغلب الفرق مبلغاً ثابتاً أو أجراً إضافياً لساعات الحوادث أو تمنح إجازة بديلة أو مزيجاً منها. راجع قانون العمل المحلي واتفق على الشروط بوضوح مع الفريق."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كم عدد النداءات المعقول في الوردية؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "لا رقم عاماً، لكن أغلب الورديات ينبغي أن تكون هادئة. إذا كان الناس يُوقَظون أكثر من مرة أو مرتين أسبوعياً، فأصلح التنبيهات المزعجة أو احذفها قبل زيادة عدد الموظفين."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <a href="/ar/products/">المنتجات</a>
+        <a href="/ar/features/">الشبكة</a>
+        <a href="/ar/pricing/">الأسعار</a>
+        <a href="/ar/regions/">المناطق</a>
+        <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
+        <a href="/ar/contact/">اتصل بنا</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="اللغة">ع ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" class="active" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      </div>
+      <button class="nav-toggle" aria-label="القائمة"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/ar/">الرئيسية</a> / <a href="/ar/blog/">المدوّنة</a> / دليل المناوبة</p>
+        <span class="tag tag-accent">العمليات</span>
+        <h1>كيف تُنشئ جدول مناوبة عادلاً للدعم الطارئ في فريق صغير؟</h1>
+        <p class="hero-intro">تعرّف على كيفية بناء جدول مناوبة عادل لفريق صغير: مدة الوردية، والاحتياطي، والتسليم، والتعويض، والتصعيد، وكيف تقلّل ضجيج التنبيهات والإرهاق.</p>
+        <p class="mono"><time datetime="2026-10-23">٢٣ أكتوبر ٢٠٢٦</time> · ٥ دقائق للقراءة</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>ما إن يصبح لدى فريق صغير عملاء يعتمدون على خدمته خارج ساعات الدوام، حتى يجب أن يكون أحدهم متاحاً. وبلا خطة يكون هذا الشخص هو نفسه دائماً، وغالباً أكثرهم حرصاً، إلى أن يستقيل. يوزّع جدول المناوبة العبء بإنصاف ويضمن وجود مسؤول في كل وقت. وهذه أكثر الأسئلة التي تطرحها الفرق عند إعداده.</p><h2>متى نحتاج فعلاً إلى جدول مناوبة؟</h2><p>تحتاج إليه عندما يكلّف انقطاع الخدمة خارج الدوام مالاً حقيقياً أو يمسّ السلامة أو الثقة، ولا يكون الانتظار حتى الصباح مقبولاً. أما إذا كان العطل يحتمل الانتظار تسع ساعات، فالأرجح أنك تحتاج إلى تنبيهات جيدة وروتين صباحي لا إلى مناوبة. كن صريحاً بشأن الخدمات الحرجة فعلاً وغطِّ هذه وحدها. أربعة إلى خمسة أشخاص حدّ أدنى مريح؛ فمع اثنين أو ثلاثة يصبح كل شخص مناوباً بتكرار يحوّل الجدول إلى نمط حياة. في هذه الحالة ضيّق النطاق، أو قلّص الساعات المغطاة، أو شارك الجدول مع فريق مجاور.</p><h2>كم ينبغي أن تدوم الوردية الواحدة؟</h2><p>أسبوع واحد هو الخيار الأشيع، مع تسليم في الوقت نفسه كل أسبوع، وغالباً في منتصف الأسبوع حتى لا تنقسم عطلة نهاية الأسبوع بشكل محرج. والبدائل:</p><ul><li><strong>ورديات يومية.</strong> خفيفة على كل شخص، لكنها تعني تسليمات كثيرة وتنقلاً مستمراً بين السياقات.</li><li><strong>فصل أيام العمل عن عطلة نهاية الأسبوع.</strong> العطلات هي الأصعب، لذا تُدير بعض الفرق مناوبتها بشكل منفصل.</li><li><strong>اتباع الشمس.</strong> لا يصلح إلا إذا كان لديك أشخاص في مناطق زمنية مختلفة، فلا يُوقَظ أحد ليلاً.</li></ul><p>أياً كان اختيارك، انشر الجدول قبل شهر على الأقل، واسمح للناس بتبديل الورديات بحرية ما دام التبديل مسجّلاً.</p><h2>هل نحتاج إلى مناوب أساسي وآخر احتياطي؟</h2><p>نعم، حتى في فريق صغير. يتلقى <strong>المناوب الأساسي</strong> كل تنبيه أولاً. ويُتصل بـ<strong>الاحتياطي</strong> إذا لم يستجب الأساسي خلال مدة محددة، لنقل عشر دقائق، أو إذا طلب المساعدة. وهذا يحمي من الأسباب المعتادة لضياع التنبيه: بطارية فارغة، أو نفق، أو حمّام. اجعل دور الاحتياطي أخفّ من الأساسي، فلا يُنتظر منه الجلوس أمام حاسوب، بل الرد عند الاتصال. بدّل الدورين بين الجميع ليتقن كل واحد كليهما.</p><h2>ما مواصفات التسليم الجيد؟</h2><p>تسليم مكتوب وموجز في نهاية كل وردية، ويفضّل مكالمة من عشر دقائق مع ملاحظات. ويشمل:</p><ul><li>حوادث الأسبوع وحالة كل منها</li><li>التنبيهات المعروفة بعدم استقرارها والتغييرات الخطرة القادمة</li><li>أي أمر نصف معالَج، مع رابط التذكرة</li><li>الصيانة أو عمليات النشر المخططة في الوردية التالية</li></ul><p>وعلى المناوب المغادر أن يبقى متاحاً للأسئلة لبضع ساعات. التسليم الجيد أرخص وسيلة لتفادي التحقيق في الحادثة نفسها من الصفر مرتين.</p><h2>كيف تُعوَّض المناوبة؟</h2><p>الإتاحة عمل، حتى لو لم يرنّ الهاتف قط. اختر نموذجاً ودوّنه. من الخيارات الشائعة: مبلغ ثابت عن كل وردية، أو أجر إضافي عن كل ساعة عمل فعلية على حادثة، أو إجازة بديلة، أو مزيج منها. والإجازة هي الأهم: فمن أُوقظ في الثالثة فجراً لا يُنتظر منه الحضور إلى مكتبه في التاسعة. تختلف الأحكام باختلاف البلد وعقد العمل، فراجع قانون العمل المحلي بشأن فترات الراحة وأجر المناوبة، واتفق على الشروط مع الفريق بدل فرضها. وتجنّب اعتبار المناوبة معروفاً يسديه الأبطال للشركة.</p><h2>كيف يبدو مسار التصعيد؟</h2><p>اكتبه كسلسلة بسيطة يستطيع أي شخص اتباعها وهو نصف نائم: المناوب الأساسي، فالاحتياطي، فقائد الفريق أو المدير المسمّى، وأخيراً مالك النظام المتأثر أو صاحب قرار إبلاغ العملاء. وحدّد لكل خطوة مدة الانتظار قبل الانتقال إلى التالية. أضف قائمة من صفحة واحدة بمن يملك ماذا، وقواعد توضح متى يُوقَظ شخص أقدم. وصرّح بأن التصعيد متوقع وليس علامة فشل؛ فمن يخشى الحكم عليه يتشبث بالحوادث أطول مما ينبغي.</p><h2>كيف نُبقي ضجيج التنبيهات منخفضاً؟</h2><p>نظافة التنبيهات هي ما يجعل المناوبة قابلة للاستمرار. لا توقظ إنساناً إلا إذا كان التنبيه عاجلاً وقابلاً للتنفيذ ويحتاج إلى شخص الآن. وكل ما سوى ذلك يتحول إلى تذكرة أو تقرير صباحي. عادات عملية:</p><ul><li>احذف أو أصلح أي تنبيه انطلق ولم يتطلب إجراءً</li><li>أرفق بكل تنبيه دليل تشغيل قصيراً يذكر ما يُفحص أولاً</li><li>اجمع التنبيهات المتكررة ليُنتج كل خلل نداءً واحداً</li><li>افصل النداءات العاجلة عن الإشعارات منخفضة الأولوية</li></ul><p>هدف مفيد أن تكون أغلب الورديات هادئة، بما لا يزيد على نداءين خارج الدوام في الوردية المتوسطة.</p><h2>كيف نمنع الإرهاق؟</h2><p>راقب العلامات: نوم متقطع، وتذمّر من الجدول، وتهرّب من الورديات. واحمِ الناس بقواعد صارمة قليلة: فاصل أدنى بين الورديات (لا أسبوعان متتاليان)، ووقت للتعافي بعد ليلة سيئة، واستثناءات للعطل والمرض والآباء الجدد، وسبيل للانسحاب مؤقتاً دون عقاب. وعلى الموظفين الجدد مرافقة وردية قبل تحمّل واحدة بمفردهم. وعالج الأسباب لا الأعراض: إذا ظلّت المشكلة نفسها تُطلق النداءات، فخصّص وقتاً هندسياً لإزالتها.</p><h2>كيف نراجع العبء؟</h2><p>كل شهر، انظر إلى الأرقام: النداءات لكل وردية، والنداءات خارج الدوام، وزمن الاستجابة، وزمن الحل، وساعات العمل لكل شخص. وتحقق من العدالة: هل العبء متوازن أم يتحمل شخص واحد الليالي؟ ثم أجرِ مراجعة قصيرة دون لوم لأكثر التنبيهات ضجيجاً وأسوأ الحوادث، واتفقوا على إصلاح أو اثنين. وإذا كنت تخطط أعمالك أصلاً في <strong>FulcrumGrid Command Center</strong> (مركز القيادة)، فيمكنك إبقاء الجدول ومهام المتابعة وأرقام العبء هذه بجانب مشاريعك ومؤشراتك الأخرى، مع أن تقويماً مشتركاً وجدول بيانات يكفيان للبداية.</p><p>ابدأ صغيراً، ودوّن القواعد، وعدّل بعد كل شهر. الجدول العادل ليس الذي لا يزعج أحداً أبداً، بل الذي يكون فيه العبء مشتركاً ومرئياً ويتحسن باستمرار.</p>
+
+        <h2>الأسئلة الشائعة</h2>
+        <details class="faq-item"><summary>كم شخصاً نحتاج لجدول مناوبة؟</summary><p>أربعة إلى خمسة حدّ أدنى مريح. مع عدد أقل تتكرر الورديات أكثر من اللازم. ضيّق الساعات أو الخدمات المغطاة، أو شارك الجدول مع فريق آخر.</p></details>
+        <details class="faq-item"><summary>ما المدة المناسبة لوردية المناوبة؟</summary><p>أسبوع واحد هو الأشيع مع موعد تسليم ثابت. الورديات الأقصر تعني تسليمات أكثر، والأطول تزيد التعب. انشر الجدول قبل شهر على الأقل.</p></details>
+        <details class="faq-item"><summary>هل ينبغي دفع أجر إضافي للمناوبين؟</summary><p>الإتاحة عمل، لذا تدفع أغلب الفرق مبلغاً ثابتاً أو أجراً إضافياً لساعات الحوادث أو تمنح إجازة بديلة أو مزيجاً منها. راجع قانون العمل المحلي واتفق على الشروط بوضوح مع الفريق.</p></details>
+        <details class="faq-item"><summary>كم عدد النداءات المعقول في الوردية؟</summary><p>لا رقم عاماً، لكن أغلب الورديات ينبغي أن تكون هادئة. إذا كان الناس يُوقَظون أكثر من مرة أو مرتين أسبوعياً، فأصلح التنبيهات المزعجة أو احذفها قبل زيادة عدد الموظفين.</p></details>
+
+        <p style="margin-top:32px"><a href="/ar/blog/"><span aria-hidden="true">←</span> العودة إلى المدوّنة</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid لوحة التحكم للتنفيذيين</p>
+        <h2>أبقِ جدول المناوبة ومهام المتابعة في مكان واحد</h2>
+        <p class="section-lead" style="margin:0 auto 26px">يساعدك مركز القيادة في FulcrumGrid على متابعة المشاريع والمهام ومؤشرات الأداء معاً، فيبقى عبء المناوبة والإصلاحات الناتجة عنه ظاهراً.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/ar/products/command-center/">استكشف لوحة التحكم للتنفيذيين</a>
+          <a class="btn btn-secondary" href="/ar/blog/">العودة إلى المدوّنة</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>العمود الفقري التشغيلي للفرق الحديثة.</p>
+        </div>
+        <div class="foot-col">
+          <h5>المنتجات</h5>
+          <a href="/ar/products/">كل المنتجات</a>
+          <a href="/ar/products/hr-suite/">منصة الموارد البشرية</a>
+          <a href="/ar/products/command-center/">لوحة التحكم للتنفيذيين</a>
+          <a href="/ar/products/collection/">منصة تحصيل الديون</a>
+          <a href="/ar/products/tms/">منصة العمليات اللوجستية</a>
+          <a href="/ar/products/assure/">منصة الحوكمة والامتثال</a>
+          <a href="/ar/products/close/">منصة المعايير المحاسبية والإغلاق</a>
+          <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشبكة</h5>
+          <a href="/ar/features/">الميزات</a>
+          <a href="/ar/integrations/">التكاملات</a>
+          <a href="/ar/how-it-works/">كيف تعمل</a>
+          <a href="/ar/pricing/">الأسعار</a>
+          <a href="/ar/regions/">المناطق</a>
+          <a href="/ar/blog/">المدوّنة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشركة</h5>
+          <a href="/ar/about/">من نحن</a>
+          <a href="/ar/faq/">الأسئلة الشائعة</a>
+          <a href="/ar/contact/">اتصل بنا</a>
+          <a href="/ar/privacy/">الخصوصية</a>
+          <a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=2b10ee35" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
