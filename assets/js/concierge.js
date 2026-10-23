@@ -31,6 +31,7 @@
     en: { title: 'FulcrumGrid assistant', invite: "Hi — I'm here to help. Ask me anything about FulcrumGrid.",
           talk: 'Talk to me', placeholder: 'Type a message…', send: 'Send', listening: 'Listening…',
           thinking: 'Thinking…', speaking: 'Speaking…', voicehint: 'Tap the mic to stop',
+          fillers: ['One moment…', 'Let me check that…', 'Give me a second…'],
           mic: 'Hold to talk', close: 'Close', dismiss: 'Dismiss',
           consent: 'Tap the mic to talk — your voice is sent to our assistant to answer you. ',
           contact: 'Contact us', err: "Sorry — I couldn't reach the assistant. Please try the contact page.",
@@ -40,6 +41,7 @@
     ar: { title: 'مساعد FulcrumGrid', invite: 'مرحبًا — أنا هنا للمساعدة. اسألني أي شيء عن FulcrumGrid.',
           talk: 'تحدّث إليّ', placeholder: 'اكتب رسالة…', send: 'إرسال', listening: 'أستمع…',
           thinking: 'أفكّر…', speaking: 'أتحدّث…', voicehint: 'اضغط الميكروفون للإيقاف',
+          fillers: ['لحظة…', 'دعني أتحقق…', 'لحظة من فضلك…'],
           mic: 'اضغط للتحدّث', close: 'إغلاق', dismiss: 'إخفاء',
           consent: 'اضغط الميكروفون للتحدّث — يُرسَل صوتك إلى مساعدنا للإجابة عليك. ',
           contact: 'تواصل معنا', err: 'عذرًا — تعذّر الوصول إلى المساعد. جرّب صفحة التواصل من فضلك.',
@@ -151,6 +153,11 @@
   // each answer (hands-free loop). If audio can't play, we fall back to text.
   var voiceMode = false, canceling = false, turnSpoke = false,
       lastUserText = '', lastReply = '', vadHeard = false, noSpeechTimer = null;
+  // Voice "thinking" filler: short clips spoken while we wait on the model's
+  // first token, so a slow turn is never a silent gap. Pre-synthesized in the
+  // real voice when voice mode is first entered, cached for the session, and
+  // played at most once per turn only if the real answer is slow to arrive.
+  var fillersPrimed = false, fillerClips = [], fillerTimer = 0, fillerDone = false;
 
   function ask(text) {
     text = (text || '').trim(); if (!text || busy) return;
@@ -168,6 +175,8 @@
     busy = true; setState('thinking');
     var bubble = vm ? el('div') : addMsg('bot', '…');   // detached (invisible) in voice mode
     ttsQueue = []; ttsPlaying = false; streamDone = false; turnSpoke = false;
+    fillerDone = false; if (fillerTimer) clearTimeout(fillerTimer);
+    if (vm) fillerTimer = setTimeout(playFiller, 650);   // voice: bridge a slow first token with a spoken filler
     var spokenChars = 0, firstDone = false;
 
     // Fire the first complete sentence at TTS as soon as it streams in, so the
@@ -258,9 +267,35 @@
   }
   function enqueueSpeak(text) {
     if (!text) return;
+    if (fillerTimer) { clearTimeout(fillerTimer); fillerTimer = 0; }   // real answer arrived — no filler needed
     ttsQueue.push(text);
     setState('talking');
     pumpQueue();
+  }
+  // Pre-synthesize the short "thinking" fillers once (in the real voice) and
+  // cache them for the session, so one can play instantly on a slow turn.
+  function primeFillers() {
+    if (fillersPrimed || !endpoint) return;
+    fillersPrimed = true;
+    (t.fillers || []).forEach(function (phrase) {
+      fetch(endpoint + '/tts', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ text: phrase, lang: docLang }) })
+        .then(function (r) { if (!r.ok) throw 0; return r.blob(); })
+        .then(function (blob) { try { fillerClips.push(URL.createObjectURL(blob)); } catch (e) {} })
+        .catch(function () {});
+    });
+  }
+  // Play one cached filler clip — only in voice mode, only if nothing is already
+  // speaking and the real answer hasn't started. Never sets turnSpoke (it's not
+  // the answer), so the text fallback still fires if the real audio fails.
+  function playFiller() {
+    if (fillerDone || !voiceMode || ttsPlaying || turnSpoke || !fillerClips.length) return;
+    fillerDone = true; ttsPlaying = true; setState('talking');
+    try {
+      ensureAudioEl();
+      audioEl.src = fillerClips[Math.floor(Math.random() * fillerClips.length)];
+      startFlap();
+      var p = audioEl.play(); if (p && p.catch) p.catch(function () { onChunkEnd(); });
+    } catch (e) { onChunkEnd(); }
   }
   function pumpQueue() {
     if (ttsPlaying) return;
@@ -333,10 +368,11 @@
     else if (SR) startListening();
     else { exitVoice(); addMsg('bot', t.sr, true); input.focus(); }
   }
-  function enterVoice() { voiceMode = true; mount.classList.add('is-voice'); }
+  function enterVoice() { voiceMode = true; mount.classList.add('is-voice'); primeFillers(); }
   function exitVoice() {
     voiceMode = false; mount.classList.remove('is-voice');
     if (noSpeechTimer) { clearTimeout(noSpeechTimer); noSpeechTimer = null; }
+    if (fillerTimer) { clearTimeout(fillerTimer); fillerTimer = 0; }
     if (recording || listening) canceling = true;  // don't transcribe/answer a canceled turn
     ttsQueue = []; try { if (audioEl) audioEl.pause(); } catch (e) {}
     ttsPlaying = false; stopFlap(); setMouth(0);
