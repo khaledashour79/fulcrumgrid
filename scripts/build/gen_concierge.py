@@ -75,16 +75,19 @@ def _patch_csp(html, enable):
     # always start from a clean slate for our additions
     if origin:
         csp = csp.replace(' ' + origin, '')
-    csp = re.sub(r"\s*media-src 'self' blob:;", '', csp)
+    csp = re.sub(r"\s*media-src 'self' blob:[^;]*;", '', csp)
     if enable:
         if origin and 'connect-src' in csp:
             csp = re.sub(r'(connect-src )([^;]*)(;)', lambda mm: mm.group(1) + mm.group(2) + ' ' + origin + mm.group(3), csp, count=1)
-        # audio returned by the Worker is played from a blob: URL
+        # audio returned by the Worker is played from a blob: URL; the silent
+        # unlock clip (that "blesses" playback inside the tap gesture on iOS)
+        # is a data: URI, so media-src must allow data: too or the unlock is
+        # refused and later spoken replies can't play.
         if 'media-src' not in csp:
             csp = csp.rstrip()
             if not csp.endswith(';'):
                 csp += ';'
-            csp += " media-src 'self' blob:;"
+            csp += " media-src 'self' blob: data:;"
     return html[:m.start(2)] + csp + html[m.end(2):]
 
 
