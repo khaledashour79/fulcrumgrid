@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>How Do You Use a Kanban Board to Run Day-to-Day Team Operations? — FulcrumGrid</title>
+  <meta name="description" content="A Kanban board makes daily work visible. Learn which columns to use, how to set WIP limits, what a good card looks like and how to review the board weekly." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How Do You Use a Kanban Board to Run Day-to-Day Team Operations?" />
+  <meta property="og:description" content="A Kanban board makes daily work visible. Learn which columns to use, how to set WIP limits, what a good card looks like and how to review the board weekly." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/how-to-use-a-kanban-board-for-team-operations/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-24" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Do You Use a Kanban Board to Run Day-to-Day Team Operations?" />
+  <meta name="twitter:description" content="A Kanban board makes daily work visible. Learn which columns to use, how to set WIP limits, what a good card looks like and how to review the board weekly." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/how-to-use-a-kanban-board-for-team-operations/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-use-a-kanban-board-for-team-operations/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-use-a-kanban-board-for-team-operations/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-use-a-kanban-board-for-team-operations/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-use-a-kanban-board-for-team-operations/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-use-a-kanban-board-for-team-operations/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-use-a-kanban-board-for-team-operations/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-use-a-kanban-board-for-team-operations/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-use-a-kanban-board-for-team-operations/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How Do You Use a Kanban Board to Run Day-to-Day Team Operations?",
+    "description": "A Kanban board makes daily work visible. Learn which columns to use, how to set WIP limits, what a good card looks like and how to review the board weekly.",
+    "datePublished": "2026-10-24",
+    "dateModified": "2026-10-24",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/how-to-use-a-kanban-board-for-team-operations/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Kanban Guide",
+        "item": "https://fulcrumgrid.com/blog/how-to-use-a-kanban-board-for-team-operations/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many columns should a Kanban board have?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Four or five are enough for most teams: Backlog, Ready, Doing, Waiting and Done. Add more only if work genuinely pauses at that stage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What WIP limit should a small team use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A common start is one card per person plus one in the Doing column. Review it after a few weeks, but keep some limit in place."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is cycle time in Kanban?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cycle time is the number of days a card takes from the moment work starts until it is done. The median across recent cards is the most useful figure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use Kanban for recurring tasks?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Put recurring tasks in their own swimlane and create the cards from a template on schedule, so they do not depend on memory."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should we review the board?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A short daily look at blocked cards and a 20 to 30 minute weekly review work well for most small teams."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Kanban Guide</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>How Do You Use a Kanban Board to Run Day-to-Day Team Operations?</h1>
+        <p class="hero-intro">A Kanban board makes daily work visible. Learn which columns to use, how to set WIP limits, what a good card looks like and how to review the board weekly.</p>
+        <p class="mono"><time datetime="2026-10-24">October 24, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Most small teams do not fail for lack of effort. They fail because nobody can see all the work at once. Tasks hide in inboxes, chat threads and people's heads, and priorities shift with whoever shouted last. A Kanban board fixes this by putting every piece of work on one shared surface. This guide answers the practical questions: how to set one up, how to limit work in progress, and how to keep the board useful week after week.</p><h2>What is a Kanban board and why use it for operations?</h2><p>A Kanban board is a visual map of your work. Each task is a card, and each column is a stage it passes through, from left to right. It suits operations because day-to-day work is a flow of many small items, not one big project. The board shows what is waiting, what is moving and what is stuck, without a status meeting.</p><h2>Which columns should you start with?</h2><p>Keep it simple. Four to five columns are enough for most teams:</p><ul><li><strong>Backlog.</strong> Everything that has been agreed but not started, loosely ordered by priority.</li><li><strong>Ready.</strong> The next few items, clear enough that someone can pick one up today.</li><li><strong>Doing.</strong> Work someone is actively moving forward right now.</li><li><strong>Waiting or Blocked.</strong> Work that cannot progress until someone outside the team responds.</li><li><strong>Done.</strong> Finished work, kept visible for a week or so, then archived.</li></ul><p>Add columns such as Review or Approval only when work really does pause there. Every extra column is one more place for cards to sit.</p><h2>What is a WIP limit and how do you set one?</h2><p>A work-in-progress (WIP) limit is a cap on how many cards may be in a column at once. It matters because starting is easy and finishing is hard. Without a cap, people begin new items whenever they are blocked or bored, and everything takes longer.</p><p>A practical starting point for the Doing column is the number of people on the team, or one card per person plus one. A team of five might set a limit of six. When the column is full, nobody pulls a new card. They help finish one instead. If the limit feels painful, that is the point: it shows where work is really getting stuck. Adjust it after a few weeks, but do not remove it.</p><h2>What makes a good card?</h2><p>A card should be small enough to finish in a few days and clear enough that anyone could understand it. A useful card includes:</p><ul><li>A short title that starts with a verb, such as &ldquo;Send renewal quote to Acme&rdquo;.</li><li>One named owner, not a group.</li><li>A due date only if there is a real deadline.</li><li>A short definition of done, so everyone agrees when it can move to Done.</li><li>A link to the details, rather than pasting them in.</li></ul><p>If a card sits in Doing for more than a week, it is usually two or three tasks in disguise. Split it.</p><h2>How do you handle recurring work and one-off requests?</h2><p>Operations teams carry two kinds of work that behave differently. Recurring tasks, such as month-end checks, weekly reports or equipment audits, are predictable. Requests from colleagues are not. Separate them with swimlanes, which are horizontal rows across the board:</p><ul><li><strong>Routine lane.</strong> Recurring tasks, created from a template on their schedule, so they never depend on someone remembering.</li><li><strong>Requests lane.</strong> Incoming asks from other people or teams.</li><li><strong>Urgent lane (optional).</strong> One slot for genuine emergencies, with its own limit of one or two cards.</li></ul><p>Swimlanes also make trade-offs visible. If the Requests lane is full, you can see that the routine work is quietly suffering. How requests get into the board in the first place is a topic of its own, covered in our guide to request intake.</p><h2>How do you run a weekly review?</h2><p>Spend 20 to 30 minutes at the same time each week, standing in front of the board. Work through it from right to left, so you focus on finishing:</p><ol><li>Celebrate what reached Done, and archive old cards.</li><li>Look at Waiting or Blocked. Who needs a nudge, and who can unblock it?</li><li>Check Doing for cards that have not moved. Split, drop or help them along.</li><li>Fill Ready from the Backlog with next week's priorities.</li><li>Ask one question: what slowed us down this week?</li></ol><h2>Which metrics are worth tracking?</h2><ul><li><strong>Cycle time.</strong> How many days a card takes from Doing to Done. Track the median and watch the trend.</li><li><strong>Throughput.</strong> How many cards finish per week. It helps you judge what you can promise.</li><li><strong>Age of work in progress.</strong> How long open cards have been sitting. This is an early warning.</li><li><strong>Blocked time.</strong> How long cards wait on others.</li></ul><p>If cycle time keeps growing and one column always has the longest queue, you have likely found your bottleneck. Our guide on finding bottlenecks shows how to dig into it.</p><h2>Common Kanban mistakes</h2><ul><li><strong>An overloaded Doing column.</strong> Fifteen cards in progress means nothing is really in progress. Enforce the limit.</li><li><strong>Cards that are too big.</strong> Vague items like &ldquo;Improve onboarding&rdquo; never move. Break them down.</li><li><strong>A board nobody updates.</strong> If the board lags behind reality, people stop trusting it. Update it in the moment, or at a short daily stand-up.</li><li><strong>Too many columns and lanes.</strong> Complexity hides the picture you wanted to see.</li><li><strong>Ignoring blocked work.</strong> Waiting cards are still unfinished work. Give them an owner and a follow-up date.</li><li><strong>Using it as a dumping ground.</strong> A backlog of 200 old items is noise. Prune it monthly.</li></ul><p>Start with a simple board, a firm limit and a weekly review. Change one thing at a time, and let the data tell you what to improve next. If you want the board connected to your projects and KPIs, <strong>FulcrumGrid Command Center</strong> can hold them together, but a whiteboard and sticky notes are enough to begin.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>How many columns should a Kanban board have?</summary><p>Four or five are enough for most teams: Backlog, Ready, Doing, Waiting and Done. Add more only if work genuinely pauses at that stage.</p></details>
+        <details class="faq-item"><summary>What WIP limit should a small team use?</summary><p>A common start is one card per person plus one in the Doing column. Review it after a few weeks, but keep some limit in place.</p></details>
+        <details class="faq-item"><summary>What is cycle time in Kanban?</summary><p>Cycle time is the number of days a card takes from the moment work starts until it is done. The median across recent cards is the most useful figure.</p></details>
+        <details class="faq-item"><summary>Can I use Kanban for recurring tasks?</summary><p>Yes. Put recurring tasks in their own swimlane and create the cards from a template on schedule, so they do not depend on memory.</p></details>
+        <details class="faq-item"><summary>How often should we review the board?</summary><p>A short daily look at blocked cards and a 20 to 30 minute weekly review work well for most small teams.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Keep your team's work in one clear view</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center helps you track projects, tasks and KPIs together, so what is moving and what is stuck stays visible all week.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=49af1d3a" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
