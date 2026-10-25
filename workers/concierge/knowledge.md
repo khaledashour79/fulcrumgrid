@@ -42,6 +42,12 @@ secure, auditable grid, with cross-app data when you run several.
   and IFRS 16 leases, with controlled periods, frozen snapshots, versioned assumptions,
   reproducible runs, segregation of duties, draft journal vouchers and a bilingual audit
   pack. For Saudi finance teams preparing IFRS. **Pricing is custom — talk to sales.**
+- **Consolidate** — operator dashboard that consolidates commercial & financial figures
+  across every company you run: revenue, cash, AR ageing, P&L, VAT and ZATCA status, MRR,
+  pipeline and client cohorts, read from your books as nightly snapshots (read-only, never
+  writes back). Connected to **Daftra** today; SAP Business One, Odoo and Oracle are on the
+  way behind the same connector. Multi-currency with base-currency roll-up; encrypted keys,
+  hardened read-only access. **Pricing is custom — talk to sales.**
 
 **Bundle.** Running several apps? The **whole-grid** plan covers every app at **$29 /
 user / month** (unlimited users, cross-app data, priority support); **Enterprise** is
@@ -50,9 +56,8 @@ custom (single-tenant, on-premise/self-hosted option, data residency, SLA).
 **Trials & billing.** Every plan has a **14-day free trial**, no card required. Annual
 billing saves 20%.
 
-**Coming soon / roadmap.** Voice (business telephony), CRM and Consolidate (a consolidated
-commercial & financial dashboard across every company you run — KPIs, trends and ageing
-over all your connected sources) are coming soon; Agents, Real Estate, Workshop, VPN
+**Coming soon / roadmap.** Voice (business telephony), CRM and Retail (point of sale,
+inventory and multi-store operations) are coming soon; Agents, Real Estate, Workshop, VPN
 and Desk are on the roadmap. Custom apps are built to order on the same foundation.
 
 **Regions.** Hosted and tuned per region, with data in your region, your language and

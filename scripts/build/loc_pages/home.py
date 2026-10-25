@@ -238,6 +238,13 @@ PAGE = {
             "Explore TMS →": _t("Découvrir TMS →", "TMS entdecken →", "Explorar TMS →", "Esplora TMS →", "Ontdek TMS →"),
             "Explore Assure →": _t("Découvrir Assure →", "Assure entdecken →", "Explorar Assure →", "Esplora Assure →", "Ontdek Assure →"),
             "Explore Close →": _t("Découvrir Close →", "Close entdecken →", "Explorar Close →", "Esplora Close →", "Ontdek Close →"),
+            "Every company you run on one dashboard — revenue, cash, receivables, VAT and P&amp;L, consolidated from your books. Connected to Daftra.": _t(
+                "Chaque société que vous gérez sur un seul tableau de bord — chiffre d'affaires, trésorerie, créances, TVA et P&amp;L, consolidés depuis vos comptes. Connecté à Daftra.",
+                "Jedes Unternehmen, das Sie führen, auf einem Dashboard — Umsatz, Liquidität, Forderungen, USt. und P&amp;L, konsolidiert aus Ihren Büchern. Mit Daftra verbunden.",
+                "Cada empresa que gestiona en un solo panel — ingresos, caja, cuentas por cobrar, IVA y P&amp;L, consolidados desde sus libros. Conectado a Daftra.",
+                "Ogni azienda che gestisci in un'unica dashboard — ricavi, liquidità, crediti, IVA e P&amp;L, consolidati dai tuoi libri. Collegato a Daftra.",
+                "Elk bedrijf dat u runt op één dashboard — omzet, kas, vorderingen, btw en P&amp;L, geconsolideerd uit uw boeken. Verbonden met Daftra."),
+            "Explore Consolidate →": _t("Découvrir Consolidate →", "Consolidate entdecken →", "Explorar Consolidate →", "Esplora Consolidate →", "Ontdek Consolidate →"),
             "TMS": _t("TMS", "TMS", "TMS", "TMS", "TMS"),
             "On the roadmap": _t(
                 "Sur la feuille de route", "Auf der Roadmap", "En la hoja de ruta",

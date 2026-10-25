@@ -41,6 +41,12 @@
       line: 'IFRS period-end estimates. IAS 19, IFRS 9 and IFRS 16, with versioned assumptions and a full audit trail.',
       price: 'Talk to sales', href: '/products/close/',
       modules: ['IAS 19 (end-of-service)', 'IFRS 9 (ECL)', 'IFRS 16 (leases)', 'Reporting periods', 'Input snapshots', 'Versioned assumptions', 'Reproducible runs', 'Segregation of duties', 'Actuary sign-off', 'Journal vouchers', 'Audit pack', 'Access log']
+    },
+    consolidate: {
+      name: 'Consolidate', tag: 'Finance',
+      line: 'Consolidated commercial and financial KPIs across every company you run, read from your books into one operator dashboard.',
+      price: 'Talk to sales', href: '/products/consolidate/',
+      modules: ['Daftra source', 'Consolidated KPIs', 'AR ageing', 'P&L snapshot', 'VAT & ZATCA status', 'MRR & pipeline', 'Client cohorts', 'Top clients', 'Base-currency FX', 'Per-company drill-in', 'Nightly snapshots', 'Encrypted keys', 'SSRF-hardened egress', 'Operator token', 'PWA & push']
     }
   };
 
@@ -80,6 +86,12 @@
       line: 'تقديرات إقفال الفترة وفق IFRS. المعايير IAS 19 و IFRS 9 و IFRS 16، مع افتراضات مُؤرشَفة وسجل تدقيق كامل.',
       price: 'تواصل مع المبيعات', href: '/ar/products/close/',
       modules: ['IAS 19 (نهاية الخدمة)', 'IFRS 9 (خسائر ائتمانية)', 'IFRS 16 (الإيجارات)', 'فترات التقرير', 'لقطات المدخلات', 'افتراضات مُؤرشَفة', 'عمليات قابلة للتكرار', 'فصل المهام', 'اعتماد الخبير الاكتواري', 'قيود اليومية', 'حزمة التدقيق', 'سجل الوصول']
+    },
+    consolidate: {
+      name: 'منصة التوحيد المالي', tag: 'المالية',
+      line: 'مؤشرات تجارية ومالية موحَّدة عبر كل شركة تُديرها، مقروءة من دفاترك إلى لوحة مُشغِّل واحدة.',
+      price: 'تواصل مع المبيعات', href: '/ar/products/consolidate/',
+      modules: ['مصدر دفترة', 'مؤشرات موحَّدة', 'أعمار الذمم', 'لمحة الأرباح والخسائر', 'ضريبة القيمة المضافة وحالة ZATCA', 'الإيراد المتكرّر وخط الأنابيب', 'شرائح العملاء', 'أفضل العملاء', 'صرف بعملة الأساس', 'التعمّق في كل شركة', 'لقطات ليلية', 'مفاتيح مشفّرة', 'حماية SSRF', 'رمز المُشغِّل', 'تطبيق ويب وإشعارات']
     }
   };
 

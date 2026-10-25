@@ -33,6 +33,7 @@ ALLOW = {
     'deutsch', 'español', 'italiano', 'nederlands', 'sheet', 'net', 'cia',
     'pia', 'sif', 'eosb', 'ksa', 'odoo', 'oracle', 'quickbooks',
     'quickbooks online', 'qbo', 'sap', 'cloud', 'consolidate', 'vpn', 'desk',
+    'retail', 'daftra', 'zatca', 'mrr', 'fx', 'ssrf', 'pwa', 'aes-256-gcm',
 }
 _STRIP = ' \t\r\n·↗→—–-|/•:.,;!?()[]{}"\'’‘“”%&+#'
 

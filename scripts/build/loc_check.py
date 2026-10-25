@@ -41,6 +41,8 @@ ALLOW = {
     # Integration / technology proper nouns kept English on every locale.
     'sap', 'sap business one', 'odoo', 'oracle', 'quickbooks', 'quickbooks online',
     'qbo', 'sso', 'scim', 'rest api v1', 'webhooks', 'sandbox', 'cloud',
+    # Consolidate app vocabulary kept English on every locale.
+    'retail', 'daftra', 'zatca', 'mrr', 'fx', 'ssrf', 'pwa', 'p&l', 'aes-256-gcm',
 }
 # Strip the trailing "↗" glyph, bullets, and surrounding punctuation for compare.
 _STRIP = ' \t\r\n·↗→—–-|/•:.,;!?()[]{}"\'’‘“”'

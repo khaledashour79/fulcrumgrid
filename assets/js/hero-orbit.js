@@ -15,7 +15,8 @@
   var APPS = [
     ['HR Suite', 'live', 'hr'], ['Command Center', 'live', 'cc'], ['Collection', 'live', 'col'],
     ['TMS', 'live', 'tms'], ['Assure', 'live', 'assure'], ['Close', 'live', 'close'],
-    ['Voice', 'soon', ''], ['Consolidate', 'soon', ''], ['CRM', 'soon', 'crm']
+    ['Consolidate', 'live', 'consolidate'],
+    ['Voice', 'soon', ''], ['CRM', 'soon', 'crm'], ['Retail', 'soon', '']
   ];
   // Tiles per ring — drives the angular spacing so each ring stays evenly spread
   // however many apps it carries.

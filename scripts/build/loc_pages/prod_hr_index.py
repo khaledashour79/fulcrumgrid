@@ -507,12 +507,12 @@ PAGE = {
                 "Aplicaciones a medida para cada operación.",
                 "App su misura per ogni operazione.",
                 "Doelgerichte apps voor elke operatie."),
-            "Three apps live today, each solving a real problem on its own — all on one grid.": _t(
-                "Trois applications sont déjà disponibles, chacune résolvant à elle seule un vrai problème — le tout sur une seule grille.",
-                "Drei Apps sind heute schon live, jede löst für sich ein echtes Problem — alle auf einem Grid.",
-                "Tres apps ya disponibles hoy, cada una resolviendo por sí sola un problema real — todo en una sola cuadrícula.",
-                "Tre app già disponibili oggi, ognuna risolve da sola un problema reale — tutto su un'unica griglia.",
-                "Vandaag zijn er drie apps live, elk lost op zichzelf een echt probleem op — allemaal op één grid."),
+            "Seven apps live today, each solving a real problem on its own — all on one grid.": _t(
+                "Sept applications sont déjà disponibles, chacune résolvant à elle seule un vrai problème — le tout sur une seule grille.",
+                "Sieben Apps sind heute schon live, jede löst für sich ein echtes Problem — alle auf einem Grid.",
+                "Siete apps ya disponibles hoy, cada una resolviendo por sí sola un problema real — todo en una sola cuadrícula.",
+                "Sette app già disponibili oggi, ognuna risolve da sola un problema reale — tutto su un'unica griglia.",
+                "Vandaag zijn er zeven apps live, elk lost op zichzelf een echt probleem op — allemaal op één grid."),
             "Each FulcrumGrid app solves a real problem on its own — and they all run on one grid, with the same clean experience. Start with one today and add the rest as you grow.": _t(
                 "Chaque application FulcrumGrid résout à elle seule un vrai problème — et elles fonctionnent toutes sur une seule grille, avec la même expérience épurée. Commencez par une aujourd'hui et ajoutez les autres à mesure que vous grandissez.",
                 "Jede FulcrumGrid-App löst für sich ein echtes Problem — und alle laufen auf einem Grid, mit demselben klaren Erlebnis. Starten Sie heute mit einer und fügen Sie die übrigen hinzu, wenn Sie wachsen.",
@@ -553,13 +553,32 @@ PAGE = {
             "Payroll &amp; time tracking": _t("Paie &amp; suivi du temps", "Gehaltsabrechnung &amp; Zeiterfassung", "Nóminas &amp; control horario", "Buste paga &amp; monitoraggio del tempo", "Loonadministratie &amp; tijdregistratie"),
             "Performance &amp; reviews": _t("Performance &amp; évaluations", "Leistung &amp; Beurteilungen", "Desempeño &amp; evaluaciones", "Performance &amp; valutazioni", "Prestaties &amp; beoordelingen"),
             "More on the grid": _t("Plus sur la grille", "Mehr im Grid", "Más en la cuadrícula", "Altro sulla griglia", "Meer op het grid"),
-            "Voice, CRM and Consolidate are coming soon — with Agents, Real Estate, Workshop, VPN and Desk on the roadmap. Built on the same grid, so they plug straight in.": _t(
-                "Voice, CRM et Consolidate arrivent bientôt — avec Agents, Immobilier, Atelier, VPN et Desk sur la feuille de route. Conçus sur la même grille, ils s'intègrent directement.",
-                "Voice, CRM und Consolidate kommen bald — mit Agenten, Immobilien, Werkstatt, VPN und Desk auf der Roadmap. Auf demselben Grid gebaut, fügen sie sich direkt ein.",
-                "Voice, CRM y Consolidate llegan pronto — con Agentes, Inmobiliaria, Taller, VPN y Desk en la hoja de ruta. Creados en la misma cuadrícula, se integran directamente.",
-                "Voice, CRM e Consolidate sono in arrivo — con Agenti, Immobiliare, Officina, VPN e Desk nella roadmap. Costruiti sulla stessa griglia, si integrano subito.",
-                "Voice, CRM en Consolidate komen binnenkort — met Agents, Vastgoed, Werkplaats, VPN en Desk op de roadmap. Gebouwd op hetzelfde grid, zodat ze direct aansluiten."),
-            "Voice, CRM &amp; Consolidate — coming soon": _t("Voice, CRM &amp; Consolidate — bientôt", "Voice, CRM &amp; Consolidate — demnächst", "Voice, CRM &amp; Consolidate — próximamente", "Voice, CRM &amp; Consolidate — in arrivo", "Voice, CRM &amp; Consolidate — binnenkort"),
+            "Every company you run on one dashboard — revenue, cash, receivables, VAT and P&amp;L, consolidated from your books. Connected to Daftra.": _t(
+                "Chaque société que vous gérez sur un seul tableau de bord — chiffre d'affaires, trésorerie, créances, TVA et P&amp;L, consolidés depuis vos comptes. Connecté à Daftra.",
+                "Jedes Unternehmen, das Sie führen, auf einem Dashboard — Umsatz, Liquidität, Forderungen, USt. und P&amp;L, konsolidiert aus Ihren Büchern. Mit Daftra verbunden.",
+                "Cada empresa que gestiona en un solo panel — ingresos, caja, cuentas por cobrar, IVA y P&amp;L, consolidados desde sus libros. Conectado a Daftra.",
+                "Ogni azienda che gestisci in un'unica dashboard — ricavi, liquidità, crediti, IVA e P&amp;L, consolidati dai tuoi libri. Collegato a Daftra.",
+                "Elk bedrijf dat u runt op één dashboard — omzet, kas, vorderingen, btw en P&amp;L, geconsolideerd uit uw boeken. Verbonden met Daftra."),
+            "Consolidated KPIs across companies": _t(
+                "KPI consolidés entre sociétés", "Konsolidierte KPIs über Unternehmen", "KPI consolidados entre empresas",
+                "KPI consolidati tra aziende", "Geconsolideerde KPI's over bedrijven"),
+            "AR ageing, cash &amp; P&amp;L": _t(
+                "Balance âgée, trésorerie &amp; P&amp;L", "Fälligkeiten, Liquidität &amp; P&amp;L", "Antigüedad, caja &amp; P&amp;L",
+                "Scadenzario, liquidità &amp; P&amp;L", "Ouderdom, kas &amp; P&amp;L"),
+            "VAT &amp; ZATCA status · base-currency roll-up": _t(
+                "TVA &amp; statut ZATCA · consolidation en devise de base",
+                "USt. &amp; ZATCA-Status · Konsolidierung in Basiswährung",
+                "IVA &amp; estado ZATCA · consolidación en divisa base",
+                "IVA &amp; stato ZATCA · consolidamento in valuta base",
+                "Btw &amp; ZATCA-status · consolidatie in basisvaluta"),
+            "Explore Consolidate →": _t("Découvrir Consolidate →", "Consolidate entdecken →", "Explorar Consolidate →", "Esplora Consolidate →", "Ontdek Consolidate →"),
+            "Voice, CRM and Retail are coming soon — with Agents, Real Estate, Workshop, VPN and Desk on the roadmap. Built on the same grid, so they plug straight in.": _t(
+                "Voice, CRM et Retail arrivent bientôt — avec Agents, Immobilier, Atelier, VPN et Desk sur la feuille de route. Conçus sur la même grille, ils s'intègrent directement.",
+                "Voice, CRM und Retail kommen bald — mit Agenten, Immobilien, Werkstatt, VPN und Desk auf der Roadmap. Auf demselben Grid gebaut, fügen sie sich direkt ein.",
+                "Voice, CRM y Retail llegan pronto — con Agentes, Inmobiliaria, Taller, VPN y Desk en la hoja de ruta. Creados en la misma cuadrícula, se integran directamente.",
+                "Voice, CRM e Retail sono in arrivo — con Agenti, Immobiliare, Officina, VPN e Desk nella roadmap. Costruiti sulla stessa griglia, si integrano subito.",
+                "Voice, CRM en Retail komen binnenkort — met Agents, Vastgoed, Werkplaats, VPN en Desk op de roadmap. Gebouwd op hetzelfde grid, zodat ze direct aansluiten."),
+            "Voice, CRM &amp; Retail — coming soon": _t("Voice, CRM &amp; Retail — bientôt", "Voice, CRM &amp; Retail — demnächst", "Voice, CRM &amp; Retail — próximamente", "Voice, CRM &amp; Retail — in arrivo", "Voice, CRM &amp; Retail — binnenkort"),
             # ---- New live apps: TMS, Assure, Close ----
             "TMS": _t("TMS", "TMS", "TMS", "TMS", "TMS"),
             "Assure": _t("Assure", "Assure", "Assure", "Assure", "Assure"),
@@ -664,12 +683,12 @@ PAGE = {
         'src': 'products/coming-soon/index.html',
         't': {
             # ---- Meta ----
-            "More FulcrumGrid apps in active development — Voice, CRM and Consolidate are coming soon, with Agents, Real Estate, Workshop, VPN and Desk on the roadmap — built on the same grid. Get early access.": _t(
-                "D'autres applications FulcrumGrid en développement actif — Voice, CRM et Consolidate bientôt, avec Agents, Immobilier, Atelier, VPN et Desk sur la feuille de route — conçues sur la même grille. Obtenez un accès anticipé.",
-                "Weitere FulcrumGrid-Apps in aktiver Entwicklung — Voice, CRM und Consolidate demnächst, mit Agenten, Immobilien, Werkstatt, VPN und Desk auf der Roadmap — auf demselben Grid gebaut. Sichern Sie sich frühen Zugang.",
-                "Más aplicaciones de FulcrumGrid en desarrollo activo — Voice, CRM y Consolidate próximamente, con Agentes, Inmobiliaria, Taller, VPN y Desk en la hoja de ruta — creadas en la misma cuadrícula. Consiga acceso anticipado.",
-                "Altre app FulcrumGrid in fase di sviluppo attivo — Voice, CRM e Consolidate in arrivo, con Agenti, Immobiliare, Officina, VPN e Desk nella roadmap — costruite sulla stessa griglia. Ottieni l'accesso anticipato.",
-                "Meer FulcrumGrid-apps in actieve ontwikkeling — Voice, CRM en Consolidate binnenkort, met Agents, Vastgoed, Werkplaats, VPN en Desk op de roadmap — gebouwd op hetzelfde grid. Krijg vroege toegang."),
+            "More FulcrumGrid apps in active development — Voice, CRM and Retail are coming soon, with Agents, Real Estate, Workshop, VPN and Desk on the roadmap — built on the same grid. Get early access.": _t(
+                "D'autres applications FulcrumGrid en développement actif — Voice, CRM et Retail bientôt, avec Agents, Immobilier, Atelier, VPN et Desk sur la feuille de route — conçues sur la même grille. Obtenez un accès anticipé.",
+                "Weitere FulcrumGrid-Apps in aktiver Entwicklung — Voice, CRM und Retail demnächst, mit Agenten, Immobilien, Werkstatt, VPN und Desk auf der Roadmap — auf demselben Grid gebaut. Sichern Sie sich frühen Zugang.",
+                "Más aplicaciones de FulcrumGrid en desarrollo activo — Voice, CRM y Retail próximamente, con Agentes, Inmobiliaria, Taller, VPN y Desk en la hoja de ruta — creadas en la misma cuadrícula. Consiga acceso anticipado.",
+                "Altre app FulcrumGrid in fase di sviluppo attivo — Voice, CRM e Retail in arrivo, con Agenti, Immobiliare, Officina, VPN e Desk nella roadmap — costruite sulla stessa griglia. Ottieni l'accesso anticipato.",
+                "Meer FulcrumGrid-apps in actieve ontwikkeling — Voice, CRM en Retail binnenkort, met Agents, Vastgoed, Werkplaats, VPN en Desk op de roadmap — gebouwd op hetzelfde grid. Krijg vroege toegang."),
             "Voice — coming to the grid.": _t(
                 "Voice — bientôt sur la grille.",
                 "Voice — bald im Grid.",
@@ -714,12 +733,12 @@ PAGE = {
                 "Telefonía empresarial — llamadas, registro de llamadas e IVR vinculados a sus registros, para que cada conversación quede archivada.",
                 "Telefonia aziendale — chiamate, registrazione delle chiamate e IVR collegati ai tuoi archivi, così ogni conversazione resta agli atti.",
                 "Zakelijke telefonie — gesprekken, gesprekslogboeken en IVR gekoppeld aan uw gegevens, zodat elk gesprek bewaard blijft."),
-            "Consolidated commercial and financial figures across every company you run — one dashboard of KPIs, trends and ageing over all your connected sources.": _t(
-                "Des chiffres commerciaux et financiers consolidés pour chaque société que vous gérez — un seul tableau de bord de KPI, de tendances et de balances âgées sur toutes vos sources connectées.",
-                "Konsolidierte kaufmännische und finanzielle Kennzahlen über jedes Unternehmen, das Sie führen — ein Dashboard mit KPIs, Trends und Altersstrukturen über alle verbundenen Quellen.",
-                "Cifras comerciales y financieras consolidadas de cada empresa que gestiona — un único panel de KPI, tendencias y antigüedad de saldos sobre todas sus fuentes conectadas.",
-                "Dati commerciali e finanziari consolidati per ogni azienda che gestisci — un'unica dashboard di KPI, trend e scadenziari su tutte le tue fonti collegate.",
-                "Geconsolideerde commerciële en financiële cijfers over elk bedrijf dat u runt — één dashboard met KPI's, trends en ouderdomsanalyses over al uw verbonden bronnen."),
+            "Point of sale, inventory and multi-store operations on the grid — tied to the same books as the rest of your business.": _t(
+                "Point de vente, stock et opérations multi-magasins sur la grille — reliés aux mêmes comptes que le reste de votre entreprise.",
+                "Kasse, Lagerbestand und Multi-Store-Betrieb im Grid — verknüpft mit denselben Büchern wie der Rest Ihres Unternehmens.",
+                "Punto de venta, inventario y operaciones multitienda en la cuadrícula — vinculados a los mismos libros que el resto de su negocio.",
+                "Punto vendita, inventario e operazioni multi-negozio sulla griglia — collegati agli stessi libri del resto della tua azienda.",
+                "Kassa, voorraad en multi-store-operaties op het grid — gekoppeld aan dezelfde boeken als de rest van uw bedrijf."),
             "Secure private-network access to the grid — one managed gateway for your team and sites.": _t(
                 "Un accès réseau privé sécurisé à la grille — une passerelle gérée unique pour vos équipes et vos sites.",
                 "Sicherer Private-Network-Zugang zum Grid — ein verwaltetes Gateway für Ihre Teams und Standorte.",
