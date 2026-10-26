@@ -14,11 +14,20 @@ secure, auditable grid, with cross-app data when you run several.
 **Live apps (6).**
 - **HR Suite** — people operations from hire to retire: employee records, onboarding,
   payroll (with GOSI, end-of-service/EOSB and Nitaqat/Saudization tracking for Saudi),
-  time off, attendance, performance, recruitment (ATS), learning, credentials & renewals
-  (Iqama/licence expiry), recognition, loans & advances, and 40+ modules on one grid
-  (Core HR always on). Includes AI Copilot & human-approved agents, a partner REST API,
-  and OIDC SSO / SCIM. **From SAR 5 / seat / month** (Starter; Growth SAR 10, Enterprise
-  SAR 18, per seat/mo).
+  time off, attendance, performance (incl. PIPs), recruitment (ATS) with one-way video
+  interviews and live interview scheduling (Google Meet/Teams/Zoom), learning, credentials
+  & renewals (Iqama/licence expiry), recognition, loans & advances, total-rewards
+  statements, medical-insurance membership administration, confidential (optionally
+  anonymous) grievances, and offboarding with exit interviews, clearance and access cutoff.
+  For Saudi/GCC it also runs in-house government workflows — **Iqama renewal cycles, exit &
+  re-entry / final-exit visas, and overseas hiring via block-visa pools and offshore
+  recruitment agencies** (fee pricing, approvals, credential write-back; government fines
+  imported by CSV — it prepares and records, it never files with the government on your
+  behalf), plus GCC home-leave air tickets. Data-subject rights (DSAR access/erasure with a
+  retention classification, for PDPL/GDPR). Posts draft journal vouchers to SAP Business One
+  or Daftara and GL entries to FulcrumGrid TMS. 50+ modules on one grid (Core HR always on),
+  AI Copilot & human-approved agents, a partner REST API, and OIDC SSO / SCIM.
+  **From SAR 5 / seat / month** (Starter; Growth SAR 10, Enterprise SAR 18, per seat/mo).
 - **Command Center** — a real-time operations dashboard / control room: live KPIs and
   custom dashboards, alerts and thresholds, automated workflows, reporting and exports,
   OKRs/projects/approvals, and ERP integrations. **From SAR 490 / month** (Pilot, flat per
