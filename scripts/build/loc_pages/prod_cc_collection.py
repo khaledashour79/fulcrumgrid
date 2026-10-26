@@ -368,12 +368,12 @@ _COL = {
     '<span>Starter</span>': _t('<span>Starter</span>', '<span>Starter</span>', '<span>Starter</span>', '<span>Starter</span>', '<span>Starter</span>'),
     '<b>Free</b>': _t('<b>Gratuit</b>', '<b>Kostenlos</b>', '<b>Gratis</b>', '<b>Gratis</b>', '<b>Gratis</b>'),
     'On the Starter plan': _t('Sur le forfait Starter', 'Im Starter-Tarif', 'En el plan Starter', 'Nel piano Starter', 'Op het Starter-abonnement'),
-    'Starter is free — paid plans from SAR 370 / month.': _t(
-        'Starter est gratuit — offres payantes à partir de SAR 370 / mois.',
-        'Starter ist kostenlos — kostenpflichtige Tarife ab SAR 370 / Monat.',
-        'Starter es gratis — planes de pago desde SAR 370 / mes.',
-        'Starter è gratis — piani a pagamento da SAR 370 / mese.',
-        'Starter is gratis — betaalde abonnementen vanaf SAR 370 / maand.'),
+    'Starter is free — paid plans from SAR 450 / month.': _t(
+        'Starter est gratuit — offres payantes à partir de SAR 450 / mois.',
+        'Starter ist kostenlos — kostenpflichtige Tarife ab SAR 450 / Monat.',
+        'Starter es gratis — planes de pago desde SAR 450 / mes.',
+        'Starter è gratis — piani a pagamento da SAR 450 / mese.',
+        'Starter is gratis — betaalde abonnementen vanaf SAR 450 / maand.'),
     'Invoice &amp; ledger tracking': _t('Suivi des factures &amp; du grand livre', 'Rechnungs- &amp; Buchungsverfolgung', 'Seguimiento de facturas &amp; libro mayor', 'Monitoraggio fatture &amp; registro contabile', 'Factuur- &amp; grootboekopvolging'),
     'Automated reminders &amp; plans': _t('Relances &amp; plans automatisés', 'Automatisierte Erinnerungen &amp; Pläne', 'Recordatorios &amp; planes automatizados', 'Solleciti &amp; piani automatizzati', 'Geautomatiseerde herinneringen &amp; plannen'),
     'Payment reconciliation': _t('Rapprochement des paiements', 'Zahlungsabgleich', 'Conciliación de pagos', 'Riconciliazione dei pagamenti', 'Betalingsreconciliatie'),

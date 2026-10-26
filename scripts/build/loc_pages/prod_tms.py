@@ -52,18 +52,18 @@ PAGE = {
                 "FulcrumGrid TMS è una suite di operazioni logistiche e finanza per le aziende del Golfo (GCC) — spedizionieri, operatori di trasporto e flotta, piazzali e depositi container, corrieri e magazzini 3PL. Arabo e inglese, multivaluta, multi-tenant.",
                 "FulcrumGrid TMS is een suite voor logistieke operaties en finance voor bedrijven in de GCC — expediteurs, transport- en wagenparkexploitanten, containeryards en -depots, koeriers en 3PL-magazijnen. Arabisch en Engels, multivaluta, multi-tenant."),
             # ---- 01 · Pricing ----
-            "Pricing — talk to sales.": _t(
-                "Tarifs — parlez à l'équipe commerciale.",
-                "Preise — sprechen Sie mit dem Vertrieb.",
-                "Precios — hable con ventas.",
-                "Prezzi — parla con il commerciale.",
-                "Prijzen — praat met sales."),
-            "A core Platform + Finance base, with operational modules added on as you need them.": _t(
-                "Un socle Platform + Finance au cœur, avec des modules opérationnels ajoutés à mesure que vous en avez besoin.",
-                "Ein Kern aus Platform + Finance, mit operativen Modulen, die Sie nach Bedarf hinzufügen.",
-                "Una base central de Platform + Finance, con módulos operativos añadidos a medida que los necesita.",
-                "Una base centrale Platform + Finance, con moduli operativi aggiunti man mano che ti servono.",
-                "Een kern van Platform + Finance, met operationele modules die u toevoegt wanneer u ze nodig hebt."),
+            "Pricing — from SAR 600 / user / mo.": _t(
+                "Tarifs — à partir de SAR 600 / utilisateur / mois.",
+                "Preise — ab SAR 600 / Nutzer / Monat.",
+                "Precios — desde SAR 600 / usuario / mes.",
+                "Prezzi — da SAR 600 / utente / mese.",
+                "Prijzen — vanaf SAR 600 / gebruiker / mnd."),
+            "A core Platform + Finance base from SAR 600 per user / month, with operational modules added on as you need them, plus a one-time implementation — talk to sales for a full quote.": _t(
+                "Un socle Platform + Finance au cœur à partir de SAR 600 par utilisateur / mois, avec des modules opérationnels ajoutés à mesure que vous en avez besoin, plus une mise en œuvre unique — parlez à l'équipe commerciale pour un devis complet.",
+                "Ein Kern aus Platform + Finance ab SAR 600 pro Nutzer / Monat, mit operativen Modulen, die Sie nach Bedarf hinzufügen, plus einer einmaligen Einführung — für ein vollständiges Angebot sprechen Sie mit dem Vertrieb.",
+                "Una base central de Platform + Finance desde SAR 600 por usuario / mes, con módulos operativos añadidos a medida que los necesita, más una implantación única — hable con ventas para un presupuesto completo.",
+                "Una base centrale Platform + Finance da SAR 600 per utente / mese, con moduli operativi aggiunti man mano che ti servono, più un'implementazione una tantum — parla con il commerciale per un preventivo completo.",
+                "Een kern van Platform + Finance vanaf SAR 600 per gebruiker / maand, met operationele modules die u toevoegt wanneer u ze nodig hebt, plus een eenmalige implementatie — praat met sales voor een volledige offerte."),
             "Platform + Finance base": _t(
                 "Socle Platform + Finance",
                 "Platform + Finance-Basis",

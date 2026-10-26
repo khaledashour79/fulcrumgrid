@@ -15,19 +15,19 @@
     col: {
       name: 'Collection', tag: 'Receivables',
       line: 'Receivables and payments, handled. Track invoices, automate reminders, and get paid faster without the chase.',
-      price: 'Starter free · from SAR 370 / mo', href: '/products/collection/',
+      price: 'Starter free · from SAR 450 / mo', href: '/products/collection/',
       modules: ['Debtors & accounts', 'Invoices & payments', 'Tasks & promises', 'Disputes', 'Debtor portal', 'Field visits', 'Strategies & templates', 'Custom roles (RBAC)', 'Approvals / SoD', 'Advanced analytics', 'AI add-on', 'ERP connectors', 'Cheque register', 'Legal & settlements', 'SSO (OIDC)', 'REST API & webhooks', 'Agency mode', 'Trust accounting', 'Creditor portal']
     },
     hr: {
       name: 'HR Suite', tag: 'People',
       line: 'People operations from hire to retire. Manage employees, payroll, time off, and everything in between.',
-      price: 'From SAR 5 / seat / mo', href: '/products/hr-suite/',
+      price: 'From SAR 12 / seat / mo', href: '/products/hr-suite/',
       modules: ['Core HR', 'Time off', 'Expenses', 'HR letters', 'Onboarding', 'Documents & e-sign', 'Time & attendance', 'Overtime', 'Employment contracts', 'Assets', 'HR helpdesk', 'Benefits', 'Performance', 'Payroll', 'Statutory & local compliance', 'Recruitment (ATS)', 'Candidate portal', 'Learning (LMS)', 'Learning providers', 'Engagement surveys', 'Approval workflows', 'Policy Library', 'Business travel', 'Report builder', 'Mobile app', 'Document requests', 'Company news', 'Video interviews', 'Sales commissions', 'AI Copilot & Agents', 'SSO & SCIM', 'SAP Business One', 'End-of-service (EOSB)', 'GOSI', 'Saudization (Nitaqat)', 'Loans & advances', 'Credentials & expiry', 'Probation', 'Disciplinary', 'Recognition', 'Compensation review', 'Succession', 'Positions', 'HR analytics', 'Offboarding & clearance', 'Grievances', 'Performance plans (PIP)', 'Air tickets', 'Iqama renewal', 'Exit & re-entry visas', 'Overseas hiring', 'Total rewards', 'Medical insurance', 'Data rights (DSAR)', 'Interview scheduling', 'Daftara', 'Partner API', 'Custom domain', '+ more modules']
     },
     tms: {
       name: 'TMS', tag: 'Logistics',
       line: 'Logistics operations and finance on one grid. Forwarding, transport, yard, parcel and warehousing, with the books built in.',
-      price: 'Talk to sales', href: '/products/tms/',
+      price: 'From SAR 600 / user / mo', href: '/products/tms/',
       modules: ['Finance (GL · AR · AP)', 'VAT engine', 'Freight forwarding', 'Customs clearance', 'Transport & fleet', 'Container yard', 'Parcel & express', 'Warehousing / 3PL', 'Purchasing & inventory', 'Maintenance & workshop', 'ERP connectors', 'SSO & REST API']
     },
     assure: {
@@ -45,7 +45,7 @@
     consolidate: {
       name: 'Consolidate', tag: 'Finance',
       line: 'Consolidated commercial and financial KPIs across every company you run, read from your books into one operator dashboard.',
-      price: 'Talk to sales', href: '/products/consolidate/',
+      price: 'From SAR 149 / mo', href: '/products/consolidate/',
       modules: ['Daftra source', 'Consolidated KPIs', 'AR ageing', 'P&L snapshot', 'VAT & ZATCA status', 'MRR & pipeline', 'Client cohorts', 'Top clients', 'Base-currency FX', 'Per-company drill-in', 'Nightly snapshots', 'Encrypted keys', 'SSRF-hardened egress', 'Operator token', 'PWA & push']
     }
   };
@@ -60,19 +60,19 @@
     col: {
       name: 'منصة تحصيل الديون', tag: 'الذمم',
       line: 'الذمم والمدفوعات، مُدارة. تتبّع الفواتير وأتمت التذكيرات واحصل على مستحقّاتك أسرع دون مطاردة.',
-      price: 'الباقة الأساسية مجانية · من 370 ريال / شهريًا', href: '/ar/products/collection/',
+      price: 'الباقة الأساسية مجانية · من 450 ريال / شهريًا', href: '/ar/products/collection/',
       modules: ['المدينون والحسابات', 'الفواتير والمدفوعات', 'المهام والوعود', 'النزاعات', 'بوابة المدين', 'الزيارات الميدانية', 'الاستراتيجيات والقوالب', 'أدوار مخصّصة (RBAC)', 'الموافقات / فصل المهام (SoD)', 'تحليلات متقدّمة', 'إضافة الذكاء الاصطناعي', 'موصلات ERP', 'سجل الشيكات', 'الشؤون القانونية والتسويات', 'الدخول الموحّد (OIDC)', 'REST API و webhooks', 'وضع الوكالة', 'محاسبة الأمانات', 'بوابة الدائن']
     },
     hr: {
       name: 'منصة الموارد البشرية', tag: 'الأفراد',
       line: 'عمليات الأفراد من التعيين إلى التقاعد. أدِر الموظفين والرواتب والإجازات وكل ما بينهما.',
-      price: 'من 5 ريال / مقعد / شهريًا', href: '/ar/products/hr-suite/',
+      price: 'من 12 ريال / مقعد / شهريًا', href: '/ar/products/hr-suite/',
       modules: ['الموارد البشرية الأساسية', 'الإجازات', 'المصروفات', 'خطابات الموارد البشرية', 'التأهيل', 'المستندات والتوقيع الإلكتروني', 'الوقت والحضور', 'العمل الإضافي', 'عقود العمل', 'العُهد والأصول', 'مكتب خدمة الموارد البشرية', 'المزايا', 'الأداء', 'الرواتب', 'الامتثال النظامي والمحلي', 'التوظيف (ATS)', 'بوابة المتقدّمين', 'التعلّم (LMS)', 'مزوّدو التعلّم', 'استبيانات التفاعل', 'مسارات الموافقات', 'مكتبة السياسات', 'سفر الأعمال', 'منشئ التقارير', 'تطبيق الجوال', 'طلبات المستندات', 'أخبار الشركة', 'المقابلات المرئية', 'عمولات المبيعات', 'المساعد الذكي والوكلاء', 'SSO و SCIM', 'SAP Business One', 'نهاية الخدمة', 'التأمينات الاجتماعية (GOSI)', 'السعودة (نطاقات)', 'القروض والسلف', 'الوثائق وانتهاؤها', 'فترة التجربة', 'الإجراءات التأديبية', 'التقدير', 'مراجعة التعويضات', 'التعاقب الوظيفي', 'الوظائف والمِلاك', 'تحليلات الموارد البشرية', 'إنهاء الخدمة والإخلاء', 'التظلّمات', 'خطط تحسين الأداء', 'تذاكر الطيران', 'تجديد الإقامة', 'تأشيرات الخروج والعودة', 'الاستقدام من الخارج', 'إجمالي المكافآت', 'التأمين الطبي', 'حقوق البيانات (DSAR)', 'جدولة المقابلات', 'دفترة', 'واجهة الشركاء (API)', 'نطاق مخصّص', '+ المزيد من الوحدات']
     },
     tms: {
       name: 'منصة العمليات اللوجستية', tag: 'اللوجستيات',
       line: 'عمليات لوجستية ومالية على شبكة واحدة. الشحن والنقل والساحة والطرود والتخزين، مع الحسابات مدمجة.',
-      price: 'تواصل مع المبيعات', href: '/ar/products/tms/',
+      price: 'من 600 ريال / مستخدم / شهريًا', href: '/ar/products/tms/',
       modules: ['المالية (دفتر الأستاذ · المدينون · الدائنون)', 'محرك ضريبة القيمة المضافة', 'الشحن والتخليص', 'التخليص الجمركي', 'النقل والأسطول', 'ساحة الحاويات', 'الطرود والتوصيل السريع', 'التخزين / الطرف الثالث', 'المشتريات والمخزون', 'الصيانة والورشة', 'موصلات ERP', 'الدخول الموحّد و REST API']
     },
     assure: {
@@ -90,7 +90,7 @@
     consolidate: {
       name: 'منصة التوحيد المالي', tag: 'المالية',
       line: 'مؤشرات تجارية ومالية موحَّدة عبر كل شركة تُديرها، مقروءة من دفاترك إلى لوحة مُشغِّل واحدة.',
-      price: 'تواصل مع المبيعات', href: '/ar/products/consolidate/',
+      price: 'من 149 ريال / شهريًا', href: '/ar/products/consolidate/',
       modules: ['مصدر دفترة', 'مؤشرات موحَّدة', 'أعمار الذمم', 'لمحة الأرباح والخسائر', 'ضريبة القيمة المضافة وحالة ZATCA', 'الإيراد المتكرّر وخط الأنابيب', 'شرائح العملاء', 'أفضل العملاء', 'صرف بعملة الأساس', 'التعمّق في كل شركة', 'لقطات ليلية', 'مفاتيح مشفّرة', 'حماية SSRF', 'رمز المُشغِّل', 'تطبيق ويب وإشعارات']
     }
   };

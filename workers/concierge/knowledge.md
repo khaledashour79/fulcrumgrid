@@ -27,20 +27,20 @@ secure, auditable grid, with cross-app data when you run several.
   retention classification, for PDPL/GDPR). Posts draft journal vouchers to SAP Business One
   or Daftara and GL entries to FulcrumGrid TMS. 50+ modules on one grid (Core HR always on),
   AI Copilot & human-approved agents, a partner REST API, and OIDC SSO / SCIM.
-  **From SAR 5 / seat / month** (Starter; Growth SAR 10, Enterprise SAR 18, per seat/mo).
+  **From SAR 12 / seat / month** (Starter; Growth SAR 24, Enterprise SAR 38, per seat/mo).
 - **Command Center** — a real-time operations dashboard / control room: live KPIs and
   custom dashboards, alerts and thresholds, automated workflows, reporting and exports,
   OKRs/projects/approvals, and ERP integrations. **From SAR 490 / month** (Pilot, flat per
   organization; Growth SAR 1,900/mo, Enterprise custom).
 - **Collection** — receivables and payments, handled: invoice and ledger tracking,
   automated reminders and payment plans, reconciliation, cheque register, ERP connectors,
-  aging and risk reports. **Starter is free**, then **from SAR 370 / month**
-  (Professional; Business SAR 1,120/mo, Enterprise/Agency custom).
+  aging and risk reports. **Starter is free**, then **from SAR 450 / month**
+  (Professional; Business SAR 1,500/mo, Enterprise/Agency custom).
 - **TMS** — a logistics-operations and finance suite for GCC SMEs: freight forwarding,
   customs clearance, transport & fleet, container yard/depot, parcel & express,
   warehousing/3PL, purchasing & inventory, maintenance & workshop, with a built-in
   double-entry general ledger (AR, AP, bank reconciliation, VAT engine). ERP connectors,
-  Arabic + English, multi-currency. **Pricing is custom — talk to sales.**
+  Arabic + English, multi-currency. **From SAR 600 / user / month** plus implementation; otherwise quote — talk to sales.
 - **Assure** — a governance, risk & compliance (GRC) platform built for Saudi regulation:
   NCA ECC-2, PDPL, CMA and Companies Law obligations mapped to controls with a multi-entity
   scope gate, a maker-checker evidence workflow, immutable evidence vault, risk register,
@@ -56,7 +56,7 @@ secure, auditable grid, with cross-app data when you run several.
   pipeline and client cohorts, read from your books as nightly snapshots (read-only, never
   writes back). Connected to **Daftra** today; SAP Business One, Odoo and Oracle are on the
   way behind the same connector. Multi-currency with base-currency roll-up; encrypted keys,
-  hardened read-only access. **Pricing is custom — talk to sales.**
+  hardened read-only access. **Published per-company plans from SAR 149 / month** (SAR 149 / 549 / 1,299 by company count; Enterprise custom).
 
 **Bundle.** Running several apps? The **whole-grid** plan covers every app at **$29 /
 user / month** (unlimited users, cross-app data, priority support); **Enterprise** is

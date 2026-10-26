@@ -50,27 +50,38 @@ PAGE = {
                 "Consolidate haalt de commerciële en financiële cijfers uit uw boekhoudsysteem en brengt ze samen in één operatordashboard — omzet, kas, vorderingen, btw en P&amp;L voor elk bedrijf dat u runt, naast elkaar en geconsolideerd. Vandaag verbonden met Daftra, met meer bronnen op komst achter dezelfde koppeling."),
             # ---- 01 · Pricing ----
             "01 · Pricing": _t("01 · Tarifs", "01 · Preise", "01 · Precios", "01 · Prezzi", "01 · Prijzen"),
-            "Pricing — talk to sales.": _t(
-                "Tarifs — parlez-en aux ventes.",
-                "Preise — sprechen Sie mit dem Vertrieb.",
-                "Precios — hable con ventas.",
-                "Prezzi — parla con le vendite.",
-                "Prijzen — praat met sales."),
-            "Consolidate has no public price. We scope it to the companies you run and the sources you connect, then quote it.": _t(
-                "Consolidate n'a pas de prix public. Nous en définissons le périmètre selon les sociétés que vous gérez et les sources que vous connectez, puis nous établissons un devis.",
-                "Consolidate hat keinen öffentlichen Preis. Wir schneiden ihn auf die Unternehmen, die Sie führen, und die Quellen, die Sie verbinden, zu und erstellen dann ein Angebot.",
-                "Consolidate no tiene precio público. Definimos su alcance según las empresas que gestiona y las fuentes que conecta, y luego lo presupuestamos.",
-                "Consolidate non ha un prezzo pubblico. Ne definiamo l'ambito in base alle aziende che gestisci e alle fonti che colleghi, poi lo preventiviamo.",
-                "Consolidate heeft geen openbare prijs. We bepalen de scope op basis van de bedrijven die u runt en de bronnen die u koppelt en brengen dan een offerte uit."),
-            "Priced per deployment": _t(
-                "Tarifé par déploiement", "Preis pro Bereitstellung", "Precio por implantación",
-                "Prezzo per implementazione", "Prijs per implementatie"),
-            "No published price yet. Tell us how many companies you run and we'll put a number to it.": _t(
-                "Pas encore de prix publié. Dites-nous combien de sociétés vous gérez et nous y mettrons un chiffre.",
-                "Noch kein veröffentlichter Preis. Sagen Sie uns, wie viele Unternehmen Sie führen, und wir nennen eine Zahl.",
-                "Aún no hay precio publicado. Díganos cuántas empresas gestiona y le pondremos una cifra.",
-                "Nessun prezzo pubblicato ancora. Dicci quante aziende gestisci e gli daremo un numero.",
-                "Nog geen gepubliceerde prijs. Vertel ons hoeveel bedrijven u runt en we zetten er een bedrag op."),
+            "Pricing — per company.": _t(
+                "Tarifs — par société.", "Preise — pro Unternehmen.", "Precios — por empresa.",
+                "Prezzi — per azienda.", "Prijzen — per bedrijf."),
+            "Priced per company, with unlimited users — connect your companies and pay for the number you run. Annual billing saves 20%.": _t(
+                "Tarifé par société, avec utilisateurs illimités — connectez vos sociétés et payez pour le nombre que vous gérez. La facturation annuelle fait économiser 20 %.",
+                "Pro Unternehmen berechnet, mit unbegrenzten Nutzern — verbinden Sie Ihre Unternehmen und zahlen Sie für die Anzahl, die Sie führen. Jährliche Abrechnung spart 20 %.",
+                "Precio por empresa, con usuarios ilimitados — conecte sus empresas y pague por el número que gestiona. La facturación anual ahorra un 20 %.",
+                "Prezzo per azienda, con utenti illimitati — collega le tue aziende e paghi per il numero che gestisci. La fatturazione annuale fa risparmiare il 20%.",
+                "Prijs per bedrijf, met onbeperkte gebruikers — koppel uw bedrijven en betaal voor het aantal dat u runt. Jaarlijkse facturering bespaart 20%."),
+            "Per company / month": _t(
+                "Par société / mois", "Pro Unternehmen / Monat", "Por empresa / mes",
+                "Per azienda / mese", "Per bedrijf / maand"),
+            "Unlimited users · 14-day free trial": _t(
+                "Utilisateurs illimités · essai gratuit de 14 jours", "Unbegrenzte Nutzer · 14 Tage kostenlos testen",
+                "Usuarios ilimitados · prueba gratuita de 14 días", "Utenti illimitati · prova gratuita di 14 giorni",
+                "Onbeperkte gebruikers · 14 dagen gratis proberen"),
+            "Starter · up to 3 companies": _t(
+                "Starter · jusqu'à 3 sociétés", "Starter · bis zu 3 Unternehmen", "Starter · hasta 3 empresas",
+                "Starter · fino a 3 aziende", "Starter · tot 3 bedrijven"),
+            "Growth · up to 15": _t(
+                "Growth · jusqu'à 15", "Growth · bis zu 15", "Growth · hasta 15", "Growth · fino a 15", "Growth · tot 15"),
+            "Scale · up to 50": _t(
+                "Scale · jusqu'à 50", "Scale · bis zu 50", "Scale · hasta 50", "Scale · fino a 50", "Scale · tot 50"),
+            "Enterprise · 50+": _t(
+                "Enterprise · 50+", "Enterprise · 50+", "Enterprise · 50+", "Enterprise · 50+", "Enterprise · 50+"),
+            "Connected to Daftra today; more sources on the way.": _t(
+                "Connecté à Daftra aujourd'hui ; d'autres sources arrivent.",
+                "Heute mit Daftra verbunden; weitere Quellen folgen.",
+                "Conectado a Daftra hoy; más fuentes en camino.",
+                "Collegato a Daftra oggi; altre fonti in arrivo.",
+                "Vandaag verbonden met Daftra; meer bronnen op komst."),
+            "<b>Custom</b>": _t("<b>Sur mesure</b>", "<b>Individuell</b>", "<b>A medida</b>", "<b>Su misura</b>", "<b>Op maat</b>"),
             "What a demo covers": _t(
                 "Ce que couvre une démo", "Was eine Demo abdeckt", "Qué cubre una demo",
                 "Cosa copre una demo", "Wat een demo behandelt"),
@@ -98,9 +109,6 @@ PAGE = {
             "Talk to sales ↗": _t(
                 "Parler aux ventes ↗", "Mit dem Vertrieb sprechen ↗", "Hablar con ventas ↗",
                 "Parla con le vendite ↗", "Praat met sales ↗"),
-            "Talk to sales": _t(
-                "Parler aux ventes", "Mit dem Vertrieb sprechen", "Hablar con ventas",
-                "Parla con le vendite", "Praat met sales"),
             # ---- 02 · Capabilities ----
             "02 · Capabilities": _t("02 · Capacités", "02 · Funktionen", "02 · Capacidades", "02 · Funzionalità", "02 · Mogelijkheden"),
             "The whole group, read from the books.": _t(

@@ -24,10 +24,10 @@ APPS = {
            plans='المبتدئة · الاحترافية · الأعمال · المؤسسات / الوكالات')),
  'hr-suite': dict(accent='#e5537f',
    en=dict(eyebrow='HR SUITE', app='HR Suite',
-           price='From SAR 5', per='/ seat / month',
+           price='From SAR 12', per='/ seat / month',
            plans='Starter · Growth · Enterprise'),
    ar=dict(eyebrow='منظومة الموارد البشرية', app='الموارد البشرية',
-           price='من SAR 5', per='/ لكل مقعد شهريًا',
+           price='من SAR 12', per='/ لكل مقعد شهريًا',
            plans='المبتدئة · النمو · المؤسسات')),
 }
 
