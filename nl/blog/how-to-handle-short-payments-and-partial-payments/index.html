@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Hoe ga je om met onderbetalingen en gedeeltelijke betalingen? — FulcrumGrid</title>
+  <meta name="description" content="Klanten betalen vaak minder dan het factuurbedrag. Leer onderbetaling en deelbetaling te onderscheiden, de betaling juist te verwerken en het restant te innen." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Hoe ga je om met onderbetalingen en gedeeltelijke betalingen?" />
+  <meta property="og:description" content="Klanten betalen vaak minder dan het factuurbedrag. Leer onderbetaling en deelbetaling te onderscheiden, de betaling juist te verwerken en het restant te innen." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-10-26" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hoe ga je om met onderbetalingen en gedeeltelijke betalingen?" />
+  <meta name="twitter:description" content="Klanten betalen vaak minder dan het factuurbedrag. Leer onderbetaling en deelbetaling te onderscheiden, de betaling juist te verwerken en het restant te innen." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-handle-short-payments-and-partial-payments/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hoe ga je om met onderbetalingen en gedeeltelijke betalingen?",
+    "description": "Klanten betalen vaak minder dan het factuurbedrag. Leer onderbetaling en deelbetaling te onderscheiden, de betaling juist te verwerken en het restant te innen.",
+    "datePublished": "2026-10-26",
+    "dateModified": "2026-10-26",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/how-to-handle-short-payments-and-partial-payments/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Onder- en deelbetalingen",
+        "item": "https://fulcrumgrid.com/nl/blog/how-to-handle-short-payments-and-partial-payments/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is een onderbetaling op een factuur?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Van een onderbetaling spreken we als een klant minder betaalt dan het factuurtotaal, meestal zonder voorafgaande afspraak. De oorzaak kan een geschil, een inhouding, bankkosten of een simpele fout zijn."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik een factuur na een deelbetaling als betaald markeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. Verwerk de betaling op de factuur, maar laat die open voor het restant. Als betaald markeren verbergt wat u nog tegoed hebt en verstoort uw ouderdomsanalyse en cashrapportages."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik een klein verschil afboeken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, als u een duidelijke tolerantiegrens vaststelt die een leidinggevende in finance goedkeurt en elke afboeking vastlegt. Beoordeel herhaalde verschillen bij dezelfde klant in plaats van alles af te boeken."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe achterhaal ik waarom een klant minder heeft betaald?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Begin met de betalingsomschrijving en vraag de klant dan neutraal waarvoor de betaling bedoeld is. Betrek sales of logistiek als er een geschil over de goederen of de dienst speelt."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / Onder- en deelbetalingen</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>Hoe ga je om met onderbetalingen en gedeeltelijke betalingen?</h1>
+        <p class="hero-intro">Klanten betalen vaak minder dan het factuurbedrag. Leer onderbetaling en deelbetaling te onderscheiden, de betaling juist te verwerken en het restant te innen.</p>
+        <p class="mono"><time datetime="2026-10-26">26 oktober 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Vroeg of laat komt er een betaling binnen die niet bij de factuur past. Het bedrag is lager dan gefactureerd, de betalingsomschrijving zwijgt en de factuur staat half open in uw administratie. Hoe u op dat moment reageert, bepaalt of het saldo binnen dagen wordt geïnd of maandenlang ongemerkt veroudert.</p><h2>Wat is het verschil tussen een onderbetaling en een deelbetaling?</h2><p>Een <strong>onderbetaling</strong> is een ongeplande te lage betaling: de klant betaalt minder dan het factuurtotaal, meestal zonder dat met u af te stemmen. Een <strong>deelbetaling</strong> is bewust: u hebt afgesproken in termijnen te betalen, of de klant heeft vooraf gemeld nu een deel te betalen en de rest later. Op de bankafschrift ziet het geld er hetzelfde uit, maar de juiste reactie verschilt. Een deelbetaling binnen een afgesproken plan moet worden bijgehouden. Een onderbetaling vraagt om uitleg.</p><h2>Waarom betalen klanten te weinig?</h2><p>De meeste onderbetalingen zijn niet vijandig bedoeld. Veelvoorkomende oorzaken:</p><ul><li><strong>Een geschil:</strong> beschadigde goederen, een verkeerde hoeveelheid of een dienst die de klant als onvolledig ervaart.</li><li><strong>Kortingen en inhoudingen:</strong> een betalingskorting na afloop van de termijn, vrachtkosten of een bonus waar de klant recht op denkt te hebben.</li><li><strong>Belastingen en kosten:</strong> bronbelasting, of bank- en overboekingskosten die van het verzonden bedrag zijn afgetrokken.</li><li><strong>Valuta en afronding:</strong> koersverschillen waardoor enkele centen of euro's openstaan.</li><li><strong>Gewoon een fout:</strong> een typefout, of de betaling van een oude versie van de factuur.</li><li><strong>Liquiditeit:</strong> de klant kan nu het volledige bedrag niet betalen en hoopt dat het niet opvalt.</li></ul><h2>Wat doet u als het geld binnenkomt?</h2><ul><li><strong>1. Verwerk de betaling meteen.</strong> Boek de betaling op de juiste factuur, ook al sluit die niet. Blijft ze als niet-toegewezen ontvangst liggen, dan lijkt de klant over het volledige bedrag achterstallig en volgen onhandige aanmaningen.</li><li><strong>2. Zoek de reden.</strong> Controleer eerst de betalingsomschrijving. Zwijgt die, neem dan snel contact op met een neutrale vraag: waarvoor is deze betaling bedoeld?</li><li><strong>3. Bepaal wat u met het verschil doet.</strong> Heeft de klant gelijk, maak dan een creditnota en sluit de factuur. Hebt u gelijk, vraag dan om de rest. Is het een echte deelbetaling, spreek dan de data van de resterende termijnen af.</li><li><strong>4. Leg het vast.</strong> Noteer op het account de reden, wie wat heeft afgesproken en de nieuwe vervaldatum. Een mondelinge belofte die niemand heeft opgeschreven is geen belofte.</li><li><strong>5. Volg het restant op met een datum.</strong> Het openstaande bedrag heeft een eigen herinneringsschema nodig en mag niet verdwijnen in de historie van de oorspronkelijke factuur.</li></ul><h3>Hoe reageert u op een betwist verschil?</h3><p>Scheid het geschil van het onbetwiste deel. Zegt een klant dat één regel niet klopt, dan is hij de rest nog steeds verschuldigd: vraag betaling van het onbetwiste bedrag en behandel de betwiste regel apart. Betrek sales of logistiek vroeg, want zij hebben vaak het bewijs dat de kwestie beslecht.</p><h2>Mag u een klein verschil afboeken?</h2><p>Soms wel. Een bankkostenverschil van twee euro najagen kan meer teamtijd kosten dan het bedrag zelf. Veel finance-teams stellen een tolerantiegrens in, bijvoorbeeld een vast bedrag of minder dan één procent van de factuur, waaronder het verschil automatisch wordt afgeboekt en vastgelegd. Houd twee waarborgen aan: de grens moet door een leidinggevende zijn goedgekeurd, en herhaalde verschillen bij dezelfde klant moeten worden beoordeeld, want veel kleine inhoudingen kunnen oplopen tot een echt verlies of wijzen op een prijs- of leveringsprobleem.</p><h2>Welke fouten maken het erger?</h2><ul><li><strong>Wachten tot einde maand.</strong> De klant is de context vergeten en het spoor is koud.</li><li><strong>De factuur als betaald markeren.</strong> Dat verbergt het openstaande saldo en verstoort uw rapportages.</li><li><strong>De klant beschuldigen.</strong> De meeste onderbetalingen zijn fouten of inhoudingen. Begin met een vraag, niet met een eis.</li><li><strong>Inhoudingen stilzwijgend accepteren.</strong> Wie nooit reageert, leert klanten dat een onterechte korting niets kost.</li><li><strong>De oorzaak niet bijhouden.</strong> Zonder redencode ziet u niet dat de meeste verschillen uit hetzelfde prijs- of verzendprobleem komen.</li></ul><h2>Hoe kan software helpen?</h2><p>Het werk is niet moeilijk, maar wel repetitief, en het valt makkelijk tussen betalingsverwerking en opvolging door. Spreadsheets verbinden die twee zelden. FulcrumGrid Collection koppelt elke betaling aan de bijbehorende factuur, houdt het restbedrag open en plant herinneringen voor wat nog openstaat. Ook kunt u vastleggen waarom een betaling te laag was, zodat u patronen ziet in plaats van elk geval opnieuw uit te zoeken. Het besluit om een verschil af te boeken neemt het niet voor u, maar het houdt de feiten op één plek wanneer u dat besluit neemt.</p><p>Het principe is eenvoudig: betaling verwerken, reden achterhalen, de volgende stap schriftelijk afspreken en nooit een openstaand saldo zonder datum laten staan.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wat is een onderbetaling op een factuur?</summary><p>Van een onderbetaling spreken we als een klant minder betaalt dan het factuurtotaal, meestal zonder voorafgaande afspraak. De oorzaak kan een geschil, een inhouding, bankkosten of een simpele fout zijn.</p></details>
+        <details class="faq-item"><summary>Moet ik een factuur na een deelbetaling als betaald markeren?</summary><p>Nee. Verwerk de betaling op de factuur, maar laat die open voor het restant. Als betaald markeren verbergt wat u nog tegoed hebt en verstoort uw ouderdomsanalyse en cashrapportages.</p></details>
+        <details class="faq-item"><summary>Mag ik een klein verschil afboeken?</summary><p>Ja, als u een duidelijke tolerantiegrens vaststelt die een leidinggevende in finance goedkeurt en elke afboeking vastlegt. Beoordeel herhaalde verschillen bij dezelfde klant in plaats van alles af te boeken.</p></details>
+        <details class="faq-item"><summary>Hoe achterhaal ik waarom een klant minder heeft betaald?</summary><p>Begin met de betalingsomschrijving en vraag de klant dan neutraal waarvoor de betaling bedoeld is. Betrek sales of logistiek als er een geschil over de goederen of de dienst speelt.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Verlies geen kleine restbedragen meer</h2>
+        <p class="section-lead" style="margin:0 auto 26px">Laat FulcrumGrid Collection betalingen aan facturen koppelen en elk restbedrag voor u opvolgen.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/collection/">Ontdek Collection</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=49af1d3a" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Come gestire i pagamenti incompleti e i pagamenti parziali? — FulcrumGrid</title>
+  <meta name="description" content="I clienti spesso pagano meno del totale fattura. Scopri come distinguere pagamento incompleto e parziale, imputare l'incasso e recuperare il saldo residuo." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Come gestire i pagamenti incompleti e i pagamenti parziali?" />
+  <meta property="og:description" content="I clienti spesso pagano meno del totale fattura. Scopri come distinguere pagamento incompleto e parziale, imputare l'incasso e recuperare il saldo residuo." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-26" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Come gestire i pagamenti incompleti e i pagamenti parziali?" />
+  <meta name="twitter:description" content="I clienti spesso pagano meno del totale fattura. Scopri come distinguere pagamento incompleto e parziale, imputare l'incasso e recuperare il saldo residuo." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-handle-short-payments-and-partial-payments/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-handle-short-payments-and-partial-payments/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Come gestire i pagamenti incompleti e i pagamenti parziali?",
+    "description": "I clienti spesso pagano meno del totale fattura. Scopri come distinguere pagamento incompleto e parziale, imputare l'incasso e recuperare il saldo residuo.",
+    "datePublished": "2026-10-26",
+    "dateModified": "2026-10-26",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/how-to-handle-short-payments-and-partial-payments/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Pagamenti incompleti e parziali",
+        "item": "https://fulcrumgrid.com/it/blog/how-to-handle-short-payments-and-partial-payments/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Che cos'è un pagamento incompleto su una fattura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "È quando un cliente paga meno del totale della fattura, di solito senza accordo preventivo. La causa può essere una contestazione, una trattenuta, commissioni bancarie o un semplice errore."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Devo segnare la fattura come pagata dopo un pagamento parziale?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Imputate il pagamento alla fattura, ma lasciatela aperta per il saldo residuo. Segnarla come pagata nasconde ciò che vi è ancora dovuto e falsa gli scadenzari e i report di cassa."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Posso stornare una piccola differenza?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì, se fissate una soglia di tolleranza chiara, approvata da un responsabile finanziario, e registrate ogni storno. Riesaminate le differenze ripetute dello stesso cliente invece di stornarle tutte."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come scopro perché un cliente ha pagato meno?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Partite dalla distinta di pagamento, poi chiedete al cliente in modo neutro cosa copre il pagamento. Coinvolgete commerciale o logistica se c'è una contestazione su merce o servizio."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Pagamenti incompleti e parziali</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>Come gestire i pagamenti incompleti e i pagamenti parziali?</h1>
+        <p class="hero-intro">I clienti spesso pagano meno del totale fattura. Scopri come distinguere pagamento incompleto e parziale, imputare l'incasso e recuperare il saldo residuo.</p>
+        <p class="mono"><time datetime="2026-10-26">26 ottobre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Prima o poi arriva un pagamento che non corrisponde alla fattura. L'importo è inferiore a quello fatturato, la causale non dice nulla e la fattura resta mezza aperta nella contabilità. Come reagite in quel momento decide se il saldo viene incassato in pochi giorni o invecchia in silenzio per mesi.</p><h2>Qual è la differenza tra pagamento incompleto e pagamento parziale?</h2><p>Un <strong>pagamento incompleto</strong> è un versamento insufficiente non previsto: il cliente paga meno del totale della fattura, di solito senza averlo concordato con voi. Un <strong>pagamento parziale</strong> è voluto: avete concordato di saldare a rate, oppure il cliente vi ha avvisato che paga una parte ora e il resto più avanti. In banca il denaro può sembrare identico, ma la risposta giusta è diversa. Un pagamento parziale in un piano concordato va monitorato. Uno incompleto richiede una spiegazione.</p><h2>Perché i clienti pagano meno?</h2><p>La maggior parte dei pagamenti incompleti non è ostile. Le cause più comuni:</p><ul><li><strong>Una contestazione:</strong> merce danneggiata, quantità errata o un servizio che il cliente ritiene incompleto.</li><li><strong>Trattenute:</strong> uno sconto per pagamento anticipato applicato fuori termine, spese di trasporto o un premio che il cliente ritiene dovuto.</li><li><strong>Imposte e commissioni:</strong> ritenute fiscali o commissioni bancarie sottratte dall'importo inviato.</li><li><strong>Valuta e arrotondamenti:</strong> differenze di cambio che lasciano in sospeso qualche centesimo o euro.</li><li><strong>Semplice errore:</strong> un refuso di digitazione o il pagamento di una vecchia versione della fattura.</li><li><strong>Liquidità:</strong> il cliente non riesce a pagare l'intero importo adesso e spera che non ve ne accorgiate.</li></ul><h2>Cosa fare quando arriva il denaro?</h2><ul><li><strong>1. Imputate subito l'incasso.</strong> Abbinate il pagamento alla fattura di competenza, anche se non la chiude. Lasciarlo come incasso non abbinato fa sembrare il cliente moroso sull'intero importo e porta a solleciti imbarazzanti.</li><li><strong>2. Scoprite il motivo.</strong> Controllate prima la distinta di pagamento. Se tace, contattate presto il cliente con una domanda neutra: cosa copre questo pagamento?</li><li><strong>3. Decidete come trattare la differenza.</strong> Se il cliente ha ragione, emettete una nota di credito e chiudete la fattura. Se avete ragione voi, richiedete il resto. Se è un vero pagamento parziale, concordate le date delle rate rimanenti.</li><li><strong>4. Mettetelo per iscritto.</strong> Registrate sul conto il motivo, chi ha concordato cosa e la nuova scadenza. Una promessa verbale che nessuno ha annotato non è una promessa.</li><li><strong>5. Sollecitate il residuo a una data precisa.</strong> L'importo aperto deve avere un proprio calendario di solleciti, non perdersi nella storia della fattura originale.</li></ul><h3>Come rispondere a una differenza contestata?</h3><p>Separate la contestazione dalla parte non contestata. Se un cliente dice che una riga è sbagliata, deve comunque il resto: chiedete il pagamento dell'importo non contestato e gestite la riga contestata su un binario a parte. Coinvolgete presto il commerciale o la logistica, perché spesso hanno la prova che risolve la questione.</p><h2>Conviene stornare una piccola differenza?</h2><p>A volte sì. Rincorrere una commissione bancaria di due euro può costare più in tempo del team che l'importo stesso. Molti team finanziari fissano una soglia di tolleranza, per esempio un importo fisso o meno dell'uno per cento della fattura, sotto la quale la differenza viene stornata automaticamente e registrata. Servono due cautele: la soglia va approvata da un responsabile, e le differenze ripetute dello stesso cliente vanno riesaminate, perché tante piccole trattenute possono sommarsi in una perdita reale o segnalare un problema di prezzi o di consegne.</p><h2>Quali errori peggiorano la situazione?</h2><ul><li><strong>Aspettare fine mese.</strong> Il cliente ha dimenticato il contesto e la pista si è raffreddata.</li><li><strong>Segnare la fattura come pagata.</strong> Nasconde il saldo aperto e falsa i report.</li><li><strong>Accusare il cliente.</strong> La maggior parte dei pagamenti incompleti sono errori o trattenute. Partite con una domanda, non con una pretesa.</li><li><strong>Accettare le trattenute in silenzio.</strong> Se non vi opponete mai, i clienti imparano che applicare uno sconto non dovuto non costa nulla.</li><li><strong>Non tracciare la causa.</strong> Senza un codice motivo non vedete che la maggior parte delle differenze nasce dallo stesso problema di prezzi o spedizioni.</li></ul><h2>Come può aiutare un software?</h2><p>Il lavoro non è difficile, ma è ripetitivo e si perde facilmente tra la registrazione dell'incasso e il sollecito. I fogli di calcolo raramente collegano le due cose. FulcrumGrid Collection abbina ogni pagamento alla sua fattura, mantiene aperto il saldo residuo e programma solleciti per ciò che resta dovuto. Permette anche di annotare perché un pagamento è arrivato incompleto, così si vedono gli schemi invece di inseguire ogni caso da zero. Non deciderà al posto vostro se stornare una differenza, ma tiene i fatti in un unico posto quando lo fate.</p><p>Il principio è semplice: imputare l'incasso, trovare il motivo, concordare per iscritto il passo successivo e non lasciare mai un saldo aperto senza una data.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Che cos'è un pagamento incompleto su una fattura?</summary><p>È quando un cliente paga meno del totale della fattura, di solito senza accordo preventivo. La causa può essere una contestazione, una trattenuta, commissioni bancarie o un semplice errore.</p></details>
+        <details class="faq-item"><summary>Devo segnare la fattura come pagata dopo un pagamento parziale?</summary><p>No. Imputate il pagamento alla fattura, ma lasciatela aperta per il saldo residuo. Segnarla come pagata nasconde ciò che vi è ancora dovuto e falsa gli scadenzari e i report di cassa.</p></details>
+        <details class="faq-item"><summary>Posso stornare una piccola differenza?</summary><p>Sì, se fissate una soglia di tolleranza chiara, approvata da un responsabile finanziario, e registrate ogni storno. Riesaminate le differenze ripetute dello stesso cliente invece di stornarle tutte.</p></details>
+        <details class="faq-item"><summary>Come scopro perché un cliente ha pagato meno?</summary><p>Partite dalla distinta di pagamento, poi chiedete al cliente in modo neutro cosa copre il pagamento. Coinvolgete commerciale o logistica se c'è una contestazione su merce o servizio.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Smetti di perdere i piccoli residui</h2>
+        <p class="section-lead" style="margin:0 auto 26px">Lascia che FulcrumGrid Collection abbini i pagamenti alle fatture e sollecita ogni saldo residuo al posto tuo.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/collection/">Esplora Collection</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=49af1d3a" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
