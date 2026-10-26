@@ -219,19 +219,21 @@
     ttsQueue = []; ttsPlaying = false; streamDone = false; turnSpoke = false;
     fillerDone = false; if (fillerTimer) clearTimeout(fillerTimer);
     if (vm) fillerTimer = setTimeout(playFiller, 650);   // voice: bridge a slow first token with a spoken filler
-    var spokenChars = 0, firstDone = false;
+    var spokenChars = 0;
 
-    // Fire the first complete sentence at TTS as soon as it streams in, so the
-    // voice starts within ~1s instead of after the whole answer. The remainder
-    // goes as one more call on completion — at most 2 /tts calls per turn.
+    // Stream the model output into TTS one sentence at a time: each time a
+    // complete sentence has arrived, send it straight to the speech queue, so
+    // the voice starts within ~1s and keeps talking sentence-by-sentence as the
+    // rest streams in (instead of waiting for the whole answer). The queue plays
+    // them in order; any trailing partial goes as one last call on completion.
     function onText(full) {
-      if (firstDone) return;
-      var m = full.slice(spokenChars).match(/^[\s\S]*?[.!?؟\n]["')»”]?(\s|$)/);
-      if (m && m[0].trim().length >= 12) {
-        firstDone = true;
-        var sentence = full.slice(spokenChars, spokenChars + m[0].length).trim();
+      for (;;) {
+        var rest = full.slice(spokenChars);
+        var m = rest.match(/^[\s\S]*?[.!?؟\n]["')»”]?(\s|$)/);
+        if (!m) break;                             // no complete sentence yet — wait for more
         spokenChars += m[0].length;
-        enqueueSpeak(sentence);
+        var say = m[0].trim();
+        if (say.length >= 2) enqueueSpeak(say);    // skip empty / punctuation-only fragments
       }
     }
 
@@ -240,9 +242,9 @@
       lastReply = reply;
       busy = false; streamDone = true;
       var rest = (reply || '').slice(spokenChars).trim();
-      if (rest) enqueueSpeak(rest);
+      if (rest) enqueueSpeak(rest);                // the final sentence (no trailing terminator)
       pumpQueue();                                 // handle the already-drained case
-      if (!firstDone && !rest) { setState('idle'); if (vm) exitVoice(); }   // empty reply
+      if (spokenChars === 0 && !rest) { setState('idle'); if (vm) exitVoice(); }   // empty reply
     }).catch(function () {
       busy = false; streamDone = true; setState('idle');
       if (vm) exitVoice(); else bubble.textContent = t.err;
@@ -404,9 +406,13 @@
   //      unavailable or unreliable) record the mic and transcribe via /stt ----
   var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   var canRecord = !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && window.MediaRecorder);
-  var isTouch = (navigator.maxTouchPoints > 0) || ('ontouchstart' in window) ||
-                (window.matchMedia && window.matchMedia('(pointer: coarse)').matches);
-  var useServerSTT = canRecord && (!SR || isTouch);
+  // Prefer the browser's own streaming recognizer (Web Speech) whenever it
+  // exists — it transcribes live as you speak and endpoints (VADs) the turn
+  // itself, so the end of every turn is caught without a tap. Where it's
+  // missing (iOS Safari, Firefox), record the mic and transcribe through the
+  // Worker, with energy-based voice-activity detection to catch the end of the
+  // turn. startListening() also falls back to this on any recognizer error.
+  var useServerSTT = canRecord && !SR;
   var recog = null, listening = false;
   var mediaRec = null, recStream = null, recChunks = [], recording = false, recTimer = null;
 
