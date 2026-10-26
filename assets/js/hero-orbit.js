@@ -16,7 +16,7 @@
     ['HR Suite', 'live', 'hr'], ['Command Center', 'live', 'cc'], ['Collection', 'live', 'col'],
     ['TMS', 'live', 'tms'], ['Assure', 'live', 'assure'], ['Close', 'live', 'close'],
     ['Consolidate', 'live', 'consolidate'],
-    ['Voice', 'soon', ''], ['CRM', 'soon', 'crm'], ['Retail', 'soon', '']
+    ['Voice', 'soon', ''], ['CRM', 'soon', 'crm'], ['Retail', 'soon', ''], ['Connect', 'soon', '']
   ];
   // Tiles per ring — drives the angular spacing so each ring stays evenly spread
   // however many apps it carries.
