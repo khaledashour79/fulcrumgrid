@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>كيف تُجري تقييماً للمخاطر التشغيلية في شركتك الصغيرة — FulcrumGrid</title>
+  <meta name="description" content="تقييم بسيط للمخاطر التشغيلية في خمس خطوات: حصر المخاطر، وتقدير الاحتمال × الأثر، وبناء سجل المخاطر، وتعيين المسؤولين، والمراجعة المنتظمة." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="كيف تُجري تقييماً للمخاطر التشغيلية في شركتك الصغيرة" />
+  <meta property="og:description" content="تقييم بسيط للمخاطر التشغيلية في خمس خطوات: حصر المخاطر، وتقدير الاحتمال × الأثر، وبناء سجل المخاطر، وتعيين المسؤولين، والمراجعة المنتظمة." />
+  <meta property="og:url" content="https://fulcrumgrid.com/ar/blog/how-to-run-an-operational-risk-assessment-for-a-small-business/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-27" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="لوحة التحكم للتنفيذيين من FulcrumGrid — العمليات في لمحة" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="كيف تُجري تقييماً للمخاطر التشغيلية في شركتك الصغيرة" />
+  <meta name="twitter:description" content="تقييم بسيط للمخاطر التشغيلية في خمس خطوات: حصر المخاطر، وتقدير الاحتمال × الأثر، وبناء سجل المخاطر، وتعيين المسؤولين، والمراجعة المنتظمة." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/ar/blog/how-to-run-an-operational-risk-assessment-for-a-small-business/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-run-an-operational-risk-assessment-for-a-small-business/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-run-an-operational-risk-assessment-for-a-small-business/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-run-an-operational-risk-assessment-for-a-small-business/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-run-an-operational-risk-assessment-for-a-small-business/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-run-an-operational-risk-assessment-for-a-small-business/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-run-an-operational-risk-assessment-for-a-small-business/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-run-an-operational-risk-assessment-for-a-small-business/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-run-an-operational-risk-assessment-for-a-small-business/" />
+
+  <link rel="preload" href="/assets/fonts/cairo-600-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/cairo-400-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "كيف تُجري تقييماً للمخاطر التشغيلية في شركتك الصغيرة",
+    "description": "تقييم بسيط للمخاطر التشغيلية في خمس خطوات: حصر المخاطر، وتقدير الاحتمال × الأثر، وبناء سجل المخاطر، وتعيين المسؤولين، والمراجعة المنتظمة.",
+    "datePublished": "2026-10-27",
+    "dateModified": "2026-10-27",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/ar/blog/how-to-run-an-operational-risk-assessment-for-a-small-business/"
+    },
+    "inLanguage": "ar"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "الرئيسية",
+        "item": "https://fulcrumgrid.com/ar/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "المدوّنة",
+        "item": "https://fulcrumgrid.com/ar/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "دليل تقييم المخاطر",
+        "item": "https://fulcrumgrid.com/ar/blog/how-to-run-an-operational-risk-assessment-for-a-small-business/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "كم مرة ينبغي أن تراجع الشركة الصغيرة سجل مخاطرها؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "افحص أهم المخاطر والإجراءات المفتوحة شهرياً، وأعد تقدير السجل كله كل ربع سنة، وحدّثه فوراً بعد أي حادثة أو تغيير كبير مثل مورّد أو نظام جديد."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كم عدد المخاطر التي ينبغي أن يتضمنها سجل المخاطر؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "للشركة الصغيرة، تُعدّ ١٥ إلى ٣٠ بداية جيدة. أبقِ فقط على المخاطر التي تستطيع وصفها وتقديرها بوضوح، ويمكنك إضافة المزيد لاحقاً مع نضج السجل."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ما الفرق بين الاحتمال والأثر؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "الاحتمال هو مدى ترجّح وقوع الحدث خلال فترة محددة، عادةً سنة. والأثر هو حجم الضرر الذي سيسببه إن وقع. وضرب أحدهما في الآخر يعطي درجة للترتيب."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "هل أحتاج إلى برنامج خاص لتقييم المخاطر؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "لا. يكفي جدول بيانات بأعمدة للدرجة والمسؤول والإجراء وموعد المراجعة. المهم أن يملك كل خطر مسؤولاً وأن يُراجَع السجل بانتظام."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <a href="/ar/products/">المنتجات</a>
+        <a href="/ar/features/">الشبكة</a>
+        <a href="/ar/pricing/">الأسعار</a>
+        <a href="/ar/regions/">المناطق</a>
+        <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
+        <a href="/ar/contact/">اتصل بنا</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="اللغة">ع ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" class="active" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      </div>
+      <button class="nav-toggle" aria-label="القائمة"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/ar/">الرئيسية</a> / <a href="/ar/blog/">المدوّنة</a> / دليل تقييم المخاطر</p>
+        <span class="tag tag-accent">العمليات</span>
+        <h1>كيف تُجري تقييماً للمخاطر التشغيلية في شركتك الصغيرة</h1>
+        <p class="hero-intro">تقييم بسيط للمخاطر التشغيلية في خمس خطوات: حصر المخاطر، وتقدير الاحتمال × الأثر، وبناء سجل المخاطر، وتعيين المسؤولين، والمراجعة المنتظمة.</p>
+        <p class="mono"><time datetime="2026-10-27">٢٧ أكتوبر ٢٠٢٦</time> · ٦ دقائق للقراءة</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>تقوم كل شركة صغيرة على أمور قليلة يجب أن تظل تعمل: مورّد رئيسي، ونظام دفع، وشخص واحد يعرف كيف تسير الفوترة، ومكتب أو موقع إلكتروني وحيد. يعرف معظم الملّاك أن بعضها هشّ، لكن القلق يبقى في الرأس ولا يُنجَز شيء. يحوّل تقييم المخاطر التشغيلية هذا القلق إلى ورقة مكتوبة، ويرتّبه، ثم يجعله إجراءات. لا تحتاج إلى مستشار ولا إلى برنامج خاص، بل إلى بضع ساعات وحوار صريح.</p><h2>ما هو تقييم المخاطر التشغيلية؟</h2><p>هو طريقة منظمة لطرح ثلاثة أسئلة: ما الذي قد يسوء في عملياتنا اليومية، وما مدى احتمال حدوثه، وما حجم الضرر الذي سيسببه؟ تتيح لك الإجابات أن تنفق وقتك ومالك المحدودين على القليل من المخاطر المهمة فعلاً بدل محاولة الحماية من كل شيء.</p><h2>الخطوة ١: احصر المخاطر</h2><p>اجمع من ينفّذون العمل فعلاً، لا الإدارة وحدها، وابدؤوا بعصف ذهني. مرّوا على كل جزء من النشاط واسألوا: &laquo;ما الذي قد يوقفنا هنا؟&raquo; وهذه فئات تساعد على توليد الأفكار:</p><ul><li><strong>الأفراد.</strong> الاعتماد على شخص واحد، والغياب المفاجئ، ودوران الموظفين، ونقص المهارات.</li><li><strong>الموردون والشركاء.</strong> مورّد وحيد، وتأخر التسليم، وإفلاس أحد المزوّدين.</li><li><strong>التقنية والبيانات.</strong> انقطاع الأنظمة، وضياع الملفات، وكلمات المرور الضعيفة، وغياب نسخ احتياطية مُختبَرة.</li><li><strong>العمليات والجودة.</strong> الخطوات اليدوية، والأخطاء، ونقص التوثيق.</li><li><strong>المالية.</strong> العملاء المتأخرون في السداد، وفجوات التدفق النقدي، والاعتماد على عميل كبير واحد.</li><li><strong>المقر والأحداث الخارجية.</strong> الحريق، والفيضان، وانقطاع الكهرباء، والطقس السيئ، وتغيّر التشريعات.</li></ul><p>اكتب كل خطر في جملة واضحة تتضمن السبب والأثر: &laquo;مورّد المستودع الوحيد لدينا لا يسلّم في موعده، فتتأخر شحنات الطلبات.&raquo; استهدف من ١٥ إلى ٣٠ خطراً في البداية، ولا تفرز بعد.</p><h2>الخطوة ٢: قدّر الاحتمال × الأثر</h2><p>قيّم كل خطر مرتين على مقياس من ١ إلى ٥. <strong>الاحتمال:</strong> ١ يعني نادراً، و٥ يعني شبه مؤكد خلال سنة. <strong>الأثر:</strong> ١ يعني إزعاجاً بسيطاً، و٥ يعني تهديداً خطيراً للإيرادات أو السلامة أو البقاء. اضرب الرقمين لتحصل على درجة من ١ إلى ٢٥. وحدّد معنى كل رقم في نشاطك، كأن يكون الأثر ٤ يعني &laquo;أكثر من أسبوع من المبيعات الضائعة&raquo;، لتبقى الدرجات متسقة بين الأشخاص.</p><ul><li><strong>من ١ إلى ٦:</strong> منخفض. راقب.</li><li><strong>من ٨ إلى ١٢:</strong> متوسط. ضع استجابة معقولة.</li><li><strong>من ١٥ إلى ٢٥:</strong> مرتفع. تحرّك أولاً.</li></ul><p>التقدير اجتهاد لا علم دقيق. فإذا اختلف شخصان بأكثر من درجة واحدة، فناقشا السبب؛ فالخلاف كثيراً ما يكشف أمراً لم يقله أحد بصوت عالٍ.</p><h2>الخطوة ٣: ابنِ سجل المخاطر</h2><p>سجل المخاطر جدول بسيط بصف واحد لكل خطر، ويكفي لذلك جدول بيانات. أعمدة مفيدة:</p><ul><li>رقم تعريفي ووصف مختصر للخطر.</li><li>الاحتمال والأثر والدرجة الإجمالية.</li><li>المسؤول.</li><li>إجراءات المعالجة ومواعيدها.</li><li>الحالة الحالية وتاريخ آخر مراجعة.</li></ul><p>رتّب السجل حسب الدرجة ليُظهر أعلاه ما يحتاج إلى اهتمام الآن.</p><h2>الخطوة ٤: عيّن المسؤولين واختر المعالجات</h2><p>يحتاج كل خطر إلى مسؤول واحد معروف بالاسم، شخص لا فريق. لا يعالج المسؤول كل شيء بمفرده، بل يتأكد من أن أحداً يراقب الخطر وأن الإجراءات المتفق عليها تُنفَّذ. وبالنسبة إلى كل خطر مرتفع أو متوسط، اختر استجابة:</p><ul><li><strong>التجنب.</strong> أوقف النشاط الذي يولّد الخطر.</li><li><strong>التخفيف.</strong> قلّل الاحتمال أو الأثر، مثلاً بتدريب موظف ثانٍ على المهمة أو إضافة مورّد ثانٍ.</li><li><strong>النقل.</strong> انقل جزءاً من الخطر إلى جهة أخرى عبر التأمين أو بند تعاقدي.</li><li><strong>القبول.</strong> لا تفعل شيئاً عن قصد لأن كلفة التحرك تفوق الخطر. دوّن ذلك ليكون قراراً لا إغفالاً.</li></ul><p>اجعل الإجراءات محددة ومؤرّخة: &laquo;اختبار استعادة النسخ الاحتياطية بحلول ٣٠ نوفمبر&raquo; أفضل من &laquo;تحسين النسخ الاحتياطية&raquo;. وبعد المعالجة أعد تقدير الخطر لترى المستوى المتبقي الذي تتعايش معه.</p><h2>الخطوة ٥: حدّد إيقاع المراجعة</h2><p>سجل لا يُعاد فتحه يمنح طمأنينة زائفة. إيقاع عملي لشركة صغيرة:</p><ul><li><strong>شهرياً:</strong> فحص لعشرين دقيقة لأهم المخاطر والإجراءات المفتوحة.</li><li><strong>كل ربع سنة:</strong> إعادة تقدير كل شيء وإضافة المخاطر الجديدة.</li><li><strong>بعد أي حادثة أو تغيير كبير:</strong> مورّد جديد، أو نظام جديد، أو فقدان عميل. حدّث السجل فوراً.</li></ul><h2>مثال سريع</h2><p>متجر إلكتروني من عشرة أشخاص يدرج &laquo;مرض الشخص الوحيد الذي يجهّز الطلبات&raquo; (الاحتمال ٤، الأثر ٤، الدرجة ١٦) و&laquo;انقطاع مزوّد الدفع&raquo; (الاحتمال ٢، الأثر ٥، الدرجة ١٠). الأول مرتفع: تتولى المالكة دانة تدريب شخص ثانٍ بنهاية الشهر المقبل. والثاني متوسط: تكتب خطة بديلة قصيرة وتتحقق من صفحة حالة المزوّد شهرياً. إجراءان واضحان خير من قائمة طويلة من المخاوف الغامضة.</p><h2>أخطاء شائعة</h2><ul><li><strong>تقدير كل شيء مرتفعاً.</strong> إذا كانت كل المخاطر عاجلة، فلا شيء عاجل.</li><li><strong>إدراج الكوارث الكبرى فقط.</strong> المشكلات الصغيرة المتكررة كثيراً ما تكلّف أكثر على مدى سنة.</li><li><strong>غياب المسؤول.</strong> الخطر الذي يخص الجميع لا يخص أحداً.</li><li><strong>كتابته مرة واحدة.</strong> النشاط يتغير، فيجب أن يتغير السجل.</li></ul><p>ابدأ صغيراً: ورشة واحدة وجدول بيانات واحد وخمسة إجراءات. وإذا كانت مهامك ومؤشرات أدائك موجودة أصلاً في <strong>FulcrumGrid Command Center</strong>، فيمكنك متابعة إجراءات المخاطر ومواعيد المراجعة بجانبها، فلا تضيع أعمال المعالجة خلف المهام اليومية. تقييم بسيط تراجعه فعلاً يحميك أفضل من تقييم مثالي يبقى في الدرج.</p>
+
+        <h2>الأسئلة الشائعة</h2>
+        <details class="faq-item"><summary>كم مرة ينبغي أن تراجع الشركة الصغيرة سجل مخاطرها؟</summary><p>افحص أهم المخاطر والإجراءات المفتوحة شهرياً، وأعد تقدير السجل كله كل ربع سنة، وحدّثه فوراً بعد أي حادثة أو تغيير كبير مثل مورّد أو نظام جديد.</p></details>
+        <details class="faq-item"><summary>كم عدد المخاطر التي ينبغي أن يتضمنها سجل المخاطر؟</summary><p>للشركة الصغيرة، تُعدّ ١٥ إلى ٣٠ بداية جيدة. أبقِ فقط على المخاطر التي تستطيع وصفها وتقديرها بوضوح، ويمكنك إضافة المزيد لاحقاً مع نضج السجل.</p></details>
+        <details class="faq-item"><summary>ما الفرق بين الاحتمال والأثر؟</summary><p>الاحتمال هو مدى ترجّح وقوع الحدث خلال فترة محددة، عادةً سنة. والأثر هو حجم الضرر الذي سيسببه إن وقع. وضرب أحدهما في الآخر يعطي درجة للترتيب.</p></details>
+        <details class="faq-item"><summary>هل أحتاج إلى برنامج خاص لتقييم المخاطر؟</summary><p>لا. يكفي جدول بيانات بأعمدة للدرجة والمسؤول والإجراء وموعد المراجعة. المهم أن يملك كل خطر مسؤولاً وأن يُراجَع السجل بانتظام.</p></details>
+
+        <p style="margin-top:32px"><a href="/ar/blog/"><span aria-hidden="true">←</span> العودة إلى المدوّنة</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid لوحة التحكم للتنفيذيين</p>
+        <h2>أبقِ إجراءات المخاطر ظاهرة</h2>
+        <p class="section-lead" style="margin:0 auto 26px">يتيح لك FulcrumGrid Command Center متابعة المشاريع ومؤشرات الأداء وإجراءات المتابعة في مكان واحد، فلا تتأخر مهام المعالجة ولا مواعيد المراجعة.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/ar/products/command-center/">استكشف لوحة التحكم للتنفيذيين</a>
+          <a class="btn btn-secondary" href="/ar/blog/">العودة إلى المدوّنة</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>العمود الفقري التشغيلي للفرق الحديثة.</p>
+        </div>
+        <div class="foot-col">
+          <h5>المنتجات</h5>
+          <a href="/ar/products/">كل المنتجات</a>
+          <a href="/ar/products/hr-suite/">منصة الموارد البشرية</a>
+          <a href="/ar/products/command-center/">لوحة التحكم للتنفيذيين</a>
+          <a href="/ar/products/collection/">منصة تحصيل الديون</a>
+          <a href="/ar/products/tms/">منصة العمليات اللوجستية</a>
+          <a href="/ar/products/assure/">منصة الحوكمة والامتثال</a>
+          <a href="/ar/products/close/">منصة المعايير المحاسبية والإغلاق</a>
+          <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشبكة</h5>
+          <a href="/ar/features/">الميزات</a>
+          <a href="/ar/integrations/">التكاملات</a>
+          <a href="/ar/how-it-works/">كيف تعمل</a>
+          <a href="/ar/pricing/">الأسعار</a>
+          <a href="/ar/regions/">المناطق</a>
+          <a href="/ar/blog/">المدوّنة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشركة</h5>
+          <a href="/ar/about/">من نحن</a>
+          <a href="/ar/faq/">الأسئلة الشائعة</a>
+          <a href="/ar/contact/">اتصل بنا</a>
+          <a href="/ar/privacy/">الخصوصية</a>
+          <a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=c33c4f35" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
