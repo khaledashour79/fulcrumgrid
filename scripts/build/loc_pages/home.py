@@ -577,6 +577,52 @@ PAGE = {
             "<b>On request</b>": _t(
                 "<b>Sur demande</b>", "<b>Auf Anfrage</b>", "<b>A petición</b>",
                 "<b>Su richiesta</b>", "<b>Op aanvraag</b>"),
+            # ---- Expanded pricing strip: Consolidate, TMS, Assure, Close ----
+            "Per company / month": _t(
+                "Par entreprise / mois", "Pro Unternehmen / Monat", "Por empresa / mes",
+                "Per azienda / mese", "Per bedrijf / maand"),
+            "Per user / month": _t(
+                "Par utilisateur / mois", "Pro Nutzer / Monat", "Por usuario / mes",
+                "Per utente / mese", "Per gebruiker / maand"),
+            "<span>Scale</span>": _t(
+                "<span>Expansion</span>", "<span>Skalierung</span>", "<span>Escala</span>",
+                "<span>Scala</span>", "<span>Schaal</span>"),
+            "<span>From</span>": _t(
+                "<span>À partir de</span>", "<span>Ab</span>", "<span>Desde</span>",
+                "<span>Da</span>", "<span>Vanaf</span>"),
+            "Governance, risk &amp; compliance": _t(
+                "Gouvernance, risque &amp; conformité", "Governance, Risiko &amp; Compliance",
+                "Gobernanza, riesgo &amp; cumplimiento", "Governance, rischio &amp; conformità",
+                "Governance, risico &amp; compliance"),
+            "IFRS period-end estimates": _t(
+                "Estimations IFRS de clôture", "IFRS-Abschlussschätzungen", "Estimaciones IFRS de cierre",
+                "Stime IFRS di fine periodo", "IFRS-eindeperiodeschattingen"),
+            "Priced to your estate": _t(
+                "Tarifé selon votre périmètre", "Preis nach Ihrem Umfang", "Precio según su alcance",
+                "Prezzo in base al tuo perimetro", "Prijs op maat van uw omvang"),
+            "Priced per customer": _t(
+                "Tarifé par client", "Preis pro Kunde", "Precio por cliente",
+                "Prezzo per cliente", "Prijs per klant"),
+            "By company count. Read-only, across every company.": _t(
+                "Selon le nombre d'entreprises. En lecture seule, sur toutes vos entreprises.",
+                "Nach Anzahl der Unternehmen. Schreibgeschützt, über alle Ihre Unternehmen.",
+                "Según el número de empresas. Solo lectura, en todas sus empresas.",
+                "In base al numero di aziende. Sola lettura, su tutte le tue aziende.",
+                "Op basis van het aantal bedrijven. Alleen-lezen, over al uw bedrijven."),
+            "Plus implementation.": _t(
+                "Plus la mise en œuvre.", "Zuzüglich Einrichtung.", "Más la implementación.",
+                "Più l'implementazione.", "Plus implementatie."),
+            "GRC for Saudi regulation.": _t(
+                "GRC pour la réglementation saoudienne.", "GRC für die saudische Regulierung.",
+                "GRC para la regulación saudí.", "GRC per la normativa saudita.",
+                "GRC voor Saudische regelgeving."),
+            "IAS 19, IFRS 9 &amp; IFRS 16.": _t(
+                "IAS 19, IFRS 9 &amp; IFRS 16.", "IAS 19, IFRS 9 &amp; IFRS 16.",
+                "IAS 19, IFRS 9 &amp; IFRS 16.", "IAS 19, IFRS 9 &amp; IFRS 16.",
+                "IAS 19, IFRS 9 &amp; IFRS 16."),
+            "Talk to sales →": _t(
+                "Parler au service commercial →", "Mit dem Vertrieb sprechen →", "Hablar con ventas →",
+                "Parla con le vendite →", "Praat met verkoop →"),
             "Core HR on every plan. 14-day free trial.": _t(
                 "Le HR de base sur chaque offre. Essai gratuit de 14 jours.",
                 "Kern-HR bei jedem Tarif. 14 Tage kostenlos testen.",

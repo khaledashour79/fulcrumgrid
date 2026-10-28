@@ -143,6 +143,11 @@ PAGE['/pricing/'] = {
         "Controlled, reproducible close": _t("Clôture contrôlée et reproductible", "Kontrollierter, reproduzierbarer Abschluss", "Cierre controlado y reproducible", "Chiusura controllata e riproducibile", "Gecontroleerde, reproduceerbare afsluiting"),
         "Audit pack &amp; journals": _t("Dossier d'audit &amp; écritures", "Audit-Paket &amp; Buchungen", "Paquete de auditoría &amp; asientos", "Pacchetto di audit &amp; scritture", "Auditpakket &amp; journaalposten"),
         "Priced per customer": _t("Tarifé par client", "Preis pro Kunde", "Precio por cliente", "Prezzo per cliente", "Prijs per klant"),
+        "Multi-company operator dashboard": _t("Tableau de bord opérateur multi-entreprises", "Betreiber-Dashboard für mehrere Unternehmen", "Panel de operador multiempresa", "Dashboard operatore multi-azienda", "Operatordashboard voor meerdere bedrijven"),
+        "Revenue, cash &amp; P&amp;L across companies": _t("Chiffre d'affaires, trésorerie &amp; P&amp;L sur toutes les entreprises", "Umsatz, Liquidität &amp; P&amp;L über alle Unternehmen", "Ingresos, caja &amp; P&amp;L de todas las empresas", "Ricavi, liquidità &amp; P&amp;L su tutte le aziende", "Omzet, kas &amp; P&amp;L over alle bedrijven"),
+        "AR ageing, VAT &amp; ZATCA status": _t("Balance âgée clients, TVA &amp; statut ZATCA", "Forderungsalterung, MwSt. &amp; ZATCA-Status", "Antigüedad de cobros, IVA &amp; estado ZATCA", "Scadenziario crediti, IVA &amp; stato ZATCA", "Ouderdom vorderingen, btw &amp; ZATCA-status"),
+        "Nightly read-only snapshots": _t("Instantanés nocturnes en lecture seule", "Nächtliche schreibgeschützte Snapshots", "Instantáneas nocturnas de solo lectura", "Snapshot notturni in sola lettura", "Nachtelijke alleen-lezen momentopnamen"),
+        "Priced by company count": _t("Tarifé selon le nombre d'entreprises", "Preis nach Anzahl der Unternehmen", "Precio según el número de empresas", "Prezzo in base al numero di aziende", "Prijs op basis van het aantal bedrijven"),
         "Invoice &amp; ledger tracking": _t(
             "Suivi des factures &amp; du grand livre",
             "Rechnungs- &amp; Buchungsverfolgung",

@@ -1046,6 +1046,10 @@ def footer(lang):
           <a href="/products/hr-suite/">HR Suite</a>
           <a href="/products/command-center/">Command Center</a>
           <a href="/products/collection/">Collection</a>
+          <a href="/products/tms/">TMS</a>
+          <a href="/products/assure/">Assure</a>
+          <a href="/products/close/">Close</a>
+          <a href="/products/consolidate/">Consolidate</a>
           <a href="/custom-apps/">Custom apps</a>
         </div>
         <div class="foot-col">
@@ -1090,6 +1094,10 @@ def footer(lang):
           <a href="/ar/products/hr-suite/">منصة الموارد البشرية</a>
           <a href="/ar/products/command-center/">لوحة التحكم للتنفيذيين</a>
           <a href="/ar/products/collection/">منصة تحصيل الديون</a>
+          <a href="/ar/products/tms/">منصة العمليات اللوجستية</a>
+          <a href="/ar/products/assure/">منصة الحوكمة والامتثال</a>
+          <a href="/ar/products/close/">منصة المعايير المحاسبية والإغلاق</a>
+          <a href="/ar/products/consolidate/">منصة التوحيد المالي</a>
           <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
         </div>
         <div class="foot-col">
