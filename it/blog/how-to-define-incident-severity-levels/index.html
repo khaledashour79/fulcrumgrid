@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Come definire i livelli di gravità degli incidenti (P1–P4) in un team piccolo? — FulcrumGrid</title>
+  <meta name="description" content="Scopri come definire i livelli di gravità P1–P4 per un team piccolo: criteri chiari, una scala di esempio, obiettivi di risposta e gli errori più comuni." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Come definire i livelli di gravità degli incidenti (P1–P4) in un team piccolo?" />
+  <meta property="og:description" content="Scopri come definire i livelli di gravità P1–P4 per un team piccolo: criteri chiari, una scala di esempio, obiettivi di risposta e gli errori più comuni." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/how-to-define-incident-severity-levels/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-28" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Come definire i livelli di gravità degli incidenti (P1–P4) in un team piccolo?" />
+  <meta name="twitter:description" content="Scopri come definire i livelli di gravità P1–P4 per un team piccolo: criteri chiari, una scala di esempio, obiettivi di risposta e gli errori più comuni." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-define-incident-severity-levels/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Come definire i livelli di gravità degli incidenti (P1–P4) in un team piccolo?",
+    "description": "Scopri come definire i livelli di gravità P1–P4 per un team piccolo: criteri chiari, una scala di esempio, obiettivi di risposta e gli errori più comuni.",
+    "datePublished": "2026-10-28",
+    "dateModified": "2026-10-28",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/how-to-define-incident-severity-levels/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Livelli di gravità",
+        "item": "https://fulcrumgrid.com/it/blog/how-to-define-incident-severity-levels/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual è la differenza tra gravità e priorità?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La gravità descrive l'impatto dell'incidente; la priorità l'ordine in cui lo si affronta. I team piccoli di solito le fondono in un'unica scala da P1 a P4, il che va bene finché le definizioni sono chiare."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "P1 o P4 è il livello più grave?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "P1 è il più grave e P4 il meno grave. Alcuni strumenti usano da SEV1 a SEV4 con lo stesso significato, ma qualcuno inverte l'ordine: scrivi sempre quale estremo della scala è quello urgente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Servono allarmi fuori orario per ogni livello?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Allerta le persone fuori dall'orario di lavoro solo per P1 e, forse, P2 se i tuoi clienti dipendono da te giorno e notte. P3 e P4 possono aspettare il giorno lavorativo successivo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ogni quanto vanno riviste le definizioni di gravità?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Riesaminale dopo ogni incidente P1 o P2 e fai una verifica completa ogni sei mesi, o prima se team, prodotto o base clienti cambiano in modo evidente."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Livelli di gravità</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Come definire i livelli di gravità degli incidenti (P1–P4) in un team piccolo?</h1>
+        <p class="hero-intro">Scopri come definire i livelli di gravità P1–P4 per un team piccolo: criteri chiari, una scala di esempio, obiettivi di risposta e gli errori più comuni.</p>
+        <p class="mono"><time datetime="2026-10-28">28 ottobre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Quando qualcosa si rompe alle due di notte, nessuno vuole discutere di quanto sia grave. I livelli di gravità chiudono la discussione in anticipo. Danno a tutti lo stesso vocabolario, così un team piccolo sa chi svegliare, con quale rapidità muoversi e cosa può aspettare lunedì. Questa guida risponde alle domande più comuni quando si introducono per la prima volta i livelli da P1 a P4.</p><h2>Cosa sono i livelli di gravità di un incidente?</h2><p>Un livello di gravità è un&rsquo;etichetta che descrive quanto è serio un incidente, in base al suo impatto su clienti o attività. Ogni etichetta ha una reazione concordata: chi viene allertato, in quanto tempo qualcuno deve rispondere e con che frequenza escono gli aggiornamenti. La «P» sta per priorità, e P1 è la più urgente. Alcuni team scrivono da SEV1 a SEV4; l&rsquo;idea è la stessa.</p><h2>Perché ne ha bisogno un team piccolo?</h2><p>In cinque o dieci persone viene da dire: «capiamo da soli quando è grave». In pratica significa che ogni problema sembra urgente a chi lo nota, la voce più forte decide la priorità e chi è di reperibilità viene svegliato per un refuso in una pagina di impostazioni. Livelli scritti proteggono la vostra attenzione, la risorsa più scarsa di un team piccolo.</p><h2>Quanti livelli conviene usare?</h2><p>Quattro è il numero ideale. Con tre si finisce per mettere insieme problemi gravi e moderati; con cinque o sei nascono discussioni sul confine tra due livelli vicini. Se le persone non ricordano i livelli senza aprire un documento, sono troppi.</p><h2>Come si decide il livello di un incidente?</h2><p>Poniti tre domande, in quest&rsquo;ordine:</p><ul><li><strong>Quante persone sono coinvolte?</strong> Tutte, un segmento o un solo utente?</li><li><strong>In che misura?</strong> Il servizio è fermo, degradato in parte o solo fastidioso?</li><li><strong>Esiste una soluzione alternativa?</strong> Se gli utenti riescono a lavorare in un altro modo, l&rsquo;incidente vale di solito un livello in meno.</li></ul><p>Poi applica due eccezioni. Tutto ciò che riguarda perdita di dati, violazione della sicurezza o obblighi di legge sale di almeno un livello. E se sei incerto tra due livelli, scegli il più alto e abbassalo quando ne sai di più. Declassare costa poco; un&rsquo;emergenza sottovalutata costa molto.</p><h2>Che aspetto ha una scala P1–P4 di esempio?</h2><p>Adatta questi numeri ai tuoi orari e alla tua capacità. Sono obiettivi di risposta interni, cioè la rapidità con cui reagisce il tuo team, ben diversi da ciò che prometti ai clienti in un accordo.</p><ul><li><strong>P1 &ndash; Critico.</strong> Il servizio è fermo o inutilizzabile per la maggior parte degli utenti, oppure si perdono o si espongono dati. <strong>Obiettivo:</strong> presa in carico entro 15 minuti, a qualsiasi ora; aggiornamento ogni 30 minuti; tutto il team lascia le altre attività.</li><li><strong>P2 &ndash; Alto.</strong> Una funzione importante è guasta o molto degradata, o un cliente chiave è bloccato, senza alternativa ragionevole. <strong>Obiettivo:</strong> presa in carico entro 1 ora in orario esteso; aggiornamento ogni 2 ore; correzione in giornata.</li><li><strong>P3 &ndash; Medio.</strong> Una funzione secondaria non funziona o le prestazioni sono scarse, ma esiste un&rsquo;alternativa. <strong>Obiettivo:</strong> presa in carico entro 1 giorno lavorativo; correzione entro la settimana; nessun allarme fuori orario.</li><li><strong>P4 &ndash; Basso.</strong> Un difetto estetico, un bug minore o una domanda senza impatto sull&rsquo;attività. <strong>Obiettivo:</strong> presa in carico entro 3 giorni lavorativi; pianificazione nel normale backlog.</li></ul><h2>Chi stabilisce la gravità e può cambiare?</h2><p>Chi gestisce per primo l&rsquo;incidente, di solito il reperibile, propone un livello usando le domande sopra. Il responsabile dell&rsquo;incidente può modificarlo in qualsiasi momento, e la modifica va comunicata nello stesso canale perché nessuno lavori con informazioni superate. La gravità è un&rsquo;etichetta viva: un P2 che si scopre colpire tutti diventa P1, e un P1 contenuto con un rapido rollback scende a P3 mentre si indaga la causa radice.</p><h2>Quali errori evitare?</h2><ul><li><strong>Definire i livelli in base alla causa.</strong> «I problemi del database sono P1» è una trappola. Definisci in base all&rsquo;impatto, non al sistema guasto.</li><li><strong>Trasformare tutto in P1.</strong> Se ogni allarme è critico, nessuno lo è. Riserva P1 alle vere emergenze, altrimenti la gente smette di rispondere.</li><li><strong>Formulazioni vaghe.</strong> «Impatto significativo» significa cose diverse per ciascuno. Usa numeri dove puoi, come una percentuale di utenti o un processo che genera ricavi.</li><li><strong>Nessun ritmo di aggiornamento.</strong> Il silenzio durante un incidente stressa più del problema. Prometti un intervallo tra gli aggiornamenti e rispettalo, anche quando il messaggio è «stiamo ancora indagando».</li><li><strong>Non rivedere mai la scala.</strong> Dopo ogni P1 o P2, chiediti se livello e risposta corrispondevano alla realtà e correggi le definizioni.</li></ul><h2>Come mantenere efficace la scala nel tempo?</h2><p>Metti la definizione di una pagina dove il team la vede: fissata nel canale di chat, collegata dallo strumento di allerta e stampata nel manuale di reperibilità. Registra ogni incidente con livello, tempo di presa in carico e tempo di risoluzione, poi guarda i numeri ogni mese. Se gestisci già le operazioni in <strong>FulcrumGrid Command Center</strong>, puoi seguire il numero di incidenti e i tempi di risposta accanto agli altri KPI, così vedi se i P2 stanno aumentando. Per cominciare basta un foglio di calcolo; l&rsquo;abitudine conta più dello strumento.</p><p>Parti da quattro livelli, descrivi ciascuno in due frasi, associa un obiettivo di risposta e provalo sui tuoi ultimi cinque incidenti reali. Se col senno di poi le etichette sembrano giuste, sei pronto a usarle dal vivo.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Qual è la differenza tra gravità e priorità?</summary><p>La gravità descrive l'impatto dell'incidente; la priorità l'ordine in cui lo si affronta. I team piccoli di solito le fondono in un'unica scala da P1 a P4, il che va bene finché le definizioni sono chiare.</p></details>
+        <details class="faq-item"><summary>P1 o P4 è il livello più grave?</summary><p>P1 è il più grave e P4 il meno grave. Alcuni strumenti usano da SEV1 a SEV4 con lo stesso significato, ma qualcuno inverte l'ordine: scrivi sempre quale estremo della scala è quello urgente.</p></details>
+        <details class="faq-item"><summary>Servono allarmi fuori orario per ogni livello?</summary><p>No. Allerta le persone fuori dall'orario di lavoro solo per P1 e, forse, P2 se i tuoi clienti dipendono da te giorno e notte. P3 e P4 possono aspettare il giorno lavorativo successivo.</p></details>
+        <details class="faq-item"><summary>Ogni quanto vanno riviste le definizioni di gravità?</summary><p>Riesaminale dopo ogni incidente P1 o P2 e fai una verifica completa ogni sei mesi, o prima se team, prodotto o base clienti cambiano in modo evidente.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Segui gli incidenti accanto ai tuoi KPI</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center riunisce numero di incidenti, tempi di risposta e progetti in un unico posto, così vedi se i tuoi obiettivi di gravità reggono mese dopo mese.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=c33c4f35" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
