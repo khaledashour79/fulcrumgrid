@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wat is eNPS en hoe bereken je het en onderneem je actie? — FulcrumGrid</title>
+  <meta name="description" content="eNPS meet hoe waarschijnlijk medewerkers je bedrijf als werkgever aanbevelen. Ontdek de formule, een rekenvoorbeeld, hoe je de score leest en wat je daarna doet." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wat is eNPS en hoe bereken je het en onderneem je actie?" />
+  <meta property="og:description" content="eNPS meet hoe waarschijnlijk medewerkers je bedrijf als werkgever aanbevelen. Ontdek de formule, een rekenvoorbeeld, hoe je de score leest en wat je daarna doet." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-10-28" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid HR Suite — people operations" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wat is eNPS en hoe bereken je het en onderneem je actie?" />
+  <meta name="twitter:description" content="eNPS meet hoe waarschijnlijk medewerkers je bedrijf als werkgever aanbevelen. Ontdek de formule, een rekenvoorbeeld, hoe je de score leest en wat je daarna doet." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-enps-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wat is eNPS en hoe bereken je het en onderneem je actie?",
+    "description": "eNPS meet hoe waarschijnlijk medewerkers je bedrijf als werkgever aanbevelen. Ontdek de formule, een rekenvoorbeeld, hoe je de score leest en wat je daarna doet.",
+    "datePublished": "2026-10-28",
+    "dateModified": "2026-10-28",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/what-is-enps-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "eNPS-gids",
+        "item": "https://fulcrumgrid.com/nl/blog/what-is-enps-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is eNPS hetzelfde als een betrokkenheidsonderzoek?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. eNPS is één vraag over loyaliteit en aanbeveling, terwijl een betrokkenheidsonderzoek veel vragen stelt over specifieke onderdelen van het werk. Veel bedrijven gebruiken het als snelle peiling tussen langere onderzoeken."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoeveel antwoorden heb je nodig voor een betrouwbare eNPS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Er is geen vast aantal, maar een respons van 60% of meer geeft in de meeste bedrijven een betrouwbaar beeld. Houd bij uitsplitsingen per team een minimale groepsgrootte van vijf tot tien aan, zodat antwoorden anoniem blijven."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan eNPS negatief zijn?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. De schaal loopt van -100 tot +100. Een negatieve score betekent dat er meer detractors dan promoters zijn, een signaal om de opmerkingen goed te lezen en snel te handelen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet de eNPS-enquête anoniem zijn?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In de meeste gevallen wel. Anonimiteit stimuleert eerlijke antwoorden, vooral van ontevreden mensen. Heb je opvolging nodig, nodig medewerkers dan uit om vrijwillig te praten in plaats van antwoorden te herleiden."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / eNPS-gids</p>
+        <span class="tag tag-accent">HR</span>
+        <h1>Wat is eNPS en hoe bereken je het en onderneem je actie?</h1>
+        <p class="hero-intro">eNPS meet hoe waarschijnlijk medewerkers je bedrijf als werkgever aanbevelen. Ontdek de formule, een rekenvoorbeeld, hoe je de score leest en wat je daarna doet.</p>
+        <p class="mono"><time datetime="2026-10-28">28 oktober 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Een betrokkenheidsonderzoek kan vijftig vragen hebben en leidinggevenden toch laten twijfelen over wat ze maandag moeten doen. De employee Net Promoter Score, kortweg eNPS, doet het omgekeerde: één vraag, één getal, in een vast ritme herhaald. Deze gids beantwoordt de meestgestelde vragen: wat eNPS is, hoe je het berekent, wat een goede score is en vooral wat je met de uitkomst doet.</p><h2>Wat is eNPS?</h2><p>eNPS is een aanpassing van de Net Promoter Score die bedrijven bij klanten gebruiken. In plaats van te vragen of iemand een product zou aanbevelen, vraag je medewerkers hoe waarschijnlijk ze je organisatie als werkplek zouden aanbevelen. De antwoorden worden samengevat in één getal tussen -100 en +100.</p><h2>Welke vraag stel je?</h2><p>De gebruikelijke formulering is: <strong>&ldquo;Hoe waarschijnlijk is het op een schaal van 0 tot 10 dat je anderen aanraadt hier te werken, bijvoorbeeld een vriend of collega?&rdquo;</strong> Voeg direct daarna een optionele open vraag toe: &ldquo;Wat is de belangrijkste reden voor je score?&rdquo; Het getal vertelt waar je staat; de opmerkingen vertellen waarom.</p><h2>Hoe bereken je eNPS?</h2><h3>Stap 1: Verdeel de antwoorden in drie groepen</h3><ul><li><strong>Promoters (9 of 10).</strong> Enthousiaste mensen die je actief zouden aanbevelen.</li><li><strong>Passieven (7 of 8).</strong> Tevreden maar niet gehecht, open voor een beter aanbod.</li><li><strong>Detractors (0 tot 6).</strong> Ontevreden mensen die anderen kunnen afraden om bij je te komen werken.</li></ul><h3>Stap 2: Reken elke groep om naar een percentage</h3><p>Deel het aantal mensen per groep door het totale aantal antwoorden en vermenigvuldig met 100.</p><h3>Stap 3: Trek af</h3><p><strong>eNPS = % promoters &minus; % detractors.</strong> Passieven tellen mee in het totaal, maar komen niet voor in de aftrekking.</p><h2>Een rekenvoorbeeld</h2><p>Een bedrijf met 80 medewerkers stuurt de enquête uit en 60 mensen reageren, een respons van 75%. De antwoorden verdelen zich zo:</p><ul><li>27 promoters, dus 27 / 60 = 45%</li><li>21 passieven, dus 21 / 60 = 35%</li><li>12 detractors, dus 12 / 60 = 20%</li></ul><p>eNPS = 45 &minus; 20 = <strong>+25</strong>. De uitkomst schrijf je als geheel getal, niet als percentage. Had hetzelfde bedrijf 12 promoters en 27 detractors, dan zou de score -25 zijn, terwijl de enquête even groot is.</p><h2>Wat is een goede eNPS?</h2><p>Elke score boven nul betekent dat je meer promoters dan detractors hebt. Veel teams noemen +10 tot +30 gezond en +50 of hoger uitstekend, terwijl een negatieve score een duidelijk waarschuwingssignaal is. Deze bereiken zijn slechts richtlijnen. Sector, bedrijfsgrootte en cultuur verschuiven de gebruikelijke uitkomst, dus de nuttigste vergelijking is je eigen score in de tijd.</p><h2>Hoe vaak voer je de enquête uit?</h2><p>Elk kwartaal werkt voor de meeste organisaties goed, en twee keer per jaar is een redelijk minimum. Vaker maakt mensen moe, minder vaak verbergt trends. Houd formulering, schaal en timing elke ronde gelijk, anders kun je resultaten niet vergelijken.</p><h2>Hoe onderneem je actie op de resultaten?</h2><h3>Lees de opmerkingen vóór de score</h3><p>Groepeer de open antwoorden in thema's als werkdruk, salaris, leidinggeven, groei of hulpmiddelen. Drie of vier terugkerende thema's verklaren het grootste deel van het getal.</p><h3>Splits de resultaten voorzichtig uit</h3><p>Vergelijk per afdeling, locatie of dienstjaren, maar alleen als een groep genoeg antwoorden heeft om anonimiteit te waarborgen. Een veelgebruikte regel is een minimum van vijf tot tien antwoorden per groep. Een daling in één team is vaak nuttiger dan het gemiddelde van het hele bedrijf.</p><h3>Deel de resultaten snel</h3><p>Vertel medewerkers binnen enkele weken wat je hebt gevonden, ook de ongemakkelijke delen. Stilte na een enquête is de snelste manier om de respons van de volgende ronde te verlagen.</p><h3>Kies twee of drie acties en benoem eigenaren</h3><p>Alles willen oplossen lost niets op. Kies de veranderingen die de grootste thema's aanpakken, geef elk een eigenaar en een datum, en rapporteer de voortgang in de volgende ronde.</p><h3>Ga voorzichtig in gesprek met detractors</h3><p>Is de enquête anoniem, probeer dan geen individuen te achterhalen. Gebruik teamgesprekken, stay-gesprekken of open sessies om de onderwerpen te verkennen.</p><h2>Veelgemaakte eNPS-fouten</h2><ul><li><strong>Het getal tot doel maken.</strong> Mensen aansporen hoger te scoren maakt de meting zinloos.</li><li><strong>Anonimiteit schenden.</strong> Kleine groepen en slordige rapportage zorgen dat mensen niet meer eerlijk zijn.</li><li><strong>Enquêteren en dan niets doen.</strong> Actie telt zwaarder dan meten.</li><li><strong>De passieven negeren.</strong> In veel bedrijven zijn zij de grootste groep en het makkelijkst te bewegen.</li></ul><h2>Alles overzichtelijk houden</h2><p>Een eenvoudig formulier en een spreadsheet zijn genoeg voor de eerste ronde. Naarmate je de enquête herhaalt, wordt het lastiger om scores, thema's en vervolgacties in de tijd bij elkaar te houden. <strong>FulcrumGrid HR Suite</strong> kan personeelsdossiers en vervolgtaken op één plek bundelen, wat helpt wanneer een belofte na de enquête een eigenaar en een datum nodig heeft. Het schrijft je enquête niet voor je, maar zorgt er wel voor dat acties niet zoekraken.</p><p>Stel één duidelijke vraag, bereken de score telkens op dezelfde manier en beschouw de opmerkingen als de echte data. Een bescheiden eNPS die gestaag stijgt is beter dan een hoge waar niemand iets mee doet.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Is eNPS hetzelfde als een betrokkenheidsonderzoek?</summary><p>Nee. eNPS is één vraag over loyaliteit en aanbeveling, terwijl een betrokkenheidsonderzoek veel vragen stelt over specifieke onderdelen van het werk. Veel bedrijven gebruiken het als snelle peiling tussen langere onderzoeken.</p></details>
+        <details class="faq-item"><summary>Hoeveel antwoorden heb je nodig voor een betrouwbare eNPS?</summary><p>Er is geen vast aantal, maar een respons van 60% of meer geeft in de meeste bedrijven een betrouwbaar beeld. Houd bij uitsplitsingen per team een minimale groepsgrootte van vijf tot tien aan, zodat antwoorden anoniem blijven.</p></details>
+        <details class="faq-item"><summary>Kan eNPS negatief zijn?</summary><p>Ja. De schaal loopt van -100 tot +100. Een negatieve score betekent dat er meer detractors dan promoters zijn, een signaal om de opmerkingen goed te lezen en snel te handelen.</p></details>
+        <details class="faq-item"><summary>Moet de eNPS-enquête anoniem zijn?</summary><p>In de meeste gevallen wel. Anonimiteit stimuleert eerlijke antwoorden, vooral van ontevreden mensen. Heb je opvolging nodig, nodig medewerkers dan uit om vrijwillig te praten in plaats van antwoorden te herleiden.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid HR Suite</p>
+        <h2>Zet enquêtefeedback om in gevolgde opvolging</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid HR Suite houdt personeelsdossiers en vervolgacties op één plek, zodat wat je na een enquête belooft een eigenaar en een datum heeft.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/hr-suite/">Ontdek HR Suite</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=c33c4f35" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

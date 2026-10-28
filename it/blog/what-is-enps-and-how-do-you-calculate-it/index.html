@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Cos'è l'eNPS e come si calcola e si usa per agire? — FulcrumGrid</title>
+  <meta name="description" content="L'eNPS misura quanto i dipendenti consiglierebbero la tua azienda come posto di lavoro. Scopri la formula, un esempio di calcolo, come leggere il punteggio e cosa fare." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cos'è l'eNPS e come si calcola e si usa per agire?" />
+  <meta property="og:description" content="L'eNPS misura quanto i dipendenti consiglierebbero la tua azienda come posto di lavoro. Scopri la formula, un esempio di calcolo, come leggere il punteggio e cosa fare." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-28" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid HR Suite — people operations" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cos'è l'eNPS e come si calcola e si usa per agire?" />
+  <meta name="twitter:description" content="L'eNPS misura quanto i dipendenti consiglierebbero la tua azienda come posto di lavoro. Scopri la formula, un esempio di calcolo, come leggere il punteggio e cosa fare." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-enps-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cos'è l'eNPS e come si calcola e si usa per agire?",
+    "description": "L'eNPS misura quanto i dipendenti consiglierebbero la tua azienda come posto di lavoro. Scopri la formula, un esempio di calcolo, come leggere il punteggio e cosa fare.",
+    "datePublished": "2026-10-28",
+    "dateModified": "2026-10-28",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/what-is-enps-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida all'eNPS",
+        "item": "https://fulcrumgrid.com/it/blog/what-is-enps-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "L'eNPS è la stessa cosa di un sondaggio sul coinvolgimento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. L'eNPS è una sola domanda su lealtà e raccomandazione, mentre un sondaggio sul coinvolgimento pone molte domande su aspetti specifici del lavoro. Molte aziende lo usano come rilevazione rapida tra sondaggi più lunghi."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quante risposte servono per un eNPS affidabile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non esiste un numero fisso, ma un tasso di risposta del 60% o più offre un quadro affidabile nella maggior parte delle aziende. Per le analisi per team, mantieni una dimensione minima del gruppo di cinque-dieci persone così le risposte restano anonime."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "L'eNPS può essere negativo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì. La scala va da -100 a +100. Un valore negativo significa che i detrattori superano i promotori: è il segnale per leggere con attenzione i commenti e agire in fretta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Il sondaggio eNPS deve essere anonimo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nella maggior parte dei casi sì. L'anonimato favorisce risposte sincere, soprattutto da chi è insoddisfatto. Se serve un follow-up, invita i dipendenti a parlarne volontariamente invece di risalire alle risposte."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida all'eNPS</p>
+        <span class="tag tag-accent">HR</span>
+        <h1>Cos'è l'eNPS e come si calcola e si usa per agire?</h1>
+        <p class="hero-intro">L'eNPS misura quanto i dipendenti consiglierebbero la tua azienda come posto di lavoro. Scopri la formula, un esempio di calcolo, come leggere il punteggio e cosa fare.</p>
+        <p class="mono"><time datetime="2026-10-28">28 ottobre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Un sondaggio sul coinvolgimento può avere cinquanta domande e lasciare comunque i manager incerti su cosa fare il lunedì. L'Employee Net Promoter Score, o eNPS, fa il contrario: una domanda, un numero, ripetuti con ritmo costante. Questa guida risponde alle domande più frequenti: cos'è l'eNPS, come si calcola, quale punteggio è buono e, soprattutto, cosa fare con il risultato.</p><h2>Cos'è l'eNPS?</h2><p>L'eNPS è un adattamento del Net Promoter Score che le aziende usano con i clienti. Invece di chiedere se si consiglierebbe un prodotto, chiedi ai dipendenti quanto è probabile che consiglierebbero la tua organizzazione come posto di lavoro. Le risposte sono riassunte in un unico numero compreso tra -100 e +100.</p><h2>Quale domanda si pone?</h2><p>La formulazione standard è: <strong>&laquo;Su una scala da 0 a 10, quanto è probabile che consiglieresti di lavorare qui a un amico o a un collega?&raquo;</strong> Subito dopo aggiungi una domanda aperta facoltativa: &laquo;Qual è il motivo principale del tuo punteggio?&raquo; Il numero ti dice a che punto sei; i commenti ti dicono perché.</p><h2>Come si calcola l'eNPS?</h2><h3>Passo 1: dividi le risposte in tre gruppi</h3><ul><li><strong>Promotori (9 o 10).</strong> Persone entusiaste che ti consiglierebbero attivamente.</li><li><strong>Passivi (7 o 8).</strong> Soddisfatti ma poco legati, aperti a un'offerta migliore.</li><li><strong>Detrattori (da 0 a 6).</strong> Persone insoddisfatte che possono scoraggiare altri dall'unirsi a te.</li></ul><h3>Passo 2: trasforma ogni gruppo in percentuale</h3><p>Dividi il numero di persone di ciascun gruppo per il totale delle risposte e moltiplica per 100.</p><h3>Passo 3: sottrai</h3><p><strong>eNPS = % di promotori &minus; % di detrattori.</strong> I passivi contano nel totale ma non compaiono nella sottrazione.</p><h2>Un esempio di calcolo</h2><p>Un'azienda con 80 dipendenti invia il sondaggio e rispondono in 60, con un tasso di risposta del 75%. Le risposte si dividono così:</p><ul><li>27 promotori, cioè 27 / 60 = 45%</li><li>21 passivi, cioè 21 / 60 = 35%</li><li>12 detrattori, cioè 12 / 60 = 20%</li></ul><p>eNPS = 45 &minus; 20 = <strong>+25</strong>. Il risultato si scrive come numero intero, non come percentuale. Se la stessa azienda avesse 12 promotori e 27 detrattori, otterrebbe -25 pur con un sondaggio di pari dimensioni.</p><h2>Qual è un buon punteggio eNPS?</h2><p>Qualsiasi punteggio sopra lo zero significa che i promotori superano i detrattori. Molti team considerano sano un valore da +10 a +30 ed eccellente +50 o più, mentre uno negativo è un chiaro campanello d'allarme. Questi intervalli sono solo indicativi. Settore, dimensioni dell'azienda e cultura spostano il risultato tipico, quindi il confronto più utile è quello con il tuo punteggio nel tempo.</p><h2>Ogni quanto conviene fare il sondaggio?</h2><p>Ogni trimestre va bene per la maggior parte delle organizzazioni, e due volte l'anno è un minimo ragionevole. Farlo più spesso stanca le persone, farlo più di rado nasconde le tendenze. Mantieni uguali formulazione, scala e tempistica a ogni giro, altrimenti non potrai confrontare i risultati.</p><h2>Come si agisce sui risultati?</h2><h3>Leggi i commenti prima del punteggio</h3><p>Raggruppa le risposte aperte per temi come carico di lavoro, retribuzione, gestione, crescita o strumenti. Tre o quattro temi ricorrenti spiegano gran parte del numero.</p><h3>Suddividi i risultati con cautela</h3><p>Confronta per reparto, sede o anzianità, ma solo quando il gruppo ha abbastanza risposte da tutelare l'anonimato. Una regola comune prevede un minimo di cinque-dieci risposte per gruppo. Il calo di un singolo team è spesso più utile della media aziendale.</p><h3>Condividi presto i risultati</h3><p>Racconta ai dipendenti cosa hai trovato entro poche settimane, comprese le parti scomode. Il silenzio dopo un sondaggio è il modo più rapido per ridurre la partecipazione al successivo.</p><h3>Scegli due o tre azioni e indica i responsabili</h3><p>Voler sistemare tutto non sistema nulla. Scegli i cambiamenti che affrontano i temi principali, assegna a ciascuno un responsabile e una data, e riferisci i progressi al giro successivo.</p><h3>Confrontati con i detrattori, con delicatezza</h3><p>Se il sondaggio è anonimo, non cercare di identificare le persone. Usa invece conversazioni di team, colloqui di permanenza o incontri aperti per approfondire i problemi.</p><h2>Errori comuni con l'eNPS</h2><ul><li><strong>Trattare il numero come obiettivo.</strong> Spingere le persone a dare voti più alti vanifica lo scopo della misura.</li><li><strong>Violare l'anonimato.</strong> Gruppi piccoli e report poco accorti fanno smettere di essere sinceri.</li><li><strong>Fare il sondaggio e poi non fare nulla.</strong> L'azione conta più della misurazione.</li><li><strong>Ignorare i passivi.</strong> In molte aziende sono il gruppo più numeroso e il più facile da spostare.</li></ul><h2>Tenere tutto in ordine</h2><p>Un semplice modulo e un foglio di calcolo bastano per il primo giro. Ripetendo il sondaggio, la parte difficile diventa tenere insieme punteggi, temi e azioni di follow-up nel tempo. <strong>FulcrumGrid HR Suite</strong> può raccogliere in un unico posto le schede dei dipendenti e le attività di follow-up, utile quando una promessa fatta dopo il sondaggio ha bisogno di un responsabile e di una data. Non scriverà il sondaggio al posto tuo, ma evita che le azioni si perdano.</p><p>Poni una domanda chiara, calcola il punteggio sempre allo stesso modo e considera i commenti come i dati veri. Un eNPS modesto che sale con costanza vale più di uno alto da cui nessuno trae conseguenze.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>L'eNPS è la stessa cosa di un sondaggio sul coinvolgimento?</summary><p>No. L'eNPS è una sola domanda su lealtà e raccomandazione, mentre un sondaggio sul coinvolgimento pone molte domande su aspetti specifici del lavoro. Molte aziende lo usano come rilevazione rapida tra sondaggi più lunghi.</p></details>
+        <details class="faq-item"><summary>Quante risposte servono per un eNPS affidabile?</summary><p>Non esiste un numero fisso, ma un tasso di risposta del 60% o più offre un quadro affidabile nella maggior parte delle aziende. Per le analisi per team, mantieni una dimensione minima del gruppo di cinque-dieci persone così le risposte restano anonime.</p></details>
+        <details class="faq-item"><summary>L'eNPS può essere negativo?</summary><p>Sì. La scala va da -100 a +100. Un valore negativo significa che i detrattori superano i promotori: è il segnale per leggere con attenzione i commenti e agire in fretta.</p></details>
+        <details class="faq-item"><summary>Il sondaggio eNPS deve essere anonimo?</summary><p>Nella maggior parte dei casi sì. L'anonimato favorisce risposte sincere, soprattutto da chi è insoddisfatto. Se serve un follow-up, invita i dipendenti a parlarne volontariamente invece di risalire alle risposte.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid HR Suite</p>
+        <h2>Trasforma il feedback del sondaggio in follow-up tracciato</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid HR Suite riunisce schede dei dipendenti e azioni di follow-up in un unico posto, così ciò che prometti dopo un sondaggio ha un responsabile e una data.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/hr-suite/">Esplora HR Suite</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=c33c4f35" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

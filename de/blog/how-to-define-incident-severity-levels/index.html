@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wie definiert man Schweregrade für Incidents (P1–P4) im kleinen Team? — FulcrumGrid</title>
+  <meta name="description" content="So definieren Sie die Incident-Schweregrade P1 bis P4 für ein kleines Team: klare Kriterien, eine Beispielskala, Reaktionsziele und typische Fehler." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wie definiert man Schweregrade für Incidents (P1–P4) im kleinen Team?" />
+  <meta property="og:description" content="So definieren Sie die Incident-Schweregrade P1 bis P4 für ein kleines Team: klare Kriterien, eine Beispielskala, Reaktionsziele und typische Fehler." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/how-to-define-incident-severity-levels/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-28" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wie definiert man Schweregrade für Incidents (P1–P4) im kleinen Team?" />
+  <meta name="twitter:description" content="So definieren Sie die Incident-Schweregrade P1 bis P4 für ein kleines Team: klare Kriterien, eine Beispielskala, Reaktionsziele und typische Fehler." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-define-incident-severity-levels/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wie definiert man Schweregrade für Incidents (P1–P4) im kleinen Team?",
+    "description": "So definieren Sie die Incident-Schweregrade P1 bis P4 für ein kleines Team: klare Kriterien, eine Beispielskala, Reaktionsziele und typische Fehler.",
+    "datePublished": "2026-10-28",
+    "dateModified": "2026-10-28",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/how-to-define-incident-severity-levels/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Incident-Schweregrade",
+        "item": "https://fulcrumgrid.com/de/blog/how-to-define-incident-severity-levels/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist der Unterschied zwischen Schweregrad und Priorität?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Der Schweregrad beschreibt die Auswirkung des Incidents, die Priorität die Reihenfolge der Bearbeitung. Kleine Teams fassen beides meist in einer P1-bis-P4-Skala zusammen, was in Ordnung ist, solange die Definitionen klar sind."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ist P1 oder P4 die schwerste Stufe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "P1 ist die schwerste, P4 die leichteste. Manche Werkzeuge nutzen SEV1 bis SEV4 mit gleicher Bedeutung, einige kehren die Reihenfolge jedoch um. Halten Sie daher immer fest, welches Ende der Skala dringend ist."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Brauchen wir für jede Stufe Alarme außerhalb der Arbeitszeit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. Alarmieren Sie außerhalb der Arbeitszeit nur bei P1 und eventuell bei P2, falls Ihre Kunden rund um die Uhr auf Sie angewiesen sind. P3 und P4 können bis zum nächsten Arbeitstag warten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie oft sollten wir unsere Schweregrad-Definitionen überprüfen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prüfen Sie sie nach jedem P1- oder P2-Incident und machen Sie alle sechs Monate eine vollständige Durchsicht, oder früher, wenn sich Team, Produkt oder Kundenstamm spürbar ändern."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / Incident-Schweregrade</p>
+        <span class="tag tag-accent">Betrieb</span>
+        <h1>Wie definiert man Schweregrade für Incidents (P1–P4) im kleinen Team?</h1>
+        <p class="hero-intro">So definieren Sie die Incident-Schweregrade P1 bis P4 für ein kleines Team: klare Kriterien, eine Beispielskala, Reaktionsziele und typische Fehler.</p>
+        <p class="mono"><time datetime="2026-10-28">28. Oktober 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Wenn nachts um zwei etwas ausfällt, will niemand darüber diskutieren, wie ernst es ist. Schweregrade entscheiden diese Frage im Voraus. Sie geben allen dasselbe Vokabular, sodass ein kleines Team weiß, wen es weckt, wie schnell es handelt und was bis Montag warten kann. Dieser Leitfaden beantwortet die häufigsten Fragen, wenn Teams erstmals die Stufen P1 bis P4 einführen.</p><h2>Was sind Incident-Schweregrade?</h2><p>Ein Schweregrad ist ein Etikett, das beschreibt, wie schlimm ein Incident ist, gemessen an den Auswirkungen auf Kunden oder das Geschäft. Zu jedem Etikett gehört eine vereinbarte Reaktion: wer alarmiert wird, wie schnell jemand antworten muss und wie oft Updates erscheinen. &bdquo;P&ldquo; steht für Priorität, und P1 ist die dringendste Stufe. Manche Teams schreiben SEV1 bis SEV4; der Gedanke ist derselbe.</p><h2>Warum braucht ein kleines Team sie?</h2><p>Bei fünf oder zehn Leuten liegt der Satz nahe: &bdquo;Wir merken schon, wenn es ernst ist.&ldquo; In der Praxis heißt das: Jedes Problem wirkt auf den, der es bemerkt hat, dringend, die lauteste Stimme legt die Priorität fest, und die Bereitschaft wird wegen eines Tippfehlers auf einer Einstellungsseite geweckt. Schriftliche Stufen schützen Ihre Aufmerksamkeit, die knappste Ressource eines kleinen Teams.</p><h2>Wie viele Stufen sollte man verwenden?</h2><p>Vier sind ideal. Bei dreien müssen ernste und mittlere Probleme oft zusammengeworfen werden, bei fünf oder sechs streitet man über die Grenze zwischen zwei Nachbarstufen. Wenn sich niemand die Stufen merken kann, ohne ein Dokument zu öffnen, sind es zu viele.</p><h2>Wie entscheidet man, welche Stufe ein Incident bekommt?</h2><p>Stellen Sie drei Fragen, in dieser Reihenfolge:</p><ul><li><strong>Wie viele Menschen sind betroffen?</strong> Alle, ein Segment oder nur ein einzelner Nutzer?</li><li><strong>Wie stark?</strong> Ist der Dienst ausgefallen, teilweise beeinträchtigt oder nur lästig?</li><li><strong>Gibt es eine Umgehungslösung?</strong> Können Nutzer ihre Arbeit anders erledigen, liegt der Incident meist eine Stufe niedriger.</li></ul><p>Dann gelten zwei Ausnahmen. Alles, was Datenverlust, eine Sicherheitsverletzung oder eine rechtliche Pflicht betrifft, steigt mindestens eine Stufe auf. Und wenn Sie zwischen zwei Stufen schwanken, wählen Sie die höhere und senken sie, sobald Sie mehr wissen. Herabstufen kostet nichts; ein übersehener Notfall dagegen viel.</p><h2>Wie sieht eine Beispielskala von P1 bis P4 aus?</h2><p>Passen Sie die Zahlen an Ihre Arbeitszeiten und Kapazitäten an. Es sind interne Reaktionsziele, also wie schnell Ihr Team reagiert, und etwas anderes als das, was Sie Kunden vertraglich zusagen.</p><ul><li><strong>P1 &ndash; Kritisch.</strong> Der Dienst ist für die meisten Nutzer ausgefallen oder unbenutzbar, oder Daten gehen verloren oder werden offengelegt. <strong>Ziel:</strong> Bestätigung innerhalb von 15 Minuten, zu jeder Tageszeit; Update alle 30 Minuten; das ganze Team lässt andere Arbeit liegen.</li><li><strong>P2 &ndash; Hoch.</strong> Eine wichtige Funktion ist ausgefallen oder stark beeinträchtigt, oder ein wichtiger Kunde ist blockiert, ohne zumutbare Umgehung. <strong>Ziel:</strong> Bestätigung innerhalb von 1 Stunde in erweiterten Zeiten; Update alle 2 Stunden; Behebung am selben Tag.</li><li><strong>P3 &ndash; Mittel.</strong> Eine Nebenfunktion fällt aus oder die Leistung ist schlecht, aber es gibt eine Umgehung. <strong>Ziel:</strong> Bestätigung innerhalb von 1 Arbeitstag; Behebung innerhalb der laufenden Woche; kein Alarm außerhalb der Arbeitszeit.</li><li><strong>P4 &ndash; Niedrig.</strong> Ein kosmetisches Problem, ein kleiner Fehler oder eine Frage ohne geschäftliche Auswirkung. <strong>Ziel:</strong> Bestätigung innerhalb von 3 Arbeitstagen; Einplanung im normalen Backlog.</li></ul><h2>Wer legt den Schweregrad fest, und kann er sich ändern?</h2><p>Wer den Incident zuerst übernimmt, meist die Bereitschaft, schlägt anhand der obigen Fragen eine Stufe vor. Die Incident-Leitung kann sie jederzeit ändern, und die Änderung sollte im selben Kanal angekündigt werden, damit niemand mit veralteten Informationen arbeitet. Der Schweregrad ist ein lebendiges Etikett: Ein P2, der doch alle betrifft, wird zum P1, und ein P1, der per schnellem Rollback eingedämmt ist, fällt auf P3, während die Ursache untersucht wird.</p><h2>Welche Fehler sollte man vermeiden?</h2><ul><li><strong>Stufen nach Ursache definieren.</strong> &bdquo;Datenbankprobleme sind P1&ldquo; ist eine Falle. Definieren Sie nach Auswirkung, nicht nach dem ausgefallenen System.</li><li><strong>Alles zu P1 machen.</strong> Ist jeder Alarm kritisch, ist keiner es. Reservieren Sie P1 für echte Notfälle, sonst reagiert irgendwann niemand mehr.</li><li><strong>Vage Formulierungen.</strong> &bdquo;Erhebliche Auswirkung&ldquo; bedeutet für jeden etwas anderes. Nutzen Sie Zahlen, wo es geht, etwa einen Anteil der Nutzer oder einen umsatzrelevanten Prozess.</li><li><strong>Kein Update-Rhythmus.</strong> Schweigen während eines Incidents stresst mehr als das Problem selbst. Versprechen Sie ein Update-Intervall und halten Sie es ein, auch wenn das Update &bdquo;Wir untersuchen noch&ldquo; lautet.</li><li><strong>Die Skala nie überprüfen.</strong> Fragen Sie nach jedem P1 oder P2, ob Stufe und Reaktion zur Realität passten, und passen Sie die Definitionen an.</li></ul><h2>Wie hält man die Skala dauerhaft wirksam?</h2><p>Legen Sie die einseitige Definition dorthin, wo das Team sie sieht: im Chat-Kanal angeheftet, im Alarmierungswerkzeug verlinkt und im Bereitschaftshandbuch ausgedruckt. Erfassen Sie jeden Incident mit Stufe, Zeit bis zur Bestätigung und Zeit bis zur Lösung, und werten Sie die Zahlen monatlich aus. Wenn Sie Ihre Abläufe bereits in <strong>FulcrumGrid Command Center</strong> steuern, können Sie Incident-Zahlen und Reaktionszeiten neben Ihren anderen KPIs verfolgen und so erkennen, ob P2-Fälle zunehmen. Eine Tabellenkalkulation genügt zum Start; die Gewohnheit zählt mehr als das Werkzeug.</p><p>Beginnen Sie mit vier Stufen, beschreiben Sie jede in zwei Sätzen, verknüpfen Sie ein Reaktionsziel und testen Sie alles an Ihren letzten fünf echten Incidents. Wirken die Etiketten im Rückblick treffend, können Sie sie im Ernstfall nutzen.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Was ist der Unterschied zwischen Schweregrad und Priorität?</summary><p>Der Schweregrad beschreibt die Auswirkung des Incidents, die Priorität die Reihenfolge der Bearbeitung. Kleine Teams fassen beides meist in einer P1-bis-P4-Skala zusammen, was in Ordnung ist, solange die Definitionen klar sind.</p></details>
+        <details class="faq-item"><summary>Ist P1 oder P4 die schwerste Stufe?</summary><p>P1 ist die schwerste, P4 die leichteste. Manche Werkzeuge nutzen SEV1 bis SEV4 mit gleicher Bedeutung, einige kehren die Reihenfolge jedoch um. Halten Sie daher immer fest, welches Ende der Skala dringend ist.</p></details>
+        <details class="faq-item"><summary>Brauchen wir für jede Stufe Alarme außerhalb der Arbeitszeit?</summary><p>Nein. Alarmieren Sie außerhalb der Arbeitszeit nur bei P1 und eventuell bei P2, falls Ihre Kunden rund um die Uhr auf Sie angewiesen sind. P3 und P4 können bis zum nächsten Arbeitstag warten.</p></details>
+        <details class="faq-item"><summary>Wie oft sollten wir unsere Schweregrad-Definitionen überprüfen?</summary><p>Prüfen Sie sie nach jedem P1- oder P2-Incident und machen Sie alle sechs Monate eine vollständige Durchsicht, oder früher, wenn sich Team, Produkt oder Kundenstamm spürbar ändern.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Incidents neben Ihren KPIs verfolgen</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center bündelt Incident-Zahlen, Reaktionszeiten und Projekte an einem Ort, damit Sie sehen, ob Ihre Schweregrad-Ziele Monat für Monat halten.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/command-center/">Entdecken Command Center</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=c33c4f35" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

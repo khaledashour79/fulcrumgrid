@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>ما هو مؤشر صافي ترويج الموظفين (eNPS) وكيف تحسبه وتتصرف بناءً عليه؟ — FulcrumGrid</title>
+  <meta name="description" content="يقيس هذا المؤشر مدى استعداد موظفيك لترشيح شركتك مكاناً للعمل. تعرّف على المعادلة ومثال محسوب وكيفية قراءة النتيجة والخطوات التالية." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="ما هو مؤشر صافي ترويج الموظفين (eNPS) وكيف تحسبه وتتصرف بناءً عليه؟" />
+  <meta property="og:description" content="يقيس هذا المؤشر مدى استعداد موظفيك لترشيح شركتك مكاناً للعمل. تعرّف على المعادلة ومثال محسوب وكيفية قراءة النتيجة والخطوات التالية." />
+  <meta property="og:url" content="https://fulcrumgrid.com/ar/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-28" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="منصة الموارد البشرية من FulcrumGrid — عمليات الأفراد" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ما هو مؤشر صافي ترويج الموظفين (eNPS) وكيف تحسبه وتتصرف بناءً عليه؟" />
+  <meta name="twitter:description" content="يقيس هذا المؤشر مدى استعداد موظفيك لترشيح شركتك مكاناً للعمل. تعرّف على المعادلة ومثال محسوب وكيفية قراءة النتيجة والخطوات التالية." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/ar/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-enps-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-enps-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/cairo-600-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/cairo-400-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "ما هو مؤشر صافي ترويج الموظفين (eNPS) وكيف تحسبه وتتصرف بناءً عليه؟",
+    "description": "يقيس هذا المؤشر مدى استعداد موظفيك لترشيح شركتك مكاناً للعمل. تعرّف على المعادلة ومثال محسوب وكيفية قراءة النتيجة والخطوات التالية.",
+    "datePublished": "2026-10-28",
+    "dateModified": "2026-10-28",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/ar/blog/what-is-enps-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "ar"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "الرئيسية",
+        "item": "https://fulcrumgrid.com/ar/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "المدوّنة",
+        "item": "https://fulcrumgrid.com/ar/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "دليل صافي الترويج",
+        "item": "https://fulcrumgrid.com/ar/blog/what-is-enps-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "هل هذا المؤشر هو نفسه استطلاع المشاركة الوظيفية؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "لا. هو سؤال واحد عن الولاء والترشيح، بينما يطرح استطلاع المشاركة أسئلة كثيرة عن جوانب محددة من العمل. وتستخدمه شركات كثيرة نبضاً سريعاً بين الاستطلاعات الأطول."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كم عدد الردود اللازم للحصول على نتيجة موثوقة؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "لا يوجد رقم ثابت، لكن معدل استجابة ٦٠٪ فأكثر يعطي صورة جديرة بالثقة في أغلب الشركات. وعند التقسيم حسب الفرق، اجعل الحد الأدنى للمجموعة من خمسة إلى عشرة أشخاص لتبقى الإجابات مجهولة."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "هل يمكن أن تكون النتيجة سالبة؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "نعم. يمتد المقياس من &minus;١٠٠ إلى +١٠٠. والنتيجة السالبة تعني أن المنتقدين أكثر من المروّجين، وهي إشارة إلى ضرورة التمعن في التعليقات والتحرك سريعاً."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "هل ينبغي أن يكون الاستطلاع مجهول الهوية؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "في أغلب الحالات نعم. فالسرية تشجع على الصراحة، خصوصاً لدى غير الراضين. وإذا احتجت إلى متابعة فادعُ الموظفين إلى الحديث طوعاً بدلاً من محاولة تتبع الإجابات."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <a href="/ar/products/">المنتجات</a>
+        <a href="/ar/features/">الشبكة</a>
+        <a href="/ar/pricing/">الأسعار</a>
+        <a href="/ar/regions/">المناطق</a>
+        <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
+        <a href="/ar/contact/">اتصل بنا</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="اللغة">ع ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" class="active" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      </div>
+      <button class="nav-toggle" aria-label="القائمة"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/ar/">الرئيسية</a> / <a href="/ar/blog/">المدوّنة</a> / دليل صافي الترويج</p>
+        <span class="tag tag-accent">الموارد البشرية</span>
+        <h1>ما هو مؤشر صافي ترويج الموظفين (eNPS) وكيف تحسبه وتتصرف بناءً عليه؟</h1>
+        <p class="hero-intro">يقيس هذا المؤشر مدى استعداد موظفيك لترشيح شركتك مكاناً للعمل. تعرّف على المعادلة ومثال محسوب وكيفية قراءة النتيجة والخطوات التالية.</p>
+        <p class="mono"><time datetime="2026-10-28">٢٨ أكتوبر ٢٠٢٦</time> · ٦ دقائق للقراءة</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>قد تضم استطلاعات المشاركة خمسين سؤالاً ومع ذلك يبقى المديرون في حيرة بشأن ما يفعلونه صباح الاثنين. أما مؤشر صافي ترويج الموظفين (eNPS) فيسلك الطريق المعاكس: سؤال واحد ورقم واحد يتكرر بإيقاع ثابت. يجيب هذا الدليل عن أكثر الأسئلة شيوعاً: ما هذا المؤشر، وكيف يُحسب، وما النتيجة الجيدة، والأهم من ذلك ماذا تفعل بالنتيجة.</p><h2>ما هو مؤشر صافي ترويج الموظفين؟</h2><p>هو صيغة معدّلة من مؤشر صافي الترويج الذي تستخدمه الشركات مع عملائها. فبدلاً من سؤال الناس إن كانوا سيوصون بمنتج ما، تسأل موظفيك عن مدى استعدادهم لترشيح مؤسستك مكاناً للعمل. وتُلخَّص الإجابات في رقم واحد يتراوح بين &minus;١٠٠ و+١٠٠.</p><h2>ما السؤال الذي تطرحه؟</h2><p>الصيغة المعتادة هي: <strong>&laquo;على مقياس من ٠ إلى ١٠، ما مدى احتمال أن توصي صديقاً أو زميلاً بالعمل هنا؟&raquo;</strong> وأضف بعده مباشرة سؤالاً مفتوحاً اختيارياً: &laquo;ما السبب الرئيسي لتقييمك؟&raquo; فالرقم يخبرك أين تقف، والتعليقات تخبرك لماذا.</p><h2>كيف تحسب المؤشر؟</h2><h3>الخطوة الأولى: صنّف الإجابات في ثلاث فئات</h3><ul><li><strong>المروّجون (٩ أو ١٠).</strong> أشخاص متحمسون سيوصون بك بنشاط.</li><li><strong>المحايدون (٧ أو ٨).</strong> راضون لكنهم غير متعلقين، وقد يقبلون عرضاً أفضل.</li><li><strong>المنتقدون (من ٠ إلى ٦).</strong> غير راضين، وقد يثنون غيرهم عن الانضمام إليك.</li></ul><h3>الخطوة الثانية: حوّل كل فئة إلى نسبة مئوية</h3><p>اقسم عدد أفراد كل فئة على إجمالي الردود، ثم اضرب الناتج في ١٠٠.</p><h3>الخطوة الثالثة: اطرح</h3><p><strong>المؤشر = نسبة المروّجين &minus; نسبة المنتقدين.</strong> يُحتسب المحايدون ضمن الإجمالي لكنهم لا يدخلون في عملية الطرح.</p><h2>مثال محسوب</h2><p>شركة فيها ٨٠ موظفاً أرسلت الاستطلاع، فرد ٦٠ شخصاً، أي بمعدل استجابة ٧٥٪. وتوزعت الإجابات كما يلي:</p><ul><li>٢٧ مروّجاً، أي ٢٧ ÷ ٦٠ = ٤٥٪</li><li>٢١ محايداً، أي ٢١ ÷ ٦٠ = ٣٥٪</li><li>١٢ منتقداً، أي ١٢ ÷ ٦٠ = ٢٠٪</li></ul><p>المؤشر = ٤٥ &minus; ٢٠ = <strong>+٢٥</strong>. لاحظ أن النتيجة تُكتب رقماً صحيحاً لا نسبة مئوية. ولو كان لدى الشركة نفسها ١٢ مروّجاً و٢٧ منتقداً لكانت نتيجتها &minus;٢٥ رغم أن حجم الاستطلاع يبدو مماثلاً.</p><h2>ما النتيجة الجيدة؟</h2><p>أي نتيجة فوق الصفر تعني أن المروّجين أكثر من المنتقدين. ويعدّ كثير من الفرق نتيجة تتراوح بين +١٠ و+٣٠ صحية، وما بلغ +٥٠ فأكثر ممتازاً، بينما تمثل النتيجة السالبة إنذاراً واضحاً. وهذه النطاقات إرشادية فقط، فالقطاع وحجم الشركة وثقافتها تغيّر النتيجة المعتادة، لذا فأفضل مقارنة هي نتيجتك أنت عبر الزمن.</p><h2>كم مرة ينبغي إجراء الاستطلاع؟</h2><p>الإجراء الفصلي مناسب لأغلب المؤسسات، ومرتان في السنة حدّ أدنى معقول. فالتكرار الأكثر يرهق الناس، والأقل يخفي الاتجاهات. أبقِ الصياغة والمقياس والتوقيت كما هي في كل جولة، وإلا تعذّرت مقارنة النتائج.</p><h2>كيف تتصرف بناءً على النتائج؟</h2><h3>اقرأ التعليقات قبل الرقم</h3><p>صنّف الإجابات المفتوحة في محاور مثل عبء العمل والأجر والإدارة والنمو والأدوات. ثلاثة أو أربعة محاور متكررة تفسّر معظم الرقم.</p><h3>قسّم النتائج بحذر</h3><p>قارن حسب القسم أو الموقع أو مدة الخدمة، لكن فقط عندما يكون لدى المجموعة ردود كافية تحفظ سرية هوية أصحابها. والقاعدة الشائعة حدّ أدنى من خمسة إلى عشرة ردود لكل مجموعة. وغالباً ما يكون تراجع فريق واحد أنفع من المتوسط العام للشركة.</p><h3>شارك النتائج سريعاً</h3><p>أخبر الموظفين بما وجدته خلال أسابيع قليلة، بما في ذلك الجوانب المزعجة. فالصمت بعد الاستطلاع أسرع طريق إلى خفض نسبة المشاركة في الجولة التالية.</p><h3>اختر إجراءين أو ثلاثة وسمِّ المسؤولين</h3><p>محاولة إصلاح كل شيء لا تصلح شيئاً. اختر التغييرات التي تعالج أكبر المحاور، وكلّف كل واحد منها بمسؤول معيّن وموعد محدد، وأبلغ بالتقدم في الجولة التالية.</p><h3>تابع مع المنتقدين بلطف</h3><p>إذا كان الاستطلاع مجهول الهوية فلا تحاول تحديد الأفراد. استخدم بدلاً من ذلك حوارات الفرق ومقابلات البقاء والجلسات المفتوحة لاستكشاف المشكلات.</p><h2>أخطاء شائعة</h2><ul><li><strong>اعتبار الرقم هو الهدف.</strong> الضغط على الناس لرفع تقييمهم يُفقد المؤشر معناه.</li><li><strong>كشف هوية المجيبين.</strong> المجموعات الصغيرة والتقارير المتهاونة تدفع الناس إلى التوقف عن الصراحة.</li><li><strong>إجراء الاستطلاع ثم عدم فعل شيء.</strong> الفعل أهم من القياس.</li><li><strong>تجاهل المحايدين.</strong> هم أكبر فئة في كثير من الشركات وأسهلها تحريكاً.</li></ul><h2>كيف تبقي كل شيء منظماً؟</h2><p>يكفي نموذج بسيط وجدول بيانات للجولة الأولى. ومع تكرار الاستطلاع يصبح الأصعب هو جمع الدرجات والمحاور وإجراءات المتابعة معاً عبر الزمن. ويمكن لـ<strong>FulcrumGrid HR Suite</strong> (منصة الموارد البشرية) أن تحفظ سجلات الموظفين ومهام المتابعة في مكان واحد، وهو ما يفيد حين يحتاج وعدٌ قُطع بعد الاستطلاع إلى مسؤول وموعد. هي لن تكتب استطلاعك نيابة عنك، لكنها تضمن ألا تضيع الإجراءات.</p><p>اطرح سؤالاً واضحاً واحداً، واحسب النتيجة بالطريقة نفسها في كل مرة، واعتبر التعليقات هي البيانات الحقيقية. نتيجة متواضعة ترتفع باطراد خير من نتيجة عالية لا يتحرك أحد بناءً عليها.</p>
+
+        <h2>الأسئلة الشائعة</h2>
+        <details class="faq-item"><summary>هل هذا المؤشر هو نفسه استطلاع المشاركة الوظيفية؟</summary><p>لا. هو سؤال واحد عن الولاء والترشيح، بينما يطرح استطلاع المشاركة أسئلة كثيرة عن جوانب محددة من العمل. وتستخدمه شركات كثيرة نبضاً سريعاً بين الاستطلاعات الأطول.</p></details>
+        <details class="faq-item"><summary>كم عدد الردود اللازم للحصول على نتيجة موثوقة؟</summary><p>لا يوجد رقم ثابت، لكن معدل استجابة ٦٠٪ فأكثر يعطي صورة جديرة بالثقة في أغلب الشركات. وعند التقسيم حسب الفرق، اجعل الحد الأدنى للمجموعة من خمسة إلى عشرة أشخاص لتبقى الإجابات مجهولة.</p></details>
+        <details class="faq-item"><summary>هل يمكن أن تكون النتيجة سالبة؟</summary><p>نعم. يمتد المقياس من &amp;minus;١٠٠ إلى +١٠٠. والنتيجة السالبة تعني أن المنتقدين أكثر من المروّجين، وهي إشارة إلى ضرورة التمعن في التعليقات والتحرك سريعاً.</p></details>
+        <details class="faq-item"><summary>هل ينبغي أن يكون الاستطلاع مجهول الهوية؟</summary><p>في أغلب الحالات نعم. فالسرية تشجع على الصراحة، خصوصاً لدى غير الراضين. وإذا احتجت إلى متابعة فادعُ الموظفين إلى الحديث طوعاً بدلاً من محاولة تتبع الإجابات.</p></details>
+
+        <p style="margin-top:32px"><a href="/ar/blog/"><span aria-hidden="true">←</span> العودة إلى المدوّنة</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid منصة الموارد البشرية</p>
+        <h2>حوّل ملاحظات الاستطلاع إلى متابعة موثقة</h2>
+        <p class="section-lead" style="margin:0 auto 26px">تحفظ FulcrumGrid منصة الموارد البشرية سجلات الموظفين وإجراءات المتابعة في مكان واحد، فيصبح لما تعد به بعد الاستطلاع مسؤول وموعد.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/ar/products/hr-suite/">استكشف منصة الموارد البشرية</a>
+          <a class="btn btn-secondary" href="/ar/blog/">العودة إلى المدوّنة</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>العمود الفقري التشغيلي للفرق الحديثة.</p>
+        </div>
+        <div class="foot-col">
+          <h5>المنتجات</h5>
+          <a href="/ar/products/">كل المنتجات</a>
+          <a href="/ar/products/hr-suite/">منصة الموارد البشرية</a>
+          <a href="/ar/products/command-center/">لوحة التحكم للتنفيذيين</a>
+          <a href="/ar/products/collection/">منصة تحصيل الديون</a>
+          <a href="/ar/products/tms/">منصة العمليات اللوجستية</a>
+          <a href="/ar/products/assure/">منصة الحوكمة والامتثال</a>
+          <a href="/ar/products/close/">منصة المعايير المحاسبية والإغلاق</a>
+          <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشبكة</h5>
+          <a href="/ar/features/">الميزات</a>
+          <a href="/ar/integrations/">التكاملات</a>
+          <a href="/ar/how-it-works/">كيف تعمل</a>
+          <a href="/ar/pricing/">الأسعار</a>
+          <a href="/ar/regions/">المناطق</a>
+          <a href="/ar/blog/">المدوّنة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشركة</h5>
+          <a href="/ar/about/">من نحن</a>
+          <a href="/ar/faq/">الأسئلة الشائعة</a>
+          <a href="/ar/contact/">اتصل بنا</a>
+          <a href="/ar/privacy/">الخصوصية</a>
+          <a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=c33c4f35" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

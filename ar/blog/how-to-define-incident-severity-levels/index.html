@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>كيف تحدد مستويات خطورة الحوادث (من المستوى ١ إلى ٤) لفريق صغير؟ — FulcrumGrid</title>
+  <meta name="description" content="تعرّف على كيفية تحديد مستويات خطورة الحوادث من ١ إلى ٤ لفريق صغير: معايير واضحة، ومقياس نموذجي، وأهداف استجابة، وأخطاء تُربك الأولويات." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="كيف تحدد مستويات خطورة الحوادث (من المستوى ١ إلى ٤) لفريق صغير؟" />
+  <meta property="og:description" content="تعرّف على كيفية تحديد مستويات خطورة الحوادث من ١ إلى ٤ لفريق صغير: معايير واضحة، ومقياس نموذجي، وأهداف استجابة، وأخطاء تُربك الأولويات." />
+  <meta property="og:url" content="https://fulcrumgrid.com/ar/blog/how-to-define-incident-severity-levels/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-10-28" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="لوحة التحكم للتنفيذيين من FulcrumGrid — العمليات في لمحة" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="كيف تحدد مستويات خطورة الحوادث (من المستوى ١ إلى ٤) لفريق صغير؟" />
+  <meta name="twitter:description" content="تعرّف على كيفية تحديد مستويات خطورة الحوادث من ١ إلى ٤ لفريق صغير: معايير واضحة، ومقياس نموذجي، وأهداف استجابة، وأخطاء تُربك الأولويات." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/ar/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-define-incident-severity-levels/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-define-incident-severity-levels/" />
+
+  <link rel="preload" href="/assets/fonts/cairo-600-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/cairo-400-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "كيف تحدد مستويات خطورة الحوادث (من المستوى ١ إلى ٤) لفريق صغير؟",
+    "description": "تعرّف على كيفية تحديد مستويات خطورة الحوادث من ١ إلى ٤ لفريق صغير: معايير واضحة، ومقياس نموذجي، وأهداف استجابة، وأخطاء تُربك الأولويات.",
+    "datePublished": "2026-10-28",
+    "dateModified": "2026-10-28",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/ar/blog/how-to-define-incident-severity-levels/"
+    },
+    "inLanguage": "ar"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "الرئيسية",
+        "item": "https://fulcrumgrid.com/ar/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "المدوّنة",
+        "item": "https://fulcrumgrid.com/ar/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "مستويات خطورة الحوادث",
+        "item": "https://fulcrumgrid.com/ar/blog/how-to-define-incident-severity-levels/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "ما الفرق بين الخطورة والأولوية؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "الخطورة تصف أثر الحادث، والأولوية تحدد ترتيب العمل عليه. وتدمج الفرق الصغيرة عادةً الاثنين في مقياس واحد من ١ إلى ٤، وهذا مناسب ما دامت التعريفات واضحة."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "هل المستوى ١ أم ٤ هو الأشد خطورة؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "المستوى ١ هو الأشد والمستوى ٤ الأخف. بعض الأدوات تستخدم خطورة ١ إلى ٤ بالمعنى نفسه، لكن قلة منها تعكس الترتيب، لذا دوّن دائماً أي طرفي المقياس هو العاجل."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "هل نحتاج إلى تنبيهات خارج ساعات العمل لكل مستوى؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "لا. نبّه الناس خارج ساعات العمل للمستوى ١ فقط، وربما للمستوى ٢ إذا كان عملاؤك يعتمدون عليك على مدار الساعة. أما المستويان ٣ و٤ فيمكن أن ينتظرا يوم العمل التالي."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كم مرة ينبغي مراجعة تعريفات الخطورة؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "راجعها بعد أي حادث من المستوى ١ أو ٢، وأجرِ فحصاً شاملاً كل ستة أشهر، أو أبكر عند تغيّر ملحوظ في فريقك أو منتجك أو قاعدة عملائك."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <a href="/ar/products/">المنتجات</a>
+        <a href="/ar/features/">الشبكة</a>
+        <a href="/ar/pricing/">الأسعار</a>
+        <a href="/ar/regions/">المناطق</a>
+        <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
+        <a href="/ar/contact/">اتصل بنا</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="اللغة">ع ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" class="active" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      </div>
+      <button class="nav-toggle" aria-label="القائمة"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/ar/">الرئيسية</a> / <a href="/ar/blog/">المدوّنة</a> / مستويات خطورة الحوادث</p>
+        <span class="tag tag-accent">العمليات</span>
+        <h1>كيف تحدد مستويات خطورة الحوادث (من المستوى ١ إلى ٤) لفريق صغير؟</h1>
+        <p class="hero-intro">تعرّف على كيفية تحديد مستويات خطورة الحوادث من ١ إلى ٤ لفريق صغير: معايير واضحة، ومقياس نموذجي، وأهداف استجابة، وأخطاء تُربك الأولويات.</p>
+        <p class="mono"><time datetime="2026-10-28">٢٨ أكتوبر ٢٠٢٦</time> · ٦ دقائق للقراءة</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>حين يتعطل شيء في الثانية فجراً، لا يرغب أحد في نقاش مدى خطورته. مستويات الخطورة تحسم هذا النقاش مسبقاً. فهي تمنح الجميع لغة واحدة، فيعرف الفريق الصغير من يوقظ، وبأي سرعة يتحرك، وما الذي يمكن أن ينتظر إلى بداية الأسبوع. يجيب هذا الدليل عن أكثر الأسئلة شيوعاً حين تضع الفرق مستويات الخطورة من ١ إلى ٤ للمرة الأولى.</p><h2>ما مستويات خطورة الحوادث؟</h2><p>مستوى الخطورة تصنيف يصف مدى سوء الحادث بحسب أثره في العملاء أو في العمل. ويقترن كل تصنيف برد فعل متفق عليه: من يُنبَّه، وخلال كم من الوقت يجب أن يستجيب أحدهم، وكم مرة تُرسَل التحديثات. والمستوى ١ هو الأشد إلحاحاً. وتكتب بعض الفرق أسماء مثل خطورة ١ إلى خطورة ٤، والفكرة واحدة.</p><h2>لماذا يحتاج فريق صغير إليها؟</h2><p>مع خمسة أو عشرة أشخاص يغري القول: &laquo;نعرف حين يكون الأمر خطيراً.&raquo; لكن هذا يعني عملياً أن كل مشكلة تبدو عاجلة لمن لاحظها، وأن أعلى الأصوات هو من يحدد الأولوية، وأن المناوب يُوقَظ بسبب خطأ إملائي في صفحة الإعدادات. المستويات المكتوبة تحمي انتباهكم، وهو أندر مورد لدى الفريق الصغير.</p><h2>كم مستوى ينبغي أن تستخدم؟</h2><p>أربعة هي النقطة المثلى. فثلاثة مستويات تدفعك غالباً إلى جمع المشكلات الخطيرة والمتوسطة معاً، أما خمسة أو ستة فتثير خلافات حول الحد الفاصل بين مستويين متجاورين. وإذا لم يستطع الناس تذكّر المستويات دون فتح وثيقة، فهي أكثر مما يلزم.</p><h2>كيف تقرر المستوى الذي يستحقه الحادث؟</h2><p>اطرح ثلاثة أسئلة بهذا الترتيب:</p><ul><li><strong>كم شخصاً تأثر؟</strong> الجميع، أم شريحة منهم، أم مستخدم واحد؟</li><li><strong>بأي درجة؟</strong> هل الخدمة متوقفة، أم متدهورة جزئياً، أم مجرد مزعجة؟</li><li><strong>هل يوجد حل بديل؟</strong> إذا استطاع المستخدمون إنجاز عملهم بطريقة أخرى، فالحادث عادةً أقل بمستوى واحد.</li></ul><p>ثم طبّق استثناءين. أي حادث يتعلق بفقدان بيانات أو اختراق أمني أو التزام قانوني يرتفع مستوى واحداً على الأقل. وإذا ترددت بين مستويين فاختر الأعلى، ثم اخفضه حين تتضح الصورة. خفض المستوى رخيص، أما طارئ فاتك فمكلف.</p><h2>كيف يبدو مقياس نموذجي من المستوى ١ إلى ٤؟</h2><p>كيّف هذه الأرقام مع ساعات عملك وطاقتك. وهي أهداف استجابة داخلية، أي سرعة تحرك فريقك، وتختلف عمّا تعد به العملاء في اتفاقية رسمية.</p><ul><li><strong>المستوى ١ &ndash; حرج.</strong> الخدمة متوقفة أو غير قابلة للاستخدام لدى معظم المستخدمين، أو تُفقد بيانات أو تنكشف. <strong>الهدف:</strong> الإقرار خلال ١٥ دقيقة في أي ساعة من اليوم، وتحديث كل ٣٠ دقيقة، ويترك الفريق كله أعماله الأخرى.</li><li><strong>المستوى ٢ &ndash; مرتفع.</strong> ميزة رئيسية معطلة أو متدهورة بشدة، أو عميل مهم متوقف، دون حل بديل معقول. <strong>الهدف:</strong> الإقرار خلال ساعة في ساعات العمل الممتدة، وتحديث كل ساعتين، والإصلاح في اليوم نفسه.</li><li><strong>المستوى ٣ &ndash; متوسط.</strong> ميزة ثانوية تعمل بشكل خاطئ أو أداء ضعيف، لكن يوجد حل بديل. <strong>الهدف:</strong> الإقرار خلال يوم عمل واحد، والإصلاح خلال الأسبوع الحالي، دون تنبيه خارج ساعات العمل.</li><li><strong>المستوى ٤ &ndash; منخفض.</strong> مشكلة شكلية أو خلل بسيط أو سؤال دون أثر على العمل. <strong>الهدف:</strong> الإقرار خلال ٣ أيام عمل، وجدولته ضمن قائمة المهام المعتادة.</li></ul><h2>من يحدد الخطورة، وهل يمكن تغييرها؟</h2><p>من يتولى الحادث أولاً، وعادةً المناوب، يقترح مستوى بالاستعانة بالأسئلة أعلاه. ويستطيع قائد الحادث تغييره في أي وقت، ويُعلَن التغيير في القناة نفسها كي لا يعمل أحد بمعلومات قديمة. الخطورة تصنيف حيّ: حادث من المستوى ٢ يتبيّن أنه يؤثر في الجميع يصبح من المستوى ١، وحادث من المستوى ١ جرى احتواؤه بتراجع سريع يهبط إلى المستوى ٣ بينما يُبحث عن السبب الجذري.</p><h2>ما الأخطاء التي ينبغي تجنبها؟</h2><ul><li><strong>التعريف بحسب السبب.</strong> عبارة &laquo;مشكلات قاعدة البيانات من المستوى ١&raquo; فخ. عرّف بحسب الأثر لا بحسب النظام المتعطل.</li><li><strong>جعل كل شيء في المستوى ١.</strong> إذا كان كل تنبيه حرجاً فلا شيء حرج. احتفظ بالمستوى ١ للطوارئ الحقيقية، وإلا توقف الناس عن الاستجابة.</li><li><strong>الصياغة الغامضة.</strong> &laquo;أثر كبير&raquo; يعني شيئاً مختلفاً لكل شخص. استخدم الأرقام حيثما أمكن، كنسبة من المستخدمين أو عملية تدرّ إيرادات.</li><li><strong>غياب إيقاع التحديثات.</strong> الصمت أثناء الحادث يسبب توتراً أكثر من المشكلة نفسها. تعهّد بفاصل زمني للتحديثات والتزم به، حتى لو كان التحديث &laquo;لا يزال التحقيق جارياً&raquo;.</li><li><strong>عدم مراجعة المقياس.</strong> بعد كل حادث من المستوى ١ أو ٢، اسأل هل طابقا الواقع في المستوى والاستجابة، ثم عدّل التعريفات.</li></ul><h2>كيف تُبقي المقياس فعّالاً مع الوقت؟</h2><p>ضع التعريف في صفحة واحدة حيث يراه الفريق: مثبتاً في قناة المحادثة، ومرتبطاً بأداة التنبيه، ومطبوعاً في دليل المناوبة. سجّل كل حادث بمستواه وزمن الإقرار وزمن الحل، ثم راجع الأرقام شهرياً. وإذا كنت تدير عملياتك أصلاً في <strong>FulcrumGrid Command Center</strong> (مركز القيادة)، فيمكنك متابعة عدد الحوادث وأزمنة الاستجابة بجانب بقية مؤشرات الأداء، فيسهل أن ترى هل تتزايد حوادث المستوى ٢. ويكفي جدول بيانات للبداية؛ فالعادة أهم من الأداة.</p><p>ابدأ بأربعة مستويات، واكتب كل مستوى في جملتين، وأرفق به هدف استجابة، وجرّبه على آخر خمسة حوادث حقيقية لديك. فإذا بدت التصنيفات صائبة بأثر رجعي، فأنت جاهز لاستخدامها مباشرة.</p>
+
+        <h2>الأسئلة الشائعة</h2>
+        <details class="faq-item"><summary>ما الفرق بين الخطورة والأولوية؟</summary><p>الخطورة تصف أثر الحادث، والأولوية تحدد ترتيب العمل عليه. وتدمج الفرق الصغيرة عادةً الاثنين في مقياس واحد من ١ إلى ٤، وهذا مناسب ما دامت التعريفات واضحة.</p></details>
+        <details class="faq-item"><summary>هل المستوى ١ أم ٤ هو الأشد خطورة؟</summary><p>المستوى ١ هو الأشد والمستوى ٤ الأخف. بعض الأدوات تستخدم خطورة ١ إلى ٤ بالمعنى نفسه، لكن قلة منها تعكس الترتيب، لذا دوّن دائماً أي طرفي المقياس هو العاجل.</p></details>
+        <details class="faq-item"><summary>هل نحتاج إلى تنبيهات خارج ساعات العمل لكل مستوى؟</summary><p>لا. نبّه الناس خارج ساعات العمل للمستوى ١ فقط، وربما للمستوى ٢ إذا كان عملاؤك يعتمدون عليك على مدار الساعة. أما المستويان ٣ و٤ فيمكن أن ينتظرا يوم العمل التالي.</p></details>
+        <details class="faq-item"><summary>كم مرة ينبغي مراجعة تعريفات الخطورة؟</summary><p>راجعها بعد أي حادث من المستوى ١ أو ٢، وأجرِ فحصاً شاملاً كل ستة أشهر، أو أبكر عند تغيّر ملحوظ في فريقك أو منتجك أو قاعدة عملائك.</p></details>
+
+        <p style="margin-top:32px"><a href="/ar/blog/"><span aria-hidden="true">←</span> العودة إلى المدوّنة</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid لوحة التحكم للتنفيذيين</p>
+        <h2>تابع الحوادث بجانب مؤشرات أدائك</h2>
+        <p class="section-lead" style="margin:0 auto 26px">يجمع FulcrumGrid Command Center عدد الحوادث وأزمنة الاستجابة والمشاريع في مكان واحد، لترى هل تصمد أهداف الخطورة شهراً بعد شهر.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/ar/products/command-center/">استكشف لوحة التحكم للتنفيذيين</a>
+          <a class="btn btn-secondary" href="/ar/blog/">العودة إلى المدوّنة</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>العمود الفقري التشغيلي للفرق الحديثة.</p>
+        </div>
+        <div class="foot-col">
+          <h5>المنتجات</h5>
+          <a href="/ar/products/">كل المنتجات</a>
+          <a href="/ar/products/hr-suite/">منصة الموارد البشرية</a>
+          <a href="/ar/products/command-center/">لوحة التحكم للتنفيذيين</a>
+          <a href="/ar/products/collection/">منصة تحصيل الديون</a>
+          <a href="/ar/products/tms/">منصة العمليات اللوجستية</a>
+          <a href="/ar/products/assure/">منصة الحوكمة والامتثال</a>
+          <a href="/ar/products/close/">منصة المعايير المحاسبية والإغلاق</a>
+          <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشبكة</h5>
+          <a href="/ar/features/">الميزات</a>
+          <a href="/ar/integrations/">التكاملات</a>
+          <a href="/ar/how-it-works/">كيف تعمل</a>
+          <a href="/ar/pricing/">الأسعار</a>
+          <a href="/ar/regions/">المناطق</a>
+          <a href="/ar/blog/">المدوّنة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشركة</h5>
+          <a href="/ar/about/">من نحن</a>
+          <a href="/ar/faq/">الأسئلة الشائعة</a>
+          <a href="/ar/contact/">اتصل بنا</a>
+          <a href="/ar/privacy/">الخصوصية</a>
+          <a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=c33c4f35" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
