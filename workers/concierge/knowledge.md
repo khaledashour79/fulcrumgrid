@@ -74,7 +74,7 @@ billing saves 20%.
 **Coming soon / roadmap.** Voice (business telephony), CRM, Retail (point of sale,
 inventory and multi-store operations) and Connect (secure networking plus remote desktop —
 a private WireGuard VPN for your team, with remote-desktop sessions running peer-to-peer
-over it, no exposed ports) are coming soon; Agents, Real Estate, Workshop, VPN
+over it, no exposed ports) are coming soon; Agents, Real Estate, Workshop
 and Desk are on the roadmap. Custom apps are built to order on the same foundation.
 
 **Regions.** Hosted and tuned per region, with data in your region, your language and
