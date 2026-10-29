@@ -788,12 +788,12 @@ PAGE = {
                 "Telefonía empresarial — llamadas, registro de llamadas e IVR vinculados a sus registros, para que cada conversación quede archivada.",
                 "Telefonia aziendale — chiamate, registrazione delle chiamate e IVR collegati ai tuoi archivi, così ogni conversazione resta agli atti.",
                 "Zakelijke telefonie — gesprekken, gesprekslogboeken en IVR gekoppeld aan uw gegevens, zodat elk gesprek bewaard blijft."),
-            "Wire FulcrumGrid to the tools you already run — no-code automations and two-way data sync across your stack.": _t(
-                "Reliez FulcrumGrid aux outils que vous utilisez déjà — automatisations sans code et synchronisation bidirectionnelle des données sur l'ensemble de votre stack.",
-                "Verbinden Sie FulcrumGrid mit den Tools, die Sie bereits nutzen — No-Code-Automatisierungen und bidirektionale Datensynchronisierung über Ihren gesamten Stack.",
-                "Conecte FulcrumGrid con las herramientas que ya usa — automatizaciones sin código y sincronización bidireccional de datos en todo su stack.",
-                "Collega FulcrumGrid agli strumenti che già usi — automazioni no-code e sincronizzazione bidirezionale dei dati su tutto il tuo stack.",
-                "Koppel FulcrumGrid aan de tools die u al gebruikt — no-code-automatiseringen en tweerichtings-gegevenssynchronisatie over uw hele stack."),
+            "Secure networking and remote desktop in one — a private team VPN, with remote-desktop sessions that run peer-to-peer over it, so there are no exposed ports.": _t(
+                "Réseau sécurisé et bureau à distance réunis — un VPN privé pour votre équipe, avec des sessions de bureau à distance en pair-à-pair sur ce réseau, sans aucun port exposé.",
+                "Sicheres Netzwerk und Remote-Desktop in einem — ein privates Team-VPN, mit Remote-Desktop-Sitzungen, die Peer-to-Peer darüber laufen, ganz ohne offene Ports.",
+                "Red segura y escritorio remoto en uno — una VPN privada para su equipo, con sesiones de escritorio remoto punto a punto sobre ella, sin puertos expuestos.",
+                "Rete sicura e desktop remoto in uno — una VPN privata per il tuo team, con sessioni di desktop remoto peer-to-peer sulla rete, senza porte esposte.",
+                "Veilig netwerk en extern bureaublad in één — een privé-team-VPN, met extern-bureaubladsessies die peer-to-peer over dat netwerk lopen, zonder blootgestelde poorten."),
             "Point of sale, inventory and multi-store operations on the grid — tied to the same books as the rest of your business.": _t(
                 "Point de vente, stock et opérations multi-magasins sur la grille — reliés aux mêmes comptes que le reste de votre entreprise.",
                 "Kasse, Lagerbestand und Multi-Store-Betrieb im Grid — verknüpft mit denselben Büchern wie der Rest Ihres Unternehmens.",
