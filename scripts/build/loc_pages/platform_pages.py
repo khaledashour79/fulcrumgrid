@@ -175,7 +175,7 @@ PAGE = {
                 'Gestiamo infrastruttura in ogni regione che serviamo, così i tuoi dati risiedono su server vicini ai tuoi utenti — bassa latenza e mantenuti nella regione.',
                 'We draaien infrastructuur in elke regio die we bedienen, zodat uw gegevens op servers dicht bij uw gebruikers staan — lage latentie en in de regio gehouden.'),
             # ---- CTA ----
-            'See the platform in action': _t('Voyez la plateforme en action', 'Sehen Sie die Plattform in Aktion', 'Vea la plataforma en acción', 'Guarda la piattaforma in azione', 'Zie het platform in actie'),
+            'See the grid in action': _t('Voyez la grille en action', 'Sehen Sie das Grid in Aktion', 'Vea la cuadrícula en acción', 'Guarda la griglia in azione', 'Zie het grid in actie'),
             'Explore the apps built on it, or tell us what your team needs.': _t(
                 'Découvrez les applications qui reposent dessus, ou dites-nous ce dont votre équipe a besoin.',
                 'Entdecken Sie die darauf gebauten Apps oder sagen Sie uns, was Ihr Team braucht.',

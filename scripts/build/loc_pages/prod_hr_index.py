@@ -626,13 +626,14 @@ PAGE = {
                 "IVA &amp; stato ZATCA · consolidamento in valuta base",
                 "Btw &amp; ZATCA-status · consolidatie in basisvaluta"),
             "Explore Consolidate →": _t("Découvrir Consolidate →", "Consolidate entdecken →", "Explorar Consolidate →", "Esplora Consolidate →", "Ontdek Consolidate →"),
-            "Voice, CRM and Retail are coming soon — with Agents, Real Estate, Workshop, VPN and Desk on the roadmap. Built on the same grid, so they plug straight in.": _t(
-                "Voice, CRM et Retail arrivent bientôt — avec Agents, Immobilier, Atelier, VPN et Desk sur la feuille de route. Conçus sur la même grille, ils s'intègrent directement.",
-                "Voice, CRM und Retail kommen bald — mit Agenten, Immobilien, Werkstatt, VPN und Desk auf der Roadmap. Auf demselben Grid gebaut, fügen sie sich direkt ein.",
-                "Voice, CRM y Retail llegan pronto — con Agentes, Inmobiliaria, Taller, VPN y Desk en la hoja de ruta. Creados en la misma cuadrícula, se integran directamente.",
-                "Voice, CRM e Retail sono in arrivo — con Agenti, Immobiliare, Officina, VPN e Desk nella roadmap. Costruiti sulla stessa griglia, si integrano subito.",
-                "Voice, CRM en Retail komen binnenkort — met Agents, Vastgoed, Werkplaats, VPN en Desk op de roadmap. Gebouwd op hetzelfde grid, zodat ze direct aansluiten."),
-            "Voice, CRM &amp; Retail — coming soon": _t("Voice, CRM &amp; Retail — bientôt", "Voice, CRM &amp; Retail — demnächst", "Voice, CRM &amp; Retail — próximamente", "Voice, CRM &amp; Retail — in arrivo", "Voice, CRM &amp; Retail — binnenkort"),
+            "Voice, CRM, Retail and Connect are coming soon — with Agents, Real Estate, Workshop, VPN and Desk on the roadmap. Built on the same grid, so they plug straight in.": _t(
+                "Voice, CRM, Retail et Connect arrivent bientôt — avec Agents, Immobilier, Atelier, VPN et Desk sur la feuille de route. Conçus sur la même grille, ils s'intègrent directement.",
+                "Voice, CRM, Retail und Connect kommen bald — mit Agenten, Immobilien, Werkstatt, VPN und Desk auf der Roadmap. Auf demselben Grid gebaut, fügen sie sich direkt ein.",
+                "Voice, CRM, Retail y Connect llegan pronto — con Agentes, Inmobiliaria, Taller, VPN y Desk en la hoja de ruta. Creados en la misma cuadrícula, se integran directamente.",
+                "Voice, CRM, Retail e Connect sono in arrivo — con Agenti, Immobiliare, Officina, VPN e Desk nella roadmap. Costruiti sulla stessa griglia, si integrano subito.",
+                "Voice, CRM, Retail en Connect komen binnenkort — met Agents, Vastgoed, Werkplaats, VPN en Desk op de roadmap. Gebouwd op hetzelfde grid, zodat ze direct aansluiten."),
+            "Voice, CRM, Retail &amp; Connect — coming soon": _t("Voice, CRM, Retail &amp; Connect — bientôt", "Voice, CRM, Retail &amp; Connect — demnächst", "Voice, CRM, Retail &amp; Connect — próximamente", "Voice, CRM, Retail &amp; Connect — in arrivo", "Voice, CRM, Retail &amp; Connect — binnenkort"),
+            "Connect": _t("Connect", "Connect", "Connect", "Connect", "Connect"),
             # ---- New live apps: TMS, Assure, Close ----
             "TMS": _t("TMS", "TMS", "TMS", "TMS", "TMS"),
             "Assure": _t("Assure", "Assure", "Assure", "Assure", "Assure"),
@@ -737,12 +738,12 @@ PAGE = {
         'src': 'products/coming-soon/index.html',
         't': {
             # ---- Meta ----
-            "More FulcrumGrid apps in active development — Voice, CRM and Retail are coming soon, with Agents, Real Estate, Workshop, VPN and Desk on the roadmap — built on the same grid. Get early access.": _t(
-                "D'autres applications FulcrumGrid en développement actif — Voice, CRM et Retail bientôt, avec Agents, Immobilier, Atelier, VPN et Desk sur la feuille de route — conçues sur la même grille. Obtenez un accès anticipé.",
-                "Weitere FulcrumGrid-Apps in aktiver Entwicklung — Voice, CRM und Retail demnächst, mit Agenten, Immobilien, Werkstatt, VPN und Desk auf der Roadmap — auf demselben Grid gebaut. Sichern Sie sich frühen Zugang.",
-                "Más aplicaciones de FulcrumGrid en desarrollo activo — Voice, CRM y Retail próximamente, con Agentes, Inmobiliaria, Taller, VPN y Desk en la hoja de ruta — creadas en la misma cuadrícula. Consiga acceso anticipado.",
-                "Altre app FulcrumGrid in fase di sviluppo attivo — Voice, CRM e Retail in arrivo, con Agenti, Immobiliare, Officina, VPN e Desk nella roadmap — costruite sulla stessa griglia. Ottieni l'accesso anticipato.",
-                "Meer FulcrumGrid-apps in actieve ontwikkeling — Voice, CRM en Retail binnenkort, met Agents, Vastgoed, Werkplaats, VPN en Desk op de roadmap — gebouwd op hetzelfde grid. Krijg vroege toegang."),
+            "More FulcrumGrid apps in active development — Voice, CRM, Retail and Connect are coming soon, with Agents, Real Estate, Workshop, VPN and Desk on the roadmap — built on the same grid. Get early access.": _t(
+                "D'autres applications FulcrumGrid en développement actif — Voice, CRM, Retail et Connect bientôt, avec Agents, Immobilier, Atelier, VPN et Desk sur la feuille de route — conçues sur la même grille. Obtenez un accès anticipé.",
+                "Weitere FulcrumGrid-Apps in aktiver Entwicklung — Voice, CRM, Retail und Connect demnächst, mit Agenten, Immobilien, Werkstatt, VPN und Desk auf der Roadmap — auf demselben Grid gebaut. Sichern Sie sich frühen Zugang.",
+                "Más aplicaciones de FulcrumGrid en desarrollo activo — Voice, CRM, Retail y Connect próximamente, con Agentes, Inmobiliaria, Taller, VPN y Desk en la hoja de ruta — creadas en la misma cuadrícula. Consiga acceso anticipado.",
+                "Altre app FulcrumGrid in fase di sviluppo attivo — Voice, CRM, Retail e Connect in arrivo, con Agenti, Immobiliare, Officina, VPN e Desk nella roadmap — costruite sulla stessa griglia. Ottieni l'accesso anticipato.",
+                "Meer FulcrumGrid-apps in actieve ontwikkeling — Voice, CRM, Retail en Connect binnenkort, met Agents, Vastgoed, Werkplaats, VPN en Desk op de roadmap — gebouwd op hetzelfde grid. Krijg vroege toegang."),
             "Voice — coming to the grid.": _t(
                 "Voice — bientôt sur la grille.",
                 "Voice — bald im Grid.",
@@ -787,6 +788,12 @@ PAGE = {
                 "Telefonía empresarial — llamadas, registro de llamadas e IVR vinculados a sus registros, para que cada conversación quede archivada.",
                 "Telefonia aziendale — chiamate, registrazione delle chiamate e IVR collegati ai tuoi archivi, così ogni conversazione resta agli atti.",
                 "Zakelijke telefonie — gesprekken, gesprekslogboeken en IVR gekoppeld aan uw gegevens, zodat elk gesprek bewaard blijft."),
+            "Wire FulcrumGrid to the tools you already run — no-code automations and two-way data sync across your stack.": _t(
+                "Reliez FulcrumGrid aux outils que vous utilisez déjà — automatisations sans code et synchronisation bidirectionnelle des données sur l'ensemble de votre stack.",
+                "Verbinden Sie FulcrumGrid mit den Tools, die Sie bereits nutzen — No-Code-Automatisierungen und bidirektionale Datensynchronisierung über Ihren gesamten Stack.",
+                "Conecte FulcrumGrid con las herramientas que ya usa — automatizaciones sin código y sincronización bidireccional de datos en todo su stack.",
+                "Collega FulcrumGrid agli strumenti che già usi — automazioni no-code e sincronizzazione bidirezionale dei dati su tutto il tuo stack.",
+                "Koppel FulcrumGrid aan de tools die u al gebruikt — no-code-automatiseringen en tweerichtings-gegevenssynchronisatie over uw hele stack."),
             "Point of sale, inventory and multi-store operations on the grid — tied to the same books as the rest of your business.": _t(
                 "Point de vente, stock et opérations multi-magasins sur la grille — reliés aux mêmes comptes que le reste de votre entreprise.",
                 "Kasse, Lagerbestand und Multi-Store-Betrieb im Grid — verknüpft mit denselben Büchern wie der Rest Ihres Unternehmens.",
