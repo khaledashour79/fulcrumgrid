@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>What Is a Service Catalog and How Do You Build One for a Small Team? — FulcrumGrid</title>
+  <meta name="description" content="An internal service catalog is one maintained list of what your team provides, who owns it and how to request it. Here is how to build one in a week." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What Is a Service Catalog and How Do You Build One for a Small Team?" />
+  <meta property="og:description" content="An internal service catalog is one maintained list of what your team provides, who owns it and how to request it. Here is how to build one in a week." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/what-is-a-service-catalog-and-how-do-you-build-one-for-an-internal-team/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-04" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What Is a Service Catalog and How Do You Build One for a Small Team?" />
+  <meta name="twitter:description" content="An internal service catalog is one maintained list of what your team provides, who owns it and how to request it. Here is how to build one in a week." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/what-is-a-service-catalog-and-how-do-you-build-one-for-an-internal-team/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-service-catalog-and-how-do-you-build-one-for-an-internal-team/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-service-catalog-and-how-do-you-build-one-for-an-internal-team/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-service-catalog-and-how-do-you-build-one-for-an-internal-team/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-service-catalog-and-how-do-you-build-one-for-an-internal-team/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-service-catalog-and-how-do-you-build-one-for-an-internal-team/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-service-catalog-and-how-do-you-build-one-for-an-internal-team/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-service-catalog-and-how-do-you-build-one-for-an-internal-team/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-service-catalog-and-how-do-you-build-one-for-an-internal-team/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What Is a Service Catalog and How Do You Build One for a Small Team?",
+    "description": "An internal service catalog is one maintained list of what your team provides, who owns it and how to request it. Here is how to build one in a week.",
+    "datePublished": "2026-11-04",
+    "dateModified": "2026-11-04",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/what-is-a-service-catalog-and-how-do-you-build-one-for-an-internal-team/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Service Catalog Guide",
+        "item": "https://fulcrumgrid.com/blog/what-is-a-service-catalog-and-how-do-you-build-one-for-an-internal-team/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is an internal service catalog in simple terms?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is one maintained list of the services your team provides or relies on, showing what each does, who owns it, how to request it and what response to expect."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many services should a small team list at first?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start with 10 to 20 of the most requested or most critical services. A short, accurate catalog is more useful than a long one that nobody keeps up to date."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need special software to build a service catalog?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. A shared spreadsheet or wiki table is enough to start. Consider dedicated software only when you need request workflows, approvals or reporting."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who should own the service catalog?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Each service needs its own named owner, while one person acts as catalog keeper and runs a quarterly review to remove stale entries."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is a service catalog different from documentation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Documentation explains how something works. A catalog tells people what exists, who is responsible and how to ask for it, and links to the documentation for details."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Service Catalog Guide</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>What Is a Service Catalog and How Do You Build One for a Small Team?</h1>
+        <p class="hero-intro">An internal service catalog is one maintained list of what your team provides, who owns it and how to request it. Here is how to build one in a week.</p>
+        <p class="mono"><time datetime="2026-11-04">November 4, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Small teams run into the same problem sooner or later: nobody is quite sure what the team actually offers, who owns each piece, or where to go when something breaks. An internal service catalog fixes that. This guide answers the most common questions about what it is and how to build one without turning it into a project of its own.</p><h2>What is an internal service catalog?</h2><p>An internal service catalog is a single, maintained list of the services your team provides or depends on, with the key facts about each: what it does, who owns it, how to request it, and what the requester can expect. &ldquo;Service&rdquo; is deliberately broad. It can be a software system such as the billing database, a business process such as onboarding a new hire or issuing a refund, or a recurring job such as the monthly payroll run. If people ask &ldquo;who handles this?&rdquo; more than once, it probably belongs in the catalog.</p><h2>How is it different from a wiki or an asset inventory?</h2><p>A wiki holds explanations and an inventory holds things, such as laptops, licenses and servers. A catalog sits between them and is organized around <strong>what people need done</strong>. Each entry answers a practical question (&ldquo;How do I get X?&rdquo;) and links out to the deeper documentation instead of replacing it. Think of it as the index page that makes everything else findable.</p><h2>Why does a small team need one?</h2><ul><li><strong>Fewer interruptions.</strong> People stop asking the same three colleagues the same questions.</li><li><strong>Clear ownership.</strong> Every service has a named owner and a backup, so nothing depends on one person&rsquo;s memory.</li><li><strong>Faster onboarding.</strong> A new hire can see what exists and who to ask in an afternoon.</li><li><strong>Safer handovers.</strong> Holidays, sick days and departures hurt less when the essentials are written down.</li><li><strong>Visible gaps.</strong> Services with no owner, or with five owners, become obvious.</li></ul><h2>What should each entry include?</h2><p>Keep the template short, or nobody will fill it in. A good starting set is:</p><ul><li><strong>Name and one-line description</strong> in plain language.</li><li><strong>Owner and backup</strong> (people, not just teams).</li><li><strong>How to request it:</strong> a form, an email address, a channel or a link.</li><li><strong>Expected response time</strong>, even if it is only &ldquo;within two working days&rdquo;.</li><li><strong>Dependencies:</strong> what it needs in order to work.</li><li><strong>Link to documentation</strong> or the runbook.</li><li><strong>Last reviewed date.</strong></li></ul><h2>How do you build one step by step?</h2><h3>1. Decide the scope</h3><p>Start with the services other people ask your team for. Resist cataloging everything. Twenty accurate entries are worth more than two hundred stale ones.</p><h3>2. List the services</h3><p>Hold a 45-minute session with the team. Ask: &ldquo;What did people ask us for last month?&rdquo; and &ldquo;What would break if one of us disappeared?&rdquo; Pull supporting evidence from your inbox, ticket history and chat threads.</p><h3>3. Fill in the template</h3><p>Assign each service to its owner and give them a week to complete the entry. Accept imperfect answers. A rough entry beats a missing one.</p><h3>4. Put it where people already look</h3><p>A shared spreadsheet, a database page or a wiki table all work. The best location is the one your colleagues already open every day. Pin the link in your main chat channel.</p><h3>5. Route requests through it</h3><p>When someone asks for something in a message, reply with the catalog link and ask them to use the listed request route. This habit does more for adoption than any announcement.</p><h2>What tools do you need?</h2><p>Probably none you do not already have. A spreadsheet with filters is enough for the first six months. Move to a dedicated tool only when you need request workflows, approvals or reporting. Teams that want the catalog next to their daily operations data can also keep it in a workspace such as FulcrumGrid Command Center, but the format matters far less than the habit of keeping it current.</p><h2>How do you keep it from going stale?</h2><ul><li><strong>Assign a catalog keeper</strong> who runs a short review every quarter.</li><li><strong>Show the last reviewed date</strong> and highlight entries older than six months.</li><li><strong>Update it as part of change work:</strong> launching, retiring or handing over a service is not done until its entry is updated.</li><li><strong>Make it easy to suggest fixes</strong> with a comment column or a feedback link.</li></ul><h2>What mistakes should you avoid?</h2><ul><li>Cataloging by org chart instead of by what people need.</li><li>Writing entries in jargon that only the owner understands.</li><li>Making the template so long that it takes an hour per entry.</li><li>Launching it once and never reviewing it again.</li></ul><h2>What should you do next?</h2><p>This week, book the 45-minute session, list your top fifteen services and give each one an owner. Publish the first version even if it is incomplete, then improve it as questions come in. A catalog earns trust by being useful and correct, not by being finished.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>What is an internal service catalog in simple terms?</summary><p>It is one maintained list of the services your team provides or relies on, showing what each does, who owns it, how to request it and what response to expect.</p></details>
+        <details class="faq-item"><summary>How many services should a small team list at first?</summary><p>Start with 10 to 20 of the most requested or most critical services. A short, accurate catalog is more useful than a long one that nobody keeps up to date.</p></details>
+        <details class="faq-item"><summary>Do I need special software to build a service catalog?</summary><p>No. A shared spreadsheet or wiki table is enough to start. Consider dedicated software only when you need request workflows, approvals or reporting.</p></details>
+        <details class="faq-item"><summary>Who should own the service catalog?</summary><p>Each service needs its own named owner, while one person acts as catalog keeper and runs a quarterly review to remove stale entries.</p></details>
+        <details class="faq-item"><summary>How is a service catalog different from documentation?</summary><p>Documentation explains how something works. A catalog tells people what exists, who is responsible and how to ask for it, and links to the documentation for details.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Keep team operations in one place</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center gives small teams a shared workspace for tracking operational work and ownership, so your service list can sit next to the work it describes.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/products/tms/">TMS</a>
+          <a href="/products/assure/">Assure</a>
+          <a href="/products/close/">Close</a>
+          <a href="/products/consolidate/">Consolidate</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=c33c4f35" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
