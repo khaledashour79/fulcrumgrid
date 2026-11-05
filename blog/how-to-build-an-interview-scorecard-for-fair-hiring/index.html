@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>How Do You Build an Interview Scorecard for Fair Hiring? — FulcrumGrid</title>
+  <meta name="description" content="An interview scorecard rates every candidate on the same job-related criteria. Here is how to build one, from criteria and anchors to weighting and debriefs." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How Do You Build an Interview Scorecard for Fair Hiring?" />
+  <meta property="og:description" content="An interview scorecard rates every candidate on the same job-related criteria. Here is how to build one, from criteria and anchors to weighting and debriefs." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/how-to-build-an-interview-scorecard-for-fair-hiring/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-05" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid HR Suite — people operations" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Do You Build an Interview Scorecard for Fair Hiring?" />
+  <meta name="twitter:description" content="An interview scorecard rates every candidate on the same job-related criteria. Here is how to build one, from criteria and anchors to weighting and debriefs." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-hr-suite.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/how-to-build-an-interview-scorecard-for-fair-hiring/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-build-an-interview-scorecard-for-fair-hiring/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-build-an-interview-scorecard-for-fair-hiring/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-build-an-interview-scorecard-for-fair-hiring/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-build-an-interview-scorecard-for-fair-hiring/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-build-an-interview-scorecard-for-fair-hiring/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-build-an-interview-scorecard-for-fair-hiring/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-build-an-interview-scorecard-for-fair-hiring/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-build-an-interview-scorecard-for-fair-hiring/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How Do You Build an Interview Scorecard for Fair Hiring?",
+    "description": "An interview scorecard rates every candidate on the same job-related criteria. Here is how to build one, from criteria and anchors to weighting and debriefs.",
+    "datePublished": "2026-11-05",
+    "dateModified": "2026-11-05",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-hr-suite.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/how-to-build-an-interview-scorecard-for-fair-hiring/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Hiring Explainer",
+        "item": "https://fulcrumgrid.com/blog/how-to-build-an-interview-scorecard-for-fair-hiring/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many criteria should a scorecard have?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Four to six is a good range. It is enough to cover the role and few enough that interviewers can assess each one properly in a single conversation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a 1-5 scale better than a 1-10 scale?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A 1-5 scale is usually easier to anchor with clear behavioral descriptions. Ten points create false precision that interviewers cannot consistently tell apart."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do scorecards work for small companies with few interviewers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Even two interviewers benefit from shared criteria, the same questions and independent scoring before they talk."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can a scorecard completely eliminate bias?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. It reduces bias by focusing on job-related evidence, but people still need good questions, clear anchors and a habit of reviewing outcomes."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Hiring Explainer</p>
+        <span class="tag tag-accent">HR</span>
+        <h1>How Do You Build an Interview Scorecard for Fair Hiring?</h1>
+        <p class="hero-intro">An interview scorecard rates every candidate on the same job-related criteria. Here is how to build one, from criteria and anchors to weighting and debriefs.</p>
+        <p class="mono"><time datetime="2026-11-05">November 5, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Unstructured interviews tend to reward charm, shared backgrounds and gut feeling. A scorecard gives every interviewer the same yardstick, so the decision rests on evidence about the job rather than impressions. This explainer walks through how to build one for a small or growing team.</p><h2>What is an interview scorecard, and why does it reduce bias?</h2><p>An <strong>interview scorecard</strong> is a short form that lists the criteria a role requires, a rating scale for each, and space for evidence. Interviewers rate every candidate against the same criteria and write down what they actually heard. It reduces bias in three ways:</p><ul><li><strong>Same questions, same standards.</strong> Candidates are compared on equal terms instead of on who got the friendlier conversation.</li><li><strong>Evidence over impressions.</strong> Writing down a specific answer makes it harder to hide behind &ldquo;I just liked them&rdquo;.</li><li><strong>A paper trail.</strong> Documented, job-related reasons help you spot patterns and defend decisions if they are questioned.</li></ul><p>A scorecard does not remove bias entirely, but research on structured interviewing consistently finds it predicts job performance better than free-form chats.</p><h2>How do you choose the right criteria?</h2><p>Start from the job description and the real work, not from a generic list of virtues. Ask what a person must do well in the first year to succeed, then pick <strong>four to six criteria</strong>. Fewer than four is too thin; more than six and interviewers cannot assess them properly in one conversation.</p><ul><li>Mix <strong>skills</strong> (for example, budgeting or writing) with <strong>behaviors</strong> (for example, ownership or collaboration).</li><li>Keep each criterion distinct, so you are not scoring the same thing twice.</li><li>Leave out vague traits such as &ldquo;culture fit&rdquo; or &ldquo;polish&rdquo;, which invite bias. Define the behavior you actually need instead.</li><li>Check that every criterion is genuinely required for the role.</li></ul><h2>How do you write 1-5 rating anchors?</h2><p>A number means nothing until everyone agrees what it stands for. <strong>Anchors</strong> are short behavioral descriptions attached to the scale. At minimum, define 1, 3 and 5, and let 2 and 4 sit between them.</p><h3>Example anchors for &ldquo;Problem solving&rdquo;</h3><ul><li><strong>1:</strong> Describes a problem but cannot explain their own steps or reasoning.</li><li><strong>3:</strong> Breaks the problem down, tests one or two options and explains the choice made.</li><li><strong>5:</strong> Defines the root cause, weighs trade-offs, measures the result and describes what they would change next time.</li></ul><p>Anchors should describe observable behavior, not personality. Avoid words like &ldquo;confident&rdquo; or &ldquo;energetic&rdquo; and ask yourself whether two interviewers would score the same answer the same way.</p><h2>Which questions should you ask?</h2><p>Use <strong>structured questions</strong>: the same core questions, in the same order, for every candidate. Link each question to one criterion.</p><ul><li><strong>Behavioral:</strong> &ldquo;Tell me about a time you had to hit a deadline with incomplete information.&rdquo;</li><li><strong>Situational:</strong> &ldquo;A key supplier misses a delivery the day before launch. What do you do first?&rdquo;</li><li><strong>Follow-ups:</strong> Prepare probes such as &ldquo;What was your role?&rdquo; and &ldquo;What was the result?&rdquo; so every candidate gets the same chance to show depth.</li></ul><p>Stay away from questions about age, family plans, health, religion or anything else unrelated to the job, and check local employment rules if you are unsure.</p><h2>Why score independently before the debrief?</h2><p>When the most senior person speaks first, everyone else tends to drift toward their view. Ask each interviewer to <strong>submit scores and notes on their own</strong>, right after the interview and before any discussion. Then compare in the debrief, starting with the criteria where scores differ most and asking for the evidence behind each number. Disagreement is useful: it usually means two people noticed different things.</p><h2>Should you weight the criteria?</h2><p>Often yes. If one criterion is clearly critical, give it more influence. Keep it simple, for example weights that add up to 100 percent, and <strong>decide them before you see any candidates</strong>. Changing weights afterwards to favor someone you already like defeats the purpose. If you are unsure, equal weights are a perfectly fair starting point.</p><h2>What are the most common scorecard mistakes?</h2><ul><li><strong>Too many criteria,</strong> which leads to shallow ratings across the board.</li><li><strong>No anchors,</strong> so a 4 from one person equals a 2 from another.</li><li><strong>Skipping notes.</strong> A score without evidence cannot be reviewed.</li><li><strong>Discussing before scoring,</strong> which turns the form into a rubber stamp.</li><li><strong>Overriding the result</strong> with gut feeling and never recording why.</li><li><strong>Never reviewing.</strong> Check afterwards whether high scorers actually performed well, and adjust.</li></ul><h2>What does a small example look like?</h2><p>Imagine hiring an office manager. Your criteria and weights might be:</p><ul><li><strong>Organization &amp; planning</strong> (30%)</li><li><strong>Communication</strong> (25%)</li><li><strong>Problem solving</strong> (20%)</li><li><strong>Ownership</strong> (15%)</li><li><strong>Software skills</strong> (10%)</li></ul><p>A candidate scores 4, 5, 3, 4 and 3. Multiply each score by its weight: 4&times;0.30 + 5&times;0.25 + 3&times;0.20 + 4&times;0.15 + 3&times;0.10 gives a weighted total of <strong>3.95 out of 5</strong>. Compare that number across candidates, then read the notes behind it before deciding.</p><p>A scorecard supports your judgment; it does not replace it. Its job is to make sure the judgment is based on the same evidence for everyone.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>How many criteria should a scorecard have?</summary><p>Four to six is a good range. It is enough to cover the role and few enough that interviewers can assess each one properly in a single conversation.</p></details>
+        <details class="faq-item"><summary>Is a 1-5 scale better than a 1-10 scale?</summary><p>A 1-5 scale is usually easier to anchor with clear behavioral descriptions. Ten points create false precision that interviewers cannot consistently tell apart.</p></details>
+        <details class="faq-item"><summary>Do scorecards work for small companies with few interviewers?</summary><p>Yes. Even two interviewers benefit from shared criteria, the same questions and independent scoring before they talk.</p></details>
+        <details class="faq-item"><summary>Can a scorecard completely eliminate bias?</summary><p>No. It reduces bias by focusing on job-related evidence, but people still need good questions, clear anchors and a habit of reviewing outcomes.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid HR Suite</p>
+        <h2>Keep hiring evidence in one place</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid HR Suite lets you keep job criteria, interview notes and candidate feedback together, so your team can score consistently and compare candidates without chasing spreadsheets.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/hr-suite/">Explore HR Suite</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/products/tms/">TMS</a>
+          <a href="/products/assure/">Assure</a>
+          <a href="/products/close/">Close</a>
+          <a href="/products/consolidate/">Consolidate</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=c33c4f35" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
