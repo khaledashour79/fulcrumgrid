@@ -209,6 +209,24 @@ PAGE = {
                 "Collection llega a cada deudor por el canal al que realmente responde, enviado automáticamente según el calendario de recordatorios que usted define — para que los seguimientos salgan sin que nadie persiga a mano.",
                 "Collection raggiunge ogni debitore sul canale a cui risponde davvero, inviato automaticamente secondo il calendario di solleciti che imposti — così i solleciti partono senza che nessuno insegua a mano.",
                 "Collection bereikt elke debiteur op het kanaal waarop die echt reageert, automatisch verzonden volgens het herinneringsschema dat u instelt — zodat opvolging uitgaat zonder dat iemand handmatig achter betalingen aan zit."),
+            "Microsoft 365 calendar &amp; Teams": _t(
+                "Calendrier Microsoft 365 &amp; Teams", "Microsoft-365-Kalender &amp; Teams", "Calendario de Microsoft 365 &amp; Teams",
+                "Calendario Microsoft 365 &amp; Teams", "Microsoft 365-agenda &amp; Teams"),
+            "Run interview scheduling and calendar invites on your own Microsoft 365 — connect it once over OAuth and meetings book in your tenant's Teams and calendar. Google calendar is handled centrally.": _t(
+                "Gérez la planification des entretiens et les invitations d'agenda sur votre propre Microsoft 365 — connectez-le une fois via OAuth et les réunions se créent dans le Teams et l'agenda de votre tenant. Le calendrier Google est géré de façon centralisée.",
+                "Führen Sie Interviewplanung und Kalendereinladungen über Ihr eigenes Microsoft 365 aus — einmal per OAuth verbinden, und Meetings werden in Teams und Kalender Ihres Tenants gebucht. Der Google-Kalender wird zentral verwaltet.",
+                "Gestione la programación de entrevistas y las invitaciones de calendario en su propio Microsoft 365 — conéctelo una vez mediante OAuth y las reuniones se crean en el Teams y el calendario de su tenant. El calendario de Google se gestiona de forma centralizada.",
+                "Gestisci la pianificazione dei colloqui e gli inviti del calendario sul tuo Microsoft 365 — collegalo una volta tramite OAuth e le riunioni vengono create nel Teams e nel calendario del tuo tenant. Il calendario Google è gestito centralmente.",
+                "Beheer interviewplanning en agenda-uitnodigingen op uw eigen Microsoft 365 — koppel het eenmalig via OAuth en vergaderingen worden geboekt in de Teams en agenda van uw tenant. De Google-agenda wordt centraal beheerd."),
+            "Bring-your-own email": _t(
+                "Votre propre service d'e-mail", "Eigener E-Mail-Dienst", "Su propio correo electrónico",
+                "Il tuo servizio e-mail", "Uw eigen e-mail"),
+            "Tenants on their own custom domain can connect their own Resend account, so HR email — invitations, reminders and letters — sends from your domain, under your own sending reputation.": _t(
+                "Les tenants disposant de leur propre domaine personnalisé peuvent connecter leur propre compte Resend, afin que les e-mails RH — invitations, rappels et courriers — partent de votre domaine, sous votre propre réputation d'expéditeur.",
+                "Tenants mit eigener benutzerdefinierter Domain können ihr eigenes Resend-Konto verbinden, sodass HR-E-Mails — Einladungen, Erinnerungen und Schreiben — von Ihrer Domain und unter Ihrer eigenen Versandreputation ausgehen.",
+                "Los tenants con su propio dominio personalizado pueden conectar su propia cuenta de Resend, de modo que el correo de RR. HH. — invitaciones, recordatorios y cartas — se envíe desde su dominio y bajo su propia reputación de envío.",
+                "I tenant con il proprio dominio personalizzato possono collegare il proprio account Resend, così le e-mail HR — inviti, promemoria e lettere — partono dal tuo dominio e sotto la tua reputazione di invio.",
+                "Tenants met hun eigen aangepaste domein kunnen hun eigen Resend-account koppelen, zodat HR-e-mail — uitnodigingen, herinneringen en brieven — vanaf uw domein wordt verzonden, onder uw eigen verzendreputatie."),
             "05 · Learning": _t("05 · Formation", "05 · Lernen", "05 · Formación", "05 · Formazione", "05 · Leren"),
             "Bring your learning catalogue in.": _t(
                 "Intégrez votre catalogue de formation.",

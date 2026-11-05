@@ -355,6 +355,51 @@ PAGE = {
                 "Ciclos de renovación de iqama, visados de salida y regreso y de salida definitiva, y contratación en el extranjero con visado en bloque — con tarificación de tasas, aprobaciones y actualización de credenciales, gestionado internamente. Las multas gubernamentales se importan por CSV; FulcrumGrid prepara y registra, nunca presenta en su nombre.",
                 "Cicli di rinnovo dell'iqama, visti di uscita-rientro e di uscita definitiva e assunzione dall'estero con visto in blocco — con tariffazione delle commissioni, approvazioni e aggiornamento delle credenziali, gestiti internamente. Le sanzioni governative si importano via CSV; FulcrumGrid prepara e registra, non presenta mai per tuo conto.",
                 "Iqama-verlengingscycli, uitreis- en terugkeer- en definitieve uitreisvisa, en overzeese blokvisum-werving — met tariefbepaling, goedkeuringen en terugschrijven van documenten, intern verwerkt. Overheidsboetes worden via CSV geïmporteerd; FulcrumGrid bereidt voor en registreert, het dient nooit namens u in."),
+            "Housing &amp; accommodation": _t(
+                "Logement &amp; hébergement", "Unterkunft &amp; Wohnheim", "Alojamiento &amp; vivienda",
+                "Alloggio &amp; alloggiamento", "Huisvesting &amp; accommodatie"),
+            "A register of company housing — units and rooms in a camp hierarchy — with assignment, move-out and transfer, plus a live occupancy and utilization dashboard.": _t(
+                "Un registre du logement de l'entreprise — unités et chambres dans une hiérarchie de camps — avec attribution, départ et transfert, ainsi qu'un tableau de bord en temps réel de l'occupation et du taux d'utilisation.",
+                "Ein Register der Firmenunterkünfte — Einheiten und Zimmer in einer Camp-Hierarchie — mit Zuweisung, Auszug und Umzug sowie einem Echtzeit-Dashboard zu Belegung und Auslastung.",
+                "Un registro del alojamiento de la empresa — unidades y habitaciones en una jerarquía de campamentos — con asignación, salida y traslado, además de un panel en tiempo real de ocupación y utilización.",
+                "Un registro degli alloggi aziendali — unità e stanze in una gerarchia di campi — con assegnazione, uscita e trasferimento, oltre a una dashboard in tempo reale di occupazione e utilizzo.",
+                "Een register van de bedrijfshuisvesting — eenheden en kamers in een kamphiërarchie — met toewijzing, uitchecken en overplaatsing, plus een live dashboard voor bezetting en benutting."),
+            "Attendance deductions": _t(
+                "Retenues de présence", "Anwesenheitsabzüge", "Deducciones de asistencia",
+                "Trattenute di presenza", "Aanwezigheidsinhoudingen"),
+            "A tardiness-treatment engine with graduated tiers and country-aware deduction and fine policy hints, unverified-punch review and verified-location enforcement — computed inside timesheet approval and carried through to pay.": _t(
+                "Un moteur de traitement des retards avec des paliers progressifs et des suggestions de politiques de retenue et d'amende selon le pays, la revue des pointages non vérifiés et l'application de la localisation vérifiée — calculé lors de l'approbation des feuilles de temps et répercuté sur la paie.",
+                "Eine Engine zur Verspätungsbehandlung mit gestaffelten Stufen und länderspezifischen Hinweisen zu Abzugs- und Bußgeldregeln, Prüfung nicht verifizierter Stempelungen und Durchsetzung des verifizierten Standorts — berechnet bei der Genehmigung der Zeiterfassung und in die Gehaltsabrechnung übernommen.",
+                "Un motor de tratamiento de la impuntualidad con niveles graduados y sugerencias de políticas de deducción y multa según el país, revisión de fichajes no verificados y aplicación de ubicación verificada — calculado dentro de la aprobación de la hoja de horas y trasladado a la nómina.",
+                "Un motore per la gestione dei ritardi con fasce graduali e suggerimenti sulle politiche di trattenuta e sanzione in base al paese, revisione delle timbrature non verificate e applicazione della posizione verificata — calcolato all'interno dell'approvazione del foglio ore e riportato in busta paga.",
+                "Een engine voor te-laat-behandeling met getrapte niveaus en landspecifieke hints voor inhoudings- en boetebeleid, controle van niet-geverifieerde klokkingen en handhaving van geverifieerde locatie — berekend binnen de goedkeuring van de urenstaat en doorgevoerd naar de loonrun."),
+            "Clearance tracker": _t(
+                "Suivi de décharge", "Freigabe-Tracker", "Seguimiento de finiquito",
+                "Tracciamento della liberatoria", "Uitdienst-tracker"),
+            "An HR board over every exit-clearance step, with per-step timing and a bottleneck report, SLA auto-escalation when a step stalls, and exit-recovery deductions e-signed and netted into the end-of-service settlement.": _t(
+                "Un tableau RH sur chaque étape de décharge de départ, avec le chronométrage par étape et un rapport des goulets d'étranglement, une escalade automatique selon le SLA lorsqu'une étape stagne, et des retenues de récupération au départ signées électroniquement et nettées dans le solde de tout compte.",
+                "Ein HR-Board über jeden Schritt der Austritts-Freigabe, mit Zeiterfassung pro Schritt und einem Engpassbericht, automatischer SLA-Eskalation bei stockenden Schritten und bei Austritt erhobenen Rückforderungsabzügen, elektronisch signiert und mit der Abschlusszahlung verrechnet.",
+                "Un tablero de RR. HH. sobre cada paso del finiquito de salida, con tiempos por paso y un informe de cuellos de botella, escalado automático por SLA cuando un paso se estanca, y deducciones de recuperación a la salida firmadas electrónicamente y compensadas en el finiquito.",
+                "Una board HR su ogni fase della liberatoria di uscita, con i tempi per fase e un report dei colli di bottiglia, escalation automatica per SLA quando una fase si blocca, e trattenute di recupero all'uscita firmate elettronicamente e compensate nel saldo di fine rapporto.",
+                "Een HR-board over elke stap van de uitdienst-clearance, met timing per stap en een knelpuntrapport, automatische SLA-escalatie wanneer een stap stokt, en terugvorderingsinhoudingen bij uitdiensttreding die elektronisch zijn ondertekend en verrekend in de eindafrekening."),
+            "Vacation settlement": _t(
+                "Solde de congé", "Urlaubsabrechnung", "Liquidación de vacaciones",
+                "Liquidazione delle ferie", "Verlofafrekening"),
+            "Compute and draft a Saudi Labor Law Article 109 leave settlement, then finalize, pay and reconcile it against the pay run — statutory leave pay worked out and tied back to payroll.": _t(
+                "Calculez et préparez un solde de congé selon l'article 109 du droit du travail saoudien, puis finalisez-le, payez-le et rapprochez-le du cycle de paie — l'indemnité de congé légale calculée et reliée à la paie.",
+                "Berechnen und entwerfen Sie eine Urlaubsabrechnung nach Artikel 109 des saudischen Arbeitsrechts, finalisieren, zahlen und gleichen Sie sie dann mit dem Gehaltslauf ab — der gesetzliche Urlaubslohn ermittelt und mit der Gehaltsabrechnung verknüpft.",
+                "Calcule y prepare una liquidación de vacaciones conforme al Artículo 109 de la Ley Laboral saudí, y luego finalícela, páguela y concíliela con la nómina — la paga de vacaciones legal calculada y vinculada a la nómina.",
+                "Calcola e prepara una liquidazione delle ferie ai sensi dell'Articolo 109 della legge sul lavoro saudita, poi finalizzala, pagala e riconciliala con il ciclo paghe — l'indennità di ferie di legge calcolata e collegata alle buste paga.",
+                "Bereken en stel een verlofafrekening op volgens artikel 109 van het Saudische arbeidsrecht, en finaliseer, betaal en reconcilieer deze vervolgens met de loonrun — het wettelijke verlofloon berekend en gekoppeld aan de salarisadministratie."),
+            "Company documents": _t(
+                "Documents de l'entreprise", "Unternehmensdokumente", "Documentos de la empresa",
+                "Documenti aziendali", "Bedrijfsdocumenten"),
+            "An expiry-tracked register for the company's own records — commercial registration, licences and permits — with renewal reminders, alongside the per-employee credential tracking.": _t(
+                "Un registre à échéances suivies pour les documents propres à l'entreprise — registre de commerce, licences et permis — avec des rappels de renouvellement, aux côtés du suivi des documents de chaque employé.",
+                "Ein mit Ablaufdaten geführtes Register für die eigenen Unterlagen des Unternehmens — Handelsregister, Lizenzen und Genehmigungen — mit Verlängerungserinnerungen, neben der Nachweisverfolgung je Mitarbeiter.",
+                "Un registro con control de vencimientos para los documentos propios de la empresa — registro mercantil, licencias y permisos — con recordatorios de renovación, junto al seguimiento de credenciales por empleado.",
+                "Un registro con scadenze monitorate per i documenti propri dell'azienda — registro delle imprese, licenze e permessi — con promemoria di rinnovo, accanto al monitoraggio delle credenziali per dipendente.",
+                "Een register met bewaakte vervaldata voor de eigen documenten van het bedrijf — handelsregister, vergunningen en machtigingen — met verlengingsherinneringen, naast het bijhouden van documenten per werknemer."),
             "Total rewards &amp; insurance": _t(
                 "Rémunération globale &amp; assurance", "Gesamtvergütung &amp; Versicherung", "Compensación total &amp; seguro",
                 "Ricompensa totale &amp; assicurazione", "Totale beloning &amp; verzekering"),
