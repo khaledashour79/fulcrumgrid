@@ -27,6 +27,7 @@ ROOT = os.environ.get('FG_ROOT') or os.path.abspath(os.path.join(HERE, '..', '..
 ASSETS = [
     'assets/js/hero-orbit.js',
     'assets/js/explorer.js',
+    'assets/js/calculator.js',
 ]
 
 SKIP_DIRS = ('/.git', '/node_modules', '/scripts', '/content', '/workers', '/og_out', '/og_out2')

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>حاسبة توفير الوقت والتكلفة للموارد البشرية | FulcrumGrid</title>
+  <meta name="description" content="قدّر الساعات الإدارية التي يمكن لفريق الموارد البشرية لديك استعادتها مع FulcrumGrid. أجب عن خمسة أسئلة سريعة وعدّل الافتراضات — تقدير توضيحي وشفّاف." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="حاسبة توفير الوقت والتكلفة للموارد البشرية | FulcrumGrid" />
+  <meta property="og:description" content="قدّر الساعات الإدارية التي يمكن لفريق الموارد البشرية لديك استعادتها مع FulcrumGrid — تقدير توضيحي وشفّاف وقابل للتعديل." />
+  <meta property="og:url" content="https://fulcrumgrid.com/ar/calculator/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="حاسبة توفير الوقت والتكلفة للموارد البشرية | FulcrumGrid" />
+  <meta name="twitter:description" content="قدّر الساعات الإدارية التي يمكن لفريق الموارد البشرية لديك استعادتها مع FulcrumGrid — تقدير توضيحي وشفّاف وقابل للتعديل." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/ar/calculator/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/calculator/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/calculator/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/calculator/" />
+
+  <link rel="preload" href="/assets/fonts/cairo-600-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/cairo-400-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <link rel="stylesheet" href="/assets/css/calculator.css" />
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <a href="/ar/products/">المنتجات</a>
+        <a href="/ar/features/">الشبكة</a>
+        <a href="/ar/pricing/">الأسعار</a>
+        <a href="/ar/regions/">المناطق</a>
+        <a href="/ar/blog/">المدوّنة</a>
+        <a href="/ar/contact/">اتصل بنا</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="اللغة">ع ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/calculator/" hreflang="en" lang="en">English</a>
+            <a href="/ar/calculator/" class="active" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      </div>
+      <button class="nav-toggle" aria-label="القائمة"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main class="calc">
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono mono-accent">منصة الموارد البشرية · حاسبة التوفير</p>
+        <h1>كم من الوقت يمكن أن يوفّره فريق الموارد البشرية لديك؟</h1>
+        <p class="section-lead" style="max-width:640px">أجب عن خمسة أسئلة سريعة لتقدير الساعات الإدارية التي يمكن لعملك استعادتها. كل شيء يبقى في متصفّحك — دون تسجيل، ودون أن تغادر أي بيانات هذه الصفحة.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap pad">
+        <div class="calc-wrap">
+          <!-- ============ المدخلات ============ -->
+          <div>
+            <div class="calc-card">
+              <h3>عن عملك</h3>
+              <p class="hint">أدخِل ما تعرفه. للأسئلة المتعلّقة بالأنشطة، استخدم «لست متأكّدًا — استخدم تقديرًا» وعدّله لاحقًا.</p>
+
+              <div class="field">
+                <label for="employees">عدد الموظفين <span class="unit">· العدد الحالي</span></label>
+                <input id="employees" data-persist type="number" min="0" step="1" inputmode="numeric" value="500" />
+              </div>
+
+              <div class="field">
+                <label for="hires">الموظفون المعيَّنون سنويًا <span class="unit">· تعيينات / سنة</span></label>
+                <div class="field-row">
+                  <input id="hires" data-persist type="number" min="0" step="1" inputmode="numeric" value="60" />
+                  <button type="button" class="est-btn" data-estimate="hires">لست متأكّدًا — استخدم تقديرًا</button>
+                  <span class="badge-est" data-badge="hires" hidden>تقديري</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="apps">متوسّط الطلبات لكل شاغر <span class="unit">· طلبات / شاغر</span></label>
+                <div class="field-row">
+                  <input id="apps" data-persist type="number" min="0" step="1" inputmode="numeric" value="50" />
+                  <button type="button" class="est-btn" data-estimate="apps">لست متأكّدًا — استخدم تقديرًا</button>
+                  <span class="badge-est" data-badge="apps" hidden>تقديري</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="iqama">تجديدات الإقامة المُعالَجة سنويًا <span class="unit">· تجديدات / سنة</span></label>
+                <div class="field-row">
+                  <input id="iqama" data-persist type="number" min="0" step="1" inputmode="numeric" value="400" />
+                  <button type="button" class="est-btn" data-estimate="iqama">لست متأكّدًا — استخدم تقديرًا</button>
+                  <span class="badge-est" data-badge="iqama" hidden>تقديري</span>
+                </div>
+                <p class="note">لست في السعودية؟ عطّل <b>تجديد الإقامات</b> من «الميزات المشمولة».</p>
+              </div>
+
+              <div class="field">
+                <label for="letters">خطابات الموظفين المطلوبة شهريًا <span class="unit">· خطابات / شهر</span></label>
+                <div class="field-row">
+                  <input id="letters" data-persist type="number" min="0" step="1" inputmode="numeric" value="100" />
+                  <button type="button" class="est-btn" data-estimate="letters">لست متأكّدًا — استخدم تقديرًا</button>
+                  <span class="badge-est" data-badge="letters" hidden>تقديري</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-card">
+              <h3>الميزات المشمولة</h3>
+              <p class="hint">هل تُؤتمت نشاطًا بالفعل؟ عطّله، أو أدخِل وقتك الحالي الفعلي من «تعديل الافتراضات».</p>
+              <label class="toggle"><input id="feat-recruitment" data-persist type="checkbox" checked /> التوظيف (فرز السير الذاتية والمقابلات)</label>
+              <label class="toggle"><input id="feat-payroll" data-persist type="checkbox" checked /> إعداد الرواتب</label>
+              <label class="toggle"><input id="feat-iqama" data-persist type="checkbox" checked /> تجديد الإقامات</label>
+              <label class="toggle"><input id="feat-letters" data-persist type="checkbox" checked /> خطابات الموظفين</label>
+            </div>
+
+            <div class="calc-card assume">
+              <details>
+                <summary>تعديل الافتراضات</summary>
+                <p class="note">تشمل أوقات المعالجة المراجعة البشرية المتبقية. المقابلات المسجّلة تحلّ محلّ خطوة الفرز الأولي المنمذجة هنا فقط، لا كل مقابلات التوظيف. توفير الإقامة يخصّ الإجراءات الإدارية لا الرسوم الحكومية. يفترض توفير الخطابات أن القوالب المؤهّلة والأتمتة مُهيّأة.</p>
+                <table class="assume-grid">
+                  <thead><tr><th>النشاط</th><th>دقائق يدويًا</th><th>دقائق مع المنصة</th></tr></thead>
+                  <tbody>
+                    <tr><td>الفرز الأولي للسير الذاتية</td><td><input id="m-cvScreen-manual" data-persist type="number" min="0" step="0.5" value="5" /></td><td><input id="m-cvScreen-platform" data-persist type="number" min="0" step="0.5" value="1" /></td></tr>
+                    <tr><td>المقابلة الأولية مقابل مراجعة مقابلة مسجّلة</td><td><input id="m-interview-manual" data-persist type="number" min="0" step="0.5" value="25" /></td><td><input id="m-interview-platform" data-persist type="number" min="0" step="0.5" value="12" /></td></tr>
+                    <tr><td>إعداد الرواتب لكل موظف / دورة</td><td><input id="m-payroll-manual" data-persist type="number" min="0" step="0.5" value="8" /></td><td><input id="m-payroll-platform" data-persist type="number" min="0" step="0.5" value="3" /></td></tr>
+                    <tr><td>إدارة تجديد الإقامة</td><td><input id="m-iqama-manual" data-persist type="number" min="0" step="0.5" value="40" /></td><td><input id="m-iqama-platform" data-persist type="number" min="0" step="0.5" value="20" /></td></tr>
+                    <tr><td>إعداد خطاب الموظف وتسليمه</td><td><input id="m-letters-manual" data-persist type="number" min="0" step="0.5" value="10" /></td><td><input id="m-letters-platform" data-persist type="number" min="0" step="0.5" value="2" /></td></tr>
+                  </tbody>
+                </table>
+                <div class="field"><label for="interviewsPerHire">المقابلات الأولية لكل تعيين</label><input id="interviewsPerHire" data-persist class="mini" type="number" min="0" step="1" value="12" /></div>
+                <div class="field"><label for="staffCost">التكلفة الكاملة للموظف <span class="unit">· ريال / شهر</span></label><input id="staffCost" data-persist type="number" min="0" step="100" value="12000" /></div>
+                <div class="field"><label for="productiveHours">ساعات العمل المنتجة <span class="unit">· شهريًا</span></label><input id="productiveHours" data-persist class="mini" type="number" min="1" step="1" value="160" /></div>
+                <div class="field"><label for="realization">معامل التحقّق / التبنّي المتوقّع <span class="unit">· %</span></label><input id="realization" data-persist class="mini" type="number" min="0" max="100" step="1" value="80" /></div>
+                <p class="note">التقديرات الافتراضية هي افتراضات توضيحية للحاسبة، وليست معايير قياسية للقطاع أو نتائج عملاء مؤكّدة: التعيينات السنوية 12% من العدد، و50 طلبًا لكل شاغر، وتجديدات الإقامة 80% من العدد (واحدة لكل موظف وافد سنويًا)، والخطابات الشهرية 20% من العدد.</p>
+              </details>
+            </div>
+
+            <div class="calc-card optional">
+              <details>
+                <summary>قارن بتكاليفك (اختياري)</summary>
+                <p class="note">اترك الحقول فارغة لعرض قيمة السعة فقط. أدخِل أرقامك الخاصة لنمذجة صافي الأثر — لا يُعرض شيء حتى تفعل ذلك. لا تخصم ما هو مشمول أصلًا في الاشتراك مرّتين.</p>
+                <div class="field"><label for="subscription">الاشتراك السنوي <span class="unit">· ريال / سنة</span></label><input id="subscription" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+                <div class="field"><label for="addlCosts">تكاليف سنوية إضافية للذكاء الاصطناعي / المقابلات / التكامل <span class="unit">· ريال / سنة</span></label><input id="addlCosts" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+                <div class="field"><label for="implementation">تنفيذ لمرّة واحدة <span class="unit">· ريال</span></label><input id="implementation" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+              </details>
+            </div>
+          </div>
+
+          <!-- ============ النتائج ============ -->
+          <div class="results" aria-live="polite">
+            <div class="calc-card">
+              <div class="results-head">
+                <div class="stat"><span class="k">ساعات مُحرَّرة / شهر</span><span class="v num-anim ltr-num" id="r-hours-month">—</span></div>
+                <div class="stat"><span class="k">ساعات مُحرَّرة / سنة</span><span class="v num-anim ltr-num" id="r-hours-year">—</span></div>
+                <div class="stat big"><span class="k">القيمة السنوية المقدَّرة لوقت الموظفين</span><span class="v num-anim ltr-num" id="r-value-year">—</span><span class="sub"><span class="ltr-num" id="r-value-month">—</span> / شهر · سعة إدارية محتملة مُحرَّرة</span></div>
+              </div>
+
+              <div class="calc-section-label">تفصيل حسب الميزة</div>
+              <div id="breakdown"></div>
+
+              <div class="calc-section-label">المساهمة حسب الميزة</div>
+              <div id="chart"></div>
+
+              <div class="calc-section-label">حساسية التبنّي</div>
+              <p class="note" style="margin-top:0">حساسية تبنٍّ، لا فترة ثقة إحصائية — نفس المدخلات عند تحقّق 50% و100% إلى جانب حالتك الأساسية القابلة للتعديل.</p>
+              <div class="sens-grid" id="sensitivity"></div>
+
+              <div id="warnings" hidden></div>
+              <div id="net" hidden></div>
+
+              <div class="cta-box">
+                <a class="btn btn-primary" href="/ar/contact/">احجز عرضًا توضيحيًا للتحقّق من تقديرك</a>
+              </div>
+
+              <div class="disclosure">
+                تقدير توضيحي بناءً على مدخلاتك والافتراضات القابلة للتعديل. الوقت المُحرَّر للموظفين لا يقلّل بالضرورة الإنفاق على الرواتب. تعتمد النتائج الفعلية على عملياتك الحالية وتهيئتك ومدى التبنّي. تُستثنى تكاليف الاشتراك والاستخدام والتنفيذ ما لم تُعرض صراحةً.
+              </div>
+            </div>
+
+            <div class="calc-card assume">
+              <details>
+                <summary>كيف يُحتسب هذا</summary>
+                <p class="note"><b>أحجام الأنشطة السنوية.</b> فرز السير الذاتية = التعيينات السنوية × الطلبات لكل شاغر. المقابلات الأولية = التعيينات السنوية × المقابلات الأولية لكل تعيين. الرواتب = عدد الموظفين × 12 دورة. تجديدات الإقامة = التجديدات المُدخَلة. الخطابات = الطلبات الشهرية × 12.</p>
+                <p class="note"><b>لكل نشاط مُفعَّل.</b> الساعات المُحرَّرة سنويًا = حجم النشاط × (الدقائق اليدوية − دقائق المنصة) ÷ 60 × معامل التحقّق. تكلفة الساعة للموظف = التكلفة الشهرية الكاملة ÷ ساعات العمل المنتجة شهريًا. قيمة السعة السنوية = الساعات المُحرَّرة × تكلفة الساعة. الشهري = السنوي ÷ 12.</p>
+                <p class="note">يُحتسب فرز السير الذاتية ومراجعة المقابلات بشكل منفصل ويُدمجان تحت التوظيف. نستثني عمدًا نِسَب الإنتاجية العامة، والغرامات المُتجنَّبة، ومكاسب جودة التوظيف، وتوفير أخطاء الرواتب، وملاحقة الموافقات أو العمل المحاسبي — فقد تتداخل مع مجموعات الميزات الأربع.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>العمود الفقري التشغيلي للفرق الحديثة.</p>
+        </div>
+        <div class="foot-col">
+          <h5>المنتجات</h5>
+          <a href="/ar/products/">كل المنتجات</a>
+          <a href="/ar/products/hr-suite/">منصة الموارد البشرية</a>
+          <a href="/ar/products/command-center/">لوحة التحكم للتنفيذيين</a>
+          <a href="/ar/products/collection/">منصة تحصيل الديون</a>
+          <a href="/ar/products/tms/">منصة العمليات اللوجستية</a>
+          <a href="/ar/products/assure/">منصة الحوكمة والامتثال</a>
+          <a href="/ar/products/close/">منصة المعايير المحاسبية والإغلاق</a>
+          <a href="/ar/products/consolidate/">منصة التوحيد المالي</a>
+          <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشبكة</h5>
+          <a href="/ar/features/">الميزات</a>
+          <a href="/ar/integrations/">التكاملات</a>
+          <a href="/ar/how-it-works/">كيف تعمل</a>
+          <a href="/ar/pricing/">الأسعار</a>
+          <a href="/ar/regions/">المناطق</a>
+          <a href="/ar/blog/">المدوّنة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشركة</h5>
+          <a href="/ar/about/">من نحن</a>
+          <a href="/ar/faq/">الأسئلة الشائعة</a>
+          <a href="/ar/contact/">اتصل بنا</a>
+          <a href="/ar/privacy/">الخصوصية</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+  <script src="/assets/js/calculator.js?v=99860a03" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=c33c4f35" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

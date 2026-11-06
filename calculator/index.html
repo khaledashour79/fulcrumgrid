@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>HR Time &amp; Cost Savings Calculator | FulcrumGrid</title>
+  <meta name="description" content="Estimate the administrative hours your HR team could reclaim with FulcrumGrid. Answer five quick questions and adjust the assumptions — an illustrative, transparent estimate." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="HR Time &amp; Cost Savings Calculator | FulcrumGrid" />
+  <meta property="og:description" content="Estimate the administrative hours your HR team could reclaim with FulcrumGrid — an illustrative, transparent, adjustable estimate." />
+  <meta property="og:url" content="https://fulcrumgrid.com/calculator/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="HR Time &amp; Cost Savings Calculator | FulcrumGrid" />
+  <meta name="twitter:description" content="Estimate the administrative hours your HR team could reclaim with FulcrumGrid — an illustrative, transparent, adjustable estimate." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/calculator/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/calculator/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/calculator/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/calculator/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <link rel="stylesheet" href="/assets/css/calculator.css" />
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/calculator/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main class="calc">
+    <!-- ===== Hero ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono mono-accent">HR Suite · Savings calculator</p>
+        <h1>How much time could your HR team save?</h1>
+        <p class="section-lead" style="max-width:640px">Answer five quick questions to estimate the administrative hours your business could reclaim. Everything stays in your browser — no sign-up, no data leaves this page.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap pad">
+        <div class="calc-wrap">
+          <!-- ============ LEFT: inputs ============ -->
+          <div>
+            <div class="calc-card">
+              <h3>Your business</h3>
+              <p class="hint">Enter what you know. For the activity questions, use “Not sure — use an estimate” and edit later.</p>
+
+              <div class="field">
+                <label for="employees">Number of employees <span class="unit">· current headcount</span></label>
+                <input id="employees" data-persist type="number" min="0" step="1" inputmode="numeric" value="500" />
+              </div>
+
+              <div class="field">
+                <label for="hires">Employees hired annually <span class="unit">· hires / year</span></label>
+                <div class="field-row">
+                  <input id="hires" data-persist type="number" min="0" step="1" inputmode="numeric" value="60" />
+                  <button type="button" class="est-btn" data-estimate="hires">Not sure — use an estimate</button>
+                  <span class="badge-est" data-badge="hires" hidden>Estimated</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="apps">Average applications per vacancy <span class="unit">· applications / vacancy</span></label>
+                <div class="field-row">
+                  <input id="apps" data-persist type="number" min="0" step="1" inputmode="numeric" value="50" />
+                  <button type="button" class="est-btn" data-estimate="apps">Not sure — use an estimate</button>
+                  <span class="badge-est" data-badge="apps" hidden>Estimated</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="iqama">Iqama renewals processed annually <span class="unit">· renewals / year</span></label>
+                <div class="field-row">
+                  <input id="iqama" data-persist type="number" min="0" step="1" inputmode="numeric" value="400" />
+                  <button type="button" class="est-btn" data-estimate="iqama">Not sure — use an estimate</button>
+                  <span class="badge-est" data-badge="iqama" hidden>Estimated</span>
+                </div>
+                <p class="note">Not in Saudi Arabia? Turn <b>Iqama renewals</b> off under “Features to include”.</p>
+              </div>
+
+              <div class="field">
+                <label for="letters">Employee letters requested monthly <span class="unit">· letters / month</span></label>
+                <div class="field-row">
+                  <input id="letters" data-persist type="number" min="0" step="1" inputmode="numeric" value="100" />
+                  <button type="button" class="est-btn" data-estimate="letters">Not sure — use an estimate</button>
+                  <span class="badge-est" data-badge="letters" hidden>Estimated</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-card">
+              <h3>Features to include</h3>
+              <p class="hint">Already automate an activity? Turn it off, or enter your real current time under “Adjust assumptions”.</p>
+              <label class="toggle"><input id="feat-recruitment" data-persist type="checkbox" checked /> Recruitment (CV screening &amp; interviews)</label>
+              <label class="toggle"><input id="feat-payroll" data-persist type="checkbox" checked /> Payroll preparation</label>
+              <label class="toggle"><input id="feat-iqama" data-persist type="checkbox" checked /> Iqama renewals</label>
+              <label class="toggle"><input id="feat-letters" data-persist type="checkbox" checked /> Employee letters</label>
+            </div>
+
+            <div class="calc-card assume">
+              <details>
+                <summary>Adjust assumptions</summary>
+                <p class="note">Processing times include the remaining human review. Recorded interviews replace only the initial screening step modeled here, not every hiring interview. Iqama savings concern administration, not government fees. Letter savings assume eligible templates and automation are configured.</p>
+                <table class="assume-grid">
+                  <thead><tr><th>Activity</th><th>Manual min.</th><th>With platform min.</th></tr></thead>
+                  <tbody>
+                    <tr><td>Initial CV screening</td><td><input id="m-cvScreen-manual" data-persist type="number" min="0" step="0.5" value="5" /></td><td><input id="m-cvScreen-platform" data-persist type="number" min="0" step="0.5" value="1" /></td></tr>
+                    <tr><td>Initial interview vs recorded-interview review</td><td><input id="m-interview-manual" data-persist type="number" min="0" step="0.5" value="25" /></td><td><input id="m-interview-platform" data-persist type="number" min="0" step="0.5" value="12" /></td></tr>
+                    <tr><td>Payroll prep per employee / cycle</td><td><input id="m-payroll-manual" data-persist type="number" min="0" step="0.5" value="8" /></td><td><input id="m-payroll-platform" data-persist type="number" min="0" step="0.5" value="3" /></td></tr>
+                    <tr><td>Iqama renewal administration</td><td><input id="m-iqama-manual" data-persist type="number" min="0" step="0.5" value="40" /></td><td><input id="m-iqama-platform" data-persist type="number" min="0" step="0.5" value="20" /></td></tr>
+                    <tr><td>Employee letter prep &amp; delivery</td><td><input id="m-letters-manual" data-persist type="number" min="0" step="0.5" value="10" /></td><td><input id="m-letters-platform" data-persist type="number" min="0" step="0.5" value="2" /></td></tr>
+                  </tbody>
+                </table>
+                <div class="field"><label for="interviewsPerHire">Initial interviews per hire</label><input id="interviewsPerHire" data-persist class="mini" type="number" min="0" step="1" value="12" /></div>
+                <div class="field"><label for="staffCost">Fully loaded staff cost <span class="unit">· SAR / month</span></label><input id="staffCost" data-persist type="number" min="0" step="100" value="12000" /></div>
+                <div class="field"><label for="productiveHours">Productive staff hours <span class="unit">· per month</span></label><input id="productiveHours" data-persist class="mini" type="number" min="1" step="1" value="160" /></div>
+                <div class="field"><label for="realization">Expected realization / adoption factor <span class="unit">· %</span></label><input id="realization" data-persist class="mini" type="number" min="0" max="100" step="1" value="80" /></div>
+                <p class="note">Fallback estimates are illustrative calculator assumptions, not industry benchmarks or verified customer results: annual hires 12% of headcount, 50 applications per vacancy, Iqama renewals 80% of headcount (one per expatriate employee per year), monthly letters 20% of headcount.</p>
+              </details>
+            </div>
+
+            <div class="calc-card optional">
+              <details>
+                <summary>Compare against your costs (optional)</summary>
+                <p class="note">Leave blank to see capacity value only. Enter your own figures to model a net benefit — nothing is shown until you do. Don’t deduct anything already bundled in the subscription twice.</p>
+                <div class="field"><label for="subscription">Annual subscription <span class="unit">· SAR / year</span></label><input id="subscription" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+                <div class="field"><label for="addlCosts">Additional annual AI / interview / integration costs <span class="unit">· SAR / year</span></label><input id="addlCosts" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+                <div class="field"><label for="implementation">One-time implementation <span class="unit">· SAR</span></label><input id="implementation" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+              </details>
+            </div>
+          </div>
+
+          <!-- ============ RIGHT: results ============ -->
+          <div class="results" aria-live="polite">
+            <div class="calc-card">
+              <div class="results-head">
+                <div class="stat"><span class="k">Hours released / month</span><span class="v num-anim ltr-num" id="r-hours-month">—</span></div>
+                <div class="stat"><span class="k">Hours released / year</span><span class="v num-anim ltr-num" id="r-hours-year">—</span></div>
+                <div class="stat big"><span class="k">Estimated annual value of staff time</span><span class="v num-anim ltr-num" id="r-value-year">—</span><span class="sub"><span class="ltr-num" id="r-value-month">—</span> / month · potential administrative capacity released</span></div>
+              </div>
+
+              <div class="calc-section-label">Feature breakdown</div>
+              <div id="breakdown"></div>
+
+              <div class="calc-section-label">Contribution by feature</div>
+              <div id="chart"></div>
+
+              <div class="calc-section-label">Adoption sensitivity</div>
+              <p class="note" style="margin-top:0">An adoption sensitivity, not a statistical confidence interval — the same inputs at 50% and 100% realization alongside your editable base case.</p>
+              <div class="sens-grid" id="sensitivity"></div>
+
+              <div id="warnings" hidden></div>
+              <div id="net" hidden></div>
+
+              <div class="cta-box">
+                <a class="btn btn-primary" href="/contact/">Book a demo to validate your estimate</a>
+              </div>
+
+              <div class="disclosure">
+                Illustrative estimate based on your inputs and adjustable assumptions. Staff time released does not necessarily reduce payroll expenditure. Actual results depend on your existing processes, configuration, and adoption. Subscription, usage, and implementation costs are excluded unless explicitly shown.
+              </div>
+            </div>
+
+            <div class="calc-card assume">
+              <details>
+                <summary>How this is calculated</summary>
+                <p class="note"><b>Annual activity volumes.</b> CV screening = annual hires × applications per vacancy. Initial interviews = annual hires × initial interviews per hire. Payroll = headcount × 12 cycles. Iqama renewals = renewals entered. Letters = monthly requests × 12.</p>
+                <p class="note"><b>Per enabled activity.</b> Annual hours released = volume × (manual minutes − platform minutes) ÷ 60 × realization factor. Hourly staff cost = fully loaded monthly cost ÷ productive monthly hours. Annual capacity value = hours released × hourly cost. Monthly = annual ÷ 12.</p>
+                <p class="note">CV screening and interview review are calculated separately and combined under Recruitment. We deliberately exclude blanket productivity percentages, avoided fines, hiring-quality gains, payroll-error savings, and approval-chasing or accounting work — those could overlap with the four feature groups.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/products/tms/">TMS</a>
+          <a href="/products/assure/">Assure</a>
+          <a href="/products/close/">Close</a>
+          <a href="/products/consolidate/">Consolidate</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+  <script src="/assets/js/calculator.js?v=99860a03" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=c33c4f35" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
