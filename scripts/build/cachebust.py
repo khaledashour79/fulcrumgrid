@@ -28,6 +28,7 @@ ASSETS = [
     'assets/js/hero-orbit.js',
     'assets/js/explorer.js',
     'assets/js/calculator.js',
+    'assets/js/calc-modal.js',
 ]
 
 SKIP_DIRS = ('/.git', '/node_modules', '/scripts', '/content', '/workers', '/og_out', '/og_out2')

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src 'self' https://td.doubleclick.net; media-src 'self' blob: data:;" />
 
   <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
@@ -53,6 +53,7 @@
   <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <link rel="stylesheet" href="/assets/css/calculator.css" />
   <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
 </head>
 <body>
@@ -171,7 +172,7 @@
           </div>
           <p class="section-lead">Answer five quick questions to estimate the administrative hours your HR team could reclaim — an illustrative, adjustable estimate.</p>
         </div>
-        <p style="margin-top:4px"><a class="btn btn-primary" href="/calculator/">Try the savings calculator</a></p>
+        <p style="margin-top:4px"><a class="btn btn-primary" href="/calculator/" data-calc-open>Try the savings calculator</a></p>
       </div>
     </section>
 
@@ -363,7 +364,17 @@
     </div>
   </footer>
 
+  <!-- HR savings-calculator modal (lazy-loads /calculator/?embed=1) -->
+  <div class="calc-modal" data-calc-modal hidden>
+    <div class="calc-modal__backdrop" data-calc-close></div>
+    <div class="calc-modal__dialog" role="dialog" aria-modal="true" aria-label="HR savings calculator">
+      <button type="button" class="calc-modal__close" data-calc-close aria-label="Close calculator">×</button>
+      <iframe class="calc-modal__frame" title="HR savings calculator" loading="lazy"></iframe>
+    </div>
+  </div>
+
   <script src="/assets/js/consent.js" defer></script>
+  <script src="/assets/js/calc-modal.js?v=49b08587" defer></script>
 <!-- fg-concierge:start -->
 <div id="fg-concierge" data-fg-concierge hidden></div>
 <script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
