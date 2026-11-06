@@ -66,21 +66,6 @@ def main():
             urls.append('  <url>\n    <loc>%s</loc>\n%s\n    <lastmod>%s</lastmod>\n'
                         '    <changefreq>%s</changefreq>\n    <priority>%s</priority>\n  </url>'
                         % (loc, alts, TODAY, changefreq, priority))
-    # EN+AR-only pages not registered in PAGES (self-contained hreflang: en, ar, x-default).
-    for canon in ['/calculator/']:
-        priority, changefreq = meta(canon)
-        alt = ('    <xhtml:link rel="alternate" hreflang="en" href="%s%s" />\n'
-               '    <xhtml:link rel="alternate" hreflang="ar" href="%s%s" />\n'
-               '    <xhtml:link rel="alternate" hreflang="x-default" href="%s%s" />'
-               % (i18n.BASE, i18n.alt_href('en', canon), i18n.BASE, i18n.alt_href('ar', canon),
-                  i18n.BASE, i18n.alt_href('en', canon)))
-        for code in ['en', 'ar']:
-            if not os.path.exists(file_for(canon, code)):
-                continue
-            loc = i18n.BASE + i18n.alt_href(code, canon)
-            urls.append('  <url>\n    <loc>%s</loc>\n%s\n    <lastmod>%s</lastmod>\n'
-                        '    <changefreq>%s</changefreq>\n    <priority>%s</priority>\n  </url>'
-                        % (loc, alt, TODAY, changefreq, priority))
     doc = ('<?xml version="1.0" encoding="UTF-8"?>\n'
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
            '        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'

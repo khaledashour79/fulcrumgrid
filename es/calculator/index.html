@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Calculadora de tiempo y costes de RR. HH. | FulcrumGrid</title>
+  <meta name="description" content="Estime las horas administrativas que su equipo de RR. HH. podría recuperar con FulcrumGrid. Responda cinco preguntas rápidas y ajuste los supuestos — una estimación ilustrativa y transparente." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Calculadora de tiempo y costes de RR. HH. | FulcrumGrid" />
+  <meta property="og:description" content="Estime las horas administrativas que su equipo de RR. HH. podría recuperar con FulcrumGrid — una estimación ilustrativa, transparente y ajustable." />
+  <meta property="og:url" content="https://fulcrumgrid.com/es/calculator/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Calculadora de tiempo y costes de RR. HH. | FulcrumGrid" />
+  <meta name="twitter:description" content="Estime las horas administrativas que su equipo de RR. HH. podría recuperar con FulcrumGrid — una estimación ilustrativa, transparente y ajustable." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/es/calculator/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/calculator/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/calculator/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/calculator/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/calculator/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/calculator/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/calculator/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/calculator/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/calculator/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <link rel="stylesheet" href="/assets/css/calculator.css" />
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/es/products/">Productos</a>
+        <a href="/es/features/">Cuadrícula</a>
+        <a href="/es/pricing/">Precios</a>
+        <a href="/es/regions/">Regiones</a>
+        <a href="/es/blog/">Blog</a>
+        <a href="/es/contact/">Contacto</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Idioma">ES ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" class="active" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/es/contact/">Solicitar una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main class="calc">
+    <!-- ===== Hero ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono mono-accent">HR Suite · Calculadora de ahorro</p>
+        <h1>¿Cuánto tiempo podría ahorrar su equipo de RR. HH.?</h1>
+        <p class="section-lead" style="max-width:640px">Responda cinco preguntas rápidas para estimar las horas administrativas que su empresa podría recuperar. Todo permanece en su navegador — sin registro, ningún dato sale de esta página.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap pad">
+        <div class="calc-wrap">
+          <!-- ============ LEFT: inputs ============ -->
+          <div>
+            <div class="calc-card">
+              <h3>Su empresa</h3>
+              <p class="hint">Introduzca lo que sepa. Para las preguntas de actividad, use «No estoy seguro — usar una estimación» y edítelo después.</p>
+
+              <div class="field">
+                <label for="employees">Número de empleados <span class="unit">· plantilla actual</span></label>
+                <input id="employees" data-persist type="number" min="0" step="1" inputmode="numeric" value="500" />
+              </div>
+
+              <div class="field">
+                <label for="hires">Empleados contratados al año <span class="unit">· contrataciones / año</span></label>
+                <div class="field-row">
+                  <input id="hires" data-persist type="number" min="0" step="1" inputmode="numeric" value="60" />
+                  <button type="button" class="est-btn" data-estimate="hires">No estoy seguro — usar una estimación</button>
+                  <span class="badge-est" data-badge="hires" hidden>Estimado</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="apps">Solicitudes medias por vacante <span class="unit">· solicitudes / vacante</span></label>
+                <div class="field-row">
+                  <input id="apps" data-persist type="number" min="0" step="1" inputmode="numeric" value="50" />
+                  <button type="button" class="est-btn" data-estimate="apps">No estoy seguro — usar una estimación</button>
+                  <span class="badge-est" data-badge="apps" hidden>Estimado</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="iqama">Renovaciones de iqama procesadas al año <span class="unit">· renovaciones / año</span></label>
+                <div class="field-row">
+                  <input id="iqama" data-persist type="number" min="0" step="1" inputmode="numeric" value="400" />
+                  <button type="button" class="est-btn" data-estimate="iqama">No estoy seguro — usar una estimación</button>
+                  <span class="badge-est" data-badge="iqama" hidden>Estimado</span>
+                </div>
+                <p class="note">¿No está en Arabia Saudí? Desactive <b>Renovaciones de iqama</b> en «Funciones a incluir».</p>
+              </div>
+
+              <div class="field">
+                <label for="letters">Cartas de empleados solicitadas al mes <span class="unit">· cartas / mes</span></label>
+                <div class="field-row">
+                  <input id="letters" data-persist type="number" min="0" step="1" inputmode="numeric" value="100" />
+                  <button type="button" class="est-btn" data-estimate="letters">No estoy seguro — usar una estimación</button>
+                  <span class="badge-est" data-badge="letters" hidden>Estimado</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-card">
+              <h3>Funciones a incluir</h3>
+              <p class="hint">¿Ya automatiza una actividad? Desactívela o introduzca su tiempo actual real en «Ajustar los supuestos».</p>
+              <label class="toggle"><input id="feat-recruitment" data-persist type="checkbox" checked /> Contratación (cribado de CV &amp; entrevistas)</label>
+              <label class="toggle"><input id="feat-payroll" data-persist type="checkbox" checked /> Preparación de nóminas</label>
+              <label class="toggle"><input id="feat-iqama" data-persist type="checkbox" checked /> Renovaciones de iqama</label>
+              <label class="toggle"><input id="feat-letters" data-persist type="checkbox" checked /> Cartas de empleados</label>
+            </div>
+
+            <div class="calc-card assume">
+              <details>
+                <summary>Ajustar los supuestos</summary>
+                <p class="note">Los tiempos de procesamiento incluyen la revisión humana restante. Las entrevistas grabadas solo sustituyen el paso de cribado inicial modelado aquí, no todas las entrevistas de contratación. El ahorro en iqama concierne a la administración, no a las tasas gubernamentales. El ahorro en cartas supone que hay plantillas elegibles y automatización configuradas.</p>
+                <table class="assume-grid">
+                  <thead><tr><th>Actividad</th><th>Min. manual</th><th>Min. con la plataforma</th></tr></thead>
+                  <tbody>
+                    <tr><td>Cribado inicial de CV</td><td><input id="m-cvScreen-manual" data-persist type="number" min="0" step="0.5" value="5" /></td><td><input id="m-cvScreen-platform" data-persist type="number" min="0" step="0.5" value="1" /></td></tr>
+                    <tr><td>Entrevista inicial vs revisión de entrevista grabada</td><td><input id="m-interview-manual" data-persist type="number" min="0" step="0.5" value="25" /></td><td><input id="m-interview-platform" data-persist type="number" min="0" step="0.5" value="12" /></td></tr>
+                    <tr><td>Prep. nómina por empleado / ciclo</td><td><input id="m-payroll-manual" data-persist type="number" min="0" step="0.5" value="8" /></td><td><input id="m-payroll-platform" data-persist type="number" min="0" step="0.5" value="3" /></td></tr>
+                    <tr><td>Administración de la renovación de iqama</td><td><input id="m-iqama-manual" data-persist type="number" min="0" step="0.5" value="40" /></td><td><input id="m-iqama-platform" data-persist type="number" min="0" step="0.5" value="20" /></td></tr>
+                    <tr><td>Prep. &amp; entrega de cartas de empleados</td><td><input id="m-letters-manual" data-persist type="number" min="0" step="0.5" value="10" /></td><td><input id="m-letters-platform" data-persist type="number" min="0" step="0.5" value="2" /></td></tr>
+                  </tbody>
+                </table>
+                <div class="field"><label for="interviewsPerHire">Entrevistas iniciales por contratación</label><input id="interviewsPerHire" data-persist class="mini" type="number" min="0" step="1" value="12" /></div>
+                <div class="field"><label for="staffCost">Coste total del personal <span class="unit">· SAR / mes</span></label><input id="staffCost" data-persist type="number" min="0" step="100" value="12000" /></div>
+                <div class="field"><label for="productiveHours">Horas productivas del personal <span class="unit">· al mes</span></label><input id="productiveHours" data-persist class="mini" type="number" min="1" step="1" value="160" /></div>
+                <div class="field"><label for="realization">Factor de realización / adopción esperado <span class="unit">· %</span></label><input id="realization" data-persist class="mini" type="number" min="0" max="100" step="1" value="80" /></div>
+                <p class="note">Las estimaciones por defecto son supuestos ilustrativos de la calculadora, no referencias del sector ni resultados verificados de clientes: contrataciones anuales 12 % de la plantilla, 50 solicitudes por vacante, renovaciones de iqama 80 % de la plantilla (una por empleado expatriado al año), cartas mensuales 20 % de la plantilla.</p>
+              </details>
+            </div>
+
+            <div class="calc-card optional">
+              <details>
+                <summary>Comparar con sus costes (opcional)</summary>
+                <p class="note">Deje en blanco para ver solo el valor de capacidad. Introduzca sus propias cifras para modelar un beneficio neto — no se muestra nada hasta que lo haga. No deduzca dos veces lo que ya está incluido en la suscripción.</p>
+                <div class="field"><label for="subscription">Suscripción anual <span class="unit">· SAR / año</span></label><input id="subscription" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+                <div class="field"><label for="addlCosts">Costes anuales adicionales de IA / entrevistas / integración <span class="unit">· SAR / año</span></label><input id="addlCosts" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+                <div class="field"><label for="implementation">Implementación única <span class="unit">· SAR</span></label><input id="implementation" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+              </details>
+            </div>
+          </div>
+
+          <!-- ============ RIGHT: results ============ -->
+          <div class="results" aria-live="polite">
+            <div class="calc-card">
+              <div class="results-head">
+                <div class="stat"><span class="k">Horas liberadas / mes</span><span class="v num-anim ltr-num" id="r-hours-month">—</span></div>
+                <div class="stat"><span class="k">Horas liberadas / año</span><span class="v num-anim ltr-num" id="r-hours-year">—</span></div>
+                <div class="stat big"><span class="k">Valor anual estimado del tiempo del personal</span><span class="v num-anim ltr-num" id="r-value-year">—</span><span class="sub"><span class="ltr-num" id="r-value-month">—</span> / mes · capacidad administrativa potencial liberada</span></div>
+              </div>
+
+              <div class="calc-section-label">Desglose por función</div>
+              <div id="breakdown"></div>
+
+              <div class="calc-section-label">Contribución por función</div>
+              <div id="chart"></div>
+
+              <div class="calc-section-label">Sensibilidad de adopción</div>
+              <p class="note" style="margin-top:0">Una sensibilidad de adopción, no un intervalo de confianza estadístico — las mismas entradas al 50 % y 100 % de realización junto a su caso base editable.</p>
+              <div class="sens-grid" id="sensitivity"></div>
+
+              <div id="warnings" hidden></div>
+              <div id="net" hidden></div>
+
+              <div class="cta-box">
+                <a class="btn btn-primary" href="/es/contact/">Reserve una demo para validar su estimación</a>
+              </div>
+
+              <div class="disclosure">
+                Estimación ilustrativa basada en sus datos y supuestos ajustables. El tiempo de personal liberado no reduce necesariamente el gasto en nóminas. Los resultados reales dependen de sus procesos existentes, su configuración y su adopción. Los costes de suscripción, uso e implementación se excluyen salvo que se muestren explícitamente.
+              </div>
+            </div>
+
+            <div class="calc-card assume">
+              <details>
+                <summary>Cómo se calcula</summary>
+                <p class="note"><b>Volúmenes de actividad anuales.</b> Cribado de CV = contrataciones anuales × solicitudes por vacante. Entrevistas iniciales = contrataciones anuales × entrevistas iniciales por contratación. Nómina = plantilla × 12 ciclos. Renovaciones de iqama = renovaciones introducidas. Cartas = solicitudes mensuales × 12.</p>
+                <p class="note"><b>Por actividad activada.</b> Horas liberadas al año = volumen × (minutos manuales − minutos con la plataforma) ÷ 60 × factor de realización. Coste por hora del personal = coste mensual total ÷ horas productivas mensuales. Valor de capacidad anual = horas liberadas × coste por hora. Mensual = anual ÷ 12.</p>
+                <p class="note">El cribado de CV y la revisión de entrevistas se calculan por separado y se combinan en Contratación. Excluimos deliberadamente los porcentajes de productividad generales, las multas evitadas, las mejoras en la calidad de contratación, el ahorro por errores de nómina y la persecución de aprobaciones o el trabajo contable — podrían solaparse con los cuatro grupos de funciones.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La columna vertebral operativa de los equipos modernos.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Productos</h5>
+          <a href="/es/products/">Todos los productos</a>
+          <a href="/es/products/hr-suite/">HR Suite</a>
+          <a href="/es/products/command-center/">Command Center</a>
+          <a href="/es/products/collection/">Collection</a>
+          <a href="/es/products/tms/">TMS</a>
+          <a href="/es/products/assure/">Assure</a>
+          <a href="/es/products/close/">Close</a>
+          <a href="/es/products/consolidate/">Consolidate</a>
+          <a href="/es/custom-apps/">Apps a medida</a>
+        </div>
+        <div class="foot-col">
+          <h5>Cuadrícula</h5>
+          <a href="/es/features/">Funciones</a>
+          <a href="/es/integrations/">Integraciones</a>
+          <a href="/es/how-it-works/">Cómo funciona</a>
+          <a href="/es/pricing/">Precios</a>
+          <a href="/es/regions/">Regiones</a>
+          <a href="/es/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Empresa</h5>
+          <a href="/es/about/">Acerca de</a>
+          <a href="/es/faq/">FAQ</a>
+          <a href="/es/contact/">Contacto</a>
+          <a href="/es/privacy/">Privacidad</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Todos los derechos reservados.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+  <script src="/assets/js/calculator.js?v=1aa38b83" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=c33c4f35" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

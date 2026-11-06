@@ -116,7 +116,8 @@
   // ---- Browser wiring ------------------------------------------------------
   if (typeof document === 'undefined') return;
 
-  var LANG = document.documentElement.lang === 'ar' ? 'ar' : 'en';
+  var _docLang = document.documentElement.lang;
+  var LANG = ['ar', 'fr', 'de', 'es', 'it', 'nl'].indexOf(_docLang) >= 0 ? _docLang : 'en';
   var T = {
     en: {
       recruitment: 'Recruitment', payroll: 'Payroll', iqama: 'Iqama renewals', letters: 'Employee letters',
@@ -137,6 +138,56 @@
       warnProdHours: 'يجب أن تكون ساعات العمل المنتجة شهريًا أكبر من صفر.',
       warnRealization: 'يجب أن تكون نسبة التحقّق بين 0% و100%.',
       disabled: 'معطّلة', net: 'صافي الأثر السنوي المُقدَّر', firstYear: 'الأثر المُقدَّر للسنة الأولى (شاملًا التنفيذ لمرّة واحدة)'
+    },
+    fr: {
+      recruitment: 'Recrutement', payroll: 'Paie', iqama: "Renouvellements d'iqama", letters: "Lettres d'employés",
+      hrsYear: 'heures / an', hrsMonth: 'heures / mois', perYear: '/ an', perMonth: '/ mois',
+      estimated: 'Estimé', sar: 'SAR',
+      base: 'Scénario de base', low: 'Adoption 50 %', high: 'Adoption 100 %',
+      warnPlatformHigher: "Le temps avec la plateforme est supérieur à votre temps manuel actuel pour cette activité — cela apparaît comme une valeur négative (temps ajouté), pas une économie. Vérifiez les minutes ou désactivez la fonctionnalité.",
+      warnProdHours: 'Les heures productives par mois doivent être supérieures à zéro.',
+      warnRealization: 'La réalisation doit être comprise entre 0 % et 100 %.',
+      disabled: 'désactivé', net: 'Bénéfice annuel net modélisé', firstYear: 'Bénéfice modélisé de la première année (mise en œuvre unique incluse)'
+    },
+    de: {
+      recruitment: 'Einstellung', payroll: 'Gehaltsabrechnung', iqama: 'Iqama-Erneuerungen', letters: 'Mitarbeiterschreiben',
+      hrsYear: 'Stunden / Jahr', hrsMonth: 'Stunden / Monat', perYear: '/ Jahr', perMonth: '/ Monat',
+      estimated: 'Geschätzt', sar: 'SAR',
+      base: 'Basisfall', low: 'Adoption 50 %', high: 'Adoption 100 %',
+      warnPlatformHigher: 'Die Plattform-Zeit ist für diese Aktivität höher als Ihre aktuelle manuelle Zeit — dies erscheint als negativer Wert (zusätzliche Zeit), nicht als Einsparung. Prüfen Sie die Minuten oder deaktivieren Sie die Funktion.',
+      warnProdHours: 'Die produktiven Stunden pro Monat müssen größer als null sein.',
+      warnRealization: 'Die Realisierung muss zwischen 0 % und 100 % liegen.',
+      disabled: 'deaktiviert', net: 'Modellierter jährlicher Nettonutzen', firstYear: 'Modellierter Nutzen im ersten Jahr (inkl. einmaliger Einrichtung)'
+    },
+    es: {
+      recruitment: 'Contratación', payroll: 'Nóminas', iqama: 'Renovaciones de iqama', letters: 'Cartas de empleados',
+      hrsYear: 'horas / año', hrsMonth: 'horas / mes', perYear: '/ año', perMonth: '/ mes',
+      estimated: 'Estimado', sar: 'SAR',
+      base: 'Caso base', low: 'Adopción 50 %', high: 'Adopción 100 %',
+      warnPlatformHigher: 'El tiempo con la plataforma es mayor que su tiempo manual actual para esta actividad — se muestra como un valor negativo (tiempo añadido), no como un ahorro. Revise los minutos o desactive la función.',
+      warnProdHours: 'Las horas productivas al mes deben ser mayores que cero.',
+      warnRealization: 'La realización debe estar entre 0 % y 100 %.',
+      disabled: 'desactivado', net: 'Beneficio neto anual modelado', firstYear: 'Beneficio modelado del primer año (incl. implementación única)'
+    },
+    it: {
+      recruitment: 'Reclutamento', payroll: 'Buste paga', iqama: "Rinnovi dell'iqama", letters: 'Lettere per dipendenti',
+      hrsYear: 'ore / anno', hrsMonth: 'ore / mese', perYear: '/ anno', perMonth: '/ mese',
+      estimated: 'Stimato', sar: 'SAR',
+      base: 'Caso base', low: 'Adozione 50%', high: 'Adozione 100%',
+      warnPlatformHigher: "Il tempo con la piattaforma è superiore al tuo attuale tempo manuale per questa attività — appare come un valore negativo (tempo aggiunto), non come un risparmio. Controlla i minuti o disattiva la funzione.",
+      warnProdHours: 'Le ore produttive al mese devono essere maggiori di zero.',
+      warnRealization: 'La realizzazione deve essere compresa tra 0% e 100%.',
+      disabled: 'disattivato', net: 'Beneficio netto annuo modellato', firstYear: 'Beneficio modellato del primo anno (incl. implementazione una tantum)'
+    },
+    nl: {
+      recruitment: 'Werving', payroll: 'Loonadministratie', iqama: 'Iqama-verlengingen', letters: 'Werknemersbrieven',
+      hrsYear: 'uren / jaar', hrsMonth: 'uren / maand', perYear: '/ jaar', perMonth: '/ maand',
+      estimated: 'Geschat', sar: 'SAR',
+      base: 'Basisscenario', low: 'Adoptie 50%', high: 'Adoptie 100%',
+      warnPlatformHigher: 'De platformtijd is voor deze activiteit hoger dan uw huidige handmatige tijd — dit verschijnt als een negatieve waarde (extra tijd), niet als een besparing. Controleer de minuten of schakel de functie uit.',
+      warnProdHours: 'De productieve uren per maand moeten groter zijn dan nul.',
+      warnRealization: 'De realisatie moet tussen 0% en 100% liggen.',
+      disabled: 'uitgeschakeld', net: 'Netto jaarlijks gemodelleerd voordeel', firstYear: 'Gemodelleerd voordeel eerste jaar (incl. eenmalige implementatie)'
     }
   }[LANG];
 

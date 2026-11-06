@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>HR-tijd- en kostencalculator | FulcrumGrid</title>
+  <meta name="description" content="Schat de administratieve uren die uw HR-team met FulcrumGrid kan terugwinnen. Beantwoord vijf korte vragen en pas de aannames aan — een illustratieve, transparante schatting." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="HR-tijd- en kostencalculator | FulcrumGrid" />
+  <meta property="og:description" content="Schat de administratieve uren die uw HR-team met FulcrumGrid kan terugwinnen — een illustratieve, transparante, aanpasbare schatting." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/calculator/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="HR-tijd- en kostencalculator | FulcrumGrid" />
+  <meta name="twitter:description" content="Schat de administratieve uren die uw HR-team met FulcrumGrid kan terugwinnen — een illustratieve, transparante, aanpasbare schatting." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-default.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/calculator/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/calculator/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/calculator/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/calculator/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/calculator/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/calculator/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/calculator/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/calculator/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/calculator/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <link rel="stylesheet" href="/assets/css/calculator.css" />
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main class="calc">
+    <!-- ===== Hero ===== -->
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono mono-accent">HR Suite · Besparingscalculator</p>
+        <h1>Hoeveel tijd kan uw HR-team besparen?</h1>
+        <p class="section-lead" style="max-width:640px">Beantwoord vijf korte vragen om de administratieve uren te schatten die uw bedrijf kan terugwinnen. Alles blijft in uw browser — zonder aanmelding, geen gegevens verlaten deze pagina.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap pad">
+        <div class="calc-wrap">
+          <!-- ============ LEFT: inputs ============ -->
+          <div>
+            <div class="calc-card">
+              <h3>Uw bedrijf</h3>
+              <p class="hint">Voer in wat u weet. Gebruik bij de activiteitsvragen 'Niet zeker — gebruik een schatting' en pas het later aan.</p>
+
+              <div class="field">
+                <label for="employees">Aantal werknemers <span class="unit">· huidig personeelsbestand</span></label>
+                <input id="employees" data-persist type="number" min="0" step="1" inputmode="numeric" value="500" />
+              </div>
+
+              <div class="field">
+                <label for="hires">Werknemers per jaar aangenomen <span class="unit">· aanwervingen / jaar</span></label>
+                <div class="field-row">
+                  <input id="hires" data-persist type="number" min="0" step="1" inputmode="numeric" value="60" />
+                  <button type="button" class="est-btn" data-estimate="hires">Niet zeker — gebruik een schatting</button>
+                  <span class="badge-est" data-badge="hires" hidden>Geschat</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="apps">Gemiddeld aantal sollicitaties per vacature <span class="unit">· sollicitaties / vacature</span></label>
+                <div class="field-row">
+                  <input id="apps" data-persist type="number" min="0" step="1" inputmode="numeric" value="50" />
+                  <button type="button" class="est-btn" data-estimate="apps">Niet zeker — gebruik een schatting</button>
+                  <span class="badge-est" data-badge="apps" hidden>Geschat</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="iqama">Jaarlijks verwerkte iqama-verlengingen <span class="unit">· verlengingen / jaar</span></label>
+                <div class="field-row">
+                  <input id="iqama" data-persist type="number" min="0" step="1" inputmode="numeric" value="400" />
+                  <button type="button" class="est-btn" data-estimate="iqama">Niet zeker — gebruik een schatting</button>
+                  <span class="badge-est" data-badge="iqama" hidden>Geschat</span>
+                </div>
+                <p class="note">Niet in Saoedi-Arabië? Schakel <b>Iqama-verlengingen</b> uit onder 'Functies om op te nemen'.</p>
+              </div>
+
+              <div class="field">
+                <label for="letters">Maandelijks aangevraagde werknemersbrieven <span class="unit">· brieven / maand</span></label>
+                <div class="field-row">
+                  <input id="letters" data-persist type="number" min="0" step="1" inputmode="numeric" value="100" />
+                  <button type="button" class="est-btn" data-estimate="letters">Niet zeker — gebruik een schatting</button>
+                  <span class="badge-est" data-badge="letters" hidden>Geschat</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-card">
+              <h3>Functies om op te nemen</h3>
+              <p class="hint">Automatiseert u een activiteit al? Schakel deze uit of voer uw werkelijke huidige tijd in onder 'Aannames aanpassen'.</p>
+              <label class="toggle"><input id="feat-recruitment" data-persist type="checkbox" checked /> Werving (cv-screening &amp; interviews)</label>
+              <label class="toggle"><input id="feat-payroll" data-persist type="checkbox" checked /> Loonadministratie</label>
+              <label class="toggle"><input id="feat-iqama" data-persist type="checkbox" checked /> Iqama-verlengingen</label>
+              <label class="toggle"><input id="feat-letters" data-persist type="checkbox" checked /> Werknemersbrieven</label>
+            </div>
+
+            <div class="calc-card assume">
+              <details>
+                <summary>Aannames aanpassen</summary>
+                <p class="note">De verwerkingstijden omvatten de resterende menselijke beoordeling. Opgenomen interviews vervangen alleen de hier gemodelleerde initiële screeningsstap, niet elk sollicitatiegesprek. Besparingen op iqama betreffen de administratie, niet de overheidskosten. Besparingen op brieven veronderstellen dat geschikte sjablonen en automatisering zijn geconfigureerd.</p>
+                <table class="assume-grid">
+                  <thead><tr><th>Activiteit</th><th>Min. handmatig</th><th>Min. met platform</th></tr></thead>
+                  <tbody>
+                    <tr><td>Initiële cv-screening</td><td><input id="m-cvScreen-manual" data-persist type="number" min="0" step="0.5" value="5" /></td><td><input id="m-cvScreen-platform" data-persist type="number" min="0" step="0.5" value="1" /></td></tr>
+                    <tr><td>Eerste interview vs. beoordeling van opgenomen interview</td><td><input id="m-interview-manual" data-persist type="number" min="0" step="0.5" value="25" /></td><td><input id="m-interview-platform" data-persist type="number" min="0" step="0.5" value="12" /></td></tr>
+                    <tr><td>Loonvoorbereiding per werknemer / cyclus</td><td><input id="m-payroll-manual" data-persist type="number" min="0" step="0.5" value="8" /></td><td><input id="m-payroll-platform" data-persist type="number" min="0" step="0.5" value="3" /></td></tr>
+                    <tr><td>Beheer van iqama-verlenging</td><td><input id="m-iqama-manual" data-persist type="number" min="0" step="0.5" value="40" /></td><td><input id="m-iqama-platform" data-persist type="number" min="0" step="0.5" value="20" /></td></tr>
+                    <tr><td>Opstellen &amp; bezorgen van werknemersbrieven</td><td><input id="m-letters-manual" data-persist type="number" min="0" step="0.5" value="10" /></td><td><input id="m-letters-platform" data-persist type="number" min="0" step="0.5" value="2" /></td></tr>
+                  </tbody>
+                </table>
+                <div class="field"><label for="interviewsPerHire">Eerste interviews per aanwerving</label><input id="interviewsPerHire" data-persist class="mini" type="number" min="0" step="1" value="12" /></div>
+                <div class="field"><label for="staffCost">Volledig belaste personeelskosten <span class="unit">· SAR / maand</span></label><input id="staffCost" data-persist type="number" min="0" step="100" value="12000" /></div>
+                <div class="field"><label for="productiveHours">Productieve personeelsuren <span class="unit">· per maand</span></label><input id="productiveHours" data-persist class="mini" type="number" min="1" step="1" value="160" /></div>
+                <div class="field"><label for="realization">Verwachte realisatie-/adoptiefactor <span class="unit">· %</span></label><input id="realization" data-persist class="mini" type="number" min="0" max="100" step="1" value="80" /></div>
+                <p class="note">De terugvalschattingen zijn illustratieve aannames van de calculator, geen sectorbenchmarks of geverifieerde klantresultaten: jaarlijkse aanwervingen 12% van het personeelsbestand, 50 sollicitaties per vacature, iqama-verlengingen 80% van het personeelsbestand (één per expatmedewerker per jaar), maandelijkse brieven 20% van het personeelsbestand.</p>
+              </details>
+            </div>
+
+            <div class="calc-card optional">
+              <details>
+                <summary>Vergelijk met uw kosten (optioneel)</summary>
+                <p class="note">Laat leeg om alleen de capaciteitswaarde te zien. Voer uw eigen cijfers in om een netto voordeel te modelleren — er wordt niets getoond totdat u dat doet. Trek niets dubbel af dat al in het abonnement zit.</p>
+                <div class="field"><label for="subscription">Jaarabonnement <span class="unit">· SAR / jaar</span></label><input id="subscription" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+                <div class="field"><label for="addlCosts">Extra jaarlijkse AI- / interview- / integratiekosten <span class="unit">· SAR / jaar</span></label><input id="addlCosts" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+                <div class="field"><label for="implementation">Eenmalige implementatie <span class="unit">· SAR</span></label><input id="implementation" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+              </details>
+            </div>
+          </div>
+
+          <!-- ============ RIGHT: results ============ -->
+          <div class="results" aria-live="polite">
+            <div class="calc-card">
+              <div class="results-head">
+                <div class="stat"><span class="k">Vrijgekomen uren / maand</span><span class="v num-anim ltr-num" id="r-hours-month">—</span></div>
+                <div class="stat"><span class="k">Vrijgekomen uren / jaar</span><span class="v num-anim ltr-num" id="r-hours-year">—</span></div>
+                <div class="stat big"><span class="k">Geschatte jaarlijkse waarde van personeelstijd</span><span class="v num-anim ltr-num" id="r-value-year">—</span><span class="sub"><span class="ltr-num" id="r-value-month">—</span> / maand · potentieel vrijgekomen administratieve capaciteit</span></div>
+              </div>
+
+              <div class="calc-section-label">Uitsplitsing per functie</div>
+              <div id="breakdown"></div>
+
+              <div class="calc-section-label">Bijdrage per functie</div>
+              <div id="chart"></div>
+
+              <div class="calc-section-label">Adoptiegevoeligheid</div>
+              <p class="note" style="margin-top:0">Een adoptiegevoeligheid, geen statistisch betrouwbaarheidsinterval — dezelfde invoer bij 50% en 100% realisatie naast uw bewerkbare basisscenario.</p>
+              <div class="sens-grid" id="sensitivity"></div>
+
+              <div id="warnings" hidden></div>
+              <div id="net" hidden></div>
+
+              <div class="cta-box">
+                <a class="btn btn-primary" href="/nl/contact/">Boek een demo om uw schatting te valideren</a>
+              </div>
+
+              <div class="disclosure">
+                Illustratieve schatting op basis van uw invoer en aanpasbare aannames. Vrijgekomen personeelstijd verlaagt niet noodzakelijk de loonuitgaven. De werkelijke resultaten hangen af van uw bestaande processen, configuratie en adoptie. Abonnements-, gebruiks- en implementatiekosten zijn uitgesloten, tenzij expliciet getoond.
+              </div>
+            </div>
+
+            <div class="calc-card assume">
+              <details>
+                <summary>Hoe dit wordt berekend</summary>
+                <p class="note"><b>Jaarlijkse activiteitsvolumes.</b> Cv-screening = jaarlijkse aanwervingen × sollicitaties per vacature. Eerste interviews = jaarlijkse aanwervingen × eerste interviews per aanwerving. Loonadministratie = personeelsbestand × 12 cycli. Iqama-verlengingen = ingevoerde verlengingen. Brieven = maandelijkse aanvragen × 12.</p>
+                <p class="note"><b>Per ingeschakelde activiteit.</b> Vrijgekomen uren per jaar = volume × (handmatige minuten − platformminuten) ÷ 60 × realisatiefactor. Uurkosten personeel = volledige maandkosten ÷ productieve maanduren. Jaarlijkse capaciteitswaarde = vrijgekomen uren × uurkosten. Maandelijks = jaarlijks ÷ 12.</p>
+                <p class="note">Cv-screening en interviewbeoordeling worden apart berekend en samengevoegd onder Werving. We sluiten bewust algemene productiviteitspercentages, vermeden boetes, winst in wervingskwaliteit, besparingen op loonfouten en het najagen van goedkeuringen of boekhoudwerk uit — die zouden kunnen overlappen met de vier functiegroepen.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/products/tms/">TMS</a>
+          <a href="/nl/products/assure/">Assure</a>
+          <a href="/nl/products/close/">Close</a>
+          <a href="/nl/products/consolidate/">Consolidate</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+  <script src="/assets/js/calculator.js?v=1aa38b83" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=c33c4f35" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
