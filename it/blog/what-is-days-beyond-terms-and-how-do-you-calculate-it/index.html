@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Cosa sono i Days Beyond Terms (DBT) e come si calcolano? — FulcrumGrid</title>
+  <meta name="description" content="I Days Beyond Terms misurano quanto in ritardo pagano davvero i clienti. Formula del DBT, differenza con il DSO, esempio svolto, valori di riferimento e come ridurlo." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cosa sono i Days Beyond Terms (DBT) e come si calcolano?" />
+  <meta property="og:description" content="I Days Beyond Terms misurano quanto in ritardo pagano davvero i clienti. Formula del DBT, differenza con il DSO, esempio svolto, valori di riferimento e come ridurlo." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-06" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cosa sono i Days Beyond Terms (DBT) e come si calcolano?" />
+  <meta name="twitter:description" content="I Days Beyond Terms misurano quanto in ritardo pagano davvero i clienti. Formula del DBT, differenza con il DSO, esempio svolto, valori di riferimento e come ridurlo." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cosa sono i Days Beyond Terms (DBT) e come si calcolano?",
+    "description": "I Days Beyond Terms misurano quanto in ritardo pagano davvero i clienti. Formula del DBT, differenza con il DSO, esempio svolto, valori di riferimento e come ridurlo.",
+    "datePublished": "2026-11-06",
+    "dateModified": "2026-11-06",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Days Beyond Terms",
+        "item": "https://fulcrumgrid.com/it/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual è la differenza tra DBT e DSO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Il DSO è il tempo medio dalla fattura al pagamento, compresa la dilazione concessa. Il DBT conta solo i giorni dopo la scadenza, quindi mostra quanto ritardano i clienti e non la lunghezza dei vostri termini."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual è la formula del DBT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "DBT = DSO meno DSO ottimale. Quest'ultimo applica la stessa formula ai soli crediti non scaduti. In alternativa, si fa la media dei giorni tra scadenza e pagamento delle fatture pagate, ponderata per importo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Il DBT può essere negativo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Con il metodo delle fatture pagate sì: se i clienti pagano in anticipo, la media può scendere sotto zero. Con il metodo del saldo è zero o positivo, perché misura i crediti scaduti."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ogni quanto va misurato il DBT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Per la maggior parte delle aziende va bene ogni mese. Seguite il trend ed esaminate i conti che contribuiscono di più."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Days Beyond Terms</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>Cosa sono i Days Beyond Terms (DBT) e come si calcolano?</h1>
+        <p class="hero-intro">I Days Beyond Terms misurano quanto in ritardo pagano davvero i clienti. Formula del DBT, differenza con il DSO, esempio svolto, valori di riferimento e come ridurlo.</p>
+        <p class="mono"><time datetime="2026-11-06">6 novembre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Il DSO dice quanto tempo impiega il denaro ad arrivare, non se i clienti pagano puntuali. Un'azienda con pagamento a 60 giorni può avere un DSO di 58 ed essere in ottima salute, mentre una a 15 giorni con lo stesso DSO ha un problema serio. I Days Beyond Terms (DBT, giorni oltre i termini) colmano questa lacuna misurando di quanto gli incassi superano la scadenza concordata.</p><h2>Cosa sono i Days Beyond Terms?</h2><p>Il DBT è il numero medio di giorni per cui i crediti vengono pagati o restano insoluti oltre la scadenza. Un DBT pari a 0 significa che i clienti pagano esattamente a scadenza. Un DBT di 12 significa che, in media, aspettate dodici giorni in più un denaro che vi era già dovuto. Separa il ritardo dalla lunghezza dei termini di pagamento, ed è quindi un segnale più netto della disciplina di incasso.</p><h2>DBT e DSO: qual è la differenza?</h2><ul><li><strong>Il DSO</strong> misura il tempo totale dalla fattura all'incasso, compresi i giorni concessi dai vostri termini.</li><li><strong>Il DBT</strong> misura solo il tempo oltre quei termini, quindi riflette il comportamento e non la politica commerciale.</li><li><strong>Relazione:</strong> DBT = DSO meno il DSO ottimale, cioè il DSO che avreste se ogni cliente pagasse esattamente alla scadenza.</li><li><strong>Usateli insieme:</strong> un DSO in aumento con DBT stabile indica di solito termini più lunghi o un diverso mix di vendite; un DBT in aumento indica clienti che pagano più tardi del pattuito.</li></ul><h2>Come si calcola il DBT?</h2><p>Esistono due metodi comuni. Il primo parte dal saldo dei crediti:</p><ul><li><strong>DSO ottimale = (crediti non scaduti ÷ vendite a credito) × giorni del periodo</strong></li><li><strong>DSO = (crediti totali ÷ vendite a credito) × giorni del periodo</strong></li><li><strong>DBT = DSO − DSO ottimale</strong></li></ul><p>I crediti non scaduti sono le fatture non ancora in scadenza, perciò la differenza dipende interamente dai saldi scaduti. Il secondo metodo guarda le fatture pagate: per ciascuna contate i giorni tra scadenza e data di pagamento e calcolate la media ponderata per importo.</p><h3>Esempio svolto</h3><p>In un trimestre di 90 giorni avete realizzato 2.000.000 € di vendite a credito. A fine trimestre avete 1.000.000 € di crediti, di cui 700.000 € non scaduti e 300.000 € scaduti.</p><ul><li>DSO = (1.000.000 € ÷ 2.000.000 €) × 90 = <strong>45 giorni</strong></li><li>DSO ottimale = (700.000 € ÷ 2.000.000 €) × 90 = <strong>31,5 giorni</strong></li><li>DBT = 45 − 31,5 = <strong>13,5 giorni</strong></li></ul><p>I clienti impiegano 45 giorni a pagare, di cui 13,5 di ritardo. Se i vostri termini sono a 30 giorni, questo divario spiega tutto: il problema non sono i termini, ma i solleciti e il comportamento di pagamento.</p><h2>Qual è un buon DBT?</h2><p>Non esiste un valore di riferimento universale: dipende da settore, area geografica e dimensione dei clienti. Come regole indicative usate da molti team finanziari:</p><ul><li><strong>Sotto i 5 giorni:</strong> ottimo; i clienti pagano vicino alla scadenza.</li><li><strong>Da 5 a 10 giorni:</strong> accettabile, con margini di miglioramento.</li><li><strong>Oltre 10 giorni:</strong> da affrontare attivamente; la liquidità si disperde e cresce il rischio di insolvenza.</li><li><strong>Trend in crescita:</strong> spesso conta più del valore assoluto, quindi monitoratelo ogni mese.</li></ul><p>Confrontatevi prima con il vostro storico e con i vostri pari di settore prima di fissare un obiettivo. I settori con lunghe catene di approvazione, come l'edilizia o la pubblica amministrazione, pagano più tardi di commercio al dettaglio o SaaS.</p><h2>Come si riducono i Days Beyond Terms?</h2><ul><li><strong>Fatturate subito e senza errori.</strong> Errori e ritardi danno ai clienti un motivo legittimo per aspettare.</li><li><strong>Indicate chiaramente i termini</strong> su preventivi, contratti e ogni fattura, comprese le eventuali penali di mora.</li><li><strong>Ricordate prima della scadenza.</strong> Un promemoria cordiale qualche giorno prima evita molti ritardi.</li><li><strong>Sollecitate secondo un calendario.</strong> Intensificate con cortesia a intervalli fissi, non quando vi capita di ricordarlo.</li><li><strong>Rendete facile pagare.</strong> Un link di pagamento e più metodi tolgono ogni scusa.</li><li><strong>Segmentate i ritardatari.</strong> Pochi clienti cronici spesso generano gran parte del DBT: gestiteli direttamente, con una telefonata, un acconto o termini più brevi.</li><li><strong>Rivedete i limiti di credito</strong> e sospendete nuovi lavori per i conti gravemente in ritardo.</li></ul><h2>Monitorare il DBT nella pratica</h2><p>Il DBT richiede date di scadenza e di pagamento su ogni fattura, ed è per questo che i fogli di calcolo faticano quando i volumi crescono. FulcrumGrid Collection riunisce crediti, scadenziario e solleciti in un unico posto: vedete cosa è scaduto, sollecitate secondo calendario e osservate quanto in ritardo pagano davvero i clienti. Non risolve problemi di prezzo o di affidamento, ma elimina i solleciti dimenticati che gonfiano silenziosamente il DBT.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Qual è la differenza tra DBT e DSO?</summary><p>Il DSO è il tempo medio dalla fattura al pagamento, compresa la dilazione concessa. Il DBT conta solo i giorni dopo la scadenza, quindi mostra quanto ritardano i clienti e non la lunghezza dei vostri termini.</p></details>
+        <details class="faq-item"><summary>Qual è la formula del DBT?</summary><p>DBT = DSO meno DSO ottimale. Quest'ultimo applica la stessa formula ai soli crediti non scaduti. In alternativa, si fa la media dei giorni tra scadenza e pagamento delle fatture pagate, ponderata per importo.</p></details>
+        <details class="faq-item"><summary>Il DBT può essere negativo?</summary><p>Con il metodo delle fatture pagate sì: se i clienti pagano in anticipo, la media può scendere sotto zero. Con il metodo del saldo è zero o positivo, perché misura i crediti scaduti.</p></details>
+        <details class="faq-item"><summary>Ogni quanto va misurato il DBT?</summary><p>Per la maggior parte delle aziende va bene ogni mese. Seguite il trend ed esaminate i conti che contribuiscono di più.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Scoprite quanto in ritardo pagano davvero i clienti</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Collection monitora lo scadenziario, invia solleciti programmati e mostra quali fatture sono scadute, così riducete i Days Beyond Terms con meno rincorse manuali.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/collection/">Esplora Collection</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/products/tms/">TMS</a>
+          <a href="/it/products/assure/">Assure</a>
+          <a href="/it/products/close/">Close</a>
+          <a href="/it/products/consolidate/">Consolidate</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=c33c4f35" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

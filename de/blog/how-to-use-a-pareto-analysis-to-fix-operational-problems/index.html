@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wie nutzt man eine Pareto-Analyse, um Betriebsprobleme zu lösen? — FulcrumGrid</title>
+  <meta name="description" content="Eine Pareto-Analyse zeigt, welche wenigen Ursachen die meisten Probleme verursachen. Schritte, Praxisbeispiel, typische Fehler und der richtige Rhythmus." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wie nutzt man eine Pareto-Analyse, um Betriebsprobleme zu lösen?" />
+  <meta property="og:description" content="Eine Pareto-Analyse zeigt, welche wenigen Ursachen die meisten Probleme verursachen. Schritte, Praxisbeispiel, typische Fehler und der richtige Rhythmus." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/how-to-use-a-pareto-analysis-to-fix-operational-problems/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-06" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wie nutzt man eine Pareto-Analyse, um Betriebsprobleme zu lösen?" />
+  <meta name="twitter:description" content="Eine Pareto-Analyse zeigt, welche wenigen Ursachen die meisten Probleme verursachen. Schritte, Praxisbeispiel, typische Fehler und der richtige Rhythmus." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/how-to-use-a-pareto-analysis-to-fix-operational-problems/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-use-a-pareto-analysis-to-fix-operational-problems/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-use-a-pareto-analysis-to-fix-operational-problems/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-use-a-pareto-analysis-to-fix-operational-problems/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-use-a-pareto-analysis-to-fix-operational-problems/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-use-a-pareto-analysis-to-fix-operational-problems/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-use-a-pareto-analysis-to-fix-operational-problems/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-use-a-pareto-analysis-to-fix-operational-problems/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-use-a-pareto-analysis-to-fix-operational-problems/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wie nutzt man eine Pareto-Analyse, um Betriebsprobleme zu lösen?",
+    "description": "Eine Pareto-Analyse zeigt, welche wenigen Ursachen die meisten Probleme verursachen. Schritte, Praxisbeispiel, typische Fehler und der richtige Rhythmus.",
+    "datePublished": "2026-11-06",
+    "dateModified": "2026-11-06",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/how-to-use-a-pareto-analysis-to-fix-operational-problems/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Pareto-Analyse Leitfaden",
+        "item": "https://fulcrumgrid.com/de/blog/how-to-use-a-pareto-analysis-to-fix-operational-problems/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Muss die 80/20-Aufteilung exakt stimmen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein, sie ist eine Faustregel. In manchen Prozessen stammen 70 % der Probleme aus zwei Ursachen, in anderen 90 %. Entscheidend ist, dass wenige Ursachen die Rangfolge klar dominieren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie viele Daten brauche ich für eine Pareto-Analyse?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Genug für ein repräsentatives Bild, meist 30 bis 90 Tage Aufzeichnungen oder einige hundert Ereignisse. Sehr kleine Stichproben können einmalige Spitzen überzeichnen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sollte ich nach Anzahl oder nach Kosten ordnen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Beginnen Sie mit der Anzahl, weil sie einfach ist, und prüfen Sie dann Kosten oder verlorene Stunden. Weichen beide ab, gewichten Sie die Kosten stärker und betrachten Sie beide vor der Entscheidung."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie oft sollte ich die Analyse wiederholen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nach jeder größeren Maßnahme und bei wiederkehrenden Prozessen mindestens monatlich oder quartalsweise. Die Behebung der Hauptursache verändert die Rangfolge, daher muss die Prioritätenliste aktualisiert werden."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / Pareto-Analyse Leitfaden</p>
+        <span class="tag tag-accent">Betrieb</span>
+        <h1>Wie nutzt man eine Pareto-Analyse, um Betriebsprobleme zu lösen?</h1>
+        <p class="hero-intro">Eine Pareto-Analyse zeigt, welche wenigen Ursachen die meisten Probleme verursachen. Schritte, Praxisbeispiel, typische Fehler und der richtige Rhythmus.</p>
+        <p class="mono"><time datetime="2026-11-06">6. November 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Jedes Operations-Team hat mehr Probleme als Zeit. Verspätete Lieferungen, Nacharbeit, Beschwerden, Fehlbestände und Systemfehler konkurrieren um Aufmerksamkeit, und meist gewinnt das lauteste Thema. Eine Pareto-Analyse ersetzt diese Gewohnheit durch Fakten. Sie zeigt, welche wenigen Ursachen den Großteil der Schmerzen verursachen, damit Ihr begrenzter Aufwand dort wirkt, wo er sich am meisten auszahlt.</p><h2>Was ist eine Pareto-Analyse?</h2><p>Das Pareto-Prinzip, oft 80/20-Regel genannt, besagt, dass ein kleiner Teil der Ursachen einen großen Teil der Wirkungen erzeugt. Im Betrieb kann das heißen, dass zwei oder drei Fehlerarten den Großteil der Nacharbeit ausmachen oder wenige Lieferanten die meisten Verzögerungen verursachen. Die 80/20-Aufteilung ist eine Faustregel, kein Gesetz. Der eigentliche Wert liegt in der Rangfolge: Sie zählen Probleme je Ursache, sortieren sie von groß nach klein und betrachten die kumulierte Summe.</p><h2>Die Schritte</h2><ol><li><strong>Problem und Zeitraum festlegen.</strong> Wählen Sie ein messbares Ergebnis, etwa &bdquo;Aufträge mit Nacharbeit in den letzten 90 Tagen&ldquo;.</li><li><strong>Kategorien vereinbaren.</strong> Nutzen Sie fünf bis zehn klar definierte Ursachen plus eine Sammelkategorie &bdquo;Sonstige&ldquo;.</li><li><strong>Daten erheben.</strong> Zählen Sie Vorfälle aus Protokollen, Tickets oder Auftragsdaten, statt sich auf das Gedächtnis zu verlassen.</li><li><strong>Messgröße wählen.</strong> Die Häufigkeit ist am einfachsten. Kosten, verlorene Stunden oder Kundenwirkung sind oft aussagekräftiger.</li><li><strong>Sortieren und summieren.</strong> Ordnen Sie die Ursachen von groß nach klein und berechnen Sie jeden Anteil und den kumulierten Prozentsatz.</li><li><strong>Die Linie ziehen.</strong> Die Ursachen, die Sie auf etwa 80 % bringen, bilden Ihre Prioritätenliste.</li><li><strong>Verantwortliche benennen und handeln.</strong> Beheben Sie zuerst die größte Ursache und messen Sie dann erneut.</li></ol><h2>Ein Praxisbeispiel</h2><p>Ein Großhändler erfasste in einem Monat 240 Auftragsprobleme. Nach Ursache gruppiert und sortiert ergab sich dieses Bild:</p><ul><li><strong>Verspätete Lieferantenlieferungen:</strong> 96 Fälle (40 %), kumuliert 40 %</li><li><strong>Fehler bei der Auftragserfassung:</strong> 60 Fälle (25 %), kumuliert 65 %</li><li><strong>Kommissionierfehler im Lager:</strong> 36 Fälle (15 %), kumuliert 80 %</li><li><strong>Transportschäden:</strong> 24 Fälle (10 %), kumuliert 90 %</li><li><strong>Zahlungsausfälle:</strong> 14 Fälle (6 %), kumuliert 96 %</li><li><strong>Sonstige:</strong> 10 Fälle (4 %), kumuliert 100 %</li></ul><p>Drei von sechs Ursachen erzeugen 80 % der Probleme. Das Team hatte einen neuen Transportvertrag geplant, weil Schadensbeschwerden am sichtbarsten waren, doch Schäden liegen nur auf Platz vier. Stattdessen begann man bei den Lieferanten: Lieferfenster mit den zwei schlechtesten Lieferanten vereinbaren und einen Sicherheitsbestand für die fünf umschlagstärksten Artikel anlegen. Danach folgte die Auftragserfassung, wo eine Pflichtfeldprüfung einen großen Teil der Fehler beseitigte. Kommissionierfehler kamen als Drittes. Einen Monat später sank die Gesamtzahl von 240 auf 150 Probleme, ohne den Spediteur anzufassen.</p><h2>Häufigkeit oder Auswirkung?</h2><p>Das Zählen von Fällen behandelt einen Tippfehler und den Verlust eines Schlüsselkunden gleich. Führen Sie die Analyse wenn möglich zweimal durch: einmal nach Anzahl und einmal nach Kosten oder verlorenen Stunden. Weichen die Rangfolgen ab, verdient die Kostensicht meist mehr Gewicht, doch betrachten Sie beide, bevor Sie entscheiden. Eine seltene, aber schwere Ursache kann Handeln erfordern, auch wenn sie in der Häufigkeitsgrafik weit unten steht.</p><h2>Von der Rangfolge zum Plan</h2><ul><li>Wählen Sie die ein bis zwei größten Ursachen, nicht alle.</li><li>Fragen Sie mehrfach &bdquo;Warum?&ldquo;, um die Grundursache zu finden, bevor Sie eine Lösung wählen.</li><li>Geben Sie jeder Maßnahme einen Verantwortlichen, eine Frist und eine Zielzahl, zum Beispiel &bdquo;verspätete Lieferungen von 96 auf 50 senken&ldquo;.</li><li>Halten Sie die Ausgangslage fest, damit Sie das Ergebnis belegen können.</li></ul><h2>Typische Fehler</h2><ul><li><strong>Unklare Kategorien.</strong> Landet die Hälfte der Daten in &bdquo;Sonstige&ldquo;, sagt das Diagramm nichts aus. Verfeinern Sie die Kategorien.</li><li><strong>Zu wenig Daten.</strong> Eine Woche kann täuschen. Nutzen Sie genug Historie, um einmalige Spitzen auszugleichen.</li><li><strong>Schweregrad ignorieren.</strong> Die größte Anzahl ist nicht immer der größte Kostenfaktor.</li><li><strong>Symptome behandeln.</strong> Beheben Sie die Ursache, nicht die sichtbare Wirkung.</li><li><strong>Nur schnelle Erfolge.</strong> Einfache Lösungen sind in Ordnung, dürfen aber das Thema mit der größten Wirkung nicht verdrängen.</li><li><strong>Nur einmal durchführen.</strong> Wer die Hauptursache behebt, verändert die Rangfolge. Ohne Wiederholung arbeiten Sie mit einer veralteten Karte.</li></ul><h2>Wie oft wiederholen</h2><p>Führen Sie die Analyse nach jeder größeren Maßnahme erneut durch, bei wiederkehrenden Prozessen mindestens monatlich oder quartalsweise. Halten Sie die Kategorien stabil, damit sich Zeiträume vergleichen lassen. Verfolgen Sie die Leitkennzahl, etwa die Gesamtzahl der Probleme pro Monat, in einem regelmäßigen Scorecard-Bericht, um zu sehen, ob die Maßnahmen wirken. Ein kurzer Blick auf die neuen Top drei passt gut in ein bestehendes Operations-Meeting.</p><h2>Wo ein Werkzeug hilft</h2><p>Alles lässt sich in einer Tabellenkalkulation erledigen. Schwieriger ist es, den Prozess am Leben zu halten: Probleme konsequent erfassen, Verantwortliche zuweisen und Fortschritt sehen. FulcrumGrid Command Center kann Aufgaben, Verantwortliche und Kennzahlen Ihrer Pareto-Maßnahmen an einem Ort bündeln, damit aus der Rangfolge Umsetzung wird statt einer Grafik, die niemand wieder öffnet.</p><p>Beginnen Sie mit einem Prozess und einem Monat Daten. Selbst ein grobes Pareto-Diagramm verändert oft, woran das Team als Nächstes arbeitet.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Muss die 80/20-Aufteilung exakt stimmen?</summary><p>Nein, sie ist eine Faustregel. In manchen Prozessen stammen 70 % der Probleme aus zwei Ursachen, in anderen 90 %. Entscheidend ist, dass wenige Ursachen die Rangfolge klar dominieren.</p></details>
+        <details class="faq-item"><summary>Wie viele Daten brauche ich für eine Pareto-Analyse?</summary><p>Genug für ein repräsentatives Bild, meist 30 bis 90 Tage Aufzeichnungen oder einige hundert Ereignisse. Sehr kleine Stichproben können einmalige Spitzen überzeichnen.</p></details>
+        <details class="faq-item"><summary>Sollte ich nach Anzahl oder nach Kosten ordnen?</summary><p>Beginnen Sie mit der Anzahl, weil sie einfach ist, und prüfen Sie dann Kosten oder verlorene Stunden. Weichen beide ab, gewichten Sie die Kosten stärker und betrachten Sie beide vor der Entscheidung.</p></details>
+        <details class="faq-item"><summary>Wie oft sollte ich die Analyse wiederholen?</summary><p>Nach jeder größeren Maßnahme und bei wiederkehrenden Prozessen mindestens monatlich oder quartalsweise. Die Behebung der Hauptursache verändert die Rangfolge, daher muss die Prioritätenliste aktualisiert werden.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Machen Sie aus Prioritäten verfolgte Maßnahmen</h2>
+        <p class="section-lead" style="margin:0 auto 26px">Mit FulcrumGrid Command Center weisen Sie Verantwortliche zu, verfolgen Aufgaben und die Kennzahlen hinter jeder Maßnahme, damit die Hauptursachen wirklich gelöst werden.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/command-center/">Entdecken Command Center</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/products/tms/">TMS</a>
+          <a href="/de/products/assure/">Assure</a>
+          <a href="/de/products/close/">Close</a>
+          <a href="/de/products/consolidate/">Consolidate</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=c33c4f35" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

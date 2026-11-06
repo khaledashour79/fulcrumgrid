@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wat zijn Days Beyond Terms (DBT) en hoe bereken je ze? — FulcrumGrid</title>
+  <meta name="description" content="Days Beyond Terms laten zien hoe laat klanten echt betalen. Leer de DBT-formule, het verschil met DSO, een uitgewerkt voorbeeld, richtwaarden en hoe je het verlaagt." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wat zijn Days Beyond Terms (DBT) en hoe bereken je ze?" />
+  <meta property="og:description" content="Days Beyond Terms laten zien hoe laat klanten echt betalen. Leer de DBT-formule, het verschil met DSO, een uitgewerkt voorbeeld, richtwaarden en hoe je het verlaagt." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-11-06" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wat zijn Days Beyond Terms (DBT) en hoe bereken je ze?" />
+  <meta name="twitter:description" content="Days Beyond Terms laten zien hoe laat klanten echt betalen. Leer de DBT-formule, het verschil met DSO, een uitgewerkt voorbeeld, richtwaarden en hoe je het verlaagt." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wat zijn Days Beyond Terms (DBT) en hoe bereken je ze?",
+    "description": "Days Beyond Terms laten zien hoe laat klanten echt betalen. Leer de DBT-formule, het verschil met DSO, een uitgewerkt voorbeeld, richtwaarden en hoe je het verlaagt.",
+    "datePublished": "2026-11-06",
+    "dateModified": "2026-11-06",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Days Beyond Terms",
+        "item": "https://fulcrumgrid.com/nl/blog/what-is-days-beyond-terms-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is het verschil tussen DBT en DSO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "DSO is de gemiddelde tijd van factuur tot betaling, inclusief de betaaltermijn die je geeft. DBT telt alleen de dagen na de vervaldatum en laat dus zien hoe laat klanten betalen, niet hoe lang je termijnen zijn."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is de DBT-formule?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "DBT = DSO min de best mogelijke DSO. Die laatste past dezelfde formule toe op alleen de nog niet vervallen vorderingen. Of neem het gemiddelde van de dagen tussen vervaldatum en betaling van betaalde facturen, gewogen naar bedrag."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan DBT negatief zijn?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bij de methode met betaalde facturen wel: als klanten eerder betalen, kan het gemiddelde onder nul zakken. Bij de saldomethode is het nul of positief, omdat die achterstallige vorderingen meet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe vaak moet je DBT meten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Voor de meeste bedrijven is maandelijks een goed ritme. Volg de trend en bekijk de klanten die er het meest aan bijdragen."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=d4bf9e45">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / Days Beyond Terms</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>Wat zijn Days Beyond Terms (DBT) en hoe bereken je ze?</h1>
+        <p class="hero-intro">Days Beyond Terms laten zien hoe laat klanten echt betalen. Leer de DBT-formule, het verschil met DSO, een uitgewerkt voorbeeld, richtwaarden en hoe je het verlaagt.</p>
+        <p class="mono"><time datetime="2026-11-06">6 november 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>DSO vertelt hoe lang het duurt voordat geld binnenkomt, niet of klanten op tijd betalen. Een bedrijf met een betaaltermijn van 60 dagen kan een DSO van 58 hebben en prima draaien, terwijl een bedrijf met 15 dagen en dezelfde DSO een serieus probleem heeft. Days Beyond Terms (DBT) vullen dat gat door te meten hoeveel dagen na de afgesproken vervaldatum het geld binnenkomt.</p><h2>Wat zijn Days Beyond Terms?</h2><p>DBT is het gemiddelde aantal dagen dat je vorderingen na de vervaldatum worden betaald of openstaan. Een DBT van 0 betekent dat klanten precies op de vervaldatum betalen. Een DBT van 12 betekent dat je gemiddeld twaalf dagen extra wacht op geld dat je al toekwam. Het scheidt de achterstand van de lengte van je betaalvoorwaarden en is daarmee een zuiverder signaal van je incassodiscipline.</p><h2>DBT versus DSO: wat is het verschil?</h2><ul><li><strong>DSO</strong> meet de totale tijd van factuur tot betaling, inclusief de dagen die je voorwaarden toestaan.</li><li><strong>DBT</strong> meet alleen de tijd na die voorwaarden en weerspiegelt dus gedrag in plaats van beleid.</li><li><strong>Verband:</strong> DBT = DSO min de best mogelijke DSO, de DSO die je zou hebben als elke klant precies op de vervaldatum betaalde.</li><li><strong>Gebruik beide:</strong> een stijgende DSO met een gelijkblijvende DBT wijst meestal op langere termijnen of een andere verkoopmix; een stijgende DBT betekent dat klanten later betalen dan afgesproken.</li></ul><h2>Hoe bereken je DBT?</h2><p>Er zijn twee gangbare methoden. De eerste gaat uit van je openstaande vorderingen:</p><ul><li><strong>Best mogelijke DSO = (nog niet vervallen vorderingen ÷ verkopen op krediet) × dagen in de periode</strong></li><li><strong>DSO = (totale vorderingen ÷ verkopen op krediet) × dagen in de periode</strong></li><li><strong>DBT = DSO − best mogelijke DSO</strong></li></ul><p>Niet-vervallen vorderingen zijn facturen waarvan de vervaldatum nog niet is bereikt, dus het verschil komt volledig door achterstallige saldi. De tweede methode kijkt naar betaalde facturen: tel per factuur de dagen tussen vervaldatum en betaaldatum en neem het gemiddelde, gewogen naar factuurbedrag.</p><h3>Uitgewerkt voorbeeld</h3><p>In een kwartaal van 90 dagen heb je € 2.000.000 op krediet verkocht. Aan het eind van het kwartaal heb je € 1.000.000 aan vorderingen, waarvan € 700.000 nog niet vervallen en € 300.000 achterstallig.</p><ul><li>DSO = (€ 1.000.000 ÷ € 2.000.000) × 90 = <strong>45 dagen</strong></li><li>Best mogelijke DSO = (€ 700.000 ÷ € 2.000.000) × 90 = <strong>31,5 dagen</strong></li><li>DBT = 45 − 31,5 = <strong>13,5 dagen</strong></li></ul><p>Je klanten doen 45 dagen over betalen, waarvan 13,5 dagen te laat. Bij een betaaltermijn van 30 dagen verklaart dat alles: het probleem zijn niet je voorwaarden, maar het opvolgen en het betaalgedrag.</p><h2>Wat is een goede DBT?</h2><p>Er is geen universele richtwaarde; het hangt af van sector, regio en klantgrootte. Als grove vuistregels die veel finance-teams hanteren:</p><ul><li><strong>Onder de 5 dagen:</strong> sterk; klanten betalen dicht bij de termijn.</li><li><strong>5 tot 10 dagen:</strong> acceptabel, met ruimte voor verbetering.</li><li><strong>Boven de 10 dagen:</strong> actief aanpakken; er lekt liquiditeit weg en het risico op oninbaarheid groeit.</li><li><strong>Stijgende trend:</strong> vaak belangrijker dan de absolute waarde, dus volg die maandelijks.</li></ul><p>Vergelijk jezelf eerst met je eigen historie en met sectorgenoten voordat je een doel stelt. Sectoren met lange goedkeuringsketens, zoals de bouw of overheidsopdrachten, betalen later dan detailhandel of SaaS.</p><h2>Hoe verlaag je Days Beyond Terms?</h2><ul><li><strong>Factureer direct en foutloos.</strong> Fouten en vertraging geven klanten een legitieme reden om te wachten.</li><li><strong>Vermeld voorwaarden duidelijk</strong> op offertes, contracten en elke factuur, inclusief eventuele rente of kosten bij te late betaling.</li><li><strong>Herinner vóór de vervaldatum.</strong> Een vriendelijke tik een paar dagen eerder voorkomt veel achterstand.</li><li><strong>Volg op volgens een schema.</strong> Schaal beleefd op met vaste tussenpozen, niet wanneer het je toevallig te binnen schiet.</li><li><strong>Maak betalen makkelijk.</strong> Een betaallink en meerdere betaalmethoden nemen excuses weg.</li><li><strong>Segmenteer laatbetalers.</strong> Een paar chronische klanten veroorzaken vaak het grootste deel van je DBT; pak ze direct aan met een telefoontje, een aanbetaling of kortere termijnen.</li><li><strong>Herzie kredietlimieten</strong> en pauzeer nieuw werk voor klanten die ernstig achterlopen.</li></ul><h2>DBT in de praktijk volgen</h2><p>Voor DBT heb je per factuur een vervaldatum en een betaaldatum nodig, en daar lopen spreadsheets op vast zodra het volume groeit. FulcrumGrid Collection brengt vorderingen, ouderdomsanalyse en herinneringen samen op één plek: je ziet wat achterstallig is, volgt op volgens schema en ziet hoe laat je klanten werkelijk betalen. Een prijs- of kredietprobleem lost het niet op, maar het haalt de vergeten herinneringen weg die DBT ongemerkt opblazen.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wat is het verschil tussen DBT en DSO?</summary><p>DSO is de gemiddelde tijd van factuur tot betaling, inclusief de betaaltermijn die je geeft. DBT telt alleen de dagen na de vervaldatum en laat dus zien hoe laat klanten betalen, niet hoe lang je termijnen zijn.</p></details>
+        <details class="faq-item"><summary>Wat is de DBT-formule?</summary><p>DBT = DSO min de best mogelijke DSO. Die laatste past dezelfde formule toe op alleen de nog niet vervallen vorderingen. Of neem het gemiddelde van de dagen tussen vervaldatum en betaling van betaalde facturen, gewogen naar bedrag.</p></details>
+        <details class="faq-item"><summary>Kan DBT negatief zijn?</summary><p>Bij de methode met betaalde facturen wel: als klanten eerder betalen, kan het gemiddelde onder nul zakken. Bij de saldomethode is het nul of positief, omdat die achterstallige vorderingen meet.</p></details>
+        <details class="faq-item"><summary>Hoe vaak moet je DBT meten?</summary><p>Voor de meeste bedrijven is maandelijks een goed ritme. Volg de trend en bekijk de klanten die er het meest aan bijdragen.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Zie hoe laat je klanten echt betalen</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Collection volgt de ouderdom van je vorderingen, verstuurt geplande herinneringen en laat zien welke facturen achterstallig zijn, zodat je Days Beyond Terms verlaagt met minder handmatig najagen.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/collection/">Ontdek Collection</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/products/tms/">TMS</a>
+          <a href="/nl/products/assure/">Assure</a>
+          <a href="/nl/products/close/">Close</a>
+          <a href="/nl/products/consolidate/">Consolidate</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
+<script src="/assets/js/concierge.js?v=c33c4f35" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
