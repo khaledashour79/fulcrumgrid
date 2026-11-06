@@ -649,24 +649,6 @@ PAGE = {
                 "Parlons-en →", "Sprechen Sie mit uns →", "Hablemos →",
                 "Parliamone →", "Neem contact op →"),
 
-            # ---- 07b · HR savings calculator teaser ----
-            "Free tool": _t("Outil gratuit", "Kostenloses Tool", "Herramienta gratuita", "Strumento gratuito", "Gratis tool"),
-            "How much time could your HR team save?": _t(
-                "Combien de temps votre équipe RH pourrait-elle gagner ?",
-                "Wie viel Zeit könnte Ihr HR-Team sparen?",
-                "¿Cuánto tiempo podría ahorrar su equipo de RR. HH.?",
-                "Quanto tempo potrebbe risparmiare il tuo team HR?",
-                "Hoeveel tijd kan uw HR-team besparen?"),
-            "Answer five quick questions to estimate the administrative hours your HR team could reclaim — an illustrative, adjustable estimate.": _t(
-                "Répondez à cinq questions rapides pour estimer les heures administratives que votre équipe RH pourrait récupérer — une estimation illustrative et ajustable.",
-                "Beantworten Sie fünf kurze Fragen, um die administrativen Stunden zu schätzen, die Ihr HR-Team zurückgewinnen könnte — eine illustrative, anpassbare Schätzung.",
-                "Responda cinco preguntas rápidas para estimar las horas administrativas que su equipo de RR. HH. podría recuperar — una estimación ilustrativa y ajustable.",
-                "Rispondi a cinque domande veloci per stimare le ore amministrative che il tuo team HR potrebbe recuperare — una stima illustrativa e modificabile.",
-                "Beantwoord vijf korte vragen om de administratieve uren te schatten die uw HR-team kan terugwinnen — een illustratieve, aanpasbare schatting."),
-            "Try the savings calculator": _t(
-                "Essayez le calculateur d'économies", "Zum Einsparungsrechner", "Pruebe la calculadora de ahorro",
-                "Prova il calcolatore di risparmio", "Probeer de besparingscalculator"),
-
             # ---- 08 · CTA ----
             "Ready to run<br />on one grid?": _t(
                 "Prêt à tout piloter<br />sur une seule grille ?",
