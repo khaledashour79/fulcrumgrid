@@ -41,7 +41,7 @@
   var T = {
     en: { title: 'FulcrumGrid assistant', invite: "Hi — I'm here to help. Ask me anything about FulcrumGrid.",
           talk: 'Talk to me', placeholder: 'Type a message…', send: 'Send', listening: 'Listening…',
-          thinking: 'Thinking…', speaking: 'Speaking…', voicehint: 'Tap the mic to stop',
+          thinking: 'Thinking…', speaking: 'Speaking…', voicehint: 'Tap the mic to stop', taptotalk: 'Tap to talk',
           fillers: ['One moment…', 'Let me check that…', 'Give me a second…'],
           mic: 'Hold to talk', close: 'Close', dismiss: 'Dismiss',
           consent: 'Tap the mic to talk — your voice is sent to our assistant to answer you. ',
@@ -51,7 +51,7 @@
           noheard: "I didn't catch that — tap the mic and try again, or type your question." },
     ar: { title: 'مساعد FulcrumGrid', invite: 'مرحبًا — أنا هنا للمساعدة. اسألني أي شيء عن FulcrumGrid.',
           talk: 'تحدّث إليّ', placeholder: 'اكتب رسالة…', send: 'إرسال', listening: 'أستمع…',
-          thinking: 'أفكّر…', speaking: 'أتحدّث…', voicehint: 'اضغط الميكروفون للإيقاف',
+          thinking: 'أفكّر…', speaking: 'أتحدّث…', voicehint: 'اضغط الميكروفون للإيقاف', taptotalk: 'اضغط للتحدّث',
           fillers: ['لحظة…', 'دعني أتحقق…', 'لحظة من فضلك…'],
           mic: 'اضغط للتحدّث', close: 'إغلاق', dismiss: 'إخفاء',
           consent: 'اضغط الميكروفون للتحدّث — يُرسَل صوتك إلى مساعدنا للإجابة عليك. ',
@@ -61,7 +61,7 @@
           noheard: 'لم ألتقط ذلك — اضغط الميكروفون وحاول مجددًا، أو اكتب سؤالك.' },
     fr: { title: 'Assistant FulcrumGrid', invite: 'Bonjour — je suis là pour vous aider. Posez-moi vos questions sur FulcrumGrid.',
           talk: 'Parlez-moi', placeholder: 'Écrivez un message…', send: 'Envoyer', listening: 'J’écoute…',
-          thinking: 'Je réfléchis…', speaking: 'Je parle…', voicehint: 'Appuyez sur le micro pour arrêter',
+          thinking: 'Je réfléchis…', speaking: 'Je parle…', voicehint: 'Appuyez sur le micro pour arrêter', taptotalk: 'Appuyez pour parler',
           fillers: ['Un instant…', 'Je vérifie…', 'Une seconde…'],
           mic: 'Maintenez pour parler', close: 'Fermer', dismiss: 'Ignorer',
           consent: 'Appuyez sur le micro pour parler — votre voix est envoyée à notre assistant pour vous répondre. ',
@@ -71,7 +71,7 @@
           noheard: 'Je n’ai pas bien entendu — appuyez sur le micro et réessayez, ou écrivez votre question.' },
     de: { title: 'FulcrumGrid-Assistent', invite: 'Hallo — ich helfe gern. Fragen Sie mich alles über FulcrumGrid.',
           talk: 'Sprechen Sie mit mir', placeholder: 'Nachricht eingeben…', send: 'Senden', listening: 'Ich höre zu…',
-          thinking: 'Ich überlege…', speaking: 'Ich spreche…', voicehint: 'Zum Stoppen aufs Mikrofon tippen',
+          thinking: 'Ich überlege…', speaking: 'Ich spreche…', voicehint: 'Zum Stoppen aufs Mikrofon tippen', taptotalk: 'Zum Sprechen tippen',
           fillers: ['Einen Moment…', 'Ich prüfe das…', 'Eine Sekunde…'],
           mic: 'Zum Sprechen halten', close: 'Schließen', dismiss: 'Ausblenden',
           consent: 'Zum Sprechen aufs Mikrofon tippen — Ihre Stimme wird an unseren Assistenten gesendet, um Ihnen zu antworten. ',
@@ -81,7 +81,7 @@
           noheard: 'Ich habe das nicht verstanden — tippen Sie aufs Mikrofon und versuchen Sie es erneut, oder tippen Sie Ihre Frage.' },
     es: { title: 'Asistente FulcrumGrid', invite: 'Hola — estoy aquí para ayudar. Pregúntame lo que quieras sobre FulcrumGrid.',
           talk: 'Habla conmigo', placeholder: 'Escribe un mensaje…', send: 'Enviar', listening: 'Escuchando…',
-          thinking: 'Pensando…', speaking: 'Hablando…', voicehint: 'Toca el micrófono para detener',
+          thinking: 'Pensando…', speaking: 'Hablando…', voicehint: 'Toca el micrófono para detener', taptotalk: 'Toca para hablar',
           fillers: ['Un momento…', 'Déjame comprobarlo…', 'Un segundo…'],
           mic: 'Mantén pulsado para hablar', close: 'Cerrar', dismiss: 'Descartar',
           consent: 'Toca el micrófono para hablar — tu voz se envía a nuestro asistente para responderte. ',
@@ -91,7 +91,7 @@
           noheard: 'No te he entendido — toca el micrófono e inténtalo de nuevo, o escribe tu pregunta.' },
     it: { title: 'Assistente FulcrumGrid', invite: 'Ciao — sono qui per aiutarti. Chiedimi qualsiasi cosa su FulcrumGrid.',
           talk: 'Parla con me', placeholder: 'Scrivi un messaggio…', send: 'Invia', listening: 'In ascolto…',
-          thinking: 'Sto pensando…', speaking: 'Sto parlando…', voicehint: 'Tocca il microfono per fermare',
+          thinking: 'Sto pensando…', speaking: 'Sto parlando…', voicehint: 'Tocca il microfono per fermare', taptotalk: 'Tocca per parlare',
           fillers: ['Un momento…', 'Controllo subito…', 'Un secondo…'],
           mic: 'Tieni premuto per parlare', close: 'Chiudi', dismiss: 'Ignora',
           consent: 'Tocca il microfono per parlare — la tua voce viene inviata al nostro assistente per risponderti. ',
@@ -101,7 +101,7 @@
           noheard: 'Non ho capito — tocca il microfono e riprova, oppure scrivi la tua domanda.' },
     nl: { title: 'FulcrumGrid-assistent', invite: 'Hallo — ik help je graag. Vraag me alles over FulcrumGrid.',
           talk: 'Praat met me', placeholder: 'Typ een bericht…', send: 'Verzenden', listening: 'Aan het luisteren…',
-          thinking: 'Aan het denken…', speaking: 'Aan het spreken…', voicehint: 'Tik op de microfoon om te stoppen',
+          thinking: 'Aan het denken…', speaking: 'Aan het spreken…', voicehint: 'Tik op de microfoon om te stoppen', taptotalk: 'Tik om te praten',
           fillers: ['Een moment…', 'Ik kijk even…', 'Een seconde…'],
           mic: 'Houd ingedrukt om te praten', close: 'Sluiten', dismiss: 'Negeren',
           consent: 'Tik op de microfoon om te praten — je stem wordt naar onze assistent gestuurd om je te antwoorden. ',
@@ -245,6 +245,25 @@
   // each answer (hands-free loop). If audio can't play, we fall back to text.
   var voiceMode = false, canceling = false, turnSpoke = false,
       lastUserText = '', lastReply = '', vadHeard = false, noSpeechTimer = null;
+  // Mobile (record→transcribe) only: between turns we wait for a tap rather than
+  // auto-reopening the mic. Grabbing getUserMedia right after audio playback on a
+  // phone often yields a dead/empty recording (the audio session is still handing
+  // back from playback), and the tap also satisfies mobile's audio gesture rule.
+  var awaitingTap = false;
+  function releasePlayback() {
+    try { if (audioEl) { audioEl.pause(); audioEl.removeAttribute('src'); audioEl.load(); } } catch (e) {}
+    ttsPlaying = false; stopFlap(); setMouth(0);
+  }
+  function armNextTurnTap(msg) {              // mobile: prompt a tap for the next turn
+    awaitingTap = true;
+    releasePlayback();                        // free the audio element so the mic can take the session
+    setState('idle');
+    var prompt = msg || t.taptotalk;          // the message log is hidden in voice mode — show it here
+    if (voiceStatus) voiceStatus.textContent = prompt;
+    statusTxt.textContent = prompt;
+    setMic(false); mount.classList.remove('is-listening'); mount.classList.add('fgc-await-tap');
+  }
+  function clearAwaitTap() { awaitingTap = false; mount.classList.remove('fgc-await-tap'); }
   // Voice "thinking" filler: short clips spoken while we wait on the model's
   // first token, so a slow turn is never a silent gap. Pre-synthesized in the
   // real voice when voice mode is first entered, cached for the session, and
@@ -294,10 +313,11 @@
       var rest = (reply || '').slice(spokenChars).trim();
       if (rest) enqueueSpeak(rest);                // the final sentence (no trailing terminator)
       pumpQueue();                                 // handle the already-drained case
-      if (spokenChars === 0 && !rest) { setState('idle'); if (vm) exitVoice(); }   // empty reply
+      if (spokenChars === 0 && !rest) { setState('idle'); if (vm) { if (useServerSTT) armNextTurnTap(); else exitVoice(); } }   // empty reply
     }).catch(function () {
       busy = false; streamDone = true; setState('idle');
-      if (vm) exitVoice(); else bubble.textContent = t.err;
+      if (vm) { if (useServerSTT) armNextTurnTap(t.err); else { addMsg('bot', t.err, true); exitVoice(); } }
+      else bubble.textContent = t.err;
     });
   }
 
@@ -425,7 +445,8 @@
     stopFlap(); setMouth(0); setState('idle');
     if (!voiceMode) return;
     if (!turnSpoke) { revealTurn(); return; }                 // audio never played → reveal as text
-    setTimeout(function () {                                    // hands-free: listen for the next question
+    if (useServerSTT) { armNextTurnTap(); return; }           // mobile: one tap per turn (reliable)
+    setTimeout(function () {                                    // desktop: hands-free, listen for the next question
       if (voiceMode && !busy && !recording && !listening && mount.classList.contains('is-open')) startMic();
     }, 550);
   }
@@ -479,6 +500,7 @@
   function enterVoice() { voiceMode = true; mount.classList.add('is-voice'); primeFillers(); }
   function exitVoice() {
     voiceMode = false; mount.classList.remove('is-voice');
+    clearAwaitTap();
     if (noSpeechTimer) { clearTimeout(noSpeechTimer); noSpeechTimer = null; }
     if (fillerTimer) { clearTimeout(fillerTimer); fillerTimer = 0; }
     if (recording || listening) canceling = true;  // don't transcribe/answer a canceled turn
@@ -491,9 +513,12 @@
     if (!active) { location.href = contactHref; return; }
     unlockAudio();                                 // the tap is our gesture — bless audio for the spoken reply
     ls('fgc_consent', '1'); consentBox.hidden = true;
-    if (voiceMode) { exitVoice(); return; }        // a tap while in voice mode stops & exits
+    if (voiceMode) {
+      if (awaitingTap) { clearAwaitTap(); startMic(); return; }   // mobile: tap to speak the next turn
+      exitVoice(); return;                         // a tap while in a turn stops & exits
+    }
     if (recording || listening) { stopMic(); return; }
-    enterVoice(); startMic();                       // mic tap → enter hands-free voice mode
+    enterVoice(); startMic();                       // mic tap → enter voice mode
   }
   function stopMic() {
     if (recording) { try { mediaRec && mediaRec.state !== 'inactive' && mediaRec.stop(); } catch (e) { recording = false; setMic(false); } }
@@ -547,7 +572,7 @@
         recording = false; setMic(false); mount.classList.remove('is-listening');
         if (canceling) { canceling = false; setState('idle'); return; }          // exited/canceled → don't send
         if (blob.size > 1200) { setState('thinking'); statusTxt.textContent = t.thinking; sendSTT(blob); }
-        else { setState('idle'); if (voiceMode) exitVoice(); }
+        else { setState('idle'); if (voiceMode) armNextTurnTap(t.noheard); }
       };
       mediaRec.start();
       recording = true; vadHeard = false; setMic(true); setState('listening'); statusTxt.textContent = t.listening;
@@ -593,8 +618,13 @@
     }).then(function (r) { if (!r.ok) throw 0; return r.json(); })
       .then(function (j) {
         var txt = (j && j.text || '').trim();
-        if (txt) ask(txt); else { setState('idle'); addMsg('bot', t.noheard, true); }
-      }).catch(function () { setState('idle'); addMsg('bot', t.err, true); });
+        if (txt) ask(txt);
+        else if (voiceMode && useServerSTT) armNextTurnTap(t.noheard);
+        else { setState('idle'); addMsg('bot', t.noheard, true); }
+      }).catch(function () {
+        if (voiceMode && useServerSTT) armNextTurnTap(t.err);
+        else { setState('idle'); addMsg('bot', t.err, true); }
+      });
   }
 
   micBtn.addEventListener('click', toggleMic);

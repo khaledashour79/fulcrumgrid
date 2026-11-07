@@ -151,7 +151,8 @@
   border: 1px solid var(--fgc-accent); background: var(--fgc-accent); color: #fff;
   cursor: pointer; display: grid; place-items: center;
 }
-.fgc-mic[aria-pressed="true"] { animation: fgc-mic 1.1s ease-in-out infinite; }
+.fgc-mic[aria-pressed="true"],
+#fg-concierge.fgc-await-tap .fgc-mic { animation: fgc-mic 1.1s ease-in-out infinite; }
 @keyframes fgc-mic { 0%,100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--fgc-accent) 45%, transparent);} 50% { box-shadow: 0 0 0 7px transparent;} }
 .fgc-input { flex: 1; min-width: 0; border: 1px solid var(--fgc-line); border-radius: 10px; padding: 9px 11px; font: inherit; font-size: 14px; }
 .fgc-input:focus { outline: 2px solid var(--fgc-accent); outline-offset: -1px; }
