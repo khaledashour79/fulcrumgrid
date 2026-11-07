@@ -15,10 +15,13 @@
     // Illustrative fallback assumptions for "Not sure — use an estimate".
     // These are calculator assumptions, NOT industry benchmarks or results.
     fallback: {
-      hiresPctOfHeadcount: 0.12,   // annual hires = 12% of headcount
-      appsPerVacancy: 50,          // applications per vacancy
-      iqamaPctOfHeadcount: 0.80,   // annual Iqama renewals = 80% of headcount
-      lettersPctOfHeadcount: 0.20  // monthly letters = 20% of headcount
+      hiresPctOfHeadcount: 0.12,    // annual hires = 12% of headcount
+      appsPerVacancy: 50,           // applications per vacancy
+      iqamaPctOfHeadcount: 0.80,    // annual Iqama renewals = 80% of headcount
+      lettersPctOfHeadcount: 0.20,  // monthly letters = 20% of headcount
+      leaversPctOfHeadcount: 0.12,  // annual leavers = 12% of headcount (turnover)
+      loansPctOfHeadcount: 0.15,    // annual loan/advance requests = 15% of headcount
+      ticketsPctOfHeadcount: 0.40   // annual air tickets = 40% of headcount (≈80% expats × biennial)
     },
     // Minutes per activity: manual vs with the platform (remaining human review).
     activities: {
@@ -36,9 +39,6 @@
     },
     interviewsPerHire: 12,
     reviewCyclesPerYear: 1,      // performance review cycles per year
-    loanRatePerYear: 0.15,       // share of headcount requesting a loan / advance per year
-    turnoverRate: 0.12,          // annual leavers as a share of headcount
-    ticketCyclesPerExpat: 0.5,   // air-ticket entitlement cycles per expat per year (biennial)
     erpPostingsPerYear: 12,      // GL / ERP payroll postings per year (monthly)
     staffCostMonthly: 12000,  // SAR, fully loaded
     productiveHours: 160,     // productive staff hours per month
@@ -60,8 +60,8 @@
     var r = cfg.realization;
     var hourly = cfg.productiveHours > 0 ? cfg.staffCostMonthly / cfg.productiveHours : 0;
 
-    // Annual activity volumes. New activities derive their volume from the same
-    // five inputs (headcount, hires, expats≈Iqama renewals) via cfg constants.
+    // Annual activity volumes. Payroll, attendance and performance scale with
+    // headcount; leavers, loan requests and air tickets are their own inputs.
     var vol = {
       cvScreen: input.annualHires * input.appsPerVacancy,
       interview: input.annualHires * cfg.interviewsPerHire,
@@ -70,9 +70,9 @@
       letters: input.monthlyLetters * 12,
       attendance: input.employees * 12,
       performance: input.employees * cfg.reviewCyclesPerYear,
-      loans: input.employees * cfg.loanRatePerYear,
-      eosb: input.employees * cfg.turnoverRate,
-      airtickets: input.iqamaRenewals * cfg.ticketCyclesPerExpat,
+      loans: input.loanRequests,
+      eosb: input.annualLeavers,
+      airtickets: input.airTickets,
       erp: cfg.erpPostingsPerYear
     };
 
@@ -297,7 +297,13 @@
   }
 
   var STORE = 'fg_hr_calc_v1';
-  var estimated = { hires: false, apps: false, iqama: false, letters: false };
+  // Estimate keys (data-estimate values) → the field id they fill. Separate
+  // because some ids (loanRequests, airTickets) differ from the estimate key.
+  var EST_ID = { hires: 'hires', apps: 'apps', iqama: 'iqama', letters: 'letters',
+    leavers: 'leavers', loans: 'loanRequests', airtickets: 'airTickets' };
+  var EST_KEYS = Object.keys(EST_ID);
+  var estimated = {};
+  EST_KEYS.forEach(function (k) { estimated[k] = false; });
 
   function readInputs() {
     var employees = Math.max(0, num('employees', 0));
@@ -318,9 +324,6 @@
       },
       interviewsPerHire: Math.max(0, num('interviewsPerHire', 12)),
       reviewCyclesPerYear: Math.max(0, num('reviewCyclesPerYear', 1)),
-      loanRatePerYear: Math.max(0, num('loanRate', 15)) / 100,
-      turnoverRate: Math.max(0, num('turnoverRate', 12)) / 100,
-      ticketCyclesPerExpat: Math.max(0, num('ticketCycles', 0.5)),
       erpPostingsPerYear: Math.max(0, num('erpPostings', 12)),
       staffCostMonthly: Math.max(0, num('staffCost', 12000)),
       productiveHours: num('productiveHours', 160),
@@ -344,6 +347,9 @@
       appsPerVacancy: Math.max(0, num('apps', 0)),
       iqamaRenewals: Math.max(0, num('iqama', 0)),
       monthlyLetters: Math.max(0, num('letters', 0)),
+      annualLeavers: Math.max(0, num('leavers', 0)),
+      loanRequests: Math.max(0, num('loanRequests', 0)),
+      airTickets: Math.max(0, num('airTickets', 0)),
       enabled: enabled,
       cfg: cfg
     };
@@ -448,21 +454,26 @@
   // ---- Estimates, toggles, persistence ------------------------------------
   function applyEstimate(which) {
     var emp = Math.max(0, num('employees', 0));
+    var f = CONFIG.fallback;
     var map = {
-      hires: Math.round(emp * CONFIG.fallback.hiresPctOfHeadcount),
-      apps: CONFIG.fallback.appsPerVacancy,
-      iqama: Math.round(emp * CONFIG.fallback.iqamaPctOfHeadcount),
-      letters: Math.round(emp * CONFIG.fallback.lettersPctOfHeadcount)
+      hires: Math.round(emp * f.hiresPctOfHeadcount),
+      apps: f.appsPerVacancy,
+      iqama: Math.round(emp * f.iqamaPctOfHeadcount),
+      letters: Math.round(emp * f.lettersPctOfHeadcount),
+      leavers: Math.round(emp * f.leaversPctOfHeadcount),
+      loans: Math.round(emp * f.loansPctOfHeadcount),
+      airtickets: Math.round(emp * f.ticketsPctOfHeadcount)
     };
-    var idmap = { hires: 'hires', apps: 'apps', iqama: 'iqama', letters: 'letters' };
-    $(idmap[which]).value = map[which];
+    var el = $(EST_ID[which]);
+    if (!el) return;
+    el.value = map[which];
     estimated[which] = true;
     markEstimated();
     render();
   }
 
   function markEstimated() {
-    ['hires', 'apps', 'iqama', 'letters'].forEach(function (k) {
+    EST_KEYS.forEach(function (k) {
       var badge = document.querySelector('[data-badge="' + k + '"]');
       if (badge) badge.hidden = !estimated[k];
     });
@@ -513,8 +524,8 @@
       btn.addEventListener('click', function () { applyEstimate(btn.getAttribute('data-estimate')); });
     });
     // Clear the "estimated" badge once a visitor edits that field by hand.
-    ['hires', 'apps', 'iqama', 'letters'].forEach(function (k) {
-      var el = $(k);
+    EST_KEYS.forEach(function (k) {
+      var el = $(EST_ID[k]);
       if (el) el.addEventListener('input', function () { if (estimated[k]) { estimated[k] = false; markEstimated(); } });
     });
     document.querySelectorAll('[data-persist]').forEach(function (el) {

@@ -3,11 +3,12 @@ const cfg = {
   fallback:{},
   activities:{ cvScreen:{manual:5,platform:1}, interview:{manual:25,platform:12}, payroll:{manual:8,platform:3}, iqama:{manual:40,platform:20}, letters:{manual:10,platform:2},
     attendance:{manual:6,platform:2}, performance:{manual:30,platform:12}, loans:{manual:20,platform:6}, eosb:{manual:90,platform:30}, airtickets:{manual:20,platform:5}, erp:{manual:45,platform:10} },
-  interviewsPerHire:12, reviewCyclesPerYear:1, loanRatePerYear:0.15, turnoverRate:0.12, ticketCyclesPerExpat:0.5, erpPostingsPerYear:12,
+  interviewsPerHire:12, reviewCyclesPerYear:1, erpPostingsPerYear:12,
   staffCostMonthly:12000, productiveHours:160, realization:0.80
 };
 const ALL = {recruitment:true,payroll:true,iqama:true,letters:true,attendance:true,performance:true,loans:true,eosb:true,airtickets:true,erp:true};
 const input = { employees:500, annualHires:60, appsPerVacancy:50, iqamaRenewals:400, monthlyLetters:100,
+  annualLeavers:60, loanRequests:75, airTickets:200,
   enabled:Object.assign({},ALL), cfg };
 const r = computeResults(input);
 function approx(a,b,t){ return Math.abs(a-b) <= (t||1e-4); }

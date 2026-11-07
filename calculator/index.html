@@ -152,6 +152,40 @@
                   <span class="badge-est" data-badge="letters" hidden>Estimated</span>
                 </div>
               </div>
+
+              <div class="field">
+                <label for="leavers">Employees leaving annually <span class="unit">· leavers / year</span></label>
+                <div class="field-row">
+                  <input id="leavers" data-persist type="number" min="0" step="1" inputmode="numeric" value="60" />
+                  <button type="button" class="est-btn" data-estimate="leavers">Not sure — use an estimate</button>
+                  <span class="badge-est" data-badge="leavers" hidden>Estimated</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="loanRequests">Loan / advance requests annually <span class="unit">· requests / year</span></label>
+                <div class="field-row">
+                  <input id="loanRequests" data-persist type="number" min="0" step="1" inputmode="numeric" value="75" />
+                  <button type="button" class="est-btn" data-estimate="loans">Not sure — use an estimate</button>
+                  <span class="badge-est" data-badge="loans" hidden>Estimated</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="airTickets">Air tickets issued annually <span class="unit">· tickets / year</span></label>
+                <div class="field-row">
+                  <input id="airTickets" data-persist type="number" min="0" step="1" inputmode="numeric" value="200" />
+                  <button type="button" class="est-btn" data-estimate="airtickets">Not sure — use an estimate</button>
+                  <span class="badge-est" data-badge="airtickets" hidden>Estimated</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="reviewCyclesPerYear">Performance reviews per employee <span class="unit">· cycles / year</span></label>
+                <input id="reviewCyclesPerYear" data-persist class="mini" type="number" min="0" step="0.5" value="1" />
+              </div>
+
+              <p class="note">Payroll, attendance &amp; overtime, and performance reviews scale with your headcount. Per-activity processing times and GL/ERP postings are under “Adjust assumptions”; switch any activity off under “Features to include”.</p>
             </div>
 
             <div class="calc-card">
@@ -190,10 +224,6 @@
                   </tbody>
                 </table>
                 <div class="field"><label for="interviewsPerHire">Initial interviews per hire</label><input id="interviewsPerHire" data-persist class="mini" type="number" min="0" step="1" value="12" /></div>
-                <div class="field"><label for="reviewCyclesPerYear">Performance review cycles / year</label><input id="reviewCyclesPerYear" data-persist class="mini" type="number" min="0" step="0.5" value="1" /></div>
-                <div class="field"><label for="loanRate">Staff requesting a loan / advance per year <span class="unit">· % of headcount</span></label><input id="loanRate" data-persist class="mini" type="number" min="0" max="100" step="1" value="15" /></div>
-                <div class="field"><label for="turnoverRate">Annual staff turnover <span class="unit">· % of headcount</span></label><input id="turnoverRate" data-persist class="mini" type="number" min="0" max="100" step="1" value="12" /></div>
-                <div class="field"><label for="ticketCycles">Air-ticket cycles per expat / year</label><input id="ticketCycles" data-persist class="mini" type="number" min="0" step="0.25" value="0.5" /></div>
                 <div class="field"><label for="erpPostings">GL / ERP postings / year</label><input id="erpPostings" data-persist class="mini" type="number" min="0" step="1" value="12" /></div>
                 <div class="field"><label for="staffCost">Fully loaded staff cost <span class="unit money-unit" data-unit="perMonth"></span></label><input id="staffCost" data-persist type="number" min="0" step="100" value="12000" /></div>
                 <div class="field"><label for="productiveHours">Productive staff hours <span class="unit">· per month</span></label><input id="productiveHours" data-persist class="mini" type="number" min="1" step="1" value="160" /></div>
@@ -321,7 +351,7 @@
   </footer>
 
   <script src="/assets/js/consent.js" defer></script>
-  <script src="/assets/js/calculator.js?v=210d082d" defer></script>
+  <script src="/assets/js/calculator.js?v=5216a3a3" defer></script>
 <!-- fg-concierge:start -->
 <div id="fg-concierge" data-fg-concierge hidden></div>
 <script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
