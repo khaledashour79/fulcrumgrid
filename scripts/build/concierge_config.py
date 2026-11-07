@@ -25,7 +25,9 @@ WORKER_ORIGIN = 'https://fg-concierge.khaled-ashour.workers.dev'
 
 # Languages that get the voice/chat experience now. Others still render the
 # character but route interaction to the contact page until added here.
-LANGS = ['en', 'ar']
+# The Worker backend supports all seven; the widget UI copy lives in
+# assets/js/concierge.js (T) for each of these.
+LANGS = ['en', 'ar', 'fr', 'de', 'es', 'it', 'nl']
 
 # Path (site-absolute) to the Rive artwork once supplied. If the file is absent
 # at runtime the widget shows the built-in SVG placeholder instead.
