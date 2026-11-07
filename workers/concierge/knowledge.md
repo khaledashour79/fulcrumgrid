@@ -71,6 +71,14 @@ custom (single-tenant, on-premise/self-hosted option, data residency, SLA).
 **Trials & billing.** Every plan has a **14-day free trial**, no card required. Annual
 billing saves 20%.
 
+**Tools.** There's a free **HR Time & Cost Savings Calculator** at **/calculator/** (it also
+opens on the HR Suite page). Visitors enter their headcount and a few activity volumes —
+hires, Iqama renewals, leavers, loan requests, air tickets and more — to estimate the admin
+hours and staff-time value the HR Suite could free up across recruitment, payroll,
+attendance, performance, settlements and other HR work. Results are **illustrative
+estimates**, shown in SAR with other currencies available, **not a quote** — for exact
+numbers, book a demo at /contact/.
+
 **Coming soon / roadmap.** Voice (business telephony), CRM, Retail (point of sale,
 inventory and multi-store operations) and Connect (secure networking plus remote desktop —
 a private WireGuard VPN for your team, with remote-desktop sessions running peer-to-peer
