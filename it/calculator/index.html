@@ -167,6 +167,12 @@
               <label class="toggle"><input id="feat-payroll" data-persist type="checkbox" checked /> Preparazione delle buste paga</label>
               <label class="toggle"><input id="feat-iqama" data-persist type="checkbox" checked /> Rinnovi dell'iqama</label>
               <label class="toggle"><input id="feat-letters" data-persist type="checkbox" checked /> Lettere per dipendenti</label>
+              <label class="toggle"><input id="feat-attendance" data-persist type="checkbox" checked /> Convalida presenze &amp; straordinari</label>
+              <label class="toggle"><input id="feat-performance" data-persist type="checkbox" checked /> Valutazioni delle prestazioni</label>
+              <label class="toggle"><input id="feat-loans" data-persist type="checkbox" checked /> Gestione prestiti &amp; anticipi</label>
+              <label class="toggle"><input id="feat-eosb" data-persist type="checkbox" checked /> Liquidazione finale / EOSB</label>
+              <label class="toggle"><input id="feat-airtickets" data-persist type="checkbox" checked /> Diritti ai biglietti aerei</label>
+              <label class="toggle"><input id="feat-erp" data-persist type="checkbox" checked /> Scritture paga GL / ERP</label>
             </div>
 
             <div class="calc-card assume">
@@ -181,9 +187,20 @@
                     <tr><td>Prep. buste paga per dipendente / ciclo</td><td><input id="m-payroll-manual" data-persist type="number" min="0" step="0.5" value="8" /></td><td><input id="m-payroll-platform" data-persist type="number" min="0" step="0.5" value="3" /></td></tr>
                     <tr><td>Amministrazione del rinnovo dell'iqama</td><td><input id="m-iqama-manual" data-persist type="number" min="0" step="0.5" value="40" /></td><td><input id="m-iqama-platform" data-persist type="number" min="0" step="0.5" value="20" /></td></tr>
                     <tr><td>Prep. &amp; consegna delle lettere per dipendenti</td><td><input id="m-letters-manual" data-persist type="number" min="0" step="0.5" value="10" /></td><td><input id="m-letters-platform" data-persist type="number" min="0" step="0.5" value="2" /></td></tr>
+                    <tr><td>Revisione presenze &amp; straordinari per dipendente / mese</td><td><input id="m-attendance-manual" data-persist type="number" min="0" step="0.5" value="6" /></td><td><input id="m-attendance-platform" data-persist type="number" min="0" step="0.5" value="2" /></td></tr>
+                    <tr><td>Admin. valutazione per dipendente / ciclo</td><td><input id="m-performance-manual" data-persist type="number" min="0" step="0.5" value="30" /></td><td><input id="m-performance-platform" data-persist type="number" min="0" step="0.5" value="12" /></td></tr>
+                    <tr><td>Gestione richieste di prestito / anticipo</td><td><input id="m-loans-manual" data-persist type="number" min="0" step="0.5" value="20" /></td><td><input id="m-loans-platform" data-persist type="number" min="0" step="0.5" value="6" /></td></tr>
+                    <tr><td>Liquidazione finale / EOSB per uscita</td><td><input id="m-eosb-manual" data-persist type="number" min="0" step="0.5" value="90" /></td><td><input id="m-eosb-platform" data-persist type="number" min="0" step="0.5" value="30" /></td></tr>
+                    <tr><td>Gestione dei diritti ai biglietti aerei</td><td><input id="m-airtickets-manual" data-persist type="number" min="0" step="0.5" value="20" /></td><td><input id="m-airtickets-platform" data-persist type="number" min="0" step="0.5" value="5" /></td></tr>
+                    <tr><td>Scrittura GL / ERP per ciclo paga</td><td><input id="m-erp-manual" data-persist type="number" min="0" step="0.5" value="45" /></td><td><input id="m-erp-platform" data-persist type="number" min="0" step="0.5" value="10" /></td></tr>
                   </tbody>
                 </table>
                 <div class="field"><label for="interviewsPerHire">Colloqui iniziali per assunzione</label><input id="interviewsPerHire" data-persist class="mini" type="number" min="0" step="1" value="12" /></div>
+                <div class="field"><label for="reviewCyclesPerYear">Cicli di valutazione / anno</label><input id="reviewCyclesPerYear" data-persist class="mini" type="number" min="0" step="0.5" value="1" /></div>
+                <div class="field"><label for="loanRate">Personale che richiede prestito / anticipo all'anno <span class="unit">· % dell'organico</span></label><input id="loanRate" data-persist class="mini" type="number" min="0" max="100" step="1" value="15" /></div>
+                <div class="field"><label for="turnoverRate">Turnover annuo del personale <span class="unit">· % dell'organico</span></label><input id="turnoverRate" data-persist class="mini" type="number" min="0" max="100" step="1" value="12" /></div>
+                <div class="field"><label for="ticketCycles">Cicli di biglietti per espatriato / anno</label><input id="ticketCycles" data-persist class="mini" type="number" min="0" step="0.25" value="0.5" /></div>
+                <div class="field"><label for="erpPostings">Scritture GL / ERP / anno</label><input id="erpPostings" data-persist class="mini" type="number" min="0" step="1" value="12" /></div>
                 <div class="field"><label for="staffCost">Costo pieno del personale <span class="unit money-unit" data-unit="perMonth"></span></label><input id="staffCost" data-persist type="number" min="0" step="100" value="12000" /></div>
                 <div class="field"><label for="productiveHours">Ore produttive del personale <span class="unit">· al mese</span></label><input id="productiveHours" data-persist class="mini" type="number" min="1" step="1" value="160" /></div>
                 <div class="field"><label for="realization">Fattore di realizzazione / adozione previsto <span class="unit">· %</span></label><input id="realization" data-persist class="mini" type="number" min="0" max="100" step="1" value="80" /></div>
@@ -310,7 +327,7 @@
   </footer>
 
   <script src="/assets/js/consent.js" defer></script>
-  <script src="/assets/js/calculator.js?v=568355e8" defer></script>
+  <script src="/assets/js/calculator.js?v=210d082d" defer></script>
 <!-- fg-concierge:start -->
 <div id="fg-concierge" data-fg-concierge hidden></div>
 <script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>

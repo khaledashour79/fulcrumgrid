@@ -167,6 +167,12 @@
               <label class="toggle"><input id="feat-payroll" data-persist type="checkbox" checked /> Loonadministratie</label>
               <label class="toggle"><input id="feat-iqama" data-persist type="checkbox" checked /> Iqama-verlengingen</label>
               <label class="toggle"><input id="feat-letters" data-persist type="checkbox" checked /> Werknemersbrieven</label>
+              <label class="toggle"><input id="feat-attendance" data-persist type="checkbox" checked /> Validatie aanwezigheid &amp; overuren</label>
+              <label class="toggle"><input id="feat-performance" data-persist type="checkbox" checked /> Prestatiebeoordelingen</label>
+              <label class="toggle"><input id="feat-loans" data-persist type="checkbox" checked /> Verwerking van leningen &amp; voorschotten</label>
+              <label class="toggle"><input id="feat-eosb" data-persist type="checkbox" checked /> Eindafrekening / EOSB</label>
+              <label class="toggle"><input id="feat-airtickets" data-persist type="checkbox" checked /> Vliegticketrechten</label>
+              <label class="toggle"><input id="feat-erp" data-persist type="checkbox" checked /> GL- / ERP-loonboekingen</label>
             </div>
 
             <div class="calc-card assume">
@@ -181,9 +187,20 @@
                     <tr><td>Loonvoorbereiding per werknemer / cyclus</td><td><input id="m-payroll-manual" data-persist type="number" min="0" step="0.5" value="8" /></td><td><input id="m-payroll-platform" data-persist type="number" min="0" step="0.5" value="3" /></td></tr>
                     <tr><td>Beheer van iqama-verlenging</td><td><input id="m-iqama-manual" data-persist type="number" min="0" step="0.5" value="40" /></td><td><input id="m-iqama-platform" data-persist type="number" min="0" step="0.5" value="20" /></td></tr>
                     <tr><td>Opstellen &amp; bezorgen van werknemersbrieven</td><td><input id="m-letters-manual" data-persist type="number" min="0" step="0.5" value="10" /></td><td><input id="m-letters-platform" data-persist type="number" min="0" step="0.5" value="2" /></td></tr>
+                    <tr><td>Controle aanwezigheid &amp; overuren per werknemer / maand</td><td><input id="m-attendance-manual" data-persist type="number" min="0" step="0.5" value="6" /></td><td><input id="m-attendance-platform" data-persist type="number" min="0" step="0.5" value="2" /></td></tr>
+                    <tr><td>Beoordelingsadmin. per werknemer / cyclus</td><td><input id="m-performance-manual" data-persist type="number" min="0" step="0.5" value="30" /></td><td><input id="m-performance-platform" data-persist type="number" min="0" step="0.5" value="12" /></td></tr>
+                    <tr><td>Verwerking van lening- / voorschotaanvragen</td><td><input id="m-loans-manual" data-persist type="number" min="0" step="0.5" value="20" /></td><td><input id="m-loans-platform" data-persist type="number" min="0" step="0.5" value="6" /></td></tr>
+                    <tr><td>Eindafrekening / EOSB per vertrekker</td><td><input id="m-eosb-manual" data-persist type="number" min="0" step="0.5" value="90" /></td><td><input id="m-eosb-platform" data-persist type="number" min="0" step="0.5" value="30" /></td></tr>
+                    <tr><td>Verwerking van vliegticketrechten</td><td><input id="m-airtickets-manual" data-persist type="number" min="0" step="0.5" value="20" /></td><td><input id="m-airtickets-platform" data-persist type="number" min="0" step="0.5" value="5" /></td></tr>
+                    <tr><td>GL- / ERP-boeking per loonronde</td><td><input id="m-erp-manual" data-persist type="number" min="0" step="0.5" value="45" /></td><td><input id="m-erp-platform" data-persist type="number" min="0" step="0.5" value="10" /></td></tr>
                   </tbody>
                 </table>
                 <div class="field"><label for="interviewsPerHire">Eerste interviews per aanwerving</label><input id="interviewsPerHire" data-persist class="mini" type="number" min="0" step="1" value="12" /></div>
+                <div class="field"><label for="reviewCyclesPerYear">Beoordelingscycli / jaar</label><input id="reviewCyclesPerYear" data-persist class="mini" type="number" min="0" step="0.5" value="1" /></div>
+                <div class="field"><label for="loanRate">Personeel dat per jaar een lening / voorschot aanvraagt <span class="unit">· % van het personeelsbestand</span></label><input id="loanRate" data-persist class="mini" type="number" min="0" max="100" step="1" value="15" /></div>
+                <div class="field"><label for="turnoverRate">Jaarlijks personeelsverloop <span class="unit">· % van het personeelsbestand</span></label><input id="turnoverRate" data-persist class="mini" type="number" min="0" max="100" step="1" value="12" /></div>
+                <div class="field"><label for="ticketCycles">Ticketcycli per expat / jaar</label><input id="ticketCycles" data-persist class="mini" type="number" min="0" step="0.25" value="0.5" /></div>
+                <div class="field"><label for="erpPostings">GL- / ERP-boekingen / jaar</label><input id="erpPostings" data-persist class="mini" type="number" min="0" step="1" value="12" /></div>
                 <div class="field"><label for="staffCost">Volledig belaste personeelskosten <span class="unit money-unit" data-unit="perMonth"></span></label><input id="staffCost" data-persist type="number" min="0" step="100" value="12000" /></div>
                 <div class="field"><label for="productiveHours">Productieve personeelsuren <span class="unit">· per maand</span></label><input id="productiveHours" data-persist class="mini" type="number" min="1" step="1" value="160" /></div>
                 <div class="field"><label for="realization">Verwachte realisatie-/adoptiefactor <span class="unit">· %</span></label><input id="realization" data-persist class="mini" type="number" min="0" max="100" step="1" value="80" /></div>
@@ -310,7 +327,7 @@
   </footer>
 
   <script src="/assets/js/consent.js" defer></script>
-  <script src="/assets/js/calculator.js?v=568355e8" defer></script>
+  <script src="/assets/js/calculator.js?v=210d082d" defer></script>
 <!-- fg-concierge:start -->
 <div id="fg-concierge" data-fg-concierge hidden></div>
 <script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>

@@ -160,6 +160,12 @@
               <label class="toggle"><input id="feat-payroll" data-persist type="checkbox" checked /> إعداد الرواتب</label>
               <label class="toggle"><input id="feat-iqama" data-persist type="checkbox" checked /> تجديد الإقامات</label>
               <label class="toggle"><input id="feat-letters" data-persist type="checkbox" checked /> خطابات الموظفين</label>
+              <label class="toggle"><input id="feat-attendance" data-persist type="checkbox" checked /> التحقق من الحضور والعمل الإضافي</label>
+              <label class="toggle"><input id="feat-performance" data-persist type="checkbox" checked /> تقييمات الأداء</label>
+              <label class="toggle"><input id="feat-loans" data-persist type="checkbox" checked /> معالجة السلف والقروض</label>
+              <label class="toggle"><input id="feat-eosb" data-persist type="checkbox" checked /> التسوية النهائية / نهاية الخدمة</label>
+              <label class="toggle"><input id="feat-airtickets" data-persist type="checkbox" checked /> استحقاقات تذاكر السفر</label>
+              <label class="toggle"><input id="feat-erp" data-persist type="checkbox" checked /> قيود الرواتب في نظام ERP</label>
             </div>
 
             <div class="calc-card assume">
@@ -174,9 +180,20 @@
                     <tr><td>إعداد الرواتب لكل موظف / دورة</td><td><input id="m-payroll-manual" data-persist type="number" min="0" step="0.5" value="8" /></td><td><input id="m-payroll-platform" data-persist type="number" min="0" step="0.5" value="3" /></td></tr>
                     <tr><td>إدارة تجديد الإقامة</td><td><input id="m-iqama-manual" data-persist type="number" min="0" step="0.5" value="40" /></td><td><input id="m-iqama-platform" data-persist type="number" min="0" step="0.5" value="20" /></td></tr>
                     <tr><td>إعداد خطاب الموظف وتسليمه</td><td><input id="m-letters-manual" data-persist type="number" min="0" step="0.5" value="10" /></td><td><input id="m-letters-platform" data-persist type="number" min="0" step="0.5" value="2" /></td></tr>
+                    <tr><td>مراجعة الحضور والعمل الإضافي لكل موظف / شهر</td><td><input id="m-attendance-manual" data-persist type="number" min="0" step="0.5" value="6" /></td><td><input id="m-attendance-platform" data-persist type="number" min="0" step="0.5" value="2" /></td></tr>
+                    <tr><td>إدارة دورة تقييم الأداء لكل موظف / دورة</td><td><input id="m-performance-manual" data-persist type="number" min="0" step="0.5" value="30" /></td><td><input id="m-performance-platform" data-persist type="number" min="0" step="0.5" value="12" /></td></tr>
+                    <tr><td>معالجة طلب السلفة / القرض</td><td><input id="m-loans-manual" data-persist type="number" min="0" step="0.5" value="20" /></td><td><input id="m-loans-platform" data-persist type="number" min="0" step="0.5" value="6" /></td></tr>
+                    <tr><td>التسوية النهائية / نهاية الخدمة لكل مغادر</td><td><input id="m-eosb-manual" data-persist type="number" min="0" step="0.5" value="90" /></td><td><input id="m-eosb-platform" data-persist type="number" min="0" step="0.5" value="30" /></td></tr>
+                    <tr><td>معالجة استحقاق تذكرة السفر</td><td><input id="m-airtickets-manual" data-persist type="number" min="0" step="0.5" value="20" /></td><td><input id="m-airtickets-platform" data-persist type="number" min="0" step="0.5" value="5" /></td></tr>
+                    <tr><td>قيد نظام ERP لكل دورة رواتب</td><td><input id="m-erp-manual" data-persist type="number" min="0" step="0.5" value="45" /></td><td><input id="m-erp-platform" data-persist type="number" min="0" step="0.5" value="10" /></td></tr>
                   </tbody>
                 </table>
                 <div class="field"><label for="interviewsPerHire">المقابلات الأولية لكل تعيين</label><input id="interviewsPerHire" data-persist class="mini" type="number" min="0" step="1" value="12" /></div>
+                <div class="field"><label for="reviewCyclesPerYear">دورات تقييم الأداء / سنة</label><input id="reviewCyclesPerYear" data-persist class="mini" type="number" min="0" step="0.5" value="1" /></div>
+                <div class="field"><label for="loanRate">نسبة طالبي السلف / القروض سنويًا <span class="unit">· % من العمالة</span></label><input id="loanRate" data-persist class="mini" type="number" min="0" max="100" step="1" value="15" /></div>
+                <div class="field"><label for="turnoverRate">معدل دوران الموظفين السنوي <span class="unit">· % من العمالة</span></label><input id="turnoverRate" data-persist class="mini" type="number" min="0" max="100" step="1" value="12" /></div>
+                <div class="field"><label for="ticketCycles">دورات تذاكر السفر لكل وافد / سنة</label><input id="ticketCycles" data-persist class="mini" type="number" min="0" step="0.25" value="0.5" /></div>
+                <div class="field"><label for="erpPostings">قيود نظام ERP / سنة</label><input id="erpPostings" data-persist class="mini" type="number" min="0" step="1" value="12" /></div>
                 <div class="field"><label for="staffCost">التكلفة الكاملة للموظف <span class="unit money-unit" data-unit="perMonth"></span></label><input id="staffCost" data-persist type="number" min="0" step="100" value="12000" /></div>
                 <div class="field"><label for="productiveHours">ساعات العمل المنتجة <span class="unit">· شهريًا</span></label><input id="productiveHours" data-persist class="mini" type="number" min="1" step="1" value="160" /></div>
                 <div class="field"><label for="realization">معامل التحقّق / التبنّي المتوقّع <span class="unit">· %</span></label><input id="realization" data-persist class="mini" type="number" min="0" max="100" step="1" value="80" /></div>
@@ -303,7 +320,7 @@
   </footer>
 
   <script src="/assets/js/consent.js" defer></script>
-  <script src="/assets/js/calculator.js?v=568355e8" defer></script>
+  <script src="/assets/js/calculator.js?v=210d082d" defer></script>
 <!-- fg-concierge:start -->
 <div id="fg-concierge" data-fg-concierge hidden></div>
 <script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>

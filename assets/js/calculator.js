@@ -22,13 +22,24 @@
     },
     // Minutes per activity: manual vs with the platform (remaining human review).
     activities: {
-      cvScreen:  { manual: 5,  platform: 1  },  // initial CV screening
-      interview: { manual: 25, platform: 12 },  // initial interview vs recorded-interview review
-      payroll:   { manual: 8,  platform: 3  },  // payroll prep per employee per monthly cycle
-      iqama:     { manual: 40, platform: 20 },  // Iqama renewal administration
-      letters:   { manual: 10, platform: 2  }   // employee letter prep & delivery
+      cvScreen:    { manual: 5,  platform: 1  },  // initial CV screening
+      interview:   { manual: 25, platform: 12 },  // initial interview vs recorded-interview review
+      payroll:     { manual: 8,  platform: 3  },  // payroll prep per employee per monthly cycle
+      iqama:       { manual: 40, platform: 20 },  // Iqama renewal administration
+      letters:     { manual: 10, platform: 2  },  // employee letter prep & delivery
+      attendance:  { manual: 6,  platform: 2  },  // monthly attendance + overtime exception review per employee
+      performance: { manual: 30, platform: 12 },  // review-cycle admin per employee (coordination, not the appraisal itself)
+      loans:       { manual: 20, platform: 6  },  // loan / advance request processing
+      eosb:        { manual: 90, platform: 30 },  // final settlement / EOSB + leave + clearance per leaver
+      airtickets:  { manual: 20, platform: 5  },  // air-ticket entitlement processing per cycle
+      erp:         { manual: 45, platform: 10 }   // GL / ERP payroll posting per cycle
     },
     interviewsPerHire: 12,
+    reviewCyclesPerYear: 1,      // performance review cycles per year
+    loanRatePerYear: 0.15,       // share of headcount requesting a loan / advance per year
+    turnoverRate: 0.12,          // annual leavers as a share of headcount
+    ticketCyclesPerExpat: 0.5,   // air-ticket entitlement cycles per expat per year (biennial)
+    erpPostingsPerYear: 12,      // GL / ERP payroll postings per year (monthly)
     staffCostMonthly: 12000,  // SAR, fully loaded
     productiveHours: 160,     // productive staff hours per month
     realization: 0.80         // expected realization / adoption factor (0..1)
@@ -44,17 +55,25 @@
 
   function computeResults(input) {
     var cfg = input.cfg;
-    var en = input.enabled || { recruitment: true, payroll: true, iqama: true, letters: true };
+    var en = input.enabled || { recruitment: true, payroll: true, iqama: true, letters: true,
+      attendance: true, performance: true, loans: true, eosb: true, airtickets: true, erp: true };
     var r = cfg.realization;
     var hourly = cfg.productiveHours > 0 ? cfg.staffCostMonthly / cfg.productiveHours : 0;
 
-    // Annual activity volumes.
+    // Annual activity volumes. New activities derive their volume from the same
+    // five inputs (headcount, hires, expats≈Iqama renewals) via cfg constants.
     var vol = {
       cvScreen: input.annualHires * input.appsPerVacancy,
       interview: input.annualHires * cfg.interviewsPerHire,
       payroll: input.employees * 12,
       iqama: input.iqamaRenewals,
-      letters: input.monthlyLetters * 12
+      letters: input.monthlyLetters * 12,
+      attendance: input.employees * 12,
+      performance: input.employees * cfg.reviewCyclesPerYear,
+      loans: input.employees * cfg.loanRatePerYear,
+      eosb: input.employees * cfg.turnoverRate,
+      airtickets: input.iqamaRenewals * cfg.ticketCyclesPerExpat,
+      erp: cfg.erpPostingsPerYear
     };
 
     var a = cfg.activities;
@@ -64,12 +83,19 @@
     var payHrs = en.payroll ? hoursReleased(vol.payroll, a.payroll.manual, a.payroll.platform, r) : 0;
     var iqHrs = en.iqama ? hoursReleased(vol.iqama, a.iqama.manual, a.iqama.platform, r) : 0;
     var ltHrs = en.letters ? hoursReleased(vol.letters, a.letters.manual, a.letters.platform, r) : 0;
+    function simpleHrs(key, on) { return on ? hoursReleased(vol[key], a[key].manual, a[key].platform, r) : 0; }
 
     var groups = {
       recruitment: { hoursYear: cvHrs + ivHrs, enabled: !!en.recruitment },
       payroll: { hoursYear: payHrs, enabled: !!en.payroll },
       iqama: { hoursYear: iqHrs, enabled: !!en.iqama },
-      letters: { hoursYear: ltHrs, enabled: !!en.letters }
+      letters: { hoursYear: ltHrs, enabled: !!en.letters },
+      attendance: { hoursYear: simpleHrs('attendance', en.attendance), enabled: !!en.attendance },
+      performance: { hoursYear: simpleHrs('performance', en.performance), enabled: !!en.performance },
+      loans: { hoursYear: simpleHrs('loans', en.loans), enabled: !!en.loans },
+      eosb: { hoursYear: simpleHrs('eosb', en.eosb), enabled: !!en.eosb },
+      airtickets: { hoursYear: simpleHrs('airtickets', en.airtickets), enabled: !!en.airtickets },
+      erp: { hoursYear: simpleHrs('erp', en.erp), enabled: !!en.erp }
     };
     var totalHoursYear = 0;
     Object.keys(groups).forEach(function (k) {
@@ -84,7 +110,9 @@
     // Per-activity flags where platform time exceeds current manual time.
     var warnings = [];
     [['cvScreen', 'recruitment'], ['interview', 'recruitment'], ['payroll', 'payroll'],
-     ['iqama', 'iqama'], ['letters', 'letters']].forEach(function (pair) {
+     ['iqama', 'iqama'], ['letters', 'letters'], ['attendance', 'attendance'],
+     ['performance', 'performance'], ['loans', 'loans'], ['eosb', 'eosb'],
+     ['airtickets', 'airtickets'], ['erp', 'erp']].forEach(function (pair) {
       var act = a[pair[0]];
       if (en[pair[1]] && act.platform > act.manual) warnings.push(pair[0]);
     });
@@ -121,6 +149,8 @@
   var T = {
     en: {
       recruitment: 'Recruitment', payroll: 'Payroll', iqama: 'Iqama renewals', letters: 'Employee letters',
+      attendance: 'Attendance & overtime', performance: 'Performance reviews', loans: 'Loan processing',
+      eosb: 'Final settlement (EOSB)', airtickets: 'Air tickets', erp: 'GL / ERP postings',
       hrsYear: 'hours / year', hrsMonth: 'hours / month', perYear: '/ year', perMonth: '/ month',
       estimated: 'Estimated', sar: 'SAR',
       base: 'Base case', low: 'Adoption 50%', high: 'Adoption 100%',
@@ -131,6 +161,8 @@
     },
     ar: {
       recruitment: 'التوظيف', payroll: 'الرواتب', iqama: 'تجديد الإقامات', letters: 'خطابات الموظفين',
+      attendance: 'الحضور والعمل الإضافي', performance: 'تقييم الأداء', loans: 'معالجة السلف والقروض',
+      eosb: 'التسوية النهائية (نهاية الخدمة)', airtickets: 'تذاكر السفر', erp: 'قيود نظام ERP',
       hrsYear: 'ساعة / سنة', hrsMonth: 'ساعة / شهر', perYear: '/ سنة', perMonth: '/ شهر',
       estimated: 'تقديري', sar: 'ريال',
       base: 'الحالة الأساسية', low: 'التبنّي 50%', high: 'التبنّي 100%',
@@ -141,6 +173,8 @@
     },
     fr: {
       recruitment: 'Recrutement', payroll: 'Paie', iqama: "Renouvellements d'iqama", letters: "Lettres d'employés",
+      attendance: 'Présence & heures sup.', performance: 'Évaluations', loans: 'Prêts & avances',
+      eosb: 'Solde de tout compte (EOSB)', airtickets: "Billets d'avion", erp: 'Écritures GL / ERP',
       hrsYear: 'heures / an', hrsMonth: 'heures / mois', perYear: '/ an', perMonth: '/ mois',
       estimated: 'Estimé', sar: 'SAR',
       base: 'Scénario de base', low: 'Adoption 50 %', high: 'Adoption 100 %',
@@ -151,6 +185,8 @@
     },
     de: {
       recruitment: 'Einstellung', payroll: 'Gehaltsabrechnung', iqama: 'Iqama-Erneuerungen', letters: 'Mitarbeiterschreiben',
+      attendance: 'Anwesenheit & Überstunden', performance: 'Leistungsbeurteilungen', loans: 'Darlehen & Vorschüsse',
+      eosb: 'Endabrechnung (EOSB)', airtickets: 'Flugtickets', erp: 'GL- / ERP-Buchungen',
       hrsYear: 'Stunden / Jahr', hrsMonth: 'Stunden / Monat', perYear: '/ Jahr', perMonth: '/ Monat',
       estimated: 'Geschätzt', sar: 'SAR',
       base: 'Basisfall', low: 'Adoption 50 %', high: 'Adoption 100 %',
@@ -161,6 +197,8 @@
     },
     es: {
       recruitment: 'Contratación', payroll: 'Nóminas', iqama: 'Renovaciones de iqama', letters: 'Cartas de empleados',
+      attendance: 'Asistencia y horas extra', performance: 'Evaluaciones', loans: 'Préstamos y anticipos',
+      eosb: 'Liquidación final (EOSB)', airtickets: 'Billetes de avión', erp: 'Asientos GL / ERP',
       hrsYear: 'horas / año', hrsMonth: 'horas / mes', perYear: '/ año', perMonth: '/ mes',
       estimated: 'Estimado', sar: 'SAR',
       base: 'Caso base', low: 'Adopción 50 %', high: 'Adopción 100 %',
@@ -171,6 +209,8 @@
     },
     it: {
       recruitment: 'Reclutamento', payroll: 'Buste paga', iqama: "Rinnovi dell'iqama", letters: 'Lettere per dipendenti',
+      attendance: 'Presenze & straordinari', performance: 'Valutazioni', loans: 'Prestiti & anticipi',
+      eosb: 'Liquidazione finale (EOSB)', airtickets: 'Biglietti aerei', erp: 'Scritture GL / ERP',
       hrsYear: 'ore / anno', hrsMonth: 'ore / mese', perYear: '/ anno', perMonth: '/ mese',
       estimated: 'Stimato', sar: 'SAR',
       base: 'Caso base', low: 'Adozione 50%', high: 'Adozione 100%',
@@ -181,6 +221,8 @@
     },
     nl: {
       recruitment: 'Werving', payroll: 'Loonadministratie', iqama: 'Iqama-verlengingen', letters: 'Werknemersbrieven',
+      attendance: 'Aanwezigheid & overuren', performance: 'Beoordelingen', loans: 'Leningen & voorschotten',
+      eosb: 'Eindafrekening (EOSB)', airtickets: 'Vliegtickets', erp: 'GL- / ERP-boekingen',
       hrsYear: 'uren / jaar', hrsMonth: 'uren / maand', perYear: '/ jaar', perMonth: '/ maand',
       estimated: 'Geschat', sar: 'SAR',
       base: 'Basisscenario', low: 'Adoptie 50%', high: 'Adoptie 100%',
@@ -266,9 +308,20 @@
         interview: { manual: Math.max(0, num('m-interview-manual', 25)), platform: Math.max(0, num('m-interview-platform', 12)) },
         payroll: { manual: Math.max(0, num('m-payroll-manual', 8)), platform: Math.max(0, num('m-payroll-platform', 3)) },
         iqama: { manual: Math.max(0, num('m-iqama-manual', 40)), platform: Math.max(0, num('m-iqama-platform', 20)) },
-        letters: { manual: Math.max(0, num('m-letters-manual', 10)), platform: Math.max(0, num('m-letters-platform', 2)) }
+        letters: { manual: Math.max(0, num('m-letters-manual', 10)), platform: Math.max(0, num('m-letters-platform', 2)) },
+        attendance: { manual: Math.max(0, num('m-attendance-manual', 6)), platform: Math.max(0, num('m-attendance-platform', 2)) },
+        performance: { manual: Math.max(0, num('m-performance-manual', 30)), platform: Math.max(0, num('m-performance-platform', 12)) },
+        loans: { manual: Math.max(0, num('m-loans-manual', 20)), platform: Math.max(0, num('m-loans-platform', 6)) },
+        eosb: { manual: Math.max(0, num('m-eosb-manual', 90)), platform: Math.max(0, num('m-eosb-platform', 30)) },
+        airtickets: { manual: Math.max(0, num('m-airtickets-manual', 20)), platform: Math.max(0, num('m-airtickets-platform', 5)) },
+        erp: { manual: Math.max(0, num('m-erp-manual', 45)), platform: Math.max(0, num('m-erp-platform', 10)) }
       },
       interviewsPerHire: Math.max(0, num('interviewsPerHire', 12)),
+      reviewCyclesPerYear: Math.max(0, num('reviewCyclesPerYear', 1)),
+      loanRatePerYear: Math.max(0, num('loanRate', 15)) / 100,
+      turnoverRate: Math.max(0, num('turnoverRate', 12)) / 100,
+      ticketCyclesPerExpat: Math.max(0, num('ticketCycles', 0.5)),
+      erpPostingsPerYear: Math.max(0, num('erpPostings', 12)),
       staffCostMonthly: Math.max(0, num('staffCost', 12000)),
       productiveHours: num('productiveHours', 160),
       realization: num('realization', 80) / 100
@@ -277,7 +330,13 @@
       recruitment: $('feat-recruitment').checked,
       payroll: $('feat-payroll').checked,
       iqama: $('feat-iqama').checked,
-      letters: $('feat-letters').checked
+      letters: $('feat-letters').checked,
+      attendance: $('feat-attendance').checked,
+      performance: $('feat-performance').checked,
+      loans: $('feat-loans').checked,
+      eosb: $('feat-eosb').checked,
+      airtickets: $('feat-airtickets').checked,
+      erp: $('feat-erp').checked
     };
     return {
       employees: employees,
@@ -298,7 +357,8 @@
   }
 
   function barColor(i) {
-    var c = ['#5980a6', '#6e9f88', '#b08968', '#8c7aa6'];
+    var c = ['#5980a6', '#6e9f88', '#b08968', '#8c7aa6', '#4f8a9e', '#a37d52',
+             '#7b9a6d', '#9a6b8e', '#5e7fae', '#88795f'];
     return c[i % c.length];
   }
 
@@ -313,7 +373,8 @@
     $('r-value-month').textContent = money(res.totalValueMonth);
 
     // Feature breakdown + chart.
-    var order = ['recruitment', 'payroll', 'iqama', 'letters'];
+    var order = ['recruitment', 'payroll', 'iqama', 'letters', 'attendance',
+      'performance', 'loans', 'eosb', 'airtickets', 'erp'];
     var maxVal = 0;
     order.forEach(function (k) { if (res.groups[k].enabled) maxVal = Math.max(maxVal, res.groups[k].valueYear); });
     var rows = '', bars = '', i = 0;
