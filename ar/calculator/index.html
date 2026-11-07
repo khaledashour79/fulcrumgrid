@@ -177,7 +177,7 @@
                   </tbody>
                 </table>
                 <div class="field"><label for="interviewsPerHire">المقابلات الأولية لكل تعيين</label><input id="interviewsPerHire" data-persist class="mini" type="number" min="0" step="1" value="12" /></div>
-                <div class="field"><label for="staffCost">التكلفة الكاملة للموظف <span class="unit">· ريال / شهر</span></label><input id="staffCost" data-persist type="number" min="0" step="100" value="12000" /></div>
+                <div class="field"><label for="staffCost">التكلفة الكاملة للموظف <span class="unit money-unit" data-unit="perMonth"></span></label><input id="staffCost" data-persist type="number" min="0" step="100" value="12000" /></div>
                 <div class="field"><label for="productiveHours">ساعات العمل المنتجة <span class="unit">· شهريًا</span></label><input id="productiveHours" data-persist class="mini" type="number" min="1" step="1" value="160" /></div>
                 <div class="field"><label for="realization">معامل التحقّق / التبنّي المتوقّع <span class="unit">· %</span></label><input id="realization" data-persist class="mini" type="number" min="0" max="100" step="1" value="80" /></div>
                 <p class="note">التقديرات الافتراضية هي افتراضات توضيحية للحاسبة، وليست معايير قياسية للقطاع أو نتائج عملاء مؤكّدة: التعيينات السنوية 12% من العدد، و50 طلبًا لكل شاغر، وتجديدات الإقامة 80% من العدد (واحدة لكل موظف وافد سنويًا)، والخطابات الشهرية 20% من العدد.</p>
@@ -188,9 +188,9 @@
               <details>
                 <summary>قارن بتكاليفك (اختياري)</summary>
                 <p class="note">اترك الحقول فارغة لعرض قيمة السعة فقط. أدخِل أرقامك الخاصة لنمذجة صافي الأثر — لا يُعرض شيء حتى تفعل ذلك. لا تخصم ما هو مشمول أصلًا في الاشتراك مرّتين.</p>
-                <div class="field"><label for="subscription">الاشتراك السنوي <span class="unit">· ريال / سنة</span></label><input id="subscription" data-persist type="number" min="0" step="100" placeholder="—" /></div>
-                <div class="field"><label for="addlCosts">تكاليف سنوية إضافية للذكاء الاصطناعي / المقابلات / التكامل <span class="unit">· ريال / سنة</span></label><input id="addlCosts" data-persist type="number" min="0" step="100" placeholder="—" /></div>
-                <div class="field"><label for="implementation">تنفيذ لمرّة واحدة <span class="unit">· ريال</span></label><input id="implementation" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+                <div class="field"><label for="subscription">الاشتراك السنوي <span class="unit money-unit" data-unit="perYear"></span></label><input id="subscription" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+                <div class="field"><label for="addlCosts">تكاليف سنوية إضافية للذكاء الاصطناعي / المقابلات / التكامل <span class="unit money-unit" data-unit="perYear"></span></label><input id="addlCosts" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+                <div class="field"><label for="implementation">تنفيذ لمرّة واحدة <span class="unit money-unit" data-unit="flat"></span></label><input id="implementation" data-persist type="number" min="0" step="100" placeholder="—" /></div>
               </details>
             </div>
           </div>
@@ -198,6 +198,23 @@
           <!-- ============ النتائج ============ -->
           <div class="results" aria-live="polite">
             <div class="calc-card">
+              <div class="cur-bar">
+                <label for="currency">العملة</label>
+                <select id="currency" data-persist aria-label="عملة العرض">
+                  <option value="SAR">SAR</option>
+                  <option value="AED">AED</option>
+                  <option value="QAR">QAR</option>
+                  <option value="KWD">KWD</option>
+                  <option value="BHD">BHD</option>
+                  <option value="OMR">OMR</option>
+                  <option value="JOD">JOD</option>
+                  <option value="EGP">EGP</option>
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                </select>
+                <span class="cur-note">محوَّلة بأسعار صرف إرشادية ثابتة للعرض فقط.</span>
+              </div>
               <div class="results-head">
                 <div class="stat"><span class="k">ساعات مُحرَّرة / شهر</span><span class="v num-anim ltr-num" id="r-hours-month">—</span></div>
                 <div class="stat"><span class="k">ساعات مُحرَّرة / سنة</span><span class="v num-anim ltr-num" id="r-hours-year">—</span></div>
@@ -286,7 +303,7 @@
   </footer>
 
   <script src="/assets/js/consent.js" defer></script>
-  <script src="/assets/js/calculator.js?v=1aa38b83" defer></script>
+  <script src="/assets/js/calculator.js?v=568355e8" defer></script>
 <!-- fg-concierge:start -->
 <div id="fg-concierge" data-fg-concierge hidden></div>
 <script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>

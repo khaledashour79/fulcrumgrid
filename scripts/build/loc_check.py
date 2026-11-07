@@ -33,7 +33,7 @@ ALLOW = {
     'assure', 'close', 'ifrs', 'consolidate', 'vpn', 'desk',
     'crm', 'erp', 'blog', 'faq', 'api', 'saas', 'kpi', 'okr', 'okrs', 'kpis',
     'pto', 'hr', 'sop', 'dso', 'gcc', 'uae', 'uk', 'usa', 'eu', 'sar', 'aed',
-    'qar', 'kwd', 'bhd', 'omr', 'egp', 'jod', 'sar', 'ig', 'ceo', 'cfo',
+    'qar', 'kwd', 'bhd', 'omr', 'egp', 'jod', 'usd', 'eur', 'gbp', 'ig', 'ceo', 'cfo',
     'fulcrumgrid.com', 'hello@fulcrumgrid.com', 'english', 'arabic', 'français',
     'deutsch', 'español', 'italiano', 'nederlands', 'العربية',
     'avenlor consulting', 'avenlor consulting ↗', 'contact@avenlorconsulting.com',

@@ -107,7 +107,6 @@ PAGE = {
             "Employee letter prep &amp; delivery": _t("Prépa &amp; remise des lettres d'employés", "Erstellung &amp; Zustellung von Mitarbeiterschreiben", "Prep. &amp; entrega de cartas de empleados", "Prep. &amp; consegna delle lettere per dipendenti", "Opstellen &amp; bezorgen van werknemersbrieven"),
             "Initial interviews per hire": _t("Entretiens initiaux par recrutement", "Erstinterviews pro Einstellung", "Entrevistas iniciales por contratación", "Colloqui iniziali per assunzione", "Eerste interviews per aanwerving"),
             "Fully loaded staff cost": _t("Coût complet du personnel", "Vollkosten pro Mitarbeiter", "Coste total del personal", "Costo pieno del personale", "Volledig belaste personeelskosten"),
-            "· SAR / month": _t("· SAR / mois", "· SAR / Monat", "· SAR / mes", "· SAR / mese", "· SAR / maand"),
             "Productive staff hours": _t("Heures productives du personnel", "Produktive Arbeitsstunden", "Horas productivas del personal", "Ore produttive del personale", "Productieve personeelsuren"),
             "· per month": _t("· par mois", "· pro Monat", "· al mes", "· al mese", "· per maand"),
             "Expected realization / adoption factor": _t("Facteur de réalisation / adoption attendu", "Erwarteter Realisierungs-/Adoptionsfaktor", "Factor de realización / adopción esperado", "Fattore di realizzazione / adozione previsto", "Verwachte realisatie-/adoptiefactor"),
@@ -127,11 +126,17 @@ PAGE = {
                 "Lascia vuoto per vedere solo il valore di capacità. Inserisci le tue cifre per modellare un beneficio netto — non viene mostrato nulla finché non lo fai. Non dedurre due volte ciò che è già incluso nell'abbonamento.",
                 "Laat leeg om alleen de capaciteitswaarde te zien. Voer uw eigen cijfers in om een netto voordeel te modelleren — er wordt niets getoond totdat u dat doet. Trek niets dubbel af dat al in het abonnement zit."),
             "Annual subscription": _t("Abonnement annuel", "Jahresabonnement", "Suscripción anual", "Abbonamento annuale", "Jaarabonnement"),
-            "· SAR / year": _t("· SAR / an", "· SAR / Jahr", "· SAR / año", "· SAR / anno", "· SAR / jaar"),
             "Additional annual AI / interview / integration costs": _t("Coûts annuels supplémentaires IA / entretiens / intégration", "Zusätzliche jährliche KI- / Interview- / Integrationskosten", "Costes anuales adicionales de IA / entrevistas / integración", "Costi annuali aggiuntivi IA / colloqui / integrazione", "Extra jaarlijkse AI- / interview- / integratiekosten"),
             "One-time implementation": _t("Mise en œuvre unique", "Einmalige Einrichtung", "Implementación única", "Implementazione una tantum", "Eenmalige implementatie"),
 
             # ---- Results ----
+            "Currency": _t("Devise", "Währung", "Moneda", "Valuta", "Valuta"),
+            "Converted at indicative fixed rates for display.": _t(
+                "Converti à des taux fixes indicatifs pour l'affichage.",
+                "Zur Anzeige zu indikativen Festkursen umgerechnet.",
+                "Convertido a tipos fijos indicativos para la visualización.",
+                "Convertito a tassi fissi indicativi per la visualizzazione.",
+                "Omgerekend tegen indicatieve vaste koersen voor weergave."),
             "Hours released / month": _t("Heures libérées / mois", "Freigesetzte Stunden / Monat", "Horas liberadas / mes", "Ore liberate / mese", "Vrijgekomen uren / maand"),
             "Hours released / year": _t("Heures libérées / an", "Freigesetzte Stunden / Jahr", "Horas liberadas / año", "Ore liberate / anno", "Vrijgekomen uren / jaar"),
             "Estimated annual value of staff time": _t("Valeur annuelle estimée du temps du personnel", "Geschätzter Jahreswert der Mitarbeiterzeit", "Valor anual estimado del tiempo del personal", "Valore annuo stimato del tempo del personale", "Geschatte jaarlijkse waarde van personeelstijd"),

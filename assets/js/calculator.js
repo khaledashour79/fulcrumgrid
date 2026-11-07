@@ -193,9 +193,57 @@
 
   var nf0 = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
   var nf1 = new Intl.NumberFormat('en-US', { maximumFractionDigits: 1 });
+
+  // Currency — approximate units per 1 SAR (SAR is USD-pegged at 3.75).
+  // Illustrative fixed rates; the model is SAR-denominated internally.
+  var RATES = { SAR: 1, AED: 0.979, USD: 0.2667, EUR: 0.245, GBP: 0.211, QAR: 0.971, KWD: 0.0819, BHD: 0.1003, OMR: 0.1025, EGP: 12.8, JOD: 0.189 };
+  var CUR = 'SAR';
   function money(v) {
     var n = nf0.format(Math.round(v));
-    return LANG === 'ar' ? (n + ' ' + T.sar) : (T.sar + ' ' + n);
+    return LANG === 'ar' ? (n + ' ' + CUR) : (CUR + ' ' + n);
+  }
+  // Currency-aware unit labels for the monetary inputs (filled by JS so the
+  // code can switch without fragmenting the per-language catalog).
+  var UNIT = {
+    en: { perMonth: '· {c} / month', perYear: '· {c} / year', flat: '· {c}' },
+    ar: { perMonth: '· {c} / شهر', perYear: '· {c} / سنة', flat: '· {c}' },
+    fr: { perMonth: '· {c} / mois', perYear: '· {c} / an', flat: '· {c}' },
+    de: { perMonth: '· {c} / Monat', perYear: '· {c} / Jahr', flat: '· {c}' },
+    es: { perMonth: '· {c} / mes', perYear: '· {c} / año', flat: '· {c}' },
+    it: { perMonth: '· {c} / mese', perYear: '· {c} / anno', flat: '· {c}' },
+    nl: { perMonth: '· {c} / maand', perYear: '· {c} / jaar', flat: '· {c}' }
+  }[LANG];
+  function updateUnitLabels() {
+    Array.prototype.forEach.call(document.querySelectorAll('.money-unit'), function (el) {
+      var t = el.getAttribute('data-unit') || 'flat';
+      el.textContent = (UNIT[t] || UNIT.flat).replace('{c}', CUR);
+    });
+    var sel = document.getElementById('currency'); if (sel) sel.value = CUR;
+  }
+  function roundMoney(n) { return n >= 200 ? Math.round(n / 10) * 10 : Math.round(n); }
+  // Switch currency: convert the monetary input fields and re-render. Hours are
+  // currency-agnostic; only the fully-loaded cost and the optional cost inputs
+  // carry a currency, so converting them re-denominates every output.
+  function setCurrency(code) {
+    if (!RATES[code] || code === CUR) return;
+    var factor = RATES[code] / RATES[CUR];
+    ['staffCost', 'subscription', 'addlCosts', 'implementation'].forEach(function (id) {
+      var el = document.getElementById(id); if (!el) return;
+      var v = el.value.trim(); if (v === '') return;
+      var n = parseFloat(v); if (!isFinite(n)) return;
+      el.value = roundMoney(n * factor);
+    });
+    CUR = code;
+    updateUnitLabels();
+    render();
+  }
+  function detectCurrencyByIP() {
+    try {
+      fetch('https://ipapi.co/json/', { mode: 'cors' })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (d) { if (d && d.currency && RATES[d.currency]) setCurrency(d.currency); })
+        .catch(function () { /* geolocation unavailable — stay on SAR */ });
+    } catch (e) { /* ignore */ }
   }
   function $(id) { return document.getElementById(id); }
   function num(id, dflt) {
@@ -389,6 +437,17 @@
   function init() {
     restoreState();
     markEstimated();
+    // Currency: adopt the saved currency if any (the stored field values were
+    // already written in that currency, so no conversion on restore). On a
+    // first visit, keep SAR and try IP geolocation once (below).
+    var savedCur = null;
+    try {
+      var raw = localStorage.getItem(STORE);
+      if (raw) { var d = JSON.parse(raw); if (d && d.currency && RATES[d.currency]) savedCur = d.currency; }
+    } catch (e) { /* ignore */ }
+    if (savedCur) CUR = savedCur;
+    updateUnitLabels();
+
     document.querySelectorAll('[data-estimate]').forEach(function (btn) {
       btn.addEventListener('click', function () { applyEstimate(btn.getAttribute('data-estimate')); });
     });
@@ -398,10 +457,14 @@
       if (el) el.addEventListener('input', function () { if (estimated[k]) { estimated[k] = false; markEstimated(); } });
     });
     document.querySelectorAll('[data-persist]').forEach(function (el) {
+      if (el.id === 'currency') return;   // the currency selector converts, below
       el.addEventListener('input', render);
       el.addEventListener('change', render);
     });
+    var curSel = $('currency');
+    if (curSel) curSel.addEventListener('change', function () { setCurrency(curSel.value); });
     render();
+    if (!savedCur) detectCurrencyByIP();
   }
 
   document.addEventListener('DOMContentLoaded', init);

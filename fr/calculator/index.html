@@ -184,7 +184,7 @@
                   </tbody>
                 </table>
                 <div class="field"><label for="interviewsPerHire">Entretiens initiaux par recrutement</label><input id="interviewsPerHire" data-persist class="mini" type="number" min="0" step="1" value="12" /></div>
-                <div class="field"><label for="staffCost">Coût complet du personnel <span class="unit">· SAR / mois</span></label><input id="staffCost" data-persist type="number" min="0" step="100" value="12000" /></div>
+                <div class="field"><label for="staffCost">Coût complet du personnel <span class="unit money-unit" data-unit="perMonth"></span></label><input id="staffCost" data-persist type="number" min="0" step="100" value="12000" /></div>
                 <div class="field"><label for="productiveHours">Heures productives du personnel <span class="unit">· par mois</span></label><input id="productiveHours" data-persist class="mini" type="number" min="1" step="1" value="160" /></div>
                 <div class="field"><label for="realization">Facteur de réalisation / adoption attendu <span class="unit">· %</span></label><input id="realization" data-persist class="mini" type="number" min="0" max="100" step="1" value="80" /></div>
                 <p class="note">Les estimations par défaut sont des hypothèses illustratives du calculateur, pas des références sectorielles ni des résultats clients vérifiés : recrutements annuels 12 % de l'effectif, 50 candidatures par poste, renouvellements d'iqama 80 % de l'effectif (un par employé expatrié et par an), lettres mensuelles 20 % de l'effectif.</p>
@@ -195,9 +195,9 @@
               <details>
                 <summary>Comparer à vos coûts (facultatif)</summary>
                 <p class="note">Laissez vide pour ne voir que la valeur de capacité. Saisissez vos propres chiffres pour modéliser un bénéfice net — rien ne s'affiche tant que vous ne le faites pas. Ne déduisez pas deux fois ce qui est déjà inclus dans l'abonnement.</p>
-                <div class="field"><label for="subscription">Abonnement annuel <span class="unit">· SAR / an</span></label><input id="subscription" data-persist type="number" min="0" step="100" placeholder="—" /></div>
-                <div class="field"><label for="addlCosts">Coûts annuels supplémentaires IA / entretiens / intégration <span class="unit">· SAR / an</span></label><input id="addlCosts" data-persist type="number" min="0" step="100" placeholder="—" /></div>
-                <div class="field"><label for="implementation">Mise en œuvre unique <span class="unit">· SAR</span></label><input id="implementation" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+                <div class="field"><label for="subscription">Abonnement annuel <span class="unit money-unit" data-unit="perYear"></span></label><input id="subscription" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+                <div class="field"><label for="addlCosts">Coûts annuels supplémentaires IA / entretiens / intégration <span class="unit money-unit" data-unit="perYear"></span></label><input id="addlCosts" data-persist type="number" min="0" step="100" placeholder="—" /></div>
+                <div class="field"><label for="implementation">Mise en œuvre unique <span class="unit money-unit" data-unit="flat"></span></label><input id="implementation" data-persist type="number" min="0" step="100" placeholder="—" /></div>
               </details>
             </div>
           </div>
@@ -205,6 +205,23 @@
           <!-- ============ RIGHT: results ============ -->
           <div class="results" aria-live="polite">
             <div class="calc-card">
+              <div class="cur-bar">
+                <label for="currency">Devise</label>
+                <select id="currency" data-persist aria-label="Display currency">
+                  <option value="SAR">SAR</option>
+                  <option value="AED">AED</option>
+                  <option value="QAR">QAR</option>
+                  <option value="KWD">KWD</option>
+                  <option value="BHD">BHD</option>
+                  <option value="OMR">OMR</option>
+                  <option value="JOD">JOD</option>
+                  <option value="EGP">EGP</option>
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                </select>
+                <span class="cur-note">Converti à des taux fixes indicatifs pour l'affichage.</span>
+              </div>
               <div class="results-head">
                 <div class="stat"><span class="k">Heures libérées / mois</span><span class="v num-anim ltr-num" id="r-hours-month">—</span></div>
                 <div class="stat"><span class="k">Heures libérées / an</span><span class="v num-anim ltr-num" id="r-hours-year">—</span></div>
@@ -293,7 +310,7 @@
   </footer>
 
   <script src="/assets/js/consent.js" defer></script>
-  <script src="/assets/js/calculator.js?v=1aa38b83" defer></script>
+  <script src="/assets/js/calculator.js?v=568355e8" defer></script>
 <!-- fg-concierge:start -->
 <div id="fg-concierge" data-fg-concierge hidden></div>
 <script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar']};</script>
