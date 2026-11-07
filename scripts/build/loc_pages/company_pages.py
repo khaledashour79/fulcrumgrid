@@ -210,6 +210,8 @@ PAGE = {
                 '>Niet zeker — beveel er een aan</option>'),
             'Your name': _t('Votre nom', 'Ihr Name', 'Su nombre', 'Il tuo nome', 'Uw naam'),
             'Work email': _t('E-mail professionnel', 'Geschäftliche E-Mail', 'Correo de trabajo', 'E-mail di lavoro', 'Zakelijk e-mailadres'),
+            'Phone': _t('Téléphone', 'Telefon', 'Teléfono', 'Telefono', 'Telefoon'),
+            '(optional)': _t('(facultatif)', '(optional)', '(opcional)', '(facoltativo)', '(optioneel)'),
             'Or email us at': _t('Ou écrivez-nous à', 'Oder schreiben Sie uns an', 'O escríbanos a', 'Oppure scrivici a', 'Of mail ons op'),
         },
     },

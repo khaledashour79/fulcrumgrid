@@ -69,6 +69,11 @@
     .input:focus { outline: 2px solid var(--color-accent); outline-offset: 1px; border-color: var(--color-accent); }
     .input.invalid { border-color: #b3261e; }
     select.input { appearance: none; -webkit-appearance: none; }
+    .phone-row { display: flex; gap: 8px; }
+    .phone-row .dialcode { width: auto; flex: 0 0 auto; max-width: 42%; }
+    .phone-row input[type="tel"] { flex: 1 1 auto; min-width: 0; }
+    label .opt { font-weight: 400; letter-spacing: 0.08em; text-transform: none;
+      color: color-mix(in srgb, var(--color-text) 45%, transparent); }
     .form-note { font-size: 13px; margin: 6px 0 0; min-height: 1.2em;
       color: color-mix(in srgb, var(--color-text) 62%, transparent); }
     .form-note.error { color: #b3261e; }
@@ -159,6 +164,13 @@
               <label for="email">Geschäftliche E-Mail</label>
               <input type="email" id="email" name="email" class="input" placeholder="Geschäftliche E-Mail" autocomplete="email" required />
             </div>
+            <div class="field">
+              <label for="phone">Telefon <span class="opt">(optional)</span></label>
+              <div class="phone-row">
+                <select id="dialcode" name="dialcode" class="input dialcode" aria-label="Country dialing code"></select>
+                <input type="tel" id="phone" name="phone" class="input" placeholder="50 123 4567" autocomplete="tel-national" inputmode="tel" />
+              </div>
+            </div>
             <button type="submit" class="btn btn-primary">Demo anfragen</button>
             <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
           </form>
@@ -221,7 +233,54 @@
     var note = document.getElementById('form-note');
     var nameInput = document.getElementById('name');
     var emailInput = document.getElementById('email');
+    var phoneInput = document.getElementById('phone');
+    var dialSelect = document.getElementById('dialcode');
     var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // --- Telefon country dialing codes --------------------------------------
+    // ISO-2 + dialing code; the flag glyph is derived from the ISO code, so the
+    // long list is JS-built and needs no per-language translation. The dialing
+    // code is preselected from the visitor's IP country (ipapi.co), defaulting
+    // to Saudi Arabia.
+    var DIAL = [
+      ['SA','966'],['AE','971'],['QA','974'],['KW','965'],['BH','973'],['OM','968'],
+      ['EG','20'],['JO','962'],['LB','961'],['IQ','964'],['PS','970'],['YE','967'],
+      ['SD','249'],['MA','212'],['DZ','213'],['TN','216'],['LY','218'],
+      ['GB','44'],['FR','33'],['DE','49'],['ES','34'],['IT','39'],['NL','31'],
+      ['BE','32'],['CH','41'],['AT','43'],['SE','46'],['IE','353'],['PT','351'],
+      ['PL','48'],['TR','90'],
+      ['US','1'],['CA','1'],['BR','55'],['MX','52'],
+      ['IN','91'],['PK','92'],['BD','880'],['PH','63'],['ID','62'],['MY','60'],
+      ['SG','65'],['CN','86'],['JP','81'],['KR','82'],['AU','61'],['NZ','64'],
+      ['NG','234'],['KE','254'],['ZA','27']
+    ];
+    function flagOf(iso) {
+      try {
+        return iso.toUpperCase().replace(/./g, function (ch) {
+          return String.fromCodePoint(0x1F1E6 + ch.charCodeAt(0) - 65);
+        });
+      } catch (e) { return ''; }
+    }
+    function selectIso(iso) {
+      if (!dialSelect) return;
+      var opt = dialSelect.querySelector('option[data-iso="' + iso + '"]');
+      if (opt) opt.selected = true;
+    }
+    if (dialSelect) {
+      var optsHtml = '';
+      DIAL.forEach(function (c) {
+        optsHtml += '<option value="+' + c[1] + '" data-iso="' + c[0] + '">' +
+          flagOf(c[0]) + ' ' + c[0] + ' +' + c[1] + '</option>';
+      });
+      dialSelect.innerHTML = optsHtml;
+      selectIso('SA'); // default
+      try {
+        fetch('https://ipapi.co/json/', { mode: 'cors' })
+          .then(function (r) { return r.ok ? r.json() : null; })
+          .then(function (d) { if (d && d.country_code) selectIso(d.country_code); })
+          .catch(function () { /* geolocation unavailable — keep default */ });
+      } catch (e) { /* ignore */ }
+    }
 
     var isAr = (document.documentElement.lang || '').toLowerCase().indexOf('ar') === 0;
     var t = isAr ? {
@@ -231,8 +290,9 @@
       fallback: 'تعذّر الإرسال تلقائيًا — يتم فتح تطبيق البريد كخيار بديل…',
       subject: 'طلب عرض توضيحي — FulcrumGrid',
       productLabel: 'التطبيق المطلوب',
-      body: function (name, email, product) {
+      body: function (name, email, product, phone) {
         return 'الاسم: ' + name + '\nالبريد: ' + email +
+               (phone ? '\nالهاتف: ' + phone : '') +
                (product ? '\nالتطبيق المطلوب: ' + product : '') +
                '\n\nأودّ مشاهدة عرض توضيحي لـ FulcrumGrid.';
       }
@@ -243,8 +303,9 @@
       fallback: 'Couldn\'t send automatically — opening your email app as a fallback…',
       subject: 'Demo request — FulcrumGrid',
       productLabel: 'Interested in',
-      body: function (name, email, product) {
+      body: function (name, email, product, phone) {
         return 'Name: ' + name + '\nEmail: ' + email +
+               (phone ? '\nTelefon: ' + phone : '') +
                (product ? '\nInterested in: ' + product : '') +
                '\n\nI\'d like to see a demo of FulcrumGrid.';
       }
@@ -262,6 +323,9 @@
       var email = emailInput.value.trim();
       var productInput = document.getElementById('product');
       var product = productInput ? productInput.value.trim() : '';
+      var phoneLocal = phoneInput ? phoneInput.value.trim() : '';
+      var dial = dialSelect ? dialSelect.value : '';
+      var phone = phoneLocal ? ((dial ? dial + ' ' : '') + phoneLocal) : '';
       var ok = true;
 
       nameInput.classList.remove('invalid');
@@ -284,7 +348,7 @@
       var mailtoFallback = function () {
         setNote(t.fallback, false);
         var subject = encodeURIComponent(subjectLine);
-        var body = encodeURIComponent(t.body(name, email, product));
+        var body = encodeURIComponent(t.body(name, email, product, phone));
         window.location.href = 'mailto:contact@avenlorconsulting.com?subject=' + subject + '&body=' + body;
       };
 
@@ -298,9 +362,10 @@
           from_name: 'FulcrumGrid website',
           name: name,
           email: email,
+          phone: phone || 'Not provided',
           replyto: email,
           botcheck: false,
-          message: t.body(name, email, product)
+          message: t.body(name, email, product, phone)
         })
       })
         .then(function (r) { return r.json(); })
