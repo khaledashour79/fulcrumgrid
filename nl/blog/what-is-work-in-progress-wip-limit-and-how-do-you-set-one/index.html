@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wat is een WIP-limiet en hoe stel je er een in voor je team? — FulcrumGrid</title>
+  <meta name="description" content="Een WIP-limiet bepaalt hoeveel werk je team tegelijk onderhanden heeft. Leer de wet van Little in gewone taal, een startgetal kiezen en uitzonderingen." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wat is een WIP-limiet en hoe stel je er een in voor je team?" />
+  <meta property="og:description" content="Een WIP-limiet bepaalt hoeveel werk je team tegelijk onderhanden heeft. Leer de wet van Little in gewone taal, een startgetal kiezen en uitzonderingen." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-11-08" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wat is een WIP-limiet en hoe stel je er een in voor je team?" />
+  <meta name="twitter:description" content="Een WIP-limiet bepaalt hoeveel werk je team tegelijk onderhanden heeft. Leer de wet van Little in gewone taal, een startgetal kiezen en uitzonderingen." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wat is een WIP-limiet en hoe stel je er een in voor je team?",
+    "description": "Een WIP-limiet bepaalt hoeveel werk je team tegelijk onderhanden heeft. Leer de wet van Little in gewone taal, een startgetal kiezen en uitzonderingen.",
+    "datePublished": "2026-11-08",
+    "dateModified": "2026-11-08",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Gids WIP-limiet",
+        "item": "https://fulcrumgrid.com/nl/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Waar staat WIP voor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "WIP staat voor work in progress, oftewel onderhanden werk: elke taak die is begonnen maar nog niet af is."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welke WIP-limiet past bij een klein team?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een gangbare start is ongeveer één item per persoon, of iets minder dan het aantal nu open items. Probeer het een paar weken en stel bij."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vertraagt een WIP-limiet het team?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Meestal juist niet. Doordat minder items om aandacht strijden, is elk item eerder klaar, ook al beginnen er minder tegelijk."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat doen we als de limiet bereikt is?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Stop met nieuw werk beginnen en help iets dat al openstaat af te maken of los te trekken. Is er echt spoed, gebruik dan de afgesproken spoedbaan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe weet ik of de limiet te laag is?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Als mensen stilzitten omdat niets begonnen mag worden, of items alleen wachten omdat de limiet vol is, verhoog je hem met één en kijk je wat er gebeurt."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / Gids WIP-limiet</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Wat is een WIP-limiet en hoe stel je er een in voor je team?</h1>
+        <p class="hero-intro">Een WIP-limiet bepaalt hoeveel werk je team tegelijk onderhanden heeft. Leer de wet van Little in gewone taal, een startgetal kiezen en uitzonderingen.</p>
+        <p class="mono"><time datetime="2026-11-08">8 november 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Vraag een druk team hoeveel werk het doet en het eerlijke antwoord is vaak: &quot;veel, allemaal tegelijk.&quot; Alles is begonnen, weinig is af en elk verzoek voelt te laat. Een limiet op onderhanden werk, kortweg WIP-limiet, is een van de eenvoudigste manieren om dat te veranderen. Deze gids legt uit wat het is, welk idee erachter zit en hoe je een verstandig eerste getal kiest.</p><h2>Wat is een WIP-limiet?</h2><p>Work in progress (WIP), oftewel onderhanden werk, is al het werk dat is begonnen maar nog niet af is. Een WIP-limiet is een afgesproken maximum aan items die tegelijk open mogen staan, voor het hele team of voor één fase zoals <strong>Bezig</strong> of <strong>In review</strong>.</p><p>Als de limiet bereikt is, begint niemand iets nieuws. In plaats daarvan help je af te maken wat al openstaat. De regel is bewust eenvoudig, omdat hij gedrag moet veranderen en geen extra papierwerk moet opleveren. Gebruik je al een bord, dan leggen we in onze gids over het <strong>Kanban-bord</strong> uit hoe je dat inricht. Hier gaat het alleen om de limiet zelf.</p><h2>Wat zegt de wet van Little in gewone taal?</h2><p>De wet van Little beschrijft het verband tussen drie dingen: hoeveel items onderhanden zijn, hoe snel items klaar komen en hoe lang elk item duurt van begin tot eind. In gewone taal:</p><ul><li>Hoe meer items je tegelijk open hebt, hoe langer elk item duurt.</li><li>Hoe sneller je dingen afrondt, hoe korter de wachttijd.</li><li>Blijft je afrondtempo ongeveer gelijk, dan kun je de wachttijd alleen verkorten door minder items open te hebben.</li></ul><p>Een voorbeeld met verzonnen getallen: een team rondt ongeveer zes items per week af. Met achttien open items duurt een gemiddeld item zo'n drie weken. Met zes open items zou hetzelfde team, in hetzelfde tempo, ongeveer een week nodig hebben. In het tweede geval werkte niemand harder. Er was simpelweg minder wachten in wachtrijen en minder half afgeronde taken die om aandacht strijden.</p><p>Dat is het hele argument voor een WIP-limiet. Meer beginnen betekent niet meer afronden. Meestal wordt alles trager en komen de kosten van het wisselen tussen taken erbij.</p><h2>Hoe kies je een startgetal?</h2><p>Er is geen perfect getal en dat heb je ook niet nodig. Je hebt een redelijke eerste schatting nodig die je kunt bijstellen. Drie uitgangspunten werken goed:</p><ul><li><strong>Tel wat er vandaag openstaat.</strong> Zet de limiet iets lager. Dat voelt krap, maar niet pijnlijk.</li><li><strong>Eén item per persoon.</strong> Voor een fase die door individuen wordt uitgevoerd, is een limiet gelijk aan het aantal mensen (soms plus één voor flexibiliteit) een gangbare start.</li><li><strong>Duo's en reviews tellen ook mee.</strong> Als twee mensen aan één item werken, telt het één keer, maar geef review- en wachtfases hun eigen limiet.</li></ul><p>Zet het getal waar iedereen het ziet, spreek af het twee tot vier weken te proberen en evalueer dan. Een limiet die je nooit herziet, is net zo willekeurig als helemaal geen limiet.</p><h2>Hoe ga je om met uitzonderingen?</h2><p>Echt werk is rommelig, dus een limiet zonder uitzonderingen wordt in week twee genegeerd. Bepaal uitzonderingen vooraf in plaats van er op het moment zelf over te discussiëren.</p><h3>Dringend werk</h3><p>Sta één duidelijk gemarkeerde spoedbaan toe met een eigen kleine limiet, vaak maar één item. Komt er iets dringends binnen, dan wisselt het team het in en bepaalt bewust wat stilligt. Noteer elk geval, want te veel spoedwerk is een planningsprobleem, geen limietprobleem.</p><h3>Geblokkeerd werk</h3><p>Een item dat wacht op een klant of een andere afdeling neemt nog steeds een plek in. Dat is een kenmerk, geen fout: het maakt de prijs van wachten zichtbaar. Pak eerst de blokkade aan en duurt die lang, verplaats het item dan naar een aparte kolom Wachten met een eigen limiet.</p><h3>Kleine routinetaken</h3><p>Klusjes van een paar minuten hebben geen kaart nodig. Houd ze buiten de telling, maar als ze de dag gaan opeten, is dat een signaal om naar de werkdruk zelf te kijken.</p><h2>Waaraan merk je dat het werkt?</h2><ul><li>Items gaan sneller van start naar finish en minder items blijven dagenlang liggen.</li><li>Mensen vragen &quot;wat kan ik helpen afmaken?&quot; voordat ze vragen &quot;wat kan ik beginnen?&quot;</li><li>Problemen komen eerder aan het licht, omdat een volle fase een gesprek over de blokkade afdwingt.</li><li>Oplevering wordt voorspelbaarder, zodat een datum noemen minder voelt als gokken.</li><li>Het team is rustiger, met minder wisselen van context gedurende de dag.</li></ul><p>Zie je na een maand niets hiervan, controleer dan de basis. Misschien is de limiet te hoog om te bijten, slokken uitzonderingen hem op, of komt er sneller werk binnen dan er ooit uit kan. In dat laatste geval ligt de oplossing eerder in de keten: nee zeggen, uitstellen of herprioriteren.</p><h2>Een korte routine om eerlijk te blijven</h2><p>Kijk één keer per week wat er openstaat, welke items het langst open zijn en of de limiet is overschreden. Stel stap voor stap bij, omhoog of omlaag, en noteer waarom. Een tool die taken, eigenaren en status samen toont, maakt deze check snel, maar een whiteboard werkt net zo goed als iedereen het echt gebruikt.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Waar staat WIP voor?</summary><p>WIP staat voor work in progress, oftewel onderhanden werk: elke taak die is begonnen maar nog niet af is.</p></details>
+        <details class="faq-item"><summary>Welke WIP-limiet past bij een klein team?</summary><p>Een gangbare start is ongeveer één item per persoon, of iets minder dan het aantal nu open items. Probeer het een paar weken en stel bij.</p></details>
+        <details class="faq-item"><summary>Vertraagt een WIP-limiet het team?</summary><p>Meestal juist niet. Doordat minder items om aandacht strijden, is elk item eerder klaar, ook al beginnen er minder tegelijk.</p></details>
+        <details class="faq-item"><summary>Wat doen we als de limiet bereikt is?</summary><p>Stop met nieuw werk beginnen en help iets dat al openstaat af te maken of los te trekken. Is er echt spoed, gebruik dan de afgesproken spoedbaan.</p></details>
+        <details class="faq-item"><summary>Hoe weet ik of de limiet te laag is?</summary><p>Als mensen stilzitten omdat niets begonnen mag worden, of items alleen wachten omdat de limiet vol is, verhoog je hem met één en kijk je wat er gebeurt.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Zie open werk en werkdruk op één plek</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center toont taken, eigenaren en status samen, zodat je ziet wanneer er te veel onderhanden is en je limiet kunt bijstellen.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/products/tms/">TMS</a>
+          <a href="/nl/products/assure/">Assure</a>
+          <a href="/nl/products/close/">Close</a>
+          <a href="/nl/products/consolidate/">Consolidate</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

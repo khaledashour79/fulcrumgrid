@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Was ist ein WIP-Limit und wie legen Sie eines für Ihr Team fest? — FulcrumGrid</title>
+  <meta name="description" content="Ein WIP-Limit begrenzt, wie viel Arbeit Ihr Team gleichzeitig bearbeitet. Das Little'sche Gesetz einfach erklärt, dazu Startzahl und Umgang mit Ausnahmen." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Was ist ein WIP-Limit und wie legen Sie eines für Ihr Team fest?" />
+  <meta property="og:description" content="Ein WIP-Limit begrenzt, wie viel Arbeit Ihr Team gleichzeitig bearbeitet. Das Little'sche Gesetz einfach erklärt, dazu Startzahl und Umgang mit Ausnahmen." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-08" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Was ist ein WIP-Limit und wie legen Sie eines für Ihr Team fest?" />
+  <meta name="twitter:description" content="Ein WIP-Limit begrenzt, wie viel Arbeit Ihr Team gleichzeitig bearbeitet. Das Little'sche Gesetz einfach erklärt, dazu Startzahl und Umgang mit Ausnahmen." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Was ist ein WIP-Limit und wie legen Sie eines für Ihr Team fest?",
+    "description": "Ein WIP-Limit begrenzt, wie viel Arbeit Ihr Team gleichzeitig bearbeitet. Das Little'sche Gesetz einfach erklärt, dazu Startzahl und Umgang mit Ausnahmen.",
+    "datePublished": "2026-11-08",
+    "dateModified": "2026-11-08",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "WIP-Limit Ratgeber",
+        "item": "https://fulcrumgrid.com/de/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wofür steht WIP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "WIP steht für Work in Progress, also laufende Arbeit: jede Aufgabe, die begonnen, aber noch nicht abgeschlossen ist."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welches WIP-Limit passt zu einem kleinen Team?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ein üblicher Start ist etwa eine Aufgabe pro Person oder etwas weniger als die aktuell offenen Aufgaben. Einige Wochen testen, dann anpassen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bremst ein WIP-Limit das Team?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Meist ist es umgekehrt. Weil weniger Aufgaben um Aufmerksamkeit konkurrieren, wird jede früher fertig, obwohl weniger gleichzeitig starten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was tun, wenn das Limit erreicht ist?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Keine neue Arbeit beginnen, sondern helfen, Offenes abzuschließen oder zu entblocken. Bei echter Dringlichkeit nutzen Sie die vereinbarte Eilspur."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Woran erkennt man ein zu niedriges Limit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wenn Leute untätig sind, weil nichts begonnen werden darf, oder Aufgaben nur warten, weil das Limit voll ist, erhöhen Sie es um eins und beobachten die Wirkung."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / WIP-Limit Ratgeber</p>
+        <span class="tag tag-accent">Betrieb</span>
+        <h1>Was ist ein WIP-Limit und wie legen Sie eines für Ihr Team fest?</h1>
+        <p class="hero-intro">Ein WIP-Limit begrenzt, wie viel Arbeit Ihr Team gleichzeitig bearbeitet. Das Little'sche Gesetz einfach erklärt, dazu Startzahl und Umgang mit Ausnahmen.</p>
+        <p class="mono"><time datetime="2026-11-08">8. November 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Fragt man ein ausgelastetes Team, wie viel es gerade bearbeitet, lautet die ehrliche Antwort oft: „viel, und alles gleichzeitig“. Vieles ist angefangen, wenig ist fertig, und jede Anfrage fühlt sich verspätet an. Ein Limit für laufende Arbeit, kurz WIP-Limit, ist eine der einfachsten Möglichkeiten, das zu ändern. Dieser Leitfaden erklärt, was es ist, warum es wirkt und wie Sie eine sinnvolle erste Zahl festlegen.</p><h2>Was ist ein WIP-Limit?</h2><p>Work in Progress (WIP) ist jede Arbeit, die begonnen, aber noch nicht abgeschlossen ist. Ein WIP-Limit ist ein vereinbartes Maximum dafür, wie viele dieser Aufgaben gleichzeitig offen sein dürfen, entweder für das ganze Team oder für eine einzelne Phase wie <strong>In Arbeit</strong> oder <strong>In Prüfung</strong>.</p><p>Ist das Limit erreicht, beginnt niemand etwas Neues. Stattdessen hilft man, Offenes abzuschließen. Die Regel ist bewusst schlicht, denn sie soll Verhalten verändern, nicht Bürokratie schaffen. Wenn Sie bereits ein Board nutzen, erklärt unser Ratgeber zum <strong>Kanban-Board</strong> den Aufbau. Hier geht es nur um das Limit selbst.</p><h2>Was besagt das Little'sche Gesetz in einfachen Worten?</h2><p>Das Little'sche Gesetz beschreibt den Zusammenhang zwischen drei Größen: wie viele Aufgaben in Arbeit sind, wie schnell Aufgaben fertig werden und wie lange jede Aufgabe von Anfang bis Ende braucht. In einfachen Worten:</p><ul><li>Je mehr Aufgaben gleichzeitig offen sind, desto länger dauert jede einzelne.</li><li>Je schneller Sie abschließen, desto kürzer die Wartezeit.</li><li>Bleibt Ihr Abschlusstempo ungefähr gleich, verkürzen Sie die Wartezeit nur, indem weniger Aufgaben offen sind.</li></ul><p>Ein Beispiel mit erfundenen Zahlen: Ein Team schließt etwa sechs Aufgaben pro Woche ab. Bei achtzehn offenen Aufgaben braucht eine typische Aufgabe etwa drei Wochen. Bei sechs offenen Aufgaben bräuchte dasselbe Team im selben Tempo etwa eine Woche. Im zweiten Fall hat niemand härter gearbeitet. Es gab schlicht weniger Warteschlangen und weniger halb fertige Aufgaben, die um Aufmerksamkeit konkurrieren.</p><p>Das ist das ganze Argument für ein WIP-Limit. Mehr anzufangen bedeutet nicht, mehr fertigzustellen. Meist wird alles langsamer, und es kommen die Kosten des ständigen Wechselns zwischen Aufgaben hinzu.</p><h2>Wie wählen Sie eine Startzahl?</h2><p>Es gibt keine perfekte Zahl, und Sie brauchen auch keine. Sie brauchen eine vernünftige erste Schätzung, die Sie anpassen können. Drei Ausgangspunkte bewähren sich:</p><ul><li><strong>Zählen Sie, was heute offen ist.</strong> Setzen Sie das Limit etwas darunter. Das fühlt sich knapp an, ist aber nicht schmerzhaft.</li><li><strong>Eine Aufgabe pro Person.</strong> Für eine Phase, die von Einzelpersonen bearbeitet wird, ist ein Limit in Höhe der Personenzahl (manchmal plus eins für Flexibilität) ein üblicher Start.</li><li><strong>Zweierteams und Prüfungen zählen auch.</strong> Arbeiten zwei Personen an einer Aufgabe, zählt sie einmal. Prüf- und Wartephasen sollten aber eigene Limits haben.</li></ul><p>Schreiben Sie die Zahl dorthin, wo alle sie sehen, vereinbaren Sie einen Test von zwei bis vier Wochen und prüfen Sie dann. Ein Limit, das nie überprüft wird, ist so willkürlich wie gar keines.</p><h2>Wie gehen Sie mit Ausnahmen um?</h2><p>Echte Arbeit ist unordentlich, ein Limit ohne Ausnahmen wird spätestens in Woche zwei ignoriert. Legen Sie Ausnahmen vorab fest, statt im Moment darüber zu streiten.</p><h3>Dringende Arbeit</h3><p>Erlauben Sie eine klar gekennzeichnete Eilspur mit eigenem kleinem Limit, oft nur eine Aufgabe. Kommt etwas Dringendes, tauscht das Team es ein und entscheidet bewusst, was pausiert. Halten Sie jeden Fall fest, denn zu viele Eilaufgaben sind ein Planungs-, kein Limitproblem.</p><h3>Blockierte Arbeit</h3><p>Eine Aufgabe, die auf einen Kunden oder eine andere Abteilung wartet, belegt weiterhin einen Platz. Das ist gewollt: So wird der Preis des Wartens sichtbar. Klären Sie zuerst die Blockade. Dauert sie lange, verschieben Sie die Aufgabe in eine eigene Spalte „Wartet“ mit eigenem Limit.</p><h3>Kleine Routineaufgaben</h3><p>Kurze Erledigungen von wenigen Minuten brauchen keine Karte. Lassen Sie sie aus der Zählung, aber wenn sie den Tag auffressen, ist das ein Signal, die Arbeitslast selbst zu prüfen.</p><h2>Woran erkennen Sie, dass es funktioniert?</h2><ul><li>Aufgaben gehen schneller vom Start bis zum Ende, und weniger liegen tagelang unberührt.</li><li>Die Leute fragen „Was kann ich abschließen helfen?“, bevor sie fragen „Was kann ich anfangen?“.</li><li>Probleme zeigen sich früher, weil eine volle Phase ein Gespräch über die Blockade erzwingt.</li><li>Lieferungen werden vorhersehbarer, und ein Termin fühlt sich weniger wie eine Vermutung an.</li><li>Das Team ist ruhiger, mit weniger Kontextwechseln im Tagesverlauf.</li></ul><p>Zeigt sich nach einem Monat nichts davon, prüfen Sie die Grundlagen. Vielleicht ist das Limit zu hoch, um zu greifen, Ausnahmen höhlen es aus, oder Arbeit kommt schneller herein, als sie je hinausgehen kann. Im letzten Fall liegt die Lösung vorgelagert: Nein sagen, verschieben oder neu priorisieren.</p><h2>Eine kurze Routine, um ehrlich zu bleiben</h2><p>Schauen Sie einmal pro Woche, was offen ist, welche Aufgaben am längsten offen sind und ob das Limit überschritten wurde. Passen Sie schrittweise an, nach oben oder unten, und notieren Sie den Grund. Ein Werkzeug, das Aufgaben, Verantwortliche und Status zusammen zeigt, macht diese Prüfung schnell, aber ein Whiteboard genügt ebenso, wenn es wirklich genutzt wird.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Wofür steht WIP?</summary><p>WIP steht für Work in Progress, also laufende Arbeit: jede Aufgabe, die begonnen, aber noch nicht abgeschlossen ist.</p></details>
+        <details class="faq-item"><summary>Welches WIP-Limit passt zu einem kleinen Team?</summary><p>Ein üblicher Start ist etwa eine Aufgabe pro Person oder etwas weniger als die aktuell offenen Aufgaben. Einige Wochen testen, dann anpassen.</p></details>
+        <details class="faq-item"><summary>Bremst ein WIP-Limit das Team?</summary><p>Meist ist es umgekehrt. Weil weniger Aufgaben um Aufmerksamkeit konkurrieren, wird jede früher fertig, obwohl weniger gleichzeitig starten.</p></details>
+        <details class="faq-item"><summary>Was tun, wenn das Limit erreicht ist?</summary><p>Keine neue Arbeit beginnen, sondern helfen, Offenes abzuschließen oder zu entblocken. Bei echter Dringlichkeit nutzen Sie die vereinbarte Eilspur.</p></details>
+        <details class="faq-item"><summary>Woran erkennt man ein zu niedriges Limit?</summary><p>Wenn Leute untätig sind, weil nichts begonnen werden darf, oder Aufgaben nur warten, weil das Limit voll ist, erhöhen Sie es um eins und beobachten die Wirkung.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Offene Arbeit und Auslastung an einem Ort sehen</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center zeigt Aufgaben, Verantwortliche und Status zusammen, damit Sie erkennen, wann zu viel läuft, und Ihr Limit anpassen können.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/command-center/">Entdecken Command Center</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/products/tms/">TMS</a>
+          <a href="/de/products/assure/">Assure</a>
+          <a href="/de/products/close/">Close</a>
+          <a href="/de/products/consolidate/">Consolidate</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

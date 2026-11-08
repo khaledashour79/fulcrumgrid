@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>What Is a WIP Limit, and How Do You Set One for Your Team? — FulcrumGrid</title>
+  <meta name="description" content="A WIP limit caps how much work your team has in progress at once. Learn Little's law in plain words, how to pick a starting number and how to handle exceptions." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What Is a WIP Limit, and How Do You Set One for Your Team?" />
+  <meta property="og:description" content="A WIP limit caps how much work your team has in progress at once. Learn Little's law in plain words, how to pick a starting number and how to handle exceptions." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-08" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What Is a WIP Limit, and How Do You Set One for Your Team?" />
+  <meta name="twitter:description" content="A WIP limit caps how much work your team has in progress at once. Learn Little's law in plain words, how to pick a starting number and how to handle exceptions." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What Is a WIP Limit, and How Do You Set One for Your Team?",
+    "description": "A WIP limit caps how much work your team has in progress at once. Learn Little's law in plain words, how to pick a starting number and how to handle exceptions.",
+    "datePublished": "2026-11-08",
+    "dateModified": "2026-11-08",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "WIP Limit Guide",
+        "item": "https://fulcrumgrid.com/blog/what-is-work-in-progress-wip-limit-and-how-do-you-set-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does WIP stand for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "WIP stands for work in progress: any task that has been started but is not yet finished."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a good WIP limit for a small team?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A common start is roughly one item per person, or slightly below the number of items currently open. Try it for a few weeks, then adjust."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does a WIP limit slow the team down?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Usually the opposite. Because fewer items compete for attention, each one tends to finish sooner, even though fewer are started at once."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should we do when the limit is reached?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Stop starting new work and help finish or unblock something already open. If something truly urgent arrives, use the agreed urgent lane."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do we know if the limit is too low?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If people sit idle with nothing allowed to start, or items wait only because the limit is full, raise it by one and watch the effect."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / WIP Limit Guide</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>What Is a WIP Limit, and How Do You Set One for Your Team?</h1>
+        <p class="hero-intro">A WIP limit caps how much work your team has in progress at once. Learn Little's law in plain words, how to pick a starting number and how to handle exceptions.</p>
+        <p class="mono"><time datetime="2026-11-08">November 8, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Ask a busy team how much work it is doing and the honest answer is often &quot;a lot, all at once.&quot; Everything is started, little is finished, and every request feels late. A work-in-progress limit, or WIP limit, is one of the simplest ways to change that. This guide explains what it is, the one idea behind why it works, and how to set a sensible first number.</p><h2>What is a WIP limit?</h2><p>Work in progress (WIP) is any piece of work that has been started but is not yet finished. A WIP limit is an agreed maximum for how many of those items can be open at the same time, either across the whole team or in a single stage such as <strong>Doing</strong> or <strong>In review</strong>.</p><p>When the limit is reached, nobody starts something new. Instead, people help finish what is already open. The rule is deliberately plain, because its job is to change behaviour, not to add paperwork. If you already use a board, our guide to running a <strong>Kanban board</strong> covers the layout. Here we focus only on the limit itself.</p><h2>What does Little's law say, in plain words?</h2><p>Little's law is a simple relationship between three things: how many items are in progress, how fast items get finished, and how long each item takes from start to finish. In plain words:</p><ul><li>The more items you have open at once, the longer each one takes.</li><li>The faster you finish items, the shorter the wait.</li><li>If your finishing speed stays about the same, the only way to shorten the wait is to have fewer items open.</li></ul><p>Here is an illustration with made-up numbers. Suppose a team finishes about six items a week. With eighteen items open, a typical item takes around three weeks to get through. With six open, the same team, working at the same pace, would take around one week. Nobody worked harder in the second case. There was simply less waiting in queues and fewer half-done tasks competing for attention.</p><p>That is the whole argument for a WIP limit. Starting more does not finish more. It mostly makes everything slower, and it adds the cost of switching between tasks.</p><h2>How do you pick a starting number?</h2><p>There is no perfect number, and you do not need one. You need a reasonable first guess you can adjust. Three starting points work well:</p><ul><li><strong>Count what is open today.</strong> Set the limit a little below that number. This feels tight but not painful.</li><li><strong>One item per person.</strong> For a stage worked by individuals, a limit equal to the number of people (sometimes plus one for flexibility) is a common start.</li><li><strong>Pairs and reviews count too.</strong> If two people work on one item, it still counts once, but make sure review and waiting stages have their own limits.</li></ul><p>Write the number where everyone can see it, agree to try it for two to four weeks, and then review. A limit you never revisit becomes as arbitrary as having none.</p><h2>How do you handle exceptions?</h2><p>Real work is messy, so a limit with no exceptions will be ignored by week two. Decide the exceptions in advance rather than arguing about them in the moment.</p><h3>Urgent work</h3><p>Allow one clearly marked urgent lane with its own small limit, often just one item. If something urgent arrives, the team swaps it in and consciously decides what pauses. Log each case, because too many urgent items is a planning problem, not a limit problem.</p><h3>Blocked work</h3><p>An item waiting on a client or another department still occupies a slot. That is a feature: it makes the cost of waiting visible. Chase the blocker first, and if it will take long, move the item to a separate Waiting column that has its own limit.</p><h3>Small, routine tasks</h3><p>Quick chores of a few minutes do not need a card. Keep them out of the count, but if they start eating the day, treat that as a signal to look at the workload itself.</p><h2>What are the signs that it is working?</h2><ul><li>Items move from start to finish in less time, and fewer sit untouched for days.</li><li>People ask &quot;what can I help finish?&quot; before asking &quot;what can I start?&quot;</li><li>Problems surface earlier, because a full stage forces a conversation about the blocker.</li><li>Delivery becomes more predictable, so promising a date feels less like a guess.</li><li>The team feels calmer, with less context switching during the day.</li></ul><p>If none of these appear after a month, check the basics. The limit may be too high to bite, exceptions may be swallowing it, or work may be entering faster than it can ever leave. In the last case, the fix is upstream: say no, defer or re-prioritise.</p><h2>A short routine to keep it honest</h2><p>Once a week, look at what is open, which items have been open longest and whether the limit was broken. Adjust by one step at a time, up or down, and note why. A tool that shows tasks, owners and status together makes this review quick, but a whiteboard works just as well if everyone actually uses it.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>What does WIP stand for?</summary><p>WIP stands for work in progress: any task that has been started but is not yet finished.</p></details>
+        <details class="faq-item"><summary>What is a good WIP limit for a small team?</summary><p>A common start is roughly one item per person, or slightly below the number of items currently open. Try it for a few weeks, then adjust.</p></details>
+        <details class="faq-item"><summary>Does a WIP limit slow the team down?</summary><p>Usually the opposite. Because fewer items compete for attention, each one tends to finish sooner, even though fewer are started at once.</p></details>
+        <details class="faq-item"><summary>What should we do when the limit is reached?</summary><p>Stop starting new work and help finish or unblock something already open. If something truly urgent arrives, use the agreed urgent lane.</p></details>
+        <details class="faq-item"><summary>How do we know if the limit is too low?</summary><p>If people sit idle with nothing allowed to start, or items wait only because the limit is full, raise it by one and watch the effect.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>See open work and workload in one place</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center lets you track tasks, owners and status together, so you can see when too much is in progress and adjust your limit.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/products/tms/">TMS</a>
+          <a href="/products/assure/">Assure</a>
+          <a href="/products/close/">Close</a>
+          <a href="/products/consolidate/">Consolidate</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
