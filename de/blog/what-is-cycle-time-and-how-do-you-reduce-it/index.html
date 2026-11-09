@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Was ist die Durchlaufzeit und wie lässt sie sich verkürzen? — FulcrumGrid</title>
+  <meta name="description" content="Die Durchlaufzeit ist die Dauer einer Arbeitseinheit von Start bis Ende. Erfahren Sie den Unterschied zu Lieferzeit und Taktzeit sowie, wie Sie sie messen und senken." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Was ist die Durchlaufzeit und wie lässt sie sich verkürzen?" />
+  <meta property="og:description" content="Die Durchlaufzeit ist die Dauer einer Arbeitseinheit von Start bis Ende. Erfahren Sie den Unterschied zu Lieferzeit und Taktzeit sowie, wie Sie sie messen und senken." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-09" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Was ist die Durchlaufzeit und wie lässt sie sich verkürzen?" />
+  <meta name="twitter:description" content="Die Durchlaufzeit ist die Dauer einer Arbeitseinheit von Start bis Ende. Erfahren Sie den Unterschied zu Lieferzeit und Taktzeit sowie, wie Sie sie messen und senken." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Was ist die Durchlaufzeit und wie lässt sie sich verkürzen?",
+    "description": "Die Durchlaufzeit ist die Dauer einer Arbeitseinheit von Start bis Ende. Erfahren Sie den Unterschied zu Lieferzeit und Taktzeit sowie, wie Sie sie messen und senken.",
+    "datePublished": "2026-11-09",
+    "dateModified": "2026-11-09",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/what-is-cycle-time-and-how-do-you-reduce-it/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Leitfaden Durchlaufzeit",
+        "item": "https://fulcrumgrid.com/de/blog/what-is-cycle-time-and-how-do-you-reduce-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist eine gute Durchlaufzeit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Eine allgemeingültige Zahl gibt es nicht. Sie hängt von der Art der Arbeit und Ihrer Taktzeit ab. Ein sinnvolles Ziel: höchstens die Taktzeit erreichen und den eigenen Median sowie das 85. Perzentil sinken sehen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Worin unterscheiden sich Durchlaufzeit und Lieferzeit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Durchlaufzeit umfasst die aktive Spanne der Arbeit an einem Element. Die Lieferzeit beginnt früher, mit der Kundenanfrage, und enthält daher auch die Wartezeit vor Arbeitsbeginn."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann die Durchlaufzeit zu kurz sein?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, wenn sie durch ausgelassene Prüfungen oder das Weiterreichen von Problemen erreicht wird. Beobachten Sie neben dem Tempo auch Qualität und Nacharbeit, damit sich die Kosten nicht nur verlagern."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie viele Elemente brauche ich für eine verlässliche Messung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Beginnen Sie mit einigen Dutzend abgeschlossenen Elementen derselben Art. Das reicht meist, um Median und grobe Streuung zu erkennen, die Sie später verfeinern können."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / Leitfaden Durchlaufzeit</p>
+        <span class="tag tag-accent">Betrieb</span>
+        <h1>Was ist die Durchlaufzeit und wie lässt sie sich verkürzen?</h1>
+        <p class="hero-intro">Die Durchlaufzeit ist die Dauer einer Arbeitseinheit von Start bis Ende. Erfahren Sie den Unterschied zu Lieferzeit und Taktzeit sowie, wie Sie sie messen und senken.</p>
+        <p class="mono"><time datetime="2026-11-09">9. November 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Fragt man die meisten Teams, warum Arbeit so lange dauert, hört man: Alle sind zu beschäftigt. Bei genauerem Hinsehen steckt oft etwas anderes dahinter: Die Arbeit selbst dauert Stunden, liegt aber tagelang herum. Die Durchlaufzeit macht das sichtbar. Dieser Leitfaden erklärt, was sie ist, wie sie sich von ähnlichen Begriffen unterscheidet, wie Sie sie messen und senken, ohne Ihr Team zu überlasten.</p><h2>Was ist die Durchlaufzeit?</h2><p>Die Durchlaufzeit ist die verstrichene Zeit zwischen dem Beginn und dem Abschluss einer Arbeit. In einer Fabrik sind das die Minuten für die Montage einer Einheit. Im Büro sind es die Tage zwischen dem Eingang einer Rechnung und ihrer Bezahlung oder zwischen dem Öffnen und Schließen eines Support-Tickets. Die Einheit kann alles Wiederkehrende sein: ein Auftrag, ein Ticket, eine Einstellung, ein Bericht.</p><h2>Durchlaufzeit, Lieferzeit und Taktzeit</h2><p>Diese drei Begriffe werden oft vermischt, beantworten aber unterschiedliche Fragen.</p><ul><li><strong>Durchlaufzeit.</strong> Wie lange arbeitet das Team an einem Element, von Start bis Ende?</li><li><strong>Lieferzeit.</strong> Wie lange wartet der Kunde ab seiner Anfrage bis zum Erhalt? Sie umfasst auch die Zeit, die die Anfrage in der Warteschlange lag, bevor jemand begann.</li><li><strong>Taktzeit.</strong> In welchem Abstand muss ein Element fertig werden, um die Nachfrage zu decken? Sie ergibt sich aus der verfügbaren Arbeitszeit geteilt durch die benötigte Stückzahl.</li></ul><p>Faustregel: Die Lieferzeit spürt der Kunde, die Durchlaufzeit zeigt den Prozess, die Taktzeit gibt das Tempo der Nachfrage vor. Ist Ihre Durchlaufzeit länger als die Taktzeit, geraten Sie in Rückstand, egal wie sehr sich alle anstrengen.</p><h2>Wie misst man die Durchlaufzeit?</h2><ul><li><strong>Start und Ende festlegen.</strong> Wählen Sie für beide ein klares Ereignis, etwa &bdquo;Arbeit beginnt&ldquo; und &bdquo;an den Anfragenden übergeben&ldquo;, und ändern Sie es nicht mittendrin.</li><li><strong>Jedes Element mit Zeitstempel versehen.</strong> Erfassen Sie Start und Ende nach Möglichkeit automatisch im Tool. Für einen schnellen Ausgangswert genügt auch eine manuelle Zeitaufnahme.</li><li><strong>Median und hohes Perzentil nutzen.</strong> Der Durchschnitt verdeckt Ausreißer. Nennen Sie Median und 85. oder 90. Perzentil, um sagen zu können: &bdquo;Die meisten Elemente sind in X Tagen fertig.&ldquo;</li><li><strong>Nach Typ trennen.</strong> Eine kleine Korrektur und ein großes Projekt gehören nicht in eine Zahl.</li></ul><h2>Wartezeit und Bearbeitungszeit</h2><p>Teilen Sie die Durchlaufzeit in Bearbeitungszeit, in der jemand aktiv arbeitet, und Wartezeit, in der das Element in einer Warteschlange, einem Posteingang oder einer Freigabe liegt. Bearbeitungszeit geteilt durch Gesamtdurchlaufzeit ergibt die Prozesseffizienz. In vielen Büroprozessen liegt sie unter 10 Prozent, also werden 90 Prozent der Zeit mit Warten verbracht. Das ist eine gute Nachricht: Warten lässt sich meist leichter abbauen, als Arbeit zu beschleunigen ist.</p><h2>Welche Hebel verkürzen sie?</h2><ul><li><strong>Angefangene Arbeit begrenzen.</strong> Je mehr Elemente gleichzeitig laufen, desto länger dauert jedes. Beenden Sie, was begonnen ist, bevor Neues startet.</li><li><strong>Losgrößen verkleinern.</strong> Geben Sie Arbeit in kleinen Stücken weiter, statt auf die Übergabe eines großen Loses zu warten.</li><li><strong>Übergaben reduzieren.</strong> Jede Übergabe erzeugt eine Warteschlange und Missverständnisse. Lassen Sie eine Person oder ein kleines Team ein Element von Anfang bis Ende verantworten.</li><li><strong>Freigaben verschlanken.</strong> Legen Sie eine Grenze fest, unterhalb der ohne Freigabe entschieden wird, und geben Sie Freigebenden eine Antwortfrist.</li><li><strong>Nacharbeit beheben.</strong> Zurückgeschickte Elemente durchlaufen die Schleife zweimal. Klare Anforderungen zu Beginn sind günstige Vorbeugung.</li><li><strong>Engpass entlasten.</strong> Finden Sie die Stufe mit der längsten Schlange und erhöhen Sie dort die Kapazität, vereinfachen Sie sie oder nehmen Sie ihr einfache Aufgaben ab.</li><li><strong>Standardisieren und automatisieren.</strong> Vorlagen, Checklisten und automatische Benachrichtigungen beseitigen kleine Verzögerungen, die sich summieren.</li></ul><h2>Welche Fallstricke gibt es?</h2><ul><li><strong>Den falschen Schritt beschleunigen.</strong> Eine Verbesserung außerhalb des Engpasses ändert für den Kunden nichts.</li><li><strong>Qualität für Tempo opfern.</strong> Steigt die Nacharbeit, steigt auch die Gesamtdurchlaufzeit.</li><li><strong>Ungleiches vergleichen.</strong> Gemischte Arbeitstypen machen Durchschnitte wertlos.</li><li><strong>Einzelpersonen daran messen.</strong> Die Durchlaufzeit beschreibt den Prozess. Wer sich beurteilt fühlt, trickst bei den Zahlen.</li><li><strong>Streuung ignorieren.</strong> Ein Prozess, der im Schnitt zwei, manchmal aber zwanzig Tage braucht, ist nicht verlässlich.</li></ul><h2>Wie behalten Sie sie im Blick?</h2><p>Wählen Sie ein oder zwei Flusskennzahlen, besprechen Sie sie in einem festen Termin und betrachten Sie den Trend statt einer einzelnen Woche. Ändern Sie jeweils nur eine Sache, damit Sie wissen, was gewirkt hat, und halten Sie das Ergebnis fest. Zeigen Sie das Diagramm dem Team: Wenn alle sehen, wo Elemente in der Warteschlange hängen, kommen die Verbesserungsvorschläge oft von selbst.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Was ist eine gute Durchlaufzeit?</summary><p>Eine allgemeingültige Zahl gibt es nicht. Sie hängt von der Art der Arbeit und Ihrer Taktzeit ab. Ein sinnvolles Ziel: höchstens die Taktzeit erreichen und den eigenen Median sowie das 85. Perzentil sinken sehen.</p></details>
+        <details class="faq-item"><summary>Worin unterscheiden sich Durchlaufzeit und Lieferzeit?</summary><p>Die Durchlaufzeit umfasst die aktive Spanne der Arbeit an einem Element. Die Lieferzeit beginnt früher, mit der Kundenanfrage, und enthält daher auch die Wartezeit vor Arbeitsbeginn.</p></details>
+        <details class="faq-item"><summary>Kann die Durchlaufzeit zu kurz sein?</summary><p>Ja, wenn sie durch ausgelassene Prüfungen oder das Weiterreichen von Problemen erreicht wird. Beobachten Sie neben dem Tempo auch Qualität und Nacharbeit, damit sich die Kosten nicht nur verlagern.</p></details>
+        <details class="faq-item"><summary>Wie viele Elemente brauche ich für eine verlässliche Messung?</summary><p>Beginnen Sie mit einigen Dutzend abgeschlossenen Elementen derselben Art. Das reicht meist, um Median und grobe Streuung zu erkennen, die Sie später verfeinern können.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Behalten Sie Ihre Durchlaufzeit im Blick</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center führt Ihre KPIs und Projekte in einer Ansicht zusammen, sodass Trends bei Durchlaufzeit und Lieferung leicht zu erkennen und jede Woche zu besprechen sind.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/command-center/">Entdecken Command Center</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/products/tms/">TMS</a>
+          <a href="/de/products/assure/">Assure</a>
+          <a href="/de/products/close/">Close</a>
+          <a href="/de/products/consolidate/">Consolidate</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
