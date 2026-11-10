@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>¿Qué es el rendimiento y cómo mejorarlo en un equipo pequeño? — FulcrumGrid</title>
+  <meta name="description" content="El rendimiento es el número de elementos que tu equipo termina por periodo. Aprende a medirlo, su relación con el tiempo de ciclo y cinco formas de mejorarlo." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="¿Qué es el rendimiento y cómo mejorarlo en un equipo pequeño?" />
+  <meta property="og:description" content="El rendimiento es el número de elementos que tu equipo termina por periodo. Aprende a medirlo, su relación con el tiempo de ciclo y cinco formas de mejorarlo." />
+  <meta property="og:url" content="https://fulcrumgrid.com/es/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-10" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="¿Qué es el rendimiento y cómo mejorarlo en un equipo pequeño?" />
+  <meta name="twitter:description" content="El rendimiento es el número de elementos que tu equipo termina por periodo. Aprende a medirlo, su relación con el tiempo de ciclo y cinco formas de mejorarlo." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/es/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-throughput-and-how-do-you-improve-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "¿Qué es el rendimiento y cómo mejorarlo en un equipo pequeño?",
+    "description": "El rendimiento es el número de elementos que tu equipo termina por periodo. Aprende a medirlo, su relación con el tiempo de ciclo y cinco formas de mejorarlo.",
+    "datePublished": "2026-11-10",
+    "dateModified": "2026-11-10",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/es/blog/what-is-throughput-and-how-do-you-improve-it/"
+    },
+    "inLanguage": "es"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://fulcrumgrid.com/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/es/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guía de rendimiento",
+        "item": "https://fulcrumgrid.com/es/blog/what-is-throughput-and-how-do-you-improve-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué rendimiento es bueno para un equipo pequeño?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No hay una cifra universal. Depende del tipo y el tamaño de tus elementos. Compara tus propias semanas recientes y busca una tendencia al alza sostenida, no el número de otro equipo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué diferencia hay entre rendimiento y productividad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El rendimiento cuenta elementos terminados por periodo. La productividad suele comparar la producción con los recursos empleados. El rendimiento es más fácil de medir y de mejorar en un equipo pequeño."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Limitar el trabajo en curso aumenta de verdad el rendimiento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Normalmente sí, porque reduce los cambios de tarea y las esperas. Empieza con un límite algo inferior a tu promedio actual de elementos abiertos y ajústalo tras unas semanas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tarda en verse un cambio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A menudo entre cuatro y seis semanas, lo suficiente para comparar el nuevo promedio con tu punto de partida."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/es/products/">Productos</a>
+        <a href="/es/features/">Cuadrícula</a>
+        <a href="/es/pricing/">Precios</a>
+        <a href="/es/regions/">Regiones</a>
+        <a href="/es/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/es/contact/">Contacto</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Idioma">ES ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" class="active" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/es/contact/">Solicitar una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/es/">Inicio</a> / <a href="/es/blog/">Blog</a> / Guía de rendimiento</p>
+        <span class="tag tag-accent">Operaciones</span>
+        <h1>¿Qué es el rendimiento y cómo mejorarlo en un equipo pequeño?</h1>
+        <p class="hero-intro">El rendimiento es el número de elementos que tu equipo termina por periodo. Aprende a medirlo, su relación con el tiempo de ciclo y cinco formas de mejorarlo.</p>
+        <p class="mono"><time datetime="2026-11-10">10 de noviembre de 2026</time> · 6 min de lectura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Un equipo pequeño puede sentirse siempre ocupado y, aun así, entregar menos de lo que debería. Todos trabajan, pero la pila de trabajo terminado sigue siendo pequeña. El rendimiento muestra lo que realmente sale de tu proceso, no lo que simplemente está en movimiento. Esta guía explica qué es, cómo medirlo y cómo aumentarlo sin pedir horas extra.</p><h2>¿Qué es el rendimiento?</h2><p>El rendimiento (en inglés, <em>throughput</em>) es el número de elementos de trabajo completados en un periodo dado. Para un equipo de soporte son los tickets cerrados por semana. Para un taller, los pedidos enviados por día. Para administración, las facturas pagadas por mes. La palabra clave es <strong>completados</strong>: el trabajo iniciado, a medias o pendiente de aprobación no cuenta hasta que está terminado.</p><h2>Rendimiento, tiempo de ciclo y trabajo en curso</h2><p>Tres cifras describen cómo fluye cualquier proceso y se relacionan mediante una fórmula sencilla conocida como ley de Little.</p><ul><li><strong>Rendimiento.</strong> Cuántos elementos se terminan por periodo.</li><li><strong>Trabajo en curso (WIP).</strong> Cuántos elementos están empezados pero sin terminar en este momento.</li><li><strong>Tiempo de ciclo.</strong> Cuánto tarda un elemento desde que empieza hasta que termina.</li></ul><p>En promedio, <strong>rendimiento = WIP &divide; tiempo de ciclo</strong>. Si quieres terminar más, puedes acortar el tiempo de ciclo o aumentar los elementos en marcha. En la práctica, lo segundo suele salir mal, porque más tareas abiertas suelen significar ciclos más largos. Si aún no has medido tu tiempo de ciclo, empieza por ahí.</p><h2>Un ejemplo práctico</h2><p>Imagina un equipo de cuatro personas que atiende solicitudes de clientes. El mes pasado completó en promedio 30 solicitudes por semana. En cualquier momento había unas 24 abiertas, así que el tiempo de ciclo medio era de 24 &divide; 30 = 0,8 semanas, unos cuatro días laborables.</p><p>El equipo hace dos cambios. Primero, limita el trabajo abierto a 15 elementos: nadie toma una solicitud nueva hasta terminar otra. Segundo, elimina los tres bloqueos recurrentes: solicitudes poco claras, un paso de aprobación lento y un especialista sobrecargado. Durante el mes siguiente, los cambios de tarea disminuyen y menos elementos se quedan parados. El rendimiento sube a 36 por semana con 15 elementos abiertos, de modo que el tiempo de ciclo pasa a 15 &divide; 36, unas 0,42 semanas o dos días laborables.</p><p>Nadie trabajó más horas. El equipo terminó un 20 % más y los clientes esperaron la mitad, simplemente porque había menos trabajo en marcha a la vez.</p><h2>¿Cómo se mide el rendimiento?</h2><ul><li><strong>Elige una sola unidad.</strong> Cuenta elementos de naturaleza parecida, como tickets, pedidos o informes. No mezcles una tarea de cinco minutos con un proyecto de dos semanas.</li><li><strong>Cuenta solo lo terminado.</strong> Define con claridad qué significa &laquo;hecho&raquo; y cuenta las finalizaciones cada semana.</li><li><strong>Registra al menos seis semanas.</strong> Una semana es ruido. Observa el promedio y el rango.</li><li><strong>Anota qué te frenó.</strong> Un breve motivo para cada semana inusualmente baja suele ser más útil que la cifra.</li></ul><h2>Cinco formas de mejorar el rendimiento en un equipo pequeño</h2><h3>1. Limita el trabajo en curso</h3><p>Es la palanca más potente. Acuerda un máximo de elementos abiertos por persona o por equipo y respétalo. Terminar vale más que empezar.</p><h3>2. Encuentra el cuello de botella</h3><p>El rendimiento lo limita el paso más lento. Si todo espera a una persona o a una aprobación, acelerar los demás pasos no cambia nada. Mejora primero la restricción.</p><h3>3. Elimina los bloqueos recurrentes</h3><p>Haz una lista de por qué se detuvieron elementos el mes pasado. Los encargos poco claros, la información que falta y la espera de respuestas suelen encabezarla, y cada uno se arregla en su origen.</p><h3>4. Haz los elementos más pequeños</h3><p>Los elementos pequeños fluyen con más regularidad y destapan los problemas antes. Si una solicitud suele tardar tres semanas, divídela en partes que puedan terminarse por separado.</p><h3>5. Reduce los traspasos</h3><p>Cada traspaso añade espera. Siempre que sea posible, deja que una persona se encargue de un elemento de principio a fin, o acordad tiempos de respuesta cortos entre pasos.</p><h2>Errores frecuentes</h2><ul><li><strong>Contar el trabajo empezado.</strong> Infla la cifra y oculta la cola.</li><li><strong>Perseguir el número.</strong> Si se corre y baja la calidad, el retrabajo anula la mejora. Mide el retrabajo junto al rendimiento.</li><li><strong>Comparar elementos distintos.</strong> Un recuento semanal solo tiene sentido si los elementos son parecidos.</li></ul><h2>Mantenerlo a la vista</h2><p>El rendimiento solo mejora si alguien lo revisa cada semana. Una hoja compartida sirve durante un tiempo. Si además quieres verlo junto a tus proyectos y otros indicadores, FulcrumGrid Command Center puede reunir esas cifras en una sola vista, y la revisión semanal lleva unos minutos. El método funciona igualmente: medir lo terminado, limitar lo abierto y corregir primero el paso más lento.</p>
+
+        <h2>Preguntas frecuentes</h2>
+        <details class="faq-item"><summary>¿Qué rendimiento es bueno para un equipo pequeño?</summary><p>No hay una cifra universal. Depende del tipo y el tamaño de tus elementos. Compara tus propias semanas recientes y busca una tendencia al alza sostenida, no el número de otro equipo.</p></details>
+        <details class="faq-item"><summary>¿Qué diferencia hay entre rendimiento y productividad?</summary><p>El rendimiento cuenta elementos terminados por periodo. La productividad suele comparar la producción con los recursos empleados. El rendimiento es más fácil de medir y de mejorar en un equipo pequeño.</p></details>
+        <details class="faq-item"><summary>¿Limitar el trabajo en curso aumenta de verdad el rendimiento?</summary><p>Normalmente sí, porque reduce los cambios de tarea y las esperas. Empieza con un límite algo inferior a tu promedio actual de elementos abiertos y ajústalo tras unas semanas.</p></details>
+        <details class="faq-item"><summary>¿Cuánto tarda en verse un cambio?</summary><p>A menudo entre cuatro y seis semanas, lo suficiente para comparar el nuevo promedio con tu punto de partida.</p></details>
+
+        <p style="margin-top:32px"><a href="/es/blog/"><span aria-hidden="true">←</span> Volver al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Revisa tu rendimiento cada semana</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center reúne tus indicadores y proyectos en una sola vista, para revisar con el equipo el rendimiento y las tendencias de entrega con rapidez.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/es/products/command-center/">Explorar Command Center</a>
+          <a class="btn btn-secondary" href="/es/blog/">Volver al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La columna vertebral operativa de los equipos modernos.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Productos</h5>
+          <a href="/es/products/">Todos los productos</a>
+          <a href="/es/products/hr-suite/">HR Suite</a>
+          <a href="/es/products/command-center/">Command Center</a>
+          <a href="/es/products/collection/">Collection</a>
+          <a href="/es/products/tms/">TMS</a>
+          <a href="/es/products/assure/">Assure</a>
+          <a href="/es/products/close/">Close</a>
+          <a href="/es/products/consolidate/">Consolidate</a>
+          <a href="/es/custom-apps/">Apps a medida</a>
+        </div>
+        <div class="foot-col">
+          <h5>Cuadrícula</h5>
+          <a href="/es/features/">Funciones</a>
+          <a href="/es/integrations/">Integraciones</a>
+          <a href="/es/how-it-works/">Cómo funciona</a>
+          <a href="/es/pricing/">Precios</a>
+          <a href="/es/regions/">Regiones</a>
+          <a href="/es/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Empresa</h5>
+          <a href="/es/about/">Acerca de</a>
+          <a href="/es/faq/">FAQ</a>
+          <a href="/es/contact/">Contacto</a>
+          <a href="/es/privacy/">Privacidad</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Todos los derechos reservados.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

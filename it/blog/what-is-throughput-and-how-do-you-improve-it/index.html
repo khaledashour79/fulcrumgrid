@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Cos'è il throughput e come migliorarlo in un piccolo team? — FulcrumGrid</title>
+  <meta name="description" content="Il throughput è il numero di elementi che il tuo team completa in un periodo. Scopri come misurarlo, il legame con il cycle time e cinque modi per aumentarlo." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cos'è il throughput e come migliorarlo in un piccolo team?" />
+  <meta property="og:description" content="Il throughput è il numero di elementi che il tuo team completa in un periodo. Scopri come misurarlo, il legame con il cycle time e cinque modi per aumentarlo." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-10" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cos'è il throughput e come migliorarlo in un piccolo team?" />
+  <meta name="twitter:description" content="Il throughput è il numero di elementi che il tuo team completa in un periodo. Scopri come misurarlo, il legame con il cycle time e cinque modi per aumentarlo." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-throughput-and-how-do-you-improve-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cos'è il throughput e come migliorarlo in un piccolo team?",
+    "description": "Il throughput è il numero di elementi che il tuo team completa in un periodo. Scopri come misurarlo, il legame con il cycle time e cinque modi per aumentarlo.",
+    "datePublished": "2026-11-10",
+    "dateModified": "2026-11-10",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/what-is-throughput-and-how-do-you-improve-it/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida al throughput",
+        "item": "https://fulcrumgrid.com/it/blog/what-is-throughput-and-how-do-you-improve-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual è un buon throughput per un piccolo team?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non esiste un valore universale. Dipende dal tipo e dalla dimensione degli elementi. Confronta le tue ultime settimane e punta a un andamento in crescita costante, non al numero di un altro team."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual è la differenza tra throughput e produttività?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Il throughput conta gli elementi completati per periodo. La produttività di solito confronta la produzione con le risorse impiegate. Il throughput è più semplice da misurare e da migliorare per un piccolo team."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Limitare il lavoro in corso aumenta davvero il throughput?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Di solito sì, perché riduce i cambi di attività e le attese. Parti da un limite leggermente inferiore alla tua media attuale di elementi aperti e regolalo dopo qualche settimana."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dopo quanto si vede un cambiamento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Spesso dopo quattro-sei settimane, abbastanza per confrontare la nuova media con la situazione di partenza."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida al throughput</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Cos'è il throughput e come migliorarlo in un piccolo team?</h1>
+        <p class="hero-intro">Il throughput è il numero di elementi che il tuo team completa in un periodo. Scopri come misurarlo, il legame con il cycle time e cinque modi per aumentarlo.</p>
+        <p class="mono"><time datetime="2026-11-10">10 novembre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Un piccolo team può sentirsi sempre sotto pressione e consegnare comunque meno del dovuto. Tutti lavorano, ma la pila del lavoro finito resta bassa. Il throughput mostra ciò che esce davvero dal tuo processo, non ciò che è semplicemente in movimento. Questa guida spiega che cos'è, come misurarlo e come aumentarlo senza chiedere straordinari.</p><h2>Che cos'è il throughput?</h2><p>Il throughput è il numero di elementi di lavoro completati in un dato periodo. Per un team di assistenza sono i ticket chiusi a settimana. Per un laboratorio, gli ordini spediti al giorno. Per l'amministrazione, le fatture pagate al mese. La parola chiave è <strong>completati</strong>: il lavoro avviato, a metà o in attesa di approvazione non conta finché non è concluso.</p><h2>Throughput, cycle time e lavoro in corso</h2><p>Tre numeri descrivono il flusso di qualsiasi processo e sono legati da una relazione semplice, nota come legge di Little.</p><ul><li><strong>Throughput.</strong> Quanti elementi vengono completati per periodo.</li><li><strong>Lavoro in corso (WIP).</strong> Quanti elementi sono avviati ma non conclusi in questo momento.</li><li><strong>Cycle time.</strong> Quanto impiega un elemento dall'inizio alla fine.</li></ul><p>In media, <strong>throughput = WIP &divide; cycle time</strong>. Per completare di più si può accorciare il cycle time oppure aumentare gli elementi in lavorazione. Nella pratica la seconda strada si ritorce contro, perché più attività aperte di solito significano tempi più lunghi. Se non hai ancora misurato il cycle time, parti da lì.</p><h2>Un esempio pratico</h2><p>Prendi un team di quattro persone che gestisce richieste dei clienti. Il mese scorso ha completato in media 30 richieste a settimana. In ogni momento ce n'erano circa 24 aperte, quindi il cycle time medio era 24 &divide; 30 = 0,8 settimane, circa quattro giorni lavorativi.</p><p>Il team introduce due cambiamenti. Primo, limita il lavoro aperto a 15 elementi: nessuno prende una nuova richiesta finché non ne ha chiusa un'altra. Secondo, elimina i tre blocchi ricorrenti: richieste poco chiare, un passaggio di approvazione lento e uno specialista sovraccarico. Nel mese successivo i cambi di attività calano e meno elementi restano fermi. Il throughput sale a 36 a settimana con 15 elementi aperti, perciò il cycle time diventa 15 &divide; 36, circa 0,42 settimane ovvero due giorni lavorativi.</p><p>Nessuno ha lavorato più a lungo. Il team ha completato il 20 % in più e i clienti hanno atteso la metà, semplicemente perché c'era meno lavoro in corso contemporaneamente.</p><h2>Come si misura il throughput?</h2><ul><li><strong>Scegli una sola unità.</strong> Conta elementi dello stesso tipo, come ticket, ordini o report. Non mescolare un'attività da cinque minuti con un progetto da due settimane.</li><li><strong>Conta solo il completato.</strong> Definisci con chiarezza cosa significa &laquo;finito&raquo; e conta i completamenti ogni settimana.</li><li><strong>Registra almeno sei settimane.</strong> Una settimana è solo rumore. Osserva la media e l'intervallo.</li><li><strong>Annota cosa ti ha rallentato.</strong> Una breve causa per ogni settimana insolitamente bassa spesso è più utile del numero.</li></ul><h2>Cinque modi per migliorare il throughput in un piccolo team</h2><h3>1. Limita il lavoro in corso</h3><p>È la leva più forte. Concorda un numero massimo di elementi aperti per persona o per team e rispettalo. Finire vale più che iniziare.</p><h3>2. Individua il collo di bottiglia</h3><p>Il throughput è limitato dal passaggio più lento. Se ogni elemento aspetta una persona o un'approvazione, velocizzare gli altri passaggi non cambia nulla. Migliora prima il vincolo.</p><h3>3. Elimina i blocchi ricorrenti</h3><p>Elenca i motivi per cui gli elementi si sono fermati il mese scorso. Richieste poco chiare, informazioni mancanti e attesa di risposte di solito sono in cima, e ognuno si risolve alla radice.</p><h3>4. Rendi gli elementi più piccoli</h3><p>Gli elementi piccoli scorrono in modo più regolare e fanno emergere prima i problemi. Se una richiesta richiede regolarmente tre settimane, dividila in parti che si possano chiudere in modo indipendente.</p><h3>5. Riduci i passaggi di mano</h3><p>Ogni passaggio aggiunge attesa. Dove possibile, affida un elemento a una sola persona dall'inizio alla fine, oppure concordate tempi di risposta brevi tra una fase e l'altra.</p><h2>Errori comuni</h2><ul><li><strong>Contare il lavoro avviato.</strong> Gonfia il numero e nasconde la coda.</li><li><strong>Inseguire il numero.</strong> Se si corre e la qualità cala, le rilavorazioni annullano il vantaggio. Tieni d'occhio le rilavorazioni accanto al throughput.</li><li><strong>Confrontare elementi diversi.</strong> Un conteggio settimanale ha senso solo se gli elementi si somigliano.</li></ul><h2>Tenerlo sempre visibile</h2><p>Il throughput migliora solo se qualcuno lo guarda ogni settimana. Un foglio condiviso basta per un po'. Se vuoi vederlo anche accanto ai progetti e agli altri indicatori, FulcrumGrid Command Center può riunire questi dati in un'unica vista, così la revisione settimanale richiede pochi minuti. Il metodo vale comunque: misurare il finito, limitare l'aperto e sistemare prima il passaggio più lento.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Qual è un buon throughput per un piccolo team?</summary><p>Non esiste un valore universale. Dipende dal tipo e dalla dimensione degli elementi. Confronta le tue ultime settimane e punta a un andamento in crescita costante, non al numero di un altro team.</p></details>
+        <details class="faq-item"><summary>Qual è la differenza tra throughput e produttività?</summary><p>Il throughput conta gli elementi completati per periodo. La produttività di solito confronta la produzione con le risorse impiegate. Il throughput è più semplice da misurare e da migliorare per un piccolo team.</p></details>
+        <details class="faq-item"><summary>Limitare il lavoro in corso aumenta davvero il throughput?</summary><p>Di solito sì, perché riduce i cambi di attività e le attese. Parti da un limite leggermente inferiore alla tua media attuale di elementi aperti e regolalo dopo qualche settimana.</p></details>
+        <details class="faq-item"><summary>Dopo quanto si vede un cambiamento?</summary><p>Spesso dopo quattro-sei settimane, abbastanza per confrontare la nuova media con la situazione di partenza.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Controlla il throughput ogni settimana</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center riunisce indicatori e progetti in un'unica vista, così è facile rivedere con il team throughput e andamento delle consegne ogni settimana.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/products/tms/">TMS</a>
+          <a href="/it/products/assure/">Assure</a>
+          <a href="/it/products/close/">Close</a>
+          <a href="/it/products/consolidate/">Consolidate</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
