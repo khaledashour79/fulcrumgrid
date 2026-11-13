@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Qu’est-ce qu’un diagramme SIPOC et comment le réaliser ? — FulcrumGrid</title>
+  <meta name="description" content="Un diagramme SIPOC résume fournisseurs, entrées, processus, sorties et clients sur une page. Découvrez quand l’utiliser et comment le bâtir en une heure." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Qu’est-ce qu’un diagramme SIPOC et comment le réaliser ?" />
+  <meta property="og:description" content="Un diagramme SIPOC résume fournisseurs, entrées, processus, sorties et clients sur une page. Découvrez quand l’utiliser et comment le bâtir en une heure." />
+  <meta property="og:url" content="https://fulcrumgrid.com/fr/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-13" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Qu’est-ce qu’un diagramme SIPOC et comment le réaliser ?" />
+  <meta name="twitter:description" content="Un diagramme SIPOC résume fournisseurs, entrées, processus, sorties et clients sur une page. Découvrez quand l’utiliser et comment le bâtir en une heure." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/fr/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Qu’est-ce qu’un diagramme SIPOC et comment le réaliser ?",
+    "description": "Un diagramme SIPOC résume fournisseurs, entrées, processus, sorties et clients sur une page. Découvrez quand l’utiliser et comment le bâtir en une heure.",
+    "datePublished": "2026-11-13",
+    "dateModified": "2026-11-13",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/fr/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/"
+    },
+    "inLanguage": "fr"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://fulcrumgrid.com/fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/fr/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guide du SIPOC",
+        "item": "https://fulcrumgrid.com/fr/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Que signifie SIPOC ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "C’est l’acronyme anglais de Suppliers, Inputs, Process, Outputs, Customers : fournisseurs, entrées, processus, sorties et clients. Les cinq colonnes décrivent un processus sur une seule page."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quelle différence entre un SIPOC et une cartographie de processus ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le SIPOC est un résumé de haut niveau, en cinq à sept étapes, sans décisions ni boucles. Une cartographie ou un logigramme montre l’enchaînement détaillé, les décisions et les exceptions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Pourquoi commencer par la colonne processus ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ce sont les étapes que l’équipe connaît le mieux, donc on fixe vite le périmètre. Les sorties, clients, entrées et fournisseurs se déduisent ensuite étape par étape."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Combien de temps faut-il pour faire un SIPOC ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pour la plupart des processus d’une petite équipe, 30 à 60 minutes avec les personnes concernées suffisent. Si c’est beaucoup plus long, le périmètre est sans doute trop large."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/fr/" aria-label="Accueil FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/fr/products/">Produits</a>
+        <a href="/fr/features/">Grille</a>
+        <a href="/fr/pricing/">Tarifs</a>
+        <a href="/fr/regions/">Régions</a>
+        <a href="/fr/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/fr/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Langue">FR ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" class="active" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/fr/contact/">Demander une démo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/fr/">Accueil</a> / <a href="/fr/blog/">Blog</a> / Guide du SIPOC</p>
+        <span class="tag tag-accent">Opérations</span>
+        <h1>Qu’est-ce qu’un diagramme SIPOC et comment le réaliser ?</h1>
+        <p class="hero-intro">Un diagramme SIPOC résume fournisseurs, entrées, processus, sorties et clients sur une page. Découvrez quand l’utiliser et comment le bâtir en une heure.</p>
+        <p class="mono"><time datetime="2026-11-13">13 novembre 2026</time> · 6 min de lecture</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>La plupart des problèmes de processus commencent par une vision floue. On débat d’une étape qui coince, mais personne ne s’accorde sur le début du processus, sur ce qui y entre ni sur qui dépend de ce qui en sort. Le diagramme SIPOC règle cela en une page. C’est l’un des outils d’amélioration les plus simples, et il convient bien aux petites équipes : il demande une heure, pas un consultant.</p><h2>Qu’est-ce qu’un diagramme SIPOC ?</h2><p>SIPOC est l’acronyme anglais de <strong>Suppliers, Inputs, Process, Outputs, Customers</strong>, soit fournisseurs, entrées, processus, sorties et clients. C’est un tableau à cinq colonnes qui décrit un processus dans ses grandes lignes :</p><ul><li><strong>Fournisseurs</strong> : les personnes, équipes ou entreprises qui apportent ce dont le processus a besoin.</li><li><strong>Entrées</strong> : les matières, informations ou demandes qui alimentent le processus.</li><li><strong>Processus</strong> : les cinq à sept étapes principales qui transforment les entrées en sorties.</li><li><strong>Sorties</strong> : ce que produit le processus, par exemple une commande expédiée, un contrat signé ou une facture réglée.</li><li><strong>Clients</strong> : ceux qui reçoivent les sorties, en interne comme en externe.</li></ul><p>Un SIPOC n’est pas un logigramme détaillé. Il laisse volontairement de côté décisions, boucles et exceptions. Son rôle est de faire valider le périmètre et la vue d’ensemble avant d’entrer dans le détail.</p><h2>Quand une petite équipe devrait-elle en faire un ?</h2><p>Le SIPOC vaut l’heure investie dans plusieurs situations courantes :</p><ul><li><strong>Avant de traiter un problème récurrent.</strong> Si les commandes partent souvent en retard, cartographiez d’abord le processus pour que tout le monde partage le même périmètre.</li><li><strong>Pour intégrer quelqu’un dans un processus.</strong> Une page montre au nouvel arrivant d’où vient son travail et où il va.</li><li><strong>Avant de rédiger une procédure.</strong> Le SIPOC fournit le plan, la procédure détaille les étapes.</li><li><strong>Quand les passages de relais entre équipes créent des frictions.</strong> Lister fournisseurs et clients révèle les dépendances cachées.</li></ul><p>Pour un tout petit processus, géré par une seule personne et qui fonctionne bien, inutile d’en faire un.</p><h2>Construire un SIPOC en moins d’une heure</h2><p>Réunissez deux à quatre personnes qui font le travail, plus quelqu’un qui en reçoit le résultat. Prenez un tableau blanc ou un document partagé à cinq colonnes, puis suivez cet ordre, qui n’est pas celui des lettres.</p><h3>Étape 1 : nommer le processus et fixer ses limites</h3><p>Donnez-lui un nom court et définissez un déclencheur et un point d’arrivée clairs, par exemple « commence quand le client passe commande, se termine à la livraison ». Les débats sur le périmètre se tranchent ici, pas plus tard.</p><h3>Étape 2 : lister cinq à sept étapes</h3><p>Commencez par la colonne centrale. Formulez chaque étape avec un verbe et un nom : « recevoir la commande », « vérifier le stock », « préparer les articles », « emballer et étiqueter », « expédier », « confirmer la livraison ». Au-delà de sept, vous descendez trop dans le détail.</p><h3>Étape 3 : identifier les sorties</h3><p>Que produit le processus ? Notez la sortie principale et les sous-produits importants, comme la facture ou la notification de suivi.</p><h3>Étape 4 : identifier les clients</h3><p>Pour chaque sortie, indiquez qui la reçoit. Les clients internes comptent : la comptabilité reçoit la facture, le responsable d’entrepôt la mise à jour du stock.</p><h3>Étape 5 : identifier les entrées</h3><p>Demandez ce dont chaque étape a besoin pour démarrer : bon de commande, données de stock, emballages, réservation du transporteur.</p><h3>Étape 6 : identifier les fournisseurs</h3><p>Enfin, nommez qui fournit chaque entrée. Il peut s’agir de clients, de prestataires, de systèmes ou d’autres équipes.</p><h2>Exemple concret : le traitement des commandes</h2><ul><li><strong>Fournisseurs</strong> : client, boutique en ligne, fournisseur d’emballages, transporteur.</li><li><strong>Entrées</strong> : détails de la commande, confirmation de paiement, niveaux de stock, cartons et étiquettes, créneau d’enlèvement.</li><li><strong>Processus</strong> : recevoir la commande, vérifier le stock, préparer les articles, emballer et étiqueter, remettre au transporteur, confirmer la livraison.</li><li><strong>Sorties</strong> : commande livrée, e-mail de suivi, facture, stock mis à jour.</li><li><strong>Clients</strong> : client final, service comptable, responsable d’entrepôt.</li></ul><p>Même une carte aussi courte fait souvent ressortir un point utile. L’équipe peut s’apercevoir que les niveaux de stock proviennent d’un tableur mis à jour seulement le vendredi, ce qui explique pourquoi « vérifier le stock » échoue en milieu de semaine.</p><h2>Les erreurs à éviter</h2><ul><li><strong>Trop de détails.</strong> Vingt étapes, c’est un logigramme, pas un SIPOC. Restez sur une page.</li><li><strong>Oublier les limites.</strong> Sans début ni fin nets, la carte grossit jusqu’à décrire toute l’entreprise.</li><li><strong>Décrire l’idéal plutôt que la réalité.</strong> Montrez comment le travail se fait vraiment aujourd’hui.</li><li><strong>Omettre les clients internes.</strong> Beaucoup de retards viennent de sorties dont on ignorait qu’une autre équipe dépendait.</li><li><strong>Le ranger dans un tiroir.</strong> Le SIPOC est un point de départ. S’il n’est suivi de rien, l’heure est perdue.</li></ul><h2>Que faire après le SIPOC ?</h2><p>Servez-vous de la carte pour décider quoi mesurer et quoi documenter. Choisissez un ou deux indicateurs pour les sorties qui comptent le plus pour vos clients, comme le taux de livraison à l’heure ou le délai de traitement des commandes. Transformez ensuite la colonne processus en une procédure courte, et ne dessinez un logigramme détaillé que pour l’étape la plus problématique. Révisez le SIPOC dès que le processus change, par exemple à l’arrivée d’un nouveau fournisseur ou d’un nouvel outil.</p><p>Bien mené, un SIPOC donne à votre équipe un langage commun sur un processus en moins de temps qu’une réunion ordinaire consacrée au problème qu’il décrit.</p>
+
+        <h2>Questions fréquentes</h2>
+        <details class="faq-item"><summary>Que signifie SIPOC ?</summary><p>C’est l’acronyme anglais de Suppliers, Inputs, Process, Outputs, Customers : fournisseurs, entrées, processus, sorties et clients. Les cinq colonnes décrivent un processus sur une seule page.</p></details>
+        <details class="faq-item"><summary>Quelle différence entre un SIPOC et une cartographie de processus ?</summary><p>Le SIPOC est un résumé de haut niveau, en cinq à sept étapes, sans décisions ni boucles. Une cartographie ou un logigramme montre l’enchaînement détaillé, les décisions et les exceptions.</p></details>
+        <details class="faq-item"><summary>Pourquoi commencer par la colonne processus ?</summary><p>Ce sont les étapes que l’équipe connaît le mieux, donc on fixe vite le périmètre. Les sorties, clients, entrées et fournisseurs se déduisent ensuite étape par étape.</p></details>
+        <details class="faq-item"><summary>Combien de temps faut-il pour faire un SIPOC ?</summary><p>Pour la plupart des processus d’une petite équipe, 30 à 60 minutes avec les personnes concernées suffisent. Si c’est beaucoup plus long, le périmètre est sans doute trop large.</p></details>
+
+        <p style="margin-top:32px"><a href="/fr/blog/"><span aria-hidden="true">←</span> Retour au blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Faites de votre carte de processus des résultats suivis</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center réunit vos KPI, vos projets et les responsables de processus dans une seule vue, pour revoir chaque semaine les indicateurs choisis après un SIPOC.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/fr/products/command-center/">Découvrir Command Center</a>
+          <a class="btn btn-secondary" href="/fr/blog/">Retour au blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>L'épine dorsale opérationnelle des équipes modernes.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produits</h5>
+          <a href="/fr/products/">Tous les produits</a>
+          <a href="/fr/products/hr-suite/">HR Suite</a>
+          <a href="/fr/products/command-center/">Command Center</a>
+          <a href="/fr/products/collection/">Collection</a>
+          <a href="/fr/products/tms/">TMS</a>
+          <a href="/fr/products/assure/">Assure</a>
+          <a href="/fr/products/close/">Close</a>
+          <a href="/fr/products/consolidate/">Consolidate</a>
+          <a href="/fr/custom-apps/">Applications sur mesure</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grille</h5>
+          <a href="/fr/features/">Fonctionnalités</a>
+          <a href="/fr/integrations/">Intégrations</a>
+          <a href="/fr/how-it-works/">Comment ça marche</a>
+          <a href="/fr/pricing/">Tarifs</a>
+          <a href="/fr/regions/">Régions</a>
+          <a href="/fr/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Entreprise</h5>
+          <a href="/fr/about/">À propos</a>
+          <a href="/fr/faq/">FAQ</a>
+          <a href="/fr/contact/">Contact</a>
+          <a href="/fr/privacy/">Confidentialité</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tous droits réservés.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

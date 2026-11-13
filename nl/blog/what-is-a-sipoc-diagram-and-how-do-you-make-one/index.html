@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wat is een SIPOC-diagram en hoe maak je er een? — FulcrumGrid</title>
+  <meta name="description" content="Een SIPOC-diagram zet leveranciers, input, proces, output en klanten op één pagina. Lees wanneer je het gebruikt en hoe je het in minder dan een uur maakt." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wat is een SIPOC-diagram en hoe maak je er een?" />
+  <meta property="og:description" content="Een SIPOC-diagram zet leveranciers, input, proces, output en klanten op één pagina. Lees wanneer je het gebruikt en hoe je het in minder dan een uur maakt." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-11-13" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wat is een SIPOC-diagram en hoe maak je er een?" />
+  <meta name="twitter:description" content="Een SIPOC-diagram zet leveranciers, input, proces, output en klanten op één pagina. Lees wanneer je het gebruikt en hoe je het in minder dan een uur maakt." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wat is een SIPOC-diagram en hoe maak je er een?",
+    "description": "Een SIPOC-diagram zet leveranciers, input, proces, output en klanten op één pagina. Lees wanneer je het gebruikt en hoe je het in minder dan een uur maakt.",
+    "datePublished": "2026-11-13",
+    "dateModified": "2026-11-13",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "SIPOC-gids",
+        "item": "https://fulcrumgrid.com/nl/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Waar staat SIPOC voor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Voor de Engelse termen Suppliers, Inputs, Process, Outputs, Customers: leveranciers, input, proces, output en klanten. De vijf kolommen beschrijven een proces op één pagina."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is het verschil tussen een SIPOC en een proceskaart?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een SIPOC is een overzicht op hoofdlijnen met vijf tot zeven stappen, zonder beslissingen of lussen. Een proceskaart of stroomschema toont de gedetailleerde volgorde, beslissingen en uitzonderingen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Waarom begin je met de proceskolom?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De stappen kent het team het best, dus zo ligt de scope snel vast. Output, klanten, input en leveranciers volgen daarna stap voor stap."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe lang duurt het om een SIPOC te maken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Voor de meeste processen van een klein team is 30 tot 60 minuten met de mensen die het werk doen genoeg. Duurt het veel langer, dan is de scope waarschijnlijk te breed."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / SIPOC-gids</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Wat is een SIPOC-diagram en hoe maak je er een?</h1>
+        <p class="hero-intro">Een SIPOC-diagram zet leveranciers, input, proces, output en klanten op één pagina. Lees wanneer je het gebruikt en hoe je het in minder dan een uur maakt.</p>
+        <p class="mono"><time datetime="2026-11-13">13 november 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>De meeste procesproblemen beginnen met een vaag beeld. Er wordt gediscussieerd over een stap die hapert, maar niemand is het eens over waar het proces begint, wat erin gaat en wie afhankelijk is van wat eruit komt. Een SIPOC-diagram lost dat op één pagina op. Het is een van de eenvoudigste instrumenten voor procesverbetering en past goed bij kleine teams, want het kost een uur en geen consultant.</p><h2>Wat is een SIPOC-diagram?</h2><p>SIPOC staat voor de Engelse termen <strong>Suppliers, Inputs, Process, Outputs, Customers</strong>: leveranciers, input, proces, output en klanten. Het is een tabel met vijf kolommen die een proces op hoofdlijnen beschrijft:</p><ul><li><strong>Leveranciers</strong>: de mensen, teams of bedrijven die leveren wat het proces nodig heeft.</li><li><strong>Input</strong>: materialen, informatie of verzoeken die het proces binnenkomen.</li><li><strong>Proces</strong>: de vijf tot zeven hoofdstappen die input omzetten in output.</li><li><strong>Output</strong>: wat het proces oplevert, zoals een verzonden bestelling, een getekend contract of een betaalde factuur.</li><li><strong>Klanten</strong>: iedereen die de output ontvangt, binnen of buiten het bedrijf.</li></ul><p>Een SIPOC is geen gedetailleerd stroomschema. Beslissingen, lussen en uitzonderingen laat het bewust weg. Het doel is om het eens te worden over de grenzen en het grote plaatje voordat iemand de details in duikt.</p><h2>Wanneer heeft een klein team er een nodig?</h2><p>In een paar veelvoorkomende situaties is het dat uur waard:</p><ul><li><strong>Voordat je een terugkerend probleem aanpakt.</strong> Gaan bestellingen steeds te laat de deur uit, breng dan eerst het proces in kaart zodat iedereen dezelfde scope voor ogen heeft.</li><li><strong>Bij het inwerken van iemand in een proces.</strong> Eén pagina laat een nieuwe collega zien waar het werk vandaan komt en waar het naartoe gaat.</li><li><strong>Voordat je een werkinstructie schrijft.</strong> De SIPOC levert de opzet, de instructie vult de stappen in.</li><li><strong>Als overdrachten tussen teams voor wrijving zorgen.</strong> Leveranciers en klanten op een rij zetten maakt verborgen afhankelijkheden zichtbaar.</li></ul><p>Is een proces heel klein, ligt het bij één persoon en loopt het goed, dan heb je er geen nodig.</p><h2>Zo maak je een SIPOC in minder dan een uur</h2><p>Haal twee tot vier mensen bij elkaar die het werk doen, plus iemand die de output ontvangt. Gebruik een whiteboard of een gedeeld document met vijf kolommen en werk in deze volgorde, die niet de volgorde van de letters is.</p><h3>Stap 1: geef het proces een naam en bepaal de grenzen</h3><p>Kies een korte naam en leg een duidelijk begin- en eindpunt vast, bijvoorbeeld: “begint wanneer een klant bestelt, eindigt bij de levering”. Discussies over de scope horen hier, niet later.</p><h3>Stap 2: noteer vijf tot zeven processtappen</h3><p>Begin in de middelste kolom. Schrijf elke stap als werkwoord en zelfstandig naamwoord: “bestelling ontvangen”, “voorraad controleren”, “artikelen verzamelen”, “inpakken en labelen”, “verzenden”, “levering bevestigen”. Kom je boven de zeven, dan ga je te diep.</p><h3>Stap 3: bepaal de output</h3><p>Wat levert het proces op? Noteer de hoofdoutput en belangrijke bijproducten, zoals de factuur of de track-and-tracemelding.</p><h3>Stap 4: bepaal de klanten</h3><p>Geef bij elke output aan wie die ontvangt. Interne klanten tellen mee: de financiële afdeling krijgt de factuur, de magazijnleider de voorraadupdate.</p><h3>Stap 5: bepaal de input</h3><p>Vraag wat elke stap nodig heeft om te starten: een bestelformulier, voorraadgegevens, verpakkingsmateriaal, een ophaalafspraak met de vervoerder.</p><h3>Stap 6: bepaal de leveranciers</h3><p>Noem tot slot wie elke input levert. Dat kunnen klanten, externe leveranciers, systemen of andere teams zijn.</p><h2>Een praktijkvoorbeeld: orderafhandeling</h2><ul><li><strong>Leveranciers</strong>: klant, webwinkel, verpakkingsleverancier, vervoerder.</li><li><strong>Input</strong>: bestelgegevens, betalingsbevestiging, voorraadniveaus, dozen en labels, ophaalmoment.</li><li><strong>Proces</strong>: bestelling ontvangen, voorraad controleren, artikelen verzamelen, inpakken en labelen, overdragen aan de vervoerder, levering bevestigen.</li><li><strong>Output</strong>: geleverde bestelling, track-and-trace-e-mail, factuur, bijgewerkte voorraad.</li><li><strong>Klanten</strong>: eindklant, financiële afdeling, magazijnleider.</li></ul><p>Zelfs zo’n kort overzicht brengt vaak iets nuttigs aan het licht. Het team ziet misschien dat de voorraadniveaus uit een spreadsheet komen die alleen op vrijdag wordt bijgewerkt, wat verklaart waarom “voorraad controleren” midden in de week steeds misgaat.</p><h2>Veelgemaakte fouten</h2><ul><li><strong>Te veel detail.</strong> Twintig stappen is een stroomschema, geen SIPOC. Houd het bij één pagina.</li><li><strong>Geen grenzen.</strong> Zonder duidelijk begin en einde groeit het overzicht tot het het hele bedrijf beschrijft.</li><li><strong>Het ideaal tekenen in plaats van de werkelijkheid.</strong> Beschrijf hoe het werk vandaag echt gaat.</li><li><strong>Interne klanten vergeten.</strong> Veel vertraging komt door output waarvan niemand wist dat een ander team ervan afhing.</li><li><strong>In een la stoppen.</strong> Een SIPOC is een startpunt. Volgt er niets, dan was het uur verspild.</li></ul><h2>Wat doe je na de SIPOC?</h2><p>Gebruik het overzicht om te bepalen wat je meet en wat je vastlegt. Kies een of twee kengetallen voor de output die klanten het belangrijkst vinden, zoals het percentage tijdige leveringen of de doorlooptijd per bestelling. Maak daarna van de proceskolom een korte werkinstructie en teken alleen voor de lastigste stap een gedetailleerd stroomschema. Herzie de SIPOC zodra het proces verandert, bijvoorbeeld bij een nieuwe leverancier of een nieuw systeem.</p><p>Goed gedaan geeft een SIPOC je team een gedeelde taal voor een proces, in minder tijd dan een gewone vergadering over het probleem dat het beschrijft.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Waar staat SIPOC voor?</summary><p>Voor de Engelse termen Suppliers, Inputs, Process, Outputs, Customers: leveranciers, input, proces, output en klanten. De vijf kolommen beschrijven een proces op één pagina.</p></details>
+        <details class="faq-item"><summary>Wat is het verschil tussen een SIPOC en een proceskaart?</summary><p>Een SIPOC is een overzicht op hoofdlijnen met vijf tot zeven stappen, zonder beslissingen of lussen. Een proceskaart of stroomschema toont de gedetailleerde volgorde, beslissingen en uitzonderingen.</p></details>
+        <details class="faq-item"><summary>Waarom begin je met de proceskolom?</summary><p>De stappen kent het team het best, dus zo ligt de scope snel vast. Output, klanten, input en leveranciers volgen daarna stap voor stap.</p></details>
+        <details class="faq-item"><summary>Hoe lang duurt het om een SIPOC te maken?</summary><p>Voor de meeste processen van een klein team is 30 tot 60 minuten met de mensen die het werk doen genoeg. Duurt het veel langer, dan is de scope waarschijnlijk te breed.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Maak van je procesoverzicht meetbare resultaten</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center brengt je KPI’s, projecten en proceseigenaren samen in één overzicht, zodat de kengetallen die je na een SIPOC kiest elke week worden besproken.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/products/tms/">TMS</a>
+          <a href="/nl/products/assure/">Assure</a>
+          <a href="/nl/products/close/">Close</a>
+          <a href="/nl/products/consolidate/">Consolidate</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
