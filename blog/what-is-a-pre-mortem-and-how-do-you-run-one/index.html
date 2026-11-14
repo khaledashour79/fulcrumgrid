@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>What Is a Pre-Mortem and How Do You Run One Before a Launch? — FulcrumGrid</title>
+  <meta name="description" content="A pre-mortem asks your team to imagine a project has already failed and explain why. Learn how to run one in under an hour and turn risks into actions." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What Is a Pre-Mortem and How Do You Run One Before a Launch?" />
+  <meta property="og:description" content="A pre-mortem asks your team to imagine a project has already failed and explain why. Learn how to run one in under an hour and turn risks into actions." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/what-is-a-pre-mortem-and-how-do-you-run-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-14" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What Is a Pre-Mortem and How Do You Run One Before a Launch?" />
+  <meta name="twitter:description" content="A pre-mortem asks your team to imagine a project has already failed and explain why. Learn how to run one in under an hour and turn risks into actions." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/what-is-a-pre-mortem-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-pre-mortem-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-pre-mortem-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-pre-mortem-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-pre-mortem-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-pre-mortem-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-pre-mortem-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-pre-mortem-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-pre-mortem-and-how-do-you-run-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What Is a Pre-Mortem and How Do You Run One Before a Launch?",
+    "description": "A pre-mortem asks your team to imagine a project has already failed and explain why. Learn how to run one in under an hour and turn risks into actions.",
+    "datePublished": "2026-11-14",
+    "dateModified": "2026-11-14",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/what-is-a-pre-mortem-and-how-do-you-run-one/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Pre-Mortem Guide",
+        "item": "https://fulcrumgrid.com/blog/what-is-a-pre-mortem-and-how-do-you-run-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between a pre-mortem and a post-mortem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A post-mortem looks back after a project ends to learn what happened. A pre-mortem takes place before the work starts and imagines failure, so the team can prevent problems instead of analysing them later."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long should a pre-mortem take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For most projects 45 to 60 minutes is enough. Larger or riskier initiatives may need up to 90 minutes, but the agenda stays the same: brief, silent writing, sharing, ranking and mitigations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who should attend a pre-mortem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The project lead, the people doing the work and one or two people affected by the outcome, such as customer service or finance. Five to ten participants usually works best."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is prospective hindsight?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is the effect where imagining that an event has already happened helps people find more specific and plausible reasons for it than treating it as something that might happen."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Pre-Mortem Guide</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>What Is a Pre-Mortem and How Do You Run One Before a Launch?</h1>
+        <p class="hero-intro">A pre-mortem asks your team to imagine a project has already failed and explain why. Learn how to run one in under an hour and turn risks into actions.</p>
+        <p class="mono"><time datetime="2026-11-14">November 14, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Most projects that fail do not fail by surprise. Someone on the team usually saw the problem coming but did not say so, or said it once and was talked over. A pre-mortem is a short meeting designed to get those concerns on the table while there is still time to act. It takes under an hour.</p><h2>What is a pre-mortem?</h2><p>A pre-mortem is a structured exercise held before a project or launch gets going. Instead of asking "what could go wrong?", the facilitator says: <strong>imagine it is six months from now and this project has failed. What happened?</strong> Everyone then writes down the reasons for the failure as if it were already a fact.</p><p>The technique was popularised by psychologist Gary Klein, and it relies on an effect researchers call <strong>prospective hindsight</strong>. When people imagine that an event has already happened, they come up with more specific and more plausible explanations than when they treat it as a mere possibility. Early research on the effect found that framing an outcome as certain improved people's ability to identify reasons for it by around 30 percent. The name is a deliberate contrast with a post-mortem: you get the lessons before the project dies, not after.</p><h2>Why it beats a standard risk review</h2><p>A typical risk review asks a team that is excited about a plan to criticise it. That is socially awkward, so people raise safe, generic risks and keep the uncomfortable ones to themselves. A pre-mortem changes the dynamic in three ways:</p><ul><li><strong>It makes doubt the assignment.</strong> Finding reasons for failure is the task, so raising a concern counts as contributing, not as being negative.</li><li><strong>It creates psychological safety.</strong> Because the failure is imaginary and everyone is listing reasons, no single person looks like the pessimist.</li><li><strong>It surfaces quiet concerns.</strong> Silent individual writing gives junior staff, new hires and introverts the same airtime as the loudest person in the room.</li></ul><h2>When should you run one?</h2><p>The best moment is when the plan is reasonably clear but before major money or time is committed. Good triggers include:</p><ul><li>A product, service or new location launch with a fixed date.</li><li>A system migration, such as moving to new accounting or CRM software.</li><li>A large customer contract, event or marketing campaign.</li><li>Any project where failure would be expensive or highly visible.</li></ul><p>Avoid running it too early, when there is no plan to stress-test, or too late, when nothing can change.</p><h2>How to run a pre-mortem: a 45–60 minute agenda</h2><p>Invite the people doing the work, plus one or two who will feel the consequences, such as customer service or finance. Five to ten people is ideal. Then follow this agenda.</p><h3>1. Brief the team (5 minutes)</h3><p>Restate the goal, the launch date and what success looks like. Then set the scene: "It is three months after launch. The project has failed badly. Our job is to work out why."</p><h3>2. Silent individual writing (10 minutes)</h3><p>Everyone writes down every reason they can think of for the failure, one per sticky note or line, without discussion. Encourage specific, uncomfortable reasons. The leader writes too but shares last.</p><h3>3. Round-robin sharing (15 minutes)</h3><p>Go around the room and have each person share one reason at a time until every item is listed. No debate yet: the facilitator only clarifies and records.</p><h3>4. Cluster and rank (10–15 minutes)</h3><p>Group similar reasons into themes, such as supplier delays or weak demand. Then rank the themes by likelihood and impact, for example with dot voting. Pick the top three to five to act on.</p><h3>5. Assign mitigations with owners and dates (10–15 minutes)</h3><p>For each top risk, agree a concrete action that prevents it or limits the damage, a single named owner and a due date. "Be careful with stock" is not a mitigation; "confirm a backup supplier by 1 March, owner: Sam" is.</p><h3>Example failure reasons for a small business launch</h3><p>Imagine a bakery launching online orders with local delivery. Its pre-mortem might produce:</p><ul><li>The website went live, but nobody knew about it because marketing only started in launch week.</li><li>Orders spiked on the first weekend and the kitchen could not keep up.</li><li>The delivery partner had no drivers available on Saturday mornings.</li><li>Checkout was only tested on desktop, and payments failed on mobile.</li><li>Delivery fees were set too low, so every order lost money.</li><li>The one person who understood the ordering system went on holiday.</li></ul><p>Each of these has an obvious mitigation once it is said out loud: an earlier campaign, a daily order cap, a backup courier, mobile testing, a margin check and a second trained person.</p><h2>Common mistakes to avoid</h2><ul><li><strong>Letting the boss speak first.</strong> Seniority anchors the discussion.</li><li><strong>Defending the plan in the room.</strong> Rebuttals shut down candour. Record everything first and evaluate later.</li><li><strong>Keeping too many risks.</strong> Fifty items with no ranking usually leads to zero action.</li><li><strong>Ending without owners.</strong> A risk without an owner and a date is just a worry.</li></ul><h2>How to follow up so mitigations actually happen</h2><p>A pre-mortem is only as good as what happens afterwards. Within a day, record each ranked risk in a <strong>risk log</strong> with its mitigation, owner, due date and status. A tool such as FulcrumGrid Command Center can help by showing mitigation tasks, owners and project milestones in one view, so an overdue action is visible next to the date it protects.</p><p>Then revisit the log at each checkpoint: weekly check-ins, go/no-go meetings and the final week before launch. Ask three questions. Are the mitigations done? Has any risk become more likely? Has anything new appeared? After launch, compare what actually went wrong with the pre-mortem list. That comparison makes your next pre-mortem sharper.</p><p>An hour spent imagining failure is one of the cheapest forms of insurance a project can buy.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>What is the difference between a pre-mortem and a post-mortem?</summary><p>A post-mortem looks back after a project ends to learn what happened. A pre-mortem takes place before the work starts and imagines failure, so the team can prevent problems instead of analysing them later.</p></details>
+        <details class="faq-item"><summary>How long should a pre-mortem take?</summary><p>For most projects 45 to 60 minutes is enough. Larger or riskier initiatives may need up to 90 minutes, but the agenda stays the same: brief, silent writing, sharing, ranking and mitigations.</p></details>
+        <details class="faq-item"><summary>Who should attend a pre-mortem?</summary><p>The project lead, the people doing the work and one or two people affected by the outcome, such as customer service or finance. Five to ten participants usually works best.</p></details>
+        <details class="faq-item"><summary>What is prospective hindsight?</summary><p>It is the effect where imagining that an event has already happened helps people find more specific and plausible reasons for it than treating it as something that might happen.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Keep every mitigation on track</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center brings mitigation tasks, owners and project milestones into one view, so the risks you find in a pre-mortem are handled before launch.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/products/tms/">TMS</a>
+          <a href="/products/assure/">Assure</a>
+          <a href="/products/close/">Close</a>
+          <a href="/products/consolidate/">Consolidate</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
