@@ -40,6 +40,7 @@ ALLOW = {
     'fulcrum', 'grid', 'fulcrum grid',
     # Integration / technology proper nouns kept English on every locale.
     'sap', 'sap business one', 'odoo', 'oracle', 'quickbooks', 'quickbooks online',
+    'muqeem',
     'qbo', 'sso', 'scim', 'rest api v1', 'webhooks', 'sandbox', 'cloud',
     # Consolidate app vocabulary kept English on every locale.
     'retail', 'daftra', 'zatca', 'mrr', 'fx', 'ssrf', 'pwa', 'p&l', 'aes-256-gcm',

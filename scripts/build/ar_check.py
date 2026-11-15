@@ -24,7 +24,7 @@ ALLOW = {
     'crm', 'erp', 'blog', 'faq', 'api', 'rest api v1', 'saas', 'kpi', 'okr',
     'okrs', 'kpis', 'pto', 'hr', 'sop', 'dso', 'dpo', 'gcc', 'uae', 'uk',
     'usa', 'eu', 'sar', 'aed', 'qar', 'kwd', 'bhd', 'omr', 'egp', 'jod',
-    'usd', 'eur', 'gbp', 'ig',
+    'usd', 'eur', 'gbp', 'muqeem', 'ig',
     'ceo', 'cfo', 'sso', 'scim', 'mfa', 'tls', 'gdpr', 'sepa', 'vat', 'na',
     'me', 'sap business one', 'webhooks', 'sandbox', 'paye', 'ni', 'wps',
     'gosi', 'nitaqat', 'starter', 'growth', 'business', 'enterprise', 'pilot',

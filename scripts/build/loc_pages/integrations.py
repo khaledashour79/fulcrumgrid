@@ -145,6 +145,12 @@ PAGE = {
                 'Defina una cadencia y Command Center extrae por su cuenta saldos y registros de su ERP — cada hora, cada noche, como necesite — para que los paneles sigan al día sin que nadie mueva un dedo.',
                 'Imposta una cadenza e Command Center estrae da solo saldi e dati dal tuo ERP — ogni ora, ogni notte, come ti serve — così le dashboard restano aggiornate senza muovere un dito.',
                 'Stel een cadans in en Command Center haalt zelf saldi en gegevens uit uw ERP — elk uur, elke nacht, zoals u wilt — zodat dashboards actueel blijven zonder dat iemand iets hoeft te doen.'),
+            'HR Suite connects to the Saudi Muqeem government platform to read live resident and visa status, so Iqama and visa records stay current against the source — with no secrets to manage on the working pages.': _t(
+                "HR Suite se connecte à la plateforme gouvernementale saoudienne Muqeem pour lire en temps réel le statut des résidents et des visas, afin que les dossiers d'iqama et de visa restent à jour par rapport à la source — sans aucun secret à gérer sur les pages de travail.",
+                'HR Suite verbindet sich mit der saudischen Behördenplattform Muqeem, um den Aufenthalts- und Visastatus in Echtzeit zu lesen, sodass Iqama- und Visadaten gegenüber der Quelle aktuell bleiben — ohne Geheimnisse, die auf den Arbeitsseiten verwaltet werden müssten.',
+                'HR Suite se conecta a la plataforma gubernamental saudí Muqeem para leer en tiempo real el estado de residencia y de visados, de modo que los registros de iqama y visados se mantengan actualizados frente a la fuente — sin secretos que gestionar en las páginas de trabajo.',
+                'HR Suite si collega alla piattaforma governativa saudita Muqeem per leggere in tempo reale lo stato di residenza e dei visti, così che i dati di iqama e visti restino aggiornati rispetto alla fonte — senza segreti da gestire nelle pagine operative.',
+                "HR Suite maakt verbinding met het Saudische overheidsplatform Muqeem om de verblijfs- en visastatus live te lezen, zodat iqama- en visagegevens actueel blijven ten opzichte van de bron — zonder geheimen om te beheren op de werkpagina's."),
 
             # ---- 03 · Identity & access ----
             'Identity &amp; access': _t(
