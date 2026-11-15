@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>What Is a Value Stream Map and How Do You Make One? — FulcrumGrid</title>
+  <meta name="description" content="A value stream map shows every step, wait and handoff from request to delivery. Learn the key elements and how to map and improve any process, office or factory." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What Is a Value Stream Map and How Do You Make One?" />
+  <meta property="og:description" content="A value stream map shows every step, wait and handoff from request to delivery. Learn the key elements and how to map and improve any process, office or factory." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-15" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What Is a Value Stream Map and How Do You Make One?" />
+  <meta name="twitter:description" content="A value stream map shows every step, wait and handoff from request to delivery. Learn the key elements and how to map and improve any process, office or factory." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What Is a Value Stream Map and How Do You Make One?",
+    "description": "A value stream map shows every step, wait and handoff from request to delivery. Learn the key elements and how to map and improve any process, office or factory.",
+    "datePublished": "2026-11-15",
+    "dateModified": "2026-11-15",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/what-is-a-value-stream-map-and-how-do-you-make-one/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Value Stream Map Guide",
+        "item": "https://fulcrumgrid.com/blog/what-is-a-value-stream-map-and-how-do-you-make-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between a value stream map and a flowchart?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A flowchart shows the sequence of steps and decisions. A value stream map adds process time, wait time, queues and information flow, so you can see where elapsed time is lost and which steps add value for the customer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can value stream mapping be used outside manufacturing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. It works well for office and service processes such as invoicing, quoting, hiring, client onboarding and support requests, where most delay comes from waiting, approvals and handoffs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you calculate process cycle efficiency?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Divide value-added time by total lead time. If an item receives 30 minutes of value-added work during a lead time of 2,920 minutes, process cycle efficiency is about 1%."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to make a value stream map?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For a small business process, walking the work and drawing the current state usually takes half a day to a day. Designing the future state and the action plan can take another two to three hours."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Value Stream Map Guide</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>What Is a Value Stream Map and How Do You Make One?</h1>
+        <p class="hero-intro">A value stream map shows every step, wait and handoff from request to delivery. Learn the key elements and how to map and improve any process, office or factory.</p>
+        <p class="mono"><time datetime="2026-11-15">November 15, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Most teams know roughly how long their work takes to do. Far fewer know how long it takes to get done. An invoice may need only half an hour of real effort, yet take a week to be paid. A value stream map makes that gap visible. Born in manufacturing, it works just as well for quoting, onboarding or approvals.</p><h2>What is a value stream map?</h2><p>A value stream map is a one-page picture of everything that happens between a customer request and its delivery: the steps, the waiting in between, the handoffs and the information that triggers each move. Its defining feature is a <strong>timeline</strong> that separates the time spent working on an item from the time it spends sitting still.</p><p>It differs from other process tools in focus. A SIPOC sets the boundaries and the big picture in five columns. A basic flowchart shows the sequence of steps and decisions. A value stream map adds <strong>time, queues and flow</strong>, so you can see where the days actually go.</p><h2>The key elements of a value stream map</h2><ul><li><strong>Process steps</strong>: boxes for each main activity, such as "enter order" or "approve quote", usually five to ten.</li><li><strong>Process time</strong>: the hands-on time to complete one item at that step.</li><li><strong>Wait time</strong>: how long an item sits before the next step starts.</li><li><strong>Queues or inventory</strong>: work piling up between steps, such as emails in an inbox or parts on a shelf. Note how many are waiting.</li><li><strong>Handoffs</strong>: every point where work moves to another person, team or system.</li><li><strong>Information flow</strong>: how each step learns it should start: an email, a shared queue or a weekly meeting.</li><li><strong>The timeline</strong>: a stepped line along the bottom, often called the ladder. Process times sit on the low rungs and wait times on the high ones.</li></ul><h3>Value-added versus non-value-added</h3><p>A step is <strong>value-added</strong> if the customer would willingly pay for it and it changes the work in a way they care about. Re-keying data, chasing approvals, correcting errors and waiting are <strong>non-value-added</strong>. Some, such as legal checks, are still necessary but should be kept minimal.</p><h3>Process cycle efficiency: a worked example</h3><p>Process cycle efficiency compares useful work to elapsed time:</p><p><strong>Process cycle efficiency = value-added time / total lead time</strong></p><p>Take a supplier invoice. It waits one day in a shared inbox, gets 15 minutes of checking, is re-keyed into the accounting system for 10 minutes, waits three days for manager approval, gets 5 minutes of approval, waits two days for the payment run and is paid in 10 minutes. Hands-on time is 40 minutes, of which the team judges 30 minutes value-added. Total lead time is six working days plus 40 minutes, roughly 2,920 working minutes. Efficiency is 30 / 2,920, or about 1%. Figures that low are normal in office work: cutting waits matters far more than working faster.</p><h2>How to map the current state</h2><h3>Step 1: Pick one process and one customer</h3><p>Choose a process that matters, with a clear start trigger and end point.</p><h3>Step 2: Walk the process with the people who do it</h3><p>Follow a real item from start to finish. Ask each person what they receive, what they do, how long it takes and where it goes next. Their answers will differ from the official procedure, and that difference is the point.</p><h3>Step 3: Record times and queues</h3><p>Note process time, wait time and the number of items waiting at each step. Use real timestamps where you can; memory understates waiting.</p><h3>Step 4: Draw the information flow and the timeline</h3><p>Add how each step is triggered, then draw the ladder and total the process times and the lead time. Calculate process cycle efficiency.</p><h2>How to spot waste on the map</h2><ul><li><strong>Long waits</strong> before approvals, reviews or batch runs.</li><li><strong>Large queues</strong>, which signal that work is pushed forward faster than the next step can absorb it.</li><li><strong>Repeated handoffs</strong>, where an item bounces between the same people.</li><li><strong>Rework loops</strong>, where errors send work back upstream.</li><li><strong>Duplicate entry</strong> of the same data into several systems.</li></ul><h2>Designing the future state and an action plan</h2><p>Draw a second map showing how the process should run in three to six months. Typical changes include removing approval steps below a value threshold, combining steps so one person finishes the job, replacing weekly batches with daily flow and moving work to a single shared queue. Recalculate lead time and efficiency for the new design so the target is concrete.</p><p>Then turn the gap between the two maps into an action plan: a short list of changes, each with an owner, a deadline and a measure of success, such as lead time or the number of items waiting. Remap once the changes have settled.</p><h2>Common mistakes to avoid</h2><ul><li><strong>Mapping from a meeting room.</strong> Without walking the real process, you map the procedure, not the reality.</li><li><strong>Ignoring wait time.</strong> Most of the lead time usually sits between steps, not inside them.</li><li><strong>Skipping the future state.</strong> A current-state map alone describes the problem but does not fix it.</li><li><strong>No follow-through.</strong> Actions without owners and dates rarely happen.</li></ul><p>The map is only as useful as the follow-up. FulcrumGrid Command Center can hold the improvement actions as projects with owners and dates, alongside the lead time and queue KPIs you chose, so the future state stays on the weekly agenda instead of on a wall.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>What is the difference between a value stream map and a flowchart?</summary><p>A flowchart shows the sequence of steps and decisions. A value stream map adds process time, wait time, queues and information flow, so you can see where elapsed time is lost and which steps add value for the customer.</p></details>
+        <details class="faq-item"><summary>Can value stream mapping be used outside manufacturing?</summary><p>Yes. It works well for office and service processes such as invoicing, quoting, hiring, client onboarding and support requests, where most delay comes from waiting, approvals and handoffs.</p></details>
+        <details class="faq-item"><summary>How do you calculate process cycle efficiency?</summary><p>Divide value-added time by total lead time. If an item receives 30 minutes of value-added work during a lead time of 2,920 minutes, process cycle efficiency is about 1%.</p></details>
+        <details class="faq-item"><summary>How long does it take to make a value stream map?</summary><p>For a small business process, walking the work and drawing the current state usually takes half a day to a day. Designing the future state and the action plan can take another two to three hours.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Turn your future-state map into tracked progress</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center brings improvement projects, owners and operations KPIs such as lead time into one dashboard, so your team can see whether the changes are working.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/products/tms/">TMS</a>
+          <a href="/products/assure/">Assure</a>
+          <a href="/products/close/">Close</a>
+          <a href="/products/consolidate/">Consolidate</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

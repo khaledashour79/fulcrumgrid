@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Qu'est-ce qu'une cartographie VSM et comment la réaliser ? — FulcrumGrid</title>
+  <meta name="description" content="La cartographie de la chaîne de valeur montre chaque étape, attente et transfert, de la demande à la livraison. Découvrez comment cartographier et améliorer un processus." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Qu'est-ce qu'une cartographie VSM et comment la réaliser ?" />
+  <meta property="og:description" content="La cartographie de la chaîne de valeur montre chaque étape, attente et transfert, de la demande à la livraison. Découvrez comment cartographier et améliorer un processus." />
+  <meta property="og:url" content="https://fulcrumgrid.com/fr/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-15" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Qu'est-ce qu'une cartographie VSM et comment la réaliser ?" />
+  <meta name="twitter:description" content="La cartographie de la chaîne de valeur montre chaque étape, attente et transfert, de la demande à la livraison. Découvrez comment cartographier et améliorer un processus." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/fr/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Qu'est-ce qu'une cartographie VSM et comment la réaliser ?",
+    "description": "La cartographie de la chaîne de valeur montre chaque étape, attente et transfert, de la demande à la livraison. Découvrez comment cartographier et améliorer un processus.",
+    "datePublished": "2026-11-15",
+    "dateModified": "2026-11-15",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/fr/blog/what-is-a-value-stream-map-and-how-do-you-make-one/"
+    },
+    "inLanguage": "fr"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://fulcrumgrid.com/fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/fr/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guide de la VSM",
+        "item": "https://fulcrumgrid.com/fr/blog/what-is-a-value-stream-map-and-how-do-you-make-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quelle différence entre une VSM et un logigramme ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un logigramme montre l'enchaînement des étapes et des décisions. La VSM ajoute le temps de traitement, le temps d'attente, les files et le flux d'information, pour voir où se perd le temps et quelles étapes apportent de la valeur au client."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "La VSM s'utilise-t-elle en dehors de l'industrie ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. Elle convient très bien aux processus administratifs et de service, comme la facturation, les devis, le recrutement, l'intégration de clients ou les demandes d'assistance, où l'essentiel du retard vient des attentes, des validations et des transferts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment calcule-t-on l'efficacité du cycle ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Divisez le temps à valeur ajoutée par le délai total. Si un dossier reçoit 30 minutes de travail à valeur ajoutée sur un délai de 2 920 minutes, l'efficacité est d'environ 1 %."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Combien de temps faut-il pour réaliser une VSM ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pour un processus de petite entreprise, parcourir le terrain et dessiner l'état actuel prend en général une demi-journée à une journée. L'état futur et le plan d'action demandent ensuite deux à trois heures."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/fr/" aria-label="Accueil FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/fr/products/">Produits</a>
+        <a href="/fr/features/">Grille</a>
+        <a href="/fr/pricing/">Tarifs</a>
+        <a href="/fr/regions/">Régions</a>
+        <a href="/fr/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/fr/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Langue">FR ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" class="active" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/fr/contact/">Demander une démo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/fr/">Accueil</a> / <a href="/fr/blog/">Blog</a> / Guide de la VSM</p>
+        <span class="tag tag-accent">Opérations</span>
+        <h1>Qu'est-ce qu'une cartographie VSM et comment la réaliser ?</h1>
+        <p class="hero-intro">La cartographie de la chaîne de valeur montre chaque étape, attente et transfert, de la demande à la livraison. Découvrez comment cartographier et améliorer un processus.</p>
+        <p class="mono"><time datetime="2026-11-15">15 novembre 2026</time> · 6 min de lecture</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>La plupart des équipes savent à peu près combien de temps il faut pour faire un travail. Bien moins savent combien de temps il faut pour qu'il soit terminé. Une facture peut ne demander qu'une demi-heure d'effort réel et mettre pourtant une semaine à être payée. La cartographie de la chaîne de valeur, ou VSM (Value Stream Mapping), rend cet écart visible. Née dans l'industrie, elle fonctionne tout aussi bien pour les devis, l'intégration de clients, les validations ou tout processus où le travail passe de main en main.</p><h2>Qu'est-ce qu'une cartographie de la chaîne de valeur ?</h2><p>C'est une représentation sur une seule page de tout ce qui se passe entre la demande d'un client et sa livraison : les étapes, les attentes entre elles, les transferts et les informations qui déclenchent chaque mouvement. Sa particularité est une <strong>ligne de temps</strong> qui distingue le temps passé à traiter un dossier du temps où il reste immobile.</p><p>Elle se distingue des autres outils par son angle. Un SIPOC fixe le périmètre et la vue d'ensemble en cinq colonnes. Un logigramme classique montre l'enchaînement des étapes et des décisions. La VSM ajoute <strong>le temps, les files d'attente et le flux</strong>, pour voir où partent réellement les jours.</p><h2>Les éléments clés d'une VSM</h2><ul><li><strong>Les étapes</strong> : un cadre par activité principale, comme « saisir la commande » ou « valider le devis », en général cinq à dix.</li><li><strong>Le temps de traitement</strong> : le temps de travail effectif pour traiter un dossier à cette étape.</li><li><strong>Le temps d'attente</strong> : la durée pendant laquelle un dossier patiente avant l'étape suivante.</li><li><strong>Les files d'attente ou stocks</strong> : le travail qui s'accumule entre deux étapes, comme des e-mails dans une boîte de réception, des dossiers à relire ou des pièces sur une étagère. Notez combien d'éléments attendent.</li><li><strong>Les transferts</strong> : chaque moment où le travail passe à une autre personne, équipe ou application.</li><li><strong>Le flux d'information</strong> : comment chaque étape sait qu'elle doit démarrer, par e-mail, file partagée, réunion hebdomadaire ou appel.</li><li><strong>La ligne de temps</strong> : une ligne en escalier en bas de la carte. Les temps de traitement occupent les marches basses, les temps d'attente les marches hautes, ce qui permet de comparer les totaux d'un coup d'œil.</li></ul><h3>Valeur ajoutée ou non</h3><p>Une étape apporte de la <strong>valeur ajoutée</strong> si le client accepterait de la payer et qu'elle transforme le travail d'une manière qui compte pour lui. Ressaisir des données, relancer des validations, corriger des erreurs et attendre sont <strong>sans valeur ajoutée</strong>. Certaines de ces étapes restent nécessaires, comme les contrôles juridiques, mais il faut les réduire au strict minimum.</p><h3>L'efficacité du cycle : un exemple chiffré</h3><p>L'efficacité du cycle compare le travail utile au temps écoulé :</p><p><strong>Efficacité du cycle = temps à valeur ajoutée / délai total</strong></p><p>Prenons une facture fournisseur. Elle attend un jour dans une boîte partagée, fait l'objet de 15 minutes de vérification, est ressaisie en 10 minutes dans le logiciel comptable, attend trois jours la validation du responsable, est validée en 5 minutes, attend deux jours le prochain virement groupé et est payée en 10 minutes. Le temps de travail effectif est de 40 minutes, dont l'équipe estime que 30 apportent de la valeur. Le délai total est de six jours ouvrés plus 40 minutes, soit environ 2 920 minutes ouvrées. L'efficacité vaut 30 / 2 920, soit environ 1 %. Des chiffres aussi bas sont courants dans les processus administratifs : réduire les attentes compte bien plus que travailler plus vite.</p><h2>Comment cartographier l'état actuel</h2><h3>Étape 1 : choisir un processus et un client</h3><p>Retenez un processus qui compte, avec un déclencheur et une fin clairement définis. Cartographier « tout ce que nous faisons » donne un papier peint, pas une analyse.</p><h3>Étape 2 : parcourir le processus avec ceux qui le font</h3><p>Suivez un dossier réel du début à la fin, idéalement sur place ou en partage d'écran. Demandez à chacun ce qu'il reçoit, ce qu'il fait, combien de temps cela prend et à qui il le transmet. Les réponses différeront de la procédure officielle, et c'est justement ce qui est intéressant.</p><h3>Étape 3 : relever les temps et les files d'attente</h3><p>Notez le temps de traitement, le temps d'attente et le nombre d'éléments en attente à chaque étape. Appuyez-vous si possible sur des horodatages réels issus des e-mails ou des logiciels ; de mémoire, on sous-estime presque toujours l'attente.</p><h3>Étape 4 : dessiner le flux d'information et la ligne de temps</h3><p>Indiquez ce qui déclenche chaque étape, puis tracez l'escalier, additionnez les temps de traitement et le délai total, et calculez l'efficacité du cycle.</p><h2>Repérer le gaspillage sur la carte</h2><ul><li><strong>De longues attentes</strong> avant les validations, les relectures ou les traitements groupés.</li><li><strong>Des files importantes</strong>, signe que le travail est poussé plus vite que l'étape suivante ne peut l'absorber.</li><li><strong>Des allers-retours</strong>, quand un dossier rebondit entre les mêmes personnes.</li><li><strong>Des boucles de reprise</strong>, quand des erreurs renvoient le travail en amont.</li><li><strong>Des doubles saisies</strong> des mêmes données dans plusieurs outils.</li><li><strong>Des déclencheurs flous</strong>, quand le travail ne démarre que si quelqu'un s'en aperçoit.</li></ul><h2>Concevoir l'état futur et un plan d'action</h2><p>Dessinez une seconde carte montrant comment le processus devrait fonctionner d'ici trois à six mois. Changements typiques : supprimer les validations sous un certain montant, regrouper des étapes pour qu'une seule personne termine le travail, remplacer les lots hebdomadaires par un flux quotidien, centraliser le travail dans une file unique. Recalculez le délai et l'efficacité de cette nouvelle version pour que l'objectif soit concret.</p><p>Transformez ensuite l'écart entre les deux cartes en plan d'action : une courte liste de changements, chacun avec un responsable, une échéance et un indicateur de réussite, comme le délai total ou le nombre de dossiers en attente. Suivez l'avancement régulièrement et refaites la carte une fois les changements stabilisés.</p><h2>Les erreurs courantes à éviter</h2><ul><li><strong>Cartographier depuis une salle de réunion.</strong> Sans parcourir le terrain, on décrit la procédure, pas la réalité.</li><li><strong>Négliger l'attente.</strong> L'essentiel du délai se trouve généralement entre les étapes, pas en leur sein.</li><li><strong>Entrer trop dans le détail.</strong> Tenez-vous à une page ; zoomez plus tard sur une étape si besoin.</li><li><strong>Oublier l'état futur.</strong> La carte actuelle décrit le problème sans le résoudre.</li><li><strong>Ne pas assurer le suivi.</strong> Des actions sans responsable ni date restent lettre morte.</li></ul><p>Une carte ne vaut que par ce qui suit. FulcrumGrid Command Center peut accueillir les actions d'amélioration sous forme de projets avec responsables et échéances, à côté des KPI de délai et de files d'attente que vous avez choisis, pour que l'état futur reste à l'ordre du jour chaque semaine plutôt qu'affiché au mur.</p>
+
+        <h2>Questions fréquentes</h2>
+        <details class="faq-item"><summary>Quelle différence entre une VSM et un logigramme ?</summary><p>Un logigramme montre l'enchaînement des étapes et des décisions. La VSM ajoute le temps de traitement, le temps d'attente, les files et le flux d'information, pour voir où se perd le temps et quelles étapes apportent de la valeur au client.</p></details>
+        <details class="faq-item"><summary>La VSM s'utilise-t-elle en dehors de l'industrie ?</summary><p>Oui. Elle convient très bien aux processus administratifs et de service, comme la facturation, les devis, le recrutement, l'intégration de clients ou les demandes d'assistance, où l'essentiel du retard vient des attentes, des validations et des transferts.</p></details>
+        <details class="faq-item"><summary>Comment calcule-t-on l'efficacité du cycle ?</summary><p>Divisez le temps à valeur ajoutée par le délai total. Si un dossier reçoit 30 minutes de travail à valeur ajoutée sur un délai de 2 920 minutes, l'efficacité est d'environ 1 %.</p></details>
+        <details class="faq-item"><summary>Combien de temps faut-il pour réaliser une VSM ?</summary><p>Pour un processus de petite entreprise, parcourir le terrain et dessiner l'état actuel prend en général une demi-journée à une journée. L'état futur et le plan d'action demandent ensuite deux à trois heures.</p></details>
+
+        <p style="margin-top:32px"><a href="/fr/blog/"><span aria-hidden="true">←</span> Retour au blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Faites de votre état futur un progrès mesurable</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center réunit projets d'amélioration, responsables et KPI opérationnels comme le délai total dans un seul tableau de bord, pour voir si les changements portent leurs fruits.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/fr/products/command-center/">Découvrir Command Center</a>
+          <a class="btn btn-secondary" href="/fr/blog/">Retour au blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>L'épine dorsale opérationnelle des équipes modernes.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produits</h5>
+          <a href="/fr/products/">Tous les produits</a>
+          <a href="/fr/products/hr-suite/">HR Suite</a>
+          <a href="/fr/products/command-center/">Command Center</a>
+          <a href="/fr/products/collection/">Collection</a>
+          <a href="/fr/products/tms/">TMS</a>
+          <a href="/fr/products/assure/">Assure</a>
+          <a href="/fr/products/close/">Close</a>
+          <a href="/fr/products/consolidate/">Consolidate</a>
+          <a href="/fr/custom-apps/">Applications sur mesure</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grille</h5>
+          <a href="/fr/features/">Fonctionnalités</a>
+          <a href="/fr/integrations/">Intégrations</a>
+          <a href="/fr/how-it-works/">Comment ça marche</a>
+          <a href="/fr/pricing/">Tarifs</a>
+          <a href="/fr/regions/">Régions</a>
+          <a href="/fr/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Entreprise</h5>
+          <a href="/fr/about/">À propos</a>
+          <a href="/fr/faq/">FAQ</a>
+          <a href="/fr/contact/">Contact</a>
+          <a href="/fr/privacy/">Confidentialité</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tous droits réservés.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

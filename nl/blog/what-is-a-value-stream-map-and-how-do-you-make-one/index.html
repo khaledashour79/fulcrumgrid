@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wat is een value stream map en hoe maak je er een? — FulcrumGrid</title>
+  <meta name="description" content="Een value stream map toont elke stap, wachttijd en overdracht van aanvraag tot levering. Ontdek de kernelementen en hoe je elk proces in kaart brengt en verbetert." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wat is een value stream map en hoe maak je er een?" />
+  <meta property="og:description" content="Een value stream map toont elke stap, wachttijd en overdracht van aanvraag tot levering. Ontdek de kernelementen en hoe je elk proces in kaart brengt en verbetert." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-11-15" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wat is een value stream map en hoe maak je er een?" />
+  <meta name="twitter:description" content="Een value stream map toont elke stap, wachttijd en overdracht van aanvraag tot levering. Ontdek de kernelementen en hoe je elk proces in kaart brengt en verbetert." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wat is een value stream map en hoe maak je er een?",
+    "description": "Een value stream map toont elke stap, wachttijd en overdracht van aanvraag tot levering. Ontdek de kernelementen en hoe je elk proces in kaart brengt en verbetert.",
+    "datePublished": "2026-11-15",
+    "dateModified": "2026-11-15",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/what-is-a-value-stream-map-and-how-do-you-make-one/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Value stream map-gids",
+        "item": "https://fulcrumgrid.com/nl/blog/what-is-a-value-stream-map-and-how-do-you-make-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is het verschil tussen een value stream map en een stroomschema?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een stroomschema toont de volgorde van stappen en beslissingen. Een value stream map voegt bewerkingstijd, wachttijd, wachtrijen en informatiestroom toe, zodat je ziet waar tijd verloren gaat en welke stappen waarde toevoegen voor de klant."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kun je value stream mapping ook buiten de productie gebruiken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Het werkt goed voor kantoor- en dienstverleningsprocessen zoals facturatie, offertes, werving, klantonboarding en supportverzoeken, waar de meeste vertraging ontstaat door wachten, goedkeuringen en overdrachten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe bereken je de procesefficiëntie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Deel de waardetoevoegende tijd door de totale doorlooptijd. Krijgt een item 30 minuten waardetoevoegend werk bij een doorlooptijd van 2.920 minuten, dan is de procesefficiëntie ongeveer 1%."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe lang duurt het om een value stream map te maken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Voor een proces in een klein bedrijf kost het doorlopen van het werk en tekenen van de huidige situatie meestal een halve tot een hele dag. De gewenste situatie en het actieplan vragen daarna nog twee tot drie uur."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / Value stream map-gids</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Wat is een value stream map en hoe maak je er een?</h1>
+        <p class="hero-intro">Een value stream map toont elke stap, wachttijd en overdracht van aanvraag tot levering. Ontdek de kernelementen en hoe je elk proces in kaart brengt en verbetert.</p>
+        <p class="mono"><time datetime="2026-11-15">15 november 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>De meeste teams weten ongeveer hoe lang het duurt om werk te doen. Veel minder teams weten hoe lang het duurt voordat het klaar is. Een factuur vraagt misschien maar een halfuur echt werk en wordt toch pas na een week betaald. Een value stream map, in het Nederlands ook waardestroomkaart genoemd, maakt dat verschil zichtbaar. Het instrument komt uit de productie, maar werkt net zo goed voor offertes, klantonboarding, goedkeuringen of elk proces waarin werk van hand tot hand gaat.</p><h2>Wat is een value stream map?</h2><p>Een value stream map is een overzicht op één pagina van alles wat er gebeurt tussen een klantvraag en de levering: de stappen, het wachten daartussen, de overdrachten en de informatie die elke beweging in gang zet. Het onderscheidende kenmerk is een <strong>tijdlijn</strong> die de tijd waarin aan een item wordt gewerkt scheidt van de tijd waarin het stilligt.</p><p>Het verschil met andere procestools zit in de focus. Een SIPOC legt in vijf kolommen de grenzen en het grote geheel vast. Een gewoon stroomschema toont de volgorde van stappen en beslissingen. Een value stream map voegt <strong>tijd, wachtrijen en doorstroming</strong> toe, zodat je ziet waar de dagen echt blijven.</p><h2>De kernelementen van een value stream map</h2><ul><li><strong>Processtappen</strong>: een vak per hoofdactiviteit, zoals 'order invoeren' of 'offerte goedkeuren', meestal vijf tot tien.</li><li><strong>Bewerkingstijd</strong>: de tijd die je daadwerkelijk aan één item besteedt in die stap.</li><li><strong>Wachttijd</strong>: hoe lang een item blijft liggen voordat de volgende stap begint.</li><li><strong>Wachtrijen of voorraad</strong>: werk dat zich opstapelt tussen stappen, zoals e-mails in een inbox, dossiers die op controle wachten of onderdelen op een plank. Noteer hoeveel items er wachten.</li><li><strong>Overdrachten</strong>: elk moment waarop werk naar een andere persoon, een ander team of systeem gaat.</li><li><strong>Informatiestroom</strong>: hoe elke stap weet dat hij moet beginnen, via e-mail, een gedeelde wachtrij, een wekelijks overleg of een telefoontje.</li><li><strong>De tijdlijn</strong>: een trapvormige lijn onderaan de kaart. Bewerkingstijden staan op de lage treden, wachttijden op de hoge, zodat je de totalen in één oogopslag vergelijkt.</li></ul><h3>Waardetoevoegend of niet</h3><p>Een stap is <strong>waardetoevoegend</strong> als de klant er graag voor zou betalen en hij het werk verandert op een manier die voor de klant telt. Gegevens opnieuw intypen, achter goedkeuringen aanzitten, fouten herstellen en wachten zijn <strong>niet-waardetoevoegend</strong>. Sommige daarvan blijven nodig, zoals juridische controles, maar houd ze zo beperkt mogelijk.</p><h3>Procesefficiëntie: een rekenvoorbeeld</h3><p>De procesefficiëntie zet nuttig werk af tegen de verstreken tijd:</p><p><strong>Procesefficiëntie = waardetoevoegende tijd / totale doorlooptijd</strong></p><p>Neem een leveranciersfactuur. Die ligt een dag in een gedeelde inbox, krijgt 15 minuten controle, wordt in 10 minuten overgetypt in het boekhoudpakket, wacht drie dagen op goedkeuring van de leidinggevende, wordt in 5 minuten goedgekeurd, wacht twee dagen op de volgende betaalrun en wordt in 10 minuten betaald. De bewerkingstijd is 40 minuten, waarvan het team 30 minuten als waardetoevoegend beschouwt. De doorlooptijd is zes werkdagen plus 40 minuten, ongeveer 2.920 werkminuten. De efficiëntie is 30 / 2.920, ofwel ongeveer 1%. Zulke lage cijfers zijn normaal voor kantoorprocessen, en ze laten zien dat wachttijd verkorten veel meer oplevert dan sneller werken.</p><h2>Zo breng je de huidige situatie in kaart</h2><h3>Stap 1: kies één proces en één klant</h3><p>Kies een proces dat ertoe doet, met een duidelijk startmoment en eindpunt. Wie 'alles wat we doen' in kaart brengt, krijgt behang in plaats van inzicht.</p><h3>Stap 2: loop het proces door met de mensen die het doen</h3><p>Volg een echt item van begin tot eind, bij voorkeur ter plekke of via schermdelen. Vraag iedereen wat ze ontvangen, wat ze doen, hoe lang het duurt en waar het daarna naartoe gaat. De antwoorden wijken af van de officiële procedure, en juist dat verschil is waardevol.</p><h3>Stap 3: noteer tijden en wachtrijen</h3><p>Leg per stap de bewerkingstijd, de wachttijd en het aantal wachtende items vast. Gebruik waar mogelijk echte tijdstempels uit e-mails of systeemlogboeken; schattingen uit het geheugen onderschatten het wachten bijna altijd.</p><h3>Stap 4: teken de informatiestroom en de tijdlijn</h3><p>Geef aan wat elke stap in gang zet, teken dan de trap, tel bewerkingstijden en doorlooptijd op en bereken de procesefficiëntie.</p><h2>Verspilling herkennen op de kaart</h2><ul><li><strong>Lange wachttijden</strong> voor goedkeuringen, controles of batchverwerking.</li><li><strong>Grote wachtrijen</strong>, een teken dat werk sneller wordt doorgeschoven dan de volgende stap het kan verwerken.</li><li><strong>Herhaalde overdrachten</strong>, waarbij een item heen en weer gaat tussen dezelfde mensen.</li><li><strong>Herstellussen</strong>, waarbij fouten het werk terugsturen.</li><li><strong>Dubbele invoer</strong> van dezelfde gegevens in meerdere systemen.</li><li><strong>Onduidelijke triggers</strong>, waarbij werk pas begint als iemand het toevallig opmerkt.</li></ul><h2>De gewenste situatie en een actieplan ontwerpen</h2><p>Teken een tweede kaart die laat zien hoe het proces over drie tot zes maanden moet lopen. Gangbare aanpassingen: goedkeuringen onder een bepaald bedrag schrappen, stappen samenvoegen zodat één persoon het werk afmaakt, wekelijkse batches vervangen door dagelijkse doorstroming en werk bundelen in één gedeelde wachtrij. Bereken de doorlooptijd en efficiëntie van het nieuwe ontwerp opnieuw, zodat het doel concreet wordt.</p><p>Zet het verschil tussen beide kaarten daarna om in een actieplan: een korte lijst met wijzigingen, elk met een eigenaar, een deadline en een succesmaatstaf, zoals de doorlooptijd of het aantal wachtende items. Bespreek de voortgang regelmatig en maak de kaart opnieuw zodra de wijzigingen zijn ingesleten.</p><h2>Veelgemaakte fouten</h2><ul><li><strong>In kaart brengen vanuit een vergaderruimte.</strong> Zonder het echte proces te volgen, teken je de procedure en niet de werkelijkheid.</li><li><strong>Wachttijd negeren.</strong> Het grootste deel van de doorlooptijd zit meestal tussen de stappen, niet erin.</li><li><strong>Te gedetailleerd worden.</strong> Houd het bij één pagina; zoom later in op één stap als dat nodig is.</li><li><strong>De gewenste situatie overslaan.</strong> Een kaart van de huidige situatie beschrijft het probleem, maar lost het niet op.</li><li><strong>Geen opvolging.</strong> Acties zonder eigenaar en datum komen zelden van de grond.</li></ul><p>De kaart is zo nuttig als wat erop volgt. FulcrumGrid Command Center kan de verbeteracties bijhouden als projecten met eigenaren en deadlines, naast de KPI's voor doorlooptijd en wachtrijen die je hebt gekozen, zodat de gewenste situatie elke week op de agenda staat in plaats van aan de muur te hangen.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wat is het verschil tussen een value stream map en een stroomschema?</summary><p>Een stroomschema toont de volgorde van stappen en beslissingen. Een value stream map voegt bewerkingstijd, wachttijd, wachtrijen en informatiestroom toe, zodat je ziet waar tijd verloren gaat en welke stappen waarde toevoegen voor de klant.</p></details>
+        <details class="faq-item"><summary>Kun je value stream mapping ook buiten de productie gebruiken?</summary><p>Ja. Het werkt goed voor kantoor- en dienstverleningsprocessen zoals facturatie, offertes, werving, klantonboarding en supportverzoeken, waar de meeste vertraging ontstaat door wachten, goedkeuringen en overdrachten.</p></details>
+        <details class="faq-item"><summary>Hoe bereken je de procesefficiëntie?</summary><p>Deel de waardetoevoegende tijd door de totale doorlooptijd. Krijgt een item 30 minuten waardetoevoegend werk bij een doorlooptijd van 2.920 minuten, dan is de procesefficiëntie ongeveer 1%.</p></details>
+        <details class="faq-item"><summary>Hoe lang duurt het om een value stream map te maken?</summary><p>Voor een proces in een klein bedrijf kost het doorlopen van het werk en tekenen van de huidige situatie meestal een halve tot een hele dag. De gewenste situatie en het actieplan vragen daarna nog twee tot drie uur.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Maak van je gewenste situatie meetbare vooruitgang</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center brengt verbeterprojecten, eigenaren en operationele KPI's zoals doorlooptijd samen in één dashboard, zodat je team ziet of de wijzigingen werken.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/products/tms/">TMS</a>
+          <a href="/nl/products/assure/">Assure</a>
+          <a href="/nl/products/close/">Close</a>
+          <a href="/nl/products/consolidate/">Consolidate</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
