@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wat is een RAID-log en hoe houd je er als klein team een bij? — FulcrumGrid</title>
+  <meta name="description" content="Praktische gids over het RAID-log voor kleine teams: risico's, aannames, issues en afhankelijkheden, welke kolommen je nodig hebt en hoe een weekreview werkt." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wat is een RAID-log en hoe houd je er als klein team een bij?" />
+  <meta property="og:description" content="Praktische gids over het RAID-log voor kleine teams: risico's, aannames, issues en afhankelijkheden, welke kolommen je nodig hebt en hoe een weekreview werkt." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-11-12" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wat is een RAID-log en hoe houd je er als klein team een bij?" />
+  <meta name="twitter:description" content="Praktische gids over het RAID-log voor kleine teams: risico's, aannames, issues en afhankelijkheden, welke kolommen je nodig hebt en hoe een weekreview werkt." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wat is een RAID-log en hoe houd je er als klein team een bij?",
+    "description": "Praktische gids over het RAID-log voor kleine teams: risico's, aannames, issues en afhankelijkheden, welke kolommen je nodig hebt en hoe een weekreview werkt.",
+    "datePublished": "2026-11-12",
+    "dateModified": "2026-11-12",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/what-is-a-raid-log-and-how-do-you-keep-one/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "RAID-log",
+        "item": "https://fulcrumgrid.com/nl/blog/what-is-a-raid-log-and-how-do-you-keep-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wie moet eigenaar zijn van het RAID-log?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Eén persoon, meestal de projectleider, houdt het log op orde en leidt de wekelijkse review. Elk punt heeft daarnaast een eigen eigenaar die verantwoordelijk is voor de volgende stap."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe vaak moet je een RAID-log bekijken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wekelijks past bij de meeste kleine teams. Bekijk het dagelijks in een kritieke lanceringsweek, en elke twee tot vier weken bij lange, rustige projecten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Zet je risico's en issues op aparte tabbladen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Beide werkt. Eén blad met een typekolom is in een klein team makkelijker te reviewen; aparte tabbladen helpen zodra een categorie meer dan zo'n 20 punten telt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is het verschil tussen een RAID-log en een risicoregister?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een risicoregister houdt alleen risico's bij. Een RAID-log voegt aannames, issues en afhankelijkheden toe en geeft zo een vollediger beeld van wat de oplevering kan beïnvloeden."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / RAID-log</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Wat is een RAID-log en hoe houd je er als klein team een bij?</h1>
+        <p class="hero-intro">Praktische gids over het RAID-log voor kleine teams: risico's, aannames, issues en afhankelijkheden, welke kolommen je nodig hebt en hoe een weekreview werkt.</p>
+        <p class="mono"><time datetime="2026-11-12">12 november 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Elk project brengt dingen met zich mee die mis kunnen gaan, dingen die iedereen stilzwijgend aanneemt, problemen die het werk nu al vertragen en taken die van iemand anders afhangen. In de meeste kleine teams zit dat allemaal in hoofden en verspreide chatgesprekken. Een RAID-log brengt het samen in één korte lijst die het team op vaste momenten doorneemt. Goed bijgehouden kost het een kwartier per week, en het voorkomt de verrassingen waardoor lanceringen en klantprojecten ontsporen.</p><h2>Waar staat RAID voor?</h2><p>RAID is een Engelse afkorting voor de vier soorten punten die het log bijhoudt:</p><ul><li><strong>Risico's (Risks).</strong> Gebeurtenissen die zouden kunnen optreden en het project dan schaden. Een belangrijke leverancier haalt bijvoorbeeld misschien de leverdatum niet.</li><li><strong>Aannames (Assumptions).</strong> Dingen die je als waar behandelt zonder dat ze bevestigd zijn. Bijvoorbeeld dat je de avond ervoor al op de locatie mag opbouwen.</li><li><strong>Issues.</strong> Problemen die zich nu al voordoen en direct actie vragen. Bijvoorbeeld: de testserver ligt plat en niemand kan de nieuwe release controleren.</li><li><strong>Afhankelijkheden (Dependencies).</strong> Werk dat steunt op een andere taak, een ander team of een externe partij. De webshop kan bijvoorbeeld pas live als de betaalprovider het account goedkeurt.</li></ul><p>In een veelgebruikte variant staat de A voor <strong>Acties</strong> en de D voor <strong>Decisions</strong> (besluiten). Geen van beide versies is fout: kies er één, zet de definities bovenaan het log en houd je eraan. Houd je al een apart besluitenlogboek bij, dan voorkomt de klassieke versie overlap.</p><h2>Wat is het verschil tussen een risico en een issue?</h2><p>Het moment. Een <strong>risico</strong> ligt in de toekomst en kan wel of niet gebeuren. Een <strong>issue</strong> is al gebeurd. Een risico dat je niet beheerst, wordt vaak een issue: mist de leverancier de datum echt, sluit dan het risico en open een issue dat ernaar verwijst. Het onderscheid doet ertoe omdat de aanpak verschilt. Bij een risico verklein je de kans of bereid je een plan B voor. Bij een issue los je het probleem op of beperk je de schade. Zo wordt ook een aanname die onjuist blijkt meestal een risico of een issue.</p><h2>Welke kolommen hoort een RAID-log te hebben?</h2><p>Zeven kolommen dekken bijna alles:</p><ul><li><strong>ID.</strong> Een eenvoudige code zoals R-04 of I-12, zodat je elk punt makkelijk kunt noemen.</li><li><strong>Omschrijving.</strong> Eén of twee heldere zinnen. Voor een risico werkt het patroon ‘door X kan Y gebeuren, met Z als gevolg’ goed.</li><li><strong>Eigenaar.</strong> Eén persoon met naam die het punt verder brengt, geen team.</li><li><strong>Impact en kans, of prioriteit.</strong> Geef elk risico op beide een score van 1 tot 3 en vermenigvuldig. Voor issues volstaat een prioriteit hoog, middel of laag.</li><li><strong>Status.</strong> Open, in behandeling, onder observatie of gesloten.</li><li><strong>Deadline of reviewdatum.</strong> Wanneer de volgende actie klaar moet zijn, of wanneer het punt opnieuw bekeken wordt.</li><li><strong>Beheersmaatregel of volgende stap.</strong> De concrete volgende actie, beginnend met een werkwoord: ‘dinsdag de leverancier bellen om de voorraad te bevestigen’.</li></ul><h2>Hoe zet je een RAID-log op?</h2><p>Begin met een gedeelde spreadsheet die iedereen in het team kan openen. Plan daarna één sessie van 30 minuten met de mensen die het werk doen en stel vier vragen: wat kan er misgaan, waar gaan we van uit, wat blokkeert ons nu al en op wie wachten we? Schrijf eerst alles op en schrap daarna. Voeg dubbele punten samen, laat weg wat niemand zou oppakken en geef elk overgebleven punt een eigenaar en een datum voordat de sessie afloopt. Een eerste log van 10 tot 25 punten is normaal voor een klein project.</p><h2>Hoe houd je een wekelijkse RAID-review?</h2><p>Plan een terugkerend blok van 15 minuten, of gebruik het begin van een bestaand weekoverleg. Een eenvoudige volgorde werkt goed:</p><ul><li><strong>Eerst nieuwe issues.</strong> Alles wat het werk nu blokkeert, krijgt een eigenaar en een volgende stap.</li><li><strong>De belangrijkste risico's.</strong> Bespreek alleen de risico's met de hoogste score, meestal vijf of minder. Is de kans veranderd? Wordt de maatregel uitgevoerd?</li><li><strong>Verlopen punten.</strong> Alles waarvan de datum voorbij is, krijgt een nieuwe datum, een nieuwe eigenaar of het eerlijke besluit om het te laten vallen.</li><li><strong>Aannames en afhankelijkheden.</strong> Bevestig wat gecontroleerd moet worden, of maak er risico's van.</li><li><strong>Sluit wat klaar is.</strong> Zet opgeloste punten op gesloten, met één regel over hoe ze zijn afgelopen.</li></ul><p>Elke eigenaar geeft zelf de update, en wie de review leidt, werkt het log direct bij, zodat het actueel is zodra het overleg voorbij is.</p><h2>Wat zijn de meest gemaakte fouten?</h2><ul><li><strong>Het log wordt een kerkhof.</strong> Punten worden bij de start toegevoegd en daarna nooit meer aangeraakt. Een log dat niemand bekijkt, is erger dan geen log, omdat het schijnzekerheid geeft.</li><li><strong>Geen eigenaren.</strong> Punten die aan ‘het team’ zijn toegewezen of leeg blijven, komen niet in beweging.</li><li><strong>Te veel punten.</strong> Een log van 120 regels verbergt de vijf die ertoe doen. Laat kleine zorgen van de lijst.</li><li><strong>Er wordt nooit iets gesloten.</strong> Blijven opgeloste punten open staan, dan oogt het log altijd alarmerend en houden mensen op het te lezen.</li></ul><h2>Heeft een klein team een RAID-log nodig of volstaat een takenlijst?</h2><p>Een takenlijst houdt werk bij dat je besloten hebt te doen. Een RAID-log houdt onzekerheid bij: wat er mis kan gaan, wat je misschien ten onrechte aanneemt en externe partijen waar je geen grip op hebt. Voor een korte interne klus is een takenlijst genoeg. Een RAID-log verdient zijn plek wanneer een project langer dan een paar weken loopt, leveranciers, klanten of andere teams erbij betrokken zijn, er een vaste datum of een vast budget is, of wanneer een verrassing duur zou uitpakken.</p><p>Een spreadsheet is een prima plek voor een RAID-log. Wil je eigenaren, deadlines en openstaande punten liever naast de rest van je operationele werk bijhouden, dan kan FulcrumGrid Command Center ze in één overzicht samenbrengen. Welk hulpmiddel je ook kiest, het gaat om de gewoonte: één lijst, duidelijke eigenaren, een korte wekelijkse review en punten die ook echt gesloten worden.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wie moet eigenaar zijn van het RAID-log?</summary><p>Eén persoon, meestal de projectleider, houdt het log op orde en leidt de wekelijkse review. Elk punt heeft daarnaast een eigen eigenaar die verantwoordelijk is voor de volgende stap.</p></details>
+        <details class="faq-item"><summary>Hoe vaak moet je een RAID-log bekijken?</summary><p>Wekelijks past bij de meeste kleine teams. Bekijk het dagelijks in een kritieke lanceringsweek, en elke twee tot vier weken bij lange, rustige projecten.</p></details>
+        <details class="faq-item"><summary>Zet je risico's en issues op aparte tabbladen?</summary><p>Beide werkt. Eén blad met een typekolom is in een klein team makkelijker te reviewen; aparte tabbladen helpen zodra een categorie meer dan zo'n 20 punten telt.</p></details>
+        <details class="faq-item"><summary>Wat is het verschil tussen een RAID-log en een risicoregister?</summary><p>Een risicoregister houdt alleen risico's bij. Een RAID-log voegt aannames, issues en afhankelijkheden toe en geeft zo een vollediger beeld van wat de oplevering kan beïnvloeden.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Houd risico's en issues in beeld</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center toont eigenaren, deadlines en openstaande punten in één overzicht naast je operationele KPI's, zodat niets in het log ongemerkt blijft liggen.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/products/tms/">TMS</a>
+          <a href="/nl/products/assure/">Assure</a>
+          <a href="/nl/products/close/">Close</a>
+          <a href="/nl/products/consolidate/">Consolidate</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Cos'è il tempo di ciclo e come si può ridurre? — FulcrumGrid</title>
+  <meta name="description" content="Il tempo di ciclo è la durata di un'unità di lavoro dall'inizio alla fine. Scopri come si distingue da lead time e takt time, come misurarlo e come ridurlo." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cos'è il tempo di ciclo e come si può ridurre?" />
+  <meta property="og:description" content="Il tempo di ciclo è la durata di un'unità di lavoro dall'inizio alla fine. Scopri come si distingue da lead time e takt time, come misurarlo e come ridurlo." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-09" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cos'è il tempo di ciclo e come si può ridurre?" />
+  <meta name="twitter:description" content="Il tempo di ciclo è la durata di un'unità di lavoro dall'inizio alla fine. Scopri come si distingue da lead time e takt time, come misurarlo e come ridurlo." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-cycle-time-and-how-do-you-reduce-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cos'è il tempo di ciclo e come si può ridurre?",
+    "description": "Il tempo di ciclo è la durata di un'unità di lavoro dall'inizio alla fine. Scopri come si distingue da lead time e takt time, come misurarlo e come ridurlo.",
+    "datePublished": "2026-11-09",
+    "dateModified": "2026-11-09",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/what-is-cycle-time-and-how-do-you-reduce-it/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida al tempo di ciclo",
+        "item": "https://fulcrumgrid.com/it/blog/what-is-cycle-time-and-how-do-you-reduce-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual è un buon tempo di ciclo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non esiste un numero universale. Dipende dal tipo di lavoro e dal takt time. Un obiettivo utile è stare al takt time o sotto, e vedere scendere la tua mediana e l'85º percentile."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Che differenza c'è tra tempo di ciclo e lead time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Il tempo di ciclo copre l'arco attivo di lavoro su un elemento. Il lead time parte prima, quando il cliente chiede, e quindi include l'attesa precedente all'inizio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Il tempo di ciclo può essere troppo breve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì, se lo si ottiene saltando controlli o spostando i problemi a valle. Tieni d'occhio qualità e rilavorazioni oltre alla velocità, così il costo non si sposta altrove."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanti elementi servono per misurarlo in modo affidabile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Parti da alcune decine di elementi completati dello stesso tipo. Di solito bastano per vedere una mediana e una dispersione approssimativa, da affinare nel tempo."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida al tempo di ciclo</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Cos'è il tempo di ciclo e come si può ridurre?</h1>
+        <p class="hero-intro">Il tempo di ciclo è la durata di un'unità di lavoro dall'inizio alla fine. Scopri come si distingue da lead time e takt time, come misurarlo e come ridurlo.</p>
+        <p class="mono"><time datetime="2026-11-09">9 novembre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Chiedete alla maggior parte dei team perché il lavoro richiede tanto tempo e risponderanno che tutti sono troppo impegnati. Guardando meglio, spesso c'è altro: il lavoro in sé richiede ore, ma resta fermo per giorni. Il tempo di ciclo è la misura che lo rende visibile. Questa guida spiega cos'è, come si distingue dai termini simili, come misurarlo e ridurlo senza sfiancare le persone.</p><h2>Cos'è il tempo di ciclo?</h2><p>Il tempo di ciclo è il tempo trascorso tra l'inizio e la fine di un lavoro. In una fabbrica possono essere i minuti per assemblare un pezzo. In ufficio, i giorni tra la ricezione di una fattura e il suo pagamento, o tra l'apertura e la chiusura di un ticket di assistenza. L'unità può essere qualsiasi cosa ripetibile: un ordine, un ticket, un'assunzione, un report.</p><h2>Tempo di ciclo, lead time e takt time</h2><p>Questi tre termini si confondono spesso, ma ciascuno risponde a una domanda diversa.</p><ul><li><strong>Tempo di ciclo.</strong> Quanto impiega il team a lavorare un elemento, dall'inizio alla fine?</li><li><strong>Lead time.</strong> Quanto aspetta il cliente, da quando chiede a quando riceve? Include il tempo che la richiesta ha passato in coda prima che qualcuno iniziasse.</li><li><strong>Takt time.</strong> Ogni quanto dobbiamo finire un elemento per soddisfare la domanda? È il tempo di lavoro disponibile diviso per il numero di elementi richiesti.</li></ul><p>Una regola semplice: il lead time è ciò che percepisce il cliente, il tempo di ciclo è ciò che fa il processo e il takt time è il ritmo imposto dalla domanda. Se il tempo di ciclo supera il takt time, accumulerete ritardo per quanto tutti si impegnino.</p><h2>Come si misura il tempo di ciclo?</h2><ul><li><strong>Definisci inizio e fine.</strong> Scegli un evento chiaro per ciascuno, come &laquo;il lavoro inizia&raquo; e &laquo;consegnato al richiedente&raquo;, e non cambiarli strada facendo.</li><li><strong>Registra l'ora di ogni elemento.</strong> Se puoi, rileva inizio e fine in automatico nel tuo strumento. Per una prima base basta anche un cronometraggio manuale.</li><li><strong>Usa la mediana e un percentile alto.</strong> La media nasconde i casi estremi. Riporta la mediana e l'85º o 90º percentile per poter dire &laquo;la maggior parte degli elementi si chiude entro X giorni&raquo;.</li><li><strong>Segmenta per tipo.</strong> Una piccola correzione e un grande progetto non devono condividere un solo numero.</li></ul><h2>Tempo di attesa e tempo di lavoro</h2><p>Dividi il tempo di ciclo in tempo di lavoro, quando qualcuno agisce davvero, e tempo di attesa, quando l'elemento resta in una coda, in una casella di posta o in attesa di approvazione. Dividi il tempo di lavoro per il tempo di ciclo totale e ottieni l'efficienza del processo. In molti processi d'ufficio è sotto il 10%, cioè il 90% del tempo si passa ad aspettare. È una buona notizia: l'attesa di solito è più facile da eliminare di quanto sia accelerare il lavoro.</p><h2>Quali sono le leve principali per ridurlo?</h2><ul><li><strong>Limitare il lavoro in corso.</strong> Più elementi sono in volo, più tempo richiede ciascuno. Finisci ciò che è iniziato prima di avviare altro.</li><li><strong>Ridurre la dimensione dei lotti.</strong> Passa il lavoro in piccoli pezzi invece di aspettare di consegnare un lotto grande.</li><li><strong>Eliminare i passaggi di mano.</strong> Ogni passaggio aggiunge una coda e un rischio di fraintendimenti. Affida un elemento, dall'inizio alla fine, a una persona o a un piccolo team.</li><li><strong>Snellire le approvazioni.</strong> Fissa una soglia sotto la quale si decide senza via libera e dai a chi approva una scadenza per rispondere.</li><li><strong>Correggere le rilavorazioni.</strong> Ciò che torna indietro per correzioni percorre il circuito due volte. Requisiti chiari all'inizio sono una prevenzione economica.</li><li><strong>Bilanciare il collo di bottiglia.</strong> Trova la fase con la coda più lunga, poi aggiungi capacità, semplificala o toglile i compiti facili.</li><li><strong>Standardizzare e automatizzare.</strong> Modelli, checklist e notifiche automatiche eliminano piccoli ritardi che si sommano.</li></ul><h2>Quali errori evitare?</h2><ul><li><strong>Accelerare il passo sbagliato.</strong> Migliorare una fase che non è il collo di bottiglia non cambia nulla per il cliente.</li><li><strong>Sacrificare la qualità per il tempo.</strong> Se aumentano le rilavorazioni, cresce anche il tempo di ciclo totale.</li><li><strong>Confrontare elementi diversi.</strong> Mescolare tipi di lavoro rende le medie prive di senso.</li><li><strong>Usarlo per giudicare le persone.</strong> Il tempo di ciclo descrive il processo. Chi si sente giudicato truccherà i numeri.</li><li><strong>Ignorare la variabilità.</strong> Un processo che richiede due giorni in media ma a volte venti non è affidabile.</li></ul><h2>Come continuare a monitorarlo?</h2><p>Scegli una o due metriche di flusso, rivedile in una riunione regolare e guarda la tendenza, non una sola settimana. Cambia una cosa alla volta per capire cosa ha funzionato e annota il risultato. Condividi il grafico con il team: quando le persone vedono elementi bloccati in coda, spesso sono loro a proporre le soluzioni.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Qual è un buon tempo di ciclo?</summary><p>Non esiste un numero universale. Dipende dal tipo di lavoro e dal takt time. Un obiettivo utile è stare al takt time o sotto, e vedere scendere la tua mediana e l'85º percentile.</p></details>
+        <details class="faq-item"><summary>Che differenza c'è tra tempo di ciclo e lead time?</summary><p>Il tempo di ciclo copre l'arco attivo di lavoro su un elemento. Il lead time parte prima, quando il cliente chiede, e quindi include l'attesa precedente all'inizio.</p></details>
+        <details class="faq-item"><summary>Il tempo di ciclo può essere troppo breve?</summary><p>Sì, se lo si ottiene saltando controlli o spostando i problemi a valle. Tieni d'occhio qualità e rilavorazioni oltre alla velocità, così il costo non si sposta altrove.</p></details>
+        <details class="faq-item"><summary>Quanti elementi servono per misurarlo in modo affidabile?</summary><p>Parti da alcune decine di elementi completati dello stesso tipo. Di solito bastano per vedere una mediana e una dispersione approssimativa, da affinare nel tempo.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Tieni visibile il tuo tempo di ciclo</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center riunisce KPI e progetti in un'unica vista, così le tendenze del tempo di ciclo e delle consegne si vedono subito e si rivedono ogni settimana.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/products/tms/">TMS</a>
+          <a href="/it/products/assure/">Assure</a>
+          <a href="/it/products/close/">Close</a>
+          <a href="/it/products/consolidate/">Consolidate</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

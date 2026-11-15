@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Was ist ein RAID-Log und wie führt ein kleines Team es richtig? — FulcrumGrid</title>
+  <meta name="description" content="Praxisleitfaden zum RAID-Log für kleine Teams: Risiken, Annahmen, Probleme und Abhängigkeiten, die passenden Spalten und ein kurzes wöchentliches Review." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Was ist ein RAID-Log und wie führt ein kleines Team es richtig?" />
+  <meta property="og:description" content="Praxisleitfaden zum RAID-Log für kleine Teams: Risiken, Annahmen, Probleme und Abhängigkeiten, die passenden Spalten und ein kurzes wöchentliches Review." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-12" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Was ist ein RAID-Log und wie führt ein kleines Team es richtig?" />
+  <meta name="twitter:description" content="Praxisleitfaden zum RAID-Log für kleine Teams: Risiken, Annahmen, Probleme und Abhängigkeiten, die passenden Spalten und ein kurzes wöchentliches Review." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Was ist ein RAID-Log und wie führt ein kleines Team es richtig?",
+    "description": "Praxisleitfaden zum RAID-Log für kleine Teams: Risiken, Annahmen, Probleme und Abhängigkeiten, die passenden Spalten und ein kurzes wöchentliches Review.",
+    "datePublished": "2026-11-12",
+    "dateModified": "2026-11-12",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/what-is-a-raid-log-and-how-do-you-keep-one/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "RAID-Log",
+        "item": "https://fulcrumgrid.com/de/blog/what-is-a-raid-log-and-how-do-you-keep-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wer sollte für das RAID-Log verantwortlich sein?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Eine Person, meist die Projektleitung, hält das Log in Ordnung und leitet das wöchentliche Review. Jeder Eintrag hat trotzdem einen eigenen Verantwortlichen für den nächsten Schritt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie oft sollte ein RAID-Log geprüft werden?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wöchentlich passt für die meisten kleinen Teams. In einer kritischen Startwoche lohnt sich ein tägliches Review, bei langen, ruhigen Projekten reichen zwei bis vier Wochen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sollten Risiken und Probleme auf getrennten Tabellenblättern stehen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Beides funktioniert. Ein Blatt mit einer Typ-Spalte ist im kleinen Team leichter zu prüfen; getrennte Blätter helfen, sobald eine Kategorie mehr als etwa 20 Einträge hat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was unterscheidet ein RAID-Log von einem Risikoregister?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ein Risikoregister erfasst nur Risiken. Ein RAID-Log ergänzt Annahmen, Probleme und Abhängigkeiten und zeigt damit vollständiger, was das Projekt gefährden kann."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / RAID-Log</p>
+        <span class="tag tag-accent">Betrieb</span>
+        <h1>Was ist ein RAID-Log und wie führt ein kleines Team es richtig?</h1>
+        <p class="hero-intro">Praxisleitfaden zum RAID-Log für kleine Teams: Risiken, Annahmen, Probleme und Abhängigkeiten, die passenden Spalten und ein kurzes wöchentliches Review.</p>
+        <p class="mono"><time datetime="2026-11-12">12. November 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Jedes Projekt bringt Dinge mit sich, die schiefgehen könnten, Dinge, die alle stillschweigend voraussetzen, Probleme, die die Arbeit schon jetzt bremsen, und Aufgaben, die von anderen abhängen. In den meisten kleinen Teams steckt all das in den Köpfen und in verstreuten Chatverläufen. Ein RAID-Log bündelt es in einer kurzen Liste, die das Team regelmäßig durchgeht. Gut geführt kostet es eine Viertelstunde pro Woche und verhindert die Überraschungen, an denen Produktstarts und Kundenprojekte scheitern.</p><h2>Wofür steht RAID?</h2><p>RAID ist ein englisches Akronym für die vier Arten von Einträgen, die das Log erfasst:</p><ul><li><strong>Risiken (Risks).</strong> Ereignisse, die eintreten könnten und dem Projekt dann schaden würden. Zum Beispiel könnte ein wichtiger Lieferant den Liefertermin verpassen.</li><li><strong>Annahmen (Assumptions).</strong> Dinge, die Sie als gegeben behandeln, ohne sie bestätigt zu haben. Zum Beispiel, dass Sie am Vorabend im Veranstaltungsort aufbauen dürfen.</li><li><strong>Probleme (Issues).</strong> Schwierigkeiten, die bereits bestehen und sofortiges Handeln erfordern. Zum Beispiel ist der Testserver ausgefallen und niemand kann das neue Release prüfen.</li><li><strong>Abhängigkeiten (Dependencies).</strong> Arbeit, die von einer anderen Aufgabe, einem anderen Team oder einem externen Partner abhängt. Zum Beispiel kann der Onlineshop erst starten, wenn der Zahlungsanbieter das Konto freigibt.</li></ul><p>In einer verbreiteten Variante steht A für <strong>Actions</strong> (Maßnahmen) und D für <strong>Decisions</strong> (Entscheidungen). Keine der beiden Versionen ist falsch: Entscheiden Sie sich für eine, schreiben Sie die Definitionen oben ins Log und bleiben Sie dabei. Wenn Sie bereits ein separates Entscheidungslog führen, vermeidet die klassische Version Überschneidungen.</p><h2>Was ist der Unterschied zwischen einem Risiko und einem Problem?</h2><p>Der Zeitpunkt. Ein <strong>Risiko</strong> liegt in der Zukunft und kann eintreten oder auch nicht. Ein <strong>Problem</strong> ist bereits eingetreten. Ein Risiko, das nicht gesteuert wird, wird oft zum Problem: Verpasst der Lieferant den Termin tatsächlich, schließen Sie das Risiko und legen ein Problem an, das darauf verweist. Die Unterscheidung ist wichtig, weil die Reaktion jeweils eine andere ist. Bei einem Risiko senken Sie die Wahrscheinlichkeit oder bereiten einen Plan B vor. Bei einem Problem beheben Sie es oder begrenzen den Schaden. Ebenso wird eine Annahme, die sich als falsch erweist, meist zu einem Risiko oder einem Problem.</p><h2>Welche Spalten gehören in ein RAID-Log?</h2><p>Sieben Spalten decken das meiste ab:</p><ul><li><strong>ID.</strong> Ein einfaches Kürzel wie R-04 oder I-12, damit sich jeder Eintrag leicht benennen lässt.</li><li><strong>Beschreibung.</strong> Ein oder zwei klare Sätze. Für Risiken hat sich das Muster „Wegen X könnte Y passieren, was Z zur Folge hätte“ bewährt.</li><li><strong>Verantwortlich.</strong> Eine namentlich genannte Person, die den Eintrag vorantreibt, kein Team.</li><li><strong>Auswirkung und Wahrscheinlichkeit oder Priorität.</strong> Bewerten Sie Risiken jeweils von 1 bis 3 und multiplizieren Sie die Werte. Für Probleme reicht eine Priorität hoch, mittel oder niedrig.</li><li><strong>Status.</strong> Offen, in Bearbeitung, unter Beobachtung oder geschlossen.</li><li><strong>Fälligkeits- oder Prüfdatum.</strong> Wann die nächste Maßnahme fällig ist oder wann der Eintrag erneut angesehen wird.</li><li><strong>Gegenmaßnahme oder nächster Schritt.</strong> Die konkrete nächste Handlung, mit einem Verb formuliert: „Lieferanten am Dienstag anrufen und Bestand bestätigen lassen“.</li></ul><h2>Wie richtet man ein RAID-Log ein?</h2><p>Beginnen Sie mit einer gemeinsamen Tabelle, auf die das ganze Team zugreifen kann. Setzen Sie sich dann 30 Minuten mit den Leuten zusammen, die die Arbeit machen, und stellen Sie vier Fragen: Was könnte schiefgehen, wovon gehen wir aus, was blockiert uns schon jetzt und auf wen warten wir? Schreiben Sie zuerst alles auf und sortieren Sie dann aus. Führen Sie Doppelungen zusammen, streichen Sie, was niemand angehen würde, und geben Sie jedem verbleibenden Eintrag vor Ende der Sitzung einen Verantwortlichen und ein Datum. Ein erstes Log mit 10 bis 25 Einträgen ist für ein kleines Projekt normal.</p><h2>Wie läuft ein wöchentliches RAID-Review ab?</h2><p>Blocken Sie einen wiederkehrenden 15-Minuten-Termin oder nutzen Sie den Anfang eines bestehenden Wochenmeetings. Eine einfache Reihenfolge hat sich bewährt:</p><ul><li><strong>Zuerst neue Probleme.</strong> Alles, was die Arbeit gerade blockiert, bekommt einen Verantwortlichen und einen nächsten Schritt.</li><li><strong>Die wichtigsten Risiken.</strong> Besprechen Sie nur die am höchsten bewerteten Risiken, meist höchstens fünf. Hat sich die Wahrscheinlichkeit verändert? Wird die Gegenmaßnahme umgesetzt?</li><li><strong>Überfällige Einträge.</strong> Alles, dessen Datum verstrichen ist, bekommt ein neues Datum, einen neuen Verantwortlichen oder die ehrliche Entscheidung, es fallen zu lassen.</li><li><strong>Annahmen und Abhängigkeiten.</strong> Bestätigen Sie die, deren Prüfung ansteht, oder machen Sie Risiken daraus.</li><li><strong>Erledigtes schließen.</strong> Markieren Sie gelöste Einträge als geschlossen, mit einer kurzen Notiz, wie sie ausgegangen sind.</li></ul><p>Jeder Verantwortliche berichtet selbst, und wer das Review leitet, pflegt das Log direkt mit. So ist es aktuell, sobald das Meeting endet.</p><h2>Welche Fehler machen ein RAID-Log nutzlos?</h2><ul><li><strong>Das Log wird zum Friedhof.</strong> Einträge werden zum Projektstart angelegt und nie wieder angefasst. Ein Log, das niemand liest, ist schlimmer als gar keines, weil es falsche Sicherheit vermittelt.</li><li><strong>Keine Verantwortlichen.</strong> Einträge, die „dem Team“ zugeordnet oder leer gelassen werden, bewegen sich nicht.</li><li><strong>Zu viele Einträge.</strong> Ein Log mit 120 Zeilen versteckt die fünf, auf die es ankommt. Lassen Sie kleinere Sorgen weg.</li><li><strong>Nichts wird je geschlossen.</strong> Bleiben gelöste Einträge offen, wirkt das Log dauerhaft alarmierend und niemand liest es mehr.</li></ul><h2>Braucht ein kleines Team ein RAID-Log oder reicht eine To-do-Liste?</h2><p>Eine To-do-Liste erfasst Arbeit, die Sie beschlossen haben. Ein RAID-Log erfasst Unsicherheit: Dinge, die schiefgehen könnten, Annahmen, die falsch sein könnten, und Externe, die Sie nicht steuern können. Für eine kurze interne Aufgabe genügt eine To-do-Liste. Ein RAID-Log lohnt sich, wenn ein Projekt länger als ein paar Wochen läuft, Lieferanten, Kunden oder andere Teams beteiligt sind, Termin oder Budget feststehen oder eine Überraschung teuer würde.</p><p>Eine Tabelle ist ein völlig ausreichender Ort für ein RAID-Log. Wenn Sie Verantwortliche, Fälligkeiten und offene Punkte lieber neben Ihrer übrigen operativen Arbeit führen möchten, kann FulcrumGrid Command Center sie in einer Ansicht zusammenführen. Unabhängig vom Werkzeug zählt die Gewohnheit: eine Liste, klare Verantwortliche, ein kurzes wöchentliches Review und Einträge, die wirklich geschlossen werden.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Wer sollte für das RAID-Log verantwortlich sein?</summary><p>Eine Person, meist die Projektleitung, hält das Log in Ordnung und leitet das wöchentliche Review. Jeder Eintrag hat trotzdem einen eigenen Verantwortlichen für den nächsten Schritt.</p></details>
+        <details class="faq-item"><summary>Wie oft sollte ein RAID-Log geprüft werden?</summary><p>Wöchentlich passt für die meisten kleinen Teams. In einer kritischen Startwoche lohnt sich ein tägliches Review, bei langen, ruhigen Projekten reichen zwei bis vier Wochen.</p></details>
+        <details class="faq-item"><summary>Sollten Risiken und Probleme auf getrennten Tabellenblättern stehen?</summary><p>Beides funktioniert. Ein Blatt mit einer Typ-Spalte ist im kleinen Team leichter zu prüfen; getrennte Blätter helfen, sobald eine Kategorie mehr als etwa 20 Einträge hat.</p></details>
+        <details class="faq-item"><summary>Was unterscheidet ein RAID-Log von einem Risikoregister?</summary><p>Ein Risikoregister erfasst nur Risiken. Ein RAID-Log ergänzt Annahmen, Probleme und Abhängigkeiten und zeigt damit vollständiger, was das Projekt gefährden kann.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Risiken und Probleme im Blick behalten</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center zeigt Verantwortliche, Fälligkeiten und offene Punkte in einer Ansicht neben Ihren operativen Kennzahlen, damit im Log nichts unbemerkt veraltet.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/command-center/">Entdecken Command Center</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/products/tms/">TMS</a>
+          <a href="/de/products/assure/">Assure</a>
+          <a href="/de/products/close/">Close</a>
+          <a href="/de/products/consolidate/">Consolidate</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

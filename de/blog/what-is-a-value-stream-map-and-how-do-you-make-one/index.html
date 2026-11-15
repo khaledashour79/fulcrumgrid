@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Was ist eine Wertstromanalyse und wie erstellt man sie? — FulcrumGrid</title>
+  <meta name="description" content="Eine Wertstromanalyse zeigt jeden Schritt, jede Wartezeit und jede Übergabe von der Anfrage bis zur Lieferung. So bilden Sie Prozesse ab und verbessern sie gezielt." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Was ist eine Wertstromanalyse und wie erstellt man sie?" />
+  <meta property="og:description" content="Eine Wertstromanalyse zeigt jeden Schritt, jede Wartezeit und jede Übergabe von der Anfrage bis zur Lieferung. So bilden Sie Prozesse ab und verbessern sie gezielt." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-15" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Was ist eine Wertstromanalyse und wie erstellt man sie?" />
+  <meta name="twitter:description" content="Eine Wertstromanalyse zeigt jeden Schritt, jede Wartezeit und jede Übergabe von der Anfrage bis zur Lieferung. So bilden Sie Prozesse ab und verbessern sie gezielt." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-value-stream-map-and-how-do-you-make-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Was ist eine Wertstromanalyse und wie erstellt man sie?",
+    "description": "Eine Wertstromanalyse zeigt jeden Schritt, jede Wartezeit und jede Übergabe von der Anfrage bis zur Lieferung. So bilden Sie Prozesse ab und verbessern sie gezielt.",
+    "datePublished": "2026-11-15",
+    "dateModified": "2026-11-15",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/what-is-a-value-stream-map-and-how-do-you-make-one/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Wertstromanalyse-Leitfaden",
+        "item": "https://fulcrumgrid.com/de/blog/what-is-a-value-stream-map-and-how-do-you-make-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was unterscheidet eine Wertstromanalyse von einem Flussdiagramm?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ein Flussdiagramm zeigt die Abfolge von Schritten und Entscheidungen. Die Wertstromanalyse ergänzt Bearbeitungszeit, Wartezeit, Warteschlangen und Informationsfluss, sodass sichtbar wird, wo Zeit verloren geht und welche Schritte dem Kunden Wert bringen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Lässt sich die Wertstromanalyse auch außerhalb der Fertigung nutzen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Sie eignet sich gut für Büro- und Dienstleistungsprozesse wie Rechnungsstellung, Angebote, Personalgewinnung, Kunden-Onboarding und Supportanfragen, bei denen die meisten Verzögerungen durch Warten, Freigaben und Übergaben entstehen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie berechnet man die Prozesseffizienz?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Teilen Sie die wertschöpfende Zeit durch die gesamte Durchlaufzeit. Erhält ein Vorgang 30 Minuten wertschöpfende Arbeit bei einer Durchlaufzeit von 2.920 Minuten, liegt die Prozesseffizienz bei etwa 1 %."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie lange dauert es, eine Wertstromanalyse zu erstellen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bei einem Prozess in einem kleinen Unternehmen dauern Begehung und Ist-Karte meist einen halben bis ganzen Tag. Soll-Zustand und Maßnahmenplan brauchen dann weitere zwei bis drei Stunden."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / Wertstromanalyse-Leitfaden</p>
+        <span class="tag tag-accent">Betrieb</span>
+        <h1>Was ist eine Wertstromanalyse und wie erstellt man sie?</h1>
+        <p class="hero-intro">Eine Wertstromanalyse zeigt jeden Schritt, jede Wartezeit und jede Übergabe von der Anfrage bis zur Lieferung. So bilden Sie Prozesse ab und verbessern sie gezielt.</p>
+        <p class="mono"><time datetime="2026-11-15">15. November 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Die meisten Teams wissen ungefähr, wie lange eine Aufgabe in der Bearbeitung dauert. Weit weniger wissen, wie lange es dauert, bis sie erledigt ist. Eine Rechnung braucht vielleicht nur eine halbe Stunde echte Arbeit und wird trotzdem erst nach einer Woche bezahlt. Eine Wertstromanalyse, auch Value Stream Map genannt, macht diese Lücke sichtbar. Ursprünglich stammt sie aus der Fertigung, sie funktioniert aber genauso gut für Angebote, Kunden-Onboarding, Freigaben oder jeden Prozess, in dem Arbeit von Hand zu Hand geht.</p><h2>Was ist eine Wertstromanalyse?</h2><p>Eine Wertstromanalyse ist ein einseitiges Bild von allem, was zwischen einer Kundenanfrage und ihrer Erfüllung passiert: die Schritte, die Wartezeiten dazwischen, die Übergaben und die Informationen, die jeden Schritt auslösen. Ihr Kennzeichen ist eine <strong>Zeitlinie</strong>, die die Zeit, in der an einem Vorgang gearbeitet wird, von der Zeit trennt, in der er einfach liegt.</p><p>Von anderen Prozesswerkzeugen unterscheidet sie sich im Fokus. Ein SIPOC legt in fünf Spalten Grenzen und Gesamtbild fest. Ein einfaches Flussdiagramm zeigt die Abfolge von Schritten und Entscheidungen. Die Wertstromanalyse ergänzt <strong>Zeit, Warteschlangen und Fluss</strong>, damit Sie sehen, wo die Tage tatsächlich verloren gehen.</p><h2>Die wichtigsten Elemente</h2><ul><li><strong>Prozessschritte</strong>: ein Kasten pro Hauptaktivität, etwa „Auftrag erfassen“ oder „Angebot freigeben“, meist fünf bis zehn.</li><li><strong>Bearbeitungszeit</strong>: die reine Arbeitszeit für einen Vorgang in diesem Schritt.</li><li><strong>Wartezeit</strong>: wie lange ein Vorgang liegt, bevor der nächste Schritt beginnt.</li><li><strong>Warteschlangen oder Bestände</strong>: Arbeit, die sich zwischen Schritten staut, etwa E-Mails im Posteingang, Unterlagen zur Prüfung oder Teile im Regal. Notieren Sie, wie viele Vorgänge warten.</li><li><strong>Übergaben</strong>: jede Stelle, an der Arbeit an eine andere Person, ein anderes Team oder System geht.</li><li><strong>Informationsfluss</strong>: woher jeder Schritt weiß, dass er starten soll, ob per E-Mail, gemeinsamer Liste, wöchentlichem Meeting oder Anruf.</li><li><strong>Die Zeitlinie</strong>: eine Treppenlinie am unteren Rand. Bearbeitungszeiten stehen auf den unteren Stufen, Wartezeiten auf den oberen, sodass sich die Summen auf einen Blick vergleichen lassen.</li></ul><h3>Wertschöpfend oder nicht wertschöpfend</h3><p>Ein Schritt ist <strong>wertschöpfend</strong>, wenn der Kunde bereitwillig dafür zahlen würde und er die Arbeit auf eine für ihn relevante Weise verändert. Daten erneut eingeben, Freigaben hinterhertelefonieren, Fehler korrigieren und Warten sind <strong>nicht wertschöpfend</strong>. Manche davon sind trotzdem nötig, etwa rechtliche Prüfungen, sollten aber so schlank wie möglich bleiben.</p><h3>Prozesseffizienz: ein Rechenbeispiel</h3><p>Die Prozesseffizienz setzt nützliche Arbeit ins Verhältnis zur verstrichenen Zeit:</p><p><strong>Prozesseffizienz = wertschöpfende Zeit / gesamte Durchlaufzeit</strong></p><p>Nehmen wir eine Lieferantenrechnung. Sie liegt einen Tag in einem Sammelpostfach, wird 15 Minuten geprüft, 10 Minuten lang in die Buchhaltungssoftware abgetippt, wartet drei Tage auf die Freigabe der Führungskraft, wird in 5 Minuten freigegeben, wartet zwei Tage auf den nächsten Zahlungslauf und wird in 10 Minuten bezahlt. Die Bearbeitungszeit beträgt 40 Minuten, davon wertet das Team 30 Minuten als wertschöpfend. Die Durchlaufzeit liegt bei sechs Arbeitstagen plus 40 Minuten, rund 2.920 Arbeitsminuten. Die Effizienz beträgt 30 / 2.920, also etwa 1 %. So niedrige Werte sind in Büroprozessen normal, und sie zeigen: Wartezeiten zu verkürzen bringt weit mehr als schneller zu arbeiten.</p><h2>So erfassen Sie den Ist-Zustand</h2><h3>Schritt 1: Einen Prozess und einen Kunden wählen</h3><p>Wählen Sie einen wichtigen Prozess mit klarem Auslöser und klarem Ende. Wer „alles, was wir tun“ abbildet, erhält eine Tapete, keine Erkenntnis.</p><h3>Schritt 2: Den Prozess mit den Beteiligten ablaufen</h3><p>Verfolgen Sie einen echten Vorgang vom Anfang bis zum Ende, am besten vor Ort oder per Bildschirmfreigabe. Fragen Sie jede Person, was sie bekommt, was sie tut, wie lange es dauert und wohin es danach geht. Die Antworten werden von der offiziellen Vorgehensweise abweichen, und genau darum geht es.</p><h3>Schritt 3: Zeiten und Warteschlangen erfassen</h3><p>Notieren Sie Bearbeitungszeit, Wartezeit und die Zahl wartender Vorgänge an jedem Schritt. Nutzen Sie wo möglich echte Zeitstempel aus E-Mails oder Systemprotokollen; Schätzungen aus dem Gedächtnis unterschätzen das Warten fast immer.</p><h3>Schritt 4: Informationsfluss und Zeitlinie zeichnen</h3><p>Ergänzen Sie, wodurch jeder Schritt ausgelöst wird, zeichnen Sie dann die Treppe, summieren Sie Bearbeitungs- und Durchlaufzeit und berechnen Sie die Prozesseffizienz.</p><h2>Verschwendung in der Karte erkennen</h2><ul><li><strong>Lange Wartezeiten</strong> vor Freigaben, Prüfungen oder Sammelläufen.</li><li><strong>Große Warteschlangen</strong>, ein Zeichen, dass Arbeit schneller nachgeschoben wird, als der nächste Schritt sie aufnehmen kann.</li><li><strong>Wiederholte Übergaben</strong>, bei denen ein Vorgang zwischen denselben Personen hin- und herwandert.</li><li><strong>Nacharbeitsschleifen</strong>, bei denen Fehler die Arbeit zurückschicken.</li><li><strong>Doppelte Erfassung</strong> derselben Daten in mehreren Systemen.</li><li><strong>Unklare Auslöser</strong>, bei denen Arbeit erst beginnt, wenn sie zufällig jemandem auffällt.</li></ul><h2>Soll-Zustand und Maßnahmenplan entwerfen</h2><p>Zeichnen Sie eine zweite Karte, die zeigt, wie der Prozess in drei bis sechs Monaten laufen soll. Typische Änderungen: Freigaben unterhalb einer Wertgrenze streichen, Schritte zusammenlegen, damit eine Person den Vorgang abschließt, wöchentliche Stapel durch täglichen Fluss ersetzen und Arbeit in einer einzigen gemeinsamen Liste bündeln. Berechnen Sie Durchlaufzeit und Effizienz für den neuen Entwurf neu, damit das Ziel greifbar wird.</p><p>Machen Sie aus der Lücke zwischen beiden Karten einen Maßnahmenplan: eine kurze Liste von Änderungen, jede mit verantwortlicher Person, Termin und Erfolgskennzahl, etwa Durchlaufzeit oder Zahl wartender Vorgänge. Prüfen Sie den Fortschritt regelmäßig und erstellen Sie die Karte neu, sobald sich die Änderungen eingespielt haben.</p><h2>Häufige Fehler</h2><ul><li><strong>Vom Besprechungsraum aus kartieren.</strong> Ohne den echten Ablauf zu begehen, bilden Sie die Vorschrift ab, nicht die Realität.</li><li><strong>Wartezeit ignorieren.</strong> Der Großteil der Durchlaufzeit steckt meist zwischen den Schritten, nicht in ihnen.</li><li><strong>Zu detailliert werden.</strong> Bleiben Sie bei einer Seite; einzelne Schritte können Sie später genauer betrachten.</li><li><strong>Den Soll-Zustand auslassen.</strong> Eine Ist-Karte beschreibt das Problem, löst es aber nicht.</li><li><strong>Keine Umsetzung.</strong> Maßnahmen ohne Verantwortliche und Termine passieren selten.</li></ul><p>Die Karte ist nur so nützlich wie das, was danach folgt. FulcrumGrid Command Center kann die Verbesserungsmaßnahmen als Projekte mit Verantwortlichen und Terminen führen, direkt neben den gewählten KPIs zu Durchlaufzeit und Warteschlangen, damit der Soll-Zustand jede Woche auf der Agenda steht statt an der Wand zu hängen.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Was unterscheidet eine Wertstromanalyse von einem Flussdiagramm?</summary><p>Ein Flussdiagramm zeigt die Abfolge von Schritten und Entscheidungen. Die Wertstromanalyse ergänzt Bearbeitungszeit, Wartezeit, Warteschlangen und Informationsfluss, sodass sichtbar wird, wo Zeit verloren geht und welche Schritte dem Kunden Wert bringen.</p></details>
+        <details class="faq-item"><summary>Lässt sich die Wertstromanalyse auch außerhalb der Fertigung nutzen?</summary><p>Ja. Sie eignet sich gut für Büro- und Dienstleistungsprozesse wie Rechnungsstellung, Angebote, Personalgewinnung, Kunden-Onboarding und Supportanfragen, bei denen die meisten Verzögerungen durch Warten, Freigaben und Übergaben entstehen.</p></details>
+        <details class="faq-item"><summary>Wie berechnet man die Prozesseffizienz?</summary><p>Teilen Sie die wertschöpfende Zeit durch die gesamte Durchlaufzeit. Erhält ein Vorgang 30 Minuten wertschöpfende Arbeit bei einer Durchlaufzeit von 2.920 Minuten, liegt die Prozesseffizienz bei etwa 1 %.</p></details>
+        <details class="faq-item"><summary>Wie lange dauert es, eine Wertstromanalyse zu erstellen?</summary><p>Bei einem Prozess in einem kleinen Unternehmen dauern Begehung und Ist-Karte meist einen halben bis ganzen Tag. Soll-Zustand und Maßnahmenplan brauchen dann weitere zwei bis drei Stunden.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Machen Sie Ihren Soll-Zustand messbar</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center bündelt Verbesserungsprojekte, Verantwortliche und operative KPIs wie die Durchlaufzeit in einem Dashboard, damit Ihr Team sieht, ob die Änderungen wirken.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/command-center/">Entdecken Command Center</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/products/tms/">TMS</a>
+          <a href="/de/products/assure/">Assure</a>
+          <a href="/de/products/close/">Close</a>
+          <a href="/de/products/consolidate/">Consolidate</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

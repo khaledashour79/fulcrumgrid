@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>What Is Throughput and How Do You Improve It in a Small Team? — FulcrumGrid</title>
+  <meta name="description" content="Throughput is how many items your team finishes per period. Learn how to measure it, how it ties to cycle time, and five practical ways to raise it." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What Is Throughput and How Do You Improve It in a Small Team?" />
+  <meta property="og:description" content="Throughput is how many items your team finishes per period. Learn how to measure it, how it ties to cycle time, and five practical ways to raise it." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-10" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What Is Throughput and How Do You Improve It in a Small Team?" />
+  <meta name="twitter:description" content="Throughput is how many items your team finishes per period. Learn how to measure it, how it ties to cycle time, and five practical ways to raise it." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-throughput-and-how-do-you-improve-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-throughput-and-how-do-you-improve-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What Is Throughput and How Do You Improve It in a Small Team?",
+    "description": "Throughput is how many items your team finishes per period. Learn how to measure it, how it ties to cycle time, and five practical ways to raise it.",
+    "datePublished": "2026-11-10",
+    "dateModified": "2026-11-10",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/what-is-throughput-and-how-do-you-improve-it/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Throughput Guide",
+        "item": "https://fulcrumgrid.com/blog/what-is-throughput-and-how-do-you-improve-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a good throughput for a small team?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There is no universal figure. It depends on the type and size of your items. Compare your own recent weeks and aim for a steady upward trend rather than a number from another team."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between throughput and productivity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Throughput counts finished items per period. Productivity usually compares output with the resources used. Throughput is simpler to measure and easier to act on for a small team."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does limiting work in progress really raise throughput?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Usually yes, because it cuts task switching and waiting. Start with a limit slightly below your current average of open items and adjust after a few weeks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long before I see a change?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Often within four to six weeks, which is enough to compare a new average with your earlier baseline."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Throughput Guide</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>What Is Throughput and How Do You Improve It in a Small Team?</h1>
+        <p class="hero-intro">Throughput is how many items your team finishes per period. Learn how to measure it, how it ties to cycle time, and five practical ways to raise it.</p>
+        <p class="mono"><time datetime="2026-11-10">November 10, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>A small team can feel permanently busy and still ship less than it should. Everyone is working, yet the finished pile stays small. Throughput is the measure that shows what is really leaving your process, not what is merely in motion. This guide explains what it is, how to measure it, and how to raise it without asking people to work longer hours.</p><h2>What is throughput?</h2><p>Throughput is the number of work items completed in a given period. For a support team it is tickets closed per week. For a workshop it is orders shipped per day. For a finance team it is invoices paid per month. The key word is <strong>completed</strong>: started work, half-finished work and work waiting for approval do not count until it is done.</p><h2>Throughput vs cycle time vs work in progress</h2><p>Three numbers describe how any process flows, and they are linked by a simple relationship known as Little&rsquo;s Law.</p><ul><li><strong>Throughput.</strong> How many items finish per period.</li><li><strong>Work in progress (WIP).</strong> How many items are started but not finished right now.</li><li><strong>Cycle time.</strong> How long one item takes from start to finish.</li></ul><p>On average, <strong>throughput = WIP &divide; cycle time</strong>. If you want more finished work, you can shorten cycle time, or you can raise the number of items in flight. In practice the second option backfires, because more open items usually means longer cycle times. If you have not measured cycle time yet, start there and come back.</p><h2>A worked example</h2><p>Take a team of four that handles customer requests. Over the last month they averaged 30 completed requests per week. At any moment about 24 requests were open, so the average cycle time was 24 &divide; 30 = 0.8 weeks, roughly four working days.</p><p>The team then makes two changes. First, it limits open work to 15 items, and nobody pulls a new request until one is finished. Second, it clears the three blockers that kept recurring: unclear requests, a slow approval step and one overloaded specialist. Over the next month, switching between tasks drops and fewer items stall. Throughput rises to 36 per week with 15 items open, so cycle time becomes 15 &divide; 36, about 0.42 weeks or two working days.</p><p>Nobody worked longer. The team finished 20% more and customers waited half as long, simply because less work was in flight at once.</p><h2>How do you measure throughput?</h2><ul><li><strong>Pick one unit.</strong> Count items of a similar kind, such as tickets, orders or reports. Do not mix a five-minute task with a two-week project.</li><li><strong>Count only finished items.</strong> Use a clear definition of done, then count completions each week.</li><li><strong>Record at least six weeks.</strong> One week is noise. Look at the average and the range.</li><li><strong>Note what slowed you down.</strong> A short reason for each unusually low week is often more useful than the number.</li></ul><h2>Five ways to improve throughput in a small team</h2><h3>1. Limit work in progress</h3><p>This is the strongest lever. Agree a maximum number of open items per person or per team and respect it. Finishing beats starting.</p><h3>2. Find the bottleneck</h3><p>Throughput is capped by the slowest step. If every item waits for one person or one approval, speeding up other steps changes nothing. Improve the constraint first.</p><h3>3. Remove recurring blockers</h3><p>List why items stalled in the last month. Unclear briefs, missing information and waiting for answers usually top the list, and each is fixable at the source.</p><h3>4. Make items smaller</h3><p>Smaller items flow more evenly and expose problems sooner. If one request regularly takes three weeks, split it into pieces that can finish independently.</p><h3>5. Reduce handoffs</h3><p>Every handoff adds waiting. Let one person own an item from start to finish where you can, or agree short response times between steps.</p><h2>Common mistakes</h2><ul><li><strong>Counting started work.</strong> It inflates the number and hides the queue.</li><li><strong>Chasing the number.</strong> If people rush and quality drops, rework will cancel the gain. Track rework next to throughput.</li><li><strong>Comparing unlike items.</strong> A weekly count only means something when the items are roughly similar.</li></ul><h2>Keeping it visible</h2><p>Throughput only improves when someone looks at it every week. A shared sheet works for a while. When you also want it next to your projects and other KPIs, FulcrumGrid Command Center can hold those figures in one view, so the weekly review takes minutes. The method works either way: measure finished work, limit what is open and fix the slowest step first.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>What is a good throughput for a small team?</summary><p>There is no universal figure. It depends on the type and size of your items. Compare your own recent weeks and aim for a steady upward trend rather than a number from another team.</p></details>
+        <details class="faq-item"><summary>What is the difference between throughput and productivity?</summary><p>Throughput counts finished items per period. Productivity usually compares output with the resources used. Throughput is simpler to measure and easier to act on for a small team.</p></details>
+        <details class="faq-item"><summary>Does limiting work in progress really raise throughput?</summary><p>Usually yes, because it cuts task switching and waiting. Start with a limit slightly below your current average of open items and adjust after a few weeks.</p></details>
+        <details class="faq-item"><summary>How long before I see a change?</summary><p>Often within four to six weeks, which is enough to compare a new average with your earlier baseline.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>See your throughput every week</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center puts your KPIs and projects in one view, so weekly throughput and delivery trends are quick to review with your team.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/products/tms/">TMS</a>
+          <a href="/products/assure/">Assure</a>
+          <a href="/products/close/">Close</a>
+          <a href="/products/consolidate/">Consolidate</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

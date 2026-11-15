@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Che cos'è un registro RAID e come lo tiene un piccolo team? — FulcrumGrid</title>
+  <meta name="description" content="Guida pratica al registro RAID per piccoli team: rischi, assunzioni, problemi e dipendenze, quali colonne usare e come condurre una revisione settimanale." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Che cos'è un registro RAID e come lo tiene un piccolo team?" />
+  <meta property="og:description" content="Guida pratica al registro RAID per piccoli team: rischi, assunzioni, problemi e dipendenze, quali colonne usare e come condurre una revisione settimanale." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-12" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Che cos'è un registro RAID e come lo tiene un piccolo team?" />
+  <meta name="twitter:description" content="Guida pratica al registro RAID per piccoli team: rischi, assunzioni, problemi e dipendenze, quali colonne usare e come condurre una revisione settimanale." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-raid-log-and-how-do-you-keep-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Che cos'è un registro RAID e come lo tiene un piccolo team?",
+    "description": "Guida pratica al registro RAID per piccoli team: rischi, assunzioni, problemi e dipendenze, quali colonne usare e come condurre una revisione settimanale.",
+    "datePublished": "2026-11-12",
+    "dateModified": "2026-11-12",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/what-is-a-raid-log-and-how-do-you-keep-one/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Registro RAID",
+        "item": "https://fulcrumgrid.com/it/blog/what-is-a-raid-log-and-how-do-you-keep-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Chi dovrebbe occuparsi del registro RAID?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Una sola persona, di solito il responsabile del progetto, tiene in ordine il registro e guida la revisione settimanale. Ogni voce ha comunque un proprio responsabile per il passo successivo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ogni quanto va rivisto un registro RAID?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Una volta a settimana va bene per la maggior parte dei piccoli team. Rivedetelo ogni giorno durante una settimana di lancio critica e ogni due-quattro settimane nei progetti lunghi e lenti."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Rischi e problemi vanno tenuti in schede separate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Funzionano entrambe le soluzioni. Un unico foglio con una colonna per il tipo è più facile da rivedere in un piccolo team; schede separate aiutano quando una categoria supera una ventina di voci."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Che differenza c'è tra un registro RAID e un registro dei rischi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un registro dei rischi traccia solo i rischi. Il registro RAID aggiunge assunzioni, problemi e dipendenze, offrendo un quadro più completo di ciò che può influire sulla consegna."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Registro RAID</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Che cos'è un registro RAID e come lo tiene un piccolo team?</h1>
+        <p class="hero-intro">Guida pratica al registro RAID per piccoli team: rischi, assunzioni, problemi e dipendenze, quali colonne usare e come condurre una revisione settimanale.</p>
+        <p class="mono"><time datetime="2026-11-12">12 novembre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Ogni progetto porta con sé cose che potrebbero andare storte, cose che tutti danno per scontate senza dirlo, problemi che stanno già rallentando il lavoro e attività che dipendono da qualcun altro. Nella maggior parte dei piccoli team tutto questo resta nella testa delle persone e in conversazioni di chat sparse. Un registro RAID lo raccoglie in un unico elenco breve, che il team rivede a cadenza regolare. Se tenuto bene, richiede un quarto d'ora a settimana ed evita le sorprese che fanno deragliare lanci e progetti per i clienti.</p><h2>Che cosa significa RAID?</h2><p>RAID è un acronimo inglese che indica i quattro tipi di voci tracciate nel registro:</p><ul><li><strong>Rischi (Risks).</strong> Eventi che potrebbero verificarsi e che danneggerebbero il progetto. Per esempio, un fornitore chiave potrebbe mancare la data di consegna.</li><li><strong>Assunzioni (Assumptions).</strong> Ciò che considerate vero senza averlo verificato. Per esempio, che la location vi lasci allestire la sera prima.</li><li><strong>Problemi (Issues).</strong> Difficoltà già in corso, che richiedono un intervento immediato. Per esempio, il server di test è fermo e nessuno può controllare la nuova versione.</li><li><strong>Dipendenze (Dependencies).</strong> Lavoro che dipende da un'altra attività, da un altro team o da un soggetto esterno. Per esempio, il negozio online non può partire finché il fornitore dei pagamenti non approva l'account.</li></ul><p>In una variante diffusa, la A sta per <strong>Azioni</strong> (Actions) e la D per <strong>Decisioni</strong>. Nessuna delle due versioni è sbagliata: sceglietene una, scrivete le definizioni in cima al registro e rispettatele. Se tenete già un registro delle decisioni separato, la versione classica evita sovrapposizioni.</p><h2>Qual è la differenza tra un rischio e un problema?</h2><p>Il momento. Un <strong>rischio</strong> sta nel futuro e può verificarsi oppure no. Un <strong>problema</strong> si è già verificato. Un rischio gestito male diventa spesso un problema: se il fornitore manca davvero la data, chiudete il rischio e aprite un problema che vi faccia riferimento. La distinzione conta perché la risposta è diversa. Davanti a un rischio si riduce la probabilità o si prepara un piano B. Davanti a un problema lo si risolve o se ne limitano i danni. Allo stesso modo, un'assunzione che si rivela falsa diventa di solito un rischio o un problema.</p><h2>Quali colonne deve avere un registro RAID?</h2><p>Sette colonne coprono quasi tutto:</p><ul><li><strong>ID.</strong> Un codice semplice come R-04 o I-12, per citare facilmente ogni voce.</li><li><strong>Descrizione.</strong> Una o due frasi chiare. Per un rischio, una formula utile è «a causa di X potrebbe succedere Y, con la conseguenza Z».</li><li><strong>Responsabile.</strong> Una persona precisa, con nome e cognome, incaricata di far avanzare la voce, non un team.</li><li><strong>Impatto e probabilità, oppure priorità.</strong> Date a ogni rischio un punteggio da 1 a 3 su entrambi i criteri e moltiplicateli. Per i problemi basta una priorità alta, media o bassa.</li><li><strong>Stato.</strong> Aperto, in corso, sotto osservazione o chiuso.</li><li><strong>Scadenza o data di revisione.</strong> Quando scade la prossima azione, o quando la voce va riesaminata.</li><li><strong>Mitigazione o prossimo passo.</strong> L'azione concreta successiva, espressa con un verbo: «chiamare il fornitore martedì per confermare le scorte».</li></ul><h2>Come si imposta un registro RAID?</h2><p>Partite da un foglio di calcolo condiviso che tutto il team possa aprire. Poi organizzate una sessione di 30 minuti con chi svolge il lavoro e ponete quattro domande: che cosa potrebbe andare storto, che cosa stiamo dando per scontato, che cosa ci sta già bloccando e chi stiamo aspettando? Prima annotate tutto, poi sfoltite. Unite i doppioni, eliminate ciò di cui nessuno si occuperebbe e assegnate a ogni voce rimasta un responsabile e una data prima della fine della sessione. Un primo registro di 10-25 voci è normale per un piccolo progetto.</p><h2>Come si conduce una revisione RAID settimanale?</h2><p>Fissate uno spazio ricorrente di 15 minuti, oppure usate l'inizio di una riunione settimanale già esistente. Una scaletta semplice funziona bene:</p><ul><li><strong>Prima i nuovi problemi.</strong> Tutto ciò che blocca il lavoro in questo momento riceve un responsabile e un prossimo passo.</li><li><strong>I rischi principali.</strong> Rivedete solo quelli con il punteggio più alto, di solito cinque o meno. La probabilità è cambiata? La mitigazione è in corso?</li><li><strong>Voci scadute.</strong> Tutto ciò che ha superato la data riceve una nuova data, un nuovo responsabile o la decisione onesta di lasciarlo cadere.</li><li><strong>Assunzioni e dipendenze.</strong> Confermate quelle da verificare, oppure trasformatele in rischi.</li><li><strong>Chiudere ciò che è risolto.</strong> Segnate come chiuse le voci risolte, con una riga su come si sono concluse.</li></ul><p>Ogni responsabile aggiorna sulle proprie voci e chi guida la revisione modifica il registro in tempo reale, così è aggiornato appena finisce la riunione.</p><h2>Quali sono gli errori più comuni?</h2><ul><li><strong>Il registro diventa un cimitero.</strong> Le voci vengono aggiunte all'avvio e nessuno le tocca più. Un registro che nessuno rivede è peggio di nessun registro, perché dà un falso senso di sicurezza.</li><li><strong>Nessun responsabile.</strong> Le voci assegnate al «team» o lasciate in bianco non si muovono.</li><li><strong>Troppe voci.</strong> Un registro di 120 righe nasconde le cinque che contano. Lasciate fuori le preoccupazioni minori.</li><li><strong>Non si chiude mai nulla.</strong> Se le voci risolte restano aperte, il registro sembra sempre allarmante e le persone smettono di leggerlo.</li></ul><h2>A un piccolo team serve un registro RAID o basta una lista di cose da fare?</h2><p>Una lista di cose da fare tiene traccia del lavoro che avete deciso di svolgere. Un registro RAID tiene traccia dell'incertezza: ciò che potrebbe andare storto, ciò che forse credete a torto e i soggetti esterni che non controllate. Per un breve lavoro interno basta una lista di cose da fare. Il registro RAID si giustifica quando un progetto dura più di qualche settimana, coinvolge fornitori, clienti o altri team, ha una data o un budget fissi, o quando una sorpresa costerebbe cara.</p><p>Un foglio di calcolo va benissimo per un registro RAID. Se preferite tenere responsabili, scadenze e voci aperte accanto al resto del lavoro operativo, FulcrumGrid Command Center può riunirli in un'unica vista. Qualunque sia lo strumento, conta l'abitudine: un solo elenco, responsabili chiari, una breve revisione settimanale e voci che vengono davvero chiuse.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Chi dovrebbe occuparsi del registro RAID?</summary><p>Una sola persona, di solito il responsabile del progetto, tiene in ordine il registro e guida la revisione settimanale. Ogni voce ha comunque un proprio responsabile per il passo successivo.</p></details>
+        <details class="faq-item"><summary>Ogni quanto va rivisto un registro RAID?</summary><p>Una volta a settimana va bene per la maggior parte dei piccoli team. Rivedetelo ogni giorno durante una settimana di lancio critica e ogni due-quattro settimane nei progetti lunghi e lenti.</p></details>
+        <details class="faq-item"><summary>Rischi e problemi vanno tenuti in schede separate?</summary><p>Funzionano entrambe le soluzioni. Un unico foglio con una colonna per il tipo è più facile da rivedere in un piccolo team; schede separate aiutano quando una categoria supera una ventina di voci.</p></details>
+        <details class="faq-item"><summary>Che differenza c'è tra un registro RAID e un registro dei rischi?</summary><p>Un registro dei rischi traccia solo i rischi. Il registro RAID aggiunge assunzioni, problemi e dipendenze, offrendo un quadro più completo di ciò che può influire sulla consegna.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Tenete d'occhio rischi e problemi</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center riunisce responsabili, scadenze e voci aperte in un'unica vista accanto ai vostri indicatori operativi, così niente nel registro resta dimenticato.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/products/tms/">TMS</a>
+          <a href="/it/products/assure/">Assure</a>
+          <a href="/it/products/close/">Close</a>
+          <a href="/it/products/consolidate/">Consolidate</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

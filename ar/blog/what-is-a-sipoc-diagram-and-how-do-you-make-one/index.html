@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>ما هو مخطط الموردين والمدخلات والعمليات والمخرجات والعملاء؟ — FulcrumGrid</title>
+  <meta name="description" content="يرسم هذا المخطط الموردين والمدخلات والعملية والمخرجات والعملاء في صفحة واحدة. تعرّف على متى تستخدمه وكيف تبنيه في أقل من ساعة." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="ما هو مخطط الموردين والمدخلات والعمليات والمخرجات والعملاء؟" />
+  <meta property="og:description" content="يرسم هذا المخطط الموردين والمدخلات والعملية والمخرجات والعملاء في صفحة واحدة. تعرّف على متى تستخدمه وكيف تبنيه في أقل من ساعة." />
+  <meta property="og:url" content="https://fulcrumgrid.com/ar/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-13" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="لوحة التحكم للتنفيذيين من FulcrumGrid — العمليات في لمحة" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ما هو مخطط الموردين والمدخلات والعمليات والمخرجات والعملاء؟" />
+  <meta name="twitter:description" content="يرسم هذا المخطط الموردين والمدخلات والعملية والمخرجات والعملاء في صفحة واحدة. تعرّف على متى تستخدمه وكيف تبنيه في أقل من ساعة." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/ar/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/" />
+
+  <link rel="preload" href="/assets/fonts/cairo-600-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/cairo-400-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "ما هو مخطط الموردين والمدخلات والعمليات والمخرجات والعملاء؟",
+    "description": "يرسم هذا المخطط الموردين والمدخلات والعملية والمخرجات والعملاء في صفحة واحدة. تعرّف على متى تستخدمه وكيف تبنيه في أقل من ساعة.",
+    "datePublished": "2026-11-13",
+    "dateModified": "2026-11-13",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/ar/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/"
+    },
+    "inLanguage": "ar"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "الرئيسية",
+        "item": "https://fulcrumgrid.com/ar/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "المدوّنة",
+        "item": "https://fulcrumgrid.com/ar/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "دليل مخطط العملية",
+        "item": "https://fulcrumgrid.com/ar/blog/what-is-a-sipoc-diagram-and-how-do-you-make-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "ماذا تعني أعمدة هذا المخطط الخمسة؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "الموردون والمدخلات والعملية والمخرجات والعملاء. وتصف الأعمدة الخمسة معًا العملية بصورة عامة في صفحة واحدة."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ما الفرق بينه وبين خريطة العملية التفصيلية؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "هذا المخطط ملخص عام من خمس إلى سبع خطوات دون قرارات أو حلقات، أما خريطة العملية أو مخطط التدفق فيعرض التسلسل التفصيلي والقرارات والاستثناءات."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "لماذا نبدأ بعمود العملية؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "لأن الفريق يعرف الخطوات أكثر من غيرها، فالبدء بها يحدد النطاق بسرعة، ثم يسهل تحديد المخرجات والعملاء والمدخلات والموردين خطوة بخطوة."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كم من الوقت يستغرق إعداد المخطط؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "تكفي من ٣٠ إلى ٦٠ دقيقة مع من ينفذون العمل في معظم عمليات الفرق الصغيرة. وإذا استغرق وقتًا أطول بكثير فالنطاق غالبًا واسع جدًا."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <a href="/ar/products/">المنتجات</a>
+        <a href="/ar/features/">الشبكة</a>
+        <a href="/ar/pricing/">الأسعار</a>
+        <a href="/ar/regions/">المناطق</a>
+        <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
+        <a href="/ar/contact/">اتصل بنا</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="اللغة">ع ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" class="active" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      </div>
+      <button class="nav-toggle" aria-label="القائمة"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/ar/">الرئيسية</a> / <a href="/ar/blog/">المدوّنة</a> / دليل مخطط العملية</p>
+        <span class="tag tag-accent">العمليات</span>
+        <h1>ما هو مخطط الموردين والمدخلات والعمليات والمخرجات والعملاء؟</h1>
+        <p class="hero-intro">يرسم هذا المخطط الموردين والمدخلات والعملية والمخرجات والعملاء في صفحة واحدة. تعرّف على متى تستخدمه وكيف تبنيه في أقل من ساعة.</p>
+        <p class="mono"><time datetime="2026-11-13">١٣ نوفمبر ٢٠٢٦</time> · ٦ دقائق للقراءة</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>تبدأ معظم مشكلات العمليات بصورة ضبابية. يختلف الفريق حول خطوة معطّلة، لكن لا أحد يتفق على أين تبدأ العملية، وما الذي يدخل إليها، ومن يعتمد على ما يخرج منها. هنا يأتي دور مخطط الموردين والمدخلات والعمليات والمخرجات والعملاء، الذي يحل هذه المشكلة في صفحة واحدة. إنه من أبسط أدوات تحسين العمليات، ويناسب الفرق الصغيرة لأنه يحتاج إلى ساعة واحدة لا إلى مستشار.</p><h2>ما هو هذا المخطط؟</h2><p>هو جدول من خمسة أعمدة يصف العملية بصورة عامة، ويُعرف عالميًا باختصار مكوّن من الحروف الأولى لكلماته الإنجليزية:</p><ul><li><strong>الموردون</strong>: الأشخاص أو الفرق أو الشركات التي توفّر ما تحتاجه العملية.</li><li><strong>المدخلات</strong>: المواد أو المعلومات أو الطلبات التي تدخل العملية.</li><li><strong>العملية</strong>: من خمس إلى سبع خطوات رئيسية تحوّل المدخلات إلى مخرجات.</li><li><strong>المخرجات</strong>: ما تنتجه العملية، مثل طلب تم شحنه أو عقد موقّع أو فاتورة مدفوعة.</li><li><strong>العملاء</strong>: كل من يستلم المخرجات، داخل الشركة أو خارجها.</li></ul><p>هذا المخطط ليس مخطط تدفق تفصيليًا، فهو يتجاهل عمدًا القرارات والحلقات والاستثناءات. مهمته أن يتفق الجميع على حدود العملية وصورتها الكبيرة قبل الغوص في التفاصيل.</p><h2>متى يستخدمه فريق صغير؟</h2><p>يستحق المخطط ساعة من وقتك في عدة مواقف شائعة:</p><ul><li><strong>قبل إصلاح مشكلة متكررة.</strong> إذا كانت الطلبات تتأخر باستمرار، ارسم العملية أولًا ليتفق الفريق على نطاقها.</li><li><strong>عند إدخال موظف جديد إلى عملية ما.</strong> صفحة واحدة توضح له من أين يأتي عمله وإلى أين يذهب.</li><li><strong>قبل كتابة إجراء تشغيل قياسي.</strong> يمنحك المخطط الهيكل، ثم يملأ الإجراء الخطوات.</li><li><strong>عندما يسبب التسليم بين الفرق احتكاكًا.</strong> سرد الموردين والعملاء يكشف الاعتماديات الخفية.</li></ul><p>أما إذا كانت العملية صغيرة جدًا ويملكها شخص واحد وتعمل جيدًا، فلا حاجة إليه.</p><h2>كيف تبني المخطط في أقل من ساعة</h2><p>اجمع شخصين إلى أربعة ممن ينفذون العمل، إضافة إلى من يستلم المخرجات. استخدم سبورة أو مستندًا مشتركًا بخمسة أعمدة، ثم اعمل بالترتيب التالي، وهو يختلف عن ترتيب الأعمدة.</p><h3>الخطوة ١: سمِّ العملية وحدد حدودها</h3><p>أعطها اسمًا قصيرًا وحدد نقطة بداية ونقطة نهاية واضحتين، مثل: «تبدأ عندما يضع العميل طلبًا، وتنتهي عند تسليم الطلب». مكان النقاش حول النطاق هنا، لا لاحقًا.</p><h3>الخطوة ٢: اكتب من خمس إلى سبع خطوات</h3><p>ابدأ بالعمود الأوسط. اكتب كل خطوة بفعل واسم: «استلام الطلب»، «التحقق من المخزون»، «تجهيز الأصناف»، «التغليف ووضع الملصق»، «الشحن»، «تأكيد التسليم». إذا تجاوزت سبع خطوات فأنت تتعمق أكثر من اللازم.</p><h3>الخطوة ٣: حدد المخرجات</h3><p>ماذا تنتج العملية؟ اذكر المخرج الرئيسي والنواتج المهمة الأخرى، مثل الفاتورة أو إشعار التتبع.</p><h3>الخطوة ٤: حدد العملاء</h3><p>لكل مخرج، اذكر من يستلمه. العملاء الداخليون مهمون أيضًا: فريق المالية يستلم الفاتورة، ومسؤول المستودع يستلم تحديث المخزون.</p><h3>الخطوة ٥: حدد المدخلات</h3><p>اسأل عمّا تحتاجه كل خطوة لتبدأ: نموذج الطلب، بيانات المخزون، مواد التغليف، حجز شركة الشحن.</p><h3>الخطوة ٦: حدد الموردين</h3><p>أخيرًا، اذكر من يوفّر كل مدخل. قد يكون المورد عميلًا أو بائعًا أو نظامًا أو فريقًا آخر.</p><h2>مثال عملي: تنفيذ طلبات العملاء</h2><ul><li><strong>الموردون</strong>: العميل، المتجر الإلكتروني، مورد مواد التغليف، شركة الشحن.</li><li><strong>المدخلات</strong>: تفاصيل الطلب، تأكيد الدفع، مستويات المخزون، الصناديق والملصقات، موعد الاستلام.</li><li><strong>العملية</strong>: استلام الطلب، التحقق من المخزون، تجهيز الأصناف، التغليف ووضع الملصق، التسليم لشركة الشحن، تأكيد التسليم.</li><li><strong>المخرجات</strong>: طلب مُسلَّم، رسالة تتبع، فاتورة، رصيد مخزون محدَّث.</li><li><strong>العملاء</strong>: العميل النهائي، فريق المالية، مسؤول المستودع.</li></ul><p>حتى هذا المخطط القصير يكشف غالبًا شيئًا مفيدًا. قد يلاحظ الفريق أن مستويات المخزون تأتي من جدول بيانات لا يُحدَّث إلا يوم الجمعة، وهذا يفسر لماذا تتعثر خطوة «التحقق من المخزون» في منتصف الأسبوع.</p><h2>أخطاء شائعة يجب تجنبها</h2><ul><li><strong>الإفراط في التفاصيل.</strong> عشرون خطوة تعني مخطط تدفق لا هذا المخطط. التزم بصفحة واحدة.</li><li><strong>إهمال الحدود.</strong> دون بداية ونهاية واضحتين يتضخم المخطط حتى يصف الشركة كلها.</li><li><strong>رسم الوضع المثالي بدل الواقع.</strong> صِف كيف يجري العمل فعلًا اليوم.</li><li><strong>نسيان العملاء الداخليين.</strong> كثير من التأخير سببه مخرجات لم يدرك أحد أن فريقًا آخر يعتمد عليها.</li><li><strong>وضعه في الأدراج.</strong> المخطط نقطة انطلاق، وإن لم يتبعه شيء فقد ضاعت الساعة.</li></ul><h2>ماذا تفعل بعد إعداد المخطط؟</h2><p>استخدمه لتقرر ما الذي تقيسه وما الذي توثّقه. اختر مؤشرًا أو مؤشرين للمخرجات التي تهم العملاء أكثر، مثل نسبة التسليم في الموعد أو زمن دورة الطلب. ثم حوّل عمود العملية إلى إجراء تشغيل قياسي قصير، وارسم مخطط تدفق تفصيليًا فقط للخطوة التي تسبب أكبر قدر من المشكلات. وراجع المخطط كلما تغيرت العملية، كأن تضيف موردًا أو نظامًا جديدًا.</p><p>إذا أُعدّ جيدًا، يمنح هذا المخطط فريقك لغة مشتركة لفهم العملية في وقت أقل من اجتماع عادي لمناقشة المشكلة التي يصفها.</p>
+
+        <h2>الأسئلة الشائعة</h2>
+        <details class="faq-item"><summary>ماذا تعني أعمدة هذا المخطط الخمسة؟</summary><p>الموردون والمدخلات والعملية والمخرجات والعملاء. وتصف الأعمدة الخمسة معًا العملية بصورة عامة في صفحة واحدة.</p></details>
+        <details class="faq-item"><summary>ما الفرق بينه وبين خريطة العملية التفصيلية؟</summary><p>هذا المخطط ملخص عام من خمس إلى سبع خطوات دون قرارات أو حلقات، أما خريطة العملية أو مخطط التدفق فيعرض التسلسل التفصيلي والقرارات والاستثناءات.</p></details>
+        <details class="faq-item"><summary>لماذا نبدأ بعمود العملية؟</summary><p>لأن الفريق يعرف الخطوات أكثر من غيرها، فالبدء بها يحدد النطاق بسرعة، ثم يسهل تحديد المخرجات والعملاء والمدخلات والموردين خطوة بخطوة.</p></details>
+        <details class="faq-item"><summary>كم من الوقت يستغرق إعداد المخطط؟</summary><p>تكفي من ٣٠ إلى ٦٠ دقيقة مع من ينفذون العمل في معظم عمليات الفرق الصغيرة. وإذا استغرق وقتًا أطول بكثير فالنطاق غالبًا واسع جدًا.</p></details>
+
+        <p style="margin-top:32px"><a href="/ar/blog/"><span aria-hidden="true">←</span> العودة إلى المدوّنة</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid لوحة التحكم للتنفيذيين</p>
+        <h2>حوّل خريطة عمليتك إلى نتائج تُتابَع</h2>
+        <p class="section-lead" style="margin:0 auto 26px">يجمع FulcrumGrid مركز القيادة مؤشراتك ومشاريعك ومسؤولي العمليات في عرض واحد، فتُراجَع المؤشرات التي تختارها بعد رسم المخطط كل أسبوع.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/ar/products/command-center/">استكشف لوحة التحكم للتنفيذيين</a>
+          <a class="btn btn-secondary" href="/ar/blog/">العودة إلى المدوّنة</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>العمود الفقري التشغيلي للفرق الحديثة.</p>
+        </div>
+        <div class="foot-col">
+          <h5>المنتجات</h5>
+          <a href="/ar/products/">كل المنتجات</a>
+          <a href="/ar/products/hr-suite/">منصة الموارد البشرية</a>
+          <a href="/ar/products/command-center/">لوحة التحكم للتنفيذيين</a>
+          <a href="/ar/products/collection/">منصة تحصيل الديون</a>
+          <a href="/ar/products/tms/">منصة العمليات اللوجستية</a>
+          <a href="/ar/products/assure/">منصة الحوكمة والامتثال</a>
+          <a href="/ar/products/close/">منصة المعايير المحاسبية والإغلاق</a>
+          <a href="/ar/products/consolidate/">منصة التوحيد المالي</a>
+          <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشبكة</h5>
+          <a href="/ar/features/">الميزات</a>
+          <a href="/ar/integrations/">التكاملات</a>
+          <a href="/ar/how-it-works/">كيف تعمل</a>
+          <a href="/ar/pricing/">الأسعار</a>
+          <a href="/ar/regions/">المناطق</a>
+          <a href="/ar/blog/">المدوّنة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشركة</h5>
+          <a href="/ar/about/">من نحن</a>
+          <a href="/ar/faq/">الأسئلة الشائعة</a>
+          <a href="/ar/contact/">اتصل بنا</a>
+          <a href="/ar/privacy/">الخصوصية</a>
+          <a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

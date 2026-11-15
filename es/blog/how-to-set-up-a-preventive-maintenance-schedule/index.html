@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>¿Cómo se crea un plan de mantenimiento preventivo? — FulcrumGrid</title>
+  <meta name="description" content="Guía paso a paso de mantenimiento preventivo para pequeñas empresas: inventario de equipos, criticidad, intervalos, responsables y los indicadores clave." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="¿Cómo se crea un plan de mantenimiento preventivo?" />
+  <meta property="og:description" content="Guía paso a paso de mantenimiento preventivo para pequeñas empresas: inventario de equipos, criticidad, intervalos, responsables y los indicadores clave." />
+  <meta property="og:url" content="https://fulcrumgrid.com/es/blog/how-to-set-up-a-preventive-maintenance-schedule/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-11" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="¿Cómo se crea un plan de mantenimiento preventivo?" />
+  <meta name="twitter:description" content="Guía paso a paso de mantenimiento preventivo para pequeñas empresas: inventario de equipos, criticidad, intervalos, responsables y los indicadores clave." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/es/blog/how-to-set-up-a-preventive-maintenance-schedule/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-set-up-a-preventive-maintenance-schedule/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-set-up-a-preventive-maintenance-schedule/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-set-up-a-preventive-maintenance-schedule/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-set-up-a-preventive-maintenance-schedule/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-set-up-a-preventive-maintenance-schedule/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-set-up-a-preventive-maintenance-schedule/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-set-up-a-preventive-maintenance-schedule/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-set-up-a-preventive-maintenance-schedule/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "¿Cómo se crea un plan de mantenimiento preventivo?",
+    "description": "Guía paso a paso de mantenimiento preventivo para pequeñas empresas: inventario de equipos, criticidad, intervalos, responsables y los indicadores clave.",
+    "datePublished": "2026-11-11",
+    "dateModified": "2026-11-11",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/es/blog/how-to-set-up-a-preventive-maintenance-schedule/"
+    },
+    "inLanguage": "es"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://fulcrumgrid.com/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/es/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Mantenimiento preventivo",
+        "item": "https://fulcrumgrid.com/es/blog/how-to-set-up-a-preventive-maintenance-schedule/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Con qué frecuencia hay que hacer mantenimiento preventivo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende del equipo. Empiece por los intervalos que recomienda el fabricante y los mínimos legales, y ajústelos según lo que muestren sus registros de revisión."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Compensa el mantenimiento preventivo en una empresa muy pequeña?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En los equipos críticos, normalmente sí, porque una sola avería imprevista puede costar más que un año de revisiones. En elementos baratos y no críticos, esperar a que fallen suele ser suficiente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuál es una buena proporción entre mantenimiento planificado y no planificado?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Muchos equipos aspiran a un 80 % de trabajo planificado o más. Siga su propia proporción cada mes y busque una mejora constante en lugar de una cifra perfecta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Necesito un software especial para gestionar un plan de mantenimiento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Para pocos equipos bastan una hoja de cálculo y un calendario. Cuando la lista crece, una herramienta con tareas recurrentes, responsables y recordatorios facilita mucho detectar el trabajo vencido."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/es/products/">Productos</a>
+        <a href="/es/features/">Cuadrícula</a>
+        <a href="/es/pricing/">Precios</a>
+        <a href="/es/regions/">Regiones</a>
+        <a href="/es/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/es/contact/">Contacto</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Idioma">ES ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" class="active" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/es/contact/">Solicitar una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/es/">Inicio</a> / <a href="/es/blog/">Blog</a> / Mantenimiento preventivo</p>
+        <span class="tag tag-accent">Operaciones</span>
+        <h1>¿Cómo se crea un plan de mantenimiento preventivo?</h1>
+        <p class="hero-intro">Guía paso a paso de mantenimiento preventivo para pequeñas empresas: inventario de equipos, criticidad, intervalos, responsables y los indicadores clave.</p>
+        <p class="mono"><time datetime="2026-11-11">11 de noviembre de 2026</time> · 6 min de lectura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>La mayoría de las pequeñas empresas gestionan el mantenimiento igual: algo se estropea, alguien lo arregla y, mientras tanto, el trabajo se para. La cámara frigorífica falla un viernes por la noche, un compresor se muere en mitad de un pedido, el autoclave de la clínica da error antes de la primera cita. Un plan de mantenimiento preventivo sustituye ese patrón por revisiones cortas y planificadas que detectan los problemas cuando todavía son baratos. Esta guía explica cómo crear uno en una tarde y mantenerlo en marcha.</p><h2>¿Qué diferencia hay entre mantenimiento preventivo y correctivo?</h2><p>El <strong>mantenimiento correctivo</strong> consiste en reparar un equipo después de que falle. El <strong>mantenimiento preventivo</strong> consiste en revisarlo según un calendario previsto, antes de que falle, en función del tiempo o del uso. El correctivo no siempre es un error: con una lámpara de escritorio barata, usarla hasta que se rompa es razonable. El problema empieza cuando los equipos críticos se tratan igual, porque una avería imprevista cuesta mucho más que la reparación: ventas perdidas, horas extra, repuestos urgentes, género estropeado y clientes descontentos.</p><h2>Paso 1: crear un inventario de equipos</h2><p>No se puede programar el mantenimiento de un equipo que no está apuntado en ninguna parte. Recorra las instalaciones y anote todo lo que necesita cuidados para seguir funcionando. Para cada equipo, registre:</p><ul><li><strong>Nombre y ubicación.</strong> Por ejemplo, cámara frigorífica de la cocina o carretilla elevadora 2 de la nave B.</li><li><strong>Marca, modelo y número de serie.</strong> Los necesitará para repuestos y manuales.</li><li><strong>Fecha de compra o instalación.</strong> Útil para la garantía y para planificar la sustitución.</li><li><strong>Quién lo mantiene.</strong> Una persona de la plantilla o una empresa externa.</li></ul><p>Incluya las instalaciones del edificio, como la calefacción y el aire acondicionado, los calentadores de agua, los extintores y el alumbrado de emergencia, y no solo los equipos de producción. Una pequeña empresa típica acaba con entre 20 y 60 equipos.</p><h2>Paso 2: clasificar los equipos por criticidad</h2><p>No todos los equipos merecen la misma atención. Puntúe cada uno del 1 al 3 en dos preguntas: <strong>cuánto daño haría una avería</strong> (seguridad, cumplimiento normativo, ingresos perdidos) y <strong>qué probabilidad hay de que falle</strong> (antigüedad, uso, historial). Multiplique ambas puntuaciones. Los equipos con 6 o 9 reciben primero un plan preventivo completo. Los que sacan 1 o 2 a menudo pueden funcionar hasta que fallen, siempre que sepa dónde conseguir un recambio rápido. Así el plan es lo bastante corto como para que la gente lo cumpla.</p><h2>Paso 3: elegir los intervalos adecuados</h2><p>Empiece por el manual del fabricante. Suele indicar tareas diarias, semanales, mensuales y anuales, y seguirlas puede ser condición de la garantía. Después decida qué tipo de disparador encaja con cada tarea:</p><ul><li><strong>Por tiempo.</strong> Cada semana, mes o año. Ideal para equipos que envejecen se usen o no, como los extintores, o para los que se usan a un ritmo constante.</li><li><strong>Por uso.</strong> Cada cierto número de horas de funcionamiento, ciclos o kilómetros. Ideal para vehículos, compresores y máquinas cuya carga de trabajo cambia de un mes a otro.</li></ul><p>Ajuste con la experiencia. Si un filtro siempre está limpio en la revisión mensual, pruebe cada seis semanas. Si una correa se desgasta antes de tiempo, acorte el intervalo. La normativa local también puede fijar intervalos mínimos, por ejemplo para los equipos contra incendios, así que compruébelos primero.</p><h2>Paso 4: convertir las tareas en listas de control con responsable</h2><p>«Revisar el horno» no es una tarea que nadie pueda completar de forma fiable. Divida cada trabajo en una lista corta de pasos concretos, por ejemplo: limpiar la junta de la puerta, comparar la temperatura con un termómetro de sonda, inspeccionar el cable de alimentación y anotar la lectura. Después asigne a cada lista <strong>un responsable con nombre y apellidos</strong>. La responsabilidad compartida suele significar que nadie la asume. Anote las herramientas, piezas y precauciones de seguridad que requiere cada tarea, para que el responsable no se quede a medias.</p><h2>Paso 5: programar y configurar recordatorios</h2><p>Ponga cada tarea en un calendario con una fecha de vencimiento real, no solo con una frecuencia. Reparta la carga para que la primera semana de cada mes no se sature y programe los trabajos que molestan en las horas tranquilas. Avise a los responsables unos días antes y de nuevo el día señalado. Para las tareas por uso, establezca una rutina sencilla de lectura de contadores, por ejemplo cada lunes por la mañana, para saber siempre cuándo toca la siguiente.</p><h2>Paso 6: registrar cada intervención</h2><p>Cada tarea realizada debe dejar constancia: fecha, quién la hizo, qué encontró, piezas usadas y tiempo empleado. Registre también las averías. Al cabo de unos meses, este historial muestra qué equipos fallan una y otra vez, si los intervalos son correctos y cuándo reparar algo empieza a costar más que sustituirlo. Además, es la prueba que pedirán un inspector o una aseguradora.</p><h2>¿Qué indicadores conviene seguir?</h2><ul><li><strong>Proporción de mantenimiento planificado frente a no planificado.</strong> El porcentaje de horas de mantenimiento programadas de antemano. Muchos equipos aspiran a llegar con el tiempo a un 80 % planificado o más.</li><li><strong>Tiempo de inactividad.</strong> Las horas en que los equipos críticos no estuvieron disponibles por averías. Debería bajar a medida que el plan madura.</li><li><strong>Tareas vencidas.</strong> El número de tareas preventivas que han superado su fecha. Una lista que crece es la primera señal de que el plan se está descontrolando.</li></ul><p>Revise estas tres cifras una vez al mes. Juntas bastan para saber si el plan funciona.</p><h2>Errores habituales que conviene evitar</h2><ul><li><strong>Planificar demasiado de golpe.</strong> Un plan con 300 tareas se viene abajo en un mes. Empiece por los equipos críticos y añada el resto más adelante.</li><li><strong>Tareas vagas.</strong> «Revisar la máquina» invita a echar un vistazo rápido. Los pasos concretos dan resultados constantes.</li><li><strong>Sin responsable.</strong> Las tareas asignadas a todo el equipo acaban vencidas.</li><li><strong>No registrar.</strong> Sin historial no puede saber si los intervalos son correctos ni demostrar que el trabajo se hizo.</li><li><strong>No revisar nunca los intervalos.</strong> El primer plan es una estimación razonada. Afínelo cada pocos meses con sus registros.</li></ul><h2>Cómo mantener vivo el plan</h2><p>La mayoría de los planes de mantenimiento no fracasan el primer día, sino al tercer mes, cuando dejan de llegar recordatorios y nadie mira qué está vencido. Una hoja de cálculo y un calendario compartido pueden bastar para unos pocos equipos. Si quiere tener tareas recurrentes, responsables e indicadores de mantenimiento en el mismo lugar que el resto de sus operaciones, FulcrumGrid Command Center puede reunirlos. En cualquier caso, el método es el mismo: haga inventario, céntrese en lo crítico, asigne tareas claras y revise las cifras cada mes.</p>
+
+        <h2>Preguntas frecuentes</h2>
+        <details class="faq-item"><summary>¿Con qué frecuencia hay que hacer mantenimiento preventivo?</summary><p>Depende del equipo. Empiece por los intervalos que recomienda el fabricante y los mínimos legales, y ajústelos según lo que muestren sus registros de revisión.</p></details>
+        <details class="faq-item"><summary>¿Compensa el mantenimiento preventivo en una empresa muy pequeña?</summary><p>En los equipos críticos, normalmente sí, porque una sola avería imprevista puede costar más que un año de revisiones. En elementos baratos y no críticos, esperar a que fallen suele ser suficiente.</p></details>
+        <details class="faq-item"><summary>¿Cuál es una buena proporción entre mantenimiento planificado y no planificado?</summary><p>Muchos equipos aspiran a un 80 % de trabajo planificado o más. Siga su propia proporción cada mes y busque una mejora constante en lugar de una cifra perfecta.</p></details>
+        <details class="faq-item"><summary>¿Necesito un software especial para gestionar un plan de mantenimiento?</summary><p>No. Para pocos equipos bastan una hoja de cálculo y un calendario. Cuando la lista crece, una herramienta con tareas recurrentes, responsables y recordatorios facilita mucho detectar el trabajo vencido.</p></details>
+
+        <p style="margin-top:32px"><a href="/es/blog/"><span aria-hidden="true">←</span> Volver al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Mantenga el mantenimiento al día</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center reúne tareas recurrentes, responsables e indicadores operativos en una sola vista, para detectar el mantenimiento vencido antes de que cause paradas.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/es/products/command-center/">Explorar Command Center</a>
+          <a class="btn btn-secondary" href="/es/blog/">Volver al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La columna vertebral operativa de los equipos modernos.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Productos</h5>
+          <a href="/es/products/">Todos los productos</a>
+          <a href="/es/products/hr-suite/">HR Suite</a>
+          <a href="/es/products/command-center/">Command Center</a>
+          <a href="/es/products/collection/">Collection</a>
+          <a href="/es/products/tms/">TMS</a>
+          <a href="/es/products/assure/">Assure</a>
+          <a href="/es/products/close/">Close</a>
+          <a href="/es/products/consolidate/">Consolidate</a>
+          <a href="/es/custom-apps/">Apps a medida</a>
+        </div>
+        <div class="foot-col">
+          <h5>Cuadrícula</h5>
+          <a href="/es/features/">Funciones</a>
+          <a href="/es/integrations/">Integraciones</a>
+          <a href="/es/how-it-works/">Cómo funciona</a>
+          <a href="/es/pricing/">Precios</a>
+          <a href="/es/regions/">Regiones</a>
+          <a href="/es/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Empresa</h5>
+          <a href="/es/about/">Acerca de</a>
+          <a href="/es/faq/">FAQ</a>
+          <a href="/es/contact/">Contacto</a>
+          <a href="/es/privacy/">Privacidad</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Todos los derechos reservados.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
