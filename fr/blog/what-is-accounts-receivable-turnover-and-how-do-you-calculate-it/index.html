@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Qu'est-ce que la rotation des créances clients et comment la calculer ? — FulcrumGrid</title>
+  <meta name="description" content="La rotation des créances clients indique combien de fois par an vous encaissez vos créances moyennes. Formule, exemple chiffré et leviers d'amélioration." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Qu'est-ce que la rotation des créances clients et comment la calculer ?" />
+  <meta property="og:description" content="La rotation des créances clients indique combien de fois par an vous encaissez vos créances moyennes. Formule, exemple chiffré et leviers d'amélioration." />
+  <meta property="og:url" content="https://fulcrumgrid.com/fr/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-16" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Qu'est-ce que la rotation des créances clients et comment la calculer ?" />
+  <meta name="twitter:description" content="La rotation des créances clients indique combien de fois par an vous encaissez vos créances moyennes. Formule, exemple chiffré et leviers d'amélioration." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/fr/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Qu'est-ce que la rotation des créances clients et comment la calculer ?",
+    "description": "La rotation des créances clients indique combien de fois par an vous encaissez vos créances moyennes. Formule, exemple chiffré et leviers d'amélioration.",
+    "datePublished": "2026-11-16",
+    "dateModified": "2026-11-16",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/fr/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "fr"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://fulcrumgrid.com/fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/fr/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Rotation des créances",
+        "item": "https://fulcrumgrid.com/fr/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Une rotation des créances élevée est-elle toujours préférable ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le plus souvent, mais pas toujours. Un ratio très élevé peut signifier que vos conditions de crédit sont si strictes que vous perdez des ventes au profit de concurrents plus souples."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quelle différence entre rotation des créances et DSO ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La rotation indique combien de fois vous encaissez vos créances sur une période, tandis que le DSO exprime la vitesse d'encaissement en jours. Diviser 365 par la rotation donne un chiffre proche du DSO."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Puis-je utiliser le chiffre d'affaires total si je ne distingue pas les ventes à crédit ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, pour une estimation grossière, mais le résultat surestimera la rotation si une part importante des ventes est payée immédiatement. Isoler les ventes à crédit donne une image bien plus juste."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "À quelle fréquence calculer la rotation des créances ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un calcul mensuel ou trimestriel convient à la plupart des petites entreprises. L'évolution dans le temps compte davantage qu'un résultat isolé, car elle révèle les problèmes tôt."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/fr/" aria-label="Accueil FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/fr/products/">Produits</a>
+        <a href="/fr/features/">Grille</a>
+        <a href="/fr/pricing/">Tarifs</a>
+        <a href="/fr/regions/">Régions</a>
+        <a href="/fr/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/fr/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Langue">FR ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" class="active" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/fr/contact/">Demander une démo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/fr/">Accueil</a> / <a href="/fr/blog/">Blog</a> / Rotation des créances</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>Qu'est-ce que la rotation des créances clients et comment la calculer ?</h1>
+        <p class="hero-intro">La rotation des créances clients indique combien de fois par an vous encaissez vos créances moyennes. Formule, exemple chiffré et leviers d'amélioration.</p>
+        <p class="mono"><time datetime="2026-11-16">16 novembre 2026</time> · 6 min de lecture</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Une entreprise peut être rentable sur le papier et peiner pourtant à payer ses fournisseurs si ses clients tardent à régler leurs factures. La rotation des créances clients est l'un des moyens les plus simples de mesurer la vitesse à laquelle les ventes à crédit se transforment en trésorerie. Ce guide présente la formule, déroule un exemple et indique quoi faire lorsque l'indicateur se dégrade.</p>
+<h2>Qu'est-ce que la rotation des créances clients ?</h2>
+<p>La rotation des créances clients mesure combien de fois, sur une période donnée, une entreprise encaisse le montant moyen de ses créances en cours. Un ratio élevé signifie que les clients paient vite et que peu de trésorerie reste immobilisée dans des factures impayées. Un ratio faible signifie que l'argent reste plus longtemps chez vos clients.</p>
+<h2>Comment la calculer ?</h2>
+<p>La formule est la suivante :</p>
+<p><strong>Rotation des créances = ventes nettes à crédit ÷ créances clients moyennes</strong></p>
+<ul>
+<li><strong>Les ventes nettes à crédit</strong> correspondent aux ventes à crédit de la période, déduction faite des retours, remises et avoirs. Les ventes payées comptant ou par carte au moment de l'achat sont exclues.</li>
+<li><strong>Les créances clients moyennes</strong> s'obtiennent généralement en additionnant le solde d'ouverture et le solde de clôture, puis en divisant par deux.</li>
+</ul>
+<h3>Un exemple chiffré</h3>
+<p>Imaginons un petit grossiste qui a réalisé 1 200 000 de ventes nettes à crédit l'an dernier. Ses créances s'élevaient à 180 000 en début d'année et à 120 000 en fin d'année.</p>
+<ul>
+<li>Créances moyennes = (180 000 + 120 000) ÷ 2 = 150 000</li>
+<li>Rotation des créances = 1 200 000 ÷ 150 000 = <strong>8</strong></li>
+</ul>
+<p>L'entreprise a donc encaissé huit fois son encours moyen de créances au cours de l'année.</p>
+<h2>Comment convertir la rotation en jours ?</h2>
+<p>Un ratio de 8 parle peu, c'est pourquoi la plupart des équipes le convertissent en jours :</p>
+<p><strong>Délai moyen d'encaissement = 365 ÷ rotation des créances</strong></p>
+<p>Dans l'exemple, 365 ÷ 8 donne environ 46 jours. Si les conditions standard du grossiste sont de 30 jours, ses clients paient en moyenne avec deux semaines de retard. Ce chiffre est très proche du DSO (délai moyen de paiement des clients), que de nombreuses directions financières suivent chaque mois. Les deux se calculent un peu différemment, mais répondent à la même question : combien de temps faut-il pour être payé ?</p>
+<h2>Qu'est-ce qu'un bon ratio de rotation ?</h2>
+<p>Il n'existe pas d'objectif universel. Un bon ratio dépend de vos conditions de paiement et de votre secteur.</p>
+<ul>
+<li><strong>Comparez-le à vos propres conditions.</strong> Avec un paiement à 30 jours, un délai d'encaissement de 30 à 35 jours est sain. Des conditions à 60 jours produisent naturellement une rotation plus faible.</li>
+<li><strong>Tenez compte de votre secteur.</strong> Le commerce de détail et l'hôtellerie-restauration, avec des factures nombreuses et modestes, affichent souvent une rotation élevée. Le BTP, l'industrie et le commerce de gros, où les délais longs et la facturation par étapes sont courants, ont généralement des chiffres plus bas.</li>
+<li><strong>Surveillez la tendance.</strong> Une baisse régulière sur plusieurs trimestres en dit plus long qu'un chiffre isolé.</li>
+</ul>
+<h2>Pourquoi la rotation des créances baisse-t-elle ?</h2>
+<ul>
+<li><strong>Les factures partent en retard</strong> ou contiennent des erreurs, si bien que le délai de paiement démarre tard ou s'interrompt le temps de les corriger.</li>
+<li><strong>Les conditions de paiement sont floues</strong> ou n'ont pas été validées par écrit avant le début de la prestation.</li>
+<li><strong>Les relances sont irrégulières</strong> et les factures échues restent des semaines sans suivi.</li>
+<li><strong>Les plafonds de crédit sont trop généreux</strong>, ou les nouveaux clients obtiennent des délais sans vérification.</li>
+<li><strong>Quelques gros clients ralentissent</strong>, ce qui suffit à tirer tout le ratio vers le bas.</li>
+</ul>
+<h2>Comment l'améliorer ?</h2>
+<ul>
+<li><strong>Fixez des conditions claires dès le départ.</strong> Indiquez l'échéance, les moyens de paiement acceptés et les pénalités de retard sur le devis, le contrat et la facture.</li>
+<li><strong>Facturez vite et sans erreur.</strong> Envoyez la facture le jour de la livraison, avec le numéro de bon de commande et les bons interlocuteurs.</li>
+<li><strong>Adoptez un rythme de relance régulier.</strong> Par exemple, un message courtois quelques jours avant l'échéance, un rappel le jour J, puis des relances à 7, 14 et 30 jours de retard.</li>
+<li><strong>Définissez et révisez les plafonds de crédit.</strong> Appuyez-les sur l'historique de paiement et revoyez-les dès qu'un client commence à payer en retard.</li>
+<li><strong>Facilitez le paiement.</strong> Proposez virement, carte ou lien de paiement pour réduire les prétextes au retard.</li>
+<li><strong>Consignez les promesses de paiement.</strong> Quand un client s'engage sur une date, notez-la et relancez si le règlement n'arrive pas.</li>
+</ul>
+<h2>Quels sont les pièges de calcul les plus courants ?</h2>
+<ul>
+<li><strong>Utiliser le chiffre d'affaires total au lieu des ventes à crédit.</strong> Inclure les ventes au comptant gonfle le ratio et embellit artificiellement le recouvrement.</li>
+<li><strong>Se contenter de deux points dans une activité saisonnière.</strong> Si les créances culminent au printemps et sont basses à la clôture, une simple moyenne ouverture-clôture est trompeuse. Utilisez plutôt la moyenne des soldes mensuels.</li>
+<li><strong>Mélanger les périodes.</strong> Avec des ventes trimestrielles, divisez 90 ou 91 jours, et non 365, pour la conversion en jours.</li>
+<li><strong>Oublier les passages en pertes.</strong> Passer des créances irrécouvrables en pertes réduit l'encours et peut améliorer la rotation alors qu'aucun encaissement n'a eu lieu.</li>
+</ul>
+<h2>Du ratio à l'action</h2>
+<p>La rotation des créances vous signale qu'un changement s'est produit, sans dire quels clients ni quelles factures en sont la cause. Des outils comme FulcrumGrid Collection aident à combler cet écart en suivant les factures échues, en automatisant les relances et en enregistrant les promesses de paiement au même endroit, pour voir où la trésorerie est bloquée et relancer avec régularité.</p>
+
+        <h2>Questions fréquentes</h2>
+        <details class="faq-item"><summary>Une rotation des créances élevée est-elle toujours préférable ?</summary><p>Le plus souvent, mais pas toujours. Un ratio très élevé peut signifier que vos conditions de crédit sont si strictes que vous perdez des ventes au profit de concurrents plus souples.</p></details>
+        <details class="faq-item"><summary>Quelle différence entre rotation des créances et DSO ?</summary><p>La rotation indique combien de fois vous encaissez vos créances sur une période, tandis que le DSO exprime la vitesse d'encaissement en jours. Diviser 365 par la rotation donne un chiffre proche du DSO.</p></details>
+        <details class="faq-item"><summary>Puis-je utiliser le chiffre d'affaires total si je ne distingue pas les ventes à crédit ?</summary><p>Oui, pour une estimation grossière, mais le résultat surestimera la rotation si une part importante des ventes est payée immédiatement. Isoler les ventes à crédit donne une image bien plus juste.</p></details>
+        <details class="faq-item"><summary>À quelle fréquence calculer la rotation des créances ?</summary><p>Un calcul mensuel ou trimestriel convient à la plupart des petites entreprises. L'évolution dans le temps compte davantage qu'un résultat isolé, car elle révèle les problèmes tôt.</p></details>
+
+        <p style="margin-top:32px"><a href="/fr/blog/"><span aria-hidden="true">←</span> Retour au blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Encaissez plus vite, relancez moins</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Collection suit les factures échues, automatise les relances et enregistre les promesses de paiement pour transformer plus vite vos créances en trésorerie.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/fr/products/collection/">Découvrir Collection</a>
+          <a class="btn btn-secondary" href="/fr/blog/">Retour au blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>L'épine dorsale opérationnelle des équipes modernes.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produits</h5>
+          <a href="/fr/products/">Tous les produits</a>
+          <a href="/fr/products/hr-suite/">HR Suite</a>
+          <a href="/fr/products/command-center/">Command Center</a>
+          <a href="/fr/products/collection/">Collection</a>
+          <a href="/fr/products/tms/">TMS</a>
+          <a href="/fr/products/assure/">Assure</a>
+          <a href="/fr/products/close/">Close</a>
+          <a href="/fr/products/consolidate/">Consolidate</a>
+          <a href="/fr/custom-apps/">Applications sur mesure</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grille</h5>
+          <a href="/fr/features/">Fonctionnalités</a>
+          <a href="/fr/integrations/">Intégrations</a>
+          <a href="/fr/how-it-works/">Comment ça marche</a>
+          <a href="/fr/pricing/">Tarifs</a>
+          <a href="/fr/regions/">Régions</a>
+          <a href="/fr/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Entreprise</h5>
+          <a href="/fr/about/">À propos</a>
+          <a href="/fr/faq/">FAQ</a>
+          <a href="/fr/contact/">Contact</a>
+          <a href="/fr/privacy/">Confidentialité</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tous droits réservés.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

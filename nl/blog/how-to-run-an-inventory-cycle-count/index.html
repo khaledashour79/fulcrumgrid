@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Hoe doe je cyclisch tellen in plaats van een jaarlijkse inventarisatie? — FulcrumGrid</title>
+  <meta name="description" content="Bij cyclisch tellen controleer je elke week een paar artikelen in plaats van jaarlijks te sluiten voor de inventarisatie. ABC-frequenties, telstappen en nauwkeurigheid." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Hoe doe je cyclisch tellen in plaats van een jaarlijkse inventarisatie?" />
+  <meta property="og:description" content="Bij cyclisch tellen controleer je elke week een paar artikelen in plaats van jaarlijks te sluiten voor de inventarisatie. ABC-frequenties, telstappen en nauwkeurigheid." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/how-to-run-an-inventory-cycle-count/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-11-16" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hoe doe je cyclisch tellen in plaats van een jaarlijkse inventarisatie?" />
+  <meta name="twitter:description" content="Bij cyclisch tellen controleer je elke week een paar artikelen in plaats van jaarlijks te sluiten voor de inventarisatie. ABC-frequenties, telstappen en nauwkeurigheid." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-run-an-inventory-cycle-count/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hoe doe je cyclisch tellen in plaats van een jaarlijkse inventarisatie?",
+    "description": "Bij cyclisch tellen controleer je elke week een paar artikelen in plaats van jaarlijks te sluiten voor de inventarisatie. ABC-frequenties, telstappen en nauwkeurigheid.",
+    "datePublished": "2026-11-16",
+    "dateModified": "2026-11-16",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/how-to-run-an-inventory-cycle-count/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Gids cyclisch tellen",
+        "item": "https://fulcrumgrid.com/nl/blog/how-to-run-an-inventory-cycle-count/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is het verschil tussen cyclisch tellen en een jaarlijkse inventarisatie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bij een jaarlijkse inventarisatie tel je alles in één keer, meestal terwijl het werk stilligt. Bij cyclisch tellen controleer je regelmatig een kleine, wisselende groep artikelen, zodat de hele voorraad binnen het jaar aan bod komt zonder sluiting."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe vaak tel je A-, B- en C-artikelen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een gangbaar startpunt is A maandelijks, B per kwartaal en C twee keer per jaar. Tel vaker bij artikelen die cruciaal zijn, makkelijk zoekraken of vaak afwijken."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is een blinde telling?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bij een blinde telling ziet de teller niet welke hoeveelheid het systeem verwacht. Hij noteert alleen wat hij aantreft, waardoor hij niet zomaar een getal bevestigt en fouten zichtbaar worden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is een goede voorraadnauwkeurigheid?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Veel bedrijven streven naar minstens 95% in totaal en 98% of meer voor A-artikelen. Zit je daar nu ver onder, meet dan eerst eerlijk en verbeter door de gevonden oorzaken aan te pakken."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / Gids cyclisch tellen</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Hoe doe je cyclisch tellen in plaats van een jaarlijkse inventarisatie?</h1>
+        <p class="hero-intro">Bij cyclisch tellen controleer je elke week een paar artikelen in plaats van jaarlijks te sluiten voor de inventarisatie. ABC-frequenties, telstappen en nauwkeurigheid.</p>
+        <p class="mono"><time datetime="2026-11-16">16 november 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Veel kleine bedrijven gaan nog steeds een of twee dagen per jaar dicht, sturen iedereen het magazijn in en tellen alles. Dat is vermoeiend, foutgevoelig en het laat pas maanden later zien wat er misging. Cyclisch tellen vervangt die marathon door korte, regelmatige tellingen van een paar artikelen tegelijk. Deze Q&amp;A legt uit hoe je het opzet en volhoudt.</p><h2>Wat is cyclisch tellen?</h2><p>Het is het geplande tellen van een klein, wisselend deel van je voorraad. In plaats van alles op één dag te tellen, tel je elke dag of week een handvol artikelen of locaties. In de loop van het jaar wordt elk artikel minstens één keer geteld, en de belangrijke vaak. Het gewone werk gaat gewoon door.</p><h2>Waarom is het beter dan een jaarlijkse inventarisatie?</h2><ul><li><strong>Geen sluiting.</strong> Je verliest geen dag verkoop of productie.</li><li><strong>Nauwkeuriger tellingen.</strong> Iemand die 20 artikelen zorgvuldig telt, maakt minder fouten dan een moe team dat er 2.000 telt.</li><li><strong>Snellere terugkoppeling.</strong> Je ontdekt een fout een paar weken later, als de papieren en de betrokkenen nog binnen bereik zijn.</li><li><strong>De oorzaak wordt opgelost.</strong> Omdat je elk verschil onderzoekt, herhaalt dezelfde fout zich niet steeds.</li><li><strong>Het hele jaar betrouwbare cijfers.</strong> Bestelpunten, offertes en financiële rapporten steunen op voorraadcijfers die kloppen.</li></ul><p>Sommige bedrijven hebben voor hun boekhouder of accountant nog een telling aan het eind van het boekjaar nodig. Een goed lopend programma met aantoonbare nauwkeurigheid kan die telling korter maken of in sommige gevallen vervangen. Vraag je accountant wat nodig is.</p><h2>Hoe bepaal je wat je telt en hoe vaak?</h2><p>Gebruik ABC-classificatie. Rangschik artikelen op jaarlijkse verbruikswaarde (verbruikte eenheden per jaar &times; kostprijs per stuk) en verdeel ze in drie groepen:</p><ul><li><strong>A-artikelen.</strong> Ongeveer de bovenste 20% van de artikelen, goed voor zo'n 80% van de waarde. Maandelijks tellen.</li><li><strong>B-artikelen.</strong> De volgende 30% of zo, rond de 15% van de waarde. Per kwartaal tellen.</li><li><strong>C-artikelen.</strong> De overige helft, elk met een lage waarde. Twee keer per jaar tellen.</li></ul><p>Gebruik daarna je gezonde verstand. Zet een artikel in A als het klein is en makkelijk zoekraakt, cruciaal is voor de productie of vaak afwijkt, ook als de waarde beperkt is.</p><h2>Hoe stel je de planning op?</h2><p>Bereken het totale aantal tellingen per jaar en deel dat door het aantal werkdagen. Bijvoorbeeld: 100 A-artikelen &times; 12 = 1.200 tellingen, 150 B-artikelen &times; 4 = 600 en 250 C-artikelen &times; 2 = 500. Dat zijn 2.300 tellingen per jaar, ongeveer 10 per dag over 230 werkdagen, meestal 30 tot 45 minuten werk. Verdeel ze gelijkmatig, groepeer artikelen per locatie zodat elke ronde efficiënt is en vermijd je drukste dagen, zoals de verzending aan het eind van de maand.</p><h2>Hoe verloopt een telling?</h2><ul><li><strong>Maak de lijst.</strong> Geef de teller het artikel en de locatie, maar niet de systeemvoorraad.</li><li><strong>Tel blind.</strong> De teller noteert wat er fysiek ligt zonder te zien wat het systeem verwacht, zodat hij niet zomaar een getal bevestigt.</li><li><strong>Bevries de locatie.</strong> Stop orderpicken, ontvangsten en verplaatsingen op die locatie tijdens het tellen, of tel op een rustig moment, en noteer openstaande boekingen.</li><li><strong>Vergelijk.</strong> Leg de telling naast de administratieve voorraad.</li><li><strong>Hertel verschillen boven de tolerantie.</strong> Stel een tolerantie vast, bijvoorbeeld 0% voor A, 2% voor B en 5% voor C, of een vast bedrag. Alles daarboven telt een andere persoon opnieuw voordat je corrigeert.</li><li><strong>Corrigeer en leg vast.</strong> Boek de correctie met een redencode en bewaar het teloverzicht.</li></ul><h2>Hoe vind je de oorzaak van een verschil?</h2><p>Een correctie herstelt het getal, een onderzoek herstelt het proces. Bekijk de recente boekingen van het artikel en zoek waar administratie en werkelijkheid uit elkaar liepen. Veelvoorkomende oorzaken:</p><ul><li><strong>Ontvangstfouten.</strong> Goederen ingeboekt volgens de pakbon in plaats van wat er echt binnenkwam.</li><li><strong>Niet geboekte afval en monsters.</strong> Beschadigde artikelen weggegooid of voorraad meegegeven zonder boeking.</li><li><strong>Pickfouten.</strong> Verkeerd artikel of verkeerde hoeveelheid gepakt, wat meteen twee fouten oplevert.</li><li><strong>Verwarring over eenheden.</strong> Dozen geboekt als losse stuks, of andersom.</li><li><strong>Timing.</strong> Een zending of ontvangst die nog niet was geboekt toen er werd geteld.</li></ul><p>Houd een eenvoudig logboek van oorzaken bij. Na een paar maanden zie je in het patroon waar training, etiketten of papierwerk beter moeten.</p><h2>Hoe meet je het succes?</h2><p>Volg de <strong>voorraadnauwkeurigheid</strong>: het percentage getelde artikelen waarvan de administratie binnen de tolerantie overeenkwam met de telling. Heb je deze maand 200 artikelen geteld en vielen er 188 binnen de tolerantie, dan is de nauwkeurigheid 94%. Rapporteer die maandelijks per ABC-klasse. Veel bedrijven streven naar minstens 95% in totaal en 98% of meer voor A-artikelen. Houd ook de totale waarde van correcties bij, zodat een paar grote fouten niet verdwijnen achter veel kleine juiste tellingen.</p><h2>Wie is eigenaar?</h2><p>Geef het programma één eigenaar, meestal de magazijn- of operationeel manager, die de planning maakt, verschillen beoordeelt en de KPI rapporteert. Wijs de tellingen van elke dag toe aan vaste personen en laat ze rouleren, zodat niemand altijd zijn eigen werk controleert. Maak tellen een vast onderdeel van de routine, niet iets voor als er tijd over is.</p><h2>Waar begin je?</h2><p>Deel je artikelen in met een spreadsheet, stel toleranties vast en tel een maand lang je A-artikelen. Beheer je je bedrijfsvoering al in <strong>FulcrumGrid Command Center</strong>, dan kun je terugkerende teltaken aanmaken, ze aan eigenaren toewijzen en verschillen en voorraadnauwkeurigheid op een dashboard volgen, zodat de planning blijft lopen, ook in drukke weken.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wat is het verschil tussen cyclisch tellen en een jaarlijkse inventarisatie?</summary><p>Bij een jaarlijkse inventarisatie tel je alles in één keer, meestal terwijl het werk stilligt. Bij cyclisch tellen controleer je regelmatig een kleine, wisselende groep artikelen, zodat de hele voorraad binnen het jaar aan bod komt zonder sluiting.</p></details>
+        <details class="faq-item"><summary>Hoe vaak tel je A-, B- en C-artikelen?</summary><p>Een gangbaar startpunt is A maandelijks, B per kwartaal en C twee keer per jaar. Tel vaker bij artikelen die cruciaal zijn, makkelijk zoekraken of vaak afwijken.</p></details>
+        <details class="faq-item"><summary>Wat is een blinde telling?</summary><p>Bij een blinde telling ziet de teller niet welke hoeveelheid het systeem verwacht. Hij noteert alleen wat hij aantreft, waardoor hij niet zomaar een getal bevestigt en fouten zichtbaar worden.</p></details>
+        <details class="faq-item"><summary>Wat is een goede voorraadnauwkeurigheid?</summary><p>Veel bedrijven streven naar minstens 95% in totaal en 98% of meer voor A-artikelen. Zit je daar nu ver onder, meet dan eerst eerlijk en verbeter door de gevonden oorzaken aan te pakken.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Houd je tellingen op schema</h2>
+        <p class="section-lead" style="margin:0 auto 26px">Met FulcrumGrid Command Center plan je terugkerende teltaken, wijs je eigenaren toe en volg je verschillen en nauwkeurigheids-KPI's op één dashboard.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/products/tms/">TMS</a>
+          <a href="/nl/products/assure/">Assure</a>
+          <a href="/nl/products/close/">Close</a>
+          <a href="/nl/products/consolidate/">Consolidate</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

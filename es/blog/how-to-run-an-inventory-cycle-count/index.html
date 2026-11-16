@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>¿Cómo hacer un conteo cíclico de inventario en vez de uno anual? — FulcrumGrid</title>
+  <meta name="description" content="El conteo cíclico revisa unos pocos artículos cada semana en lugar de cerrar para el inventario anual. Frecuencias ABC, pasos del conteo y cómo medir la exactitud." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="¿Cómo hacer un conteo cíclico de inventario en vez de uno anual?" />
+  <meta property="og:description" content="El conteo cíclico revisa unos pocos artículos cada semana en lugar de cerrar para el inventario anual. Frecuencias ABC, pasos del conteo y cómo medir la exactitud." />
+  <meta property="og:url" content="https://fulcrumgrid.com/es/blog/how-to-run-an-inventory-cycle-count/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-16" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="¿Cómo hacer un conteo cíclico de inventario en vez de uno anual?" />
+  <meta name="twitter:description" content="El conteo cíclico revisa unos pocos artículos cada semana en lugar de cerrar para el inventario anual. Frecuencias ABC, pasos del conteo y cómo medir la exactitud." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/es/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-run-an-inventory-cycle-count/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "¿Cómo hacer un conteo cíclico de inventario en vez de uno anual?",
+    "description": "El conteo cíclico revisa unos pocos artículos cada semana en lugar de cerrar para el inventario anual. Frecuencias ABC, pasos del conteo y cómo medir la exactitud.",
+    "datePublished": "2026-11-16",
+    "dateModified": "2026-11-16",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/es/blog/how-to-run-an-inventory-cycle-count/"
+    },
+    "inLanguage": "es"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://fulcrumgrid.com/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/es/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guía de conteo cíclico",
+        "item": "https://fulcrumgrid.com/es/blog/how-to-run-an-inventory-cycle-count/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿En qué se diferencia el conteo cíclico del inventario anual?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El inventario anual lo cuenta todo de una vez, normalmente con la actividad parada. El conteo cíclico revisa con regularidad un grupo pequeño de artículos que va rotando, de modo que todo el inventario queda cubierto en el año sin cerrar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cada cuánto hay que contar los artículos A, B y C?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un punto de partida habitual es A cada mes, B cada trimestre y C dos veces al año. Cuenta con más frecuencia cualquier artículo crítico, fácil de perder o que suela tener errores."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es un conteo a ciegas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En un conteo a ciegas quien cuenta no ve la cantidad que espera el sistema. Solo anota lo que encuentra, lo que evita que se limite a confirmar una cifra y deja los errores a la vista."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué exactitud de inventario es buena?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Muchas empresas aspiran al menos al 95 % en total y al 98 % o más en los artículos A. Si hoy estás muy por debajo, mide primero con honestidad y mejora corrigiendo las causas que encuentres."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/es/products/">Productos</a>
+        <a href="/es/features/">Cuadrícula</a>
+        <a href="/es/pricing/">Precios</a>
+        <a href="/es/regions/">Regiones</a>
+        <a href="/es/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/es/contact/">Contacto</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Idioma">ES ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" class="active" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/es/contact/">Solicitar una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/es/">Inicio</a> / <a href="/es/blog/">Blog</a> / Guía de conteo cíclico</p>
+        <span class="tag tag-accent">Operaciones</span>
+        <h1>¿Cómo hacer un conteo cíclico de inventario en vez de uno anual?</h1>
+        <p class="hero-intro">El conteo cíclico revisa unos pocos artículos cada semana en lugar de cerrar para el inventario anual. Frecuencias ABC, pasos del conteo y cómo medir la exactitud.</p>
+        <p class="mono"><time datetime="2026-11-16">16 de noviembre de 2026</time> · 6 min de lectura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Muchas pequeñas empresas siguen cerrando uno o dos días al año para meter a todo el mundo en el almacén y contarlo todo. Es agotador, propenso a errores y solo revela los problemas meses después de que ocurrieran. El conteo cíclico sustituye ese maratón por conteos cortos y regulares de unos pocos artículos cada vez. Estas preguntas y respuestas explican cómo ponerlo en marcha y mantenerlo.</p><h2>¿Qué es un conteo cíclico?</h2><p>Es el conteo planificado de una pequeña parte de tu inventario que va rotando. En lugar de contarlo todo en un día, cuentas unos pocos artículos o ubicaciones cada día o cada semana. A lo largo del año todos los artículos se cuentan al menos una vez, y los importantes muchas más. El trabajo normal sigue alrededor del conteo.</p><h2>¿Por qué es mejor que el inventario anual?</h2><ul><li><strong>Sin cierres.</strong> No pierdes un día de ventas ni de producción.</li><li><strong>Conteos más exactos.</strong> Quien cuenta 20 artículos con calma se equivoca menos que un equipo cansado que cuenta 2.000.</li><li><strong>Respuesta más rápida.</strong> Descubres el error semanas después, cuando aún tienes los documentos y a las personas implicadas.</li><li><strong>Corrige la causa.</strong> Como se investiga cada diferencia, el mismo error deja de repetirse.</li><li><strong>Cifras fiables todo el año.</strong> Puntos de pedido, presupuestos e informes financieros se basan en existencias en las que puedes confiar.</li></ul><p>Algunas empresas siguen necesitando un recuento al cierre del ejercicio para su gestor o auditor. Un programa de conteo cíclico bien llevado y con exactitud documentada puede acortarlo o, en algunos casos, sustituirlo. Pregunta a tu asesor qué necesita.</p><h2>¿Cómo decides qué contar y con qué frecuencia?</h2><p>Usa la clasificación ABC. Ordena los artículos por su valor de consumo anual (unidades consumidas al año &times; coste unitario) y divídelos en tres grupos:</p><ul><li><strong>Artículos A.</strong> Aproximadamente el 20 % de los artículos, que suponen cerca del 80 % del valor. Cuéntalos cada mes.</li><li><strong>Artículos B.</strong> El siguiente 30 % más o menos, en torno al 15 % del valor. Cuéntalos cada trimestre.</li><li><strong>Artículos C.</strong> La mitad restante, de poco valor cada uno. Cuéntalos dos veces al año.</li></ul><p>Después aplica el sentido común. Sube un artículo a A si es pequeño y fácil de perder, crítico para la producción o suele dar errores, aunque su valor sea modesto.</p><h2>¿Cómo se monta el calendario?</h2><p>Calcula el número total de conteos al año y divídelo entre los días laborables. Por ejemplo: 100 artículos A &times; 12 = 1.200 conteos, 150 artículos B &times; 4 = 600 y 250 artículos C &times; 2 = 500. Son 2.300 conteos al año, unos 10 al día en 230 días laborables, normalmente entre 30 y 45 minutos de trabajo. Repártelos de forma uniforme, agrupa los artículos por ubicación para ir más rápido y evita los días de más actividad, como los envíos de fin de mes.</p><h2>¿Cuál es el procedimiento de conteo?</h2><ul><li><strong>Genera la lista.</strong> Da a la persona que cuenta el artículo y la ubicación, pero no la cantidad del sistema.</li><li><strong>Cuenta a ciegas.</strong> Se anota lo que hay físicamente sin ver lo que espera el sistema, así nadie se limita a confirmar un número.</li><li><strong>Congela la ubicación.</strong> Detén las salidas, entradas y traslados de esa ubicación mientras se cuenta, o cuenta en un momento tranquilo, y anota los movimientos pendientes.</li><li><strong>Compara.</strong> Contrasta el conteo con el registro.</li><li><strong>Recuenta las diferencias que superen la tolerancia.</strong> Fija una tolerancia, por ejemplo 0 % para A, 2 % para B y 5 % para C, o un importe en euros. Todo lo que la supere lo vuelve a contar otra persona antes de ajustar.</li><li><strong>Ajusta y documenta.</strong> Registra la corrección con un código de motivo y guarda la hoja de conteo.</li></ul><h2>¿Cómo se encuentra la causa de una diferencia?</h2><p>El ajuste corrige la cifra; la investigación corrige el proceso. Revisa los últimos movimientos del artículo y busca dónde se separaron el registro y la realidad. Causas habituales:</p><ul><li><strong>Errores de recepción.</strong> Mercancía registrada según el albarán y no según lo que llegó de verdad.</li><li><strong>Mermas y muestras sin registrar.</strong> Artículos dañados tirados o existencias entregadas sin movimiento.</li><li><strong>Errores de preparación.</strong> Artículo o cantidad equivocados, lo que genera dos errores a la vez.</li><li><strong>Confusión de unidades.</strong> Cajas registradas como unidades sueltas, o al revés.</li><li><strong>Desfase temporal.</strong> Un envío o una entrada aún sin registrar cuando se hizo el conteo.</li></ul><p>Lleva un registro sencillo de causas. En pocos meses verás dónde mejorar la formación, el etiquetado o los documentos.</p><h2>¿Cómo se mide el éxito?</h2><p>Sigue la <strong>exactitud del registro de inventario</strong>: el porcentaje de artículos contados cuyo registro coincide con el conteo físico dentro de la tolerancia. Si este mes contaste 200 artículos y 188 estaban dentro de la tolerancia, la exactitud es del 94 %. Infórmala cada mes, por clase ABC. Muchas empresas aspiran al 95 % o más en total y al 98 % o más en los artículos A. Sigue también el valor total de los ajustes, para que unos pocos errores grandes no queden ocultos tras muchos conteos pequeños correctos.</p><h2>¿Quién debe ser el responsable?</h2><p>Asigna el programa a una sola persona, normalmente el responsable de almacén o de operaciones, que prepara el calendario, revisa las diferencias e informa del KPI. Asigna los conteos de cada día a personas concretas y ve rotándolas, para que nadie revise siempre su propio trabajo. Convierte el conteo en una cita fija de la rutina, no en algo que se hace cuando sobra tiempo.</p><h2>¿Por dónde empezar?</h2><p>Clasifica tus artículos en una hoja de cálculo, define las tolerancias y cuenta tus artículos A durante un mes. Si ya gestionas tus operaciones con <strong>FulcrumGrid Command Center</strong>, puedes crear tareas de conteo recurrentes, asignarlas a responsables y seguir diferencias y exactitud en un panel, para que el calendario se cumpla incluso en las semanas más complicadas.</p>
+
+        <h2>Preguntas frecuentes</h2>
+        <details class="faq-item"><summary>¿En qué se diferencia el conteo cíclico del inventario anual?</summary><p>El inventario anual lo cuenta todo de una vez, normalmente con la actividad parada. El conteo cíclico revisa con regularidad un grupo pequeño de artículos que va rotando, de modo que todo el inventario queda cubierto en el año sin cerrar.</p></details>
+        <details class="faq-item"><summary>¿Cada cuánto hay que contar los artículos A, B y C?</summary><p>Un punto de partida habitual es A cada mes, B cada trimestre y C dos veces al año. Cuenta con más frecuencia cualquier artículo crítico, fácil de perder o que suela tener errores.</p></details>
+        <details class="faq-item"><summary>¿Qué es un conteo a ciegas?</summary><p>En un conteo a ciegas quien cuenta no ve la cantidad que espera el sistema. Solo anota lo que encuentra, lo que evita que se limite a confirmar una cifra y deja los errores a la vista.</p></details>
+        <details class="faq-item"><summary>¿Qué exactitud de inventario es buena?</summary><p>Muchas empresas aspiran al menos al 95 % en total y al 98 % o más en los artículos A. Si hoy estás muy por debajo, mide primero con honestidad y mejora corrigiendo las causas que encuentres.</p></details>
+
+        <p style="margin-top:32px"><a href="/es/blog/"><span aria-hidden="true">←</span> Volver al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Mantén tus conteos al día</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center te permite programar conteos recurrentes, asignar responsables y seguir diferencias y KPI de exactitud en un único panel.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/es/products/command-center/">Explorar Command Center</a>
+          <a class="btn btn-secondary" href="/es/blog/">Volver al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La columna vertebral operativa de los equipos modernos.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Productos</h5>
+          <a href="/es/products/">Todos los productos</a>
+          <a href="/es/products/hr-suite/">HR Suite</a>
+          <a href="/es/products/command-center/">Command Center</a>
+          <a href="/es/products/collection/">Collection</a>
+          <a href="/es/products/tms/">TMS</a>
+          <a href="/es/products/assure/">Assure</a>
+          <a href="/es/products/close/">Close</a>
+          <a href="/es/products/consolidate/">Consolidate</a>
+          <a href="/es/custom-apps/">Apps a medida</a>
+        </div>
+        <div class="foot-col">
+          <h5>Cuadrícula</h5>
+          <a href="/es/features/">Funciones</a>
+          <a href="/es/integrations/">Integraciones</a>
+          <a href="/es/how-it-works/">Cómo funciona</a>
+          <a href="/es/pricing/">Precios</a>
+          <a href="/es/regions/">Regiones</a>
+          <a href="/es/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Empresa</h5>
+          <a href="/es/about/">Acerca de</a>
+          <a href="/es/faq/">FAQ</a>
+          <a href="/es/contact/">Contacto</a>
+          <a href="/es/privacy/">Privacidad</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Todos los derechos reservados.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

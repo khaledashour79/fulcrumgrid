@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>كيف تُجري الجرد الدوري للمخزون بدلاً من الجرد الشامل السنوي؟ — FulcrumGrid</title>
+  <meta name="description" content="الجرد الدوري يعني عدّ بضعة أصناف كل أسبوع بدلاً من إغلاق العمل للجرد السنوي. تعرّف على تصنيف ABC وخطوات العدّ وكيفية قياس دقة سجلات المخزون." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="كيف تُجري الجرد الدوري للمخزون بدلاً من الجرد الشامل السنوي؟" />
+  <meta property="og:description" content="الجرد الدوري يعني عدّ بضعة أصناف كل أسبوع بدلاً من إغلاق العمل للجرد السنوي. تعرّف على تصنيف ABC وخطوات العدّ وكيفية قياس دقة سجلات المخزون." />
+  <meta property="og:url" content="https://fulcrumgrid.com/ar/blog/how-to-run-an-inventory-cycle-count/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-16" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="لوحة التحكم للتنفيذيين من FulcrumGrid — العمليات في لمحة" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="كيف تُجري الجرد الدوري للمخزون بدلاً من الجرد الشامل السنوي؟" />
+  <meta name="twitter:description" content="الجرد الدوري يعني عدّ بضعة أصناف كل أسبوع بدلاً من إغلاق العمل للجرد السنوي. تعرّف على تصنيف ABC وخطوات العدّ وكيفية قياس دقة سجلات المخزون." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/ar/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-run-an-inventory-cycle-count/" />
+
+  <link rel="preload" href="/assets/fonts/cairo-600-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/cairo-400-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "كيف تُجري الجرد الدوري للمخزون بدلاً من الجرد الشامل السنوي؟",
+    "description": "الجرد الدوري يعني عدّ بضعة أصناف كل أسبوع بدلاً من إغلاق العمل للجرد السنوي. تعرّف على تصنيف ABC وخطوات العدّ وكيفية قياس دقة سجلات المخزون.",
+    "datePublished": "2026-11-16",
+    "dateModified": "2026-11-16",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/ar/blog/how-to-run-an-inventory-cycle-count/"
+    },
+    "inLanguage": "ar"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "الرئيسية",
+        "item": "https://fulcrumgrid.com/ar/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "المدوّنة",
+        "item": "https://fulcrumgrid.com/ar/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "دليل الجرد الدوري",
+        "item": "https://fulcrumgrid.com/ar/blog/how-to-run-an-inventory-cycle-count/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "ما الفرق بين الجرد الدوري والجرد الشامل؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "الجرد الشامل يعدّ كل شيء دفعة واحدة، وغالباً مع إيقاف العمل. أما الجرد الدوري فيفحص بانتظام مجموعة صغيرة متغيرة من الأصناف، فيُغطّى المخزون كله خلال السنة دون إغلاق."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كم مرة يجب عدّ أصناف الفئات A وB وC؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "نقطة البداية الشائعة هي عدّ الفئة A شهرياً، والفئة B كل ثلاثة أشهر، والفئة C مرتين في السنة. وزِد وتيرة العدّ لأي صنف حيوي أو سهل الضياع أو كثير الأخطاء."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ما هو العدّ الأعمى؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "في العدّ الأعمى لا يرى القائم بالعدّ الكمية التي يتوقعها النظام، بل يسجّل فقط ما يجده. وهذا يمنعه من الاكتفاء بتأكيد رقم جاهز ويكشف الأخطاء بوضوح."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ما المستوى الجيد لدقة سجلات المخزون؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "تستهدف شركات كثيرة ٩٥٪ على الأقل إجمالاً، و٩٨٪ أو أكثر لأصناف الفئة A. وإذا كنت اليوم دون ذلك بكثير، فابدأ بقياس صادق ثم تحسّن بمعالجة الأسباب التي تكتشفها."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <a href="/ar/products/">المنتجات</a>
+        <a href="/ar/features/">الشبكة</a>
+        <a href="/ar/pricing/">الأسعار</a>
+        <a href="/ar/regions/">المناطق</a>
+        <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
+        <a href="/ar/contact/">اتصل بنا</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="اللغة">ع ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" class="active" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      </div>
+      <button class="nav-toggle" aria-label="القائمة"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/ar/">الرئيسية</a> / <a href="/ar/blog/">المدوّنة</a> / دليل الجرد الدوري</p>
+        <span class="tag tag-accent">العمليات</span>
+        <h1>كيف تُجري الجرد الدوري للمخزون بدلاً من الجرد الشامل السنوي؟</h1>
+        <p class="hero-intro">الجرد الدوري يعني عدّ بضعة أصناف كل أسبوع بدلاً من إغلاق العمل للجرد السنوي. تعرّف على تصنيف ABC وخطوات العدّ وكيفية قياس دقة سجلات المخزون.</p>
+        <p class="mono"><time datetime="2026-11-16">١٦ نوفمبر ٢٠٢٦</time> · ٦ دقائق للقراءة</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>ما زالت شركات صغيرة كثيرة تغلق أبوابها يوماً أو يومين كل عام، فيتوجه الجميع إلى المخزن لعدّ كل شيء. إنه عمل مرهق وكثير الأخطاء، ولا يكشف المشكلات إلا بعد أشهر من وقوعها. يستبدل الجرد الدوري هذا الماراثون بعمليات عدّ قصيرة ومنتظمة لعدد قليل من الأصناف في كل مرة. يشرح هذا الدليل بأسلوب السؤال والجواب كيف تطلقه وتحافظ على استمراره.</p><h2>ما هو الجرد الدوري؟</h2><p>هو عدّ مخطط لجزء صغير من مخزونك يتغير في كل مرة. فبدلاً من عدّ كل شيء في يوم واحد، تعدّ بضعة أصناف أو مواقع كل يوم أو كل أسبوع. وعلى مدار السنة يُعدّ كل صنف مرة واحدة على الأقل، والأصناف المهمة مرات كثيرة. ويستمر العمل المعتاد أثناء العدّ.</p><h2>لماذا هو أفضل من الجرد السنوي؟</h2><ul><li><strong>لا إغلاق.</strong> لا تخسر يوماً من المبيعات أو الإنتاج.</li><li><strong>عدّ أدق.</strong> من يعدّ ٢٠ صنفاً بعناية يخطئ أقل بكثير من فريق متعب يعدّ ٢٬٠٠٠ صنف.</li><li><strong>اكتشاف أسرع.</strong> تكتشف الخطأ بعد أسابيع من وقوعه، بينما المستندات والأشخاص المعنيون ما زالوا في المتناول.</li><li><strong>معالجة السبب.</strong> لأن كل فرق يُحقَّق فيه، يتوقف الخطأ نفسه عن التكرار.</li><li><strong>أرقام موثوقة طوال العام.</strong> نقاط إعادة الطلب وعروض الأسعار والتقارير المالية تقوم على أرصدة يمكنك الوثوق بها.</li></ul><p>قد تظل بعض الشركات بحاجة إلى جرد في نهاية السنة المالية من أجل المحاسب أو المدقق. لكن برنامج جرد دوري منضبط بدقة موثقة قد يختصر ذلك الجرد، بل قد يغني عنه في بعض الحالات. اسأل محاسبك عمّا يطلبه.</p><h2>كيف تقرر ماذا تعدّ وكم مرة؟</h2><p>استخدم تصنيف ABC. رتّب الأصناف حسب قيمة استهلاكها السنوي (الوحدات المستهلكة سنوياً × تكلفة الوحدة)، ثم قسّمها إلى ثلاث فئات:</p><ul><li><strong>أصناف الفئة A.</strong> نحو ٢٠٪ من الأصناف تمثل قرابة ٨٠٪ من القيمة. تُعدّ شهرياً.</li><li><strong>أصناف الفئة B.</strong> نحو ٣٠٪ التالية، وتمثل قرابة ١٥٪ من القيمة. تُعدّ كل ثلاثة أشهر.</li><li><strong>أصناف الفئة C.</strong> النصف الباقي، وقيمة كل منها منخفضة. تُعدّ مرتين في السنة.</li></ul><p>ثم استخدم حسن التقدير. ارفع الصنف إلى الفئة A إذا كان صغيراً وسهل الضياع، أو حيوياً للإنتاج، أو كثير الأخطاء، حتى لو كانت قيمته متواضعة.</p><h2>كيف تبني جدول العدّ؟</h2><p>احسب العدد الإجمالي لعمليات العدّ في السنة واقسمه على أيام العمل. مثال: ١٠٠ صنف من الفئة A × ١٢ = ١٬٢٠٠ عملية عدّ، و١٥٠ صنفاً من الفئة B × ٤ = ٦٠٠، و٢٥٠ صنفاً من الفئة C × ٢ = ٥٠٠. المجموع ٢٬٣٠٠ عملية في السنة، أي نحو ١٠ يومياً على مدى ٢٣٠ يوم عمل، وهو عادة ما بين ٣٠ و٤٥ دقيقة من العمل. وزّعها بالتساوي، واجمع الأصناف حسب الموقع لتكون كل جولة فعالة، وتجنّب أكثر أيامك ازدحاماً مثل شحنات نهاية الشهر.</p><h2>ما خطوات عملية العدّ؟</h2><ul><li><strong>أعدّ القائمة.</strong> أعطِ القائم بالعدّ الصنف والموقع، دون الكمية المسجلة في النظام.</li><li><strong>اعتمد العدّ الأعمى.</strong> يسجّل القائم بالعدّ ما هو موجود فعلياً دون أن يرى الرقم المتوقع، فلا يكتفي بتأكيد رقم جاهز.</li><li><strong>جمّد الموقع.</strong> أوقف الصرف والاستلام والنقل في ذلك الموقع أثناء العدّ، أو اختر وقتاً هادئاً، ودوّن أي حركات لم تُسجَّل بعد.</li><li><strong>قارن.</strong> طابق نتيجة العدّ مع الرصيد المسجل.</li><li><strong>أعد عدّ الفروق التي تتجاوز الحد المسموح.</strong> حدّد هامشاً مقبولاً، مثلاً صفر٪ للفئة A و٢٪ للفئة B و٥٪ للفئة C، أو مبلغاً مالياً ثابتاً. وكل ما يتجاوزه يعيد عدّه شخص آخر قبل التسوية.</li><li><strong>سوِّ ووثّق.</strong> سجّل التسوية مع رمز للسبب، واحتفظ بورقة العدّ.</li></ul><h2>كيف تجد السبب الجذري للفرق؟</h2><p>التسوية تصلح الرقم، أما التحقيق فيصلح العملية. راجع آخر حركات الصنف وابحث عن النقطة التي افترق فيها السجل عن الواقع. من الأسباب الشائعة:</p><ul><li><strong>أخطاء الاستلام.</strong> تسجيل البضاعة بالكمية المذكورة في إشعار التسليم بدلاً من الكمية الواصلة فعلاً.</li><li><strong>تالف وعينات غير مسجلة.</strong> أصناف تالفة رُميت أو بضاعة سُلّمت دون تسجيل أي حركة.</li><li><strong>أخطاء التجهيز.</strong> سحب صنف خاطئ أو كمية خاطئة، ما يُحدث خطأين في آن واحد.</li><li><strong>خلط وحدات القياس.</strong> تسجيل الكراتين كقطع مفردة أو العكس.</li><li><strong>التوقيت.</strong> شحنة صادرة أو واردة لم تُسجَّل بعد لحظة العدّ.</li></ul><p>احتفظ بسجل بسيط للأسباب. وبعد بضعة أشهر سيُظهر لك النمط أين تحتاج إلى تحسين التدريب أو الملصقات أو المستندات.</p><h2>كيف تقيس النجاح؟</h2><p>تابع <strong>دقة سجلات المخزون</strong>: وهي نسبة الأصناف المعدودة التي طابق رصيدها المسجل العدّ الفعلي ضمن الهامش المسموح. فإذا عددت ٢٠٠ صنف هذا الشهر وكان ١٨٨ منها ضمن الهامش، فالدقة ٩٤٪. اعرضها شهرياً حسب فئات ABC. تستهدف شركات كثيرة ٩٥٪ أو أكثر إجمالاً، و٩٨٪ أو أكثر لأصناف الفئة A. وتابع أيضاً القيمة الإجمالية للتسويات، حتى لا تختبئ بضعة أخطاء كبيرة خلف كثير من عمليات العدّ الصغيرة الصحيحة.</p><h2>من يجب أن يتولى المسؤولية؟</h2><p>اجعل للبرنامج مسؤولاً واحداً، غالباً مدير المخزن أو مدير العمليات، يبني الجدول ويراجع الفروق ويرفع تقرير مؤشر KPI. وكلّف أشخاصاً بأسمائهم بعمليات العدّ اليومية، وبدّل بينهم حتى لا يراجع أحد عمله هو دائماً. واجعل العدّ موعداً ثابتاً في الروتين، لا مهمة تُنجز فقط حين يتوفر وقت فراغ.</p><h2>من أين تبدأ؟</h2><p>صنّف أصنافك في جدول بيانات، وحدّد الهوامش المسموحة، وابدأ بعدّ أصناف الفئة A لمدة شهر. وإذا كنت تدير عملياتك بالفعل عبر <strong>مركز القيادة من FulcrumGrid</strong>، يمكنك إنشاء مهام عدّ متكررة وإسنادها إلى مسؤولين، ومتابعة الفروق ودقة السجلات على لوحة متابعة واحدة، فيستمر الجدول حتى في الأسابيع المزدحمة.</p>
+
+        <h2>الأسئلة الشائعة</h2>
+        <details class="faq-item"><summary>ما الفرق بين الجرد الدوري والجرد الشامل؟</summary><p>الجرد الشامل يعدّ كل شيء دفعة واحدة، وغالباً مع إيقاف العمل. أما الجرد الدوري فيفحص بانتظام مجموعة صغيرة متغيرة من الأصناف، فيُغطّى المخزون كله خلال السنة دون إغلاق.</p></details>
+        <details class="faq-item"><summary>كم مرة يجب عدّ أصناف الفئات A وB وC؟</summary><p>نقطة البداية الشائعة هي عدّ الفئة A شهرياً، والفئة B كل ثلاثة أشهر، والفئة C مرتين في السنة. وزِد وتيرة العدّ لأي صنف حيوي أو سهل الضياع أو كثير الأخطاء.</p></details>
+        <details class="faq-item"><summary>ما هو العدّ الأعمى؟</summary><p>في العدّ الأعمى لا يرى القائم بالعدّ الكمية التي يتوقعها النظام، بل يسجّل فقط ما يجده. وهذا يمنعه من الاكتفاء بتأكيد رقم جاهز ويكشف الأخطاء بوضوح.</p></details>
+        <details class="faq-item"><summary>ما المستوى الجيد لدقة سجلات المخزون؟</summary><p>تستهدف شركات كثيرة ٩٥٪ على الأقل إجمالاً، و٩٨٪ أو أكثر لأصناف الفئة A. وإذا كنت اليوم دون ذلك بكثير، فابدأ بقياس صادق ثم تحسّن بمعالجة الأسباب التي تكتشفها.</p></details>
+
+        <p style="margin-top:32px"><a href="/ar/blog/"><span aria-hidden="true">←</span> العودة إلى المدوّنة</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid لوحة التحكم للتنفيذيين</p>
+        <h2>حافظ على انتظام جدول العدّ</h2>
+        <p class="section-lead" style="margin:0 auto 26px">يتيح لك مركز القيادة من FulcrumGrid جدولة مهام عدّ متكررة وإسنادها إلى مسؤولين ومتابعة الفروق ومؤشرات KPI للدقة على لوحة واحدة.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/ar/products/command-center/">استكشف لوحة التحكم للتنفيذيين</a>
+          <a class="btn btn-secondary" href="/ar/blog/">العودة إلى المدوّنة</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>العمود الفقري التشغيلي للفرق الحديثة.</p>
+        </div>
+        <div class="foot-col">
+          <h5>المنتجات</h5>
+          <a href="/ar/products/">كل المنتجات</a>
+          <a href="/ar/products/hr-suite/">منصة الموارد البشرية</a>
+          <a href="/ar/products/command-center/">لوحة التحكم للتنفيذيين</a>
+          <a href="/ar/products/collection/">منصة تحصيل الديون</a>
+          <a href="/ar/products/tms/">منصة العمليات اللوجستية</a>
+          <a href="/ar/products/assure/">منصة الحوكمة والامتثال</a>
+          <a href="/ar/products/close/">منصة المعايير المحاسبية والإغلاق</a>
+          <a href="/ar/products/consolidate/">منصة التوحيد المالي</a>
+          <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشبكة</h5>
+          <a href="/ar/features/">الميزات</a>
+          <a href="/ar/integrations/">التكاملات</a>
+          <a href="/ar/how-it-works/">كيف تعمل</a>
+          <a href="/ar/pricing/">الأسعار</a>
+          <a href="/ar/regions/">المناطق</a>
+          <a href="/ar/blog/">المدوّنة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشركة</h5>
+          <a href="/ar/about/">من نحن</a>
+          <a href="/ar/faq/">الأسئلة الشائعة</a>
+          <a href="/ar/contact/">اتصل بنا</a>
+          <a href="/ar/privacy/">الخصوصية</a>
+          <a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
