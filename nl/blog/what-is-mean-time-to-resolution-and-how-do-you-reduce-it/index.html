@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wat is de gemiddelde oplostijd (MTTR) en hoe verkort je die? — FulcrumGrid</title>
+  <meta name="description" content="Ontdek wat de gemiddelde oplostijd (MTTR) is, hoe je die met een rekenvoorbeeld berekent, wat een goede waarde per ernst is en hoe je de MTTR praktisch verlaagt." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wat is de gemiddelde oplostijd (MTTR) en hoe verkort je die?" />
+  <meta property="og:description" content="Ontdek wat de gemiddelde oplostijd (MTTR) is, hoe je die met een rekenvoorbeeld berekent, wat een goede waarde per ernst is en hoe je de MTTR praktisch verlaagt." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-11-17" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wat is de gemiddelde oplostijd (MTTR) en hoe verkort je die?" />
+  <meta name="twitter:description" content="Ontdek wat de gemiddelde oplostijd (MTTR) is, hoe je die met een rekenvoorbeeld berekent, wat een goede waarde per ernst is en hoe je de MTTR praktisch verlaagt." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wat is de gemiddelde oplostijd (MTTR) en hoe verkort je die?",
+    "description": "Ontdek wat de gemiddelde oplostijd (MTTR) is, hoe je die met een rekenvoorbeeld berekent, wat een goede waarde per ernst is en hoe je de MTTR praktisch verlaagt.",
+    "datePublished": "2026-11-17",
+    "dateModified": "2026-11-17",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "MTTR-gids",
+        "item": "https://fulcrumgrid.com/nl/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is het verschil tussen gemiddelde reparatietijd en gemiddelde oplostijd?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De gemiddelde reparatietijd omvat alleen het eigenlijke herstel zodra het werk begint. De gemiddelde oplostijd omvat het hele incident, vanaf het begin of de melding tot het herstel en de bevestigde afsluiting, inclusief detectie en wachttijd."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe vaak moeten we de MTTR bekijken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Maandelijks is voor de meeste kleine teams een goed ritme, uitgesplitst naar ernst. Kijk naar de trend over meerdere maanden in plaats van te reageren op één cijfer, want één lang incident kan elke maand vertekenen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Tellen nachten en weekenden mee in de MTTR?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Beslis het en leg het vast. Teams met dag-en-nachtdekking tellen meestal kalenderuren. Teams die alleen tijdens kantooruren werken, meten minder ernstige incidenten vaak in werkuren en de meest kritieke in kalenderuren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is een lagere MTTR altijd beter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Alleen als incidenten echt zijn opgelost. Daalt de MTTR terwijl heropeningen of terugkerende incidenten toenemen, dan worden problemen te vroeg gesloten. Lees de MTTR altijd samen met het heropeningspercentage en het aantal incidenten."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / MTTR-gids</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Wat is de gemiddelde oplostijd (MTTR) en hoe verkort je die?</h1>
+        <p class="hero-intro">Ontdek wat de gemiddelde oplostijd (MTTR) is, hoe je die met een rekenvoorbeeld berekent, wat een goede waarde per ernst is en hoe je de MTTR praktisch verlaagt.</p>
+        <p class="mono"><time datetime="2026-11-17">17 november 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Een klantorder blijft hangen, een bestelbus valt uit, de pinautomaat weigert dienst midden in de lunchdrukte. Wat rustige teams onderscheidt van chaotische is niet hoe zelden er iets misgaat, maar hoe snel het weer goed komt. De gemiddelde oplostijd, of MTTR (mean time to resolution), is het getal dat dat laat zien. Deze gids legt uit hoe je hem berekent en verlaagt, of je nu verantwoordelijk bent voor IT, een magazijn, een werkplaats of een klantenservice.</p><h2>Wat is de gemiddelde oplostijd?</h2><p>De gemiddelde oplostijd is de gemiddelde tijd die nodig is om een incident volledig op te lossen, vanaf het moment dat het begint of gemeld wordt tot het moment dat het verholpen is en de afsluiting bevestigd. ‘Opgelost’ betekent dat het probleem weg is en alles weer normaal draait, niet alleen dat iemand ermee aan de slag is gegaan.</p><p>De formule is eenvoudig:</p><p><strong>MTTR = totale oplostijd van alle incidenten ÷ aantal incidenten</strong></p><h2>Hoe bereken je de MTTR? Een rekenvoorbeeld</h2><p>Stel dat je team vorige maand vijf incidenten afhandelde, met deze oplostijden:</p><ul><li>Incident 1: 1 uur</li><li>Incident 2: 2 uur</li><li>Incident 3: 2,5 uur</li><li>Incident 4: 3,5 uur</li><li>Incident 5: 11 uur</li></ul><p>Samen is dat 20 uur. Gedeeld door vijf incidenten is je MTTR <strong>4 uur</strong>. Merk wel op dat vier van de vijf incidenten binnen 3,5 uur waren opgelost. Eén lang incident trok het gemiddelde omhoog. Daar komen we zo op terug.</p><h2>Welke MTTR meet je eigenlijk?</h2><p>De afkorting MTTR wordt voor verschillende dingen gebruikt, en wie ze door elkaar haalt, krijgt cijfers waar je niets mee kunt. De belangrijkste leden van de familie zijn:</p><ul><li><strong>Gemiddelde detectietijd (MTTD):</strong> hoe lang een probleem bestaat voordat iemand het merkt.</li><li><strong>Gemiddelde reactietijd (MTTA):</strong> de tijd tussen de melding of waarschuwing en het moment dat iemand het oppakt.</li><li><strong>Gemiddelde reparatietijd:</strong> hoe lang het eigenlijke herstel duurt zodra het werk begint.</li><li><strong>Gemiddelde oplostijd:</strong> het hele traject, van begin tot bevestigde afsluiting, inclusief detectie, wachttijd, reparatie en controle.</li><li><strong>Gemiddelde tijd tussen storingen (MTBF):</strong> hoe lang een systeem of apparaat gemiddeld draait tussen twee storingen. Dit meet betrouwbaarheid, niet reactiesnelheid.</li></ul><p>Kies één definitie, leg vast wanneer de klok start en stopt, en houd je daar consequent aan. Als de een meet vanaf de klacht van de klant en de ander vanaf de aankomst van de monteur, vergelijk je twee verschillende metrics.</p><h2>Wat is een goede MTTR?</h2><p>Een universele norm bestaat niet, want een goede MTTR hangt af van hoe ernstig het incident is. Een stilgevallen productielijn en een kapotte printer op kantoor horen niet hetzelfde doel te hebben. Daarom is het verstandig om <strong>de MTTR per ernstniveau te meten</strong>. Heb je ernstniveaus zoals P1 tot en met P4 vastgelegd, stel dan per niveau een doel, bijvoorbeeld binnen 2 uur voor P1 en binnen 3 werkdagen voor P4.</p><p>Volg naast het gemiddelde ook de <strong>mediaan</strong>. In het voorbeeld hierboven was het gemiddelde 4 uur, maar de mediaan, de middelste waarde, 2,5 uur. Eén vervelend incident kan een goede maand slecht laten lijken, of een langzame verslechtering verbergen. Met beide cijfers zie je of het probleem in je gewone aanpak zit of in een paar uitschieters. Kijk vooral naar de trend over maanden in plaats van naar één los cijfer.</p><h2>Hoe verkort je de MTTR?</h2><p>De meeste tijd van een incident gaat niet op aan het oplossen zelf, maar aan opmerken, wachten, de juiste persoon vinden en uitzoeken wat er moet gebeuren. Deze hefbomen pakken juist die verloren tijd aan.</p><h3>1. Problemen sneller opmerken</h3><p>Elke minuut voordat iemand iets merkt, telt mee in je MTTR. Stel waarschuwingen in op de signalen die ertoe doen, zoals voorraadniveaus, achterstallige orders, meetwaarden van apparatuur of mislukte betalingen, en maak het medewerkers en klanten makkelijk om problemen op één plek te melden.</p><h3>2. Eigenaarschap en escalatie helder maken</h3><p>Incidenten blijven liggen als iedereen denkt dat een ander ermee bezig is. Elk incident heeft één eigenaar met naam nodig. Een escalatiematrix die zegt wie je belt en na hoeveel tijd, voorkomt dat problemen in een wachtrij blijven hangen.</p><h3>3. Runbooks schrijven voor terugkerende problemen</h3><p>Komt hetzelfde soort incident steeds terug, dan kan wie dienst heeft het met een kort runbook met precieze stappen oplossen, zonder op zoek te moeten naar die ene collega die weet hoe het moet.</p><h3>4. Triage op ernst</h3><p>Bepaal de ernst in de eerste minuten en werk in die volgorde. Een snelle, consequente triage voorkomt dat urgente zaken wachten achter kleinigheden.</p><h3>5. Overdrachten strak houden</h3><p>Incidenten die over een dienstwissel heen lopen, verliezen vaak uren. Gebruik een eenvoudige overdrachtsnotitie: wat er is gebeurd, wat er al is geprobeerd, wat de volgende stap is en wie nu de eigenaar is.</p><h3>6. Grondoorzaken aanpakken</h3><p>Het incident dat het snelst is opgelost, is het incident dat nooit terugkomt. Houd na grotere incidenten een korte evaluatie, zoek de onderliggende oorzaak en los die op.</p><h2>Wat zijn veelgemaakte fouten met de MTTR?</h2><ul><li><strong>De metric manipuleren.</strong> Worden mensen alleen op MTTR beoordeeld, dan worden tickets gesloten voordat het probleem echt is opgelost. Het cijfer wordt beter terwijl klanten de dupe zijn.</li><li><strong>Het heropeningspercentage negeren.</strong> Houd bij hoeveel incidenten worden heropend of binnen een week terugkomen. Een dalende MTTR met een stijgend heropeningspercentage is een waarschuwing, geen succes.</li><li><strong>Onduidelijke tijdstempels.</strong> Worden begin- en eindtijden achteraf uit het hoofd ingevuld, dan is de metric giswerk.</li><li><strong>Eén doel voor alles.</strong> Een gemengd gemiddelde over alle ernstniveaus verhult wat er echt gebeurt.</li></ul><h2>Waar houd je de MTTR bij?</h2><p>Een spreadsheet volstaat om te beginnen, zolang elk incident een betrouwbare begintijd, eindtijd en ernst krijgt. Naarmate het volume groeit, helpt het als die tijdstempels automatisch worden vastgelegd. In <strong>FulcrumGrid Command Center</strong> krijgen incidenten en taken een tijdstempel bij openen, toewijzen en afsluiten, zodat je de MTTR per ernstniveau op een dashboard kunt tonen naast je andere operationele KPI’s, zonder handmatig bijhouden.</p><p>Begin deze week: spreek één definitie af, leg de volgende tien incidenten zorgvuldig vast en bereken per ernstniveau zowel het gemiddelde als de mediaan. Die nulmeting laat zien waar de tijd echt blijft.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wat is het verschil tussen gemiddelde reparatietijd en gemiddelde oplostijd?</summary><p>De gemiddelde reparatietijd omvat alleen het eigenlijke herstel zodra het werk begint. De gemiddelde oplostijd omvat het hele incident, vanaf het begin of de melding tot het herstel en de bevestigde afsluiting, inclusief detectie en wachttijd.</p></details>
+        <details class="faq-item"><summary>Hoe vaak moeten we de MTTR bekijken?</summary><p>Maandelijks is voor de meeste kleine teams een goed ritme, uitgesplitst naar ernst. Kijk naar de trend over meerdere maanden in plaats van te reageren op één cijfer, want één lang incident kan elke maand vertekenen.</p></details>
+        <details class="faq-item"><summary>Tellen nachten en weekenden mee in de MTTR?</summary><p>Beslis het en leg het vast. Teams met dag-en-nachtdekking tellen meestal kalenderuren. Teams die alleen tijdens kantooruren werken, meten minder ernstige incidenten vaak in werkuren en de meest kritieke in kalenderuren.</p></details>
+        <details class="faq-item"><summary>Is een lagere MTTR altijd beter?</summary><p>Alleen als incidenten echt zijn opgelost. Daalt de MTTR terwijl heropeningen of terugkerende incidenten toenemen, dan worden problemen te vroeg gesloten. Lees de MTTR altijd samen met het heropeningspercentage en het aantal incidenten.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Zie waar je oplostijd naartoe gaat</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center geeft incidenten en taken automatisch een tijdstempel, zodat je de MTTR per ernstniveau op een dashboard volgt en vertragingen ziet.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/products/tms/">TMS</a>
+          <a href="/nl/products/assure/">Assure</a>
+          <a href="/nl/products/close/">Close</a>
+          <a href="/nl/products/consolidate/">Consolidate</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
