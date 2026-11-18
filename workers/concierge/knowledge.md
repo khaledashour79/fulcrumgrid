@@ -31,7 +31,24 @@ secure, auditable grid, with cross-app data when you run several.
   write-back; government fines imported by CSV — it prepares and records, it never files with
   the government on your behalf), plus GCC home-leave air tickets. Data-subject rights (DSAR access/erasure with a
   retention classification, for PDPL/GDPR). Posts draft journal vouchers to SAP Business One
-  or Daftara and GL entries to FulcrumGrid TMS. 50+ modules on one grid (Core HR always on),
+  or Daftara and GL entries to FulcrumGrid TMS. It also manages company assets and mobile
+  lines (devices and SIM lines assigned at onboarding and returned before offboarding closes;
+  carrier bills booked by department, with unused-line flags), a contracts register with
+  notice-period expiry reminders, and a Treasury payments queue for loans, government fees and
+  travel advances. Beyond Saudi it ships per-country statutory packs — payroll, tax and social
+  insurance with local reports — including Egypt's Labour Law 14/2025 (probation, leave,
+  overtime, income tax, fund levies, 90-day notice), Gulf nationals' social insurance, and more
+  nationalities such as Bangladesh, Nepal, Sri Lanka and Indonesia. Probation management covers
+  country presets and legal ceilings, in-app consent to extend, and auto-confirmation.
+  Governance is built in: more than one role per user with ready-made role templates, and
+  segregation of duties — adding an integration key or an outbound data address needs a second
+  person, and no one approves or pays their own money. Government workflows connect to the
+  Muqeem platform for live resident and visa status. Employee documents (payslips, offer
+  letters, settlements, HR letters) print on the company letterhead in the reader's language
+  with signature and stamp, and employees can draft customised letters for Chamber-of-Commerce
+  attestation. Business-trip check-in compares the punch against the trip city. The whole
+  product — interface, in-app help and AI assistant, company emails and push notifications, and
+  employee documents — runs in all seven languages. 50+ modules on one grid (Core HR always on),
   AI Copilot & human-approved agents, a partner REST API, and OIDC SSO / SCIM.
   **From SAR 12 / seat / month** (Starter; Growth SAR 24, Enterprise SAR 38, per seat/mo).
 - **Command Center** — a real-time operations dashboard / control room: live KPIs and

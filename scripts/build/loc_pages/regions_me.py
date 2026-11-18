@@ -144,6 +144,26 @@ PAGE['/regions/egypt/'] = {'src': 'regions/egypt/index.html', 't': _common({
         'Los módulos que hacen que HR Suite funcione como lo hace Egipto — cada uno parte de la misma cuadrícula, sin herramientas separadas.',
         "I moduli che fanno funzionare HR Suite come fa l'Egitto — ciascuno parte della stessa griglia, senza strumenti separati.",
         'De modules die HR Suite laten werken zoals Egypte dat doet — elk onderdeel van hetzelfde grid, geen aparte tools.'),
+    'Labour Law 14/2025, built in': _t(
+        'Loi du travail 14/2025, intégrée', 'Arbeitsgesetz 14/2025, integriert',
+        'Ley Laboral 14/2025, integrada', 'Legge sul lavoro 14/2025, integrata',
+        'Arbeidswet 14/2025, ingebouwd'),
+    "Egypt's 2025 Labour Law shipped as a preset — probation rules, a 90-day notice default and a termination guide, with the statutory leave pack updated to match.": _t(
+        "La loi du travail égyptienne de 2025 livrée en préréglage — règles de période d'essai, préavis par défaut de 90 jours et guide de licenciement, le pack de congés légaux étant mis à jour en conséquence.",
+        'Das ägyptische Arbeitsgesetz von 2025 als Voreinstellung — Probezeitregeln, eine 90-Tage-Kündigungsfrist als Standard und ein Kündigungsleitfaden, wobei das gesetzliche Urlaubspaket entsprechend aktualisiert wurde.',
+        'La Ley Laboral egipcia de 2025 lista como ajuste — reglas de período de prueba, un preaviso de 90 días por defecto y una guía de despido, con el paquete de permisos legales actualizado en consecuencia.',
+        'La legge sul lavoro egiziana del 2025 fornita come preimpostazione — regole del periodo di prova, un preavviso predefinito di 90 giorni e una guida al licenziamento, con il pacchetto di ferie di legge aggiornato di conseguenza.',
+        'De Egyptische arbeidswet van 2025 als preset — proeftijdregels, een standaardopzegtermijn van 90 dagen en een ontslaggids, met het wettelijke verlofpakket dienovereenkomstig bijgewerkt.'),
+    'Statutory funds &amp; insurance': _t(
+        'Fonds &amp; assurances légaux', 'Gesetzliche Fonds &amp; Versicherung',
+        'Fondos &amp; seguros obligatorios', 'Fondi &amp; assicurazioni di legge',
+        'Wettelijke fondsen &amp; verzekering'),
+    "Salary income tax and social insurance computed in every pay run, with the Martyrs' Fund and Labour Emergency Fund levies applied automatically.": _t(
+        "Impôt sur le revenu salarial et assurance sociale calculés à chaque cycle de paie, avec les prélèvements du Fonds des martyrs et du Fonds d'urgence du travail appliqués automatiquement.",
+        'Lohnsteuer und Sozialversicherung bei jedem Abrechnungslauf berechnet, wobei die Abgaben für den Märtyrerfonds und den Arbeits-Notfallfonds automatisch angewendet werden.',
+        'Impuesto sobre la renta salarial y seguridad social calculados en cada nómina, con las tasas del Fondo de Mártires y del Fondo de Emergencia Laboral aplicadas automáticamente.',
+        'Imposta sul reddito da lavoro e previdenza sociale calcolate a ogni ciclo di paga, con i prelievi del Fondo dei martiri e del Fondo di emergenza del lavoro applicati automaticamente.',
+        'Loonbelasting en sociale verzekering berekend bij elke loonrun, met de heffingen voor het Martelarenfonds en het Arbeidsnoodfonds automatisch toegepast.'),
     'Configurable payroll': T_CONFIG_PAYROLL_TITLE,
     'Model Egyptian income tax and social-insurance contributions as configurable, classified deduction types, applied in every pay run.': _t(
         "Modélisez l'impôt sur le revenu égyptien et les cotisations d'assurance sociale sous forme de types de retenues configurables et classifiés, appliqués à chaque cycle de paie.",
