@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Qu’est-ce que le TRS (OEE) et comment le calculer ? — FulcrumGrid</title>
+  <meta name="description" content="Découvrez ce qu’est le TRS (taux de rendement synthétique, ou OEE), comment le calculer avec un exemple chiffré, ce qu’est un bon score et comment l’améliorer." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Qu’est-ce que le TRS (OEE) et comment le calculer ?" />
+  <meta property="og:description" content="Découvrez ce qu’est le TRS (taux de rendement synthétique, ou OEE), comment le calculer avec un exemple chiffré, ce qu’est un bon score et comment l’améliorer." />
+  <meta property="og:url" content="https://fulcrumgrid.com/fr/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-18" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Qu’est-ce que le TRS (OEE) et comment le calculer ?" />
+  <meta name="twitter:description" content="Découvrez ce qu’est le TRS (taux de rendement synthétique, ou OEE), comment le calculer avec un exemple chiffré, ce qu’est un bon score et comment l’améliorer." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/fr/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Qu’est-ce que le TRS (OEE) et comment le calculer ?",
+    "description": "Découvrez ce qu’est le TRS (taux de rendement synthétique, ou OEE), comment le calculer avec un exemple chiffré, ce qu’est un bon score et comment l’améliorer.",
+    "datePublished": "2026-11-18",
+    "dateModified": "2026-11-18",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/fr/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "fr"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://fulcrumgrid.com/fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/fr/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guide du TRS",
+        "item": "https://fulcrumgrid.com/fr/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Le TRS peut-il dépasser 100 % ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non. Si votre calcul donne plus de 100 %, le temps de cycle idéal est trop lent ou les comptages de pièces sont faux. Comparez la vitesse idéale à la cadence nominale de l’équipement ou à sa meilleure cadence démontrée."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Les pauses planifiées pénalisent-elles le TRS ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non. Les pauses planifiées et les périodes sans production prévue sont exclues du temps de production planifié. Les changements de série, les pannes et l’attente de matière comptent, car ce sont des pertes que vous pouvez réduire."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "À quelle fréquence calculer le TRS ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Calculez-le par poste ou par jour, pour que les opérateurs puissent relier le chiffre à ce qui s’est réellement passé, puis suivez la tendance hebdomadaire et mensuelle pour vérifier que vos améliorations portent leurs fruits."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quelle est la différence entre le TRS et le TEEP ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le TRS ne mesure la performance que pendant le temps de production planifié. Le TEEP (« total effective equipment performance ») se rapporte à la totalité du temps calendaire et montre donc aussi la capacité laissée inutilisée faute de postes planifiés."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/fr/" aria-label="Accueil FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/fr/products/">Produits</a>
+        <a href="/fr/features/">Grille</a>
+        <a href="/fr/pricing/">Tarifs</a>
+        <a href="/fr/regions/">Régions</a>
+        <a href="/fr/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/fr/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Langue">FR ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" class="active" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/fr/contact/">Demander une démo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/fr/">Accueil</a> / <a href="/fr/blog/">Blog</a> / Guide du TRS</p>
+        <span class="tag tag-accent">Opérations</span>
+        <h1>Qu’est-ce que le TRS (OEE) et comment le calculer ?</h1>
+        <p class="hero-intro">Découvrez ce qu’est le TRS (taux de rendement synthétique, ou OEE), comment le calculer avec un exemple chiffré, ce qu’est un bon score et comment l’améliorer.</p>
+        <p class="mono"><time datetime="2026-11-18">18 novembre 2026</time> · 6 min de lecture</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Vos machines tournent, vos opérateurs ne chôment pas, et pourtant la production n’atteint jamais tout à fait ce dont la ligne devrait être capable. Le taux de rendement synthétique, ou TRS (OEE en anglais, pour « overall equipment effectiveness »), montre d’où vient cet écart. Il transforme une vague impression qu’« on pourrait faire mieux » en trois chiffres sur lesquels agir.</p><h2>Qu’est-ce que le taux de rendement synthétique ?</h2><p>Le TRS mesure la part de votre temps de production planifié qui est réellement productive : ne fabriquer que des pièces bonnes, aussi vite que l’équipement est conçu pour tourner, sans arrêt imprévu. Un score de 100 % correspond à une production parfaite ; tout ce qui est en dessous est de la capacité perdue. Il combine trois facteurs :</p><ul><li><strong>Disponibilité :</strong> la part du temps de production planifié pendant laquelle l’équipement a réellement fonctionné. Elle reflète les pannes, les changements de série et les autres arrêts.</li><li><strong>Performance :</strong> la vitesse à laquelle il a tourné pendant son fonctionnement, comparée à sa vitesse idéale. Elle reflète les cycles lents et les micro-arrêts.</li><li><strong>Qualité :</strong> la part des pièces bonnes du premier coup, sans rebut ni retouche.</li></ul><p><strong>TRS = Disponibilité × Performance × Qualité</strong></p><h2>Comment calculer le TRS ? Un exemple chiffré</h2><p>Prenons une machine sur un poste de 8 heures (480 minutes) avec une pause planifiée de 30 minutes : le temps de production planifié est donc de 450 minutes. Pendant le poste :</p><ul><li>Un bourrage et un changement de série ont arrêté la machine pendant 45 minutes ; elle a donc fonctionné 405 minutes.</li><li>Son temps de cycle idéal est de 1 minute par pièce, et elle a produit 324 pièces au total.</li><li>Sur ce total, 315 étaient bonnes et 9 ont été mises au rebut ou retouchées.</li></ul><p>Calculez ensuite chaque facteur :</p><ul><li><strong>Disponibilité</strong> = temps de fonctionnement ÷ temps de production planifié = 405 ÷ 450 = <strong>90 %</strong></li><li><strong>Performance</strong> = (temps de cycle idéal × nombre total de pièces) ÷ temps de fonctionnement = (1 × 324) ÷ 405 = <strong>80 %</strong></li><li><strong>Qualité</strong> = pièces bonnes ÷ nombre total de pièces = 315 ÷ 324 = <strong>97,2 %</strong></li></ul><p>TRS = 0,90 × 0,80 × 0,972 = <strong>70 %</strong>. Vous pouvez le vérifier autrement : 315 pièces bonnes à 1 minute chacune représentent 315 minutes de temps pleinement productif, et 315 ÷ 450 donne aussi 70 %. Le détail montre où regarder en premier : la qualité est solide, mais la machine n’a tourné qu’à 80 % de sa vitesse idéale.</p><h2>Qu’est-ce qu’un bon TRS ?</h2><p>Un TRS d’environ <strong>85 %</strong> est souvent cité comme le niveau d’excellence (« world class ») dans la production manufacturière discrète, mais prenez-le comme un ordre de grandeur, pas comme une norme. Beaucoup d’usines qui mesurent correctement pour la première fois se situent entre 40 % et 60 %, et c’est normal. La comparaison la plus utile reste celle de votre machine avec le mois précédent, pas avec l’usine d’un autre.</p><h2>Quelles sont les six grandes pertes ?</h2><p>Le TRS va généralement de pair avec les « six grandes pertes », qui classent le temps perdu en causes sur lesquelles vous pouvez agir :</p><ul><li><strong>Pertes de disponibilité :</strong> les pannes d’équipement, ainsi que les réglages et changements de série.</li><li><strong>Pertes de performance :</strong> les micro-arrêts et marches à vide (petits bourrages, déclenchements de capteurs, attente de matière), et le fonctionnement en dessous de la vitesse idéale.</li><li><strong>Pertes de qualité :</strong> les défauts et retouches en production stabilisée, et les rebuts de démarrage pendant que le procédé se stabilise après un changement de série ou un redémarrage.</li></ul><h2>Quelles sont les erreurs de mesure courantes ?</h2><ul><li><strong>Choisir une vitesse idéale flatteuse.</strong> Si le temps de cycle idéal est plus lent que ce dont la machine est réellement capable, la performance paraît élevée, parfois au-delà de 100 %. Utilisez la cadence nominale ou la meilleure cadence démontrée.</li><li><strong>Compter les changements de série comme du temps planifié.</strong> Exclure les réglages du temps de production planifié masque l’une des plus grosses pertes.</li><li><strong>Compter les pièces retouchées comme bonnes.</strong> La qualité ne doit inclure que les pièces bonnes du premier coup.</li><li><strong>Ignorer les micro-arrêts.</strong> Les arrêts d’une ou deux minutes sont rarement notés, alors qu’ensemble ils peuvent coûter plus qu’une grosse panne.</li><li><strong>Faire la moyenne entre machines.</strong> Une moyenne à l’échelle de l’usine masque le goulot d’étranglement. Suivez le TRS par machine ou par ligne.</li></ul><h2>Comment améliorer le TRS ?</h2><h3>1. Commencez par votre goulot d’étranglement</h3><p>Mesurez d’abord la machine ou la ligne qui limite votre production.</p><h3>2. Enregistrez les causes d’arrêt au moment où elles surviennent</h3><p>Une courte liste de codes de cause, saisis par les opérateurs au pied de la machine, vaut mieux que des notes rédigées en fin de poste. Classez les causes par minutes perdues et attaquez les deux premières.</p><h3>3. Raccourcissez les changements de série</h3><p>Préparez outils, matières et réglages pendant que la machine tourne encore, afin que l’arrêt ne couvre que les étapes qui l’exigent vraiment.</p><h3>4. Prévenez les pannes</h3><p>De courtes vérifications quotidiennes par les opérateurs (nettoyage, lubrification, inspection) détectent l’usure avant qu’elle ne devienne une panne.</p><h3>5. Faites le point chaque jour</h3><p>Cinq minutes en début de poste pour regarder le TRS de la veille et sa principale perte suffisent à garder l’attention sur les problèmes qui comptent.</p><h2>Quand le TRS n’est-il pas le bon indicateur ?</h2><p>Le TRS est conçu pour la production répétitive sur équipement. Il en dit moins dans un atelier à forte variété où chaque commande est différente, ou pour un travail essentiellement manuel, où la productivité de la main-d’œuvre est plus parlante. Faire grimper le TRS d’une machine qui n’est pas votre contrainte ne fait qu’accumuler du stock devant l’étape suivante. Si l’équipement est à l’arrêt faute de commandes, c’est une question commerciale ou de planification, et un indicateur fondé sur la totalité du temps calendaire convient mieux. Enfin, n’utilisez jamais le TRS pour classer les opérateurs : il décrit le processus, pas les personnes.</p><h2>Où suivre le TRS ?</h2><p>Un tableur suffit pour une machine si les arrêts, les quantités et les rebuts sont enregistrés de façon fiable. Dans <strong>FulcrumGrid Command Center</strong>, les équipes peuvent saisir les arrêts avec leur code de cause au moment où ils surviennent et suivre la disponibilité, la performance, la qualité et le TRS de chaque ligne sur un tableau de bord.</p><p>Commencez cette semaine : choisissez votre machine goulot, mettez-vous d’accord sur la définition du temps planifié et de la vitesse idéale, et relevez une semaine de données honnêtes. Cette base de référence vous montrera où part réellement votre capacité.</p>
+
+        <h2>Questions fréquentes</h2>
+        <details class="faq-item"><summary>Le TRS peut-il dépasser 100 % ?</summary><p>Non. Si votre calcul donne plus de 100 %, le temps de cycle idéal est trop lent ou les comptages de pièces sont faux. Comparez la vitesse idéale à la cadence nominale de l’équipement ou à sa meilleure cadence démontrée.</p></details>
+        <details class="faq-item"><summary>Les pauses planifiées pénalisent-elles le TRS ?</summary><p>Non. Les pauses planifiées et les périodes sans production prévue sont exclues du temps de production planifié. Les changements de série, les pannes et l’attente de matière comptent, car ce sont des pertes que vous pouvez réduire.</p></details>
+        <details class="faq-item"><summary>À quelle fréquence calculer le TRS ?</summary><p>Calculez-le par poste ou par jour, pour que les opérateurs puissent relier le chiffre à ce qui s’est réellement passé, puis suivez la tendance hebdomadaire et mensuelle pour vérifier que vos améliorations portent leurs fruits.</p></details>
+        <details class="faq-item"><summary>Quelle est la différence entre le TRS et le TEEP ?</summary><p>Le TRS ne mesure la performance que pendant le temps de production planifié. Le TEEP (« total effective equipment performance ») se rapporte à la totalité du temps calendaire et montre donc aussi la capacité laissée inutilisée faute de postes planifiés.</p></details>
+
+        <p style="margin-top:32px"><a href="/fr/blog/"><span aria-hidden="true">←</span> Retour au blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Voyez où part votre capacité</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center permet à votre équipe d’enregistrer arrêts et rebuts par cause, pour suivre disponibilité, performance, qualité et TRS par ligne sur un seul tableau de bord.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/fr/products/command-center/">Découvrir Command Center</a>
+          <a class="btn btn-secondary" href="/fr/blog/">Retour au blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>L'épine dorsale opérationnelle des équipes modernes.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produits</h5>
+          <a href="/fr/products/">Tous les produits</a>
+          <a href="/fr/products/hr-suite/">HR Suite</a>
+          <a href="/fr/products/command-center/">Command Center</a>
+          <a href="/fr/products/collection/">Collection</a>
+          <a href="/fr/products/tms/">TMS</a>
+          <a href="/fr/products/assure/">Assure</a>
+          <a href="/fr/products/close/">Close</a>
+          <a href="/fr/products/consolidate/">Consolidate</a>
+          <a href="/fr/custom-apps/">Applications sur mesure</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grille</h5>
+          <a href="/fr/features/">Fonctionnalités</a>
+          <a href="/fr/integrations/">Intégrations</a>
+          <a href="/fr/how-it-works/">Comment ça marche</a>
+          <a href="/fr/pricing/">Tarifs</a>
+          <a href="/fr/regions/">Régions</a>
+          <a href="/fr/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Entreprise</h5>
+          <a href="/fr/about/">À propos</a>
+          <a href="/fr/faq/">FAQ</a>
+          <a href="/fr/contact/">Contact</a>
+          <a href="/fr/privacy/">Confidentialité</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tous droits réservés.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
