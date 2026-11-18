@@ -539,6 +539,7 @@
       };
       recog.onerror = function () { stopListening(); };
       recog.onend = function () {
+        listening = false;                               // recognition ended on its own — clear the flag so the next turn can re-arm
         setMic(false); mount.classList.remove('is-listening');
         if (canceling) { canceling = false; return; }
         if (finalTxt.trim()) ask(finalTxt);
