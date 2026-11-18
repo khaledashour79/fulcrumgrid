@@ -58,7 +58,7 @@ PRODSLUG = {'collection': 'collection', 'hr': 'hr-suite', 'operations': 'command
 
 MARK_A, MARK_B = '<!-- daily:start -->', '<!-- daily:end -->'
 SITE = 'https://fulcrumgrid.com'
-INDEX_CARDS = 18  # how many recent daily posts to surface on the blog index
+INDEX_CARDS = None  # how many recent daily posts to surface on the blog index; None = all of them (the list grows as posts are added). Set an integer to cap again.
                   # (every post still gets its pages and a sitemap entry)
 
 
@@ -280,9 +280,11 @@ def main():
             os.makedirs(os.path.dirname(out), exist_ok=True)
             open(out, 'w', encoding='utf-8').write(page(lang, p, tr, hdr, ftr))
             n += 1
-        # Surface only the most recent INDEX_CARDS on the index (posts are
-        # newest-first); always reconcile the region so removals disappear too.
-        cards = [card(lang, p, p['lang'][lang]) for p in posts[:INDEX_CARDS]]
+        # Surface the daily posts on the index, newest-first — all of them by
+        # default (INDEX_CARDS=None), or the most recent INDEX_CARDS if capped.
+        # Always reconcile the region so removals disappear too.
+        shown = posts if INDEX_CARDS is None else posts[:INDEX_CARDS]
+        cards = [card(lang, p, p['lang'][lang]) for p in shown]
         splice_index(lang, '\n'.join(cards))
     splice_sitemap([sitemap_url(p) for p in posts])
     print('gen_daily: wrote %d pages for %d daily post(s)' % (n, len(posts)))
