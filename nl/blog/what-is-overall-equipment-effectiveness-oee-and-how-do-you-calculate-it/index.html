@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wat is Overall Equipment Effectiveness (OEE) en hoe bereken je het? — FulcrumGrid</title>
+  <meta name="description" content="Lees wat Overall Equipment Effectiveness (OEE) betekent, hoe je het berekent met een rekenvoorbeeld, wat een goede score is en hoe je die van jou verbetert." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wat is Overall Equipment Effectiveness (OEE) en hoe bereken je het?" />
+  <meta property="og:description" content="Lees wat Overall Equipment Effectiveness (OEE) betekent, hoe je het berekent met een rekenvoorbeeld, wat een goede score is en hoe je die van jou verbetert." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-11-18" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wat is Overall Equipment Effectiveness (OEE) en hoe bereken je het?" />
+  <meta name="twitter:description" content="Lees wat Overall Equipment Effectiveness (OEE) betekent, hoe je het berekent met een rekenvoorbeeld, wat een goede score is en hoe je die van jou verbetert." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wat is Overall Equipment Effectiveness (OEE) en hoe bereken je het?",
+    "description": "Lees wat Overall Equipment Effectiveness (OEE) betekent, hoe je het berekent met een rekenvoorbeeld, wat een goede score is en hoe je die van jou verbetert.",
+    "datePublished": "2026-11-18",
+    "dateModified": "2026-11-18",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "OEE-gids",
+        "item": "https://fulcrumgrid.com/nl/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Kan OEE hoger zijn dan 100%?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. Komt je berekening boven 100% uit, dan is de ideale cyclustijd te traag ingesteld of kloppen de aantallen niet. Vergelijk de ideale snelheid met de ontwerpsnelheid van de machine of met de beste aangetoonde snelheid."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Tellen geplande pauzes mee in de OEE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. Geplande pauzes en periodes zonder ingeplande productie vallen buiten de geplande productietijd. Omstellingen, storingen en wachten op materiaal tellen wel mee, want dat zijn verliezen die je kunt verkleinen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe vaak moet je OEE berekenen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bereken het per dienst of per dag, zodat operators het getal kunnen koppelen aan wat er echt gebeurde, en volg daarna de trend per week en per maand om te zien of je verbeteringen werken."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is het verschil tussen OEE en TEEP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "OEE meet de prestatie alleen tijdens de geplande productietijd. TEEP (Total Effective Equipment Performance) rekent met alle kalendertijd en laat dus ook zien hoeveel capaciteit onbenut blijft doordat er geen diensten zijn ingepland."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / OEE-gids</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Wat is Overall Equipment Effectiveness (OEE) en hoe bereken je het?</h1>
+        <p class="hero-intro">Lees wat Overall Equipment Effectiveness (OEE) betekent, hoe je het berekent met een rekenvoorbeeld, wat een goede score is en hoe je die van jou verbetert.</p>
+        <p class="mono"><time datetime="2026-11-18">18 november 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Je machines draaien, je operators hebben het druk, en toch haalt de productie nooit helemaal wat de lijn zou moeten kunnen. Overall Equipment Effectiveness, of OEE, laat zien waar dat gat vandaan komt. Het maakt van het vage gevoel dat &lsquo;er meer in zit&rsquo; drie getallen waar je mee aan de slag kunt.</p><h2>Wat is Overall Equipment Effectiveness?</h2><p>OEE meet hoeveel van je geplande productietijd echt productief is: alleen goede producten maken, zo snel als de machine ontworpen is om te draaien, zonder ongeplande stops. Een score van 100% betekent perfecte productie; alles daaronder is verloren capaciteit. OEE combineert drie factoren:</p><ul><li><strong>Beschikbaarheid:</strong> het deel van de geplande productietijd waarin de machine echt draaide. Hierin zitten storingen, omstellingen en andere stops.</li><li><strong>Prestatie:</strong> hoe snel de machine draaide terwijl ze liep, vergeleken met haar ideale snelheid. Hierin zitten trage cycli en korte stops.</li><li><strong>Kwaliteit:</strong> het deel van de producten dat in één keer goed was, zonder afkeur of herbewerking.</li></ul><p><strong>OEE = Beschikbaarheid × Prestatie × Kwaliteit</strong></p><h2>Hoe bereken je OEE? Een rekenvoorbeeld</h2><p>Neem één machine in een dienst van 8 uur (480 minuten) met een geplande pauze van 30 minuten. De geplande productietijd is dus 450 minuten. Tijdens de dienst:</p><ul><li>Een opstopping en een omstelling legden de machine 45 minuten stil, dus ze draaide 405 minuten.</li><li>De ideale cyclustijd is 1 minuut per product, en er zijn in totaal 324 producten gemaakt.</li><li>Daarvan waren er 315 goed en werden er 9 afgekeurd of herbewerkt.</li></ul><p>Bereken nu elke factor:</p><ul><li><strong>Beschikbaarheid</strong> = draaitijd ÷ geplande productietijd = 405 ÷ 450 = <strong>90%</strong></li><li><strong>Prestatie</strong> = (ideale cyclustijd × totaal aantal) ÷ draaitijd = (1 × 324) ÷ 405 = <strong>80%</strong></li><li><strong>Kwaliteit</strong> = aantal goed ÷ totaal aantal = 315 ÷ 324 = <strong>97,2%</strong></li></ul><p>OEE = 0,90 × 0,80 × 0,972 = <strong>70%</strong>. Je kunt het ook op een andere manier controleren: 315 goede producten van elk 1 minuut zijn 315 minuten volledig productieve tijd, en 315 ÷ 450 is ook 70%. De uitsplitsing laat zien waar je eerst moet kijken: de kwaliteit is sterk, maar de machine draaide op maar 80% van haar ideale snelheid.</p><h2>Wat is een goede OEE-score?</h2><p>Ongeveer <strong>85%</strong> wordt vaak genoemd als wereldklasse voor stukproductie, maar zie dat als vuistregel, niet als norm. Veel bedrijven die voor het eerst goed meten, komen ergens tussen 40% en 60% uit, en dat is normaal. De nuttigste vergelijking is je eigen machine ten opzichte van vorige maand, niet de fabriek van een ander.</p><h2>Wat zijn de zes grote verliezen?</h2><p>OEE gaat meestal samen met de &lsquo;zes grote verliezen&rsquo;, die verloren tijd indelen in oorzaken die je kunt aanpakken:</p><ul><li><strong>Beschikbaarheidsverliezen:</strong> machinestoringen, en omstellen en afstellen.</li><li><strong>Prestatieverliezen:</strong> stilstand en korte stops (kleine opstoppingen, sensoren die afslaan, wachten op materiaal), en draaien onder de ideale snelheid.</li><li><strong>Kwaliteitsverliezen:</strong> fouten en herbewerking tijdens stabiele productie, en opstartafkeur terwijl het proces zich na een omstelling of herstart instelt.</li></ul><h2>Wat zijn veelgemaakte meetfouten?</h2><ul><li><strong>Een flatteuze ideale snelheid gebruiken.</strong> Als de ideale cyclustijd trager is dan wat de machine echt kan, lijkt de prestatie hoog, soms zelfs boven 100%. Gebruik de ontwerpsnelheid of de beste aangetoonde snelheid.</li><li><strong>Omstellingen als geplande tijd boeken.</strong> Wie omsteltijd uit de geplande productietijd haalt, verbergt een van de grootste verliezen.</li><li><strong>Herbewerkte producten als goed tellen.</strong> Kwaliteit telt alleen producten die in één keer goed waren.</li><li><strong>Korte stops negeren.</strong> Stops van een minuut of twee worden zelden genoteerd, maar samen kunnen ze meer kosten dan één grote storing.</li><li><strong>Middelen over machines heen.</strong> Een fabrieksbreed gemiddelde verbergt de bottleneck. Meet OEE per machine of per lijn.</li></ul><h2>Hoe verbeter je OEE?</h2><h3>1. Begin bij je bottleneck</h3><p>Meet eerst de machine of lijn die je output begrenst.</p><h3>2. Leg stilstandsoorzaken direct vast</h3><p>Een korte lijst met oorzaakcodes die operators bij de machine invoeren, werkt beter dan aantekeningen aan het eind van de dienst. Rangschik de oorzaken op verloren minuten en pak de bovenste twee aan.</p><h3>3. Verkort omstellingen</h3><p>Zet gereedschap, materiaal en instellingen klaar terwijl de machine nog draait, zodat de stop alleen de stappen omvat die echt stilstand vereisen.</p><h3>4. Voorkom storingen</h3><p>Korte dagelijkse controles door operators (schoonmaken, smeren, inspecteren) signaleren slijtage voordat het een storing wordt.</p><h3>5. Bekijk het elke dag</h3><p>Vijf minuten aan het begin van elke dienst voor de OEE van gisteren en het grootste verlies houden de aandacht bij de problemen die ertoe doen.</p><h2>Wanneer is OEE niet de juiste maatstaf?</h2><p>OEE is bedoeld voor repetitieve productie op machines. Het zegt minder in een werkplaats met veel variatie, waar elke order anders is, of bij vooral handwerk, waar arbeidsproductiviteit meer vertelt. OEE opvoeren op een machine die niet je bottleneck is, levert alleen voorraad op vóór de volgende stap. Staat een machine stil omdat er geen orders zijn, dan is dat een vraag voor verkoop of planning, en past een maatstaf op basis van alle kalendertijd beter. En gebruik OEE nooit om operators te rangschikken: het beschrijft het proces, niet de mensen.</p><h2>Waar houd je OEE bij?</h2><p>Voor één machine volstaat een spreadsheet, zolang stops, aantallen en afkeur betrouwbaar worden vastgelegd. In <strong>FulcrumGrid Command Center</strong> kunnen teams stilstand met een oorzaakcode vastleggen op het moment dat die optreedt, en beschikbaarheid, prestatie, kwaliteit en OEE per lijn volgen op een dashboard.</p><p>Begin deze week: kies je bottleneckmachine, spreek af hoe je geplande tijd en ideale snelheid definieert, en verzamel een week aan eerlijke data. Die nulmeting laat zien waar je capaciteit echt naartoe gaat.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Kan OEE hoger zijn dan 100%?</summary><p>Nee. Komt je berekening boven 100% uit, dan is de ideale cyclustijd te traag ingesteld of kloppen de aantallen niet. Vergelijk de ideale snelheid met de ontwerpsnelheid van de machine of met de beste aangetoonde snelheid.</p></details>
+        <details class="faq-item"><summary>Tellen geplande pauzes mee in de OEE?</summary><p>Nee. Geplande pauzes en periodes zonder ingeplande productie vallen buiten de geplande productietijd. Omstellingen, storingen en wachten op materiaal tellen wel mee, want dat zijn verliezen die je kunt verkleinen.</p></details>
+        <details class="faq-item"><summary>Hoe vaak moet je OEE berekenen?</summary><p>Bereken het per dienst of per dag, zodat operators het getal kunnen koppelen aan wat er echt gebeurde, en volg daarna de trend per week en per maand om te zien of je verbeteringen werken.</p></details>
+        <details class="faq-item"><summary>Wat is het verschil tussen OEE en TEEP?</summary><p>OEE meet de prestatie alleen tijdens de geplande productietijd. TEEP (Total Effective Equipment Performance) rekent met alle kalendertijd en laat dus ook zien hoeveel capaciteit onbenut blijft doordat er geen diensten zijn ingepland.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Zie waar je capaciteit naartoe gaat</h2>
+        <p class="section-lead" style="margin:0 auto 26px">Met FulcrumGrid Command Center legt je team stilstand en afkeur per oorzaak vast, zodat je beschikbaarheid, prestatie, kwaliteit en OEE per lijn op één dashboard volgt.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/products/tms/">TMS</a>
+          <a href="/nl/products/assure/">Assure</a>
+          <a href="/nl/products/close/">Close</a>
+          <a href="/nl/products/consolidate/">Consolidate</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

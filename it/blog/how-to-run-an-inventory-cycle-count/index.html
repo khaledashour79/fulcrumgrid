@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Come fare un inventario a rotazione invece dell'inventario annuale? — FulcrumGrid</title>
+  <meta name="description" content="L'inventario a rotazione conta pochi articoli ogni settimana invece di chiudere per l'inventario annuale. Frequenze ABC, fasi della conta e misura dell'accuratezza." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Come fare un inventario a rotazione invece dell'inventario annuale?" />
+  <meta property="og:description" content="L'inventario a rotazione conta pochi articoli ogni settimana invece di chiudere per l'inventario annuale. Frequenze ABC, fasi della conta e misura dell'accuratezza." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/how-to-run-an-inventory-cycle-count/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-16" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Come fare un inventario a rotazione invece dell'inventario annuale?" />
+  <meta name="twitter:description" content="L'inventario a rotazione conta pochi articoli ogni settimana invece di chiudere per l'inventario annuale. Frequenze ABC, fasi della conta e misura dell'accuratezza." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-run-an-inventory-cycle-count/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Come fare un inventario a rotazione invece dell'inventario annuale?",
+    "description": "L'inventario a rotazione conta pochi articoli ogni settimana invece di chiudere per l'inventario annuale. Frequenze ABC, fasi della conta e misura dell'accuratezza.",
+    "datePublished": "2026-11-16",
+    "dateModified": "2026-11-16",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/how-to-run-an-inventory-cycle-count/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida inventario a rotazione",
+        "item": "https://fulcrumgrid.com/it/blog/how-to-run-an-inventory-cycle-count/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Che differenza c'è tra inventario a rotazione e inventario annuale?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "L'inventario annuale conta tutto in una volta, di solito fermando l'attività. Quello a rotazione controlla regolarmente un piccolo gruppo di articoli che cambia, così tutto il magazzino viene coperto nell'anno senza chiudere."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ogni quanto vanno contati gli articoli A, B e C?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un punto di partenza comune è A ogni mese, B ogni trimestre e C due volte l'anno. Conta più spesso gli articoli critici, facili da perdere o spesso in errore."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Che cos'è una conta alla cieca?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nella conta alla cieca chi conta non vede la quantità attesa dal sistema. Registra solo ciò che trova, il che impedisce di confermare semplicemente un numero e fa emergere gli errori."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual è una buona accuratezza delle giacenze?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Molte aziende puntano almeno al 95 % complessivo e al 98 % o più per gli articoli A. Se oggi sei molto più in basso, misura prima con onestà e migliora eliminando le cause che trovi."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida inventario a rotazione</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Come fare un inventario a rotazione invece dell'inventario annuale?</h1>
+        <p class="hero-intro">L'inventario a rotazione conta pochi articoli ogni settimana invece di chiudere per l'inventario annuale. Frequenze ABC, fasi della conta e misura dell'accuratezza.</p>
+        <p class="mono"><time datetime="2026-11-16">16 novembre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Molte piccole imprese chiudono ancora uno o due giorni all'anno, mandano tutti in magazzino e contano ogni cosa. È faticoso, pieno di errori e rivela i problemi solo mesi dopo che si sono verificati. L'inventario a rotazione sostituisce questa maratona con conte brevi e regolari di pochi articoli alla volta. Queste domande e risposte spiegano come avviarlo e mantenerlo nel tempo.</p><h2>Che cos'è l'inventario a rotazione?</h2><p>È la conta pianificata di una piccola parte del magazzino, che cambia ogni volta. Invece di contare tutto in un giorno, conti pochi articoli o ubicazioni ogni giorno o ogni settimana. Nel corso dell'anno ogni articolo viene contato almeno una volta e quelli importanti molte di più. Il lavoro normale prosegue intorno alla conta.</p><h2>Perché è meglio dell'inventario annuale?</h2><ul><li><strong>Niente chiusure.</strong> Non perdi una giornata di vendite o di produzione.</li><li><strong>Conte più precise.</strong> Chi conta 20 articoli con attenzione sbaglia meno di una squadra stanca che ne conta 2.000.</li><li><strong>Riscontro più rapido.</strong> Scopri l'errore poche settimane dopo, quando documenti e persone coinvolte sono ancora a portata di mano.</li><li><strong>Si elimina la causa.</strong> Poiché ogni differenza viene analizzata, lo stesso errore smette di ripetersi.</li><li><strong>Numeri affidabili tutto l'anno.</strong> Punti di riordino, preventivi e bilanci si basano su giacenze di cui ti puoi fidare.</li></ul><p>Alcune imprese devono comunque fare una conta a fine esercizio per il commercialista o il revisore. Un inventario a rotazione ben gestito, con un'accuratezza documentata, può renderla più breve o, in alcuni casi, sostituirla. Chiedi al tuo commercialista cosa serve.</p><h2>Come si decide cosa contare e quanto spesso?</h2><p>Usa la classificazione ABC. Ordina gli articoli per valore di consumo annuo (unità consumate all'anno &times; costo unitario) e dividili in tre gruppi:</p><ul><li><strong>Articoli A.</strong> Circa il 20 % degli articoli, che vale intorno all'80 % del totale. Da contare ogni mese.</li><li><strong>Articoli B.</strong> Il successivo 30 % circa, pari a circa il 15 % del valore. Da contare ogni trimestre.</li><li><strong>Articoli C.</strong> La metà restante, di basso valore unitario. Da contare due volte l'anno.</li></ul><p>Poi usa il buon senso. Porta un articolo in classe A se è piccolo e facile da perdere, critico per la produzione o spesso in errore, anche se vale poco.</p><h2>Come si costruisce il calendario?</h2><p>Calcola il numero totale di conte all'anno e dividilo per i giorni lavorativi. Per esempio: 100 articoli A &times; 12 = 1.200 conte, 150 articoli B &times; 4 = 600 e 250 articoli C &times; 2 = 500. Fanno 2.300 conte l'anno, circa 10 al giorno su 230 giorni lavorativi, di solito tra 30 e 45 minuti di lavoro. Distribuiscile in modo uniforme, raggruppa gli articoli per ubicazione per fare prima ed evita i giorni di punta, come le spedizioni di fine mese.</p><h2>Qual è la procedura di conta?</h2><ul><li><strong>Prepara la lista.</strong> Dai a chi conta articolo e ubicazione, ma non la quantità a sistema.</li><li><strong>Conta alla cieca.</strong> Si registra ciò che c'è fisicamente senza vedere il dato atteso, così nessuno si limita a confermare un numero.</li><li><strong>Blocca l'ubicazione.</strong> Sospendi prelievi, ricevimenti e trasferimenti su quell'ubicazione durante la conta, oppure conta in un momento tranquillo, e annota i movimenti in sospeso.</li><li><strong>Confronta.</strong> Metti a confronto la conta con il dato contabile.</li><li><strong>Riconta le differenze oltre la tolleranza.</strong> Fissa una tolleranza, per esempio 0 % per gli A, 2 % per i B e 5 % per i C, oppure un importo in euro. Tutto ciò che la supera viene ricontato da un'altra persona prima della rettifica.</li><li><strong>Rettifica e registra.</strong> Registra la correzione con un codice causale e conserva il foglio di conta.</li></ul><h2>Come si trova la causa di una differenza?</h2><p>La rettifica corregge il numero; l'analisi corregge il processo. Esamina gli ultimi movimenti dell'articolo e chiediti dove sistema e realtà si sono separati. Le cause più comuni:</p><ul><li><strong>Errori in ricevimento.</strong> Merce caricata secondo il documento di trasporto e non secondo quanto arrivato davvero.</li><li><strong>Scarti e campioni non registrati.</strong> Articoli danneggiati buttati o merce consegnata senza movimento.</li><li><strong>Errori di prelievo.</strong> Articolo o quantità sbagliati, che creano due errori in un colpo.</li><li><strong>Confusione tra unità di misura.</strong> Cartoni registrati come pezzi singoli, o viceversa.</li><li><strong>Sfasamenti temporali.</strong> Una spedizione o un ricevimento non ancora registrati al momento della conta.</li></ul><p>Tieni un semplice registro delle cause. Dopo qualche mese la tendenza ti mostra dove migliorare formazione, etichette o documenti.</p><h2>Come si misura il successo?</h2><p>Monitora l'<strong>accuratezza delle giacenze</strong>: la percentuale di articoli contati il cui dato a sistema corrisponde alla conta fisica entro la tolleranza. Se questo mese hai contato 200 articoli e 188 erano in tolleranza, l'accuratezza è del 94 %. Riportala ogni mese, per classe ABC. Molte aziende puntano almeno al 95 % complessivo e al 98 % o più per gli articoli A. Segui anche il valore totale delle rettifiche, così pochi errori grossi non si nascondono dietro tante piccole conte corrette.</p><h2>Chi deve esserne responsabile?</h2><p>Affida il programma a un unico responsabile, di solito il capo magazzino o il responsabile operativo, che prepara il calendario, esamina le differenze e riporta il KPI. Assegna le conte di ogni giorno a persone precise e falle ruotare, così nessuno controlla sempre il proprio lavoro. Rendi la conta un appuntamento fisso, non un'attività per i momenti morti.</p><h2>Da dove cominciare?</h2><p>Classifica gli articoli in un foglio di calcolo, fissa le tolleranze e conta gli articoli A per un mese. Se gestisci già le operazioni con <strong>FulcrumGrid Command Center</strong>, puoi creare attività di conta ricorrenti, assegnarle ai responsabili e seguire differenze e accuratezza su una dashboard, così il calendario regge anche nelle settimane più intense.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Che differenza c'è tra inventario a rotazione e inventario annuale?</summary><p>L'inventario annuale conta tutto in una volta, di solito fermando l'attività. Quello a rotazione controlla regolarmente un piccolo gruppo di articoli che cambia, così tutto il magazzino viene coperto nell'anno senza chiudere.</p></details>
+        <details class="faq-item"><summary>Ogni quanto vanno contati gli articoli A, B e C?</summary><p>Un punto di partenza comune è A ogni mese, B ogni trimestre e C due volte l'anno. Conta più spesso gli articoli critici, facili da perdere o spesso in errore.</p></details>
+        <details class="faq-item"><summary>Che cos'è una conta alla cieca?</summary><p>Nella conta alla cieca chi conta non vede la quantità attesa dal sistema. Registra solo ciò che trova, il che impedisce di confermare semplicemente un numero e fa emergere gli errori.</p></details>
+        <details class="faq-item"><summary>Qual è una buona accuratezza delle giacenze?</summary><p>Molte aziende puntano almeno al 95 % complessivo e al 98 % o più per gli articoli A. Se oggi sei molto più in basso, misura prima con onestà e migliora eliminando le cause che trovi.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Tieni le conte in calendario</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center ti permette di pianificare conte ricorrenti, assegnare i responsabili e seguire differenze e KPI di accuratezza su un'unica dashboard.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/products/tms/">TMS</a>
+          <a href="/it/products/assure/">Assure</a>
+          <a href="/it/products/close/">Close</a>
+          <a href="/it/products/consolidate/">Consolidate</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

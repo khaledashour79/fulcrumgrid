@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>How Do You Run an Inventory Cycle Count Instead of a Full Stocktake? — FulcrumGrid</title>
+  <meta name="description" content="Cycle counting checks a few items every week instead of shutting down for a yearly stocktake. Learn ABC frequency, the count steps and how to track accuracy." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How Do You Run an Inventory Cycle Count Instead of a Full Stocktake?" />
+  <meta property="og:description" content="Cycle counting checks a few items every week instead of shutting down for a yearly stocktake. Learn ABC frequency, the count steps and how to track accuracy." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/how-to-run-an-inventory-cycle-count/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-16" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Do You Run an Inventory Cycle Count Instead of a Full Stocktake?" />
+  <meta name="twitter:description" content="Cycle counting checks a few items every week instead of shutting down for a yearly stocktake. Learn ABC frequency, the count steps and how to track accuracy." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/how-to-run-an-inventory-cycle-count/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/how-to-run-an-inventory-cycle-count/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How Do You Run an Inventory Cycle Count Instead of a Full Stocktake?",
+    "description": "Cycle counting checks a few items every week instead of shutting down for a yearly stocktake. Learn ABC frequency, the count steps and how to track accuracy.",
+    "datePublished": "2026-11-16",
+    "dateModified": "2026-11-16",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/how-to-run-an-inventory-cycle-count/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Cycle Count Guide",
+        "item": "https://fulcrumgrid.com/blog/how-to-run-an-inventory-cycle-count/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How is a cycle count different from a stocktake?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A stocktake counts everything at once, usually with operations stopped. Cycle counting checks a small, rotating set of items on a regular schedule, so every item is covered over the year without a shutdown."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should A, B and C items be counted?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A common starting point is A items monthly, B items quarterly and C items twice a year. Count more often any item that is critical, easy to lose or frequently wrong."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a blind count?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In a blind count the counter is not shown the quantity the system expects. They record only what they find, which stops them from simply confirming a number and makes errors visible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a good inventory record accuracy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many businesses aim for at least 95% overall and 98% or more for A items. If you are well below that today, measure honestly first and improve by fixing the root causes you find."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Cycle Count Guide</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>How Do You Run an Inventory Cycle Count Instead of a Full Stocktake?</h1>
+        <p class="hero-intro">Cycle counting checks a few items every week instead of shutting down for a yearly stocktake. Learn ABC frequency, the count steps and how to track accuracy.</p>
+        <p class="mono"><time datetime="2026-11-16">November 16, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Many small businesses still close for a day or two once a year, pull everyone into the stockroom and count everything. It is tiring, error-prone and it only tells you what went wrong months after the damage was done. Cycle counting replaces that marathon with short, regular counts of a few items at a time. This Q&amp;A explains how to set one up and keep it running.</p><h2>What is a cycle count?</h2><p>A cycle count is a planned count of a small, rotating subset of your inventory. Instead of counting every item on one day, you count a handful of items or locations each day or week. Over the year every item is counted at least once, and the important ones many times. Normal work carries on around the count.</p><h2>Why is it better than an annual stocktake?</h2><ul><li><strong>No shutdown.</strong> You do not lose a day of sales or production.</li><li><strong>More accurate counts.</strong> Someone counting 20 items carefully makes fewer mistakes than a tired team counting 2,000.</li><li><strong>Faster feedback.</strong> You find an error weeks after it happened, while the paperwork and the people involved are still around.</li><li><strong>Fixes the cause.</strong> Because each variance is investigated, the same mistake stops repeating.</li><li><strong>Reliable numbers all year.</strong> Reorder points, quotes and financial reports rest on stock figures you can trust.</li></ul><p>Some businesses still need a year-end count for their accountant or auditor. A well-run cycle count programme with documented accuracy can make that count shorter or, in some cases, replace it. Ask your accountant what they need.</p><h2>How do you decide what to count and how often?</h2><p>Use ABC classification. Rank items by annual usage value (units used per year &times; unit cost) and split them into three groups:</p><ul><li><strong>A items.</strong> Roughly the top 20% of items, making up about 80% of value. Count them monthly.</li><li><strong>B items.</strong> The next 30% or so, around 15% of value. Count them quarterly.</li><li><strong>C items.</strong> The remaining half, each of low value. Count them twice a year.</li></ul><p>Then apply judgement. Move an item up to A if it is small and easy to lose, critical to production or has a history of errors, even if its value is modest.</p><h2>How do you build the schedule?</h2><p>Work out the total number of counts per year and divide by working days. For example: 100 A items &times; 12 = 1,200 counts, 150 B items &times; 4 = 600 and 250 C items &times; 2 = 500. That is 2,300 counts a year, or about 10 a day over 230 working days, typically 30 to 45 minutes of work. Spread them evenly, group items by location so each round is efficient, and avoid your busiest days, such as month-end dispatch.</p><h2>What is the count procedure?</h2><ul><li><strong>Generate the list.</strong> Give the counter the item and location, but not the system quantity.</li><li><strong>Count blind.</strong> The counter records what is physically there without seeing what the system expects, so they cannot simply confirm a number.</li><li><strong>Freeze the location.</strong> Pause picking, receiving and transfers for that location while it is counted, or count at a quiet time, and note any open transactions.</li><li><strong>Compare.</strong> Check the count against the record.</li><li><strong>Recount variances above tolerance.</strong> Set a tolerance, for example 0% for A items, 2% for B and 5% for C, or a fixed money value. Anything above it is recounted by a different person before you adjust.</li><li><strong>Adjust and record.</strong> Post the correction with a reason code and keep the count sheet.</li></ul><h2>How do you find the root cause of a variance?</h2><p>An adjustment fixes the number; an investigation fixes the process. Review the item's recent transactions and ask where the record and reality parted ways. Common causes:</p><ul><li><strong>Receiving errors.</strong> Goods booked in at the quantity on the delivery note rather than what actually arrived.</li><li><strong>Unrecorded scrap and samples.</strong> Damaged items thrown away or stock handed out without a transaction.</li><li><strong>Mis-picks.</strong> The wrong item or quantity picked, which creates two errors at once.</li><li><strong>Unit-of-measure mix-ups.</strong> Boxes recorded as single units, or the other way round.</li><li><strong>Timing.</strong> A shipment or receipt not yet posted when the count took place.</li></ul><p>Keep a simple log of causes. After a few months the pattern shows you where to improve training, labels or paperwork.</p><h2>How do you measure success?</h2><p>Track <strong>inventory record accuracy</strong>: the percentage of counted items whose record matched the physical count within tolerance. If you counted 200 items this month and 188 were within tolerance, accuracy is 94%. Report it monthly, by ABC class. Many operations aim for 95% or better overall and 98% or more for A items. Also track the total value of adjustments, so a few large errors are not hidden behind many small correct counts.</p><h2>Who should own it?</h2><p>Give the programme one owner, usually the warehouse or operations lead, who builds the schedule, reviews variances and reports the KPI. Assign each day's counts to named people and rotate them, so nobody is always checking their own work. Make counting a fixed part of the routine, not something done only when there is spare time.</p><h2>Where do you start?</h2><p>Classify your items in a spreadsheet, set tolerances and run counts on your A items for one month. If you already manage operations in <strong>FulcrumGrid Command Center</strong>, you can set up recurring count tasks, assign them to owners and track variances and record accuracy on a dashboard, so the schedule keeps running even when the week gets busy.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>How is a cycle count different from a stocktake?</summary><p>A stocktake counts everything at once, usually with operations stopped. Cycle counting checks a small, rotating set of items on a regular schedule, so every item is covered over the year without a shutdown.</p></details>
+        <details class="faq-item"><summary>How often should A, B and C items be counted?</summary><p>A common starting point is A items monthly, B items quarterly and C items twice a year. Count more often any item that is critical, easy to lose or frequently wrong.</p></details>
+        <details class="faq-item"><summary>What is a blind count?</summary><p>In a blind count the counter is not shown the quantity the system expects. They record only what they find, which stops them from simply confirming a number and makes errors visible.</p></details>
+        <details class="faq-item"><summary>What is a good inventory record accuracy?</summary><p>Many businesses aim for at least 95% overall and 98% or more for A items. If you are well below that today, measure honestly first and improve by fixing the root causes you find.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Keep your counts on schedule</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center lets you schedule recurring count tasks, assign owners and follow variances and accuracy KPIs on one dashboard.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/products/tms/">TMS</a>
+          <a href="/products/assure/">Assure</a>
+          <a href="/products/close/">Close</a>
+          <a href="/products/consolidate/">Consolidate</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

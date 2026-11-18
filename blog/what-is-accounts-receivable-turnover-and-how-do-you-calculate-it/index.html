@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>What Is Accounts Receivable Turnover and How Do You Calculate It? — FulcrumGrid</title>
+  <meta name="description" content="Accounts receivable turnover shows how many times a year you collect your average receivables. Learn the formula, a worked example and how to improve it." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What Is Accounts Receivable Turnover and How Do You Calculate It?" />
+  <meta property="og:description" content="Accounts receivable turnover shows how many times a year you collect your average receivables. Learn the formula, a worked example and how to improve it." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-16" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What Is Accounts Receivable Turnover and How Do You Calculate It?" />
+  <meta name="twitter:description" content="Accounts receivable turnover shows how many times a year you collect your average receivables. Learn the formula, a worked example and how to improve it." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What Is Accounts Receivable Turnover and How Do You Calculate It?",
+    "description": "Accounts receivable turnover shows how many times a year you collect your average receivables. Learn the formula, a worked example and how to improve it.",
+    "datePublished": "2026-11-16",
+    "dateModified": "2026-11-16",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "AR Turnover",
+        "item": "https://fulcrumgrid.com/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is a higher accounts receivable turnover always better?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Usually, but not always. A very high ratio can mean your credit terms are so strict that you are losing sales to competitors who offer more flexible terms."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between AR turnover and DSO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AR turnover shows how many times you collect receivables in a period, while DSO expresses collection speed in days. Dividing 365 by turnover gives a figure close to DSO."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use total revenue if I do not track credit sales separately?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can as a rough estimate, but the result will overstate turnover if a meaningful share of sales is paid immediately. Separating credit sales gives a far more accurate picture."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should I calculate AR turnover?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Monthly or quarterly works well for most small businesses. Tracking it over time matters more than any single result, because trends reveal problems early."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / AR Turnover</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>What Is Accounts Receivable Turnover and How Do You Calculate It?</h1>
+        <p class="hero-intro">Accounts receivable turnover shows how many times a year you collect your average receivables. Learn the formula, a worked example and how to improve it.</p>
+        <p class="mono"><time datetime="2026-11-16">November 16, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>You can be profitable on paper and still struggle to pay suppliers if customers take too long to settle their invoices. Accounts receivable turnover is one of the simplest ways to see how quickly credit sales turn into cash. This guide explains the formula, walks through an example and shows what to do when the number starts slipping.</p>
+<h2>What is accounts receivable turnover?</h2>
+<p>Accounts receivable (AR) turnover measures how many times, over a period, a business collects its average outstanding receivables. A higher ratio means customers pay faster and less cash is tied up in unpaid invoices. A lower ratio means money is sitting with customers for longer.</p>
+<h2>How do you calculate it?</h2>
+<p>The formula is:</p>
+<p><strong>AR turnover = net credit sales ÷ average accounts receivable</strong></p>
+<ul>
+<li><strong>Net credit sales</strong> are sales made on credit during the period, minus returns, allowances and credit notes. Cash and card sales paid at the point of sale are excluded.</li>
+<li><strong>Average accounts receivable</strong> is usually the opening balance plus the closing balance, divided by two.</li>
+</ul>
+<h3>A worked example</h3>
+<p>Suppose a small wholesaler made 1,200,000 in net credit sales last year. Its receivables were 180,000 at the start of the year and 120,000 at the end.</p>
+<ul>
+<li>Average AR = (180,000 + 120,000) ÷ 2 = 150,000</li>
+<li>AR turnover = 1,200,000 ÷ 150,000 = <strong>8</strong></li>
+</ul>
+<p>The business collected its average receivables balance eight times during the year.</p>
+<h2>How do you convert turnover into days?</h2>
+<p>A ratio of 8 is hard to picture, so most teams convert it into days:</p>
+<p><strong>Average collection period = 365 ÷ AR turnover</strong></p>
+<p>In the example, 365 ÷ 8 = about 46 days. If the wholesaler's standard terms are net 30, customers are paying roughly two weeks late on average. This figure is closely related to days sales outstanding (DSO), which many finance teams track monthly. The two are calculated slightly differently, but both answer the same question: how long does it take to get paid?</p>
+<h2>What is a good accounts receivable turnover ratio?</h2>
+<p>There is no universal target. A good ratio depends on your payment terms and your industry.</p>
+<ul>
+<li><strong>Compare against your own terms.</strong> If you offer net 30, a collection period close to 30 to 35 days is healthy. Net 60 terms naturally produce a lower turnover.</li>
+<li><strong>Consider your sector.</strong> Retail and hospitality businesses with frequent, small invoices often see high turnover. Construction, manufacturing and wholesale, where longer terms and milestone billing are common, usually see lower figures.</li>
+<li><strong>Watch the trend.</strong> A steady decline over several quarters is more telling than any single number.</li>
+</ul>
+<h2>Why does AR turnover drop?</h2>
+<ul>
+<li><strong>Invoices go out late</strong> or contain errors, so the payment clock starts late or stops while issues are fixed.</li>
+<li><strong>Payment terms are vague</strong> or not agreed in writing before work starts.</li>
+<li><strong>Follow-up is irregular</strong>, so overdue invoices sit for weeks before anyone chases them.</li>
+<li><strong>Credit limits are too generous</strong>, or new customers get terms without any checks.</li>
+<li><strong>A few large customers slow down</strong>, which can drag the whole ratio down.</li>
+</ul>
+<h2>How can you improve it?</h2>
+<ul>
+<li><strong>Set clear terms up front.</strong> State the due date, accepted payment methods and late-payment consequences on the quote, contract and invoice.</li>
+<li><strong>Invoice promptly and accurately.</strong> Send the invoice the day work is delivered, with the purchase order number and correct contact details.</li>
+<li><strong>Use a consistent reminder cadence.</strong> For example, a friendly note a few days before the due date, a reminder on the due date, then follow-ups at 7, 14 and 30 days overdue.</li>
+<li><strong>Set and review credit limits.</strong> Base limits on payment history and revisit them when customers start paying late.</li>
+<li><strong>Make paying easy.</strong> Offer bank transfer, card or payment links so customers have fewer reasons to delay.</li>
+<li><strong>Record promises to pay.</strong> When a customer commits to a date, log it and follow up if the payment does not arrive.</li>
+</ul>
+<h2>What are the common calculation pitfalls?</h2>
+<ul>
+<li><strong>Using total sales instead of credit sales.</strong> Including cash sales inflates the ratio and makes collections look better than they are.</li>
+<li><strong>Relying on two data points in a seasonal business.</strong> If receivables peak in spring and are low at year end, a simple opening-and-closing average is misleading. Use an average of monthly balances instead.</li>
+<li><strong>Mixing periods.</strong> If you use quarterly sales, use 91 or 90 days, not 365, when converting to days.</li>
+<li><strong>Ignoring write-offs.</strong> Writing off bad debts lowers receivables and can make turnover look better even though cash was never collected.</li>
+</ul>
+<h2>Turning the ratio into action</h2>
+<p>AR turnover tells you that something has changed, but not which customers or invoices are responsible. Tools such as FulcrumGrid Collection help close that gap by tracking overdue invoices, automating reminders and recording promises to pay in one place, so you can see where cash is stuck and follow up consistently.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>Is a higher accounts receivable turnover always better?</summary><p>Usually, but not always. A very high ratio can mean your credit terms are so strict that you are losing sales to competitors who offer more flexible terms.</p></details>
+        <details class="faq-item"><summary>What is the difference between AR turnover and DSO?</summary><p>AR turnover shows how many times you collect receivables in a period, while DSO expresses collection speed in days. Dividing 365 by turnover gives a figure close to DSO.</p></details>
+        <details class="faq-item"><summary>Can I use total revenue if I do not track credit sales separately?</summary><p>You can as a rough estimate, but the result will overstate turnover if a meaningful share of sales is paid immediately. Separating credit sales gives a far more accurate picture.</p></details>
+        <details class="faq-item"><summary>How often should I calculate AR turnover?</summary><p>Monthly or quarterly works well for most small businesses. Tracking it over time matters more than any single result, because trends reveal problems early.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Collect faster, with less chasing</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Collection tracks overdue invoices, automates reminders and records promises to pay, so your receivables turn into cash sooner.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/collection/">Explore Collection</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/products/tms/">TMS</a>
+          <a href="/products/assure/">Assure</a>
+          <a href="/products/close/">Close</a>
+          <a href="/products/consolidate/">Consolidate</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

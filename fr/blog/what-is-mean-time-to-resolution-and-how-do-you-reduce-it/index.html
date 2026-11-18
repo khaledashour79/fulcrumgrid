@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Qu’est-ce que le MTTR et comment réduire votre temps de résolution ? — FulcrumGrid</title>
+  <meta name="description" content="Comprenez le temps moyen de résolution (MTTR) : sa formule avec un exemple chiffré, ce qu’est un bon MTTR selon la gravité et des leviers concrets pour le réduire." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Qu’est-ce que le MTTR et comment réduire votre temps de résolution ?" />
+  <meta property="og:description" content="Comprenez le temps moyen de résolution (MTTR) : sa formule avec un exemple chiffré, ce qu’est un bon MTTR selon la gravité et des leviers concrets pour le réduire." />
+  <meta property="og:url" content="https://fulcrumgrid.com/fr/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-17" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Qu’est-ce que le MTTR et comment réduire votre temps de résolution ?" />
+  <meta name="twitter:description" content="Comprenez le temps moyen de résolution (MTTR) : sa formule avec un exemple chiffré, ce qu’est un bon MTTR selon la gravité et des leviers concrets pour le réduire." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/fr/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Qu’est-ce que le MTTR et comment réduire votre temps de résolution ?",
+    "description": "Comprenez le temps moyen de résolution (MTTR) : sa formule avec un exemple chiffré, ce qu’est un bon MTTR selon la gravité et des leviers concrets pour le réduire.",
+    "datePublished": "2026-11-17",
+    "dateModified": "2026-11-17",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/fr/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/"
+    },
+    "inLanguage": "fr"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://fulcrumgrid.com/fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/fr/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guide du MTTR",
+        "item": "https://fulcrumgrid.com/fr/blog/what-is-mean-time-to-resolution-and-how-do-you-reduce-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quelle différence entre temps moyen de réparation et temps moyen de résolution ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le temps moyen de réparation ne couvre que l’intervention elle-même, une fois le travail commencé. Le temps moyen de résolution couvre tout l’incident, de son apparition ou son signalement jusqu’à sa correction et sa clôture confirmée, y compris la détection et l’attente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "À quelle fréquence faut-il analyser le MTTR ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Une fois par mois convient à la plupart des petites équipes, avec un détail par gravité. Regardez la tendance sur plusieurs mois plutôt que de réagir à un chiffre isolé, car un seul incident long peut fausser n’importe quel mois."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le MTTR doit-il inclure les nuits et les week-ends ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Décidez-le et écrivez-le. Les équipes couvertes 24 h sur 24 comptent généralement en heures calendaires. Celles qui travaillent aux heures de bureau mesurent souvent en heures ouvrées pour les incidents mineurs, et en heures calendaires pour les plus critiques."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Un MTTR plus bas est-il toujours meilleur ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Seulement si les incidents sont réellement résolus. Si le MTTR baisse alors que le taux de réouverture ou les incidents récurrents augmentent, les problèmes sont clôturés trop tôt. Lisez le MTTR avec le taux de réouverture et le volume d’incidents."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/fr/" aria-label="Accueil FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/fr/products/">Produits</a>
+        <a href="/fr/features/">Grille</a>
+        <a href="/fr/pricing/">Tarifs</a>
+        <a href="/fr/regions/">Régions</a>
+        <a href="/fr/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/fr/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Langue">FR ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" class="active" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/fr/contact/">Demander une démo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/fr/">Accueil</a> / <a href="/fr/blog/">Blog</a> / Guide du MTTR</p>
+        <span class="tag tag-accent">Opérations</span>
+        <h1>Qu’est-ce que le MTTR et comment réduire votre temps de résolution ?</h1>
+        <p class="hero-intro">Comprenez le temps moyen de résolution (MTTR) : sa formule avec un exemple chiffré, ce qu’est un bon MTTR selon la gravité et des leviers concrets pour le réduire.</p>
+        <p class="mono"><time datetime="2026-11-17">17 novembre 2026</time> · 6 min de lecture</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Une commande client bloquée, une camionnette de livraison en panne, un terminal de paiement qui lâche en plein service du midi. Ce qui distingue une équipe sereine d’une équipe débordée, ce n’est pas la rareté des problèmes, mais la rapidité avec laquelle elle les règle. Le temps moyen de résolution, ou MTTR (de l’anglais « mean time to resolution »), est l’indicateur qui le mesure. Ce guide explique comment le calculer et le faire baisser, que vous gériez l’informatique, un entrepôt, un atelier ou un service client.</p><h2>Qu’est-ce que le temps moyen de résolution ?</h2><p>Le temps moyen de résolution est la durée moyenne nécessaire pour résoudre complètement un incident, depuis son apparition ou son signalement jusqu’au moment où il est corrigé et sa clôture confirmée. « Résolu » signifie que le problème a disparu et que le service est revenu à la normale, pas simplement que quelqu’un a commencé à s’en occuper.</p><p>La formule est simple :</p><p><strong>MTTR = durée totale de résolution de tous les incidents ÷ nombre d’incidents</strong></p><h2>Comment calculer le MTTR ? Un exemple chiffré</h2><p>Imaginons que votre équipe ait traité cinq incidents le mois dernier, avec ces durées de résolution :</p><ul><li>Incident 1 : 1 heure</li><li>Incident 2 : 2 heures</li><li>Incident 3 : 2,5 heures</li><li>Incident 4 : 3,5 heures</li><li>Incident 5 : 11 heures</li></ul><p>Le total est de 20 heures. Divisé par cinq incidents, votre MTTR est de <strong>4 heures</strong>. Remarquez pourtant que quatre incidents sur cinq ont été résolus en 3,5 heures ou moins : c’est un seul incident long qui a tiré la moyenne vers le haut. Nous y reviendrons.</p><h2>Quel MTTR mesurez-vous exactement ?</h2><p>Le sigle MTTR désigne plusieurs choses différentes, et les confondre rend vos chiffres inutilisables. Les principaux membres de la famille sont :</p><ul><li><strong>Temps moyen de détection (MTTD) :</strong> combien de temps un problème existe avant que quelqu’un ne le remarque.</li><li><strong>Temps moyen de prise en charge (MTTA) :</strong> le délai entre l’alerte ou le signalement et le moment où quelqu’un s’en saisit.</li><li><strong>Temps moyen de réparation :</strong> la durée de l’intervention elle-même, une fois le travail commencé.</li><li><strong>Temps moyen de résolution :</strong> le parcours complet, du début à la clôture confirmée, détection, attente, réparation et vérification comprises.</li><li><strong>Temps moyen entre pannes (MTBF) :</strong> la durée moyenne de fonctionnement d’un système ou d’un équipement entre deux pannes. Il mesure la fiabilité, pas la réactivité.</li></ul><p>Choisissez une définition, notez précisément quand le chronomètre démarre et s’arrête, et tenez-vous-y. Si l’un mesure à partir de la réclamation du client et l’autre à partir de l’arrivée du technicien, vous comparez deux indicateurs différents.</p><h2>À quoi ressemble un bon MTTR ?</h2><p>Il n’existe pas de référence universelle, car un bon MTTR dépend de la gravité de l’incident. Une ligne de production à l’arrêt et une imprimante en panne au back-office ne doivent pas avoir le même objectif. C’est pourquoi il faut <strong>mesurer le MTTR par niveau de gravité</strong>. Si vous avez défini des niveaux comme P1 à P4, fixez un objectif pour chacun, par exemple moins de 2 heures pour un P1 et sous 3 jours ouvrés pour un P4.</p><p>Suivez aussi la <strong>médiane</strong> à côté de la moyenne. Dans l’exemple ci-dessus, la moyenne était de 4 heures, mais la médiane, la valeur du milieu, de 2,5 heures. Un seul incident difficile peut faire paraître mauvais un bon mois, ou masquer une lente dérive. Les deux chiffres ensemble indiquent si le problème vient de votre réponse habituelle ou de quelques cas extrêmes. Surtout, observez la tendance sur plusieurs mois plutôt qu’un chiffre isolé.</p><h2>Comment réduire le MTTR ?</h2><p>L’essentiel du temps d’un incident ne passe pas à le réparer, mais à le remarquer, à attendre, à trouver la bonne personne et à savoir quoi faire. Ces leviers s’attaquent à ce temps perdu.</p><h3>1. Détecter plus vite</h3><p>Chaque minute avant que quelqu’un ne remarque le problème s’ajoute à votre MTTR. Placez des alertes sur les signaux qui comptent, comme les niveaux de stock, les commandes en attente, les relevés des équipements ou les paiements refusés, et permettez au personnel comme aux clients de signaler un problème à un seul endroit.</p><h3>2. Clarifier la responsabilité et l’escalade</h3><p>Un incident stagne quand chacun croit qu’un autre s’en occupe. Chaque incident doit avoir un responsable nommé. Une matrice d’escalade qui précise qui appeler, et au bout de combien de temps, évite que les problèmes dorment dans une file d’attente.</p><h3>3. Rédiger des runbooks pour les problèmes récurrents</h3><p>Si le même type d’incident revient sans cesse, un runbook court avec des étapes précises permet à la personne de permanence de le régler sans chercher l’unique collègue qui sait faire.</p><h3>4. Trier par gravité</h3><p>Fixez la gravité dans les premières minutes et traitez les incidents dans cet ordre. Un tri rapide et cohérent évite que l’urgent attende derrière l’anecdotique.</p><h3>5. Soigner les passations</h3><p>Les incidents qui chevauchent un changement d’équipe perdent souvent des heures. Utilisez une note de passation simple : ce qui s’est passé, ce qui a été tenté, la suite prévue et qui en est responsable désormais.</p><h3>6. Traiter les causes profondes</h3><p>L’incident le plus rapide à résoudre est celui qui ne revient jamais. Après un incident important, organisez une courte revue, identifiez la cause sous-jacente et corrigez-la.</p><h2>Quels sont les pièges courants du MTTR ?</h2><ul><li><strong>Manipuler l’indicateur.</strong> Si l’on juge les équipes sur le seul MTTR, les tickets sont clôturés avant que le problème soit vraiment réglé. Le chiffre s’améliore pendant que les clients en pâtissent.</li><li><strong>Ignorer le taux de réouverture.</strong> Suivez combien d’incidents sont rouverts ou reviennent dans la semaine. Un MTTR qui baisse avec un taux de réouverture qui monte est un signal d’alarme, pas une victoire.</li><li><strong>Des horodatages flous.</strong> Si les heures de début et de fin sont saisies de mémoire après coup, l’indicateur n’est qu’une estimation.</li><li><strong>Un seul objectif pour tout.</strong> Une moyenne mélangeant toutes les gravités cache ce qui se passe réellement.</li></ul><h2>Où suivre le MTTR ?</h2><p>Un tableur suffit pour commencer, tant que chaque incident reçoit une heure de début, une heure de fin et une gravité fiables. Quand le volume augmente, il devient utile que ces horodatages soient enregistrés automatiquement. Dans <strong>FulcrumGrid Command Center</strong>, incidents et tâches sont horodatés à leur ouverture, leur attribution et leur clôture : vous pouvez ainsi afficher le MTTR par gravité sur un tableau de bord, à côté de vos autres indicateurs opérationnels, sans saisie manuelle.</p><p>Commencez dès cette semaine : mettez-vous d’accord sur une définition, enregistrez soigneusement les dix prochains incidents et calculez la moyenne et la médiane par gravité. Ce point de départ vous montrera où passe vraiment le temps.</p>
+
+        <h2>Questions fréquentes</h2>
+        <details class="faq-item"><summary>Quelle différence entre temps moyen de réparation et temps moyen de résolution ?</summary><p>Le temps moyen de réparation ne couvre que l’intervention elle-même, une fois le travail commencé. Le temps moyen de résolution couvre tout l’incident, de son apparition ou son signalement jusqu’à sa correction et sa clôture confirmée, y compris la détection et l’attente.</p></details>
+        <details class="faq-item"><summary>À quelle fréquence faut-il analyser le MTTR ?</summary><p>Une fois par mois convient à la plupart des petites équipes, avec un détail par gravité. Regardez la tendance sur plusieurs mois plutôt que de réagir à un chiffre isolé, car un seul incident long peut fausser n’importe quel mois.</p></details>
+        <details class="faq-item"><summary>Le MTTR doit-il inclure les nuits et les week-ends ?</summary><p>Décidez-le et écrivez-le. Les équipes couvertes 24 h sur 24 comptent généralement en heures calendaires. Celles qui travaillent aux heures de bureau mesurent souvent en heures ouvrées pour les incidents mineurs, et en heures calendaires pour les plus critiques.</p></details>
+        <details class="faq-item"><summary>Un MTTR plus bas est-il toujours meilleur ?</summary><p>Seulement si les incidents sont réellement résolus. Si le MTTR baisse alors que le taux de réouverture ou les incidents récurrents augmentent, les problèmes sont clôturés trop tôt. Lisez le MTTR avec le taux de réouverture et le volume d’incidents.</p></details>
+
+        <p style="margin-top:32px"><a href="/fr/blog/"><span aria-hidden="true">←</span> Retour au blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Voyez où passe votre temps de résolution</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center horodate automatiquement incidents et tâches, pour suivre le MTTR par gravité sur un tableau de bord et repérer les retards.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/fr/products/command-center/">Découvrir Command Center</a>
+          <a class="btn btn-secondary" href="/fr/blog/">Retour au blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>L'épine dorsale opérationnelle des équipes modernes.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produits</h5>
+          <a href="/fr/products/">Tous les produits</a>
+          <a href="/fr/products/hr-suite/">HR Suite</a>
+          <a href="/fr/products/command-center/">Command Center</a>
+          <a href="/fr/products/collection/">Collection</a>
+          <a href="/fr/products/tms/">TMS</a>
+          <a href="/fr/products/assure/">Assure</a>
+          <a href="/fr/products/close/">Close</a>
+          <a href="/fr/products/consolidate/">Consolidate</a>
+          <a href="/fr/custom-apps/">Applications sur mesure</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grille</h5>
+          <a href="/fr/features/">Fonctionnalités</a>
+          <a href="/fr/integrations/">Intégrations</a>
+          <a href="/fr/how-it-works/">Comment ça marche</a>
+          <a href="/fr/pricing/">Tarifs</a>
+          <a href="/fr/regions/">Régions</a>
+          <a href="/fr/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Entreprise</h5>
+          <a href="/fr/about/">À propos</a>
+          <a href="/fr/faq/">FAQ</a>
+          <a href="/fr/contact/">Contact</a>
+          <a href="/fr/privacy/">Confidentialité</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tous droits réservés.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

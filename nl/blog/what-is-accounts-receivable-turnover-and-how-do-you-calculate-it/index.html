@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wat is de omloopsnelheid van debiteuren en hoe bereken je die? — FulcrumGrid</title>
+  <meta name="description" content="De omloopsnelheid van debiteuren laat zien hoe vaak per jaar u uw gemiddelde openstaande vorderingen int. Lees de formule, een rekenvoorbeeld en verbetertips." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wat is de omloopsnelheid van debiteuren en hoe bereken je die?" />
+  <meta property="og:description" content="De omloopsnelheid van debiteuren laat zien hoe vaak per jaar u uw gemiddelde openstaande vorderingen int. Lees de formule, een rekenvoorbeeld en verbetertips." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-11-16" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wat is de omloopsnelheid van debiteuren en hoe bereken je die?" />
+  <meta name="twitter:description" content="De omloopsnelheid van debiteuren laat zien hoe vaak per jaar u uw gemiddelde openstaande vorderingen int. Lees de formule, een rekenvoorbeeld en verbetertips." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wat is de omloopsnelheid van debiteuren en hoe bereken je die?",
+    "description": "De omloopsnelheid van debiteuren laat zien hoe vaak per jaar u uw gemiddelde openstaande vorderingen int. Lees de formule, een rekenvoorbeeld en verbetertips.",
+    "datePublished": "2026-11-16",
+    "dateModified": "2026-11-16",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Omloopsnelheid debiteuren",
+        "item": "https://fulcrumgrid.com/nl/blog/what-is-accounts-receivable-turnover-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is een hogere omloopsnelheid altijd beter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Meestal wel, maar niet altijd. Een zeer hoge waarde kan betekenen dat uw kredietvoorwaarden zo streng zijn dat u omzet verliest aan concurrenten met soepelere voorwaarden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is het verschil tussen omloopsnelheid en DSO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De omloopsnelheid laat zien hoe vaak u vorderingen int in een periode, terwijl DSO de inningssnelheid in dagen uitdrukt. 365 gedeeld door de omloopsnelheid geeft een waarde die dicht bij DSO ligt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mag ik de totale omzet gebruiken als ik omzet op rekening niet apart bijhoud?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Als ruwe schatting wel, maar de uitkomst overschat de omloopsnelheid als een flink deel van de omzet direct wordt betaald. Omzet op rekening apart bijhouden geeft een veel nauwkeuriger beeld."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe vaak moet ik de omloopsnelheid berekenen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Maandelijks of per kwartaal is voor de meeste kleine bedrijven voldoende. De ontwikkeling in de tijd is belangrijker dan één uitkomst, omdat trends problemen vroeg zichtbaar maken."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / Omloopsnelheid debiteuren</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>Wat is de omloopsnelheid van debiteuren en hoe bereken je die?</h1>
+        <p class="hero-intro">De omloopsnelheid van debiteuren laat zien hoe vaak per jaar u uw gemiddelde openstaande vorderingen int. Lees de formule, een rekenvoorbeeld en verbetertips.</p>
+        <p class="mono"><time datetime="2026-11-16">16 november 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Een bedrijf kan op papier winstgevend zijn en toch moeite hebben om leveranciers te betalen als klanten hun facturen te laat voldoen. De omloopsnelheid van debiteuren is een van de eenvoudigste manieren om te zien hoe snel verkopen op rekening echt geld worden. Deze gids legt de formule uit, werkt een voorbeeld door en laat zien wat u kunt doen als het cijfer terugloopt.</p>
+<h2>Wat is de omloopsnelheid van debiteuren?</h2>
+<p>De omloopsnelheid van debiteuren meet hoe vaak een bedrijf in een bepaalde periode zijn gemiddelde stand aan openstaande vorderingen int. Een hoge waarde betekent dat klanten snel betalen en dat er weinig geld vastzit in onbetaalde facturen. Een lage waarde betekent dat uw geld langer bij klanten blijft liggen.</p>
+<h2>Hoe bereken je die?</h2>
+<p>De formule is:</p>
+<p><strong>Omloopsnelheid debiteuren = netto-omzet op rekening ÷ gemiddeld debiteurensaldo</strong></p>
+<ul>
+<li><strong>Netto-omzet op rekening</strong> is de omzet die in de periode op krediet is verkocht, min retouren, kortingen en creditnota's. Contante verkopen en pinbetalingen aan de kassa tellen niet mee.</li>
+<li><strong>Het gemiddeld debiteurensaldo</strong> is meestal het beginsaldo plus het eindsaldo, gedeeld door twee.</li>
+</ul>
+<h3>Een rekenvoorbeeld</h3>
+<p>Stel dat een kleine groothandel vorig jaar 1.200.000 netto-omzet op rekening had. Het debiteurensaldo was 180.000 aan het begin van het jaar en 120.000 aan het eind.</p>
+<ul>
+<li>Gemiddeld debiteurensaldo = (180.000 + 120.000) ÷ 2 = 150.000</li>
+<li>Omloopsnelheid = 1.200.000 ÷ 150.000 = <strong>8</strong></li>
+</ul>
+<p>Het bedrijf heeft zijn gemiddelde debiteurensaldo dus acht keer per jaar geïnd.</p>
+<h2>Hoe reken je de omloopsnelheid om naar dagen?</h2>
+<p>Een waarde van 8 zegt weinig, daarom rekenen de meeste teams die om naar dagen:</p>
+<p><strong>Gemiddelde inningsduur = 365 ÷ omloopsnelheid debiteuren</strong></p>
+<p>In het voorbeeld levert 365 ÷ 8 ongeveer 46 dagen op. Hanteert de groothandel standaard een betaaltermijn van 30 dagen, dan betalen klanten gemiddeld zo'n twee weken te laat. Dit cijfer hangt nauw samen met DSO (days sales outstanding), dat veel financiële afdelingen maandelijks volgen. Beide worden iets anders berekend, maar beantwoorden dezelfde vraag: hoe lang duurt het voordat u betaald wordt?</p>
+<h2>Wat is een goede omloopsnelheid?</h2>
+<p>Er bestaat geen universele norm. Wat goed is, hangt af van uw betalingsvoorwaarden en uw branche.</p>
+<ul>
+<li><strong>Vergelijk met uw eigen voorwaarden.</strong> Bij een termijn van 30 dagen is een inningsduur van 30 tot 35 dagen gezond. Een termijn van 60 dagen geeft vanzelf een lagere omloopsnelheid.</li>
+<li><strong>Houd rekening met uw sector.</strong> Detailhandel en horeca, met veel kleine facturen, halen vaak hoge waarden. Bouw, industrie en groothandel, waar lange termijnen en termijnfacturering gebruikelijk zijn, scoren meestal lager.</li>
+<li><strong>Let op de trend.</strong> Een gestage daling over meerdere kwartalen zegt meer dan één losse uitkomst.</li>
+</ul>
+<h2>Waarom daalt de omloopsnelheid?</h2>
+<ul>
+<li><strong>Facturen gaan te laat de deur uit</strong> of bevatten fouten, waardoor de betaaltermijn later start of stilstaat tot alles is gecorrigeerd.</li>
+<li><strong>Betalingsvoorwaarden zijn vaag</strong> of niet vooraf schriftelijk vastgelegd.</li>
+<li><strong>Opvolging is onregelmatig</strong>, waardoor vervallen facturen wekenlang blijven liggen.</li>
+<li><strong>Kredietlimieten zijn te ruim</strong>, of nieuwe klanten krijgen een betaaltermijn zonder controle.</li>
+<li><strong>Een paar grote klanten gaan trager betalen</strong>, wat het hele kengetal omlaag trekt.</li>
+</ul>
+<h2>Hoe kun je die verbeteren?</h2>
+<ul>
+<li><strong>Spreek vooraf heldere voorwaarden af.</strong> Vermeld vervaldatum, geaccepteerde betaalmethoden en de gevolgen van te laat betalen op offerte, contract en factuur.</li>
+<li><strong>Factureer snel en foutloos.</strong> Verstuur de factuur op de dag van levering, met ordernummer en de juiste contactpersoon.</li>
+<li><strong>Hanteer een vast herinneringsritme.</strong> Bijvoorbeeld een vriendelijk bericht enkele dagen voor de vervaldatum, een herinnering op de vervaldag en daarna opvolging na 7, 14 en 30 dagen achterstand.</li>
+<li><strong>Stel kredietlimieten in en herzie ze.</strong> Baseer ze op betaalgedrag en pas ze aan zodra een klant te laat gaat betalen.</li>
+<li><strong>Maak betalen makkelijk.</strong> Bied overboeking, kaartbetaling of betaallinks aan, zodat klanten minder redenen hebben om te wachten.</li>
+<li><strong>Leg betalingsbeloften vast.</strong> Noemt een klant een datum, noteer die dan en volg op als de betaling uitblijft.</li>
+</ul>
+<h2>Wat zijn veelgemaakte rekenfouten?</h2>
+<ul>
+<li><strong>Totale omzet gebruiken in plaats van omzet op rekening.</strong> Contante verkopen blazen het kengetal op en laten de inning beter lijken dan ze is.</li>
+<li><strong>Slechts twee meetpunten bij een seizoensbedrijf.</strong> Piekt het debiteurensaldo in het voorjaar en is het laag bij de jaarafsluiting, dan misleidt een simpel gemiddelde van begin en eind. Gebruik liever het gemiddelde van de maandsaldi.</li>
+<li><strong>Periodes door elkaar halen.</strong> Werkt u met kwartaalomzet, reken dan met 90 of 91 dagen in plaats van 365.</li>
+<li><strong>Afboekingen negeren.</strong> Oninbare vorderingen afboeken verlaagt het saldo en kan de omloopsnelheid verbeteren, terwijl er nooit geld is binnengekomen.</li>
+</ul>
+<h2>Van kengetal naar actie</h2>
+<p>De omloopsnelheid vertelt u dat er iets is veranderd, maar niet welke klanten of facturen erachter zitten. Tools zoals FulcrumGrid Collection helpen die kloof te dichten door vervallen facturen te volgen, herinneringen te automatiseren en betalingsbeloften op één plek vast te leggen. Zo ziet u waar geld vastzit en volgt u consequent op.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Is een hogere omloopsnelheid altijd beter?</summary><p>Meestal wel, maar niet altijd. Een zeer hoge waarde kan betekenen dat uw kredietvoorwaarden zo streng zijn dat u omzet verliest aan concurrenten met soepelere voorwaarden.</p></details>
+        <details class="faq-item"><summary>Wat is het verschil tussen omloopsnelheid en DSO?</summary><p>De omloopsnelheid laat zien hoe vaak u vorderingen int in een periode, terwijl DSO de inningssnelheid in dagen uitdrukt. 365 gedeeld door de omloopsnelheid geeft een waarde die dicht bij DSO ligt.</p></details>
+        <details class="faq-item"><summary>Mag ik de totale omzet gebruiken als ik omzet op rekening niet apart bijhoud?</summary><p>Als ruwe schatting wel, maar de uitkomst overschat de omloopsnelheid als een flink deel van de omzet direct wordt betaald. Omzet op rekening apart bijhouden geeft een veel nauwkeuriger beeld.</p></details>
+        <details class="faq-item"><summary>Hoe vaak moet ik de omloopsnelheid berekenen?</summary><p>Maandelijks of per kwartaal is voor de meeste kleine bedrijven voldoende. De ontwikkeling in de tijd is belangrijker dan één uitkomst, omdat trends problemen vroeg zichtbaar maken.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Sneller betaald, minder achter klanten aan</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Collection volgt vervallen facturen, automatiseert herinneringen en legt betalingsbeloften vast, zodat uw debiteuren sneller in geld veranderen.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/collection/">Ontdek Collection</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/products/tms/">TMS</a>
+          <a href="/nl/products/assure/">Assure</a>
+          <a href="/nl/products/close/">Close</a>
+          <a href="/nl/products/consolidate/">Consolidate</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>What Is Overall Equipment Effectiveness (OEE)? How to Calculate It — FulcrumGrid</title>
+  <meta name="description" content="Learn what overall equipment effectiveness (OEE) means, how to calculate it with a worked example, what a good score looks like and how to improve yours." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What Is Overall Equipment Effectiveness (OEE)? How to Calculate It" />
+  <meta property="og:description" content="Learn what overall equipment effectiveness (OEE) means, how to calculate it with a worked example, what a good score looks like and how to improve yours." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-18" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What Is Overall Equipment Effectiveness (OEE)? How to Calculate It" />
+  <meta name="twitter:description" content="Learn what overall equipment effectiveness (OEE) means, how to calculate it with a worked example, what a good score looks like and how to improve yours." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What Is Overall Equipment Effectiveness (OEE)? How to Calculate It",
+    "description": "Learn what overall equipment effectiveness (OEE) means, how to calculate it with a worked example, what a good score looks like and how to improve yours.",
+    "datePublished": "2026-11-18",
+    "dateModified": "2026-11-18",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "OEE Guide",
+        "item": "https://fulcrumgrid.com/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can OEE be higher than 100%?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. If your calculation gives more than 100%, the ideal cycle time is set too slow or the part counts are wrong. Check the ideal speed against the equipment&rsquo;s design rate or best proven rate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do planned breaks count against OEE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Planned breaks and periods with no production scheduled are excluded from planned production time. Changeovers, breakdowns and waiting for material do count, because they are losses you can reduce."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should you calculate OEE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Calculate it per shift or per day so operators can link the number to what actually happened, then review the weekly and monthly trend to see whether your improvements are working."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between OEE and TEEP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "OEE measures performance during planned production time only. TEEP, total effective equipment performance, measures against all calendar time, so it also shows how much capacity you are leaving unused by not scheduling shifts."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / OEE Guide</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>What Is Overall Equipment Effectiveness (OEE)? How to Calculate It</h1>
+        <p class="hero-intro">Learn what overall equipment effectiveness (OEE) means, how to calculate it with a worked example, what a good score looks like and how to improve yours.</p>
+        <p class="mono"><time datetime="2026-11-18">November 18, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Your machines are running, your operators are busy, and yet output never quite matches what the line should be capable of. Overall equipment effectiveness, or OEE, shows where that gap comes from. It turns a vague feeling that &ldquo;we could do more&rdquo; into three numbers you can act on.</p><h2>What is overall equipment effectiveness?</h2><p>OEE measures how much of your planned production time is truly productive: making only good parts, as fast as the equipment is designed to run, with no unplanned stops. A score of 100% means perfect production; anything less is lost capacity. It combines three factors:</p><ul><li><strong>Availability:</strong> the share of planned production time the equipment actually ran. It captures breakdowns, changeovers and other stops.</li><li><strong>Performance:</strong> how fast it ran while running, compared with its ideal speed. It captures slow cycles and short stops.</li><li><strong>Quality:</strong> the share of parts that were good first time, without scrap or rework.</li></ul><p><strong>OEE = Availability × Performance × Quality</strong></p><h2>How do you calculate OEE? A worked example</h2><p>Take one machine on an 8-hour shift (480 minutes) with a 30-minute planned break, so planned production time is 450 minutes. During the shift:</p><ul><li>A jam and a changeover stopped the machine for 45 minutes, so it ran for 405 minutes.</li><li>Its ideal cycle time is 1 minute per part, and it produced 324 parts in total.</li><li>Of those, 315 were good and 9 were scrapped or reworked.</li></ul><p>Now work out each factor:</p><ul><li><strong>Availability</strong> = run time ÷ planned production time = 405 ÷ 450 = <strong>90%</strong></li><li><strong>Performance</strong> = (ideal cycle time × total count) ÷ run time = (1 × 324) ÷ 405 = <strong>80%</strong></li><li><strong>Quality</strong> = good count ÷ total count = 315 ÷ 324 = <strong>97.2%</strong></li></ul><p>OEE = 0.90 × 0.80 × 0.972 = <strong>70%</strong>. You can check it another way: 315 good parts at 1 minute each is 315 minutes of fully productive time, and 315 ÷ 450 is also 70%. The breakdown shows where to look first: quality is strong, but the machine ran at only 80% of its ideal speed.</p><h2>What is a good OEE score?</h2><p>Around <strong>85%</strong> is widely quoted as world class for discrete manufacturing, but treat it as a rule of thumb, not a standard. Many plants measuring properly for the first time land somewhere between 40% and 60%, and that is normal. The most useful comparison is your machine against last month, not against someone else&rsquo;s plant.</p><h2>What are the six big losses?</h2><p>OEE is usually paired with the &ldquo;six big losses&rdquo;, which sort lost time into causes you can tackle:</p><ul><li><strong>Availability losses:</strong> equipment breakdowns, and setups and adjustments such as changeovers.</li><li><strong>Performance losses:</strong> idling and minor stops (short jams, sensor trips, waiting for material), and running below ideal speed.</li><li><strong>Quality losses:</strong> defects and rework during steady production, and start-up rejects while the process settles after a changeover or restart.</li></ul><h2>What are the common measurement mistakes?</h2><ul><li><strong>Using a flattering ideal speed.</strong> If the ideal cycle time is slower than the machine can really run, performance looks high, sometimes above 100%. Use the design speed or best proven speed.</li><li><strong>Treating changeovers as planned time.</strong> Excluding setups from planned production time hides one of the biggest losses.</li><li><strong>Counting reworked parts as good.</strong> Quality should include only parts that were right first time.</li><li><strong>Ignoring short stops.</strong> Stops of a minute or two rarely get written down, yet together they can cost more than one big breakdown.</li><li><strong>Averaging across machines.</strong> A plant-wide average hides the bottleneck. Track OEE per machine or line.</li></ul><h2>How do you improve OEE?</h2><h3>1. Start with your bottleneck</h3><p>Measure the machine or line that limits your output first.</p><h3>2. Record downtime reasons as they happen</h3><p>A short list of reason codes, logged by operators at the machine beats end-of-shift notes. Rank the reasons by minutes lost and work on the top two.</p><h3>3. Shorten changeovers</h3><p>Prepare tools, materials and settings while the machine is still running, so the stop covers only the steps that truly need it.</p><h3>4. Prevent breakdowns</h3><p>Short daily checks by operators (cleaning, lubricating, inspecting) catch wear before it becomes a failure.</p><h3>5. Review it every day</h3><p>A five-minute look at yesterday&rsquo;s OEE and its biggest loss at the start of each shift keeps attention on the problems that matter.</p><h2>When is OEE not the right metric?</h2><p>OEE is built for repetitive production on equipment. It tells you less in a high-mix job shop where every order is different, or for mainly manual work, where labour productivity is more revealing. Pushing OEE up on a machine that is not your constraint just piles up stock in front of the next step. If equipment sits idle because there are no orders, that is a sales or scheduling question, and a measure based on all calendar time fits better. And never use OEE to rank operators: it describes the process, not the people.</p><h2>Where should you track OEE?</h2><p>A spreadsheet is fine for one machine if stops, counts and rejects are recorded reliably. In <strong>FulcrumGrid Command Center</strong>, teams can log downtime with reason codes as it happens and see availability, performance, quality and OEE for each line on a dashboard.</p><p>Start this week: pick your bottleneck machine, agree how you define planned time and ideal speed, and record one week of honest data. That baseline will show you where your capacity is really going.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>Can OEE be higher than 100%?</summary><p>No. If your calculation gives more than 100%, the ideal cycle time is set too slow or the part counts are wrong. Check the ideal speed against the equipment&amp;rsquo;s design rate or best proven rate.</p></details>
+        <details class="faq-item"><summary>Do planned breaks count against OEE?</summary><p>No. Planned breaks and periods with no production scheduled are excluded from planned production time. Changeovers, breakdowns and waiting for material do count, because they are losses you can reduce.</p></details>
+        <details class="faq-item"><summary>How often should you calculate OEE?</summary><p>Calculate it per shift or per day so operators can link the number to what actually happened, then review the weekly and monthly trend to see whether your improvements are working.</p></details>
+        <details class="faq-item"><summary>What is the difference between OEE and TEEP?</summary><p>OEE measures performance during planned production time only. TEEP, total effective equipment performance, measures against all calendar time, so it also shows how much capacity you are leaving unused by not scheduling shifts.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>See where your capacity goes</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center lets your team log downtime and rejects by reason, so you can track availability, performance, quality and OEE per line on one dashboard.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/products/tms/">TMS</a>
+          <a href="/products/assure/">Assure</a>
+          <a href="/products/close/">Close</a>
+          <a href="/products/consolidate/">Consolidate</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

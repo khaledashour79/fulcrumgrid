@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Cos’è l’efficienza complessiva degli impianti (OEE) e come si calcola? — FulcrumGrid</title>
+  <meta name="description" content="Scopri che cos’è l’efficienza complessiva degli impianti (OEE), come calcolarla con un esempio pratico, qual è un buon valore e come migliorare il tuo." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cos’è l’efficienza complessiva degli impianti (OEE) e come si calcola?" />
+  <meta property="og:description" content="Scopri che cos’è l’efficienza complessiva degli impianti (OEE), come calcolarla con un esempio pratico, qual è un buon valore e come migliorare il tuo." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-18" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cos’è l’efficienza complessiva degli impianti (OEE) e come si calcola?" />
+  <meta name="twitter:description" content="Scopri che cos’è l’efficienza complessiva degli impianti (OEE), come calcolarla con un esempio pratico, qual è un buon valore e come migliorare il tuo." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cos’è l’efficienza complessiva degli impianti (OEE) e come si calcola?",
+    "description": "Scopri che cos’è l’efficienza complessiva degli impianti (OEE), come calcolarla con un esempio pratico, qual è un buon valore e come migliorare il tuo.",
+    "datePublished": "2026-11-18",
+    "dateModified": "2026-11-18",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida all’OEE",
+        "item": "https://fulcrumgrid.com/it/blog/what-is-overall-equipment-effectiveness-oee-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "L’OEE può superare il 100%?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Se il calcolo dà più del 100%, il tempo ciclo ideale è impostato troppo lento oppure i conteggi dei pezzi sono sbagliati. Confronta la velocità ideale con la velocità di progetto dell’impianto o con la sua migliore velocità dimostrata."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le pause pianificate penalizzano l’OEE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Le pause pianificate e i periodi senza produzione programmata sono esclusi dal tempo di produzione pianificato. Cambi formato, guasti e attesa del materiale invece contano, perché sono perdite che puoi ridurre."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ogni quanto bisogna calcolare l’OEE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Calcolalo per turno o per giorno, così gli operatori possono collegare il numero a ciò che è successo davvero, poi segui l’andamento settimanale e mensile per capire se i miglioramenti funzionano."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual è la differenza tra OEE e TEEP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "L’OEE misura le prestazioni solo durante il tempo di produzione pianificato. Il TEEP (dall’inglese «total effective equipment performance») si calcola su tutto il tempo di calendario, quindi mostra anche quanta capacità resta inutilizzata perché non sono programmati turni."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida all’OEE</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Cos’è l’efficienza complessiva degli impianti (OEE) e come si calcola?</h1>
+        <p class="hero-intro">Scopri che cos’è l’efficienza complessiva degli impianti (OEE), come calcolarla con un esempio pratico, qual è un buon valore e come migliorare il tuo.</p>
+        <p class="mono"><time datetime="2026-11-18">18 novembre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Le macchine girano, gli operatori sono sempre occupati, eppure la produzione non arriva mai del tutto a ciò di cui la linea dovrebbe essere capace. L’efficienza complessiva degli impianti, o OEE (dall’inglese «overall equipment effectiveness»), mostra da dove nasce questo divario. Trasforma la vaga sensazione che «si potrebbe fare di più» in tre numeri su cui agire.</p><h2>Che cos’è l’efficienza complessiva degli impianti?</h2><p>L’OEE misura quanta parte del tempo di produzione pianificato è davvero produttiva: realizzare solo pezzi buoni, alla velocità per cui l’impianto è progettato, senza fermi imprevisti. Un valore del 100% indica una produzione perfetta; tutto ciò che sta sotto è capacità persa. Combina tre fattori:</p><ul><li><strong>Disponibilità:</strong> la quota del tempo di produzione pianificato in cui l’impianto ha effettivamente funzionato. Tiene conto di guasti, cambi formato e altri fermi.</li><li><strong>Prestazioni:</strong> la velocità a cui ha lavorato mentre era in funzione, rispetto alla sua velocità ideale. Tiene conto di cicli lenti e microfermate.</li><li><strong>Qualità:</strong> la quota di pezzi buoni al primo colpo, senza scarti né rilavorazioni.</li></ul><p><strong>OEE = Disponibilità × Prestazioni × Qualità</strong></p><h2>Come si calcola l’OEE? Un esempio pratico</h2><p>Prendiamo una macchina su un turno di 8 ore (480 minuti) con una pausa pianificata di 30 minuti: il tempo di produzione pianificato è quindi di 450 minuti. Durante il turno:</p><ul><li>Un inceppamento e un cambio formato hanno fermato la macchina per 45 minuti, quindi ha funzionato per 405 minuti.</li><li>Il suo tempo ciclo ideale è di 1 minuto al pezzo, e ha prodotto in totale 324 pezzi.</li><li>Di questi, 315 erano buoni e 9 sono stati scartati o rilavorati.</li></ul><p>Ora calcola ciascun fattore:</p><ul><li><strong>Disponibilità</strong> = tempo di funzionamento ÷ tempo di produzione pianificato = 405 ÷ 450 = <strong>90%</strong></li><li><strong>Prestazioni</strong> = (tempo ciclo ideale × pezzi totali) ÷ tempo di funzionamento = (1 × 324) ÷ 405 = <strong>80%</strong></li><li><strong>Qualità</strong> = pezzi buoni ÷ pezzi totali = 315 ÷ 324 = <strong>97,2%</strong></li></ul><p>OEE = 0,90 × 0,80 × 0,972 = <strong>70%</strong>. Puoi verificarlo anche in un altro modo: 315 pezzi buoni da 1 minuto ciascuno fanno 315 minuti di tempo pienamente produttivo, e 315 ÷ 450 dà ancora 70%. La scomposizione indica dove guardare per primo: la qualità è solida, ma la macchina ha lavorato solo all’80% della sua velocità ideale.</p><h2>Qual è un buon valore di OEE?</h2><p>Un valore intorno all’<strong>85%</strong> viene spesso citato come livello di eccellenza mondiale («world class») nella produzione discreta, ma consideralo una regola empirica, non uno standard. Molti stabilimenti che misurano correttamente per la prima volta si collocano tra il 40% e il 60%, ed è normale. Il confronto più utile è quello della tua macchina con il mese precedente, non con lo stabilimento di qualcun altro.</p><h2>Quali sono le sei grandi perdite?</h2><p>L’OEE viene di solito abbinato alle «sei grandi perdite», che classificano il tempo perso in cause su cui puoi intervenire:</p><ul><li><strong>Perdite di disponibilità:</strong> guasti degli impianti, e attrezzaggi e regolazioni come i cambi formato.</li><li><strong>Perdite di prestazioni:</strong> funzionamento a vuoto e microfermate (piccoli inceppamenti, interventi dei sensori, attesa del materiale), e funzionamento sotto la velocità ideale.</li><li><strong>Perdite di qualità:</strong> difetti e rilavorazioni durante la produzione a regime, e scarti di avviamento mentre il processo si stabilizza dopo un cambio formato o una ripartenza.</li></ul><h2>Quali sono gli errori di misura più comuni?</h2><ul><li><strong>Usare una velocità ideale di comodo.</strong> Se il tempo ciclo ideale è più lento di quanto la macchina possa davvero fare, le prestazioni sembrano alte, a volte oltre il 100%. Usa la velocità di progetto o la migliore velocità dimostrata.</li><li><strong>Considerare i cambi formato come tempo pianificato.</strong> Escludere gli attrezzaggi dal tempo di produzione pianificato nasconde una delle perdite più grandi.</li><li><strong>Contare i pezzi rilavorati come buoni.</strong> La qualità deve includere solo i pezzi buoni al primo colpo.</li><li><strong>Ignorare le microfermate.</strong> I fermi di uno o due minuti non vengono quasi mai annotati, ma sommati possono costare più di un grande guasto.</li><li><strong>Fare la media tra le macchine.</strong> Una media sull’intero stabilimento nasconde il collo di bottiglia. Misura l’OEE per macchina o per linea.</li></ul><h2>Come si migliora l’OEE?</h2><h3>1. Parti dal collo di bottiglia</h3><p>Misura per prima la macchina o la linea che limita la tua produzione.</p><h3>2. Registra le cause di fermo quando si verificano</h3><p>Un breve elenco di codici causa, inseriti dagli operatori a bordo macchina, è meglio delle note scritte a fine turno. Ordina le cause per minuti persi e lavora sulle prime due.</p><h3>3. Accorcia i cambi formato</h3><p>Prepara utensili, materiali e impostazioni mentre la macchina è ancora in funzione, così che il fermo copra solo i passaggi che lo richiedono davvero.</p><h3>4. Previeni i guasti</h3><p>Brevi controlli quotidiani da parte degli operatori (pulizia, lubrificazione, ispezione) individuano l’usura prima che diventi un guasto.</p><h3>5. Rivedilo ogni giorno</h3><p>Cinque minuti all’inizio di ogni turno per guardare l’OEE del giorno prima e la sua perdita principale tengono l’attenzione sui problemi che contano.</p><h2>Quando l’OEE non è la metrica giusta?</h2><p>L’OEE è pensato per la produzione ripetitiva su impianti. Dice meno in un’officina ad alta varietà, dove ogni ordine è diverso, o per un lavoro soprattutto manuale, dove la produttività della manodopera è più eloquente. Spingere in alto l’OEE di una macchina che non è il tuo vincolo non fa che accumulare scorte davanti alla fase successiva. Se l’impianto è fermo perché mancano gli ordini, è una questione commerciale o di pianificazione, ed è più adatta una misura basata su tutto il tempo di calendario. E non usare mai l’OEE per fare classifiche degli operatori: descrive il processo, non le persone.</p><h2>Dove conviene monitorare l’OEE?</h2><p>Per una sola macchina basta un foglio di calcolo, purché fermi, quantità e scarti siano registrati in modo affidabile. In <strong>FulcrumGrid Command Center</strong> i team possono registrare i fermi con il relativo codice causa nel momento in cui avvengono e vedere disponibilità, prestazioni, qualità e OEE di ogni linea su una dashboard.</p><p>Inizia questa settimana: scegli la macchina collo di bottiglia, concorda come definire il tempo pianificato e la velocità ideale, e raccogli una settimana di dati onesti. Questa base di partenza ti mostrerà dove finisce davvero la tua capacità.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>L’OEE può superare il 100%?</summary><p>No. Se il calcolo dà più del 100%, il tempo ciclo ideale è impostato troppo lento oppure i conteggi dei pezzi sono sbagliati. Confronta la velocità ideale con la velocità di progetto dell’impianto o con la sua migliore velocità dimostrata.</p></details>
+        <details class="faq-item"><summary>Le pause pianificate penalizzano l’OEE?</summary><p>No. Le pause pianificate e i periodi senza produzione programmata sono esclusi dal tempo di produzione pianificato. Cambi formato, guasti e attesa del materiale invece contano, perché sono perdite che puoi ridurre.</p></details>
+        <details class="faq-item"><summary>Ogni quanto bisogna calcolare l’OEE?</summary><p>Calcolalo per turno o per giorno, così gli operatori possono collegare il numero a ciò che è successo davvero, poi segui l’andamento settimanale e mensile per capire se i miglioramenti funzionano.</p></details>
+        <details class="faq-item"><summary>Qual è la differenza tra OEE e TEEP?</summary><p>L’OEE misura le prestazioni solo durante il tempo di produzione pianificato. Il TEEP (dall’inglese «total effective equipment performance») si calcola su tutto il tempo di calendario, quindi mostra anche quanta capacità resta inutilizzata perché non sono programmati turni.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Scopri dove finisce la tua capacità</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center consente al tuo team di registrare fermi e scarti per causa, per monitorare disponibilità, prestazioni, qualità e OEE per linea su un’unica dashboard.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/products/tms/">TMS</a>
+          <a href="/it/products/assure/">Assure</a>
+          <a href="/it/products/close/">Close</a>
+          <a href="/it/products/consolidate/">Consolidate</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=4a85ec0d" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
