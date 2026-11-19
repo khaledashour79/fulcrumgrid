@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wat is takttijd en hoe bereken je die? (Met rekenvoorbeeld) — FulcrumGrid</title>
+  <meta name="description" content="Takttijd is het tempo dat de klantvraag vereist. Lees de formule, bekijk een rekenvoorbeeld en ontdek het verschil met cyclustijd, doorlooptijd en doorvoer." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wat is takttijd en hoe bereken je die? (Met rekenvoorbeeld)" />
+  <meta property="og:description" content="Takttijd is het tempo dat de klantvraag vereist. Lees de formule, bekijk een rekenvoorbeeld en ontdek het verschil met cyclustijd, doorlooptijd en doorvoer." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-11-19" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wat is takttijd en hoe bereken je die? (Met rekenvoorbeeld)" />
+  <meta name="twitter:description" content="Takttijd is het tempo dat de klantvraag vereist. Lees de formule, bekijk een rekenvoorbeeld en ontdek het verschil met cyclustijd, doorlooptijd en doorvoer." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wat is takttijd en hoe bereken je die? (Met rekenvoorbeeld)",
+    "description": "Takttijd is het tempo dat de klantvraag vereist. Lees de formule, bekijk een rekenvoorbeeld en ontdek het verschil met cyclustijd, doorlooptijd en doorvoer.",
+    "datePublished": "2026-11-19",
+    "dateModified": "2026-11-19",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/what-is-takt-time-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Gids takttijd",
+        "item": "https://fulcrumgrid.com/nl/blog/what-is-takt-time-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is een goede takttijd?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Er bestaat geen goede of slechte takttijd, want de vraag en de beschikbare tijd bepalen haar. Waar het om gaat, is dat de cyclustijd van elke stap gelijk is of er net onder ligt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is takttijd hetzelfde als cyclustijd?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. Takttijd is het tempo dat de vraag vereist, terwijl cyclustijd is hoe lang je proces echt per eenheid nodig heeft. Door ze te vergelijken zie je of je het bijhoudt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe vaak moet ik de takttijd herberekenen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Telkens wanneer de vraag of de beschikbare uren merkbaar veranderen. Veel kleine teams herberekenen wekelijks op basis van de prognose en controleren piekdagen apart."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welke eenheid druk je takttijd uit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In de eenheid die bij het werk past: seconden per eenheid aan een lijn, minuten per order in een magazijn of minuten per ticket bij een servicedesk. Gebruik dezelfde eenheid als je haar met de cyclustijd vergelijkt."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / Gids takttijd</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Wat is takttijd en hoe bereken je die? (Met rekenvoorbeeld)</h1>
+        <p class="hero-intro">Takttijd is het tempo dat de klantvraag vereist. Lees de formule, bekijk een rekenvoorbeeld en ontdek het verschil met cyclustijd, doorlooptijd en doorvoer.</p>
+        <p class="mono"><time datetime="2026-11-19">19 november 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Elke operatie heeft een hartslag, of iemand die nu meet of niet. Klanten bestellen in een bepaald tempo, en het team moet het werk minstens zo snel afronden, anders ontstaat er een achterstand. Takttijd geeft die hartslag een getal. Deze gids legt uit wat takttijd is, hoe je haar berekent en hoe kleine teams haar elke dag kunnen gebruiken.</p><h2>Wat is takttijd?</h2><p>Takttijd is het tempo waarin je één werkeenheid moet afronden om precies aan de klantvraag te voldoen. Het woord komt van het Duitse <strong>Takt</strong>, dat maat of ritme betekent, zoals de maat die een dirigent aangeeft. Het meet niet hoe snel je werkt, maar hoe snel je moet werken. De vraag bepaalt haar, niet het team.</p><h2>Hoe bereken je takttijd?</h2><p>De formule is eenvoudig:</p><p><strong>Takttijd = netto beschikbare werktijd ÷ klantvraag in dezelfde periode</strong></p><p>Beide getallen moeten over dezelfde periode gaan, meestal één dienst of één dag. Netto beschikbare tijd is de tijd waarin het team echt kan werken: de geplande uren min pauzes, overleg, gepland onderhoud en dienstoverdrachten.</p><h3>Een rekenvoorbeeld</h3><p>Een klein magazijn draait één dienst van acht uur. Elke inpakker heeft 30 minuten lunchpauze, twee pauzes van 10 minuten en een startoverleg van 10 minuten. De netto beschikbare tijd is 480 − 30 − 20 − 10 = 420 minuten. Het team moet 280 orders per dag verzenden.</p><p>Takttijd = 420 minuten ÷ 280 orders = 1,5 minuut, oftewel één order per 90 seconden.</p><p>Vergelijk dat nu met het werk. Als het inpakken van één order een inpakker 4 minuten kost, kan één persoon maar één order per 4 minuten afronden. Deel de werkinhoud door de takttijd om te bepalen hoeveel mensen je nodig hebt: 4 ÷ 1,5 = 2,67, dus drie inpakkers die parallel werken. Met maar twee groeit de achterstand elke dag met zo’n 70 orders.</p><h2>Takttijd, cyclustijd, doorlooptijd en doorvoer</h2><p>Deze termen worden vaak door elkaar gebruikt, maar elk beantwoordt een andere vraag.</p><ul><li><strong>Takttijd.</strong> Hoe vaak moeten we een eenheid afronden om de vraag bij te houden? Het is een doel dat de klant bepaalt.</li><li><strong>Cyclustijd.</strong> Hoe lang duurt het echt om één eenheid af te ronden? Het is wat je proces vandaag doet.</li><li><strong>Doorlooptijd.</strong> Hoe lang wacht een klant van aanvraag tot levering, inclusief de tijd in wachtrijen?</li><li><strong>Doorvoer.</strong> Hoeveel eenheden worden per periode echt afgerond?</li></ul><p>Kort gezegd is takttijd het vereiste tempo, terwijl cyclustijd en doorvoer laten zien of je dat haalt.</p><h2>Wat doe je als de cyclustijd langer is dan de takttijd?</h2><p>Duurt een stap langer dan de takttijd, dan wordt die stap een knelpunt en stapelt het werk zich ervoor op. Je hebt drie grote opties, die je het best in deze volgorde probeert:</p><ul><li><strong>Verspilling wegnemen.</strong> Loop het proces na en schrap stappen zonder toegevoegde waarde: materiaal zoeken, gegevens opnieuw invoeren, wachten op goedkeuring, onnodig heen en weer lopen.</li><li><strong>Het werk verdelen.</strong> Verplaats taken van de overbelaste stap naar stappen met ruimte over, zodat elke werkplek dicht bij de takt klaar is.</li><li><strong>Capaciteit toevoegen.</strong> Zet een extra persoon of machine op de beperkende stap, of laat die parallel draaien, zoals in het inpakvoorbeeld.</li></ul><p>Het omgekeerde geval telt ook. Ligt de cyclustijd ver onder de takt, dan ben je misschien overbezet of in de verleiding werk te maken waar nog niemand om heeft gevraagd.</p><h2>Kun je takttijd ook buiten de productie gebruiken?</h2><p>Ja. Elk team dat een gestage stroom van vergelijkbare, terugkerende verzoeken afhandelt, heeft een takttijd.</p><ul><li><strong>Magazijnen.</strong> Gepickte of ingepakte orders per dienst.</li><li><strong>Keukens.</strong> Serveert een restaurant 120 gerechten tijdens een lunchpiek van twee uur, dan moet de keuken elke minuut een bord uitserveren.</li><li><strong>Servicedesks.</strong> Heeft een supportteam 6 netto uren per dag en komen er 72 tickets binnen, dan is de takttijd 5 minuten per ticket.</li></ul><p>Het werk hoeft niet identiek te zijn. Het moet alleen genoeg op elkaar lijken dat een gemiddelde eenheid iets zegt. Is dat niet zo, groepeer het werk dan per type en bereken voor elk type een eigen takt.</p><h2>Wat zijn de meest gemaakte fouten?</h2><ul><li><strong>Bruto- in plaats van nettotijd gebruiken.</strong> Wie de volledige dienst van acht uur door de vraag deelt, laat de takt ruimer lijken dan hij is. In het voorbeeld hierboven geven 480 minuten ongeveer 103 seconden in plaats van 90, waardoor een gat van zo’n 14 procent verborgen blijft.</li><li><strong>Schommelingen in de vraag negeren.</strong> De vraag komt zelden gelijkmatig binnen. Een maandagpiek of een seizoensdrukte kan de takttijd halveren. Bereken de takt voor piekperiodes én voor het gemiddelde, en plan de bezetting voor beide.</li><li><strong>De takt behandelen als snelheidsdoel voor mensen.</strong> De takt beschrijft het ritme dat het systeem nodig heeft. Mensen afzonderlijk opjagen leidt meestal tot meer fouten en herstelwerk.</li><li><strong>Stilstand en kwaliteitsverlies vergeten.</strong> Moeten sommige eenheden opnieuw of staat een machine een uur per week stil, dan is de echte capaciteit lager dan het plan aanneemt. Mik op cyclustijden ruim onder de takt, vaak 85 tot 90 procent ervan, zodat je een buffer houdt.</li></ul><h2>Hoe volg je takttijd dagelijks?</h2><p>Takttijd is het nuttigst als ze een zichtbaar dagelijks ritme wordt in plaats van een getal in een spreadsheet.</p><ul><li><strong>Herbereken bij een veranderende vraag.</strong> Werk de takt elke dag of week bij op basis van de werkelijke orderprognose.</li><li><strong>Vertaal haar naar uurdoelen.</strong> Een takt van 90 seconden betekent 40 orders per uur. Zet elk uur het geplande en het werkelijke aantal op een bord.</li><li><strong>Leg de oorzaken van afwijkingen vast.</strong> Blijft een uur achter, noteer dan in een paar woorden waarom. Patronen in die notities laten zien waar je kunt verbeteren.</li><li><strong>Bekijk de trend wekelijks.</strong> Kijk hoe vaak het plan is gehaald, hoe de piekdagen verliepen en wat de belangrijkste oorzaken van achterstand waren.</li></ul><p>Een gedeeld dashboard helpt daarbij. Een tool als FulcrumGrid Command Center kan vraag, output en de afwijking ten opzichte van het plan in één overzicht samenbrengen, zodat het team in het dagelijkse overleg naar dezelfde cijfers kijkt in plaats van ze met de hand bij elkaar te zoeken.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wat is een goede takttijd?</summary><p>Er bestaat geen goede of slechte takttijd, want de vraag en de beschikbare tijd bepalen haar. Waar het om gaat, is dat de cyclustijd van elke stap gelijk is of er net onder ligt.</p></details>
+        <details class="faq-item"><summary>Is takttijd hetzelfde als cyclustijd?</summary><p>Nee. Takttijd is het tempo dat de vraag vereist, terwijl cyclustijd is hoe lang je proces echt per eenheid nodig heeft. Door ze te vergelijken zie je of je het bijhoudt.</p></details>
+        <details class="faq-item"><summary>Hoe vaak moet ik de takttijd herberekenen?</summary><p>Telkens wanneer de vraag of de beschikbare uren merkbaar veranderen. Veel kleine teams herberekenen wekelijks op basis van de prognose en controleren piekdagen apart.</p></details>
+        <details class="faq-item"><summary>In welke eenheid druk je takttijd uit?</summary><p>In de eenheid die bij het werk past: seconden per eenheid aan een lijn, minuten per order in een magazijn of minuten per ticket bij een servicedesk. Gebruik dezelfde eenheid als je haar met de cyclustijd vergelijkt.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Houd de vraag elke dag bij</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center brengt je KPI’s, doelen en projecten samen in één overzicht, zodat geplande en werkelijke output makkelijk te volgen en met je team te bespreken zijn.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/products/tms/">TMS</a>
+          <a href="/nl/products/assure/">Assure</a>
+          <a href="/nl/products/close/">Close</a>
+          <a href="/nl/products/consolidate/">Consolidate</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
