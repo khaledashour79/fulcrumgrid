@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Was ist eine Regelkarte und wie nutzt man sie? (Mit Beispiel) — FulcrumGrid</title>
+  <meta name="description" content="Eine Regelkarte zeigt, ob sich eine Kennzahl wirklich verändert hat oder nur schwankt. So berechnen Sie Eingriffsgrenzen, lesen Signale und nutzen sie wöchentlich." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Was ist eine Regelkarte und wie nutzt man sie? (Mit Beispiel)" />
+  <meta property="og:description" content="Eine Regelkarte zeigt, ob sich eine Kennzahl wirklich verändert hat oder nur schwankt. So berechnen Sie Eingriffsgrenzen, lesen Signale und nutzen sie wöchentlich." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-20" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Was ist eine Regelkarte und wie nutzt man sie? (Mit Beispiel)" />
+  <meta name="twitter:description" content="Eine Regelkarte zeigt, ob sich eine Kennzahl wirklich verändert hat oder nur schwankt. So berechnen Sie Eingriffsgrenzen, lesen Signale und nutzen sie wöchentlich." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Was ist eine Regelkarte und wie nutzt man sie? (Mit Beispiel)",
+    "description": "Eine Regelkarte zeigt, ob sich eine Kennzahl wirklich verändert hat oder nur schwankt. So berechnen Sie Eingriffsgrenzen, lesen Signale und nutzen sie wöchentlich.",
+    "datePublished": "2026-11-20",
+    "dateModified": "2026-11-20",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/what-is-a-control-chart-and-how-do-you-use-one/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Leitfaden Regelkarte",
+        "item": "https://fulcrumgrid.com/de/blog/what-is-a-control-chart-and-how-do-you-use-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist der Unterschied zwischen Eingriffsgrenzen und Spezifikationsgrenzen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Eingriffsgrenzen werden aus Ihren Daten berechnet und beschreiben, was der Prozess tatsächlich leistet. Spezifikationsgrenzen kommen von Kunden oder dem Unternehmen und beschreiben, was akzeptabel ist. Ein Prozess kann stabil sein und seine Spezifikation trotzdem verfehlen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie viele Datenpunkte brauche ich für eine Regelkarte?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Peilen Sie 20 bis 25 Punkte aus einem Zeitraum ohne bekannte Störungen an. Sie können mit weniger beginnen, sollten die Grenzen dann aber als vorläufig behandeln und mit neuen Daten neu berechnen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Warum liegen die Eingriffsgrenzen bei drei Standardabweichungen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Drei Standardabweichungen halten Fehlalarme und übersehene Signale im Gleichgewicht. In einem stabilen Prozess sind Punkte jenseits dieser Grenze selten, ein solcher Punkt deutet also meist auf eine Veränderung hin."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann ich eine Regelkarte auch für Zählwerte wie Tickets pro Tag nutzen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Eine einfache Karte der Einzelwerte eignet sich für die meisten Kennzahlen kleiner Teams, auch für tägliche Zählwerte. Für Zählwerte und Anteile gibt es spezielle Karten, doch die einfache Variante ist ein guter Einstieg."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / Leitfaden Regelkarte</p>
+        <span class="tag tag-accent">Betrieb</span>
+        <h1>Was ist eine Regelkarte und wie nutzt man sie? (Mit Beispiel)</h1>
+        <p class="hero-intro">Eine Regelkarte zeigt, ob sich eine Kennzahl wirklich verändert hat oder nur schwankt. So berechnen Sie Eingriffsgrenzen, lesen Signale und nutzen sie wöchentlich.</p>
+        <p class="mono"><time datetime="2026-11-20">20. November 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Jede operative Kennzahl schwankt. Am Dienstag dauern Bestellungen etwas länger, am Donnerstag kommen ein paar Tickets mehr, und im Wochenmeeting fragt jemand, was schiefgelaufen ist. Oft gar nichts. Eine Regelkarte ist ein einfaches Werkzeug, um normales Rauschen von einer echten Veränderung zu unterscheiden, damit Sie auf das Richtige reagieren und den Rest in Ruhe lassen.</p><h2>Was ist eine Regelkarte?</h2><p>Eine Regelkarte, auch Kontrollkarte genannt, ist ein Liniendiagramm einer Kennzahl im Zeitverlauf, ergänzt um drei waagerechte Linien:</p><ul><li><strong>Mittellinie.</strong> Der Durchschnitt Ihrer Daten.</li><li><strong>Obere Eingriffsgrenze.</strong> Meist der Mittelwert plus drei Standardabweichungen.</li><li><strong>Untere Eingriffsgrenze.</strong> Meist der Mittelwert minus drei Standardabweichungen.</li></ul><p>Die Grenzen beschreiben, was Ihr Prozess normalerweise liefert. Sie werden aus Ihren eigenen Daten berechnet, nicht von der Geschäftsleitung festgelegt. Läuft ein stabiler Prozess unverändert weiter, liegen fast alle künftigen Punkte dazwischen.</p><h2>Zufällige und besondere Ursachen von Streuung</h2><p>Die Grundidee, die Walter Shewhart in den 1920er-Jahren entwickelte, lautet: Streuung gibt es in zwei Arten.</p><ul><li><strong>Streuung aus allgemeinen Ursachen</strong> ist das alltägliche Rauschen, das im System steckt: kleine Unterschiede im Bestellmix, in der Besetzung, im Verkehr und im Timing. Sie ist immer da, und kein einzelner Tag hat eine besondere Erklärung.</li><li><strong>Streuung aus besonderen Ursachen</strong> geht auf etwas Konkretes und Erkennbares zurück: eine Lieferverzögerung, eine neue Kollegin in ihrer ersten Woche, einen Systemausfall, eine Aktion, die die Nachfrage verdoppelt hat.</li></ul><p>Besondere Ursachen verdienen eine Untersuchung. Allgemeine Ursachen nicht, jedenfalls nicht Tag für Tag. Sie zu verringern heißt, das System selbst zu ändern.</p><h2>Ein Rechenbeispiel: tägliche Auftragsdurchlaufzeit</h2><p>Ein Onlineshop erfasst jeden Tag die durchschnittliche Zahl der Stunden von der Bestellung bis zum Versand. Über 20 Arbeitstage notiert er:</p><p><strong>22, 25, 23, 26, 24, 21, 25, 27, 23, 24, 22, 26, 25, 23, 24, 28, 22, 25, 24, 21</strong></p><ul><li><strong>Mittelwert.</strong> Die Summe beträgt 480, die Mittellinie liegt also bei 480 ÷ 20 = 24 Stunden.</li><li><strong>Standardabweichung.</strong> Die Stichproben-Standardabweichung beträgt etwa 1,9 Stunden.</li><li><strong>Obere Eingriffsgrenze.</strong> 24 + 3 × 1,9 = etwa 29,8 Stunden.</li><li><strong>Untere Eingriffsgrenze.</strong> 24 − 3 × 1,9 = etwa 18,2 Stunden.</li></ul><p>Alle Punkte liegen zwischen 18,2 und 29,8, der Prozess wirkt also stabil. Ein Tag mit 28 Stunden mag sich schlecht anfühlen, liegt aber im normalen Bereich und braucht keine eigene Ursachenanalyse. Bringt die nächste Woche einen Tag mit 32 Stunden, ist das ein Signal, dem man nachgehen sollte.</p><p>Qualitätsfachleute schätzen die Streuung oft über die mittlere gleitende Spannweite, also den Abstand zwischen aufeinanderfolgenden Punkten. Sie wird weniger verzerrt, wenn die Daten bereits eine Verschiebung enthalten. Hier ergibt diese Methode Grenzen von etwa 16,9 und 31,1 Stunden. Für eine erste Karte ist beides vertretbar; wichtig ist, konsequent bei einer Methode zu bleiben.</p><h2>Auf welche Signale sollten Sie achten?</h2><p>Halten Sie die Regeln wenige und einfach. Diese drei erfassen die meisten echten Veränderungen:</p><ul><li><strong>Ein Punkt außerhalb der Grenzen.</strong> Ein Wert über der oberen oder unter der unteren Eingriffsgrenze.</li><li><strong>Ein Lauf auf einer Seite.</strong> Sieben oder acht Punkte in Folge über oder unter der Mittellinie. Das deutet darauf hin, dass sich der Mittelwert verschoben hat, auch wenn kein einzelner Punkt extrem aussieht.</li><li><strong>Ein stetiger Trend.</strong> Sechs oder sieben Punkte in Folge, von denen jeder höher, oder jeder niedriger, liegt als der vorherige.</li></ul><p>Signale gelten in beide Richtungen. Auch eine Serie ungewöhnlich schneller Tage sollten Sie verstehen, damit Sie beibehalten können, was dahintersteckt.</p><h2>Eingriffsgrenzen vs. Ziele und Spezifikationsgrenzen</h2><p>Eingriffsgrenzen sind die Stimme des Prozesses: was er tatsächlich leistet. Ziele und Spezifikationsgrenzen sind die Stimme des Kunden oder des Unternehmens: was Sie wollen. Das ist nicht dasselbe und sollte nicht verwechselt werden.</p><p>Angenommen, der Shop verspricht den Versand innerhalb von 30 Stunden und setzt sich intern ein Ziel von 22. Der Prozess liegt im Mittel bei 24 Stunden mit einer oberen Grenze nahe 30: Er gefährdet das Versprechen gelegentlich und verfehlt das Ziel regelmäßig. Mehr Druck an einzelnen schlechten Tagen verschiebt den Mittelwert nicht. Für 22 Stunden braucht es eine Änderung am System, etwa eine andere Bündelung der Kommissionierung oder eine zusätzliche Nachmittagsschicht, und danach neue Grenzen, sobald sich die Änderung eingespielt hat.</p><h2>Wann sollten Sie nicht reagieren?</h2><p>Einen stabilen Prozess bei jedem Auf und Ab nachzujustieren, nennt man Übersteuern, und es vergrößert die Streuung in der Regel. Typische Beispiele: den Dienstplan nach einem einzigen langsamen Tag ändern, für jede Delle eine Erklärung verlangen oder ein Ziel nach einer einzigen guten Woche neu setzen. Liegt ein Punkt innerhalb der Grenzen und bildet sich weder Lauf noch Trend, ist die richtige Reaktion: notieren und abwarten.</p><h2>Wie nutzen Sie eine Regelkarte im Wochenreview?</h2><ul><li><strong>Beginnen Sie mit den Signalen.</strong> Prüfen Sie jede Karte anhand der drei Regeln, bevor Sie über einzelne Zahlen sprechen.</li><li><strong>Untersuchen Sie nur, was auffällt.</strong> Fragen Sie bei jedem Signal, was an diesem Tag anders war, und halten Sie die Ursache fest.</li><li><strong>Vergleichen Sie getrennt mit dem Ziel.</strong> Ist der Prozess stabil, aber unter dem Ziel, gehört er auf die Verbesserungsliste, statt der Woche die Schuld zu geben.</li><li><strong>Berechnen Sie die Grenzen nach echten Änderungen neu.</strong> Wenn Sie den Prozess bewusst ändern und er sich stabilisiert, ermitteln Sie neue Grenzen aus 15 bis 20 neuen Punkten.</li></ul><h2>Brauchen Sie spezielle Software?</h2><p>Nein. Für den Anfang reicht eine Tabellenkalkulation. Tragen Sie die Daten in eine Spalte und die Werte in die nächste ein, berechnen Sie den Mittelwert mit MITTELWERT und die Standardabweichung mit STABW.S, ergänzen Sie Spalten für Mittellinie und beide Grenzen und stellen Sie alles gemeinsam als Liniendiagramm dar. Zwanzig Punkte sind ein sinnvolles Minimum; bei weniger sollten Sie die Grenzen als vorläufig betrachten.</p><p>Sobald Sie mehrere Kennzahlen verfolgen, wird es mühsam, jede Karte von Hand aktuell zu halten. Ein Dashboard wie FulcrumGrid Command Center kann Ihre KPIs und deren Ziele nebeneinander zeigen, sodass das Wochenreview mit denselben aktuellen Zahlen beginnt.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Was ist der Unterschied zwischen Eingriffsgrenzen und Spezifikationsgrenzen?</summary><p>Eingriffsgrenzen werden aus Ihren Daten berechnet und beschreiben, was der Prozess tatsächlich leistet. Spezifikationsgrenzen kommen von Kunden oder dem Unternehmen und beschreiben, was akzeptabel ist. Ein Prozess kann stabil sein und seine Spezifikation trotzdem verfehlen.</p></details>
+        <details class="faq-item"><summary>Wie viele Datenpunkte brauche ich für eine Regelkarte?</summary><p>Peilen Sie 20 bis 25 Punkte aus einem Zeitraum ohne bekannte Störungen an. Sie können mit weniger beginnen, sollten die Grenzen dann aber als vorläufig behandeln und mit neuen Daten neu berechnen.</p></details>
+        <details class="faq-item"><summary>Warum liegen die Eingriffsgrenzen bei drei Standardabweichungen?</summary><p>Drei Standardabweichungen halten Fehlalarme und übersehene Signale im Gleichgewicht. In einem stabilen Prozess sind Punkte jenseits dieser Grenze selten, ein solcher Punkt deutet also meist auf eine Veränderung hin.</p></details>
+        <details class="faq-item"><summary>Kann ich eine Regelkarte auch für Zählwerte wie Tickets pro Tag nutzen?</summary><p>Ja. Eine einfache Karte der Einzelwerte eignet sich für die meisten Kennzahlen kleiner Teams, auch für tägliche Zählwerte. Für Zählwerte und Anteile gibt es spezielle Karten, doch die einfache Variante ist ein guter Einstieg.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Jede Woche dieselben Zahlen im Blick</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center bündelt Ihre KPIs, Ziele und Projekte in einer Ansicht, damit Ihr Team echte Veränderungen erkennt und Fortschritte gemeinsam bespricht.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/command-center/">Entdecken Command Center</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/products/tms/">TMS</a>
+          <a href="/de/products/assure/">Assure</a>
+          <a href="/de/products/close/">Close</a>
+          <a href="/de/products/consolidate/">Consolidate</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
