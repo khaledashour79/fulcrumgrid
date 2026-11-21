@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Cos'è un Gemba walk e come si fa? (Guida passo passo) — FulcrumGrid</title>
+  <meta name="description" content="Il Gemba walk significa andare dove si svolge il lavoro per osservare, chiedere e imparare. Scopri come prepararlo, cosa chiedere e come dare seguito." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cos'è un Gemba walk e come si fa? (Guida passo passo)" />
+  <meta property="og:description" content="Il Gemba walk significa andare dove si svolge il lavoro per osservare, chiedere e imparare. Scopri come prepararlo, cosa chiedere e come dare seguito." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/what-is-a-gemba-walk-and-how-do-you-do-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-21" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cos'è un Gemba walk e come si fa? (Guida passo passo)" />
+  <meta name="twitter:description" content="Il Gemba walk significa andare dove si svolge il lavoro per osservare, chiedere e imparare. Scopri come prepararlo, cosa chiedere e come dare seguito." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/what-is-a-gemba-walk-and-how-do-you-do-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-gemba-walk-and-how-do-you-do-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-gemba-walk-and-how-do-you-do-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-gemba-walk-and-how-do-you-do-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-gemba-walk-and-how-do-you-do-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-gemba-walk-and-how-do-you-do-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-gemba-walk-and-how-do-you-do-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-gemba-walk-and-how-do-you-do-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-gemba-walk-and-how-do-you-do-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cos'è un Gemba walk e come si fa? (Guida passo passo)",
+    "description": "Il Gemba walk significa andare dove si svolge il lavoro per osservare, chiedere e imparare. Scopri come prepararlo, cosa chiedere e come dare seguito.",
+    "datePublished": "2026-11-21",
+    "dateModified": "2026-11-21",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/what-is-a-gemba-walk-and-how-do-you-do-one/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida al Gemba walk",
+        "item": "https://fulcrumgrid.com/it/blog/what-is-a-gemba-walk-and-how-do-you-do-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual è lo scopo principale di un Gemba walk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Capire come si svolge davvero il lavoro andando dove avviene, osservando il processo e chiedendo a chi lo esegue. Si tratta di imparare e individuare opportunità di miglioramento, non di ispezionare o giudicare le persone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto dura un Gemba walk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Di solito dai 30 ai 60 minuti. Un giro breve, mirato e regolare vale più di un lungo giro occasionale in tutti i reparti."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Il Gemba walk è la stessa cosa del management by walking around?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sono simili, ma il Gemba walk è più strutturato: ha uno scopo chiaro, segue il flusso del lavoro, si concentra sul processo anziché sulle persone e si conclude sempre con azioni di follow-up."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bisogna risolvere i problemi durante il Gemba walk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In generale no, salvo un rischio immediato per la sicurezza. Annota il problema, analizzane la causa con il team e concordate le azioni in seguito, così la soluzione agisce sulla causa profonda e il team la sente propria."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida al Gemba walk</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Cos'è un Gemba walk e come si fa? (Guida passo passo)</h1>
+        <p class="hero-intro">Il Gemba walk significa andare dove si svolge il lavoro per osservare, chiedere e imparare. Scopri come prepararlo, cosa chiedere e come dare seguito.</p>
+        <p class="mono"><time datetime="2026-11-21">21 novembre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>La maggior parte delle decisioni manageriali viene presa lontano dal lavoro vero e proprio: in sala riunioni, partendo da report e dashboard, attraverso sintesi di sintesi. Il Gemba walk è un'abitudine semplice che colma questa distanza. Invece di chiedere come sta andando il lavoro, vai a vederlo con i tuoi occhi, insieme a chi lo svolge.</p><h2>Cosa significa Gemba?</h2><p>Gemba (scritto anche genba) in giapponese significa «il luogo reale», il punto in cui le cose accadono davvero. Nel lean management è il luogo in cui si crea valore: il reparto produttivo, il magazzino, la cucina, lo sportello clienti. La pratica nasce dal Toyota Production System, in cui ci si aspettava che i manager comprendessero i problemi sul posto e non attraverso i report. Un Gemba walk è una visita pianificata in quel luogo per osservare, fare domande e imparare.</p><h2>Perché i manager dovrebbero andare a vedere il lavoro?</h2><ul><li><strong>I report nascondono i dettagli.</strong> Un indicatore ti dice che i tempi di attraversamento sono aumentati. Solo il lavoro ti mostra che le persone aspettano approvazioni o cercano componenti mancanti.</li><li><strong>Chi fa il lavoro ne sa di più.</strong> Conosce già i punti critici; la visita gli offre un motivo e un momento per segnalarli.</li><li><strong>Crea fiducia.</strong> Visite regolari e rispettose dimostrano che ai responsabili interessa come si lavora, non solo i risultati.</li><li><strong>Decisioni migliori.</strong> I miglioramenti basati su ciò che hai visto hanno più probabilità di risolvere il problema reale rispetto a quelli basati su supposizioni.</li></ul><h2>Come si prepara un Gemba walk?</h2><ul><li><strong>Scegli uno scopo o un tema.</strong> Una visita mirata, ad esempio sulla sicurezza, sui passaggi di consegne tra team o sui ritardi in una fase, insegna molto più di un giro generico.</li><li><strong>Pianifica il percorso.</strong> Segui il flusso del lavoro dall'inizio alla fine, per vedere come ogni fase influisce sulla successiva.</li><li><strong>Coinvolgi il responsabile del team.</strong> Avvisa in anticipo il responsabile dell'area, spiegagli lo scopo e chiedigli di accompagnarti. Non deve mai sembrare un'ispezione o un'imboscata.</li><li><strong>Mantienilo breve.</strong> Di solito bastano dai trenta ai sessanta minuti.</li></ul><h2>Cosa osservare e cosa chiedere?</h2><p>Il tuo compito è capire, non giudicare. Osserva il processo così come funziona davvero, poi fai domande aperte. Tratta le persone con rispetto: sono loro gli esperti del proprio lavoro. Cerca i problemi nel processo, non i colpevoli. E resisti alla tentazione di sistemare tutto sul momento: le decisioni prese a caldo spesso trascurano le cause profonde e scavalcano il responsabile del team.</p><h3>Domande utili da fare</h3><ul><li>Mi mostri cosa stai facendo in questo momento?</li><li>Come capisci se questa fase è andata bene?</li><li>Cosa ti rallenta più spesso?</li><li>Cosa succede quando qui qualcosa va storto?</li><li>Dove ti capita di aspettare informazioni, materiali o approvazioni?</li><li>Se potessi cambiare una sola cosa di questo processo, quale sarebbe?</li></ul><p>Poi ascolta. Il silenzio va bene: la risposta più utile arriva spesso dopo una pausa.</p><h2>Come annotare ciò che vedi?</h2><p>Prendi appunti brevi durante il giro: cosa hai visto, dove e cosa ti hanno detto, se possibile con le loro parole. Annota fatti, non opinioni: ad esempio «tre ordini in attesa di verifica del credito» invece di «il team è lento». Dopo, raggruppa gli appunti in poche categorie: interventi rapidi, questioni da approfondire e idee da sperimentare.</p><h2>Come dare seguito e chiudere il cerchio?</h2><p>Una visita senza seguito insegna alle persone che segnalare i problemi non serve. Entro uno o due giorni, condividi ciò che hai visto con il responsabile del team, concordate poche azioni e assegna a ciascuna un responsabile e una scadenza. Raccogli queste azioni in un unico spazio condiviso, come FulcrumGrid Command Center, dove le attività di follow-up stanno accanto ai KPI che dovrebbero migliorare. Alla visita successiva, inizia raccontando cosa è cambiato dall'ultima volta.</p><h2>Ogni quanto fare un Gemba walk?</h2><p>La regolarità conta più della durata. I capisquadra possono farlo ogni giorno, i responsabili di reparto ogni settimana e il top management ogni due-quattro settimane. Fissa le visite in agenda in modo che sopravvivano ai periodi più intensi, che sono proprio quelli in cui servono di più.</p><h2>Si può fare un Gemba walk in ufficio, da remoto o nei servizi?</h2><p>Sì. Il «luogo reale» è ovunque si svolga il lavoro, anche se è digitale.</p><ul><li><strong>Percorri una coda di ticket.</strong> Siediti accanto a un operatore dell'assistenza e segui alcuni ticket dall'arrivo alla risoluzione. Osserva dove restano in attesa, rimbalzano tra i team o vengono riaperti.</li><li><strong>Segui un ordine cliente dall'inizio alla fine.</strong> Ripercorri un ordine dalla prima richiesta al preventivo, alla consegna e alla fatturazione, annotando ogni passaggio di mano.</li><li><strong>Affianca da remoto.</strong> In videochiamata, chiedi a qualcuno di condividere lo schermo e svolgere un'attività reale mentre osservi, senza intervenire.</li></ul><h2>Quali sono gli errori più comuni?</h2><ul><li><strong>Trasformarlo in un audit.</strong> Controllare la conformità e distribuire critiche fa chiudere le persone in fretta.</li><li><strong>Parlare più che ascoltare.</strong> Se parli soprattutto tu, impari pochissimo.</li><li><strong>Risolvere i problemi sul posto.</strong> Annota il problema e affrontalo dopo insieme al team.</li><li><strong>Andare senza uno scopo.</strong> Senza un tema, la visita diventa una visita di cortesia.</li><li><strong>Non dare seguito.</strong> Le segnalazioni rimaste senza risposta fanno più danni di una visita mancata.</li><li><strong>Presentarsi solo quando qualcosa va male.</strong> Se arrivi solo nelle emergenze, la tua visita sarà vista come un segnale d'allarme.</li></ul>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Qual è lo scopo principale di un Gemba walk?</summary><p>Capire come si svolge davvero il lavoro andando dove avviene, osservando il processo e chiedendo a chi lo esegue. Si tratta di imparare e individuare opportunità di miglioramento, non di ispezionare o giudicare le persone.</p></details>
+        <details class="faq-item"><summary>Quanto dura un Gemba walk?</summary><p>Di solito dai 30 ai 60 minuti. Un giro breve, mirato e regolare vale più di un lungo giro occasionale in tutti i reparti.</p></details>
+        <details class="faq-item"><summary>Il Gemba walk è la stessa cosa del management by walking around?</summary><p>Sono simili, ma il Gemba walk è più strutturato: ha uno scopo chiaro, segue il flusso del lavoro, si concentra sul processo anziché sulle persone e si conclude sempre con azioni di follow-up.</p></details>
+        <details class="faq-item"><summary>Bisogna risolvere i problemi durante il Gemba walk?</summary><p>In generale no, salvo un rischio immediato per la sicurezza. Annota il problema, analizzane la causa con il team e concordate le azioni in seguito, così la soluzione agisce sulla causa profonda e il team la sente propria.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Trasforma ciò che vedi in risultati</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center riunisce KPI, azioni e progetti in un'unica vista, così i miglioramenti concordati dopo ogni Gemba walk vengono realizzati davvero.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/products/tms/">TMS</a>
+          <a href="/it/products/assure/">Assure</a>
+          <a href="/it/products/close/">Close</a>
+          <a href="/it/products/consolidate/">Consolidate</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
