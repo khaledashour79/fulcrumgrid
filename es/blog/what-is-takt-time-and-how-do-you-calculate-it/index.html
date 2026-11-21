@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>¿Qué es el takt time y cómo se calcula? (con ejemplo práctico) — FulcrumGrid</title>
+  <meta name="description" content="El takt time es el ritmo que exige la demanda. Aprende la fórmula, revisa un ejemplo práctico y descubre cómo se diferencia del tiempo de ciclo y del throughput." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="¿Qué es el takt time y cómo se calcula? (con ejemplo práctico)" />
+  <meta property="og:description" content="El takt time es el ritmo que exige la demanda. Aprende la fórmula, revisa un ejemplo práctico y descubre cómo se diferencia del tiempo de ciclo y del throughput." />
+  <meta property="og:url" content="https://fulcrumgrid.com/es/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-19" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="¿Qué es el takt time y cómo se calcula? (con ejemplo práctico)" />
+  <meta name="twitter:description" content="El takt time es el ritmo que exige la demanda. Aprende la fórmula, revisa un ejemplo práctico y descubre cómo se diferencia del tiempo de ciclo y del throughput." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/es/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "¿Qué es el takt time y cómo se calcula? (con ejemplo práctico)",
+    "description": "El takt time es el ritmo que exige la demanda. Aprende la fórmula, revisa un ejemplo práctico y descubre cómo se diferencia del tiempo de ciclo y del throughput.",
+    "datePublished": "2026-11-19",
+    "dateModified": "2026-11-19",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/es/blog/what-is-takt-time-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "es"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://fulcrumgrid.com/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/es/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guía del takt time",
+        "item": "https://fulcrumgrid.com/es/blog/what-is-takt-time-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuál es un buen takt time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No hay un takt time bueno o malo, porque lo fijan la demanda y el tiempo disponible. Lo importante es que el tiempo de ciclo de cada paso esté a su nivel o ligeramente por debajo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿El takt time es lo mismo que el tiempo de ciclo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. El takt time es el ritmo que exige la demanda, mientras que el tiempo de ciclo es lo que tu proceso tarda realmente por unidad. Compararlos muestra si puedes seguir el ritmo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cada cuánto debo recalcular el takt time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Siempre que la demanda o las horas disponibles cambien de forma notable. Muchos equipos pequeños lo recalculan cada semana a partir de la previsión y revisan aparte los días punta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿En qué unidad se expresa el takt time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En la que encaje con el trabajo: segundos por unidad en una línea, minutos por pedido en un almacén o minutos por ticket en una mesa de servicio. Usa la misma unidad al compararlo con el tiempo de ciclo."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/es/products/">Productos</a>
+        <a href="/es/features/">Cuadrícula</a>
+        <a href="/es/pricing/">Precios</a>
+        <a href="/es/regions/">Regiones</a>
+        <a href="/es/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/es/contact/">Contacto</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Idioma">ES ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" class="active" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/es/contact/">Solicitar una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/es/">Inicio</a> / <a href="/es/blog/">Blog</a> / Guía del takt time</p>
+        <span class="tag tag-accent">Operaciones</span>
+        <h1>¿Qué es el takt time y cómo se calcula? (con ejemplo práctico)</h1>
+        <p class="hero-intro">El takt time es el ritmo que exige la demanda. Aprende la fórmula, revisa un ejemplo práctico y descubre cómo se diferencia del tiempo de ciclo y del throughput.</p>
+        <p class="mono"><time datetime="2026-11-19">19 de noviembre de 2026</time> · 6 min de lectura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Toda operación tiene un pulso, lo mida alguien o no. Los clientes piden a un ritmo determinado, y el equipo tiene que terminar el trabajo al menos igual de rápido o se acumula un retraso. El takt time pone cifra a ese pulso. Esta guía explica qué es, cómo calcularlo y cómo pueden usarlo cada día los equipos pequeños.</p><h2>¿Qué es el takt time?</h2><p>El takt time es el ritmo al que necesitas completar una unidad de trabajo para cubrir exactamente la demanda de los clientes. La palabra viene del alemán <strong>Takt</strong>, que significa compás o ritmo, como el compás que marca un director de orquesta. No mide lo rápido que trabajas, sino lo rápido que necesitas trabajar. Lo fija la demanda, no el equipo.</p><h2>¿Cómo se calcula el takt time?</h2><p>La fórmula es sencilla:</p><p><strong>Takt time = tiempo neto de trabajo disponible ÷ demanda del cliente en ese periodo</strong></p><p>Ambas cifras deben referirse al mismo periodo, normalmente un turno o un día. El tiempo neto disponible es el tiempo en que el equipo puede trabajar de verdad: las horas programadas menos descansos, reuniones, mantenimiento planificado y relevos de turno.</p><h3>Un ejemplo práctico</h3><p>Un pequeño almacén trabaja un turno de ocho horas. Cada empacador tiene 30 minutos para comer, dos descansos de 10 minutos y una reunión de 10 minutos al empezar el turno. El tiempo neto disponible es 480 − 30 − 20 − 10 = 420 minutos. El equipo tiene que enviar 280 pedidos al día.</p><p>Takt time = 420 minutos ÷ 280 pedidos = 1,5 minutos, es decir, un pedido cada 90 segundos.</p><p>Ahora compáralo con el trabajo. Si empacar un pedido le lleva a una persona 4 minutos, esa persona solo puede terminar un pedido cada 4 minutos. Divide el contenido de trabajo entre el takt time para saber cuántas personas necesitas: 4 ÷ 1,5 = 2,67, así que tres empacadores trabajando en paralelo. Con solo dos, el retraso crece unos 70 pedidos cada día.</p><h2>Takt time, tiempo de ciclo, lead time y throughput</h2><p>Estos términos se usan a menudo como sinónimos, pero cada uno responde a una pregunta distinta.</p><ul><li><strong>Takt time.</strong> ¿Cada cuánto tenemos que terminar una unidad para seguir el ritmo de la demanda? Es un objetivo que fija el cliente.</li><li><strong>Tiempo de ciclo.</strong> ¿Cuánto se tarda realmente en completar una unidad? Es lo que hace hoy tu proceso.</li><li><strong>Lead time.</strong> ¿Cuánto espera un cliente desde que pide hasta que recibe, incluido el tiempo en cola?</li><li><strong>Throughput.</strong> ¿Cuántas unidades se terminan realmente por periodo?</li></ul><p>En resumen, el takt time es el ritmo necesario, mientras que el tiempo de ciclo y el throughput te dicen si lo estás alcanzando.</p><h2>¿Qué hacer cuando el tiempo de ciclo supera el takt time?</h2><p>Si un paso tarda más que el takt time, se convierte en un cuello de botella y el trabajo se acumula delante de él. Tienes tres opciones generales, que conviene probar en este orden:</p><ul><li><strong>Eliminar desperdicios.</strong> Recorre el proceso y suprime los pasos que no aportan valor: buscar material, volver a introducir datos, esperar aprobaciones, desplazamientos innecesarios.</li><li><strong>Equilibrar el trabajo.</strong> Pasa tareas del paso sobrecargado a otros con tiempo libre, para que cada puesto termine cerca del takt.</li><li><strong>Añadir capacidad.</strong> Pon una persona o máquina más en el paso que limita, o hazlo en paralelo, como en el ejemplo del empaque.</li></ul><p>El caso contrario también importa. Si el tiempo de ciclo está muy por debajo del takt, quizá tengas exceso de personal o la tentación de producir trabajo que nadie ha pedido todavía.</p><h2>¿Se puede usar el takt time fuera de la fabricación?</h2><p>Sí. Cualquier equipo que gestione un flujo constante de solicitudes parecidas y repetitivas tiene un takt time.</p><ul><li><strong>Almacenes.</strong> Pedidos preparados o empacados por turno.</li><li><strong>Cocinas.</strong> Si un restaurante sirve 120 platos durante un pico de dos horas al mediodía, la cocina tiene que emplatar uno por minuto.</li><li><strong>Mesas de servicio.</strong> Si un equipo de soporte dispone de 6 horas netas al día y recibe 72 tickets, el takt time es de 5 minutos por ticket.</li></ul><p>El trabajo no tiene que ser idéntico. Solo tiene que ser lo bastante parecido para que una unidad media tenga sentido. Si no lo es, agrupa el trabajo por tipos y calcula un takt para cada uno.</p><h2>¿Cuáles son los errores más comunes?</h2><ul><li><strong>Usar el tiempo bruto en lugar del neto.</strong> Dividir el turno completo de ocho horas entre la demanda hace que el takt parezca más holgado de lo que es. En el ejemplo anterior, 480 minutos dan unos 103 segundos en lugar de 90, lo que oculta una brecha de alrededor del 14 %.</li><li><strong>Ignorar la variación de la demanda.</strong> La demanda rara vez llega de forma uniforme. Un pico del lunes o una temporada alta pueden reducir el takt time a la mitad. Calcula el takt de los periodos punta además del promedio, y planifica la plantilla para ambos.</li><li><strong>Tratar el takt como un objetivo de velocidad para las personas.</strong> El takt describe el ritmo que necesita el sistema. Presionar a cada persona para que vaya más rápido suele aumentar los errores y el retrabajo.</li><li><strong>Olvidar las paradas y las pérdidas de calidad.</strong> Si algunas unidades necesitan retrabajo o un equipo está parado una hora a la semana, la capacidad real es menor de lo que supone el plan. Busca tiempos de ciclo claramente por debajo del takt, a menudo entre el 85 y el 90 % de él, para dejar margen.</li></ul><h2>¿Cómo se controla el takt time a diario?</h2><p>El takt time es más útil cuando se convierte en un ritmo diario visible y no en una cifra perdida en una hoja de cálculo.</p><ul><li><strong>Recalcúlalo cuando cambie la demanda.</strong> Actualiza el takt cada día o cada semana a partir de la previsión real de pedidos.</li><li><strong>Conviértelo en objetivos por hora.</strong> Un takt de 90 segundos equivale a 40 pedidos por hora. Anota cada hora en un tablero la cantidad prevista y la real.</li><li><strong>Registra los motivos de las desviaciones.</strong> Cuando una hora se quede corta, apunta el motivo en pocas palabras. Los patrones en esas notas muestran dónde mejorar.</li><li><strong>Revisa la tendencia cada semana.</strong> Mira cuántas veces se cumplió el plan, cómo fueron los días punta y cuáles fueron las principales causas de los retrasos.</li></ul><p>Un panel compartido ayuda mucho. Una herramienta como FulcrumGrid Command Center puede reunir la demanda, la producción y la desviación frente al plan en una sola vista, para que el equipo revise las mismas cifras en su reunión diaria en lugar de reconstruirlas a mano.</p>
+
+        <h2>Preguntas frecuentes</h2>
+        <details class="faq-item"><summary>¿Cuál es un buen takt time?</summary><p>No hay un takt time bueno o malo, porque lo fijan la demanda y el tiempo disponible. Lo importante es que el tiempo de ciclo de cada paso esté a su nivel o ligeramente por debajo.</p></details>
+        <details class="faq-item"><summary>¿El takt time es lo mismo que el tiempo de ciclo?</summary><p>No. El takt time es el ritmo que exige la demanda, mientras que el tiempo de ciclo es lo que tu proceso tarda realmente por unidad. Compararlos muestra si puedes seguir el ritmo.</p></details>
+        <details class="faq-item"><summary>¿Cada cuánto debo recalcular el takt time?</summary><p>Siempre que la demanda o las horas disponibles cambien de forma notable. Muchos equipos pequeños lo recalculan cada semana a partir de la previsión y revisan aparte los días punta.</p></details>
+        <details class="faq-item"><summary>¿En qué unidad se expresa el takt time?</summary><p>En la que encaje con el trabajo: segundos por unidad en una línea, minutos por pedido en un almacén o minutos por ticket en una mesa de servicio. Usa la misma unidad al compararlo con el tiempo de ciclo.</p></details>
+
+        <p style="margin-top:32px"><a href="/es/blog/"><span aria-hidden="true">←</span> Volver al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Sigue el ritmo de la demanda cada día</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center reúne tus KPI, objetivos y proyectos en una sola vista, para que la producción prevista frente a la real sea fácil de seguir y revisar con tu equipo.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/es/products/command-center/">Explorar Command Center</a>
+          <a class="btn btn-secondary" href="/es/blog/">Volver al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La columna vertebral operativa de los equipos modernos.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Productos</h5>
+          <a href="/es/products/">Todos los productos</a>
+          <a href="/es/products/hr-suite/">HR Suite</a>
+          <a href="/es/products/command-center/">Command Center</a>
+          <a href="/es/products/collection/">Collection</a>
+          <a href="/es/products/tms/">TMS</a>
+          <a href="/es/products/assure/">Assure</a>
+          <a href="/es/products/close/">Close</a>
+          <a href="/es/products/consolidate/">Consolidate</a>
+          <a href="/es/custom-apps/">Apps a medida</a>
+        </div>
+        <div class="foot-col">
+          <h5>Cuadrícula</h5>
+          <a href="/es/features/">Funciones</a>
+          <a href="/es/integrations/">Integraciones</a>
+          <a href="/es/how-it-works/">Cómo funciona</a>
+          <a href="/es/pricing/">Precios</a>
+          <a href="/es/regions/">Regiones</a>
+          <a href="/es/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Empresa</h5>
+          <a href="/es/about/">Acerca de</a>
+          <a href="/es/faq/">FAQ</a>
+          <a href="/es/contact/">Contacto</a>
+          <a href="/es/privacy/">Privacidad</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Todos los derechos reservados.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

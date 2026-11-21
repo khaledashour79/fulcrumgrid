@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>¿Qué es un gráfico de control y cómo se usa? (con ejemplo) — FulcrumGrid</title>
+  <meta name="description" content="Un gráfico de control muestra si un indicador ha cambiado de verdad o solo oscila. Aprende a calcular los límites, a leer las señales y a usarlo cada semana." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="¿Qué es un gráfico de control y cómo se usa? (con ejemplo)" />
+  <meta property="og:description" content="Un gráfico de control muestra si un indicador ha cambiado de verdad o solo oscila. Aprende a calcular los límites, a leer las señales y a usarlo cada semana." />
+  <meta property="og:url" content="https://fulcrumgrid.com/es/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-20" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="¿Qué es un gráfico de control y cómo se usa? (con ejemplo)" />
+  <meta name="twitter:description" content="Un gráfico de control muestra si un indicador ha cambiado de verdad o solo oscila. Aprende a calcular los límites, a leer las señales y a usarlo cada semana." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/es/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "¿Qué es un gráfico de control y cómo se usa? (con ejemplo)",
+    "description": "Un gráfico de control muestra si un indicador ha cambiado de verdad o solo oscila. Aprende a calcular los límites, a leer las señales y a usarlo cada semana.",
+    "datePublished": "2026-11-20",
+    "dateModified": "2026-11-20",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/es/blog/what-is-a-control-chart-and-how-do-you-use-one/"
+    },
+    "inLanguage": "es"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://fulcrumgrid.com/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/es/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guía del gráfico de control",
+        "item": "https://fulcrumgrid.com/es/blog/what-is-a-control-chart-and-how-do-you-use-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué diferencia hay entre los límites de control y los de especificación?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Los límites de control se calculan con tus datos y describen lo que el proceso hace realmente. Los límites de especificación los fijan los clientes o el negocio y describen lo que es aceptable. Un proceso puede ser estable y aun así no cumplir su especificación."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuántos datos necesito para un gráfico de control?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Procura reunir entre 20 y 25 puntos de un periodo sin incidencias conocidas. Puedes empezar con menos, pero considera los límites provisionales y recalcúlalos a medida que lleguen más datos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Por qué los límites de control se sitúan a tres desviaciones estándar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tres desviaciones estándar equilibran las falsas alarmas y las señales perdidas. En un proceso estable, los puntos más allá de esa distancia son raros, así que uno suele indicar que algo ha cambiado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo usar un gráfico de control para recuentos, como tickets por día?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Un gráfico sencillo de valores individuales sirve para la mayoría de los indicadores de un equipo pequeño, incluidos los recuentos diarios. Existen gráficos especializados para recuentos y porcentajes, pero la versión sencilla es un buen punto de partida."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/es/products/">Productos</a>
+        <a href="/es/features/">Cuadrícula</a>
+        <a href="/es/pricing/">Precios</a>
+        <a href="/es/regions/">Regiones</a>
+        <a href="/es/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/es/contact/">Contacto</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Idioma">ES ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" class="active" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/es/contact/">Solicitar una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/es/">Inicio</a> / <a href="/es/blog/">Blog</a> / Guía del gráfico de control</p>
+        <span class="tag tag-accent">Operaciones</span>
+        <h1>¿Qué es un gráfico de control y cómo se usa? (con ejemplo)</h1>
+        <p class="hero-intro">Un gráfico de control muestra si un indicador ha cambiado de verdad o solo oscila. Aprende a calcular los límites, a leer las señales y a usarlo cada semana.</p>
+        <p class="mono"><time datetime="2026-11-20">20 de noviembre de 2026</time> · 6 min de lectura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Todos los indicadores operativos oscilan. Los pedidos tardan un poco más el martes, llegan algunos tickets más el jueves y alguien pregunta en la reunión semanal qué ha fallado. Muchas veces, nada. Un gráfico de control es una herramienta sencilla para distinguir el ruido normal de un cambio real, de modo que reacciones a lo que importa y dejes el resto en paz.</p><h2>¿Qué es un gráfico de control?</h2><p>Un gráfico de control es un gráfico de líneas de un indicador a lo largo del tiempo, al que se añaden tres líneas horizontales:</p><ul><li><strong>Línea central.</strong> La media de tus datos.</li><li><strong>Límite de control superior.</strong> Normalmente, la media más tres desviaciones estándar.</li><li><strong>Límite de control inferior.</strong> Normalmente, la media menos tres desviaciones estándar.</li></ul><p>Los límites describen lo que tu proceso produce habitualmente. Se calculan con tus propios datos, no los decide la dirección. Si un proceso estable sigue funcionando igual, casi todos los puntos futuros caerán entre ellos.</p><h2>Variación por causas comunes y por causas especiales</h2><p>La idea en la que se basa el gráfico, desarrollada por Walter Shewhart en la década de 1920, es que la variación es de dos tipos.</p><ul><li><strong>La variación por causas comunes</strong> es el ruido cotidiano propio del sistema: pequeñas diferencias en la mezcla de pedidos, la plantilla, el tráfico y los horarios. Siempre está presente y ningún día concreto tiene una explicación especial.</li><li><strong>La variación por causas especiales</strong> se debe a algo concreto e identificable: un retraso de un proveedor, una nueva incorporación en su primera semana, una caída del sistema, una promoción que duplicó la demanda.</li></ul><p>Las causas especiales merecen investigarse. Las comunes no, al menos no día a día. Reducirlas implica cambiar el propio sistema.</p><h2>Un ejemplo práctico: el tiempo diario de preparación de pedidos</h2><p>Una tienda online registra cada día la media de horas que pasan desde el pedido hasta el envío. Durante 20 días laborables anota:</p><p><strong>22, 25, 23, 26, 24, 21, 25, 27, 23, 24, 22, 26, 25, 23, 24, 28, 22, 25, 24, 21</strong></p><ul><li><strong>Media.</strong> Los valores suman 480, así que la línea central es 480 ÷ 20 = 24 horas.</li><li><strong>Desviación estándar.</strong> La desviación estándar muestral es de unas 1,9 horas.</li><li><strong>Límite de control superior.</strong> 24 + 3 × 1,9 = unas 29,8 horas.</li><li><strong>Límite de control inferior.</strong> 24 − 3 × 1,9 = unas 18,2 horas.</li></ul><p>Todos los puntos están entre 18,2 y 29,8, así que el proceso parece estable. Un día de 28 horas puede parecer malo, pero está dentro del rango normal y no necesita su propio análisis de causa raíz. Si la semana que viene aparece un día de 32 horas, eso sí es una señal que conviene investigar.</p><p>Los especialistas en calidad suelen estimar la dispersión a partir del rango móvil medio, la diferencia entre puntos consecutivos, que se distorsiona menos cuando los datos ya contienen un desplazamiento. En este caso, ese método da límites de unas 16,9 y 31,1 horas. Para un primer gráfico cualquiera de los dos enfoques es razonable; lo importante es usar siempre el mismo.</p><h2>¿Qué señales hay que vigilar?</h2><p>Mantén pocas reglas y sencillas. Estas tres detectan la mayoría de los cambios reales:</p><ul><li><strong>Un punto fuera de los límites.</strong> Un valor por encima del límite superior o por debajo del inferior.</li><li><strong>Una racha en un mismo lado.</strong> Siete u ocho puntos seguidos por encima, o por debajo, de la línea central. Indica que la media se ha desplazado, aunque ningún punto parezca extremo.</li><li><strong>Una tendencia sostenida.</strong> Seis o siete puntos seguidos, cada uno más alto, o cada uno más bajo, que el anterior.</li></ul><p>Las señales funcionan en ambos sentidos. Una racha de días inusualmente rápidos también merece entenderse, para conservar lo que la provocó.</p><h2>Límites de control frente a objetivos y límites de especificación</h2><p>Los límites de control son la voz del proceso: lo que hace en realidad. Los objetivos y los límites de especificación son la voz del cliente o del negocio: lo que tú quieres. No son lo mismo y no conviene confundirlos.</p><p>Supongamos que la tienda promete el envío en menos de 30 horas y se fija un objetivo interno de 22. El proceso promedia 24 horas con un límite superior cercano a 30, así que a veces pone en riesgo la promesa y falla el objetivo de forma habitual. Presionar más en cada día malo no moverá la media. Llegar a 22 exige cambiar el sistema, por ejemplo agrupando la preparación de otra manera o añadiendo un turno de tarde, y después calcular nuevos límites cuando el cambio se haya asentado.</p><h2>¿Cuándo no hay que reaccionar?</h2><p>Ajustar un proceso estable ante cada subida y bajada se llama sobreajuste, y normalmente aumenta la variación. Ejemplos típicos: cambiar los turnos tras un solo día lento, pedir una explicación por cada bajón o modificar un objetivo después de una sola buena semana. Si un punto está dentro de los límites y no se forma ninguna racha ni tendencia, lo correcto es anotarlo y esperar.</p><h2>¿Cómo usar un gráfico de control en la revisión semanal?</h2><ul><li><strong>Empieza por las señales.</strong> Revisa cada gráfico con las tres reglas antes de comentar cifras sueltas.</li><li><strong>Investiga solo lo señalado.</strong> Para cada señal, pregunta qué fue diferente ese día y anota la causa.</li><li><strong>Compara con el objetivo por separado.</strong> Si el proceso es estable pero no alcanza el objetivo, ponlo en la lista de mejoras en lugar de culpar a la semana.</li><li><strong>Recalcula los límites tras cambios reales.</strong> Cuando cambies el proceso a propósito y se estabilice, calcula nuevos límites con 15 a 20 puntos nuevos.</li></ul><h2>¿Hace falta un software especializado?</h2><p>No. Para empezar basta con una hoja de cálculo. Pon las fechas en una columna y los valores en la siguiente, calcula la media con PROMEDIO y la desviación estándar con DESVEST.M, añade columnas para la línea central y los dos límites y represéntalo todo en un mismo gráfico de líneas. Veinte puntos es un mínimo razonable; con menos, considera los límites provisionales.</p><p>Cuando sigues varios indicadores, mantener cada gráfico al día a mano se vuelve pesado. Un panel como FulcrumGrid Command Center puede reunir tus KPI y sus objetivos uno junto a otro, para que la revisión semanal parta de las mismas cifras actualizadas.</p>
+
+        <h2>Preguntas frecuentes</h2>
+        <details class="faq-item"><summary>¿Qué diferencia hay entre los límites de control y los de especificación?</summary><p>Los límites de control se calculan con tus datos y describen lo que el proceso hace realmente. Los límites de especificación los fijan los clientes o el negocio y describen lo que es aceptable. Un proceso puede ser estable y aun así no cumplir su especificación.</p></details>
+        <details class="faq-item"><summary>¿Cuántos datos necesito para un gráfico de control?</summary><p>Procura reunir entre 20 y 25 puntos de un periodo sin incidencias conocidas. Puedes empezar con menos, pero considera los límites provisionales y recalcúlalos a medida que lleguen más datos.</p></details>
+        <details class="faq-item"><summary>¿Por qué los límites de control se sitúan a tres desviaciones estándar?</summary><p>Tres desviaciones estándar equilibran las falsas alarmas y las señales perdidas. En un proceso estable, los puntos más allá de esa distancia son raros, así que uno suele indicar que algo ha cambiado.</p></details>
+        <details class="faq-item"><summary>¿Puedo usar un gráfico de control para recuentos, como tickets por día?</summary><p>Sí. Un gráfico sencillo de valores individuales sirve para la mayoría de los indicadores de un equipo pequeño, incluidos los recuentos diarios. Existen gráficos especializados para recuentos y porcentajes, pero la versión sencilla es un buen punto de partida.</p></details>
+
+        <p style="margin-top:32px"><a href="/es/blog/"><span aria-hidden="true">←</span> Volver al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Revisa las mismas cifras cada semana</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center reúne tus KPI, objetivos y proyectos en una sola vista, para que tu equipo detecte los cambios reales y revise el avance en conjunto.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/es/products/command-center/">Explorar Command Center</a>
+          <a class="btn btn-secondary" href="/es/blog/">Volver al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La columna vertebral operativa de los equipos modernos.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Productos</h5>
+          <a href="/es/products/">Todos los productos</a>
+          <a href="/es/products/hr-suite/">HR Suite</a>
+          <a href="/es/products/command-center/">Command Center</a>
+          <a href="/es/products/collection/">Collection</a>
+          <a href="/es/products/tms/">TMS</a>
+          <a href="/es/products/assure/">Assure</a>
+          <a href="/es/products/close/">Close</a>
+          <a href="/es/products/consolidate/">Consolidate</a>
+          <a href="/es/custom-apps/">Apps a medida</a>
+        </div>
+        <div class="foot-col">
+          <h5>Cuadrícula</h5>
+          <a href="/es/features/">Funciones</a>
+          <a href="/es/integrations/">Integraciones</a>
+          <a href="/es/how-it-works/">Cómo funciona</a>
+          <a href="/es/pricing/">Precios</a>
+          <a href="/es/regions/">Regiones</a>
+          <a href="/es/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Empresa</h5>
+          <a href="/es/about/">Acerca de</a>
+          <a href="/es/faq/">FAQ</a>
+          <a href="/es/contact/">Contacto</a>
+          <a href="/es/privacy/">Privacidad</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Todos los derechos reservados.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

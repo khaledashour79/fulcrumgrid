@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Was ist die Taktzeit und wie berechnet man sie? (Mit Beispiel) — FulcrumGrid</title>
+  <meta name="description" content="Die Taktzeit ist das Tempo, das die Kundennachfrage vorgibt. Formel, Rechenbeispiel und der Unterschied zu Zykluszeit, Durchlaufzeit und Durchsatz." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Was ist die Taktzeit und wie berechnet man sie? (Mit Beispiel)" />
+  <meta property="og:description" content="Die Taktzeit ist das Tempo, das die Kundennachfrage vorgibt. Formel, Rechenbeispiel und der Unterschied zu Zykluszeit, Durchlaufzeit und Durchsatz." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-19" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Was ist die Taktzeit und wie berechnet man sie? (Mit Beispiel)" />
+  <meta name="twitter:description" content="Die Taktzeit ist das Tempo, das die Kundennachfrage vorgibt. Formel, Rechenbeispiel und der Unterschied zu Zykluszeit, Durchlaufzeit und Durchsatz." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Was ist die Taktzeit und wie berechnet man sie? (Mit Beispiel)",
+    "description": "Die Taktzeit ist das Tempo, das die Kundennachfrage vorgibt. Formel, Rechenbeispiel und der Unterschied zu Zykluszeit, Durchlaufzeit und Durchsatz.",
+    "datePublished": "2026-11-19",
+    "dateModified": "2026-11-19",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/what-is-takt-time-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Leitfaden Taktzeit",
+        "item": "https://fulcrumgrid.com/de/blog/what-is-takt-time-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist eine gute Taktzeit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Es gibt keine gute oder schlechte Taktzeit, denn Nachfrage und verfügbare Zeit legen sie fest. Entscheidend ist, dass die Zykluszeit jedes Schritts gleich oder etwas darunter liegt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ist die Taktzeit dasselbe wie die Zykluszeit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. Die Taktzeit ist das Tempo, das die Nachfrage verlangt, die Zykluszeit ist die Zeit, die Ihr Prozess tatsächlich pro Einheit braucht. Der Vergleich zeigt, ob Sie Schritt halten können."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie oft sollte ich die Taktzeit neu berechnen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Immer dann, wenn sich Nachfrage oder verfügbare Stunden spürbar ändern. Viele kleine Teams rechnen wöchentlich anhand der Prognose neu und prüfen Spitzentage gesondert."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welcher Einheit gibt man die Taktzeit an?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In der, die zur Arbeit passt: Sekunden pro Einheit an einer Linie, Minuten pro Bestellung im Lager oder Minuten pro Ticket im Servicedesk. Verwenden Sie beim Vergleich mit der Zykluszeit dieselbe Einheit."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / Leitfaden Taktzeit</p>
+        <span class="tag tag-accent">Betrieb</span>
+        <h1>Was ist die Taktzeit und wie berechnet man sie? (Mit Beispiel)</h1>
+        <p class="hero-intro">Die Taktzeit ist das Tempo, das die Kundennachfrage vorgibt. Formel, Rechenbeispiel und der Unterschied zu Zykluszeit, Durchlaufzeit und Durchsatz.</p>
+        <p class="mono"><time datetime="2026-11-19">19. November 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Jeder Betrieb hat einen Herzschlag, ob ihn jemand misst oder nicht. Kunden bestellen in einem bestimmten Rhythmus, und das Team muss mindestens genauso schnell fertig werden, sonst entsteht ein Rückstau. Die Taktzeit gibt diesem Herzschlag eine Zahl. Dieser Leitfaden erklärt, was sie ist, wie man sie berechnet und wie kleine Teams sie jeden Tag nutzen können.</p><h2>Was ist die Taktzeit?</h2><p>Die Taktzeit ist das Tempo, in dem Sie eine Arbeitseinheit abschließen müssen, um die Kundennachfrage genau zu decken. Der Begriff geht auf den <strong>Takt</strong> in der Musik zurück, also den Schlag, den ein Dirigent dem Orchester vorgibt. Sie misst nicht, wie schnell Sie arbeiten, sondern wie schnell Sie arbeiten müssen. Die Nachfrage legt sie fest, nicht das Team.</p><h2>Wie berechnet man die Taktzeit?</h2><p>Die Formel ist einfach:</p><p><strong>Taktzeit = verfügbare Nettoarbeitszeit ÷ Kundennachfrage im selben Zeitraum</strong></p><p>Beide Werte müssen denselben Zeitraum abdecken, meist eine Schicht oder einen Tag. Die verfügbare Nettozeit ist die Zeit, in der das Team tatsächlich arbeiten kann: geplante Stunden abzüglich Pausen, Besprechungen, geplanter Wartung und Schichtübergaben.</p><h3>Ein Rechenbeispiel</h3><p>Ein kleines Lager arbeitet in einer Achtstundenschicht. Jeder Packer hat 30 Minuten Mittagspause, zwei Pausen von je 10 Minuten und eine 10-minütige Besprechung zu Schichtbeginn. Die verfügbare Nettozeit beträgt 480 − 30 − 20 − 10 = 420 Minuten. Das Team muss 280 Bestellungen pro Tag versenden.</p><p>Taktzeit = 420 Minuten ÷ 280 Bestellungen = 1,5 Minuten, also eine Bestellung alle 90 Sekunden.</p><p>Vergleichen Sie das nun mit der Arbeit. Braucht ein Packer für eine Bestellung 4 Minuten, schafft eine Person nur eine Bestellung alle 4 Minuten. Teilen Sie den Arbeitsinhalt durch die Taktzeit, um den Personalbedarf zu ermitteln: 4 ÷ 1,5 = 2,67, also drei Packer, die parallel arbeiten. Mit nur zwei wächst der Rückstand jeden Tag um rund 70 Bestellungen.</p><h2>Taktzeit, Zykluszeit, Durchlaufzeit und Durchsatz im Vergleich</h2><p>Diese Begriffe werden oft gleichgesetzt, doch jeder beantwortet eine andere Frage.</p><ul><li><strong>Taktzeit.</strong> Wie oft müssen wir eine Einheit fertigstellen, um mit der Nachfrage Schritt zu halten? Sie ist ein Ziel, das der Kunde vorgibt.</li><li><strong>Zykluszeit.</strong> Wie lange dauert es tatsächlich, eine Einheit fertigzustellen? Sie zeigt, was Ihr Prozess heute leistet.</li><li><strong>Durchlaufzeit.</strong> Wie lange wartet ein Kunde von der Anfrage bis zur Lieferung, einschließlich der Zeit in Warteschlangen?</li><li><strong>Durchsatz.</strong> Wie viele Einheiten werden pro Zeitraum tatsächlich fertig?</li></ul><p>Kurz gesagt: Die Taktzeit ist das geforderte Tempo, Zykluszeit und Durchsatz zeigen, ob Sie es erreichen.</p><h2>Was tun, wenn die Zykluszeit länger ist als die Taktzeit?</h2><p>Dauert ein Arbeitsschritt länger als die Taktzeit, wird er zum Engpass, und vor ihm staut sich die Arbeit. Sie haben drei grundsätzliche Möglichkeiten, am besten in dieser Reihenfolge:</p><ul><li><strong>Verschwendung beseitigen.</strong> Gehen Sie den Prozess ab und streichen Sie Schritte ohne Wertbeitrag: Material suchen, Daten doppelt erfassen, auf Freigaben warten, unnötige Wege.</li><li><strong>Arbeit ausgleichen.</strong> Verlagern Sie Aufgaben vom überlasteten Schritt auf Schritte mit freier Zeit, damit jede Station nahe am Takt fertig wird.</li><li><strong>Kapazität erhöhen.</strong> Setzen Sie eine weitere Person oder Maschine am Engpass ein oder lassen Sie ihn parallel laufen, wie im Packbeispiel.</li></ul><p>Auch der umgekehrte Fall ist wichtig. Liegt die Zykluszeit weit unter dem Takt, sind Sie womöglich überbesetzt oder versucht, Arbeit zu erledigen, die noch niemand angefordert hat.</p><h2>Lässt sich die Taktzeit auch außerhalb der Fertigung nutzen?</h2><p>Ja. Jedes Team, das einen stetigen Strom ähnlicher, wiederkehrender Anfragen bearbeitet, hat eine Taktzeit.</p><ul><li><strong>Lager.</strong> Kommissionierte oder gepackte Bestellungen pro Schicht.</li><li><strong>Küchen.</strong> Serviert ein Restaurant während eines zweistündigen Mittagsansturms 120 Gerichte, muss die Küche jede Minute einen Teller anrichten.</li><li><strong>Servicedesks.</strong> Hat ein Supportteam 6 Nettostunden pro Tag und erhält 72 Tickets, liegt die Taktzeit bei 5 Minuten pro Ticket.</li></ul><p>Die Arbeit muss nicht identisch sein. Sie muss nur ähnlich genug sein, dass eine durchschnittliche Einheit aussagekräftig ist. Wo das nicht zutrifft, gruppieren Sie die Arbeit nach Typen und berechnen für jeden einen eigenen Takt.</p><h2>Was sind die häufigsten Fehler?</h2><ul><li><strong>Brutto- statt Nettozeit verwenden.</strong> Wer die volle Achtstundenschicht durch die Nachfrage teilt, lässt den Takt bequemer aussehen, als er ist. Im obigen Beispiel ergeben 480 Minuten etwa 103 statt 90 Sekunden, was eine Lücke von rund 14 Prozent verdeckt.</li><li><strong>Schwankungen der Nachfrage ignorieren.</strong> Die Nachfrage kommt selten gleichmäßig. Eine Montagsspitze oder ein saisonaler Ansturm kann die Taktzeit halbieren. Berechnen Sie den Takt für Spitzenzeiten ebenso wie für den Durchschnitt, und planen Sie das Personal für beides.</li><li><strong>Den Takt als Tempovorgabe für Menschen behandeln.</strong> Der Takt beschreibt den Rhythmus, den das System braucht. Wer einzelne Mitarbeitende zu mehr Tempo drängt, erhöht meist Fehler und Nacharbeit.</li><li><strong>Stillstände und Qualitätsverluste vergessen.</strong> Müssen einige Einheiten nachgearbeitet werden oder steht eine Anlage eine Stunde pro Woche still, ist die tatsächliche Kapazität geringer als geplant. Streben Sie Zykluszeiten deutlich unter dem Takt an, oft 85 bis 90 Prozent davon, um einen Puffer zu behalten.</li></ul><h2>Wie überwacht man die Taktzeit täglich?</h2><p>Am nützlichsten ist die Taktzeit, wenn sie zu einem sichtbaren täglichen Rhythmus wird und nicht nur eine Zahl in einer Tabelle bleibt.</p><ul><li><strong>Bei Nachfrageänderungen neu berechnen.</strong> Aktualisieren Sie den Takt täglich oder wöchentlich anhand der tatsächlichen Auftragsprognose.</li><li><strong>In Stundenziele übersetzen.</strong> Ein Takt von 90 Sekunden bedeutet 40 Bestellungen pro Stunde. Tragen Sie jede Stunde Soll und Ist auf einer Tafel ein.</li><li><strong>Gründe für Abweichungen festhalten.</strong> Bleibt eine Stunde hinter dem Plan, notieren Sie in wenigen Worten, warum. Muster in diesen Notizen zeigen, wo Verbesserungen ansetzen sollten.</li><li><strong>Den Trend wöchentlich prüfen.</strong> Schauen Sie, wie oft der Plan erreicht wurde, wie die Spitzentage liefen und was die häufigsten Ursachen für Rückstände waren.</li></ul><p>Ein gemeinsames Dashboard hilft dabei. Ein Werkzeug wie FulcrumGrid Command Center kann Nachfrage, Ausstoß und Planabweichung in einer Ansicht zusammenführen, sodass das Team in der täglichen Kurzbesprechung dieselben Zahlen betrachtet, statt sie von Hand zusammenzutragen.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Was ist eine gute Taktzeit?</summary><p>Es gibt keine gute oder schlechte Taktzeit, denn Nachfrage und verfügbare Zeit legen sie fest. Entscheidend ist, dass die Zykluszeit jedes Schritts gleich oder etwas darunter liegt.</p></details>
+        <details class="faq-item"><summary>Ist die Taktzeit dasselbe wie die Zykluszeit?</summary><p>Nein. Die Taktzeit ist das Tempo, das die Nachfrage verlangt, die Zykluszeit ist die Zeit, die Ihr Prozess tatsächlich pro Einheit braucht. Der Vergleich zeigt, ob Sie Schritt halten können.</p></details>
+        <details class="faq-item"><summary>Wie oft sollte ich die Taktzeit neu berechnen?</summary><p>Immer dann, wenn sich Nachfrage oder verfügbare Stunden spürbar ändern. Viele kleine Teams rechnen wöchentlich anhand der Prognose neu und prüfen Spitzentage gesondert.</p></details>
+        <details class="faq-item"><summary>In welcher Einheit gibt man die Taktzeit an?</summary><p>In der, die zur Arbeit passt: Sekunden pro Einheit an einer Linie, Minuten pro Bestellung im Lager oder Minuten pro Ticket im Servicedesk. Verwenden Sie beim Vergleich mit der Zykluszeit dieselbe Einheit.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Halten Sie täglich Schritt mit der Nachfrage</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center bündelt Ihre KPIs, Ziele und Projekte in einer Ansicht, sodass sich Soll- und Ist-Ausstoß leicht verfolgen und mit dem Team besprechen lassen.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/command-center/">Entdecken Command Center</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/products/tms/">TMS</a>
+          <a href="/de/products/assure/">Assure</a>
+          <a href="/de/products/close/">Close</a>
+          <a href="/de/products/consolidate/">Consolidate</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

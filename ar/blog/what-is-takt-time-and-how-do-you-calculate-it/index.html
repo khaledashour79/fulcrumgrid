@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>ما هو زمن الإيقاع (التاكت) وكيف تحسبه؟ مع مثال عملي — FulcrumGrid</title>
+  <meta name="description" content="زمن التاكت هو الإيقاع الذي يجب أن تعمل به لتلبية الطلب. تعرّف على المعادلة ومثال محسوب، والفرق بينه وبين زمن الدورة وزمن التسليم ومعدل الإنجاز." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="ما هو زمن الإيقاع (التاكت) وكيف تحسبه؟ مع مثال عملي" />
+  <meta property="og:description" content="زمن التاكت هو الإيقاع الذي يجب أن تعمل به لتلبية الطلب. تعرّف على المعادلة ومثال محسوب، والفرق بينه وبين زمن الدورة وزمن التسليم ومعدل الإنجاز." />
+  <meta property="og:url" content="https://fulcrumgrid.com/ar/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-19" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="لوحة التحكم للتنفيذيين من FulcrumGrid — العمليات في لمحة" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ما هو زمن الإيقاع (التاكت) وكيف تحسبه؟ مع مثال عملي" />
+  <meta name="twitter:description" content="زمن التاكت هو الإيقاع الذي يجب أن تعمل به لتلبية الطلب. تعرّف على المعادلة ومثال محسوب، والفرق بينه وبين زمن الدورة وزمن التسليم ومعدل الإنجاز." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/ar/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-takt-time-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/cairo-600-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/cairo-400-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "ما هو زمن الإيقاع (التاكت) وكيف تحسبه؟ مع مثال عملي",
+    "description": "زمن التاكت هو الإيقاع الذي يجب أن تعمل به لتلبية الطلب. تعرّف على المعادلة ومثال محسوب، والفرق بينه وبين زمن الدورة وزمن التسليم ومعدل الإنجاز.",
+    "datePublished": "2026-11-19",
+    "dateModified": "2026-11-19",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/ar/blog/what-is-takt-time-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "ar"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "الرئيسية",
+        "item": "https://fulcrumgrid.com/ar/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "المدوّنة",
+        "item": "https://fulcrumgrid.com/ar/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "دليل زمن التاكت",
+        "item": "https://fulcrumgrid.com/ar/blog/what-is-takt-time-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "ما هو زمن التاكت الجيد؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "لا يوجد زمن تاكت جيد أو سيئ، لأن الطلب والوقت المتاح هما اللذان يحددانه. المهم أن يكون زمن الدورة لكل خطوة مساوياً له أو أقل منه بقليل."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "هل زمن التاكت هو نفسه زمن الدورة؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "لا. زمن التاكت هو الإيقاع الذي يتطلبه الطلب، أما زمن الدورة فهو الوقت الذي تستغرقه عمليتك فعلياً لكل وحدة. والمقارنة بينهما تبيّن هل تستطيع المواكبة."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كم مرة يجب أن أعيد حساب زمن التاكت؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "كلما تغيّر الطلب أو الساعات المتاحة تغيّراً ملحوظاً. وتعيد فرق صغيرة كثيرة حسابه أسبوعياً بناءً على التوقعات، وتراجع أيام الذروة على حدة."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "بأي وحدة يُعبَّر عن زمن التاكت؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "بالوحدة التي تناسب العمل: ثوانٍ لكل وحدة على خط الإنتاج، أو دقائق لكل طلب في المستودع، أو دقائق لكل تذكرة في مكتب الخدمة. واستخدم الوحدة نفسها عند مقارنته بزمن الدورة."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <a href="/ar/products/">المنتجات</a>
+        <a href="/ar/features/">الشبكة</a>
+        <a href="/ar/pricing/">الأسعار</a>
+        <a href="/ar/regions/">المناطق</a>
+        <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
+        <a href="/ar/contact/">اتصل بنا</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="اللغة">ع ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" class="active" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      </div>
+      <button class="nav-toggle" aria-label="القائمة"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/ar/">الرئيسية</a> / <a href="/ar/blog/">المدوّنة</a> / دليل زمن التاكت</p>
+        <span class="tag tag-accent">العمليات</span>
+        <h1>ما هو زمن الإيقاع (التاكت) وكيف تحسبه؟ مع مثال عملي</h1>
+        <p class="hero-intro">زمن التاكت هو الإيقاع الذي يجب أن تعمل به لتلبية الطلب. تعرّف على المعادلة ومثال محسوب، والفرق بينه وبين زمن الدورة وزمن التسليم ومعدل الإنجاز.</p>
+        <p class="mono"><time datetime="2026-11-19">١٩ نوفمبر ٢٠٢٦</time> · ٦ دقائق للقراءة</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>لكل عملية تشغيلية نبض، سواء قاسه أحد أم لا. يطلب العملاء بمعدل معيّن، وعلى الفريق أن ينجز العمل بالسرعة نفسها على الأقل، وإلا تراكمت الطلبات المتأخرة. وزمن الإيقاع، المعروف بزمن التاكت، يمنح هذا النبض رقماً محدداً. يشرح هذا الدليل ما هو، وكيف تحسبه، وكيف تستطيع الفرق الصغيرة استخدامه كل يوم.</p><h2>ما هو زمن التاكت؟</h2><p>زمن التاكت هو الإيقاع الذي يجب أن تُنجز به وحدة عمل واحدة لتلبية طلب العملاء بدقة. والكلمة مأخوذة من لفظ ألماني يعني <strong>النبضة أو الإيقاع</strong>، كالإيقاع الذي يضبطه قائد الأوركسترا للعازفين. فهو لا يقيس مدى سرعتك في العمل، بل السرعة التي تحتاج إليها. والطلب هو الذي يحدده، لا الفريق.</p><h2>كيف تحسب زمن التاكت؟</h2><p>المعادلة بسيطة:</p><p><strong>زمن التاكت = صافي وقت العمل المتاح ÷ طلب العملاء خلال الفترة نفسها</strong></p><p>يجب أن يغطي الرقمان الفترة نفسها، وغالباً ما تكون وردية واحدة أو يوماً واحداً. وصافي الوقت المتاح هو الوقت الذي يستطيع فيه الفريق العمل فعلاً: الساعات المجدولة مطروحاً منها الاستراحات والاجتماعات والصيانة المخططة وتسليم الورديات.</p><h3>مثال محسوب</h3><p>يعمل مستودع صغير بوردية واحدة مدتها ثماني ساعات. يحصل كل عامل تغليف على ٣٠ دقيقة للغداء، واستراحتين مدة كل منهما ١٠ دقائق، واجتماع تمهيدي مدته ١٠ دقائق في بداية الوردية. إذن صافي الوقت المتاح هو ٤٨٠ − ٣٠ − ٢٠ − ١٠ = ٤٢٠ دقيقة. ويحتاج الفريق إلى شحن ٢٨٠ طلباً يومياً.</p><p>زمن التاكت = ٤٢٠ دقيقة ÷ ٢٨٠ طلباً = ١٫٥ دقيقة، أي طلب واحد كل ٩٠ ثانية.</p><p>قارن ذلك الآن بالعمل نفسه. إذا كان تغليف طلب واحد يستغرق من العامل ٤ دقائق، فلن يستطيع الشخص الواحد إنجاز أكثر من طلب كل ٤ دقائق. اقسم محتوى العمل على زمن التاكت لتعرف عدد الأشخاص الذين تحتاجهم: ٤ ÷ ١٫٥ = ٢٫٦٧، أي ثلاثة عمال تغليف يعملون بالتوازي. أما بعاملين فقط، فسيزيد التأخير بنحو ٧٠ طلباً كل يوم.</p><h2>زمن التاكت مقابل زمن الدورة وزمن التسليم ومعدل الإنجاز</h2><p>كثيراً ما تُستخدم هذه المصطلحات وكأنها شيء واحد، مع أن كلاً منها يجيب عن سؤال مختلف.</p><ul><li><strong>زمن التاكت.</strong> كل كم من الوقت يجب أن ننجز وحدة واحدة لنواكب الطلب؟ إنه هدف يحدده العميل.</li><li><strong>زمن الدورة.</strong> كم يستغرق إنجاز وحدة واحدة فعلياً؟ إنه ما تفعله عمليتك اليوم.</li><li><strong>زمن التسليم.</strong> كم ينتظر العميل من لحظة الطلب حتى الاستلام، بما في ذلك الوقت الذي يقضيه الطلب في الطابور؟</li><li><strong>معدل الإنجاز.</strong> كم وحدة تُنجز فعلياً في كل فترة؟</li></ul><p>باختصار، زمن التاكت هو الإيقاع المطلوب، بينما يخبرك زمن الدورة ومعدل الإنجاز هل تحققه أم لا.</p><h2>ماذا تفعل إذا كان زمن الدورة أطول من زمن التاكت؟</h2><p>إذا استغرقت خطوة ما وقتاً أطول من زمن التاكت، فإنها تتحول إلى عنق زجاجة ويتراكم العمل أمامها. لديك ثلاثة خيارات رئيسية، ويُفضّل تجربتها بهذا الترتيب:</p><ul><li><strong>إزالة الهدر.</strong> تتبّع العملية على أرض الواقع واحذف الخطوات التي لا تضيف قيمة: البحث عن المواد، وإعادة إدخال البيانات، وانتظار الموافقات، والتنقل غير الضروري.</li><li><strong>موازنة العمل.</strong> انقل مهام من الخطوة المثقلة إلى خطوات لديها وقت فائض، بحيث تنتهي كل محطة قريباً من زمن التاكت.</li><li><strong>زيادة الطاقة.</strong> أضف شخصاً أو آلة إلى الخطوة المقيِّدة، أو شغّلها بالتوازي، كما في مثال التغليف.</li></ul><p>والحالة المعاكسة مهمة أيضاً. فإذا كان زمن الدورة أقل بكثير من زمن التاكت، فقد يكون لديك فائض في العمالة، أو قد يغريك ذلك بإنتاج عمل لم يطلبه أحد بعد.</p><h2>هل يمكن استخدام زمن التاكت خارج التصنيع؟</h2><p>نعم. فلكل فريق يتعامل مع تدفق منتظم من الطلبات المتشابهة والمتكررة زمن تاكت خاص به.</p><ul><li><strong>المستودعات.</strong> عدد الطلبات المجهّزة أو المغلّفة في كل وردية.</li><li><strong>المطابخ.</strong> إذا كان مطعم يقدّم ١٢٠ طبقاً خلال ساعتي ذروة الغداء، فعلى المطبخ أن يجهّز طبقاً كل دقيقة.</li><li><strong>مكاتب الخدمة.</strong> إذا كان لدى فريق الدعم ٦ ساعات صافية يومياً ويتلقى ٧٢ تذكرة، فإن زمن التاكت هو ٥ دقائق لكل تذكرة.</li></ul><p>ولا يُشترط أن يكون العمل متطابقاً، بل يكفي أن يكون متشابهاً بما يجعل للوحدة المتوسطة معنى. وإن لم يكن كذلك، فقسّم العمل إلى أنواع واحسب زمن تاكت لكل نوع.</p><h2>ما الأخطاء الأكثر شيوعاً؟</h2><ul><li><strong>استخدام الوقت الإجمالي بدلاً من الصافي.</strong> قسمة الوردية الكاملة البالغة ثماني ساعات على الطلب تجعل زمن التاكت يبدو أسهل مما هو عليه. ففي المثال السابق، تعطي ٤٨٠ دقيقة نحو ١٠٣ ثوانٍ بدلاً من ٩٠، فتخفي فجوة تبلغ نحو ١٤٪.</li><li><strong>تجاهل تقلّب الطلب.</strong> نادراً ما يأتي الطلب بانتظام. فذروة يوم الاثنين أو موسم مزدحم قد يخفضان زمن التاكت إلى النصف. احسب زمن التاكت لفترات الذروة إلى جانب المتوسط، وخطط لعدد العاملين في الحالتين.</li><li><strong>التعامل مع زمن التاكت كهدف سرعة للأفراد.</strong> يصف زمن التاكت الإيقاع الذي يحتاجه النظام. والضغط على الأفراد ليعملوا أسرع يزيد عادةً الأخطاء وإعادة العمل.</li><li><strong>إغفال التوقفات وخسائر الجودة.</strong> إذا احتاجت بعض الوحدات إلى إعادة عمل أو توقفت معدّة ساعة كل أسبوع، فإن الطاقة الفعلية تكون أقل مما تفترضه الخطة. استهدف أزمنة دورة أقل من زمن التاكت بهامش مريح، غالباً ما بين ٨٥٪ و٩٠٪ منه، لتترك احتياطياً.</li></ul><h2>كيف تتابع زمن التاكت يومياً؟</h2><p>يكون زمن التاكت أكثر فائدة حين يتحول إلى إيقاع يومي مرئي، لا مجرد رقم في جدول بيانات.</p><ul><li><strong>أعد حسابه عندما يتغير الطلب.</strong> حدّث زمن التاكت يومياً أو أسبوعياً بناءً على توقعات الطلبات الفعلية.</li><li><strong>حوّله إلى أهداف لكل ساعة.</strong> زمن تاكت قدره ٩٠ ثانية يعني ٤٠ طلباً في الساعة. سجّل كل ساعة العدد المخطط والعدد الفعلي على لوحة.</li><li><strong>دوّن أسباب الفجوات.</strong> عندما تتأخر ساعة عن الخطة، اكتب السبب في كلمات قليلة. فالأنماط المتكررة في هذه الملاحظات تكشف أين يجب التحسين.</li><li><strong>راجع الاتجاه أسبوعياً.</strong> انظر كم مرة تحققت الخطة، وكيف سارت أيام الذروة، وما أبرز أسباب التأخر.</li></ul><p>وهنا تساعد لوحة متابعة مشتركة. فأداة مثل مركز القيادة من FulcrumGrid يمكنها أن تجمع الطلب والإنتاج والفجوة مقارنةً بالخطة في عرض واحد، فيراجع الفريق الأرقام نفسها في اجتماعه اليومي القصير بدلاً من إعادة تجميعها يدوياً.</p>
+
+        <h2>الأسئلة الشائعة</h2>
+        <details class="faq-item"><summary>ما هو زمن التاكت الجيد؟</summary><p>لا يوجد زمن تاكت جيد أو سيئ، لأن الطلب والوقت المتاح هما اللذان يحددانه. المهم أن يكون زمن الدورة لكل خطوة مساوياً له أو أقل منه بقليل.</p></details>
+        <details class="faq-item"><summary>هل زمن التاكت هو نفسه زمن الدورة؟</summary><p>لا. زمن التاكت هو الإيقاع الذي يتطلبه الطلب، أما زمن الدورة فهو الوقت الذي تستغرقه عمليتك فعلياً لكل وحدة. والمقارنة بينهما تبيّن هل تستطيع المواكبة.</p></details>
+        <details class="faq-item"><summary>كم مرة يجب أن أعيد حساب زمن التاكت؟</summary><p>كلما تغيّر الطلب أو الساعات المتاحة تغيّراً ملحوظاً. وتعيد فرق صغيرة كثيرة حسابه أسبوعياً بناءً على التوقعات، وتراجع أيام الذروة على حدة.</p></details>
+        <details class="faq-item"><summary>بأي وحدة يُعبَّر عن زمن التاكت؟</summary><p>بالوحدة التي تناسب العمل: ثوانٍ لكل وحدة على خط الإنتاج، أو دقائق لكل طلب في المستودع، أو دقائق لكل تذكرة في مكتب الخدمة. واستخدم الوحدة نفسها عند مقارنته بزمن الدورة.</p></details>
+
+        <p style="margin-top:32px"><a href="/ar/blog/"><span aria-hidden="true">←</span> العودة إلى المدوّنة</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid لوحة التحكم للتنفيذيين</p>
+        <h2>واكب الطلب كل يوم</h2>
+        <p class="section-lead" style="margin:0 auto 26px">يجمع FulcrumGrid مركز القيادة مؤشرات الأداء والأهداف والمشاريع في عرض واحد، فيسهل تتبّع الإنتاج المخطط مقارنةً بالفعلي ومراجعته مع فريقك.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/ar/products/command-center/">استكشف لوحة التحكم للتنفيذيين</a>
+          <a class="btn btn-secondary" href="/ar/blog/">العودة إلى المدوّنة</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>العمود الفقري التشغيلي للفرق الحديثة.</p>
+        </div>
+        <div class="foot-col">
+          <h5>المنتجات</h5>
+          <a href="/ar/products/">كل المنتجات</a>
+          <a href="/ar/products/hr-suite/">منصة الموارد البشرية</a>
+          <a href="/ar/products/command-center/">لوحة التحكم للتنفيذيين</a>
+          <a href="/ar/products/collection/">منصة تحصيل الديون</a>
+          <a href="/ar/products/tms/">منصة العمليات اللوجستية</a>
+          <a href="/ar/products/assure/">منصة الحوكمة والامتثال</a>
+          <a href="/ar/products/close/">منصة المعايير المحاسبية والإغلاق</a>
+          <a href="/ar/products/consolidate/">منصة التوحيد المالي</a>
+          <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشبكة</h5>
+          <a href="/ar/features/">الميزات</a>
+          <a href="/ar/integrations/">التكاملات</a>
+          <a href="/ar/how-it-works/">كيف تعمل</a>
+          <a href="/ar/pricing/">الأسعار</a>
+          <a href="/ar/regions/">المناطق</a>
+          <a href="/ar/blog/">المدوّنة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشركة</h5>
+          <a href="/ar/about/">من نحن</a>
+          <a href="/ar/faq/">الأسئلة الشائعة</a>
+          <a href="/ar/contact/">اتصل بنا</a>
+          <a href="/ar/privacy/">الخصوصية</a>
+          <a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

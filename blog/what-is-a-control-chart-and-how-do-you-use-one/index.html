@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>What Is a Control Chart and How Do You Use One? (With Example) — FulcrumGrid</title>
+  <meta name="description" content="A control chart shows whether a metric has really changed or is just varying. Learn how to calculate control limits, read the signals and use it weekly." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What Is a Control Chart and How Do You Use One? (With Example)" />
+  <meta property="og:description" content="A control chart shows whether a metric has really changed or is just varying. Learn how to calculate control limits, read the signals and use it weekly." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-20" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What Is a Control Chart and How Do You Use One? (With Example)" />
+  <meta name="twitter:description" content="A control chart shows whether a metric has really changed or is just varying. Learn how to calculate control limits, read the signals and use it weekly." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What Is a Control Chart and How Do You Use One? (With Example)",
+    "description": "A control chart shows whether a metric has really changed or is just varying. Learn how to calculate control limits, read the signals and use it weekly.",
+    "datePublished": "2026-11-20",
+    "dateModified": "2026-11-20",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/what-is-a-control-chart-and-how-do-you-use-one/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Control Chart Guide",
+        "item": "https://fulcrumgrid.com/blog/what-is-a-control-chart-and-how-do-you-use-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between control limits and specification limits?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Control limits are calculated from your data and describe what the process actually does. Specification limits come from customers or the business and describe what is acceptable. A process can be stable and still fail to meet its specification."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many data points do I need for a control chart?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aim for 20 to 25 points from a period without known disruptions. You can start with fewer, but treat the limits as provisional and recalculate them as more data arrives."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are control limits set at three standard deviations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Three standard deviations balances false alarms against missed signals. In a stable process, points beyond that distance are rare, so one usually means something has changed and is worth a look."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use a control chart for counts such as tickets per day?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A simple chart of individual values works well for most small-team metrics, including daily counts. Specialised charts exist for counts and percentages, but the simple version is a good place to start."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Control Chart Guide</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>What Is a Control Chart and How Do You Use One? (With Example)</h1>
+        <p class="hero-intro">A control chart shows whether a metric has really changed or is just varying. Learn how to calculate control limits, read the signals and use it weekly.</p>
+        <p class="mono"><time datetime="2026-11-20">November 20, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Every operations metric wobbles. Orders take a little longer on Tuesday, a few more tickets arrive on Thursday, and someone in the weekly meeting asks what went wrong. Often nothing did. A control chart is a simple tool for telling normal noise apart from a real change, so you react to the right things and leave the rest alone.</p><h2>What is a control chart?</h2><p>A control chart is a line chart of one metric over time, with three horizontal lines added:</p><ul><li><strong>Center line.</strong> The average of your data.</li><li><strong>Upper control limit.</strong> Usually the average plus three standard deviations.</li><li><strong>Lower control limit.</strong> Usually the average minus three standard deviations.</li></ul><p>The limits describe what your process normally produces. They are calculated from your own data, not chosen by management. If a stable process keeps running as it is, almost every future point will fall between them.</p><h2>Common-cause vs special-cause variation</h2><p>The idea behind the chart, developed by Walter Shewhart in the 1920s, is that variation comes in two kinds.</p><ul><li><strong>Common-cause variation</strong> is the everyday noise built into the system: small differences in order mix, staffing, traffic and timing. It is always present, and no single day has a special explanation.</li><li><strong>Special-cause variation</strong> comes from something specific and identifiable: a supplier delay, a new hire in their first week, a system outage, a promotion that doubled demand.</li></ul><p>Special causes deserve investigation. Common causes do not, at least not one day at a time. Reducing them means changing the system itself.</p><h2>A worked example: daily order fulfilment time</h2><p>An online shop tracks the average number of hours from order to dispatch each day. Over 20 working days it records:</p><p><strong>22, 25, 23, 26, 24, 21, 25, 27, 23, 24, 22, 26, 25, 23, 24, 28, 22, 25, 24, 21</strong></p><ul><li><strong>Mean.</strong> The values add up to 480, so the center line is 480 ÷ 20 = 24 hours.</li><li><strong>Standard deviation.</strong> The sample standard deviation is about 1.9 hours.</li><li><strong>Upper control limit.</strong> 24 + 3 × 1.9 = about 29.8 hours.</li><li><strong>Lower control limit.</strong> 24 − 3 × 1.9 = about 18.2 hours.</li></ul><p>Every point lies between 18.2 and 29.8, so the process looks stable. A 28-hour day may feel bad, but it is within the normal range and does not need its own root-cause analysis. If next week brings a 32-hour day, that is a signal worth investigating.</p><p>Quality specialists often estimate the spread from the average moving range, the gap between consecutive points, which is less distorted when the data already contains a shift. Here that method gives limits of about 16.9 and 31.1 hours. For a first chart either approach is reasonable; what matters is using the same method consistently.</p><h2>What signals should you watch for?</h2><p>Keep the rules few and simple. These three catch most real changes:</p><ul><li><strong>A point outside the limits.</strong> One value above the upper or below the lower control limit.</li><li><strong>A run on one side.</strong> Seven or eight points in a row above, or below, the center line. That suggests the average has shifted, even if no single point looks extreme.</li><li><strong>A steady trend.</strong> Six or seven points in a row, each higher, or each lower, than the one before.</li></ul><p>Signals work in both directions. A run of unusually fast days is worth understanding too, so you can keep whatever caused it.</p><h2>Control limits vs targets and specification limits</h2><p>Control limits are the voice of the process: what it actually does. Targets and specification limits are the voice of the customer or the business: what you want. They are not the same thing and should not be confused.</p><p>Suppose the shop promises dispatch within 30 hours and sets an internal target of 22. The process averages 24 hours with an upper limit near 30, so it occasionally risks breaking the promise and routinely misses the target. Pushing harder on individual bad days will not move the average. Reaching 22 needs a change to the system, such as batching picks differently or adding an afternoon shift, followed by new limits once the change has settled.</p><h2>When should you not react?</h2><p>Adjusting a stable process in response to every up and down is called tampering, and it usually makes variation worse. Typical examples are changing the rota after one slow day, demanding an explanation for every dip or resetting a target after a single good week. If a point is inside the limits and no run or trend is forming, the right response is to note it and wait.</p><h2>How do you use a control chart in a weekly review?</h2><ul><li><strong>Start with the signals.</strong> Check each chart against the three rules before discussing individual numbers.</li><li><strong>Investigate only what is flagged.</strong> For each signal, ask what was different that day and write down the cause.</li><li><strong>Compare with the target separately.</strong> If the process is stable but short of target, put it on the improvement list rather than blaming the week.</li><li><strong>Recalculate limits after real changes.</strong> When you deliberately change the process and it settles, compute fresh limits from 15 to 20 new points.</li></ul><h2>Do you need special software?</h2><p>No. A spreadsheet is enough to start. Put dates in one column and values in the next, calculate the mean with AVERAGE and the standard deviation with STDEV.S, add columns for the center line and both limits, and plot them together as a line chart. Twenty points is a sensible minimum; with fewer, treat the limits as provisional.</p><p>Once you track several metrics, keeping every chart current by hand becomes a chore. A dashboard such as FulcrumGrid Command Center can hold your KPIs and their targets side by side, so the weekly review starts from the same up-to-date numbers.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>What is the difference between control limits and specification limits?</summary><p>Control limits are calculated from your data and describe what the process actually does. Specification limits come from customers or the business and describe what is acceptable. A process can be stable and still fail to meet its specification.</p></details>
+        <details class="faq-item"><summary>How many data points do I need for a control chart?</summary><p>Aim for 20 to 25 points from a period without known disruptions. You can start with fewer, but treat the limits as provisional and recalculate them as more data arrives.</p></details>
+        <details class="faq-item"><summary>Why are control limits set at three standard deviations?</summary><p>Three standard deviations balances false alarms against missed signals. In a stable process, points beyond that distance are rare, so one usually means something has changed and is worth a look.</p></details>
+        <details class="faq-item"><summary>Can I use a control chart for counts such as tickets per day?</summary><p>Yes. A simple chart of individual values works well for most small-team metrics, including daily counts. Specialised charts exist for counts and percentages, but the simple version is a good place to start.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Review the same numbers every week</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center brings your KPIs, targets and projects into one view, so your team can spot real changes and review progress together.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/products/tms/">TMS</a>
+          <a href="/products/assure/">Assure</a>
+          <a href="/products/close/">Close</a>
+          <a href="/products/consolidate/">Consolidate</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

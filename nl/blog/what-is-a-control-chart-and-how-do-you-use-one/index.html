@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wat is een regelkaart en hoe gebruik je die? (Met voorbeeld) — FulcrumGrid</title>
+  <meta name="description" content="Een regelkaart laat zien of een kpi echt is veranderd of alleen schommelt. Leer regelgrenzen berekenen, signalen lezen en de kaart wekelijks gebruiken." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wat is een regelkaart en hoe gebruik je die? (Met voorbeeld)" />
+  <meta property="og:description" content="Een regelkaart laat zien of een kpi echt is veranderd of alleen schommelt. Leer regelgrenzen berekenen, signalen lezen en de kaart wekelijks gebruiken." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-11-20" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wat is een regelkaart en hoe gebruik je die? (Met voorbeeld)" />
+  <meta name="twitter:description" content="Een regelkaart laat zien of een kpi echt is veranderd of alleen schommelt. Leer regelgrenzen berekenen, signalen lezen en de kaart wekelijks gebruiken." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wat is een regelkaart en hoe gebruik je die? (Met voorbeeld)",
+    "description": "Een regelkaart laat zien of een kpi echt is veranderd of alleen schommelt. Leer regelgrenzen berekenen, signalen lezen en de kaart wekelijks gebruiken.",
+    "datePublished": "2026-11-20",
+    "dateModified": "2026-11-20",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/what-is-a-control-chart-and-how-do-you-use-one/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Gids regelkaart",
+        "item": "https://fulcrumgrid.com/nl/blog/what-is-a-control-chart-and-how-do-you-use-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is het verschil tussen regelgrenzen en specificatiegrenzen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Regelgrenzen bereken je uit je eigen gegevens en ze beschrijven wat het proces werkelijk doet. Specificatiegrenzen komen van klanten of het bedrijf en beschrijven wat acceptabel is. Een proces kan stabiel zijn en toch niet aan de specificatie voldoen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoeveel datapunten heb ik nodig voor een regelkaart?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mik op 20 tot 25 punten uit een periode zonder bekende verstoringen. Je kunt met minder beginnen, maar beschouw de grenzen dan als voorlopig en bereken ze opnieuw naarmate er meer gegevens binnenkomen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Waarom liggen regelgrenzen op drie standaarddeviaties?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Drie standaarddeviaties houden valse alarmen en gemiste signalen in balans. In een stabiel proces liggen punten zelden verder weg, dus zo’n punt betekent meestal dat er iets is veranderd."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik een regelkaart gebruiken voor aantallen, zoals tickets per dag?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Een eenvoudige kaart van individuele waarden werkt voor de meeste kpi’s van kleine teams, ook voor dagelijkse aantallen. Er bestaan speciale kaarten voor aantallen en percentages, maar de eenvoudige versie is een goed begin."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / Gids regelkaart</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Wat is een regelkaart en hoe gebruik je die? (Met voorbeeld)</h1>
+        <p class="hero-intro">Een regelkaart laat zien of een kpi echt is veranderd of alleen schommelt. Leer regelgrenzen berekenen, signalen lezen en de kaart wekelijks gebruiken.</p>
+        <p class="mono"><time datetime="2026-11-20">20 november 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Elke operationele kpi schommelt. Op dinsdag duren orders iets langer, op donderdag komen er een paar tickets meer binnen en in het weekoverleg vraagt iemand wat er misging. Vaak niets. Een regelkaart is een eenvoudig hulpmiddel om normale ruis te onderscheiden van een echte verandering, zodat je op de juiste dingen reageert en de rest met rust laat.</p><h2>Wat is een regelkaart?</h2><p>Een regelkaart, ook wel controlekaart genoemd, is een lijngrafiek van één kpi in de tijd, aangevuld met drie horizontale lijnen:</p><ul><li><strong>Centrale lijn.</strong> Het gemiddelde van je gegevens.</li><li><strong>Bovenste regelgrens.</strong> Meestal het gemiddelde plus drie standaarddeviaties.</li><li><strong>Onderste regelgrens.</strong> Meestal het gemiddelde min drie standaarddeviaties.</li></ul><p>De grenzen beschrijven wat je proces normaal oplevert. Ze worden berekend uit je eigen gegevens, niet gekozen door het management. Als een stabiel proces ongewijzigd doorloopt, vallen bijna alle toekomstige punten ertussen.</p><h2>Gewone en bijzondere oorzaken van variatie</h2><p>Het idee achter de kaart, in de jaren 1920 ontwikkeld door Walter Shewhart, is dat variatie in twee soorten voorkomt.</p><ul><li><strong>Variatie door gewone oorzaken</strong> is de dagelijkse ruis die in het systeem zit: kleine verschillen in ordermix, bezetting, verkeer en timing. Die is er altijd, en geen enkele dag heeft een bijzondere verklaring.</li><li><strong>Variatie door bijzondere oorzaken</strong> komt voort uit iets specifieks en aanwijsbaars: een vertraagde leverancier, een nieuwe collega in de eerste week, een systeemstoring, een actie die de vraag verdubbelde.</li></ul><p>Bijzondere oorzaken verdienen onderzoek. Gewone oorzaken niet, in elk geval niet dag voor dag. Die terugdringen betekent het systeem zelf veranderen.</p><h2>Een rekenvoorbeeld: dagelijkse doorlooptijd van orders</h2><p>Een webshop houdt elke dag het gemiddelde aantal uren bij tussen bestelling en verzending. Over 20 werkdagen noteert hij:</p><p><strong>22, 25, 23, 26, 24, 21, 25, 27, 23, 24, 22, 26, 25, 23, 24, 28, 22, 25, 24, 21</strong></p><ul><li><strong>Gemiddelde.</strong> De waarden tellen op tot 480, dus de centrale lijn ligt op 480 ÷ 20 = 24 uur.</li><li><strong>Standaarddeviatie.</strong> De steekproefstandaarddeviatie is ongeveer 1,9 uur.</li><li><strong>Bovenste regelgrens.</strong> 24 + 3 × 1,9 = ongeveer 29,8 uur.</li><li><strong>Onderste regelgrens.</strong> 24 − 3 × 1,9 = ongeveer 18,2 uur.</li></ul><p>Alle punten liggen tussen 18,2 en 29,8, dus het proces lijkt stabiel. Een dag van 28 uur voelt misschien slecht, maar valt binnen het normale bereik en vraagt niet om een eigen oorzaakanalyse. Brengt volgende week een dag van 32 uur, dan is dat een signaal om uit te zoeken.</p><p>Kwaliteitsspecialisten schatten de spreiding vaak via de gemiddelde moving range, het verschil tussen opeenvolgende punten, omdat die minder vertekend raakt als de gegevens al een verschuiving bevatten. Hier geeft die methode grenzen van ongeveer 16,9 en 31,1 uur. Voor een eerste kaart is beide prima; belangrijk is dat je consequent dezelfde methode gebruikt.</p><h2>Op welke signalen let je?</h2><p>Houd de regels beperkt en eenvoudig. Deze drie vangen de meeste echte veranderingen:</p><ul><li><strong>Een punt buiten de grenzen.</strong> Eén waarde boven de bovenste of onder de onderste regelgrens.</li><li><strong>Een reeks aan één kant.</strong> Zeven of acht punten op rij boven, of onder, de centrale lijn. Dat wijst erop dat het gemiddelde is verschoven, ook als geen enkel punt extreem lijkt.</li><li><strong>Een gestage trend.</strong> Zes of zeven punten op rij, elk hoger, of elk lager, dan het vorige.</li></ul><p>Signalen werken in beide richtingen. Ook een reeks ongewoon snelle dagen is het begrijpen waard, zodat je kunt vasthouden wat die veroorzaakte.</p><h2>Regelgrenzen versus doelen en specificatiegrenzen</h2><p>Regelgrenzen zijn de stem van het proces: wat het werkelijk doet. Doelen en specificatiegrenzen zijn de stem van de klant of het bedrijf: wat jij wilt. Dat is niet hetzelfde en je moet ze niet door elkaar halen.</p><p>Stel dat de webshop verzending binnen 30 uur belooft en intern een doel van 22 hanteert. Het proces zit gemiddeld op 24 uur met een bovengrens rond 30: het brengt de belofte af en toe in gevaar en mist het doel structureel. Harder duwen op losse slechte dagen verschuift het gemiddelde niet. Om 22 te halen moet het systeem veranderen, bijvoorbeeld door orderpicks anders te bundelen of een middagploeg toe te voegen, gevolgd door nieuwe grenzen zodra de verandering is ingeslepen.</p><h2>Wanneer moet je juist niet reageren?</h2><p>Een stabiel proces bij elke piek en dip bijsturen heet overreageren, en dat vergroot meestal de variatie. Typische voorbeelden zijn het rooster aanpassen na één trage dag, voor elke dip een verklaring eisen of een doel bijstellen na één goede week. Ligt een punt binnen de grenzen en vormt zich geen reeks of trend, dan is de juiste reactie: noteren en afwachten.</p><h2>Hoe gebruik je een regelkaart in het weekoverleg?</h2><ul><li><strong>Begin met de signalen.</strong> Toets elke kaart aan de drie regels voordat je losse cijfers bespreekt.</li><li><strong>Onderzoek alleen wat opvalt.</strong> Vraag bij elk signaal wat er die dag anders was en noteer de oorzaak.</li><li><strong>Vergelijk apart met het doel.</strong> Is het proces stabiel maar haalt het het doel niet, zet het dan op de verbeterlijst in plaats van de week de schuld te geven.</li><li><strong>Bereken de grenzen opnieuw na echte veranderingen.</strong> Als je het proces bewust aanpast en het stabiliseert, bereken je nieuwe grenzen uit 15 tot 20 nieuwe punten.</li></ul><h2>Heb je speciale software nodig?</h2><p>Nee. Een spreadsheet is genoeg om te beginnen. Zet de datums in de ene kolom en de waarden in de volgende, bereken het gemiddelde met GEMIDDELDE en de standaarddeviatie met STDEV.S, voeg kolommen toe voor de centrale lijn en beide grenzen en zet alles samen in één lijngrafiek. Twintig punten is een verstandig minimum; met minder beschouw je de grenzen als voorlopig.</p><p>Zodra je meerdere kpi’s volgt, wordt het een karwei om elke kaart met de hand bij te werken. Een dashboard zoals FulcrumGrid Command Center kan je kpi’s en hun doelen naast elkaar tonen, zodat het weekoverleg begint met dezelfde actuele cijfers.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wat is het verschil tussen regelgrenzen en specificatiegrenzen?</summary><p>Regelgrenzen bereken je uit je eigen gegevens en ze beschrijven wat het proces werkelijk doet. Specificatiegrenzen komen van klanten of het bedrijf en beschrijven wat acceptabel is. Een proces kan stabiel zijn en toch niet aan de specificatie voldoen.</p></details>
+        <details class="faq-item"><summary>Hoeveel datapunten heb ik nodig voor een regelkaart?</summary><p>Mik op 20 tot 25 punten uit een periode zonder bekende verstoringen. Je kunt met minder beginnen, maar beschouw de grenzen dan als voorlopig en bereken ze opnieuw naarmate er meer gegevens binnenkomen.</p></details>
+        <details class="faq-item"><summary>Waarom liggen regelgrenzen op drie standaarddeviaties?</summary><p>Drie standaarddeviaties houden valse alarmen en gemiste signalen in balans. In een stabiel proces liggen punten zelden verder weg, dus zo’n punt betekent meestal dat er iets is veranderd.</p></details>
+        <details class="faq-item"><summary>Kan ik een regelkaart gebruiken voor aantallen, zoals tickets per dag?</summary><p>Ja. Een eenvoudige kaart van individuele waarden werkt voor de meeste kpi’s van kleine teams, ook voor dagelijkse aantallen. Er bestaan speciale kaarten voor aantallen en percentages, maar de eenvoudige versie is een goed begin.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Bespreek elke week dezelfde cijfers</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center brengt je kpi’s, doelen en projecten samen in één overzicht, zodat je team echte veranderingen ziet en de voortgang samen bespreekt.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/products/tms/">TMS</a>
+          <a href="/nl/products/assure/">Assure</a>
+          <a href="/nl/products/close/">Close</a>
+          <a href="/nl/products/consolidate/">Consolidate</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

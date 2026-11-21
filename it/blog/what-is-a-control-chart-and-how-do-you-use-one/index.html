@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Che cos’è una carta di controllo e come si usa? (con esempio) — FulcrumGrid</title>
+  <meta name="description" content="Una carta di controllo mostra se un indicatore è davvero cambiato o oscilla soltanto. Scoprite come calcolare i limiti, leggere i segnali e usarla ogni settimana." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Che cos’è una carta di controllo e come si usa? (con esempio)" />
+  <meta property="og:description" content="Una carta di controllo mostra se un indicatore è davvero cambiato o oscilla soltanto. Scoprite come calcolare i limiti, leggere i segnali e usarla ogni settimana." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-20" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Che cos’è una carta di controllo e come si usa? (con esempio)" />
+  <meta name="twitter:description" content="Una carta di controllo mostra se un indicatore è davvero cambiato o oscilla soltanto. Scoprite come calcolare i limiti, leggere i segnali e usarla ogni settimana." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-control-chart-and-how-do-you-use-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Che cos’è una carta di controllo e come si usa? (con esempio)",
+    "description": "Una carta di controllo mostra se un indicatore è davvero cambiato o oscilla soltanto. Scoprite come calcolare i limiti, leggere i segnali e usarla ogni settimana.",
+    "datePublished": "2026-11-20",
+    "dateModified": "2026-11-20",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/what-is-a-control-chart-and-how-do-you-use-one/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida alla carta di controllo",
+        "item": "https://fulcrumgrid.com/it/blog/what-is-a-control-chart-and-how-do-you-use-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Che differenza c’è tra limiti di controllo e limiti di specifica?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "I limiti di controllo si calcolano dai vostri dati e descrivono ciò che il processo fa davvero. I limiti di specifica vengono dai clienti o dall’azienda e descrivono ciò che è accettabile. Un processo può essere stabile e non rispettare comunque la specifica."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanti dati servono per una carta di controllo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Puntate a 20–25 punti presi da un periodo senza disturbi noti. Potete iniziare con meno, ma considerate i limiti provvisori e ricalcolateli man mano che arrivano nuovi dati."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Perché i limiti di controllo sono a tre deviazioni standard?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tre deviazioni standard bilanciano falsi allarmi e segnali mancati. In un processo stabile i punti oltre questa distanza sono rari, quindi uno di solito indica che qualcosa è cambiato."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Posso usare una carta di controllo per i conteggi, come i ticket al giorno?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì. Una semplice carta dei valori individuali funziona per la maggior parte degli indicatori di un piccolo team, compresi i conteggi giornalieri. Esistono carte specifiche per conteggi e percentuali, ma la versione semplice è un buon punto di partenza."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida alla carta di controllo</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Che cos’è una carta di controllo e come si usa? (con esempio)</h1>
+        <p class="hero-intro">Una carta di controllo mostra se un indicatore è davvero cambiato o oscilla soltanto. Scoprite come calcolare i limiti, leggere i segnali e usarla ogni settimana.</p>
+        <p class="mono"><time datetime="2026-11-20">20 novembre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Ogni indicatore operativo oscilla. Il martedì gli ordini richiedono un po’ più di tempo, il giovedì arriva qualche ticket in più e alla riunione settimanale qualcuno chiede che cosa sia andato storto. Spesso, niente. La carta di controllo è uno strumento semplice per distinguere il rumore normale da un cambiamento reale, così da reagire alle cose giuste e lasciar stare il resto.</p><h2>Che cos’è una carta di controllo?</h2><p>Una carta di controllo è un grafico a linee di un indicatore nel tempo, a cui si aggiungono tre linee orizzontali:</p><ul><li><strong>Linea centrale.</strong> La media dei vostri dati.</li><li><strong>Limite di controllo superiore.</strong> Di solito la media più tre deviazioni standard.</li><li><strong>Limite di controllo inferiore.</strong> Di solito la media meno tre deviazioni standard.</li></ul><p>I limiti descrivono ciò che il vostro processo produce normalmente. Si calcolano dai vostri dati, non li decide la direzione. Se un processo stabile continua a funzionare così com’è, quasi tutti i punti futuri cadranno al loro interno.</p><h2>Variabilità da cause comuni e da cause speciali</h2><p>L’idea alla base della carta, sviluppata da Walter Shewhart negli anni Venti del Novecento, è che la variabilità sia di due tipi.</p><ul><li><strong>La variabilità da cause comuni</strong> è il rumore quotidiano insito nel sistema: piccole differenze nel mix di ordini, nel personale, nel traffico e nei tempi. È sempre presente e nessun singolo giorno ha una spiegazione particolare.</li><li><strong>La variabilità da cause speciali</strong> nasce da qualcosa di specifico e identificabile: un ritardo del fornitore, un nuovo assunto alla prima settimana, un guasto del sistema, una promozione che ha raddoppiato la domanda.</li></ul><p>Le cause speciali meritano un’indagine. Quelle comuni no, almeno non giorno per giorno. Ridurle significa cambiare il sistema stesso.</p><h2>Un esempio pratico: il tempo giornaliero di evasione degli ordini</h2><p>Un negozio online registra ogni giorno il numero medio di ore tra l’ordine e la spedizione. In 20 giorni lavorativi annota:</p><p><strong>22, 25, 23, 26, 24, 21, 25, 27, 23, 24, 22, 26, 25, 23, 24, 28, 22, 25, 24, 21</strong></p><ul><li><strong>Media.</strong> La somma dei valori è 480, quindi la linea centrale è 480 ÷ 20 = 24 ore.</li><li><strong>Deviazione standard.</strong> La deviazione standard campionaria è di circa 1,9 ore.</li><li><strong>Limite di controllo superiore.</strong> 24 + 3 × 1,9 = circa 29,8 ore.</li><li><strong>Limite di controllo inferiore.</strong> 24 − 3 × 1,9 = circa 18,2 ore.</li></ul><p>Tutti i punti stanno tra 18,2 e 29,8, quindi il processo sembra stabile. Una giornata da 28 ore può sembrare negativa, ma rientra nella norma e non richiede una propria analisi delle cause. Se la settimana prossima arriva una giornata da 32 ore, quello è un segnale da approfondire.</p><p>Gli esperti di qualità stimano spesso la dispersione dall’escursione mobile media, cioè la differenza tra punti consecutivi, che risulta meno distorta quando i dati contengono già uno spostamento. Qui questo metodo dà limiti di circa 16,9 e 31,1 ore. Per una prima carta vanno bene entrambi; ciò che conta è usare sempre lo stesso.</p><h2>Quali segnali tenere d’occhio?</h2><p>Mantenete poche regole, e semplici. Queste tre colgono la maggior parte dei cambiamenti reali:</p><ul><li><strong>Un punto fuori dai limiti.</strong> Un valore sopra il limite superiore o sotto quello inferiore.</li><li><strong>Una sequenza dallo stesso lato.</strong> Sette o otto punti di fila sopra, o sotto, la linea centrale. Fa pensare che la media si sia spostata, anche se nessun punto sembra estremo.</li><li><strong>Un andamento costante.</strong> Sei o sette punti di fila, ciascuno più alto, o ciascuno più basso, del precedente.</li></ul><p>I segnali valgono in entrambe le direzioni. Anche una serie di giornate insolitamente rapide merita di essere capita, per mantenere ciò che l’ha prodotta.</p><h2>Limiti di controllo, obiettivi e limiti di specifica</h2><p>I limiti di controllo sono la voce del processo: ciò che fa davvero. Obiettivi e limiti di specifica sono la voce del cliente o dell’azienda: ciò che volete. Non sono la stessa cosa e non vanno confusi.</p><p>Supponiamo che il negozio prometta la spedizione entro 30 ore e si dia un obiettivo interno di 22. Il processo ha una media di 24 ore e un limite superiore vicino a 30: ogni tanto mette a rischio la promessa e manca regolarmente l’obiettivo. Fare pressione su ogni giornata storta non sposterà la media. Arrivare a 22 richiede un cambiamento del sistema, per esempio raggruppare diversamente i prelievi o aggiungere un turno pomeridiano, e poi nuovi limiti quando il cambiamento si è assestato.</p><h2>Quando non bisogna reagire?</h2><p>Correggere un processo stabile a ogni alto e basso si chiama sovraregolazione, e di solito aumenta la variabilità. Esempi tipici: cambiare i turni dopo una sola giornata lenta, pretendere una spiegazione per ogni calo o rivedere un obiettivo dopo una sola settimana buona. Se un punto è dentro i limiti e non si sta formando né una sequenza né un andamento, la risposta giusta è annotarlo e aspettare.</p><h2>Come usare una carta di controllo nella riunione settimanale?</h2><ul><li><strong>Partite dai segnali.</strong> Verificate ogni carta con le tre regole prima di discutere i singoli numeri.</li><li><strong>Indagate solo ciò che viene segnalato.</strong> Per ogni segnale chiedetevi che cosa è stato diverso quel giorno e annotate la causa.</li><li><strong>Confrontate con l’obiettivo a parte.</strong> Se il processo è stabile ma sotto l’obiettivo, mettetelo nell’elenco dei miglioramenti invece di dare la colpa alla settimana.</li><li><strong>Ricalcolate i limiti dopo cambiamenti reali.</strong> Quando modificate di proposito il processo e questo si stabilizza, calcolate nuovi limiti su 15–20 punti nuovi.</li></ul><h2>Serve un software specifico?</h2><p>No. Per iniziare basta un foglio di calcolo. Mettete le date in una colonna e i valori in quella accanto, calcolate la media con MEDIA e la deviazione standard con DEV.ST.C, aggiungete colonne per la linea centrale e i due limiti e tracciate tutto in un unico grafico a linee. Venti punti sono un minimo ragionevole; con meno, considerate i limiti provvisori.</p><p>Quando seguite diversi indicatori, tenere aggiornata a mano ogni carta diventa faticoso. Una dashboard come FulcrumGrid Command Center può mostrare i vostri KPI e i relativi obiettivi uno accanto all’altro, così la riunione settimanale parte dagli stessi numeri aggiornati.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Che differenza c’è tra limiti di controllo e limiti di specifica?</summary><p>I limiti di controllo si calcolano dai vostri dati e descrivono ciò che il processo fa davvero. I limiti di specifica vengono dai clienti o dall’azienda e descrivono ciò che è accettabile. Un processo può essere stabile e non rispettare comunque la specifica.</p></details>
+        <details class="faq-item"><summary>Quanti dati servono per una carta di controllo?</summary><p>Puntate a 20–25 punti presi da un periodo senza disturbi noti. Potete iniziare con meno, ma considerate i limiti provvisori e ricalcolateli man mano che arrivano nuovi dati.</p></details>
+        <details class="faq-item"><summary>Perché i limiti di controllo sono a tre deviazioni standard?</summary><p>Tre deviazioni standard bilanciano falsi allarmi e segnali mancati. In un processo stabile i punti oltre questa distanza sono rari, quindi uno di solito indica che qualcosa è cambiato.</p></details>
+        <details class="faq-item"><summary>Posso usare una carta di controllo per i conteggi, come i ticket al giorno?</summary><p>Sì. Una semplice carta dei valori individuali funziona per la maggior parte degli indicatori di un piccolo team, compresi i conteggi giornalieri. Esistono carte specifiche per conteggi e percentuali, ma la versione semplice è un buon punto di partenza.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Rivedete gli stessi numeri ogni settimana</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center riunisce KPI, obiettivi e progetti in un’unica vista, così il team individua i cambiamenti reali e verifica i progressi insieme.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/products/tms/">TMS</a>
+          <a href="/it/products/assure/">Assure</a>
+          <a href="/it/products/close/">Close</a>
+          <a href="/it/products/consolidate/">Consolidate</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
