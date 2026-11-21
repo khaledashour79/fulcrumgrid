@@ -342,6 +342,16 @@ img { display: block; max-width: 100%; }
 .cell .sub { font-size: 12px; color: color-mix(in srgb, var(--color-text) 58%, transparent); }
 .cell p { font-size: 13px; color: color-mix(in srgb, var(--color-text) 72%, transparent); margin: 0; }
 
+/* Grouped capability sections with a category head and flagship cells */
+.cap-group { margin-top: 30px; }
+.cap-group:first-child { margin-top: 0; }
+.cap-head { font-family: var(--font-heading); font-weight: 600; font-size: 13px; letter-spacing: .08em;
+  text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 52%, transparent);
+  margin: 0 0 12px; }
+.cell-hero { background: color-mix(in srgb, var(--color-accent) 6%, transparent); box-shadow: inset 3px 0 0 var(--color-accent); }
+.cell-hero h4 { color: var(--color-accent); }
+[dir="rtl"] .cell-hero { box-shadow: inset -3px 0 0 var(--color-accent); }
+
 /* ── Regions ── */
 .regions { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   border-top: 1px solid var(--color-divider); border-left: 1px solid var(--color-divider); }

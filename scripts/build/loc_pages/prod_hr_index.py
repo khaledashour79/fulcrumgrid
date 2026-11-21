@@ -180,6 +180,12 @@ PAGE = {
                 "Un único sistema para todo lo de RR. HH., desde la carta de oferta.",
                 "Un unico sistema per tutta l'area HR, a partire dalla lettera di offerta.",
                 "Eén systeem voor alles rond HR, vanaf de aanbiedingsbrief."),
+            "Core HR &amp; self-service": _t("RH de base &amp; libre-service", "Kern-HR &amp; Self-Service", "RR. HH. básicos &amp; autoservicio", "HR di base &amp; self-service", "Kern-HR &amp; selfservice"),
+            "Payroll &amp; statutory": _t("Paie &amp; obligations légales", "Gehaltsabrechnung &amp; Gesetzliches", "Nómina &amp; obligaciones legales", "Buste paga &amp; obblighi di legge", "Loon &amp; wettelijke verplichtingen"),
+            "Talent, hiring &amp; growth": _t("Talents, recrutement &amp; évolution", "Talente, Einstellung &amp; Entwicklung", "Talento, contratación &amp; desarrollo", "Talenti, assunzioni &amp; crescita", "Talent, werving &amp; groei"),
+            "Government &amp; lifecycle": _t("Démarches publiques &amp; cycle de vie", "Behörden &amp; Lebenszyklus", "Trámites públicos &amp; ciclo de vida", "Pratiche pubbliche &amp; ciclo di vita", "Overheid &amp; levenscyclus"),
+            "Security, data &amp; governance": _t("Sécurité, données &amp; gouvernance", "Sicherheit, Daten &amp; Governance", "Seguridad, datos &amp; gobernanza", "Sicurezza, dati &amp; governance", "Beveiliging, data &amp; governance"),
+            "Platform &amp; global": _t("Plateforme &amp; international", "Plattform &amp; international", "Plataforma &amp; internacional", "Piattaforma &amp; internazionale", "Platform &amp; internationaal"),
             "Employee records": _t("Dossiers des employés", "Mitarbeiterakten", "Expedientes de empleados", "Schede dei dipendenti", "Medewerkersdossiers"),
             "A single, secure profile for every employee — documents, roles, compensation, and history in one file.": _t(
                 "Un profil unique et sécurisé pour chaque employé — documents, rôles, rémunération et historique dans un seul dossier.",
