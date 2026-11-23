@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>¿Qué es el mejor DSO posible y cómo se calcula? — FulcrumGrid</title>
+  <meta name="description" content="El mejor DSO posible muestra lo rápido que cobrarías si ninguna factura se pagara tarde. Aprende la fórmula, un ejemplo y cómo cerrar la brecha con el DSO." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="¿Qué es el mejor DSO posible y cómo se calcula?" />
+  <meta property="og:description" content="El mejor DSO posible muestra lo rápido que cobrarías si ninguna factura se pagara tarde. Aprende la fórmula, un ejemplo y cómo cerrar la brecha con el DSO." />
+  <meta property="og:url" content="https://fulcrumgrid.com/es/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-23" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="¿Qué es el mejor DSO posible y cómo se calcula?" />
+  <meta name="twitter:description" content="El mejor DSO posible muestra lo rápido que cobrarías si ninguna factura se pagara tarde. Aprende la fórmula, un ejemplo y cómo cerrar la brecha con el DSO." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/es/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "¿Qué es el mejor DSO posible y cómo se calcula?",
+    "description": "El mejor DSO posible muestra lo rápido que cobrarías si ninguna factura se pagara tarde. Aprende la fórmula, un ejemplo y cómo cerrar la brecha con el DSO.",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/es/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "es"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://fulcrumgrid.com/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/es/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Mejor DSO posible",
+        "item": "https://fulcrumgrid.com/es/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Puede el mejor DSO posible ser mayor que el DSO habitual?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Las cuentas por cobrar no vencidas forman parte del total, así que el mejor DSO posible siempre es igual o inferior al DSO habitual. Si ambos coinciden, no hay nada vencido."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Por qué mi mejor DSO posible no coincide con mis plazos de pago?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Si las ventas se reparten por igual a lo largo del periodo, el mejor DSO posible se acerca a tu plazo estándar. Es mayor cuando gran parte de la facturación cae a final de periodo y menor cuando las últimas semanas han sido tranquilas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué diferencia hay entre el DSO y los días medios de retraso?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El DSO es el tiempo total que tardas en cobrar. Los días medios de retraso son solo la parte causada por pagos atrasados, y se calculan como DSO menos mejor DSO posible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Necesito un software especial para calcular el mejor DSO posible?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Un informe de antigüedad de saldos te da los importes vencidos y no vencidos; con las ventas a crédito del periodo, el cálculo te lleva un minuto en una hoja de cálculo."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/es/products/">Productos</a>
+        <a href="/es/features/">Cuadrícula</a>
+        <a href="/es/pricing/">Precios</a>
+        <a href="/es/regions/">Regiones</a>
+        <a href="/es/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/es/contact/">Contacto</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Idioma">ES ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" class="active" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/es/contact/">Solicitar una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/es/">Inicio</a> / <a href="/es/blog/">Blog</a> / Mejor DSO posible</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>¿Qué es el mejor DSO posible y cómo se calcula?</h1>
+        <p class="hero-intro">El mejor DSO posible muestra lo rápido que cobrarías si ninguna factura se pagara tarde. Aprende la fórmula, un ejemplo y cómo cerrar la brecha con el DSO.</p>
+        <p class="mono"><time datetime="2026-11-23">23 de noviembre de 2026</time> · 5 min de lectura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>El DSO (periodo medio de cobro) indica cuánto tiempo tardas, de media, en convertir una venta en dinero. Pero una sola cifra de DSO mezcla dos cosas muy distintas: el plazo que conceden tus condiciones de pago y el tiempo extra que se toman los clientes cuando pagan tarde. El mejor DSO posible separa ambas. Esta guía explica qué es, cómo se calcula y cómo usar la brecha para mejorar el cobro.</p><h2>¿Qué es el mejor DSO posible?</h2><p>El mejor DSO posible es el DSO que tendrías si todos los clientes pagaran exactamente a su vencimiento. Solo tiene en cuenta las <strong>cuentas por cobrar no vencidas</strong>, es decir, las facturas que todavía no han llegado a su fecha de pago, e ignora todo lo vencido. Como refleja tus condiciones de pago y tu patrón de facturación, y no tu eficacia en el cobro, funciona como un suelo: con tus condiciones actuales, el DSO habitual no puede bajar mucho más.</p><h2>¿Cómo se calcula el mejor DSO posible?</h2><p>La fórmula es igual que la del DSO habitual, pero solo usa la parte no vencida de las cuentas por cobrar:</p><p><strong>Mejor DSO posible = (cuentas por cobrar no vencidas ÷ ventas a crédito) × número de días del periodo</strong></p><p>El DSO habitual, en cambio, usa el total de cuentas por cobrar:</p><p><strong>DSO = (total de cuentas por cobrar ÷ ventas a crédito) × número de días del periodo</strong></p><p>Usa el mismo periodo para ambas: un mes (30 días), un trimestre (90 días) o un año (365 días). Toma los saldos de clientes del último día del periodo y cuenta solo las ventas a crédito, porque las ventas al contado nunca generan una cuenta por cobrar.</p><h3>Un ejemplo práctico</h3><p>Un pequeño distribuidor vende a 30 días. El último trimestre facturó 900.000 € a crédito. El último día del trimestre, su informe de antigüedad de saldos muestra 400.000 € en cuentas por cobrar, de los que 250.000 € no han vencido y 150.000 € están vencidos.</p><ul><li><strong>DSO habitual</strong> = 400.000 ÷ 900.000 × 90 = 40 días.</li><li><strong>Mejor DSO posible</strong> = 250.000 ÷ 900.000 × 90 = 25 días.</li></ul><p>Fíjate en que el mejor DSO posible queda cerca del plazo de 30 días. Si las ventas se repartieran por igual a lo largo del trimestre, ambos coincidirían; aquí es algo menor porque el último mes fue más tranquilo que los dos primeros. Dicho de otro modo, las condiciones del distribuidor justifican unos 25 días de cuentas por cobrar, y los otros 15 días se deben a pagos atrasados.</p><h2>¿Qué te dice la brecha entre el DSO y el mejor DSO posible?</h2><p>La diferencia entre las dos cifras se suele llamar <strong>días medios de retraso</strong> (en inglés, average days delinquent o ADD). Mide la ineficiencia en el cobro: cuántos días adicionales, de media, se queda el dinero en manos de los clientes porque las facturas se pagan tarde.</p><p><strong>Días medios de retraso = DSO − mejor DSO posible</strong></p><p>En el ejemplo, 40 − 25 = 15 días. Para traducirlo a dinero, multiplica la brecha por las ventas a crédito medias diarias: 900.000 € ÷ 90 = 10.000 € al día, así que 15 días inmovilizan unos 150.000 € de tesorería, que es justo el saldo vencido.</p><p>Esta división es lo que hace útil el indicador. Cuando el DSO sube, la brecha te dice por qué. Si subió el mejor DSO posible, los plazos se alargaron o una mayor parte de la facturación cayó a final de periodo. Si la brecha creció, los clientes están pagando más tarde y el cobro necesita atención.</p><h2>¿Qué brecha se considera buena?</h2><p>No existe una referencia universal, porque las condiciones de pago y los sectores son distintos. Como regla general, una brecha inferior a 10 días suele ser sana, mientras que 15 días o más indican que el seguimiento es lento o irregular. Más útil que cualquier referencia es tu propia tendencia: una brecha que se reduce mes a mes demuestra que el cobro funciona.</p><h2>¿Cómo se cierra la brecha?</h2><ul><li><strong>Factura pronto y sin errores.</strong> Envía la factura el mismo día de la entrega, con importes correctos, números de pedido y datos de contacto. Una factura en disputa es una factura que se cobra tarde.</li><li><strong>Recuerda antes del vencimiento.</strong> Un aviso cordial unos días antes detecta aprobaciones pendientes cuando todavía hay tiempo de resolverlas.</li><li><strong>Sigue un calendario de reclamación constante.</strong> Envía recordatorios en momentos fijos tras el vencimiento, por ejemplo a los 1, 7, 14 y 30 días, endureciendo el tono y cambiando de canal en cada paso.</li><li><strong>Empieza por los saldos más antiguos y más altos.</strong> Un puñado de cuentas suele concentrar la mayor parte del importe vencido.</li><li><strong>Resuelve las incidencias rápido.</strong> Anota el motivo de cada pago atrasado, corrige la causa y evita que se repita.</li><li><strong>Ponlo fácil para pagar.</strong> Incluye un enlace de pago y datos bancarios claros en cada factura y cada recordatorio.</li></ul><p>El seguimiento manual suele ser lo primero que se descuida cuando el equipo va con prisas. Una herramienta como FulcrumGrid Collection puede enviar recordatorios programados de forma automática y mostrar qué clientes concentran el saldo vencido, para que el equipo dedique su tiempo a las cuentas que de verdad necesitan una llamada.</p><h2>¿Con qué frecuencia conviene medir el mejor DSO posible?</h2><p>Calcula ambas cifras cada mes, con los saldos de cierre de mes y las ventas a crédito de ese mes. Sigue también una versión móvil de tres meses para suavizar picos puntuales, como una factura grande emitida el último día. Revisa la brecha con la persona responsable del cobro, junto con las cuentas vencidas que la explican. Y vuelve a calcular el mejor DSO posible cada vez que cambies tus condiciones de pago, porque el suelo se mueve con ellas.</p>
+
+        <h2>Preguntas frecuentes</h2>
+        <details class="faq-item"><summary>¿Puede el mejor DSO posible ser mayor que el DSO habitual?</summary><p>No. Las cuentas por cobrar no vencidas forman parte del total, así que el mejor DSO posible siempre es igual o inferior al DSO habitual. Si ambos coinciden, no hay nada vencido.</p></details>
+        <details class="faq-item"><summary>¿Por qué mi mejor DSO posible no coincide con mis plazos de pago?</summary><p>Si las ventas se reparten por igual a lo largo del periodo, el mejor DSO posible se acerca a tu plazo estándar. Es mayor cuando gran parte de la facturación cae a final de periodo y menor cuando las últimas semanas han sido tranquilas.</p></details>
+        <details class="faq-item"><summary>¿Qué diferencia hay entre el DSO y los días medios de retraso?</summary><p>El DSO es el tiempo total que tardas en cobrar. Los días medios de retraso son solo la parte causada por pagos atrasados, y se calculan como DSO menos mejor DSO posible.</p></details>
+        <details class="faq-item"><summary>¿Necesito un software especial para calcular el mejor DSO posible?</summary><p>No. Un informe de antigüedad de saldos te da los importes vencidos y no vencidos; con las ventas a crédito del periodo, el cálculo te lleva un minuto en una hoja de cálculo.</p></details>
+
+        <p style="margin-top:32px"><a href="/es/blog/"><span aria-hidden="true">←</span> Volver al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Cierra la brecha entre plazos y cobros</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Collection automatiza los recordatorios de pago y controla cada cuenta por cobrar, para que las facturas atrasadas se reclamen a tiempo y tu saldo vencido siga bajando.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/es/products/collection/">Explorar Collection</a>
+          <a class="btn btn-secondary" href="/es/blog/">Volver al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La columna vertebral operativa de los equipos modernos.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Productos</h5>
+          <a href="/es/products/">Todos los productos</a>
+          <a href="/es/products/hr-suite/">HR Suite</a>
+          <a href="/es/products/command-center/">Command Center</a>
+          <a href="/es/products/collection/">Collection</a>
+          <a href="/es/products/tms/">TMS</a>
+          <a href="/es/products/assure/">Assure</a>
+          <a href="/es/products/close/">Close</a>
+          <a href="/es/products/consolidate/">Consolidate</a>
+          <a href="/es/custom-apps/">Apps a medida</a>
+        </div>
+        <div class="foot-col">
+          <h5>Cuadrícula</h5>
+          <a href="/es/features/">Funciones</a>
+          <a href="/es/integrations/">Integraciones</a>
+          <a href="/es/how-it-works/">Cómo funciona</a>
+          <a href="/es/pricing/">Precios</a>
+          <a href="/es/regions/">Regiones</a>
+          <a href="/es/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Empresa</h5>
+          <a href="/es/about/">Acerca de</a>
+          <a href="/es/faq/">FAQ</a>
+          <a href="/es/contact/">Contacto</a>
+          <a href="/es/privacy/">Privacidad</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Todos los derechos reservados.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Was ist die Erstausbeute (First Pass Yield) und wie berechnet man sie? — FulcrumGrid</title>
+  <meta name="description" content="Die Erstausbeute zeigt, wie viel Arbeit beim ersten Mal richtig gelingt. Formel, Rechenbeispiel, Durchlaufausbeute und Wege zur Verbesserung im Überblick." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Was ist die Erstausbeute (First Pass Yield) und wie berechnet man sie?" />
+  <meta property="og:description" content="Die Erstausbeute zeigt, wie viel Arbeit beim ersten Mal richtig gelingt. Formel, Rechenbeispiel, Durchlaufausbeute und Wege zur Verbesserung im Überblick." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-23" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Was ist die Erstausbeute (First Pass Yield) und wie berechnet man sie?" />
+  <meta name="twitter:description" content="Die Erstausbeute zeigt, wie viel Arbeit beim ersten Mal richtig gelingt. Formel, Rechenbeispiel, Durchlaufausbeute und Wege zur Verbesserung im Überblick." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Was ist die Erstausbeute (First Pass Yield) und wie berechnet man sie?",
+    "description": "Die Erstausbeute zeigt, wie viel Arbeit beim ersten Mal richtig gelingt. Formel, Rechenbeispiel, Durchlaufausbeute und Wege zur Verbesserung im Überblick.",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Leitfaden Erstausbeute",
+        "item": "https://fulcrumgrid.com/de/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist eine gute Erstausbeute?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Das hängt vom Prozess und seiner Komplexität ab. Viele wiederkehrende Dienstleistungsprozesse streben 95 Prozent oder mehr an, komplexe Baugruppen starten oft niedriger. Am wichtigsten ist der Trend gegenüber Ihrem eigenen Ausgangswert."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ist die Erstausbeute dasselbe wie First Time Right?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Beide beschreiben dieselbe Idee. First Time Right wird eher in Dienstleistung und Logistik verwendet, Erstausbeute oder First Pass Yield eher in der Fertigung."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Warum ist die Durchlaufausbeute niedriger als die Erstausbeute?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Weil sie die Erstausbeuten aller Schritte multipliziert. Selbst wenn jeder Schritt für sich gut läuft, summieren sich kleine Verluste über den gesamten Prozess."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Zählen nachgearbeitete Einheiten in der Erstausbeute als gut?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. Jede Einheit, die korrigiert, repariert oder zurückgegeben werden musste, zählt für die Erstausbeute als Fehler, auch wenn sie am Ende geliefert wurde. In der Endausbeute zählt sie dagegen als gut."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / Leitfaden Erstausbeute</p>
+        <span class="tag tag-accent">Betrieb</span>
+        <h1>Was ist die Erstausbeute (First Pass Yield) und wie berechnet man sie?</h1>
+        <p class="hero-intro">Die Erstausbeute zeigt, wie viel Arbeit beim ersten Mal richtig gelingt. Formel, Rechenbeispiel, Durchlaufausbeute und Wege zur Verbesserung im Überblick.</p>
+        <p class="mono"><time datetime="2026-11-23">23. November 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Die meisten Teams kennen ihren Ausstoß. Viel weniger wissen, wie viel davon beim ersten Mal richtig war. Genau diese Lücke schließt die Erstausbeute. Sie zeigt, welcher Anteil der Arbeit einen Prozess durchläuft, ohne nachgebessert, neu gemacht oder zurückgeschickt zu werden, und gehört zu den aufschlussreichsten Kennzahlen, die ein operatives Team verfolgen kann. Dieser Leitfaden erklärt die Formel, zeigt ein Rechenbeispiel, die mehrstufige Variante und den Einsatz außerhalb der Fabrik.</p><h2>Was ist die Erstausbeute?</h2><p>Die Erstausbeute, englisch <strong>First Pass Yield</strong> (FPY), ist der Prozentsatz der Einheiten, die einen Prozessschritt beim ersten Mal fehlerfrei durchlaufen, ohne Nacharbeit, Reparatur oder Rücksendung. Eine Einheit, die bei der Prüfung durchfällt, korrigiert wird und dann besteht, zählt für die Erstausbeute trotzdem als Fehler. Genau darum geht es: Die Kennzahl zeigt, wie gut der Prozess funktioniert, wenn niemand eingreift, um ihn zu retten.</p><p>Im Dienstleistungsumfeld spricht man oft auch von „First Time Right“.</p><h2>Wie berechnet man die Erstausbeute?</h2><p><strong>Erstausbeute = beim ersten Mal ohne Nacharbeit bestandene Einheiten ÷ in den Prozess eingegangene Einheiten × 100</strong></p><p>Zählen Sie die Einheiten zu Beginn des Schritts, nicht nur die fertiggestellten. Alles, was verschrottet, nachgearbeitet oder zur Korrektur zurückgegeben wird, fällt aus dem Zähler heraus.</p><h3>Ein Rechenbeispiel</h3><p>Eine Werkstatt beginnt in einer Woche 500 Baugruppen. Bei der Endprüfung bestehen 440 ohne Beanstandung. Weitere 40 fallen durch, werden repariert und bestehen dann. Die restlichen 20 sind nicht zu retten und werden verschrottet.</p><p>Erstausbeute = 440 ÷ 500 = <strong>88 Prozent</strong>.</p><p>Das heißt: 60 Baugruppen oder 12 Prozent haben zusätzliche Zeit, zusätzliches Material oder zusätzlichen Prüfaufwand verursacht.</p><h2>Worin unterscheidet sich die Erstausbeute von der Endausbeute?</h2><p>Die Endausbeute, manchmal auch Prozessausbeute genannt, zählt am Ende jede gute Einheit, einschließlich der reparierten. Im Beispiel haben 480 von 500 Baugruppen schließlich bestanden, die Endausbeute liegt also bei 96 Prozent.</p><p>Die Lücke von 8 Prozentpunkten zwischen 96 und 88 Prozent ist die versteckte Fabrik: Menschen, Zeit und Fläche, die für die Korrektur von Arbeit draufgehen, die beim ersten Mal hätte stimmen sollen. Die Endausbeute sagt Ihnen, was Sie geliefert haben. Die Erstausbeute sagt Ihnen, was die Lieferung gekostet hat. Ein Team, das nur die Endausbeute berichtet, kann hervorragend aussehen und dabei still und leise einen Tag pro Woche mit Korrekturen verbringen.</p><h2>Was ist die Durchlaufausbeute?</h2><p>Die meiste Arbeit durchläuft mehrere Schritte. Die Durchlaufausbeute, englisch <strong>Rolled Throughput Yield</strong> (RTY), ist die Wahrscheinlichkeit, dass eine Einheit alle Schritte ohne jede Nacharbeit durchläuft. Man berechnet sie, indem man die Erstausbeuten aller Schritte multipliziert:</p><p><strong>Durchlaufausbeute = FPY Schritt 1 × FPY Schritt 2 × … × FPY letzter Schritt</strong></p><p>Nehmen wir eine Auftragsabwicklung mit drei Schritten: Kommissionierung mit 97 Prozent, Verpackung mit 99 Prozent und Rechnungsstellung mit 95 Prozent. Die Durchlaufausbeute beträgt 0,97 × 0,99 × 0,95 = 0,912, also rund <strong>91 Prozent</strong>. Der einfache Durchschnitt der drei Schritte liegt bei 97 Prozent und verdeckt, dass fast jeder elfte Auftrag irgendwo unterwegs korrigiert werden muss. Je mehr Schritte ein Prozess hat, desto schneller summieren sich kleine Verluste. Deshalb ist die Durchlaufausbeute die bessere Leitkennzahl für durchgängige Prozesse.</p><h2>Lässt sich die Erstausbeute auch außerhalb der Fertigung nutzen?</h2><p>Ja. Jeder Prozess mit einer klaren Definition von „richtig erledigt“ hat eine Erstausbeute.</p><ul><li><strong>Beim ersten Mal korrekt versandte Aufträge.</strong> Von 1.200 Aufträgen in einem Monat erforderten 54 eine erneute Lieferung, eine Korrektur oder einen Ersatz. Die Erstausbeute beträgt 1.146 ÷ 1.200 = 95,5 Prozent.</li><li><strong>Tickets, die ohne Wiedereröffnung gelöst werden.</strong> Ein Support-Team schloss 400 Tickets, 36 davon wurden innerhalb von sieben Tagen wieder geöffnet. Die Erstausbeute beträgt 364 ÷ 400 = 91 Prozent.</li><li><strong>Rechnungen ohne Korrektur.</strong> Von 250 Rechnungen mussten 15 gutgeschrieben und neu ausgestellt werden. Die Erstausbeute beträgt 235 ÷ 250 = 94 Prozent.</li></ul><p>Entscheidend ist, vorab festzulegen, was als Fehler gilt und in welchem Zeitfenster. Ein Ticket, das nach 90 Tagen wieder geöffnet wird, ist vermutlich ein neues Anliegen, eines, das am nächsten Morgen wieder aufgeht, dagegen nicht.</p><h2>Wie verbessert man die Erstausbeute?</h2><p>Unser Leitfaden zum Messen und Reduzieren von Nacharbeit geht tiefer auf die Ursachen ein. Kurz gesagt kommen die schnellsten Fortschritte meist aus wenigen Gewohnheiten:</p><ul><li><strong>Pro Schritt messen, nicht nur durchgängig.</strong> Die Ausbeute je Schritt zeigt genau, wo Fehler entstehen.</li><li><strong>Fehlergründe priorisieren.</strong> Erfassen Sie zu jedem Fehler einen kurzen Grund. Meist erklären wenige Ursachen den Großteil der Verluste.</li><li><strong>Den Input verbessern, nicht den Output.</strong> Unklare Anweisungen, fehlende Informationen und schlechte Übergaben verursachen mehr Fehler als unaufmerksame Mitarbeitende.</li><li><strong>Prüfungen in den Schritt einbauen.</strong> Eine Checkliste, ein Pflichtfeld oder eine einfache Poka-Yoke-Vorrichtung fängt Fehler ab, bevor sie weiterwandern.</li><li><strong>Korrekturen nicht verstecken.</strong> Wird Arbeit stillschweigend korrigiert, ohne es zu erfassen, sieht die Erstausbeute besser aus, als sie ist, und die Ursache wird nie behoben.</li></ul><h2>Wie verfolgt man die Erstausbeute wöchentlich?</h2><ul><li><strong>Ein oder zwei Prozesse auswählen.</strong> Beginnen Sie dort, wo Fehler am teuersten oder für Kunden am sichtbarsten sind.</li><li><strong>Ein Ziel festlegen.</strong> Orientieren Sie sich am heutigen Ausgangswert, zum Beispiel von 88 auf 92 Prozent innerhalb eines Quartals.</li><li><strong>Eingänge und Erstbestehen erfassen.</strong> Halten Sie die Zählregeln konstant, damit die Wochen vergleichbar bleiben.</li><li><strong>Trend und Hauptgründe besprechen.</strong> Ein wöchentlicher Blick auf die Kurve und die drei häufigsten Fehlerursachen reicht für eine stetige Verbesserung.</li></ul><p>Steht die Kennzahl neben Ihren anderen Zielen, lässt sie sich schwerer ignorieren. Ein Werkzeug wie FulcrumGrid Command Center kann die Erstausbeute zusammen mit weiteren KPIs, Zielen und Verbesserungsprojekten in einer Ansicht zeigen, sodass die wöchentliche Besprechung von denselben Zahlen ausgeht.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Was ist eine gute Erstausbeute?</summary><p>Das hängt vom Prozess und seiner Komplexität ab. Viele wiederkehrende Dienstleistungsprozesse streben 95 Prozent oder mehr an, komplexe Baugruppen starten oft niedriger. Am wichtigsten ist der Trend gegenüber Ihrem eigenen Ausgangswert.</p></details>
+        <details class="faq-item"><summary>Ist die Erstausbeute dasselbe wie First Time Right?</summary><p>Beide beschreiben dieselbe Idee. First Time Right wird eher in Dienstleistung und Logistik verwendet, Erstausbeute oder First Pass Yield eher in der Fertigung.</p></details>
+        <details class="faq-item"><summary>Warum ist die Durchlaufausbeute niedriger als die Erstausbeute?</summary><p>Weil sie die Erstausbeuten aller Schritte multipliziert. Selbst wenn jeder Schritt für sich gut läuft, summieren sich kleine Verluste über den gesamten Prozess.</p></details>
+        <details class="faq-item"><summary>Zählen nachgearbeitete Einheiten in der Erstausbeute als gut?</summary><p>Nein. Jede Einheit, die korrigiert, repariert oder zurückgegeben werden musste, zählt für die Erstausbeute als Fehler, auch wenn sie am Ende geliefert wurde. In der Endausbeute zählt sie dagegen als gut.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Qualität neben allen anderen Zielen verfolgen</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center bündelt Ihre KPIs, Ziele und Projekte in einer Ansicht, sodass sich die Erstausbeute und die Projekte zu ihrer Verbesserung leicht mit dem Team besprechen lassen.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/command-center/">Entdecken Command Center</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/products/tms/">TMS</a>
+          <a href="/de/products/assure/">Assure</a>
+          <a href="/de/products/close/">Close</a>
+          <a href="/de/products/consolidate/">Consolidate</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

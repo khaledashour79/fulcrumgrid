@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>What Is First Pass Yield and How Do You Calculate It? — FulcrumGrid</title>
+  <meta name="description" content="First pass yield shows how much work is done right the first time. Learn the formula, a worked example, rolled throughput yield and how to improve it." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What Is First Pass Yield and How Do You Calculate It?" />
+  <meta property="og:description" content="First pass yield shows how much work is done right the first time. Learn the formula, a worked example, rolled throughput yield and how to improve it." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-23" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What Is First Pass Yield and How Do You Calculate It?" />
+  <meta name="twitter:description" content="First pass yield shows how much work is done right the first time. Learn the formula, a worked example, rolled throughput yield and how to improve it." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What Is First Pass Yield and How Do You Calculate It?",
+    "description": "First pass yield shows how much work is done right the first time. Learn the formula, a worked example, rolled throughput yield and how to improve it.",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "First Pass Yield Guide",
+        "item": "https://fulcrumgrid.com/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a good first pass yield?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on the process and its complexity. Many repeatable service processes aim for 95 percent or more, while complex assemblies may start lower. The trend against your own baseline matters most."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is first pass yield the same as first time right?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "They describe the same idea. First time right is the term more often used in services and logistics, while first pass yield is more common in manufacturing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is rolled throughput yield lower than first pass yield?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Because it multiplies the first pass yields of every step. Even when each step performs well on its own, small losses compound across the whole process."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do reworked units count as good in first pass yield?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Any unit that needed correction, repair or return counts as a failure for first pass yield, even if it was eventually delivered. It does count as good in final yield."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / First Pass Yield Guide</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>What Is First Pass Yield and How Do You Calculate It?</h1>
+        <p class="hero-intro">First pass yield shows how much work is done right the first time. Learn the formula, a worked example, rolled throughput yield and how to improve it.</p>
+        <p class="mono"><time datetime="2026-11-23">November 23, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Most teams know their output. Far fewer know how much of that output was right the first time. First pass yield fills that gap. It tells you what share of work goes through a process without being fixed, redone or sent back, and it is one of the most revealing numbers an operations team can track. This guide covers the formula, a worked example, the multi-step version and how to use it outside the factory.</p><h2>What is first pass yield?</h2><p>First pass yield (FPY) is the percentage of units that complete a process step correctly the first time, with no rework, repair or return. A unit that fails inspection, gets fixed and then passes still counts as a failure for first pass yield. That is the point: the metric shows how well the process works when nobody steps in to rescue it.</p><p>It is also called first time yield or, in service work, first time right.</p><h2>How do you calculate first pass yield?</h2><p><strong>First pass yield = units passed first time without rework ÷ units entering the process × 100</strong></p><p>Count units at the start of the step, not just the ones that finished. Anything scrapped, reworked or returned for correction comes off the top line.</p><h3>A worked example</h3><p>A workshop starts 500 assemblies in a week. At final inspection, 440 pass with no issues. Another 40 fail, are repaired and then pass. The last 20 cannot be saved and are scrapped.</p><p>First pass yield = 440 ÷ 500 = <strong>88 percent</strong>.</p><p>That means 60 assemblies, or 12 percent, consumed extra time, materials or inspection effort.</p><h2>How is first pass yield different from final yield?</h2><p>Final yield, sometimes called process yield, counts every good unit at the end, including the ones that were repaired. In the example, 480 of 500 assemblies eventually passed, so final yield is 96 percent.</p><p>The 8-point gap between 96 and 88 percent is the hidden factory: the people, time and space spent fixing work that should have been right first time. Final yield tells you what you delivered. First pass yield tells you what it cost to deliver it. A team that reports only final yield can look excellent while quietly spending a day a week on corrections.</p><h2>What is rolled throughput yield?</h2><p>Most work passes through several steps. Rolled throughput yield (RTY) is the probability that a unit gets through every step without any rework. You calculate it by multiplying the first pass yield of each step:</p><p><strong>Rolled throughput yield = FPY of step 1 × FPY of step 2 × … × FPY of the last step</strong></p><p>Take an order fulfilment process with three steps: picking at 97 percent, packing at 99 percent and invoicing at 95 percent. Rolled throughput yield is 0.97 × 0.99 × 0.95 = 0.912, or about <strong>91 percent</strong>. The simple average of the three steps is 97 percent, which hides the fact that almost one order in eleven needs fixing somewhere along the way. The more steps a process has, the faster small losses compound, which is why rolled throughput yield is the better headline figure for end-to-end processes.</p><h2>Can you use first pass yield outside manufacturing?</h2><p>Yes. Any process with a clear definition of “done correctly” has a first pass yield.</p><ul><li><strong>Orders shipped right first time.</strong> Of 1,200 orders shipped in a month, 54 needed a reshipment, a correction or a replacement. First pass yield is 1,146 ÷ 1,200 = 95.5 percent.</li><li><strong>Tickets resolved without reopening.</strong> A support team closed 400 tickets and 36 were reopened within seven days. First pass yield is 364 ÷ 400 = 91 percent.</li><li><strong>Invoices issued without correction.</strong> Out of 250 invoices, 15 had to be credited and reissued. First pass yield is 235 ÷ 250 = 94 percent.</li></ul><p>The key is to agree in advance what counts as a failure and over what window. A ticket reopened after 90 days is probably a new issue; one reopened the next morning is not.</p><h2>How do you improve first pass yield?</h2><p>Our guide to measuring and reducing rework goes deeper into root causes. In short, the fastest gains usually come from a few habits:</p><ul><li><strong>Measure by step, not just end to end.</strong> Step-level yields show exactly where defects enter.</li><li><strong>Rank failure reasons.</strong> Log a short reason for every failure. A handful of causes usually explain most of the losses.</li><li><strong>Fix the input, not the output.</strong> Unclear instructions, missing information and poor handoffs cause more errors than careless people do.</li><li><strong>Build checks into the step.</strong> A checklist, a required field or a simple mistake-proofing device catches errors before they move downstream.</li><li><strong>Do not hide fixes.</strong> If people quietly correct work without logging it, first pass yield looks better than it is and the cause never gets addressed.</li></ul><h2>How do you track first pass yield weekly?</h2><ul><li><strong>Pick one or two processes.</strong> Start where errors are most costly or most visible to customers.</li><li><strong>Set a target.</strong> Base it on your current baseline, for example moving from 88 to 92 percent over a quarter.</li><li><strong>Record units in and first-time passes.</strong> Keep the counting rules fixed so that weeks stay comparable.</li><li><strong>Review the trend and the top reasons.</strong> A weekly look at the line and the top three failure causes is enough to drive steady improvement.</li></ul><p>Keeping the figure next to your other targets makes it harder to ignore. A tool such as FulcrumGrid Command Center can show first pass yield alongside other KPIs, targets and improvement projects in one view, so the weekly review starts from the same numbers.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>What is a good first pass yield?</summary><p>It depends on the process and its complexity. Many repeatable service processes aim for 95 percent or more, while complex assemblies may start lower. The trend against your own baseline matters most.</p></details>
+        <details class="faq-item"><summary>Is first pass yield the same as first time right?</summary><p>They describe the same idea. First time right is the term more often used in services and logistics, while first pass yield is more common in manufacturing.</p></details>
+        <details class="faq-item"><summary>Why is rolled throughput yield lower than first pass yield?</summary><p>Because it multiplies the first pass yields of every step. Even when each step performs well on its own, small losses compound across the whole process.</p></details>
+        <details class="faq-item"><summary>Do reworked units count as good in first pass yield?</summary><p>No. Any unit that needed correction, repair or return counts as a failure for first pass yield, even if it was eventually delivered. It does count as good in final yield.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Track quality alongside every other target</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center brings your KPIs, targets and projects into one view, so first pass yield and the projects that improve it are easy to review with your team.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/products/tms/">TMS</a>
+          <a href="/products/assure/">Assure</a>
+          <a href="/products/close/">Close</a>
+          <a href="/products/consolidate/">Consolidate</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

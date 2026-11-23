@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Che cos’è la resa al primo passaggio (FPY) e come si calcola? — FulcrumGrid</title>
+  <meta name="description" content="La resa al primo passaggio indica quanto lavoro riesce bene al primo colpo. Scoprite la formula, un esempio pratico, la resa cumulata e come migliorarla." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Che cos’è la resa al primo passaggio (FPY) e come si calcola?" />
+  <meta property="og:description" content="La resa al primo passaggio indica quanto lavoro riesce bene al primo colpo. Scoprite la formula, un esempio pratico, la resa cumulata e come migliorarla." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-23" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Che cos’è la resa al primo passaggio (FPY) e come si calcola?" />
+  <meta name="twitter:description" content="La resa al primo passaggio indica quanto lavoro riesce bene al primo colpo. Scoprite la formula, un esempio pratico, la resa cumulata e come migliorarla." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Che cos’è la resa al primo passaggio (FPY) e come si calcola?",
+    "description": "La resa al primo passaggio indica quanto lavoro riesce bene al primo colpo. Scoprite la formula, un esempio pratico, la resa cumulata e come migliorarla.",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida alla resa FPY",
+        "item": "https://fulcrumgrid.com/it/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual è una buona resa al primo passaggio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dipende dal processo e dalla sua complessità. Molti processi di servizio ripetitivi puntano al 95% o più, mentre gli assemblaggi complessi possono partire da valori più bassi. Conta soprattutto l’andamento rispetto al vostro livello di partenza."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "La resa al primo passaggio è uguale a «giusto al primo colpo»?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Esprimono la stessa idea. «Giusto al primo colpo» si usa più spesso nei servizi e nella logistica, mentre resa al primo passaggio o first pass yield è più comune nella produzione."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Perché la resa cumulata è più bassa della resa al primo passaggio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Perché moltiplica le rese al primo passaggio di tutte le fasi. Anche quando ogni fase funziona bene da sola, le piccole perdite si sommano lungo l’intero processo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le unità rilavorate contano come buone?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non nella resa al primo passaggio. Ogni unità che ha richiesto correzione, riparazione o reso conta come errore, anche se alla fine è stata consegnata. Nella resa finale, invece, conta come buona."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida alla resa FPY</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Che cos’è la resa al primo passaggio (FPY) e come si calcola?</h1>
+        <p class="hero-intro">La resa al primo passaggio indica quanto lavoro riesce bene al primo colpo. Scoprite la formula, un esempio pratico, la resa cumulata e come migliorarla.</p>
+        <p class="mono"><time datetime="2026-11-23">23 novembre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Quasi tutti i team conoscono la propria produzione. Molti meno sanno quanta parte di quella produzione era corretta al primo colpo. La resa al primo passaggio colma questa lacuna. Indica quale quota del lavoro attraversa un processo senza essere corretta, rifatta o rimandata indietro, ed è uno degli indicatori più rivelatori che un team operativo possa seguire. Questa guida illustra la formula, un esempio pratico, la versione a più fasi e come usarla fuori dalla fabbrica.</p><h2>Che cos’è la resa al primo passaggio?</h2><p>La resa al primo passaggio, in inglese <strong>first pass yield</strong> (FPY), è la percentuale di unità che completano correttamente una fase del processo al primo tentativo, senza rilavorazioni, riparazioni o resi. Un’unità che non supera il controllo, viene corretta e poi lo supera conta comunque come scarto ai fini della resa al primo passaggio. È proprio questo il punto: l’indicatore mostra quanto funziona bene il processo quando nessuno interviene a salvarlo.</p><p>Si parla anche di resa al primo colpo o, nei servizi, di «giusto al primo colpo».</p><h2>Come si calcola la resa al primo passaggio?</h2><p><strong>Resa al primo passaggio = unità approvate al primo colpo senza rilavorazione ÷ unità entrate nel processo × 100</strong></p><p>Contate le unità all’inizio della fase, non solo quelle completate. Tutto ciò che viene scartato, rilavorato o restituito per correzione va escluso dal numeratore.</p><h3>Un esempio pratico</h3><p>Un’officina avvia 500 assemblaggi in una settimana. Al collaudo finale, 440 passano senza alcun problema. Altri 40 non lo superano, vengono riparati e poi approvati. Gli ultimi 20 non sono recuperabili e vengono scartati.</p><p>Resa al primo passaggio = 440 ÷ 500 = <strong>88%</strong>.</p><p>Significa che 60 assemblaggi, cioè il 12%, hanno richiesto tempo, materiali o controlli aggiuntivi.</p><h2>In cosa differisce dalla resa finale?</h2><p>La resa finale, a volte chiamata resa di processo, conta tutte le unità buone alla fine, comprese quelle riparate. Nell’esempio, 480 assemblaggi su 500 sono stati alla fine approvati, quindi la resa finale è del 96%.</p><p>Il divario di 8 punti tra il 96% e l’88% è la fabbrica nascosta: le persone, il tempo e lo spazio impiegati per correggere un lavoro che avrebbe dovuto essere giusto al primo colpo. La resa finale vi dice cosa avete consegnato; la resa al primo passaggio vi dice quanto vi è costato consegnarlo. Un team che riporta solo la resa finale può sembrare eccellente mentre, senza farsi notare, dedica un giorno a settimana alle correzioni.</p><h2>Che cos’è la resa cumulata?</h2><p>La maggior parte del lavoro passa attraverso più fasi. La resa cumulata, in inglese <strong>rolled throughput yield</strong> (RTY), è la probabilità che un’unità superi tutte le fasi senza alcuna rilavorazione. Si calcola moltiplicando la resa al primo passaggio di ogni fase:</p><p><strong>Resa cumulata = FPY fase 1 × FPY fase 2 × … × FPY ultima fase</strong></p><p>Prendiamo un processo di evasione degli ordini in tre fasi: prelievo al 97%, imballaggio al 99% e fatturazione al 95%. La resa cumulata è 0,97 × 0,99 × 0,95 = 0,912, cioè circa il <strong>91%</strong>. La media semplice delle tre fasi è del 97%, un valore che nasconde il fatto che quasi un ordine su undici deve essere corretto da qualche parte lungo il percorso. Più fasi ha un processo, più in fretta si sommano le piccole perdite: per questo la resa cumulata è il dato di sintesi migliore per i processi end-to-end.</p><h2>Si può usare fuori dalla produzione?</h2><p>Sì. Qualsiasi processo con una definizione chiara di «fatto correttamente» ha una resa al primo passaggio.</p><ul><li><strong>Ordini spediti correttamente al primo colpo.</strong> Su 1.200 ordini spediti in un mese, 54 hanno richiesto una nuova spedizione, una correzione o una sostituzione. La resa è 1.146 ÷ 1.200 = 95,5%.</li><li><strong>Ticket risolti senza riapertura.</strong> Un team di assistenza ha chiuso 400 ticket e 36 sono stati riaperti entro sette giorni. La resa è 364 ÷ 400 = 91%.</li><li><strong>Fatture emesse senza correzioni.</strong> Su 250 fatture, 15 hanno richiesto una nota di credito e una nuova emissione. La resa è 235 ÷ 250 = 94%.</li></ul><p>L’importante è stabilire in anticipo che cosa conta come errore e in quale finestra di tempo. Un ticket riaperto dopo 90 giorni è probabilmente un problema nuovo; uno riaperto la mattina dopo, no.</p><h2>Come si migliora la resa al primo passaggio?</h2><p>La nostra guida su come misurare e ridurre le rilavorazioni approfondisce le cause profonde. In breve, i miglioramenti più rapidi arrivano di solito da poche abitudini:</p><ul><li><strong>Misurate per fase, non solo da inizio a fine.</strong> La resa di ogni fase mostra esattamente dove nascono i difetti.</li><li><strong>Classificate i motivi di errore.</strong> Registrate un motivo sintetico per ogni errore. Di solito poche cause spiegano la maggior parte delle perdite.</li><li><strong>Correggete l’input, non l’output.</strong> Istruzioni poco chiare, informazioni mancanti e passaggi di consegne carenti causano più errori della disattenzione delle persone.</li><li><strong>Integrate i controlli nella fase.</strong> Una checklist, un campo obbligatorio o un semplice dispositivo a prova di errore bloccano gli sbagli prima che passino alla fase successiva.</li><li><strong>Non nascondete le correzioni.</strong> Se il lavoro viene corretto in silenzio senza registrarlo, la resa sembra migliore di quanto sia e la causa non viene mai affrontata.</li></ul><h2>Come si monitora ogni settimana?</h2><ul><li><strong>Scegliete uno o due processi.</strong> Partite da dove gli errori costano di più o sono più visibili ai clienti.</li><li><strong>Fissate un obiettivo.</strong> Basatelo sul livello attuale, ad esempio passare dall’88% al 92% in un trimestre.</li><li><strong>Registrate le unità in ingresso e quelle approvate al primo colpo.</strong> Mantenete fisse le regole di conteggio, così le settimane restano confrontabili.</li><li><strong>Esaminate l’andamento e i motivi principali.</strong> Uno sguardo settimanale alla curva e alle tre cause di errore più frequenti basta per migliorare in modo costante.</li></ul><p>Tenere questo dato accanto agli altri obiettivi lo rende più difficile da ignorare. Uno strumento come FulcrumGrid Command Center può mostrare la resa al primo passaggio insieme ad altri KPI, obiettivi e progetti di miglioramento in un’unica vista, così la revisione settimanale parte dagli stessi numeri.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Qual è una buona resa al primo passaggio?</summary><p>Dipende dal processo e dalla sua complessità. Molti processi di servizio ripetitivi puntano al 95% o più, mentre gli assemblaggi complessi possono partire da valori più bassi. Conta soprattutto l’andamento rispetto al vostro livello di partenza.</p></details>
+        <details class="faq-item"><summary>La resa al primo passaggio è uguale a «giusto al primo colpo»?</summary><p>Esprimono la stessa idea. «Giusto al primo colpo» si usa più spesso nei servizi e nella logistica, mentre resa al primo passaggio o first pass yield è più comune nella produzione.</p></details>
+        <details class="faq-item"><summary>Perché la resa cumulata è più bassa della resa al primo passaggio?</summary><p>Perché moltiplica le rese al primo passaggio di tutte le fasi. Anche quando ogni fase funziona bene da sola, le piccole perdite si sommano lungo l’intero processo.</p></details>
+        <details class="faq-item"><summary>Le unità rilavorate contano come buone?</summary><p>Non nella resa al primo passaggio. Ogni unità che ha richiesto correzione, riparazione o reso conta come errore, anche se alla fine è stata consegnata. Nella resa finale, invece, conta come buona.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Monitorate la qualità insieme a ogni altro obiettivo</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center riunisce KPI, obiettivi e progetti in un’unica vista, così la resa al primo passaggio e i progetti che la migliorano sono facili da rivedere con il team.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/products/tms/">TMS</a>
+          <a href="/it/products/assure/">Assure</a>
+          <a href="/it/products/close/">Close</a>
+          <a href="/it/products/consolidate/">Consolidate</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

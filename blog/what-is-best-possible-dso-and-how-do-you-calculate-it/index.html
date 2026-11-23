@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>What Is Best Possible DSO and How Do You Calculate It? — FulcrumGrid</title>
+  <meta name="description" content="Best possible DSO shows how fast you would collect if no invoice were paid late. Learn the formula, a worked example and how to close the gap with regular DSO." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What Is Best Possible DSO and How Do You Calculate It?" />
+  <meta property="og:description" content="Best possible DSO shows how fast you would collect if no invoice were paid late. Learn the formula, a worked example and how to close the gap with regular DSO." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-23" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Collection — receivables and payments" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What Is Best Possible DSO and How Do You Calculate It?" />
+  <meta name="twitter:description" content="Best possible DSO shows how fast you would collect if no invoice were paid late. Learn the formula, a worked example and how to close the gap with regular DSO." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-collection.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What Is Best Possible DSO and How Do You Calculate It?",
+    "description": "Best possible DSO shows how fast you would collect if no invoice were paid late. Learn the formula, a worked example and how to close the gap with regular DSO.",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-collection.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Best Possible DSO",
+        "item": "https://fulcrumgrid.com/blog/what-is-best-possible-dso-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can best possible DSO be higher than regular DSO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Current receivables are part of total receivables, so best possible DSO is always equal to or lower than regular DSO. When the two are equal, nothing is past due."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is my best possible DSO different from my payment terms?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "With sales spread evenly through the period, best possible DSO roughly equals your standard terms. It runs higher when a lot of invoicing lands near period end and lower when the last few weeks were quiet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between DSO and average days delinquent?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "DSO is the total time it takes to collect. Average days delinquent is only the part caused by late payment, calculated as DSO minus best possible DSO."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need special software to calculate best possible DSO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. An aged receivables report gives you current and past-due balances, and with credit sales for the period the calculation takes a minute in a spreadsheet."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Best Possible DSO</p>
+        <span class="tag tag-accent">Collection</span>
+        <h1>What Is Best Possible DSO and How Do You Calculate It?</h1>
+        <p class="hero-intro">Best possible DSO shows how fast you would collect if no invoice were paid late. Learn the formula, a worked example and how to close the gap with regular DSO.</p>
+        <p class="mono"><time datetime="2026-11-23">November 23, 2026</time> · 5 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Days sales outstanding (DSO) tells you how long, on average, it takes to turn a sale into cash. But a single DSO figure mixes two very different things: the time your payment terms allow and the extra time customers take when they pay late. Best possible DSO separates the two. This guide explains what it is, how to calculate it and how to use the gap to improve collections.</p><h2>What is best possible DSO?</h2><p>Best possible DSO is the DSO you would have if every customer paid exactly on time. It counts only <strong>current receivables</strong>, meaning invoices that are not yet due, and ignores anything past due. Because it reflects your payment terms and billing pattern rather than your collection performance, it works as a floor: with your current terms, regular DSO cannot realistically go any lower.</p><h2>How do you calculate best possible DSO?</h2><p>The formula mirrors regular DSO but uses only the current part of receivables:</p><p><strong>Best possible DSO = (current receivables ÷ total credit sales) × number of days in the period</strong></p><p>Regular DSO uses total receivables instead:</p><p><strong>DSO = (total receivables ÷ total credit sales) × number of days in the period</strong></p><p>Use the same period for both: a month (30 days), a quarter (90 days) or a year (365 days). Take receivables balances from the last day of the period, and count credit sales only, since cash sales never create a receivable.</p><h3>A worked example</h3><p>A small distributor sells on net 30 terms. Last quarter it invoiced $900,000 on credit. On the last day of the quarter, its aging report shows $400,000 in total receivables, of which $250,000 is current and $150,000 is past due.</p><ul><li><strong>Regular DSO</strong> = 400,000 ÷ 900,000 × 90 = 40 days.</li><li><strong>Best possible DSO</strong> = 250,000 ÷ 900,000 × 90 = 25 days.</li></ul><p>Notice that best possible DSO sits close to the 30-day terms. If sales were spread evenly across the quarter, the two would match; here it is a little lower because the final month was quieter than the first two. In other words, the distributor’s terms justify about 25 days of receivables, and the other 15 days come from late payment.</p><h2>What does the gap between DSO and best possible DSO tell you?</h2><p>The difference between the two figures is often called <strong>average days delinquent</strong> (ADD). It measures collection inefficiency: how many extra days, on average, cash stays with customers because invoices are paid late.</p><p><strong>Average days delinquent = DSO − best possible DSO</strong></p><p>In the example, 40 − 25 = 15 days. To turn that into money, multiply the gap by average daily credit sales: $900,000 ÷ 90 = $10,000 a day, so 15 days ties up about $150,000 in cash, which is exactly the past-due balance.</p><p>This split is what makes the metric useful. When DSO rises, the gap tells you why. If best possible DSO went up, terms got longer or more invoicing landed near the end of the period. If the gap widened, customers are paying later and collections need attention.</p><h2>What is a good gap?</h2><p>There is no universal benchmark, because payment terms and industries differ. As a rule of thumb, a gap under 10 days is usually healthy, while 15 days or more suggests that follow-up is slow or inconsistent. More useful than any benchmark is your own trend: a gap that shrinks month after month shows that collections are working.</p><h2>How do you close the gap?</h2><ul><li><strong>Invoice promptly and accurately.</strong> Send invoices the day the work is delivered, with correct amounts, purchase order numbers and contact details. Disputed invoices are slow invoices.</li><li><strong>Remind before the due date.</strong> A friendly note a few days ahead catches missing approvals while there is still time to fix them.</li><li><strong>Follow a consistent dunning schedule.</strong> Send reminders at fixed points after the due date, for example after 1, 7, 14 and 30 days, firming up the tone and changing the channel each time.</li><li><strong>Work the oldest and largest balances first.</strong> A handful of accounts usually make up most of the past-due total.</li><li><strong>Resolve disputes quickly.</strong> Record the reason behind every late payment, fix the underlying issue and stop it from recurring.</li><li><strong>Make paying easy.</strong> Include a payment link and clear bank details on every invoice and reminder.</li></ul><p>Manual follow-up is usually the first thing to slip when a team is busy. A tool such as FulcrumGrid Collection can send scheduled reminders automatically and show which customers are driving the past-due balance, so the team spends its time on the accounts that genuinely need a phone call.</p><h2>How often should you track best possible DSO?</h2><p>Calculate both figures every month, using month-end balances and that month’s credit sales. Track a rolling three-month version as well, to smooth out one-off spikes such as a large invoice issued on the last day. Review the gap with whoever owns collections, together with the past-due accounts behind it. And recalculate best possible DSO whenever you change payment terms, because the floor moves with them.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>Can best possible DSO be higher than regular DSO?</summary><p>No. Current receivables are part of total receivables, so best possible DSO is always equal to or lower than regular DSO. When the two are equal, nothing is past due.</p></details>
+        <details class="faq-item"><summary>Why is my best possible DSO different from my payment terms?</summary><p>With sales spread evenly through the period, best possible DSO roughly equals your standard terms. It runs higher when a lot of invoicing lands near period end and lower when the last few weeks were quiet.</p></details>
+        <details class="faq-item"><summary>What is the difference between DSO and average days delinquent?</summary><p>DSO is the total time it takes to collect. Average days delinquent is only the part caused by late payment, calculated as DSO minus best possible DSO.</p></details>
+        <details class="faq-item"><summary>Do I need special software to calculate best possible DSO?</summary><p>No. An aged receivables report gives you current and past-due balances, and with credit sales for the period the calculation takes a minute in a spreadsheet.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Collection</p>
+        <h2>Close the gap between terms and cash</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Collection automates payment reminders and tracks every receivable, so late invoices are followed up on schedule and your past-due balance keeps shrinking.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/collection/">Explore Collection</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/products/tms/">TMS</a>
+          <a href="/products/assure/">Assure</a>
+          <a href="/products/close/">Close</a>
+          <a href="/products/consolidate/">Consolidate</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

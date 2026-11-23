@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Qu’est-ce que le rendement au premier passage et comment le calculer ? — FulcrumGrid</title>
+  <meta name="description" content="Le rendement au premier passage mesure le travail bien fait du premier coup. Formule, exemple chiffré, rendement cumulé et pistes pour l’améliorer." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Qu’est-ce que le rendement au premier passage et comment le calculer ?" />
+  <meta property="og:description" content="Le rendement au premier passage mesure le travail bien fait du premier coup. Formule, exemple chiffré, rendement cumulé et pistes pour l’améliorer." />
+  <meta property="og:url" content="https://fulcrumgrid.com/fr/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-23" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Qu’est-ce que le rendement au premier passage et comment le calculer ?" />
+  <meta name="twitter:description" content="Le rendement au premier passage mesure le travail bien fait du premier coup. Formule, exemple chiffré, rendement cumulé et pistes pour l’améliorer." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/fr/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Qu’est-ce que le rendement au premier passage et comment le calculer ?",
+    "description": "Le rendement au premier passage mesure le travail bien fait du premier coup. Formule, exemple chiffré, rendement cumulé et pistes pour l’améliorer.",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/fr/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "fr"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://fulcrumgrid.com/fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/fr/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guide du rendement FPY",
+        "item": "https://fulcrumgrid.com/fr/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qu’est-ce qu’un bon rendement au premier passage ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cela dépend du processus et de sa complexité. Beaucoup de processus de service répétitifs visent 95 % ou plus, tandis que des assemblages complexes peuvent partir de plus bas. C’est la tendance par rapport à votre propre niveau de départ qui compte le plus."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le rendement au premier passage est-il la même chose que le « bon du premier coup » ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Les deux expriment la même idée. « Bon du premier coup » s’emploie plutôt dans les services et la logistique, tandis que rendement au premier passage est plus courant dans l’industrie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Pourquoi le rendement cumulé est-il inférieur au rendement au premier passage ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Parce qu’il multiplie les rendements au premier passage de toutes les étapes. Même lorsque chaque étape fonctionne bien isolément, les petites pertes s’accumulent sur l’ensemble du processus."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Les unités retouchées comptent-elles comme bonnes ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pas dans le rendement au premier passage. Toute unité ayant nécessité une correction, une réparation ou un retour compte comme un échec, même si elle a finalement été livrée. Elle compte en revanche comme bonne dans le rendement final."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/fr/" aria-label="Accueil FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/fr/products/">Produits</a>
+        <a href="/fr/features/">Grille</a>
+        <a href="/fr/pricing/">Tarifs</a>
+        <a href="/fr/regions/">Régions</a>
+        <a href="/fr/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/fr/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Langue">FR ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" class="active" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/fr/contact/">Demander une démo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/fr/">Accueil</a> / <a href="/fr/blog/">Blog</a> / Guide du rendement FPY</p>
+        <span class="tag tag-accent">Opérations</span>
+        <h1>Qu’est-ce que le rendement au premier passage et comment le calculer ?</h1>
+        <p class="hero-intro">Le rendement au premier passage mesure le travail bien fait du premier coup. Formule, exemple chiffré, rendement cumulé et pistes pour l’améliorer.</p>
+        <p class="mono"><time datetime="2026-11-23">23 novembre 2026</time> · 6 min de lecture</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>La plupart des équipes connaissent leur production. Bien moins savent quelle part de cette production était correcte du premier coup. Le rendement au premier passage comble ce manque. Il indique la part du travail qui traverse un processus sans être corrigée, refaite ou renvoyée, et c’est l’un des indicateurs les plus révélateurs qu’une équipe opérationnelle puisse suivre. Ce guide présente la formule, un exemple chiffré, la version multi-étapes et son usage en dehors de l’usine.</p><h2>Qu’est-ce que le rendement au premier passage ?</h2><p>Le rendement au premier passage (en anglais <strong>first pass yield</strong>, ou FPY) est le pourcentage d’unités qui franchissent correctement une étape du processus du premier coup, sans retouche, réparation ni retour. Une unité qui échoue au contrôle, est corrigée puis acceptée compte quand même comme un échec. C’est tout l’intérêt : l’indicateur montre comment le processus fonctionne quand personne n’intervient pour le sauver.</p><p>On parle aussi de rendement du premier coup ou, dans les services, de « bon du premier coup ».</p><h2>Comment calculer le rendement au premier passage ?</h2><p><strong>Rendement au premier passage = unités conformes du premier coup sans retouche ÷ unités entrées dans le processus × 100</strong></p><p>Comptez les unités au début de l’étape, pas seulement celles qui ont été terminées. Tout ce qui est mis au rebut, retouché ou renvoyé pour correction est retiré du numérateur.</p><h3>Un exemple chiffré</h3><p>Un atelier lance 500 assemblages dans la semaine. Au contrôle final, 440 passent sans aucun problème. 40 autres échouent, sont réparés puis acceptés. Les 20 derniers ne peuvent pas être récupérés et partent au rebut.</p><p>Rendement au premier passage = 440 ÷ 500 = <strong>88 %</strong>.</p><p>Autrement dit, 60 assemblages, soit 12 %, ont consommé du temps, des matières ou des contrôles supplémentaires.</p><h2>Quelle différence avec le rendement final ?</h2><p>Le rendement final, parfois appelé rendement du processus, compte toutes les unités bonnes à la fin, y compris celles qui ont été réparées. Dans l’exemple, 480 assemblages sur 500 ont fini par être acceptés : le rendement final est donc de 96 %.</p><p>L’écart de 8 points entre 96 % et 88 % représente l’usine cachée : les personnes, le temps et l’espace consacrés à corriger un travail qui aurait dû être bon du premier coup. Le rendement final dit ce que vous avez livré ; le rendement au premier passage dit ce que cette livraison vous a coûté. Une équipe qui ne suit que le rendement final peut paraître excellente tout en passant discrètement une journée par semaine à corriger.</p><h2>Qu’est-ce que le rendement cumulé ?</h2><p>La plupart des travaux passent par plusieurs étapes. Le rendement cumulé, ou <strong>rolled throughput yield</strong> (RTY), est la probabilité qu’une unité franchisse toutes les étapes sans aucune retouche. On le calcule en multipliant le rendement au premier passage de chaque étape :</p><p><strong>Rendement cumulé = FPY de l’étape 1 × FPY de l’étape 2 × … × FPY de la dernière étape</strong></p><p>Prenons un processus de traitement des commandes en trois étapes : préparation à 97 %, emballage à 99 % et facturation à 95 %. Le rendement cumulé est de 0,97 × 0,99 × 0,95 = 0,912, soit environ <strong>91 %</strong>. La moyenne simple des trois étapes est de 97 %, ce qui masque le fait que près d’une commande sur onze doit être corrigée quelque part en chemin. Plus un processus compte d’étapes, plus les petites pertes s’accumulent vite : c’est pourquoi le rendement cumulé est le meilleur chiffre de synthèse pour un processus de bout en bout.</p><h2>Peut-on l’utiliser en dehors de la production ?</h2><p>Oui. Tout processus qui dispose d’une définition claire du « travail bien fait » a un rendement au premier passage.</p><ul><li><strong>Commandes expédiées correctement du premier coup.</strong> Sur 1 200 commandes expédiées dans le mois, 54 ont nécessité une réexpédition, une correction ou un remplacement. Le rendement est de 1 146 ÷ 1 200 = 95,5 %.</li><li><strong>Tickets résolus sans réouverture.</strong> Une équipe support a clôturé 400 tickets, dont 36 ont été rouverts dans les sept jours. Le rendement est de 364 ÷ 400 = 91 %.</li><li><strong>Factures émises sans correction.</strong> Sur 250 factures, 15 ont dû faire l’objet d’un avoir et être réémises. Le rendement est de 235 ÷ 250 = 94 %.</li></ul><p>L’essentiel est de convenir à l’avance de ce qui compte comme un échec, et sur quelle période. Un ticket rouvert après 90 jours correspond sans doute à un nouveau problème ; un ticket rouvert le lendemain matin, certainement pas.</p><h2>Comment améliorer le rendement au premier passage ?</h2><p>Notre guide sur la mesure et la réduction des retouches approfondit l’analyse des causes. En résumé, les gains les plus rapides viennent généralement de quelques habitudes :</p><ul><li><strong>Mesurez par étape, pas seulement de bout en bout.</strong> Les rendements par étape montrent précisément où les défauts apparaissent.</li><li><strong>Classez les motifs d’échec.</strong> Notez un motif court pour chaque échec. Une poignée de causes explique généralement l’essentiel des pertes.</li><li><strong>Corrigez l’entrée, pas la sortie.</strong> Des consignes floues, des informations manquantes et des transmissions bâclées causent plus d’erreurs que l’inattention des personnes.</li><li><strong>Intégrez les contrôles à l’étape.</strong> Une liste de contrôle, un champ obligatoire ou un simple détrompeur arrête les erreurs avant qu’elles ne passent à l’étape suivante.</li><li><strong>Ne cachez pas les corrections.</strong> Si l’on corrige discrètement sans rien consigner, le rendement paraît meilleur qu’il n’est et la cause n’est jamais traitée.</li></ul><h2>Comment le suivre chaque semaine ?</h2><ul><li><strong>Choisissez un ou deux processus.</strong> Commencez là où les erreurs coûtent le plus cher ou se voient le plus côté client.</li><li><strong>Fixez un objectif.</strong> Partez de votre niveau actuel, par exemple passer de 88 % à 92 % en un trimestre.</li><li><strong>Enregistrez les unités entrées et les réussites du premier coup.</strong> Gardez les mêmes règles de comptage pour que les semaines restent comparables.</li><li><strong>Examinez la tendance et les principaux motifs.</strong> Un regard hebdomadaire sur la courbe et sur les trois premières causes d’échec suffit pour progresser régulièrement.</li></ul><p>Placer ce chiffre à côté de vos autres objectifs le rend plus difficile à ignorer. Un outil comme FulcrumGrid Command Center peut afficher le rendement au premier passage avec vos autres KPI, objectifs et projets d’amélioration dans une seule vue, pour que la revue hebdomadaire parte des mêmes chiffres.</p>
+
+        <h2>Questions fréquentes</h2>
+        <details class="faq-item"><summary>Qu’est-ce qu’un bon rendement au premier passage ?</summary><p>Cela dépend du processus et de sa complexité. Beaucoup de processus de service répétitifs visent 95 % ou plus, tandis que des assemblages complexes peuvent partir de plus bas. C’est la tendance par rapport à votre propre niveau de départ qui compte le plus.</p></details>
+        <details class="faq-item"><summary>Le rendement au premier passage est-il la même chose que le « bon du premier coup » ?</summary><p>Les deux expriment la même idée. « Bon du premier coup » s’emploie plutôt dans les services et la logistique, tandis que rendement au premier passage est plus courant dans l’industrie.</p></details>
+        <details class="faq-item"><summary>Pourquoi le rendement cumulé est-il inférieur au rendement au premier passage ?</summary><p>Parce qu’il multiplie les rendements au premier passage de toutes les étapes. Même lorsque chaque étape fonctionne bien isolément, les petites pertes s’accumulent sur l’ensemble du processus.</p></details>
+        <details class="faq-item"><summary>Les unités retouchées comptent-elles comme bonnes ?</summary><p>Pas dans le rendement au premier passage. Toute unité ayant nécessité une correction, une réparation ou un retour compte comme un échec, même si elle a finalement été livrée. Elle compte en revanche comme bonne dans le rendement final.</p></details>
+
+        <p style="margin-top:32px"><a href="/fr/blog/"><span aria-hidden="true">←</span> Retour au blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Suivez la qualité avec tous vos autres objectifs</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center réunit vos KPI, objectifs et projets dans une seule vue, pour examiner facilement avec votre équipe le rendement au premier passage et les projets qui l’améliorent.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/fr/products/command-center/">Découvrir Command Center</a>
+          <a class="btn btn-secondary" href="/fr/blog/">Retour au blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>L'épine dorsale opérationnelle des équipes modernes.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produits</h5>
+          <a href="/fr/products/">Tous les produits</a>
+          <a href="/fr/products/hr-suite/">HR Suite</a>
+          <a href="/fr/products/command-center/">Command Center</a>
+          <a href="/fr/products/collection/">Collection</a>
+          <a href="/fr/products/tms/">TMS</a>
+          <a href="/fr/products/assure/">Assure</a>
+          <a href="/fr/products/close/">Close</a>
+          <a href="/fr/products/consolidate/">Consolidate</a>
+          <a href="/fr/custom-apps/">Applications sur mesure</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grille</h5>
+          <a href="/fr/features/">Fonctionnalités</a>
+          <a href="/fr/integrations/">Intégrations</a>
+          <a href="/fr/how-it-works/">Comment ça marche</a>
+          <a href="/fr/pricing/">Tarifs</a>
+          <a href="/fr/regions/">Régions</a>
+          <a href="/fr/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Entreprise</h5>
+          <a href="/fr/about/">À propos</a>
+          <a href="/fr/faq/">FAQ</a>
+          <a href="/fr/contact/">Contact</a>
+          <a href="/fr/privacy/">Confidentialité</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tous droits réservés.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

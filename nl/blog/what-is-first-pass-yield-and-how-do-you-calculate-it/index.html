@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wat is first pass yield en hoe bereken je het? (Met voorbeeld) — FulcrumGrid</title>
+  <meta name="description" content="First pass yield laat zien hoeveel werk in één keer goed gaat. Lees de formule, een rekenvoorbeeld, rolled throughput yield en hoe je het verbetert." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wat is first pass yield en hoe bereken je het? (Met voorbeeld)" />
+  <meta property="og:description" content="First pass yield laat zien hoeveel werk in één keer goed gaat. Lees de formule, een rekenvoorbeeld, rolled throughput yield en hoe je het verbetert." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-11-23" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wat is first pass yield en hoe bereken je het? (Met voorbeeld)" />
+  <meta name="twitter:description" content="First pass yield laat zien hoeveel werk in één keer goed gaat. Lees de formule, een rekenvoorbeeld, rolled throughput yield en hoe je het verbetert." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wat is first pass yield en hoe bereken je het? (Met voorbeeld)",
+    "description": "First pass yield laat zien hoeveel werk in één keer goed gaat. Lees de formule, een rekenvoorbeeld, rolled throughput yield en hoe je het verbetert.",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Gids first pass yield",
+        "item": "https://fulcrumgrid.com/nl/blog/what-is-first-pass-yield-and-how-do-you-calculate-it/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is een goede first pass yield?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dat hangt af van het proces en de complexiteit ervan. Veel herhaalbare dienstverleningsprocessen mikken op 95 procent of meer, terwijl complexe assemblages lager kunnen beginnen. Het belangrijkst is de trend ten opzichte van je eigen uitgangswaarde."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is first pass yield hetzelfde als first time right?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ze beschrijven hetzelfde idee. First time right wordt vaker gebruikt in dienstverlening en logistiek, first pass yield vaker in de productie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Waarom is rolled throughput yield lager dan first pass yield?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Omdat het de first pass yields van alle stappen met elkaar vermenigvuldigt. Ook als elke stap op zich goed presteert, stapelen kleine verliezen zich op over het hele proces."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Tellen herbewerkte eenheden mee als goed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niet voor first pass yield. Elke eenheid die correctie, reparatie of retour nodig had, telt als fout, ook als ze uiteindelijk is geleverd. In de eindopbrengst telt ze wel als goed."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / Gids first pass yield</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Wat is first pass yield en hoe bereken je het? (Met voorbeeld)</h1>
+        <p class="hero-intro">First pass yield laat zien hoeveel werk in één keer goed gaat. Lees de formule, een rekenvoorbeeld, rolled throughput yield en hoe je het verbetert.</p>
+        <p class="mono"><time datetime="2026-11-23">23 november 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>De meeste teams kennen hun output. Veel minder teams weten hoeveel daarvan in één keer goed was. First pass yield vult dat gat. Het laat zien welk deel van het werk een proces doorloopt zonder te worden hersteld, overgedaan of teruggestuurd, en het is een van de meest onthullende cijfers die een operationeel team kan volgen. Deze gids behandelt de formule, een rekenvoorbeeld, de variant voor meerdere stappen en het gebruik buiten de fabriek.</p><h2>Wat is first pass yield?</h2><p>First pass yield (FPY), in het Nederlands ook wel <strong>eerste-keer-goed-percentage</strong>, is het percentage eenheden dat een processtap de eerste keer correct doorloopt, zonder herbewerking, reparatie of retour. Een eenheid die bij de controle wordt afgekeurd, wordt hersteld en daarna wordt goedgekeurd, telt voor first pass yield toch als fout. Daar draait het om: het cijfer laat zien hoe goed het proces werkt als niemand ingrijpt om het te redden.</p><p>In de dienstverlening spreekt men ook vaak van first time right.</p><h2>Hoe bereken je first pass yield?</h2><p><strong>First pass yield = eenheden die de eerste keer zonder herbewerking zijn goedgekeurd ÷ eenheden die het proces ingaan × 100</strong></p><p>Tel de eenheden aan het begin van de stap, niet alleen de eenheden die klaar zijn. Alles wat wordt afgekeurd, herbewerkt of voor correctie wordt teruggestuurd, valt uit de teller.</p><h3>Een rekenvoorbeeld</h3><p>Een werkplaats start in een week 500 assemblages. Bij de eindcontrole worden er 440 zonder problemen goedgekeurd. Nog eens 40 worden afgekeurd, gerepareerd en daarna goedgekeurd. De laatste 20 zijn niet te redden en gaan naar de schroot.</p><p>First pass yield = 440 ÷ 500 = <strong>88 procent</strong>.</p><p>Dat betekent dat 60 assemblages, oftewel 12 procent, extra tijd, materiaal of controle-inspanning hebben gekost.</p><h2>Wat is het verschil met de eindopbrengst?</h2><p>De eindopbrengst, ook wel procesopbrengst genoemd, telt aan het einde elke goede eenheid, inclusief de gerepareerde. In het voorbeeld werden uiteindelijk 480 van de 500 assemblages goedgekeurd, dus de eindopbrengst is 96 procent.</p><p>Het verschil van 8 procentpunt tussen 96 en 88 procent is de verborgen fabriek: de mensen, de tijd en de ruimte die opgaan aan het herstellen van werk dat de eerste keer goed had moeten zijn. De eindopbrengst vertelt wat je hebt geleverd. First pass yield vertelt wat die levering heeft gekost. Een team dat alleen de eindopbrengst rapporteert, kan er uitstekend uitzien terwijl het ongemerkt een dag per week aan correcties besteedt.</p><h2>Wat is rolled throughput yield?</h2><p>Het meeste werk doorloopt meerdere stappen. Rolled throughput yield (RTY), ofwel de <strong>cumulatieve opbrengst</strong>, is de kans dat een eenheid alle stappen doorloopt zonder enige herbewerking. Je berekent het door de first pass yield van elke stap met elkaar te vermenigvuldigen:</p><p><strong>Rolled throughput yield = FPY stap 1 × FPY stap 2 × … × FPY laatste stap</strong></p><p>Neem een orderverwerkingsproces met drie stappen: orderpicken met 97 procent, inpakken met 99 procent en factureren met 95 procent. De rolled throughput yield is 0,97 × 0,99 × 0,95 = 0,912, oftewel ongeveer <strong>91 procent</strong>. Het gewone gemiddelde van de drie stappen is 97 procent, en dat verhult dat bijna één op de elf orders ergens onderweg moet worden gecorrigeerd. Hoe meer stappen een proces telt, hoe sneller kleine verliezen zich opstapelen. Daarom is rolled throughput yield het betere kerncijfer voor processen van begin tot eind.</p><h2>Kun je first pass yield ook buiten de productie gebruiken?</h2><p>Ja. Elk proces met een duidelijke definitie van ‘correct uitgevoerd’ heeft een first pass yield.</p><ul><li><strong>Orders die in één keer goed worden verzonden.</strong> Van 1.200 verzonden orders in een maand moesten er 54 opnieuw worden verzonden, gecorrigeerd of vervangen. De first pass yield is 1.146 ÷ 1.200 = 95,5 procent.</li><li><strong>Tickets die worden opgelost zonder heropening.</strong> Een supportteam sloot 400 tickets, waarvan er 36 binnen zeven dagen werden heropend. De first pass yield is 364 ÷ 400 = 91 procent.</li><li><strong>Facturen zonder correctie.</strong> Van 250 facturen moesten er 15 worden gecrediteerd en opnieuw verstuurd. De first pass yield is 235 ÷ 250 = 94 procent.</li></ul><p>Het belangrijkste is dat je vooraf afspreekt wat als fout telt en binnen welke termijn. Een ticket dat na 90 dagen wordt heropend, is waarschijnlijk een nieuw probleem; een ticket dat de volgende ochtend weer opengaat niet.</p><h2>Hoe verbeter je first pass yield?</h2><p>Onze gids over het meten en terugdringen van herbewerking gaat dieper in op de grondoorzaken. Kort gezegd komen de snelste verbeteringen meestal uit een paar gewoonten:</p><ul><li><strong>Meet per stap, niet alleen van begin tot eind.</strong> De opbrengst per stap laat precies zien waar fouten ontstaan.</li><li><strong>Rangschik de oorzaken van fouten.</strong> Noteer bij elke fout een korte reden. Een handvol oorzaken verklaart meestal het grootste deel van de verliezen.</li><li><strong>Verbeter de input, niet de output.</strong> Onduidelijke instructies, ontbrekende informatie en slechte overdrachten veroorzaken meer fouten dan slordige mensen.</li><li><strong>Bouw controles in de stap in.</strong> Een checklist, een verplicht veld of een eenvoudige foutbestendige voorziening houdt fouten tegen voordat ze verder in het proces belanden.</li><li><strong>Verstop correcties niet.</strong> Als mensen werk stilletjes herstellen zonder het vast te leggen, lijkt de first pass yield beter dan hij is en wordt de oorzaak nooit aangepakt.</li></ul><h2>Hoe volg je first pass yield wekelijks?</h2><ul><li><strong>Kies één of twee processen.</strong> Begin waar fouten het duurst zijn of het meest zichtbaar voor klanten.</li><li><strong>Stel een doel.</strong> Baseer het op je huidige uitgangswaarde, bijvoorbeeld van 88 naar 92 procent in een kwartaal.</li><li><strong>Leg instroom en eerste-keer-goed vast.</strong> Houd de telregels gelijk, zodat weken vergelijkbaar blijven.</li><li><strong>Bespreek de trend en de belangrijkste oorzaken.</strong> Een wekelijkse blik op de lijn en de drie meest voorkomende foutoorzaken is genoeg voor gestage verbetering.</li></ul><p>Staat het cijfer naast je andere doelen, dan is het moeilijker te negeren. Een tool als FulcrumGrid Command Center kan first pass yield samen met andere KPI’s, doelen en verbeterprojecten in één overzicht tonen, zodat het wekelijkse overleg van dezelfde cijfers uitgaat.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Wat is een goede first pass yield?</summary><p>Dat hangt af van het proces en de complexiteit ervan. Veel herhaalbare dienstverleningsprocessen mikken op 95 procent of meer, terwijl complexe assemblages lager kunnen beginnen. Het belangrijkst is de trend ten opzichte van je eigen uitgangswaarde.</p></details>
+        <details class="faq-item"><summary>Is first pass yield hetzelfde als first time right?</summary><p>Ze beschrijven hetzelfde idee. First time right wordt vaker gebruikt in dienstverlening en logistiek, first pass yield vaker in de productie.</p></details>
+        <details class="faq-item"><summary>Waarom is rolled throughput yield lager dan first pass yield?</summary><p>Omdat het de first pass yields van alle stappen met elkaar vermenigvuldigt. Ook als elke stap op zich goed presteert, stapelen kleine verliezen zich op over het hele proces.</p></details>
+        <details class="faq-item"><summary>Tellen herbewerkte eenheden mee als goed?</summary><p>Niet voor first pass yield. Elke eenheid die correctie, reparatie of retour nodig had, telt als fout, ook als ze uiteindelijk is geleverd. In de eindopbrengst telt ze wel als goed.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Volg kwaliteit naast al je andere doelen</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center brengt je KPI’s, doelen en projecten samen in één overzicht, zodat first pass yield en de projecten die het verbeteren makkelijk met je team te bespreken zijn.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/products/tms/">TMS</a>
+          <a href="/nl/products/assure/">Assure</a>
+          <a href="/nl/products/close/">Close</a>
+          <a href="/nl/products/consolidate/">Consolidate</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
