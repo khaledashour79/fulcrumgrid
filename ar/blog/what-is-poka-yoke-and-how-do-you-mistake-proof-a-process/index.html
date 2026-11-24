@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>ما هو بوكا يوكي (منع الأخطاء) وكيف تجعل العملية محصّنة ضد الخطأ؟ — FulcrumGrid</title>
+  <meta name="description" content="يوقف أسلوب بوكا يوكي الأخطاء قبل أن تتحول إلى عيوب. تعرّف على أصله ونوعيه وطرقه الثلاث وأمثلة عملية وكيف تحصّن عملياتك ضد الخطأ خطوة بخطوة." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="ما هو بوكا يوكي (منع الأخطاء) وكيف تجعل العملية محصّنة ضد الخطأ؟" />
+  <meta property="og:description" content="يوقف أسلوب بوكا يوكي الأخطاء قبل أن تتحول إلى عيوب. تعرّف على أصله ونوعيه وطرقه الثلاث وأمثلة عملية وكيف تحصّن عملياتك ضد الخطأ خطوة بخطوة." />
+  <meta property="og:url" content="https://fulcrumgrid.com/ar/blog/what-is-poka-yoke-and-how-do-you-mistake-proof-a-process/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-24" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="لوحة التحكم للتنفيذيين من FulcrumGrid — العمليات في لمحة" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ما هو بوكا يوكي (منع الأخطاء) وكيف تجعل العملية محصّنة ضد الخطأ؟" />
+  <meta name="twitter:description" content="يوقف أسلوب بوكا يوكي الأخطاء قبل أن تتحول إلى عيوب. تعرّف على أصله ونوعيه وطرقه الثلاث وأمثلة عملية وكيف تحصّن عملياتك ضد الخطأ خطوة بخطوة." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/ar/blog/what-is-poka-yoke-and-how-do-you-mistake-proof-a-process/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-poka-yoke-and-how-do-you-mistake-proof-a-process/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-poka-yoke-and-how-do-you-mistake-proof-a-process/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-poka-yoke-and-how-do-you-mistake-proof-a-process/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-poka-yoke-and-how-do-you-mistake-proof-a-process/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-poka-yoke-and-how-do-you-mistake-proof-a-process/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-poka-yoke-and-how-do-you-mistake-proof-a-process/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-poka-yoke-and-how-do-you-mistake-proof-a-process/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-poka-yoke-and-how-do-you-mistake-proof-a-process/" />
+
+  <link rel="preload" href="/assets/fonts/cairo-600-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/cairo-400-arabic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "ما هو بوكا يوكي (منع الأخطاء) وكيف تجعل العملية محصّنة ضد الخطأ؟",
+    "description": "يوقف أسلوب بوكا يوكي الأخطاء قبل أن تتحول إلى عيوب. تعرّف على أصله ونوعيه وطرقه الثلاث وأمثلة عملية وكيف تحصّن عملياتك ضد الخطأ خطوة بخطوة.",
+    "datePublished": "2026-11-24",
+    "dateModified": "2026-11-24",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/ar/blog/what-is-poka-yoke-and-how-do-you-mistake-proof-a-process/"
+    },
+    "inLanguage": "ar"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "الرئيسية",
+        "item": "https://fulcrumgrid.com/ar/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "المدوّنة",
+        "item": "https://fulcrumgrid.com/ar/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "دليل بوكا يوكي",
+        "item": "https://fulcrumgrid.com/ar/blog/what-is-poka-yoke-and-how-do-you-mistake-proof-a-process/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "ماذا يعني بوكا يوكي؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "بوكا يوكي كلمة يابانية تعني منع الأخطاء أو تجنّب الأخطاء غير المقصودة. وتصف أدوات أو قواعد بسيطة تمنع الأخطاء أو تكشفها قبل أن تتحول إلى عيوب."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "من ابتكر بوكا يوكي؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "طوّر شيغيو شينغو هذا المفهوم أثناء عمله مع تويوتا في ستينيات القرن العشرين، وأصبح جزءاً من نظام تويوتا للإنتاج ومن نهجه في الرقابة الصفرية على الجودة."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ما الفرق بين بوكا يوكي القائم على المنع والقائم على الكشف؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "المنع يوقف العملية حتى يُصحَّح الخطأ، فلا يمكنه الانتقال إلى المرحلة التالية. أما الكشف فيسمح باستمرار العملية لكنه ينبّه إلى الخطأ فوراً، ولذلك يعتمد على استجابة أحدهم."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "هل يمكن تطبيق بوكا يوكي في المكاتب والبرمجيات؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "نعم. فالحقول الإلزامية والقوائم المنسدلة وقوائم التحقق والقوالب والترميز اللوني وكشف الفواتير المكررة كلها صور من بوكا يوكي في العمل الإداري والرقمي."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/ar/" aria-label="FulcrumGrid الصفحة الرئيسية">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <a href="/ar/products/">المنتجات</a>
+        <a href="/ar/features/">الشبكة</a>
+        <a href="/ar/pricing/">الأسعار</a>
+        <a href="/ar/regions/">المناطق</a>
+        <a href="/ar/blog/" class="active" aria-current="page">المدوّنة</a>
+        <a href="/ar/contact/">اتصل بنا</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="اللغة">ع ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" class="active" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/ar/contact/">اطلب عرضًا توضيحيًا</a>
+      </div>
+      <button class="nav-toggle" aria-label="القائمة"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/ar/">الرئيسية</a> / <a href="/ar/blog/">المدوّنة</a> / دليل بوكا يوكي</p>
+        <span class="tag tag-accent">العمليات</span>
+        <h1>ما هو بوكا يوكي (منع الأخطاء) وكيف تجعل العملية محصّنة ضد الخطأ؟</h1>
+        <p class="hero-intro">يوقف أسلوب بوكا يوكي الأخطاء قبل أن تتحول إلى عيوب. تعرّف على أصله ونوعيه وطرقه الثلاث وأمثلة عملية وكيف تحصّن عملياتك ضد الخطأ خطوة بخطوة.</p>
+        <p class="mono"><time datetime="2026-11-24">٢٤ نوفمبر ٢٠٢٦</time> · ٦ دقائق للقراءة</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>لدى كل فريق أخطاء تتكرر مرة بعد مرة: طلب يُشحن إلى عنوان قديم، وفاتورة تُدفع مرتين، ونموذج يُرسل دون توقيع. يفيد التدريب والتذكير لأسبوع، ثم يعود الخطأ نفسه. أما أسلوب بوكا يوكي فيتبع نهجاً مختلفاً. فبدلاً من مطالبة الناس بمزيد من الانتباه، يغيّر العملية نفسها بحيث يصبح الخطأ صعباً أو مستحيلاً. يشرح هذا الدليل ما هو بوكا يوكي، وأنواعه وطرقه، وكيف يُطبَّق خارج المصنع، وكيف تستخدمه خطوة بخطوة.</p><h2>ما هو بوكا يوكي؟</h2><p>بوكا يوكي مصطلح ياباني يعني منع الأخطاء أو التحصين ضد الخطأ. ويشير إلى أي أداة بسيطة أو خاصية في التصميم أو قاعدة تمنع وقوع الخطأ البشري، أو تكشفه فوراً حتى لا يتحول إلى عيب. وتقوم الفكرة على ملاحظة واحدة: سيخطئ الناس دائماً بين حين وآخر، لكن الخطأ لا يصبح عيباً إلا إذا واصل طريقه في العملية دون أن يلاحظه أحد.</p><h2>من أين جاء بوكا يوكي؟</h2><p>طوّر هذا المفهوم شيغيو شينغو، وهو مهندس صناعي عمل عن قرب مع شركة تويوتا في ستينيات القرن العشرين. استخدم شينغو في البداية تعبير باكا يوكي، أي الحماية من الحمقى، ثم استبدله ببوكا يوكي، أي تجنّب الأخطاء غير المقصودة، لأن الفكرة لم تكن يوماً أن العاملين حمقى. وأصبح الأسلوب ركناً أساسياً في نظام تويوتا للإنتاج، وفي هدف شينغو الأوسع المعروف بالرقابة الصفرية على الجودة: اكتشاف الأخطاء عند مصدرها بدلاً من الاعتماد على الفحص في النهاية.</p><h2>ما نوعا بوكا يوكي؟</h2><ul><li><strong>المنع أو التحكم.</strong> لا يمكن للعملية أن تستمر، مادياً أو منطقياً، ما دام الخطأ قائماً. فالآلة لا تعمل حتى تُثبَّت القطعة في مكانها الصحيح، والنظام لا يقبل نموذجاً ينقصه حقل. وهذا هو النوع الأقوى.</li><li><strong>الكشف أو التنبيه.</strong> قد يقع الخطأ، لكن إشارة تنبّه إليه فوراً: ضوء أو جرس إنذار أو نافذة منبثقة أو خلية مظلّلة. وهو مفيد حين يكون إيقاف العملية غير عملي، لكنه يعتمد على استجابة أحدهم للتنبيه.</li></ul><h2>ما الطرق الثلاث لبوكا يوكي؟</h2><ul><li><strong>طريقة التلامس.</strong> تتحقق من خاصية مادية أو مرئية مثل الشكل أو الحجم أو الموضع أو اللون. والقابس الذي لا يدخل إلا في اتجاه واحد هو المثال الكلاسيكي.</li><li><strong>طريقة القيمة الثابتة.</strong> تتحقق من إنجاز عدد محدد من الإجراءات أو القطع. فصينية تجميع فيها ست خانات بالضبط تُظهر من النظرة الأولى أن برغياً واحداً مفقود.</li><li><strong>طريقة تسلسل الخطوات.</strong> تتحقق من أن الخطوات تتم بالترتيب الصحيح. ومن أمثلتها مسار عمل لا يسمح باعتماد طلب شراء قبل إدخال رمز الميزانية.</li></ul><h2>كيف يبدو بوكا يوكي خارج المصنع؟</h2><p>منع الأخطاء مفيد بالقدر نفسه في المكاتب والمستودعات والبرمجيات.</p><ul><li><strong>الحقول الإلزامية.</strong> لا يمكن إرسال الطلب قبل تعبئة مركز التكلفة وتاريخ الاستحقاق.</li><li><strong>قوائم التحقق.</strong> قائمة قصيرة وثابتة لإقفال نهاية الشهر أو لتسليم ملف عميل تضمن عدم إغفال أي خطوة.</li><li><strong>الترميز اللوني.</strong> الحاويات والملفات والملصقات الملوّنة تجعل وجود شيء في غير مكانه واضحاً على الفور.</li><li><strong>القوالب.</strong> قالب موحّد لعروض الأسعار أو العقود يمنع نسيان البنود الإلزامية.</li><li><strong>التحقق داخل الأنظمة.</strong> منتقيات التاريخ والقوائم المنسدلة وفحوص التنسيق تمنع الإدخالات غير الصالحة، مثل موعد تسليم في ٣١ فبراير.</li><li><strong>كشف الفواتير المكررة.</strong> برنامج الحسابات الدائنة الذي يمنع تسجيل فاتورة لها المورد والرقم والمبلغ نفسه لفاتورة مدفوعة سابقاً يجنّبك دفعاً مزدوجاً مكلفاً.</li></ul><h2>كيف تحصّن عملية ضد الخطأ خطوة بخطوة؟</h2><ul><li><strong>١. حدّد الأخطاء المتكررة.</strong> استعن بسجلات العيوب وإعادة العمل والشكاوى والمرتجعات. رتّب الأخطاء حسب تكرارها وتكلفتها، واختر واحداً لتبدأ به.</li><li><strong>٢. ابحث عن السبب الجذري.</strong> اسأل لماذا يقع الخطأ حتى تصل إلى شيء في العملية، لا إلى شخص. فالمدخلات غير الواضحة والخيارات المتشابهة والخطوات التي تعتمد على الذاكرة أسباب شائعة.</li><li><strong>٣. اختر أقوى وسيلة ممكنة التطبيق.</strong> الأفضل أن تزيل احتمال الخطأ تماماً، ثم المنع، ثم الكشف. واحرص على البساطة وقلة التكلفة، فأفضل وسائل بوكا يوكي تكاد تكون غير مرئية.</li><li><strong>٤. اختبرها.</strong> جرّب التغيير مع الأشخاص الذين يؤدون العمل فعلاً. وتأكد من أنه يلتقط الخطأ، ولا يبطئ العمل المعتاد، ولا يسهل الالتفاف عليه.</li><li><strong>٥. قِس معدل الأخطاء.</strong> قارن معدل الأخطاء قبل التغيير وبعده، مثل عدد الأخطاء لكل ١٠٠٠ معاملة. وإن لم ينخفض، فعُد إلى السبب الجذري.</li></ul><h2>ما الأخطاء الشائعة في تطبيق بوكا يوكي؟</h2><ul><li><strong>الاكتفاء بالتنبيهات.</strong> يعتاد الناس إغلاق النوافذ المنبثقة دون قراءتها. وحين يكون الخطأ مكلفاً، امنعه بدلاً من التنبيه إليه.</li><li><strong>لوم الأشخاص.</strong> إذا كان الحل «إعادة تدريب الفريق»، فالعملية لم تتغير وسيعود الخطأ.</li><li><strong>الإكثار من الضوابط.</strong> كل حقل إلزامي إضافي أو خطوة تأكيد جديدة تضيف عبئاً. احمِ العملية من الأخطاء المهمة، لا من كل خطأ يمكن تخيّله.</li><li><strong>وسائل يسهل الالتفاف عليها.</strong> إذا كان الطريق المختصر أسرع من الطريقة الصحيحة، فسيُستخدم. اسأل عن السبب قبل تشديد الضبط.</li><li><strong>عدم قياس النتيجة.</strong> من دون رقم قبل التغيير وبعده، لن تعرف إن كانت الوسيلة ناجحة أم أن الخطأ انتقل ببساطة إلى مكان آخر.</li></ul><p>يحقق بوكا يوكي أفضل النتائج حين يصبح عادة لا مشروعاً لمرة واحدة. فكلما تكرر خطأ، اسأل كيف يمكن للعملية أن تجعله مستحيلاً، وأضف أبسط وسيلة تحقق ذلك، وتابع معدل الأخطاء حتى يستقر عند مستوى منخفض.</p>
+
+        <h2>الأسئلة الشائعة</h2>
+        <details class="faq-item"><summary>ماذا يعني بوكا يوكي؟</summary><p>بوكا يوكي كلمة يابانية تعني منع الأخطاء أو تجنّب الأخطاء غير المقصودة. وتصف أدوات أو قواعد بسيطة تمنع الأخطاء أو تكشفها قبل أن تتحول إلى عيوب.</p></details>
+        <details class="faq-item"><summary>من ابتكر بوكا يوكي؟</summary><p>طوّر شيغيو شينغو هذا المفهوم أثناء عمله مع تويوتا في ستينيات القرن العشرين، وأصبح جزءاً من نظام تويوتا للإنتاج ومن نهجه في الرقابة الصفرية على الجودة.</p></details>
+        <details class="faq-item"><summary>ما الفرق بين بوكا يوكي القائم على المنع والقائم على الكشف؟</summary><p>المنع يوقف العملية حتى يُصحَّح الخطأ، فلا يمكنه الانتقال إلى المرحلة التالية. أما الكشف فيسمح باستمرار العملية لكنه ينبّه إلى الخطأ فوراً، ولذلك يعتمد على استجابة أحدهم.</p></details>
+        <details class="faq-item"><summary>هل يمكن تطبيق بوكا يوكي في المكاتب والبرمجيات؟</summary><p>نعم. فالحقول الإلزامية والقوائم المنسدلة وقوائم التحقق والقوالب والترميز اللوني وكشف الفواتير المكررة كلها صور من بوكا يوكي في العمل الإداري والرقمي.</p></details>
+
+        <p style="margin-top:32px"><a href="/ar/blog/"><span aria-hidden="true">←</span> العودة إلى المدوّنة</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid لوحة التحكم للتنفيذيين</p>
+        <h2>حوّل الأخطاء المتكررة إلى تحسينات قابلة للمتابعة</h2>
+        <p class="section-lead" style="margin:0 auto 26px">يجمع مركز القيادة Command Center من FulcrumGrid مؤشرات معدل الأخطاء والأهداف ومشاريع منع الأخطاء ومهامها في عرض واحد، لترى إن كان كل تحسين يؤتي ثماره فعلاً.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/ar/products/command-center/">استكشف لوحة التحكم للتنفيذيين</a>
+          <a class="btn btn-secondary" href="/ar/blog/">العودة إلى المدوّنة</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>العمود الفقري التشغيلي للفرق الحديثة.</p>
+        </div>
+        <div class="foot-col">
+          <h5>المنتجات</h5>
+          <a href="/ar/products/">كل المنتجات</a>
+          <a href="/ar/products/hr-suite/">منصة الموارد البشرية</a>
+          <a href="/ar/products/command-center/">لوحة التحكم للتنفيذيين</a>
+          <a href="/ar/products/collection/">منصة تحصيل الديون</a>
+          <a href="/ar/products/tms/">منصة العمليات اللوجستية</a>
+          <a href="/ar/products/assure/">منصة الحوكمة والامتثال</a>
+          <a href="/ar/products/close/">منصة المعايير المحاسبية والإغلاق</a>
+          <a href="/ar/products/consolidate/">منصة التوحيد المالي</a>
+          <a href="/ar/custom-apps/">تطبيقات مخصّصة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشبكة</h5>
+          <a href="/ar/features/">الميزات</a>
+          <a href="/ar/integrations/">التكاملات</a>
+          <a href="/ar/how-it-works/">كيف تعمل</a>
+          <a href="/ar/pricing/">الأسعار</a>
+          <a href="/ar/regions/">المناطق</a>
+          <a href="/ar/blog/">المدوّنة</a>
+        </div>
+        <div class="foot-col">
+          <h5>الشركة</h5>
+          <a href="/ar/about/">من نحن</a>
+          <a href="/ar/faq/">الأسئلة الشائعة</a>
+          <a href="/ar/contact/">اتصل بنا</a>
+          <a href="/ar/privacy/">الخصوصية</a>
+          <a href="https://avenlorconsulting.com/ar/" target="_blank" rel="noopener">أفنلور للاستشارات ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. جميع الحقوق محفوظة.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
