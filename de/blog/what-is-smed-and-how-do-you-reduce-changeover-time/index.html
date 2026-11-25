@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Was ist SMED und wie lassen sich Rüstzeiten verkürzen? — FulcrumGrid</title>
+  <meta name="description" content="SMED verkürzt Rüstzeiten, indem Vorbereitung aus dem Stillstand verlagert wird. Herkunft, sechs Schritte, Beispiele außerhalb der Fabrik und richtige Messung." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Was ist SMED und wie lassen sich Rüstzeiten verkürzen?" />
+  <meta property="og:description" content="SMED verkürzt Rüstzeiten, indem Vorbereitung aus dem Stillstand verlagert wird. Herkunft, sechs Schritte, Beispiele außerhalb der Fabrik und richtige Messung." />
+  <meta property="og:url" content="https://fulcrumgrid.com/de/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-25" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Was ist SMED und wie lassen sich Rüstzeiten verkürzen?" />
+  <meta name="twitter:description" content="SMED verkürzt Rüstzeiten, indem Vorbereitung aus dem Stillstand verlagert wird. Herkunft, sechs Schritte, Beispiele außerhalb der Fabrik und richtige Messung." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/de/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Was ist SMED und wie lassen sich Rüstzeiten verkürzen?",
+    "description": "SMED verkürzt Rüstzeiten, indem Vorbereitung aus dem Stillstand verlagert wird. Herkunft, sechs Schritte, Beispiele außerhalb der Fabrik und richtige Messung.",
+    "datePublished": "2026-11-25",
+    "dateModified": "2026-11-25",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/de/blog/what-is-smed-and-how-do-you-reduce-changeover-time/"
+    },
+    "inLanguage": "de"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://fulcrumgrid.com/de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "SMED-Leitfaden",
+        "item": "https://fulcrumgrid.com/de/blog/what-is-smed-and-how-do-you-reduce-changeover-time/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wofür steht SMED?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SMED steht für Single Minute Exchange of Die, also Werkzeugwechsel im einstelligen Minutenbereich. Es ist eine Methode, um Rüstzeiten auf unter zehn Minuten zu senken."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wer hat SMED entwickelt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Shigeo Shingo entwickelte SMED, beginnend 1950 in einem Mazda-Werk und weiter verfeinert ab Ende der 1960er-Jahre bei Toyota, wo es Teil des Toyota-Produktionssystems wurde."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was ist der Unterschied zwischen internem und externem Rüsten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Internes Rüsten ist nur bei stillstehendem Prozess möglich, externes Rüsten auch während er läuft. Wer Arbeit von intern nach extern verlagert, verkürzt deshalb den Stillstand."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie wird die Rüstzeit gemessen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Rüstzeit reicht vom letzten Gutteil des vorherigen Auftrags bis zum ersten Gutteil des nächsten Auftrags bei voller Geschwindigkeit, einschließlich Aufräumen, Justieren und Probeläufen."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/de/" aria-label="FulcrumGrid Startseite">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/de/products/">Produkte</a>
+        <a href="/de/features/">Grid</a>
+        <a href="/de/pricing/">Preise</a>
+        <a href="/de/regions/">Regionen</a>
+        <a href="/de/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/de/contact/">Kontakt</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Sprache">DE ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" class="active" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/de/contact/">Demo anfragen</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/de/">Startseite</a> / <a href="/de/blog/">Blog</a> / SMED-Leitfaden</p>
+        <span class="tag tag-accent">Betrieb</span>
+        <h1>Was ist SMED und wie lassen sich Rüstzeiten verkürzen?</h1>
+        <p class="hero-intro">SMED verkürzt Rüstzeiten, indem Vorbereitung aus dem Stillstand verlagert wird. Herkunft, sechs Schritte, Beispiele außerhalb der Fabrik und richtige Messung.</p>
+        <p class="mono"><time datetime="2026-11-25">25. November 2026</time> · 6 Min. Lesezeit</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Jedes Mal, wenn ein Team von einem Produkt, Auftrag oder Kunden zum nächsten wechselt, entsteht eine Lücke, in der nichts Nützliches entsteht. Eine Presse wartet auf ein neues Werkzeug, ein Entwickler baut eine Testumgebung neu auf. Diese Umrüstungen tauchen selten als eigener Posten auf, bestimmen aber still und leise, wie klein Ihre Losgrößen sein können, wie schnell Sie auf Nachfrage reagieren und wie viel Kapazität Sie tatsächlich haben. SMED ist die bekannteste Methode, um sie zu verkürzen.</p><h2>Was ist SMED?</h2><p>SMED steht für Single Minute Exchange of Die, also Werkzeugwechsel im einstelligen Minutenbereich. Es ist eine Methode, um die Zeit zu verkürzen, die ein Prozess für den Wechsel von einem Produkt oder einer Aufgabe zur nächsten braucht. Der Name setzt ein ehrgeiziges Ziel: eine Umrüstung in weniger als zehn Minuten. Der Großteil der Rüstzeit entfällt nicht auf Arbeiten, die wirklich einen Stillstand erfordern. Er geht für Suchen, Warten, Laufwege, Justieren und Tätigkeiten verloren, die man vorab hätte erledigen können.</p><h2>Woher kommt SMED?</h2><p>SMED wurde von Shigeo Shingo entwickelt, dem Wirtschaftsingenieur, der auch für Poka-Yoke bekannt ist. Als er 1950 Engpässe in einem Mazda-Werk in Hiroshima untersuchte, sah Shingo, wie Bediener große Pressen anhielten, um nach fehlenden Schrauben und Werkzeugen zu suchen. Dabei unterschied er erstmals zwischen Arbeiten, für die die Maschine stillstehen muss, und solchen, für die das nicht nötig ist. Später verfeinerte er die Idee ab Ende der 1960er-Jahre bei Toyota, wo Werkzeugwechsel an großen Karosseriepressen von mehreren Stunden auf wenige Minuten sanken. SMED wurde zu einem Kernbestandteil des Toyota-Produktionssystems.</p><h2>Warum ist die Rüstzeit so wichtig?</h2><ul><li><strong>Kleinere Lose.</strong> Sind Umrüstungen lang, fahren Teams große Lose, um die verlorene Zeit zu verteilen. Das erhöht die Bestände, bindet Kapital und verdeckt Probleme. Kurze Rüstzeiten machen kleine Lose wirtschaftlich.</li><li><strong>Flexibilität.</strong> Schnelle Wechsel ermöglichen es, der tatsächlichen Nachfrage zu folgen, Eilaufträge anzunehmen und mehr Varianten anzubieten.</li><li><strong>Kapazität.</strong> Jede beim Rüsten eingesparte Stunde ist eine zusätzliche Produktionsstunde, ohne neue Anlagen oder zusätzliches Personal.</li><li><strong>Verfügbarkeit.</strong> Rüsten und Einrichten gehört zu den klassischen Verlusten, die den Verfügbarkeitsfaktor der Gesamtanlageneffektivität senken. Kürzere Rüstzeiten erhöhen die Verfügbarkeit unmittelbar.</li></ul><h2>Was ist der Unterschied zwischen internem und externem Rüsten?</h2><p>Diese Unterscheidung ist der Kern von SMED. <strong>Internes Rüsten</strong> ist nur bei stillstehendem Prozess möglich, etwa das Ausbauen eines Werkzeugs oder der Wechsel einer Form. <strong>Externes Rüsten</strong> lässt sich erledigen, während der Prozess noch läuft: die nächsten Werkzeuge holen, eine Form vorwärmen, Etiketten drucken oder prüfen, ob das Material bereitsteht. Diese Arbeit aus dem Stillstand herauszuholen, ist oft der schnellste Gewinn.</p><h2>Welche Schritte umfasst SMED?</h2><ul><li><strong>1. Beobachten und dokumentieren.</strong> Filmen oder stoppen Sie eine echte Umrüstung von Anfang bis Ende. Erfassen Sie jede Tätigkeit mit ihrer Dauer, einschließlich Laufwegen, Suchen und Warten. Beziehen Sie die Menschen ein, die die Arbeit machen.</li><li><strong>2. Internes und externes Rüsten trennen.</strong> Ordnen Sie jede Tätigkeit als intern oder extern ein. Allein die externen Tätigkeiten vor dem Stopp oder nach dem Wiederanlauf zu erledigen, verkürzt die Rüstzeit oft um ein Drittel oder mehr.</li><li><strong>3. Internes in externes Rüsten umwandeln.</strong> Fragen Sie bei jeder verbleibenden internen Tätigkeit, wie sie sich bei laufendem Prozess erledigen ließe. Teile vormontieren, Werkzeuge auf die richtigen Maße voreinstellen und Vorwärmen sind klassische Beispiele.</li><li><strong>4. Internes Rüsten straffen.</strong> Verkürzen Sie, was weiterhin im Stillstand passieren muss. Ersetzen Sie Schrauben durch Schnellspanner, nutzen Sie Standardhöhen und Zentrierstifte, um das Justieren zu vermeiden, und arbeiten Sie zu zweit parallel.</li><li><strong>5. Externes Rüsten straffen.</strong> Organisieren Sie Werkzeuge und Material so, dass sie nah, beschriftet und vollständig sind.</li><li><strong>6. Standardisieren und halten.</strong> Halten Sie die neue Methode in einem einfachen Standardarbeitsblatt fest, schulen Sie alle darauf und messen Sie weiter.</li></ul><h2>Wie sieht SMED außerhalb der Fabrik aus?</h2><p>Jeder Prozess, der zwischen Aufträgen wechselt, hat eine Umrüstung, und dieselbe Logik greift.</p><ul><li><strong>Tischwechsel im Restaurant.</strong> Das Personal hält an der Station fertige Tabletts mit Besteck, Servietten und Speisekarten bereit, sodass Abräumen und Neueindecken ein Gang statt vier ist.</li><li><strong>Wechsel eines Druckauftrags.</strong> Platten, Papier und Farbeinstellungen für den nächsten Auftrag werden vorbereitet und geprüft, während der aktuelle Auftrag noch läuft.</li><li><strong>Einrichten von Büro- und IT-Umgebungen.</strong> Skriptgesteuerte, vorlagenbasierte Umgebungen ersetzen die manuelle Installation, sodass ein neuer Laptop oder eine Testumgebung in Minuten statt in einem Tag bereitsteht.</li><li><strong>Schicht- oder Linienwechsel.</strong> Ein kurzes Standard-Übergabeblatt, das vor Schichtende ausgefüllt wird, ersetzt eine lange mündliche Einweisung, während die Linie wartet.</li><li><strong>Raumwechsel in der Praxis oder Klinik.</strong> Vorgepackte Sets für jede Behandlung und eine feste Reinigungsabfolge verkürzen die Zeit zwischen zwei Patienten, ohne Abstriche bei der Hygiene.</li></ul><h2>Wie misst man die Rüstzeit?</h2><p>Die übliche Definition ist die Zeit vom <strong>letzten Gutteil</strong> des vorherigen Auftrags bis zum <strong>ersten Gutteil</strong> des nächsten Auftrags bei voller Geschwindigkeit. Wer die Uhr beim Wiederanlauf der Maschine anhält statt erst dann, wenn sie Gutteile im Normaltakt liefert, blendet die Einstell- und Ausschussphase aus, die oft die längste ist. Verfolgen Sie Mittelwert und Streuung über viele Umrüstungen, um zu sehen, ob die Verbesserungen halten.</p><h2>Welche Fehler sind bei SMED typisch?</h2><ul><li><strong>Die Beobachtung überspringen.</strong> Teams kaufen Schnellspanntechnik, bevor sie die Umrüstung analysiert haben, und verpassen die günstigen Gewinne durch das Verlagern externer Arbeit.</li><li><strong>Den falschen Endpunkt messen.</strong> Nur bis zum Wiederanlauf zu zählen statt bis zum ersten Gutteil bei voller Geschwindigkeit, schönt das Ergebnis.</li><li><strong>Die gewonnene Zeit nicht nutzen.</strong> Führen kürzere Rüstzeiten weder zu kleineren Losen noch zu mehr Ausbringung, bleibt der Nutzen nur auf dem Papier.</li></ul><p>SMED wirkt am besten als feste Gewohnheit: beobachten, trennen, umwandeln, straffen und standardisieren, dann von vorn beginnen.</p>
+
+        <h2>Häufige Fragen</h2>
+        <details class="faq-item"><summary>Wofür steht SMED?</summary><p>SMED steht für Single Minute Exchange of Die, also Werkzeugwechsel im einstelligen Minutenbereich. Es ist eine Methode, um Rüstzeiten auf unter zehn Minuten zu senken.</p></details>
+        <details class="faq-item"><summary>Wer hat SMED entwickelt?</summary><p>Shigeo Shingo entwickelte SMED, beginnend 1950 in einem Mazda-Werk und weiter verfeinert ab Ende der 1960er-Jahre bei Toyota, wo es Teil des Toyota-Produktionssystems wurde.</p></details>
+        <details class="faq-item"><summary>Was ist der Unterschied zwischen internem und externem Rüsten?</summary><p>Internes Rüsten ist nur bei stillstehendem Prozess möglich, externes Rüsten auch während er läuft. Wer Arbeit von intern nach extern verlagert, verkürzt deshalb den Stillstand.</p></details>
+        <details class="faq-item"><summary>Wie wird die Rüstzeit gemessen?</summary><p>Die Rüstzeit reicht vom letzten Gutteil des vorherigen Auftrags bis zum ersten Gutteil des nächsten Auftrags bei voller Geschwindigkeit, einschließlich Aufräumen, Justieren und Probeläufen.</p></details>
+
+        <p style="margin-top:32px"><a href="/de/blog/"><span aria-hidden="true">←</span> Zurück zum Blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Machen Sie jede Verbesserung beim Rüsten sichtbar</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center bündelt Ihre Rüstzeit-KPIs, Zielwerte und SMED-Verbesserungsaufgaben in einer Ansicht, damit Sie sehen, ob jede Maßnahme Stillstände wirklich verkürzt.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/de/products/command-center/">Entdecken Command Center</a>
+          <a class="btn btn-secondary" href="/de/blog/">Zurück zum Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>Das operative Rückgrat für moderne Teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produkte</h5>
+          <a href="/de/products/">Alle Produkte</a>
+          <a href="/de/products/hr-suite/">HR Suite</a>
+          <a href="/de/products/command-center/">Command Center</a>
+          <a href="/de/products/collection/">Collection</a>
+          <a href="/de/products/tms/">TMS</a>
+          <a href="/de/products/assure/">Assure</a>
+          <a href="/de/products/close/">Close</a>
+          <a href="/de/products/consolidate/">Consolidate</a>
+          <a href="/de/custom-apps/">Individuelle Apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/de/features/">Funktionen</a>
+          <a href="/de/integrations/">Integrationen</a>
+          <a href="/de/how-it-works/">So funktioniert's</a>
+          <a href="/de/pricing/">Preise</a>
+          <a href="/de/regions/">Regionen</a>
+          <a href="/de/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Unternehmen</h5>
+          <a href="/de/about/">Über uns</a>
+          <a href="/de/faq/">FAQ</a>
+          <a href="/de/contact/">Kontakt</a>
+          <a href="/de/privacy/">Datenschutz</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle Rechte vorbehalten.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

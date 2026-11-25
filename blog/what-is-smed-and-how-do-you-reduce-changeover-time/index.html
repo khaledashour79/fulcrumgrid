@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>What Is SMED and How Do You Reduce Changeover Time? — FulcrumGrid</title>
+  <meta name="description" content="SMED cuts changeover time by moving setup work out of downtime. Learn its origin, the six steps, examples beyond the factory and how to measure changeovers." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What Is SMED and How Do You Reduce Changeover Time?" />
+  <meta property="og:description" content="SMED cuts changeover time by moving setup work out of downtime. Learn its origin, the six steps, examples beyond the factory and how to measure changeovers." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-25" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What Is SMED and How Do You Reduce Changeover Time?" />
+  <meta name="twitter:description" content="SMED cuts changeover time by moving setup work out of downtime. Learn its origin, the six steps, examples beyond the factory and how to measure changeovers." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What Is SMED and How Do You Reduce Changeover Time?",
+    "description": "SMED cuts changeover time by moving setup work out of downtime. Learn its origin, the six steps, examples beyond the factory and how to measure changeovers.",
+    "datePublished": "2026-11-25",
+    "dateModified": "2026-11-25",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/what-is-smed-and-how-do-you-reduce-changeover-time/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "SMED Guide",
+        "item": "https://fulcrumgrid.com/blog/what-is-smed-and-how-do-you-reduce-changeover-time/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does SMED stand for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SMED stands for single-minute exchange of die. It is a method for cutting changeover time, with the aim of completing changeovers in under ten minutes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who developed SMED?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Shigeo Shingo developed SMED, starting at a Mazda plant in 1950 and refining it at Toyota from the late 1960s, where it became part of the Toyota Production System."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between internal and external setup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Internal setup can only be done while the process is stopped. External setup can be done while it is still running, so moving work from internal to external shortens downtime."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is changeover time measured?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Changeover time runs from the last good unit of the previous run to the first good unit of the next run at full speed, including cleanup, adjustments and trial runs."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / SMED Guide</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>What Is SMED and How Do You Reduce Changeover Time?</h1>
+        <p class="hero-intro">SMED cuts changeover time by moving setup work out of downtime. Learn its origin, the six steps, examples beyond the factory and how to measure changeovers.</p>
+        <p class="mono"><time datetime="2026-11-25">November 25, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Every time a team switches from one product, job or customer to the next, there is a gap where nothing useful is produced. A press waits for a new die, or an engineer rebuilds a test environment. These changeovers rarely appear as a line item, yet they quietly decide how small your batches can be, how quickly you can respond to demand and how much capacity you really have. SMED is the best-known method for shrinking them.</p><h2>What is SMED?</h2><p>SMED stands for single-minute exchange of die. It is a method for reducing the time it takes to switch a process from one product or task to the next. The name sets an ambitious target: a changeover measured in single-digit minutes, in other words under ten. Most changeover time is not spent on work that truly requires the process to stop. It is spent searching, waiting, walking, adjusting and doing things that could have been prepared in advance.</p><h2>Where does SMED come from?</h2><p>SMED was developed by Shigeo Shingo, the industrial engineer also known for poka-yoke. In 1950, while studying bottlenecks at a Mazda plant in Hiroshima, Shingo saw operators stop large presses to hunt for missing bolts and tools, and he first drew the line between work that needs the machine to stop and work that does not. He later refined it at Toyota from the late 1960s, where die changes on large body presses fell from several hours to a few minutes. SMED became a core part of the Toyota Production System.</p><h2>Why does changeover time matter?</h2><ul><li><strong>Smaller batches.</strong> When changeovers are long, teams run large batches to spread the lost time. That builds inventory, ties up cash and hides problems. Short changeovers make small batches economical.</li><li><strong>Flexibility.</strong> Quick switches let you follow real demand, accept urgent orders and offer more variants.</li><li><strong>Capacity.</strong> Every hour saved on changeovers is an hour of output gained without new equipment or extra staff.</li><li><strong>Availability.</strong> Setups and adjustments are one of the classic losses that reduce the availability factor of overall equipment effectiveness. Cutting changeover time raises availability directly.</li></ul><h2>What is the difference between internal and external activities?</h2><p>This distinction is the heart of SMED. <strong>Internal activities</strong> can only be done while the process is stopped, such as removing a die or swapping a mould. <strong>External activities</strong> can be done while the process is still running, such as fetching the next tools, preheating a mould, printing labels or checking that materials are ready. Moving that work outside the stoppage is often the quickest win.</p><h2>What are the steps of SMED?</h2><ul><li><strong>1. Observe and record.</strong> Film or time a real changeover from start to finish. List every action with its duration, including walking, searching and waiting. Involve the people who do the work.</li><li><strong>2. Separate internal and external activities.</strong> Mark each action as internal or external. Simply doing the external ones before the stop or after the restart often cuts changeover time by a third or more.</li><li><strong>3. Convert internal to external.</strong> Take each remaining internal action and ask how it could be done while the process runs. Pre-assembling parts, presetting tools to the right dimensions and preheating are classic examples.</li><li><strong>4. Streamline internal activities.</strong> Shorten what must still happen during the stop. Replace bolts with quick-release clamps, use standard heights and locating pins to remove adjustment, and run tasks in parallel with two people.</li><li><strong>5. Streamline external activities.</strong> Organise tools and materials so they are close, labelled and complete.</li><li><strong>6. Standardise and sustain.</strong> Write the new method up as a simple standard work sheet, train everyone on it and keep measuring.</li></ul><h2>What does SMED look like outside the factory?</h2><p>Any process that switches between jobs has a changeover, and the same logic applies.</p><ul><li><strong>Restaurant table turn.</strong> Staff keep reset trays with cutlery, napkins and menus ready at the station, so clearing and resetting a table takes one trip instead of four.</li><li><strong>Switching a print job.</strong> The plates, paper and ink settings for the next job are prepared and checked while the current run is still printing.</li><li><strong>Office and IT environment setup.</strong> Scripted, template-based environments replace manual installation, so a new laptop or test environment is ready in minutes rather than a day.</li><li><strong>Shift or line switch.</strong> A short standard handover sheet, filled in before the end of the shift, replaces a long verbal briefing while the line waits.</li><li><strong>Clinic room turnover.</strong> Pre-packed procedure kits and a fixed cleaning sequence shorten the time between patients without cutting corners on hygiene.</li></ul><h2>How do you measure changeover time?</h2><p>The standard definition is the time from the <strong>last good unit</strong> of the previous run to the <strong>first good unit</strong> of the next run at full speed. Stopping the clock when the machine restarts, rather than when it produces good output at rate, hides the adjustment and scrap phase, which is often the longest part. Track the average and spread across many changeovers to see whether gains hold.</p><h2>What are common SMED mistakes?</h2><ul><li><strong>Skipping the observation.</strong> Teams jump to buying quick-release hardware before mapping the changeover, and miss the cheap gains from moving external work.</li><li><strong>Measuring the wrong end point.</strong> Counting only until restart, instead of until the first good unit at full speed, flatters the result.</li><li><strong>Not using the time saved.</strong> If shorter changeovers do not lead to smaller batches or more output, the benefit stays on paper.</li></ul><p>SMED works best as a steady habit: observe, separate, convert, streamline and standardise, then start again.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>What does SMED stand for?</summary><p>SMED stands for single-minute exchange of die. It is a method for cutting changeover time, with the aim of completing changeovers in under ten minutes.</p></details>
+        <details class="faq-item"><summary>Who developed SMED?</summary><p>Shigeo Shingo developed SMED, starting at a Mazda plant in 1950 and refining it at Toyota from the late 1960s, where it became part of the Toyota Production System.</p></details>
+        <details class="faq-item"><summary>What is the difference between internal and external setup?</summary><p>Internal setup can only be done while the process is stopped. External setup can be done while it is still running, so moving work from internal to external shortens downtime.</p></details>
+        <details class="faq-item"><summary>How is changeover time measured?</summary><p>Changeover time runs from the last good unit of the previous run to the first good unit of the next run at full speed, including cleanup, adjustments and trial runs.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Make every changeover improvement visible</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center keeps your changeover-time KPIs, targets and SMED improvement tasks in one view, so you can see whether each change is really cutting downtime.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/products/tms/">TMS</a>
+          <a href="/products/assure/">Assure</a>
+          <a href="/products/close/">Close</a>
+          <a href="/products/consolidate/">Consolidate</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

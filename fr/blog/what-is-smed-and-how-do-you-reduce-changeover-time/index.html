@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Qu’est-ce que le SMED et comment réduire le temps de changement ? — FulcrumGrid</title>
+  <meta name="description" content="Le SMED réduit le temps de changement de série en sortant la préparation de l’arrêt. Origine, six étapes, exemples hors usine et mesure des changements." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Qu’est-ce que le SMED et comment réduire le temps de changement ?" />
+  <meta property="og:description" content="Le SMED réduit le temps de changement de série en sortant la préparation de l’arrêt. Origine, six étapes, exemples hors usine et mesure des changements." />
+  <meta property="og:url" content="https://fulcrumgrid.com/fr/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-25" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Qu’est-ce que le SMED et comment réduire le temps de changement ?" />
+  <meta name="twitter:description" content="Le SMED réduit le temps de changement de série en sortant la préparation de l’arrêt. Origine, six étapes, exemples hors usine et mesure des changements." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/fr/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-smed-and-how-do-you-reduce-changeover-time/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Qu’est-ce que le SMED et comment réduire le temps de changement ?",
+    "description": "Le SMED réduit le temps de changement de série en sortant la préparation de l’arrêt. Origine, six étapes, exemples hors usine et mesure des changements.",
+    "datePublished": "2026-11-25",
+    "dateModified": "2026-11-25",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/fr/blog/what-is-smed-and-how-do-you-reduce-changeover-time/"
+    },
+    "inLanguage": "fr"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://fulcrumgrid.com/fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/fr/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guide du SMED",
+        "item": "https://fulcrumgrid.com/fr/blog/what-is-smed-and-how-do-you-reduce-changeover-time/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Que signifie SMED ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SMED signifie single-minute exchange of die, c’est-à-dire changement d’outil en moins de dix minutes. C’est une méthode pour réduire le temps de changement de série."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qui a développé le SMED ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Shigeo Shingo a développé le SMED, d’abord dans une usine Mazda en 1950, puis chez Toyota à partir de la fin des années 1960, où il est devenu une composante du système de production Toyota."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quelle est la différence entre préparation interne et externe ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La préparation interne ne peut se faire que processus arrêté. La préparation externe peut se faire pendant qu’il tourne encore : transférer du travail de l’interne vers l’externe réduit donc l’arrêt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment mesure-t-on le temps de changement ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le temps de changement va de la dernière pièce bonne de la série précédente à la première pièce bonne de la série suivante à pleine cadence, nettoyage, réglages et essais compris."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/fr/" aria-label="Accueil FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/fr/products/">Produits</a>
+        <a href="/fr/features/">Grille</a>
+        <a href="/fr/pricing/">Tarifs</a>
+        <a href="/fr/regions/">Régions</a>
+        <a href="/fr/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/fr/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Langue">FR ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" class="active" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/fr/contact/">Demander une démo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/fr/">Accueil</a> / <a href="/fr/blog/">Blog</a> / Guide du SMED</p>
+        <span class="tag tag-accent">Opérations</span>
+        <h1>Qu’est-ce que le SMED et comment réduire le temps de changement ?</h1>
+        <p class="hero-intro">Le SMED réduit le temps de changement de série en sortant la préparation de l’arrêt. Origine, six étapes, exemples hors usine et mesure des changements.</p>
+        <p class="mono"><time datetime="2026-11-25">25 novembre 2026</time> · 6 min de lecture</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Chaque fois qu’une équipe passe d’un produit, d’une tâche ou d’un client au suivant, il existe un intervalle pendant lequel rien d’utile n’est produit. Une presse attend un nouvel outil, un ingénieur reconstruit un environnement de test. Ces changements apparaissent rarement comme une ligne à part dans les rapports, et pourtant ils déterminent discrètement la taille minimale de vos lots, votre réactivité face à la demande et la capacité dont vous disposez réellement. Le SMED est la méthode la plus connue pour les réduire.</p><h2>Qu’est-ce que le SMED ?</h2><p>SMED signifie single-minute exchange of die, soit le changement d’outil en moins de dix minutes. C’est une méthode qui vise à réduire le temps nécessaire pour faire passer un processus d’un produit ou d’une tâche à l’autre. Le nom fixe un objectif ambitieux : un changement qui se compte en minutes à un seul chiffre. L’essentiel du temps de changement n’est pas consacré à un travail qui exige réellement l’arrêt du processus. Il se perd à chercher, attendre, se déplacer, régler et faire des choses qui auraient pu être préparées à l’avance.</p><h2>D’où vient le SMED ?</h2><p>Le SMED a été développé par Shigeo Shingo, l’ingénieur industriel également connu pour le poka-yoke. En 1950, alors qu’il étudiait les goulets d’étranglement d’une usine Mazda à Hiroshima, Shingo a vu des opérateurs arrêter de grandes presses pour chercher des boulons et des outils manquants. Il a alors distingué pour la première fois le travail qui exige l’arrêt de la machine de celui qui ne l’exige pas. Il a ensuite affiné l’idée chez Toyota à partir de la fin des années 1960, où les changements d’outils sur les grandes presses de carrosserie sont passés de plusieurs heures à quelques minutes. Le SMED est devenu un pilier du système de production Toyota.</p><h2>Pourquoi le temps de changement est-il important ?</h2><ul><li><strong>Des lots plus petits.</strong> Quand les changements sont longs, les équipes lancent de gros lots pour amortir le temps perdu. Cela gonfle les stocks, immobilise de la trésorerie et masque les problèmes. Des changements courts rendent les petits lots rentables.</li><li><strong>La flexibilité.</strong> Des changements rapides permettent de suivre la demande réelle, d’accepter les commandes urgentes et de proposer davantage de variantes.</li><li><strong>La capacité.</strong> Chaque heure gagnée sur les changements est une heure de production supplémentaire, sans nouvel équipement ni personnel en plus.</li><li><strong>La disponibilité.</strong> Les réglages et mises en route font partie des pertes classiques qui réduisent le taux de disponibilité du TRS, le taux de rendement synthétique. Réduire le temps de changement améliore directement la disponibilité.</li></ul><h2>Quelle différence entre opérations internes et externes ?</h2><p>Cette distinction est au cœur du SMED. Les <strong>opérations internes</strong> ne peuvent être réalisées que lorsque le processus est arrêté, comme démonter un outil ou remplacer un moule. Les <strong>opérations externes</strong> peuvent être effectuées pendant que le processus tourne encore : aller chercher les outils suivants, préchauffer un moule, imprimer des étiquettes ou vérifier que les matières sont prêtes. Sortir ce travail de la période d’arrêt est souvent le gain le plus rapide.</p><h2>Quelles sont les étapes du SMED ?</h2><ul><li><strong>1. Observer et enregistrer.</strong> Filmez ou chronométrez un vrai changement du début à la fin. Listez chaque action avec sa durée, y compris les déplacements, les recherches et les attentes. Impliquez les personnes qui font le travail.</li><li><strong>2. Séparer les opérations internes et externes.</strong> Classez chaque action comme interne ou externe. Le simple fait de réaliser les opérations externes avant l’arrêt ou après le redémarrage réduit souvent le temps de changement d’un tiers ou plus.</li><li><strong>3. Convertir l’interne en externe.</strong> Pour chaque opération interne restante, demandez-vous comment la réaliser pendant que le processus tourne. Le pré-assemblage de pièces, le préréglage des outils aux bonnes cotes et le préchauffage en sont des exemples classiques.</li><li><strong>4. Rationaliser les opérations internes.</strong> Raccourcissez ce qui doit encore se faire pendant l’arrêt. Remplacez les boulons par des brides à serrage rapide, utilisez des hauteurs standard et des pions de centrage pour supprimer les réglages, et travaillez en parallèle à deux.</li><li><strong>5. Rationaliser les opérations externes.</strong> Organisez outils et matières pour qu’ils soient proches, étiquetés et complets.</li><li><strong>6. Standardiser et pérenniser.</strong> Formalisez la nouvelle méthode dans une fiche de travail standard simple, formez tout le monde et continuez à mesurer.</li></ul><h2>À quoi ressemble le SMED hors de l’usine ?</h2><p>Tout processus qui passe d’une tâche à l’autre comporte un changement, et la même logique s’applique.</p><ul><li><strong>La remise en place d’une table au restaurant.</strong> Le personnel garde à la station des plateaux prêts avec couverts, serviettes et cartes, si bien que débarrasser et redresser une table se fait en un seul passage au lieu de quatre.</li><li><strong>Le changement de travail d’impression.</strong> Les plaques, le papier et les réglages d’encre du travail suivant sont préparés et vérifiés pendant que le tirage en cours se poursuit.</li><li><strong>La mise en place d’environnements bureautiques et informatiques.</strong> Des environnements scriptés, fondés sur des modèles, remplacent l’installation manuelle : un nouvel ordinateur portable ou un environnement de test est prêt en quelques minutes au lieu d’une journée.</li><li><strong>Le changement d’équipe ou de ligne.</strong> Une courte fiche de passation standard, remplie avant la fin du poste, remplace un long briefing oral pendant que la ligne attend.</li><li><strong>La rotation des salles en clinique.</strong> Des kits préemballés par acte et une séquence de nettoyage fixe raccourcissent le temps entre deux patients sans transiger sur l’hygiène.</li></ul><h2>Comment mesurer le temps de changement ?</h2><p>La définition de référence est le temps écoulé entre la <strong>dernière pièce bonne</strong> de la série précédente et la <strong>première pièce bonne</strong> de la série suivante à pleine cadence. Arrêter le chronomètre au redémarrage de la machine, plutôt qu’au moment où elle produit des pièces bonnes à cadence nominale, masque la phase de réglage et de rebut, qui est souvent la plus longue. Suivez la moyenne et la dispersion sur de nombreux changements pour vérifier que les gains tiennent.</p><h2>Quelles sont les erreurs courantes avec le SMED ?</h2><ul><li><strong>Sauter l’observation.</strong> Les équipes achètent du matériel à serrage rapide avant d’avoir cartographié le changement, et passent à côté des gains peu coûteux liés au déplacement du travail externe.</li><li><strong>Mesurer le mauvais point d’arrivée.</strong> Compter seulement jusqu’au redémarrage, et non jusqu’à la première pièce bonne à pleine cadence, enjolive le résultat.</li><li><strong>Ne pas utiliser le temps gagné.</strong> Si des changements plus courts ne se traduisent ni par des lots plus petits ni par plus de production, le bénéfice reste théorique.</li></ul><p>Le SMED donne les meilleurs résultats lorsqu’il devient une habitude : observer, séparer, convertir, rationaliser et standardiser, puis recommencer.</p>
+
+        <h2>Questions fréquentes</h2>
+        <details class="faq-item"><summary>Que signifie SMED ?</summary><p>SMED signifie single-minute exchange of die, c’est-à-dire changement d’outil en moins de dix minutes. C’est une méthode pour réduire le temps de changement de série.</p></details>
+        <details class="faq-item"><summary>Qui a développé le SMED ?</summary><p>Shigeo Shingo a développé le SMED, d’abord dans une usine Mazda en 1950, puis chez Toyota à partir de la fin des années 1960, où il est devenu une composante du système de production Toyota.</p></details>
+        <details class="faq-item"><summary>Quelle est la différence entre préparation interne et externe ?</summary><p>La préparation interne ne peut se faire que processus arrêté. La préparation externe peut se faire pendant qu’il tourne encore : transférer du travail de l’interne vers l’externe réduit donc l’arrêt.</p></details>
+        <details class="faq-item"><summary>Comment mesure-t-on le temps de changement ?</summary><p>Le temps de changement va de la dernière pièce bonne de la série précédente à la première pièce bonne de la série suivante à pleine cadence, nettoyage, réglages et essais compris.</p></details>
+
+        <p style="margin-top:32px"><a href="/fr/blog/"><span aria-hidden="true">←</span> Retour au blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Rendez chaque amélioration des changements visible</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center réunit vos KPI de temps de changement, vos objectifs et vos tâches d’amélioration SMED dans une seule vue, pour vérifier que chaque action réduit vraiment les arrêts.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/fr/products/command-center/">Découvrir Command Center</a>
+          <a class="btn btn-secondary" href="/fr/blog/">Retour au blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>L'épine dorsale opérationnelle des équipes modernes.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produits</h5>
+          <a href="/fr/products/">Tous les produits</a>
+          <a href="/fr/products/hr-suite/">HR Suite</a>
+          <a href="/fr/products/command-center/">Command Center</a>
+          <a href="/fr/products/collection/">Collection</a>
+          <a href="/fr/products/tms/">TMS</a>
+          <a href="/fr/products/assure/">Assure</a>
+          <a href="/fr/products/close/">Close</a>
+          <a href="/fr/products/consolidate/">Consolidate</a>
+          <a href="/fr/custom-apps/">Applications sur mesure</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grille</h5>
+          <a href="/fr/features/">Fonctionnalités</a>
+          <a href="/fr/integrations/">Intégrations</a>
+          <a href="/fr/how-it-works/">Comment ça marche</a>
+          <a href="/fr/pricing/">Tarifs</a>
+          <a href="/fr/regions/">Régions</a>
+          <a href="/fr/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Entreprise</h5>
+          <a href="/fr/about/">À propos</a>
+          <a href="/fr/faq/">FAQ</a>
+          <a href="/fr/contact/">Contact</a>
+          <a href="/fr/privacy/">Confidentialité</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tous droits réservés.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
