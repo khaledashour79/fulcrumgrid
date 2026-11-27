@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Cos'è la FMEA e come si conduce passo dopo passo? — FulcrumGrid</title>
+  <meta name="description" content="La FMEA aiuta a individuare e classificare ciò che può andare storto in un processo prima che accada: origini, fasi, calcolo dell'RPN, un esempio pratico ed errori." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cos'è la FMEA e come si conduce passo dopo passo?" />
+  <meta property="og:description" content="La FMEA aiuta a individuare e classificare ciò che può andare storto in un processo prima che accada: origini, fasi, calcolo dell'RPN, un esempio pratico ed errori." />
+  <meta property="og:url" content="https://fulcrumgrid.com/it/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-27" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cos'è la FMEA e come si conduce passo dopo passo?" />
+  <meta name="twitter:description" content="La FMEA aiuta a individuare e classificare ciò che può andare storto in un processo prima che accada: origini, fasi, calcolo dell'RPN, un esempio pratico ed errori." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/it/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-fmea-and-how-do-you-run-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cos'è la FMEA e come si conduce passo dopo passo?",
+    "description": "La FMEA aiuta a individuare e classificare ciò che può andare storto in un processo prima che accada: origini, fasi, calcolo dell'RPN, un esempio pratico ed errori.",
+    "datePublished": "2026-11-27",
+    "dateModified": "2026-11-27",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/it/blog/what-is-fmea-and-how-do-you-run-one/"
+    },
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/it/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guida alla FMEA",
+        "item": "https://fulcrumgrid.com/it/blog/what-is-fmea-and-how-do-you-run-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Cosa significa FMEA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "FMEA sta per Failure Mode and Effects Analysis, cioè analisi dei modi e degli effetti dei guasti. È un metodo strutturato per capire come può fallire un processo o un prodotto, con quali conseguenze e quali rischi affrontare per primi."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come si calcola l'indice di priorità di rischio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "L'RPN è il prodotto di gravità, occorrenza e rilevabilità, ciascuna valutata da 1 a 10, per un valore da 1 a 1.000. Più è alto, maggiore è la priorità, ma i rischi di gravità elevata richiedono sempre un'azione."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Cos'è la priorità d'azione nella FMEA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La priorità d'azione è stata introdotta dal manuale FMEA AIAG-VDA del 2019. Classifica ogni rischio come alto, medio o basso tramite tabelle che danno più peso alla gravità, poi all'occorrenza e infine alla rilevabilità."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Una piccola impresa può usare la FMEA al di fuori della produzione?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì. La FMEA funziona per fatturazione, evasione ordini, inserimento dei clienti o modifiche informatiche. Di solito basta una sessione mirata di qualche ora su un solo processo per trovare i rischi principali."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/it/" aria-label="Home di FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/it/products/">Prodotti</a>
+        <a href="/it/features/">Griglia</a>
+        <a href="/it/pricing/">Prezzi</a>
+        <a href="/it/regions/">Regioni</a>
+        <a href="/it/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/it/contact/">Contatti</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Lingua">IT ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" class="active" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/it/contact/">Richiedi una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/it/">Home</a> / <a href="/it/blog/">Blog</a> / Guida alla FMEA</p>
+        <span class="tag tag-accent">Operazioni</span>
+        <h1>Cos'è la FMEA e come si conduce passo dopo passo?</h1>
+        <p class="hero-intro">La FMEA aiuta a individuare e classificare ciò che può andare storto in un processo prima che accada: origini, fasi, calcolo dell'RPN, un esempio pratico ed errori.</p>
+        <p class="mono"><time datetime="2026-11-27">27 novembre 2026</time> · 6 min di lettura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Una fattura parte con il prezzo sbagliato. Un ordine viene spedito all'indirizzo dell'anno scorso. Un cliente paga un truffatore che gli ha comunicato via e-mail le «nuove coordinate bancarie». A posteriori, quasi sempre qualcuno avrebbe potuto prevederlo, se solo qualcuno si fosse fermato a chiederselo. L'analisi dei modi e degli effetti dei guasti, o FMEA, è un modo strutturato per porsi questa domanda, una fase del processo alla volta, prima che i problemi arrivino ai clienti.</p><h2>Che cos'è la FMEA?</h2><p>La FMEA è un metodo per individuare i modi in cui un processo, un prodotto o un servizio può fallire, capire le conseguenze di ciascun guasto e ordinarli in modo da affrontare prima i più importanti. Un <strong>modo di guasto</strong> è il modo in cui qualcosa va storto, per esempio «fattura inviata con un prezzo errato». L'<strong>effetto</strong> è ciò che quel guasto provoca al cliente o all'azienda. Ogni modo di guasto riceve un punteggio per gravità, probabilità e facilità di rilevamento, così una vaga percezione del rischio diventa un elenco di azioni in ordine di priorità.</p><h2>Da dove nasce la FMEA?</h2><p>La FMEA nasce come procedura militare statunitense, la MIL-P-1629, emanata nel 1949 per valutare gli effetti dei guasti di sistemi e apparecchiature. I programmi aerospaziali, compresa la NASA negli anni Sessanta, la adottarono, e l'industria automobilistica ne fece una prassi standard a partire dagli anni Settanta. Nel 2019 il manuale FMEA di AIAG e VDA, standard congiunto dell'automotive americano e tedesco, ha sostituito il tradizionale indice di priorità di rischio con un approccio chiamato priorità d'azione.</p><h2>Quando conviene usare la FMEA?</h2><ul><li><strong>Quando si progetta un nuovo processo.</strong> Prima di avviare un nuovo flusso di evasione ordini, di fatturazione o di inserimento dei clienti.</li><li><strong>Quando si modifica un processo esistente.</strong> Un nuovo fornitore, un nuovo strumento o una nuova organizzazione del team introducono nuovi modi di sbagliare.</li><li><strong>Di fronte a problemi ricorrenti.</strong> Quando lo stesso tipo di errore continua a ripresentarsi, la FMEA costringe a guardare l'intero processo e non solo l'ultimo incidente.</li></ul><h2>Come si conduce una FMEA passo dopo passo?</h2><ul><li><strong>1. Definire il perimetro.</strong> Scegliete un solo processo con un inizio e una fine chiari, come «dall'ordine approvato all'incasso». Coinvolgete da tre a sei persone che svolgono davvero quel lavoro.</li><li><strong>2. Elencare le fasi.</strong> Scrivete le fasi in ordine.</li><li><strong>3. Individuare i modi di guasto.</strong> Per ogni fase chiedetevi come potrebbe andare storta: saltata, in ritardo, ripetuta o eseguita male.</li><li><strong>4. Descrivere gli effetti.</strong> Annotate cosa comporterebbe ogni guasto per clienti, liquidità, sicurezza o conformità.</li><li><strong>5. Individuare le cause.</strong> Chiedetevi perché ogni guasto potrebbe verificarsi.</li><li><strong>6. Registrare i controlli attuali.</strong> Annotate cosa già previene o intercetta il guasto, come una checklist, una verifica del gestionale o un secondo controllo.</li><li><strong>7. Assegnare gravità, occorrenza e rilevabilità da 1 a 10.</strong> La gravità indica quanto è serio l'effetto. L'occorrenza, quanto è probabile la causa. La rilevabilità, quanto è probabile che il guasto sfugga ai controlli attuali: un punteggio alto significa quindi che è difficile accorgersene.</li><li><strong>8. Calcolare l'indice di priorità di rischio.</strong> RPN = gravità × occorrenza × rilevabilità, con un valore da 1 a 1.000.</li><li><strong>9. Assegnare le azioni.</strong> Per i rischi principali concordate un'azione precisa, un responsabile con nome e cognome e una scadenza.</li><li><strong>10. Rivalutare.</strong> Completate le azioni, assegnate di nuovo i punteggi per verificare che il rischio sia davvero diminuito.</li></ul><h3>Quali sono i limiti dell'RPN?</h3><p>L'RPN è utile ma approssimativo. Rischi molto diversi possono dare lo stesso numero, e un guasto raro ma grave può ottenere un punteggio inferiore a un fastidio frequente. Per questo il manuale AIAG-VDA è passato alla priorità d'azione, che dà il peso maggiore alla gravità. Per un piccolo team funziona una regola semplice: <strong>ogni modo di guasto con gravità 9 o 10 riceve un'azione, qualunque sia il suo RPN</strong>.</p><h2>Come si presenta una FMEA nella pratica?</h2><p>Prendiamo un piccolo grossista che emette circa 400 fatture al mese. Il team ha valutato tre modi di guasto del processo di fatturazione:</p><ul><li><strong>Prezzo errato in fattura.</strong> Causa: prezzi digitati a mano da un listino non aggiornato. Effetto: contestazioni, note di credito e pagamenti in ritardo. G 6, O 5, R 4, quindi RPN 120.</li><li><strong>Fattura mai inviata.</strong> Causa: bozze lasciate in sospeso quando il responsabile è assente. Effetto: l'incasso arriva con settimane di ritardo e nessuno se ne accorge prima della chiusura del mese. G 5, O 4, R 7, quindi RPN 140.</li><li><strong>Cliente che paga su un conto fraudolento.</strong> Causa: un'e-mail contraffatta annuncia nuove coordinate bancarie. Effetto: il denaro del cliente va perso e il rapporto ne esce danneggiato. G 9, O 2, R 6, quindi RPN 108.</li></ul><p>In base al solo RPN, il rischio di frode arriva ultimo. Ma con una gravità di 9, il team è intervenuto comunque. Le azioni: prezzi presi automaticamente dal listino del gestionale (responsabile amministrativo, due settimane); un report settimanale delle bozze non inviate (office manager, una settimana); una dicitura su ogni fattura che precisa che le coordinate bancarie non cambiano mai via e-mail, con verifica tramite richiamata telefonica (titolare, una settimana). Dopo la rivalutazione, i tre RPN sono scesi a 48, 60 e 18.</p><h2>In cosa la FMEA differisce da un pre-mortem o da un'analisi delle cause profonde?</h2><p>Un <strong>pre-mortem</strong> immagina che un intero progetto sia già fallito e risale alle ragioni. È rapido e adatto a piani e decisioni. L'<strong>analisi delle cause profonde</strong>, come i 5 perché, indaga su un problema già avvenuto. La FMEA sta nel mezzo: è preventiva come il pre-mortem, ma percorre un processo fase per fase e assegna un punteggio a ogni rischio. Gli altri due metodi sono trattati in dettaglio nelle nostre guide dedicate.</p><h2>Quali sono gli errori più comuni?</h2><ul><li><strong>Perimetro troppo ampio.</strong> Analizzare «tutta l'azienda» produce un foglio di calcolo che nessuno finisce. Partite da un solo processo.</li><li><strong>Punteggi incoerenti.</strong> Concordate per iscritto cosa significa un 3 o un 8 prima di assegnare i voti.</li><li><strong>Azioni senza responsabile.</strong> Una raccomandazione senza nome né data raramente si realizza.</li></ul><p>Fatta bene, una FMEA richiede poche ore e si ripaga evitando guasti che altrimenti scoprireste un reclamo alla volta.</p>
+
+        <h2>Domande frequenti</h2>
+        <details class="faq-item"><summary>Cosa significa FMEA?</summary><p>FMEA sta per Failure Mode and Effects Analysis, cioè analisi dei modi e degli effetti dei guasti. È un metodo strutturato per capire come può fallire un processo o un prodotto, con quali conseguenze e quali rischi affrontare per primi.</p></details>
+        <details class="faq-item"><summary>Come si calcola l'indice di priorità di rischio?</summary><p>L'RPN è il prodotto di gravità, occorrenza e rilevabilità, ciascuna valutata da 1 a 10, per un valore da 1 a 1.000. Più è alto, maggiore è la priorità, ma i rischi di gravità elevata richiedono sempre un'azione.</p></details>
+        <details class="faq-item"><summary>Cos'è la priorità d'azione nella FMEA?</summary><p>La priorità d'azione è stata introdotta dal manuale FMEA AIAG-VDA del 2019. Classifica ogni rischio come alto, medio o basso tramite tabelle che danno più peso alla gravità, poi all'occorrenza e infine alla rilevabilità.</p></details>
+        <details class="faq-item"><summary>Una piccola impresa può usare la FMEA al di fuori della produzione?</summary><p>Sì. La FMEA funziona per fatturazione, evasione ordini, inserimento dei clienti o modifiche informatiche. Di solito basta una sessione mirata di qualche ora su un solo processo per trovare i rischi principali.</p></details>
+
+        <p style="margin-top:32px"><a href="/it/blog/"><span aria-hidden="true">←</span> Torna al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Trasforma la tua FMEA in azioni monitorate</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center riunisce in un'unica vista le azioni della FMEA, i responsabili, le scadenze e i KPI che dovrebbero migliorare, così puoi verificare se ogni intervento riduce davvero il rischio.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/it/products/command-center/">Esplora Command Center</a>
+          <a class="btn btn-secondary" href="/it/blog/">Torna al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La spina dorsale operativa dei team moderni.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Prodotti</h5>
+          <a href="/it/products/">Tutti i prodotti</a>
+          <a href="/it/products/hr-suite/">HR Suite</a>
+          <a href="/it/products/command-center/">Command Center</a>
+          <a href="/it/products/collection/">Collection</a>
+          <a href="/it/products/tms/">TMS</a>
+          <a href="/it/products/assure/">Assure</a>
+          <a href="/it/products/close/">Close</a>
+          <a href="/it/products/consolidate/">Consolidate</a>
+          <a href="/it/custom-apps/">App su misura</a>
+        </div>
+        <div class="foot-col">
+          <h5>Griglia</h5>
+          <a href="/it/features/">Funzionalità</a>
+          <a href="/it/integrations/">Integrazioni</a>
+          <a href="/it/how-it-works/">Come funziona</a>
+          <a href="/it/pricing/">Prezzi</a>
+          <a href="/it/regions/">Regioni</a>
+          <a href="/it/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Azienda</h5>
+          <a href="/it/about/">Chi siamo</a>
+          <a href="/it/faq/">FAQ</a>
+          <a href="/it/contact/">Contatti</a>
+          <a href="/it/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tutti i diritti riservati.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

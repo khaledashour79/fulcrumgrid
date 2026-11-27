@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Wat is een FMEA en hoe voer je er stap voor stap een uit? — FulcrumGrid</title>
+  <meta name="description" content="Met een FMEA spoor je op wat er in een proces mis kan gaan en bepaal je prioriteiten voordat het gebeurt: oorsprong, stappen, RPN, een praktijkvoorbeeld en valkuilen." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wat is een FMEA en hoe voer je er stap voor stap een uit?" />
+  <meta property="og:description" content="Met een FMEA spoor je op wat er in een proces mis kan gaan en bepaal je prioriteiten voordat het gebeurt: oorsprong, stappen, RPN, een praktijkvoorbeeld en valkuilen." />
+  <meta property="og:url" content="https://fulcrumgrid.com/nl/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="article:published_time" content="2026-11-27" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wat is een FMEA en hoe voer je er stap voor stap een uit?" />
+  <meta name="twitter:description" content="Met een FMEA spoor je op wat er in een proces mis kan gaan en bepaal je prioriteiten voordat het gebeurt: oorsprong, stappen, RPN, een praktijkvoorbeeld en valkuilen." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/nl/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-fmea-and-how-do-you-run-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wat is een FMEA en hoe voer je er stap voor stap een uit?",
+    "description": "Met een FMEA spoor je op wat er in een proces mis kan gaan en bepaal je prioriteiten voordat het gebeurt: oorsprong, stappen, RPN, een praktijkvoorbeeld en valkuilen.",
+    "datePublished": "2026-11-27",
+    "dateModified": "2026-11-27",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/nl/blog/what-is-fmea-and-how-do-you-run-one/"
+    },
+    "inLanguage": "nl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/nl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/nl/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "FMEA-gids",
+        "item": "https://fulcrumgrid.com/nl/blog/what-is-fmea-and-how-do-you-run-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Waar staat FMEA voor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "FMEA staat voor Failure Mode and Effects Analysis, in het Nederlands faalwijze- en effectanalyse. Het is een gestructureerde methode om te bepalen hoe een proces of product kan falen, wat de gevolgen zijn en welke risico's voorrang krijgen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe bereken je het risicoprioriteitsgetal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Het RPN is ernst × kans × detectie, elk gescoord van 1 tot 10, wat een waarde van 1 tot 1.000 geeft. Hoe hoger, hoe meer prioriteit, maar risico's met een hoge ernst vragen altijd om actie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is actieprioriteit in een FMEA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Actieprioriteit is in 2019 ingevoerd met het FMEA-handboek van AIAG en VDA. Het deelt elk risico in als hoog, middel of laag met tabellen die ernst het zwaarst laten wegen, daarna kans en daarna detectie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan een klein bedrijf een FMEA gebruiken buiten de productie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Een FMEA werkt voor facturatie, orderafhandeling, onboarding of IT-wijzigingen. Meestal is een gerichte sessie van een paar uur over één proces genoeg om de grootste risico's te vinden."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/nl/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/nl/products/">Producten</a>
+        <a href="/nl/features/">Grid</a>
+        <a href="/nl/pricing/">Prijzen</a>
+        <a href="/nl/regions/">Regio's</a>
+        <a href="/nl/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/nl/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Taal">NL ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" class="active" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/nl/contact/">Vraag een demo aan</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/nl/">Home</a> / <a href="/nl/blog/">Blog</a> / FMEA-gids</p>
+        <span class="tag tag-accent">Operaties</span>
+        <h1>Wat is een FMEA en hoe voer je er stap voor stap een uit?</h1>
+        <p class="hero-intro">Met een FMEA spoor je op wat er in een proces mis kan gaan en bepaal je prioriteiten voordat het gebeurt: oorsprong, stappen, RPN, een praktijkvoorbeeld en valkuilen.</p>
+        <p class="mono"><time datetime="2026-11-27">27 november 2026</time> · 6 min lezen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Er staat een verkeerde prijs op een factuur. Een bestelling gaat naar het adres van vorig jaar. Een klant betaalt een oplichter die per e-mail ‘nieuwe bankgegevens’ heeft doorgegeven. Achteraf had iemand dit bijna altijd kunnen zien aankomen, als er maar iemand was gaan zitten om de vraag te stellen. De faalwijze- en effectanalyse, kortweg FMEA, is een gestructureerde manier om dat te doen, processtap voor processtap, voordat de fouten bij je klanten terechtkomen.</p><h2>Wat is een FMEA?</h2><p>Een FMEA is een methode om in kaart te brengen op welke manieren een proces, product of dienst kan falen, wat de gevolgen van elke fout zijn en welke risico's je het eerst moet aanpakken. Een <strong>faalwijze</strong> is de manier waarop iets misgaat, bijvoorbeeld ‘factuur verstuurd met de verkeerde prijs’. Het <strong>effect</strong> is wat die fout bij de klant of in het bedrijf veroorzaakt. Elke faalwijze krijgt een score voor ernst, kans en ontdekbaarheid. Zo wordt een vaag gevoel van risico een geprioriteerde actielijst.</p><h2>Waar komt de FMEA vandaan?</h2><p>De FMEA begon als een procedure van het Amerikaanse leger, MIL-P-1629 uit 1949, om de gevolgen van uitval van systemen en apparatuur te beoordelen. Lucht- en ruimtevaartprogramma's, waaronder NASA in de jaren zestig, namen haar over, en de auto-industrie maakte er vanaf de jaren zeventig een standaardpraktijk van. In 2019 verving het FMEA-handboek van AIAG en VDA, een gezamenlijke Amerikaans-Duitse automotive-standaard, het traditionele risicoprioriteitsgetal door een aanpak die actieprioriteit heet.</p><h2>Wanneer gebruik je een FMEA?</h2><ul><li><strong>Bij een nieuw proces.</strong> Voordat je een nieuwe orderafhandeling, facturatieroutine of klantonboarding invoert.</li><li><strong>Bij een wijziging.</strong> Een nieuwe leverancier, een nieuw softwarepakket of een andere teamindeling brengt nieuwe manieren van falen met zich mee.</li><li><strong>Bij terugkerende problemen.</strong> Als dezelfde soort fout steeds weer opduikt, dwingt een FMEA je naar het hele proces te kijken in plaats van alleen naar het laatste incident.</li></ul><h2>Hoe voer je een FMEA stap voor stap uit?</h2><ul><li><strong>1. Baken het proces af.</strong> Kies één proces met een duidelijk begin en einde, zoals ‘van goedgekeurde order tot ontvangen betaling’. Betrek drie tot zes mensen die het werk echt doen.</li><li><strong>2. Zet de stappen op een rij.</strong> Schrijf elke stap in volgorde op.</li><li><strong>3. Bedenk faalwijzen.</strong> Vraag je bij elke stap af hoe die mis kan gaan: overgeslagen, te laat, dubbel of verkeerd uitgevoerd.</li><li><strong>4. Beschrijf de effecten.</strong> Noteer wat elke fout zou betekenen voor klanten, cashflow, veiligheid of compliance.</li><li><strong>5. Zoek de oorzaken.</strong> Vraag waarom elke fout zou kunnen optreden.</li><li><strong>6. Leg de huidige beheersmaatregelen vast.</strong> Noteer wat de fout nu al voorkomt of opspoort, zoals een checklist, een controle in het systeem of een tweede beoordeling.</li><li><strong>7. Scoor ernst, kans en detectie van 1 tot 10.</strong> Ernst is hoe zwaar het effect is. Kans is hoe waarschijnlijk de oorzaak is. Detectie is hoe waarschijnlijk het is dat de fout langs je huidige controles glipt: een hoge score betekent dus dat hij moeilijk te ontdekken is.</li><li><strong>8. Bereken het risicoprioriteitsgetal.</strong> RPN = ernst × kans × detectie, een waarde tussen 1 en 1.000.</li><li><strong>9. Wijs acties toe.</strong> Spreek voor de grootste risico's een concrete actie af, met een eigenaar bij naam en een deadline.</li><li><strong>10. Scoor opnieuw.</strong> Zijn de acties uitgevoerd, scoor dan opnieuw om te controleren of het risico echt is gedaald.</li></ul><h3>Wat zijn de beperkingen van het RPN?</h3><p>Het RPN is nuttig maar grof. Heel verschillende risico's kunnen hetzelfde getal opleveren, en een zeldzame maar ernstige fout kan lager scoren dan een veelvoorkomend ongemak. Daarom stapte het AIAG-VDA-handboek over op actieprioriteit, die het meeste gewicht aan ernst geeft. Voor kleine teams werkt een simpele regel: <strong>elke faalwijze met een ernst van 9 of 10 krijgt een actie, ongeacht het RPN</strong>.</p><h2>Hoe ziet een FMEA er in de praktijk uit?</h2><p>Neem een kleine groothandel die zo'n 400 facturen per maand verstuurt. Het team scoorde drie faalwijzen in het facturatieproces:</p><ul><li><strong>Verkeerde prijs op de factuur.</strong> Oorzaak: prijzen worden met de hand overgenomen uit een verouderde prijslijst. Effect: discussies, creditnota's en late betaling. E 6, K 5, D 4, dus RPN 120.</li><li><strong>Factuur nooit verstuurd.</strong> Oorzaak: concepten blijven liggen als de verantwoordelijke afwezig is. Effect: de betaling komt weken later binnen en niemand merkt het vóór de maandafsluiting. E 5, K 4, D 7, dus RPN 140.</li><li><strong>Klant betaalt op een frauduleuze rekening.</strong> Oorzaak: een vervalste e-mail meldt nieuwe bankgegevens. Effect: het geld van de klant is weg en de relatie is beschadigd. E 9, K 2, D 6, dus RPN 108.</li></ul><p>Op RPN alleen eindigt het frauderisico onderaan. Omdat de ernst 9 is, kwam het team toch in actie. De acties: prijzen automatisch uit de prijslijst in het systeem halen (hoofd financiën, twee weken); een wekelijks overzicht van niet-verstuurde concepten (officemanager, één week); en op elke factuur de vermelding dat bankgegevens nooit per e-mail wijzigen, aangevuld met een terugbelcontrole (eigenaar, één week). Na de herbeoordeling daalden de drie RPN's naar 48, 60 en 18.</p><h2>Hoe verschilt een FMEA van een pre-mortem of oorzaakanalyse?</h2><p>Bij een <strong>pre-mortem</strong> stel je je voor dat een heel project al is mislukt en redeneer je terug naar de oorzaken. Dat gaat snel en past bij plannen en besluiten. Een <strong>oorzaakanalyse</strong>, zoals de 5 waaroms, onderzoekt een probleem dat zich al heeft voorgedaan. De FMEA zit daartussen: ze is vooruitkijkend zoals een pre-mortem, maar loopt een proces stap voor stap door en scoort elk risico. Beide andere methoden behandelen we uitgebreid in aparte gidsen.</p><h2>Wat zijn veelgemaakte fouten bij een FMEA?</h2><ul><li><strong>Te brede scope.</strong> Wie ‘het hele bedrijf’ wil analyseren, krijgt een spreadsheet die nooit af komt. Begin met één proces.</li><li><strong>Inconsistent scoren.</strong> Leg vooraf op papier vast wat een 3 of een 8 betekent.</li><li><strong>Acties zonder eigenaar.</strong> Een aanbeveling zonder naam en datum wordt zelden uitgevoerd.</li></ul><p>Goed uitgevoerd kost een FMEA een paar uur en verdient ze zichzelf terug door fouten te voorkomen die je anders klacht voor klacht zou ontdekken.</p>
+
+        <h2>Veelgestelde vragen</h2>
+        <details class="faq-item"><summary>Waar staat FMEA voor?</summary><p>FMEA staat voor Failure Mode and Effects Analysis, in het Nederlands faalwijze- en effectanalyse. Het is een gestructureerde methode om te bepalen hoe een proces of product kan falen, wat de gevolgen zijn en welke risico's voorrang krijgen.</p></details>
+        <details class="faq-item"><summary>Hoe bereken je het risicoprioriteitsgetal?</summary><p>Het RPN is ernst × kans × detectie, elk gescoord van 1 tot 10, wat een waarde van 1 tot 1.000 geeft. Hoe hoger, hoe meer prioriteit, maar risico's met een hoge ernst vragen altijd om actie.</p></details>
+        <details class="faq-item"><summary>Wat is actieprioriteit in een FMEA?</summary><p>Actieprioriteit is in 2019 ingevoerd met het FMEA-handboek van AIAG en VDA. Het deelt elk risico in als hoog, middel of laag met tabellen die ernst het zwaarst laten wegen, daarna kans en daarna detectie.</p></details>
+        <details class="faq-item"><summary>Kan een klein bedrijf een FMEA gebruiken buiten de productie?</summary><p>Ja. Een FMEA werkt voor facturatie, orderafhandeling, onboarding of IT-wijzigingen. Meestal is een gerichte sessie van een paar uur over één proces genoeg om de grootste risico's te vinden.</p></details>
+
+        <p style="margin-top:32px"><a href="/nl/blog/"><span aria-hidden="true">←</span> Terug naar de blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Maak van je FMEA acties die je echt opvolgt</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center brengt FMEA-acties, eigenaren, deadlines en de bijbehorende KPI's samen in één overzicht, zodat je ziet of elke verbetering het risico werkelijk verlaagt.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/nl/products/command-center/">Ontdek Command Center</a>
+          <a class="btn btn-secondary" href="/nl/blog/">Terug naar de blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>De operationele ruggengraat voor moderne teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Producten</h5>
+          <a href="/nl/products/">Alle producten</a>
+          <a href="/nl/products/hr-suite/">HR Suite</a>
+          <a href="/nl/products/command-center/">Command Center</a>
+          <a href="/nl/products/collection/">Collection</a>
+          <a href="/nl/products/tms/">TMS</a>
+          <a href="/nl/products/assure/">Assure</a>
+          <a href="/nl/products/close/">Close</a>
+          <a href="/nl/products/consolidate/">Consolidate</a>
+          <a href="/nl/custom-apps/">Apps op maat</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/nl/features/">Functies</a>
+          <a href="/nl/integrations/">Integraties</a>
+          <a href="/nl/how-it-works/">Hoe het werkt</a>
+          <a href="/nl/pricing/">Prijzen</a>
+          <a href="/nl/regions/">Regio's</a>
+          <a href="/nl/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Bedrijf</h5>
+          <a href="/nl/about/">Over ons</a>
+          <a href="/nl/faq/">FAQ</a>
+          <a href="/nl/contact/">Contact</a>
+          <a href="/nl/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Alle rechten voorbehouden.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

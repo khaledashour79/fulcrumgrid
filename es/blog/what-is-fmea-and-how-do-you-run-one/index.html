@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>¿Qué es el AMFE (FMEA) y cómo se realiza paso a paso? — FulcrumGrid</title>
+  <meta name="description" content="El AMFE ayuda a detectar y priorizar lo que puede fallar en un proceso antes de que ocurra: origen, pasos, cálculo del NPR, un ejemplo práctico y errores comunes." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="¿Qué es el AMFE (FMEA) y cómo se realiza paso a paso?" />
+  <meta property="og:description" content="El AMFE ayuda a detectar y priorizar lo que puede fallar en un proceso antes de que ocurra: origen, pasos, cálculo del NPR, un ejemplo práctico y errores comunes." />
+  <meta property="og:url" content="https://fulcrumgrid.com/es/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-27" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="¿Qué es el AMFE (FMEA) y cómo se realiza paso a paso?" />
+  <meta name="twitter:description" content="El AMFE ayuda a detectar y priorizar lo que puede fallar en un proceso antes de que ocurra: origen, pasos, cálculo del NPR, un ejemplo práctico y errores comunes." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/es/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-fmea-and-how-do-you-run-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "¿Qué es el AMFE (FMEA) y cómo se realiza paso a paso?",
+    "description": "El AMFE ayuda a detectar y priorizar lo que puede fallar en un proceso antes de que ocurra: origen, pasos, cálculo del NPR, un ejemplo práctico y errores comunes.",
+    "datePublished": "2026-11-27",
+    "dateModified": "2026-11-27",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/es/blog/what-is-fmea-and-how-do-you-run-one/"
+    },
+    "inLanguage": "es"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://fulcrumgrid.com/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/es/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guía del AMFE",
+        "item": "https://fulcrumgrid.com/es/blog/what-is-fmea-and-how-do-you-run-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué significa AMFE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AMFE significa análisis modal de fallos y efectos (FMEA en inglés). Es un método estructurado para identificar cómo puede fallar un proceso o producto, qué consecuencias tendría y qué riesgos atender primero."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo se calcula el número de prioridad de riesgo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El NPR es gravedad × ocurrencia × detección, cada una puntuada del 1 al 10, lo que da entre 1 y 1.000. Cuanto más alto, más prioritario, aunque los riesgos de gravedad alta siempre requieren acción."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es la prioridad de acción en el AMFE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La prioridad de acción se introdujo en el manual de AMFE de AIAG y VDA de 2019. Clasifica cada riesgo como alto, medio o bajo mediante tablas que dan más peso a la gravedad, luego a la ocurrencia y después a la detección."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puede una pequeña empresa usar el AMFE fuera de la fabricación?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. El AMFE sirve para facturación, preparación de pedidos, alta de clientes o cambios informáticos. Una sesión centrada de unas pocas horas sobre un solo proceso suele bastar para encontrar los mayores riesgos."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/es/" aria-label="Inicio de FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/es/products/">Productos</a>
+        <a href="/es/features/">Cuadrícula</a>
+        <a href="/es/pricing/">Precios</a>
+        <a href="/es/regions/">Regiones</a>
+        <a href="/es/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/es/contact/">Contacto</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Idioma">ES ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" class="active" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/es/contact/">Solicitar una demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/es/">Inicio</a> / <a href="/es/blog/">Blog</a> / Guía del AMFE</p>
+        <span class="tag tag-accent">Operaciones</span>
+        <h1>¿Qué es el AMFE (FMEA) y cómo se realiza paso a paso?</h1>
+        <p class="hero-intro">El AMFE ayuda a detectar y priorizar lo que puede fallar en un proceso antes de que ocurra: origen, pasos, cálculo del NPR, un ejemplo práctico y errores comunes.</p>
+        <p class="mono"><time datetime="2026-11-27">27 de noviembre de 2026</time> · 6 min de lectura</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Una factura sale con el precio equivocado. Un pedido se envía a la dirección del año pasado. Un cliente paga a un estafador que le ha enviado por correo unos «nuevos datos bancarios». Visto con perspectiva, casi siempre alguien podría haberlo previsto, si alguien se hubiera parado a preguntarlo. El análisis modal de fallos y efectos, o AMFE (FMEA en inglés), es una forma estructurada de hacerse esa pregunta, paso a paso, antes de que los fallos lleguen a sus clientes.</p><h2>¿Qué es el AMFE?</h2><p>El AMFE es un método para identificar de qué maneras puede fallar un proceso, un producto o un servicio, entender las consecuencias de cada fallo y ordenarlos para resolver primero los más importantes. Un <strong>modo de fallo</strong> es la forma en que algo sale mal, por ejemplo «factura enviada con un precio incorrecto». El <strong>efecto</strong> es lo que ese fallo provoca en el cliente o en la empresa. Cada modo de fallo se puntúa según su gravedad, su probabilidad y lo fácil que sería detectarlo, de modo que una sensación difusa de riesgo se convierte en una lista de acciones priorizada.</p><h2>¿De dónde viene el AMFE?</h2><p>El AMFE nació como un procedimiento militar estadounidense, el MIL-P-1629, publicado en 1949 para evaluar los efectos de los fallos de sistemas y equipos. Los programas aeroespaciales, incluida la NASA en los años sesenta, lo adoptaron, y la industria del automóvil lo convirtió en práctica habitual a partir de los setenta. En 2019, el manual de AMFE de AIAG y VDA, una norma conjunta de la automoción estadounidense y alemana, sustituyó el tradicional número de prioridad de riesgo por un enfoque llamado prioridad de acción.</p><h2>¿Cuándo conviene usar el AMFE?</h2><ul><li><strong>Al diseñar un proceso nuevo.</strong> Antes de poner en marcha un nuevo circuito de preparación de pedidos, facturación o alta de clientes.</li><li><strong>Al cambiar uno existente.</strong> Un proveedor nuevo, una herramienta nueva o una reorganización del equipo traen nuevas formas de fallar.</li><li><strong>Ante problemas recurrentes.</strong> Cuando el mismo tipo de error vuelve una y otra vez, el AMFE obliga a mirar todo el proceso y no solo el último incidente.</li></ul><h2>¿Cómo se realiza un AMFE paso a paso?</h2><ul><li><strong>1. Delimite el proceso.</strong> Elija un único proceso con un principio y un final claros, como «del pedido aprobado al cobro recibido». Reúna a entre tres y seis personas que hagan ese trabajo de verdad.</li><li><strong>2. Enumere los pasos.</strong> Anote cada paso en orden.</li><li><strong>3. Identifique los modos de fallo.</strong> En cada paso, pregúntese cómo podría salir mal: omitido, tarde, duplicado o mal hecho.</li><li><strong>4. Describa los efectos.</strong> Indique qué supondría cada fallo para los clientes, la tesorería, la seguridad o el cumplimiento normativo.</li><li><strong>5. Identifique las causas.</strong> Pregúntese por qué podría ocurrir cada fallo.</li><li><strong>6. Registre los controles actuales.</strong> Anote lo que ya evita o detecta el fallo: una lista de verificación, una validación del sistema o una segunda revisión.</li><li><strong>7. Puntúe gravedad, ocurrencia y detección del 1 al 10.</strong> La gravedad mide lo serio que es el efecto. La ocurrencia, lo probable que es la causa. La detección, lo probable que es que el fallo supere los controles actuales, así que una puntuación alta significa que es difícil de detectar.</li><li><strong>8. Calcule el número de prioridad de riesgo.</strong> NPR (RPN en inglés) = gravedad × ocurrencia × detección, con un valor entre 1 y 1.000.</li><li><strong>9. Asigne acciones.</strong> Para los riesgos principales, acuerde una acción concreta, un responsable con nombre y una fecha límite.</li><li><strong>10. Vuelva a puntuar.</strong> Una vez completadas las acciones, puntúe de nuevo para confirmar que el riesgo ha bajado de verdad.</li></ul><h3>¿Qué limitaciones tiene el NPR?</h3><p>El NPR es útil pero tosco. Riesgos muy distintos pueden dar el mismo número, y un fallo raro pero grave puede quedar por debajo de una molestia frecuente. Por eso el manual de AIAG y VDA pasó a la prioridad de acción, que da el mayor peso a la gravedad. A un equipo pequeño le basta una regla sencilla: <strong>todo modo de fallo con una gravedad de 9 o 10 recibe una acción, sea cual sea su NPR</strong>.</p><h2>¿Cómo es un AMFE en la práctica?</h2><p>Pensemos en un pequeño mayorista que emite unas 400 facturas al mes. El equipo puntuó tres modos de fallo de su proceso de facturación:</p><ul><li><strong>Precio incorrecto en la factura.</strong> Causa: precios tecleados a mano desde una tarifa desactualizada. Efecto: reclamaciones, abonos y cobros tardíos. G 6, O 5, D 4, es decir, NPR 120.</li><li><strong>Factura que nunca se envía.</strong> Causa: borradores que se quedan sin enviar cuando la persona responsable está fuera. Efecto: el cobro llega semanas tarde y nadie lo nota hasta el cierre de mes. G 5, O 4, D 7, es decir, NPR 140.</li><li><strong>Cliente que paga a una cuenta fraudulenta.</strong> Causa: un correo suplantado anuncia un cambio de datos bancarios. Efecto: el dinero del cliente se pierde y la relación se resiente. G 9, O 2, D 6, es decir, NPR 108.</li></ul><p>Ordenado solo por NPR, el riesgo de fraude queda el último. Como su gravedad es 9, el equipo actuó igualmente. Las acciones: precios tomados automáticamente de la tarifa del sistema (responsable de finanzas, dos semanas); un informe semanal de borradores sin enviar (responsable de administración, una semana); y una nota en cada factura que indica que los datos bancarios nunca se cambian por correo, junto con una verificación por llamada telefónica (gerente, una semana). Tras volver a puntuar, los tres NPR bajaron a 48, 60 y 18.</p><h2>¿En qué se diferencia el AMFE de un pre-mortem o de un análisis de causa raíz?</h2><p>Un <strong>pre-mortem</strong> imagina que todo un proyecto ya ha fracasado y busca hacia atrás los motivos. Es rápido y encaja con planes y decisiones. El <strong>análisis de causa raíz</strong>, como los 5 porqués, investiga un problema que ya ha ocurrido. El AMFE está entre ambos: es preventivo como el pre-mortem, pero recorre un proceso paso a paso y puntúa cada riesgo. Tratamos los otros dos métodos en guías propias.</p><h2>¿Cuáles son los errores más comunes?</h2><ul><li><strong>Un alcance demasiado amplio.</strong> Analizar «toda la empresa» produce una hoja de cálculo que nadie termina. Empiece por un solo proceso.</li><li><strong>Puntuaciones incoherentes.</strong> Acuerden por escrito qué significa un 3 o un 8 antes de puntuar.</li><li><strong>Acciones sin responsable.</strong> Una recomendación sin nombre ni fecha rara vez se cumple.</li></ul><p>Bien hecho, un AMFE lleva unas pocas horas y se amortiza evitando fallos que de otro modo descubriría reclamación a reclamación.</p>
+
+        <h2>Preguntas frecuentes</h2>
+        <details class="faq-item"><summary>¿Qué significa AMFE?</summary><p>AMFE significa análisis modal de fallos y efectos (FMEA en inglés). Es un método estructurado para identificar cómo puede fallar un proceso o producto, qué consecuencias tendría y qué riesgos atender primero.</p></details>
+        <details class="faq-item"><summary>¿Cómo se calcula el número de prioridad de riesgo?</summary><p>El NPR es gravedad × ocurrencia × detección, cada una puntuada del 1 al 10, lo que da entre 1 y 1.000. Cuanto más alto, más prioritario, aunque los riesgos de gravedad alta siempre requieren acción.</p></details>
+        <details class="faq-item"><summary>¿Qué es la prioridad de acción en el AMFE?</summary><p>La prioridad de acción se introdujo en el manual de AMFE de AIAG y VDA de 2019. Clasifica cada riesgo como alto, medio o bajo mediante tablas que dan más peso a la gravedad, luego a la ocurrencia y después a la detección.</p></details>
+        <details class="faq-item"><summary>¿Puede una pequeña empresa usar el AMFE fuera de la fabricación?</summary><p>Sí. El AMFE sirve para facturación, preparación de pedidos, alta de clientes o cambios informáticos. Una sesión centrada de unas pocas horas sobre un solo proceso suele bastar para encontrar los mayores riesgos.</p></details>
+
+        <p style="margin-top:32px"><a href="/es/blog/"><span aria-hidden="true">←</span> Volver al blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Convierta su AMFE en acciones con seguimiento</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center reúne en una sola vista las acciones del AMFE, sus responsables, sus plazos y los indicadores que deben mejorar, para que compruebe si cada corrección reduce de verdad el riesgo.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/es/products/command-center/">Explorar Command Center</a>
+          <a class="btn btn-secondary" href="/es/blog/">Volver al blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>La columna vertebral operativa de los equipos modernos.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Productos</h5>
+          <a href="/es/products/">Todos los productos</a>
+          <a href="/es/products/hr-suite/">HR Suite</a>
+          <a href="/es/products/command-center/">Command Center</a>
+          <a href="/es/products/collection/">Collection</a>
+          <a href="/es/products/tms/">TMS</a>
+          <a href="/es/products/assure/">Assure</a>
+          <a href="/es/products/close/">Close</a>
+          <a href="/es/products/consolidate/">Consolidate</a>
+          <a href="/es/custom-apps/">Apps a medida</a>
+        </div>
+        <div class="foot-col">
+          <h5>Cuadrícula</h5>
+          <a href="/es/features/">Funciones</a>
+          <a href="/es/integrations/">Integraciones</a>
+          <a href="/es/how-it-works/">Cómo funciona</a>
+          <a href="/es/pricing/">Precios</a>
+          <a href="/es/regions/">Regiones</a>
+          <a href="/es/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Empresa</h5>
+          <a href="/es/about/">Acerca de</a>
+          <a href="/es/faq/">FAQ</a>
+          <a href="/es/contact/">Contacto</a>
+          <a href="/es/privacy/">Privacidad</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Todos los derechos reservados.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

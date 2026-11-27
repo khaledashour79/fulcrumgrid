@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Qu'est-ce que l'AMDE (FMEA) et comment la mener pas à pas ? — FulcrumGrid</title>
+  <meta name="description" content="L'AMDE aide à repérer et classer ce qui peut mal tourner dans un processus avant que cela n'arrive : origines, étapes, calcul de l'IPR, exemple et erreurs." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Qu'est-ce que l'AMDE (FMEA) et comment la mener pas à pas ?" />
+  <meta property="og:description" content="L'AMDE aide à repérer et classer ce qui peut mal tourner dans un processus avant que cela n'arrive : origines, étapes, calcul de l'IPR, exemple et erreurs." />
+  <meta property="og:url" content="https://fulcrumgrid.com/fr/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-27" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Qu'est-ce que l'AMDE (FMEA) et comment la mener pas à pas ?" />
+  <meta name="twitter:description" content="L'AMDE aide à repérer et classer ce qui peut mal tourner dans un processus avant que cela n'arrive : origines, étapes, calcul de l'IPR, exemple et erreurs." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/fr/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-fmea-and-how-do-you-run-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-fmea-and-how-do-you-run-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Qu'est-ce que l'AMDE (FMEA) et comment la mener pas à pas ?",
+    "description": "L'AMDE aide à repérer et classer ce qui peut mal tourner dans un processus avant que cela n'arrive : origines, étapes, calcul de l'IPR, exemple et erreurs.",
+    "datePublished": "2026-11-27",
+    "dateModified": "2026-11-27",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/fr/blog/what-is-fmea-and-how-do-you-run-one/"
+    },
+    "inLanguage": "fr"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://fulcrumgrid.com/fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/fr/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guide de l'AMDE",
+        "item": "https://fulcrumgrid.com/fr/blog/what-is-fmea-and-how-do-you-run-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Que signifie AMDE ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AMDE signifie analyse des modes de défaillance et de leurs effets (FMEA en anglais). C'est une méthode structurée pour identifier comment un processus peut échouer, avec quelles conséquences, et quels risques traiter en premier."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment calcule-t-on l'indice de priorité du risque ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "L'IPR est le produit gravité × occurrence × détection, chacune notée de 1 à 10, soit 1 à 1 000. Plus il est élevé, plus le risque est prioritaire, mais une gravité élevée appelle toujours une action."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qu'est-ce que la priorité d'action en AMDE ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La priorité d'action a été introduite par le manuel AMDE AIAG-VDA de 2019. Elle classe chaque risque en priorité haute, moyenne ou basse grâce à des tables qui privilégient la gravité, puis l'occurrence, puis la détection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Une PME peut-elle utiliser l'AMDE hors de l'industrie ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. L'AMDE convient à la facturation, à la préparation des commandes, à l'accueil des clients ou aux changements informatiques. Une séance ciblée de quelques heures sur un processus suffit généralement."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/fr/" aria-label="Accueil FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/fr/products/">Produits</a>
+        <a href="/fr/features/">Grille</a>
+        <a href="/fr/pricing/">Tarifs</a>
+        <a href="/fr/regions/">Régions</a>
+        <a href="/fr/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/fr/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Langue">FR ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" class="active" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/fr/contact/">Demander une démo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/fr/">Accueil</a> / <a href="/fr/blog/">Blog</a> / Guide de l'AMDE</p>
+        <span class="tag tag-accent">Opérations</span>
+        <h1>Qu'est-ce que l'AMDE (FMEA) et comment la mener pas à pas ?</h1>
+        <p class="hero-intro">L'AMDE aide à repérer et classer ce qui peut mal tourner dans un processus avant que cela n'arrive : origines, étapes, calcul de l'IPR, exemple et erreurs.</p>
+        <p class="mono"><time datetime="2026-11-27">27 novembre 2026</time> · 6 min de lecture</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Un mauvais prix sur une facture. Une commande expédiée à l'adresse de l'an dernier. Un client qui paie un escroc après avoir reçu de « nouvelles coordonnées bancaires » par e-mail. Avec le recul, quelqu'un aurait presque toujours pu prévoir ces incidents, à condition que l'on prenne le temps de se poser la question. L'analyse des modes de défaillance et de leurs effets, ou AMDE (FMEA en anglais), est une façon structurée de le faire, étape par étape, avant que les défaillances n'atteignent vos clients.</p><h2>Qu'est-ce que l'AMDE ?</h2><p>L'AMDE est une méthode qui permet d'identifier les façons dont un processus, un produit ou un service peut échouer, d'en comprendre les conséquences et de les classer pour traiter d'abord les plus importantes. Un <strong>mode de défaillance</strong> décrit la manière dont quelque chose tourne mal, par exemple « facture envoyée avec un prix erroné ». L'<strong>effet</strong> est ce que cette défaillance provoque chez le client ou dans l'entreprise. Chaque mode de défaillance est noté selon sa gravité, sa probabilité et la facilité avec laquelle on le détecterait : une impression floue de risque devient ainsi une liste d'actions hiérarchisée.</p><h2>D'où vient l'AMDE ?</h2><p>L'AMDE est née d'une procédure militaire américaine, la MIL-P-1629, publiée en 1949 pour évaluer les effets des défaillances de systèmes et d'équipements. Les programmes aérospatiaux, dont ceux de la NASA dans les années 1960, l'ont adoptée, puis l'industrie automobile en a fait une pratique courante à partir des années 1970. En 2019, le manuel AMDE AIAG-VDA, référentiel automobile commun aux États-Unis et à l'Allemagne, a remplacé l'indice de priorité du risque traditionnel par une approche appelée priorité d'action.</p><h2>Quand utiliser l'AMDE ?</h2><ul><li><strong>Pour concevoir un nouveau processus.</strong> Avant de lancer un nouveau circuit de préparation des commandes, de facturation ou d'accueil des clients.</li><li><strong>Pour modifier un processus existant.</strong> Un nouveau fournisseur, un nouvel outil ou une nouvelle organisation crée de nouvelles occasions d'échouer.</li><li><strong>Face à des problèmes récurrents.</strong> Quand le même type d'erreur revient sans cesse, l'AMDE oblige à regarder tout le processus, pas seulement le dernier incident.</li></ul><h2>Comment mener une AMDE pas à pas ?</h2><ul><li><strong>1. Délimitez le processus.</strong> Choisissez un seul processus avec un début et une fin clairs, comme « de la commande validée au paiement reçu ». Réunissez trois à six personnes qui font réellement ce travail.</li><li><strong>2. Listez les étapes.</strong> Notez chaque étape dans l'ordre.</li><li><strong>3. Recensez les modes de défaillance.</strong> Pour chaque étape, demandez-vous comment elle peut mal tourner : oubliée, en retard, faite deux fois ou mal faite.</li><li><strong>4. Décrivez les effets.</strong> Indiquez ce que chaque défaillance entraînerait pour les clients, la trésorerie, la sécurité ou la conformité.</li><li><strong>5. Identifiez les causes.</strong> Demandez-vous pourquoi chaque défaillance pourrait survenir.</li><li><strong>6. Notez les contrôles existants.</strong> Relevez ce qui empêche déjà la défaillance ou la détecte : liste de contrôle, validation dans le logiciel, double vérification.</li><li><strong>7. Notez gravité, occurrence et détection de 1 à 10.</strong> La gravité mesure l'importance de l'effet. L'occurrence mesure la probabilité de la cause. La détection mesure le risque que la défaillance échappe aux contrôles actuels : une note élevée signifie qu'elle est difficile à repérer.</li><li><strong>8. Calculez l'indice de priorité du risque.</strong> IPR (RPN en anglais) = gravité × occurrence × détection, soit une valeur de 1 à 1 000.</li><li><strong>9. Décidez des actions.</strong> Pour les risques prioritaires, fixez une action précise, un responsable nommé et une échéance.</li><li><strong>10. Réévaluez.</strong> Une fois les actions réalisées, notez de nouveau pour vérifier que le risque a réellement baissé.</li></ul><h3>Quelles sont les limites de l'IPR ?</h3><p>L'IPR est utile mais grossier. Des risques très différents peuvent obtenir le même score, et une défaillance rare mais grave peut se classer derrière un désagrément fréquent. C'est pourquoi le manuel AIAG-VDA est passé à la priorité d'action, qui donne le plus de poids à la gravité. Pour une petite équipe, une règle simple suffit : <strong>tout mode de défaillance d'une gravité de 9 ou 10 fait l'objet d'une action, quel que soit son IPR</strong>.</p><h2>À quoi ressemble une AMDE en pratique ?</h2><p>Prenons un petit grossiste qui émet environ 400 factures par mois. L'équipe a noté trois modes de défaillance de son processus de facturation :</p><ul><li><strong>Prix erroné sur la facture.</strong> Cause : prix saisis à la main depuis un tarif périmé. Effet : litiges, avoirs et retards de paiement. G 6, O 5, D 4, soit un IPR de 120.</li><li><strong>Facture jamais envoyée.</strong> Cause : brouillons restés en attente quand la personne responsable est absente. Effet : paiement en retard de plusieurs semaines, que personne ne remarque avant la clôture du mois. G 5, O 4, D 7, soit un IPR de 140.</li><li><strong>Client qui paie sur un compte frauduleux.</strong> Cause : un e-mail usurpé annonce un changement de coordonnées bancaires. Effet : l'argent du client est perdu et la relation abîmée. G 9, O 2, D 6, soit un IPR de 108.</li></ul><p>Au seul classement par IPR, la fraude arrive en dernier. Mais sa gravité étant de 9, l'équipe l'a traitée quand même. Les actions : prix repris automatiquement du tarif du logiciel (responsable financier, deux semaines) ; rapport hebdomadaire des brouillons non envoyés (responsable administratif, une semaine) ; mention sur chaque facture indiquant que les coordonnées bancaires ne changent jamais par e-mail, avec un rappel téléphonique de vérification (dirigeant, une semaine). Après réévaluation, les trois IPR sont tombés à 48, 60 et 18.</p><h2>En quoi l'AMDE diffère-t-elle d'un pré-mortem ou d'une analyse des causes racines ?</h2><p>Un <strong>pré-mortem</strong> imagine qu'un projet entier a déjà échoué et remonte vers les raisons. Il est rapide et adapté aux plans et aux décisions. L'<strong>analyse des causes racines</strong>, comme les 5 pourquoi, examine un problème déjà survenu. L'AMDE se situe entre les deux : elle est préventive comme le pré-mortem, mais parcourt le processus étape par étape et note chaque risque. Nos guides dédiés présentent ces deux autres méthodes en détail.</p><h2>Quelles sont les erreurs courantes ?</h2><ul><li><strong>Un périmètre trop large.</strong> Analyser « toute l'entreprise » donne un tableur que personne ne termine. Commencez par un seul processus.</li><li><strong>Des notes incohérentes.</strong> Mettez-vous d'accord par écrit sur ce que signifie un 3 ou un 8 avant de noter.</li><li><strong>Des actions sans responsable.</strong> Une recommandation sans nom ni date reste rarement suivie d'effet.</li></ul><p>Bien menée, une AMDE prend quelques heures et se rentabilise en évitant des défaillances que vous découvririez sinon une réclamation après l'autre.</p>
+
+        <h2>Questions fréquentes</h2>
+        <details class="faq-item"><summary>Que signifie AMDE ?</summary><p>AMDE signifie analyse des modes de défaillance et de leurs effets (FMEA en anglais). C'est une méthode structurée pour identifier comment un processus peut échouer, avec quelles conséquences, et quels risques traiter en premier.</p></details>
+        <details class="faq-item"><summary>Comment calcule-t-on l'indice de priorité du risque ?</summary><p>L'IPR est le produit gravité × occurrence × détection, chacune notée de 1 à 10, soit 1 à 1 000. Plus il est élevé, plus le risque est prioritaire, mais une gravité élevée appelle toujours une action.</p></details>
+        <details class="faq-item"><summary>Qu'est-ce que la priorité d'action en AMDE ?</summary><p>La priorité d'action a été introduite par le manuel AMDE AIAG-VDA de 2019. Elle classe chaque risque en priorité haute, moyenne ou basse grâce à des tables qui privilégient la gravité, puis l'occurrence, puis la détection.</p></details>
+        <details class="faq-item"><summary>Une PME peut-elle utiliser l'AMDE hors de l'industrie ?</summary><p>Oui. L'AMDE convient à la facturation, à la préparation des commandes, à l'accueil des clients ou aux changements informatiques. Une séance ciblée de quelques heures sur un processus suffit généralement.</p></details>
+
+        <p style="margin-top:32px"><a href="/fr/blog/"><span aria-hidden="true">←</span> Retour au blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Transformez votre AMDE en actions suivies</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center réunit dans une seule vue les actions issues de l'AMDE, leurs responsables, leurs échéances et les indicateurs concernés, pour vérifier que chaque correction réduit vraiment le risque.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/fr/products/command-center/">Découvrir Command Center</a>
+          <a class="btn btn-secondary" href="/fr/blog/">Retour au blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>L'épine dorsale opérationnelle des équipes modernes.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produits</h5>
+          <a href="/fr/products/">Tous les produits</a>
+          <a href="/fr/products/hr-suite/">HR Suite</a>
+          <a href="/fr/products/command-center/">Command Center</a>
+          <a href="/fr/products/collection/">Collection</a>
+          <a href="/fr/products/tms/">TMS</a>
+          <a href="/fr/products/assure/">Assure</a>
+          <a href="/fr/products/close/">Close</a>
+          <a href="/fr/products/consolidate/">Consolidate</a>
+          <a href="/fr/custom-apps/">Applications sur mesure</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grille</h5>
+          <a href="/fr/features/">Fonctionnalités</a>
+          <a href="/fr/integrations/">Intégrations</a>
+          <a href="/fr/how-it-works/">Comment ça marche</a>
+          <a href="/fr/pricing/">Tarifs</a>
+          <a href="/fr/regions/">Régions</a>
+          <a href="/fr/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Entreprise</h5>
+          <a href="/fr/about/">À propos</a>
+          <a href="/fr/faq/">FAQ</a>
+          <a href="/fr/contact/">Contact</a>
+          <a href="/fr/privacy/">Confidentialité</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tous droits réservés.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
