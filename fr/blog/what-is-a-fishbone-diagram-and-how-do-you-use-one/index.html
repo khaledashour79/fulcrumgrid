@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>Qu'est-ce qu'un diagramme d'Ishikawa et comment l'utiliser ? — FulcrumGrid</title>
+  <meta name="description" content="Le diagramme d'Ishikawa réunit toutes les causes possibles d'un problème sur une page. Origine, 6M, déroulé d'une séance, exemple concret et erreurs à éviter." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Qu'est-ce qu'un diagramme d'Ishikawa et comment l'utiliser ?" />
+  <meta property="og:description" content="Le diagramme d'Ishikawa réunit toutes les causes possibles d'un problème sur une page. Origine, 6M, déroulé d'une séance, exemple concret et erreurs à éviter." />
+  <meta property="og:url" content="https://fulcrumgrid.com/fr/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-28" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Qu'est-ce qu'un diagramme d'Ishikawa et comment l'utiliser ?" />
+  <meta name="twitter:description" content="Le diagramme d'Ishikawa réunit toutes les causes possibles d'un problème sur une page. Origine, 6M, déroulé d'une séance, exemple concret et erreurs à éviter." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/fr/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Qu'est-ce qu'un diagramme d'Ishikawa et comment l'utiliser ?",
+    "description": "Le diagramme d'Ishikawa réunit toutes les causes possibles d'un problème sur une page. Origine, 6M, déroulé d'une séance, exemple concret et erreurs à éviter.",
+    "datePublished": "2026-11-28",
+    "dateModified": "2026-11-28",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/fr/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/"
+    },
+    "inLanguage": "fr"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://fulcrumgrid.com/fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/fr/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guide du diagramme d'Ishikawa",
+        "item": "https://fulcrumgrid.com/fr/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Pourquoi parle-t-on de diagramme en arête de poisson ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Parce que le dessin terminé ressemble à un squelette de poisson : le problème est à la tête, les grandes catégories de causes forment les arêtes et les causes individuelles se greffent sur chacune."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Que sont les 6M du diagramme d'Ishikawa ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Les 6M sont Méthodes, Machines, Matières, Mesure, Milieu et Main-d'œuvre. Ce sont les catégories classiques pour analyser les problèmes en production industrielle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le diagramme d'Ishikawa est-il meilleur que les 5 pourquoi ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aucun n'est meilleur : ils ont des rôles différents. Le diagramme cartographie de nombreuses causes possibles, les 5 pourquoi creusent une seule chaîne. Beaucoup d'équipes enchaînent les deux."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Combien de temps dure une séance ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pour un problème bien ciblé, 45 à 60 minutes avec quatre à huit personnes suffisent généralement pour construire le diagramme et choisir les causes à vérifier avec des données."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/fr/" aria-label="Accueil FulcrumGrid">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/fr/products/">Produits</a>
+        <a href="/fr/features/">Grille</a>
+        <a href="/fr/pricing/">Tarifs</a>
+        <a href="/fr/regions/">Régions</a>
+        <a href="/fr/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/fr/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+                <details class="lang-dd">
+          <summary aria-label="Langue">FR ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/" class="active" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/it/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/fr/contact/">Demander une démo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/fr/">Accueil</a> / <a href="/fr/blog/">Blog</a> / Guide du diagramme d'Ishikawa</p>
+        <span class="tag tag-accent">Opérations</span>
+        <h1>Qu'est-ce qu'un diagramme d'Ishikawa et comment l'utiliser ?</h1>
+        <p class="hero-intro">Le diagramme d'Ishikawa réunit toutes les causes possibles d'un problème sur une page. Origine, 6M, déroulé d'une séance, exemple concret et erreurs à éviter.</p>
+        <p class="mono"><time datetime="2026-11-28">28 novembre 2026</time> · 6 min de lecture</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Les commandes partent en retard, et chacun a sa théorie. L'entrepôt accuse le transporteur, les commerciaux accusent l'entrepôt, et le transporteur accuse les étiquettes. Le diagramme en arête de poisson rassemble toutes les causes possibles sur une seule page, classées par familles, pour que l'équipe puisse discuter du problème sereinement et vérifier les causes qui comptent au lieu de se disputer à leur sujet.</p><h2>Qu'est-ce qu'un diagramme en arête de poisson ?</h2><p>Le diagramme en arête de poisson, aussi appelé diagramme d'Ishikawa ou diagramme de causes et effets, est un outil visuel qui aide à recenser les causes possibles d'un problème. Le problème, ou <strong>effet</strong>, est inscrit dans un cadre à l'extrémité droite d'une ligne horizontale : c'est la tête du poisson. Des lignes obliques partent de cette colonne vertébrale comme des arêtes, une par <strong>catégorie</strong> de causes. Les causes individuelles se greffent sur chaque arête, et les sous-causes sur celles-ci. Le dessin terminé ressemble à un squelette de poisson, d'où son nom.</p><h2>D'où vient-il ?</h2><p>Le diagramme porte le nom de Kaoru Ishikawa, ingénieur japonais et l'une des grandes figures du mouvement de la qualité dans le Japon de l'après-guerre. Il l'a popularisé dans les années 1960 grâce à ses travaux sur le management de la qualité, notamment dans les chantiers navals de Kawasaki, et grâce aux cercles de qualité, où de petits groupes d'opérateurs se réunissaient pour résoudre les problèmes de leur propre secteur.</p><h2>Quand l'utiliser plutôt que les 5 pourquoi ?</h2><p>Les deux méthodes se complètent bien. Les <strong>5 pourquoi</strong> suivent une seule chaîne de causes et d'effets en demandant « pourquoi ? » jusqu'à atteindre une cause racine. La méthode est rapide et convient aux problèmes qui suivent un raisonnement assez évident. Le <strong>diagramme en arête de poisson</strong> explore en largeur avant d'aller en profondeur. Utilisez-le lorsque :</p><ul><li><strong>Le problème a plusieurs causes plausibles</strong> et vous risquez de corriger la première que quelqu'un propose.</li><li><strong>Plusieurs équipes sont concernées</strong> et chacune ne voit que sa partie du processus.</li><li><strong>Les corrections précédentes n'ont pas tenu</strong>, ce qui signifie souvent que la vraie cause n'a jamais été envisagée.</li></ul><p>Une approche pratique consiste à construire d'abord le diagramme pour cartographier les possibilités, puis à appliquer les 5 pourquoi aux deux ou trois branches les plus probables. Notre guide consacré aux 5 pourquoi détaille cette seconde étape.</p><h2>Quelles catégories utiliser ?</h2><p>Les catégories servent de rappels pour que personne n'oublie tout un domaine. Dans l'industrie, l'ensemble classique est celui des <strong>6M</strong> :</p><ul><li><strong>Méthodes :</strong> procédures, modes opératoires et étapes du processus.</li><li><strong>Machines :</strong> équipements, outils et logiciels.</li><li><strong>Matières :</strong> matières premières, pièces et consommables.</li><li><strong>Mesure :</strong> contrôles, instruments et données sur lesquelles vous vous appuyez.</li><li><strong>Milieu :</strong> température, aménagement, bruit et autres conditions.</li><li><strong>Main-d'œuvre :</strong> compétences, formation, effectifs et charge de travail.</li></ul><p>Les entreprises de services utilisent souvent un ensemble plus proche de leur activité, comme <strong>politiques, procédures, personnes, systèmes et fournisseurs</strong>, parfois complété par les clients ou l'environnement. Il n'existe pas de liste unique. Choisissez quatre à six catégories adaptées à votre processus et renommez-les si cela aide.</p><h2>Comment mener une séance pas à pas ?</h2><ul><li><strong>1. Formulez le problème comme un effet précis.</strong> « Les expéditions vont mal » est trop vague. « Les commandes expédiées après la date promise sont passées de 4 % à 11 % en octobre » donne à l'équipe quelque chose de concret à expliquer.</li><li><strong>2. Choisissez les catégories.</strong> Tracez la colonne vertébrale et une arête par catégorie sur un tableau blanc ou une page partagée.</li><li><strong>3. Recensez les causes.</strong> Invitez les personnes qui font le travail. Collectez d'abord toutes les idées et jugez ensuite. Placez chaque cause sur l'arête qui lui correspond le mieux ; si elle en concerne deux, choisissez-en une et passez à la suite.</li><li><strong>4. Demandez pourquoi pour approfondir.</strong> Pour chaque cause, demandez pourquoi elle se produit et ajoutez les réponses en sous-branches. Arrêtez-vous lorsque vous atteignez un point sur lequel vous pouvez agir.</li><li><strong>5. Retenez les causes racines probables.</strong> Repérez les deux ou trois causes qui, selon l'équipe, pèsent le plus, idéalement par un vote rapide.</li><li><strong>6. Vérifiez avec des données.</strong> Le diagramme produit des hypothèses, pas des preuves. Confrontez chaque cause probable aux historiques, à des échantillons ou à un court essai avant de vous engager sur une solution.</li></ul><h2>À quoi cela ressemble-t-il en pratique ?</h2><p>Un petit site de vente en ligne a vu ses expéditions en retard augmenter en un mois. Le cadre de l'effet indiquait « commandes expédiées après la date promise : de 4 % à 11 % en octobre ». L'équipe a retenu cinq catégories et ajouté ces causes :</p><ul><li><strong>Méthodes :</strong> les commandes reçues après 14 h attendent le lendemain ; aucune règle ne fixe l'ordre de préparation.</li><li><strong>Systèmes :</strong> les stocks affichés sur le site ne sont mis à jour que la nuit, si bien que des articles apparaissent disponibles alors qu'ils ne le sont pas.</li><li><strong>Personnes :</strong> deux préparateurs expérimentés en congé ; un nouvel arrivant pas encore formé à l'imprimante d'étiquettes.</li><li><strong>Fournisseurs :</strong> un produit clé livré en lots partiels ; l'heure d'enlèvement du transporteur avancée.</li><li><strong>Mesure :</strong> la date promise est calculée à partir de la date de commande, et non de la validation du paiement.</li></ul><p>Le vote a désigné l'enlèvement avancé et la mise à jour nocturne des stocks. Les données ont nuancé le tableau : la plupart des commandes en retard avaient été passées après la nouvelle heure d'enlèvement, ce qui confirmait la première cause, mais seule une petite partie concernait des articles en rupture. L'équipe a obtenu un enlèvement plus tardif auprès du transporteur, aligné l'heure limite de préparation et gardé le problème de stock sur la liste pour plus tard.</p><h2>Quelles sont les erreurs fréquentes ?</h2><ul><li><strong>Un effet flou.</strong> Si l'énoncé du problème est large, les causes le seront aussi.</li><li><strong>Prendre le diagramme pour la réponse.</strong> Chaque cause notée reste une supposition tant que les données ne la confirment pas.</li><li><strong>Accuser les personnes.</strong> « Le personnel est négligent » n'est pas une cause racine. Demandez ce qui, dans le processus, permet l'erreur.</li><li><strong>S'arrêter au dessin.</strong> Un diagramme sans responsables, sans actions ni suivi ne change rien.</li></ul><p>Bien utilisé, un diagramme d'Ishikawa prend moins d'une heure, met toute l'équipe face à la même image et vous évite de corriger la théorie la plus bruyante au lieu de la vraie cause.</p>
+
+        <h2>Questions fréquentes</h2>
+        <details class="faq-item"><summary>Pourquoi parle-t-on de diagramme en arête de poisson ?</summary><p>Parce que le dessin terminé ressemble à un squelette de poisson : le problème est à la tête, les grandes catégories de causes forment les arêtes et les causes individuelles se greffent sur chacune.</p></details>
+        <details class="faq-item"><summary>Que sont les 6M du diagramme d'Ishikawa ?</summary><p>Les 6M sont Méthodes, Machines, Matières, Mesure, Milieu et Main-d'œuvre. Ce sont les catégories classiques pour analyser les problèmes en production industrielle.</p></details>
+        <details class="faq-item"><summary>Le diagramme d'Ishikawa est-il meilleur que les 5 pourquoi ?</summary><p>Aucun n'est meilleur : ils ont des rôles différents. Le diagramme cartographie de nombreuses causes possibles, les 5 pourquoi creusent une seule chaîne. Beaucoup d'équipes enchaînent les deux.</p></details>
+        <details class="faq-item"><summary>Combien de temps dure une séance ?</summary><p>Pour un problème bien ciblé, 45 à 60 minutes avec quatre à huit personnes suffisent généralement pour construire le diagramme et choisir les causes à vérifier avec des données.</p></details>
+
+        <p style="margin-top:32px"><a href="/fr/blog/"><span aria-hidden="true">←</span> Retour au blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Transformez vos causes racines en actions suivies</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center réunit actions correctives, responsables, échéances et l'indicateur que chaque correction doit faire évoluer, pour voir si le problème a vraiment disparu.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/fr/products/command-center/">Découvrir Command Center</a>
+          <a class="btn btn-secondary" href="/fr/blog/">Retour au blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>L'épine dorsale opérationnelle des équipes modernes.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Produits</h5>
+          <a href="/fr/products/">Tous les produits</a>
+          <a href="/fr/products/hr-suite/">HR Suite</a>
+          <a href="/fr/products/command-center/">Command Center</a>
+          <a href="/fr/products/collection/">Collection</a>
+          <a href="/fr/products/tms/">TMS</a>
+          <a href="/fr/products/assure/">Assure</a>
+          <a href="/fr/products/close/">Close</a>
+          <a href="/fr/products/consolidate/">Consolidate</a>
+          <a href="/fr/custom-apps/">Applications sur mesure</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grille</h5>
+          <a href="/fr/features/">Fonctionnalités</a>
+          <a href="/fr/integrations/">Intégrations</a>
+          <a href="/fr/how-it-works/">Comment ça marche</a>
+          <a href="/fr/pricing/">Tarifs</a>
+          <a href="/fr/regions/">Régions</a>
+          <a href="/fr/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Entreprise</h5>
+          <a href="/fr/about/">À propos</a>
+          <a href="/fr/faq/">FAQ</a>
+          <a href="/fr/contact/">Contact</a>
+          <a href="/fr/privacy/">Confidentialité</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. Tous droits réservés.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>

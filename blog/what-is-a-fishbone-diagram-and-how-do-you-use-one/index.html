@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net; connect-src 'self' https://ipapi.co https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://api.web3forms.com https://fg-concierge.khaled-ashour.workers.dev; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-src https://td.doubleclick.net; media-src 'self' blob: data:;" />
+
+  <!-- Google tag (gtag.js) — FulcrumGrid GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDJ643CY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+    try{if(localStorage.getItem('fg_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+    gtag('config', 'G-YJDJ643CY3');
+  </script>
+
+  <title>What Is a Fishbone Diagram and How Do You Use One? — FulcrumGrid</title>
+  <meta name="description" content="A fishbone diagram maps every possible cause of a problem on one page. Learn its origin, the 6Ms, how to run a session, a worked example and common mistakes." />
+  <meta name="theme-color" content="#f2f2f3" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What Is a Fishbone Diagram and How Do You Use One?" />
+  <meta property="og:description" content="A fishbone diagram maps every possible cause of a problem on one page. Learn its origin, the 6Ms, how to run a session, a worked example and common mistakes." />
+  <meta property="og:url" content="https://fulcrumgrid.com/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <meta property="og:site_name" content="FulcrumGrid" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="nl_NL" />
+  <meta property="article:published_time" content="2026-11-28" />
+  <meta property="og:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="FulcrumGrid Command Center — operations at a glance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What Is a Fishbone Diagram and How Do You Use One?" />
+  <meta name="twitter:description" content="A fishbone diagram maps every possible cause of a problem on one page. Learn its origin, the 6Ms, how to run a session, a worked example and common mistakes." />
+  <meta name="twitter:image" content="https://fulcrumgrid.com/assets/og/og-command-center.png" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://fulcrumgrid.com/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="en" href="https://fulcrumgrid.com/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="ar" href="https://fulcrumgrid.com/ar/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="fr" href="https://fulcrumgrid.com/fr/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="de" href="https://fulcrumgrid.com/de/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="es" href="https://fulcrumgrid.com/es/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="it" href="https://fulcrumgrid.com/it/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="nl" href="https://fulcrumgrid.com/nl/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+  <link rel="alternate" hreflang="x-default" href="https://fulcrumgrid.com/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/" />
+
+  <link rel="preload" href="/assets/fonts/barlowcond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fg2.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What Is a Fishbone Diagram and How Do You Use One?",
+    "description": "A fishbone diagram maps every possible cause of a problem on one page. Learn its origin, the 6Ms, how to run a session, a worked example and common mistakes.",
+    "datePublished": "2026-11-28",
+    "dateModified": "2026-11-28",
+    "author": {
+      "@type": "Organization",
+      "name": "FulcrumGrid",
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "publisher": {
+      "@id": "https://fulcrumgrid.com/#organization"
+    },
+    "image": "https://fulcrumgrid.com/assets/og/og-command-center.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fulcrumgrid.com/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fulcrumgrid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://fulcrumgrid.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Fishbone Diagram Guide",
+        "item": "https://fulcrumgrid.com/blog/what-is-a-fishbone-diagram-and-how-do-you-use-one/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why is it called a fishbone diagram?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Because the finished drawing looks like a fish skeleton: the problem sits at the head, the main cause categories form the bones and individual causes branch off each bone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the 6Ms of a fishbone diagram?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The 6Ms are Methods, Machines, Materials, Measurement, Mother Nature (environment) and Manpower (people). They are the classic categories for manufacturing problems."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a fishbone diagram better than the 5 Whys?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Neither is better; they do different jobs. A fishbone maps many possible causes at once, while the 5 Whys follows one chain deeply. Many teams use the fishbone first, then the 5 Whys."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a fishbone session take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For a focused problem, 45 to 60 minutes with four to eight people is usually enough to build the diagram and agree which causes to check with data."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/concierge.css?v=8f3d30d5">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap row">
+      <a class="brand" href="/" aria-label="FulcrumGrid home">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Fulcrum<b>Grid</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/products/">Products</a>
+        <a href="/features/">Grid</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/regions/">Regions</a>
+        <a href="/blog/" class="active" aria-current="page">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="head-cta">
+        <details class="lang-dd">
+          <summary aria-label="Language">EN ▾</summary>
+          <div class="lang-dd-menu">
+            <a href="/blog/" class="active" hreflang="en" lang="en">English</a>
+            <a href="/ar/blog/" hreflang="ar" lang="ar">العربية</a>
+            <a href="/fr/blog/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/blog/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/blog/" hreflang="es" lang="es">Español</a>
+            <a href="/it/blog/" hreflang="it" lang="it">Italiano</a>
+            <a href="/nl/blog/" hreflang="nl" lang="nl">Nederlands</a>
+          </div>
+        </details>
+        <a class="btn btn-primary btn-sm" href="/contact/">Request a demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span>≡</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap pad">
+        <p class="mono"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Fishbone Diagram Guide</p>
+        <span class="tag tag-accent">Operations</span>
+        <h1>What Is a Fishbone Diagram and How Do You Use One?</h1>
+        <p class="hero-intro">A fishbone diagram maps every possible cause of a problem on one page. Learn its origin, the 6Ms, how to run a session, a worked example and common mistakes.</p>
+        <p class="mono"><time datetime="2026-11-28">November 28, 2026</time> · 6 min read</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pad" style="max-width:760px">
+<p>Orders are going out late, and everyone has a theory. The warehouse blames the carrier, sales blames the warehouse, and the carrier blames the labels. A fishbone diagram puts every possible cause on one page, sorted into groups, so the team can discuss the problem calmly and test the causes that matter instead of arguing about them.</p><h2>What is a fishbone diagram?</h2><p>A fishbone diagram, also called an Ishikawa diagram or a cause-and-effect diagram, is a visual tool for brainstorming the possible causes of a problem. The problem, or <strong>effect</strong>, is written in a box at the right-hand end of a horizontal line: the fish's head. Diagonal lines branch off that spine like bones, one for each <strong>category</strong> of cause. Individual causes hang off each bone, and smaller sub-causes hang off those. The finished drawing looks like a fish skeleton, which is where the name comes from.</p><h2>Where does it come from?</h2><p>The diagram is named after Kaoru Ishikawa, a Japanese engineer and one of the leading figures of the quality movement in post-war Japan. He popularised it in the 1960s through his work on quality management, including at the Kawasaki shipyards, and through quality circles, where small groups of front-line workers met to solve problems in their own area.</p><h2>When should you use a fishbone diagram instead of the 5 Whys?</h2><p>The two methods work well together. The <strong>5 Whys</strong> follows a single chain of cause and effect by asking “why?” until you reach a root cause. It is fast and suits problems with one fairly obvious line of reasoning. A <strong>fishbone diagram</strong> goes wide before it goes deep. Use it when:</p><ul><li><strong>The problem has several plausible causes</strong> and you risk fixing the first one someone suggests.</li><li><strong>Several teams are involved</strong> and each sees only its own part of the process.</li><li><strong>Earlier fixes have not stuck</strong>, which often means the real cause was never on the table.</li></ul><p>A practical pattern is to build the fishbone first to map the possibilities, then run a 5 Whys on the two or three branches that look most likely. Our separate 5 Whys guide covers that second step in detail.</p><h2>Which categories should you use?</h2><p>The categories are prompts to make sure nobody overlooks a whole area. In manufacturing, the classic set is the <strong>6Ms</strong>:</p><ul><li><strong>Methods:</strong> procedures, work instructions and process steps.</li><li><strong>Machines:</strong> equipment, tools and software.</li><li><strong>Materials:</strong> raw materials, parts and consumables.</li><li><strong>Measurement:</strong> inspections, gauges and the data you rely on.</li><li><strong>Mother Nature (Environment):</strong> temperature, layout, noise and other conditions.</li><li><strong>Manpower (People):</strong> skills, training, staffing and workload.</li></ul><p>Service businesses often use a set closer to their own work, such as <strong>Policies, Procedures, People, Systems and Suppliers</strong>, sometimes with Customers or Environment added. There is no single correct list. Pick four to six categories that fit your process and rename them if that helps.</p><h2>How do you run a fishbone session step by step?</h2><ul><li><strong>1. Write the problem as a specific effect.</strong> “Shipping is bad” is too vague. “Orders shipped after the promised date rose from 4% to 11% in October” gives the team something concrete to explain.</li><li><strong>2. Choose the categories.</strong> Draw the spine and one bone for each category on a whiteboard or a shared page.</li><li><strong>3. Brainstorm causes.</strong> Invite people who do the work. Collect every idea first and judge later. Place each cause on the bone where it fits best; if it fits two, choose one and move on.</li><li><strong>4. Ask why to go deeper.</strong> For each cause, ask why it happens and add the answers as sub-branches. Stop when you reach something you can act on.</li><li><strong>5. Pick the likely root causes.</strong> Mark the two or three causes the team believes contribute most, ideally by a quick vote.</li><li><strong>6. Verify with data.</strong> A fishbone produces hypotheses, not proof. Check each likely cause against records, samples or a short trial before you commit to a fix.</li></ul><h2>What does it look like in practice?</h2><p>A small online retailer saw late shipments rise over one month. The effect box read “orders shipped after promised date: 4% to 11% in October”. The team used five categories and added these causes:</p><ul><li><strong>Methods:</strong> orders received after 2 pm wait until the next day; no rule for which orders are picked first.</li><li><strong>Systems:</strong> stock levels on the website update only overnight, so items show as available when they are not.</li><li><strong>People:</strong> two experienced packers on leave; a new starter not yet trained on the label printer.</li><li><strong>Suppliers:</strong> one key product delivered in partial batches; the carrier's collection time moved earlier.</li><li><strong>Measurement:</strong> the promised date is calculated from the order date, not from when payment clears.</li></ul><p>The vote pointed to the carrier's earlier collection and the overnight stock update. The data told a slightly different story: most late orders were placed after the new collection time, which confirmed the first cause, but only a small share involved out-of-stock items. The team agreed a later collection with the carrier, moved the picking cut-off to match and kept the stock issue on the list for later.</p><h2>What are common fishbone mistakes?</h2><ul><li><strong>A vague effect.</strong> If the problem statement is broad, the causes will be too.</li><li><strong>Treating the diagram as the answer.</strong> Every cause on the page is a guess until data supports it.</li><li><strong>Blaming people.</strong> “Staff are careless” is not a root cause. Ask what in the process allows the mistake.</li><li><strong>Stopping at the drawing.</strong> A diagram with no owners, actions or follow-up changes nothing.</li></ul><p>Used well, a fishbone diagram takes under an hour, gets the whole team looking at the same picture and keeps you from fixing the loudest theory instead of the real cause.</p>
+
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>Why is it called a fishbone diagram?</summary><p>Because the finished drawing looks like a fish skeleton: the problem sits at the head, the main cause categories form the bones and individual causes branch off each bone.</p></details>
+        <details class="faq-item"><summary>What are the 6Ms of a fishbone diagram?</summary><p>The 6Ms are Methods, Machines, Materials, Measurement, Mother Nature (environment) and Manpower (people). They are the classic categories for manufacturing problems.</p></details>
+        <details class="faq-item"><summary>Is a fishbone diagram better than the 5 Whys?</summary><p>Neither is better; they do different jobs. A fishbone maps many possible causes at once, while the 5 Whys follows one chain deeply. Many teams use the fishbone first, then the 5 Whys.</p></details>
+        <details class="faq-item"><summary>How long does a fishbone session take?</summary><p>For a focused problem, 45 to 60 minutes with four to eight people is usually enough to build the diagram and agree which causes to check with data.</p></details>
+
+        <p style="margin-top:32px"><a href="/blog/"><span aria-hidden="true">←</span> Back to the blog</a></p>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="wrap">
+        <p class="mono mono-accent">FulcrumGrid Command Center</p>
+        <h2>Turn root causes into tracked fixes</h2>
+        <p class="section-lead" style="margin:0 auto 26px">FulcrumGrid Command Center keeps corrective actions, owners, due dates and the KPI each fix should move in one view, so you can see whether the problem really went away.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/products/command-center/">Explore Command Center</a>
+          <a class="btn btn-secondary" href="/blog/">Back to the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-name">Fulcrum<b>Grid</b></span>
+          <p>The operational backbone for modern teams.</p>
+        </div>
+        <div class="foot-col">
+          <h5>Products</h5>
+          <a href="/products/">All products</a>
+          <a href="/products/hr-suite/">HR Suite</a>
+          <a href="/products/command-center/">Command Center</a>
+          <a href="/products/collection/">Collection</a>
+          <a href="/products/tms/">TMS</a>
+          <a href="/products/assure/">Assure</a>
+          <a href="/products/close/">Close</a>
+          <a href="/products/consolidate/">Consolidate</a>
+          <a href="/custom-apps/">Custom apps</a>
+        </div>
+        <div class="foot-col">
+          <h5>Grid</h5>
+          <a href="/features/">Features</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/regions/">Regions</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://avenlorconsulting.com" target="_blank" rel="noopener">Avenlor Consulting ↗</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> FulcrumGrid. All rights reserved.</span>
+        <span class="mono">fulcrumgrid.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/consent.js" defer></script>
+<!-- fg-concierge:start -->
+<div id="fg-concierge" data-fg-concierge hidden></div>
+<script>window.FG_CONCIERGE={endpoint:'https://fg-concierge.khaled-ashour.workers.dev',riveSrc:'/assets/brand/concierge.riv',langs:['en','ar','fr','de','es','it','nl']};</script>
+<script src="/assets/js/concierge.js?v=96bfc087" defer></script>
+<!-- fg-concierge:end -->
+</body>
+</html>
